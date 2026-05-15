@@ -1,25 +1,103 @@
 ---
 import { SITE } from "../lib/site";
 
-const nav = [
-  { label: "Product", href: "/product-recommendation-quiz/" },
-  { label: "Pricing", href: "/pricing/" },
+/* Nav structure mirrors revenuehunt.com (audited 2026-05-15).
+   `external: true` opens in a new tab and rel=external nofollow. */
+const platforms = [
+  { label: "Shopify", href: "/product-recommendation-quiz-shopify/" },
+  { label: "WooCommerce", href: "/product-recommendation-quiz-woocommerce/" },
+  { label: "BigCommerce", href: "/product-recommendation-quiz-bigcommerce/" },
+  { label: "Other eCommerce platforms", href: "/product-recommendation-quiz-standalone-google-product-feed/" },
+];
+
+const resources = [
+  { label: "How it works", href: "/how-it-works/" },
+  { label: "Testimonials", href: "/testimonials/" },
   { label: "Integrations", href: "/integrations/" },
-  { label: "Templates", href: "/templates/" },
-  { label: "Customers", href: "/testimonials/" },
+  { label: "Quiz templates", href: "/templates/" },
+  { label: "Zero-party data", href: "/zero-party-data/" },
+  { label: "For beauty brands", href: "/for-beauty-brands/" },
+  { label: "Partners & affiliates", href: "/partners/" },
+  { label: "Help center", href: "https://docs.revenuehunt.com/", external: true },
+];
+
+const topLevel = [
+  { label: "Pricing", href: "/pricing/" },
   { label: "Blog", href: "/blog/" },
+  { label: "Book a demo", href: "/demo/" },
 ];
 ---
 
-<header class="border-b border-slate-200 bg-white">
-  <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-    <a href="/" class="text-xl font-bold tracking-tight text-slate-900">{SITE.name}</a>
-    <nav class="hidden gap-7 text-sm font-medium text-slate-700 md:flex">
-      {nav.map((item) => (
-        <a href={item.href} class="transition hover:text-slate-900">{item.label}</a>
-      ))}
+<header class="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur">
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
+    <a href="/" class="text-xl font-bold tracking-tight text-slate-900" aria-label={`${SITE.name} home`}>
+      {SITE.name}
+    </a>
+
+    <!-- Desktop nav -->
+    <nav class="hidden items-center gap-1 lg:flex" aria-label="Primary">
+      <!-- Platforms dropdown -->
+      <div class="group relative">
+        <button
+          type="button"
+          class="flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium text-slate-700 transition hover:text-slate-900 group-hover:bg-slate-50 group-focus-within:bg-slate-50"
+          aria-haspopup="true"
+        >
+          Platforms
+          <svg class="h-4 w-4 text-slate-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 011.08 1.04l-4.25 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+          </svg>
+        </button>
+        <div class="invisible absolute left-0 top-full pt-2 opacity-0 transition-all group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+          <ul class="w-64 rounded-lg border border-slate-200 bg-white p-2 shadow-lg">
+            {platforms.map((p) => (
+              <li>
+                <a href={p.href} class="block rounded-md px-3 py-2 text-sm text-slate-700 transition hover:bg-slate-50 hover:text-slate-900">
+                  {p.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <a href="/pricing/" class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-slate-900">Pricing</a>
+
+      <!-- Resources dropdown -->
+      <div class="group relative">
+        <button
+          type="button"
+          class="flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium text-slate-700 transition hover:text-slate-900 group-hover:bg-slate-50 group-focus-within:bg-slate-50"
+          aria-haspopup="true"
+        >
+          Resources
+          <svg class="h-4 w-4 text-slate-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 011.08 1.04l-4.25 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+          </svg>
+        </button>
+        <div class="invisible absolute left-0 top-full pt-2 opacity-0 transition-all group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+          <ul class="w-64 rounded-lg border border-slate-200 bg-white p-2 shadow-lg">
+            {resources.map((r) => (
+              <li>
+                <a
+                  href={r.href}
+                  {...(r.external ? { target: "_blank", rel: "external noopener" } : {})}
+                  class="block rounded-md px-3 py-2 text-sm text-slate-700 transition hover:bg-slate-50 hover:text-slate-900"
+                >
+                  {r.label}{r.external && <span aria-hidden="true" class="ml-1 text-slate-400">↗</span>}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <a href="/blog/" class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-slate-900">Blog</a>
+      <a href="/demo/" class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-slate-900">Book a demo</a>
     </nav>
-    <div class="flex items-center gap-3">
+
+    <!-- Desktop CTAs -->
+    <div class="hidden items-center gap-3 lg:flex">
       <a href={`${SITE.app_url}/login`} class="text-sm font-medium text-slate-700 transition hover:text-slate-900">Log in</a>
       <a
         href={`${SITE.app_url}/signup`}
@@ -28,5 +106,73 @@ const nav = [
         Start free trial
       </a>
     </div>
+
+    <!-- Mobile menu trigger (details/summary — no JS) -->
+    <details class="relative lg:hidden">
+      <summary class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-md border border-slate-200 text-slate-700 [&::-webkit-details-marker]:hidden [&::marker]:hidden" aria-label="Open menu">
+        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </summary>
+      <div class="fixed inset-x-0 top-[65px] z-50 max-h-[calc(100vh-65px)] overflow-y-auto border-b border-slate-200 bg-white shadow-lg">
+        <nav class="mx-auto max-w-6xl px-6 py-6" aria-label="Mobile primary">
+          <details class="group/sub border-b border-slate-100 py-3">
+            <summary class="flex cursor-pointer items-center justify-between text-base font-semibold text-slate-900">
+              Platforms
+              <svg class="h-5 w-5 text-slate-400 transition group-open/sub:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 011.08 1.04l-4.25 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+              </svg>
+            </summary>
+            <ul class="mt-3 space-y-2 pl-2">
+              {platforms.map((p) => (
+                <li><a href={p.href} class="block py-1 text-sm text-slate-700 hover:text-slate-900">{p.label}</a></li>
+              ))}
+            </ul>
+          </details>
+
+          <a href="/pricing/" class="block border-b border-slate-100 py-3 text-base font-semibold text-slate-900">Pricing</a>
+
+          <details class="group/sub border-b border-slate-100 py-3">
+            <summary class="flex cursor-pointer items-center justify-between text-base font-semibold text-slate-900">
+              Resources
+              <svg class="h-5 w-5 text-slate-400 transition group-open/sub:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 011.08 1.04l-4.25 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+              </svg>
+            </summary>
+            <ul class="mt-3 space-y-2 pl-2">
+              {resources.map((r) => (
+                <li>
+                  <a
+                    href={r.href}
+                    {...(r.external ? { target: "_blank", rel: "external noopener" } : {})}
+                    class="block py-1 text-sm text-slate-700 hover:text-slate-900"
+                  >
+                    {r.label}{r.external && <span aria-hidden="true" class="ml-1 text-slate-400">↗</span>}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </details>
+
+          <a href="/blog/" class="block border-b border-slate-100 py-3 text-base font-semibold text-slate-900">Blog</a>
+          <a href="/demo/" class="block border-b border-slate-100 py-3 text-base font-semibold text-slate-900">Book a demo</a>
+
+          <div class="mt-6 flex flex-col gap-3">
+            <a
+              href={`${SITE.app_url}/signup`}
+              class="rounded-md bg-[#16161D] px-4 py-3 text-center text-base font-semibold text-white"
+            >
+              Start free trial
+            </a>
+            <a
+              href={`${SITE.app_url}/login`}
+              class="rounded-md border border-slate-200 px-4 py-3 text-center text-base font-semibold text-slate-900"
+            >
+              Log in
+            </a>
+          </div>
+        </nav>
+      </div>
+    </details>
   </div>
 </header>

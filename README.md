@@ -1,8 +1,8 @@
-# web
+# RevenueHunt/web
 
 Static marketing site for **revenuehunt.com** — Astro 6 + Bun + Tailwind v4. Replaces the legacy WordPress + Yoast install.
 
-- **Repo:** [`RevenueHunt/web`](https://github.com/RevenueHunt/web) (private)
+- **GitHub:** <https://github.com/RevenueHunt/web> (private)
 - **Source of truth:** `../PRD-Website-Astro-Migration.md`
 - **Conventions for agents:** `CLAUDE.md`
 - **Reference implementation:** `/Users/libertas/Projects/MetricSpot/web/` (same playbook, minus i18n)

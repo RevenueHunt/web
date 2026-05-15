@@ -10,32 +10,6 @@ featuredImage: "/img/pages/product-recommendation-quiz-standalone-google-product
 draft: false
 ---
 
-<figure class="wp-block-image size-large"><img decoding="async" src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/ecommerce-logos.png" alt="eCommerce Logos" class="wp-image-1819" style="max-width: 450px; max-height: 60px; margin-top: 10px; margin-bottom: 10px;"></figure>
-
-**Not built on Shopify or WooCommerce? No problem!** RevenueHunt offers a digital personal shopper **for any eCommerce platform**. Effortlessly integrate product quizzes into your store and boost sales with personalized shopping recommendations—no coding required.
-
-[get started free](https://admin.revenuehunt.com/register/)
-
-  
-
-![](/img/pages/product-recommendation-quiz-standalone-google-product-feed/recommend-right-products.svg)
-
-### Recommend the Right Products
-
-Shoppable quizzes drive sales, advise customers on finding the right products for them and help them make confident purchasing decisions.
-
-![](/img/pages/product-recommendation-quiz-standalone-google-product-feed/know-your-customers.svg)
-
-### Know Your Customers
-
-Quizzes let you collect actionable data by asking your customers targeted questions. Segment and tag your shoppers based on their responses.
-
-![](/img/pages/product-recommendation-quiz-standalone-google-product-feed/grow-your-audience.svg)
-
-### Grow Your Audience
-
-Send captured leads to your mailing list or CRM. Leverage customer profile data to create more personalized, higher ROI marketing campaigns.
-
 ### Why Choose Product Recommendation Quiz?
 
 **Platform Agnostic:** Compatible with any eCommerce platform, including custom-built stores, Wix, Squarespace, Magento, and more.

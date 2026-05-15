@@ -10,34 +10,6 @@ featuredImage: "/img/pages/product-recommendation-quiz-woocommerce/3-scaled.png"
 draft: false
 ---
 
-# Product Recommendation Quiz for WooCommerce
-
-Paid ads bring clicks — our quizzes turn them into sales. Drive conversions, segment your customers and grow your audience engaging your visitors with a Product Recommendation Quiz on your WooCommerce store.
-
-[download plugin](https://downloads.wordpress.org/plugin/product-recommendation-quiz-for-ecommerce.latest-stable.zip) [view demo store](https://skincarequiz.myshopify.com)
-
-<iframe src="https://www.youtube.com/embed/SX-BZBl1PFw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-  
-
-![](/img/pages/product-recommendation-quiz-woocommerce/recommend-right-products.svg)
-
-### Guided-Selling for WooCommerce
-
-WooCommerce quizzes drive sales, advise customers on finding the right products for them and help them make confident purchasing decisions.
-
-![](/img/pages/product-recommendation-quiz-woocommerce/know-your-customers.svg)
-
-### Zero-Party Data: Know Your Customers
-
-Quizzes let you collect actionable zero-party data by asking your customers targeted questions. Segment and tag your shoppers based on their responses.
-
-![](/img/pages/product-recommendation-quiz-woocommerce/grow-your-audience.svg)
-
-### Grow Your Audience
-
-Send leads captured by your quiz to your mailing list or CRM. Leverage customer profile data to create more personalized, higher ROI marketing campaigns.
-
 ### About Product Recommendation Quiz for WooCommerce
 
 #### Conversational Marketing: create an automated sales funnel for your WooCommerce store

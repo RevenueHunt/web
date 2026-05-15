@@ -15,8 +15,6 @@ function stripLeadingH1Remark() {
         stripped = true;
         return false;
       }
-      // Only consider the very first content node; if the first thing isn't
-      // an h1, leave the document alone.
       if (node.type !== "yaml" && node.type !== "html" && node.type !== "definition") {
         stripped = true;
       }

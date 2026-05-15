@@ -10,36 +10,6 @@ featuredImage: "/img/pages/product-recommendation-quiz-shopify/2-scaled.png"
 draft: false
 ---
 
-# Product Recommendation Quiz for Shopify
-
-Paid ads bring clicks — our quizzes turn them into sales. Drive conversions, segment your customers and grow your audience engaging your visitors with a Product Recommendation Quiz on your store.
-
-[install the app](https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install) [view demo store](https://skincarequiz.myshopify.com)
-
-<iframe src="https://www.youtube.com/embed/GcpJb09S4AY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-  
-
-![](/img/pages/product-recommendation-quiz-shopify/recommend-right-products.svg)
-
-### Recommend the Right Products
-
-Shoppable quizzes drive sales, advise customers on finding the right products for them and help them make confident purchasing decisions.
-
-![](/img/pages/product-recommendation-quiz-shopify/know-your-customers.svg)
-
-### Know Your Customers
-
-Quizzes let you collect actionable data by asking your customers targeted questions. Segment and tag your shoppers based on their responses.
-
-![](/img/pages/product-recommendation-quiz-shopify/grow-your-audience.svg)
-
-### Grow Your Audience
-
-Send captured leads to your mailing list or CRM. Leverage customer profile data to create more personalized, higher ROI marketing campaigns.
-
-  
-
 ### Convert casual shoppers into confident buyers with a product recommendation quiz.
 
 Build beautiful, high-converting product recommendation quizzes — no coding needed. RevenueHunt helps you guide every shopper to their perfect product, collect valuable data, and drive measurable results across your store and marketing channels.

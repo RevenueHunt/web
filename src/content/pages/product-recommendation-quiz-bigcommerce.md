@@ -10,32 +10,6 @@ featuredImage: "/img/pages/product-recommendation-quiz-bigcommerce/personal-shop
 draft: false
 ---
 
-# Product Recommendation Quiz for BigCommerce
-
-A digital personal shopper for BigCommerce. Drive sales, segment your customers and grow your audience engaging your visitors with a Product Recommendation Quiz on your store.
-
-[get the app](ttps://www.bigcommerce.com/apps/product-recommendation-quiz/) [view demo store](https://skincarequiz.myshopify.com)
-
-<iframe src="https://www.youtube.com/embed/9uGXJYk4mgY" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-
-![](/img/pages/product-recommendation-quiz-bigcommerce/recommend-right-products.svg)
-
-### Recommend the Right Products
-
-Shoppable quizzes drive sales, advise customers on finding the right products for them and help them make confident purchasing decisions.
-
-![](/img/pages/product-recommendation-quiz-bigcommerce/know-your-customers.svg)
-
-### Know Your Customers
-
-Quizzes let you collect actionable data by asking your customers targeted questions. Segment and tag your shoppers based on their responses.
-
-![](/img/pages/product-recommendation-quiz-bigcommerce/grow-your-audience.svg)
-
-### Grow Your Audience
-
-Send captured leads to your mailing list or CRM. Leverage customer profile data to create more personalized, higher ROI marketing campaigns.
-
 **HOW TO GET STARTED**
 
 -   Navigate to our [BigCommerce Marketplace listing](https://www.bigcommerce.com/apps/product-recommendation-quiz/) and click on “get this app”

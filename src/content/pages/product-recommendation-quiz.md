@@ -10,38 +10,6 @@ featuredImage: "/img/pages/product-recommendation-quiz/personal-shopper-product-
 draft: false
 ---
 
-**Choose your eCommerce platform:**
-
-[Get for Shopify](https://revenuehunt.com/product-recommendation-quiz-shopify/)   [Get for WooCommerce](https://revenuehunt.com/product-recommendation-quiz-woocommerce/)   [Get for BigCommerce](https://revenuehunt.com/product-recommendation-quiz-bigcommerce/)   [Other Platforms](#quiz-GrHLzo)
-
-Free plan available. 14-day unlimited free trial.
-
-  
-
-A personal shopper for your eCommerce. **Create quizzes that do the selling for you**, recover abandoned carts, capture leads and grow your audience.
-
-  
-
-![](/img/pages/product-recommendation-quiz/recommend-right-products.svg)
-
-### Recommend the Right Products
-
-Shoppable quizzes drive sales, advise customers on finding the right products for them and help them make confident purchasing decisions.
-
-![](/img/pages/product-recommendation-quiz/know-your-customers.svg)
-
-### Know Your Customers
-
-Quizzes let you collect actionable data by asking your customers targeted questions. Segment and tag your shoppers based on their responses.
-
-![](/img/pages/product-recommendation-quiz/grow-your-audience.svg)
-
-### Grow Your Audience
-
-Send captured leads to your mailing list or CRM. Leverage customer profile data to create more personalized, higher ROI marketing campaigns.
-
-  
-
 Your Product Recommendation Quiz does the selling for you. It’s like having **a personal shopper on your eCommerce store**, guiding your customers from start to cart and helping them find the products that best match their needs.
 
 Your quiz will help you achieve four goals:

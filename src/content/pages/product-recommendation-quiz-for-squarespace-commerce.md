@@ -10,36 +10,6 @@ featuredImage: "/img/pages/product-recommendation-quiz-for-squarespace-commerce/
 draft: false
 ---
 
-<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="400" height="58" src="/img/pages/product-recommendation-quiz-for-squarespace-commerce/squarespace.png" alt="" class="wp-image-1819"></figure>
-
-A digital personal shopper for Squarespace Stores. Advise and delight your customers engaging them with a Product Recommendation Quiz on your Squarespace store. Easy to use, no coding required.
-
-[sign up now](https://admin.revenuehunt.com/register/)
-
-Free plan available. 14-day free trial. 30-day money back guarantee.
-
-  
-
-![](/img/pages/product-recommendation-quiz-for-squarespace-commerce/recommend-right-products.svg)
-
-### Recommend the Right Products
-
-Shoppable quizzes drive sales, advise customers on finding the right products for them and help them make confident purchasing decisions.
-
-![](/img/pages/product-recommendation-quiz-for-squarespace-commerce/know-your-customers.svg)
-
-### Know Your Customers
-
-Quizzes let you collect actionable data by asking your customers targeted questions. Segment and tag your shoppers based on their responses.
-
-![](/img/pages/product-recommendation-quiz-for-squarespace-commerce/grow-your-audience.svg)
-
-### Grow Your Audience
-
-Send captured leads to your mailing list or CRM. Leverage customer profile data to create more personalized, higher ROI marketing campaigns.
-
-  
-
 **SCREENSHOTS GALLERY**
 
 <figure><img decoding="async" class="wp-block-themeisle-blocks-slider-item" src="/img/pages/product-recommendation-quiz-for-squarespace-commerce/screenshot-1.png" alt="" title="" data-id="1726"></figure>

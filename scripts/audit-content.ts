@@ -44,6 +44,7 @@ for (const { dir, collection } of CONTENT_DIRS) {
       "why-your-traffic-isnt-converting",
       "testimonials",
       "templates",
+      "for-beauty-brands",
     ]);
     if (HAND_BUILT.has(slug)) continue;
 

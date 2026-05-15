@@ -93,6 +93,7 @@ const HAND_BUILT = new Set([
   "why-your-traffic-isnt-converting",
   "testimonials",
   "templates",
+  "for-beauty-brands",
 ]);
 const entries = [...parseEntries("blog", "blog"), ...parseEntries("pages", "pages")]
   .filter((e) => !HAND_BUILT.has(e.slug));

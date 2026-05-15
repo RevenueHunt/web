@@ -78,8 +78,11 @@ function htmlToText(html: string): string {
   ).trim();
 }
 
+// Slugs that have hand-built routes (not rendered from Markdown). Keep in
+// sync with the `explicitlyOverridden` set in src/pages/[slug]/index.astro.
+const HAND_BUILT = new Set(["home", "blog", "integrations"]);
 const entries = [...parseEntries("blog", "blog"), ...parseEntries("pages", "pages")]
-  .filter((e) => e.slug !== "home" && e.slug !== "blog"); // hand-built routes
+  .filter((e) => !HAND_BUILT.has(e.slug));
 
 test(`content collections produced at least 100 entries`, () => {
   expect(entries.length).toBeGreaterThanOrEqual(100);

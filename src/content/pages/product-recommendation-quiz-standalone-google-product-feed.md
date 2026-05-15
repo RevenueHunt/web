@@ -16,7 +16,7 @@ draft: false
 
 **Google Product Feed Sync:** Seamlessly sync your products and collections via Google Merchant or create them manually.
 
-**No Hidden Costs:** Enjoy full access to all features without paywalls, plus a Free plan (up to 100 quiz completions/month) and a 14-day trial period with unlimited responses.
+**No Hidden Costs:** Enjoy full access to all features without paywalls, plus a Free plan (up to 100 quiz completions/month) and a 15-day trial period with unlimited responses.
 
 **Customizable Design:** Easily match the quiz’s look and feel to your brand.
 

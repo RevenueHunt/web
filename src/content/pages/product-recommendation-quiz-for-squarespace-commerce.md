@@ -1,6 +1,6 @@
 ---
 title: "Product Recommendation Quiz for Squarespace Commerce"
-description: "A digital personal shopper for Squarespace Stores. Advise and delight your customers engaging them with a Product Recommendation Quiz on your Squarespace store. Easy to use, no coding required. sign up now Free plan available. 14-day free trial. 30-day money back guarantee. Recom"
+description: "A digital personal shopper for Squarespace Stores. Advise and delight your customers engaging them with a Product Recommendation Quiz on your Squarespace store. Easy to use, no coding required. sign up now Free plan available. 15-day free trial. 30-day money back guarantee. Recom"
 pubDate: 2020-11-26T11:31:43Z
 updatedDate: 2022-02-15T11:11:18Z
 legacySlug: "product-recommendation-quiz-for-squarespace-commerce"

@@ -34,7 +34,7 @@ Send captured leads to your mailing list or CRM. Leverage customer profile data 
 
 ## Choose the best plan for your eCommerce
 
-Free plan available. 14-day free trial. 30-day money back guarantee.
+Free plan available. 15-day free trial. 30-day money back guarantee.
 
 ###### Free Plan  
 Free to install

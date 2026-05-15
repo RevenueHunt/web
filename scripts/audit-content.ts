@@ -46,6 +46,7 @@ for (const { dir, collection } of CONTENT_DIRS) {
       "templates",
       "for-beauty-brands",
       "partners",
+      "contact",
     ]);
     if (HAND_BUILT.has(slug)) continue;
 

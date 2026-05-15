@@ -95,6 +95,7 @@ const HAND_BUILT = new Set([
   "templates",
   "for-beauty-brands",
   "partners",
+  "contact",
 ]);
 const entries = [...parseEntries("blog", "blog"), ...parseEntries("pages", "pages")]
   .filter((e) => !HAND_BUILT.has(e.slug));

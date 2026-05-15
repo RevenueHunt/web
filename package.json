@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && pagefind --site dist",
     "preview": "astro preview",
     "astro": "astro",
     "typecheck": "astro check",
@@ -36,6 +36,7 @@
     "@playwright/test": "^1.60.0",
     "@types/turndown": "^5.0.6",
     "hast-util-to-text": "^4.0.2",
+    "pagefind": "^1.5.2",
     "typescript": "^6.0.3"
   }
 }

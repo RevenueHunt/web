@@ -95,6 +95,13 @@ const SIGNUP_URL = `${SITE.app_url}/signup`;
     <!-- Desktop CTAs -->
     <div class="hidden items-center gap-3 lg:flex">
       <a
+        href="/search/"
+        aria-label="Search"
+        class="inline-flex h-9 w-9 items-center justify-center rounded-md border border-slate-200 text-slate-600 transition hover:border-[#16161D] hover:text-[#16161D]"
+      >
+        <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </a>
+      <a
         href="/demo/"
         class="inline-flex items-center justify-center rounded-md border border-[#16161D] bg-white px-4 py-2 text-sm font-semibold text-[#16161D] transition hover:bg-slate-50"
       >
@@ -118,6 +125,7 @@ const SIGNUP_URL = `${SITE.app_url}/signup`;
       <div class="fixed inset-x-0 top-[65px] z-50 max-h-[calc(100vh-65px)] overflow-y-auto border-b border-slate-200 bg-white shadow-lg">
         <nav class="mx-auto max-w-6xl px-6 py-6" aria-label="Mobile primary">
           <a href="/" class="block border-b border-slate-100 py-3 text-base font-semibold text-slate-900">Home</a>
+          <a href="/search/" class="block border-b border-slate-100 py-3 text-base font-semibold text-slate-900">Search</a>
 
           <details class="group/sub border-b border-slate-100 py-3">
             <summary class="flex cursor-pointer items-center justify-between text-base font-semibold text-slate-900">

@@ -1,0 +1,28 @@
+---
+import { getCollection } from "astro:content";
+import BlogArchive from "../../../components/pages/BlogArchive.astro";
+import { normalizeName, slugify } from "../../../lib/blog";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog", ({ data }) => !data.draft);
+  const buckets = new Map<string, { name: string; posts: typeof posts }>();
+  for (const post of posts) {
+    for (const tag of post.data.tags ?? []) {
+      const slug = slugify(tag);
+      if (!slug) continue;
+      const existing = buckets.get(slug);
+      if (existing) existing.posts.push(post);
+      else buckets.set(slug, { name: normalizeName(tag), posts: [post] });
+    }
+  }
+  return Array.from(buckets.entries()).map(([slug, b]) => ({
+    params: { slug },
+    props: { name: b.name, posts: b.posts },
+  }));
+}
+
+const { slug } = Astro.params;
+const { name, posts } = Astro.props;
+---
+
+<BlogArchive kind="tag" name={name} slug={slug!} posts={posts} />

@@ -148,7 +148,7 @@ HyperSKU offers a comprehensive All-In-One supply chain solution that streamline
 
 Service Points introduces SMART Dropshipping: Automated dropshipping and data-based supply chain decisions to scale infinitely hard and carefree.
 
-[![](/img/pages/partners/SEOAnt-‑-AI-SEO-Optimizer_Channelwill-.png)](https://share.seoant.com/app/1165b75b7ce1524D5J)
+[![](/img/pages/partners/SEOAnt-_-AI-SEO-Optimizer_Channelwill-.png)](https://share.seoant.com/app/1165b75b7ce1524D5J)
 
 ## [AI SEO Optimizer](https://share.seoant.com/app/1165b75b7ce1524D5J)
 

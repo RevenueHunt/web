@@ -106,9 +106,26 @@ async function fetchAll<T>(endpoint: string): Promise<T[]> {
   return out.slice(0, LIMIT);
 }
 
+function sanitizeFilename(raw: string): string {
+  // Decode any URL-encoded chars (catches Substack/WP proxy URLs that smuggle
+  // an inner URL through the path) and force safe filesystem chars.
+  let name = raw;
+  try { name = decodeURIComponent(name); } catch { /* leave as-is */ }
+  // If decoding revealed an embedded URL, keep only its tail segment.
+  if (name.includes("://")) {
+    const parts = name.split("/");
+    name = parts[parts.length - 1] || "image";
+  }
+  name = name.replace(/[^a-zA-Z0-9._-]+/g, "_");
+  if (name.length > 150) name = name.slice(-150);
+  if (!name || name === "_") name = "image";
+  return name;
+}
+
 async function downloadImage(url: string, destDir: string): Promise<string | null> {
   try {
-    const filename = url.split("/").pop()?.split("?")[0] ?? "image";
+    const rawTail = url.split("/").pop()?.split("?")[0] ?? "image";
+    const filename = sanitizeFilename(rawTail);
     const dest = join(destDir, filename);
     if (existsSync(dest)) return filename;
     const res = await fetch(url);

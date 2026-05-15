@@ -48,7 +48,9 @@ const canonical = new URL(Astro.url.pathname, SITE.site_url).href;
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={new URL(ogImage, SITE.site_url).href} />
 
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
     <link rel="alternate" type="application/rss+xml" title={`${SITE.name} blog`} href="/feed.xml" />
 
     {jsonLd && (

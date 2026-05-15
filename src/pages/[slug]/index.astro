@@ -1,8 +1,10 @@
 ---
 import { getCollection, render } from "astro:content";
 import Base from "../../layouts/Base.astro";
+import PlatformPage from "../../components/pages/PlatformPage.astro";
 import { article, breadcrumb, organization } from "../../lib/schema";
 import { SITE } from "../../lib/site";
+import { PLATFORM_CONFIGS } from "../../lib/platforms";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog", ({ data }) => !data.draft);
@@ -24,6 +26,19 @@ export async function getStaticPaths() {
 }
 
 const { entry, kind } = Astro.props;
+
+// Platform pages get a bespoke layout (hero + CTAs + YouTube + pillars).
+// Narrow with a type guard so the platform layout can take a CollectionEntry<"pages">.
+const isPagePlatform =
+  kind === "page" && entry.data.legacySlug in PLATFORM_CONFIGS;
+const platformEntry = isPagePlatform
+  ? (entry as Extract<typeof entry, { collection: "pages" }>)
+  : null;
+const platformConfig = platformEntry
+  ? PLATFORM_CONFIGS[platformEntry.data.legacySlug]
+  : null;
+
+// Non-platform paths render through the generic layout below.
 const { Content } = await render(entry);
 
 const url = `${SITE.site_url}/${entry.data.legacySlug}/`;
@@ -64,101 +79,102 @@ const WOOCOMMERCE_DOWNLOAD =
   "https://downloads.wordpress.org/plugin/product-recommendation-quiz-for-ecommerce.latest-stable.zip";
 ---
 
-<Base
-  title={`${entry.data.title} — ${SITE.name}`}
-  description={entry.data.description}
-  ogImage={entry.data.featuredImage ?? undefined}
-  jsonLd={jsonLd}
->
-  {kind === "blog" ? (
-    <!-- Blog post: tight prose column -->
-    <main class="mx-auto max-w-3xl px-6 py-16">
-      <p class="mb-4 text-sm font-medium uppercase tracking-wider text-slate-500">
-        <a href="/blog/" class="hover:text-slate-700">← Blog</a>
-      </p>
-      <article>
-        <header class="mb-10">
-          <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">{entry.data.title}</h1>
-          {entry.data.description && (
-            <p class="mt-4 text-xl text-slate-600">{entry.data.description}</p>
-          )}
-          {"pubDate" in entry.data && (
-            <p class="mt-4 text-sm text-slate-500">
-              {fmt(entry.data.pubDate as Date)}
-              {"author" in entry.data && entry.data.author && ` · ${entry.data.author}`}
-            </p>
-          )}
-          {entry.data.featuredImage && (
-            <img
-              src={entry.data.featuredImage}
-              alt=""
-              class="mt-8 w-full rounded-lg object-cover"
-            />
-          )}
-        </header>
-        <div class="prose prose-slate max-w-none prose-img:rounded-lg prose-a:text-slate-900 prose-a:underline-offset-4 hover:prose-a:text-slate-700">
-          <Content />
-        </div>
-      </article>
-    </main>
-  ) : (
-    <!-- Marketing page: hero + wider content + bottom CTA -->
-    <>
-      <section class="bg-gradient-to-b from-slate-50 to-white">
-        <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
-          <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
-            <a href="/" class="hover:text-slate-700">Home</a>
-            <span class="mx-2 text-slate-300">/</span>
-            <span class="text-slate-700">{entry.data.title}</span>
-          </nav>
-          <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">{entry.data.title}</h1>
-          {entry.data.description && (
-            <p class="mt-6 max-w-3xl text-xl text-slate-600">{entry.data.description}</p>
-          )}
-        </div>
-      </section>
-
-      <main class="mx-auto max-w-5xl px-6 py-12 sm:py-16">
-        <article class="prose prose-slate prose-lg max-w-none
-          prose-headings:tracking-tight prose-headings:text-slate-900
-          prose-h2:mt-16 prose-h2:text-3xl prose-h2:font-bold prose-h2:border-b prose-h2:border-slate-200 prose-h2:pb-3
-          prose-h3:mt-10 prose-h3:text-xl prose-h3:font-semibold
-          prose-h6:mt-8 prose-h6:text-sm prose-h6:font-semibold prose-h6:uppercase prose-h6:tracking-wider prose-h6:text-slate-500
-          prose-p:text-slate-700
-          prose-img:rounded-lg prose-img:my-6
-          prose-a:text-slate-900 prose-a:underline-offset-4 hover:prose-a:text-slate-700
-          prose-strong:text-slate-900
-          prose-li:my-1">
-          <Content />
+{platformEntry && platformConfig ? (
+  <PlatformPage entry={platformEntry} config={platformConfig} />
+) : (
+  <Base
+    title={`${entry.data.title} — ${SITE.name}`}
+    description={entry.data.description}
+    ogImage={entry.data.featuredImage ?? undefined}
+    jsonLd={jsonLd}
+  >
+    {kind === "blog" ? (
+      <main class="mx-auto max-w-3xl px-6 py-16">
+        <p class="mb-4 text-sm font-medium uppercase tracking-wider text-slate-500">
+          <a href="/blog/" class="hover:text-slate-700">← Blog</a>
+        </p>
+        <article>
+          <header class="mb-10">
+            <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">{entry.data.title}</h1>
+            {entry.data.description && (
+              <p class="mt-4 text-xl text-slate-600">{entry.data.description}</p>
+            )}
+            {"pubDate" in entry.data && (
+              <p class="mt-4 text-sm text-slate-500">
+                {fmt(entry.data.pubDate as Date)}
+                {"author" in entry.data && entry.data.author && ` · ${entry.data.author}`}
+              </p>
+            )}
+            {entry.data.featuredImage && (
+              <img
+                src={entry.data.featuredImage}
+                alt=""
+                class="mt-8 w-full rounded-lg object-cover"
+              />
+            )}
+          </header>
+          <div class="prose prose-slate max-w-none prose-img:rounded-lg prose-a:text-slate-900 prose-a:underline-offset-4 hover:prose-a:text-slate-700">
+            <Content />
+          </div>
         </article>
       </main>
-
-      <!-- Bottom CTA -->
-      <section class="bg-[#16161D]">
-        <div class="mx-auto max-w-4xl px-6 py-20 text-center">
-          <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Turn shoppers into confident buyers with a Product Recommendation Quiz that drives sales.
-          </h2>
-          <div class="mt-10 flex flex-wrap justify-center gap-3">
-            <a
-              href={SHOPIFY_INSTALL}
-              target="_blank"
-              rel="external noopener nofollow"
-              class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
-            >
-              install on Shopify
-            </a>
-            <a
-              href={WOOCOMMERCE_DOWNLOAD}
-              target="_blank"
-              rel="external noopener nofollow"
-              class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
-            >
-              get for WooCommerce
-            </a>
+    ) : (
+      <>
+        <section class="bg-gradient-to-b from-slate-50 to-white">
+          <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+            <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
+              <a href="/" class="hover:text-slate-700">Home</a>
+              <span class="mx-2 text-slate-300">/</span>
+              <span class="text-slate-700">{entry.data.title}</span>
+            </nav>
+            <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">{entry.data.title}</h1>
+            {entry.data.description && (
+              <p class="mt-6 max-w-3xl text-xl text-slate-600">{entry.data.description}</p>
+            )}
           </div>
-        </div>
-      </section>
-    </>
-  )}
-</Base>
+        </section>
+
+        <main class="mx-auto max-w-5xl px-6 py-12 sm:py-16">
+          <article class="prose prose-slate prose-lg max-w-none
+            prose-headings:tracking-tight prose-headings:text-slate-900
+            prose-h2:mt-16 prose-h2:text-3xl prose-h2:font-bold prose-h2:border-b prose-h2:border-slate-200 prose-h2:pb-3
+            prose-h3:mt-10 prose-h3:text-xl prose-h3:font-semibold
+            prose-h6:mt-8 prose-h6:text-sm prose-h6:font-semibold prose-h6:uppercase prose-h6:tracking-wider prose-h6:text-slate-500
+            prose-p:text-slate-700
+            prose-img:rounded-lg prose-img:my-6
+            prose-a:text-slate-900 prose-a:underline-offset-4 hover:prose-a:text-slate-700
+            prose-strong:text-slate-900
+            prose-li:my-1">
+            <Content />
+          </article>
+        </main>
+
+        <section class="bg-[#16161D]">
+          <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Turn shoppers into confident buyers with a Product Recommendation Quiz that drives sales.
+            </h2>
+            <div class="mt-10 flex flex-wrap justify-center gap-3">
+              <a
+                href={SHOPIFY_INSTALL}
+                target="_blank"
+                rel="external noopener nofollow"
+                class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+              >
+                install on Shopify
+              </a>
+              <a
+                href={WOOCOMMERCE_DOWNLOAD}
+                target="_blank"
+                rel="external noopener nofollow"
+                class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
+              >
+                get for WooCommerce
+              </a>
+            </div>
+          </div>
+        </section>
+      </>
+    )}
+  </Base>
+)}

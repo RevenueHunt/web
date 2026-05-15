@@ -1,8 +1,8 @@
 ---
 import { SITE } from "../lib/site";
 
-/* Nav structure mirrors revenuehunt.com (audited 2026-05-15).
-   `external: true` opens in a new tab and rel=external nofollow. */
+/* Nav structure mirrors the design screenshot (2026-05-15):
+   Home · Platforms ▾ · Pricing · Resources ▾ · [Book a demo] [Sign up] */
 const platforms = [
   { label: "Shopify", href: "/product-recommendation-quiz-shopify/" },
   { label: "WooCommerce", href: "/product-recommendation-quiz-woocommerce/" },
@@ -12,6 +12,7 @@ const platforms = [
 
 const resources = [
   { label: "How it works", href: "/how-it-works/" },
+  { label: "Blog", href: "/blog/" },
   { label: "Testimonials", href: "/testimonials/" },
   { label: "Integrations", href: "/integrations/" },
   { label: "Quiz templates", href: "/templates/" },
@@ -21,6 +22,7 @@ const resources = [
   { label: "Help center", href: "https://docs.revenuehunt.com/", external: true },
 ];
 
+const SIGNUP_URL = `${SITE.app_url}/signup`;
 ---
 
 <header class="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur">
@@ -31,6 +33,8 @@ const resources = [
 
     <!-- Desktop nav -->
     <nav class="hidden items-center gap-1 lg:flex" aria-label="Primary">
+      <a href="/" class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-slate-900">Home</a>
+
       <!-- Platforms dropdown -->
       <div class="group relative">
         <button
@@ -86,19 +90,21 @@ const resources = [
           </ul>
         </div>
       </div>
-
-      <a href="/blog/" class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-slate-900">Blog</a>
-      <a href="/demo/" class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-slate-900">Book a demo</a>
     </nav>
 
     <!-- Desktop CTAs -->
     <div class="hidden items-center gap-3 lg:flex">
-      <a href={`${SITE.app_url}/login`} class="text-sm font-medium text-slate-700 transition hover:text-slate-900">Log in</a>
       <a
-        href={`${SITE.app_url}/signup`}
-        class="rounded-md bg-[#16161D] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#26262e]"
+        href="/demo/"
+        class="inline-flex items-center justify-center rounded-md border border-[#16161D] bg-white px-4 py-2 text-sm font-semibold text-[#16161D] transition hover:bg-slate-50"
       >
-        Start free trial
+        Book a demo
+      </a>
+      <a
+        href={SIGNUP_URL}
+        class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#26262e]"
+      >
+        Sign up
       </a>
     </div>
 
@@ -111,6 +117,8 @@ const resources = [
       </summary>
       <div class="fixed inset-x-0 top-[65px] z-50 max-h-[calc(100vh-65px)] overflow-y-auto border-b border-slate-200 bg-white shadow-lg">
         <nav class="mx-auto max-w-6xl px-6 py-6" aria-label="Mobile primary">
+          <a href="/" class="block border-b border-slate-100 py-3 text-base font-semibold text-slate-900">Home</a>
+
           <details class="group/sub border-b border-slate-100 py-3">
             <summary class="flex cursor-pointer items-center justify-between text-base font-semibold text-slate-900">
               Platforms
@@ -149,21 +157,18 @@ const resources = [
             </ul>
           </details>
 
-          <a href="/blog/" class="block border-b border-slate-100 py-3 text-base font-semibold text-slate-900">Blog</a>
-          <a href="/demo/" class="block border-b border-slate-100 py-3 text-base font-semibold text-slate-900">Book a demo</a>
-
           <div class="mt-6 flex flex-col gap-3">
             <a
-              href={`${SITE.app_url}/signup`}
+              href={SIGNUP_URL}
               class="rounded-md bg-[#16161D] px-4 py-3 text-center text-base font-semibold text-white"
             >
-              Start free trial
+              Sign up
             </a>
             <a
-              href={`${SITE.app_url}/login`}
-              class="rounded-md border border-slate-200 px-4 py-3 text-center text-base font-semibold text-slate-900"
+              href="/demo/"
+              class="rounded-md border border-[#16161D] bg-white px-4 py-3 text-center text-base font-semibold text-[#16161D]"
             >
-              Log in
+              Book a demo
             </a>
           </div>
         </nav>

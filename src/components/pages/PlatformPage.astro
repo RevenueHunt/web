@@ -1,0 +1,182 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { render } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import { organization, breadcrumb } from "../../lib/schema";
+import { SITE } from "../../lib/site";
+import type { PlatformConfig } from "../../lib/platforms";
+
+interface Props {
+  entry: CollectionEntry<"pages">;
+  config: PlatformConfig;
+}
+
+const { entry, config } = Astro.props;
+const { Content } = await render(entry);
+
+const SHOPIFY_INSTALL =
+  "https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=platform_bottom";
+const WOOCOMMERCE_DOWNLOAD =
+  "https://downloads.wordpress.org/plugin/product-recommendation-quiz-for-ecommerce.latest-stable.zip";
+
+const pillars = [
+  {
+    image: "/img/pages/home/recommend-right-products.svg",
+    title: "Recommend the right products",
+    body:
+      "Shoppable quizzes drive sales, advise customers on finding the right products for them, and help them make confident purchasing decisions.",
+  },
+  {
+    image: "/img/pages/home/know-your-customers.svg",
+    title: "Know your customers",
+    body:
+      "Quizzes let you collect actionable data by asking your customers targeted questions. Segment and tag your shoppers based on their responses.",
+  },
+  {
+    image: "/img/pages/home/grow-your-audience.svg",
+    title: "Grow your audience",
+    body:
+      "Send captured leads to your mailing list or CRM. Leverage customer profile data to create more personalized, higher ROI marketing campaigns.",
+  },
+];
+
+const jsonLd = [
+  organization(),
+  breadcrumb([
+    { name: "Home", url: "/" },
+    { name: entry.data.title, url: `/${entry.data.legacySlug}/` },
+  ]),
+];
+
+function rel(c: { external?: boolean }) {
+  return c.external ? { target: "_blank", rel: "external noopener" } : {};
+}
+---
+
+<Base
+  title={`${entry.data.title} — ${SITE.name}`}
+  description={entry.data.description}
+  ogImage={entry.data.featuredImage ?? undefined}
+  jsonLd={jsonLd}
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-7xl px-6 py-16 lg:py-20">
+      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-slate-700">Home</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <span class="text-slate-700">{config.platform}</span>
+      </nav>
+
+      <div class={`grid items-center gap-12 ${config.youtubeId ? "lg:grid-cols-2 lg:gap-16" : ""}`}>
+        <div>
+          <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+            {entry.data.title}
+          </h1>
+          {entry.data.description && (
+            <p class="mt-6 max-w-xl text-lg text-slate-700">{entry.data.description}</p>
+          )}
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a
+              href={config.primary.href}
+              {...rel(config.primary)}
+              class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
+            >
+              {config.primary.label}
+            </a>
+            {config.secondary && (
+              <a
+                href={config.secondary.href}
+                {...rel(config.secondary)}
+                class="inline-flex items-center justify-center rounded-md border border-[#16161D] bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-50"
+              >
+                {config.secondary.label}
+              </a>
+            )}
+          </div>
+          <p class="mt-4 text-sm text-slate-500">
+            Free plan available · 14-day free trial · 30-day money-back guarantee
+          </p>
+        </div>
+
+        {config.youtubeId && (
+          <div>
+            <div class="aspect-video overflow-hidden rounded-xl bg-slate-900 shadow-2xl">
+              <iframe
+                src={`https://www.youtube-nocookie.com/embed/${config.youtubeId}?rel=0`}
+                title={`${entry.data.title} — video tour`}
+                loading="lazy"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                class="h-full w-full"
+              />
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  </section>
+
+  <!-- 3-up pillars -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-6 py-16 sm:py-20">
+      <div class="grid gap-10 md:grid-cols-3">
+        {pillars.map((p) => (
+          <div class="text-center">
+            <img src={p.image} alt="" width="120" height="120" class="mx-auto h-24 w-24" loading="lazy" />
+            <h2 class="mt-6 text-xl font-semibold text-slate-900">{p.title}</h2>
+            <p class="mt-3 text-slate-600">{p.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Page body content (from MD) -->
+  <main class="mx-auto max-w-5xl px-6 py-16">
+    <article class="platform-prose prose prose-slate prose-lg max-w-none
+      prose-headings:tracking-tight prose-headings:text-slate-900
+      prose-h2:mt-16 prose-h2:text-3xl prose-h2:font-bold prose-h2:border-b prose-h2:border-slate-200 prose-h2:pb-3
+      prose-h3:mt-10 prose-h3:text-xl prose-h3:font-semibold
+      prose-h6:mt-8 prose-h6:text-sm prose-h6:font-semibold prose-h6:uppercase prose-h6:tracking-wider prose-h6:text-slate-500
+      prose-p:text-slate-700
+      prose-img:rounded-lg prose-img:my-6
+      prose-a:text-slate-900 prose-a:underline-offset-4 hover:prose-a:text-slate-700
+      prose-strong:text-slate-900">
+      <Content />
+    </article>
+  </main>
+
+  <!-- Bottom CTA -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Turn shoppers into confident buyers with a Product Recommendation Quiz that drives sales.
+      </h2>
+      <div class="mt-10 flex flex-wrap justify-center gap-3">
+        <a
+          href={SHOPIFY_INSTALL}
+          target="_blank"
+          rel="external noopener nofollow"
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          install on Shopify
+        </a>
+        <a
+          href={WOOCOMMERCE_DOWNLOAD}
+          target="_blank"
+          rel="external noopener nofollow"
+          class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
+        >
+          get for WooCommerce
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style is:global>
+  /* The scraped MD body for platform pages opens with an iframe + CTA links
+     that duplicate the hero. Hide them in this layout — the hero owns the CTAs. */
+  .platform-prose iframe { display: none; }
+</style>

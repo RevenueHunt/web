@@ -169,12 +169,15 @@ const jsonLd = [
   </style>
 
   <script is:inline>
-    document.addEventListener("DOMContentLoaded", async () => {
+    document.addEventListener("DOMContentLoaded", () => {
       const mount = document.getElementById("blog-search");
       if (!mount) return;
-      try {
-        const mod = await import("/pagefind/pagefind-ui.js");
-        new mod.PagefindUI({
+      const init = () => {
+        if (typeof window.PagefindUI !== "function") {
+          mount.innerHTML = '<p class="text-sm text-slate-500">Search bundle loaded but PagefindUI is missing.</p>';
+          return;
+        }
+        new window.PagefindUI({
           element: "#blog-search",
           showSubResults: true,
           showImages: true,
@@ -182,9 +185,21 @@ const jsonLd = [
           showEmptyFilters: false,
           placeholder: "Search the blog…",
         });
-      } catch {
-        mount.innerHTML = '<p class="text-sm text-slate-500">Search is unavailable in dev mode — run <code>bun run build &amp;&amp; bun run preview</code>.</p>';
+      };
+      // pagefind-ui.js is an IIFE that hangs PagefindUI on window — load it as
+      // a regular <script>, not via dynamic import (which would succeed but
+      // return an empty module namespace).
+      if (typeof window.PagefindUI === "function") {
+        init();
+        return;
       }
+      const s = document.createElement("script");
+      s.src = "/pagefind/pagefind-ui.js";
+      s.onload = init;
+      s.onerror = () => {
+        mount.innerHTML = '<p class="text-sm text-slate-500">Search is unavailable in dev mode — run <code>bun run build &amp;&amp; bun run preview</code>.</p>';
+      };
+      document.head.appendChild(s);
     });
   </script>
 

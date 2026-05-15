@@ -89,11 +89,11 @@ for (const [slug, name] of tags) {
   });
 }
 
-test("/search/ renders the Pagefind search container", async ({ request }) => {
-  const res = await request.get("/search/");
+test("/blog/ hosts the inline Pagefind search input", async ({ request }) => {
+  const res = await request.get("/blog/");
   expect(res.status()).toBe(200);
   const html = await res.text();
-  expect(html).toMatch(/id="search"/);
+  expect(html).toMatch(/id="blog-search"/);
   expect(html).toMatch(/\/pagefind\/pagefind-ui\.css/);
 });
 

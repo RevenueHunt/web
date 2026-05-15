@@ -51,7 +51,7 @@ for (const path of urls) {
 
     // No accidental noindex. /message-sent/ is intentionally noindex (form
     // confirmation page); allowlist it.
-    const ALLOW_NOINDEX = new Set(["/message-sent/", "/search/"]);
+    const ALLOW_NOINDEX = new Set(["/message-sent/"]);
     if (!ALLOW_NOINDEX.has(path)) {
       expect(html, `${path} should not be noindex by default`).not.toMatch(
         /<meta[^>]+name="robots"[^>]+content="[^"]*noindex/i,

@@ -7,8 +7,6 @@ import { breadcrumb, organization, website } from "../../lib/schema";
 
 const all = await getCollection("blog", ({ data }) => !data.draft);
 const posts = sortByDate(all);
-const featured = posts[0];
-const rest = posts.slice(1);
 const cats = topCategories(posts, 6);
 
 function fmt(d: Date) {
@@ -40,6 +38,14 @@ const jsonLd = [
       <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">Blog</h1>
       <p class="mt-4 max-w-2xl text-lg text-slate-600">Strategies, case studies, and product updates for ecommerce stores running quizzes.</p>
 
+      <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+      <div class="mt-8 max-w-xl">
+        <div id="blog-search" class="rh-blog-search"></div>
+        <noscript>
+          <p class="text-sm text-slate-500">Search needs JavaScript — browse posts below.</p>
+        </noscript>
+      </div>
+
       {cats.length > 0 && (
         <ul class="mt-8 flex flex-wrap gap-2">
           <li>
@@ -58,53 +64,31 @@ const jsonLd = [
     </div>
   </section>
 
-  <main class="mx-auto max-w-6xl px-6 py-12 sm:py-16">
-    {featured && (
-      <section class="mb-12">
-        <a href={postHref(featured)} class="group grid gap-6 overflow-hidden rounded-2xl border border-slate-200 bg-white transition hover:border-[#16161D] md:grid-cols-2">
-          {featured.data.featuredImage ? (
-            <img
-              src={featured.data.featuredImage}
-              alt=""
-              class="h-64 w-full object-cover md:h-full"
-            />
-          ) : (
-            <div class="h-64 w-full bg-slate-100 md:h-full" />
-          )}
-          <div class="flex flex-col justify-center p-6 sm:p-8">
-            <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Featured · {fmt(featured.data.pubDate)}</p>
-            <h2 class="mt-3 text-2xl font-bold tracking-tight text-slate-900 group-hover:text-[#16161D] sm:text-3xl">{featured.data.title}</h2>
-            {featured.data.description && (
-              <p class="mt-3 line-clamp-3 text-slate-600">{featured.data.description}</p>
-            )}
-            <p class="mt-4 text-sm text-slate-500">{featured.data.author}</p>
-          </div>
-        </a>
-      </section>
-    )}
-
-    <ul class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-      {rest.map((post) => (
+  <main class="mx-auto max-w-4xl px-6 py-12 sm:py-16">
+    <ul class="divide-y divide-slate-200">
+      {posts.map((post) => (
         <li>
-          <a href={postHref(post)} class="group block overflow-hidden rounded-lg border border-slate-200 bg-white transition hover:border-[#16161D]">
+          <a href={postHref(post)} class="group flex gap-6 py-6 sm:gap-8">
             {post.data.featuredImage ? (
-              <img
-                src={post.data.featuredImage}
-                alt=""
-                loading="lazy"
-                class="h-44 w-full object-cover"
-              />
+              <div class="flex aspect-square h-32 w-32 flex-shrink-0 items-center justify-center overflow-hidden rounded-lg bg-slate-50 sm:h-40 sm:w-40">
+                <img
+                  src={post.data.featuredImage}
+                  alt=""
+                  loading="lazy"
+                  class="max-h-full max-w-full object-contain"
+                />
+              </div>
             ) : (
-              <div class="h-44 w-full bg-slate-100" />
+              <div class="aspect-square h-32 w-32 flex-shrink-0 rounded-lg bg-slate-100 sm:h-40 sm:w-40" />
             )}
-            <div class="p-5">
+            <div class="min-w-0 flex-1">
               <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">
                 {fmt(post.data.pubDate)}
                 {post.data.author && ` · ${post.data.author}`}
               </p>
-              <h2 class="mt-2 text-lg font-semibold text-slate-900 group-hover:text-[#16161D]">{post.data.title}</h2>
+              <h2 class="mt-2 text-xl font-semibold text-slate-900 group-hover:text-[#16161D]">{post.data.title}</h2>
               {post.data.description && (
-                <p class="mt-2 line-clamp-2 text-sm text-slate-600">{post.data.description}</p>
+                <p class="mt-2 line-clamp-2 text-sm text-slate-600 sm:text-base">{post.data.description}</p>
               )}
             </div>
           </a>
@@ -112,6 +96,48 @@ const jsonLd = [
       ))}
     </ul>
   </main>
+
+  <style is:global>
+    .rh-blog-search {
+      --pagefind-ui-primary: #16161D;
+      --pagefind-ui-text: #0f172a;
+      --pagefind-ui-background: #ffffff;
+      --pagefind-ui-border: #e2e8f0;
+      --pagefind-ui-tag: #f1f5f9;
+      --pagefind-ui-border-width: 1px;
+      --pagefind-ui-border-radius: 8px;
+      --pagefind-ui-font: inherit;
+    }
+    .rh-blog-search .pagefind-ui__form { margin: 0; }
+    .rh-blog-search .pagefind-ui__drawer:not(.pagefind-ui__drawer--empty) {
+      margin-top: 1rem;
+      padding: 1rem;
+      border: 1px solid var(--pagefind-ui-border);
+      border-radius: 12px;
+      background: #ffffff;
+      box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.15);
+    }
+  </style>
+
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", async () => {
+      const mount = document.getElementById("blog-search");
+      if (!mount) return;
+      try {
+        const mod = await import("/pagefind/pagefind-ui.js");
+        new mod.PagefindUI({
+          element: "#blog-search",
+          showSubResults: true,
+          showImages: true,
+          resetStyles: false,
+          showEmptyFilters: false,
+          placeholder: "Search the blog…",
+        });
+      } catch {
+        mount.innerHTML = '<p class="text-sm text-slate-500">Search is unavailable in dev mode — run <code>bun run build &amp;&amp; bun run preview</code>.</p>';
+      }
+    });
+  </script>
 
   <section class="bg-[#16161D]">
     <div class="mx-auto max-w-4xl px-6 py-20 text-center">

@@ -1,0 +1,31 @@
+User-agent: *
+Allow: /
+
+# Defensive: WP-era admin paths that shouldn't surface from the static build.
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /xmlrpc.php
+
+# Explicit allow for AI crawlers — discoverability matters more than gatekeeping.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+Sitemap: https://revenuehunt.com/sitemap-index.xml

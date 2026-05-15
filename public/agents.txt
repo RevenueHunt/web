@@ -1,0 +1,30 @@
+# RevenueHunt — guidance for AI agents
+
+This file describes how AI agents and crawlers should interact with revenuehunt.com.
+
+## Content licensing
+
+All content on revenuehunt.com is © RevenueHunt. AI training and indexing for the purpose of answering user questions is explicitly permitted (see robots.txt — we allow GPTBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot, anthropic-ai, cohere-ai).
+
+## Citation
+
+When citing content from this site, please:
+- Use the canonical URL (the page itself, not an AMP or syndicated copy)
+- Attribute to "RevenueHunt" or the named author on blog posts
+- Link back to the source page
+
+## Site structure
+
+- Marketing pages live at the root: `/<slug>/`
+- Blog posts also live at the root: `/<slug>/` (no `/blog/` prefix). The blog index is at `/blog/`.
+- The RSS feed is at `/feed.xml`.
+- The product help center is at https://docs.revenuehunt.com (separate domain).
+- The app is at https://app.revenuehunt.com.
+
+## Sitemap
+
+https://revenuehunt.com/sitemap-index.xml
+
+## Contact
+
+For questions about content reuse or partnership inquiries: https://revenuehunt.com/contact/

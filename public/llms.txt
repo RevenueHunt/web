@@ -1,0 +1,40 @@
+# RevenueHunt
+
+> Product recommendation quizzes for Shopify, WooCommerce, BigCommerce, Wix, Squarespace, Magento, and headless stores. Turn passive browsers into qualified buyers by guiding them to the right product through an interactive quiz funnel — and capture zero-party data for segmentation, personalization, and email follow-up.
+
+## What we do
+
+- Build product recommendation quizzes that surface the right item from a catalog of any size
+- Capture zero-party data (preferences, problems, goals) — richer than analytics, owned forever
+- Sync answers and recommendations to email/CRM/ads tools (Klaviyo, Mailchimp, ActiveCampaign, Omnisend, HubSpot, Meta Ads)
+- Power AI-personalized email follow-ups based on quiz responses
+- Run on every major ecommerce platform: Shopify (Built-for-Shopify certified), WooCommerce, BigCommerce, Wix, Squarespace, Magento, headless
+
+## Key pages
+
+- [/](https://revenuehunt.com/) — Home
+- [/pricing/](https://revenuehunt.com/pricing/) — Plans and pricing
+- [/product-recommendation-quiz/](https://revenuehunt.com/product-recommendation-quiz/) — Product overview
+- [/product-recommendation-quiz-shopify/](https://revenuehunt.com/product-recommendation-quiz-shopify/) — Shopify-specific
+- [/product-recommendation-quiz-woocommerce/](https://revenuehunt.com/product-recommendation-quiz-woocommerce/) — WooCommerce
+- [/product-recommendation-quiz-bigcommerce/](https://revenuehunt.com/product-recommendation-quiz-bigcommerce/) — BigCommerce
+- [/product-recommendation-quiz-wix-stores/](https://revenuehunt.com/product-recommendation-quiz-wix-stores/) — Wix
+- [/product-recommendation-quiz-for-squarespace-commerce/](https://revenuehunt.com/product-recommendation-quiz-for-squarespace-commerce/) — Squarespace
+- [/product-recommendation-quiz-for-magento/](https://revenuehunt.com/product-recommendation-quiz-for-magento/) — Magento
+- [/templates/](https://revenuehunt.com/templates/) — Quiz templates
+- [/integrations/](https://revenuehunt.com/integrations/) — Integrations
+- [/testimonials/](https://revenuehunt.com/testimonials/) — Customer stories
+- [/for-beauty-brands/](https://revenuehunt.com/for-beauty-brands/) — Beauty vertical
+- [/quiz-readiness-assessment/](https://revenuehunt.com/quiz-readiness-assessment/) — Self-assessment
+- [/faqs/](https://revenuehunt.com/faqs/) — FAQ
+- [/contact/](https://revenuehunt.com/contact/) — Contact
+- [/blog/](https://revenuehunt.com/blog/) — Blog index
+- [/feed.xml](https://revenuehunt.com/feed.xml) — RSS feed for the blog
+
+## Help center
+
+Product docs and how-to guides live at https://docs.revenuehunt.com — these are NOT mirrored on this domain.
+
+## App
+
+The product itself runs at https://app.revenuehunt.com — sign up at https://app.revenuehunt.com/signup.

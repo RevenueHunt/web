@@ -1,18 +1,43 @@
 ---
+import { getEntry, render } from "astro:content";
 import Base from "../layouts/Base.astro";
+import { organization, website } from "../lib/schema";
 import { SITE } from "../lib/site";
+
+const home = await getEntry("pages", "home");
+if (!home) throw new Error("Missing src/content/pages/home.md — run `bun run scrape`.");
+const { Content } = await render(home);
 ---
 
-<Base title={`${SITE.name} — product recommendation quizzes for Shopify`}>
-  <main class="mx-auto max-w-3xl px-6 py-24">
-    <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
-      Welcome to {SITE.name}
-    </h1>
-    <p class="mt-6 text-lg text-slate-600">
-      This is the Astro skeleton for revenuehunt.com. Real content lands in Phase 2.
-    </p>
-    <p class="mt-2 text-sm text-slate-500">
-      See <code class="rounded bg-slate-100 px-1.5 py-0.5">PRD-Website-Astro-Migration.md</code> at the project root.
-    </p>
+<Base
+  title={`${SITE.name} — product recommendation quizzes for ecommerce`}
+  description={home.data.description}
+  jsonLd={[organization(), website()]}
+>
+  <main class="mx-auto max-w-5xl px-6 py-16">
+    <section class="mb-16 text-center">
+      <h1 class="text-5xl font-bold tracking-tight text-slate-900 sm:text-6xl">
+        Turn browsers into buyers with a personalized quiz
+      </h1>
+      <p class="mx-auto mt-6 max-w-2xl text-xl text-slate-600">{home.data.description}</p>
+      <div class="mt-10 flex justify-center gap-4">
+        <a
+          href={`${SITE.app_url}/signup`}
+          class="rounded-md bg-slate-900 px-6 py-3 text-base font-semibold text-white transition hover:bg-slate-800"
+        >
+          Start free trial
+        </a>
+        <a
+          href="/product-recommendation-quiz/"
+          class="rounded-md border border-slate-300 px-6 py-3 text-base font-semibold text-slate-900 transition hover:border-slate-400"
+        >
+          See how it works
+        </a>
+      </div>
+    </section>
+
+    <article class="prose prose-slate max-w-none prose-img:rounded-lg prose-a:text-slate-900 prose-a:underline-offset-4 hover:prose-a:text-slate-700">
+      <Content />
+    </article>
   </main>
 </Base>

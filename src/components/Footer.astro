@@ -1,0 +1,70 @@
+---
+import { SITE } from "../lib/site";
+
+const groups: { heading: string; links: { label: string; href: string }[] }[] = [
+  {
+    heading: "Product",
+    links: [
+      { label: "Shop Quiz for Shopify", href: "/product-recommendation-quiz-shopify/" },
+      { label: "Shop Quiz for WooCommerce", href: "/product-recommendation-quiz-woocommerce/" },
+      { label: "Shop Quiz for BigCommerce", href: "/product-recommendation-quiz-bigcommerce/" },
+      { label: "Shop Quiz for Wix", href: "/product-recommendation-quiz-wix-stores/" },
+      { label: "Pricing", href: "/pricing/" },
+      { label: "Templates", href: "/templates/" },
+    ],
+  },
+  {
+    heading: "Solutions",
+    links: [
+      { label: "For beauty brands", href: "/for-beauty-brands/" },
+      { label: "Integrations", href: "/integrations/" },
+      { label: "Quiz readiness assessment", href: "/quiz-readiness-assessment/" },
+    ],
+  },
+  {
+    heading: "Company",
+    links: [
+      { label: "Customers", href: "/testimonials/" },
+      { label: "Partners", href: "/partners/" },
+      { label: "Jobs", href: "/jobs/" },
+      { label: "Contact", href: "/contact/" },
+      { label: "Blog", href: "/blog/" },
+    ],
+  },
+  {
+    heading: "Resources",
+    links: [
+      { label: "FAQs", href: "/faqs/" },
+      { label: "What's new", href: "/whats-new/" },
+      { label: "Newsletter", href: "/newsletter/" },
+      { label: "Help center", href: "https://docs.revenuehunt.com" },
+    ],
+  },
+];
+const year = new Date().getFullYear();
+---
+
+<footer class="mt-24 border-t border-slate-200 bg-slate-50">
+  <div class="mx-auto max-w-6xl px-6 py-16">
+    <div class="grid grid-cols-2 gap-10 md:grid-cols-4">
+      {groups.map((g) => (
+        <div>
+          <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-500">{g.heading}</h3>
+          <ul class="mt-4 space-y-2 text-sm text-slate-700">
+            {g.links.map((l) => (
+              <li><a href={l.href} class="transition hover:text-slate-900">{l.label}</a></li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+    <div class="mt-12 flex flex-col items-start justify-between gap-4 border-t border-slate-200 pt-8 text-sm text-slate-600 md:flex-row md:items-center">
+      <p>&copy; {year} {SITE.name}. All rights reserved.</p>
+      <ul class="flex gap-5">
+        <li><a href="/privacy/" class="transition hover:text-slate-900">Privacy</a></li>
+        <li><a href="/tos/" class="transition hover:text-slate-900">Terms</a></li>
+        <li><a href="/feed.xml" class="transition hover:text-slate-900">RSS</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>

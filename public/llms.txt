@@ -37,4 +37,4 @@ Product docs and how-to guides live at https://docs.revenuehunt.com — these ar
 
 ## App
 
-The product itself runs at https://app.revenuehunt.com — sign up at https://app.revenuehunt.com/signup.
+The product itself runs at https://admin.revenuehunt.com — sign up at https://admin.revenuehunt.com/register/.

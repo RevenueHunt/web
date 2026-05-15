@@ -8,7 +8,8 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && pagefind --site dist",
+    "build": "bun scripts/generate-og.ts && astro build && pagefind --site dist",
+    "og": "bun scripts/generate-og.ts",
     "preview": "astro preview",
     "astro": "astro",
     "typecheck": "astro check",

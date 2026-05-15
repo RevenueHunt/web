@@ -1,0 +1,256 @@
+---
+import Base from "../../layouts/Base.astro";
+import { organization, breadcrumb } from "../../lib/schema";
+import { SITE } from "../../lib/site";
+
+const QUIZ_EMBED = "https://admin.revenuehunt.com/public/quiz/bqHVL09";
+
+const pillars = [
+  {
+    image: "/img/pages/home/recommend-right-products.svg",
+    title: "Lead capture rate",
+    body: "Find out why shoppers aren't buying (and how to fix it).",
+  },
+  {
+    image: "/img/pages/home/know-your-customers.svg",
+    title: "Segmentation power",
+    body: "Learn how to send smarter, more profitable emails.",
+  },
+  {
+    image: "/img/pages/home/grow-your-audience.svg",
+    title: "Conversion flow",
+    body: "See exactly where to plug your product quiz for maximum results.",
+  },
+];
+
+const brands = [
+  "olaplex", "madluvv", "mattel", "alt", "baia", "bare", "biktrix",
+  "dermocracy", "diego", "gisou", "laura", "nuxe", "olcay",
+  "salad-code", "salugea", "sunday", "tushy", "tiege",
+];
+
+const jsonLd = [
+  organization(),
+  breadcrumb([
+    { name: "Home", url: "/" },
+    { name: "Quiz readiness assessment", url: "/quiz-readiness-assessment/" },
+  ]),
+];
+---
+
+<Base
+  title="Quiz readiness assessment — RevenueHunt"
+  description="Get your Quiz Readiness Score and a step-by-step plan to grow eCommerce sales with personalization. Start the 3-minute assessment."
+  jsonLd={jsonLd}
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20 text-center">
+      <nav class="mb-6 text-left text-sm text-slate-500" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-slate-700">Home</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <span class="text-slate-700">Quiz readiness assessment</span>
+      </nav>
+      <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+        Ready to <span class="text-[#16161D]">2–3×</span> your leads and convert more first-time visitors?
+      </h1>
+      <p class="mx-auto mt-6 max-w-2xl text-lg text-slate-700">
+        Get your Quiz Readiness Score and a step-by-step plan to grow your eCommerce sales with personalization.
+      </p>
+      <div class="mt-8 flex justify-center">
+        <a
+          href="#quiz"
+          class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
+        >
+          🚀 Start the 3-minute assessment
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem framing -->
+  <section class="mx-auto max-w-4xl px-6 py-16 text-center">
+    <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+      Ads bring traffic, but quizzes convert it.
+    </h2>
+    <p class="mx-auto mt-6 max-w-2xl text-lg text-slate-700">
+      Your store is probably losing visitors because shoppers don't know which product fits them best.
+      Discover how close you are to unlocking that growth.
+    </p>
+
+    <h3 class="mt-12 text-xl font-semibold text-slate-900">Take this 3-minute assessment to discover:</h3>
+    <ul class="mx-auto mt-6 max-w-xl space-y-3 text-left text-slate-700">
+      <li class="flex gap-3">
+        <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#16161D]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5 12 10 17 19 7"/></svg>
+        How ready your store is to launch a high-converting quiz
+      </li>
+      <li class="flex gap-3">
+        <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#16161D]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5 12 10 17 19 7"/></svg>
+        Where the biggest quick wins are for conversions
+      </li>
+      <li class="flex gap-3">
+        <svg class="mt-1 h-5 w-5 flex-shrink-0 text-[#16161D]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5 12 10 17 19 7"/></svg>
+        Your next best step to unlock growth
+      </li>
+    </ul>
+    <div class="mt-10">
+      <a
+        href="#quiz"
+        class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
+      >
+        Start the 3-minute assessment
+      </a>
+    </div>
+  </section>
+
+  <!-- 3-up pillars -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+          Get your personalized plan to turn browsers into buyers
+        </h2>
+      </div>
+      <div class="mt-12 grid gap-10 md:grid-cols-3">
+        {pillars.map((p) => (
+          <div class="text-center">
+            <img src={p.image} alt="" width="120" height="120" class="mx-auto h-24 w-24" loading="lazy" />
+            <h3 class="mt-6 text-xl font-semibold text-slate-900">{p.title}</h3>
+            <p class="mt-3 text-slate-600">{p.body}</p>
+          </div>
+        ))}
+      </div>
+      <div class="mt-12 text-center">
+        <a
+          href="#quiz"
+          class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
+        >
+          Reveal my readiness score
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quiz embed -->
+  <section id="quiz" class="bg-white scroll-mt-20">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <div class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <iframe
+          src={QUIZ_EMBED}
+          title="Quiz readiness assessment"
+          loading="lazy"
+          class="h-[760px] w-full"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust strip -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-7xl px-6 py-16">
+      <div class="text-center">
+        <h2 class="text-2xl font-bold tracking-tight text-white sm:text-3xl">
+          Trusted by over 20,000 brands worldwide
+        </h2>
+        <p class="mx-auto mt-4 max-w-3xl text-base text-white/80">
+          …and backed by 450+ five-star reviews across Shopify, WooCommerce, and more — RevenueHunt is the
+          go-to quiz app for driving sales through personalization. Just don't take our word for it.
+        </p>
+      </div>
+
+      <div class="brands-marquee mt-12">
+        <ul class="brands-marquee__track" aria-label="Customer brand logos">
+          {brands.map((b) => (
+            <li class="brands-marquee__item">
+              <img src={`/img/brands/${b}.svg`} alt={b} loading="lazy" width="160" height="40" />
+            </li>
+          ))}
+          {brands.map((b) => (
+            <li class="brands-marquee__item" aria-hidden="true">
+              <img src={`/img/brands/${b}.svg`} alt="" loading="lazy" width="160" height="40" />
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closer -->
+  <section class="mx-auto max-w-4xl px-6 py-20 text-center">
+    <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Why it works</h2>
+    <p class="mx-auto mt-6 max-w-2xl text-lg text-slate-700">
+      Turn more first-time visitors into subscribers and buyers by guiding them to the right products and
+      collecting high-intent emails along the way.
+    </p>
+    <div class="mt-10">
+      <a
+        href="#quiz"
+        class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
+      >
+        Get my step-by-step plan
+      </a>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <p class="mb-3 text-sm font-semibold uppercase tracking-wider text-white/70">
+        Ready to accelerate your growth?
+      </p>
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Get your personalized Readiness Report — see your score and next best steps.
+      </h2>
+      <div class="mt-10 flex justify-center">
+        <a
+          href="#quiz"
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          Get my readiness score
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .brands-marquee {
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  }
+  .brands-marquee__track {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    animation: qra-brands-marquee 40s linear infinite;
+  }
+  .brands-marquee:hover .brands-marquee__track {
+    animation-play-state: paused;
+  }
+  .brands-marquee__item {
+    flex-shrink: 0;
+    padding: 10px 24px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+  }
+  .brands-marquee__item img {
+    height: 100%;
+    width: auto;
+    max-width: 160px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.85;
+  }
+  @keyframes qra-brands-marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .brands-marquee__track { animation: none; }
+  }
+</style>

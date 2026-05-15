@@ -19,7 +19,7 @@ When citing content from this site, please:
 - Blog posts also live at the root: `/<slug>/` (no `/blog/` prefix). The blog index is at `/blog/`.
 - The RSS feed is at `/feed.xml`.
 - The product help center is at https://docs.revenuehunt.com (separate domain).
-- The app is at https://app.revenuehunt.com.
+- The app is at https://admin.revenuehunt.com.
 
 ## Sitemap
 

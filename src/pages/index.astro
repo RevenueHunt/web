@@ -351,16 +351,80 @@ const WOOCOMMERCE_REVIEWS =
   </section>
 
   <!-- Brand logos -->
-  <section class="bg-white">
+  <section class="bg-[#16161D]">
     <div class="mx-auto max-w-7xl px-6 py-16">
-      <h2 class="text-center text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Powering top eCommerce brands</h2>
-      <ul class="mx-auto mt-10 flex max-w-5xl flex-wrap items-center justify-center gap-x-8 gap-y-4 text-slate-500">
-        {brands.map((b) => (
-          <li class="text-base font-semibold tracking-tight">{b}</li>
-        ))}
-      </ul>
+      <h2 class="text-center text-2xl font-bold tracking-tight text-white sm:text-3xl">Powering top eCommerce brands</h2>
+      <div class="brands-marquee mt-10">
+        <ul class="brands-marquee__track" aria-label="Customer brand logos">
+          {brands.map((b) => (
+            <li class="brands-marquee__item">
+              <img
+                src={`/img/brands/${b.toLowerCase().replace(/ /g, "-")}.svg`}
+                alt={b}
+                loading="lazy"
+                width="160"
+                height="40"
+              />
+            </li>
+          ))}
+          {brands.map((b) => (
+            <li class="brands-marquee__item" aria-hidden="true">
+              <img
+                src={`/img/brands/${b.toLowerCase().replace(/ /g, "-")}.svg`}
+                alt=""
+                loading="lazy"
+                width="160"
+                height="40"
+              />
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   </section>
+
+  <style>
+    .brands-marquee {
+      overflow: hidden;
+      -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+      mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    }
+    .brands-marquee__track {
+      display: flex;
+      align-items: center;
+      width: max-content;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      animation: brands-marquee 40s linear infinite;
+    }
+    .brands-marquee:hover .brands-marquee__track {
+      animation-play-state: paused;
+    }
+    .brands-marquee__item {
+      flex-shrink: 0;
+      padding: 10px 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+    }
+    .brands-marquee__item img {
+      height: 100%;
+      width: auto;
+      max-width: 160px;
+      object-fit: contain;
+      /* Normalize mixed-fill SVGs to white on the dark strip. */
+      filter: brightness(0) invert(1);
+      opacity: 0.85;
+    }
+    @keyframes brands-marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .brands-marquee__track { animation: none; }
+    }
+  </style>
 
   <!-- Plans summary -->
   <section class="bg-slate-50">

@@ -1,4 +1,6 @@
-# revenuehunt-web
+# web
+
+> GitHub: [`RevenueHunt/web`](https://github.com/RevenueHunt/web)
 
 Astro 6 marketing site for `revenuehunt.com`. Migration target from WordPress + Yoast — see `../PRD-Website-Astro-Migration.md` for full context.
 

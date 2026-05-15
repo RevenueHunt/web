@@ -10,6 +10,19 @@ featuredImage: "/img/pages/jobs/partner-program.jpeg"
 draft: false
 ---
 
+[Home](https://revenuehunt.com/) » We’re hiring!
+
+  
+  
+
+## We’re hiring!
+
 #### **Current job listings:**
 
 -   June 2025 – [Technical Customer Support (100% remote)](https://revenuehunt.com/jobs/technical-customer-support/)
+
+Most shoppers leave because they can't find the right product
+
+## Turn shoppers into confident buyers with a Product Recommendation Quiz that drives sales.
+
+[sign up free](#quiz-X2HgnqJ)

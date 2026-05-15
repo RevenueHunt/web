@@ -201,19 +201,66 @@ async function writePost(p: WPPost): Promise<void> {
   await writeFile(join(BLOG_DIR, `${p.slug}.md`), fm);
 }
 
+/** Fall back to scraping live HTML when the REST API returns empty or thin
+ *  content. Some WP pages (testimonials, FAQ, message-sent) render entirely
+ *  via templates/plugins outside of content.rendered. */
+async function htmlFallbackBody(pageUrl: string): Promise<string | null> {
+  try {
+    const res = await fetch(pageUrl, { headers: { "User-Agent": "Mozilla/5.0 revenuehunt-web-scraper/1" } });
+    if (!res.ok) return null;
+    const html = await res.text();
+    // Strip scripts/styles before any matching — they often span large ranges
+    // and confuse greedy regexes.
+    let clean = html
+      .replace(/<script[\s\S]*?<\/script>/gi, "")
+      .replace(/<style[\s\S]*?<\/style>/gi, "")
+      .replace(/<noscript[\s\S]*?<\/noscript>/gi, "");
+
+    // Try several common WP content container patterns. The last pattern
+    // (slice between </header> and <footer>) is RevenueHunt's custom theme.
+    const containers: RegExp[] = [
+      /<main[^>]*id=["']main-content["'][^>]*>([\s\S]*?)<\/main>/i,
+      /<main[^>]*>([\s\S]*?)<\/main>/i,
+      /<article[^>]*>([\s\S]*?)<\/article>/i,
+      /<div[^>]+class=["'][^"']*(?:entry-content|page-content|site-content)[^"']*["'][^>]*>([\s\S]*?)<\/div>\s*<\/(?:main|article|section)>/i,
+      // Last-resort: everything between </header> and <footer> (catches custom themes)
+      /<\/header>([\s\S]*?)<footer/i,
+    ];
+    for (const re of containers) {
+      const m = clean.match(re);
+      if (m && m[1].replace(/<[^>]+>/g, "").trim().length > 200) {
+        return m[1];
+      }
+    }
+    return null;
+  } catch {
+    return null;
+  }
+}
+
 async function writePage(p: WPPage): Promise<void> {
   const featured = p._embedded?.["wp:featuredmedia"]?.[0]?.source_url ?? null;
   const slugDir = join(PAGE_IMG_DIR, p.slug);
   let featuredLocal: string | null = null;
   if (featured) featuredLocal = await downloadImage(featured, slugDir);
 
-  const inlineUrls = await collectInlineImageUrls(p.content.rendered);
+  let sourceHtml = p.content.rendered;
+  const visibleLen = sourceHtml.replace(/<[^>]+>/g, "").trim().length;
+  if (visibleLen < 200) {
+    const fallback = await htmlFallbackBody(p.link);
+    if (fallback) {
+      sourceHtml = fallback;
+      console.log(`\n  ↳ HTML fallback used for ${p.slug} (REST was ${visibleLen} chars)`);
+    }
+  }
+
+  const inlineUrls = await collectInlineImageUrls(sourceHtml);
   const downloads: { src: string; localName: string }[] = [];
   for (const u of inlineUrls) {
     const localName = await downloadImage(u, slugDir);
     if (localName) downloads.push({ src: u, localName });
   }
-  const rewritten = rewriteInlineImages(p.content.rendered, "pages", p.slug, downloads);
+  const rewritten = rewriteInlineImages(sourceHtml, "pages", p.slug, downloads);
 
   // Reference HTML (raw, for diffing against the rebuilt Astro page)
   const html = [

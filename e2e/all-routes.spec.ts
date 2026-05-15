@@ -1,11 +1,11 @@
 /**
  * Exhaustive smoke test: every URL in dist/sitemap-0.xml must return 200,
- * have a non-empty <title>, have a meaningful <main> body, and have
- * canonical + OG meta. Catches broken routes, missing content collection
- * entries, and accidental noindex flags.
+ * have a non-empty <title>, canonical pointing back to itself, OG meta,
+ * header + footer rendered, and a non-trivial body.
  *
- * Read URLs from the built sitemap rather than hard-coding — that way the
- * test list stays in sync with the actual build output.
+ * Uses Playwright's `request` fixture (HTTP only, no browser) for speed —
+ * regex assertions against the raw HTML are sufficient for these checks.
+ * Browser-based content-fidelity is a separate spec.
  */
 import { test, expect } from "@playwright/test";
 import { readFileSync } from "node:fs";
@@ -23,36 +23,33 @@ test(`sitemap has at least 100 URLs`, () => {
 });
 
 for (const path of urls) {
-  test(`GET ${path}`, async ({ page }) => {
-    const res = await page.goto(path);
-    expect(res?.status(), `${path} should return 200`).toBe(200);
+  test(`GET ${path}`, async ({ request }) => {
+    const res = await request.get(path);
+    expect(res.status(), `${path} should return 200`).toBe(200);
+    const html = await res.text();
 
-    // Title present and not the default Astro placeholder
-    const title = await page.title();
+    const title = html.match(/<title>([^<]+)<\/title>/)?.[1]?.trim() ?? "";
     expect(title.length, `${path} should have a non-empty title`).toBeGreaterThan(5);
-    expect(title).not.toBe("Astro");
+    expect(title, `${path} should have a real title, not "Astro"`).not.toBe("Astro");
 
-    // Canonical link points back to the same path
-    const canonical = await page.locator('link[rel="canonical"]').getAttribute("href");
+    const canonical = html.match(/<link[^>]+rel="canonical"[^>]+href="([^"]+)"/)?.[1] ?? "";
     expect(canonical, `${path} should have <link rel=canonical>`).toBeTruthy();
-    expect(new URL(canonical!).pathname).toBe(path);
+    expect(new URL(canonical).pathname, `${path} canonical should match path`).toBe(path);
 
-    // OG meta
-    const ogTitle = await page.locator('meta[property="og:title"]').getAttribute("content");
-    expect(ogTitle, `${path} should have og:title`).toBeTruthy();
+    expect(html, `${path} should have og:title`).toMatch(/<meta[^>]+property="og:title"/);
+    expect(html, `${path} should have og:description`).toMatch(/<meta[^>]+property="og:description"/);
+    expect(html, `${path} should render <header>`).toMatch(/<header[^>]*>/);
+    expect(html, `${path} should render <footer>`).toMatch(/<footer[^>]*>/);
 
-    // Body has real content (not just chrome). Header + Footer plus content
-    // should put any real page well above 500 chars; an empty page would be
-    // ~150 chars (header text only).
-    const bodyText = (await page.locator("body").innerText()).trim();
-    expect(bodyText.length, `${path} should have non-trivial body content`).toBeGreaterThan(500);
-
-    // Header + Footer present (every page should render full chrome)
-    await expect(page.locator("header").first()).toBeVisible();
-    await expect(page.locator("footer").first()).toBeVisible();
+    // Strip tags + whitespace to estimate visible content length
+    const text = html.replace(/<script[\s\S]*?<\/script>/g, "")
+                     .replace(/<style[\s\S]*?<\/style>/g, "")
+                     .replace(/<[^>]+>/g, " ")
+                     .replace(/\s+/g, " ")
+                     .trim();
+    expect(text.length, `${path} should have non-trivial body content`).toBeGreaterThan(500);
 
     // No accidental noindex on production pages
-    const robots = await page.locator('meta[name="robots"]').first().getAttribute("content").catch(() => null);
-    expect(robots, `${path} should not be noindex by default`).not.toMatch(/noindex/i);
+    expect(html, `${path} should not be noindex by default`).not.toMatch(/<meta[^>]+name="robots"[^>]+content="[^"]*noindex/i);
   });
 }

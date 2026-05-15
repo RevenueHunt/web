@@ -92,6 +92,7 @@ const HAND_BUILT = new Set([
   "jobs",
   "why-your-traffic-isnt-converting",
   "testimonials",
+  "templates",
 ]);
 const entries = [...parseEntries("blog", "blog"), ...parseEntries("pages", "pages")]
   .filter((e) => !HAND_BUILT.has(e.slug));

@@ -37,6 +37,119 @@ const pillars = [
       "Send captured leads to your mailing list or CRM. Leverage customer profile data to create more personalized, higher ROI marketing campaigns.",
   },
 ];
+
+const features = [
+  {
+    kicker: "AI quiz copilot",
+    title: "Build a quiz in 60 seconds with AI",
+    body:
+      "Describe your store, and our AI copilot generates a fully-configured quiz — questions, logic, and product mappings — ready to publish.",
+  },
+  {
+    kicker: "Conditional logic",
+    title: "Drag-and-drop branching logic",
+    body:
+      "Show or hide questions based on previous answers. Guide each shopper down the path that ends in a purchase — no code required.",
+  },
+  {
+    kicker: "Quiz design",
+    title: "Make it yours — no code required",
+    body:
+      "Customize colors, fonts, images, and layout to match your brand. Your quiz looks like part of your store, not a third-party widget.",
+  },
+  {
+    kicker: "Results page",
+    title: "A checkout-ready results page that converts",
+    body:
+      "Show personalized product picks grouped by routine step — with images, prices, and add-to-cart buttons. Shoppers buy directly from the results page.",
+  },
+  {
+    kicker: "Drop-off analytics",
+    title: "Know exactly where shoppers leave",
+    body:
+      "See question-by-question drop-off rates, destinations, and outcomes. Fix friction points, improve completions, and recover lost revenue.",
+  },
+  {
+    kicker: "Third-party integrations",
+    title: "Connect your entire marketing stack",
+    body:
+      "Send quiz data to Google Analytics, fire Meta Pixel events for retargeting, and sync leads to Klaviyo — all from one settings page. No code, no middleware.",
+  },
+];
+
+const steps = [
+  {
+    title: "Install the app",
+    body: "One-click install from the Shopify App Store or WordPress plugin directory.",
+  },
+  {
+    title: "Build your quiz",
+    body: "Use the AI copilot or drag-and-drop builder. Add your questions, set your logic.",
+  },
+  {
+    title: "Map your products",
+    body: "Connect quiz answers to your product catalogue. Recommend the best match per result.",
+  },
+  {
+    title: "Publish and promote",
+    body: "Embed on any page, pop it up on exit intent, or link to it from your ads.",
+  },
+];
+
+const testimonials = [
+  {
+    quote:
+      "I switched over from Octane. The design process was far more intuitive and visually friendly. When I hit a Klaviyo snag, support answered with lightning speed and a super conversational, open attitude.",
+    author: "Kae Paché",
+  },
+  {
+    quote:
+      "Eric was extremely patient, knowledgeable, and thorough — guiding me step by step through quiz setup. Support like this is rare.",
+    author: "Marcelle",
+  },
+  {
+    quote:
+      "The app itself is excellent: powerful features, intuitive usability. The team created a personalized walkthrough tutorial for us. Used it for 3+ years.",
+    author: "Didymos",
+  },
+  {
+    quote:
+      "By far the best quiz and product recommendation app I've tested on Shopify. The team took time to investigate, explain every step clearly, and guide until the issue was fully resolved.",
+    author: "REYNA",
+  },
+  {
+    quote:
+      "It was the 5th quiz app I tried and was the only one that fully supported what I needed. I was able to create my first quiz very quickly.",
+    author: "CCA Printing",
+  },
+  {
+    quote:
+      "The customer service stands out — an agent recorded a video and walked me through the fix step by step. Very responsive and super helpful.",
+    author: "The Love U Collective",
+  },
+];
+
+const verticals = [
+  { title: "Beauty & skincare", body: "Skin type finders, shade matching, routine builders." },
+  { title: "Supplements", body: "Health goal quizzes that recommend the right stack." },
+  { title: "Fashion", body: "Style quizzes that surface the right fit, colour, and cut." },
+  { title: "Pets", body: "Breed-specific product recommendations for every owner." },
+  { title: "Food & beverage", body: "Taste profile quizzes that turn browsers into subscribers." },
+  { title: "Fitness", body: "Goal-based funnels for gear, apparel, and programs." },
+  { title: "Home & decor", body: "Style quizzes that match furniture to every living space." },
+  { title: "Eco & sustainable", body: "Values-matching quizzes for the conscious consumer." },
+];
+
+const brands = [
+  "Olaplex", "Madluvv", "Mattel", "Alt", "Baia", "Bare", "Biktrix",
+  "Dermocracy", "Diego", "Gisou", "Laura", "Nuxe", "Olcay",
+  "Salad Code", "Salugea", "Sunday", "Tushy", "Tiege",
+];
+
+const SHOPIFY_REVIEWS =
+  "https://apps.shopify.com/product-recommendation-quiz-revenuehunt/reviews?ratings%5B%5D=5&sort_by=relevance";
+const WOOCOMMERCE_REVIEWS =
+  "https://wordpress.org/support/plugin/product-recommendation-quiz-for-ecommerce/reviews/?filter=5";
 ---
 
 <Base
@@ -82,7 +195,7 @@ const pillars = [
             </a>
           </div>
           <p class="mt-4 text-sm text-slate-500">
-            Free plan available · 14-day free trial · 30-day money-back guarantee
+            Free plan available · 15-day free trial · 30-day money-back guarantee
           </p>
         </div>
 
@@ -144,6 +257,111 @@ const pillars = [
     </div>
   </section>
 
+  <!-- Features grid -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Everything you need to sell smarter</h2>
+      </div>
+      <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {features.map((f) => (
+          <div class="rounded-xl border border-slate-200 bg-white p-6">
+            <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">{f.kicker}</p>
+            <h3 class="mt-2 text-xl font-semibold text-slate-900">{f.title}</h3>
+            <p class="mt-3 text-slate-600">{f.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 4-step setup -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Live in 4 steps. Under 15 minutes.</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-slate-700">
+          No developers. No code. Just a quiz your customers will love.
+        </p>
+      </div>
+      <ol class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        {steps.map((s, i) => (
+          <li class="rounded-xl border border-slate-200 bg-white p-6">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#16161D] text-sm font-bold text-white">{i + 1}</span>
+            <h3 class="mt-4 text-lg font-semibold text-slate-900">{s.title}</h3>
+            <p class="mt-2 text-slate-600">{s.body}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+          See why merchants love Product Recommendation Quiz
+        </h2>
+        <p class="mx-auto mt-4 max-w-3xl text-lg text-slate-700">
+          Trusted by over 20,000 brands and backed by 450+ five-star reviews across Shopify, WooCommerce, and more —
+          RevenueHunt is the go-to quiz app for driving sales through personalization. Just don't take our word for it.
+        </p>
+        <div class="mt-6 flex flex-wrap justify-center gap-3 text-sm">
+          <a href={SHOPIFY_REVIEWS} rel="external nofollow" class="font-semibold text-[#16161D] underline-offset-4 hover:underline">
+            Reviews on Shopify →
+          </a>
+          <a href={WOOCOMMERCE_REVIEWS} rel="external nofollow" class="font-semibold text-[#16161D] underline-offset-4 hover:underline">
+            Reviews on WooCommerce →
+          </a>
+        </div>
+      </div>
+
+      <h3 class="mt-16 text-center text-xl font-semibold text-slate-900">What merchants are saying</h3>
+      <ul class="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {testimonials.map((t) => (
+          <li class="rounded-xl border border-slate-200 bg-white p-6">
+            <p class="text-amber-500" aria-label="5 out of 5 stars">★★★★★</p>
+            <blockquote class="mt-3 text-slate-700">"{t.quote}"</blockquote>
+            <p class="mt-4 text-sm font-semibold text-slate-900">— {t.author}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Verticals -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Built for every eCommerce vertical</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-slate-700">
+          Whether you sell skincare, supplements, or sofas — a quiz that helps shoppers find the right product converts better than any collection page.
+        </p>
+      </div>
+      <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {verticals.map((v) => (
+          <div class="rounded-xl border border-slate-200 bg-white p-6">
+            <h3 class="text-base font-semibold text-slate-900">{v.title}</h3>
+            <p class="mt-2 text-sm text-slate-600">{v.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand logos -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-6 py-16">
+      <h2 class="text-center text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Powering top eCommerce brands</h2>
+      <ul class="mx-auto mt-10 flex max-w-5xl flex-wrap items-center justify-center gap-x-8 gap-y-4 text-slate-500">
+        {brands.map((b) => (
+          <li class="text-base font-semibold tracking-tight">{b}</li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
   <!-- Plans summary -->
   <section class="bg-slate-50">
     <div class="mx-auto max-w-7xl px-6 py-20">
@@ -157,6 +375,18 @@ const pillars = [
       <div class="mt-12">
         <PlanCards />
       </div>
+    </div>
+  </section>
+
+  <!-- Multi-platform strip -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-6 py-16 text-center">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Works on multiple eCommerce platforms</h2>
+      <ul class="mt-8 flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-lg font-semibold text-slate-700">
+        <li><a href="/product-recommendation-quiz-shopify/" class="hover:text-slate-900">Shopify</a></li>
+        <li><a href="/product-recommendation-quiz-woocommerce/" class="hover:text-slate-900">WooCommerce</a></li>
+        <li><a href="/product-recommendation-quiz-bigcommerce/" class="hover:text-slate-900">BigCommerce</a></li>
+      </ul>
     </div>
   </section>
 

@@ -9,10 +9,14 @@ export interface Plan {
   name: string;
   /** Big price. "FREE" for the free plan, otherwise the numeric amount. */
   price: string;
+  /** Yearly billing price (per-month equivalent — 20% off monthly). */
+  priceYearly?: string;
   /** Small text adjacent to the price (e.g. "USD/mo."). Omit on Free. */
   priceSuffix?: string;
   /** Asterisked sub-price line. */
   priceNote: string;
+  /** Asterisked sub-price line when yearly billing is selected. */
+  priceNoteYearly?: string;
   tagline: string;
   features: PlanFeature[];
 }
@@ -38,8 +42,10 @@ export const PLANS: Plan[] = [
   {
     name: "Basic Plan",
     price: "39",
+    priceYearly: "31",
     priceSuffix: "USD/mo.",
     priceNote: "* Billed monthly",
+    priceNoteYearly: "* Billed yearly",
     tagline: "For growing mid-tier stores.",
     features: [
       { text: "500 quiz responses/mo." },
@@ -54,8 +60,10 @@ export const PLANS: Plan[] = [
   {
     name: "Pro Plan",
     price: "99",
+    priceYearly: "79",
     priceSuffix: "USD/mo.",
     priceNote: "* Billed monthly",
+    priceNoteYearly: "* Billed yearly",
     tagline: "For brands ready to scale.",
     features: [
       { text: "1,000 quiz responses/mo." },
@@ -67,8 +75,10 @@ export const PLANS: Plan[] = [
   {
     name: "Premium Plan",
     price: "199",
+    priceYearly: "159",
     priceSuffix: "USD/mo.",
     priceNote: "* Billed monthly",
+    priceNoteYearly: "* Billed yearly",
     tagline: "Established, multi-market brands.",
     features: [
       { text: "2,500 quiz responses/mo." },

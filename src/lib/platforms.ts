@@ -17,6 +17,8 @@ export interface PlatformConfig {
   secondary?: CTA;
   /** YouTube video ID embedded in the hero (right column on widescreen). */
   youtubeId?: string;
+  /** Render the "How we compare" table beneath the page content. */
+  showComparison?: boolean;
 }
 
 export const PLATFORM_CONFIGS: Record<string, PlatformConfig> = {
@@ -33,6 +35,7 @@ export const PLATFORM_CONFIGS: Record<string, PlatformConfig> = {
       external: true,
     },
     youtubeId: "GcpJb09S4AY",
+    showComparison: true,
   },
   "product-recommendation-quiz-woocommerce": {
     platform: "WooCommerce",
@@ -43,6 +46,7 @@ export const PLATFORM_CONFIGS: Record<string, PlatformConfig> = {
     },
     secondary: { label: "view demo store", href: "https://skincarequiz.myshopify.com", external: true },
     youtubeId: "SX-BZBl1PFw",
+    showComparison: true,
   },
   "product-recommendation-quiz-bigcommerce": {
     platform: "BigCommerce",
@@ -53,6 +57,7 @@ export const PLATFORM_CONFIGS: Record<string, PlatformConfig> = {
     },
     secondary: { label: "view demo store", href: "https://skincarequiz.myshopify.com", external: true },
     youtubeId: "9uGXJYk4mgY",
+    showComparison: true,
   },
   "product-recommendation-quiz-wix-stores": {
     platform: "Wix",

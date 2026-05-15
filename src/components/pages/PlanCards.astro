@@ -8,12 +8,18 @@ import { PLANS } from "../../lib/plans";
       <article class="flex h-full flex-col rounded-2xl bg-white p-6 shadow-sm">
         <h3 class="text-sm font-medium text-slate-700">{plan.name}</h3>
         <div class="mt-2 flex items-baseline gap-2">
-          <span class="text-4xl font-bold tracking-tight text-slate-900">{plan.price}</span>
+          <span class="text-4xl font-bold tracking-tight text-slate-900">
+            <span data-billing="monthly">{plan.price}</span>
+            {plan.priceYearly && <span data-billing="yearly" hidden>{plan.priceYearly}</span>}
+          </span>
           {plan.priceSuffix && (
             <span class="text-base text-slate-700">{plan.priceSuffix}</span>
           )}
         </div>
-        <p class="mt-2 text-sm text-slate-600">{plan.priceNote}</p>
+        <p class="mt-2 text-sm text-slate-600">
+          <span data-billing="monthly">{plan.priceNote}</span>
+          {plan.priceNoteYearly && <span data-billing="yearly" hidden>{plan.priceNoteYearly}</span>}
+        </p>
         <p class="mt-3 text-sm italic text-slate-500">{plan.tagline}</p>
 
         <hr class="my-5 border-slate-200" />

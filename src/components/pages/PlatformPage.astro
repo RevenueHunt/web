@@ -95,7 +95,7 @@ function rel(c: { external?: boolean }) {
             )}
           </div>
           <p class="mt-4 text-sm text-slate-500">
-            Free plan available · 14-day free trial · 30-day money-back guarantee
+            Free plan available · 15-day free trial · 30-day money-back guarantee
           </p>
         </div>
 
@@ -148,6 +148,40 @@ function rel(c: { external?: boolean }) {
       <Content />
     </article>
   </main>
+
+  {config.showComparison && (
+    <section class="bg-white">
+      <div class="mx-auto max-w-5xl px-6 py-16">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">How we compare</h2>
+        <p class="mt-4 text-slate-700">
+          RevenueHunt vs. Octane AI vs. Quiz Kit — the features that matter for serious eCommerce stores.
+        </p>
+        <div class="mt-8 overflow-x-auto rounded-xl border border-slate-200">
+          <table class="w-full text-left text-sm">
+            <thead class="bg-slate-50 text-slate-900">
+              <tr>
+                <th class="px-4 py-3 font-semibold">Feature</th>
+                <th class="px-4 py-3 text-center font-semibold">RevenueHunt</th>
+                <th class="px-4 py-3 text-center font-semibold">Quiz Kit</th>
+                <th class="px-4 py-3 text-center font-semibold">Octane AI</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200 text-slate-700">
+              <tr><td class="px-4 py-3">Klaviyo / Mailchimp integration</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center">✓</td></tr>
+              <tr><td class="px-4 py-3">Conditional / branching logic</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center">✓</td></tr>
+              <tr><td class="px-4 py-3">AI quiz builder (60-second setup)</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center text-slate-400">—</td><td class="px-4 py-3 text-center">✓</td></tr>
+              <tr><td class="px-4 py-3">Built for Shopify</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center">✓</td></tr>
+              <tr><td class="px-4 py-3">Drop-off analytics</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center text-slate-400">—</td><td class="px-4 py-3 text-center">✓</td></tr>
+              <tr><td class="px-4 py-3">WooCommerce &amp; other platforms</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center text-slate-400">—</td><td class="px-4 py-3 text-center text-slate-400">—</td></tr>
+              <tr><td class="px-4 py-3">Free plan available</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center text-slate-400">—</td><td class="px-4 py-3 text-center text-slate-400">—</td></tr>
+              <tr><td class="px-4 py-3 font-semibold">Starting price</td><td class="px-4 py-3 text-center font-semibold">Free</td><td class="px-4 py-3 text-center">$59/mo</td><td class="px-4 py-3 text-center">$50/mo</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-4 text-xs text-slate-500">Comparison based on publicly available information as of 2026.</p>
+      </div>
+    </section>
+  )}
 
   <!-- Bottom CTA -->
   <section class="bg-[#16161D]">

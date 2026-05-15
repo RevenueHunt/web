@@ -94,12 +94,13 @@ const HAND_BUILT = new Set([
   "testimonials",
   "templates",
   "for-beauty-brands",
+  "partners",
 ]);
 const entries = [...parseEntries("blog", "blog"), ...parseEntries("pages", "pages")]
   .filter((e) => !HAND_BUILT.has(e.slug));
 
-test(`content collections produced at least 100 entries`, () => {
-  expect(entries.length).toBeGreaterThanOrEqual(100);
+test(`content collections produced at least 95 entries`, () => {
+  expect(entries.length).toBeGreaterThanOrEqual(95);
 });
 
 for (const entry of entries) {

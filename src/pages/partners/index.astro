@@ -1,0 +1,200 @@
+---
+import Base from "../../layouts/Base.astro";
+import { organization, breadcrumb } from "../../lib/schema";
+
+interface Partner {
+  name: string;
+  url: string;
+  logo: string;
+  description: string;
+}
+
+const partners: Partner[] = [
+  { name: "Taranker", url: "https://taranker.com/", logo: "/img/pages/partners/Icon512.png", description: "Taranker is an innovative platform dedicated to helping ecommerce businesses find the best tools to optimize their operations. Specializing in app recommendations, expert reviews, and curated app selections." },
+  { name: "SalesHunterThemes", url: "https://saleshunterthemes.com/?utm_source=app-providers&utm_medium=revenuehunt&utm_campaign=partnership-app&utm_content=website", logo: "/img/pages/partners/saleshunterthemes-logo.jpeg", description: "Boost your store with SalesHunterThemes' premium Shopify themes. Modern, responsive designs that optimize performance and user experience, with extensive customization options." },
+  { name: "Fulfillman", url: "https://www.fulfillman.com/", logo: "/img/pages/partners/fulfillmanlogo.png", description: "Fulfillman is a global leader in ecommerce sourcing, fulfillment, and logistics, offering fast and reliable shipping through dedicated private line services." },
+  { name: "WC Wishlist Club", url: "https://apps.shopify.com/wishlist-club?utm_source=revenuehunt&utm_medium=website&utm_campaign=partnership", logo: "/img/pages/partners/wishlist-club-150-150-px-logo.png", description: "WC Wishlist Club lets your customers save their favorite products, share wishlists, and shop later — boosting engagement and sales. Easy to set up, mobile-friendly, and perfect for turning browsers into loyal buyers." },
+  { name: "Langwill: Language Translate", url: "https://partner.channelwill.com/ceq5ql", logo: "/img/pages/partners/1.png", description: "Expand your global reach with Langwill — translate your Shopify store into 138 languages and auto-convert currencies for a seamless, localized shopping experience." },
+  { name: "Orbe Shopify Geolocation", url: "https://orbe.app/", logo: "/img/pages/partners/orbe-removebg-preview.png", description: "Maximize global sales with advanced Shopify geolocation. Customize products, prices, currency, and content for every country and guide customers to the right shopping experience with Orbe." },
+  { name: "Checkout Extensions Pro", url: "https://apps.shopify.com/checkout-extensions-pro?utm_source=drip", logo: "/img/pages/partners/CHECKOUT-Extension-Pro-logo_0101.png", description: "Boost your Shopify Plus checkout with personalized upsell discounts, AI upsells, a free shipping bar, post-purchase offers, trust badges, reviews, and more." },
+  { name: "Customer Dashboard Pro", url: "https://apps.shopify.com/customer-dashboard-pro?utm_source=revenuehunt", logo: "/img/pages/partners/CustomerDashboard.png", description: "Customer Dashboard Pro is the only app offering seamless support for both Shopify New Customer Accounts and Classic Customer Accounts." },
+  { name: "WISS Bundle", url: "https://apps.shopify.com/wiss-bundle", logo: "/img/pages/partners/Logo-9.png", description: "Boost your Shopify store's revenue and AOV with a simple, customizable product bundle app. Offer flexible discount options: value-based discounts, free shipping on bundled products, or buy X get Y." },
+  { name: "ToastiBar – Sales Popup", url: "https://makeprosimp.com/partnership/revenuehunt", logo: "/img/pages/partners/toastibarlogo_fgaiv9.png", description: "Increase customer trust and boost sales by showcasing real-time social proof: sales, cart, visitors, product reviews, and inventory alerts." },
+  { name: "UpPromote: Affiliate & Referral", url: "https://partners.secomapp.com/apps/affiliate/SHOPQUIZ_APP", logo: "/img/pages/partners/NEW_logo-1.png", description: "UpPromote is the top recommended affiliate/referral app on the Shopify App Store. All-in-one solution to build and manage your marketing campaigns, suitable for any business size." },
+  { name: "Essential Free Shipping Bar", url: "https://essential-apps.com/essential-shopify-free-shipping-bar-application/", logo: "/img/pages/partners/freeshippingbarlogo.png", description: "Boost sales and AOV by setting up unlimited free shipping bars with multiple cart-value goals to motivate buyers to add more products." },
+  { name: "iCart Cart Drawer Cart Upsell", url: "https://apps.shopify.com/icart/?campaign=promotion&medium=in-app-banner&source=revenuehunt", logo: "/img/pages/partners/iCart-Cart-Drawer-Cart-Upsell-logo.png", description: "All-in-one Shopify app to customize a cart drawer and full cart page with upsell, product recommendations, progress bar, product bundle, and discounts." },
+  { name: "Kaching Bundle Quantity Deals", url: "https://apps.shopify.com/bundle-deals?utm_source=partnership&utm_medium=web&utm_campaign=REVENUEH", logo: "/img/pages/partners/Kaching-Logo-1024x1024.jpg", description: "Boost sales with Kaching Bundle Quantity Deals — create bundle offers right on your product page. Use code REVENUEH20 for an exclusive 20% discount." },
+  { name: "PDF Invoice Generator", url: "https://apps.shopify.com/fordeer-invoice-order-printer?utm_source=ShopQuizProductRecommender&utm_medium=comarketing&utm_campaign=partner", logo: "/img/pages/partners/fordeer-data-export-1024x1024.png", description: "Fordeer's Shopify invoice generator is flexible, globally compliant, and caters to B2C, B2B, and Wholesale. Customizable PDF templates, batch print, 24/7 live chat support." },
+  { name: "HyperSKU", url: "https://www.hypersku.com/", logo: "/img/pages/partners/150150-logo.jpg", description: "HyperSKU offers an All-In-One supply chain solution. 1M+ products, bundle sales, sampling, quality inspection, brand customization, and automated order fulfillment." },
+  { name: "Service Points", url: "https://www.servicepoints.eu/en/w2/smart-dropshipping-1?utm_source=revenuehunt&utm_medium=app&utm_id=31", logo: "/img/pages/partners/Logo-Black-background.png", description: "Service Points introduces SMART Dropshipping: automated dropshipping and data-based supply chain decisions to scale infinitely." },
+  { name: "AI SEO Optimizer", url: "https://share.seoant.com/app/1165b75b7ce1524D5J", logo: "/img/pages/partners/SEOAnt-_-AI-SEO-Optimizer_Channelwill-.png", description: "Best SEO app for Shopify — optimize keywords, enhance meta tags, and improve site structure. AI-powered SEO performance and speed checks." },
+  { name: "BSS: B2B/Wholesale Solution", url: "https://apps.shopify.com/b2b-solution-custom-pricing?utm_source=RevenueHunt&utm_medium=partner-listing&utm_campaign=partnership-2024", logo: "/img/pages/partners/BSS-Commerce_logo_150.png", description: "All-in-one wholesale solution. Seamless B2B shopping experience while helping merchants manage and gain insights from their wholesale customers." },
+  { name: "PreOrder Now WOD", url: "https://apps.shopify.com/preorder-now?utm_source=+revenuehunt&utm_medium=web&utm_campaign=partner&utm_id=crosspromo", logo: "/img/pages/partners/PreOrder-Now-Logo.png", description: "Transform out-of-stock scenarios into pre-order opportunities. Perfect for print-on-demand businesses — capture customer interest without initial stock." },
+];
+
+const perks = [
+  { title: "Referral commissions", body: "Sign up new RevenueHunt customers and collect a 20% lifetime commission from all revenue they generate." },
+  { title: "Affiliate links", body: "Add your affiliate links in your articles, newsletters, and social posts. Link directly to our Shopify, WooCommerce, BigCommerce, Magento, and standalone apps." },
+  { title: "Your own partner manager", body: "Get advice on how to build automated sales funnels with our tool and tips on how to sell our solution to your clients." },
+  { title: "Exclusive content", body: "Reach out for advice on how to build automated sales funnels for your clients using RevenueHunt and other tools." },
+  { title: "A spot in our Partner Directory", body: "Our users will find you in our Partner Directory and reach out to you for your services." },
+];
+
+const faqs = [
+  { q: "How much does it cost to become a partner?", a: "Signing up is completely free. Zero. Nada." },
+  { q: "Do I need to be a RevenueHunt customer?", a: "No, you don't have to be a customer of RevenueHunt in order to become a partner." },
+  { q: "How will I get paid?", a: "We pay out earnings monthly. Payments are sent via PayPal." },
+  { q: "How can I track my referrals?", a: "You can see your stats in your Partner Dashboard." },
+];
+
+const jsonLd = [
+  organization(),
+  breadcrumb([
+    { name: "Home", url: "/" },
+    { name: "Partners & affiliates", url: "/partners/" },
+  ]),
+];
+---
+
+<Base
+  title="Partner program — RevenueHunt"
+  description="Refer your clients. Make money. Earn a 20% lifetime commission from clients you refer to RevenueHunt. Sign up to our Partner Program for free."
+  jsonLd={jsonLd}
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20 text-center">
+      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-slate-700">Home</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <span class="text-slate-700">Partners &amp; affiliates</span>
+      </nav>
+      <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">Partner program</p>
+      <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+        Refer your clients. Make money.
+      </h1>
+      <p class="mx-auto mt-6 max-w-2xl text-xl text-slate-600">
+        Earn a 20% lifetime commission from clients you refer to us. Sign up to our Partner Program for free today.
+      </p>
+      <p class="mx-auto mt-6 max-w-3xl text-slate-600">
+        If you're a <strong class="font-semibold text-slate-900">digital marketing agency</strong> or an
+        <strong class="font-semibold text-slate-900">ecommerce specialist</strong> and want to grow your business,
+        our Partner Program is for you. Create great experiences for your clients with RevenueHunt.
+      </p>
+      <div class="mt-10 flex flex-wrap justify-center gap-3">
+        <a
+          href="mailto:partners@revenuehunt.com?subject=RevenueHunt%20Partner%20Program"
+          class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
+        >
+          Get started now
+        </a>
+        <a
+          href="#partners"
+          class="inline-flex items-center justify-center rounded-md border border-[#16161D] bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-50"
+        >
+          See our partners
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who you are + perks -->
+  <section class="mx-auto max-w-7xl px-6 py-16">
+    <div class="grid gap-12 lg:grid-cols-3">
+      <div class="lg:col-span-1">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Who you are</h2>
+        <p class="mt-4 text-slate-600">
+          You're a digital marketing agency or an ecommerce consultant who's passionate about design and obsessed with
+          <strong class="font-semibold text-slate-900">getting the best results</strong> for your clients. You grow
+          your business by empowering other businesses.
+        </p>
+      </div>
+      <div class="lg:col-span-2">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">What you get from us</h2>
+        <ul class="mt-6 grid gap-4 sm:grid-cols-2">
+          {perks.map((p) => (
+            <li class="rounded-xl border border-slate-200 bg-white p-5">
+              <h3 class="text-base font-semibold text-slate-900">{p.title}</h3>
+              <p class="mt-2 text-sm text-slate-600">{p.body}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-4xl px-6 py-16">
+      <h2 class="text-center text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Frequently asked questions</h2>
+      <dl class="mt-8 space-y-4">
+        {faqs.map((f) => (
+          <div class="rounded-xl border border-slate-200 bg-white p-6">
+            <dt class="text-base font-semibold text-slate-900">{f.q}</dt>
+            <dd class="mt-2 text-slate-600">{f.a}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  </section>
+
+  <!-- Partner directory -->
+  <section id="partners" class="mx-auto max-w-7xl px-6 py-16 scroll-mt-24">
+    <h2 class="text-center text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Our partners</h2>
+    <p class="mx-auto mt-3 max-w-2xl text-center text-slate-600">
+      Trusted apps and agencies that pair beautifully with RevenueHunt for your clients.
+    </p>
+    <ul class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {partners.map((p) => (
+        <li>
+          <a
+            href={p.url}
+            target="_blank"
+            rel="external noopener nofollow"
+            class="group flex h-full flex-col items-center rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm transition hover:border-slate-300 hover:shadow-md"
+          >
+            <img
+              src={p.logo}
+              alt={`${p.name} logo`}
+              loading="lazy"
+              width="120"
+              height="120"
+              class="h-24 w-24 rounded-full object-cover"
+            />
+            <h3 class="mt-5 text-lg font-semibold text-slate-900 group-hover:text-[#16161D]">{p.name}</h3>
+            <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-600">{p.description}</p>
+            <span class="mt-5 inline-flex items-center gap-1 text-xs font-semibold uppercase tracking-wider text-slate-500 group-hover:text-[#16161D]">
+              Visit site <span aria-hidden="true">↗</span>
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Become a RevenueHunt partner
+      </h2>
+      <p class="mx-auto mt-4 max-w-2xl text-white/80">
+        Refer your clients, build automated sales funnels, and earn a 20% lifetime commission on everything they spend.
+      </p>
+      <div class="mt-10 flex flex-wrap justify-center gap-3">
+        <a
+          href="mailto:partners@revenuehunt.com?subject=RevenueHunt%20Partner%20Program"
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          Get started now
+        </a>
+        <a
+          href="/demo/"
+          class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
+        >
+          Book a demo
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

@@ -22,6 +22,7 @@
         "@astrojs/check": "^0.9.9",
         "@playwright/test": "^1.60.0",
         "@types/turndown": "^5.0.6",
+        "hast-util-to-text": "^4.0.2",
         "typescript": "^6.0.3",
       },
     },

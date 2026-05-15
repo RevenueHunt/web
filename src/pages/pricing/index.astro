@@ -1,0 +1,238 @@
+---
+import Base from "../../layouts/Base.astro";
+import { organization, breadcrumb } from "../../lib/schema";
+import { SITE } from "../../lib/site";
+
+interface Plan {
+  name: string;
+  price: string;
+  cadence: string;
+  tagline: string;
+  responses: string;
+  features: string[];
+  cta: { label: string; href: string; primary?: boolean };
+  featured?: boolean;
+}
+
+const plans: Plan[] = [
+  {
+    name: "Free",
+    price: "$0",
+    cadence: "free to install",
+    tagline: "Perfect for new brands.",
+    responses: "100 quiz responses / month",
+    features: [
+      "Email support",
+      "Unlimited quizzes & questions",
+      "Custom quiz design",
+      "Conditional logic",
+      "Advanced quiz analytics",
+      "Shopify Markets",
+      "Export leads to CSV",
+      "GDPR & CCPA compliant",
+    ],
+    cta: { label: "Start free", href: `${SITE.app_url}/signup` },
+  },
+  {
+    name: "Basic",
+    price: "$39",
+    cadence: "USD / month",
+    tagline: "For growing mid-tier stores.",
+    responses: "500 quiz responses / month",
+    features: [
+      "Free features, plus:",
+      "Live chat support",
+      "Custom HTML, CSS & JS",
+      "GA4 & Meta Pixel",
+      "Webhooks & Zapier",
+      "Klaviyo, Omnisend & more",
+    ],
+    cta: { label: "Start free trial", href: `${SITE.app_url}/signup` },
+  },
+  {
+    name: "Pro",
+    price: "$99",
+    cadence: "USD / month",
+    tagline: "For brands ready to scale.",
+    responses: "1,000 quiz responses / month",
+    features: [
+      "Basic features, plus:",
+      "Video call support",
+      "Dedicated account manager",
+    ],
+    cta: { label: "Start free trial", href: `${SITE.app_url}/signup`, primary: true },
+    featured: true,
+  },
+  {
+    name: "Premium",
+    price: "$199",
+    cadence: "USD / month",
+    tagline: "Established, multi-market brands.",
+    responses: "2,500 quiz responses / month",
+    features: [
+      "Pro features, plus:",
+      "Quarterly strategy review",
+      "Custom onboarding",
+    ],
+    cta: { label: "Start free trial", href: `${SITE.app_url}/signup` },
+  },
+];
+
+const trustChecks = [
+  "Free plan available",
+  "15-day free trial with unlimited responses",
+  "30-day money-back guarantee",
+];
+
+const jsonLd = [
+  organization(),
+  breadcrumb([
+    { name: "Home", url: "/" },
+    { name: "Pricing", url: "/pricing/" },
+  ]),
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "RevenueHunt — Product Recommendation Quiz",
+    description:
+      "Product recommendation quizzes for ecommerce. Free plan, paid plans from $39/mo.",
+    brand: { "@type": "Brand", name: SITE.name },
+    offers: plans.map((p) => ({
+      "@type": "Offer",
+      name: p.name,
+      price: p.price.replace(/[^\d.]/g, "") || "0",
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+      url: SITE.site_url + "/pricing/",
+    })),
+  },
+];
+---
+
+<Base
+  title="Pricing — RevenueHunt"
+  description="RevenueHunt pricing: free plan available. Paid plans from $39/mo. 15-day free trial with unlimited responses. 30-day money-back guarantee."
+  jsonLd={jsonLd}
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20 text-center">
+      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-slate-700">Home</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <span class="text-slate-700">Pricing</span>
+      </nav>
+      <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+        Choose the best plan for your eCommerce
+      </h1>
+      <ul class="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-slate-600">
+        {trustChecks.map((t) => (
+          <li class="inline-flex items-center gap-2">
+            <svg class="h-4 w-4 text-emerald-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M16.7 5.3a1 1 0 010 1.4l-7 7a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.3 6.3-6.3a1 1 0 011.4 0z" clip-rule="evenodd"/>
+            </svg>
+            {t}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Plan cards -->
+  <section class="mx-auto max-w-7xl px-6 pb-12">
+    <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      {plans.map((plan) => (
+        <li>
+          <article class={`relative flex h-full flex-col rounded-2xl border p-6 transition ${plan.featured ? "border-[#16161D] bg-white shadow-xl ring-2 ring-[#16161D]" : "border-slate-200 bg-white hover:border-slate-300"}`}>
+            {plan.featured && (
+              <span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[#16161D] px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">Most popular</span>
+            )}
+            <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-500">{plan.name}</h2>
+            <div class="mt-3 flex items-baseline gap-1">
+              <span class="text-4xl font-bold tracking-tight text-slate-900">{plan.price}</span>
+              <span class="text-sm text-slate-500">{plan.cadence}</span>
+            </div>
+            <p class="mt-2 text-sm text-slate-600">{plan.tagline}</p>
+            <p class="mt-6 text-sm font-semibold text-slate-900">{plan.responses}</p>
+            <ul class="mt-4 flex-1 space-y-2 text-sm text-slate-700">
+              {plan.features.map((f) => (
+                <li class="flex gap-2">
+                  <svg class="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.7 5.3a1 1 0 010 1.4l-7 7a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.3 6.3-6.3a1 1 0 011.4 0z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>{f}</span>
+                </li>
+              ))}
+            </ul>
+            <a
+              href={plan.cta.href}
+              class={`mt-8 inline-flex w-full items-center justify-center rounded-md px-4 py-3 text-sm font-semibold transition ${
+                plan.featured
+                  ? "bg-[#16161D] text-white hover:bg-[#26262e]"
+                  : "border border-[#16161D] bg-white text-[#16161D] hover:bg-slate-50"
+              }`}
+            >
+              {plan.cta.label}
+            </a>
+          </article>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <!-- Enterprise / larger plans -->
+  <section class="mx-auto max-w-7xl px-6 pb-20">
+    <div class="overflow-hidden rounded-2xl bg-[#16161D] text-white">
+      <div class="grid items-center gap-8 p-8 md:grid-cols-[2fr,1fr] md:p-12">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-wider text-white/60">Need more responses?</p>
+          <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Ask about Enterprise.</h2>
+          <p class="mt-4 max-w-2xl text-white/80">
+            Starting at <strong class="text-white">$299/mo.</strong> with unlimited quiz responses. Designed for Shopify Plus-level growth — all features included, scalable pricing for high-volume & multi-market brands, bring your own contracts (SLA, NDA), and optional done-for-you quiz-building services.
+          </p>
+        </div>
+        <div class="flex md:justify-end">
+          <a
+            href="/demo/"
+            class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+          >
+            Book a demo
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs link -->
+  <section class="mx-auto max-w-3xl px-6 pb-20 text-center">
+    <p class="text-slate-600">
+      Questions about Plans &amp; Pricing? Check the{" "}
+      <a href="https://docs.revenuehunt.com/" target="_blank" rel="external noopener" class="font-semibold text-slate-900 underline underline-offset-4 hover:text-slate-700">
+        FAQ article ↗
+      </a>.
+    </p>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Turn shoppers into confident buyers with a Product Recommendation Quiz that drives sales.
+      </h2>
+      <div class="mt-10 flex flex-wrap justify-center gap-3">
+        <a
+          href={`${SITE.app_url}/signup`}
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          Sign up
+        </a>
+        <a
+          href="/demo/"
+          class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
+        >
+          Book a demo
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

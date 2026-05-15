@@ -15,7 +15,18 @@ export async function getStaticPaths() {
     props: { entry: post, kind: "blog" as const },
   }));
   // Pages with hand-built bespoke routes elsewhere — skip in the catch-all.
-  const explicitlyOverridden = new Set(["home", "blog", "integrations"]);
+  const explicitlyOverridden = new Set([
+    "home",
+    "blog",
+    "integrations",
+    "pricing",
+    "demo",
+    "newsletter",
+    "sign-up",
+    "message-sent",
+    "jobs",
+    "why-your-traffic-isnt-converting",
+  ]);
   const pagePaths = pages
     .filter((p) => !explicitlyOverridden.has(p.data.legacySlug))
     .map((page) => ({

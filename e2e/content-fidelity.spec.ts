@@ -80,7 +80,18 @@ function htmlToText(html: string): string {
 
 // Slugs that have hand-built routes (not rendered from Markdown). Keep in
 // sync with the `explicitlyOverridden` set in src/pages/[slug]/index.astro.
-const HAND_BUILT = new Set(["home", "blog", "integrations"]);
+const HAND_BUILT = new Set([
+  "home",
+  "blog",
+  "integrations",
+  "pricing",
+  "demo",
+  "newsletter",
+  "sign-up",
+  "message-sent",
+  "jobs",
+  "why-your-traffic-isnt-converting",
+]);
 const entries = [...parseEntries("blog", "blog"), ...parseEntries("pages", "pages")]
   .filter((e) => !HAND_BUILT.has(e.slug));
 

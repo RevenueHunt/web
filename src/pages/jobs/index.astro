@@ -1,0 +1,71 @@
+---
+import Base from "../../layouts/Base.astro";
+import { organization, breadcrumb } from "../../lib/schema";
+
+const openings = [
+  {
+    title: "Technical Customer Support",
+    location: "100% remote",
+    posted: "June 2025",
+    href: "/technical-customer-support/",
+  },
+];
+
+const jsonLd = [
+  organization(),
+  breadcrumb([
+    { name: "Home", url: "/" },
+    { name: "Jobs", url: "/jobs/" },
+  ]),
+];
+---
+
+<Base
+  title="Jobs — RevenueHunt"
+  description="We're a small, distributed team building product recommendation quizzes for ecommerce. See current openings."
+  jsonLd={jsonLd}
+>
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-3xl px-6 py-16 sm:py-20">
+      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-slate-700">Home</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <span class="text-slate-700">Jobs</span>
+      </nav>
+      <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">We're hiring</h1>
+      <p class="mt-6 text-lg text-slate-700">
+        We're a small, distributed team building product recommendation quizzes for ecommerce stores worldwide. We hire for ownership, judgment, and the ability to talk to merchants like a human.
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-3xl px-6 pb-20">
+    <h2 class="text-sm font-semibold uppercase tracking-wider text-slate-500">Current openings</h2>
+    {openings.length === 0 ? (
+      <p class="mt-6 rounded-2xl border border-slate-200 bg-white p-8 text-slate-600">
+        No open positions right now. We're always happy to hear from people we'd want to work with — email <a class="underline underline-offset-4" href="mailto:team@revenuehunt.com">team@revenuehunt.com</a>.
+      </p>
+    ) : (
+      <ul class="mt-6 space-y-3">
+        {openings.map((o) => (
+          <li>
+            <a
+              href={o.href}
+              class="group flex items-center justify-between gap-4 rounded-2xl border border-slate-200 bg-white p-6 transition hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md"
+            >
+              <div>
+                <h3 class="text-xl font-semibold text-slate-900 group-hover:text-slate-700">{o.title}</h3>
+                <p class="mt-1 text-sm text-slate-500">{o.posted} · {o.location}</p>
+              </div>
+              <span class="text-2xl text-slate-300 group-hover:text-slate-500" aria-hidden="true">→</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    )}
+
+    <p class="mt-12 text-sm text-slate-500">
+      Don't see a fit? Send us a note at <a class="font-semibold underline underline-offset-4 hover:text-slate-700" href="mailto:team@revenuehunt.com">team@revenuehunt.com</a> — we read everything.
+    </p>
+  </section>
+</Base>

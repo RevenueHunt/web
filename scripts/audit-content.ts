@@ -35,7 +35,15 @@ for (const { dir, collection } of CONTENT_DIRS) {
     const title = fm.match(/^title:\s*"((?:[^"\\]|\\.)*)"/m)?.[1]?.replace(/\\"/g, '"') ?? "";
     const slug = fm.match(/^legacySlug:\s*"((?:[^"\\]|\\.)*)"/m)?.[1] ?? file.replace(/\.md$/, "");
 
-    if (slug === "home" || slug === "blog") continue; // hand-built routes
+    // Hand-built routes — these have their own copy that doesn't need to match
+    // the scraped frontmatter title. Keep in sync with explicitlyOverridden
+    // in src/pages/[slug]/index.astro.
+    const HAND_BUILT = new Set([
+      "home", "blog", "integrations", "pricing",
+      "demo", "newsletter", "sign-up", "message-sent", "jobs",
+      "why-your-traffic-isnt-converting",
+    ]);
+    if (HAND_BUILT.has(slug)) continue;
 
     checked++;
     const htmlPath = join(DIST, slug, "index.html");

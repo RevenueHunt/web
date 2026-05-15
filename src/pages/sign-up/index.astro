@@ -1,0 +1,63 @@
+---
+import Base from "../../layouts/Base.astro";
+import { organization, breadcrumb } from "../../lib/schema";
+import { SITE } from "../../lib/site";
+
+const jsonLd = [
+  organization(),
+  breadcrumb([
+    { name: "Home", url: "/" },
+    { name: "Sign up", url: "/sign-up/" },
+  ]),
+];
+---
+
+<Base
+  title="Sign up — RevenueHunt"
+  description="Create your free RevenueHunt account. Build a product recommendation quiz in minutes — no credit card required."
+  jsonLd={jsonLd}
+>
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-3xl px-6 py-20 text-center sm:py-24">
+      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-slate-700">Home</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <span class="text-slate-700">Sign up</span>
+      </nav>
+      <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+        Thanks for your interest!
+      </h1>
+      <p class="mt-6 text-lg text-slate-700">
+        We'll be in touch shortly to help with onboarding. In the meantime, create your account to start building quizzes right away.
+      </p>
+      <div class="mt-10 flex flex-wrap justify-center gap-3">
+        <a
+          href={`${SITE.app_url}/signup`}
+          class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
+        >
+          Create your free account
+        </a>
+        <a
+          href="/how-it-works/"
+          class="inline-flex items-center justify-center rounded-md border border-[#16161D] bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-50"
+        >
+          How it works
+        </a>
+      </div>
+      <p class="mt-6 text-sm text-slate-500">No credit card required · Free plan available · 30-day money-back guarantee on paid plans</p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-4xl px-6 pb-20">
+    <div class="grid gap-8 md:grid-cols-2">
+      <a href="/how-it-works/" class="group rounded-2xl border border-slate-200 bg-white p-6 transition hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md">
+        <h2 class="text-lg font-semibold text-slate-900 group-hover:text-slate-700">Read how RevenueHunt works →</h2>
+        <p class="mt-2 text-slate-600">Walk through the quiz builder, results page, and integrations.</p>
+      </a>
+      <a href="https://docs.revenuehunt.com/" target="_blank" rel="external noopener" class="group rounded-2xl border border-slate-200 bg-white p-6 transition hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md">
+        <h2 class="text-lg font-semibold text-slate-900 group-hover:text-slate-700">Browse the help center ↗</h2>
+        <p class="mt-2 text-slate-600">Step-by-step guides for installation, integrations, and quiz design.</p>
+      </a>
+    </div>
+  </section>
+</Base>

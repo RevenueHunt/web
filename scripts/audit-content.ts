@@ -42,6 +42,7 @@ for (const { dir, collection } of CONTENT_DIRS) {
       "home", "blog", "integrations", "pricing",
       "demo", "newsletter", "sign-up", "message-sent", "jobs",
       "why-your-traffic-isnt-converting",
+      "testimonials",
     ]);
     if (HAND_BUILT.has(slug)) continue;
 

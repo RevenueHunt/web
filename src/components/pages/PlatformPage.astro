@@ -4,7 +4,7 @@ import { render } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import { organization, breadcrumb } from "../../lib/schema";
 import { SITE } from "../../lib/site";
-import type { PlatformConfig } from "../../lib/platforms";
+import { PLATFORM_CONFIGS, type PlatformConfig } from "../../lib/platforms";
 
 interface Props {
   entry: CollectionEntry<"pages">;
@@ -13,6 +13,33 @@ interface Props {
 
 const { entry, config } = Astro.props;
 const { Content } = await render(entry);
+
+// Sibling platform links — every platform page links to all other platform pages.
+// Source of truth: PLATFORM_CONFIGS keyed by slug. Adding a new entry there will
+// automatically surface it in every other platform page's sibling block.
+const SIBLING_TAGLINES: Record<string, string> = {
+  "product-recommendation-quiz-shopify": "Native Shopify app, free plan, instant install",
+  "product-recommendation-quiz-woocommerce": "Self-hosted WordPress plugin, no monthly fee",
+  "product-recommendation-quiz-bigcommerce": "Native BigCommerce app with deep catalog sync",
+  "product-recommendation-quiz-wix-stores": "Embed via universal script — works on any Wix store",
+  "product-recommendation-quiz-for-squarespace-commerce": "Embed via universal script — works on any Squarespace site",
+  "product-recommendation-quiz-for-magento": "Standalone hosted solution, no Magento extension required",
+  "product-recommendation-quiz-standalone-google-product-feed":
+    "Platform-agnostic — runs on Google Product Feed, no store integration needed",
+  "product-recommendation-quiz-pos-tablet-stands": "In-store quizzes on iPad / Android POS tablets",
+  "product-recommendation-quiz":
+    "The all-platforms overview — start here if you're comparing options",
+};
+
+const currentSlug = entry.data.legacySlug;
+const siblings = Object.entries(PLATFORM_CONFIGS)
+  .filter(([slug]) => slug !== currentSlug)
+  .map(([slug, cfg]) => ({
+    slug,
+    platform: cfg.platform,
+    href: `/${slug}/`,
+    tagline: SIBLING_TAGLINES[slug] ?? "",
+  }));
 
 const SHOPIFY_INSTALL =
   "https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=platform_bottom";
@@ -182,6 +209,48 @@ function rel(c: { external?: boolean }) {
       </div>
     </section>
   )}
+
+  <!-- Available for every platform — sibling links -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-6 py-16 sm:py-20">
+      <div class="max-w-3xl">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+          Available for every platform
+        </h2>
+        <p class="mt-4 text-slate-700">
+          Not on {config.platform}? RevenueHunt's product recommendation quiz works wherever you sell — pick your stack.
+        </p>
+      </div>
+      <ul class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" role="list">
+        {siblings.map((s) => (
+          <li>
+            <a
+              href={s.href}
+              class="group block h-full rounded-xl border border-slate-200 bg-white p-6 transition hover:border-[#16161D] hover:shadow-md"
+            >
+              <h3 class="text-lg font-semibold text-slate-900 group-hover:text-[#16161D]">
+                Product recommendation quiz for {s.platform}
+              </h3>
+              {s.tagline && (
+                <p class="mt-2 text-sm text-slate-600">{s.tagline}</p>
+              )}
+              <span class="mt-4 inline-flex items-center text-sm font-medium text-[#16161D]">
+                See {s.platform} page
+                <svg
+                  class="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path fill-rule="evenodd" d="M7.21 4.29a1 1 0 011.42 0l5 5a1 1 0 010 1.42l-5 5a1 1 0 11-1.42-1.42L11.09 10 7.21 6.12a1 1 0 010-1.42z" clip-rule="evenodd" />
+                </svg>
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
 
   <!-- Bottom CTA -->
   <section class="bg-[#16161D]">

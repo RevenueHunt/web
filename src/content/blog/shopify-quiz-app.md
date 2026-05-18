@@ -38,7 +38,7 @@ Now that you have a quiz app installed, it’s time to create your quiz. The pro
 
 Here’s a **tutorial video on how to get started** with the Product Recommendation Quiz app:
 
-<iframe src="https://www.youtube.com/embed/2unJqe-viNU" allowfullscreen="allowfullscreen"></iframe>
+<iframe src="https://www.youtube.com/embed/2unJqe-viNU" allowfullscreen="allowfullscreen" title="Embedded video"></iframe>
 
 You can either create the quiz from scratch or use one of the [quiz templates](https://revenuehunt.com/templates/) RevenueHunt offers to get up-and-going in just a few minutes.
 

@@ -90,7 +90,7 @@ Not only will you offer your customers a personalized product recommendation, yo
 
 A product recommendation quiz is a fun way to engage your customers by offering them the chance to learn something about themselves. For example, if you’re selling coffee, a quiz can help your customers discover their “coffee personality” while they learn new facts about different types of coffee and **recommending products that are tailored to their preferences**.
 
-<iframe src="https://www.youtube.com/embed/GcpJb09S4AY" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<iframe src="https://www.youtube.com/embed/GcpJb09S4AY" frameborder="0" allowfullscreen="allowfullscreen" title="Embedded video"></iframe>
 
 Just **make sure you get their email**! You can do this by offering them an _ethical bribe_ at the end of the quiz like “get your results directly in your inbox and receive a 10% discount coupon for your next purchase”.
 

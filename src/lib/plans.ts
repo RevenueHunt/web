@@ -54,7 +54,7 @@ export const PLANS: Plan[] = [
       { text: "Custom HTML, CSS & JS" },
       { text: "GA4 & Meta Pixel" },
       { text: "Webhooks & Zapier" },
-      { text: "Klaviyo, Omnisend &", link: { label: "more", href: "/integrations/" } },
+      { text: "Klaviyo, Omnisend &", link: { label: "more integrations", href: "/integrations/" } },
     ],
   },
   {

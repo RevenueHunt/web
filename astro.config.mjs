@@ -2,6 +2,33 @@
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
+import { readFileSync, readdirSync } from "node:fs";
+import { join } from "node:path";
+
+/** Build a slug → most-recent-date map for sitemap lastmod by scraping
+ *  frontmatter dates out of content/{blog,pages}/*.md. We can't use the
+ *  astro:content virtual module from astro.config, so parse YAML by hand. */
+function readLastmodMap() {
+  /** @type {Record<string, string>} */
+  const map = {};
+  for (const dir of ["src/content/blog", "src/content/pages"]) {
+    let files = [];
+    try { files = readdirSync(dir).filter((f) => f.endsWith(".md")); } catch { continue; }
+    for (const f of files) {
+      const slug = f.replace(/\.md$/, "");
+      const txt = readFileSync(join(dir, f), "utf8");
+      const fm = txt.match(/^---\n([\s\S]*?)\n---/);
+      if (!fm) continue;
+      const get = (/** @type {string} */ k) => {
+        const m = fm[1].match(new RegExp(`^${k}:\\s*['\"]?([^'\"\\n]+)['\"]?$`, "m"));
+        return m ? m[1].trim() : null;
+      };
+      const date = get("updatedDate") || get("pubDate");
+      if (date) map[slug] = new Date(date).toISOString();
+    }
+  }
+  return map;
+}
 
 /** Remove the first H1 from each Markdown document — the [slug] layout
  *  already renders frontmatter title as an H1, and most scraped pages
@@ -46,6 +73,43 @@ function stripLeadingH1Rehype() {
   };
 }
 
+/** Promote the first content heading from H3 → H2 when no H2 precedes it.
+ *  Most scraped posts open with `### …` directly under the rendered H1,
+ *  which Lighthouse flags as a heading-order skip. When promoting, cascade
+ *  the shift across every heading in the doc (H3→H2, H4→H3, H5→H4, H6→H5)
+ *  so the author's relative hierarchy is preserved — otherwise the next
+ *  H4 under the promoted H2 becomes a new heading-order skip. */
+function promoteFirstHeadingRehype() {
+  return (/** @type {{ children: Array<any> }} */ tree) => {
+    /** @type {string | null} */
+    let firstTag = null;
+    /** @param {any} node */
+    function findFirst(node) {
+      if (firstTag) return;
+      if (!node || !Array.isArray(node.children)) return;
+      for (const child of node.children) {
+        if (child.type !== "element") continue;
+        if (/^h[1-6]$/.test(child.tagName)) { firstTag = child.tagName; return; }
+        findFirst(child);
+        if (firstTag) return;
+      }
+    }
+    findFirst(tree);
+    if (firstTag !== "h3") return; // Only act when the doc opens at H3.
+    /** @param {any} node */
+    function cascade(node) {
+      if (!node || !Array.isArray(node.children)) return;
+      for (const child of node.children) {
+        if (child.type === "element" && /^h[3-6]$/.test(child.tagName)) {
+          child.tagName = `h${parseInt(child.tagName.slice(1), 10) - 1}`;
+        }
+        cascade(child);
+      }
+    }
+    cascade(tree);
+  };
+}
+
 export default defineConfig({
   site: "https://revenuehunt.com",
   output: "static",
@@ -54,10 +118,22 @@ export default defineConfig({
     // Populate via scripts/scrape-wp.ts output. Any URL in the live
     // sitemap.xml that no Astro route produces must redirect here (or 410).
   },
-  integrations: [sitemap()],
+  integrations: [
+    (() => {
+      const lastmodMap = readLastmodMap();
+      return sitemap({
+        serialize(item) {
+          const url = new URL(item.url);
+          const slug = url.pathname.replace(/^\//, "").replace(/\/$/, "") || "index";
+          if (lastmodMap[slug]) item.lastmod = lastmodMap[slug];
+          return item;
+        },
+      });
+    })(),
+  ],
   markdown: {
     remarkPlugins: [stripLeadingH1Remark],
-    rehypePlugins: [stripLeadingH1Rehype],
+    rehypePlugins: [stripLeadingH1Rehype, promoteFirstHeadingRehype],
   },
   vite: {
     plugins: [tailwindcss()],

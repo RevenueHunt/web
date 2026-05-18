@@ -118,4 +118,4 @@ For example, while a top-tier programmer might become the best in Python, a gene
 
 I really appreciate how Till Musshoff explains this concept in the following video, particularly his discussion on **Digital Literacy** as a meta-skill that is crucial in this day and age:
 
-<iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/29oyOLh6PNE?rel=0&amp;autoplay=0&amp;showinfo=0&amp;enablejsapi=0" width="728" height="409" frameborder="0" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe>
+<iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/29oyOLh6PNE?rel=0&amp;autoplay=0&amp;showinfo=0&amp;enablejsapi=0" width="728" height="409" frameborder="0" allowfullscreen="allowfullscreen" data-mce-fragment="1" title="Embedded content"></iframe>

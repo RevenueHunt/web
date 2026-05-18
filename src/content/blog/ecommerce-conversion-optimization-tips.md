@@ -62,7 +62,7 @@ My team uses this tool every day. Whether you’re an eCommerce owner who wants 
 
 Looking to grow your business? Then you need to hire an assistant. Here are the 10 rules of hiring which will help you in this task. I especially like how depending on the stage your business is on, you should look to hire different types of assistants.
 
-<iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/Cs2BLVlv_nM?rel=0&amp;autoplay=0&amp;showinfo=0&amp;enablejsapi=0" width="728" height="409" frameborder="0" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe>
+<iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/Cs2BLVlv_nM?rel=0&amp;autoplay=0&amp;showinfo=0&amp;enablejsapi=0" width="728" height="409" frameborder="0" allowfullscreen="allowfullscreen" data-mce-fragment="1" title="Embedded content"></iframe>
 
 **🛍️ ORBE Geolocation**
 

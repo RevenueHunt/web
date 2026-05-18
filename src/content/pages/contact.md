@@ -12,7 +12,7 @@ draft: false
 
 ### **[Read the help guides](https://docs.revenuehunt.com/), watch the tutorial video or take our support quiz below to get help** from our team.
 
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper"><iframe loading="lazy" src="https://www.youtube.com/embed/oL1DnBd6N1U?si=ERr78cm4mKnkNj3L" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div></figure>
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper"><iframe loading="lazy" src="https://www.youtube.com/embed/oL1DnBd6N1U?si=ERr78cm4mKnkNj3L" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen" title="Embedded video"></iframe></div></figure>
 
 The hands-down, sharpest and friendliest support team in the eCommerce sector.
 

@@ -4,14 +4,12 @@
 # /blog/<slug>/ to /<slug>/. Preserve that behavior so old inbound links still work.
 /blog/:slug/  /:slug/  301
 
-# www → apex
-https://www.revenuehunt.com/*  https://revenuehunt.com/:splat  301!
+# www → apex must be configured in Cloudflare Redirect Rules/Page Rules.
+# Cloudflare Workers & Pages validates _redirects with relative URL patterns only.
 
 # Strip AMP — Yoast generated these; never canonical.
 /*/amp/  /:splat/  301
 /*/amp  /:splat/  301
 
-# Trailing-slash normalization (Astro emits with trailing slash already, but be defensive)
-/wp-admin/*  /  404
-/wp-login.php  /  404
-/xmlrpc.php  /  404
+# WordPress admin/login/XML-RPC paths intentionally have no static routes here,
+# so Cloudflare Pages will return its normal 404 for them.

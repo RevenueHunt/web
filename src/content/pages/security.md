@@ -1,0 +1,118 @@
+---
+title: "Security"
+description: "How RevenueHunt protects merchant and customer data, our security contact, and the vulnerability disclosure process."
+pubDate: 2026-05-19T00:00:00Z
+updatedDate: 2026-05-19T00:00:00Z
+legacySlug: "security"
+legacyId: 99001
+legacyUrl: "https://revenuehunt.com/security/"
+featuredImage: null
+draft: false
+---
+
+Last updated: May 19, 2026.
+
+Download for review: [DOCX](/legal/RevenueHunt-Information-Security-Policy.docx) · [CSV](/legal/RevenueHunt-Information-Security-Policy.csv).
+
+## Security at RevenueHunt
+
+RevenueHunt is built and operated by **Dairy Capital Limited**, a private limited company incorporated in England and Wales (company number 12503996, registered office: Vision Accounting Fortis House, Cothey Way, Ryde, Isle of Wight, PO33 1QT, United Kingdom). We process data on behalf of ecommerce merchants on Shopify, WooCommerce, BigCommerce, and Magento. Their trust depends on our security posture, so we treat it as a first-class engineering concern, not a paperwork exercise.
+
+This page summarises our practices, our public security contact, and how to report a vulnerability.
+
+## Reporting a vulnerability
+
+If you believe you have found a security vulnerability in any RevenueHunt product, please report it to us privately so we can address it before it puts merchants or their customers at risk.
+
+**Security contact:** [security@revenuehunt.com](mailto:security@revenuehunt.com)
+
+**What to include in your report:**
+
+- A clear description of the issue and where it occurs (URL, endpoint, app surface)
+- Reproduction steps and any proof-of-concept code or screenshots
+- The potential impact you believe it could have
+- Your name or handle if you would like to be credited
+
+We also publish a machine-readable contact at [/.well-known/security.txt](/.well-known/security.txt) per [RFC 9116](https://www.rfc-editor.org/rfc/rfc9116).
+
+### Response timeline
+
+- **Initial acknowledgement:** within 72 hours of receiving the report
+- **Triage and severity assessment:** within 5 business days
+- **Remediation targets from confirmation:** critical within 24 hours, high severity within 7 days, medium and low severity within 30 days
+- **Public disclosure coordination:** we work with the reporter on a timeline; we ask for 90 days from acknowledgement before public disclosure unless there is an active exploit
+
+### Safe harbour
+
+We will not pursue or support legal action against researchers who:
+
+- Make a good-faith effort to comply with this policy
+- Avoid privacy violations, data destruction, and service degradation
+- Do not exploit findings beyond what is necessary to demonstrate the issue
+- Give us a reasonable window to remediate before public disclosure
+
+## What is in scope
+
+- `revenuehunt.com` and its subdomains, excluding third-party services
+- The RevenueHunt admin app at `admin.revenuehunt.com`
+- The Product Recommendation Quiz Shopify app and its storefront extensions
+- The WooCommerce, BigCommerce, and Magento plugins published under our name
+- The RevenueHunt public APIs documented at [docs.revenuehunt.com](https://docs.revenuehunt.com/)
+
+## What is out of scope
+
+- Third-party services we integrate with (Shopify, Klaviyo, HubSpot, Recharge, Omnisend, Google Analytics, Amazon AWS, Cloudflare)
+- Social engineering, phishing, or physical attacks against our team
+- Denial-of-service or volumetric attacks
+- Findings from automated scanners without a meaningful proof of concept
+- Best-practice recommendations without a demonstrable security impact
+
+## Our security practices
+
+### Data handling
+
+- All data in transit is protected with TLS 1.2 or higher
+- All data at rest is encrypted with AES-128 or higher
+- API tokens and secrets are stored in dedicated secret-management systems, never in plaintext
+- We collect the minimum data needed to deliver our services and request only the API scopes required for each integration
+
+### Shopify Protected Customer Data
+
+RevenueHunt meets [Shopify's Level 1 and 2 requirements](https://shopify.dev/docs/apps/store/data-protection/protected-customer-data#requirements) for Protected Customer Data. This includes minimum-scope access, encryption requirements, retention policies, and the staff-access controls described below.
+
+### Access control
+
+- Role-based access control across all production systems
+- Multi-factor authentication required for every staff member with access to production data or systems
+- Minimum 12-character passwords on internal accounts
+- Production access is granted on a least-privilege, need-to-know basis and is reviewed on staff role changes
+- All access to production data is logged and auditable
+
+### Infrastructure
+
+- Production services run on Amazon AWS in the United States
+- Test and production environments are fully separated, with no shared credentials
+- Backups are encrypted and restoration is tested annually
+- Application and infrastructure logs include anomaly detection so unusual patterns are surfaced for review
+
+### Software development
+
+- We use the latest two stable versions of the Shopify Admin API in supported services, with a documented migration plan for upgrading on each quarterly release
+- Dependencies are tracked and patched on a regular cadence
+- Code changes go through review before reaching production
+- We conduct regular internal security assessments, and we engage third-party providers for periodic penetration testing against OWASP and NIST standards
+
+### Incident response
+
+- All confirmed security incidents are communicated to affected merchants and to the relevant platform (Shopify, WooCommerce, BigCommerce, Magento) within **72 hours** of confirmation
+- Critical production incidents receive a first response within **30 minutes**, 24 hours a day, 7 days a week, through our support channel
+- Post-incident reviews are written for every confirmed security incident and shared with the affected parties
+- The current production status of RevenueHunt is published at [status.revenuehunt.com](https://status.revenuehunt.com/) with at least 99.9% uptime as our service level objective
+
+## Privacy and compliance
+
+RevenueHunt's data handling is described in detail in our [Privacy Policy](/privacy/), which includes our positions on GDPR, CCPA, CPRA, VCDPA, and Shopify's Protected Customer Data programme. A signed Data Processing Agreement is available on request to merchants who require one.
+
+## Questions
+
+For security questions that are not vulnerability reports — for example, requests for our security questionnaire, DPA, or SOC documentation — please email [security@revenuehunt.com](mailto:security@revenuehunt.com) with "Security questionnaire" in the subject line.

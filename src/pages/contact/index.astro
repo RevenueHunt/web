@@ -20,20 +20,33 @@ const channels = [
   {
     label: "Email support & sales",
     href: "mailto:team@revenuehunt.com",
-    note: "team@revenuehunt.com — replies in about 2–3 hours.",
+    note: "team@revenuehunt.com — see response times below.",
   },
   {
     label: "Check system status",
     href: "https://status.revenuehunt.com/",
-    note: "Real-time service health and incident history.",
+    note: "Real-time service health and incident history. 99.98%+ uptime.",
     external: true,
   },
 ];
 
-const hours = [
-  "Replies in about 2–3 hours during business hours.",
-  "Available 8am – 10pm GMT, Monday through Friday.",
-  "Responses over the weekend might take a little longer.",
+const responseTiers = [
+  {
+    label: "Critical — production down, security, data integrity",
+    sla: "30-minute first response, 24/7 worldwide",
+  },
+  {
+    label: "High — major feature impacted, multiple users affected",
+    sla: "12-hour first response",
+  },
+  {
+    label: "Standard — questions, configuration help",
+    sla: "1 business day",
+  },
+  {
+    label: "Low priority — feedback, feature requests",
+    sla: "Up to 3 business days",
+  },
 ];
 ---
 
@@ -101,14 +114,17 @@ const hours = [
         </ul>
         <div class="mt-6 rounded-xl border border-slate-200 bg-slate-50 p-5">
           <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-500">Response times</h3>
-          <ul class="mt-3 space-y-2 text-sm text-slate-700">
-            {hours.map((h) => (
-              <li class="flex gap-2">
-                <span class="mt-1 inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-[#16161D]" aria-hidden="true"></span>
-                <span>{h}</span>
-              </li>
+          <p class="mt-3 text-sm text-slate-600">
+            Tiered support SLA for all merchants, with priority for Shopify Plus and enterprise accounts.
+          </p>
+          <dl class="mt-4 space-y-3 text-sm">
+            {responseTiers.map((t) => (
+              <div class="flex flex-col gap-1 border-l-2 border-slate-200 pl-3">
+                <dt class="font-medium text-slate-900">{t.label}</dt>
+                <dd class="text-slate-600">{t.sla}</dd>
+              </div>
             ))}
-          </ul>
+          </dl>
         </div>
       </div>
     </div>

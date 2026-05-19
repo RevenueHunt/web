@@ -1,8 +1,8 @@
 ---
 title: "Privacy Policy"
-description: "Last updated: March 27, 2026. RevenueHunt.com website Privacy Policy RevenueHunt is a product of Durian Capital Inc, a company incorporated in the British Virgin Islands (BVI) under company number 2115498. References to “RevenueHunt”, “we”, “us” or “our” in this policy refer to D"
+description: "How RevenueHunt collects, uses, and protects personal data, including our positions on GDPR, CCPA, CPRA, VCDPA, and Shopify Protected Customer Data."
 pubDate: 2026-01-18T05:31:34Z
-updatedDate: 2026-03-27T10:00:14Z
+updatedDate: 2026-05-19T00:00:00Z
 legacySlug: "privacy"
 legacyId: 11956
 legacyUrl: "https://revenuehunt.com/privacy/"
@@ -10,11 +10,13 @@ featuredImage: null
 draft: false
 ---
 
-Last updated: March 27, 2026.
+Last updated: May 19, 2026.
+
+Download for review: [DOCX](/legal/RevenueHunt-Privacy-Policy.docx) · [CSV](/legal/RevenueHunt-Privacy-Policy.csv).
 
 ## RevenueHunt.com website Privacy Policy
 
-**RevenueHunt** is a product of **Durian Capital Inc**, a company incorporated in the British Virgin Islands (BVI) under company number 2115498. References to “RevenueHunt”, “we”, “us” or “our” in this policy refer to Durian Capital Inc.
+**RevenueHunt** is a product of **Dairy Capital Limited**, a private limited company incorporated in England and Wales under company number 12503996, with registered office at Vision Accounting Fortis House, Cothey Way, Ryde, Isle of Wight, PO33 1QT, United Kingdom. References to “RevenueHunt”, “we”, “us” or “our” in this policy refer to Dairy Capital Limited.
 
 For RevenueHunt current or potential business customers who use our website.
 
@@ -130,11 +132,53 @@ We handle personal data under the following legal bases:
 1.  Contract fulfillment: We process data as a data processor, following the explicit instructions of our customers.
 2.  Legitimate interest: We use personal data to send marketing and other communications to our business customers. Additionally, we may analyze how our business customers use our products and services to enhance them.
 
-**RevenueHunt is operated by Durian Capital Inc, incorporated in the British Virgin Islands. Our servers are located in the United States (Amazon AWS).** If you are accessing our website from outside the U.S., providing us with your personal information implies your consent for the transfer of that information to the United States. When transferring personal data to be processed by our service providers or partners in the U.S., we rely on model contracts approved by the European Commission or the U.S.-EU Privacy Shield Framework.
+**RevenueHunt is operated by Dairy Capital Limited, incorporated in England and Wales (company number 12503996). Our servers are located in the United States (Amazon AWS).** If you are accessing our website from outside the U.S., providing us with your personal information implies your consent for the transfer of that information to the United States. When transferring personal data from the EEA, UK, or Switzerland to be processed by our service providers or partners in the U.S., we rely on the **EU-US Data Privacy Framework** (where applicable) and the **Standard Contractual Clauses** approved by the European Commission. The EU-US Privacy Shield, which previously governed some transfers, was invalidated in 2020 and is no longer used as a transfer mechanism.
 
-European visitors who wish to exercise their data subject rights can get in touch with us or file a complaint by emailing us at [info@revenuehunt.com](mailto:info@revenuehunt.com)
+European visitors who wish to exercise their data subject rights can get in touch with us or file a complaint by emailing us at [info@revenuehunt.com](mailto:info@revenuehunt.com).
 
 Alternatively, you may lodge a complaint with your local Data Protection Authority.
+
+## For our California visitors (CCPA and CPRA)
+
+The California Consumer Privacy Act (**CCPA**), as amended by the California Privacy Rights Act (**CPRA**), gives California residents specific rights with respect to their personal information. We honour these rights for all California residents whose personal information we process, regardless of whether the statutory thresholds technically apply to our business.
+
+Your rights under CCPA/CPRA:
+
+- **Right to know.** You can request the categories and specific pieces of personal information we have collected about you, the sources, the business purposes, and any third parties with whom we have shared it in the preceding 12 months.
+- **Right to delete.** You can request that we delete personal information we have collected from you, subject to legal retention requirements.
+- **Right to correct** (CPRA). You can request that we correct inaccurate personal information we hold about you.
+- **Right to opt out of sale or sharing.** RevenueHunt does **not sell** personal information for monetary consideration, and we do not "share" personal information for cross-context behavioural advertising as defined under CPRA. If this ever changes we will provide a clear "Do Not Sell or Share My Personal Information" link before any such activity begins.
+- **Right to limit the use of sensitive personal information** (CPRA). We do not use sensitive personal information for purposes that would trigger this right under the current CPRA regulations.
+- **Right to non-discrimination.** We will not deny services, charge different prices, or provide a different level of service because you exercised your privacy rights.
+
+To exercise any of these rights, email us at [info@revenuehunt.com](mailto:info@revenuehunt.com) with the subject line "California privacy request". We will verify your identity before processing the request, and we will respond within the statutory 45-day window (extendable once by an additional 45 days if reasonably necessary, with notice).
+
+You may also designate an authorised agent to make a request on your behalf. The agent must provide written permission from you, and we may require you to verify your identity directly with us.
+
+## For our Colorado, Connecticut, Utah, and Virginia visitors
+
+The Virginia Consumer Data Protection Act (**VCDPA**), the Colorado Privacy Act (**CPA**), the Connecticut Data Privacy Act (**CTDPA**), and the Utah Consumer Privacy Act (**UCPA**) give consumers in those states rights similar to GDPR and CCPA. We extend the following rights to residents of these states:
+
+- **Right of access.** You can request confirmation of whether we are processing your personal data and a copy of that data.
+- **Right to correct** inaccuracies (Virginia, Colorado, Connecticut).
+- **Right to delete** personal data we hold about you.
+- **Right to data portability** in a usable, machine-readable format where technically feasible.
+- **Right to opt out** of targeted advertising, sale of personal data, and significant profiling decisions. RevenueHunt does not engage in any of these activities; the opt-out is available regardless.
+- **Right to appeal** if we refuse a privacy request. We will respond to appeals within the statutory window for each state.
+
+To exercise any of these rights, email us at [info@revenuehunt.com](mailto:info@revenuehunt.com) with the subject line "State privacy request" and identify the state you reside in. We respond within the timeframe required by the applicable law, which is typically 45 days from a verified request.
+
+## Shopify Protected Customer Data
+
+When RevenueHunt operates as a Shopify app, the personal information we process about a merchant's customers is **Protected Customer Data** as defined by Shopify. We meet [Shopify's Level 1 and Level 2 requirements](https://shopify.dev/docs/apps/store/data-protection/protected-customer-data#requirements) for handling this data, which include:
+
+- Requesting only the minimum API scopes necessary for our quiz product to function
+- Encrypting Protected Customer Data in transit (TLS 1.2+) and at rest (AES-128+)
+- Restricting staff access to Protected Customer Data on a least-privilege basis with role-based access controls and multi-factor authentication
+- Retaining Protected Customer Data only for as long as is necessary to deliver the service
+- Supporting customer data subject requests originating from the merchant via Shopify's GDPR webhooks (`customers/data_request`, `customers/redact`, `shop/redact`)
+
+Merchants who require a signed **Data Processing Agreement (DPA)** can request one at [info@revenuehunt.com](mailto:info@revenuehunt.com). The DPA covers our role as a processor under GDPR, our role as a service provider under CCPA/CPRA, and our role as a processor under VCDPA, CPA, CTDPA, and UCPA, including the Standard Contractual Clauses for cross-border transfers and our subprocessor list.
 
 ## What information we collect
 
@@ -148,7 +192,7 @@ Alternatively, you may lodge a complaint with your local Data Protection Authori
 
 **How long do we store or retain the data we collect:** We retain your personal information for as long as we deem it necessary to maintain our relationship with you or as mandated by applicable laws. You can request the deletion of your information at any time.
 
-**Location of our company and our servers:** RevenueHunt is operated by Durian Capital Inc, incorporated in the British Virgin Islands. Our servers are located in the United States (Amazon AWS).
+**Location of our company and our servers:** RevenueHunt is operated by Dairy Capital Limited, incorporated in England and Wales (company number 12503996). Our servers are located in the United States (Amazon AWS).
 
 ## Information and Data Security
 

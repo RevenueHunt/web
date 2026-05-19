@@ -1,0 +1,8 @@
+# RevenueHunt security contact — RFC 9116
+# https://revenuehunt.com/security/
+
+Contact: mailto:security@revenuehunt.com
+Expires: 2027-05-19T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://revenuehunt.com/.well-known/security.txt
+Policy: https://revenuehunt.com/security/

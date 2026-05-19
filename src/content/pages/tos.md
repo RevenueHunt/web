@@ -2,7 +2,7 @@
 title: "Terms of Service"
 description: "Last updated: January 18, 2026. Welcome to RevenueHunt Thank you for using RevenueHunt’s products and services. The use of this website implies the acceptance of each and every one of the Terms of Service on this page. We want you to read these Terms of Service, therefore, they a"
 pubDate: 2019-07-21T22:45:31Z
-updatedDate: 2026-01-18T05:51:48Z
+updatedDate: 2026-05-19T00:00:00Z
 legacySlug: "tos"
 legacyId: 3
 legacyUrl: "https://revenuehunt.com/tos/"
@@ -10,11 +10,13 @@ featuredImage: "/img/pages/tos/photo-1433439216031-9571132ce719.jpeg"
 draft: false
 ---
 
-Last updated: January 18, 2026.
+Last updated: May 19, 2026.
 
 ## Welcome to RevenueHunt
 
 Thank you for using RevenueHunt’s products and services.
+
+**RevenueHunt** is a product of **Dairy Capital Limited**, a private limited company incorporated in England and Wales under company number 12503996, with registered office at Vision Accounting Fortis House, Cothey Way, Ryde, Isle of Wight, PO33 1QT, United Kingdom. References to “RevenueHunt”, “we”, “us” or “our” in these Terms refer to Dairy Capital Limited.
 
 The use of this website implies the acceptance of each and every one of the Terms of Service on this page.
 

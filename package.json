@@ -16,7 +16,8 @@
     "test": "bun test src/",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
-    "scrape": "bun scripts/scrape-wp.ts"
+    "scrape": "bun scripts/scrape-wp.ts",
+    "legal": "bash scripts/generate-legal-docs.sh"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",

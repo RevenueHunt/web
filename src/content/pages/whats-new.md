@@ -10,8 +10,6 @@ featuredImage: null
 draft: false
 ---
 
-Stay up to date with the latest improvements to RevenueHunt, from new features in our quiz builder to integrations, performance upgrades, and quality-of-life fixes.
-
 This is the central place where we share what's shipped, what's changed, and what's coming next - so you can get more value out of your quizzes without digging through release notes or emails.
 
 ### What you'll find here

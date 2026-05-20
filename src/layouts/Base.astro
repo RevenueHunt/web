@@ -24,6 +24,11 @@ const {
 } = Astro.props;
 
 const canonical = new URL(Astro.url.pathname, SITE.site_url).href;
+
+// Analytics only on the production domain — keeps the web.revenuehunt.com
+// staging build out of GA4/GTM. Matches prod wiring: GA4 via gtag.js
+// (G-62LE891EM2, was Google Site Kit) + GTM container (GTM-TDNVZDJ).
+const isProd = SITE.site_url === "https://revenuehunt.com";
 ---
 
 <!doctype html>
@@ -56,8 +61,30 @@ const canonical = new URL(Astro.url.pathname, SITE.site_url).href;
     {jsonLd && (
       <script is:inline type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
     )}
+
+    {isProd && (
+      <>
+        <!-- Google tag (gtag.js) — GA4 -->
+        <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-62LE891EM2"></script>
+        <script is:inline>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag("js", new Date());
+          gtag("config", "G-62LE891EM2");
+        </script>
+        <!-- Google Tag Manager -->
+        <script is:inline>
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src="https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);})(window,document,"script","dataLayer","GTM-TDNVZDJ");
+        </script>
+      </>
+    )}
   </head>
   <body class="font-sans bg-white text-slate-900 antialiased">
+    {isProd && (
+      <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDNVZDJ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      </noscript>
+    )}
     {showChrome && <Header />}
     <slot />
     {showChrome && <Footer />}

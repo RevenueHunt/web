@@ -1,4 +1,17 @@
 # Cloudflare Pages redirects. Activated when CF is wired up.
+# Rules are matched top-to-bottom, first match wins.
+
+# --- Blog index pagination — must come BEFORE the legacy /blog/<slug>/ rule.
+# /blog/2/.../blog/8/ are real Astro routes; the catch-all below would
+# otherwise 301 them to /2/ (404). Self-rewrite (200) consumes the match.
+# Extend this list if the blog grows past page 8.
+/blog/2/  /blog/2/  200
+/blog/3/  /blog/3/  200
+/blog/4/  /blog/4/  200
+/blog/5/  /blog/5/  200
+/blog/6/  /blog/6/  200
+/blog/7/  /blog/7/  200
+/blog/8/  /blog/8/  200
 
 # Legacy /blog/<slug>/ → /<slug>/ — WP shipped both URLs but always 301'd
 # /blog/<slug>/ to /<slug>/. Preserve that behavior so old inbound links still work.
@@ -13,3 +26,131 @@
 
 # WordPress admin/login/XML-RPC paths intentionally have no static routes here,
 # so Cloudflare Pages will return its normal 404 for them.
+
+# --- Careers: /jobs/<slug>/ postings moved to top-level routes on the new site.
+/jobs/technical-customer-support/  /technical-customer-support/  301
+/jobs/marketing-sales-funnel-architect/  /marketing-sales-funnel-architect/  301
+
+# --- /shop/ — Shop-app page retired; send to the Shopify platform page.
+/shop/  /product-recommendation-quiz-shopify/  301
+
+# --- Author archives — not rebuilt on the new site; send to the blog index.
+/author/alex/  /blog/  301
+/author/pochodura/  /blog/  301
+
+# --- Knowledge base: every /faqs/* URL migrated to docs.revenuehunt.com.
+# 98 article redirects ported verbatim from WordPress. 6 dead targets were
+# remapped to current docs slugs (docs site was restructured):
+#   integrate-facebook-pixel  -> integrate-meta-pixel
+#   hide-product-varaints     -> hide-product-variants
+#   customer-success/add-to-cart-issues -> how-to-guides/add-to-cart-issues
+#   always-recommend-the-same-product   -> set-up-fixed-recommendations-quiz
+#   use-block-logic           -> hide-content-with-logic
+#   show-quiz-in-shop-app     -> docs home (Shop app deprecated, no equivalent)
+/faqs/activate-multiple-selection-choice-questions/  https://docs.revenuehunt.com/reference/quiz-builder/#question-settings  301
+/faqs/add-facebook-pixel/  https://docs.revenuehunt.com/how-to-guides/integrate-meta-pixel/  301
+/faqs/adding-and-deleting-questions/  https://docs.revenuehunt.com/reference/quiz-builder/#question-types  301
+/faqs/adding-discount-coupon-code/  https://docs.revenuehunt.com/how-to-guides/add-discount/  301
+/faqs/adding-subscription-products/  https://docs.revenuehunt.com/how-to-guides/recommend-subscription-products/  301
+/faqs/advanced-shopify-integrations/  https://docs.revenuehunt.com/how-to-guides/show-quiz-on-customer-profile/  301
+/faqs/anonymize-customer-responses/  https://docs.revenuehunt.com/reference/app-settings/#general  301
+/faqs/app-manual/  https://docs.revenuehunt.com/reference/  301
+/faqs/ask-for-marketing-data-consent/  https://docs.revenuehunt.com/how-to-guides/ask-for-marketing-consent/  301
+/faqs/bigcommerce-use-custom-fields-as-tags/  https://docs.revenuehunt.com/how-to-guides/use-custom-fields-as-tags/  301
+/faqs/block-logic-how-to-show-custom-text-on-the-results-page/  https://docs.revenuehunt.com/how-to-guides/hide-content-with-logic/  301
+/faqs/change-billing-details/  https://docs.revenuehunt.com/reference/plans-pricing/  301
+/faqs/change-checkout-settings/  https://docs.revenuehunt.com/how-to-guides/change-checkout-settings/  301
+/faqs/change-quiz-currency/  https://docs.revenuehunt.com/how-to-guides/change-quiz-currency/  301
+/faqs/change-quiz-language/  https://docs.revenuehunt.com/how-to-guides/change-quiz-language/  301
+/faqs/changing-domains/  https://docs.revenuehunt.com/how-to-guides/copy-the-quiz-from-one-store-to-another/  301
+/faqs/checking-why-products-are-recommended-or-not/  https://docs.revenuehunt.com/how-to-guides/troubleshoot-product-results/  301
+/faqs/copy-quiz-to-another-store/  https://docs.revenuehunt.com/how-to-guides/copy-the-quiz-from-one-store-to-another/  301
+/faqs/create-product-recommendation-quiz/  https://docs.revenuehunt.com/how-to-guides/create-first-quiz/  301
+/faqs/custom-integrations-callback-function/  https://docs.revenuehunt.com/how-to-guides/use-callback-function/  301
+/faqs/custom-javascript-code/  https://docs.revenuehunt.com/how-to-guides/add-javascript/  301
+/faqs/customer-support/  https://docs.revenuehunt.com/how-to-guides/contact-customer-support/  301
+/faqs/customize-quiz-design/  https://docs.revenuehunt.com/how-to-guides/customize-quiz-design/  301
+/faqs/dont-show-out-of-stock-products/  https://docs.revenuehunt.com/how-to-guides/hide-out-of-stock-products/  301
+/faqs/download-invoices/  https://docs.revenuehunt.com/reference/plans-pricing/  301
+/faqs/dynamic-results-pages/  https://docs.revenuehunt.com/how-to-guides/edit-results-page/  301
+/faqs/headless-commerce-quiz/  https://docs.revenuehunt.com/how-to-guides/install-app/#__tabbed_1_5  301
+/faqs/hide-product-variants-dropdown/  https://docs.revenuehunt.com/how-to-guides/hide-product-variants/  301
+/faqs/how-do-i-build-the-right-quiz-outcome/  https://docs.revenuehunt.com/how-to-guides/recommend-products/  301
+/faqs/how-exclusions-work/  https://docs.revenuehunt.com/how-to-guides/recommend-products/#exclusion  301
+/faqs/how-jump-logic-works/  https://docs.revenuehunt.com/how-to-guides/use-jump-logic/  301
+/faqs/how-recommendation-algorithm-works/  https://docs.revenuehunt.com/how-to-guides/recommend-products/  301
+/faqs/how-skip-logic-works/  https://docs.revenuehunt.com/how-to-guides/use-skip-logic/  301
+/faqs/how-to-recommend-a-skincare-routine-with-slots/  https://docs.revenuehunt.com/how-to-guides/recommend-skincare-routine-slots/  301
+/faqs/how-to-recommend-products-that-match-multiple-criteria-matrix/  https://docs.revenuehunt.com/how-to-guides/recommend-product-matrix/  301
+/faqs/i-want-customers-to-be-able-to-skip-the-email-question/  https://docs.revenuehunt.com/how-to-guides/use-skip-logic/#filtering-email-collection-based-on-interest  301
+/faqs/i-want-to-always-show-this-one-product-on-the-results-page/  https://docs.revenuehunt.com/how-to-guides/set-up-fixed-recommendations-quiz/  301
+/faqs/i-want-to-show-different-text-result-depending-on-the-recommended-product/  https://docs.revenuehunt.com/how-to-guides/show-results-explanation/  301
+/faqs/information-recalls/  https://docs.revenuehunt.com/how-to-guides/use-information-recalls/  301
+/faqs/installing-product-recommendation-quiz/  https://docs.revenuehunt.com/how-to-guides/install-app/  301
+/faqs/ive-lost-my-quiz-progress/  https://docs.revenuehunt.com/how-to-guides/restore-quiz-progress/  301
+/faqs/joining-questions/  https://docs.revenuehunt.com/how-to-guides/join-questions/  301
+/faqs/linking-all-product-variants-to-a-choice-at-once/  https://docs.revenuehunt.com/reference/quiz-builder/#general  301
+/faqs/logic-how-to-show-or-hide-content-based-on-quiz-answers/  https://docs.revenuehunt.com/how-to-guides/hide-content-with-logic/  301
+/faqs/magento-installation/  https://docs.revenuehunt.com/how-to-guides/install-app/#__tabbed_1_3  301
+/faqs/minimum-number-of-votes/  https://docs.revenuehunt.com/how-to-guides/only-recommend-products-with-minimum-votes/  301
+/faqs/need-help/  https://docs.revenuehunt.com/how-to-guides/contact-customer-support/  301
+/faqs/passing-parameters-pre-fill-responses/  https://docs.revenuehunt.com/how-to-guides/pass-parameteres-to-fill-quiz-responses/  301
+/faqs/pictures-not-uploading/  https://docs.revenuehunt.com/how-to-guides/missing-product-images/  301
+/faqs/plans-pricing-faq/  https://docs.revenuehunt.com/customer-success/plans-pricing-faq/  301
+/faqs/product-doesnt-add-to-the-cart/  https://docs.revenuehunt.com/how-to-guides/add-to-cart-issues/  301
+/faqs/product-images-not-showing/  https://docs.revenuehunt.com/how-to-guides/missing-product-images/  301
+/faqs/products-collections-not-recommended-excluded/  https://docs.revenuehunt.com/how-to-guides/troubleshoot-product-results/  301
+/faqs/products-collections-not-showing-choices-dropdown/  https://docs.revenuehunt.com/how-to-guides/sync-catalog/  301
+/faqs/publish-quiz-on-your-store-automatic-popup/  https://docs.revenuehunt.com/how-to-guides/publish-quiz-automatic-popup/  301
+/faqs/publish-quiz-on-your-store-chat-button/  https://docs.revenuehunt.com/how-to-guides/publish-quiz-chat-button/  301
+/faqs/publish-quiz-on-your-store-email-popup/  https://docs.revenuehunt.com/how-to-guides/publish-quiz-email-link/  301
+/faqs/publish-quiz-on-your-store-embedded-inline/  https://docs.revenuehunt.com/how-to-guides/publish-quiz-inline/  301
+/faqs/publish-quiz-on-your-store-external-link/  https://docs.revenuehunt.com/how-to-guides/publish-quiz-external-link/  301
+/faqs/publish-quiz-on-your-store-link-popup/  https://docs.revenuehunt.com/how-to-guides/publish-quiz-link/  301
+/faqs/publish-quiz-on-your-store/  https://docs.revenuehunt.com/how-to-guides/publish-quiz/  301
+/faqs/publish-shopify-store-homepage/  https://docs.revenuehunt.com/how-to-guides/publish-quiz/  301
+/faqs/quiz-id/  https://docs.revenuehunt.com/reference/quiz-builder/#general  301
+/faqs/quiz-loading-speed/  https://docs.revenuehunt.com/how-to-guides/check-quiz-loading-speed/  301
+/faqs/quiz-responses-limits/  https://docs.revenuehunt.com/customer-success/plans-pricing-faq/  301
+/faqs/recommending-products-based-on-number-of-user-choices/  https://docs.revenuehunt.com/how-to-guides/recommend-products-based-on-number-of-user-choices/  301
+/faqs/redirect-quiz-to-another-page/  https://docs.revenuehunt.com/how-to-guides/redirect-quiz-to-another-page/  301
+/faqs/reducing-drop-off-maximizing-quiz-completion-rate/  https://docs.revenuehunt.com/customer-success/reduce-dropoff/  301
+/faqs/scoring/  https://docs.revenuehunt.com/how-to-guides/recommend-products/#understand-inclusion-and-exclusion  301
+/faqs/sending-leads-to-activecampaign-account/  https://docs.revenuehunt.com/how-to-guides/send-leads-to-activecampaign/  301
+/faqs/sending-leads-to-hubspot-account/  https://docs.revenuehunt.com/how-to-guides/send-leads-to-hubspot/  301
+/faqs/sending-leads-to-klaviyo-account/  https://docs.revenuehunt.com/how-to-guides/send-leads-to-klaviyo/  301
+/faqs/sending-leads-to-mailchimp-account/  https://docs.revenuehunt.com/how-to-guides/send-leads-to-mailchimp/  301
+/faqs/sending-leads-to-mailing-list-crm-zapier/  https://docs.revenuehunt.com/how-to-guides/send-leads-to-zapier/  301
+/faqs/sending-leads-to-omnisend-account/  https://docs.revenuehunt.com/how-to-guides/send-leads-to-omnisend/  301
+/faqs/sending-leads-to-shopify-customers-list/  https://docs.revenuehunt.com/how-to-guides/send-leads-to-shopify-customers/  301
+/faqs/sending-results-to-customers-email/  https://docs.revenuehunt.com/how-to-guides/send-result-emails/  301
+/faqs/set-up-shopify-automation-flow/  https://docs.revenuehunt.com/how-to-guides/send-leads-to-shopify-customers/#set-up-shopify-automation-flow  301
+/faqs/shop-app-shopify/  https://docs.revenuehunt.com/  301
+/faqs/shopify-revenue-report/  https://docs.revenuehunt.com/how-to-guides/track-quiz-revenue/  301
+/faqs/shorter-product-descriptions/  https://docs.revenuehunt.com/reference/quiz-builder/#basic-settings  301
+/faqs/show-product-metafields-attributes/  https://docs.revenuehunt.com/how-to-guides/add-product-metafields/  301
+/faqs/show-quiz-answers-in-the-shopify-orders/  https://docs.revenuehunt.com/how-to-guides/show-quiz-answers-in-orders/  301
+/faqs/standalone/  https://docs.revenuehunt.com/how-to-guides/install-app/#__tabbed_1_5  301
+/faqs/syncing-only-selected-collections/  https://docs.revenuehunt.com/how-to-guides/sync-selected-collections/  301
+/faqs/track-quiz-performance-google-analytics/  https://docs.revenuehunt.com/how-to-guides/integrate-google-analytics/  301
+/faqs/troubleshooting-product-recommendation-quiz-app-issues-for-wordpress-woocommerce/  https://docs.revenuehunt.com/how-to-guides/troubleshooting-product-recommendation-quiz-app-issues-for-wordpress-woocommerce/  301
+/faqs/tutorial-videos/  https://docs.revenuehunt.com/tutorials/  301
+/faqs/understanding-quiz-metrics/  https://docs.revenuehunt.com/reference/quiz-builder/#metrics  301
+/faqs/use-customer-tags-segment-audience/  https://docs.revenuehunt.com/reference/quiz-builder/#customer-tags  301
+/faqs/using-markdown-language/  https://docs.revenuehunt.com/how-to-guides/use-markdown/  301
+/faqs/video-quizzes/  https://docs.revenuehunt.com/reference/quiz-builder/#question-settings  301
+/faqs/webhooks/  https://docs.revenuehunt.com/how-to-guides/send-leads-to-webhooks/  301
+/faqs/woocommerce-authentication-error-404-not-found-missing-parameter-app-name/  https://docs.revenuehunt.com/how-to-guides/troubleshooting-product-recommendation-quiz-app-issues-for-wordpress-woocommerce/  301
+/faqs/woocommerce-error-cannot-redeclare-prq_set_token-previously-declared-in/  https://docs.revenuehunt.com/how-to-guides/troubleshooting-product-recommendation-quiz-app-issues-for-wordpress-woocommerce/  301
+/faqs/woocommerce-error-request-consumer-data/  https://docs.revenuehunt.com/how-to-guides/troubleshooting-product-recommendation-quiz-app-issues-for-wordpress-woocommerce/  301
+/faqs/woocommerce-issues-using-cloudflare/  https://docs.revenuehunt.com/how-to-guides/troubleshooting-product-recommendation-quiz-app-issues-for-wordpress-woocommerce/  301
+/faqs/woocommerce-use-attributes-as-categories/  https://docs.revenuehunt.com/reference/app-settings/#__tabbed_1_2  301
+# App-manual pages → docs reference section.
+/faqs/app-manual-quiz-builder/  https://docs.revenuehunt.com/reference/quiz-builder/  301
+/faqs/app-manual-dashboard/  https://docs.revenuehunt.com/reference/dashboard/  301
+/faqs/app-manual-app-settings/  https://docs.revenuehunt.com/reference/app-settings/  301
+/faqs/app-manual-plans-pricing/  https://docs.revenuehunt.com/reference/plans-pricing/  301
+/faqs/how-to-a-b-test-your-shop-quiz/  https://docs.revenuehunt.com/how-to-guides/ab-test-quiz/  301
+# Catch-all: KB index, /faqs/category/*, /faqs/tag/*, and any other /faqs/
+# URL not listed above → docs home. Keep LAST in this block.
+/faqs/*  https://docs.revenuehunt.com/  301

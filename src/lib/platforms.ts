@@ -6,6 +6,8 @@ export interface CTA {
   label: string;
   href: string;
   external?: boolean;
+  /** GA4 event name fired on click (parity with prod's hardcoded gtag events). */
+  gtagEvent?: string;
 }
 
 export interface PlatformConfig {
@@ -28,6 +30,7 @@ export const PLATFORM_CONFIGS: Record<string, PlatformConfig> = {
       label: "install on Shopify",
       href: "https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=platform_hero",
       external: true,
+      gtagEvent: "shopify_app_install",
     },
     secondary: {
       label: "view demo store",
@@ -43,6 +46,7 @@ export const PLATFORM_CONFIGS: Record<string, PlatformConfig> = {
       label: "download the plugin",
       href: "https://downloads.wordpress.org/plugin/product-recommendation-quiz-for-ecommerce.latest-stable.zip",
       external: true,
+      gtagEvent: "download_woocommerce_plugin",
     },
     secondary: { label: "view demo store", href: "https://skincarequiz.myshopify.com", external: true },
     youtubeId: "SX-BZBl1PFw",
@@ -54,6 +58,7 @@ export const PLATFORM_CONFIGS: Record<string, PlatformConfig> = {
       label: "install on BigCommerce",
       href: "https://www.bigcommerce.com/apps/product-recommendation-quiz/",
       external: true,
+      gtagEvent: "bigcommerce_app_install",
     },
     secondary: { label: "view demo store", href: "https://skincarequiz.myshopify.com", external: true },
     youtubeId: "9uGXJYk4mgY",

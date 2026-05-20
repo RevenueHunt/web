@@ -88,5 +88,87 @@ const isProd = SITE.site_url === "https://revenuehunt.com";
     {showChrome && <Header />}
     <slot />
     {showChrome && <Footer />}
+
+    <script>
+      // Generic carousel — mirrors the legacy theme's initCarousel: native
+      // scroll-snap, one-slide paging, JS-built dots, autoplay + cycle.
+      // Markup: .rh-carousel > [data-carousel] (track) + [data-carousel-dots].
+      // Slide widths + dot styles live in global.css. Optional data-autoplay (ms).
+      // Without JS the strip still scrolls — dots + autoplay are enhancement.
+      function initRhCarousels() {
+        document.querySelectorAll<HTMLElement>(".rh-carousel").forEach((root) => {
+          if (root.dataset.carouselReady) return;
+          const track = root.querySelector<HTMLElement>("[data-carousel]");
+          const dots = root.querySelector<HTMLElement>("[data-carousel-dots]");
+          const slides = track ? ([...track.children] as HTMLElement[]) : [];
+          if (!track || !slides.length) return;
+          root.dataset.carouselReady = "1";
+
+          const autoplayMs = Number(root.dataset.autoplay) || 8000;
+          const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+          let pages = -1;
+          let timer: ReturnType<typeof setInterval> | undefined;
+
+          const gap = () => parseFloat(getComputedStyle(track).columnGap) || 0;
+          const slideWidth = () => slides[0].offsetWidth + gap();
+          const visibleCount = () => Math.max(1, Math.round(track.clientWidth / slideWidth()));
+          const activeIndex = () => Math.round(track.scrollLeft / slideWidth());
+
+          const sync = () => {
+            if (!dots) return;
+            const a = activeIndex();
+            [...dots.children].forEach((d, i) => d.classList.toggle("is-active", i === a));
+          };
+          const goTo = (i: number) =>
+            track.scrollTo({ left: i * slideWidth(), behavior: "smooth" });
+          const advance = () => {
+            const last = slides.length - visibleCount();
+            const i = activeIndex();
+            goTo(i < last ? i + 1 : 0);
+          };
+          const stop = () => {
+            if (timer) clearInterval(timer);
+            timer = undefined;
+          };
+          const start = () => {
+            stop();
+            if (!reduceMotion && pages > 1) timer = setInterval(advance, autoplayMs);
+          };
+          const build = () => {
+            const n = Math.max(1, slides.length - visibleCount() + 1);
+            if (n !== pages) {
+              pages = n;
+              if (dots) {
+                dots.innerHTML = "";
+                for (let i = 0; i < n; i++) {
+                  const b = document.createElement("button");
+                  b.type = "button";
+                  b.className = "rh-carousel__dot";
+                  b.setAttribute("aria-label", `Go to slide ${i + 1}`);
+                  b.addEventListener("click", () => {
+                    goTo(i);
+                    start();
+                  });
+                  dots.appendChild(b);
+                }
+              }
+            }
+            sync();
+          };
+
+          track.addEventListener("scroll", () => requestAnimationFrame(sync), { passive: true });
+          window.addEventListener("resize", build);
+          root.addEventListener("pointerenter", stop);
+          root.addEventListener("pointerleave", start);
+          root.addEventListener("focusin", stop);
+          root.addEventListener("focusout", start);
+          track.addEventListener("touchstart", stop, { passive: true });
+
+          build();
+          start();
+        });
+      }
+      initRhCarousels();
+    </script>
   </body>
 </html>

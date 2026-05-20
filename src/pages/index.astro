@@ -320,123 +320,20 @@ const WOOCOMMERCE_REVIEWS =
       </div>
 
       <h3 class="mt-16 text-center text-xl font-semibold text-slate-900">What merchants are saying</h3>
-      <div class="testimonial-carousel mt-8">
-        <ul
-          data-track
-          class="no-scrollbar flex snap-x snap-mandatory gap-6 overflow-x-auto scroll-smooth pb-2"
-          aria-label="Merchant testimonials"
-        >
+      <div class="rh-carousel mt-8">
+        <ul data-carousel class="rh-carousel__track" aria-label="Merchant testimonials">
           {testimonials.map((t) => (
-            <li class="shrink-0 snap-start basis-full rounded-xl border border-slate-200 bg-white p-6 sm:basis-[calc(50%-0.75rem)] lg:basis-[calc(33.333%-1rem)]">
+            <li class="rounded-xl border border-slate-200 bg-white p-6">
               <p class="text-amber-500" aria-label="5 out of 5 stars">★★★★★</p>
               <blockquote class="mt-3 text-slate-700">"{t.quote}"</blockquote>
               <p class="mt-4 text-sm font-semibold text-slate-900">— {t.author}</p>
             </li>
           ))}
         </ul>
-        <div data-dots class="mt-6 flex justify-center gap-2"></div>
+        <div data-carousel-dots class="rh-carousel__dots"></div>
       </div>
     </div>
   </section>
-
-  <!-- Global (not scoped): the dot buttons are created in JS and never get
-       Astro's scope attribute, so scoped selectors would not match them. -->
-  <style is:global>
-    .no-scrollbar { scrollbar-width: none; }
-    .no-scrollbar::-webkit-scrollbar { display: none; }
-    .testimonial-dot {
-      width: 0.625rem;
-      height: 0.625rem;
-      border-radius: 9999px;
-      background: #cbd5e1;
-      border: 0;
-      padding: 0;
-      cursor: pointer;
-      transition: background-color 0.2s, transform 0.2s;
-    }
-    .testimonial-dot:hover { background: #94a3b8; }
-    .testimonial-dot.is-active { background: #16161d; transform: scale(1.3); }
-  </style>
-
-  <script>
-    // Testimonial carousel — mirrors the legacy theme's initCarousel:
-    // it advances ONE card per dot, so the dot count is
-    // (cards - visibleCards + 1), not (cards / visibleCards). Auto-advances
-    // every 8s and cycles; pauses on hover/focus/touch. Without JS the strip
-    // still scrolls horizontally — dots + autoplay are progressive enhancement.
-    document.querySelectorAll<HTMLElement>(".testimonial-carousel").forEach((root) => {
-      const track = root.querySelector<HTMLElement>("[data-track]");
-      const dots = root.querySelector<HTMLElement>("[data-dots]");
-      const slides = track ? [...track.children] : [];
-      if (!track || !dots || !slides.length) return;
-
-      const AUTOPLAY_MS = 8000;
-      const GAP = 24; // matches the track's gap-6 (1.5rem)
-      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      let pages = -1;
-      let timer: ReturnType<typeof setInterval> | undefined;
-
-      const slideWidth = () => (slides[0] as HTMLElement).offsetWidth + GAP;
-      // Cards visible at once, derived from layout so it tracks the CSS breakpoints.
-      const visibleCount = () => Math.max(1, Math.round(track.clientWidth / slideWidth()));
-      const activeIndex = () => Math.round(track.scrollLeft / slideWidth());
-
-      const sync = () => {
-        const active = activeIndex();
-        [...dots.children].forEach((d, i) => d.classList.toggle("is-active", i === active));
-      };
-
-      const goTo = (i: number) =>
-        track.scrollTo({ left: i * slideWidth(), behavior: "smooth" });
-
-      const advance = () => {
-        const last = slides.length - visibleCount(); // last valid start card
-        const i = activeIndex();
-        goTo(i < last ? i + 1 : 0);
-      };
-
-      const stop = () => {
-        if (timer) clearInterval(timer);
-        timer = undefined;
-      };
-      const start = () => {
-        stop();
-        if (!reduceMotion && pages > 1) timer = setInterval(advance, AUTOPLAY_MS);
-      };
-
-      const build = () => {
-        const n = Math.max(1, slides.length - visibleCount() + 1);
-        if (n !== pages) {
-          pages = n;
-          dots.innerHTML = "";
-          for (let i = 0; i < n; i++) {
-            const b = document.createElement("button");
-            b.type = "button";
-            b.className = "testimonial-dot";
-            b.setAttribute("aria-label", `Go to testimonials slide ${i + 1}`);
-            b.addEventListener("click", () => {
-              goTo(i);
-              start(); // reset the autoplay clock after a manual jump
-            });
-            dots.appendChild(b);
-          }
-        }
-        sync();
-      };
-
-      track.addEventListener("scroll", () => requestAnimationFrame(sync), { passive: true });
-      window.addEventListener("resize", build);
-      // Pause while the visitor is interacting, resume when they leave.
-      root.addEventListener("pointerenter", stop);
-      root.addEventListener("pointerleave", start);
-      root.addEventListener("focusin", stop);
-      root.addEventListener("focusout", start);
-      track.addEventListener("touchstart", stop, { passive: true });
-
-      build();
-      start();
-    });
-  </script>
 
   <!-- Verticals -->
   <section class="bg-slate-50">

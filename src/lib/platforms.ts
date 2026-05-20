@@ -37,7 +37,7 @@ export const PLATFORM_CONFIGS: Record<string, PlatformConfig> = {
       href: "https://skincarequiz.myshopify.com",
       external: true,
     },
-    youtubeId: "GcpJb09S4AY",
+    youtubeId: "fJqpGJUzZNE",
     showComparison: true,
   },
   "product-recommendation-quiz-woocommerce": {
@@ -68,11 +68,13 @@ export const PLATFORM_CONFIGS: Record<string, PlatformConfig> = {
     platform: "Wix",
     primary: { label: "sign up", href: "https://admin.revenuehunt.com/register/", external: true },
     secondary: { label: "view demo store", href: "https://skincarequiz.myshopify.com", external: true },
+    youtubeId: "fJqpGJUzZNE",
   },
   "product-recommendation-quiz-for-squarespace-commerce": {
     platform: "Squarespace",
     primary: { label: "sign up", href: "https://admin.revenuehunt.com/register/", external: true },
     secondary: { label: "view demo store", href: "https://skincarequiz.myshopify.com", external: true },
+    youtubeId: "fJqpGJUzZNE",
   },
   "product-recommendation-quiz-for-magento": {
     platform: "Magento",
@@ -87,16 +89,19 @@ export const PLATFORM_CONFIGS: Record<string, PlatformConfig> = {
     platform: "Google Product Feed",
     primary: { label: "get started free", href: "https://admin.revenuehunt.com/register/", external: true },
     secondary: { label: "view demo store", href: "https://skincarequiz.myshopify.com", external: true },
+    youtubeId: "fJqpGJUzZNE",
   },
   "product-recommendation-quiz-pos-tablet-stands": {
     platform: "POS tablet stands",
     primary: { label: "sign up", href: "https://admin.revenuehunt.com/register/", external: true },
     secondary: { label: "see quiz templates", href: "/templates/" },
+    youtubeId: "fJqpGJUzZNE",
   },
   "product-recommendation-quiz": {
     platform: "All platforms",
     primary: { label: "get for Shopify", href: "/product-recommendation-quiz-shopify/" },
     secondary: { label: "get for WooCommerce", href: "/product-recommendation-quiz-woocommerce/" },
+    youtubeId: "fJqpGJUzZNE",
   },
 };
 

@@ -83,6 +83,18 @@
   background: #16161d;
   transform: scale(1.3);
 }
+/* FAQ accordions in rendered markdown: separator lines between items and a
+   tall enough summary to tap comfortably with a finger on mobile. */
+.prose details {
+  border-bottom: 1px solid #e2e8f0;
+}
+.prose summary {
+  padding-block: 1rem;
+}
+.prose details[open] {
+  padding-bottom: 0.75rem;
+}
+
 /* Image slides (e.g. screenshot galleries): override prose figure/img margins. */
 .rh-carousel__track figure {
   margin: 0;

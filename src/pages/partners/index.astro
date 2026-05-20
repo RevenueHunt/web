@@ -127,14 +127,14 @@ const jsonLd = [
   <section class="bg-slate-50">
     <div class="mx-auto max-w-4xl px-6 py-16">
       <h2 class="text-center text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Frequently asked questions</h2>
-      <dl class="mt-8 space-y-4">
+      <div class="mx-auto mt-8 max-w-2xl">
         {faqs.map((f) => (
-          <div class="rounded-xl border border-slate-200 bg-white p-6">
-            <dt class="text-base font-semibold text-slate-900">{f.q}</dt>
-            <dd class="mt-2 text-slate-600">{f.a}</dd>
-          </div>
+          <details class="border-b border-slate-200">
+            <summary class="py-4 text-base font-semibold text-slate-900">{f.q}</summary>
+            <p class="pb-4 text-slate-600">{f.a}</p>
+          </details>
         ))}
-      </dl>
+      </div>
     </div>
   </section>
 

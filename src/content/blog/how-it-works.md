@@ -225,30 +225,44 @@ Quick, guided flows for budget, recipient, and occasion.
 
 ### 🔍 Frequently Asked Questions
 
-#### How do I build a product quiz in Shopify?
+<details>
+<summary><strong>How do I build a product quiz in Shopify?</strong></summary>
 
 Install the app, pick a template, add your questions, and link choices to products or collections. Publish as an inline section, popup, or embed. No code required—most merchants launch in under 15 minutes.
+</details>
 
-#### How do I build a product quiz in WooCommerce?
+<details>
+<summary><strong>How do I build a product quiz in WooCommerce?</strong></summary>
 
 Install the plugin, choose a template, customize 5–8 high-intent questions with conditional logic, then map answers to products, variations, or categories. Publish on a page, as a popup, or via a link.
+</details>
 
-#### Is there a free quiz builder?
+<details>
+<summary><strong>Is there a free quiz builder?</strong></summary>
 
 Yes—start on our free plan. Build and publish a fully functional quiz with core features. When you outgrow monthly response limits, upgrade without losing data.
+</details>
 
-#### What’s the best quiz funnel to increase AOV?
+<details>
+<summary><strong>What’s the best quiz funnel to increase AOV?</strong></summary>
 
 Keep it focused (5–8 questions), optionally collect email before results, then show 3–5 tailored products with badges, bundles/slots, and variant selectors. Add cross-sells on the results page and pass UTMs for clean GA4 attribution.
+</details>
 
-#### Does it integrate with Klaviyo, GA4, and Meta Pixel?
+<details>
+<summary><strong>Does it integrate with Klaviyo, GA4, and Meta Pixel?</strong></summary>
 
 Yes—quiz answers and recommendations sync to Klaviyo for segmented flows. GA4 and Meta Pixel receive key events like _quiz\_started_, _question\_viewed_, and _results\_viewed_ for attribution, audience building, and campaign optimization.
+</details>
 
-#### What’s the best skincare quiz setup?
+<details>
+<summary><strong>What’s the best skincare quiz setup?</strong></summary>
 
 Use the skincare template: capture skin type, concerns, sensitivity/ingredients, and routine goals. Map to cleansers/serums/moisturizers and display a routine with usage tips and add-to-cart to lift LTV and reduce returns.
+</details>
 
-#### Can I build a size quiz?
+<details>
+<summary><strong>Can I build a size quiz?</strong></summary>
 
 Absolutely. Ask fit preferences and key measurements, match to variants/size charts, and output a recommended size with a short “why this size” rationale to boost purchase confidence.
+</details>

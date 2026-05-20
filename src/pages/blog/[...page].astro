@@ -24,7 +24,7 @@ function fmt(d: Date) {
 }
 
 const isFirstPage = page.currentPage === 1;
-const titleSuffix = isFirstPage ? "" : ` — page ${page.currentPage}`;
+const titleSuffix = isFirstPage ? "" : ` - page ${page.currentPage}`;
 
 const jsonLd = [
   organization(),
@@ -37,7 +37,7 @@ const jsonLd = [
 ---
 
 <Base
-  title={`Blog${titleSuffix} — ${SITE.name}`}
+  title={`Blog${titleSuffix} - ${SITE.name}`}
   description="Product recommendation quiz strategies, case studies, and updates from the RevenueHunt team."
   jsonLd={jsonLd}
 >
@@ -65,7 +65,7 @@ const jsonLd = [
         <div class="relative lg:mt-16">
           <div id="blog-search" class="rh-blog-search"></div>
           <noscript>
-            <p class="text-sm text-slate-500">Search needs JavaScript — browse posts below.</p>
+            <p class="text-sm text-slate-500">Search needs JavaScript - browse posts below.</p>
           </noscript>
         </div>
       </div>
@@ -196,10 +196,10 @@ const jsonLd = [
           showImages: true,
           resetStyles: false,
           showEmptyFilters: false,
-          placeholder: "Search the blog…",
+          placeholder: "Search the blog...",
         });
       };
-      // pagefind-ui.js is an IIFE that hangs PagefindUI on window — load it as
+      // pagefind-ui.js is an IIFE that hangs PagefindUI on window - load it as
       // a regular <script>, not via dynamic import (which would succeed but
       // return an empty module namespace).
       if (typeof window.PagefindUI === "function") {
@@ -210,7 +210,7 @@ const jsonLd = [
       s.src = "/pagefind/pagefind-ui.js";
       s.onload = init;
       s.onerror = () => {
-        mount.innerHTML = '<p class="text-sm text-slate-500">Search is unavailable in dev mode — run <code>bun run build &amp;&amp; bun run preview</code>.</p>';
+        mount.innerHTML = '<p class="text-sm text-slate-500">Search is unavailable in dev mode - run <code>bun run build &amp;&amp; bun run preview</code>.</p>';
       };
       document.head.appendChild(s);
     });

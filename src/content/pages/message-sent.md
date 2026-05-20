@@ -12,7 +12,7 @@ draft: false
 
 **Thanks for your message!**
 
--   We’ll get back to you in about **2-3 hours**.
+-   We'll get back to you in about **2-3 hours**.
 -   Expect a reply between 9am – 7:30pm (GMT) Monday through Friday.
 -   In the meantime, feel free to [read the help guides](https://revenuehunt.com/faqs/).
 

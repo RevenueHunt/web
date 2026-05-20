@@ -1,6 +1,6 @@
 ---
 title: "Terms of Service"
-description: "Last updated: January 18, 2026. Welcome to RevenueHunt Thank you for using RevenueHunt’s products and services. The use of this website implies the acceptance of each and every one of the Terms of Service on this page. We want you to read these Terms of Service, therefore, they a"
+description: "Last updated: January 18, 2026. Welcome to RevenueHunt Thank you for using RevenueHunt's products and services. The use of this website implies the acceptance of each and every one of the Terms of Service on this page. We want you to read these Terms of Service, therefore, they a"
 pubDate: 2019-07-21T22:45:31Z
 updatedDate: 2026-05-19T00:00:00Z
 legacySlug: "tos"
@@ -14,9 +14,9 @@ Last updated: May 19, 2026.
 
 ## Welcome to RevenueHunt
 
-Thank you for using RevenueHunt’s products and services.
+Thank you for using RevenueHunt's products and services.
 
-**RevenueHunt** is a product of **Dairy Capital Limited**, a private limited company incorporated in England and Wales under company number 12503996, with registered office at Vision Accounting Fortis House, Cothey Way, Ryde, Isle of Wight, PO33 1QT, United Kingdom. References to “RevenueHunt”, “we”, “us” or “our” in these Terms refer to Dairy Capital Limited.
+**RevenueHunt** is a product of **Dairy Capital Limited**, a private limited company incorporated in England and Wales under company number 12503996, with registered office at Vision Accounting Fortis House, Cothey Way, Ryde, Isle of Wight, PO33 1QT, United Kingdom. References to "RevenueHunt", "we", "us" or "our" in these Terms refer to Dairy Capital Limited.
 
 The use of this website implies the acceptance of each and every one of the Terms of Service on this page.
 
@@ -24,38 +24,38 @@ We want you to read these Terms of Service, therefore, they are written in such 
 
 RevenueHunt offers a wide variety of products and services, so sometimes additional conditions or requirements can be applied that could replace, complete or modify these Terms of Service, and which will be informed in each specific case.
 
-If you’ve got any questions, send us an email to [info@revenuehunt.com](mailto:info@revenuehunt.com)
+If you've got any questions, send us an email to [info@revenuehunt.com](mailto:info@revenuehunt.com)
 
-This is the legal agreement between us when it comes to using our website, our apps and services. If you use RevenueHunt, you agree to these terms. If you don’t agree with the terms, don’t use RevenueHunt.
+This is the legal agreement between us when it comes to using our website, our apps and services. If you use RevenueHunt, you agree to these terms. If you don't agree with the terms, don't use RevenueHunt.
 
 ## How to use RevenueHunt
 
 You can create all kinds of Product Recommendation Quizzes for your ecommerce store. You can create an account installing our app. Make sure the info you provide is accurate and up-to-date.
 
-#### What you can’t do
+#### What you can't do
 
--   Share your account with anyone else. Please secure your login details. If you think someone else has your login details, contact us straight away. It’s so you’re not then held responsible for anything shady that happens in your account.
+-   Share your account with anyone else. Please secure your login details. If you think someone else has your login details, contact us straight away. It's so you're not then held responsible for anything shady that happens in your account.
 -   Mess with our security measures. Or those implemented by third parties.
--   Mess with areas of our site, product, or systems that aren’t open to the public.
+-   Mess with areas of our site, product, or systems that aren't open to the public.
 -   Trick people with fake elements on our website or service.
 -   Mess with the content on our website by uploading new content, creating new links, etc. That includes the use of automated scripts, spiders, robots, crawlers, data mining tools, or anything similar.
--   Interfere with someone else’s access to RevenueHunt. Stuff like sending a virus, overloading, flooding, spamming, and mail-bombing.
+-   Interfere with someone else's access to RevenueHunt. Stuff like sending a virus, overloading, flooding, spamming, and mail-bombing.
 -   Reproduce, duplicate, copy, sell, trade, resell, or exploit for any commercial reason any part of the service (including your own RevenueHunt account).
 -   Do stuff like vulnerability scanning, load testing, penetration tests, or bypassing our security measures.
 -   Use services that monitor the availability, performance, and functionality of RevenueHunt for benchmarking or anything else.
--   Hide the “Powered by RevenueHunt” branding via Custom CSS/JS. If you want to remove it, please consider upgrading to [one of our paid plans](https://revenuehunt.com/pricing/).
+-   Hide the "Powered by RevenueHunt" branding via Custom CSS/JS. If you want to remove it, please consider upgrading to [one of our paid plans](https://revenuehunt.com/pricing/).
 
 ## What about the quizzes I create?
 
-We don’t own anything you create or upload using RevenueHunt.
+We don't own anything you create or upload using RevenueHunt.
 
-We’ll ask for your permission to share publicly, and change what you create/upload to promote RevenueHunt.
+We'll ask for your permission to share publicly, and change what you create/upload to promote RevenueHunt.
 
-Any content you upload/create might be available to third parties. Make sure you’re happy with this before you upload/create content with our app.
+Any content you upload/create might be available to third parties. Make sure you're happy with this before you upload/create content with our app.
 
-Your content should not break the law or break third party policies. Make sure you have permission from the owner before you upload content—especially things that are protected by intellectual property rights. Otherwise we might delete it.
+Your content should not break the law or break third party policies. Make sure you have permission from the owner before you upload content - especially things that are protected by intellectual property rights. Otherwise we might delete it.
 
-We might review your content if it’s reported as illegal. If your content breaks any rules we might modify or delete it.
+We might review your content if it's reported as illegal. If your content breaks any rules we might modify or delete it.
 
 ## Your responsibilities
 
@@ -69,9 +69,9 @@ When you use your quiz to collect information, you enter into a contractual rela
 
 ## Third-party providers
 
-Sometimes we use other service providers (eg. connect your quiz to your mailing list or CRM via [Zapier](https://zapier.com/) or track quiz usage with [Google Analytics](https://analytics.google.com/analytics/web/)). We’re not liable for anything they do. Third parties are also obligated to follow regulations.
+Sometimes we use other service providers (eg. connect your quiz to your mailing list or CRM via [Zapier](https://zapier.com/) or track quiz usage with [Google Analytics](https://analytics.google.com/analytics/web/)). We're not liable for anything they do. Third parties are also obligated to follow regulations.
 
-What they do is beyond our control and we’re not liable for any of it. Using them could mean data from your quiz account gets transferred elsewhere. Our advice? Read their own policies carefully so you understand exactly how they use your data.
+What they do is beyond our control and we're not liable for any of it. Using them could mean data from your quiz account gets transferred elsewhere. Our advice? Read their own policies carefully so you understand exactly how they use your data.
 
 We are not responsible for the privacy practices of these partners when you use them in conjunction with RevenueHunt.
 
@@ -90,7 +90,7 @@ RevenueHunt has a service uptime of over 99.9%. You can check if our system is r
 -   Our support team is available 24/7 via email at [team@revenuehunt.com](mailto:team@revenuehunt.com) in case you encounter any issues
 -   We have automated tests and alerts which inform our lead developer when one of our systems is down
 -   Our DevOps team is informed automatically of any critical issues and they have a response time of under 15 minutes
--   Our support team can call both our Product Manager and our Lead Developer at any time in case a merchant or an end user reports any other incident which hasn’t been picked up by our tests
+-   Our support team can call both our Product Manager and our Lead Developer at any time in case a merchant or an end user reports any other incident which hasn't been picked up by our tests
 
 **Responding to Customer Support requests**
 
@@ -121,15 +121,15 @@ Neither RevenueHunt nor its partners, group companies, employees, representative
 
 ## I want to delete my account.
 
-If you’re on the Free plan, the account will stay active until you uninstall our app.
+If you're on the Free plan, the account will stay active until you uninstall our app.
 
-If you’re on a paid plan, they automatically renew monthly or annually (depending on how you decided to pay). You can cancel the renewal via the account settings. If you cancel, the subscription you already paid for will continue until the end of the month/year.
+If you're on a paid plan, they automatically renew monthly or annually (depending on how you decided to pay). You can cancel the renewal via the account settings. If you cancel, the subscription you already paid for will continue until the end of the month/year.
 
 You can delete your account any time uninstalling our app. This will cancel renewals. You might lose data if you decide to do this.
 
 ## Can RevenueHunt delete my account?
 
-We have the right to suspend or delete your account if you breach these terms and conditions. We’ll aim to give you 15 days notice, but we may delete it sooner if you break the law. You might lose data if your account gets deleted.
+We have the right to suspend or delete your account if you breach these terms and conditions. We'll aim to give you 15 days notice, but we may delete it sooner if you break the law. You might lose data if your account gets deleted.
 
 ## GDPR Compliance
 

@@ -28,7 +28,7 @@ September delivered powerful UI improvements, better mobile behavior, HTML-enabl
     
 -   **Results height sync** – The results pages now automatically adjust their height based on displayed content, preventing layout jumps and improving the smoothness of transitions between sections.
     
--   **Quiz Copilot now generates email templates** – Quiz Copilot can automatically craft email follow-ups for your quiz results — ideal for Klaviyo, Shopify Email, Omnisend, and more. [Read more](https://docs.revenuehunt.com/how-to-guides/use-quiz-copilot/)
+-   **Quiz Copilot now generates email templates** – Quiz Copilot can automatically craft email follow-ups for your quiz results - ideal for Klaviyo, Shopify Email, Omnisend, and more. [Read more](https://docs.revenuehunt.com/how-to-guides/use-quiz-copilot/)
     
 -   **Discount codes in results** – Merchants can now dynamically display discount codes on the results page, improving conversion rates for first-time buyers and retargeting campaigns. [Read more](https://docs.revenuehunt.com/how-to-guides/add-discount/)
     
@@ -41,4 +41,4 @@ These updates focus heavily on front-end accuracy, mobile UX, and personalizatio
 
 ### **Conclusion**
 
-September rounded out several long-requested UI and customization enhancements — especially for advanced quiz setups.
+September rounded out several long-requested UI and customization enhancements - especially for advanced quiz setups.

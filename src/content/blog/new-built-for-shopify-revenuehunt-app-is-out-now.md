@@ -16,12 +16,12 @@ draft: false
 
 <iframe loading="lazy" class="alignnone size-full" title="YouTube video player" src="https://www.youtube.com/embed/MeWGbfCLnEw?si=ZXy4Q8tWkmwv5WRI" width="100%" height="400px" frameborder="0" allowfullscreen="allowfullscreen"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe>
 
-Product recommendation quizzes have become an essential tool for merchants looking to offer tailored shopping experiences, boost conversion rates, and increase customer engagement. Now, with our new **Built for Shopify** RevenueHunt app, we’re taking this to the next level.
+Product recommendation quizzes have become an essential tool for merchants looking to offer tailored shopping experiences, boost conversion rates, and increase customer engagement. Now, with our new **Built for Shopify** RevenueHunt app, we're taking this to the next level.
 
 > **What is Built for Shopify?**  
-> Built for Shopify (BFS) is Shopify’s highest standard for app development. Apps that earn this designation are built to integrate seamlessly with Shopify’s infrastructure, providing a faster, more reliable, and user-friendly experience. Unlike standard apps, BFS apps are optimized for performance, security, and scalability, ensuring they work effortlessly within the Shopify ecosystem.
+> Built for Shopify (BFS) is Shopify's highest standard for app development. Apps that earn this designation are built to integrate seamlessly with Shopify's infrastructure, providing a faster, more reliable, and user-friendly experience. Unlike standard apps, BFS apps are optimized for performance, security, and scalability, ensuring they work effortlessly within the Shopify ecosystem.
 
-By transitioning to the new Bulit for Shopify RevenueHunt app, you’re not just upgrading your quiz experience—you’re adopting a platform that is natively optimized for Shopify, allowing you to **quickly** **build a product recommendation quiz, without needing to learn a completely new interface**.
+By transitioning to the new Bulit for Shopify RevenueHunt app, you're not just upgrading your quiz experience - you're adopting a platform that is natively optimized for Shopify, allowing you to **quickly** **build a product recommendation quiz, without needing to learn a completely new interface**.
 
 ![shopifyv2\_vid2](/img/blog/new-built-for-shopify-revenuehunt-app-is-out-now/shopifyv2_vid2.gif)
 
@@ -32,7 +32,7 @@ _🎉 Join the Beta Tester Program! Get early access for free and enjoy an exclu
 
 ## What changed in RevenuehHunt Built for Shopify Version?
 
-We’ve taken six years of insights and feedback from thousands of Shopify stores and reimagined the RevenueHunt quiz platform from the ground up.
+We've taken six years of insights and feedback from thousands of Shopify stores and reimagined the RevenueHunt quiz platform from the ground up.
 
 What changed in terms of the core features of the app:
 
@@ -40,13 +40,13 @@ What changed in terms of the core features of the app:
 
 #### RevenueHunt Now Supports 🌎 Shopify Markets for Multilingual Quizzes
 
-One of the most exciting new features of the Built for Shopify version of RevenueHunt is its **integration with Shopify Markets**. This update makes it easier than ever for merchants to offer localized shopping experiences by **displaying the right quiz based on a customer’s location, currency and language**.
+One of the most exciting new features of the Built for Shopify version of RevenueHunt is its **integration with Shopify Markets**. This update makes it easier than ever for merchants to offer localized shopping experiences by **displaying the right quiz based on a customer's location, currency and language**.
 
 ![manual\_shopifyV2\_appsettings\_markets\_showall](/img/blog/new-built-for-shopify-revenuehunt-app-is-out-now/manual_shopifyV2_appsettings_markets_showall.png)
 
-Instead of relying on automatic translations—which often lack nuance—you can now create separate versions of the same quiz in different languages and assign them dynamically to markets and languages. When a customer visits your store and clicks “Take the quiz,” they will immediately see the version tailored to their region, ensuring a smooth and personalized experience.
+Instead of relying on automatic translations - which often lack nuance - you can now create separate versions of the same quiz in different languages and assign them dynamically to markets and languages. When a customer visits your store and clicks "Take the quiz," they will immediately see the version tailored to their region, ensuring a smooth and personalized experience.
 
-This is a game-changer for international merchants who want to provide truly localized recommendations while maintaining control over the messaging and accuracy of their quizzes. Plus, since the Built for Shopify version is designed to be more modern and intuitive, merchants can easily manage their **multi-market quizzes** directly within their Shopify admin. If you’re expanding into new markets and want to ensure your product recommendation quizzes fit with global audiences, this is the perfect time to explore our new beta version!
+This is a game-changer for international merchants who want to provide truly localized recommendations while maintaining control over the messaging and accuracy of their quizzes. Plus, since the Built for Shopify version is designed to be more modern and intuitive, merchants can easily manage their **multi-market quizzes** directly within their Shopify admin. If you're expanding into new markets and want to ensure your product recommendation quizzes fit with global audiences, this is the perfect time to explore our new beta version!
 
 #### New Recommendation System: Fixed & Dynamic Recommendations
 
@@ -54,15 +54,15 @@ With the Built for Shopify version of RevenueHunt, you now have full control ove
 
 ![](/img/blog/new-built-for-shopify-revenuehunt-app-is-out-now/recommendationssystemsv2.png)
 
-This flexibility allows you to fine-tune the quiz experience—whether you want to **always feature bestsellers** or tailor results based on individual preferences. With the ability to customize recommendations by slot, you can mix and match different strategies within the same quiz, ensuring a personalized shopping journey.
+This flexibility allows you to fine-tune the quiz experience - whether you want to **always feature bestsellers** or tailor results based on individual preferences. With the ability to customize recommendations by slot, you can mix and match different strategies within the same quiz, ensuring a personalized shopping journey.
 
 #### Recommend 🛍️ Collections
 
-One of the most interesting new features in the Built for Shopify version of RevenueHunt is the ability to **recommend entire collections**—not just individual products or variants.
+One of the most interesting new features in the Built for Shopify version of RevenueHunt is the ability to **recommend entire collections** - not just individual products or variants.
 
 ![](/img/blog/new-built-for-shopify-revenuehunt-app-is-out-now/collectionsrecommend.png)
 
-This is important for merchants who sell **curated product bundles, seasonal selections, or category-based recommendations**. Instead of suggesting a single item, your quiz can now guide customers to an entire collection of relevant products, giving them more choices. Whether you’re promoting a skincare routine, fashion styles, or bundled gift sets, collection-based recommendations ensure a more personalized and dynamic shopping experience. Plus, since Shopify handles collections natively, everything updates automatically as you add or remove products—keeping your recommendations always fresh and relevant.
+This is important for merchants who sell **curated product bundles, seasonal selections, or category-based recommendations**. Instead of suggesting a single item, your quiz can now guide customers to an entire collection of relevant products, giving them more choices. Whether you're promoting a skincare routine, fashion styles, or bundled gift sets, collection-based recommendations ensure a more personalized and dynamic shopping experience. Plus, since Shopify handles collections natively, everything updates automatically as you add or remove products - keeping your recommendations always fresh and relevant.
 
 What changed in terms of design:
 
@@ -70,11 +70,11 @@ What changed in terms of design:
 
 #### Quiz Published as Part of Your Store
 
-In the new Built for Shopify version of RevenueHunt, your quiz is no longer an embedded iframe—it’s fully integrated into your Shopify store as a **native block or popup on the page**.
+In the new Built for Shopify version of RevenueHunt, your quiz is no longer an embedded iframe - it's fully integrated into your Shopify store as a **native block or popup on the page**.
 
 ![](/img/blog/new-built-for-shopify-revenuehunt-app-is-out-now/embedquiz.png)
 
-This means better performance, full compatibility with Shopify’s core features, and **no-issue interaction with third-party apps and tracking tools**. Unlike iframes, which had limitations in tracking, styling, and integrations, this new approach ensures that your quiz is indexed properly, detected by analytics tools, and interacts smoothly with Shopify’s built-in functions like cart rules and dynamic checkout buttons. The result? A faster, more reliable, and fully immersive experience that feels like an organic extension of your store.
+This means better performance, full compatibility with Shopify's core features, and **no-issue interaction with third-party apps and tracking tools**. Unlike iframes, which had limitations in tracking, styling, and integrations, this new approach ensures that your quiz is indexed properly, detected by analytics tools, and interacts smoothly with Shopify's built-in functions like cart rules and dynamic checkout buttons. The result? A faster, more reliable, and fully immersive experience that feels like an organic extension of your store.
 
 #### New 🎨Design Options
 
@@ -88,7 +88,7 @@ One of the biggest improvements is the introduction of a **Shopify-like quiz bui
 
 ![](/img/blog/new-built-for-shopify-revenuehunt-app-is-out-now/blocksystem.png)
 
-Just like Shopify’s theme editor, you can easily add, remove, and rearrange blocks for questions, images, product recommendations, and even custom HTML. This modular approach means merchants can create highly polished, engaging quizzes without needing any coding knowledge. Whether you want a minimalist, sleek look or a bold, brand-driven design, this new system provides the tools to bring your vision to life.
+Just like Shopify's theme editor, you can easily add, remove, and rearrange blocks for questions, images, product recommendations, and even custom HTML. This modular approach means merchants can create highly polished, engaging quizzes without needing any coding knowledge. Whether you want a minimalist, sleek look or a bold, brand-driven design, this new system provides the tools to bring your vision to life.
 
 ### Drag-and-Drop 👆🏼 Conditional Logic
 
@@ -96,7 +96,7 @@ The Built for Shopify version of RevenueHunt introduces a dramatically improved 
 
 ![manual\_shopifyV2\_quizbuilder\_quizbuilder\_conditionallogic](/img/blog/new-built-for-shopify-revenuehunt-app-is-out-now/manual_shopifyV2_quizbuilder_quizbuilder_conditionallogic.png)
 
-Whether you’re creating a detailed **product recommendation quiz** or an engaging **personality-type quiz**, the interface ensures that setting up jump logic, skip logic, and multi-step flows is clear and visual. This upgrade is especially beneficial for merchants who need highly personalized customer journeys, as it lets you visualize quiz logic at a glance.
+Whether you're creating a detailed **product recommendation quiz** or an engaging **personality-type quiz**, the interface ensures that setting up jump logic, skip logic, and multi-step flows is clear and visual. This upgrade is especially beneficial for merchants who need highly personalized customer journeys, as it lets you visualize quiz logic at a glance.
 
 ### Current Limitations in Beta & Integrations
 
@@ -108,17 +108,17 @@ There are also a few limitations in terms of integrations (for now):
 
 As with any beta release, there are a few missing features that will be added in future updates, including quiz revenue analytics, discount code syncing, automatic popup or chat icon triggers, subscription product recommendations, and expanded CRM integrations beyond Klaviyo, which are coming soon.
 
-However, the most essential integrations—such as **Google Analytics 4 and Meta Pixel tracking**, as well as **sending quiz data to Klaviyo**—are already fully functional. This ensures a smooth transition, making it an easy choice for all Shopify merchants.
+However, the most essential integrations - such as **Google Analytics 4 and Meta Pixel tracking**, as well as **sending quiz data to Klaviyo** - are already fully functional. This ensures a smooth transition, making it an easy choice for all Shopify merchants.
 
 ### Why Switch to RevenueHunt Built for Shopify App?
 
-> We’re offering early access to this Built for Shopify version of the app as part of our **Beta Tester Program**. This means you can start using it **completely free during the beta phase**. Plus, once we officially launch, beta testers will receive an **exclusive 25% lifetime discount on all plans**—a deal you won’t want to miss.
+> We're offering early access to this Built for Shopify version of the app as part of our **Beta Tester Program**. This means you can start using it **completely free during the beta phase**. Plus, once we officially launch, beta testers will receive an **exclusive 25% lifetime discount on all plans** - a deal you won't want to miss.
 > 
 > 🚀 **Ready to upgrade? [Contact Us Now and Join the Beta](mailto:team@revenuehunt.com)**
 > 
 > 💬 **Have questions?** Our team is here to help! **[Contact Support](https://revenuehunt.com/contact/)**
 
-If you’re a Shopify merchant looking to improve sales and engagement, the new beta version of RevenueHunt’s app is a way to go. Built for Shopify, it **feels like a natural extension of your store**, making setup and navigation effortless. It’s lightning-fast—even with thousands of products—so your customers get instant quiz results without any lag. Plus, with modern, **fully customizable templates**, your quizzes will match your brand perfectly. You can now recommend not just products, but specific variants and entire collections, making it easier to personalize bundles and drive conversions. And if you’ve ever wanted to create a personality-based quiz, the new version makes it simpler than ever. This is more than just an update—it’s the **easiest way to create high-converting, on-brand quizzes** that feel like an organic part of your store.
+If you're a Shopify merchant looking to improve sales and engagement, the new beta version of RevenueHunt's app is a way to go. Built for Shopify, it **feels like a natural extension of your store**, making setup and navigation effortless. It's lightning-fast - even with thousands of products - so your customers get instant quiz results without any lag. Plus, with modern, **fully customizable templates**, your quizzes will match your brand perfectly. You can now recommend not just products, but specific variants and entire collections, making it easier to personalize bundles and drive conversions. And if you've ever wanted to create a personality-based quiz, the new version makes it simpler than ever. This is more than just an update - it's the **easiest way to create high-converting, on-brand quizzes** that feel like an organic part of your store.
 
   
 [👉 Reach out and Switch to the Beta Version Now](https://revenuehunt.com/contact/)  
@@ -137,15 +137,15 @@ If you’re a Shopify merchant looking to improve sales and engagement, the new 
 > 
 > ![](/img/blog/new-built-for-shopify-revenuehunt-app-is-out-now/switch-e1741678242616.png)
 > 
-> 💡 **Switching back to V1 is always an option** if needed. If you ever want to go back to the legacy V1, no worries—there’s a similar link in the same spot that lets you switch back anytime.
+> 💡 **Switching back to V1 is always an option** if needed. If you ever want to go back to the legacy V1, no worries - there's a similar link in the same spot that lets you switch back anytime.
 
 ## Ready to Try It Out?
 
-The new **Built for Shopify** version of RevenueHunt isn’t just an update—it’s a complete evolution, designed to perfectly integrate with Shopify while giving you the power to create high-converting, on-brand quizzes faster than ever. Whether you want to **recommend collections, support multiple languages with Shopify Markets, or personalize product recommendations with fixed and dynamic options**, this beta version is built to maximize your sales potential.
+The new **Built for Shopify** version of RevenueHunt isn't just an update - it's a complete evolution, designed to perfectly integrate with Shopify while giving you the power to create high-converting, on-brand quizzes faster than ever. Whether you want to **recommend collections, support multiple languages with Shopify Markets, or personalize product recommendations with fixed and dynamic options**, this beta version is built to maximize your sales potential.
 
 🛍️ Why Join the Beta?  
 ✅ Early Access for Free – Start using the Built for Shopify app before anyone else.  
 💰 Exclusive 25% Lifetime Discount – Beta testers lock in a permanent discount after launch.  
 ⚡ Easy Transition – The new interface is intuitive, fast, and designed to work like an extension of your Shopify store.
 
-This is your chance to get ahead of the curve and build the **best product quiz experience possible**—all while securing an exclusive discount for life. Join the beta today and take your Shopify store to the next level! 🚀
+This is your chance to get ahead of the curve and build the **best product quiz experience possible** - all while securing an exclusive discount for life. Join the beta today and take your Shopify store to the next level! 🚀

@@ -23,7 +23,7 @@ These tools work together to automate follow-up emails tailored to the preferenc
 
 ![](/img/blog/how-to-automate-post-quiz-emails-using-shopify-flows/Copy-of-Beige-Minimalist-Venn-Diagram-Self-Care-Instagram-Post.png)
 
-Here’s how you can set up these automated email flows to get the most out of your customer data and why it works:
+Here's how you can set up these automated email flows to get the most out of your customer data and why it works:
 
 > ## Shop Quiz: Product Recommender + Shopify Flow = 10x Sales
 
@@ -88,10 +88,10 @@ To automate the process of sending personalized follow-up emails based on quiz r
 
 ![how to shopify customers automation full cycle](https://docs.revenuehunt.com/images/how%20to%20shopify%20customers%20automation%20full%20cycle.png)
 
-Here’s how to do it:
+Here's how to do it:
 
 1.  **Create a New Automation**: In your Shopify admin panel, go to Marketing > Automations and create a new custom automation.
-2.  **Set the Trigger**: Choose ‘Customer Created’ as the trigger for the flow. This starts the automation whenever a new customer profile is created from a quiz response.
+2.  **Set the Trigger**: Choose 'Customer Created' as the trigger for the flow. This starts the automation whenever a new customer profile is created from a quiz response.
 3.  ![how to send leads to shopify customers automation2](https://docs.revenuehunt.com/images/how%20to%20send%20leads%20to%20shopify%20customers%20automation2.png)
 4.  **Add Conditions**: Use customer tags from the quiz responses to set conditions. For example, if a customer is tagged with `prq_oilyskin`, tailor the follow-up email to recommend products for oily skin.
 5.  ![how to send leads to shopify customers automation3](https://docs.revenuehunt.com/images/how%20to%20send%20leads%20to%20shopify%20customers%20automation3.gif)
@@ -101,9 +101,9 @@ Here’s how to do it:
 
 ### 5️⃣ Monitor and Improve
 
-Congratulations! 🎉 You’ve successfully set up an automated, personalized email flow that will improve your customer engagement and drive higher conversion rates.
+Congratulations! 🎉 You've successfully set up an automated, personalized email flow that will improve your customer engagement and drive higher conversion rates.
 
-Regularly monitor the performance of your email flows using Shopify’s analytics tools, paying attention to open rates, click-through rates, and conversion rates. Based on the analytics and feedback, continually refine your email content to better meet customer needs and preferences.
+Regularly monitor the performance of your email flows using Shopify's analytics tools, paying attention to open rates, click-through rates, and conversion rates. Based on the analytics and feedback, continually refine your email content to better meet customer needs and preferences.
 
 > **💡 Tip:** Implement [A/B testing](https://docs.revenuehunt.com/how-to-guides/ab-test-quiz/) to compare different quiz and email strategies and determine which ones are most effective.
 
@@ -113,6 +113,6 @@ Using the Shop Quiz app with Shopify Flows offers a powerful solution for 🚀 *
 
 By using quiz data, you can enhance customer engagement, increase conversion rates, and gain valuable insights. Implementing these steps ensures an effective marketing workflow that drives business growth.
 
-To get the most out of this system, it’s important to **regularly monitor and tweak your email campaigns**. Keep an eye on 📊 metrics like open rates, click-through rates, and conversions to see how well your emails are performing.
+To get the most out of this system, it's important to **regularly monitor and tweak your email campaigns**. Keep an eye on 📊 metrics like open rates, click-through rates, and conversions to see how well your emails are performing.
 
 For detailed instructions on implementing a post-quiz email flow, check out the 📖 [RevenueHunt Documentation](https://docs.revenuehunt.com/how-to-guides/send-leads-to-shopify-customers/).

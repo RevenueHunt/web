@@ -10,10 +10,10 @@ featuredImage: "/img/pages/sign-up/meeting-scheduled.jpg"
 draft: false
 ---
 
-**Thank you for your interest! We’ll get in touch with you shortly to help you with the onboarding process.**
+**Thank you for your interest! We'll get in touch with you shortly to help you with the onboarding process.**
 
 Please proceed to create an account here:
 
 [sign up](https://admin.revenuehunt.com/register)
 
-If you haven’t done so already, check out our article on [how our app works](https://revenuehunt.com/how-it-works/) and [read our help guides](https://revenuehunt.com/faqs/) to get started.
+If you haven't done so already, check out our article on [how our app works](https://revenuehunt.com/how-it-works/) and [read our help guides](https://revenuehunt.com/faqs/) to get started.

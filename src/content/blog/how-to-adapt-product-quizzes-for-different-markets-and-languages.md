@@ -33,11 +33,11 @@ Navigate to:
 
 ### ✦ Understanding Cultural Nuances
 
-Localization begins with understanding the cultural context of your target market. **What resonates with customers in one country may not work in another**. For instance, color symbolism can vary widely—red might signify good fortune in China, while it can symbolize danger in Western cultures. It’s essential to research and adapt your quiz design and content accordingly.
+Localization begins with understanding the cultural context of your target market. **What resonates with customers in one country may not work in another**. For instance, color symbolism can vary widely - red might signify good fortune in China, while it can symbolize danger in Western cultures. It's essential to research and adapt your quiz design and content accordingly.
 
-Emerging markets present unique opportunities but also come with distinct challenges. When entering these markets, it’s crucial to **take a culturally sensitive approach** and be patient with the process of gaining consumer trust.
+Emerging markets present unique opportunities but also come with distinct challenges. When entering these markets, it's crucial to **take a culturally sensitive approach** and be patient with the process of gaining consumer trust.
 
-As you adapt your quizzes to different cultural contexts, it’s also important to ensure that the content remains appropriate and safe for diverse audiences. A [customized AI content moderation tool](https://www.utopiaanalytics.com/utopia-ai-moderator), for example, can be a good option, since it can detect and filter harmful or inappropriate content across different languages and cultural nuances. This ensures your quiz remains welcoming and trustworthy, helping to build consumer confidence while protecting your brand’s reputation.
+As you adapt your quizzes to different cultural contexts, it's also important to ensure that the content remains appropriate and safe for diverse audiences. A [customized AI content moderation tool](https://www.utopiaanalytics.com/utopia-ai-moderator), for example, can be a good option, since it can detect and filter harmful or inappropriate content across different languages and cultural nuances. This ensures your quiz remains welcoming and trustworthy, helping to build consumer confidence while protecting your brand's reputation.
 
 Key Points:
 
@@ -59,7 +59,7 @@ Key Points:
 
 ### ✦ Language Translation Best Practices
 
-Effective localization requires more than a direct translation of text. It’s crucial to maintain the integrity of your brand’s voice while ensuring the language feels natural to native speakers.
+Effective localization requires more than a direct translation of text. It's crucial to maintain the integrity of your brand's voice while ensuring the language feels natural to native speakers.
 
 Key Points:
 
@@ -67,7 +67,7 @@ Key Points:
 
 ✔️ **Be mindful of idiomatic expressions** that may not translate well. Replace or rephrase them to convey the intended meaning in the local language.
 
-✔️ Ensure that the **tone of the quiz aligns with your brand’s voice**, whether it’s formal, casual, or playful, across all languages.
+✔️ Ensure that the **tone of the quiz aligns with your brand's voice**, whether it's formal, casual, or playful, across all languages.
 
 > **💡Tip:**  Navigate to \`Quiz Settings > Messages\` in the [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) app to modify the language of interactive elements like buttons and popups. The transaltion of these elemenets can be done automaticallty and then adjuisted manually where necessary for each button or popup message/system message.
 > 
@@ -77,7 +77,7 @@ Key Points:
 
 ### ✦ Legal and Regulatory Compliance
 
-Each market has its own set of regulations that you must adhere to, especially regarding data privacy and advertising standards. For example, in Germany, it’s required to show the “grundpreis” or \`per 100ml\` price for cosmetic products.
+Each market has its own set of regulations that you must adhere to, especially regarding data privacy and advertising standards. For example, in Germany, it's required to show the "grundpreis" or \`per 100ml\` price for cosmetic products.
 
 **Key Points:**
 
@@ -85,7 +85,7 @@ Each market has its own set of regulations that you must adhere to, especially r
 
 ✔️ Be aware of **regional advertising standards** and ensure that your quiz content does not violate any local laws or guidelines.
 
-> **💡Tip:** To show the “grundpreis” or \`per 100ml\` price for cosmetic products [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) allows you to show these values by automatically [syncing the metafields/attributes of products](https://docs.revenuehunt.com/how-to-guides/add-product-metafields/) from your store.
+> **💡Tip:** To show the "grundpreis" or \`per 100ml\` price for cosmetic products [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) allows you to show these values by automatically [syncing the metafields/attributes of products](https://docs.revenuehunt.com/how-to-guides/add-product-metafields/) from your store.
 > 
 > ![](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-091730.png)
 > 
@@ -103,7 +103,7 @@ Key Points:
 
 ✔️ Set up **different domains for different markets** and let the customer choose where they want to shop.
 
-✔️ (optional) **Implement geolocation tools** (like Shopify Markets) to automatically display the quiz in the appropriate language and currency based on the user’s location.
+✔️ (optional) **Implement geolocation tools** (like Shopify Markets) to automatically display the quiz in the appropriate language and currency based on the user's location.
 
 ### ✦ Geolocation Settings  in Quiz Apps
 
@@ -111,9 +111,9 @@ If you have a different domain for each of your markets, then you can easily ins
 
 > **💡Tip:** Shop Quiz: Product Recommendation Quiz offers a special pricing deal for eCommerce businesses with multi-store setups. [Contact the team](https://revenuehunt.com/contact/) to learn more.
 
-However, if you’re using an automatic translation plugin or a geolocation plugin, this becomes a bit more complicated for quiz apps. The main problem of automatic translation plugins like Weglot or Langify or multi-currency plugins is that products translated automatically to other languages/currencies **don’t have unique product IDs**. This makes it difficult for other apps (like quiz apps) to sync products in different languages for different markets.
+However, if you're using an automatic translation plugin or a geolocation plugin, this becomes a bit more complicated for quiz apps. The main problem of automatic translation plugins like Weglot or Langify or multi-currency plugins is that products translated automatically to other languages/currencies **don't have unique product IDs**. This makes it difficult for other apps (like quiz apps) to sync products in different languages for different markets.
 
-> **📝 Note:** The [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) app doesn’t integrate directly with translation or multi-currency plugins like Weglot or Langify. Instead, it offers specific workarounds for setting up multilingual and multi-currency quizzes detailed below.
+> **📝 Note:** The [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) app doesn't integrate directly with translation or multi-currency plugins like Weglot or Langify. Instead, it offers specific workarounds for setting up multilingual and multi-currency quizzes detailed below.
 
 > **📝 Note:** For now, the Shop Quiz: Product  Recommendation Quiz app **can only sync the base products from your store (in the main language and currency).**  So you can change the quiz language but the product names and descriptions will be shown in the original language/currency.
 
@@ -125,11 +125,11 @@ However, there are many tested [workarounds](https://docs.revenuehunt.com/how-to
 > 
 > ![](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-092134.png)
 
-Use JavaScript code in your eCommerce store to show the appropriate quiz to users based on their browser’s language setting.
+Use JavaScript code in your eCommerce store to show the appropriate quiz to users based on their browser's language setting.
 
 The script should:
 
--   Detect the browser’s language.
+-   Detect the browser's language.
 -   Map this language to the corresponding quiz ID.
 -   Update quiz links and iframes on your site to point to the correct quiz version.
 
@@ -137,7 +137,7 @@ The script should:
 
 #### 2️⃣ Redirect to the Product Page
 
-If you run a multi-currency shop there’s a workaround. What most customers do is show the product on the results page without the price and instead choose the checkout option to \`_view the product\`_. This way the customer is redirected to the product page from the result where the right price is applied.
+If you run a multi-currency shop there's a workaround. What most customers do is show the product on the results page without the price and instead choose the checkout option to \`_view the product\`_. This way the customer is redirected to the product page from the result where the right price is applied.
 
 Follow these steps to apply this workaround:
 
@@ -152,7 +152,7 @@ Now, the product price will not be shown and the customer will be redirected to 
 
 #### 3️⃣ Redirect to Translated Product URL
 
-After you’ve created quizzes in different languages and you can automatically redirect users to the translated product pages with JavaScript.
+After you've created quizzes in different languages and you can automatically redirect users to the translated product pages with JavaScript.
 
 -   Instead of adding a product to cart, you can change the checkout settings to link to product and point customers to the translated product page.
 -   By default, the customer will be redirected to the original product URL, but you can force an automatic URL change via JavaScript.
@@ -164,7 +164,7 @@ Key Points:
 
 ✔️ If **separate domains are used for each market**, a quiz app can be installed on each domain, allowing for a personalized quiz experience tailored to each specific market.
 
-✔️ Automatic **translation plugins don’t assign unique product IDs** for different languages/currencies, causing sync issues for quiz apps.
+✔️ Automatic **translation plugins don't assign unique product IDs** for different languages/currencies, causing sync issues for quiz apps.
 
 ✔️ Most quiz apps can only sync base products in the main language and currency but **there are many tested workarounds** such as:
 
@@ -176,7 +176,7 @@ Key Points:
 
 ### ✦ Testing and Optimization
 
-Localization doesn’t end with the launch of your quiz. Continuous testing and optimization are necessary to ensure that it performs well in different markets.
+Localization doesn't end with the launch of your quiz. Continuous testing and optimization are necessary to ensure that it performs well in different markets.
 
 Key Points:
 
@@ -194,7 +194,7 @@ Key Points:
 
 Localization is not a one-size-fits-all solution. Each market requires a tailored approach that reflects its unique characteristics. By investing in thorough research and careful adaptation, **your quizzes can become a valuable asset in your global e-commerce strategy**.
 
-While the [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) app doesn’t directly integrate with translation or multi-currency plugins, it provides flexible options for creating multilingual quizzes that resonate with global audiences.
+While the [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) app doesn't directly integrate with translation or multi-currency plugins, it provides flexible options for creating multilingual quizzes that resonate with global audiences.
 
 By understanding cultural nuances, setting up translations, and using the provided workarounds, you can effectively localize your quizzes to drive engagement and conversions worldwide.
 

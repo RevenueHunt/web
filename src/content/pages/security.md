@@ -115,4 +115,4 @@ RevenueHunt's data handling is described in detail in our [Privacy Policy](/priv
 
 ## Questions
 
-For security questions that are not vulnerability reports — for example, requests for our security questionnaire, DPA, or SOC documentation — please email [security@revenuehunt.com](mailto:security@revenuehunt.com) with "Security questionnaire" in the subject line.
+For security questions that are not vulnerability reports - for example, requests for our security questionnaire, DPA, or SOC documentation - please email [security@revenuehunt.com](mailto:security@revenuehunt.com) with "Security questionnaire" in the subject line.

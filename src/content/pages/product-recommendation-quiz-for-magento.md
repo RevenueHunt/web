@@ -1,6 +1,6 @@
 ---
 title: "Product Recommendation Quiz for Magento"
-description: "Product Recommendation Quiz for Magento — the module is no longer supported. Here are your alternatives: the standalone quiz, or migrate to Shopify or WooCommerce."
+description: "Product Recommendation Quiz for Magento - the module is no longer supported. Here are your alternatives: the standalone quiz, or migrate to Shopify or WooCommerce."
 pubDate: 2020-11-27T15:51:27Z
 updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "product-recommendation-quiz-for-magento"
@@ -10,27 +10,27 @@ featuredImage: "/img/pages/product-recommendation-quiz-for-magento/plus-backgrou
 draft: false
 ---
 
-### Product Recommendation Quiz for Magento — current status
+### Product Recommendation Quiz for Magento - current status
 
-The native Magento extension for the RevenueHunt Product Recommendation Quiz is **no longer actively supported.** If you run a Magento store today and you want a personalized quiz that recommends products and captures leads, you have three working paths — all of which we'll walk through below.
+The native Magento extension for the RevenueHunt Product Recommendation Quiz is **no longer actively supported.** If you run a Magento store today and you want a personalized quiz that recommends products and captures leads, you have three working paths - all of which we'll walk through below.
 
 This page exists so you can land on it from a Google search, understand the situation honestly, and pick the path that fits your store without wasting time on a dead-end install.
 
 ### Your three options for Magento
 
-#### Option 1 — Use the standalone quiz (recommended for most Magento stores)
+#### Option 1 - Use the standalone quiz (recommended for most Magento stores)
 
-Our [standalone product recommendation quiz](/product-recommendation-quiz-standalone-google-product-feed/) connects to your Magento catalog via a Google Product Feed or a CSV export. Shoppers take the quiz on a quiz-builder-hosted page (or an embedded iframe on your Magento storefront), and the recommendations link straight back to your product detail pages. Cart and checkout stay native to Magento — the quiz only handles the discovery layer.
+Our [standalone product recommendation quiz](/product-recommendation-quiz-standalone-google-product-feed/) connects to your Magento catalog via a Google Product Feed or a CSV export. Shoppers take the quiz on a quiz-builder-hosted page (or an embedded iframe on your Magento storefront), and the recommendations link straight back to your product detail pages. Cart and checkout stay native to Magento - the quiz only handles the discovery layer.
 
 This is the right choice if you want to keep your Magento backend, infrastructure, and existing extensions intact. Setup typically takes under an hour, you get all the analytics integrations (GA4, Meta Pixel, Klaviyo), and there's no Magento module to maintain.
 
-#### Option 2 — Migrate the storefront to Shopify or WooCommerce
+#### Option 2 - Migrate the storefront to Shopify or WooCommerce
 
 If you've been considering a re-platform, this is a strong forcing function. Both [Shopify](/product-recommendation-quiz-shopify/) and [WooCommerce](/product-recommendation-quiz-woocommerce/) have first-class RevenueHunt integrations with deeper analytics, native cart syncing, and ongoing feature development. Most Magento → Shopify or Magento → WooCommerce migrations take 4 to 12 weeks depending on catalog size and customizations.
 
 We can't help with the migration itself, but once you're on Shopify or WooCommerce, the quiz install is under 15 minutes.
 
-#### Option 3 — Build your own integration against our REST API
+#### Option 3 - Build your own integration against our REST API
 
 If your team has Magento PHP development capacity and you want a deeply custom integration, our REST API and webhook surface are available on every paid plan. You manage the storefront integration; we run the quiz engine, results scoring, and analytics. Email our [support team](https://docs.revenuehunt.com/) for API access and OpenAPI spec.
 
@@ -44,21 +44,21 @@ If you're a current customer of the deprecated Magento module, it continues to f
 
 The fastest way to understand what a product recommendation quiz does for conversions is to take one. Our demo store has 12 working examples across different verticals:
 
--   [Skincare quiz](https://productrecommendationquiz.com/pages/skin-analysis?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-recommendation-quiz-for-magento) — visual branching, multi-product results
--   [Supplements quiz](https://productrecommendationquiz.com/pages/supplements-quiz?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-recommendation-quiz-for-magento) — health and wellness vertical
--   [Foundation shade match](https://productrecommendationquiz.com/pages/foundation-match?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-recommendation-quiz-for-magento) — image-based questions
+-   [Skincare quiz](https://productrecommendationquiz.com/pages/skin-analysis?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-recommendation-quiz-for-magento) - visual branching, multi-product results
+-   [Supplements quiz](https://productrecommendationquiz.com/pages/supplements-quiz?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-recommendation-quiz-for-magento) - health and wellness vertical
+-   [Foundation shade match](https://productrecommendationquiz.com/pages/foundation-match?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-recommendation-quiz-for-magento) - image-based questions
 -   [All 12 quiz examples →](https://productrecommendationquiz.com/?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-recommendation-quiz-for-magento)
 
 Each one is a working RevenueHunt quiz you can complete end-to-end. The behavior is identical regardless of which integration path you pick.
 
 ### Also available on
 
--   [Shopify](/product-recommendation-quiz-shopify/) — fully supported, most active integration
--   [WooCommerce](/product-recommendation-quiz-woocommerce/) — fully supported
--   [BigCommerce](/product-recommendation-quiz-bigcommerce/) — fully supported
+-   [Shopify](/product-recommendation-quiz-shopify/) - fully supported, most active integration
+-   [WooCommerce](/product-recommendation-quiz-woocommerce/) - fully supported
+-   [BigCommerce](/product-recommendation-quiz-bigcommerce/) - fully supported
 -   [Wix Stores](/product-recommendation-quiz-wix-stores/)
 -   [Squarespace](/product-recommendation-quiz-for-squarespace-commerce/)
--   [Standalone (Google Product Feed)](/product-recommendation-quiz-standalone-google-product-feed/) — recommended path for current Magento stores
+-   [Standalone (Google Product Feed)](/product-recommendation-quiz-standalone-google-product-feed/) - recommended path for current Magento stores
 
 ### Frequently asked questions
 
@@ -95,7 +95,7 @@ Each product card on the quiz results page links directly to your Magento produc
 <details>
 <summary><strong>Will Magento support ever return?</strong></summary>
 
-We don't currently plan to revive the native module. Our engineering roadmap is focused on Shopify, WooCommerce, BigCommerce, and the standalone path. If you're a large Magento merchant and module support is critical, get in touch — we evaluate enterprise integration projects case by case.
+We don't currently plan to revive the native module. Our engineering roadmap is focused on Shopify, WooCommerce, BigCommerce, and the standalone path. If you're a large Magento merchant and module support is critical, get in touch - we evaluate enterprise integration projects case by case.
 </details>
 
 <script type="application/ld+json">

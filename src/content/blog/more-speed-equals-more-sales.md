@@ -1,6 +1,6 @@
 ---
 title: "More Speed equals More Sales"
-description: "Improving your eCommerce’s loading speed should be your top priority if you want to get more conversions and sales. Without this, nothing else matters."
+description: "Improving your eCommerce's loading speed should be your top priority if you want to get more conversions and sales. Without this, nothing else matters."
 pubDate: 2023-12-15T10:23:30Z
 updatedDate: 2023-12-17T19:37:14Z
 tags: []
@@ -15,7 +15,7 @@ featuredImage: null
 draft: false
 ---
 
-Improving your eCommerce’s loading speed should be your top priority if you want to get more conversions and sales. Without this, nothing else matters.  
+Improving your eCommerce's loading speed should be your top priority if you want to get more conversions and sales. Without this, nothing else matters.  
 
 _Reading time: about 4 minutes_
 
@@ -23,7 +23,7 @@ Hey there!
 
 Welcome to the **Actionable Insights** newsletter, where eCommerce professionals like myself share valuable knowledge we acquire in our day-to-day.
 
-I’m Alex, the co-founder of RevenueHunt, the #1 product recommendation quiz app for eCommerce. Our quiz guides your customers throughout their shopping experience and helps them find the right products for them.
+I'm Alex, the co-founder of RevenueHunt, the #1 product recommendation quiz app for eCommerce. Our quiz guides your customers throughout their shopping experience and helps them find the right products for them.
 
 Want to drive conversions and sales on your store? Get the app [here](https://revenuehunt.com/).
 
@@ -31,17 +31,17 @@ Want to drive conversions and sales on your store? Get the app [here](https://re
 
 ### 💡 ONE IDEA I WANT TO SHARE WITH YOU
 
-Improving your store’s loading speed **should be your top priority** if you want to get more conversions and sales. Without this, no other improvements you do on your store matter.
+Improving your store's loading speed **should be your top priority** if you want to get more conversions and sales. Without this, no other improvements you do on your store matter.
 
-If someone clicks on your ad and never gets to see your actual landing page because it’s loading for eternity, they’re probably going to leave.
+If someone clicks on your ad and never gets to see your actual landing page because it's loading for eternity, they're probably going to leave.
 
 Over 50% of online purchases now come from mobile devices and **Internet connection is not always that good for smartphones**, so make sure you check your website on Google PageSpeed Insights.
 
-If you’re a Shopify store owner, log in to your dashboard. Navigate to the “Reports” section and search for the “Online store speed” report:
+If you're a Shopify store owner, log in to your dashboard. Navigate to the "Reports" section and search for the "Online store speed" report:
 
 <figure><div class="image2-inset"><picture><source srcset="https://substackcdn.com/image/fetch/w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1e416992-b406-4f06-b109-a06708698749_1260x728.png 424w, https://substackcdn.com/image/fetch/w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1e416992-b406-4f06-b109-a06708698749_1260x728.png 848w, https://substackcdn.com/image/fetch/w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1e416992-b406-4f06-b109-a06708698749_1260x728.png 1272w, https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1e416992-b406-4f06-b109-a06708698749_1260x728.png 1456w" type="image/webp" sizes="100vw"><img loading="lazy" decoding="async" class="sizing-normal" src="/img/blog/more-speed-equals-more-sales/1e416992-b406-4f06-b109-a06708698749_1260x728.png" sizes="auto, 100vw" srcset="https://substackcdn.com/image/fetch/w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1e416992-b406-4f06-b109-a06708698749_1260x728.png 424w, https://substackcdn.com/image/fetch/w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1e416992-b406-4f06-b109-a06708698749_1260x728.png 848w, https://substackcdn.com/image/fetch/w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1e416992-b406-4f06-b109-a06708698749_1260x728.png 1272w, /img/blog/more-speed-equals-more-sales/1e416992-b406-4f06-b109-a06708698749_1260x728.png 1456w" alt="" width="1260" height="728" data-attrs="{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/1e416992-b406-4f06-b109-a06708698749_1260x728.png&quot;,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:728,&quot;width&quot;:1260,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:113064,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/png&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null}"></picture><div></div></div></figure>
 
-If you’re a Shopify developer, head over to your **Shopify Partners dashboard**, navigate to the “Stores” section, and then click on “View store performance” under the “More actions” dropdown:
+If you're a Shopify developer, head over to your **Shopify Partners dashboard**, navigate to the "Stores" section, and then click on "View store performance" under the "More actions" dropdown:
 
 <figure><div class="image2-inset"><picture><source srcset="https://substackcdn.com/image/fetch/w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa0aa04cd-4649-4ebf-8b17-5abea5fb6d43_1606x934.png 424w, https://substackcdn.com/image/fetch/w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa0aa04cd-4649-4ebf-8b17-5abea5fb6d43_1606x934.png 848w, https://substackcdn.com/image/fetch/w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa0aa04cd-4649-4ebf-8b17-5abea5fb6d43_1606x934.png 1272w, https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa0aa04cd-4649-4ebf-8b17-5abea5fb6d43_1606x934.png 1456w" type="image/webp" sizes="100vw"><img loading="lazy" decoding="async" class="sizing-normal" src="/img/blog/more-speed-equals-more-sales/a0aa04cd-4649-4ebf-8b17-5abea5fb6d43_1606x934.png" sizes="auto, 100vw" srcset="https://substackcdn.com/image/fetch/w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa0aa04cd-4649-4ebf-8b17-5abea5fb6d43_1606x934.png 424w, https://substackcdn.com/image/fetch/w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa0aa04cd-4649-4ebf-8b17-5abea5fb6d43_1606x934.png 848w, https://substackcdn.com/image/fetch/w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa0aa04cd-4649-4ebf-8b17-5abea5fb6d43_1606x934.png 1272w, /img/blog/more-speed-equals-more-sales/a0aa04cd-4649-4ebf-8b17-5abea5fb6d43_1606x934.png 1456w" alt="" width="1456" height="847" data-attrs="{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/a0aa04cd-4649-4ebf-8b17-5abea5fb6d43_1606x934.png&quot;,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:847,&quot;width&quot;:1456,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:146969,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/png&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null}"></picture><div></div></div></figure>
 
@@ -55,11 +55,11 @@ The score is based on a weighted average of [Lighthouse performance scores](http
 -   the top-visited product page
 -   the top-visited collection page
 
-This is a very high level report, so for more detailed info what I’d recommend is to go directly to the source: [Google PageSpeed Insights](https://pagespeed.web.dev/).
+This is a very high level report, so for more detailed info what I'd recommend is to go directly to the source: [Google PageSpeed Insights](https://pagespeed.web.dev/).
 
 **» Some things to take into account for Shopify:**
 
--   Shopify stores by themselves are lightning fast. Their hosting is state of the art. It’s what we add on top of the “raw” store which slows it down.
+-   Shopify stores by themselves are lightning fast. Their hosting is state of the art. It's what we add on top of the "raw" store which slows it down.
 -   Shopify Already serves your images through CDN
 -   Shopify already does Lazy Load for images
 
@@ -67,13 +67,13 @@ This is a very high level report, so for more detailed info what I’d recommend
 
 1.  Too many tracking pixels (JavaScript snippets hurt your loading speed)
 2.  Poorly coded, bloated themes
-3.  Too many apps (even if they’re well coded)
+3.  Too many apps (even if they're well coded)
 4.  Too many media files (e.g. images), or files which are too large
 5.  Poorly coded apps, which insert JavaScript globally throughout the site
 
-There are tons of books written about web performance, and I know I should write a long-form post about this topic… but you’re probably very busy running your business and I don’t want to bore you with the technical stuff.
+There are tons of books written about web performance, and I know I should write a long-form post about this topic... but you're probably very busy running your business and I don't want to bore you with the technical stuff.
 
-**TL;DR → if you’re ready to take action:**
+**TL;DR → if you're ready to take action:**
 
 🚫 Uninstall any unused apps from your store
 
@@ -83,7 +83,7 @@ There are tons of books written about web performance, and I know I should write
 
 * * *
 
-### 🔗 TOP RESOURCES YOU CAN’T MISS
+### 🔗 TOP RESOURCES YOU CAN'T MISS
 
 **🛠️ Thingstesting**
 
@@ -91,7 +91,7 @@ Do you need product ideas for your eCommerce, or do you just want design inspira
 
 **📕 Getting Real by Basecamp**
 
-Hands down the best business book I’ve ever read for getting your business from 0 to 1M. It’s especially targeted for software products, but the takeaways also apply for eCommerce and other lean businesses. You can [read it online for free](https://basecamp.com/gettingreal).
+Hands down the best business book I've ever read for getting your business from 0 to 1M. It's especially targeted for software products, but the takeaways also apply for eCommerce and other lean businesses. You can [read it online for free](https://basecamp.com/gettingreal).
 
 **🛍️ Flash Cart‑ Drawer Cross‑sells  
 **

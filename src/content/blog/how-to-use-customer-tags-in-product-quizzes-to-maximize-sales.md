@@ -44,14 +44,14 @@ Customer tags are essential for segmented marketing, as 90% of marketers report 
 
 **➡️ Creating and Adding Customer Tags**
 
-The process of creating and using customer tags in the [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/) app is straightforward. Here’s how you can do it:
+The process of creating and using customer tags in the [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/) app is straightforward. Here's how you can do it:
 
-1.  **Adding a New Tag**: To add a new tag, go to the [Customer Tags section](https://docs.revenuehunt.com/reference/quiz-builder/#customer-tags) of the Quiz Builder and simply type its name into the white bar next to one of the quiz choices. Confirm the creation by clicking “Add this as a new customer tag”.![quiz builder customer tags add tag](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/manual_quizbuilder_customertags_addtag.png)
+1.  **Adding a New Tag**: To add a new tag, go to the [Customer Tags section](https://docs.revenuehunt.com/reference/quiz-builder/#customer-tags) of the Quiz Builder and simply type its name into the white bar next to one of the quiz choices. Confirm the creation by clicking "Add this as a new customer tag".![quiz builder customer tags add tag](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/manual_quizbuilder_customertags_addtag.png)
 2.  **Linking Tags to Choices**: Once created, these tags become available options that you can link to other choices. There is no limit to the number of tags you can create or link to a single choice, providing great flexibility in customer segmentation.![quiz builder customer tags added tag](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/manual_quizbuilder_customertags_tagadded.png)
 
 ## How to use Customer Tags?
 
-Imagine a haircare store that offers a wide range of products including shampoos, conditioners, hair treatments, styling products, and more. The store uses the [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/) app to help customers find the best products based on their hair type, concerns, and goals. Here’s how they can use customer tags for a segmented marketing campaign in Klaviyo.
+Imagine a haircare store that offers a wide range of products including shampoos, conditioners, hair treatments, styling products, and more. The store uses the [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/) app to help customers find the best products based on their hair type, concerns, and goals. Here's how they can use customer tags for a segmented marketing campaign in Klaviyo.
 
 **1️⃣ Create the Quiz**:
 
@@ -59,7 +59,7 @@ Create a quiz with questions about hair type (e.g., curly, straight, wavy), hair
 
 **2️⃣ Create and Link Customer Tags to Choices**
 
-As customers answer these questions, assign relevant tags such as “Curly Hair,” “Dry Hair,” “Volume,” “Anti-Frizz,” and “Repair” to the choices in the quiz. This can be done in the Customer Tags tab within the Quiz Builder.
+As customers answer these questions, assign relevant tags such as "Curly Hair," "Dry Hair," "Volume," "Anti-Frizz," and "Repair" to the choices in the quiz. This can be done in the Customer Tags tab within the Quiz Builder.
 
 ![](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/Screenshot-2024-06-06-153844.png)
 
@@ -77,17 +77,17 @@ In Klaviyo, create segments based on the tags.
 
 For example:
 
--   **Curly Hair Segment**: Customers coming from the quiz and tagged with “Curly Hair.”
--   **Dry Hair Segment**: Customers coming from the quiz and tagged with “Dry Hair.”
--   **Volume Goal Segment**: Customers coming from the quiz and tagged with “Volume.”
--   **Anti-Frizz Segment**: Customers coming from the quiz and tagged with “Anti-Frizz.”
--   **Repair Segment**: Customers coming from the quiz and tagged with “Repair.”
+-   **Curly Hair Segment**: Customers coming from the quiz and tagged with "Curly Hair."
+-   **Dry Hair Segment**: Customers coming from the quiz and tagged with "Dry Hair."
+-   **Volume Goal Segment**: Customers coming from the quiz and tagged with "Volume."
+-   **Anti-Frizz Segment**: Customers coming from the quiz and tagged with "Anti-Frizz."
+-   **Repair Segment**: Customers coming from the quiz and tagged with "Repair."
 
 > 🧐 Tip: Check [this video](https://docs.revenuehunt.com/tutorials/follow-up-emails-klaviyo/) to learn how to create Segments based on the quiz submissions in Klaviyo.
 
 **5️⃣ Design Tailored Email Campaigns**:
 
-Create [email flows/campaigns](https://help.klaviyo.com/hc/en-us/articles/115002774932) specifically tailored to each segment in Kalviyo. When designing tailored email campaigns, it’s all about crafting messages that really speak to each customer segment’s unique needs and preferences.
+Create [email flows/campaigns](https://help.klaviyo.com/hc/en-us/articles/115002774932) specifically tailored to each segment in Kalviyo. When designing tailored email campaigns, it's all about crafting messages that really speak to each customer segment's unique needs and preferences.
 
 Start by digging into the data from your customer tags to understand what makes each group tick. Create content that addresses their specific interests and personalize your subject lines and email bodies to make them feel valued. Plan your campaign schedule carefully to keep people engaged without overwhelming them, and use automation to send timely, relevant emails based on their behavior.
 

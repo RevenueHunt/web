@@ -16,11 +16,11 @@ Download for review: [DOCX](/legal/RevenueHunt-Privacy-Policy.docx) · [CSV](/le
 
 ## RevenueHunt.com website Privacy Policy
 
-**RevenueHunt** is a product of **Dairy Capital Limited**, a private limited company incorporated in England and Wales under company number 12503996, with registered office at Vision Accounting Fortis House, Cothey Way, Ryde, Isle of Wight, PO33 1QT, United Kingdom. References to “RevenueHunt”, “we”, “us” or “our” in this policy refer to Dairy Capital Limited.
+**RevenueHunt** is a product of **Dairy Capital Limited**, a private limited company incorporated in England and Wales under company number 12503996, with registered office at Vision Accounting Fortis House, Cothey Way, Ryde, Isle of Wight, PO33 1QT, United Kingdom. References to "RevenueHunt", "we", "us" or "our" in this policy refer to Dairy Capital Limited.
 
 For RevenueHunt current or potential business customers who use our website.
 
-**RevenueHunt does not intend for this website or any of the Services to collect personal information (or ‘personal data’ for EU visitors) from children under the age of 18.** If you are under 18, please do not attempt to create an account with us or send any personal information about yourself to us. If you believe that a child under 18 may have provided us with personal information, please contact us via email at [info@revenuehunt.com](mailto:info@revenuehunt.com)
+**RevenueHunt does not intend for this website or any of the Services to collect personal information (or 'personal data' for EU visitors) from children under the age of 18.** If you are under 18, please do not attempt to create an account with us or send any personal information about yourself to us. If you believe that a child under 18 may have provided us with personal information, please contact us via email at [info@revenuehunt.com](mailto:info@revenuehunt.com)
 
 **Some pages of this website allow the sending of your personal and contact information.** We offer multiple ways in which you may contact us or send us your data, including when you install our app through Shopify or WooCommerce, register for an account, send us emails, fill out forms, and occasionally through surveys. The information we may collect from you through these processes is:
 
@@ -33,7 +33,7 @@ For RevenueHunt current or potential business customers who use our website.
 
 Your personal contact information (e-mail and phone), passwords, as well as tax information (ID card, bank accounts and credit cards) that you provide will not be published on our website and will never be shared with third parties.
 
-On occasion, we may also ask you to provide us with information about another person and their contact information, such as with other potential business users of our app. In such case, we will treat the other person’s information the same as yours and in accordance with this policy.
+On occasion, we may also ask you to provide us with information about another person and their contact information, such as with other potential business users of our app. In such case, we will treat the other person's information the same as yours and in accordance with this policy.
 
 **We gather data about you when you engage with our website, app, or contact us via email.** Similar to many other websites and apps, we employ tools to track your interactions. These tools may involve the use of pixel tags and cookies. We also send email updates and offers and may analyze your interactions with our emails. During these interactions, we specifically collect the following information:
 
@@ -44,9 +44,9 @@ On occasion, we may also ask you to provide us with information about another pe
 -   Advertising IDs
 -   Email opens and click-throughs that will be associated with an email address
 
-## “Product Recommendation Quiz” app Privacy Policy
+## "Product Recommendation Quiz" app Privacy Policy
 
-For us, the security of your data is very important, so access to your RevenueHunt account is password protected. If you lose it, you can only recover it using the automated password recovery procedure on the “access” page, by clicking on the “I forgot my password” link. The password will be sent to the contact e-mail of your profile.
+For us, the security of your data is very important, so access to your RevenueHunt account is password protected. If you lose it, you can only recover it using the automated password recovery procedure on the "access" page, by clicking on the "I forgot my password" link. The password will be sent to the contact e-mail of your profile.
 
 Some non-confidential information you provide may appear on your RevenueHunt profile. These data are the username, your description, avatar (image), location, services offered, services demanded, prices and rates, among others. If you do not want them to appear on our app you can delete them at any time.
 
@@ -73,7 +73,7 @@ We work with business partners who integrate with our app. In some cases, these 
 -   Omnisend
 -   HubSpot
 
-We contract with the following service providers who use your personal information exclusively to support RevenueHunt’s business operations:
+We contract with the following service providers who use your personal information exclusively to support RevenueHunt's business operations:
 
 -   Customer communications through Klaviyo
 -   Web and app analytics through Google Analytics
@@ -88,7 +88,7 @@ We will not sell, rent or share your personal information with third parties for
 
 We may share aggregated information that does not identify any personal information, such as the number of website or app visits, referring partner metrics, or number of account registrations.
 
-**Shopify’s APIs use:**
+**Shopify's APIs use:**
 
 -   We import product and collections information from your store for our recommendation algorithm to work
 -   We pull orders information in order to monitor quiz performance and ROI. We do not store any personal information from the orders.
@@ -96,9 +96,9 @@ We may share aggregated information that does not identify any personal informat
 
 ## Analytics
 
-**First-party:** we’re using [AHOY](https://github.com/ankane/ahoy) to offer you analytics about your customers’ behavior using your quiz. Only you have access to this data.
+**First-party:** we're using [AHOY](https://github.com/ankane/ahoy) to offer you analytics about your customers' behavior using your quiz. Only you have access to this data.
 
-**Third-party:** We’re using Google Analytics to track anonymous behavior data.
+**Third-party:** We're using Google Analytics to track anonymous behavior data.
 
 ## Cookies
 
@@ -106,7 +106,7 @@ If you leave a comment on our site you may opt-in to saving your name, email add
 
 If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.
 
-When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select “Remember Me”, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.
+When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select "Remember Me", your login will persist for two weeks. If you log out of your account, the login cookies will be removed.
 
 If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.
 
@@ -116,10 +116,10 @@ If you are a business customer, you may contact us at any time and request the f
 
 -   **Access.** We can provide you with the personal information that we maintain about you.
 -   **Modification.** We will correct any mistakes with your personal information.
--   **Opt-Out.** You may request that we cease using your information for marketing or other purposes that are not required to provide the services you’ve requested. If you have received a commercial email from us, you will have the option to opt-out or unsubscribe provided in the email itself.
+-   **Opt-Out.** You may request that we cease using your information for marketing or other purposes that are not required to provide the services you've requested. If you have received a commercial email from us, you will have the option to opt-out or unsubscribe provided in the email itself.
 -   **Deletion.** You can request that we delete any personal information about you, unless we are required by contract or law to retain it.
 
-Your web browser might have a “Do Not Track” option, allowing you to indicate to website operators and online service providers that you prefer not to have certain online activities tracked across various websites over time. However, please note that our app currently does not support “Do Not Track” requests.
+Your web browser might have a "Do Not Track" option, allowing you to indicate to website operators and online service providers that you prefer not to have certain online activities tracked across various websites over time. However, please note that our app currently does not support "Do Not Track" requests.
 
 ## What rights you have over your data
 
@@ -182,13 +182,13 @@ Merchants who require a signed **Data Processing Agreement (DPA)** can request o
 
 ## What information we collect
 
-**What information we collect through Shopify’s APIs:** We import product and collections information from your store. We pull orders information to monitor quiz performance. We push quiz response IDs and marketing consent settings to your customers.
+**What information we collect through Shopify's APIs:** We import product and collections information from your store. We pull orders information to monitor quiz performance. We push quiz response IDs and marketing consent settings to your customers.
 
 **What information we collect directly from your store:** We may collect contact details you provide and generate automated logs relating to app usage.
 
 **What information is collected from your customers:** We may use cookies and tracking technologies on their devices. We log information relating to how customers interact with quizzes.
 
-**How we use the information we collect:** We use this information primarily to provide our app’s services, improve our products, and communicate with you about your account.
+**How we use the information we collect:** We use this information primarily to provide our app's services, improve our products, and communicate with you about your account.
 
 **How long do we store or retain the data we collect:** We retain your personal information for as long as we deem it necessary to maintain our relationship with you or as mandated by applicable laws. You can request the deletion of your information at any time.
 
@@ -198,7 +198,7 @@ Merchants who require a signed **Data Processing Agreement (DPA)** can request o
 
 Both our team and our service providers work on a [Need-to-Know Principle](https://en.wikipedia.org/wiki/Need_to_know).
 
-RevenueHunt meets [Shopify’s Level 1 and 2 Requirements](https://shopify.dev/docs/apps/store/data-protection/protected-customer-data#requirements) regarding Protected Customer Data.
+RevenueHunt meets [Shopify's Level 1 and 2 Requirements](https://shopify.dev/docs/apps/store/data-protection/protected-customer-data#requirements) regarding Protected Customer Data.
 
 RevenueHunt enforces multi-factor authentication for employees that have access or use of systems that contain customer data.
 

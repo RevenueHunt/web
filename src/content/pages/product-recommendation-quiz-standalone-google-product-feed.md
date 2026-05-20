@@ -1,6 +1,6 @@
 ---
 title: "Standalone – other eCommerce platforms"
-description: "Not built on Shopify or WooCommerce? No problem! RevenueHunt offers a digital personal shopper for any eCommerce platform. Effortlessly integrate product quizzes into your store and boost sales with personalized shopping recommendations—no coding required. get started free Recomm"
+description: "Not built on Shopify or WooCommerce? No problem! RevenueHunt offers a digital personal shopper for any eCommerce platform. Effortlessly integrate product quizzes into your store and boost sales with personalized shopping recommendations - no coding required. get started free Recomm"
 pubDate: 2021-12-13T09:54:05Z
 updatedDate: 2025-10-14T10:30:34Z
 legacySlug: "product-recommendation-quiz-standalone-google-product-feed"
@@ -18,7 +18,7 @@ draft: false
 
 **No Hidden Costs:** Enjoy full access to all features without paywalls, plus a Free plan (up to 100 quiz completions/month) and a 15-day trial period with unlimited responses.
 
-**Customizable Design:** Easily match the quiz’s look and feel to your brand.
+**Customizable Design:** Easily match the quiz's look and feel to your brand.
 
 **Data Collection & Insights:** Gain valuable insights into customer preferences to inform your marketing strategy.
 
@@ -31,15 +31,15 @@ Our app allows you to sync your products and collections directly from Google Me
 </details>
 
 <details>
-<summary><strong>How does the “Add to Cart” functionality work?</strong></summary>
+<summary><strong>How does the "Add to Cart" functionality work?</strong></summary>
 
-Since we don’t have direct access to your store’s backend, the “Add to Cart” functionality isn’t supported out of the box. However, when a customer completes the quiz, they can be redirected to the relevant product page to continue their purchase. Additionally, if you have a development team, they can build a custom “Add to Cart” integration using our JavaScript callback function, enabling a seamless shopping experience directly from the quiz.
+Since we don't have direct access to your store's backend, the "Add to Cart" functionality isn't supported out of the box. However, when a customer completes the quiz, they can be redirected to the relevant product page to continue their purchase. Additionally, if you have a development team, they can build a custom "Add to Cart" integration using our JavaScript callback function, enabling a seamless shopping experience directly from the quiz.
 </details>
 
 <details>
 <summary><strong>How do I sign up?</strong></summary>
 
-Signing up is quick and easy. Simply [click here](https://admin.revenuehunt.com/register/), enter your email address and create a password—no additional steps required. Once done, you’ll be immediately taken to the app’s dashboard to start creating your quizzes.
+Signing up is quick and easy. Simply [click here](https://admin.revenuehunt.com/register/), enter your email address and create a password - no additional steps required. Once done, you'll be immediately taken to the app's dashboard to start creating your quizzes.
 </details>
 
 <details>
@@ -57,7 +57,7 @@ Absolutely! Our Product Recommendation Quiz app is a standalone solution, meanin
 <details>
 <summary><strong>How does the Free plan and Trial work?</strong></summary>
 
-Our free plan grants you full access to all the app’s features, allowing you to explore its complete functionality without any upfront commitment. During this time, you can create and customize quizzes, sync your products, and analyze customer data to see how the app can drive sales for your store. The free trial period also lets you publish your quiz and monitor its performance. Even if you exceed the 100 completions per month limit, your quizzes will remain active throughout the trial period. After the trial, you can choose to continue with the free plan or upgrade to a paid plan that suits your needs.
+Our free plan grants you full access to all the app's features, allowing you to explore its complete functionality without any upfront commitment. During this time, you can create and customize quizzes, sync your products, and analyze customer data to see how the app can drive sales for your store. The free trial period also lets you publish your quiz and monitor its performance. Even if you exceed the 100 completions per month limit, your quizzes will remain active throughout the trial period. After the trial, you can choose to continue with the free plan or upgrade to a paid plan that suits your needs.
 </details>
 
 <details>
@@ -69,13 +69,13 @@ We offer comprehensive support through our documentation, which includes step-by
 <details>
 <summary><strong>How do I embed the quiz into my store?</strong></summary>
 
-Embedding the quiz into your store is straightforward. After creating your quiz, you’ll be provided with a custom embed code. Simply copy this code and paste it into your store’s HTML or use a platform-specific method to add custom code. Detailed instructions for various platforms can be found in our [installation guide](https://docs.revenuehunt.com/how-to-guides/install-app/).
+Embedding the quiz into your store is straightforward. After creating your quiz, you'll be provided with a custom embed code. Simply copy this code and paste it into your store's HTML or use a platform-specific method to add custom code. Detailed instructions for various platforms can be found in our [installation guide](https://docs.revenuehunt.com/how-to-guides/install-app/).
 </details>
 
 <details>
-<summary><strong>Can I customize the design of the quiz to match my store’s branding?</strong></summary>
+<summary><strong>Can I customize the design of the quiz to match my store's branding?</strong></summary>
 
-Yes, the quiz is fully customizable. You can adjust colors, fonts, and layout to ensure it aligns perfectly with your brand’s look and feel. Our user-friendly interface makes it easy to make these changes without needing any coding knowledge.
+Yes, the quiz is fully customizable. You can adjust colors, fonts, and layout to ensure it aligns perfectly with your brand's look and feel. Our user-friendly interface makes it easy to make these changes without needing any coding knowledge.
 </details>
 
 <details>

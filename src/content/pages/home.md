@@ -66,4 +66,4 @@ Access to Basic features
 Dedicated account manager  
 Larger plans available at discounted rates
 
-**Need a bigger plan? We’ve got you covered. We’ll personally help you get onboarded, too.** – [Plans & Pricing](https://revenuehunt.com/pricing/)
+**Need a bigger plan? We've got you covered. We'll personally help you get onboarded, too.** – [Plans & Pricing](https://revenuehunt.com/pricing/)

@@ -1,5 +1,5 @@
 ---
-title: "Product Recommendation Quiz — the complete guide for eCommerce"
+title: "Product Recommendation Quiz - the complete guide for eCommerce"
 description: "What a product recommendation quiz is, when to use one, how to build it, and 12 live examples from skincare, supplements, dog food, coffee, and more."
 pubDate: 2020-05-18T12:21:47Z
 updatedDate: 2026-05-18T00:00:00Z
@@ -10,9 +10,9 @@ featuredImage: "/img/pages/product-recommendation-quiz/personal-shopper-product-
 draft: false
 ---
 
-### A product recommendation quiz is the digital equivalent of a personal shopper — guiding every visitor to the right product through a short series of personalized questions.
+### A product recommendation quiz is the digital equivalent of a personal shopper - guiding every visitor to the right product through a short series of personalized questions.
 
-It works like a salesperson in a physical store. A shopper walks in, the salesperson asks 3 to 5 questions to understand what they're looking for, then walks them directly to the right shelf. Online, that conversation is missing — which is why most eCommerce sites convert below 3% even when they get high-intent traffic. A product recommendation quiz brings that conversation back. Brands using one typically see 2 to 4× higher conversion rates from quiz traffic compared to traffic that lands on a generic category page.
+It works like a salesperson in a physical store. A shopper walks in, the salesperson asks 3 to 5 questions to understand what they're looking for, then walks them directly to the right shelf. Online, that conversation is missing - which is why most eCommerce sites convert below 3% even when they get high-intent traffic. A product recommendation quiz brings that conversation back. Brands using one typically see 2 to 4× higher conversion rates from quiz traffic compared to traffic that lands on a generic category page.
 
 This page is the long-form guide: what a product recommendation quiz is, how it actually works, when to use one, what separates a great quiz from a mediocre one, and where to see 12 live examples you can take yourself.
 
@@ -26,7 +26,7 @@ A product recommendation quiz is an interactive on-site experience that:
 4.  Returns 2 to 5 personalized product recommendations with a "why this product" explanation
 5.  Captures the shopper's email (optional) so you can re-engage them later
 
-It's sometimes called a *product finder quiz*, *personalized shopping quiz*, *guided selling quiz*, *solution finder*, or just *shopping quiz*. They're all the same primitive — short interactive content piece on the way to checkout, designed to remove choice paralysis.
+It's sometimes called a *product finder quiz*, *personalized shopping quiz*, *guided selling quiz*, *solution finder*, or just *shopping quiz*. They're all the same primitive - short interactive content piece on the way to checkout, designed to remove choice paralysis.
 
 ### How a product recommendation quiz is different from related tools
 
@@ -37,17 +37,17 @@ It's sometimes called a *product finder quiz*, *personalized shopping quiz*, *gu
 | **AI chatbot** | Free-form conversation, slower, higher friction | Complex consultation, B2B research |
 | **Product recommendation quiz** | Structured short form, fast, no typing | Shopper *doesn't* know what they want |
 
-A category page assumes the shopper knows what to filter on. A search bar assumes they know what to search for. A quiz assumes nothing — which is why it works for first-time visitors and gift-buyers, where every other tool fails.
+A category page assumes the shopper knows what to filter on. A search bar assumes they know what to search for. A quiz assumes nothing - which is why it works for first-time visitors and gift-buyers, where every other tool fails.
 
 ### How a product recommendation quiz works under the hood
 
 The mechanics are simple enough to explain in three steps, but the leverage compounds:
 
-**Step 1 — Question design.** A good quiz has 5 to 8 questions. Fewer than 4 and you can't collect enough signal to differentiate products. More than 10 and completion rates collapse — most shoppers won't finish. The questions should map directly to attributes in your product catalog: skin type, hair type, dog breed, coffee preference, fit, use case, budget.
+**Step 1 - Question design.** A good quiz has 5 to 8 questions. Fewer than 4 and you can't collect enough signal to differentiate products. More than 10 and completion rates collapse - most shoppers won't finish. The questions should map directly to attributes in your product catalog: skin type, hair type, dog breed, coffee preference, fit, use case, budget.
 
-**Step 2 — Conditional logic.** Not every shopper sees every question. If a shopper says they're buying a gift, skip the "what's your skin type" question. If they say they have curly hair, skip the "straight-hair routine" branch. Good conditional logic feels invisible to the shopper but cuts the average completion time roughly in half.
+**Step 2 - Conditional logic.** Not every shopper sees every question. If a shopper says they're buying a gift, skip the "what's your skin type" question. If they say they have curly hair, skip the "straight-hair routine" branch. Good conditional logic feels invisible to the shopper but cuts the average completion time roughly in half.
 
-**Step 3 — Scoring and recommendation.** Each answer maps to product attributes. The quiz scores every product in your catalog against the shopper's answers and returns the top 2 to 5 matches. Each result includes a personalized explanation ("we recommended this serum because you told us you have dry, sensitive skin and you prefer fragrance-free formulas").
+**Step 3 - Scoring and recommendation.** Each answer maps to product attributes. The quiz scores every product in your catalog against the shopper's answers and returns the top 2 to 5 matches. Each result includes a personalized explanation ("we recommended this serum because you told us you have dry, sensitive skin and you prefer fragrance-free formulas").
 
 The results page is where the conversion happens. Add-to-cart buttons, badges (bestseller, new, last-in-stock), bundles, cross-sells, and an email opt-in to send the results to the shopper's inbox so they can come back later.
 
@@ -56,7 +56,7 @@ The results page is where the conversion happens. Add-to-cart buttons, badges (b
 The quiz earns its keep when shoppers face *decision fatigue*. Three scenarios where that's the default:
 
 -   **Wide catalog, narrow shopper intent.** Your store has 50+ SKUs but a typical shopper only wants 1 to 3 products. The quiz cuts the noise.
--   **Complex or configurable products.** Skincare, supplements, fit-sensitive apparel, technical hardware — anything where the wrong product means a return.
+-   **Complex or configurable products.** Skincare, supplements, fit-sensitive apparel, technical hardware - anything where the wrong product means a return.
 -   **First-time buyers.** Gift buyers, new-to-category shoppers, paid-traffic landings. None of them know your catalog yet. The quiz teaches them while it sells.
 
 Top verticals that consistently see the strongest results:
@@ -85,16 +85,16 @@ After 20,000+ stores using RevenueHunt, a few patterns separate the quizzes that
 
 Same primitive, different shapes:
 
--   **Single-category quiz** — recommends products within one category (e.g. "find your perfect cleanser"). Lower complexity, faster build, often the right first quiz.
--   **Multi-category quiz** — recommends a full routine or bundle across categories (e.g. "build your skincare routine" returns a cleanser + serum + moisturizer). Higher AOV, longer build.
--   **Fit / size quiz** — matches shoppers to a specific size or fit (bras, shoes, jeans). Reduces returns by 20 to 40% when done well.
--   **Gift quiz** — asks about the recipient, not the buyer. Powers gift-card recommendations and bundle pages.
--   **Personality quiz** — psychographic angle ("what's your skincare personality"). Strong shareability, weaker direct conversion — best paired with an email capture.
--   **Compatibility quiz** — for technical products (POS hardware, lab supplies, B2B catalogs). Matches the buyer's existing setup to a specific SKU.
+-   **Single-category quiz** - recommends products within one category (e.g. "find your perfect cleanser"). Lower complexity, faster build, often the right first quiz.
+-   **Multi-category quiz** - recommends a full routine or bundle across categories (e.g. "build your skincare routine" returns a cleanser + serum + moisturizer). Higher AOV, longer build.
+-   **Fit / size quiz** - matches shoppers to a specific size or fit (bras, shoes, jeans). Reduces returns by 20 to 40% when done well.
+-   **Gift quiz** - asks about the recipient, not the buyer. Powers gift-card recommendations and bundle pages.
+-   **Personality quiz** - psychographic angle ("what's your skincare personality"). Strong shareability, weaker direct conversion - best paired with an email capture.
+-   **Compatibility quiz** - for technical products (POS hardware, lab supplies, B2B catalogs). Matches the buyer's existing setup to a specific SKU.
 
 ### See 12 live examples
 
-The fastest way to understand a product recommendation quiz is to take one. Our demo store has 12 working examples — every quiz is a real RevenueHunt quiz you can complete end-to-end:
+The fastest way to understand a product recommendation quiz is to take one. Our demo store has 12 working examples - every quiz is a real RevenueHunt quiz you can complete end-to-end:
 
 -   [Skincare quiz](https://productrecommendationquiz.com/pages/skin-analysis?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-recommendation-quiz-pillar)
 -   [Haircare quiz](https://productrecommendationquiz.com/pages/haircare-quiz?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-recommendation-quiz-pillar)
@@ -121,7 +121,7 @@ The high-level workflow:
 4.  Write your 5 to 8 questions and link the answers to products or attributes
 5.  Style the quiz to match your brand (fonts, colors, layout)
 6.  Publish as an inline page, popup, or embed
-7.  Drive traffic from your homepage, paid ads, and email — measure conversion lift in GA4
+7.  Drive traffic from your homepage, paid ads, and email - measure conversion lift in GA4
 
 Most merchants ship their first quiz in under 30 minutes. The full polished version with A/B testing and conditional branching typically lands a week or two later.
 
@@ -129,25 +129,25 @@ Most merchants ship their first quiz in under 30 minutes. The full polished vers
 
 Pick the platform you're on:
 
--   [Shopify](/product-recommendation-quiz-shopify/) — Shopify App Store, native integration
--   [WooCommerce](/product-recommendation-quiz-woocommerce/) — WordPress plugin
--   [BigCommerce](/product-recommendation-quiz-bigcommerce/) — BigCommerce App Marketplace
+-   [Shopify](/product-recommendation-quiz-shopify/) - Shopify App Store, native integration
+-   [WooCommerce](/product-recommendation-quiz-woocommerce/) - WordPress plugin
+-   [BigCommerce](/product-recommendation-quiz-bigcommerce/) - BigCommerce App Marketplace
 -   [Wix Stores](/product-recommendation-quiz-wix-stores/)
 -   [Squarespace](/product-recommendation-quiz-for-squarespace-commerce/)
--   [Standalone (Google Product Feed)](/product-recommendation-quiz-standalone-google-product-feed/) — for Magento, custom, headless, or any storefront with a product feed
+-   [Standalone (Google Product Feed)](/product-recommendation-quiz-standalone-google-product-feed/) - for Magento, custom, headless, or any storefront with a product feed
 
 ### Frequently asked questions
 
 <details>
 <summary><strong>What's the difference between a product recommendation quiz and a chatbot?</strong></summary>
 
-A quiz is structured (multiple-choice, fixed questions), short (under 90 seconds), and works well on mobile. A chatbot is free-form, slower, and depends on the shopper typing — which most won't on mobile. Quizzes convert better for the discovery use case; chatbots fit better for post-purchase support.
+A quiz is structured (multiple-choice, fixed questions), short (under 90 seconds), and works well on mobile. A chatbot is free-form, slower, and depends on the shopper typing - which most won't on mobile. Quizzes convert better for the discovery use case; chatbots fit better for post-purchase support.
 </details>
 
 <details>
 <summary><strong>How many questions should a product recommendation quiz have?</strong></summary>
 
-5 to 8 questions for most use cases. Fewer than 4 and you can't differentiate enough products. More than 10 and completion rates drop sharply. Use conditional logic to skip irrelevant questions — that lets the *visible* question count stay low even if your full question library is larger.
+5 to 8 questions for most use cases. Fewer than 4 and you can't differentiate enough products. More than 10 and completion rates drop sharply. Use conditional logic to skip irrelevant questions - that lets the *visible* question count stay low even if your full question library is larger.
 </details>
 
 <details>
@@ -171,13 +171,13 @@ Brands using RevenueHunt typically see 2 to 4× higher conversion rates from qui
 <details>
 <summary><strong>Does a product recommendation quiz hurt SEO or site speed?</strong></summary>
 
-No. The embed is under 50KB of JavaScript and is lazy-loaded by default. Quiz pages themselves can rank for long-tail queries (e.g. "haircare quiz online") and earn backlinks because they're genuinely useful interactive content — which is increasingly rare on the web.
+No. The embed is under 50KB of JavaScript and is lazy-loaded by default. Quiz pages themselves can rank for long-tail queries (e.g. "haircare quiz online") and earn backlinks because they're genuinely useful interactive content - which is increasingly rare on the web.
 </details>
 
 <details>
 <summary><strong>Can I run a product recommendation quiz on a B2B store?</strong></summary>
 
-Yes — B2B compatibility quizzes (POS hardware, lab supplies, industrial equipment) are one of the highest-conversion verticals. The quiz can also pre-fill quote-request forms, route to a sales rep, or trigger an internal CRM webhook with the buyer's needs already captured.
+Yes - B2B compatibility quizzes (POS hardware, lab supplies, industrial equipment) are one of the highest-conversion verticals. The quiz can also pre-fill quote-request forms, route to a sales rep, or trigger an internal CRM webhook with the buyer's needs already captured.
 </details>
 
 <script type="application/ld+json">
@@ -191,7 +191,7 @@ Yes — B2B compatibility quizzes (POS hardware, lab supplies, industrial equipm
     {"@type": "Question", "name": "How much does a product recommendation quiz cost?", "acceptedAnswer": {"@type": "Answer", "text": "RevenueHunt starts at free for up to 100 quiz responses per month. Paid plans start at $39/month for 500 responses and scale to $299/month for unlimited."}},
     {"@type": "Question", "name": "What's the typical conversion lift from a product recommendation quiz?", "acceptedAnswer": {"@type": "Answer", "text": "Brands using RevenueHunt typically see 2 to 4× higher conversion rates from quiz traffic vs traffic that lands on a generic category page. Email-list growth typically jumps 30 to 60% in the first quarter."}},
     {"@type": "Question", "name": "Does a product recommendation quiz hurt SEO or site speed?", "acceptedAnswer": {"@type": "Answer", "text": "No. The embed is under 50KB of JavaScript and is lazy-loaded by default. Quiz pages themselves can rank for long-tail queries and earn backlinks because they're genuinely useful interactive content."}},
-    {"@type": "Question", "name": "Can I run a product recommendation quiz on a B2B store?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — B2B compatibility quizzes are one of the highest-conversion verticals. The quiz can also pre-fill quote-request forms, route to a sales rep, or trigger an internal CRM webhook with the buyer's needs already captured."}}
+    {"@type": "Question", "name": "Can I run a product recommendation quiz on a B2B store?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - B2B compatibility quizzes are one of the highest-conversion verticals. The quiz can also pre-fill quote-request forms, route to a sales rep, or trigger an internal CRM webhook with the buyer's needs already captured."}}
   ]
 }
 </script>

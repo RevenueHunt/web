@@ -20,27 +20,27 @@ We shipped backend-powered quiz saves, XSS protection for dynamic answers, stron
 
 ## Highlights
 
--   **Quiz saving moved to the backend** – When you save or publish a quiz, the work now happens server-side instead of inside the browser. Everything looks the same, but it’s more reliable for large quizzes.
--   **XSS protection for dynamic answers** – If your quiz displays a customer’s answer back to them (e.g., “Hi {{ first\_name }}!” via Liquid recall), any HTML in that answer is now safely encoded before rendering.
+-   **Quiz saving moved to the backend** – When you save or publish a quiz, the work now happens server-side instead of inside the browser. Everything looks the same, but it's more reliable for large quizzes.
+-   **XSS protection for dynamic answers** – If your quiz displays a customer's answer back to them (e.g., "Hi {{ first\_name }}!" via Liquid recall), any HTML in that answer is now safely encoded before rendering.
 -   **Cleaner popup behavior** – Quiz popups opened from links like `#quiz` or response links are now handled more consistently. When a shopper closes the popup, the `#quiz` fragment is removed from the URL, preventing accidental reopens on refresh or back navigation.
--   **More accurate retakes on branching quizzes** – Previous answers from a different quiz path no longer leak into a new retake flow. If your quiz uses branching logic, retakes should now produce results based only on the current path’s answers.
--   **Cart attributes from custom JavaScript** – Merchants writing custom JS can now update Shopify cart attributes directly from quiz answers. This makes it easy to pass quiz data through to checkout, downstream apps, or Shopify Flow. Custom JS also now defaults to Shopify’s official Ajax cart APIs for more consistent behavior across themes. [Read more](https://docs.revenuehunt.com/how-to-guides/add-javascript/)
+-   **More accurate retakes on branching quizzes** – Previous answers from a different quiz path no longer leak into a new retake flow. If your quiz uses branching logic, retakes should now produce results based only on the current path's answers.
+-   **Cart attributes from custom JavaScript** – Merchants writing custom JS can now update Shopify cart attributes directly from quiz answers. This makes it easy to pass quiz data through to checkout, downstream apps, or Shopify Flow. Custom JS also now defaults to Shopify's official Ajax cart APIs for more consistent behavior across themes. [Read more](https://docs.revenuehunt.com/how-to-guides/add-javascript/)
 -   **Better V1 quiz migration** – Importing legacy quizzes into the Built for Shopify app now gives you clearer messaging about whether a quiz is ready to import or needs manual follow-up for CSS, JS, integrations, or unmappable products. Rich text from older quizzes also carries over more reliably, preserving line breaks and markup. [Read more](https://docs.revenuehunt.com/how-to-guides/migrate-shopify-legacy-quiz/)
 -   **Copilot links directly to Shopify theme editor** – Instead of only giving manual instructions, Copilot can now provide clickable Shopify admin links for enabling app embeds or adding inline quiz blocks. [Read more](https://docs.revenuehunt.com/how-to-guides/use-quiz-copilot/)
--   **Legacy response CSV exports are now async** – When exporting legacy quiz responses to CSV, you’ll receive an email with a download link instead of getting the file as an attachment. This is more reliable for large exports and eliminates bounced-attachment issues. [Read more](https://docs.revenuehunt.com/how-to-guides/download-quiz-responses/)
+-   **Legacy response CSV exports are now async** – When exporting legacy quiz responses to CSV, you'll receive an email with a download link instead of getting the file as an attachment. This is more reliable for large exports and eliminates bounced-attachment issues. [Read more](https://docs.revenuehunt.com/how-to-guides/download-quiz-responses/)
 
-## What’s coming
+## What's coming
 
 -   **Klaviyo OAuth integration** – Native OAuth connection to Klaviyo, no API key required.
 
--   **Messaging app integrations (Beta)** – Your quiz will soon run as a native conversation inside the channels where your customers already talk to you: **WhatsApp, Instagram DMs, Facebook Messenger**, TikTok, SMS, and tools like Gorgias or Shopify Inbox. Customers answer questions, get personalized product recommendations with Add to Cart links, and leads get captured in Klaviyo — all without visiting your store. We’re already onboarding early beta merchants and would love to hear which channels matter most to you. **[Contact support to request early access →](https://revenuehunt.com/contact/)**
+-   **Messaging app integrations (Beta)** – Your quiz will soon run as a native conversation inside the channels where your customers already talk to you: **WhatsApp, Instagram DMs, Facebook Messenger**, TikTok, SMS, and tools like Gorgias or Shopify Inbox. Customers answer questions, get personalized product recommendations with Add to Cart links, and leads get captured in Klaviyo - all without visiting your store. We're already onboarding early beta merchants and would love to hear which channels matter most to you. **[Contact support to request early access →](https://revenuehunt.com/contact/)**
 
 **🚀 Coming soon: Quiz integrations for WhatsApp, Instagram DMs & more**
 
-Run your quiz as a native conversation inside the channels where your customers already talk to you — no store visit required. Leads captured automatically in Klaviyo.
+Run your quiz as a native conversation inside the channels where your customers already talk to you - no store visit required. Leads captured automatically in Klaviyo.
 
 **Already 25+ merchants signed up for early access.** [Contact support to join the beta →](https://revenuehunt.com/contact/)
 
 ## Conclusion
 
-April’s updates make your quizzes more secure, your saves more reliable, and your popups more predictable. With backend-powered saves laying the groundwork for version history, and Copilot getting smarter about guiding you through Shopify setup, the platform keeps getting sturdier underneath while staying simple on the surface.
+April's updates make your quizzes more secure, your saves more reliable, and your popups more predictable. With backend-powered saves laying the groundwork for version history, and Copilot getting smarter about guiding you through Shopify setup, the platform keeps getting sturdier underneath while staying simple on the surface.

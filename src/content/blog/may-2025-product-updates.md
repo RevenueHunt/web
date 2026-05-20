@@ -29,8 +29,8 @@ May focused on improving AI Quiz Copilot outputs and overall quiz generation qua
 
 ### **Why this matters**
 
-These improvements make Quiz Copilot far more useful as a launch partner — from building quizzes to writing the follow-ups that drive conversions.
+These improvements make Quiz Copilot far more useful as a launch partner - from building quizzes to writing the follow-ups that drive conversions.
 
 ### **Conclusion**
 
-May’s updates set the stage for a more seamless AI Quiz Copilot experience across quiz building and email automation.
+May's updates set the stage for a more seamless AI Quiz Copilot experience across quiz building and email automation.

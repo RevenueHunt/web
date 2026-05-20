@@ -3,7 +3,7 @@ import type { CollectionEntry } from "astro:content";
 export type BlogPost = CollectionEntry<"blog">;
 
 /** Decode the HTML entities that survived WP's REST API into our frontmatter
- *  (`&amp;`, `&#038;`, …). Cheap, covers the cases we actually see. */
+ *  (`&amp;`, `&#038;`, ...). Cheap, covers the cases we actually see. */
 export function decodeEntities(s: string): string {
   return s
     .replace(/&#0?38;/g, "&")
@@ -15,7 +15,7 @@ export function decodeEntities(s: string): string {
     .replace(/&nbsp;/g, " ");
 }
 
-/** Display-friendly normalization for category/tag names — decode entities
+/** Display-friendly normalization for category/tag names - decode entities
  *  so "Tips &amp; Tricks" reads as "Tips & Tricks". */
 export function normalizeName(s: string): string {
   return decodeEntities(s);
@@ -46,7 +46,7 @@ export function postHref(post: BlogPost): string {
   return `/${post.data.legacySlug}/`;
 }
 
-/** Average reading time in minutes, rounded up. ~200 wpm — typical for blog prose. */
+/** Average reading time in minutes, rounded up. ~200 wpm - typical for blog prose. */
 export function readingTime(body: string | undefined): number {
   if (!body) return 1;
   const words = body

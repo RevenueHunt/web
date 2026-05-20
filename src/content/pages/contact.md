@@ -17,7 +17,7 @@ draft: false
 The hands-down, sharpest and friendliest support team in the eCommerce sector.
 
 -   Check if our system is running as expected or experiencing issues in our [app status page](https://status.revenuehunt.com/).
--   Contact us and we’ll get back to you in about **2-3 hours**.
+-   Contact us and we'll get back to you in about **2-3 hours**.
 -   Expect replies between **8am – 10pm (GMT)** Monday through Friday.
 -   Responses over the weekend might take a little longer.
 

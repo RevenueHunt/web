@@ -22,7 +22,7 @@ June delivered improvements focused on accessibility, inventory-sensitive logic,
     
 -   **Dynamic height adjustment for choices** – Better layout behavior for long lists or varying content.
     
--   **Don’t recommend low-inventory products** – Automatically prevent sold-out or low-stock items from appearing in recommendations. [Read more](https://docs.revenuehunt.com/how-to-guides/hide-out-of-stock-products/)
+-   **Don't recommend low-inventory products** – Automatically prevent sold-out or low-stock items from appearing in recommendations. [Read more](https://docs.revenuehunt.com/how-to-guides/hide-out-of-stock-products/)
     
 -   **Improved accessibility** – Keyboard navigation now works throughout the quiz (ADA compliance).
     

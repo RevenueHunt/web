@@ -25,7 +25,7 @@ const {
 
 const canonical = new URL(Astro.url.pathname, SITE.site_url).href;
 
-// Analytics only on the production domain — keeps the web.revenuehunt.com
+// Analytics only on the production domain - keeps the web.revenuehunt.com
 // staging build out of GA4/GTM. Matches prod wiring: GA4 via gtag.js
 // (G-62LE891EM2, was Google Site Kit) + GTM container (GTM-TDNVZDJ).
 const isProd = SITE.site_url === "https://revenuehunt.com";
@@ -64,7 +64,7 @@ const isProd = SITE.site_url === "https://revenuehunt.com";
 
     {isProd && (
       <>
-        <!-- Google tag (gtag.js) — GA4 -->
+        <!-- Google tag (gtag.js) - GA4 -->
         <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-62LE891EM2"></script>
         <script is:inline>
           window.dataLayer = window.dataLayer || [];
@@ -90,11 +90,11 @@ const isProd = SITE.site_url === "https://revenuehunt.com";
     {showChrome && <Footer />}
 
     <script>
-      // Generic carousel — mirrors the legacy theme's initCarousel: native
+      // Generic carousel - mirrors the legacy theme's initCarousel: native
       // scroll-snap, one-slide paging, JS-built dots, autoplay + cycle.
       // Markup: .rh-carousel > [data-carousel] (track) + [data-carousel-dots].
       // Slide widths + dot styles live in global.css. Optional data-autoplay (ms).
-      // Without JS the strip still scrolls — dots + autoplay are enhancement.
+      // Without JS the strip still scrolls - dots + autoplay are enhancement.
       function initRhCarousels() {
         document.querySelectorAll<HTMLElement>(".rh-carousel").forEach((root) => {
           if (root.dataset.carouselReady) return;

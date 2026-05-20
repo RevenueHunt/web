@@ -19,11 +19,11 @@ The world of dropshipping might be the leading eCommerce business model when it 
 
 ## **Introducing SMART Dropshipping**
 
-SMART Dropshipping is a must for dropshippers in 2024. But why? It brings a couple of major advantages, which are needed in order to stay ahead of the competition. First and foremost it’s all about data. With hundreds of data points, dropshippers can extensively analyze their business. And the second major part is automations: With SMART Dropshipping on average 20% off the business is automated, due to which dropshippers have time to focus on the more important things. Let’s dive into these topics separately.
+SMART Dropshipping is a must for dropshippers in 2024. But why? It brings a couple of major advantages, which are needed in order to stay ahead of the competition. First and foremost it's all about data. With hundreds of data points, dropshippers can extensively analyze their business. And the second major part is automations: With SMART Dropshipping on average 20% off the business is automated, due to which dropshippers have time to focus on the more important things. Let's dive into these topics separately.
 
 #### _Data_
 
-This topic is definitely not new to the world of eCommerce. But in a way, it is for dropshipping. Data from ads and sales has been used forever, but supply chain data is fairly new. The simple reason for this: Suppliers don’t disclose much information due to the lack of communication, transparency or simply capability. In SMART Dropshipping, every single piece of data from the supply chain is analyzed. Leaving you with utmost simple decisions based on true data. You simply cannot go wrong any longer.
+This topic is definitely not new to the world of eCommerce. But in a way, it is for dropshipping. Data from ads and sales has been used forever, but supply chain data is fairly new. The simple reason for this: Suppliers don't disclose much information due to the lack of communication, transparency or simply capability. In SMART Dropshipping, every single piece of data from the supply chain is analyzed. Leaving you with utmost simple decisions based on true data. You simply cannot go wrong any longer.
 
 This data is super extensive:
 
@@ -47,9 +47,9 @@ With this, guessing is no part of your business anymore and your decisions are e
 
 The second part of SMART Dropshipping is all about automations. With SMART Dropshipping, you can automate the following:
 
-**Automated emails:** Did your customer for instance fill in an address with a typo? Your customer gets an automated email, so you don’t have to manually chase the customer. 
+**Automated emails:** Did your customer for instance fill in an address with a typo? Your customer gets an automated email, so you don't have to manually chase the customer. 
 
-**Automated fulfillment and after sales:** You don’t have to do anything to have your products fulfilled, this can be fully automated. Same goes for the after sales service. 
+**Automated fulfillment and after sales:** You don't have to do anything to have your products fulfilled, this can be fully automated. Same goes for the after sales service. 
 
 **Automated order checks:** With this, your orders are proactively checked on a daily basis. If anything goes wrong – e.g. a variant is out of stock – this will be solved before you even knew the problem.
 
@@ -59,7 +59,7 @@ Sounds like a dream right? But there is more.
 
 As mentioned, you can filter the supply chain report based on suppliers. Usually, dropshippers work with just one supplier. But with SMART Dropshipping, this can be expanded to multiple suppliers. That is because SMART Dropshipping works with a bidding system: After you upload your product to Shopify, the best – handpicked – suppliers from China start bidding on your product. WIthin 24 hours, you receive multiple quotes. The decision is easy: Pick your favourite supplier based on the shipping time, processing time, supplier reviews and of course, price. Want to use a different supplier per product? No issue with SMART Dropshipping.
 
-And the moment you’re not satisfied with a supplier anymore, easily start a requote process and have the suppliers bid against each other again. 
+And the moment you're not satisfied with a supplier anymore, easily start a requote process and have the suppliers bid against each other again. 
 
 #### **Long term business mindset with SMART Dropshipping**
 

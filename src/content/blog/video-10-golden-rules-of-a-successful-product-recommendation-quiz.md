@@ -15,7 +15,7 @@ featuredImage: "/img/blog/video-10-golden-rules-of-a-successful-product-recommen
 draft: false
 ---
 
-If you’re looking to create a product quiz that drives conversions and helps customers find the right product, look no further. In this video, we’ll give you **ten golden rules** for building a successful product recommendation quiz. Whether you’re using Shopify, WooCommerce, BigCommerce, Magento, Wix or others these tips will help you create a quiz that engages customers and helps them find the products they need!
+If you're looking to create a product quiz that drives conversions and helps customers find the right product, look no further. In this video, we'll give you **ten golden rules** for building a successful product recommendation quiz. Whether you're using Shopify, WooCommerce, BigCommerce, Magento, Wix or others these tips will help you create a quiz that engages customers and helps them find the products they need!
 
 <iframe src="https://www.youtube.com/embed/eJaiwjhyNgI" allowfullscreen="allowfullscreen" title="Embedded video"></iframe>
 

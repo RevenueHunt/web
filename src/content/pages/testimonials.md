@@ -18,7 +18,7 @@ draft: false
 
 ![](/img/pages/testimonials/undraw_2.svg) ![](/img/pages/testimonials/mobile-user.svg) ![](/img/pages/testimonials/undraw_4.svg) ![](/img/pages/testimonials/undraw_3.svg)
 
-### Everyone loves personalized recommendations. Now you can create them—and turn them into segmented leads that convert.
+### Everyone loves personalized recommendations. Now you can create them - and turn them into segmented leads that convert.
 
 Online sales are at an all-time high, but helping shoppers choose the right product is what makes them buy. Whether you sell ten products or a thousand, RevenueHunt makes that choice effortless.
 

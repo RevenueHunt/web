@@ -23,15 +23,15 @@ While our platform offers a robust set of customization options out-of-the-box, 
 
 ![](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/featuredimageCSS1.gif)
 
-This isn’t just about tweaking colors or moving a button around—it’s about taking control. Want your quiz to feel like it’s part of your brand’s story? Or maybe you’re ready to experiment with new interactive features that go beyond the standard options? Whether you’re a seasoned coder or just dipping your toes into customization, this guide will walk you through the essentials.
+This isn't just about tweaking colors or moving a button around - it's about taking control. Want your quiz to feel like it's part of your brand's story? Or maybe you're ready to experiment with new interactive features that go beyond the standard options? Whether you're a seasoned coder or just dipping your toes into customization, this guide will walk you through the essentials.
 
-No one said your quiz had to look or behave like anyone else’s. Why not push the boundaries and see what you can create?
+No one said your quiz had to look or behave like anyone else's. Why not push the boundaries and see what you can create?
 
 > **Why Customize Your Quiz with CSS and JavaScript?**
 > 
 > Customizing your [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) with CSS and JavaScript allows you to:
 > 
-> **🏷️ Maintain Brand Consistency**: Ensure the quiz matches your brand’s look and feel.
+> **🏷️ Maintain Brand Consistency**: Ensure the quiz matches your brand's look and feel.
 > 
 > **💪 Enhance User Experience**: Improve the quiz interface to make it more user-friendly.
 > 
@@ -65,7 +65,7 @@ In the CSS editor, you can insert any custom styling rules to adjust the quiz ap
 
 **How do I find CSS selectors of quiz elements?**
 
-To find the correct CSS selector for any quiz element, simply right-click the element on your browser and select **Inspect**. This will open the browser’s Developer Tools, where you can view the HTML and locate the exact selector to target.
+To find the correct CSS selector for any quiz element, simply right-click the element on your browser and select **Inspect**. This will open the browser's Developer Tools, where you can view the HTML and locate the exact selector to target.
 
 ![](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2024-08-30-091646.png)
 
@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6, p, button, div{
 
 > **💡 Tip: Use Markdown for Text Styling**
 > 
-> You don’t always need custom CSS to style your quiz. You can use [Markdown language](https://docs.revenuehunt.com/how-to-guides/use-markdown/) to format text within the quiz for basic styling such as headings, bold, italics, links, images, and videos.
+> You don't always need custom CSS to style your quiz. You can use [Markdown language](https://docs.revenuehunt.com/how-to-guides/use-markdown/) to format text within the quiz for basic styling such as headings, bold, italics, links, images, and videos.
 
 ### Step 3: Advanced CSS Customizations
 
@@ -220,27 +220,27 @@ You can add custom JavaScirpt to the quiz results page and the quiz questions.
 1.  Navigate to the [Results Page Settings](https://docs.revenuehunt.com/reference/quiz-builder/#results-page-settings) in the Quiz Builder.
 2.  Select [**Advanced Settings**](https://docs.revenuehunt.com/reference/quiz-builder/#advanced-settings).
 3.  Scroll down to find the **Custom JavaScript** section and click `add`.
-4.  This is your canvas for crafting and deploying custom scripts that can modify the quiz’s behavior based on user interactions and results.
+4.  This is your canvas for crafting and deploying custom scripts that can modify the quiz's behavior based on user interactions and results.
 
 **Quiz Questions**
 
 1.  Navigate to the [Quiz Builder](https://docs.revenuehunt.com/reference/quiz-builder/).
 2.  Open [question settings](https://docs.revenuehunt.com/reference/quiz-builder/#question-settings).
 3.  Scroll down to find the **Custom JavaScript** section and click `add`.
-4.  This is your canvas for crafting and deploying custom scripts that can modify the quiz’s behavior based on user interactions and results.
+4.  This is your canvas for crafting and deploying custom scripts that can modify the quiz's behavior based on user interactions and results.
 
 ### Step 2: Using the Console.log(prq) function
 
-To begin, let’s log the quiz response object to the console:
+To begin, let's log the quiz response object to the console:
 
 <pre id="__code_0"><button class="md-clipboard md-icon" style="box-sizing: inherit; -webkit-tap-highlight-color: transparent; background: rgba(0, 0, 0, 0); border: 0px; font-family: inherit; font-size: inherit; margin: 0px; padding: 0px; border-radius: 0.1rem; color: var(--md-default-fg-color--lightest); cursor: pointer; height: 1.5em; outline: none; outline-offset: 0.1rem; position: absolute; right: 0.5em; top: 0.5em; transition: color 0.25s; width: 1.5em; z-index: 1;" title="Copy to clipboard" data-clipboard-target="#__code_0 &gt; code"></button><code><a id="__codelineno-0-1" href="https://docs.revenuehunt.com/how-to-guides/add-javascript/#__codelineno-0-1" name="__codelineno-0-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">prq</span><span class="p">);</span>
 </code></pre>
 
-This line of code will display the available Vue.js functions and properties within the prq scope in your browser’s console, allowing you to inspect the quiz data in real-time.
+This line of code will display the available Vue.js functions and properties within the prq scope in your browser's console, allowing you to inspect the quiz data in real-time.
 
 ![how to add javascript consolelog](https://docs.revenuehunt.com/images/how%20to%20add%20javascript%20consolelog.png)
 
-The `prq` object is your gateway to customizing the quiz experience.  You can use it to fetch specific slide values, such as a question’s response, by calling `prq.getSlideValue(slideId)`.
+The `prq` object is your gateway to customizing the quiz experience.  You can use it to fetch specific slide values, such as a question's response, by calling `prq.getSlideValue(slideId)`.
 
 For participant information, methods like `prq.leadEmail()`, `prq.leadPhone()`, and `prq.leadName()` allow you to retrieve user details easily.
 
@@ -269,15 +269,15 @@ For complex functionalities, such as managing quiz flow or integrating third-par
 
 ### Step 4: Advanced JavaScript Customizations – Callback Function
 
-You can use a callback function for custom integrations with Shop Quiz: Product Recommendation Quiz. Whether you’re aiming to build your own results page, add unique code, display custom product recommendations, or direct users to specific pages on your store, callback functions offer a versatile solution.
+You can use a callback function for custom integrations with Shop Quiz: Product Recommendation Quiz. Whether you're aiming to build your own results page, add unique code, display custom product recommendations, or direct users to specific pages on your store, callback functions offer a versatile solution.
 
-> **🙋🏻 What’s a Callback Function?**
+> **🙋🏻 What's a Callback Function?**
 > 
 > A callback function is a piece of JavaScript code that executes in response to an event – in this case, the completion of a quiz. You add this callback function to your website and a listener that will be triggered when the quiz is completed. Then you will have access to all the data from quiz responses.
 
 **Implementing the Callback Function**
 
-To begin, insert the following code into your store’s theme, ideally just before the closing `</head>` tag:
+To begin, insert the following code into your store's theme, ideally just before the closing `</head>` tag:
 
 <pre id="__code_0"><button class="md-clipboard md-icon" style="box-sizing: inherit; -webkit-tap-highlight-color: transparent; background: rgba(0, 0, 0, 0); border: 0px; font-family: inherit; font-size: inherit; margin: 0px; padding: 0px; border-radius: 0.1rem; color: var(--md-default-fg-color--lightest); cursor: pointer; height: 1.5em; outline: none; outline-offset: 0.1rem; position: absolute; right: 0.5em; top: 0.5em; transition: color 0.25s; width: 1.5em; z-index: 1;" title="Copy to clipboard" data-clipboard-target="#__code_0 &gt; code"></button><code><a id="__codelineno-0-1" href="https://docs.revenuehunt.com/how-to-guides/use-callback-function/#__codelineno-0-1" name="__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
 <a id="__codelineno-0-2" href="https://docs.revenuehunt.com/how-to-guides/use-callback-function/#__codelineno-0-2" name="__codelineno-0-2"></a>  <span class="kd">function</span> <span class="nx">prqQuizCallback</span><span class="p">(</span><span class="nx">quizResponse</span><span class="p">){</span>
@@ -295,7 +295,7 @@ By tapping into the quiz responses, developers can access a wealth of informatio
 With the quiz response JSON, you can access details such as:
 
 -   All the questions asked during the quiz.
--   The customer’s responses.
+-   The customer's responses.
 -   Customer tags assigned based on the answers.
 -   Products recommended by the quiz.
 -   The layout and logic of the results page blocks.
@@ -320,9 +320,9 @@ Customizing your Product Recommendation Quiz with custom CSS and JavaScript open
 
 By following the guidelines and examples provided in this article, you can tailor the quiz to perfectly match your brand and meet your business goals.
 
-At the end of the day, customizing your quiz with CSS and JavaScript isn’t just about functionality—**it’s about bringing your brand’s personality to life**. You have the tools to create something that not only works but feels uniquely yours. Whether you’re tweaking styles or adding some clever interactivity, the possibilities are wide open.
+At the end of the day, customizing your quiz with CSS and JavaScript isn't just about functionality - **it's about bringing your brand's personality to life**. You have the tools to create something that not only works but feels uniquely yours. Whether you're tweaking styles or adding some clever interactivity, the possibilities are wide open.
 
-So go ahead, experiment, and make your quiz as bold, sleek, or playful as you want. The only limit is your imagination. And remember, if you ever need a nudge in the right direction, we’re here to help you turn those ideas into reality. Now, it’s your turn—what will you create?
+So go ahead, experiment, and make your quiz as bold, sleek, or playful as you want. The only limit is your imagination. And remember, if you ever need a nudge in the right direction, we're here to help you turn those ideas into reality. Now, it's your turn - what will you create?
 
 Feel free to [reach out to our team](https://revenuehunt.com/contact/) for any specific customization queries or to share your unique customizations with us. We love seeing how our clients creatively use our tools to enhance their customer experience!
 

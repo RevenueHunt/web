@@ -9,7 +9,7 @@ export interface Plan {
   name: string;
   /** Big price. "FREE" for the free plan, otherwise the numeric amount. */
   price: string;
-  /** Yearly billing price (per-month equivalent — 20% off monthly). */
+  /** Yearly billing price (per-month equivalent - 20% off monthly). */
   priceYearly?: string;
   /** Small text adjacent to the price (e.g. "USD/mo."). Omit on Free. */
   priceSuffix?: string;

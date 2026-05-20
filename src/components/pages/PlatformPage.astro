@@ -14,21 +14,21 @@ interface Props {
 const { entry, config } = Astro.props;
 const { Content } = await render(entry);
 
-// Sibling platform links — every platform page links to all other platform pages.
+// Sibling platform links - every platform page links to all other platform pages.
 // Source of truth: PLATFORM_CONFIGS keyed by slug. Adding a new entry there will
 // automatically surface it in every other platform page's sibling block.
 const SIBLING_TAGLINES: Record<string, string> = {
   "product-recommendation-quiz-shopify": "Native Shopify app, free plan, instant install",
   "product-recommendation-quiz-woocommerce": "Self-hosted WordPress plugin, no monthly fee",
   "product-recommendation-quiz-bigcommerce": "Native BigCommerce app with deep catalog sync",
-  "product-recommendation-quiz-wix-stores": "Embed via universal script — works on any Wix store",
-  "product-recommendation-quiz-for-squarespace-commerce": "Embed via universal script — works on any Squarespace site",
+  "product-recommendation-quiz-wix-stores": "Embed via universal script - works on any Wix store",
+  "product-recommendation-quiz-for-squarespace-commerce": "Embed via universal script - works on any Squarespace site",
   "product-recommendation-quiz-for-magento": "Standalone hosted solution, no Magento extension required",
   "product-recommendation-quiz-standalone-google-product-feed":
-    "Platform-agnostic — runs on Google Product Feed, no store integration needed",
+    "Platform-agnostic - runs on Google Product Feed, no store integration needed",
   "product-recommendation-quiz-pos-tablet-stands": "In-store quizzes on iPad / Android POS tablets",
   "product-recommendation-quiz":
-    "The all-platforms overview — start here if you're comparing options",
+    "The all-platforms overview - start here if you're comparing options",
 };
 
 const currentSlug = entry.data.legacySlug;
@@ -81,7 +81,7 @@ function rel(c: { external?: boolean }) {
 ---
 
 <Base
-  title={`${entry.data.title} — ${SITE.name}`}
+  title={`${entry.data.title} - ${SITE.name}`}
   description={entry.data.description}
   ogImage={entry.data.featuredImage ?? undefined}
   jsonLd={jsonLd}
@@ -134,7 +134,7 @@ function rel(c: { external?: boolean }) {
             <div class="aspect-video overflow-hidden rounded-xl bg-slate-900 shadow-2xl">
               <iframe
                 src={`https://www.youtube-nocookie.com/embed/${config.youtubeId}?rel=0`}
-                title={`${entry.data.title} — video tour`}
+                title={`${entry.data.title} - video tour`}
                 loading="lazy"
                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
@@ -184,7 +184,7 @@ function rel(c: { external?: boolean }) {
       <div class="mx-auto max-w-5xl px-6 py-16">
         <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">How we compare</h2>
         <p class="mt-4 text-slate-700">
-          RevenueHunt vs. Octane AI vs. Quiz Kit — the features that matter for serious eCommerce stores.
+          RevenueHunt vs. Octane AI vs. Quiz Kit - the features that matter for serious eCommerce stores.
         </p>
         <div class="mt-8 overflow-x-auto rounded-xl border border-slate-200">
           <table class="w-full text-left text-sm">
@@ -199,11 +199,11 @@ function rel(c: { external?: boolean }) {
             <tbody class="divide-y divide-slate-200 text-slate-700">
               <tr><td class="px-4 py-3">Klaviyo / Mailchimp integration</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center">✓</td></tr>
               <tr><td class="px-4 py-3">Conditional / branching logic</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center">✓</td></tr>
-              <tr><td class="px-4 py-3">AI quiz builder (60-second setup)</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center text-slate-400">—</td><td class="px-4 py-3 text-center">✓</td></tr>
+              <tr><td class="px-4 py-3">AI quiz builder (60-second setup)</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center text-slate-400"> - </td><td class="px-4 py-3 text-center">✓</td></tr>
               <tr><td class="px-4 py-3">Built for Shopify</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center">✓</td></tr>
-              <tr><td class="px-4 py-3">Drop-off analytics</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center text-slate-400">—</td><td class="px-4 py-3 text-center">✓</td></tr>
-              <tr><td class="px-4 py-3">WooCommerce &amp; other platforms</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center text-slate-400">—</td><td class="px-4 py-3 text-center text-slate-400">—</td></tr>
-              <tr><td class="px-4 py-3">Free plan available</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center text-slate-400">—</td><td class="px-4 py-3 text-center text-slate-400">—</td></tr>
+              <tr><td class="px-4 py-3">Drop-off analytics</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center text-slate-400"> - </td><td class="px-4 py-3 text-center">✓</td></tr>
+              <tr><td class="px-4 py-3">WooCommerce &amp; other platforms</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center text-slate-400"> - </td><td class="px-4 py-3 text-center text-slate-400"> - </td></tr>
+              <tr><td class="px-4 py-3">Free plan available</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center text-slate-400"> - </td><td class="px-4 py-3 text-center text-slate-400"> - </td></tr>
               <tr><td class="px-4 py-3 font-semibold">Starting price</td><td class="px-4 py-3 text-center font-semibold">Free</td><td class="px-4 py-3 text-center">$59/mo</td><td class="px-4 py-3 text-center">$50/mo</td></tr>
             </tbody>
           </table>
@@ -213,7 +213,7 @@ function rel(c: { external?: boolean }) {
     </section>
   )}
 
-  <!-- Available for every platform — sibling links -->
+  <!-- Available for every platform - sibling links -->
   <section class="bg-slate-50">
     <div class="mx-auto max-w-7xl px-6 py-16 sm:py-20">
       <div class="max-w-3xl">
@@ -221,7 +221,7 @@ function rel(c: { external?: boolean }) {
           Available for every platform
         </h2>
         <p class="mt-4 text-slate-700">
-          Not on {config.platform}? RevenueHunt's product recommendation quiz works wherever you sell — pick your stack.
+          Not on {config.platform}? RevenueHunt's product recommendation quiz works wherever you sell - pick your stack.
         </p>
       </div>
       <ul class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" role="list">
@@ -290,6 +290,6 @@ function rel(c: { external?: boolean }) {
 
 <style is:global>
   /* The scraped MD body for platform pages opens with an iframe + CTA links
-     that duplicate the hero. Hide them in this layout — the hero owns the CTAs. */
+     that duplicate the hero. Hide them in this layout - the hero owns the CTAs. */
   .platform-prose iframe { display: none; }
 </style>

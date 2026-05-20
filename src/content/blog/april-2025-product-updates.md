@@ -33,4 +33,4 @@ These updates focus on reducing friction and helping you diagnose issues faster,
 
 ### **Conclusion**
 
-April’s updates set the foundation for a smoother, more guided quiz-building experience. Expect more intelligent diagnostics and navigation improvements in the coming months.
+April's updates set the foundation for a smoother, more guided quiz-building experience. Expect more intelligent diagnostics and navigation improvements in the coming months.

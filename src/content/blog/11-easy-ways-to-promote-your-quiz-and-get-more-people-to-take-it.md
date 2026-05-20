@@ -14,11 +14,11 @@ featuredImage: "/img/blog/11-easy-ways-to-promote-your-quiz-and-get-more-people-
 draft: false
 ---
 
-Do you have a quiz on your website but aren’t sure how to get more people to take it? Or maybe you’ve created a quiz but haven’t seen the results you were hoping for. In either case, this blog post is for you! We will discuss 11 easy ways to promote your quiz and get more people to take it. By following these tips, you can see a significant increase in quiz takers and better results overall. Let’s get started!
+Do you have a quiz on your website but aren't sure how to get more people to take it? Or maybe you've created a quiz but haven't seen the results you were hoping for. In either case, this blog post is for you! We will discuss 11 easy ways to promote your quiz and get more people to take it. By following these tips, you can see a significant increase in quiz takers and better results overall. Let's get started!
 
-## Tip #01: Add the quiz to your website’s menu
+## Tip #01: Add the quiz to your website's menu
 
-Another easy way to promote your quiz is to add it to your website. This will allow your website visitors to easily find and take the quiz. You can add a button or link to the quiz on your website homepage, or add it to a sidebar or footer. However, one of the most effective ways to promote the quiz is placing it directly in you’re website’s main menu. This way no customer can miss it!
+Another easy way to promote your quiz is to add it to your website. This will allow your website visitors to easily find and take the quiz. You can add a button or link to the quiz on your website homepage, or add it to a sidebar or footer. However, one of the most effective ways to promote the quiz is placing it directly in you're website's main menu. This way no customer can miss it!
 
 ![](/img/blog/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/Screenshot-2022-03-31-155833-1024x536.png)
 
@@ -52,7 +52,7 @@ Learn [here](https://revenuehunt.com/faqs/adding-discount-coupon-code/) how to s
 
 ## Tip #06: Add a banner to your website
 
-A beautiful eye-catching banner is exactly what your quiz needs to get every visitor’s attention.
+A beautiful eye-catching banner is exactly what your quiz needs to get every visitor's attention.
 
 !["A landing page of a beauty business with a CTA for taking the quiz](/img/blog/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/PIC1-UN_DID_Blurred-1024x536.png)
 
@@ -60,7 +60,7 @@ A beautiful eye-catching banner is exactly what your quiz needs to get every vis
 
 If you have access to social media influencers, you can promote your quiz with them. This is a great way to reach a new audience and increase awareness of the quiz. Make sure to work with influencers who are relevant to your quiz topic and have a large following.
 
-When you promote a quiz through creators, make it measurable and repeatable: give each influencer a unique UTM link (e.g., `utm_source=influencer&utm_medium=social&utm_campaign=quiz&utm_content=@handle`) and a dedicated landing page to the quiz, provide a short brief (hook, CTA, disclosure, posting window), and define how you’ll attribute enrollments or orders back to quiz completions. A creator-ops hub like [**theKollab**](https://thekollab.io/) can centralize briefs, contracts, and tracking links; if you’re handling it in-house, mirror the same checklist in GA4 and a shared sheet. Track reach, clicks, quiz starts, completions, and opt-ins, then compare cost-per-completion and cost-per-purchase against your paid social benchmarks before scaling.
+When you promote a quiz through creators, make it measurable and repeatable: give each influencer a unique UTM link (e.g., `utm_source=influencer&utm_medium=social&utm_campaign=quiz&utm_content=@handle`) and a dedicated landing page to the quiz, provide a short brief (hook, CTA, disclosure, posting window), and define how you'll attribute enrollments or orders back to quiz completions. A creator-ops hub like [**theKollab**](https://thekollab.io/) can centralize briefs, contracts, and tracking links; if you're handling it in-house, mirror the same checklist in GA4 and a shared sheet. Track reach, clicks, quiz starts, completions, and opt-ins, then compare cost-per-completion and cost-per-purchase against your paid social benchmarks before scaling.
 
 Click [here](https://revenuehunt.com/faqs/publish-quiz-on-your-store/) to learn how to publish your quiz on your website.
 

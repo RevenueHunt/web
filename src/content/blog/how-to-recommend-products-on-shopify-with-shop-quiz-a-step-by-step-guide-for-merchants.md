@@ -21,7 +21,7 @@ There are several ways to recommend products to customers in your Shopify store.
 -   You can use **product recommendation widgets** on product or collection pages, which provide suggestions based on browsing history or related products.
 -   Another common approach is upselling or **cross-selling complementary products during checkout** to increase average order value.
 -   **Bundles** and sets of complementary items can also encourage customers to buy more by offering related products together at a discount.
--   **Pop-ups** that recommend items based on a customer’s shopping cart behavior or recent browsing are also effective.
+-   **Pop-ups** that recommend items based on a customer's shopping cart behavior or recent browsing are also effective.
 
 However, one of the most impactful ways to recommend products is through **personalized quizzes** like the ones built with [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/).
 
@@ -29,15 +29,15 @@ These quizzes engage customers by asking them targeted questions and providing t
 
 ![](/img/blog/how-to-recommend-products-on-shopify-with-shop-quiz-a-step-by-step-guide-for-merchants/begginersguide-torecommendations-featured-image.png)
 
-In this guide, you’ll learn how to recommend products in Shopify using an interactive quiz built with Shop Quiz: Product Recommendation Quiz. Let’s get started!
+In this guide, you'll learn how to recommend products in Shopify using an interactive quiz built with Shop Quiz: Product Recommendation Quiz. Let's get started!
 
 ## Overview of Product Recommendation
 
-[Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) provides tailored recommendations by analyzing the customer’s responses throughout the quiz. The results page can display product variants, main products, and even subscription products if integrated with ReCharge.
+[Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) provides tailored recommendations by analyzing the customer's responses throughout the quiz. The results page can display product variants, main products, and even subscription products if integrated with ReCharge.
 
 ![how to recommend products product block](https://docs.revenuehunt.com/images/how%20to%20recommend%20products%20product%20block.png)
 
-Note that it cannot directly recommend collections of products, though it’s possible to recommend products within a specific collection.
+Note that it cannot directly recommend collections of products, though it's possible to recommend products within a specific collection.
 
 ### Voting System Algorithm
 
@@ -49,12 +49,12 @@ The product recommendation algorithm functions as a **voting system**, ensuring 
     
 -   <pre>The results page displays the <strong>most voted product variants</strong>, sorted by the number of votes.</pre>
     
--   <pre>If there’s a tie in votes, the order is randomized.</pre>
+-   <pre>If there's a tie in votes, the order is randomized.</pre>
     
 
 This voting-based approach allows you to offer personalized, highly relevant recommendations.
 
-_For example, if a customer selects ‘dry skin’ as their concern and ’30s and above’ as their age group, products linked to these choices, such as a hydrating serum or age-specific moisturizer, will each receive a vote. Products that are common across multiple answers (e.g., both ‘dry skin’ and ’30s and above’) will accumulate more votes, making them more likely to appear in the final results. The final results will display the products with the highest votes, ensuring the recommendations are tailored specifically to the customer’s needs._
+_For example, if a customer selects 'dry skin' as their concern and '30s and above' as their age group, products linked to these choices, such as a hydrating serum or age-specific moisturizer, will each receive a vote. Products that are common across multiple answers (e.g., both 'dry skin' and '30s and above') will accumulate more votes, making them more likely to appear in the final results. The final results will display the products with the highest votes, ensuring the recommendations are tailored specifically to the customer's needs._
 
 ### Product Inclusion and Exclusion
 
@@ -112,7 +112,7 @@ _For example, if you set the minimum number of votes to 3 and a product receives
 
 **❌ Use Exclusions**: To make sure that only the most relevant products are recommended, use exclusions when necessary.
 
-_For example, if a customer selects ‘sensitive skin’ as a choice, you can exclude products that contain common irritants like fragrances or harsh chemicals to ensure that only suitable products are recommended._
+_For example, if a customer selects 'sensitive skin' as a choice, you can exclude products that contain common irritants like fragrances or harsh chemicals to ensure that only suitable products are recommended._
 
 ### Special Features for Recommendations
 
@@ -138,7 +138,7 @@ For very complex product matrices, consider using conditional logic to create br
 
 #### **Recommending Subscription Products**
 
-Integrating ReCharge Subscriptions can enhance your recommendation strategy by promoting subscription products. Here’s how to do it:
+Integrating ReCharge Subscriptions can enhance your recommendation strategy by promoting subscription products. Here's how to do it:
 
 -   Start by navigating to the [Connect](https://docs.revenuehunt.com/reference/quiz-builder/#connect) tab in your quiz dashboard, then scroll down to the ReCharge section and click on the \`connect\` button. After connecting, [run a catalog sync](https://docs.revenuehunt.com/how-to-guides/sync-catalog/) to ensure your subscription products are updated.
 -   In the [Link Products](https://docs.revenuehunt.com/reference/quiz-builder/#link-products) tab, associate subscription products with quiz choices.
@@ -166,29 +166,29 @@ Highlighting a product can be beneficial if you want to ensure visibility for ne
 
 ### Adding Explanations to Recommendations
 
-Our app doesn’t automatically provide explanations for recommendations, but you can achieve this manually with:
+Our app doesn't automatically provide explanations for recommendations, but you can achieve this manually with:
 
 **  
 @ Information Recalls**: Display answers from the quiz in a content block to explain recommendations.
 
-You can use [information recalls](https://docs.revenuehunt.com/how-to-guides/use-information-recalls/) to display specific customer answers as part of the recommendation, such as ‘You answered \`dry skin\`, which is why we recommend this hydrating moisturizer.’ This is a straightforward way to provide context to the recommendation, making it clear and easy to understand.
+You can use [information recalls](https://docs.revenuehunt.com/how-to-guides/use-information-recalls/) to display specific customer answers as part of the recommendation, such as 'You answered \`dry skin\`, which is why we recommend this hydrating moisturizer.' This is a straightforward way to provide context to the recommendation, making it clear and easy to understand.
 
 **🔀 Block Logic**: Show or hide text based on customer responses to help contextualize why a particular product was suggested.
 
-Use [block logic](https://docs.revenuehunt.com/how-to-guides/use-block-logic/) to display different text based on customer responses. For example, if a customer selects ‘dry skin,’ the content block could automatically adjust to show, ‘Since you mentioned dry skin, this moisturizer is ideal for keeping your skin hydrated.’ This helps in making the experience more seamless and relevant to the customer’s needs.
+Use [block logic](https://docs.revenuehunt.com/how-to-guides/use-block-logic/) to display different text based on customer responses. For example, if a customer selects 'dry skin,' the content block could automatically adjust to show, 'Since you mentioned dry skin, this moisturizer is ideal for keeping your skin hydrated.' This helps in making the experience more seamless and relevant to the customer's needs.
 
 **</> Custom JavaScript**: For more sophisticated explanations, use custom JavaScript to display product-specific text.
 
-Using [JavaScript](https://docs.revenuehunt.com/how-to-guides/add-javascript/), you can dynamically insert the customer’s answers into the recommendation text, such as ‘Based on your response for dry skin, we suggest this hydrating moisturizer.’ This method is more flexible and allows for greater customization, ensuring each customer sees a message tailored specifically to their input.
+Using [JavaScript](https://docs.revenuehunt.com/how-to-guides/add-javascript/), you can dynamically insert the customer's answers into the recommendation text, such as 'Based on your response for dry skin, we suggest this hydrating moisturizer.' This method is more flexible and allows for greater customization, ensuring each customer sees a message tailored specifically to their input.
 
 ## Final Thoughts
 
 As a Shopify merchant, you know how important it is to connect your customers with the right products. There are various ways to recommend products, such as widgets, cross-selling, pop-ups, and personalized emails, but using personalized shop quizzes stands out as the most effective.
 
-By using [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/), you can make that connection more personal and effective. The app’s voting system and inclusion/exclusion settings let you customize each recommendation, while specialized product blocks help make the **shopping journey feel intuitive and helpful.**
+By using [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/), you can make that connection more personal and effective. The app's voting system and inclusion/exclusion settings let you customize each recommendation, while specialized product blocks help make the **shopping journey feel intuitive and helpful.**
 
 ## _❝ Shop Quiz helps connect customers to the right products, increasing the chance of sales and satisfaction.❞_
 
-When customers see products that match their needs at just the right time, they’re more likely to buy—and be happy with their purchase. Whether you want to guide them through a simple product list, build a multi-step skincare routine, or promote subscriptions, [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) gives you the tools to make those recommendations feel personal and meaningful.
+When customers see products that match their needs at just the right time, they're more likely to buy - and be happy with their purchase. Whether you want to guide them through a simple product list, build a multi-step skincare routine, or promote subscriptions, [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) gives you the tools to make those recommendations feel personal and meaningful.
 
-Ready to create your personalized quiz? Start by outlining your customer journey and identifying key decision points. Then use the voting system, product slots, and other advanced features to offer your customers an experience they’ll love.
+Ready to create your personalized quiz? Start by outlining your customer journey and identifying key decision points. Then use the voting system, product slots, and other advanced features to offer your customers an experience they'll love.

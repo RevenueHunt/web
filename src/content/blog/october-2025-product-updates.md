@@ -1,6 +1,6 @@
 ---
 title: "OCTOBER 2025 – Code validation, chart blocks, and major analytics improvements."
-description: "One of our biggest improvements rounds this year — focused on reliability, developer experience, AI performance, analytics stability, and better control over quiz customization."
+description: "One of our biggest improvements rounds this year - focused on reliability, developer experience, AI performance, analytics stability, and better control over quiz customization."
 pubDate: 2025-10-31T16:00:49Z
 updatedDate: 2026-03-25T20:57:35Z
 tags: []
@@ -14,7 +14,7 @@ featuredImage: "/img/blog/october-2025-product-updates/5.png"
 draft: false
 ---
 
-One of our biggest improvements rounds this year — focused on reliability, developer experience, AI performance, analytics stability, and better control over quiz customization.
+One of our biggest improvements rounds this year - focused on reliability, developer experience, AI performance, analytics stability, and better control over quiz customization.
 
 We introduced powerful new validation tools, expanded our AI model support, enhanced chart and UI customization, and resolved several critical bugs affecting embedded shops and analytics.
 
@@ -42,10 +42,10 @@ We introduced powerful new validation tools, expanded our AI model support, enha
 -   **Critical bug fix: infinite loop in analytics** – We resolved a major issue where the analytics card could enter an infinite request loop on certain Shopify stores. This fix greatly improves reliability in the embedded Shopify environment.
     
 
-### **What’s coming**
+### **What's coming**
 
 -   **Customizable chart blocks (new feature)** – You can now add fully customizable chart blocks inside quizzes and results pages. Bar charts, radar charts, and gauge charts all support brand-aligned styling, including colors, accents, and visual emphasis.
 
 ### **Conclusion**
 
-October was a major stability and capability release — improving everything from AI features and code validation to privacy compliance, analytics accuracy, and developer experience. These changes make the app more powerful, more customizable, and more reliable for merchants across all platforms.
+October was a major stability and capability release - improving everything from AI features and code validation to privacy compliance, analytics accuracy, and developer experience. These changes make the app more powerful, more customizable, and more reliable for merchants across all platforms.

@@ -16,7 +16,7 @@ featuredImage: "/img/blog/revenuehunt-activecampaign-integration/17.png"
 draft: false
 ---
 
-Personalization is key to capturing customer interest and increasing conversions. With RevenueHunt’s Product Recommendation Quiz, merchants can provide tailored product recommendations while collecting valuable customer data. By integrating this quiz with ActiveCampaign, eCommerce businesses can easily **transfer quiz data into their email marketing** and CRM system, allowing for automated follow-ups and personalized customer journeys.
+Personalization is key to capturing customer interest and increasing conversions. With RevenueHunt's Product Recommendation Quiz, merchants can provide tailored product recommendations while collecting valuable customer data. By integrating this quiz with ActiveCampaign, eCommerce businesses can easily **transfer quiz data into their email marketing** and CRM system, allowing for automated follow-ups and personalized customer journeys.
 
 ![](/img/blog/revenuehunt-activecampaign-integration/ActiveCampaign-Featured-Image.png)
 
@@ -36,7 +36,7 @@ This article will guide you through integrating RevenueHunt with ActiveCampaign 
 
 > ## **Why Should eCommerce Merchants Integrate RevenueHunt with ActiveCampaign?**
 > 
-> **Integrating RevenueHunt app with ActiveCampaign gives you a powerful system for capturing, nurturing, and converting leads—ensuring your eCommerce business stays ahead of the competition.** 
+> **Integrating RevenueHunt app with ActiveCampaign gives you a powerful system for capturing, nurturing, and converting leads - ensuring your eCommerce business stays ahead of the competition.** 
 > 
 > **🤝 Capture High-Intent Leads**
 > 
@@ -48,7 +48,7 @@ This article will guide you through integrating RevenueHunt with ActiveCampaign 
 > 
 > **🔄 Automated Follow-Ups**
 > 
-> ActiveCampaign’s automation features enable merchants to set up follow-up sequences that educate, engage, and convert customers over time.
+> ActiveCampaign's automation features enable merchants to set up follow-up sequences that educate, engage, and convert customers over time.
 > 
 > **🙋🏻‍♂️ Improved Customer Insights**
 > 
@@ -64,7 +64,7 @@ You can initiate the connection from within ActiveCampaign:
 
 1\. Go to the Apps menu in ActiveCampaign and search for `Product Recommendation Quiz`.
 
-_If you’re unable to see the Apps page in your account, it is likely because ActiveCampaign branding is turned off for your account. Please try toggling the ActiveCampaign branding setting off and then back on in your account settings. Once you’ve done that, check if the Apps page appears_
+_If you're unable to see the Apps page in your account, it is likely because ActiveCampaign branding is turned off for your account. Please try toggling the ActiveCampaign branding setting off and then back on in your account settings. Once you've done that, check if the Apps page appears_
 
 2\. Select the quiz icon and follow the provided setup instructions. During the setup process, you will be prompted to enter your `ActiveCampaign API Token`. This token is essential for linking the quiz data with your ActiveCampaign account and can be found in the [`Connect`](https://docs.revenuehunt.com/reference/quiz-builder/#connect) > ActiveCampaign section of the app.
 
@@ -72,7 +72,7 @@ _**Option 2:**_ 
 
 1\. Log into your RevenueHunt account and open the quiz you want to integrate.
 
-2\. Navigate to the `Connect` Tab to access integration options. Copy the `API Token`, then locate the ActiveCampaign integration and click `‘Connect’`.
+2\. Navigate to the `Connect` Tab to access integration options. Copy the `API Token`, then locate the ActiveCampaign integration and click `'Connect'`.
 
 ![how to send leads to activecampaign](https://docs.revenuehunt.com/images/how%20to%20send%20leads%20to%20activecampaign.png)
 
@@ -120,13 +120,13 @@ After that, all the new contacts from the quiz will receive more custom informat
 
 ## **Automating Follow-Up Emails with ActiveCampaign**
 
-In eCommerce, **timing and personalization** are key factors in turning potential customers into paying ones. Many shoppers take product recommendation quizzes because they’re actively searching for solutions. However, not all of them buy right away. By automating follow-up emails with **ActiveCampaign**, merchants can stay engaged with these high-intent leads, pushing them toward a purchase without requiring manual intervention.
+In eCommerce, **timing and personalization** are key factors in turning potential customers into paying ones. Many shoppers take product recommendation quizzes because they're actively searching for solutions. However, not all of them buy right away. By automating follow-up emails with **ActiveCampaign**, merchants can stay engaged with these high-intent leads, pushing them toward a purchase without requiring manual intervention.
 
 To maximize the impact of quiz data, you can set up email automation sequences:
 
-1\. In ActiveCampaign, navigate to the ‘Automations’ menu and click `‘New Automation.’`
+1\. In ActiveCampaign, navigate to the 'Automations' menu and click `'New Automation.'`
 
-2\. Choose `‘When a contact submits a quiz’` as the trigger and select the RevenueHunt quiz from the list.
+2\. Choose `'When a contact submits a quiz'` as the trigger and select the RevenueHunt quiz from the list.
 
 ![how to activecampaign automation](https://docs.revenuehunt.com/images/how%20to%20activecampaign%20automation.gif)
 
@@ -142,7 +142,7 @@ _Note: Currently, RevenueHunt only sends recommended product IDs to ActiveCampai
 
 ## **How This Benefits eCommerce Merchants**
 
-Integrating RevenueHunt’s Product Recommendation Quiz with ActiveCampaign empowers eCommerce merchants to capture, nurture, and convert high-intent leads with automated, personalized email campaigns.
+Integrating RevenueHunt's Product Recommendation Quiz with ActiveCampaign empowers eCommerce merchants to capture, nurture, and convert high-intent leads with automated, personalized email campaigns.
 
 ✅ **Saves Time & Increases Efficiency**
 
@@ -150,11 +150,11 @@ Integrating RevenueHunt’s Product Recommendation Quiz with ActiveCampaign empo
 
 ✅ **Reduces Cart Abandonment & Boosts Repeat Sales**
 
-Instead of manually following up with each customer, merchants can set up automated email sequences that run in the background. This ensures every quiz taker receives timely, relevant communication—whether it’s a welcome email, product recommendation, or discount offer.
+Instead of manually following up with each customer, merchants can set up automated email sequences that run in the background. This ensures every quiz taker receives timely, relevant communication - whether it's a welcome email, product recommendation, or discount offer.
 
 Customers who receive **personalized follow-ups** based on their quiz responses are far more likely to engage. For example, if someone showed interest in skincare for sensitive skin, they can receive emails showcasing **products tailored to their needs**, along with educational content and social proof to reinforce their decision.
 
-By integrating RevenueHunt with ActiveCampaign, merchants can use **quiz data to re-engage customers** who didn’t complete a purchase. Automated emails can also be used for loyalty programs, cross-selling, and re-engagement campaigns, helping to increase customer lifetime value.
+By integrating RevenueHunt with ActiveCampaign, merchants can use **quiz data to re-engage customers** who didn't complete a purchase. Automated emails can also be used for loyalty programs, cross-selling, and re-engagement campaigns, helping to increase customer lifetime value.
 
 By following the steps outlined in this guide, you can create a powerful post-quiz experience that imporves customer engagement and sales.
 

@@ -17,9 +17,9 @@ draft: false
 
 <iframe loading="lazy" class="alignnone size-full" title="YouTube video player" src="https://www.youtube.com/embed/DCtd6BEJfb0?si=hGq_03dYOPa0hFuo" width="100%" height="400px" frameborder="0" allowfullscreen="allowfullscreen"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe>
 
-Interactive video quizzes are an excellent way to engage your audience and drive sales. To ensure your product quizzes are effective and mobile-friendly, it’s important to use the right tools that help you select the correct types of videos, adhere to optimal dimensions and resolutions.
+Interactive video quizzes are an excellent way to engage your audience and drive sales. To ensure your product quizzes are effective and mobile-friendly, it's important to use the right tools that help you select the correct types of videos, adhere to optimal dimensions and resolutions.
 
-Here’s a practical guide on **how to create a well-converting video quiz** for your e-commerce website.
+Here's a practical guide on **how to create a well-converting video quiz** for your e-commerce website.
 
 ## 🤔 What **Types of Videos** to Include in Your Quiz?
 
@@ -39,9 +39,9 @@ You can, for example, briefly introduce your brand, the products, and what users
 
 **🟣 How-To or Explainer Videos**
 
-These videos can serve several purposes.  They can guide customers to better understand a quiz question, showcase an example of what you’re asking about or educate users on how to use a product or service effectively.
+These videos can serve several purposes.  They can guide customers to better understand a quiz question, showcase an example of what you're asking about or educate users on how to use a product or service effectively.
 
-For example, a skincare brand could include some step-by-step video guides, tips, and tricks for getting the most out of the product. Depending on the product you’re selling, the videos shouldn’t be longer than **1-2 minutes**.
+For example, a skincare brand could include some step-by-step video guides, tips, and tricks for getting the most out of the product. Depending on the product you're selling, the videos shouldn't be longer than **1-2 minutes**.
 
 <video class="wp-video-shortcode" id="video-9095-2" width="502" height="1194" preload="metadata" controls="controls"><source type="video/mp4" src="https://revenuehunt.com/wp-content/uploads/2024/07/resultspagevideo.mp4?_=2"><a href="https://revenuehunt.com/wp-content/uploads/2024/07/resultspagevideo.mp4">https://revenuehunt.com/wp-content/uploads/2024/07/resultspagevideo.mp4</a></video>
 
@@ -51,7 +51,7 @@ For example, a skincare brand could include some step-by-step video guides, tips
 
 **🟣 Customer Testimonial Videos**
 
-Build trust and credibility by showcasing real customer experiences. For example, you can add short interviews or clips of customers sharing their positive experiences. They shouldn’t be longer than **30-45 seconds**.
+Build trust and credibility by showcasing real customer experiences. For example, you can add short interviews or clips of customers sharing their positive experiences. They shouldn't be longer than **30-45 seconds**.
 
 ![](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/videotestimonialv2.gif)
 
@@ -88,9 +88,9 @@ You should focus on creating short videos that address the user directly, sugges
 
 ## First, Focus on Mobile
 
-With nearly 65% of all e-commerce site visits coming from mobile devices and a whopping 🤳 **72.9% of total e-commerce sales generated on mobile**, it’s clear that shoppers prefer their smartphones over desktops. This makes it crucial to design your video quizzes with a **mobile-first mindset**.
+With nearly 65% of all e-commerce site visits coming from mobile devices and a whopping 🤳 **72.9% of total e-commerce sales generated on mobile**, it's clear that shoppers prefer their smartphones over desktops. This makes it crucial to design your video quizzes with a **mobile-first mindset**.
 
-Mobile users are more engaged and are constantly interacting with their devices throughout the day. By creating video quizzes that are optimized for mobile, you can tap into this constant connectivity and reach customers wherever they are. Mobile-friendly quizzes ensure quick load times, easy navigation, and a seamless user experience, all of which are vital for **keeping today’s impatient shoppers engaged**.
+Mobile users are more engaged and are constantly interacting with their devices throughout the day. By creating video quizzes that are optimized for mobile, you can tap into this constant connectivity and reach customers wherever they are. Mobile-friendly quizzes ensure quick load times, easy navigation, and a seamless user experience, all of which are vital for **keeping today's impatient shoppers engaged**.
 
 Furthermore, mobile users are more likely to share their experiences on social media, amplifying your reach organically.
 
@@ -139,7 +139,7 @@ To ensure your videos look professional and load efficiently on mobile devices, 
 
 7️⃣ Test the quiz on different mobile devices to ensure videos load quickly and play smoothly.
 
-> **💡 Note**: [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz-shopify/) offers **unlimited testing** with it’s in-app _Preview_ feature. This means you can try the quiz as many times as necessary without any additional cost.
+> **💡 Note**: [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz-shopify/) offers **unlimited testing** with it's in-app _Preview_ feature. This means you can try the quiz as many times as necessary without any additional cost.
 
 8️⃣ Publish the quiz on your website.
 
@@ -155,8 +155,8 @@ Here are the best practices for creating mobile-friendly interactive video quizz
 
 **✔️ Engaging Content**: Make the videos interesting and engaging. Use a friendly tone and address the viewer directly.
 
-**✔️ Call to Action (CTA)**: End each video with a clear CTA, guiding users on what to do next, whether it’s answering a quiz question or checking out a product.
+**✔️ Call to Action (CTA)**: End each video with a clear CTA, guiding users on what to do next, whether it's answering a quiz question or checking out a product.
 
 **✔️ Mobile Optimization**: Ensure videos are optimized for mobile viewing by testing on various devices and ensuring fast load times.
 
-By following these guidelines, you can create engaging interactive video quizzes that not only capture your audience’s attention but also drive conversions and sales.
+By following these guidelines, you can create engaging interactive video quizzes that not only capture your audience's attention but also drive conversions and sales.

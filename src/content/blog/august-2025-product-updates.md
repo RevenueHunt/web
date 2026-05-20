@@ -18,7 +18,7 @@ August introduced major advancements in privacy, Pixels, integrations, and Quiz 
 
 ### **Highlights**
 
--   **Shopify Customer Privacy API integration** – We now fully support Shopify’s Customer Privacy API, giving you more reliable consent handling and improved tracking consistency across your store.
+-   **Shopify Customer Privacy API integration** – We now fully support Shopify's Customer Privacy API, giving you more reliable consent handling and improved tracking consistency across your store.
     
 -   **TikTok Pixel (beta)** – You can now track quiz interactions with the TikTok Pixel, opening up new retargeting and optimization opportunities on one of the fastest-growing ad platforms. [Read more](https://docs.revenuehunt.com/how-to-guides/integrate-tiktok-pixel/)
     
@@ -26,7 +26,7 @@ August introduced major advancements in privacy, Pixels, integrations, and Quiz 
     
 -   **Quiz Copilot links products to quiz** – Quiz Copilot can now automatically map products to relevant quiz choices, cutting setup time and helping new merchants get to value faster. [Read more](https://docs.revenuehunt.com/how-to-guides/use-quiz-copilot/)
     
--   **Quiz Copilot now generates conditional logic** – Generate question logic automatically based on best practices, merchant inputs, or existing quiz structure — reducing manual work dramatically. [Read more](https://docs.revenuehunt.com/how-to-guides/use-quiz-copilot/)
+-   **Quiz Copilot now generates conditional logic** – Generate question logic automatically based on best practices, merchant inputs, or existing quiz structure - reducing manual work dramatically. [Read more](https://docs.revenuehunt.com/how-to-guides/use-quiz-copilot/)
     
 -   **Better phone input UX** – Improved mobile number entry ensures fewer failed submissions and a smoother experience across all devices and countries.
     
@@ -41,4 +41,4 @@ This month dramatically expanded what the app can automate, making personalizati
 
 ### **Conclusion**
 
-August was our biggest month for automation and integration improvements — Quiz Copilot now supports more of the quiz-building process than ever.
+August was our biggest month for automation and integration improvements - Quiz Copilot now supports more of the quiz-building process than ever.

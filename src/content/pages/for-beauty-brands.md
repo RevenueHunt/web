@@ -31,13 +31,13 @@ Find in this very useful tutorial, explained by our team, how to drive up sales 
 
 ## How to build a funnel that will convert customers on autopilot
 
-A healthy sales funnel helps you transform your site visitors from casual browsers into committed customers…
+A healthy sales funnel helps you transform your site visitors from casual browsers into committed customers...
 
 [Keep Reading](https://revenuehunt.com/build-sales-funnel-shopify-store/)
 
 ## 5 ways your store can compete with big marketplaces
 
-More than half of online shoppers still start their shopping journey on one of a few popular online marketplaces…
+More than half of online shoppers still start their shopping journey on one of a few popular online marketplaces...
 
 [Keep Reading](https://revenuehunt.com/5-ways-d2c-store-compete-big-marketplaces/)
 
@@ -49,17 +49,17 @@ A well-built quiz can be a real treasure of knowledge and as informative as an i
 
 ## How to Increase Sales of Skincare or Cosmetic Products Using a Shopify Quiz App
 
-If you’re looking for a way to increase sales of your skincare or cosmetic products, look no further than using a quiz app on Shopify. Quizzes are an engaging and fun way to get customers interested in your products, and they can be used in a variety of industries to boost sales.
+If you're looking for a way to increase sales of your skincare or cosmetic products, look no further than using a quiz app on Shopify. Quizzes are an engaging and fun way to get customers interested in your products, and they can be used in a variety of industries to boost sales.
 
 [Keep Reading](https://revenuehunt.com/transform-your-amazing-ideas-into-a-solid-beauty-business-with-these-proven-tips/)
 
 ## Transform Your Amazing Ideas Into a Solid Beauty Business With These Proven Tips
 
-Starting a beauty business is challenging, and most first-time business owners would have to fight a difficult battle with tough odds. To successfully launch a beauty business, you’ll need a lot of goal-getting energy, excellent people skills, unwavering persistence, and access to a variety of essential knowledge. And that’s what we’ll be revealing to you today.
+Starting a beauty business is challenging, and most first-time business owners would have to fight a difficult battle with tough odds. To successfully launch a beauty business, you'll need a lot of goal-getting energy, excellent people skills, unwavering persistence, and access to a variety of essential knowledge. And that's what we'll be revealing to you today.
 
 [Keep Reading](https://revenuehunt.com/transform-your-amazing-ideas-into-a-solid-beauty-business-with-these-proven-tips/)
 
-## Product Quiz Success: Why it’s necessary to send follow up emails?
+## Product Quiz Success: Why it's necessary to send follow up emails?
 
 Almost every ecommerce company uses product recommendation quizzes to increase sales. However, not many companies send the follow up emails necessary to make sure that customers actually buy the products they are recommended
 

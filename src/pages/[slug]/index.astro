@@ -27,7 +27,7 @@ export async function getStaticPaths() {
     params: { slug: post.data.legacySlug },
     props: { entry: post, kind: "blog" as const, allPosts: sorted },
   }));
-  // Pages with hand-built bespoke routes elsewhere — skip in the catch-all.
+  // Pages with hand-built bespoke routes elsewhere - skip in the catch-all.
   const explicitlyOverridden = new Set([
     "home",
     "blog",
@@ -84,7 +84,7 @@ const related = isBlog ? relatedPosts(blogEntry!, allPosts as Awaited<ReturnType
 const navAdj = isBlog ? prevNext(blogEntry!, allPosts as Awaited<ReturnType<typeof getCollection<"blog">>>) : { prev: null, next: null };
 const tocHeadings = isBlog ? (headings ?? []).filter((h) => h.depth === 2 || h.depth === 3) : [];
 
-// Author initials — placeholder avatar until real avatars exist.
+// Author initials - placeholder avatar until real avatars exist.
 function initials(name: string): string {
   return name
     .split(/\s+/)
@@ -145,7 +145,7 @@ const linkedinShare = `https://www.linkedin.com/sharing/share-offsite/?url=${enc
   <PlatformPage entry={platformEntry} config={platformConfig} />
 ) : (
   <Base
-    title={`${entry.data.title} — ${SITE.name}`}
+    title={`${entry.data.title} - ${SITE.name}`}
     description={entry.data.description}
     ogImage={entry.data.featuredImage ?? undefined}
     jsonLd={jsonLd}

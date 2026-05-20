@@ -269,11 +269,11 @@ Mobile Sales
 
 ### Ready to Connect Your Quiz to Your Marketing Stack?  
 
-Start collecting zero-party data, automating personalized follow-ups, and turning quiz takers into paying customers. Set up your first integration in minutes — no technical skills required.
+Start collecting zero-party data, automating personalized follow-ups, and turning quiz takers into paying customers. Set up your first integration in minutes - no technical skills required.
 
 [Get Started Free](https://revenuehunt.com/product-recommendation-quiz/)  
 [View Integration Guides](https://docs.revenuehunt.com/how-to-guides/send-leads-to-crm/)
 
-RevenueHunt’s **Product Recommendation Quiz** seamlessly integrates with industry-leading platforms including **Klaviyo email marketing**, **Google Analytics tracking**, **Meta Pixel for Facebook Ads**, **Shopify Customers CRM**, **Mailchimp automation**, **ActiveCampaign**, **HubSpot**, and more. Whether you’re running a **Shopify store**, **WooCommerce site**, or **BigCommerce shop**, our **quiz integrations** help you capture valuable customer data, automate personalized marketing campaigns, and increase average order value.
+RevenueHunt's **Product Recommendation Quiz** seamlessly integrates with industry-leading platforms including **Klaviyo email marketing**, **Google Analytics tracking**, **Meta Pixel for Facebook Ads**, **Shopify Customers CRM**, **Mailchimp automation**, **ActiveCampaign**, **HubSpot**, and more. Whether you're running a **Shopify store**, **WooCommerce site**, or **BigCommerce shop**, our **quiz integrations** help you capture valuable customer data, automate personalized marketing campaigns, and increase average order value.
 
 Connect your **product quiz** to **ReCharge for subscriptions**, sync leads with **Zapier** to unlock thousands of app connections, display **product reviews from Stamped, Judge.me, or Rivyo**, and track conversions with **TikTok Pixel**. Our no-code integrations make it easy to build a complete **quiz marketing funnel** that drives real revenue.

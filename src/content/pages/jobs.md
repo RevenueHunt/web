@@ -1,5 +1,5 @@
 ---
-title: "We’re hiring!"
+title: "We're hiring!"
 description: "Current job listings: June 2025 – Technical Customer Support (100% remote)"
 pubDate: 2021-02-09T18:04:07Z
 updatedDate: 2025-06-11T16:26:37Z
@@ -10,12 +10,12 @@ featuredImage: "/img/pages/jobs/partner-program.jpeg"
 draft: false
 ---
 
-[Home](https://revenuehunt.com/) » We’re hiring!
+[Home](https://revenuehunt.com/) » We're hiring!
 
   
   
 
-## We’re hiring!
+## We're hiring!
 
 #### **Current job listings:**
 

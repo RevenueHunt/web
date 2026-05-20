@@ -20,17 +20,17 @@ draft: false
 
 Using MailChimp for your post-quiz email marketing can transform how you engage with your customers.
 
-Imagine **sending highly personalized emails that speak directly to your customers’ needs**, based on the answers they provide in your quizzes. This approach has a higher chance of grabbing the customer’s attention and convincing them to buy from you because you know what the customer is looking for (they told you themselves!).
+Imagine **sending highly personalized emails that speak directly to your customers' needs**, based on the answers they provide in your quizzes. This approach has a higher chance of grabbing the customer's attention and convincing them to buy from you because you know what the customer is looking for (they told you themselves!).
 
 ![](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/automate-email-with-mailchimp.png)
 
-Here’s how you can use [MailChimp](https://mailchimp.com/) together with RevenueHunt’s [Shop Quiz: Product Recommendation Quiz](https://apps.shopify.com/product-recommendation-quiz-revenuehunt) app to make the most out of this personalized follow-up, **boost your sales, and why it works** so well.
+Here's how you can use [MailChimp](https://mailchimp.com/) together with RevenueHunt's [Shop Quiz: Product Recommendation Quiz](https://apps.shopify.com/product-recommendation-quiz-revenuehunt) app to make the most out of this personalized follow-up, **boost your sales, and why it works** so well.
 
 ## Know Your Tools
 
 ![](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/Untitled_design__5_-removebg-preview-300x300.png)
 
-[MailChimp](https://mailchimp.com/) is a robust email marketing service that empowers businesses to design, send, and analyze email campaigns. It offers a user-friendly interface with a variety of templates, automation tools, and detailed analytics. MailChimp’s features include audience segmentation, personalized email content, and marketing automation, making it an essential tool for managing customer relationships and driving engagement.
+[MailChimp](https://mailchimp.com/) is a robust email marketing service that empowers businesses to design, send, and analyze email campaigns. It offers a user-friendly interface with a variety of templates, automation tools, and detailed analytics. MailChimp's features include audience segmentation, personalized email content, and marketing automation, making it an essential tool for managing customer relationships and driving engagement.
 
 ![](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/Untitled_design__6_-removebg-preview-300x300.png)
 
@@ -73,7 +73,7 @@ Once you have your quiz, connecting it to MailChimp is very easy:
 -   Go to the [Connect](https://docs.revenuehunt.com/reference/quiz-builder/#connect) tab in your Quiz Builder.
 -   Click on the MailChimp \`Connect\` button and authorize the connection.
 -   Select the _MailChimp list_ to send your quiz leads to and their default _subscriber status_.
--   Publish the changes with the top-right ‘Publish’ button.
+-   Publish the changes with the top-right 'Publish' button.
 
 ![how to send leads to mailchimp settings](https://docs.revenuehunt.com/images/how%20to%20send%20leads%20to%20mailchimp%20settings.png)
 
@@ -83,7 +83,7 @@ Once you have your quiz, connecting it to MailChimp is very easy:
 
 Once your quiz is connected you should consider what data you want to send to MailChimp from the quiz.
 
-> **📝Note:** Mailchimp API only supports **email, name, and customer tags** to be send from the quiz. To override Mailchimp’s limitation on pushing detailed quiz data, you can use `customer tags` to represent customer responses.
+> **📝Note:** Mailchimp API only supports **email, name, and customer tags** to be send from the quiz. To override Mailchimp's limitation on pushing detailed quiz data, you can use `customer tags` to represent customer responses.
 
 You can, for example, **create [customer tags](https://docs.revenuehunt.com/reference/quiz-builder/#customer-tags)** in Shop Quiz to represent different quiz responses. Then, link these tags to specific answers in your quiz.
 
@@ -95,7 +95,7 @@ In MailChimp, you can use these tags to segment your audience and tailor your em
 
 ### 3️⃣ Design Email Campaigns
 
-Once the quiz answers are covered with customer tags, all the information you need about your customer will start flowing into MailChimp. That’s when you can set up your email campaigns.
+Once the quiz answers are covered with customer tags, all the information you need about your customer will start flowing into MailChimp. That's when you can set up your email campaigns.
 
 You can start by setting up **Automations** (automated email flows) to trigger **based on specific tags** or quiz completions.
 
@@ -107,7 +107,7 @@ Then, create different email templates in MailChimp that correspond to different
 
 ## Example Flow
 
-Imagine you run a skincare eCommerce store. Your quiz asks customers about their skin type and concerns. Based on their answers, you tag them as “Oily Skin,” “Dry Skin,” etc.
+Imagine you run a skincare eCommerce store. Your quiz asks customers about their skin type and concerns. Based on their answers, you tag them as "Oily Skin," "Dry Skin," etc.
 
 In MailChimp, you create an email series targeting these tags. For instance:
 
@@ -133,7 +133,7 @@ In MailChimp, you create an email series targeting these tags. For instance:
 
 By integrating MailChimp with Shop Quiz, you can create powerful, **data-driven email marketing campaigns** that enhance customer engagement and drive sales.
 
-Here’s what you need to remember when setting it up:
+Here's what you need to remember when setting it up:
 
 **✔️ Personalization**: Tailor your email content to the specific needs of your customers based on quiz responses.
 
@@ -141,4 +141,4 @@ Here’s what you need to remember when setting it up:
 
 **✔️ Segmentation**: Use customer tags to segment your audience for more targeted marketing efforts.
 
-**✔️ Analysis**: Monitor your campaigns’ performance to continually improve your strategies.
+**✔️ Analysis**: Monitor your campaigns' performance to continually improve your strategies.

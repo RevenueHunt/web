@@ -17,13 +17,13 @@ featuredImage: "/img/blog/how-to-track-and-maximize-quiz-driven-revenue-in-shopi
 draft: false
 ---
 
-ECommerce is becoming more competitive by the day, and every online store owner is looking for innovative ways to increase conversions and maximize revenue. If you’re using product recommendation quizzes on your Shopify store, tracking their impact on sales is crucial. With RevenueHunt’s tracking features, you can directly measure **how quizzes contribute to your store’s bottom line**—and use this data to scale your business.
+ECommerce is becoming more competitive by the day, and every online store owner is looking for innovative ways to increase conversions and maximize revenue. If you're using product recommendation quizzes on your Shopify store, tracking their impact on sales is crucial. With RevenueHunt's tracking features, you can directly measure **how quizzes contribute to your store's bottom line** - and use this data to scale your business.
 
 ![](/img/blog/how-to-track-and-maximize-quiz-driven-revenue-in-shopify/Track-Quiz-Revenue-FT-Image.png)
 
 > ## Why **Tracking Quiz Revenue Matters** for Your Business
 > 
-> Quizzes are powerful conversion tools, but without proper tracking, you may not realize how much revenue they’re actually generating. By monitoring quiz-driven purchases, you can:
+> Quizzes are powerful conversion tools, but without proper tracking, you may not realize how much revenue they're actually generating. By monitoring quiz-driven purchases, you can:
 > 
 > **✔️ Prove the ROI of your quizzes** – Know exactly how much revenue is coming from your quiz and justify the investment.
 > 
@@ -33,7 +33,7 @@ ECommerce is becoming more competitive by the day, and every online store owner 
 > 
 > **✔️ Make data-driven decisions** – Understand customer behavior and adjust your sales strategy accordingly.
 > 
-> With these benefits in mind, let’s explore how RevenueHunt helps you track and use quiz revenue effectively.
+> With these benefits in mind, let's explore how RevenueHunt helps you track and use quiz revenue effectively.
 
 ## **How to Track Revenue with RevenueHunt App**
 
@@ -53,15 +53,15 @@ These tools empower merchants to measure ROI, optimize quizzes for better perfor
 
 ### → Track Quiz Revenue with Shopify Revenue Report 📊
 
-RevenueHunt’s Shopify Revenue Report feature provides Shopify merchants with a transparent view of how quizzes impact sales. By linking your quiz with Shopify’s order tracking system, you can easily monitor customer purchases tied to quiz recommendations.
+RevenueHunt's Shopify Revenue Report feature provides Shopify merchants with a transparent view of how quizzes impact sales. By linking your quiz with Shopify's order tracking system, you can easily monitor customer purchases tied to quiz recommendations.
 
 #### **1️⃣** Enable Shopify Revenue Tracking
 
 1.  **Activate Order Notes** – Make sure Order Notes are enabled in your Shopify Theme Settings. This allows quiz purchase data to be recorded.
-2.  **Connect to Shopify Reports** – In the RevenueHunt app, navigate to the **Connect** tab and locate **Shopify Revenue Report (Beta)**. Click ‘Connect’.
+2.  **Connect to Shopify Reports** – In the RevenueHunt app, navigate to the **Connect** tab and locate **Shopify Revenue Report (Beta)**. Click 'Connect'.
 3.  ![](/img/blog/how-to-track-and-maximize-quiz-driven-revenue-in-shopify/revenuehuntrevenueconnect.png)
 4.  **Grant Access** – Provide the necessary permissions to allow RevenueHunt to access your order data.
-5.  **Publish Changes** – Click ‘Publish’ to finalize the setup and start tracking.
+5.  **Publish Changes** – Click 'Publish' to finalize the setup and start tracking.
 
 #### **2️⃣** View Your Quiz Revenue Data
 
@@ -75,7 +75,7 @@ Once connected, visit **Metrics > Analytics** in the RevenueHunt app to track:
 
 #### **3️⃣** Maximize Revenue Attribution
 
-For best results, ensure that customers **add products to their cart directly from the quiz results page and proceed to checkout immediately**. Delayed purchases won’t be attributed to the quiz, so optimizing your checkout flow is key.
+For best results, ensure that customers **add products to their cart directly from the quiz results page and proceed to checkout immediately**. Delayed purchases won't be attributed to the quiz, so optimizing your checkout flow is key.
 
 > _**💡 Pro Tip:** Adjust your **Results Page Checkout Settings** to ensure users go straight to the cart after completing the quiz._
 
@@ -101,7 +101,7 @@ Once set up, Google Analytics tracks:
 
 ![how to ga events](https://docs.revenuehunt.com/images/how%20to%20ga%20events.png)
 
-Navigate to **Engagement > Conversions > Event Name > Purchase** to view revenue data. Add a **Source** column and look for ‘revenuehunt’ to isolate quiz-driven purchases.
+Navigate to **Engagement > Conversions > Event Name > Purchase** to view revenue data. Add a **Source** column and look for 'revenuehunt' to isolate quiz-driven purchases.
 
 ![how to ga revenue2](https://docs.revenuehunt.com/images/how%20to%20ga%20revenue2.png)
 
@@ -117,9 +117,9 @@ Using GA4, you can:
 
 ### → Use Quiz Answers 🔖 to Improve Sales & Customer Retention
 
-Once you’ve gathered revenue insights from the RevenueHunt app, you can use this data to **fine-tune your sales strategy and boost conversions**. Start by analyzing which quiz paths lead to the highest order values and optimize those questions to drive even better recommendations.
+Once you've gathered revenue insights from the RevenueHunt app, you can use this data to **fine-tune your sales strategy and boost conversions**. Start by analyzing which quiz paths lead to the highest order values and optimize those questions to drive even better recommendations.
 
-Use **Shopify Order Tagging** data to create hyper-personalized email campaigns, offering customers complementary products or special discounts based on their quiz responses. With **Google Analytics tracking**, identify where users drop off and refine your quiz flow to keep engagement high. Additionally, leverage this data for **retargeting ads**, ensuring that potential customers who engaged with the quiz but didn’t convert see personalized product ads based on their selections.
+Use **Shopify Order Tagging** data to create hyper-personalized email campaigns, offering customers complementary products or special discounts based on their quiz responses. With **Google Analytics tracking**, identify where users drop off and refine your quiz flow to keep engagement high. Additionally, leverage this data for **retargeting ads**, ensuring that potential customers who engaged with the quiz but didn't convert see personalized product ads based on their selections.
 
 By continuously refining your quiz and marketing approach using real-time revenue tracking, you can **increase repeat purchases, reduce abandoned carts, and maximize customer lifetime value.**
 
@@ -129,7 +129,7 @@ By continuously refining your quiz and marketing approach using real-time revenu
 > 
 > Activate **Order Notes** in Shopify Theme Settings.
 > 
-> In RevenueHunt app, go to the **Connect tab** and locate **Shopify Orders Tagging (Beta)**, click ‘Connect’.
+> In RevenueHunt app, go to the **Connect tab** and locate **Shopify Orders Tagging (Beta)**, click 'Connect'.
 > 
 > Publish the changes to apply the updates.
 > 
@@ -145,7 +145,7 @@ By continuously refining your quiz and marketing approach using real-time revenu
 
 ## How does it work in practice?
 
-Let’s think of SkinGlow, a Shopify-based skincare brand, faces a common eCommerce challenge: high bounce rates and low conversion rates. Despite offering a wide range of high-quality skincare products, many customers feel overwhelmed by choices and leave without making a purchase. To solve this, SkinGlow introduces a **skincare routine quiz** using RevenueHunt, designed to help customers find the perfect products for their skin type.
+Let's think of SkinGlow, a Shopify-based skincare brand, faces a common eCommerce challenge: high bounce rates and low conversion rates. Despite offering a wide range of high-quality skincare products, many customers feel overwhelmed by choices and leave without making a purchase. To solve this, SkinGlow introduces a **skincare routine quiz** using RevenueHunt, designed to help customers find the perfect products for their skin type.
 
 ![](/img/blog/how-to-track-and-maximize-quiz-driven-revenue-in-shopify/product-recommendation-quiz-beauty.png)
 
@@ -157,11 +157,11 @@ The quiz asks users about their skin concerns, preferences, and lifestyle, provi
 
 → To further maximize sales, SkinGlow activates **Shopify Orders Tagging**, enabling them to store quiz responses in Shopify orders. This allows them to **send highly personalized post-purchase emails** featuring complementary products based on quiz results, **launch retargeting ads** that remind customers of their personalized recommendations, and **improve email segmentation** to nurture leads more effectively.
 
-The results were remarkable: **a 30% increase in total revenue from quiz-driven sales**, **a 40% boost in email marketing conversion rates**, and **a 25% reduction in cart abandonment**, as the quiz helps simplify product selection. By using RevenueHunt’s tracking features, SkinGlow successfully transforms their customer journey, turning engagement into measurable revenue growth.
+The results were remarkable: **a 30% increase in total revenue from quiz-driven sales**, **a 40% boost in email marketing conversion rates**, and **a 25% reduction in cart abandonment**, as the quiz helps simplify product selection. By using RevenueHunt's tracking features, SkinGlow successfully transforms their customer journey, turning engagement into measurable revenue growth.
 
 ## **Your eCommerce Success 🤝 with RevenueHunt**
 
-Tracking quiz revenue isn’t just about numbers—it’s about understanding your customers and making smarter business decisions. By integrating RevenueHunt with Shopify and Google Analytics, you can:
+Tracking quiz revenue isn't just about numbers - it's about understanding your customers and making smarter business decisions. By integrating RevenueHunt with Shopify and Google Analytics, you can:
 
 **✔️ Measure the true impact of your quizzes on sales.**
 

@@ -1,6 +1,6 @@
 ---
 title: "Product Recommendations – Ultimate eCommerce Marketing Guide"
-description: "One of the best ways to reduce cart abandonment on your eCommerce store and improve overall sales is by using meaningful product recommendations. But, the mistake which you need to avoid is having product recommendations that your customer can’t relate with."
+description: "One of the best ways to reduce cart abandonment on your eCommerce store and improve overall sales is by using meaningful product recommendations. But, the mistake which you need to avoid is having product recommendations that your customer can't relate with."
 pubDate: 2021-03-01T21:34:47Z
 updatedDate: 2023-03-01T07:26:14Z
 tags:
@@ -16,33 +16,33 @@ featuredImage: "/img/blog/product-recommendations-ultimate-ecommerce-marketing-g
 draft: false
 ---
 
-One of the best ways to reduce cart abandonment on your eCommerce store and improve overall sales is by using meaningful product recommendations. But, the mistake which you need to avoid is having product recommendations that your customer can’t relate with.
+One of the best ways to reduce cart abandonment on your eCommerce store and improve overall sales is by using meaningful product recommendations. But, the mistake which you need to avoid is having product recommendations that your customer can't relate with.
 
 By that I mean, a customer buying a high-ticket product like camping equipment is less likely to buy a low-ticket item, especially, if the traffic source is paid advertisement. 
 
-For the same, you need to personalize customer experience using eye-catchy UX and relevant recommendations. In this post, we’re going to talk about everything you’ll ever need to know about product recommendations. 
+For the same, you need to personalize customer experience using eye-catchy UX and relevant recommendations. In this post, we're going to talk about everything you'll ever need to know about product recommendations. 
 
 ## What are product recommendations? 
 
 In a nutshell, a product recommendation system is designed to pre-direct and display products which are most likely to convert. A recommendation system can be used for directly converting a product, or for improving average order value, or to simply retain customers.
 
-The reason this technique is used by eCommerce rockstars like Amazon, Alibaba, etc., is the high ROI it offers. The recommendation algorithms are of different types. We’re going to discuss some of the top ones. If done rightly, recommendations can significantly boost your revenue, CTR, conversion and more.
+The reason this technique is used by eCommerce rockstars like Amazon, Alibaba, etc., is the high ROI it offers. The recommendation algorithms are of different types. We're going to discuss some of the top ones. If done rightly, recommendations can significantly boost your revenue, CTR, conversion and more.
 
 5 ways to boost sales using product recommendations:
 
 ### 1\. Product recommendations using automated Quiz
 
-One of the most unique product recommendations techniques for boosting your eCommerce store revenue is by answering their queries. According to [Google](https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/how-to-beat-consumer-tune-out-with-useful-content/), 69% of smartphone users state that they’re more likely to buy from businesses with mobile sites or apps which answer their queries. 
+One of the most unique product recommendations techniques for boosting your eCommerce store revenue is by answering their queries. According to [Google](https://www.thinkwithgoogle.com/consumer-insights/consumer-trends/how-to-beat-consumer-tune-out-with-useful-content/), 69% of smartphone users state that they're more likely to buy from businesses with mobile sites or apps which answer their queries. 
 
-But here’s the thing – automating your site for answering their questions using a chatbot could increase your investment and reduce the overall profit. Also, you can’t answer all the queries based on the customers even with the FAQs section.
+But here's the thing – automating your site for answering their questions using a chatbot could increase your investment and reduce the overall profit. Also, you can't answer all the queries based on the customers even with the FAQs section.
 
 <figure class="wp-block-image"><img decoding="async" src="/img/blog/product-recommendations-ultimate-ecommerce-marketing-guide/lRpkvpOhM1JTNWtFDu6dW50qScHmN7XB8GFFS4vK3g4rG_G-b1DCF99DsawM4jjTl4Yi8u6npgvXa_Qa_m1q6vSt2f2yFWVwYEmrFQzsmSP4ve0jm2yxKh8yTqw9HMAv4dHVASQC" alt=""></figure>
 
-Exactly, that’s where the apps like [Product recommendations Quiz](https://revenuehunt.com/product-recommendation-quiz/) comes in action. All you need to do is to “Install” the plugin on your eCommerce store and it’ll ask the right questions as well as will drive you to the satisfying conversion. 
+Exactly, that's where the apps like [Product recommendations Quiz](https://revenuehunt.com/product-recommendation-quiz/) comes in action. All you need to do is to "Install" the plugin on your eCommerce store and it'll ask the right questions as well as will drive you to the satisfying conversion. 
 
 ### 2\. Boost AOV with behavioural marketing 
 
-As per the psychology and marketing expert, “Robert Cialdini”, there are 6 principles that decide your sales. Out of which the last principle, Principle of Consensus, is the usage of actions and behaviours of existing customers for determining their own. This is a strategy used by top eCommerce giants like Amazon, Etsy and more. 
+As per the psychology and marketing expert, "Robert Cialdini", there are 6 principles that decide your sales. Out of which the last principle, Principle of Consensus, is the usage of actions and behaviours of existing customers for determining their own. This is a strategy used by top eCommerce giants like Amazon, Etsy and more. 
 
 Amazon has a lot of customer data at their disposal and they use it along with their product recommendation system for creating a highly personalized recommendation funnel.
 
@@ -74,7 +74,7 @@ To help you better understand the concept of social proof for retaining your cus
 
 One of the strongest ways of using social proof is via product reviews and ratings. Amazon breaks down the publisher rating into positive and negative from 1 to 5 stars. This means a visitor can know the exact experience of the purchasers as well as the level of satisfaction, i.e. the customer was satisfied with the product or not. Customers can even add images and comments for their purchases.
 
-If you’re using Shopify, you can easily find a product review app from their marketplace and add this functionality to your store. 
+If you're using Shopify, you can easily find a product review app from their marketplace and add this functionality to your store. 
 
 <figure class="wp-block-image"><img decoding="async" src="/img/blog/product-recommendations-ultimate-ecommerce-marketing-guide/uoqPFtYUjQXtpnEQwTz50OuhgcdYwHh37o-VfyeX_CNEved0GL-E5rMpj0rfPVl63EB3SweaPHrxv_fej4zNllHqr0F_eMARsG1dAxZn_oPBn_3Y4QnNsdwfnyA84XkQ-9PBnZeB" alt=""></figure>
 

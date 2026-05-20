@@ -1,5 +1,5 @@
 ---
-title: "Product Finder Quiz — what it is, when to use one, examples"
+title: "Product Finder Quiz - what it is, when to use one, examples"
 description: "A product finder quiz helps shoppers find the right product through 5 to 8 short questions. How it works, when to use one, and 12 live examples."
 pubDate: 2026-05-18T00:00:00Z
 updatedDate: 2026-05-18T00:00:00Z
@@ -10,7 +10,7 @@ featuredImage: "/img/pages/product-recommendation-quiz/personal-shopper-product-
 draft: false
 ---
 
-### A product finder quiz is a short interactive tool that asks 5 to 8 questions and returns a personalized product recommendation — built for stores where shoppers don't know exactly what they want.
+### A product finder quiz is a short interactive tool that asks 5 to 8 questions and returns a personalized product recommendation - built for stores where shoppers don't know exactly what they want.
 
 The term *product finder quiz* is often used interchangeably with *product recommendation quiz*, *guided selling quiz*, or *shopping quiz*. They all describe the same primitive: a structured short-form experience that replaces the "browse and bounce" pattern of category pages with a guided conversation that ends in a specific product match.
 
@@ -18,31 +18,31 @@ This page is the practical guide: what a product finder quiz is, what it's espec
 
 ### Is a product finder quiz different from a product recommendation quiz?
 
-In practice, no — they're the same tool. The naming usually reflects intent:
+In practice, no - they're the same tool. The naming usually reflects intent:
 
 -   **"Product finder"** emphasizes the *shopper's* job: helping them find what they want.
 -   **"Product recommendation"** emphasizes the *store's* job: making a curated recommendation based on the shopper's answers.
 
-Both run the same mechanic: questions → conditional logic → scoring against catalog → personalized result. We use "product recommendation quiz" as our canonical term, but if you searched for "product finder quiz," you're in the right place — read our full [product recommendation quiz guide](/product-recommendation-quiz/) for the deep dive.
+Both run the same mechanic: questions → conditional logic → scoring against catalog → personalized result. We use "product recommendation quiz" as our canonical term, but if you searched for "product finder quiz," you're in the right place - read our full [product recommendation quiz guide](/product-recommendation-quiz/) for the deep dive.
 
 ### What a product finder quiz is especially good for
 
-A product finder quiz earns its keep when shoppers face decision fatigue *because they don't have clear preferences*. That's a slightly different problem from "buyer knows exactly what they want but our category page is hard to navigate" — and it changes how you design the quiz.
+A product finder quiz earns its keep when shoppers face decision fatigue *because they don't have clear preferences*. That's a slightly different problem from "buyer knows exactly what they want but our category page is hard to navigate" - and it changes how you design the quiz.
 
 Cases where a finder quiz shines:
 
 -   **Gift-buying.** The shopper has no opinion about the recipient's taste. The quiz can ask 3 questions about the recipient and return a perfect-fit gift bundle.
--   **Configurable products.** Buyers need a stand for their iPad with their card reader — they don't know which stand. Compatibility quizzes resolve the constraints in 4 to 6 questions.
--   **First-time category shoppers.** New-to-skincare shoppers, first-time wine buyers, parents shopping for a new pet. They don't know your catalog or the category yet — the finder quiz teaches as it sells.
+-   **Configurable products.** Buyers need a stand for their iPad with their card reader - they don't know which stand. Compatibility quizzes resolve the constraints in 4 to 6 questions.
+-   **First-time category shoppers.** New-to-skincare shoppers, first-time wine buyers, parents shopping for a new pet. They don't know your catalog or the category yet - the finder quiz teaches as it sells.
 -   **Paid-traffic landing pages.** A cold visitor from a Meta or TikTok ad has no context. The quiz is a higher-converting alternative to a generic landing page.
 
 ### How a product finder quiz differs from search and filters
 
 Three tools, three different shopper-modes:
 
--   **Search bar** — shopper *types* what they want. Requires they know the right keyword.
--   **Filter sidebar** — shopper *narrows by attribute*. Requires they know which attributes matter.
--   **Product finder quiz** — shopper *answers questions*. Requires nothing — the quiz designer makes both decisions on the shopper's behalf.
+-   **Search bar** - shopper *types* what they want. Requires they know the right keyword.
+-   **Filter sidebar** - shopper *narrows by attribute*. Requires they know which attributes matter.
+-   **Product finder quiz** - shopper *answers questions*. Requires nothing - the quiz designer makes both decisions on the shopper's behalf.
 
 That's why finder quizzes outperform search and filters for first-time visitors and gift-buyers, but underperform for repeat-buyers who know what they want.
 
@@ -50,20 +50,20 @@ That's why finder quizzes outperform search and filters for first-time visitors 
 
 The mechanics are simple. The leverage is in question design. A few patterns that consistently work:
 
--   **Start with the use case, not the product.** First question: "what are you looking for today?" — not "what's your skin type?" Use-case-first quizzes have ~25% higher completion rates because shoppers self-categorize before they have to think hard.
+-   **Start with the use case, not the product.** First question: "what are you looking for today?" - not "what's your skin type?" Use-case-first quizzes have ~25% higher completion rates because shoppers self-categorize before they have to think hard.
 -   **Use visual answers where possible.** "Pick the image closest to your skin type" beats "describe your skin." Image-answers double mobile completion rates in our data.
--   **Branch aggressively.** If the shopper picks "buying as a gift," the entire next 4 questions should be about the recipient — not the buyer. Conditional logic that adapts the quiz on the fly is what makes a finder quiz feel personalized.
+-   **Branch aggressively.** If the shopper picks "buying as a gift," the entire next 4 questions should be about the recipient - not the buyer. Conditional logic that adapts the quiz on the fly is what makes a finder quiz feel personalized.
 -   **Limit total visible questions to 5 to 7.** Most shoppers won't finish a 12-question quiz, even if your full question pool is larger.
--   **Show 2 to 5 results, not 1 and not 20.** A single result feels prescriptive; 20 feels like a category page. The sweet spot is 3 — confident but not constraining.
+-   **Show 2 to 5 results, not 1 and not 20.** A single result feels prescriptive; 20 feels like a category page. The sweet spot is 3 - confident but not constraining.
 
 ### See 12 live product finder quizzes
 
 Every quiz on our demo store is a working RevenueHunt finder quiz you can complete end-to-end:
 
--   [Foundation shade match](https://productrecommendationquiz.com/pages/foundation-match?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-finder-quiz) — image-based, exact-match results
--   [Bicycle finder](https://productrecommendationquiz.com/pages/bicycle-quiz?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-finder-quiz) — compatibility-style, technical match
--   [Coffee finder](https://productrecommendationquiz.com/pages/coffee-quiz?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-finder-quiz) — preference-based, taste matching
--   [Dog food finder](https://productrecommendationquiz.com/pages/dog-food?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-finder-quiz) — multi-attribute matching across breed, age, dietary needs
+-   [Foundation shade match](https://productrecommendationquiz.com/pages/foundation-match?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-finder-quiz) - image-based, exact-match results
+-   [Bicycle finder](https://productrecommendationquiz.com/pages/bicycle-quiz?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-finder-quiz) - compatibility-style, technical match
+-   [Coffee finder](https://productrecommendationquiz.com/pages/coffee-quiz?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-finder-quiz) - preference-based, taste matching
+-   [Dog food finder](https://productrecommendationquiz.com/pages/dog-food?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-finder-quiz) - multi-attribute matching across breed, age, dietary needs
 -   [Skincare type finder](https://productrecommendationquiz.com/pages/skin-type-quiz?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-finder-quiz)
 -   [Lipstick shade finder](https://productrecommendationquiz.com/pages/lipstick-shade-finder?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-finder-quiz)
 -   [CBD product finder](https://productrecommendationquiz.com/pages/cbd-product-finder?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-finder-quiz)
@@ -96,14 +96,14 @@ RevenueHunt's product finder quiz starts at free for up to 100 quiz responses pe
 -   [BigCommerce](/product-recommendation-quiz-bigcommerce/)
 -   [Wix Stores](/product-recommendation-quiz-wix-stores/)
 -   [Squarespace](/product-recommendation-quiz-for-squarespace-commerce/)
--   [Standalone (Google Product Feed)](/product-recommendation-quiz-standalone-google-product-feed/) — for Magento, headless, or any storefront with a product feed
+-   [Standalone (Google Product Feed)](/product-recommendation-quiz-standalone-google-product-feed/) - for Magento, headless, or any storefront with a product feed
 
 ### Frequently asked questions
 
 <details>
 <summary><strong>Is a product finder quiz the same as a product recommendation quiz?</strong></summary>
 
-Yes — same primitive, different name. "Finder" emphasizes the shopper's job; "recommendation" emphasizes the store's job. Both run a short structured quiz that returns 2 to 5 personalized product matches.
+Yes - same primitive, different name. "Finder" emphasizes the shopper's job; "recommendation" emphasizes the store's job. Both run a short structured quiz that returns 2 to 5 personalized product matches.
 </details>
 
 <details>
@@ -127,7 +127,7 @@ Yes. The gift finder is one of the highest-converting finder quiz types. Ask 3 t
 <details>
 <summary><strong>Does it work as a fit or compatibility finder?</strong></summary>
 
-Yes. Fit finders (bras, shoes, jeans) and compatibility finders (POS hardware, lab supplies, B2B technical) are some of the strongest verticals. Conditional logic resolves multi-attribute constraints — buyer's tablet model + card reader + mount type → one specific SKU.
+Yes. Fit finders (bras, shoes, jeans) and compatibility finders (POS hardware, lab supplies, B2B technical) are some of the strongest verticals. Conditional logic resolves multi-attribute constraints - buyer's tablet model + card reader + mount type → one specific SKU.
 </details>
 
 <details>
@@ -141,7 +141,7 @@ Brands using RevenueHunt typically see 2 to 4× higher conversion rates from fin
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Is a product finder quiz the same as a product recommendation quiz?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — same primitive, different name. Finder emphasizes the shopper's job; recommendation emphasizes the store's job. Both run a short structured quiz that returns 2 to 5 personalized product matches."}},
+    {"@type": "Question", "name": "Is a product finder quiz the same as a product recommendation quiz?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - same primitive, different name. Finder emphasizes the shopper's job; recommendation emphasizes the store's job. Both run a short structured quiz that returns 2 to 5 personalized product matches."}},
     {"@type": "Question", "name": "How is a product finder quiz different from a chatbot?", "acceptedAnswer": {"@type": "Answer", "text": "A finder quiz is structured (multiple-choice, no typing), short (under 90 seconds), and mobile-friendly. A chatbot is free-form and requires the shopper to articulate what they want in their own words."}},
     {"@type": "Question", "name": "How many questions should a product finder quiz have?", "acceptedAnswer": {"@type": "Answer", "text": "5 to 7 visible questions for most verticals. The full question pool can be larger if you use conditional logic to skip irrelevant questions for each shopper."}},
     {"@type": "Question", "name": "Can I build a gift finder quiz?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The gift finder is one of the highest-converting finder quiz types. Ask 3 to 5 questions about the recipient, then return a curated gift selection."}},

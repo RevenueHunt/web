@@ -62,7 +62,7 @@ Making the email/phone consent question optional can create a more user-friendly
 
 ## Then **How** to Ask for Marketing Consent
 
-Clear and honest communication is key to gaining trust when asking for marketing consent. Here’s how to do it effectively:
+Clear and honest communication is key to gaining trust when asking for marketing consent. Here's how to do it effectively:
 
 ### 1️⃣ Use Friendly and Transparent Wording
 
@@ -72,7 +72,7 @@ Clear and honest communication is key to gaining trust when asking for marketing
 
 > **💡Tip:** Use a [GDPR/Yes-No Question](https://docs.revenuehunt.com/how-to-guides/ask-for-marketing-consent/#option-3-gdpr-question) type to easily ask for consent in Shop Quiz: Product Recommendation Quiz.
 
-**Example**: “We’d love to stay in touch to share the best skincare tips and product updates. Do we have your permission to send you emails?” or “Get the most out of our recommendations! Sign up for our newsletter to receive special offers and expert skincare advice.” or “Do you agree to receive our personalized product recommendations and updates? \[ \] Yes \[ \] No”.
+**Example**: "We'd love to stay in touch to share the best skincare tips and product updates. Do we have your permission to send you emails?" or "Get the most out of our recommendations! Sign up for our newsletter to receive special offers and expert skincare advice." or "Do you agree to receive our personalized product recommendations and updates? \[ \] Yes \[ \] No".
 
 ### 2️⃣ Add a Link to Your Privacy Policy
 
@@ -84,7 +84,7 @@ Make your Privacy Policy easily accessible to add transparency and reassure user
 > 
 > **💡Tip:** Follow [these instructions](https://docs.revenuehunt.com/how-to-guides/ask-for-marketing-consent/#option-2-marketing-checkmark) to add a marketing checkmark to any quiz slide.
 
-**Example**: “By providing your email address you agree to our [privacy policy](https://www.linktoyourprivacypolicy.com).”
+**Example**: "By providing your email address you agree to our [privacy policy](https://www.linktoyourprivacypolicy.com)."
 
 ### 3️⃣ Design Choices Matter
 
@@ -98,7 +98,7 @@ Ensure these options are accessible on all devices with large clickable areas fo
 
 > **💡Tip:** Use [Picture Questions](https://docs.revenuehunt.com/reference/quiz-builder/#question-types) to add animated gifs to your quiz choices in Shop Quiz: Product Recommendation Quiz.
 
-**Example:** “Want to receive our updates? Click the heart to say yes! ❤️” or “Would you like to receive our updates? \[ \] Yes, absolutely! (Enthusiastic yes gif) \[ \] No, thanks. (Button shakes slightly)”.
+**Example:** "Want to receive our updates? Click the heart to say yes! ❤️" or "Would you like to receive our updates? \[ \] Yes, absolutely! (Enthusiastic yes gif) \[ \] No, thanks. (Button shakes slightly)".
 
 ### 4️⃣ Offer a Clear Opt-Out Option
 
@@ -108,7 +108,7 @@ Respecting user choice is essential. Always provide a clear and **easy way for u
 
 > **💡Tip:** You can add additional information to each quiz slide by activating a [question description](https://docs.revenuehunt.com/how-to-guides/ask-for-marketing-consent/#option-1-question-description) in Shop Quiz: Product Recommendation Quiz.
 
-**Example**: “You can unsubscribe at any time by clicking the link in our emails. You can still get your personalized recommendations without signing up for our newsletter.”
+**Example**: "You can unsubscribe at any time by clicking the link in our emails. You can still get your personalized recommendations without signing up for our newsletter."
 
 ### 5️⃣ Reward System
 
@@ -118,7 +118,7 @@ Offer immediate rewards or incentives for giving consent, such as a **discount c
 
 > **💡Tip:** Check [this guide](https://docs.revenuehunt.com/how-to-guides/add-discount/) to learn how to offer discounts in your Shop Quiz: Product Recommendation Quiz.
 
-**Example**: “Get 10% off your next purchase! Do you agree to receive our exclusive offers? \[ \] Yes, I love discounts! \[ \] No, I’m good for now.”
+**Example**: "Get 10% off your next purchase! Do you agree to receive our exclusive offers? \[ \] Yes, I love discounts! \[ \] No, I'm good for now."
 
 ### 6️⃣ Build Trust with Transparency
 
@@ -126,11 +126,11 @@ Being transparent about how you will use the data builds trust and increases the
 
 ![](/img/blog/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/consent-discount.png)
 
-**Example**: “We use your data to provide personalized skincare recommendations and to keep you updated with the latest offers. We respect your privacy and will never share your data with third parties.”
+**Example**: "We use your data to provide personalized skincare recommendations and to keep you updated with the latest offers. We respect your privacy and will never share your data with third parties."
 
 ## Key Takeaways
 
-**Obtaining consent** for marketing and data processing in product recommendation quizzes doesn’t have to be a daunting task. By integrating consent requests into the quiz, using friendly and transparent wording, making smart design choices, offering clear opt-out options, and building trust through transparency, you can enhance user experience while ensuring compliance and building a strong relationship with your customers.
+**Obtaining consent** for marketing and data processing in product recommendation quizzes doesn't have to be a daunting task. By integrating consent requests into the quiz, using friendly and transparent wording, making smart design choices, offering clear opt-out options, and building trust through transparency, you can enhance user experience while ensuring compliance and building a strong relationship with your customers.
 
 > **💡Tip:** Try the [Shop Quiz: Product Recommendation Quiz app](https://revenuehunt.com/) and collect value leads for your e-commerce business.
 

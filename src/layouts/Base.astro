@@ -38,8 +38,9 @@ const isProd = SITE.site_url === "https://revenuehunt.com";
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    {(noindex || !isProd) && <meta name="robots" content="noindex, nofollow" />}
     <link rel="canonical" href={canonical} />
+    <meta name="google-site-verification" content="ndBR1A0ofVyaMGneJb5xHEqI1BFSKBZZPUzM8DdGDiE" />
 
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -71,6 +72,7 @@ const isProd = SITE.site_url === "https://revenuehunt.com";
           function gtag(){dataLayer.push(arguments);}
           gtag("js", new Date());
           gtag("config", "G-62LE891EM2");
+          gtag("config", "AW-391009741");
         </script>
         <!-- Google Tag Manager -->
         <script is:inline>

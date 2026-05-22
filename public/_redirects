@@ -41,9 +41,10 @@
 # --- /shop/ — Shop-app page retired; send to the Shopify platform page.
 /shop/  /product-recommendation-quiz-shopify/  301
 
-# --- Author archives — not rebuilt on the new site; send to the blog index.
-/author/alex/  /blog/  301
-/author/pochodura/  /blog/  301
+# --- Author archives — /author/alex/ and /author/pochodura/ are real routes
+# (src/pages/author/[slug]/). Only the retired "angel" slug redirects; it was
+# the same person as "alex".
+/author/angel/  /author/alex/  301
 
 # --- Knowledge base: /faqs/* migrated to docs.revenuehunt.com.
 #

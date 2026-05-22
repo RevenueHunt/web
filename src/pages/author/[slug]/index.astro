@@ -1,0 +1,29 @@
+---
+import { getCollection } from "astro:content";
+import BlogArchive from "../../../components/pages/BlogArchive.astro";
+
+export async function getStaticPaths() {
+  /** Author URL slug -> display name + the frontmatter `author` values that
+   *  belong to this person. WP exported author names inconsistently (the
+   *  "alex" user comes through lowercase), so we match on explicit values
+   *  rather than slugifying the display name. The retired "angel" slug is
+   *  the same person as "alex" and 301s to /author/alex/ via _redirects. */
+  const AUTHORS: Record<string, { name: string; match: string[] }> = {
+    alex: { name: "Alex", match: ["alex"] },
+    pochodura: { name: "Paulina Chodura", match: ["Paulina Chodura"] },
+  };
+  const posts = await getCollection("blog", ({ data }) => !data.draft);
+  return Object.entries(AUTHORS).map(([slug, { name, match }]) => ({
+    params: { slug },
+    props: {
+      name,
+      posts: posts.filter((p) => match.includes(p.data.author)),
+    },
+  }));
+}
+
+const { slug } = Astro.params;
+const { name, posts } = Astro.props;
+---
+
+<BlogArchive kind="author" name={name} slug={slug!} posts={posts} />

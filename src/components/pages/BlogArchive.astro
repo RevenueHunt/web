@@ -6,7 +6,7 @@ import { SITE } from "../../lib/site";
 import { postHref, sortByDate } from "../../lib/blog";
 
 interface Props {
-  kind: "category" | "tag";
+  kind: "category" | "tag" | "author";
   name: string;
   slug: string;
   posts: CollectionEntry<"blog">[];
@@ -15,15 +15,17 @@ interface Props {
 const { kind, name, slug, posts } = Astro.props;
 
 const sorted = sortByDate(posts);
-const pathPrefix = kind === "category" ? "cat" : "tag";
+const pathPrefix = kind === "category" ? "cat" : kind === "author" ? "author" : "tag";
 const archiveUrl = `/${pathPrefix}/${slug}/`;
-const heroLabel = kind === "category" ? "Category" : "Tag";
-const titlePrefix = kind === "category" ? name : `#${name}`;
+const heroLabel = kind === "category" ? "Category" : kind === "author" ? "Author" : "Tag";
+const titlePrefix = kind === "tag" ? `#${name}` : name;
 const pageTitle = `${titlePrefix} - ${SITE.name} blog`;
 const pageDescription =
   kind === "category"
     ? `Articles in the ${name} category - strategies, case studies, and product updates from the RevenueHunt team.`
-    : `Articles tagged ${name} - strategies, case studies, and product updates from the RevenueHunt team.`;
+    : kind === "author"
+      ? `Articles by ${name} - strategies, case studies, and product updates from the RevenueHunt team.`
+      : `Articles tagged ${name} - strategies, case studies, and product updates from the RevenueHunt team.`;
 
 const jsonLd = [
   organization(),

@@ -4,6 +4,7 @@ import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
+import { fileURLToPath } from "node:url";
 
 /** Build a slug → most-recent-date map for sitemap lastmod by scraping
  *  frontmatter dates out of content/{blog,pages}/*.md. We can't use the
@@ -110,6 +111,36 @@ function promoteFirstHeadingRehype() {
   };
 }
 
+/** Generate the Pagefind search index as part of every `astro build`, so
+ *  /pagefind/ always ships — regardless of which npm script or host build
+ *  command triggered the build. Uses Pagefind's Node API, so there is no
+ *  separate CLI step that can be forgotten or misconfigured on the host. */
+function pagefindIntegration() {
+  /** @type {import('astro').AstroIntegration} */
+  const integration = {
+    name: "pagefind",
+    hooks: {
+      "astro:build:done": async ({ dir, logger }) => {
+        const { createIndex, close } = await import("pagefind");
+        const sitePath = fileURLToPath(dir);
+        const { index } = await createIndex();
+        if (!index) throw new Error("Pagefind: createIndex returned no index");
+        const { errors: addErrors, page_count } = await index.addDirectory({
+          path: sitePath,
+        });
+        if (addErrors.length) throw new Error(`Pagefind: ${addErrors.join("; ")}`);
+        const { errors: writeErrors } = await index.writeFiles({
+          outputPath: join(sitePath, "pagefind"),
+        });
+        if (writeErrors.length) throw new Error(`Pagefind: ${writeErrors.join("; ")}`);
+        await close();
+        logger.info(`search index built — ${page_count} pages`);
+      },
+    },
+  };
+  return integration;
+}
+
 export default defineConfig({
   site: "https://revenuehunt.com",
   output: "static",
@@ -130,6 +161,7 @@ export default defineConfig({
         },
       });
     })(),
+    pagefindIntegration(),
   ],
   markdown: {
     remarkPlugins: [stripLeadingH1Remark],

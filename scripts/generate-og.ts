@@ -10,10 +10,13 @@
 import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { join } from "node:path";
+import { fileURLToPath } from "node:url";
 import satori from "satori";
 import { Resvg } from "@resvg/resvg-js";
 
-const ROOT = new URL("..", import.meta.url).pathname;
+// fileURLToPath handles Windows drive letters; `.pathname` would yield
+// "/C:/..." which breaks path joins and mkdir on Windows.
+const ROOT = fileURLToPath(new URL("..", import.meta.url));
 const OUT_DIR = join(ROOT, "public", "og");
 const FONTS_DIR = join(ROOT, "public", "fonts");
 

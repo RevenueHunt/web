@@ -68,7 +68,7 @@ Clear and honest communication is key to gaining trust when asking for marketing
 
 **Simplify your message** to avoid legal jargon and make it easy to understand. **Highlight the benefits** users gain by consenting, such as exclusive content, discounts, or early access to new products. Usually, Yes/No questions are straightforward and reduce friction in the consent process. Ask direct yes/no questions regarding consent to make it easy for users to make a choice..
 
-![](/img/blog/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/consent-simple-language1.png)
+![Smart Ways to Ask for Marketing/Data Processing Consent in Your Product Recommendation Quiz - image 1](/img/blog/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/consent-simple-language1.png)
 
 > **💡Tip:** Use a [GDPR/Yes-No Question](https://docs.revenuehunt.com/how-to-guides/ask-for-marketing-consent/#option-3-gdpr-question) type to easily ask for consent in Shop Quiz: Product Recommendation Quiz.
 
@@ -78,7 +78,7 @@ Clear and honest communication is key to gaining trust when asking for marketing
 
 Make your Privacy Policy easily accessible to add transparency and reassure users about how their data will be handled.
 
-![](/img/blog/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/Screenshot-2024-06-14-122634.png)
+![Smart Ways to Ask for Marketing/Data Processing Consent in Your Product Recommendation Quiz - image 2](/img/blog/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/Screenshot-2024-06-14-122634.png)
 
 > **💡Tip:** You can link to your Privacy Policy within any text element of the Shop Quiz: Product Recommendation Quiz using [Markdown Language](https://docs.revenuehunt.com/how-to-guides/use-markdown/).
 > 
@@ -92,7 +92,7 @@ The design and placement of consent requests can significantly impact user engag
 
 **Use visual cues** like checkboxes or toggle switches for consent options. You can also use **clickable icons** instead of checkboxes or use buttons that change color or animate when clicked.
 
-![](/img/blog/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/consent1.gif)
+![Smart Ways to Ask for Marketing/Data Processing Consent in Your Product Recommendation Quiz - image 3](/img/blog/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/consent1.gif)
 
 Ensure these options are accessible on all devices with large clickable areas for mobile users. Position consent requests at engaging points in the quiz to avoid disrupting the flow.
 
@@ -114,7 +114,7 @@ Respecting user choice is essential. Always provide a clear and **easy way for u
 
 Offer immediate rewards or incentives for giving consent, such as a **discount code** or a free sample.
 
-![](/img/blog/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/consent-discount3.png)
+![Smart Ways to Ask for Marketing/Data Processing Consent in Your Product Recommendation Quiz - image 4](/img/blog/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/consent-discount3.png)
 
 > **💡Tip:** Check [this guide](https://docs.revenuehunt.com/how-to-guides/add-discount/) to learn how to offer discounts in your Shop Quiz: Product Recommendation Quiz.
 

@@ -16,7 +16,7 @@ draft: false
 
 # Product Recommendation Quiz
 
-![](/img/pages/testimonials/undraw_2.svg) ![Mobile user](/img/pages/testimonials/mobile-user.svg) ![](/img/pages/testimonials/undraw_4.svg) ![](/img/pages/testimonials/undraw_3.svg)
+![Testimonials - image 1](/img/pages/testimonials/undraw_2.svg) ![Mobile user](/img/pages/testimonials/mobile-user.svg) ![Testimonials - image 2](/img/pages/testimonials/undraw_4.svg) ![Testimonials - image 3](/img/pages/testimonials/undraw_3.svg)
 
 ### Everyone loves personalized recommendations. Now you can create them - and turn them into segmented leads that convert.
 
@@ -30,7 +30,7 @@ Launch a Product Recommendation Quiz that guides each visitor to the perfect fit
 
 [
 
-![](/img/pages/testimonials/tonic.webp)
+![Testimonials - image 4](/img/pages/testimonials/tonic.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Jan. 12, 2022
 
@@ -38,7 +38,7 @@ This app was exactly what I was looking for... you can keep it simple or make it
 
 ](https://earthtonicsskincare.com/)[
 
-![](/img/pages/testimonials/mdo.webp)
+![Testimonials - image 5](/img/pages/testimonials/mdo.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Jan. 6, 2022
 
@@ -46,7 +46,7 @@ Absolutely brilliant app. When we were evaluating apps, there was no other app t
 
 ](https://mdo-skin.com/)[
 
-![](/img/pages/testimonials/derm.webp)
+![Testimonials - image 6](/img/pages/testimonials/derm.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Dec. 29, 2021
 
@@ -56,7 +56,7 @@ I used this app to set up a skincare quiz on my customer's Shopify store. The ap
 
 [
 
-![](/img/pages/testimonials/proverb.webp)
+![Testimonials - image 7](/img/pages/testimonials/proverb.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Jan. 06, 2022
 
@@ -64,7 +64,7 @@ A fantastic app, just what we were looking for. Very intuitive and fun to use. E
 
 ](https://proverbskin.com/)[
 
-![](/img/pages/testimonials/brown.webp)
+![Testimonials - image 8](/img/pages/testimonials/brown.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Jan. 5, 2022
 
@@ -72,7 +72,7 @@ This app is great! I am not the most tech savvy person & had some trouble settin
 
 ](https://brownroseessentials.com/)[
 
-![](/img/pages/testimonials/glow.webp)
+![Testimonials - image 9](/img/pages/testimonials/glow.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Jul. 18, 2021
 
@@ -82,7 +82,7 @@ It just kept getting better! I thought it was as capable of some of the other ap
 
 [
 
-![](/img/pages/testimonials/yube.webp)
+![Testimonials - image 10](/img/pages/testimonials/yube.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Jun. 28, 2022
 
@@ -90,7 +90,7 @@ Great customer service. I had so many questions and the support staff was very f
 
 ](https://yu-be.com/)[
 
-![](/img/pages/testimonials/naya.webp)
+![Testimonials - image 11](/img/pages/testimonials/naya.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Jun. 17, 2022
 
@@ -98,7 +98,7 @@ Love the support and love the app. Been well thought through! Keep up the good w
 
 ](https://nayaglow.com/)[
 
-![](/img/pages/testimonials/smood.webp)
+![Testimonials - image 12](/img/pages/testimonials/smood.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Jun. 20, 2021
 
@@ -108,7 +108,7 @@ I got help very fast - and without hesitation. Good customer service staff, that
 
 [
 
-![](/img/pages/testimonials/cahaba.png)
+![Testimonials - image 13](/img/pages/testimonials/cahaba.png)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Oct. 15, 2021
 
@@ -116,7 +116,7 @@ Very easy to use compared to other review apps. I tested a few quiz apps and I c
 
 ](https://cahabaderm.com/)[
 
-![](/img/pages/testimonials/K_Beauty_Logo_200x.webp)
+![Testimonials - image 14](/img/pages/testimonials/K_Beauty_Logo_200x.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Nov. 2, 2021
 
@@ -124,7 +124,7 @@ Excellent! Very impressed, lots of templates to choose from. Easy to use and and
 
 ](https://www.k-beauty.co.uk/)[
 
-![](/img/pages/testimonials/antibeauty.webp)
+![Testimonials - image 15](/img/pages/testimonials/antibeauty.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Nov. 11, 2021
 
@@ -134,7 +134,7 @@ Absolutely amazing customer service! I had an issue with my theme that literally
 
 [
 
-![](/img/pages/testimonials/hob.webp)
+![Testimonials - image 16](/img/pages/testimonials/hob.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Oct. 15, 2021
 
@@ -142,7 +142,7 @@ Lovely app, even better customercare support. Fabulous asked them for a simple i
 
 ](https://houseofbeautyindia.com/)[
 
-![](/img/pages/testimonials/gkhair.webp)
+![Testimonials - image 17](/img/pages/testimonials/gkhair.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Sep. 1, 2021
 
@@ -150,7 +150,7 @@ This is the best App ever, We stuck with type form and could never finish our qu
 
 ](https://www.gkhair.com/)[
 
-![](/img/pages/testimonials/color.png)
+![Testimonials - image 18](/img/pages/testimonials/color.png)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Sep. 16, 2021
 
@@ -160,7 +160,7 @@ Great app, I highly recommend it! Easy to set up, helps with conversion a lot an
 
 [
 
-![](/img/pages/testimonials/aklasu.webp)
+![Testimonials - image 19](/img/pages/testimonials/aklasu.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Jul. 4, 2021
 
@@ -168,7 +168,7 @@ I tested every Product Quiz on the Shopify App. This one, hands down, is the bes
 
 ](https://aklasu.co/)[
 
-![](/img/pages/testimonials/madluvv.webp)
+![Testimonials - image 20](/img/pages/testimonials/madluvv.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Jun. 11, 2021
 
@@ -176,7 +176,7 @@ App developer was very helpful and we love the quiz function. It's helped our co
 
 ](https://madluvv.com/)[
 
-![](/img/pages/testimonials/zeylb.webp)
+![Testimonials - image 21](/img/pages/testimonials/zeylb.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Jun. 09, 2021
 
@@ -186,7 +186,7 @@ Such an incredible quiz app, super easy to use and customize. Their service is a
 
 [
 
-![](/img/pages/testimonials/balance.webp)
+![Testimonials - image 22](/img/pages/testimonials/balance.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Feb. 4, 2022
 
@@ -194,7 +194,7 @@ The app is very well built, integrates seamlessly with Klayvio (feeds the answer
 
 ](https://balancewineco.com.au/)[
 
-![](/img/pages/testimonials/creative.webp)
+![Testimonials - image 23](/img/pages/testimonials/creative.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Feb. 1, 2022
 
@@ -202,7 +202,7 @@ As a candlemaker, I know that some of my potential or current customers need hel
 
 ](https://creativelyintentional.com/)[
 
-![](/img/pages/testimonials/dio.webp)
+![Testimonials - image 24](/img/pages/testimonials/dio.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Feb. 11, 2022
 
@@ -212,7 +212,7 @@ Really love this product recommendation quiz. My customers love it! I especially
 
 [
 
-![](/img/pages/testimonials/jump.webp)
+![Testimonials - image 25](/img/pages/testimonials/jump.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Mar. 4, 2022
 
@@ -220,7 +220,7 @@ Great app with all the customization you need to match your brand. They send ins
 
 ](https://www.jump.ca/)[
 
-![](/img/pages/testimonials/kkot.webp)
+![Testimonials - image 26](/img/pages/testimonials/kkot.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Mar. 4, 2022
 
@@ -238,7 +238,7 @@ Amazing team, great support. We use this App to customize recommendations to our
 
 [
 
-![](/img/pages/testimonials/water.webp)
+![Testimonials - image 27](/img/pages/testimonials/water.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Feb. 23, 2022
 
@@ -246,7 +246,7 @@ I used this app to help customers dial in the best solution for their specific n
 
 ](https://cascadianwater.com/)[
 
-![](/img/pages/testimonials/wrap.webp)
+![Testimonials - image 28](/img/pages/testimonials/wrap.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Feb. 21, 2022
 
@@ -254,7 +254,7 @@ I tried a few other review apps before landing here. Easiest to setup, great des
 
 ](https://saltwrap.com/)[
 
-![](/img/pages/testimonials/scents.webp)
+![Testimonials - image 29](/img/pages/testimonials/scents.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Feb. 20, 2022
 

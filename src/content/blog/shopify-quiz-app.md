@@ -44,15 +44,15 @@ You can either create the quiz from scratch or use one of the [quiz templates](h
 
 Generally, start by adding a few questions.
 
-![](/img/blog/shopify-quiz-app/Screenshot-2022-07-11-134154-1024x735.png)
+![Shopify Quiz: How to Add a Quiz App to your Shopify Store - image 1](/img/blog/shopify-quiz-app/Screenshot-2022-07-11-134154-1024x735.png)
 
 Next, link the relevant products to choices in the quiz.
 
-![](/img/blog/shopify-quiz-app/Screenshot-2022-07-11-135826-1024x736.png)
+![Shopify Quiz: How to Add a Quiz App to your Shopify Store - image 2](/img/blog/shopify-quiz-app/Screenshot-2022-07-11-135826-1024x736.png)
 
 Finally, customize the look and feel of your quiz to match your brand.
 
-![](/img/blog/shopify-quiz-app/Screenshot-2022-07-11-133944-1024x732.png)
+![Shopify Quiz: How to Add a Quiz App to your Shopify Store - image 3](/img/blog/shopify-quiz-app/Screenshot-2022-07-11-133944-1024x732.png)
 
 RevenueHunt has a great page with [video tutorials](https://revenuehunt.com/faqs/tutorial-videos/) that can take you through the quiz building process.
 

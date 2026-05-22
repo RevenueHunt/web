@@ -21,15 +21,15 @@ Aautomation and personalization are no longer luxuries - they're necessities. Mo
 
 Product recommendation quizzes have become popular tools for online stores, especially in industries like beauty, fashion, and wellness. They not only engage customers but also collect valuable data, offering personalized product recommendations that drive purchasing decisions. But the **challenge has always been turning this data into actionable insights and campaigns**. By connecting Shop Quiz: Product Recommendation Quiz to Omnisend, merchants can now automate the process, ensuring every quiz taker is nurtured through a customized journey, **from interest to purchase**.
 
-![](/img/blog/automating-quiz-follow-ups-with-omnisend-to-drive-sales/Omnisend-Featured-Image.png)
+![Automating Quiz Follow-Ups with Omnisend to Drive Sales - image 1](/img/blog/automating-quiz-follow-ups-with-omnisend-to-drive-sales/Omnisend-Featured-Image.png)
 
 ### Know Your Tools
 
-![](/img/blog/automating-quiz-follow-ups-with-omnisend-to-drive-sales/8-150x150.png)
+![Automating Quiz Follow-Ups with Omnisend to Drive Sales - image 2](/img/blog/automating-quiz-follow-ups-with-omnisend-to-drive-sales/8-150x150.png)
 
 [Omnisend](https://www.omnisend.com/) is a powerful marketing automation platform designed for ecommerce. It enables merchants to create targeted email and SMS campaigns using segmentation, workflows, and customizable templates. Integrated with Shop Quiz, Omnisend turns quiz data into actionable campaigns, automating follow-ups to convert leads into loyal customers.
 
-![](/img/blog/automating-quiz-follow-ups-with-omnisend-to-drive-sales/Untitled_design__6_-removebg-preview-300x300.png)
+![Automating Quiz Follow-Ups with Omnisend to Drive Sales - image 3](/img/blog/automating-quiz-follow-ups-with-omnisend-to-drive-sales/Untitled_design__6_-removebg-preview-300x300.png)
 
 [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/), a product by [RevenueHunt](https://revenuehunt.com/), app helps ecommerce merchants engage customers and boost sales by creating interactive quizzes that offer personalized product recommendations. By collecting insights into customers' preferences and needs, the app delivers tailored shopping experiences, building trust and driving conversions.
 

@@ -46,7 +46,7 @@ You're a digital marketing agency or an eCommerce consultant who's passionate ab
 
 ## Our Partners
 
-[![](/img/pages/partners/Icon512.png)](https://taranker.com/)
+[![Partner Program - image 1](/img/pages/partners/Icon512.png)](https://taranker.com/)
 
 ## [Taranker](https://taranker.com/)
 
@@ -58,7 +58,7 @@ Taranker is an innovative platform dedicated to helping e-commerce businesses fi
 
 Boost your store with SalesHunterThemes' premium Shopify themes. Our modern, responsive designs optimizing performance and user experience with responsive layouts, and extensive customization options. Each theme is craft to help businesses create visually appealing and high-performing online stores.
 
-[![](/img/pages/partners/fulfillmanlogo.png)](https://www.fulfillman.com/)
+[![Partner Program - image 2](/img/pages/partners/fulfillmanlogo.png)](https://www.fulfillman.com/)
 
 ## [Fulfillman](https://www.fulfillman.com/)
 
@@ -70,13 +70,13 @@ Fulfillman is a global leader in eCommerce sourcing, fulfillment, and logistics,
 
 WC Wishlist Club lets your customers save their favorite products, share wishlists, and shop later - boosting engagement and sales. Easy to set up, mobile-friendly, and perfect for turning browsers into loyal buyers.
 
-[![](/img/pages/partners/1.png)](https://partner.channelwill.com/ceq5ql)
+[![Partner Program - image 3](/img/pages/partners/1.png)](https://partner.channelwill.com/ceq5ql)
 
 ## [Langwill: Language Translate](https://partner.channelwill.com/ceq5ql)
 
 Expand your global reach with Langwill! Translate your Shopify store into 138 languages and auto-convert currencies for a seamless, localized shopping experience. Boost sales with AI-powered translations, real-time currency conversion, and multilingual SEO optimization. Try Langwill today and grow worldwide!
 
-[![](/img/pages/partners/orbe-removebg-preview.png)](https://orbe.app/)
+[![Partner Program - image 4](/img/pages/partners/orbe-removebg-preview.png)](https://orbe.app/)
 
 ## [Orbe Shopify Geolocation](https://orbe.app/)
 
@@ -94,13 +94,13 @@ Boost your Shopify Plus checkout with personalized upsell discounts, AI upsells,
 
 Customer Dashboard Pro proudly stands as the only app offering seamless support for both the Shopify New Customer Accounts and the Classic Customer Accounts
 
-[![](/img/pages/partners/Logo-9.png)](https://apps.shopify.com/wiss-bundle)
+[![Partner Program - image 5](/img/pages/partners/Logo-9.png)](https://apps.shopify.com/wiss-bundle)
 
 ## [WISS Bundle](https://apps.shopify.com/wiss-bundle)
 
 Boost your Shopify store's revenue and AOV with a simple and customizable product bundle app. Offer flexible discount options, including value-based discounts, free shipping on bundled products, or "buy X, get Y" incentives.
 
-[![](/img/pages/partners/toastibarlogo_fgaiv9.png)](https://makeprosimp.com/partnership/revenuehunt)
+[![Partner Program - image 6](/img/pages/partners/toastibarlogo_fgaiv9.png)](https://makeprosimp.com/partnership/revenuehunt)
 
 ## [ToastiBar – Sales Popup](https://makeprosimp.com/partnership/revenuehunt)
 
@@ -112,7 +112,7 @@ Increase customer trust and boost sales with our comprehensive app that showcase
 
 UpPromote is the top recommended affiliate/referral app on Shopify App Store. With this all-in-one solution, you can build and manage your marketing campaign with ease. UpPromote is suitable for all business sizes with the price from FREE to $199.99/month. Furthermore, UpPromote implements customization upon request for Enterprise customers.
 
-[![](/img/pages/partners/freeshippingbarlogo.png)](https://essential-apps.com/essential-shopify-free-shipping-bar-application/)
+[![Partner Program - image 7](/img/pages/partners/freeshippingbarlogo.png)](https://essential-apps.com/essential-shopify-free-shipping-bar-application/)
 
 ## [Essential Free Shipping Bar](https://essential-apps.com/essential-shopify-free-shipping-bar-application/)
 
@@ -136,7 +136,7 @@ Boost sales with Kaching Bundle Quantity Deals by creating bundle offers in your
 
 Fordeer's Shopify invoice generator is essential for store owners. It's flexible, compliant with global regulations, and caters to B2C, B2B, and Wholesale businesses. Create a professional brand with customizable PDF templates, batch print invoices, etc. No coding is needed. 24/7 live chat support.
 
-[![](/img/pages/partners/150150-logo.jpg)](https://www.hypersku.com/)
+[![Partner Program - image 8](/img/pages/partners/150150-logo.jpg)](https://www.hypersku.com/)
 
 ## [HyperSKU](https://www.hypersku.com/)
 

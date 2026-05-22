@@ -23,7 +23,7 @@ This article is about the ten design decisions that actually move revenue. Not a
 
 ## 1\. Design for Guidance, Not Just Browsing
 
-![](/img/blog/ecommerce-website-design-tips-that-move-revenue/blog_10designtips_img1.png)
+![10 eCommerce Design Decisions That Actually Move Revenue - image 1](/img/blog/ecommerce-website-design-tips-that-move-revenue/blog_10designtips_img1.png)
 
 _The default store assumes customers know what they want. Most don't._
 
@@ -41,7 +41,7 @@ The standard approach to email capture is an interruption. A popup fires after f
 
 This is a design failure, not a marketing failure. The solution is to make data capture a **value exchange embedded into the shopping journey**.
 
-![](/img/blog/ecommerce-website-design-tips-that-move-revenue/blog_10designtips_img2.png)
+![10 eCommerce Design Decisions That Actually Move Revenue - image 2](/img/blog/ecommerce-website-design-tips-that-move-revenue/blog_10designtips_img2.png)
 
 _The default store assumes customers know what they want. Most don't._
 
@@ -51,7 +51,7 @@ The design principle is simple: **the best-designed stores capture more data per
 
 ## 3\. Simplify the Decision, Not Just the Layout
 
-![](/img/blog/ecommerce-website-design-tips-that-move-revenue/blog_10designtips_img6.png)
+![10 eCommerce Design Decisions That Actually Move Revenue - image 3](/img/blog/ecommerce-website-design-tips-that-move-revenue/blog_10designtips_img6.png)
 
 _A clean layout is necessary but not sufficient. The real work is in the decision architecture beneath it._
 
@@ -83,7 +83,7 @@ Don't just shrink your desktop store for mobile. Redesign the mobile journey aro
 
 Traditional ecommerce navigation is a map – it shows visitors where everything is and lets them wander. This works well for returning customers who know exactly what they want. It fails for new or undecided visitors, who are often the majority of your traffic.
 
-![](/img/blog/ecommerce-website-design-tips-that-move-revenue/blog_10designtips_img3.png)
+![10 eCommerce Design Decisions That Actually Move Revenue - image 4](/img/blog/ecommerce-website-design-tips-that-move-revenue/blog_10designtips_img3.png)
 
 _Search navigation serves customers who know what they want. A quiz link serves everyone else._
 
@@ -95,7 +95,7 @@ Go further with contextual quiz entry points. A "Find Your Shade" link on the fo
 
 The quiz results page is the most underutilized design surface in guided selling. Most brands treat it as a basic product list. The brands converting at 10%+ treat it as a **consultation summary:** a personalized prescription, not a search result.
 
-![](/img/blog/ecommerce-website-design-tips-that-move-revenue/blog_10designtips_img4.png)
+![10 eCommerce Design Decisions That Actually Move Revenue - image 5](/img/blog/ecommerce-website-design-tips-that-move-revenue/blog_10designtips_img4.png)
 
 _The right product recommendation, delivered with confidence, is more persuasive than a shelf of options._
 
@@ -147,7 +147,7 @@ RevenueHunt's **Built for Shopify** app embeds natively into the Shopify theme: 
 
 ## 10\. Design for Iteration, Not for Launch-Day Perfection
 
-![](/img/blog/ecommerce-website-design-tips-that-move-revenue/blog_10designtips_img5.png)
+![10 eCommerce Design Decisions That Actually Move Revenue - image 6](/img/blog/ecommerce-website-design-tips-that-move-revenue/blog_10designtips_img5.png)
 
 _No store is optimized at launch. The best stores are the ones that test relentlessly after it._
 

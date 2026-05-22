@@ -24,7 +24,7 @@ featuredImage: "/img/blog/skincare-quiz-shopify-woocommerce/46.png"
 draft: false
 ---
 
-![](/img/blog/skincare-quiz-shopify-woocommerce/blog_skincarequiz_image1.png)
+![Skincare Quizzes That Convert in 2026: Guide for Shopify & WooCommerce - image 1](/img/blog/skincare-quiz-shopify-woocommerce/blog_skincarequiz_image1.png)
 
 _The product recommendation quiz is the digital beauty advisor your online store has been missing._
 
@@ -64,7 +64,7 @@ _Example of a Skincare Finder from Sephora (2021)_
 
 A multi-step quiz that recommends a complete routine - cleanser, toner, serum, moisturizer, SPF - using recommendation slots to assign one product per step. This is the highest-AOV quiz type in the beauty vertical because it recommends a bundle, not a single SKU.
 
-![](/img/blog/skincare-quiz-shopify-woocommerce/blog_skincarequiz_image2.png)
+![Skincare Quizzes That Convert in 2026: Guide for Shopify & WooCommerce - image 2](/img/blog/skincare-quiz-shopify-woocommerce/blog_skincarequiz_image2.png)
 
 _RevenueHunt's Routine Builder template recommends a complete cleanser-to-SPF routine using recommendation slots._
 
@@ -128,7 +128,7 @@ Images are not required for high conversion. Relevance drives conversion. But in
 
 <table style="width:100%; border-collapse:collapse; margin:1.5rem 0;"><thead><tr style="background-color:#f9f5f2;"><th style="padding:12px 16px; text-align:left; border:1px solid #e8e0d8; font-size:14px; color:#6b5e52;">Use picture questions for</th><th style="padding:12px 16px; text-align:left; border:1px solid #e8e0d8; font-size:14px; color:#6b5e52;">Use text-only questions for</th></tr></thead><tbody><tr><td style="padding:12px 16px; border:1px solid #e8e0d8; font-size:14px; vertical-align:top;"><ul style="margin:0; padding-left:18px; line-height:2;"><li>Skin tone swatches in a shade matcher</li><li>Hair texture visual selection</li><li>"Show me your concern" comparisons (redness, dullness, acne)</li></ul></td><td style="padding:12px 16px; border:1px solid #e8e0d8; font-size:14px; vertical-align:top;"><ul style="margin:0; padding-left:18px; line-height:2;"><li>Preference and lifestyle questions</li><li>"How much time do you spend on your morning routine?"</li><li>Budget range selection</li></ul></td></tr></tbody></table>
 
-![](/img/blog/skincare-quiz-shopify-woocommerce/blog_skincarequiz_image3.png)
+![Skincare Quizzes That Convert in 2026: Guide for Shopify & WooCommerce - image 3](/img/blog/skincare-quiz-shopify-woocommerce/blog_skincarequiz_image3.png)
 
 _Picture questions let customers visually identify their skin tone, hair texture, or primary skin concern - a task text alone cannot reliably accomplish._
 
@@ -163,7 +163,7 @@ For beauty brands, the email capture from a quiz is not just a lead. It is a pro
 
 **On Shopify:** RevenueHunt syncs natively to Klaviyo via one-click OAuth. Quiz answers flow to Klaviyo customer properties in real time - no Zapier required.
 
-![](/img/blog/skincare-quiz-shopify-woocommerce/blog_skincarequiz_image4.png)
+![Skincare Quizzes That Convert in 2026: Guide for Shopify & WooCommerce - image 4](/img/blog/skincare-quiz-shopify-woocommerce/blog_skincarequiz_image4.png)
 
 _Quiz answers sync to Klaviyo as custom properties, enabling concern-specific flows that generic popups can never power._
 
@@ -183,7 +183,7 @@ A 10–15% discount at the results page rewards the shopper for sharing preferen
 
 ## Setup Guide: Shopify and WooCommerce
 
-![](/img/blog/skincare-quiz-shopify-woocommerce/blog_skincarequiz_image5.png)
+![Skincare Quizzes That Convert in 2026: Guide for Shopify & WooCommerce - image 5](/img/blog/skincare-quiz-shopify-woocommerce/blog_skincarequiz_image5.png)
 
 _Embedding the quiz as a homepage hero CTA converts passive browsers into guided, confident shoppers from their first visit._
 

@@ -23,7 +23,7 @@ Product recommendation quizzes have become a norm in e-commerce, but not many st
 
 We will explore how to use customer tags effectively, focusing on a **practical example** of a haircare store that uses a [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/) app to gather leads and [Klaviyo](https://www.klaviyo.com/) for segmented marketing campaigns.
 
-![](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/Customer-Tags-V2.png)
+![How to Use Customer Tags in Product Quizzes to Maximize Sales - image 1](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/Customer-Tags-V2.png)
 
 ## Customer Tags 101
 
@@ -61,7 +61,7 @@ Create a quiz with questions about hair type (e.g., curly, straight, wavy), hair
 
 As customers answer these questions, assign relevant tags such as "Curly Hair," "Dry Hair," "Volume," "Anti-Frizz," and "Repair" to the choices in the quiz. This can be done in the Customer Tags tab within the Quiz Builder.
 
-![](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/Screenshot-2024-06-06-153844.png)
+![How to Use Customer Tags in Product Quizzes to Maximize Sales - image 2](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/Screenshot-2024-06-06-153844.png)
 
 **3️⃣ Connect Quiz to Klaviyo**:
 

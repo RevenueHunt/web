@@ -40,7 +40,7 @@ While there are many benefits to using a headless setup, there are also many **c
 
 One of the issues headless ecommerce stores face is that ecommerce trends change rapidly, and implementing new features often requires custom development and significant time. **Product quizzes**, for instance,  have become the norm in e-commerce but not all smaller ecommerce retailers can afford to build them from scratch. That is why at RevenueHunt, we offer a **[Standalone Product Recommendation Quiz app](https://revenuehunt.com/product-recommendation-quiz-standalone-google-product-feed/)**.
 
-![](/img/blog/the-only-product-recommendation-app-for-headless-ecommerce-2024/buiderstandalone.png)
+![The Only Product Recommendation App for Headless Ecommerce 2024 - image 1](/img/blog/the-only-product-recommendation-app-for-headless-ecommerce-2024/buiderstandalone.png)
 
 This innovative tool integrates with any headless setup, allows you to build multiple product quizzes for your e-commerce store, and offers advanced customization capabilities. By guiding customers through a tailored quiz experience, it delivers highly relevant product recommendations, improves user engagement, and boosts conversion rates.
 
@@ -64,7 +64,7 @@ Today's shoppers expect more than just a list of products. They want experiences
 
 **☑️ Easy Product Sync & Creation:** In the app, you can add products manually or upload them in bulk with your Google Product Feed from Google Merchant to recommend them to customers.
 
-![](/img/blog/the-only-product-recommendation-app-for-headless-ecommerce-2024/googlefeedsatndalone.png)
+![The Only Product Recommendation App for Headless Ecommerce 2024 - image 2](/img/blog/the-only-product-recommendation-app-for-headless-ecommerce-2024/googlefeedsatndalone.png)
 
 **☑️ Actionable Insights:** Our quiz doesn't just help customers – it helps you, too. The data it collects provides valuable insights into customer preferences and behaviors, which you can use to refine your marketing strategies and product offerings.
 
@@ -118,7 +118,7 @@ Subscription box companies can use the quiz to personalize the contents of each 
 
 Installing the Standalone Product Recommendation Quiz is a straightforward process designed to get you up and running quickly:
 
-1.  **Sign Up:** Visit our [Sign-Up Page](https://admin.revenuehunt.com/register) and create an account. ![](/img/blog/the-only-product-recommendation-app-for-headless-ecommerce-2024/image-5.png)
+1.  **Sign Up:** Visit our [Sign-Up Page](https://admin.revenuehunt.com/register) and create an account. ![The Only Product Recommendation App for Headless Ecommerce 2024 - image 3](/img/blog/the-only-product-recommendation-app-for-headless-ecommerce-2024/image-5.png)
 2.  **Set Up Your Quiz:** Log in to the [RevenueHunt dashboard](https://admin.revenuehunt.com/login) and follow the intuitive setup process. Create a quiz, customize the design, questions, and product categories to match your brand.
 3.  **Add Products:** Manually add products or upload them in bulk using your Google Product Feed from Google Merchant.
 4.  **Launch:** Once everything is set up, publish the quiz on your headless e-commerce site and start engaging your customers with personalized product recommendations.

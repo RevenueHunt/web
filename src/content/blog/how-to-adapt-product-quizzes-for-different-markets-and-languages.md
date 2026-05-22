@@ -53,7 +53,7 @@ Key Points:
 
 > **💡Tip:** With [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) you can create multiple duplicates of your quiz and style them differently for different markets. You can easily add images and videos, change colors of questions and buttons based on your target market. You can even add custom CSS or JavaScript code to make the quiz pop. Check [here](https://docs.revenuehunt.com/how-to-guides/customize-quiz-design/) for more details about styling your multi-language quiz.
 > 
-> ![](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-091327.png)
+> ![How to Adapt Product Quizzes for Different Markets and Languages - image 1](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-091327.png)
 
 > **💡Tip:** All the quizzes created with [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) can be changed easily any time and the app keeps a [version history](https://docs.revenuehunt.com/how-to-guides/restore-quiz-progress/#accessing-version-history) of every published change. This way you can always roll-back to the most successful version of your quiz easily.
 
@@ -71,7 +71,7 @@ Key Points:
 
 > **💡Tip:**  Navigate to \`Quiz Settings > Messages\` in the [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) app to modify the language of interactive elements like buttons and popups. The transaltion of these elemenets can be done automaticallty and then adjuisted manually where necessary for each button or popup message/system message.
 > 
-> ![](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-091452.png)
+> ![How to Adapt Product Quizzes for Different Markets and Languages - image 2](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-091452.png)
 > 
 > Note that questions and choices need manual translation, which allows for full flexibility when creating your localized quiz.
 
@@ -87,7 +87,7 @@ Each market has its own set of regulations that you must adhere to, especially r
 
 > **💡Tip:** To show the "grundpreis" or \`per 100ml\` price for cosmetic products [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) allows you to show these values by automatically [syncing the metafields/attributes of products](https://docs.revenuehunt.com/how-to-guides/add-product-metafields/) from your store.
 > 
-> ![](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-091730.png)
+> ![How to Adapt Product Quizzes for Different Markets and Languages - image 3](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-091730.png)
 > 
 > **💡Tip:** [This article](https://revenuehunt.com/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/) explains in depth all the different ways you can ask for marketing and data processing consent in your Shop Quiz: Product Recommendation Quiz.
 
@@ -123,7 +123,7 @@ However, there are many tested [workarounds](https://docs.revenuehunt.com/how-to
 
 > **📢 First Step**: Begin by manually translating your quizzes into the desired languages. Each translated quiz will have a unique quiz ID. You can navigate to the \`Quiz Settings\` to modify the language of interactive elements like buttons or change the currency. However, note that questions and choices need manual translation.
 > 
-> ![](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-092134.png)
+> ![How to Adapt Product Quizzes for Different Markets and Languages - image 4](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-092134.png)
 
 Use JavaScript code in your eCommerce store to show the appropriate quiz to users based on their browser's language setting.
 

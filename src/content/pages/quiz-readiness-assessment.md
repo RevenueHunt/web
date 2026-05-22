@@ -90,41 +90,41 @@ See exactly where to plug your product quiz for maximum results.
 
 ![Tiege](/img/pages/quiz-readiness-assessment/tiege.svg)
 
-![](/img/pages/quiz-readiness-assessment/olaplex.svg)
+![Ready to 2–3× your leads and convert more first-time visitors? - image 1](/img/pages/quiz-readiness-assessment/olaplex.svg)
 
-![](/img/pages/quiz-readiness-assessment/madluvv.svg)
+![Ready to 2–3× your leads and convert more first-time visitors? - image 2](/img/pages/quiz-readiness-assessment/madluvv.svg)
 
-![](/img/pages/quiz-readiness-assessment/mattel.svg)
+![Ready to 2–3× your leads and convert more first-time visitors? - image 3](/img/pages/quiz-readiness-assessment/mattel.svg)
 
-![](/img/pages/quiz-readiness-assessment/alt.svg)
+![Ready to 2–3× your leads and convert more first-time visitors? - image 4](/img/pages/quiz-readiness-assessment/alt.svg)
 
-![](/img/pages/quiz-readiness-assessment/baia.svg)
+![Ready to 2–3× your leads and convert more first-time visitors? - image 5](/img/pages/quiz-readiness-assessment/baia.svg)
 
-![](/img/pages/quiz-readiness-assessment/bare.svg)
+![Ready to 2–3× your leads and convert more first-time visitors? - image 6](/img/pages/quiz-readiness-assessment/bare.svg)
 
-![](/img/pages/quiz-readiness-assessment/biktrix.svg)
+![Ready to 2–3× your leads and convert more first-time visitors? - image 7](/img/pages/quiz-readiness-assessment/biktrix.svg)
 
-![](/img/pages/quiz-readiness-assessment/dermocracy.svg)
+![Ready to 2–3× your leads and convert more first-time visitors? - image 8](/img/pages/quiz-readiness-assessment/dermocracy.svg)
 
-![](/img/pages/quiz-readiness-assessment/diego.svg)
+![Ready to 2–3× your leads and convert more first-time visitors? - image 9](/img/pages/quiz-readiness-assessment/diego.svg)
 
-![](/img/pages/quiz-readiness-assessment/gisou.svg)
+![Ready to 2–3× your leads and convert more first-time visitors? - image 10](/img/pages/quiz-readiness-assessment/gisou.svg)
 
-![](/img/pages/quiz-readiness-assessment/laura.svg)
+![Ready to 2–3× your leads and convert more first-time visitors? - image 11](/img/pages/quiz-readiness-assessment/laura.svg)
 
-![](/img/pages/quiz-readiness-assessment/nuxe.svg)
+![Ready to 2–3× your leads and convert more first-time visitors? - image 12](/img/pages/quiz-readiness-assessment/nuxe.svg)
 
-![](/img/pages/quiz-readiness-assessment/olcay.svg)
+![Ready to 2–3× your leads and convert more first-time visitors? - image 13](/img/pages/quiz-readiness-assessment/olcay.svg)
 
 ![Salad code](/img/pages/quiz-readiness-assessment/salad-code.svg)
 
-![](/img/pages/quiz-readiness-assessment/salugea.svg)
+![Ready to 2–3× your leads and convert more first-time visitors? - image 14](/img/pages/quiz-readiness-assessment/salugea.svg)
 
-![](/img/pages/quiz-readiness-assessment/sunday.svg)
+![Ready to 2–3× your leads and convert more first-time visitors? - image 15](/img/pages/quiz-readiness-assessment/sunday.svg)
 
-![](/img/pages/quiz-readiness-assessment/tushy.svg)
+![Ready to 2–3× your leads and convert more first-time visitors? - image 16](/img/pages/quiz-readiness-assessment/tushy.svg)
 
-![](/img/pages/quiz-readiness-assessment/tiege.svg)
+![Ready to 2–3× your leads and convert more first-time visitors? - image 17](/img/pages/quiz-readiness-assessment/tiege.svg)
 
 ## Why it works
 

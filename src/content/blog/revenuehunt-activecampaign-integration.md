@@ -32,7 +32,7 @@ This article will guide you through integrating RevenueHunt with ActiveCampaign 
 
 [RevenueHunt](https://revenuehunt.com/) is an advanced quiz-based product recommendation platform designed to help eCommerce businesses personalize their shopping experience and boost sales. It allows merchants to **create interactive quizzes that guide customers toward the best product** choices based on their preferences and needs. The app captures valuable customer insights, helping businesses build targeted email campaigns and improve retargeting efforts. Integrated with platforms like Shopify, Klaviyo, and ActiveCampaign, RevenueHunt imporves customer engagement, increases lead generation, and ultimately drives higher conversions for online stores.
 
-![](/img/blog/revenuehunt-activecampaign-integration/thankyouslide.gif)
+![RevenueHunt and ActiveCampaign: Tools That Do the Selling For You - image 1](/img/blog/revenuehunt-activecampaign-integration/thankyouslide.gif)
 
 > ## **Why Should eCommerce Merchants Integrate RevenueHunt with ActiveCampaign?**
 > 

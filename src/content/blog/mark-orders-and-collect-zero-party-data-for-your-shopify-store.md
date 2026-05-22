@@ -50,11 +50,11 @@ Product Recommendation Quiz makes it easy to collect zero-party data from your c
 
 To do this, simply go to the "Connect" tab in your Product Recommendation Quiz and connect to the [Shopify Orders Tagging](https://revenuehunt.com/faqs/show-quiz-answers-in-the-shopify-orders/) service.
 
-![](/img/blog/mark-orders-and-collect-zero-party-data-for-your-shopify-store/Screenshot-2022-08-16-114347.png)
+![Mark Orders and Collect Zero-Party Data for your Shopify Store - image 1](/img/blog/mark-orders-and-collect-zero-party-data-for-your-shopify-store/Screenshot-2022-08-16-114347.png)
 
 Remember to publish the changes. Now when customers purchase products via the quiz, their data will be automatically collected and stored in your Shopify Orders account. This includes customer tags but also all the questions and answers you've set up in your quiz.
 
-![](/img/blog/mark-orders-and-collect-zero-party-data-for-your-shopify-store/orders-1.png)
+![Mark Orders and Collect Zero-Party Data for your Shopify Store - image 2](/img/blog/mark-orders-and-collect-zero-party-data-for-your-shopify-store/orders-1.png)
 
 You can see all the customer quiz responses as _Notes_ on a specific Shopify order. This not only helps you get to know the customer better, but also save and review their preferences for future marketing purposes.
 
@@ -64,11 +64,11 @@ If your eCommerce is built on Shopify, you can also [add new customers automati
 
 To do that, simply go to your quiz and click on the "Connect" tab. Search for Shopify Customers and click the _connect_ button. This will authorize our app to connect with your Shopify Customers List.
 
-![](/img/blog/mark-orders-and-collect-zero-party-data-for-your-shopify-store/Screenshot-2022-08-11-at-15.41.06.png)
+![Mark Orders and Collect Zero-Party Data for your Shopify Store - image 3](/img/blog/mark-orders-and-collect-zero-party-data-for-your-shopify-store/Screenshot-2022-08-11-at-15.41.06.png)
 
 New captured leads will appear in your Shopify Customers List right after completing the quiz with their [Customer Tags](https://revenuehunt.com/faqs/use-customer-tags-segment-audience/) added to their profile:
 
-![](/img/blog/mark-orders-and-collect-zero-party-data-for-your-shopify-store/Screenshot-2022-08-17-104623-1024x794.png)
+![Mark Orders and Collect Zero-Party Data for your Shopify Store - image 4](/img/blog/mark-orders-and-collect-zero-party-data-for-your-shopify-store/Screenshot-2022-08-17-104623-1024x794.png)
 
 It's a simple automatic way to collect zero-party data that can be directly used in your [Shopify Marketing Flows](https://apps.shopify.com/flow).
 
@@ -76,7 +76,7 @@ It's a simple automatic way to collect zero-party data that can be directly used
 
 With Product Recommendation Quiz you can use [customer tags](https://revenuehunt.com/faqs/use-customer-tags-segment-audience/) to mark any quiz choice with a relevant label.
 
-![](/img/blog/mark-orders-and-collect-zero-party-data-for-your-shopify-store/Screenshot-2021-11-29-145152.png)
+![Mark Orders and Collect Zero-Party Data for your Shopify Store - image 5](/img/blog/mark-orders-and-collect-zero-party-data-for-your-shopify-store/Screenshot-2021-11-29-145152.png)
 
 Just type your tag and the software will automatically create a reusable tag. It's that simple! These tags will be also visible on your Shopify order, once the customer has gone through the quiz.
 

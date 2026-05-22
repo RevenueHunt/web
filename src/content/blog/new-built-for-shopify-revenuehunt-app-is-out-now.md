@@ -52,7 +52,7 @@ This is a game-changer for international merchants who want to provide truly loc
 
 With the Built for Shopify version of RevenueHunt, you now have full control over how products and collections are recommended. You can set up **dynamic recommendations** that adapt based on customer responses or create **fixed recommendations** that remain the same for every user.
 
-![](/img/blog/new-built-for-shopify-revenuehunt-app-is-out-now/recommendationssystemsv2.png)
+![New *Built for Shopify* RevenueHunt App Is Out Now! - image 1](/img/blog/new-built-for-shopify-revenuehunt-app-is-out-now/recommendationssystemsv2.png)
 
 This flexibility allows you to fine-tune the quiz experience - whether you want to **always feature bestsellers** or tailor results based on individual preferences. With the ability to customize recommendations by slot, you can mix and match different strategies within the same quiz, ensuring a personalized shopping journey.
 
@@ -60,7 +60,7 @@ This flexibility allows you to fine-tune the quiz experience - whether you want 
 
 One of the most interesting new features in the Built for Shopify version of RevenueHunt is the ability to **recommend entire collections** - not just individual products or variants.
 
-![](/img/blog/new-built-for-shopify-revenuehunt-app-is-out-now/collectionsrecommend.png)
+![New *Built for Shopify* RevenueHunt App Is Out Now! - image 2](/img/blog/new-built-for-shopify-revenuehunt-app-is-out-now/collectionsrecommend.png)
 
 This is important for merchants who sell **curated product bundles, seasonal selections, or category-based recommendations**. Instead of suggesting a single item, your quiz can now guide customers to an entire collection of relevant products, giving them more choices. Whether you're promoting a skincare routine, fashion styles, or bundled gift sets, collection-based recommendations ensure a more personalized and dynamic shopping experience. Plus, since Shopify handles collections natively, everything updates automatically as you add or remove products - keeping your recommendations always fresh and relevant.
 
@@ -72,7 +72,7 @@ What changed in terms of design:
 
 In the new Built for Shopify version of RevenueHunt, your quiz is no longer an embedded iframe - it's fully integrated into your Shopify store as a **native block or popup on the page**.
 
-![](/img/blog/new-built-for-shopify-revenuehunt-app-is-out-now/embedquiz.png)
+![New *Built for Shopify* RevenueHunt App Is Out Now! - image 3](/img/blog/new-built-for-shopify-revenuehunt-app-is-out-now/embedquiz.png)
 
 This means better performance, full compatibility with Shopify's core features, and **no-issue interaction with third-party apps and tracking tools**. Unlike iframes, which had limitations in tracking, styling, and integrations, this new approach ensures that your quiz is indexed properly, detected by analytics tools, and interacts smoothly with Shopify's built-in functions like cart rules and dynamic checkout buttons. The result? A faster, more reliable, and fully immersive experience that feels like an organic extension of your store.
 
@@ -80,13 +80,13 @@ This means better performance, full compatibility with Shopify's core features, 
 
 The Built for Shopify version of RevenueHunt app brings unprecedented **design flexibility**, allowing merchants to **customize** **every aspect of their quizzes** to match their brand identity **without need for custom coding**. From typography and color schemes to button styles and layout elements, you have full control over the visual presentation.
 
-![](/img/blog/new-built-for-shopify-revenuehunt-app-is-out-now/quizdesignv2.png)
+![New *Built for Shopify* RevenueHunt App Is Out Now! - image 4](/img/blog/new-built-for-shopify-revenuehunt-app-is-out-now/quizdesignv2.png)
 
 #### A Shopify-Like Quiz Building ⿻ Block System
 
 One of the biggest improvements is the introduction of a **Shopify-like quiz builder block system**, making it incredibly intuitive to build and edit **quiz slides and results pages**.
 
-![](/img/blog/new-built-for-shopify-revenuehunt-app-is-out-now/blocksystem.png)
+![New *Built for Shopify* RevenueHunt App Is Out Now! - image 5](/img/blog/new-built-for-shopify-revenuehunt-app-is-out-now/blocksystem.png)
 
 Just like Shopify's theme editor, you can easily add, remove, and rearrange blocks for questions, images, product recommendations, and even custom HTML. This modular approach means merchants can create highly polished, engaging quizzes without needing any coding knowledge. Whether you want a minimalist, sleek look or a bold, brand-driven design, this new system provides the tools to bring your vision to life.
 
@@ -135,7 +135,7 @@ If you're a Shopify merchant looking to improve sales and engagement, the new be
 > 
 > Confirm app access and permissions.
 > 
-> ![](/img/blog/new-built-for-shopify-revenuehunt-app-is-out-now/switch-e1741678242616.png)
+> ![New *Built for Shopify* RevenueHunt App Is Out Now! - image 6](/img/blog/new-built-for-shopify-revenuehunt-app-is-out-now/switch-e1741678242616.png)
 > 
 > 💡 **Switching back to V1 is always an option** if needed. If you ever want to go back to the legacy V1, no worries - there's a similar link in the same spot that lets you switch back anytime.
 

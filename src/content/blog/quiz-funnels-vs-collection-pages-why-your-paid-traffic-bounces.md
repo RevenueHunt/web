@@ -14,7 +14,7 @@ featuredImage: "/img/blog/quiz-funnels-vs-collection-pages-why-your-paid-traffic
 draft: false
 ---
 
-![](/img/blog/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/collectionvsquiz.png)
+![Stop Paying for Traffic That Bounces. Why Quiz Funnels Outperform Collection Pages? - image 1](/img/blog/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/collectionvsquiz.png)
 
 _From endless product grids to guided recommendations._
 
@@ -32,7 +32,7 @@ Collection pages were designed for organic browsing – a customer who already k
 
 But paid traffic is a different animal. You're buying attention from someone who saw a 15-second creative, felt a spark of interest, and clicked. They arrive with intent but zero context. They don't know your product line. They don't know what's right for them. And you're greeting them with a wall of 30+ options.
 
-![](/img/blog/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/currentarchitecturevsquizfunnel.png)
+![Stop Paying for Traffic That Bounces. Why Quiz Funnels Outperform Collection Pages? - image 2](/img/blog/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/currentarchitecturevsquizfunnel.png)
 
 _Turn anonymous traffic into actionable customer data._
 

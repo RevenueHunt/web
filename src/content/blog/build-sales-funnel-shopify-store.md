@@ -62,7 +62,7 @@ That's the effect a well-constructed sales funnel can have on your eCommerce sto
 
 ### **The Shopify Sales Funnel Template**
 
-<figure class="wp-block-image size-large"><img decoding="async" class="wp-image-2229" src="/img/blog/build-sales-funnel-shopify-store/shopify-sales-funnel-diagram.png" alt=""></figure>
+<figure class="wp-block-image size-large"><img decoding="async" class="wp-image-2229" src="/img/blog/build-sales-funnel-shopify-store/shopify-sales-funnel-diagram.png" alt="How to build a Shopify Sales Funnel for your eCommerce that will convert customers on autopilot - figure 1"></figure>
 
 The above diagram is a summary of the blueprint we use to build sales funnels for our Shopify clients. We'll analyze each step in the funnel and I'll show you which apps to use in each step.
 
@@ -108,7 +108,7 @@ Remember that in the previous step we used a quiz to segment your customers? In 
 
 You'll use 2 tools for this: [Klaviyo](https://apps.shopify.com/klaviyo-email-marketing) and **Facebook Pixel**.
 
-![](/img/blog/build-sales-funnel-shopify-store/klaviyo.jpg)
+![How to build a Shopify Sales Funnel for your eCommerce that will convert customers on autopilot - image 1](/img/blog/build-sales-funnel-shopify-store/klaviyo.jpg)
 
 ##### Klaviyo: Email Marketing
 
@@ -207,7 +207,7 @@ http://your-store.myshopify.com/cart/{variant_id}:{quantity}?discount=COUPONCODE
 
 This is Amazon's "thank you" page:
 
-<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="978" height="725" class="wp-image-1942" src="/img/blog/build-sales-funnel-shopify-store/amazon-thank-you-page.png" alt=""></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="978" height="725" class="wp-image-1942" src="/img/blog/build-sales-funnel-shopify-store/amazon-thank-you-page.png" alt="How to build a Shopify Sales Funnel for your eCommerce that will convert customers on autopilot - figure 2"></figure>
 
 These guys know what they're doing: they're **cross-selling products even after the customer has completed the purchase**.
 
@@ -235,7 +235,7 @@ Repeat customer rate is the backbone of customer retention. It measures the perc
 
 Fortunately, this is calculated for you in your [Shopify Analytics](https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports). If you want to do this manually, all you need to do is divide the number of customers with more than one purchase by the number of unique customers.
 
-<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="100" class="wp-image-1943" src="/img/blog/build-sales-funnel-shopify-store/repeat-rate.png" alt=""></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="700" height="100" class="wp-image-1943" src="/img/blog/build-sales-funnel-shopify-store/repeat-rate.png" alt="How to build a Shopify Sales Funnel for your eCommerce that will convert customers on autopilot - figure 3"></figure>
 
 A repeat purchase is an indicator of a degree of customer loyalty to a brand. It is also an opportunity to establish long-term customer relationships. A high number of repeat purchases indicates a satisfied and "well-retained" customer. This **reduces new-customer acquisition costs and increases overall profitability**.
 

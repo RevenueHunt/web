@@ -50,7 +50,7 @@ Next, you can switch between a _plain-text email_ and an _HTML email creator_.
 
 Once you're there, you can use the HTML filed to create your own branded email template.
 
-![](/img/blog/new-features-create-customized-results-emails/BlogA_emails2.gif)
+![New Features: Create customized results emails - image 1](/img/blog/new-features-create-customized-results-emails/BlogA_emails2.gif)
 
 To learn more about creating your own custom email templates check out [this helpful FAQ article](https://revenuehunt.com/faqs/sending-results-to-customers-email/#articleTOC_4). You can find there many useful codes and sample email templates.
 
@@ -60,6 +60,6 @@ To download an email template, click the link below and paste it in the Notifica
 
 [Demo](https://skincarequiz.myshopify.com/#quiz-rkHm6Y) [Get this template](https://docs.google.com/document/d/18VvKreR3jhizQ_ReOumUpmmIuHoC0RTxYAEO0N-Clbc/edit?usp=sharing)
 
-![](/img/blog/new-features-create-customized-results-emails/image-23.png)![](/img/blog/new-features-create-customized-results-emails/image-24.png)
+![New Features: Create customized results emails - image 2](/img/blog/new-features-create-customized-results-emails/image-23.png)![New Features: Create customized results emails - image 3](/img/blog/new-features-create-customized-results-emails/image-24.png)
 
 So, what are you waiting for? Get started on your own product recommendation quiz today! And be sure to follow up with your quiz takers by email. It's a great way to increase sales and keep customers engaged with your brand. Ready to get started? Build your first Product Recommendation Quiz now for free!

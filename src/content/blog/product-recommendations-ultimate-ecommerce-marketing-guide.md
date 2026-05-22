@@ -36,7 +36,7 @@ One of the most unique product recommendations techniques for boosting your eCom
 
 But here's the thing – automating your site for answering their questions using a chatbot could increase your investment and reduce the overall profit. Also, you can't answer all the queries based on the customers even with the FAQs section.
 
-<figure class="wp-block-image"><img decoding="async" src="/img/blog/product-recommendations-ultimate-ecommerce-marketing-guide/lRpkvpOhM1JTNWtFDu6dW50qScHmN7XB8GFFS4vK3g4rG_G-b1DCF99DsawM4jjTl4Yi8u6npgvXa_Qa_m1q6vSt2f2yFWVwYEmrFQzsmSP4ve0jm2yxKh8yTqw9HMAv4dHVASQC" alt=""></figure>
+<figure class="wp-block-image"><img decoding="async" src="/img/blog/product-recommendations-ultimate-ecommerce-marketing-guide/lRpkvpOhM1JTNWtFDu6dW50qScHmN7XB8GFFS4vK3g4rG_G-b1DCF99DsawM4jjTl4Yi8u6npgvXa_Qa_m1q6vSt2f2yFWVwYEmrFQzsmSP4ve0jm2yxKh8yTqw9HMAv4dHVASQC" alt="Product Recommendations – Ultimate eCommerce Marketing Guide - figure 1"></figure>
 
 Exactly, that's where the apps like [Product recommendations Quiz](https://revenuehunt.com/product-recommendation-quiz/) comes in action. All you need to do is to "Install" the plugin on your eCommerce store and it'll ask the right questions as well as will drive you to the satisfying conversion. 
 
@@ -46,7 +46,7 @@ As per the psychology and marketing expert, "Robert Cialdini", there are 6 princ
 
 Amazon has a lot of customer data at their disposal and they use it along with their product recommendation system for creating a highly personalized recommendation funnel.
 
-<figure class="wp-block-image"><img decoding="async" src="/img/blog/product-recommendations-ultimate-ecommerce-marketing-guide/xQmjpbMf9Q5ax68dxRmL4yWivnv4kucf0eJiIJ_1na5XGMWDQfFDIKXQIYW2bss2VA6xKVz7kVR7vhNCsVR-l2u9VWqkNHQHAjLEldOVnXQ_wZfcoOoJQuRyKA2xao5zA-UJnXl6" alt=""></figure>
+<figure class="wp-block-image"><img decoding="async" src="/img/blog/product-recommendations-ultimate-ecommerce-marketing-guide/xQmjpbMf9Q5ax68dxRmL4yWivnv4kucf0eJiIJ_1na5XGMWDQfFDIKXQIYW2bss2VA6xKVz7kVR7vhNCsVR-l2u9VWqkNHQHAjLEldOVnXQ_wZfcoOoJQuRyKA2xao5zA-UJnXl6" alt="Product Recommendations – Ultimate eCommerce Marketing Guide - figure 2"></figure>
 
 As you can see, Amazon suggests products based on actions or behaviours for boosting the average order value. The best part about this is that a customer is more likely to buy these products. 
 
@@ -76,7 +76,7 @@ One of the strongest ways of using social proof is via product reviews and ratin
 
 If you're using Shopify, you can easily find a product review app from their marketplace and add this functionality to your store. 
 
-<figure class="wp-block-image"><img decoding="async" src="/img/blog/product-recommendations-ultimate-ecommerce-marketing-guide/uoqPFtYUjQXtpnEQwTz50OuhgcdYwHh37o-VfyeX_CNEved0GL-E5rMpj0rfPVl63EB3SweaPHrxv_fej4zNllHqr0F_eMARsG1dAxZn_oPBn_3Y4QnNsdwfnyA84XkQ-9PBnZeB" alt=""></figure>
+<figure class="wp-block-image"><img decoding="async" src="/img/blog/product-recommendations-ultimate-ecommerce-marketing-guide/uoqPFtYUjQXtpnEQwTz50OuhgcdYwHh37o-VfyeX_CNEved0GL-E5rMpj0rfPVl63EB3SweaPHrxv_fej4zNllHqr0F_eMARsG1dAxZn_oPBn_3Y4QnNsdwfnyA84XkQ-9PBnZeB" alt="Product Recommendations – Ultimate eCommerce Marketing Guide - figure 3"></figure>
 
 ### 3.2 Endorsement based recommendation by H&M
 
@@ -92,11 +92,11 @@ A simpler product recommendation method is listing the best sellers or trending 
 
 For instance, the mentioned below store lists the best sellers as best rated products. 
 
-<figure class="wp-block-image"><img decoding="async" src="/img/blog/product-recommendations-ultimate-ecommerce-marketing-guide/nf15tboPxFEF2HjFu2OeyU5ZrSaEYOZI3zMm6rHUNuSsmX-cPATGbYq8ERrO-5ya2VbH0ujKQUVDw12_coToGEzbp-9e-_bq77F-2Iroy5bgqCfsi45CveVKUXLYuyjEAjjDv_J1" alt=""></figure>
+<figure class="wp-block-image"><img decoding="async" src="/img/blog/product-recommendations-ultimate-ecommerce-marketing-guide/nf15tboPxFEF2HjFu2OeyU5ZrSaEYOZI3zMm6rHUNuSsmX-cPATGbYq8ERrO-5ya2VbH0ujKQUVDw12_coToGEzbp-9e-_bq77F-2Iroy5bgqCfsi45CveVKUXLYuyjEAjjDv_J1" alt="Product Recommendations – Ultimate eCommerce Marketing Guide - figure 4"></figure>
 
 The reason it is so successful as product recommendation is the [pareto rule](https://www.smartinsights.com/marketing-planning/marketing-models/paretos-8020-rule-marketing/). Pareto rule, in a way, states that the 80% of eCommerce business depends on the 20% of sales. 
 
-<figure class="wp-block-image"><img decoding="async" src="/img/blog/product-recommendations-ultimate-ecommerce-marketing-guide/-7UDq1yXd7qUGKjksFDkUHLalUgcrQ8hxhzBKPUz0fP_Ji32eD-qE3DYKTO-rxNUV9u1uKBrODJ8gZaA0MBJi6W1ovuLY-6hMuU4pCDjUbxPStWvLDr42Wu1GjW4Iq3Pbjh5aWE7" alt=""></figure>
+<figure class="wp-block-image"><img decoding="async" src="/img/blog/product-recommendations-ultimate-ecommerce-marketing-guide/-7UDq1yXd7qUGKjksFDkUHLalUgcrQ8hxhzBKPUz0fP_Ji32eD-qE3DYKTO-rxNUV9u1uKBrODJ8gZaA0MBJi6W1ovuLY-6hMuU4pCDjUbxPStWvLDr42Wu1GjW4Iq3Pbjh5aWE7" alt="Product Recommendations – Ultimate eCommerce Marketing Guide - figure 5"></figure>
 
 Similarly, Etsy recommends the most popular or trending products for motivating the customers to make a purchase.
 

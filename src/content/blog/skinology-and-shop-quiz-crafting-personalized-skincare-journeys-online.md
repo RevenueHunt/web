@@ -90,7 +90,7 @@ The key to Skinology's success lies in their collaboration with the [Shop Quiz: 
 
 Shop Quiz works hand-in-hand with Liam, Skinology's AI model, to personalize each formulation and continuously adapt to the customer. Liam plays a crucial role in taking the input data from the quizzes and translating it into actionable formulations, ensuring each customer gets exactly what they need.
 
-![](/img/blog/skinology-and-shop-quiz-crafting-personalized-skincare-journeys-online/01.png)
+![Skinology and Shop Quiz: Crafting Personalized Skincare Journeys Online - image 1](/img/blog/skinology-and-shop-quiz-crafting-personalized-skincare-journeys-online/01.png)
 
 The backbone of Skinology's growth lies in using data efficiently while respecting privacy. "The quiz collects important data points like name, last name, and a national ID, which we need for our custom formulations. But each piece of information has a purpose - it's all about crafting the best solution for that individual," explained Jessica, Skinology's Head of Marketing.
 

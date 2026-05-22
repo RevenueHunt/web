@@ -18,7 +18,7 @@ draft: false
 
 Quizzes can be a powerful tool for engaging your customers and driving sales for your e-commerce business. However, there are several common mistakes that can hurt the effectiveness of your quizzes and drive potential customers away. In this article, we'll discuss the top quiz creation mistakes every ecommerce business should avoid.
 
-![](/img/blog/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/Untitled-design-1.png)
+![Quiz Creation Mistakes That Hurt Your Ecommerce Sales - image 1](/img/blog/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/Untitled-design-1.png)
 
 ## CONTENT MISTAKES
 
@@ -64,7 +64,7 @@ Before launching your quiz, make sure to test it thoroughly to ensure that every
 
 Your quiz should fit seamlessly into your e-commerce store's design and branding. Make sure to use colors, fonts, and other design elements that match your store's look and feel.
 
-![](/img/blog/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/PIC1-OLAPLEX_Blurred-300x132.png)
+![Quiz Creation Mistakes That Hurt Your Ecommerce Sales - image 2](/img/blog/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/PIC1-OLAPLEX_Blurred-300x132.png)
 
 A Product Recommendation Quiz can match your store's look to the finest details. In the Quiz Design tab, you can adjust the quiz's fonts, colors, add a background image, or even add custom CSS code. Check out these beautiful [customization examples](https://revenuehunt.com/templates/#customization) to gather inspiration for your next quiz project.
 

@@ -82,7 +82,7 @@ Follow these expert tips to create a quiz that engages your audience, boosts you
 
 > **💡Tip**: [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) gives an option to add dynamic discounts to your results page to encourage customers to shop more with a bigger discount.
 > 
-> ![](/img/blog/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/Screenshot-2023-06-08-082928.png)
+> ![Quick Tips Before You Build Your First Product Recommendation Quiz (from RevenueHunt team) - image 1](/img/blog/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/Screenshot-2023-06-08-082928.png)
 
 ☑️ **Display testimonials, product reviews** or the number of users who have taken the quiz and found their perfect product. This leverages the bandwagon effect.
 

@@ -36,7 +36,7 @@ Map out the quiz questions and outcomes in one document based on the customer ch
 > 
 > _or a more advanced mapping tool like [Miro](https://miro.com/)._
 > 
-> ![](/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/21017515516050)
+> ![Guide to Building a Personality-Type Quiz with RevenueHunt - image 1](/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/21017515516050)
 
 ### Step 2: Add Questions to the Quiz
 
@@ -44,7 +44,7 @@ Design questions that help narrow down the customer's traits. Each answer should
 
 > #### _Example Questions for Skin Type Quiz_
 > 
-> ![](/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/determineskitypequizquestions.png)
+> ![Guide to Building a Personality-Type Quiz with RevenueHunt - image 2](/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/determineskitypequizquestions.png)
 > 
 > _**Question 1: Oiliness**_
 > 
@@ -82,7 +82,7 @@ Design questions that help narrow down the customer's traits. Each answer should
 
 Associate answer options with the most suitable products in your catalog.
 
-![](/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/linkcollectionsdetermineskintype.png)
+![Guide to Building a Personality-Type Quiz with RevenueHunt - image 3](/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/linkcollectionsdetermineskintype.png)
 
 For example:
 
@@ -93,7 +93,7 @@ This setup ensures that the quiz [product recommendation algorithm](https://doc
 
 > _**💡Tip:** You can create collections of products in Shopify that correspond to each answer for faster quiz setup. You can make these new collections "hidden" in your Shopify store by unchecking the Online store publishing option._
 > 
-> ![](/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/Screenshot-2025-01-13-092953.png)
+> ![Guide to Building a Personality-Type Quiz with RevenueHunt - image 4](/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/Screenshot-2025-01-13-092953.png)
 > 
 > _Learn more about creating collections in Shopify [here](https://help.shopify.com/en/manual/products/collections). After creating new collections, make sure to run a [catalog sync](https://docs.revenuehunt.com/how-to-guides/sync-catalog/) in the app._
 
@@ -107,7 +107,7 @@ To show text results based on answers (e.g., "You have Dry Skin"), configure con
 
 Add separate content blocks for each possible result (e.g., "You have Dry Skin," "You have Oily Skin," etc.).
 
-![](https://docs.revenuehunt.com/images/how%20to%20show%20results%20explenation%20personalityquiz1.png)
+![Guide to Building a Personality-Type Quiz with RevenueHunt - image 5](https://docs.revenuehunt.com/images/how%20to%20show%20results%20explenation%20personalityquiz1.png)
 
 **Then, Configure Block Logic Rules**
 
@@ -122,7 +122,7 @@ Set visibility rules for each block based on customer answers.
 > 
 > _Then this block will be **Visible**; otherwise, it remains hidden._
 > 
-> ![](https://docs.revenuehunt.com/images/how%20to%20show%20results%20explenation%20personalityquiz2.png)
+> ![Guide to Building a Personality-Type Quiz with RevenueHunt - image 6](https://docs.revenuehunt.com/images/how%20to%20show%20results%20explenation%20personalityquiz2.png)
 
 > _**For Combination Skin:**_  
 > _Combination skin may result from varied answer paths. You'll need rules for multiple scenarios:_
@@ -208,7 +208,7 @@ To implement custom JavaScript, ensure the developer is familiar with the Revenu
 > 
 > _Note that this code would have to be added to the [Results Page Settings > Advanced > Custom JavaScript](https://docs.revenuehunt.com/how-to-guides/add-javascript/#results-page) section of your quiz._
 > 
-> ![](/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/Screenshot-2025-01-13-094058.png)
+> ![Guide to Building a Personality-Type Quiz with RevenueHunt - image 7](/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/Screenshot-2025-01-13-094058.png)
 
 > _The code uses prq.getSlideValue(slideId) to fetch the user's answers and assign points based on predefined rules._
 > 

@@ -39,7 +39,7 @@ ECommerce is becoming more competitive by the day, and every online store owner 
 
 With the RevenueHunt app, eCommerce merchants have multiple ways to track revenue and gain valuable insights into their quiz-driven sales.
 
-![](/img/blog/how-to-track-and-maximize-quiz-driven-revenue-in-shopify/quizanalyticsdashbaord.png)
+![How to Track and Maximize Quiz-Driven Revenue in Shopify - image 1](/img/blog/how-to-track-and-maximize-quiz-driven-revenue-in-shopify/quizanalyticsdashbaord.png)
 
 → The **Shopify Revenue Report** feature directly links quiz interactions with order data, showing metrics like total orders, revenue generated, and average order value.
 
@@ -59,7 +59,7 @@ RevenueHunt's Shopify Revenue Report feature provides Shopify merchants with a t
 
 1.  **Activate Order Notes** – Make sure Order Notes are enabled in your Shopify Theme Settings. This allows quiz purchase data to be recorded.
 2.  **Connect to Shopify Reports** – In the RevenueHunt app, navigate to the **Connect** tab and locate **Shopify Revenue Report (Beta)**. Click 'Connect'.
-3.  ![](/img/blog/how-to-track-and-maximize-quiz-driven-revenue-in-shopify/revenuehuntrevenueconnect.png)
+3.  ![How to Track and Maximize Quiz-Driven Revenue in Shopify - image 2](/img/blog/how-to-track-and-maximize-quiz-driven-revenue-in-shopify/revenuehuntrevenueconnect.png)
 4.  **Grant Access** – Provide the necessary permissions to allow RevenueHunt to access your order data.
 5.  **Publish Changes** – Click 'Publish' to finalize the setup and start tracking.
 

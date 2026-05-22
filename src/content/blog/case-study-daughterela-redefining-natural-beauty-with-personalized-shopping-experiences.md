@@ -73,7 +73,7 @@ Understanding the digital tools in consumer engagement, Daughterela employs vari
 
 **🛍️ Interactive Finders Powered by Shop Quiz**: The website features three finders for customers to discover their perfect lipstick color, foundation shade, and skincare routine. By integrating the [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) app, Daughterela offers a personalized shopping experience.
 
-![](/img/blog/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/Screenshot-2024-09-19-115627.png)
+![Case Study: Daughterela - Redefining Natural Beauty with Personalized Shopping Experiences - image 1](/img/blog/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/Screenshot-2024-09-19-115627.png)
 
 Daughterela's integration of interactive finders aims to significantly enhance their customer engagement and sales conversion rates. These quizzes allow customers to receive personalized product recommendations by answering a series of tailored questions about their preferences and needs. This level of personalization **replicates the in-store experience of receiving expert advice**, which is often lacking in online shopping.
 
@@ -81,7 +81,7 @@ Other brands should consider implementing similar interactive tools because they
 
 **💌 Email Marketing**: By encouraging customers to subscribe to their email list, Daughterela maintains direct communication, informing subscribers about new products and exclusive offers.
 
-![](/img/blog/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/Screenshot-2024-09-19-121903-e1726741332211.png)
+![Case Study: Daughterela - Redefining Natural Beauty with Personalized Shopping Experiences - image 2](/img/blog/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/Screenshot-2024-09-19-121903-e1726741332211.png)
 
 Maintaining a direct line of communication through email marketing has been a key strategy for Daughterela. By encouraging customers to subscribe to their email list, they ensure that their **audience stays informed** about new product launches, exclusive deals, and company updates. This approach keeps the brand top-of-mind and fosters a sense of community among subscribers.
 
@@ -89,7 +89,7 @@ For other brands, email marketing is a cost-effective way to reach customers on 
 
 **🌱 Eco-Friendly Messaging**: Emphasizing their commitment to the environment, the brand's eco-friendly shipping practices resonate with environmentally conscious consumers.
 
-![](/img/blog/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/Screenshot-2024-09-19-122108.png)
+![Case Study: Daughterela - Redefining Natural Beauty with Personalized Shopping Experiences - image 3](/img/blog/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/Screenshot-2024-09-19-122108.png)
 
 Daughterela's emphasis on eco-friendly shipping and sustainable practices resonates strongly with today's environmentally conscious consumers. By highlighting their commitment to the environment, they differentiate themselves in a crowded market and **build trust with their audience**. This transparency not only attracts customers who prioritize sustainability but also enhances the brand's overall reputation.
 
@@ -105,7 +105,7 @@ What makes the quiz so appealing to brands like Daughterela? There are a few rea
 
  The app allows the brand to offer tailored product suggestions based on individual customer preferences, making the shopping experience more engaging.
 
-![](/img/blog/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/Screenshot-2024-09-19-121057.png)
+![Case Study: Daughterela - Redefining Natural Beauty with Personalized Shopping Experiences - image 4](/img/blog/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/Screenshot-2024-09-19-121057.png)
 
 **2️⃣ Personalized User Experience.**
 
@@ -115,7 +115,7 @@ What makes the quiz so appealing to brands like Daughterela? There are a few rea
 
  The app collects valuable data on customer preferences, helping Daughterela to refine their product offerings and marketing strategies.
 
-![](/img/blog/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/Screenshot-2024-09-19-121338.png)
+![Case Study: Daughterela - Redefining Natural Beauty with Personalized Shopping Experiences - image 5](/img/blog/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/Screenshot-2024-09-19-121338.png)
 
 **4️⃣ Easy Integration.**
 

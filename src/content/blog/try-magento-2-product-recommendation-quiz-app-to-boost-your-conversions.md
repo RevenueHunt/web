@@ -42,7 +42,7 @@ You can use the Product Recommendation Quiz app to create quizzes for any type o
 
 The app is easy to use and only takes a few minutes to set up. You can create a quiz in minutes **without the need to hire a developer or designer**. Simply choose the products you want to recommend and the app will do the rest.
 
-![](/img/blog/try-magento-2-product-recommendation-quiz-app-to-boost-your-conversions/Magento-Img1.png)
+![Try Magento 2 Product Recommendation Quiz App to Boost Your Conversions - image 1](/img/blog/try-magento-2-product-recommendation-quiz-app-to-boost-your-conversions/Magento-Img1.png)
 
 ## 2\. Use the Magento 2 Product Recommendation Quiz App to boost your conversions
 
@@ -58,7 +58,7 @@ Here are a few ways you can use the app to boost your conversions:
 
 By using the Product Recommendation Quiz app, you'll be able to reach more customers and boost your sales. Customers who took the product quiz have more confidence in their decisions to buy which directly converts into sales. Moreover, indecisive customers can take the quiz multiple times or get results delivered to their inbox if they still haven't made up their minds. This creates a cycle of trust and information that leads to a spectacular business boost.
 
-![](/img/blog/try-magento-2-product-recommendation-quiz-app-to-boost-your-conversions/image-3-1024x658.png)
+![Try Magento 2 Product Recommendation Quiz App to Boost Your Conversions - image 2](/img/blog/try-magento-2-product-recommendation-quiz-app-to-boost-your-conversions/image-3-1024x658.png)
 
 ## 3\. Benefits of using the Magento 2 Product Recommendation Quiz App
 
@@ -90,11 +90,11 @@ or
 
 – Go to the [Magento Marketplace](https://marketplace.magento.com/) and search for "Product Recommendation Quiz"
 
-![](/img/blog/try-magento-2-product-recommendation-quiz-app-to-boost-your-conversions/Screenshot-2022-05-17-114751-300x134.png)
+![Try Magento 2 Product Recommendation Quiz App to Boost Your Conversions - image 3](/img/blog/try-magento-2-product-recommendation-quiz-app-to-boost-your-conversions/Screenshot-2022-05-17-114751-300x134.png)
 
 – Install the module
 
-![](/img/blog/try-magento-2-product-recommendation-quiz-app-to-boost-your-conversions/Screenshot-2022-05-17-114929-300x210.png)
+![Try Magento 2 Product Recommendation Quiz App to Boost Your Conversions - image 4](/img/blog/try-magento-2-product-recommendation-quiz-app-to-boost-your-conversions/Screenshot-2022-05-17-114929-300x210.png)
 
 – Follow the instructions on how to set up your quiz
 
@@ -114,7 +114,7 @@ There are a few things you can do to **ensure that your quiz is successful and h
 
 If you follow these tips, you'll be well on your way to increasing your sales with the Magento Product Recommendation Quiz App. Give it a try today and see how it can help your business succeed.
 
-![](/img/blog/try-magento-2-product-recommendation-quiz-app-to-boost-your-conversions/Magento-Img2.png)
+![Try Magento 2 Product Recommendation Quiz App to Boost Your Conversions - image 5](/img/blog/try-magento-2-product-recommendation-quiz-app-to-boost-your-conversions/Magento-Img2.png)
 
 ## Conclusion
 

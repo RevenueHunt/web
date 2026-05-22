@@ -35,7 +35,7 @@ You can, for example, briefly introduce your brand, the products, and what users
 
 > **💡 Tip**: To add an introduction video to the first slide of your [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/), go to _Quiz Builder > Welcome Slide > Question Settings > Video (upload)_ and select the _responsive (with play/stop/volume buttons)_ or _background (no buttons)_ option.
 > 
-> ![](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/Screenshot-2024-07-01-092811.png)
+> ![Practical Guide: Create a Video Quiz for your E-commerce Website - image 1](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/Screenshot-2024-07-01-092811.png)
 
 **🟣 How-To or Explainer Videos**
 
@@ -47,17 +47,17 @@ For example, a skincare brand could include some step-by-step video guides, tips
 
 > **💡 Tip**: To add a video to the results page of your [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/), go to _Quiz Builder > Results Page_ and add a Content Block. In the content block use the _!\[\](https://youtu.be/0\_tO8HgJiLQ)_ [Markdown Language](https://docs.revenuehunt.com/how-to-guides/use-markdown/) rule to insert your video.
 > 
-> ![](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/Screenshot-2024-07-01-093841.png)
+> ![Practical Guide: Create a Video Quiz for your E-commerce Website - image 2](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/Screenshot-2024-07-01-093841.png)
 
 **🟣 Customer Testimonial Videos**
 
 Build trust and credibility by showcasing real customer experiences. For example, you can add short interviews or clips of customers sharing their positive experiences. They shouldn't be longer than **30-45 seconds**.
 
-![](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/videotestimonialv2.gif)
+![Practical Guide: Create a Video Quiz for your E-commerce Website - image 3](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/videotestimonialv2.gif)
 
 > **💡 Tip**: To add a split screen video to any slide of your [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/), go to _Quiz Builder >_ Select a Slide _\> Question Settings > Video (upload)_ and select the _responsive_ option.
 > 
-> ![](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/Screenshot-2024-07-01-122338.png)
+> ![Practical Guide: Create a Video Quiz for your E-commerce Website - image 4](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/Screenshot-2024-07-01-122338.png)
 
 **🟣 Product Overview Videos**
 
@@ -65,7 +65,7 @@ Provide detailed information about specific products featured in the quiz. These
 
 In the video, make sure to highlight key features, benefits, and usage instructions. Max. **30 seconds per product**.
 
-![](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/bottles.gif)
+![Practical Guide: Create a Video Quiz for your E-commerce Website - image 5](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/bottles.gif)
 
 > 💡 **Tip**: To upload moving pictures to question choices in [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/), you can upload them as **.gif** images via the [Picture Choice Question](https://docs.revenuehunt.com/reference/quiz-builder/#question-types) type.
 
@@ -78,10 +78,10 @@ If you want to go a step further, you can record different videos that should be
 You should focus on creating short videos that address the user directly, suggesting products tailored to their needs, or explaining why products were recommended. Each video should be about **30-45 seconds**.
 
 [  
-![](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/personalrecommendationvid.gif)  
+![Practical Guide: Create a Video Quiz for your E-commerce Website - image 6](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/personalrecommendationvid.gif)  
 ](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/personalrecommendationvid.gif)  
 [  
-![](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/personalrecommendationvid2.gif)  
+![Practical Guide: Create a Video Quiz for your E-commerce Website - image 7](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/personalrecommendationvid2.gif)  
 ](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/personalrecommendationvid2.gif)
 
 ## **😎 Video Quiz: Step-by-step Instructions**
@@ -98,11 +98,11 @@ Furthermore, mobile users are more likely to share their experiences on social m
 
 1️⃣ Prepare a 🗺️ **map of your quiz**. List down all the questions, choices, and possible recommendations.
 
-![](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/quizmap1.png)
+![Practical Guide: Create a Video Quiz for your E-commerce Website - image 8](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/quizmap1.png)
 
 2️⃣ Check **where to 🎬 add visuals** like videos, gifs or images for maximum impact.
 
-![](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/videoplan.png)
+![Practical Guide: Create a Video Quiz for your E-commerce Website - image 9](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/videoplan.png)
 
 Typically videos are most powerful when placed:
 
@@ -135,7 +135,7 @@ To ensure your videos look professional and load efficiently on mobile devices, 
 
 6️⃣ Use an app like [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/) to build your quiz questions, recommend products, and integrate the videos.
 
-## ![](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/quizbuildervideo.gif)
+## ![Practical Guide: Create a Video Quiz for your E-commerce Website - image 10](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/quizbuildervideo.gif)
 
 7️⃣ Test the quiz on different mobile devices to ensure videos load quickly and play smoothly.
 

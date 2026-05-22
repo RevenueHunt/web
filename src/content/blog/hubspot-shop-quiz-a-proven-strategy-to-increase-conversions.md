@@ -25,7 +25,7 @@ This combination can **lead to increased engagement, higher conversion rates, an
 
 > A **Shop Quiz: Product Recommendation Quiz** is a personalized shopping tool that guides users through a series of questions, helping them discover the products that best fit their needs. The quiz tailors recommendations based on customer preferences, solving the problem of overwhelming choices in e-commerce. Not only does this enhance the customer experience, but it also increases the likelihood of a purchase as users are more likely to buy products recommended specifically for them.
 > 
-> ![](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Screenshot-2024-07-04-083149.webp)
+> ![Hubspot + Shop Quiz: A Proven Strategy to Increase Conversions - image 1](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Screenshot-2024-07-04-083149.webp)
 
 > **HubSpot** is a leading CRM and marketing automation platform that helps businesses manage customer relationships, track leads, and automate marketing workflows.
 > 
@@ -92,9 +92,9 @@ Once the connection is complete, all quiz results will automatically flow into y
 -   To view this data, go to the **Contacts** section within HubSpot and select a contact who has taken the quiz.
 -   Click on **View All Properties** to examine the quiz-related details, which will be stored under a section labeled "Product Recommendation Quiz". This section contains all quiz answers and product recommendations.
 
-> ![](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Screenshot-2024-10-02-091609.png)
+> ![Hubspot + Shop Quiz: A Proven Strategy to Increase Conversions - image 2](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Screenshot-2024-10-02-091609.png)
 > 
-> ![](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Screenshot-2024-10-02-091706.png)
+> ![Hubspot + Shop Quiz: A Proven Strategy to Increase Conversions - image 3](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Screenshot-2024-10-02-091706.png)
 
 **3️⃣ Creating a Segmented List in HubSpot**
 
@@ -110,9 +110,9 @@ Here's how to create a segmented list of contacts:
 -   For example, you could set criteria like Quiz ID, customer tags or quiz answers ( e.g. Skin Type = 'Oily').
 -   After adding all the necessary filters, give your list a name (e.g., "Oily Skin Customers"), and click **Save**.
 
-![](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Screenshot-2024-10-02-091806.png)
+![Hubspot + Shop Quiz: A Proven Strategy to Increase Conversions - image 4](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Screenshot-2024-10-02-091806.png)
 
-![](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Screenshot-2024-10-02-092209.png)
+![Hubspot + Shop Quiz: A Proven Strategy to Increase Conversions - image 5](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Screenshot-2024-10-02-092209.png)
 
 **4️⃣ Setting Up an Email Automation in HubSpot**
 
@@ -126,7 +126,7 @@ Now that you have your segmented list, you can set up an email workflow to autom
 -   Customize your email by adding dynamic content based on quiz responses (more details on this below).
 -   Test your workflow and activate it once it's ready.
 
-![](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Automation-Image-2c.png)
+![Hubspot + Shop Quiz: A Proven Strategy to Increase Conversions - image 6](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Automation-Image-2c.png)
 
 > **Using Custom Quiz Properties in Email Templates**
 > 
@@ -138,13 +138,13 @@ Now that you have your segmented list, you can set up an email workflow to autom
 > 
 > Click on **Insert**, then select **Personalization Token** from the dropdown.
 > 
-> ![](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Screenshot-2024-10-02-092435.png)
+> ![Hubspot + Shop Quiz: A Proven Strategy to Increase Conversions - image 7](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Screenshot-2024-10-02-092435.png)
 > 
 > Choose the custom quiz properties that were captured with your **Product Recommendation** **Quiz**. HubSpot will automatically replace these tokens with each contact's respective data during the email send.
 > 
 > Use the **Preview** feature to ensure that the custom properties are appearing correctly in your email.
 > 
-> ![](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Screenshot-2024-10-02-092627.png)
+> ![Hubspot + Shop Quiz: A Proven Strategy to Increase Conversions - image 8](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Screenshot-2024-10-02-092627.png)
 > 
 > **📌Note**: While HubSpot handles text-based quiz data efficiently, it does not currently support embedding images into email templates as custom properties. Make sure to plan your quiz content accordingly to ensure a smooth integration and optimal use of HubSpot's features.
 

@@ -20,7 +20,7 @@ Do you have a quiz on your website but aren't sure how to get more people to tak
 
 Another easy way to promote your quiz is to add it to your website. This will allow your website visitors to easily find and take the quiz. You can add a button or link to the quiz on your website homepage, or add it to a sidebar or footer. However, one of the most effective ways to promote the quiz is placing it directly in you're website's main menu. This way no customer can miss it!
 
-![](/img/blog/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/Screenshot-2022-03-31-155833-1024x536.png)
+![11 Easy Ways to Promote Your Quiz and Get More People to Take It - image 1](/img/blog/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/Screenshot-2022-03-31-155833-1024x536.png)
 
 Click [here](https://revenuehunt.com/faqs/publish-quiz-on-your-store/) to learn how to publish your quiz on your website.
 
@@ -28,7 +28,7 @@ Click [here](https://revenuehunt.com/faqs/publish-quiz-on-your-store/) to learn 
 
 The first tip for promoting your quiz is to share it on social media. This is an easy way to reach a large audience quickly and can be very effective in getting more people to take your quiz. Make sure to post about the quiz on all of your social media channels, and use relevant hashtags to help people find it. You can also create social media ads to promote the quiz.
 
-![](/img/blog/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/Inked1C7F6839-801C-4815-8A57-206256180FAA_LI-601x1024.jpg)
+![11 Easy Ways to Promote Your Quiz and Get More People to Take It - image 2](/img/blog/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/Inked1C7F6839-801C-4815-8A57-206256180FAA_LI-601x1024.jpg)
 
 Click [here](https://revenuehunt.com/faqs/publish-quiz-on-your-store/?preview_id=1021&preview_nonce=58d72d009d&_thumbnail_id=-1&preview=true#articleTOC_3) to learn how to share a direct link to the quiz on your social media account (Twitter, Instagram, Facebook).
 

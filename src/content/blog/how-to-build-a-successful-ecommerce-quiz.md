@@ -51,7 +51,7 @@ For detailed setup instructions on each placement option, visit our [quiz placem
 
 Nothing erodes trust faster than a quiz that looks like it belongs to a different company. When a customer sees a jarring color scheme or mismatched font the moment they click "Start Quiz," you've already broken the immersive experience that makes consultative selling work. Design consistency is not a vanity metric – it directly affects completion rates and purchase confidence.
 
-![](/img/blog/how-to-build-a-successful-ecommerce-quiz/PIC1-OLAPLEX_Blurred-300x132.png)
+![How to build a successful Product Recommendation Quiz (in 2026) - image 1](/img/blog/how-to-build-a-successful-ecommerce-quiz/PIC1-OLAPLEX_Blurred-300x132.png)
 
 The new **💎Built for Shopify** version of RevenueHunt addresses this at the infrastructure level. When you add a quiz as a native Shopify block, it **automatically inherits your theme's typography, colors, and button styles**. For brands that want deeper customization, the block editor gives you full control over fonts, colors, background images, and layout, and for developers or design-forward teams, **custom CSS and JavaScript** are available on higher-tier plans.
 

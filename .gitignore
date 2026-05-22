@@ -13,3 +13,6 @@ playwright-report/
 test-results/
 _scraped/
 .claude/
+
+.dev.vars*
+!.dev.vars.example

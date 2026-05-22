@@ -6,6 +6,8 @@ import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 
+import cloudflare from "@astrojs/cloudflare";
+
 /** Build a slug → most-recent-date map for sitemap lastmod by scraping
  *  frontmatter dates out of content/{blog,pages}/*.md. We can't use the
  *  astro:content virtual module from astro.config, so parse YAML by hand. */
@@ -145,10 +147,12 @@ export default defineConfig({
   site: "https://revenuehunt.com",
   output: "static",
   trailingSlash: "always",
+
   redirects: {
     // Populate via scripts/scrape-wp.ts output. Any URL in the live
     // sitemap.xml that no Astro route produces must redirect here (or 410).
   },
+
   integrations: [
     (() => {
       const lastmodMap = readLastmodMap();
@@ -163,11 +167,15 @@ export default defineConfig({
     })(),
     pagefindIntegration(),
   ],
+
   markdown: {
     remarkPlugins: [stripLeadingH1Remark],
     rehypePlugins: [stripLeadingH1Rehype, promoteFirstHeadingRehype],
   },
+
   vite: {
     plugins: [tailwindcss()],
   },
+
+  adapter: cloudflare()
 });

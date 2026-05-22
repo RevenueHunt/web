@@ -11,16 +11,19 @@
     "build": "astro build",
     "build:og": "bun scripts/generate-og.ts && astro build",
     "og": "bun scripts/generate-og.ts",
-    "preview": "astro preview",
+    "preview": "bun run build && wrangler dev",
     "astro": "astro",
     "typecheck": "astro check",
     "test": "bun test src/",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
     "scrape": "bun scripts/scrape-wp.ts",
-    "legal": "bash scripts/generate-legal-docs.sh"
+    "legal": "bash scripts/generate-legal-docs.sh",
+    "generate-types": "wrangler types",
+    "deploy": "bun run build && wrangler deploy"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^13.5.4",
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.2",
     "@resvg/resvg-js": "^2.6.2",
@@ -40,6 +43,10 @@
     "@types/turndown": "^5.0.6",
     "hast-util-to-text": "^4.0.2",
     "pagefind": "^1.5.2",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "wrangler": "^4.93.1"
+  },
+  "overrides": {
+    "vite": "^7"
   }
 }

@@ -4,7 +4,7 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), microphone=(), camera=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.youtube.com https://www.youtube-nocookie.com https://s.ytimg.com https://www.googletagmanager.com https://www.google-analytics.com https://admin.revenuehunt.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: blob:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https: wss:; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://admin.revenuehunt.com; media-src 'self' https:; object-src 'none'; base-uri 'self'; form-action 'self' https://admin.revenuehunt.com; frame-ancestors 'self'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' https://www.youtube.com https://www.youtube-nocookie.com https://s.ytimg.com https://www.googletagmanager.com https://www.google-analytics.com https://admin.revenuehunt.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: blob:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https: wss:; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://admin.revenuehunt.com; media-src 'self' https:; object-src 'none'; base-uri 'self'; form-action 'self' https://admin.revenuehunt.com; frame-ancestors 'self'; upgrade-insecure-requests
 
 # Astro fingerprints these — safe to cache forever.
 /_astro/*

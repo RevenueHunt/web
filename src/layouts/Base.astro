@@ -25,10 +25,12 @@ const {
 
 const canonical = new URL(Astro.url.pathname, SITE.site_url).href;
 
-// Analytics only on the production domain - keeps the web.revenuehunt.com
-// staging build out of GA4/GTM. Matches prod wiring: GA4 via gtag.js
-// (G-62LE891EM2, was Google Site Kit) + GTM container (GTM-TDNVZDJ).
-const isProd = SITE.site_url === "https://revenuehunt.com";
+// Index + analytics are ON by default - site_url defaults to the production
+// domain (lib/site.ts), so a live build is indexable without any env var.
+// A staging build opts OUT by setting PUBLIC_SITE_URL to its own host
+// (e.g. https://web.revenuehunt.com). import.meta.env.PROD keeps `astro dev`
+// out of GA4/GTM. Prod wiring: GA4 gtag.js (G-62LE891EM2) + GTM (GTM-TDNVZDJ).
+const isProd = import.meta.env.PROD && SITE.site_url === "https://revenuehunt.com";
 ---
 
 <!doctype html>

@@ -3,7 +3,7 @@ export const SITE = {
   description:
     "Product recommendation quizzes for Shopify and Shopify Plus stores. Convert browsers into buyers with personalized quiz funnels.",
   app_url: import.meta.env.PUBLIC_APP_URL ?? "https://admin.revenuehunt.com",
-  site_url: import.meta.env.PUBLIC_SITE_URL ?? "http://localhost:4321",
+  site_url: import.meta.env.PUBLIC_SITE_URL ?? "https://revenuehunt.com",
   signup_url: "https://admin.revenuehunt.com/register/",
 };
 

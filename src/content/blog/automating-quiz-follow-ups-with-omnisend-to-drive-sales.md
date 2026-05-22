@@ -118,7 +118,7 @@ This initial investment of time and resources to set up the emails pays dividend
 
 For ecommerce merchants, combining Shop Quiz and Omnisend provides a powerful edge in an increasingly competitive market. This integration goes beyond mere automation; it empowers merchants to deliver deeply personalized experiences that resonate with customers on an emotional level. Where shoppers are inundated with generic marketing messages, the ability to tailor communication based on individual preferences not only captures attention but also fosters trust and loyalty. **Customers are more likely to return to a brand that understands their needs**, and this repeat engagement can significantly boost lifetime value.
 
-> ## Customers are more likely to return to a brand that understands their needs, and this repeat engagement can significantly boost lifetime value.
+> Customers are more likely to return to a brand that understands their needs, and this repeat engagement can significantly boost lifetime value.
 
 Moreover, the integration is a goldmine for data-driven decision-making. The insights gathered from quiz responses and follow-up interactions allow businesses to **understand their audience in granular detail**. This understanding enables merchants to refine their product offerings, develop marketing strategies that truly speak to customer interests, and even identify emerging trends within their target demographic. By continually analyzing and adapting based on this data, businesses can **stay agile and relevant,** ensuring they not only keep pace with the competition but also outshine it. This cycle of continuous improvement is key to long-term growth and positions merchants to scale their operations with confidence.
 

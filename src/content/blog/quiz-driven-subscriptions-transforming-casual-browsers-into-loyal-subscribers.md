@@ -35,20 +35,20 @@ For e-commerce merchants, the benefits are significant. Subscription offerings g
 
 ## How does it work?
 
-1.  1.  1️⃣ **Quiz Published:** Embed the quiz on your website and connect it to ReCharge or WooCommerce Subscriptions.
+1.  1️⃣ **Quiz Published:** Embed the quiz on your website and connect it to ReCharge or WooCommerce Subscriptions.
 
 ![E-commerce Subscriptions](/img/blog/quiz-driven-subscriptions-transforming-casual-browsers-into-loyal-subscribers/takequiz.png)
 
-1.  1.  2️⃣ **Customer Takes the Quiz:** Visitors answer tailored questions to reveal their preferences.
+2.  2️⃣ **Customer Takes the Quiz:** Visitors answer tailored questions to reveal their preferences.
 
 ![E-commerce Subscriptions](/img/blog/quiz-driven-subscriptions-transforming-casual-browsers-into-loyal-subscribers/quiz.png)
 
-1.  1.  3️⃣ **Get Recommendations:** The quiz provides curated product suggestions, including subscription options.
+3.  3️⃣ **Get Recommendations:** The quiz provides curated product suggestions, including subscription options.
 
 ![E-commerce Subscriptions](/img/blog/quiz-driven-subscriptions-transforming-casual-browsers-into-loyal-subscribers/recommendations.png)
 
-1.  4️⃣ **Easy Sign-Up:** Customers can opt into a subscription plan right from their quiz results.
-2.  5️⃣ **Ongoing Value:** Enjoy steady revenue and customer loyalty as subscribers receive regular, personalized shipments.
+4.  4️⃣ **Easy Sign-Up:** Customers can opt into a subscription plan right from their quiz results.
+5.  5️⃣ **Ongoing Value:** Enjoy steady revenue and customer loyalty as subscribers receive regular, personalized shipments.
 
 For consumers, the value lies in simplicity and convenience. Rather than scrambling to reorder a favorite face cream every month or worry about running out of their preferred coffee blend, subscribers know that their go-to products will arrive regularly. The quiz component ensures that what lands on their doorstep is precisely aligned with their tastes and requirements - no more guesswork, no more disappointing deliveries. Instead, **customers enjoy a reliable, tailored experience** that feels personal.
 

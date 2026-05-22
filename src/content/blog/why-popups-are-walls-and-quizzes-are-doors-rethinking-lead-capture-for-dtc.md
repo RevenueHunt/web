@@ -60,7 +60,7 @@ The popup captures no preference data, so you're forced to send generic campaign
 
 This is a doom loop, and the popup is the entry point. Every blast you send to an unsegmented list accelerates the cycle.
 
-"A popup is a wall. A quiz is a door. One blocks; the other invites. One extracts; the other exchanges."
+> "A popup is a wall. A quiz is a door. One blocks; the other invites. One extracts; the other exchanges."
 
 ## Walls vs. Doors: A Category Reframe
 
@@ -124,11 +124,11 @@ Open rates climb because the subject lines match the subscriber's actual concern
 
 The entire pipeline: quiz logic, Klaviyo sync, flow activation, is built with a no-code drag-and-drop builder. You configure the conditional logic (if answer = "oily skin" → recommend Product A), connect Klaviyo with a one-click OAuth, customize the design via CSS to match your brand, and publish. No developer. No agency ticket. No waiting until next month. You're the engineer.
 
-Revenue Per Recipient Comparison
-
-$0.08 → $0.25+
-
-Popup-captured leads vs. quiz-captured leads with segmented flows - a **3x lift** in email revenue without growing your list by a single subscriber.
+> **Revenue Per Recipient Comparison**
+>
+> **$0.08 → $0.25+**
+>
+> Popup-captured leads vs. quiz-captured leads with segmented flows - a **3x lift** in email revenue without growing your list by a single subscriber.
 
 ## What This Looks Like in Practice
 
@@ -166,17 +166,11 @@ Not all lead capture methods are equal. Here's a diagnostic framework for evalua
  ╱                      ╲  Standard popup. Zero context.
 ╱────────────────────────╲ Generic funnel. RPR: lowest and declining.</pre>
 
-Tier 1 - Email Only
-
-The standard popup model. Captures volume but zero context. Every lead enters the same generic funnel. RPR is low and declining because you can't segment, personalize, or target. This is where most DTC brands are stuck.
-
-Tier 2 - Email + Basic Preference
-
-A step up – some tools now offer a single preference question alongside the email capture. Better than Tier 1, but still architecturally an interruption and limited to one or two data points. Not enough to build meaningful conditional splits in your Klaviyo flows.
-
-Tier 3 - Email + Rich Zero-Party Profile
-
-The quiz model. Five to ten explicit data points captured per lead, synced directly to your email platform as actionable properties. Every lead enters a specific flow based on their stated needs. RPR is highest. List engagement is highest. Churn is lowest. The quiz doesn't just capture the lead, it qualifies them.
+| Tier | What it captures |
+|---|---|
+| **Tier 1 - Email Only** | The standard popup model. Captures volume but zero context. Every lead enters the same generic funnel. RPR is low and declining because you can't segment, personalize, or target. This is where most DTC brands are stuck. |
+| **Tier 2 - Email + Basic Preference** | A step up – some tools now offer a single preference question alongside the email capture. Better than Tier 1, but still architecturally an interruption and limited to one or two data points. Not enough to build meaningful conditional splits in your Klaviyo flows. |
+| **Tier 3 - Email + Rich Zero-Party Profile** | The quiz model. Five to ten explicit data points captured per lead, synced directly to your email platform as actionable properties. Every lead enters a specific flow based on their stated needs. RPR is highest. List engagement is highest. Churn is lowest. The quiz doesn't just capture the lead, it qualifies them. |
 
 Where does your current lead capture sit on this pyramid? If you're at Tier 1, you're competing on volume in a market that rewards relevance. Every month you stay there, the gap between your RPR and what's possible with segmented, preference-driven flows widens.
 

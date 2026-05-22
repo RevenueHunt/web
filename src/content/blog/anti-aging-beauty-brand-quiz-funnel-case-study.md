@@ -22,43 +22,35 @@ A 12-step qualifying quiz replaced the product page entirely. 9.8% quiz-to-purch
   
   
 
-01  
-Executive Summary
+## 01 · Executive Summary
 
 * * *
 
-## Not a conversion tool. A trust-building machine.
+### Not a conversion tool. A trust-building machine.
 
 A US-based direct-to-consumer anti-aging beauty device brand (specializing in at-home LED light therapy tools) needed a way to convert cold paid-social traffic into high-intent buyers of a premium-priced product. Instead of sending ad traffic to a collection page or a traditional product page, they deployed a **multi-step qualifying quiz funnel** as their primary ad landing page. The result: a sustained 9.8% quiz-to-purchase conversion rate, $691,128 in tracked quiz-attributed revenue across 90 days, and an average order value of $107.16 (42.64% higher than the prior quarter).
 
 This case study examines how they built that funnel, why the structure worked, and what other brands in the beauty device and skincare space can replicate from this approach.
 
-Key Results · 90-Day Period  
-Jan–Apr 2026
+**Key Results · 90-Day Period (Jan–Apr 2026)**
 
-Average Order Value  
-$107.16 ↑ 42.64%
-
-Conversion Rate  
-9.8% quiz response → purchase
-
-Quiz-Attributed Revenue  
-$691,128
-
-Quiz Completion Rate  
-75.2% 72.2K from 96.1K starts
+| Metric | Result |
+|---|---|
+| Average Order Value | $107.16 ↑ 42.64% |
+| Conversion Rate | 9.8% quiz response → purchase |
+| Quiz-Attributed Revenue | $691,128 |
+| Quiz Completion Rate | 75.2% (72.2K from 96.1K starts) |
 
 Verified via RevenueHunt analytics
 
   
   
 
-02  
-The Brand
+## 02 · The Brand
 
 * * *
 
-## Premium Anti-Aging Devices
+### Premium Anti-Aging Devices
 
 The brand operates in the premium at-home skincare device vertical. A fast-growing category driven by consumers seeking professional-grade results without the cost, inconvenience, or risk of in-clinic treatments. Their flagship product is a multi-function facial sculpting device priced at approximately $130 USD. The brand pairs the device with a complementary serum, frequently sold as a bundle.
 
@@ -74,12 +66,11 @@ The brand runs on Shopify, drives the majority of its customer acquisition throu
   
   
 
-03  
-The Challenge
+## 03 · The Challenge
 
 * * *
 
-## Converting Skeptical Buyers at a Premium Price Point
+### Converting Skeptical Buyers at a Premium Price Point
 
 Driving cold paid-social traffic directly to a product page for a $130 device faces a structural conversion problem. The target customer: a woman in her 60s or 70s who has tried daily moisturizers, anti-aging creams, hyaluronic acid, retinol and even clinical treatments like microneedling or Botox arrives with a history of disappointment. She has spent money before. **She has seen promises before. A static product page cannot acknowledge that history, address her specific concerns, or earn the trust required to justify a $130 purchase from a brand she's encountering for the first time.**
 
@@ -100,12 +91,11 @@ The three core conversion barriers this brand faced were:
   
   
 
-04  
-The Strategic Decision
+## 04 · The Strategic Decision
 
 * * *
 
-## The Quiz as the Ad Landing Page
+### The Quiz as the Ad Landing Page
 
 Rather than treating the quiz as a supplementary on-site tool (a popup, a navigation item, a "find your routine" experience), this brand made a structural decision: **the quiz IS the ad landing page.** All paid traffic from Meta campaigns routes directly to the quiz URL, not to the homepage or a product page. This means the quiz is not a nice-to-have conversion enhancement: **it is the first touchpoint a paid visitor encounters with the brand.**
 
@@ -121,12 +111,11 @@ How the qualifying quiz funnel works: cold ad traffic enters a 12-step experienc
   
   
 
-05  
-The Implementation
+## 05 · The Implementation
 
 * * *
 
-## A 12-Step Qualifying Funnel with Embedded Persuasion
+### A 12-Step Qualifying Funnel with Embedded Persuasion
 
 The quiz is hosted at a dedicated page URL and runs as the full-screen brand experience. It opens with a value-anchored hook (offering a significant discount incentive to begin) and then moves through a carefully sequenced flow that alternates between data-collection questions and embedded persuasion screens. The quiz uses a single results page delivering one focused recommendation rather than branching outcomes.
 
@@ -152,12 +141,11 @@ The quiz achieves a 75.2% overall completion rate (72.2K completions from 96.1K 
   
   
 
-06  
-The Results
+## 06 · The Results
 
 * * *
 
-## 90-Day Performance Data
+### 90-Day Performance Data
 
 ### 6.1 Headline Metrics
 
@@ -212,12 +200,11 @@ Beyond conversion, the quiz has generated a rich demand-signal dataset across 74
   
   
 
-07  
-What Made It Work
+## 07 · What Made It Work
 
 * * *
 
-## The Four Structural Decisions That Drove Performance
+### The Four Structural Decisions That Drove Performance
 
 ### 7.1 The Quiz as the First Touchpoint, Not a Secondary Tool
 
@@ -240,36 +227,24 @@ Opening with an age question does double duty: it captures a critical segmentati
   
   
 
-08  
-Lessons Learned
+## 08 · Lessons Learned
 
 * * *
 
-## What Other Brands Can Apply
+### What Other Brands Can Apply
 
-01  
-Use the quiz as the ad landing page, not a supplement to it.  
-Routing paid traffic directly into a qualifying quiz means every ad click enters a conversion experience designed to build trust before revealing price. This brand generated $691,128 in 90 days with the quiz as the sole entry point for cold traffic.
-
-02  
-Embed objection handling mid-quiz, not just on the results page.  
-The five persuasion checkpoints each appear immediately after the question that surfaces the relevant objection. This achieves 94–99.9% continuation rates at mid-funnel steps because resistance is addressed in real time, not deferred to the end.
-
-03  
-Ask about prior product and treatment history - then use it.  
-Questions about prior products tried are setup questions for the persuasion screens that follow. The "other solutions haven't worked" screen lands harder because the user has just admitted which solutions she tried. Map what your users have already tried, then validate their frustration.
-
-04  
-Lead with the result, not the product.  
-The results page opens with a personalized summary of the user's concerns before presenting the recommendation. Confirming fit before asking for the sale is the structural reason a 9.8% conversion rate is achievable for a $130 product from cold traffic.
-
-05  
-Age-segmentation data compounds over time.  
-With 74.3K complete quiz responses and a verified age concentration, this brand now holds a demand-intelligence dataset that fuels Klaviyo segmentation, ad creative targeting, and product development: value that extends well beyond the initial conversion metric.
-
-06  
-A 75% completion rate is achievable on a 12-step quiz.  
-The conventional wisdom that longer quizzes lose users does not hold when the content is immediately relevant to the respondent.
+1.  **Use the quiz as the ad landing page, not a supplement to it.**  
+    Routing paid traffic directly into a qualifying quiz means every ad click enters a conversion experience designed to build trust before revealing price. This brand generated $691,128 in 90 days with the quiz as the sole entry point for cold traffic.
+2.  **Embed objection handling mid-quiz, not just on the results page.**  
+    The five persuasion checkpoints each appear immediately after the question that surfaces the relevant objection. This achieves 94–99.9% continuation rates at mid-funnel steps because resistance is addressed in real time, not deferred to the end.
+3.  **Ask about prior product and treatment history - then use it.**  
+    Questions about prior products tried are setup questions for the persuasion screens that follow. The "other solutions haven't worked" screen lands harder because the user has just admitted which solutions she tried. Map what your users have already tried, then validate their frustration.
+4.  **Lead with the result, not the product.**  
+    The results page opens with a personalized summary of the user's concerns before presenting the recommendation. Confirming fit before asking for the sale is the structural reason a 9.8% conversion rate is achievable for a $130 product from cold traffic.
+5.  **Age-segmentation data compounds over time.**  
+    With 74.3K complete quiz responses and a verified age concentration, this brand now holds a demand-intelligence dataset that fuels Klaviyo segmentation, ad creative targeting, and product development: value that extends well beyond the initial conversion metric.
+6.  **A 75% completion rate is achievable on a 12-step quiz.**  
+    The conventional wisdom that longer quizzes lose users does not hold when the content is immediately relevant to the respondent.
 
   
   

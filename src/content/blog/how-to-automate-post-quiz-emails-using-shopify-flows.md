@@ -25,17 +25,17 @@ These tools work together to automate follow-up emails tailored to the preferenc
 
 Here's how you can set up these automated email flows to get the most out of your customer data and why it works:
 
-> ## Shop Quiz: Product Recommender + Shopify Flow = 10x Sales
+**Shop Quiz: Product Recommender + Shopify Flow = 10× sales**
 
-## Shop Quiz: Product Recommender +
+## Shop Quiz: Product Recommender
 
 [Shop Quiz: Product Recommender](https://apps.shopify.com/product-recommendation-quiz-revenuehunt) by [RevenueHunt](https://revenuehunt.com/) is an interactive app designed to create personalized product recommendation quizzes in Shopify. These quizzes help gather detailed customer preferences and information, speed-up the shopping experience and provide tailored product suggestions.
 
-## \+ Shopify Flow
+## + Shopify Flow
 
 [Shopify Flow](https://apps.shopify.com/flow) is an automation tool within Shopify that allows merchants to create custom workflows to automate repetitive tasks and processes. It helps streamline operations, reduce manual work, and improve efficiency by triggering specific actions based on predefined conditions.
 
-## \= 10x Sales
+## = 10× sales
 
 When these two apps work together, Shop Quiz collects essential customer data, including email, phone number, name, and custom tags based on quiz responses. This data is then sent to Shopify Customers, where it can be utilized by Shopify Flow to automate follow-up actions. For example, **when a customer completes a quiz** and provides their information, **Shopify Flow can automatically trigger personalized email campaigns**, add customer tags, or perform other marketing actions based on the quiz results.
 

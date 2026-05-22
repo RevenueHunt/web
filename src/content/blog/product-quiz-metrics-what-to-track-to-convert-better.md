@@ -77,11 +77,9 @@ Monitoring the average order value post-quiz completion provides insights into t
 
 **Conversion Rate**
 
-Number of Purchases after Quiz Completion
-
-Total Number of Quiz Completions
-
-× 100
+```
+Conversion rate = (Number of purchases after quiz completion ÷ Total number of quiz completions) × 100
+```
 
 To measure the conversion rate of your quiz, track the number of users who complete the quiz and proceed to make a purchase, then calculate the percentage of these users relative to the total number of quiz completions. This metric is essential because it reveals how effectively the quiz drives sales, aiding in optimizing the quiz design and marketing strategies to maximize revenue.  By using a Shop Quiz: Product Recommendation Quiz in your store you should expect conversion rates bumped up from 2% to 5%.
 

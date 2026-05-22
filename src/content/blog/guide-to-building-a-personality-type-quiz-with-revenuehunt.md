@@ -236,8 +236,10 @@ You can improve your Shopify product descriptions with clear explanations of why
 
 _For example:_
 
-1.  -   _"This moisturizer is perfect for dry skin, providing deep hydration and relief from flakiness."_
-    -   _"Ideal for oily skin, this cleanser helps control excess sebum without over-drying." These descriptions can simplify the explanation process and eliminate the need for custom logic._
+-   _"This moisturizer is perfect for dry skin, providing deep hydration and relief from flakiness."_
+-   _"Ideal for oily skin, this cleanser helps control excess sebum without over-drying."_
+
+These descriptions can simplify the explanation process and eliminate the need for custom logic.
 
 > _**💡Tip:** To show product descriptions on the results page go to the **Results Page Settings**  and under **Individual Product Settings**  activate **→ Show description.**_
 > 

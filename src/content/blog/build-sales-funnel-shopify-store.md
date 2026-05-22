@@ -54,7 +54,7 @@ Before we dive into the nitty-gritty details of how to build a sales funnel for 
 
 A sales funnel takes someone from being a visitor (someone who might have just found your brand through Social Media) and moves them through the buyer's journey to become a customer. **It's conformed by a number of steps designed to guide shoppers toward a buying decision**. These steps include marketing assets that actually do the selling for you (eg. quizzes, emails and landing pages).
 
-<figure class="wp-block-pullquote"><blockquote><p>Not having a sales funnel and driving paid traffic to your store is like approaching a complete stranger in the street and pitching them a $149 product. No way!&nbsp;</p></blockquote></figure>
+> Not having a sales funnel and driving paid traffic to your store is like approaching a complete stranger in the street and pitching them a $149 product. No way!
 
 Now, imagine entering a store and finding a friendly expert staff member who welcomes you and **helps you find exactly what you're looking for**. Not only that, but they also share current promotions and sales, discuss complementary items and walk you through the checkout process.
 
@@ -155,8 +155,6 @@ We'll have several Free+Shipping & Upsells funnels in place, one for each custom
 -   Customers with coily hair
 
 Then you would **create 4 different Free+Shipping & Upsells funnels**, one for each category, and different email drip campaigns drawing customers back to each of the funnels.
-
-\[IMG\]
 
 #### **Step 3: create a Free+Shipping & Upsells funnel**
 

@@ -32,7 +32,7 @@ Antonia joined forces with Lia, an experienced dermatologist, to create a skinca
 
 The quiz responses are reviewed by Lia and the AI model named "Liam," a name inspired by Lia and the addition of their CTO's initials. Liam is a key component in Skinology's personalization journey. It acts as the "brain" behind the skincare formulations, **synthesizing each customer's responses to determine the ideal ingredients and concentrations for their specific needs.** After receiving the quiz data, Liam generates a personalized skincare formula, which is then reviewed by Lia to ensure accuracy and safety. Once approved, the formulas are prepared in a lab specifically for each individual customer. It's a high-tech approach to personalization, backed by the hands-on knowledge of a dermatologist.
 
-> ## "We're trying to simplify skincare, so you use fewer, more effective products. That's why every question in the quiz matters - a different combination of answers can lead to vastly different formulations."
+> "We're trying to simplify skincare, so you use fewer, more effective products. That's why every question in the quiz matters - a different combination of answers can lead to vastly different formulations."
 
 "People find it difficult to understand what tailored skincare means. It's not a one-size-fits-all; every ingredient has a purpose," Antonia noted during our conversation. "We're trying to simplify skincare, so you use fewer, more effective products. That's why every question in the quiz matters - a different combination of answers can lead to vastly different formulations."
 
@@ -40,45 +40,28 @@ The quiz responses are reviewed by Lia and the AI model named "Liam," a name ins
 
 What sets Skinology apart from traditional skincare brands is its evolving formulations. Starting as early as four years old, customers can begin their Skinology journey, receiving **products that adapt to their skin as they grow**. After the initial quiz and the first set of products, Skinology prompts customers to retake a follow-up quiz upon repurchasing. This follow-up explores the effects of previously used products, any changes in skin condition, or lifestyle changes. Every reorder means a reformulated product to match the current needs of the customer.
 
-[  
-![Contorno de Ojos](/img/blog/skinology-and-shop-quiz-crafting-personalized-skincare-journeys-online/Skinology_ultrapersonalizado_Contornoojos_3.webp)
-
-## Contorno de Ojos
-
-](https://skinology.cl/products/contorno-de-ojos)
-
-[](https://skinology.cl/products/contorno-de-ojos)  
-[View Product](https://skinology.cl/products/contorno-de-ojos)
-
-[  
-![Serum](/img/blog/skinology-and-shop-quiz-crafting-personalized-skincare-journeys-online/Skinology_ultrapersonalizado_Serum_1.webp)
-
-## Serum
-
-](https://skinology.cl/products/serum)
-
-[](https://skinology.cl/products/serum)  
-[View Product](https://skinology.cl/products/serum)
-
-[  
-![Crema de Día](/img/blog/skinology-and-shop-quiz-crafting-personalized-skincare-journeys-online/Skinology_ultrapersonalizado_CremaDia_2.webp)
-
-## Crema de Día
-
-](https://skinology.cl/products/crema-dia)
-
-[](https://skinology.cl/products/crema-dia)  
-[View Product](https://skinology.cl/products/crema-dia)
-
-[  
-![Crema de Noche](/img/blog/skinology-and-shop-quiz-crafting-personalized-skincare-journeys-online/Skinology_ultrapersonalizado_Crema_Noche.webp)
-
-## Crema de Noche
-
-](https://skinology.cl/products/crema-noche)
-
-[](https://skinology.cl/products/crema-noche)  
-[View Product](https://skinology.cl/products/crema-noche)
+<div class="product-grid">
+<div class="product-card">
+<a href="https://skinology.cl/products/contorno-de-ojos"><img src="/img/blog/skinology-and-shop-quiz-crafting-personalized-skincare-journeys-online/Skinology_ultrapersonalizado_Contornoojos_3.webp" alt="Contorno de Ojos" loading="lazy" /></a>
+<p><strong>Contorno de Ojos</strong></p>
+<a href="https://skinology.cl/products/contorno-de-ojos">View product</a>
+</div>
+<div class="product-card">
+<a href="https://skinology.cl/products/serum"><img src="/img/blog/skinology-and-shop-quiz-crafting-personalized-skincare-journeys-online/Skinology_ultrapersonalizado_Serum_1.webp" alt="Serum" loading="lazy" /></a>
+<p><strong>Serum</strong></p>
+<a href="https://skinology.cl/products/serum">View product</a>
+</div>
+<div class="product-card">
+<a href="https://skinology.cl/products/crema-dia"><img src="/img/blog/skinology-and-shop-quiz-crafting-personalized-skincare-journeys-online/Skinology_ultrapersonalizado_CremaDia_2.webp" alt="Crema de Día" loading="lazy" /></a>
+<p><strong>Crema de Día</strong></p>
+<a href="https://skinology.cl/products/crema-dia">View product</a>
+</div>
+<div class="product-card">
+<a href="https://skinology.cl/products/crema-noche"><img src="/img/blog/skinology-and-shop-quiz-crafting-personalized-skincare-journeys-online/Skinology_ultrapersonalizado_Crema_Noche.webp" alt="Crema de Noche" loading="lazy" /></a>
+<p><strong>Crema de Noche</strong></p>
+<a href="https://skinology.cl/products/crema-noche">View product</a>
+</div>
+</div>
 
 "For example, we had a customer experiencing menopause-related acne for the first time in her life," Antonia recalled. "She had never struggled with acne before, but due to the hormonal changes, her skin reacted. Using Skinology, she was able to regain control of her skin, and the acne disappeared."
 
@@ -96,7 +79,7 @@ The backbone of Skinology's growth lies in using data efficiently while respecti
 
 Shop Quiz, coupled with Liam, helps Skinology maintain this level of customization, making it **accessible for customers to experience professional, personalized skincare without ever visiting a clinic.** It also allows Skinology to adapt its marketing strategies - retargeting specific groups with promotions or reminders, based on how customers progress through their skincare journeys.
 
-> ## "We're still learning and fine-tuning our approach, but as soon as we find our footing, we're ready to scale up."
+> "We're still learning and fine-tuning our approach, but as soon as we find our footing, we're ready to scale up."
 
 ## Challenges and the Future
 

@@ -164,23 +164,9 @@ Customer stories to check:
 
 ### Quick start (3 steps)
 
-1
-
-Create
-
-Pick a template (_skincare, size, gifting, nutrition_) and tailor **5–8 high-intent questions** with **conditional logic**.
-
-2
-
-Connect
-
-Map answers to **products, variants, or collections**. Configure **bundles/slots** to recommend full routines or sets.
-
-3
-
-Publish
-
-Embed inline, trigger as a popup, or link from menus/ads. **GA4** & **Meta Pixel** tracking works out of the box.
+1.  **Create** — Pick a template (_skincare, size, gifting, nutrition_) and tailor **5–8 high-intent questions** with **conditional logic**.
+2.  **Connect** — Map answers to **products, variants, or collections**. Configure **bundles/slots** to recommend full routines or sets.
+3.  **Publish** — Embed inline, trigger as a popup, or link from menus/ads. **GA4** & **Meta Pixel** tracking works out of the box.
 
 ### Flexible embed options
 
@@ -201,21 +187,12 @@ Modern stores demand both speed and trust. Our quiz is engineered for **Core Web
 
 ### Use cases by vertical
 
-Skincare / Beauty
-
-Build routines by skin type, concerns, actives, sensitivity; show usage tips to reduce returns.
-
-Apparel
-
-Size finder (fit prefs, key measurements) with variant-level recommendations and "why this size".
-
-Nutrition
-
-Goals, dietary restrictions, schedule; recommend stacks and subscription options.
-
-Gifting
-
-Quick, guided flows for budget, recipient, and occasion.
+| Vertical | Use case |
+|---|---|
+| Skincare / Beauty | Build routines by skin type, concerns, actives, sensitivity; show usage tips to reduce returns. |
+| Apparel | Size finder (fit prefs, key measurements) with variant-level recommendations and "why this size". |
+| Nutrition | Goals, dietary restrictions, schedule; recommend stacks and subscription options. |
+| Gifting | Quick, guided flows for budget, recipient, and occasion. |
 
 ### Integrations (expanded)
 

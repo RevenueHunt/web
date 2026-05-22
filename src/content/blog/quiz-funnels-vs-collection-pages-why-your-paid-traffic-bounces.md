@@ -48,8 +48,7 @@ Here's where it gets worse. Post-iOS14, your ad platform has less data to work w
 
 This isn't a one-time problem. It's a death spiral that compounds weekly. Every unconverted visit trains the algorithm in the wrong direction, and your next campaign launches from a weaker position than the last.
 
-**The Signal Loss Spiral**  
-Low CVR → fewer pixel events → degraded targeting → rising CPMs → lower ROAS → more spend needed → more traffic into the same broken funnel → repeat. The collection page isn't just failing to convert – it's actively degrading your ad performance over time.
+> **The Signal Loss Spiral:** Low CVR → fewer pixel events → degraded targeting → rising CPMs → lower ROAS → more spend needed → more traffic into the same broken funnel → repeat. The collection page isn't just failing to convert – it's actively degrading your ad performance over time.
 
 ### The Decision Fatigue Tax
 
@@ -114,25 +113,11 @@ The quiz funnel doesn't just fix your conversion rate. It reverses the signal lo
 
 Here's the mental model that ties this together. Think of your post-click experience as a three-layer stack, where each layer solves a specific structural problem in the modern paid acquisition funnel:
 
-Layer 3: Signal Reinforcement
-
-Higher CVR → more pixel events → better targeting → lower CPMs → improved ROAS
-
-Solves: The Signal Loss Death Spiral
-
-Layer 2: Data Capture
-
-Quiz responses sync to Klaviyo as customer tags → segmented flows → personalized lifecycle
-
-Solves: The "Dumb List" Problem
-
-Layer 1: Guidance
-
-Quiz replaces collection page as ad destination → 3–5 diagnostic questions → matched recommendation
-
-Solves: Decision Fatigue & Paradox of Choice
-
-Replaces: Ad → Collection Page → Hope
+| Layer | Mechanism | Solves / replaces |
+|---|---|---|
+| Layer 3: Signal Reinforcement | Higher CVR → more pixel events → better targeting → lower CPMs → improved ROAS | Solves: The Signal Loss Death Spiral |
+| Layer 2: Data Capture | Quiz responses sync to Klaviyo as customer tags → segmented flows → personalized lifecycle | Solves: The "Dumb List" Problem |
+| Layer 1: Guidance | Quiz replaces collection page as ad destination → 3–5 diagnostic questions → matched recommendation | Solves: Decision Fatigue & Paradox of Choice. Replaces: Ad → Collection Page → Hope |
 
 This is the modern alternative to the "Ad → Collection Page → Hope" funnel architecture. Each layer compounds the value of the layer below it: guidance drives conversion, conversion drives data, data drives signal quality, and signal quality drives acquisition efficiency.
 

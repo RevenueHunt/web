@@ -26,11 +26,11 @@ Adding a quiz app to your Shopify store is simple and can be done in just a few 
 
 ##### Product Recommendation Quiz
 
-Drive sales, segment your customers and grow your audience
+Drive sales, segment your customers and grow your audience.
 
-[get the app](https://admin.revenuehunt.com/s/affiliate_code)
+[Get the app](https://admin.revenuehunt.com/s/affiliate_code)
 
-Free plan available
+_Free plan available._
 
 ### Step 2: Create the Quiz
 
@@ -111,8 +111,8 @@ A shopping quiz improves the customers' product discovery experience and guides 
 
 ##### Product Recommendation Quiz
 
-Drive sales, segment your customers and grow your audience
+Drive sales, segment your customers and grow your audience.
 
-[Shopify Quiz app](https://admin.revenuehunt.com/s/affiliate_code)
+[Get the Shopify Quiz app](https://admin.revenuehunt.com/s/affiliate_code)
 
-Free plan available
+_Free plan available._

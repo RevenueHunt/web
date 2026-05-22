@@ -30,11 +30,11 @@ Because when someone completes your quiz, they're not an anonymous visitor anymo
 
 When a shopper takes your quiz, they're not just clicking around – they're **telling you what they want**, directly: their concerns, preferences, goals, even their price tolerance. Every quiz response is a micro-interview:
 
-"My skin type is oily."
-
-"I'm struggling with breakouts."
-
-"I prefer lightweight textures."
+> "My skin type is oily."
+>
+> "I'm struggling with breakouts."
+>
+> "I prefer lightweight textures."
 
 That's not guesswork, it's declared intent. This kind of data (willingly given, contextually relevant, and stored inside your Shopify store) is the foundation of modern marketing. It's not subject to browser limitations, cookie banners, or pixel fires. It's **first-party, consent-based, and infinitely more reliable**.
 
@@ -125,17 +125,9 @@ The outcome is **explainable conversion data:** not guesses, not approximations,
 
 You don't need Meta Pixel or GA4 to understand your quiz performance. You don't even need to leave Shopify. You just need the **right kind of data.**  Data that's:
 
-## **First-party**
-
-## (collected directly from your customers)
-
-## **Contextual**
-
-## (linked to what they said and did)
-
-## **Revenue-tied**
-
-## (connected to actual orders, not vanity metrics)
+-   **First-party** (collected directly from your customers)
+-   **Contextual** (linked to what they said and did)
+-   **Revenue-tied** (connected to actual orders, not vanity metrics)
 
 Shopify already knows _what's selling._ Your quiz already knows _why it sells._ Together, they form the only analytics stack that actually matters: **clear, compliant, and conversion-focused.**
 

@@ -30,15 +30,15 @@ This is the graveyard problem but not a Klaviyo problem. Klaviyo is operating ex
 
 Every generic campaign you send to this list isn't is underperforming and actively eroding your sender reputation, accelerating unsubscribe rates, and training inbox providers to deprioritize your domain. The graveyard expands with every blast.
 
-The Core Problem
+## The Core Problem
 
 The fix isn't in Klaviyo's settings. It's in the data you're **not** collecting. Don't worry, there's a easy mechanism to collect it.
 
 * * *
 
-Data Starvation Crisis
+## Data Starvation Crisis
 
-## A Clinical Diagnosis
+### A Clinical Diagnosis
 
 ### The Dumb List Problem
 
@@ -79,22 +79,22 @@ This degrades your deliverability score over time. Degraded deliverability means
 
 You've looked at solutions before. You've evaluated quiz tools that promised "Klaviyo integration." You installed one. The integration was shallow: tags synced inconsistently, properties didn't map correctly, or support informed you that you'd need Zapier as middleware.
 
-The Pattern You Know
+#### The Pattern You Know
 
 "The tags didn't sync to Klaviyo."  ·  "Support told me I need Zapier to make it work."  ·  "I can't segment by skin type, only by product bought." These aren't edge cases: they're the standard experience with quiz tools that treat Klaviyo integration as a checkbox feature.
 
 The conclusion most retention marketers reach: quiz-to-Klaviyo enrichment doesn't work. **That's the wrong conclusion.** The problem was the tool, not the strategy.
 
-"Your Klaviyo account is a Ferrari running on fumes.  
-The quiz is the fuel."
+> "Your Klaviyo account is a Ferrari running on fumes.  
+> The quiz is the fuel."
 
 Klaviyo's segmentation engine is among the most powerful in the industry. But it can only segment on data it actually has. The quiz is the mechanism that supplies the preference data Klaviyo was designed to use but cannot generate on its own.
 
 * * *
 
-The Missing Layer
+## The Missing Layer
 
-## Zero-Party Data as Klaviyo Infrastructure
+### Zero-Party Data as Klaviyo Infrastructure
 
 ### Reframing the Data Hierarchy
 
@@ -118,9 +118,9 @@ Five questions. Five properties. Five segments you couldn't build yesterday.
 
 * * *
 
-Solution Architecture
+## Solution Architecture
 
-## Quiz to Klaviyo, End to End
+### Quiz to Klaviyo, End to End
 
 ### The Data Capture Instrument
 
@@ -172,13 +172,13 @@ The enriched segment is 13% of the total list and generates 40%+ of email revenu
 
 * * *
 
-Real-World Proof
+## Real-World Proof
 
-## Three Scenarios: What Enrichment Actually Looks Like
+### Three Scenarios: What Enrichment Actually Looks Like
 
-Scenario 01
+#### Scenario 01
 
-The RPR Transformation
+##### The RPR Transformation
 
 A skincare brand with 60,000 Klaviyo profiles - all captured via generic popup discount. Campaign RPR: $0.06. They launch a "Find Your Perfect Routine" quiz with RevenueHunt, embedded on the homepage and used as the primary Meta ad landing page.
 
@@ -188,9 +188,9 @@ RPR on quiz-enriched profiles: $0.22. The enriched segment is 13% of the list. I
 
 ↑ $0.06 RPR → $0.22 RPR on enriched profiles in 90 days
 
-Scenario 02
+#### Scenario 02
 
-The Hidden Demand Signal
+##### The Hidden Demand Signal
 
 A supplement brand has organized its entire email program around "energy" (the best-selling product category). All flows reference energy and all campaigns feature energy products. The assumption: the audience is primarily energy-focused.
 
@@ -200,9 +200,9 @@ A dedicated "Gut Health Journey" flow is created targeting this quiz segment. Wi
 
 38% of subscribers wanted gut health content which was invisible in all purchase data
 
-Scenario 03
+#### Scenario 03
 
-The Deliverability Recovery
+##### The Deliverability Recovery
 
 A beauty brand tracks their average open rate declining from 28% to 19% over 12 months. Standard diagnostics (list hygiene, sunset flow, domain warm-up) don't reverse it. The root cause is structural: over-sending generic campaigns to a broad list that generates low engagement because the content isn't relevant.
 
@@ -212,23 +212,23 @@ After enriching 12,000 profiles with quiz data and switching to segment-specific
 
 * * *
 
-Self-Assessment Framework
+## Self-Assessment Framework
 
-## The Klaviyo Data Maturity Model
+### The Klaviyo Data Maturity Model
 
 Use this as a diagnostic. Run through it with your actual account open.
 
 <table style="width:100%;border-collapse:collapse;font-size:14px;"><thead><tr><th style="background:#0f172a;color:#fff;padding:13px 16px;text-align:left;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;">Stage</th><th style="background:#0f172a;color:#fff;padding:13px 16px;text-align:left;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;">Name</th><th style="background:#0f172a;color:#fff;padding:13px 16px;text-align:left;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;">Data Available</th><th style="background:#0f172a;color:#fff;padding:13px 16px;text-align:left;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;">Segmentation</th><th style="background:#0f172a;color:#fff;padding:13px 16px;text-align:left;font-size:12px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;">RPR Signal</th></tr></thead><tbody><tr><td style="padding:14px 16px;border-bottom:1px solid #e2e8f0;background:#ffffff;"><span style="display:inline-block;background:#fee2e2;color:#991b1b;font-weight:800;font-size:12px;padding:3px 10px;border-radius:5px;">Stage 1</span></td><td style="padding:14px 16px;border-bottom:1px solid #e2e8f0;background:#ffffff;font-weight:700;color:#0f172a;">The Graveyard</td><td style="padding:14px 16px;border-bottom:1px solid #e2e8f0;background:#ffffff;color:#334155;">Email + name only</td><td style="padding:14px 16px;border-bottom:1px solid #e2e8f0;background:#ffffff;color:#334155;">Engagement recency only</td><td style="padding:14px 16px;border-bottom:1px solid #e2e8f0;background:#ffffff;"><span style="display:inline-block;background:#fee2e2;color:#991b1b;font-size:11px;font-weight:700;padding:2px 8px;border-radius:100px;">Low &amp; declining</span></td></tr><tr><td style="padding:14px 16px;border-bottom:1px solid #e2e8f0;background:#f8fafc;"><span style="display:inline-block;background:#fef3c7;color:#92400e;font-weight:800;font-size:12px;padding:3px 10px;border-radius:5px;">Stage 2</span></td><td style="padding:14px 16px;border-bottom:1px solid #e2e8f0;background:#f8fafc;font-weight:700;color:#0f172a;">The Guesswork</td><td style="padding:14px 16px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;">Email + purchase history</td><td style="padding:14px 16px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;">Behavioral inference</td><td style="padding:14px 16px;border-bottom:1px solid #e2e8f0;background:#f8fafc;"><span style="display:inline-block;background:#fef3c7;color:#92400e;font-size:11px;font-weight:700;padding:2px 8px;border-radius:100px;">Stagnant</span></td></tr><tr><td style="padding:14px 16px;border-bottom:1px solid #e2e8f0;background:#ffffff;"><span style="display:inline-block;background:#d1fae5;color:#065f46;font-weight:800;font-size:12px;padding:3px 10px;border-radius:5px;">Stage 3</span></td><td style="padding:14px 16px;border-bottom:1px solid #e2e8f0;background:#ffffff;font-weight:700;color:#0f172a;">The Intelligence</td><td style="padding:14px 16px;border-bottom:1px solid #e2e8f0;background:#ffffff;color:#334155;">Email + purchase + quiz data</td><td style="padding:14px 16px;border-bottom:1px solid #e2e8f0;background:#ffffff;color:#334155;">Stated preference + behavior</td><td style="padding:14px 16px;border-bottom:1px solid #e2e8f0;background:#ffffff;"><span style="display:inline-block;background:#d1fae5;color:#065f46;font-size:11px;font-weight:700;padding:2px 8px;border-radius:5px;">Jumping</span></td></tr><tr><td style="padding:14px 16px;background:#f8fafc;"><span style="display:inline-block;background:#dbeafe;color:#1e40af;font-weight:800;font-size:12px;padding:3px 10px;border-radius:5px;">Stage 4</span></td><td style="padding:14px 16px;background:#f8fafc;font-weight:700;color:#0f172a;">The Engine</td><td style="padding:14px 16px;background:#f8fafc;color:#334155;">Stage 3 + predictive modeling</td><td style="padding:14px 16px;background:#f8fafc;color:#334155;">Self-optimizing dynamic content</td><td style="padding:14px 16px;background:#f8fafc;"><span style="display:inline-block;background:#dbeafe;color:#1e40af;font-size:11px;font-weight:700;padding:2px 8px;border-radius:5px;">Top 5% DTC</span></td></tr></tbody></table>
 
-Where Are You?
+### Where Are You?
 
 **If you're honest with yourself:** 70%+ of Shopify brands sit at Stage 1 or Stage 2. Moving from Stage 1 to Stage 3 is achievable within 90 days. The quiz is the bridge: no platform migration, agency engagement or data warehouse required.
 
 * * *
 
-Why It Failed Before
+## Why It Failed Before
 
-## What's Different This Time
+### What's Different This Time
 
 ### Generic Popup Tools Created This Problem
 
@@ -242,7 +242,7 @@ High-end quiz platforms that offer deep Klaviyo integrations carry enterprise pr
 
 Mid-tier quiz apps advertise Klaviyo integration but deliver it poorly. Tags sync inconsistently and custom property mapping is limited. Middleware requirements introduce lag and failure points. The Klaviyo enrichment strategy fails not because the idea is wrong, but because the implementation is insufficient.
 
-The Differentiator
+### The Differentiator
 
 The differentiator is not the quiz. It's the **native Klaviyo integration**: one-click OAuth connection, real-time property sync, no middleware, exact property mapping you define, reliable data flow that doesn't require you to check it weekly.
 
@@ -256,5 +256,5 @@ Your Klaviyo account is only as powerful as the data inside it. Start feeding it
 
 No code required. Native Klaviyo sync. Data flows the same day you launch.
 
-Your list is a graveyard.  
-The quiz is the resurrection.
+> Your list is a graveyard.  
+> The quiz is the resurrection.

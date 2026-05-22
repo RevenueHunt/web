@@ -43,14 +43,10 @@ Note that it cannot directly recommend collections of products, though it's poss
 
 The product recommendation algorithm functions as a **voting system**, ensuring that customers receive the most relevant product suggestions based on their choices throughout the quiz:
 
--   <pre>Product variants are linked to quiz choices.</pre>
-    
--   <pre>Each time a customer selects a choice, all linked products receive ⬆️ one vote.</pre>
-    
--   <pre>The results page displays the <strong>most voted product variants</strong>, sorted by the number of votes.</pre>
-    
--   <pre>If there's a tie in votes, the order is randomized.</pre>
-    
+-   Product variants are linked to quiz choices.
+-   Each time a customer selects a choice, all linked products receive ⬆️ one vote.
+-   The results page displays the **most voted product variants**, sorted by the number of votes.
+-   If there's a tie in votes, the order is randomized.
 
 This voting-based approach allows you to offer personalized, highly relevant recommendations.
 
@@ -187,7 +183,7 @@ As a Shopify merchant, you know how important it is to connect your customers wi
 
 By using [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/), you can make that connection more personal and effective. The app's voting system and inclusion/exclusion settings let you customize each recommendation, while specialized product blocks help make the **shopping journey feel intuitive and helpful.**
 
-## _❝ Shop Quiz helps connect customers to the right products, increasing the chance of sales and satisfaction.❞_
+> _Shop Quiz helps connect customers to the right products, increasing the chance of sales and satisfaction._
 
 When customers see products that match their needs at just the right time, they're more likely to buy - and be happy with their purchase. Whether you want to guide them through a simple product list, build a multi-step skincare routine, or promote subscriptions, [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) gives you the tools to make those recommendations feel personal and meaningful.
 

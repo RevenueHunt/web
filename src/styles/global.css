@@ -105,3 +105,43 @@
   height: auto;
   border-radius: 0.75rem;
 }
+
+/* YouTube embeds in blog posts: force a responsive 16:9 frame. Migrated
+   WordPress iframes carry invalid height="400px" attributes (or none at
+   all), which browsers ignore — collapsing the video to ~150px tall. */
+[data-pagefind-body] iframe[src*="youtube"] {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  margin-block: 1.5rem;
+  border: 0;
+  border-radius: 0.5rem;
+}
+
+/* Product showcase grid in rendered markdown (e.g. the Skinology post):
+   compact, evenly-sized thumbnails instead of full-width product images. */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-block: 2rem;
+}
+@media (min-width: 640px) {
+  .product-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+.product-grid .product-card {
+  text-align: center;
+}
+.product-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border-radius: 0.5rem;
+}
+.product-grid p {
+  margin: 0.75rem 0 0.25rem;
+}

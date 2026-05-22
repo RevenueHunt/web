@@ -17,7 +17,7 @@ draft: false
 
 In the beauty industry, brands that prioritize natural ingredients and sustainable practices are gaining significant traction. [Daughterela](https://www.daughterela.com/), founded in 2019, is one such brand that has captured the hearts of makeup enthusiasts who value both aesthetics and skin health.
 
-![](/img/blog/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/Daughterela-Case-Study-1.png)
+![Daughterela Case Study](/img/blog/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/Daughterela-Case-Study-1.png)
 
 This case study explores how Daughterela has positioned itself as a go-to brand for natural, hypoallergenic makeup and how it continues to innovate in product development and customer engagement, particularly through the use of the [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) app.
 

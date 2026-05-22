@@ -21,7 +21,7 @@ At [RevenueHunt](https://revenuehunt.com/), we've gathered insights from our �
 
 This guide is packed with📝 **short practical tips to ensure your product recommendation quiz is a success from the start**. You'll find here everything you need to build a powerful e-commerce tool that converts browsers into buyers.
 
-![](/img/blog/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/Building-your-first-Porduct-Quiz.png)
+![Building your first Porduct Quiz](/img/blog/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/Building-your-first-Porduct-Quiz.png)
 
 Follow these expert tips to create a quiz that engages your audience, boosts your sales, and elevates your e-commerce strategy:
 
@@ -70,7 +70,7 @@ Follow these expert tips to create a quiz that engages your audience, boosts you
 
 > **💡Tip**: All quizzes created with [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) app are automatically optimized for both desktop and mobile viewing.
 > 
-> ![](/img/blog/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/product-recommendation-quiz-beauty.png)
+> ![Product recommendation quiz beauty](/img/blog/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/product-recommendation-quiz-beauty.png)
 
 ## Visuals & CTA's
 

@@ -19,7 +19,7 @@ draft: false
 
 **Top 10 Tips for Small E-Retailers Competing Against Ecommerce Giants**
 
-![](/img/blog/top-10-tips-for-small-e-retailers-competing-against-ecommerce-giants/Top-10-Tips-for-Small-E-Retailers-Competing-Against-Ecommerce-Giants-1024x683.png)
+![Top Tips for Small E Retailers Competing Against Ecommerce Giants](/img/blog/top-10-tips-for-small-e-retailers-competing-against-ecommerce-giants/Top-10-Tips-for-Small-E-Retailers-Competing-Against-Ecommerce-Giants-1024x683.png)
 
 In the online business world, many small shops cannot compete with the big giant and cease to exist after a few years. Unfortunately, the same is often true for the online world of e-commerce.
 

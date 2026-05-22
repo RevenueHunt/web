@@ -132,12 +132,12 @@ You don't have to believe us. **You can test all the features of the app complet
 
 Get the app:
 
-[![](/img/blog/10-brands-that-need-a-product-recommendation-quiz-with-examples/Shopify-Logo-e1632343513730.png)](https://apps.shopify.com/product-recommendation-quiz-revenuehunt)
+[![Shopify Logo](/img/blog/10-brands-that-need-a-product-recommendation-quiz-with-examples/Shopify-Logo-e1632343513730.png)](https://apps.shopify.com/product-recommendation-quiz-revenuehunt)
 
-[![](/img/blog/10-brands-that-need-a-product-recommendation-quiz-with-examples/WooCommerce-Logo-e1632341608572.jpg)](https://woocommerce.com/products/product-recommendation-quiz-for-woocommerce/)
+[![WooCommerce Logo](/img/blog/10-brands-that-need-a-product-recommendation-quiz-with-examples/WooCommerce-Logo-e1632341608572.jpg)](https://woocommerce.com/products/product-recommendation-quiz-for-woocommerce/)
 
-[![](/img/blog/10-brands-that-need-a-product-recommendation-quiz-with-examples/WordPress-logotype-standard-e1632341692228.png)](https://wordpress.org/plugins/product-recommendation-quiz-for-ecommerce/)
+[![WordPress logotype standard](/img/blog/10-brands-that-need-a-product-recommendation-quiz-with-examples/WordPress-logotype-standard-e1632341692228.png)](https://wordpress.org/plugins/product-recommendation-quiz-for-ecommerce/)
 
-[![](/img/blog/10-brands-that-need-a-product-recommendation-quiz-with-examples/magento-logo.png)](https://revenuehunt.com/product-recommendation-quiz-for-magento/)
+[![Magento logo](/img/blog/10-brands-that-need-a-product-recommendation-quiz-with-examples/magento-logo.png)](https://revenuehunt.com/product-recommendation-quiz-for-magento/)
 
-[![](/img/blog/10-brands-that-need-a-product-recommendation-quiz-with-examples/BigCommerce-logo-dark.png)](https://www.bigcommerce.com/apps/product-recommendation-quiz/)
+[![BigCommerce logo dark](/img/blog/10-brands-that-need-a-product-recommendation-quiz-with-examples/BigCommerce-logo-dark.png)](https://www.bigcommerce.com/apps/product-recommendation-quiz/)

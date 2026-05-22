@@ -318,7 +318,7 @@ const linkedinShare = `https://www.linkedin.com/sharing/share-offsite/?url=${enc
                   <li>
                     <a href={postHref(p)} class="group block overflow-hidden rounded-lg border border-slate-200 bg-white transition hover:border-[#16161D]">
                       {p.data.featuredImage ? (
-                        <img src={p.data.featuredImage} alt="" loading="lazy" class="h-40 w-full object-cover" />
+                        <img src={p.data.featuredImage} alt={p.data.title} loading="lazy" class="h-40 w-full object-cover" />
                       ) : (
                         <div class="h-40 w-full bg-slate-100" />
                       )}

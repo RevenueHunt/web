@@ -44,7 +44,7 @@ The top reason niche stores don't convert even after getting targeted traffic is
 
 Shopify's RevenueHunt: Recommender Quiz app is like a **personal shopping assistant for you customers**. It'll ask a bunch of questions from your visitors in quiz format. Once the customer checks the MCQs, he'll be redirected to the right products. This not only helps with conversion as well as with the cart abandonment issue. 
 
-![](/img/blog/free-shopify-product-recommendation-apps/product-recommendation-quiz-logo.png)
+![Product recommendation quiz logo](/img/blog/free-shopify-product-recommendation-apps/product-recommendation-quiz-logo.png)
 
 ##### Product Recommendation Quiz
 
@@ -90,7 +90,7 @@ _Key features of_ _UpPromote: Affiliate & Referral_ _by Secomapp:_
 -   **Support to recruit affiliates** by free listing on [**UpPromote Marketplace**](https://marketplace.uppromote.com/market-place?utm_source=uppromote_blog&utm_medium=bfcm_article&utm_campaign=bfcm_article); or with a Multi-level Marketing feature.
 -   **The customer referral feature** allows your customers to refer your products to their friends and family and earn a small commission. 
 
-![](/img/blog/free-shopify-product-recommendation-apps/NEW_logo-1.png)
+![NEW logo](/img/blog/free-shopify-product-recommendation-apps/NEW_logo-1.png)
 
 ##### UpPromote: Affiliate & Referral
 
@@ -114,7 +114,7 @@ Amplify also enables you to add an optional discount to your bundles, making the
 • Widgets can be fully customized to blend seamlessly into your existing pages  
 • Display product deals on-page or as a popup
 
-![](/img/blog/free-shopify-product-recommendation-apps/amplify-icon-store.webp)
+![Amplify icon store](/img/blog/free-shopify-product-recommendation-apps/amplify-icon-store.webp)
 
 ##### Bundles App | Amplify
 
@@ -152,7 +152,7 @@ The post purchase experience will re-engage your customers. Rather than using co
 
 While the upselling & cross selling recommendation will be automated, you'll be able to use the drag and drop interface to fully customize the page.
 
-![](/img/blog/free-shopify-product-recommendation-apps/reconvert-logo.png)
+![Reconvert logo](/img/blog/free-shopify-product-recommendation-apps/reconvert-logo.png)
 
 ##### ReConvert Upsell & Cross Sell
 
@@ -192,7 +192,7 @@ This app lets you make personalized recommendations anywhere on your eCommerce s
 
 You'll also be able to club products for upsell which are based on best sellers, new arrivals, collections, product types, product vendors, product tags and recently viewed products.
 
-![](/img/blog/free-shopify-product-recommendation-apps/product-recommendations-pro.png)
+![Product recommendations pro](/img/blog/free-shopify-product-recommendation-apps/product-recommendations-pro.png)
 
 ##### Product Recommendations PRO
 
@@ -210,7 +210,7 @@ In the year 2019, Also Bought is awarded as one of the best Shopify app. You can
 
 The automated recommendations can be altered manually or via filters like collection, product type, etc. You'll also get to decide the position of the widget on the product pages and checkout cart.
 
-![](/img/blog/free-shopify-product-recommendation-apps/also-bought.png)
+![Also bought](/img/blog/free-shopify-product-recommendation-apps/also-bought.png)
 
 ##### Also Bought • Cross Sell
 

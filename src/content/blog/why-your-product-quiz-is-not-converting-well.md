@@ -21,7 +21,7 @@ Product quizzes are a great way to personalize shopping experiences and boost sa
 
 Here are some common reasons **why your quiz is not working well and how you can fix it**.
 
-![](/img/blog/why-your-product-quiz-is-not-converting-well/Purple-Modern-Line-Chart-Diagram-Graph.png)
+![Purple Modern Line Chart Diagram Graph](/img/blog/why-your-product-quiz-is-not-converting-well/Purple-Modern-Line-Chart-Diagram-Graph.png)
 
 ## 🎯  You Don't Have Clear Goals
 

@@ -29,7 +29,7 @@ The founder's journey began with the everyday struggles of parenting three "extr
 At the heart of Extreme Kids World's success are its best-selling products like Congo Playsets and Skywalker Trampolines, alongside favorites such as 2MamaBees Playhouses and Bijou Build play structures.
 
 [  
-![](/img/blog/extreme-kids-world-leading-e-commerce-with-interactive-personalization/BijouBuildMainstaywithcargonet_1_-min_627x627.webp)](https://extremekidsworld.com/products/bijou-build-mainstay)
+![Bijou Build Mainstaywithcargonet](/img/blog/extreme-kids-world-leading-e-commerce-with-interactive-personalization/BijouBuildMainstaywithcargonet_1_-min_627x627.webp)](https://extremekidsworld.com/products/bijou-build-mainstay)
 
 Bijou Build Mainstay
 

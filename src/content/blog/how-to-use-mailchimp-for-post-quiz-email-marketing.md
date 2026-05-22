@@ -22,7 +22,7 @@ Using MailChimp for your post-quiz email marketing can transform how you engage 
 
 Imagine **sending highly personalized emails that speak directly to your customers' needs**, based on the answers they provide in your quizzes. This approach has a higher chance of grabbing the customer's attention and convincing them to buy from you because you know what the customer is looking for (they told you themselves!).
 
-![](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/automate-email-with-mailchimp.png)
+![Automate email with mailchimp](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/automate-email-with-mailchimp.png)
 
 Here's how you can use [MailChimp](https://mailchimp.com/) together with RevenueHunt's [Shop Quiz: Product Recommendation Quiz](https://apps.shopify.com/product-recommendation-quiz-revenuehunt) app to make the most out of this personalized follow-up, **boost your sales, and why it works** so well.
 
@@ -99,7 +99,7 @@ Once the quiz answers are covered with customer tags, all the information you ne
 
 You can start by setting up **Automations** (automated email flows) to trigger **based on specific tags** or quiz completions.
 
-![](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-automations.png)
+![Mailchimp automations](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-automations.png)
 
 Then, create different email templates in MailChimp that correspond to different quiz outcomes or automation flows.
 
@@ -120,13 +120,13 @@ In MailChimp, you create an email series targeting these tags. For instance:
 **Day 3:** Customer testimonials and reviews for oily skin products.
 
 [  
-![](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-newsletter-2.png)  
+![Mailchimp newsletter](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-newsletter-2.png)  
 ](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-newsletter-2.png)
 
 **Day 7:** Special discount on recommended products for oily skin.
 
 [  
-![](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-newsletter-3.png)  
+![Mailchimp newsletter](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-newsletter-3.png)  
 ](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-newsletter-3.png)
 
 ## Key Takeaways

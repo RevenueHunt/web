@@ -21,7 +21,7 @@ Maintaining a perfect 5.0 review score is no small feat, and the **[Product Reco
 
 **But what exactly makes this app so beloved by users?** Let's dive into the top reasons, straight from the feedback of satisfied customers.
 
-![](/img/blog/why-product-recommendation-quiz-app-maintains-a-50-review-score-in-woocommerce-find-out-here/woocommerce-reviews-banner.png)
+![Woocommerce reviews banner](/img/blog/why-product-recommendation-quiz-app-maintains-a-50-review-score-in-woocommerce-find-out-here/woocommerce-reviews-banner.png)
 
 ## What is the Product Recommendation Quiz App?
 

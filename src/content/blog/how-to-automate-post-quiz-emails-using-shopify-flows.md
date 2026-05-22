@@ -21,7 +21,7 @@ While Product Recommendation Quizzes help e-commerce businesses improve conversi
 
 These tools work together to automate follow-up emails tailored to the preferences your customers share through quizzes. This process not only boosts engagement and sales but also gives you valuable insights into what your customers want.
 
-![](/img/blog/how-to-automate-post-quiz-emails-using-shopify-flows/Copy-of-Beige-Minimalist-Venn-Diagram-Self-Care-Instagram-Post.png)
+![Beige Minimalist Venn Diagram Self Care Instagram Post](/img/blog/how-to-automate-post-quiz-emails-using-shopify-flows/Copy-of-Beige-Minimalist-Venn-Diagram-Self-Care-Instagram-Post.png)
 
 Here's how you can set up these automated email flows to get the most out of your customer data and why it works:
 

@@ -19,7 +19,7 @@ draft: false
 
 ECommerce is becoming more competitive by the day, and every online store owner is looking for innovative ways to increase conversions and maximize revenue. If you're using product recommendation quizzes on your Shopify store, tracking their impact on sales is crucial. With RevenueHunt's tracking features, you can directly measure **how quizzes contribute to your store's bottom line** - and use this data to scale your business.
 
-![](/img/blog/how-to-track-and-maximize-quiz-driven-revenue-in-shopify/Track-Quiz-Revenue-FT-Image.png)
+![Track Quiz Revenue](/img/blog/how-to-track-and-maximize-quiz-driven-revenue-in-shopify/Track-Quiz-Revenue-FT-Image.png)
 
 > ## Why **Tracking Quiz Revenue Matters** for Your Business
 > 
@@ -147,7 +147,7 @@ By continuously refining your quiz and marketing approach using real-time revenu
 
 Let's think of SkinGlow, a Shopify-based skincare brand, faces a common eCommerce challenge: high bounce rates and low conversion rates. Despite offering a wide range of high-quality skincare products, many customers feel overwhelmed by choices and leave without making a purchase. To solve this, SkinGlow introduces a **skincare routine quiz** using RevenueHunt, designed to help customers find the perfect products for their skin type.
 
-![](/img/blog/how-to-track-and-maximize-quiz-driven-revenue-in-shopify/product-recommendation-quiz-beauty.png)
+![Product recommendation quiz beauty](/img/blog/how-to-track-and-maximize-quiz-driven-revenue-in-shopify/product-recommendation-quiz-beauty.png)
 
 The quiz asks users about their skin concerns, preferences, and lifestyle, providing them with a personalized skincare regimen at the end. To evaluate the impact of this new tool, SkinGlow integrats their quiz with **Shopify Revenue Reports** and **Google Analytics**, allowing them to track quiz-driven purchases and optimize their marketing strategy.
 

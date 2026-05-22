@@ -16,7 +16,7 @@ draft: false
 
 # Product Recommendation Quiz
 
-![](/img/pages/testimonials/undraw_2.svg) ![](/img/pages/testimonials/mobile-user.svg) ![](/img/pages/testimonials/undraw_4.svg) ![](/img/pages/testimonials/undraw_3.svg)
+![](/img/pages/testimonials/undraw_2.svg) ![Mobile user](/img/pages/testimonials/mobile-user.svg) ![](/img/pages/testimonials/undraw_4.svg) ![](/img/pages/testimonials/undraw_3.svg)
 
 ### Everyone loves personalized recommendations. Now you can create them - and turn them into segmented leads that convert.
 
@@ -228,7 +228,7 @@ This app is great. The use is intuitive and the customer service is attentive an
 
 ](https://www.maisonkkot.com/)[
 
-![](/img/pages/testimonials/logo_black.svg)
+![Logo black](/img/pages/testimonials/logo_black.svg)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Feb. 25, 2022
 

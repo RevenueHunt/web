@@ -22,7 +22,7 @@ But what makes this app stand out, and why are merchants raving about it?
 
 Let's learn the reasons, straight from the users themselves.
 
-![](/img/blog/why-shopify-merchants-love-the-shop-quiz-product-recommender-app-hear-from-them/shopify-reviews.png)
+![Shopify reviews](/img/blog/why-shopify-merchants-love-the-shop-quiz-product-recommender-app-hear-from-them/shopify-reviews.png)
 
 ## What is Shop Quiz: Product Recommender App?
 
@@ -68,7 +68,7 @@ RevenueHunt is known for its excellent customer support, which is frequently hig
 
 > 👨🏻‍💻 Similarly, Sarah from [Borro](https://borro-it.com/) in the United Kingdom stated, _"Easy to use, effective quiz with great support."_
 
-![](/img/blog/why-shopify-merchants-love-the-shop-quiz-product-recommender-app-hear-from-them/repliques-review.png)
+![Repliques review](/img/blog/why-shopify-merchants-love-the-shop-quiz-product-recommender-app-hear-from-them/repliques-review.png)
 
 > 🔧 Justin from [Repliques](https://repliques.co.uk/) in the UK sums it up, "I never leave reviews but these guys deserve it! I had a few learning issues using the app at first but the response from the technical department is second to none! "
 
@@ -124,7 +124,7 @@ With its free plan and trial options, it's accessible to both small and large bu
 
 [**Shop Quiz: Product Recommender**](https://apps.shopify.com/product-recommendation-quiz-revenuehunt) isn't just another app - it's a must-have tool that allows Shopify merchants to improve their customer experience, drive sales, and make informed decisions. With features like personalized quizzes, innovative video content, CRM integration, customization, and exceptional support, it's no wonder merchants across the globe are raving about it.
 
-![](/img/blog/why-shopify-merchants-love-the-shop-quiz-product-recommender-app-hear-from-them/radiowearhouse-review.png)
+![Radiowearhouse review](/img/blog/why-shopify-merchants-love-the-shop-quiz-product-recommender-app-hear-from-them/radiowearhouse-review.png)
 
 > ❤️ _"Where has this product been my whole life? It's beautiful!"_,  [Radio Warehouse](https://www.radiowarehouse.com.au/) from Australia.
 

@@ -14,19 +14,19 @@ draft: false
 
 Product Recommendation Quiz guides your customers throughout their shopping experience and helps them find the right products for them.
 
-![](/img/pages/home/recommend-right-products.svg)
+![Recommend right products](/img/pages/home/recommend-right-products.svg)
 
 ### Recommend the Right Products
 
 Shoppable quizzes drive sales, advise customers on finding the right products for them and help them make confident purchasing decisions.
 
-![](/img/pages/home/know-your-customers.svg)
+![Know your customers](/img/pages/home/know-your-customers.svg)
 
 ### Know Your Customers
 
 Quizzes let you collect actionable data by asking your customers targeted questions. Segment and tag your shoppers based on their responses.
 
-![](/img/pages/home/grow-your-audience.svg)
+![Grow your audience](/img/pages/home/grow-your-audience.svg)
 
 ### Grow Your Audience
 

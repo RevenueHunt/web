@@ -19,7 +19,7 @@ Providing personalized shopping experiences is key to capturing customer attenti
 
 This combination can **lead to increased engagement, higher conversion rates, and more targeted marketing efforts** that resonate with customers. Here's how RevenueHunt's Product Recommendation Quiz, integrated with HubSpot, can help boost your sales.
 
-![](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Hubspot-and-Shop-Quiz-Featured-Iamge-1.png)
+![Hubspot and Shop Quiz Iamge](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Hubspot-and-Shop-Quiz-Featured-Iamge-1.png)
 
 ## Proven Solutions
 
@@ -168,7 +168,7 @@ Ultimately, this strategy works because it seamlessly combines customer engageme
 
 Combining the power of product recommendation quizzes with HubSpot's robust marketing automation tools can be a game-changer for your e-commerce store. By capturing leads, nurturing them with personalized content, and gaining valuable insights into customer behavior, you can significantly increase your sales and build stronger customer relationships.
 
-![](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Copy-of-Consent-Video-Thumbnail-e1727851337480.png)
+![Consent Video](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Copy-of-Consent-Video-Thumbnail-e1727851337480.png)
 
 If you're looking to elevate your marketing strategy, now's the time to integrate your product recommendation quiz with HubSpot.
 

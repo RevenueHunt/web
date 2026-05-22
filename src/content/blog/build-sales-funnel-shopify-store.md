@@ -76,7 +76,7 @@ Our main goal in this step is to **get your visitors' email before we send them 
 
 The easiest way to do this is with a conversion quiz created with the [Product Recommendation Quiz](https://apps.shopify.com/product-recommendation-quiz-revenuehunt) app.
 
-![](/img/blog/build-sales-funnel-shopify-store/product-recommendation-quiz-logo.png)
+![Product recommendation quiz logo](/img/blog/build-sales-funnel-shopify-store/product-recommendation-quiz-logo.png)
 
 ##### Product Recommendation Quiz
 
@@ -215,7 +215,7 @@ Your store's order confirmation page (or "thank you" page) gives you the perfect
 
 Introducing [ReConvert](https://www.stilyoapps.com/reconvert/?scid=Kswx&ref=revenuehunt), the app that lets you customize your order confirmation page:
 
-![](/img/blog/build-sales-funnel-shopify-store/reconvert-logo.png)
+![Reconvert logo](/img/blog/build-sales-funnel-shopify-store/reconvert-logo.png)
 
 ##### ReConvert Upsell & Cross Sell
 
@@ -283,7 +283,7 @@ We recommend sending a review request when the entire buyer journey has been com
 
 With a review app such as [Okendo](https://apps.shopify.com/okendo-reviews) it is easy to **set up automatic review requests**, either via email or SMS. Using a review app takes away the stress of sending review requests, which would otherwise be a process you have to do manually. 
 
-![](/img/blog/build-sales-funnel-shopify-store/okendo-logo.png)
+![Okendo logo](/img/blog/build-sales-funnel-shopify-store/okendo-logo.png)
 
 ##### Okendo: Product Reviews & UGC
 

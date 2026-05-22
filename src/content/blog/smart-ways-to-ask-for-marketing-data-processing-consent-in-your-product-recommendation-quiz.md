@@ -28,7 +28,7 @@ The best way to ask for email/phone marketing consent is to make it a natural pa
 
 Start with a friendly welcome message that explains the benefits of taking the quiz. Mention that by providing consent, users will receive personalized recommendations and exclusive offers.
 
-![](/img/blog/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/consent-start-quiz-1024x732.png)
+![Consent start quiz](/img/blog/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/consent-start-quiz-1024x732.png)
 
 > Asking for consent before the quiz starts will lead to **lower quiz completions** and higher drop off at the beginning but will provide **more quality leads** and filter clients genuenly interested in your products. This approach is better for merchants selling unique and luxury items.
 
@@ -36,7 +36,7 @@ Start with a friendly welcome message that explains the benefits of taking the q
 
 At a strategic point, such as before showing the results, include a consent request. Make it part of a question about communication preferences. This creates a sunk-time-cost fallaciy in the mind of the customer and they are more likely to leave their data just to see the results.
 
-![](/img/blog/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/consent-end-quiz-e1718952561212-1024x702.png)
+![Consent end quiz](/img/blog/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/consent-end-quiz-e1718952561212-1024x702.png)
 
 > Asking for consent at the end of the quiz will lead to a **lower drop-off** at this point since the customer is already invested in the experience. This will lead to higher completion rates and eventually **higher conversions** and upselling success. This approach is better for merchants selling inexpensive items or routines.
 
@@ -104,7 +104,7 @@ Ensure these options are accessible on all devices with large clickable areas fo
 
 Respecting user choice is essential. Always provide a clear and **easy way for users to opt-out** of marketing communications. Reassure users they can still complete the quiz and receive recommendations even if they choose not to opt-in.
 
-![](/img/blog/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/consent-opt-out-hearts.png)
+![Consent opt out hearts](/img/blog/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/consent-opt-out-hearts.png)
 
 > **💡Tip:** You can add additional information to each quiz slide by activating a [question description](https://docs.revenuehunt.com/how-to-guides/ask-for-marketing-consent/#option-1-question-description) in Shop Quiz: Product Recommendation Quiz.
 
@@ -124,7 +124,7 @@ Offer immediate rewards or incentives for giving consent, such as a **discount c
 
 Being transparent about how you will use the data builds trust and increases the likelihood of obtaining consent. Briefly explain why you need the data and how it will benefit the user. Reassure users that **their data will be handled securely** and respectfully.
 
-![](/img/blog/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/consent-discount.png)
+![Consent discount](/img/blog/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/consent-discount.png)
 
 **Example**: "We use your data to provide personalized skincare recommendations and to keep you updated with the latest offers. We respect your privacy and will never share your data with third parties."
 

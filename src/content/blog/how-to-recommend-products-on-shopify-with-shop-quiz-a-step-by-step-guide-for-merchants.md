@@ -27,7 +27,7 @@ However, one of the most impactful ways to recommend products is through **perso
 
 These quizzes engage customers by asking them targeted questions and providing tailored product suggestions based on their answers. This interactive experience not only makes shopping more fun but also ensures that the products recommended are precisely what the customer is looking for, leading to higher conversion rates and better overall satisfaction.
 
-![](/img/blog/how-to-recommend-products-on-shopify-with-shop-quiz-a-step-by-step-guide-for-merchants/begginersguide-torecommendations-featured-image.png)
+![Begginersguide torecommendations](/img/blog/how-to-recommend-products-on-shopify-with-shop-quiz-a-step-by-step-guide-for-merchants/begginersguide-torecommendations-featured-image.png)
 
 In this guide, you'll learn how to recommend products in Shopify using an interactive quiz built with Shop Quiz: Product Recommendation Quiz. Let's get started!
 

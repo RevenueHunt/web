@@ -18,13 +18,13 @@ draft: false
 <iframe loading="lazy" class="alignnone size-full" title="YouTube video player" src="https://www.youtube.com/embed/tGP9TvFMWpM?si=TyA_AalYhbECmFtV" width="100%" height="400px" frameborder="0" allowfullscreen="allowfullscreen"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe>  
 If you're involved in e-commerce, you've likely heard about **headless architecture for ecommerce**. In a nutshell, it separates the frontend (what customers see) from the backend (where the magic happens) and works independently from any e-commerce provider like Shopify or WooCommerce. This separation allows for more creative freedom, better performance, and easier scaling. However, it also means businesses need new tools that can keep up with this flexible approach.
 
-![](/img/blog/the-only-product-recommendation-app-for-headless-ecommerce-2024/Standalone-Quiz-banner-1.png)
+![Standalone Quiz banner](/img/blog/the-only-product-recommendation-app-for-headless-ecommerce-2024/Standalone-Quiz-banner-1.png)
 
 ### Breaking Free from Traditional E-commerce Platforms
 
 Contrary to what you may think, the percentage of the market that uses a headless solution for e-commerce is not small (various sources report around 18% of the market share attributed to headless e-commerce).  Custom e-commerce solutions are currently used by large brands like Nike, Lululemon, Under Armour, and Lego but also many smaller retailers.
 
-![](/img/blog/the-only-product-recommendation-app-for-headless-ecommerce-2024/ecommerce-platforms-1024x1024.png)
+![Ecommerce platforms](/img/blog/the-only-product-recommendation-app-for-headless-ecommerce-2024/ecommerce-platforms-1024x1024.png)
 
 **👉 Benefits of Headless Setup**
 

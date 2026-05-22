@@ -22,7 +22,7 @@ What separates a quiz that consistently drives 15–25% conversion rates from on
 
 [Case Studies](https://revenuehunt.com/cat/case-studies/) [Tips & Tricks](https://revenuehunt.com/cat/tips-tricks/) [eCommerce](https://revenuehunt.com/cat/ecommerce/) [New Features](https://revenuehunt.com/cat/app-new-features/)
 
-[![](/img/pages/blog/blog_klaviyo_graveyard_tile-120x120.png)](https://revenuehunt.com/klaviyo-zero-party-data/ "Your Klaviyo List Is a Graveyard. Resurrect It with Zero-Party Data")
+[![Klaviyo graveyard](/img/pages/blog/blog_klaviyo_graveyard_tile-120x120.png)](https://revenuehunt.com/klaviyo-zero-party-data/ "Your Klaviyo List Is a Graveyard. Resurrect It with Zero-Party Data")
 
 [
 
@@ -30,7 +30,7 @@ What separates a quiz that consistently drives 15–25% conversion rates from on
 
 ](https://revenuehunt.com/klaviyo-zero-party-data/ "Your Klaviyo List Is a Graveyard. Resurrect It with Zero-Party Data")5-5-2026   [eCommerce](https://revenuehunt.com/cat/ecommerce/) [Sales Funnels](https://revenuehunt.com/cat/sales-funnels/) [Shopify Apps](https://revenuehunt.com/cat/shopify-apps/)  
 
-[![](/img/pages/blog/april_26_product_update-120x120.png)](https://revenuehunt.com/april-2026-product-updates/ "APRIL 2026 – Safer quizzes, smoother popups, and backend-powered saves")
+[![April product update](/img/pages/blog/april_26_product_update-120x120.png)](https://revenuehunt.com/april-2026-product-updates/ "APRIL 2026 – Safer quizzes, smoother popups, and backend-powered saves")
 
 [
 
@@ -46,7 +46,7 @@ What separates a quiz that consistently drives 15–25% conversion rates from on
 
 ](https://revenuehunt.com/anti-aging-beauty-brand-quiz-funnel-case-study/ "How US Anti-Aging Device Brand Achieved 42.64% AOV Lift & $691K in 90 Days Using a Qualifying Funnel Quiz")16-4-2026   [Case Studies](https://revenuehunt.com/cat/case-studies/)  
 
-[![](/img/pages/blog/blog_tile_product_update_march_20261-120x120.png)](https://revenuehunt.com/march-2026-product-updates/ "MARCH 2026 – Legacy quiz import, pre-fill on retake, and the new Copilot engine for everyone")
+[![Product update march](/img/pages/blog/blog_tile_product_update_march_20261-120x120.png)](https://revenuehunt.com/march-2026-product-updates/ "MARCH 2026 – Legacy quiz import, pre-fill on retake, and the new Copilot engine for everyone")
 
 [
 

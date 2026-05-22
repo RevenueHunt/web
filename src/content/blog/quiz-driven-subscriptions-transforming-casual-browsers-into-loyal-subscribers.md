@@ -68,7 +68,7 @@ Easily integrate subscription options to match customer preferences derived from
 
 Integrating subscription products is not without its challenges. For one, merchants must accept that subscription checkout processes can be slightly more complex than standard purchases. Customers might not be able to jump straight to checkout after selecting a subscription recommendation. Instead, they may have to review their cart or pick a subscription duration on the results page - subtle steps that add friction. Yet these moments can also serve as conversion points: carefully designed messaging and user-friendly checkout flows reassure customers about their choices, **guiding them gently into a recurring relationship with the brand**.
 
-![](/img/blog/quiz-driven-subscriptions-transforming-casual-browsers-into-loyal-subscribers/recharge-woocommerce.png)
+![Recharge woocommerce](/img/blog/quiz-driven-subscriptions-transforming-casual-browsers-into-loyal-subscribers/recharge-woocommerce.png)
 
 "Merchants need to think about their user experience holistically," advises Paulina, Customer Success Manger at RevenueHunt. "If a quiz points a shopper to a subscription coffee service, the next steps - choosing subscription length, confirming quantity, and entering payment details - should feel logical, inviting, and not overly complicated. The more intuitive the flow, the more likely a one-time customer will convert into a loyal subscriber."
 

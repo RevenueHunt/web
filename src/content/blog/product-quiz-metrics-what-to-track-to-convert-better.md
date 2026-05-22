@@ -18,7 +18,7 @@ draft: false
 
 Data from product recommendation quizzes can significantly enhance your conversion rates. Understanding which metrics to track and how to interpret them is key to optimizing your quizzes for better performance. Here's a guide on the most critical quiz metrics and how they can drive better conversion outcomes.
 
-![](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/Quiz-Metrics.png)
+![Quiz Metrics](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/Quiz-Metrics.png)
 
 ## Where to find the data?
 

@@ -116,7 +116,7 @@ See exactly where to plug your product quiz for maximum results.
 
 ![](/img/pages/quiz-readiness-assessment/olcay.svg)
 
-![](/img/pages/quiz-readiness-assessment/salad-code.svg)
+![Salad code](/img/pages/quiz-readiness-assessment/salad-code.svg)
 
 ![](/img/pages/quiz-readiness-assessment/salugea.svg)
 

@@ -48,7 +48,7 @@ A smooth and enjoyable shopping experience is crucial, especially during peak se
 
 📦 To further enhance the customer experience, consider incorporating custom packaging from **[Arka](https://www.arka.com/)** into your product offerings. Custom packaging not only elevates the unboxing experience but also reinforces your brand identity during the bustling summer holiday shopping season. This strategic touch can differentiate your e-commerce store from competitors and leave a lasting impression on your customers.
 
-![](/img/blog/how-to-prepare-your-ecommerce-business-for-summer-holidays-2024/walmart-site-speed-and-conversion-rate.png)
+![Walmart site speed and conversion rate](/img/blog/how-to-prepare-your-ecommerce-business-for-summer-holidays-2024/walmart-site-speed-and-conversion-rate.png)
 
 Walmart's conversion rate drops sharply as loading times increase (Source: Slideshare.)
 
@@ -103,7 +103,7 @@ Reliable and efficient shipping is crucial during the summer holidays. Improve y
 
 **✈️ Order Tracking:** Provide customers with tracking information to keep them informed about the status of their orders.
 
-![](/img/blog/how-to-prepare-your-ecommerce-business-for-summer-holidays-2024/order-fulfilment.png)
+![Order fulfilment](/img/blog/how-to-prepare-your-ecommerce-business-for-summer-holidays-2024/order-fulfilment.png)
 
 **Real-Life Example:**
 
@@ -119,9 +119,9 @@ Refreshing your online store with summer-themed content can create an engaging s
 
 **📝 Blog Posts and Guides:** Create blog posts and buying guides related to summer activities and events. Offer tips and inspiration to help customers make the most of the season.
 
-![](/img/blog/how-to-prepare-your-ecommerce-business-for-summer-holidays-2024/pitch-tents.png)
+![Pitch tents](/img/blog/how-to-prepare-your-ecommerce-business-for-summer-holidays-2024/pitch-tents.png)
 
-![](/img/blog/how-to-prepare-your-ecommerce-business-for-summer-holidays-2024/hm-summer.png)
+![Hm summer](/img/blog/how-to-prepare-your-ecommerce-business-for-summer-holidays-2024/hm-summer.png)
 
 **Real-Life Example:**
 
@@ -140,7 +140,7 @@ Utilizing data and analytics can help you make informed decisions and optimize y
 
 **📢 Marketing ROI:** Measure the effectiveness of your marketing campaigns to determine which channels and strategies yield the best return on investment.
 
-![](/img/blog/how-to-prepare-your-ecommerce-business-for-summer-holidays-2024/Sales-Metrics-.png)
+![Sales Metrics](/img/blog/how-to-prepare-your-ecommerce-business-for-summer-holidays-2024/Sales-Metrics-.png)
 
 **Real-Life Example:**
 
@@ -166,6 +166,6 @@ The end of the summer holidays doesn't mean the end of opportunities to engage w
 
 Preparing your eCommerce business for the summer holidays involves strategic planning, efficient operations, and engaging marketing efforts. By anticipating customer needs, optimizing your website, managing inventory effectively, and providing excellent customer service, you can maximize your sales and build strong customer relationships.
 
-![](/img/blog/how-to-prepare-your-ecommerce-business-for-summer-holidays-2024/summer-testimonials.png)
+![Summer testimonials](/img/blog/how-to-prepare-your-ecommerce-business-for-summer-holidays-2024/summer-testimonials.png)
 
 Embrace the summer season as an opportunity to showcase your brand, delight your customers, and drive significant growth for your eCommerce business. Implementing tools like a Shop Quiz app can further personalize the shopping experience, making it easier for customers to find the perfect products and enhancing overall satisfaction.

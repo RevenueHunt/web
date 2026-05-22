@@ -44,7 +44,7 @@ It's very easy! First, head over to the _Notifications_ tab in the app and activ
 
 Next, you can switch between a _plain-text email_ and an _HTML email creator_.
 
-![](/img/blog/new-features-create-customized-results-emails/BlogA_emails.gif)
+![A emails](/img/blog/new-features-create-customized-results-emails/BlogA_emails.gif)
 
 ## Create a branded quiz results email
 

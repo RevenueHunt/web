@@ -20,7 +20,7 @@ draft: false
 
 Businesses must tailor their approaches to cater to diverse markets. Localization goes beyond simple translation; it involves adapting content to resonate with different cultural norms, preferences, and legal requirements.
 
-![](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Quizzes-for-markets.png)
+![Quizzes for markets](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Quizzes-for-markets.png)
 
 This guide will walk you through essential tips for **localizing eCommerce product recommendation quizzes** to maximize engagement and conversions across various regions.
 

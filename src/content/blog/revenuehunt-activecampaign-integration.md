@@ -18,7 +18,7 @@ draft: false
 
 Personalization is key to capturing customer interest and increasing conversions. With RevenueHunt's Product Recommendation Quiz, merchants can provide tailored product recommendations while collecting valuable customer data. By integrating this quiz with ActiveCampaign, eCommerce businesses can easily **transfer quiz data into their email marketing** and CRM system, allowing for automated follow-ups and personalized customer journeys.
 
-![](/img/blog/revenuehunt-activecampaign-integration/ActiveCampaign-Featured-Image.png)
+![ActiveCampaign](/img/blog/revenuehunt-activecampaign-integration/ActiveCampaign-Featured-Image.png)
 
 This article will guide you through integrating RevenueHunt with ActiveCampaign and explain why this connection is a game-changer for eCommerce brands.
 
@@ -26,7 +26,7 @@ This article will guide you through integrating RevenueHunt with ActiveCampaign 
 
 [ActiveCampaign](https://www.activecampaign.com/) is a powerful customer experience automation (CXA) platform that combines **email marketing, CRM, and automation** to help businesses engage with their audience effectively. It allows eCommerce merchants, service providers, and enterprises to create personalized marketing campaigns, automate customer interactions, and track leads throughout the sales funnel. With features like dynamic email sequences, lead scoring, predictive sending, and segmentation, ActiveCampaign enables businesses to nurture relationships, increase conversions, and streamline their marketing efforts.
 
-![](/img/blog/revenuehunt-activecampaign-integration/activecampaign-into.png)
+![Activecampaign into](/img/blog/revenuehunt-activecampaign-integration/activecampaign-into.png)
 
 **What is the RevenueHunt App?**
 

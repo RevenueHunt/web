@@ -73,7 +73,7 @@ Once the quiz is connected, customer tags from the Shop Quiz app are automatical
 
 In Klaviyo, create segments based on the tags.
 
-![](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/kalviyo-segement.png)
+![Kalviyo segement](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/kalviyo-segement.png)
 
 For example:
 

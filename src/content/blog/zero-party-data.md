@@ -49,7 +49,7 @@ One of the main benefits of zero party data is **intrinsic customer engagement**
 
 Lastly, there is greater clarity and accuracy in zero-party data, which **enables hyper-personalization** both during the purchasing experience and when customers are retargeted with marketing campaigns.
 
-![](/img/blog/zero-party-data/zero-party-data-hyper-personalization-1024x695.png)
+![Zero party data hyper personalization](/img/blog/zero-party-data/zero-party-data-hyper-personalization-1024x695.png)
 
 ### How to collect zero-party data on your eCommerce store?
 

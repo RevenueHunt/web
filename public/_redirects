@@ -13,6 +13,13 @@
 /blog/7/  /blog/7/  200
 /blog/8/  /blog/8/  200
 
+# --- RSS feeds — WP served /feed/, /blog/feed/, /comments/feed/; the new site
+# emits a single /feed.xml. Must come BEFORE the /blog/:slug/ rule, which would
+# otherwise catch /blog/feed/ and 301 it to /feed/ (404).
+/feed/  /feed.xml  301
+/blog/feed/  /feed.xml  301
+/comments/feed/  /feed.xml  301
+
 # Legacy /blog/<slug>/ → /<slug>/ — WP shipped both URLs but always 301'd
 # /blog/<slug>/ to /<slug>/. Preserve that behavior so old inbound links still work.
 /blog/:slug/  /:slug/  301

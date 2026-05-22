@@ -56,8 +56,6 @@ When you integrate **Facebook Pixel** with your RevenueHunt quiz, you'll automat
 📌 **Customer Preferences** – Identify common responses and tailor future campaigns.  
 📌 **Leads & Purchases** – Know when someone submits an email, adds a product to their cart, or completes a purchase.
 
-![how to integrate fb pixel events](https://docs.revenuehunt.com/images/how%20to%20fb%20pixel%20events.png)
-
 ### **Tracked Events Example**
 
 <table><thead><tr><th><strong>User Action</strong></th><th><strong>Facebook Pixel Event</strong></th><th><strong>Purpose</strong></th></tr></thead><tbody><tr><td>Starts a quiz</td><td><code>ViewContent</code></td><td>Identifies potential buyers and remarkets to them.</td></tr><tr><td>Views a question</td><td><code>ViewContent</code></td><td>Tracks engagement levels within the quiz.</td></tr><tr><td>Selects an answer</td><td><code>ViewContent</code></td><td>Helps refine product targeting based on user preferences.</td></tr><tr><td>Reaches results page</td><td><code>ViewContent</code></td><td>Indicates high purchase intent.</td></tr><tr><td>Clicks on a recommended product</td><td><code>ViewContent</code></td><td>Measures interest in specific products.</td></tr><tr><td>Adds a product to cart</td><td><code>AddToCart</code></td><td>Enables retargeting for abandoned carts.</td></tr><tr><td>Proceeds to checkout</td><td><code>InitiateCheckout</code></td><td>Tracks serious buyers and optimizes checkout funnel.</td></tr></tbody></table>

@@ -74,19 +74,11 @@ _**Option 2:**_ 
 
 2\. Navigate to the `Connect` Tab to access integration options. Copy the `API Token`, then locate the ActiveCampaign integration and click `'Connect'`.
 
-![how to send leads to activecampaign](https://docs.revenuehunt.com/images/how%20to%20send%20leads%20to%20activecampaign.png)
-
 3\. You will be redirected to a configuration page where you must enter your ActiveCampaign API token.
-
-![how to send leads to activecampaign step2](https://docs.revenuehunt.com/images/how%20to%20send%20leads%20to%20activecampaign%20step2.png)
 
 4\. Choose the quiz you want to sync and map quiz response fields to corresponding ActiveCampaign fields to ensure data flows correctly.
 
-![how to activecampaign connect](https://docs.revenuehunt.com/images/how%20to%20activecampaign%20connect.png)
-
 5\. Once your fields are mapped, confirm the integration, and your quiz will start sending data to ActiveCampaign automatically.
-
-![how to send leads to activecampaign step final](https://docs.revenuehunt.com/images/how%20to%20send%20leads%20to%20activecampaign%20step%20final.png)
 
 ## **Updating Contact Profiles with Quiz Data**
 
@@ -100,8 +92,6 @@ After integration, you can enrich ActiveCampaign contact profiles with valuable 
 -   **Tags** – Enables segmentation based on quiz answers.
 -   **Recommended Product IDs** – Allows for product-based follow-ups.
 
-![how to activecampaign profile](https://docs.revenuehunt.com/images/how%20to%20activecampaign%20profile.png)
-
 **Adding Custom Fields in ActiveCampaign** ensures that all this valuable data is correctly stored and utilized.
 
 To add custom fields in ActiveCampaign:
@@ -110,11 +100,7 @@ To add custom fields in ActiveCampaign:
 
 2\. Click **Add Field** and enter a relevant name.
 
-![how to send leads to activecampaign new field2](https://docs.revenuehunt.com/images/how%20to%20send%20leads%20to%20activecampaign%20new%20field2.png)
-
 3\. Ensure these fields are correctly mapped in the RevenueHunt integration settings.
-
-![how to activecampaign mapping](https://docs.revenuehunt.com/images/how%20to%20activecampaign%20mapping.png)
 
 After that, all the new contacts from the quiz will receive more custom information.
 
@@ -128,13 +114,9 @@ To maximize the impact of quiz data, you can set up email automation sequences:
 
 2\. Choose `'When a contact submits a quiz'` as the trigger and select the RevenueHunt quiz from the list.
 
-![how to activecampaign automation](https://docs.revenuehunt.com/images/how%20to%20activecampaign%20automation.gif)
-
 3\. Design Your Email Sequence. Thank the customer for taking the quiz and introduce your brand. Highlight their recommended products. Offer additional resources, customer testimonials, or limited-time discounts.
 
 4\. Use the quiz data stored in ActiveCampaign to personalize each email. For example, include a direct link to their quiz results or tailor content based on their preferences.
-
-![how to activecampaign add custom properties](https://docs.revenuehunt.com/images/how%20to%20activecampaign%20add%20custom%20properties.gif)
 
 _Note: Currently, RevenueHunt only sends recommended product IDs to ActiveCampaign, not full product details. However, merchants can use the a workaround. To show any products in an ActiveCampaign you may need to **connect your ActiveCampaign to Shopify** first. Then by adding a product block, you should be able to display products from specific collections. It could be possible to add multiple product blocks and have them shown or hidden based on the recommended product ID, however, this option has not been yet tested thoroughly._
 

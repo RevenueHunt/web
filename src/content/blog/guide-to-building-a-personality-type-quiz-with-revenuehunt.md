@@ -36,7 +36,7 @@ Map out the quiz questions and outcomes in one document based on the customer ch
 > 
 > _or a more advanced mapping tool like [Miro](https://miro.com/)._
 > 
-> ![Guide to Building a Personality-Type Quiz with RevenueHunt - image 1](/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/21017515516050)
+> ![Guide to Building a Personality-Type Quiz with RevenueHunt - image 1](/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/21017515516050.gif)
 
 ### Step 2: Add Questions to the Quiz
 
@@ -107,8 +107,6 @@ To show text results based on answers (e.g., "You have Dry Skin"), configure con
 
 Add separate content blocks for each possible result (e.g., "You have Dry Skin," "You have Oily Skin," etc.).
 
-![Guide to Building a Personality-Type Quiz with RevenueHunt - image 5](https://docs.revenuehunt.com/images/how%20to%20show%20results%20explenation%20personalityquiz1.png)
-
 **Then, Configure Block Logic Rules**
 
 Set visibility rules for each block based on customer answers.
@@ -121,8 +119,6 @@ Set visibility rules for each block based on customer answers.
 > _– AND the answer to **Question 3: Hydration** is Yes, it feels tight and flaky._
 > 
 > _Then this block will be **Visible**; otherwise, it remains hidden._
-> 
-> ![Guide to Building a Personality-Type Quiz with RevenueHunt - image 6](https://docs.revenuehunt.com/images/how%20to%20show%20results%20explenation%20personalityquiz2.png)
 
 > _**For Combination Skin:**_  
 > _Combination skin may result from varied answer paths. You'll need rules for multiple scenarios:_
@@ -150,12 +146,6 @@ Set visibility rules for each block based on customer answers.
 > _– AND the answer to **Question 3: Hydration** is Sometimes, but not consistently._
 > 
 > _Then this block will be **Visible**; otherwise, it remains hidden._
-> 
-> ![how to show results explenation personalityquiz3](https://docs.revenuehunt.com/images/how%20to%20show%20results%20explenation%20personalityquiz3.png)
-> 
-> ![how to show results explenation personalityquiz4](https://docs.revenuehunt.com/images/how%20to%20show%20results%20explenation%20personalityquiz4.png)
-> 
-> ![how to show results explenation personalityquiz5](https://docs.revenuehunt.com/images/how%20to%20show%20results%20explenation%20personalityquiz5.png)
 
 **Fianlly,  Repeat this process for all other possible combinations of answers.**
 
@@ -227,8 +217,6 @@ Insert customer answers directly into the Results Page to provide context for re
 _For instance: "Based on your answer to \[Question 1\], your skin tends to be \[Customer's Answer\]."_
 
 > _**💡Tip:** To use Information Recalls in a question or a text block, type @ on your keyboard. A list of questions will be displayed, select from the list the question the answer to whcih you want to recall. Then the dynamic filed will be added to the text._
-> 
-> ![how to use information recalls example](https://docs.revenuehunt.com/images/how%20to%20use%20information%20recalls%20example.png)
 
 👉 **Use Predefined Product Descriptions**
 

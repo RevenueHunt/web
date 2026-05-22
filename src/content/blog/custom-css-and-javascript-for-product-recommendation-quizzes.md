@@ -238,8 +238,6 @@ To begin, let's log the quiz response object to the console:
 
 This line of code will display the available Vue.js functions and properties within the prq scope in your browser's console, allowing you to inspect the quiz data in real-time.
 
-![how to add javascript consolelog](https://docs.revenuehunt.com/images/how%20to%20add%20javascript%20consolelog.png)
-
 The `prq` object is your gateway to customizing the quiz experience.  You can use it to fetch specific slide values, such as a question's response, by calling `prq.getSlideValue(slideId)`.
 
 For participant information, methods like `prq.leadEmail()`, `prq.leadPhone()`, and `prq.leadName()` allow you to retrieve user details easily.
@@ -287,8 +285,6 @@ To begin, insert the following code into your store's theme, ideally just before
 </code></pre>
 
 This simple example utilizes a `console.log()` function to output the JSON containing all the quiz response data.
-
-![how use callback function example](https://docs.revenuehunt.com/images/how%20use%20callback%20function%20example.png)
 
 By tapping into the quiz responses, developers can access a wealth of information including individual answers, customer tags, and recommended products. This data is delivered in a **JSON format** via a JavaScript Callback Function, enabling you to add it directly to your website.
 

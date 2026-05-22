@@ -47,8 +47,6 @@ The process begins with a simple integration. Merchants generate an API key in O
 > 
 > Generate a new key with permissions to add subscribers.
 > 
-> ![how to send leads to omnisend api key generate](https://docs.revenuehunt.com/images/how%20to%20send%20leads%20to%20omnisend%20api%20key%20generate.png)
-> 
 > Name the key (e.g., _shopquiz-integration_) for easy identification.
 > 
 > Copy the API Key for use in the Shop Quiz app.
@@ -61,13 +59,9 @@ The process begins with a simple integration. Merchants generate an API key in O
 > 
 > Paste the API Key into the input field and save the connection.
 > 
-> ![how to send leads to omnisend api key](https://docs.revenuehunt.com/images/how%20to%20send%20leads%20to%20omnisend%20api%20key.png)
-> 
 > Publish the quiz to activate the integration.
 
 Once connected, every quiz response - including customer details, answers, and product recommendations - will flow into your Omnisend account, automatically updating customer profiles with valuable data.
-
-![how to omnisend custom properties](https://docs.revenuehunt.com/images/how%20to%20omnisend%20custom%20properties.gif)
 
 This isn't just about storing data. It's about using it effectively. The quiz responses become a treasure trove of insights, powering email campaigns that speak directly to each customer's needs and preferences. For ecommerce merchants, this level of personalization translates into higher engagement and, ultimately, increased sales.
 
@@ -87,8 +81,6 @@ But automation doesn't stop at email campaigns. Omnisend's segmentation tools al
 
 > **Create Segments for Quiz Participants**  
 > Segment your audience by filtering for unique quiz-related properties like `permalink_quiz_id`. This ensures that only quiz participants are included in targeted campaigns.
-> 
-> ![how to omnisend segment](https://docs.revenuehunt.com/images/how%20to%20omnisend%20segment.gif)
 
 ## The Human Touch in a Digital World
 
@@ -98,8 +90,6 @@ While these tools are accessible, merchants aiming for highly complex customizat
 
 > **Build Automated Campaigns**  
 > Set up workflows that trigger when a customer is added to a quiz-specific segment. These workflows can automatically send emails featuring personalized product recommendations, skincare routines, or other relevant offers.
-> 
-> ![how to omnisend flow](https://docs.revenuehunt.com/images/how%20to%20omnisend%20flow.gif)
 > 
 > **Personalize Email Templates**  
 > Customize email templates to showcase quiz results and recommendations. Developers can use quiz data - stored as custom properties in Omnisend - to build dynamic templates that perfectly align with your brand.

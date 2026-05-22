@@ -114,8 +114,6 @@ _Best for: Review Collection and Social Proof_
 
 Yotpo is an excellent tool for collecting customer reviews and leveraging social proof to increase conversions. By gathering customer feedback, reviews, and star ratings, Shopify stores can build trust with potential buyers. The app also offers data on customer satisfaction and loyalty, which can be used to improve products and services.
 
-![Yotpo Screenshot](https://cdn.document360.io/f3c2ab59-fe4c-4f93-9614-2872f40e8aa7/Images/Documentation/32014c33-786c-4d0c-90ad-becea6778291.png)
-
 Building trust is essential, and Yotpo does it through customer reviews and ratings. This tool harnesses social proof, gathering positive feedback and displaying it on product pages.
 
 -   **Customer reviews and ratings** collection for social proof

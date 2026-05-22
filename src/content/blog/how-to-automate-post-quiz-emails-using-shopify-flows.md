@@ -73,8 +73,6 @@ Assign specific [customer tags](https://docs.revenuehunt.com/how-to-guides/use-c
 
 The Shop Quiz app integrates smoothly with Shopify. Once a user completes the quiz their **personal data** like their email, name or phone number as well as the **customer tags** from the quiz **will be sent to their Shopify Customers profile**.
 
-![how to send leads to shopify customers customer profile](https://docs.revenuehunt.com/images/how%20to%20send%20leads%20to%20shopify%20customers%20customer%20profile.png)
-
 > **📝 Note:** Customer tags will show up with a `prq_` prefix on the Shopify Customer profile, for example`prq_oilyskin` . This helps identify the tags that are coming from your Shop Quiz: Product Recommendation Quiz.
 
 In order to have all the data sent to Shopify Customers like this, all you have to do is:
@@ -84,20 +82,15 @@ In order to have all the data sent to Shopify Customers like this, all you have 
 
 ### 4️⃣ Create A New Automation in Shopify Flows
 
-To automate the process of sending personalized follow-up emails based on quiz responses, you need to create a new automation in Shopify Flows like the one shown below.
-
-![how to shopify customers automation full cycle](https://docs.revenuehunt.com/images/how%20to%20shopify%20customers%20automation%20full%20cycle.png)
+To automate the process of sending personalized follow-up emails based on quiz responses, you need to create a new automation in Shopify Flows.
 
 Here's how to do it:
 
 1.  **Create a New Automation**: In your Shopify admin panel, go to Marketing > Automations and create a new custom automation.
 2.  **Set the Trigger**: Choose 'Customer Created' as the trigger for the flow. This starts the automation whenever a new customer profile is created from a quiz response.
-3.  ![how to send leads to shopify customers automation2](https://docs.revenuehunt.com/images/how%20to%20send%20leads%20to%20shopify%20customers%20automation2.png)
-4.  **Add Conditions**: Use customer tags from the quiz responses to set conditions. For example, if a customer is tagged with `prq_oilyskin`, tailor the follow-up email to recommend products for oily skin.
-5.  ![how to send leads to shopify customers automation3](https://docs.revenuehunt.com/images/how%20to%20send%20leads%20to%20shopify%20customers%20automation3.gif)
-6.  **Configure the Email Action**: Set up the action to send a marketing email using your preferred email template, ensuring the content is personalized based on the quiz data.
-7.  ![how to send leads to shopify customers automation6](https://docs.revenuehunt.com/images/how%20to%20send%20leads%20to%20shopify%20customers%20automation6.gif)
-8.  **Save and Activate**: Save the automation and activate it to start the automated email flow immediately.
+3.  **Add Conditions**: Use customer tags from the quiz responses to set conditions. For example, if a customer is tagged with `prq_oilyskin`, tailor the follow-up email to recommend products for oily skin.
+4.  **Configure the Email Action**: Set up the action to send a marketing email using your preferred email template, ensuring the content is personalized based on the quiz data.
+5.  **Save and Activate**: Save the automation and activate it to start the automated email flow immediately.
 
 ### 5️⃣ Monitor and Improve
 

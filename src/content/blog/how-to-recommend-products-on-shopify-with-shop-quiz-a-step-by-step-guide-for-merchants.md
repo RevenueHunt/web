@@ -35,8 +35,6 @@ In this guide, you'll learn how to recommend products in Shopify using an intera
 
 [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) provides tailored recommendations by analyzing the customer's responses throughout the quiz. The results page can display product variants, main products, and even subscription products if integrated with ReCharge.
 
-![how to recommend products product block](https://docs.revenuehunt.com/images/how%20to%20recommend%20products%20product%20block.png)
-
 Note that it cannot directly recommend collections of products, though it's possible to recommend products within a specific collection.
 
 ### Voting System Algorithm
@@ -64,15 +62,11 @@ By using the **include** field in the quiz setup, specific products, collections
 -   **Collections or Tags**: Every product linked via a collection or tag receives a vote when chosen.
 -   **All Variants of a Product**: You can opt for all product variants to be upvoted together.
 
-![how to recommend products inclusion](https://docs.revenuehunt.com/images/how%20to%20recommend%20products%20inclusion.png)
-
 > **⚠️ Note**: If the same product is linked through different inclusion paths, it may receive multiple votes from a single choice.
 
 #### **❌ Exclusion**
 
 The **exclude** feature allows you to filter out products that may not be suitable based on customer preferences, such as avoiding allergens or staying within a price range. If a product is excluded at any point, it will never appear in the recommendations, even if it is upvoted in other quiz responses.
-
-![how to recommend products exclusion example](https://docs.revenuehunt.com/images/how%20to%20recommend%20products%20exclusion%20example.png)
 
 ## Setting Up Product Recommendations
 
@@ -85,8 +79,6 @@ Before proceeding, ensure you have added all the necessary questions and choices
 Once that is done, you can follow these steps to configure product recommendations in your quiz:
 
 **1️⃣ Link Products to Choices**: Navigate to the [Link Products](https://docs.revenuehunt.com/reference/quiz-builder/#link-products) or [Link Collections](https://docs.revenuehunt.com/reference/quiz-builder/#link-collections) tab in your quiz setup. Link relevant products or collections to each choice to ensure they receive votes.
-
-![how to recommend products inclusion](https://docs.revenuehunt.com/images/how%20to%20recommend%20products%20inclusion.png)
 
 **2️⃣ Edit the Results Page**: In the [Results Page](https://docs.revenuehunt.com/reference/quiz-builder/#results-page) tab, add content and product blocks. Products can be displayed using either a **Product Block** (sorted by the number of votes) or **Product Slot Blocks** (ideal for recommending items in a clear order, such as a skincare routine).
 
@@ -118,8 +110,6 @@ In this section, we will explore some advanced features of the Shop Quiz app tha
 
 To recommend a multi-step routine, use **Product Slot Blocks**. Each slot can represent a different category (e.g., cleanser, toner, serum) and will recommend the top-voted product for that step. This approach is particularly useful for industries like skincare, where a structured product sequence is beneficial.
 
-![how to recommend products slots block](https://docs.revenuehunt.com/images/how%20to%20recommend%20products%20slots%20block.png)
-
 > **💡Tip:** Check [this guide](https://docs.revenuehunt.com/how-to-guides/recommend-skincare-routine-slots/) to learn how to set up slots step-by-step.
 
 #### **Matrix Criteria Recommendations**
@@ -139,8 +129,6 @@ Integrating ReCharge Subscriptions can enhance your recommendation strategy by p
 -   Start by navigating to the [Connect](https://docs.revenuehunt.com/reference/quiz-builder/#connect) tab in your quiz dashboard, then scroll down to the ReCharge section and click on the \`connect\` button. After connecting, [run a catalog sync](https://docs.revenuehunt.com/how-to-guides/sync-catalog/) to ensure your subscription products are updated.
 -   In the [Link Products](https://docs.revenuehunt.com/reference/quiz-builder/#link-products) tab, associate subscription products with quiz choices.
 -   Use the Results Page settings > Basic > [Checkout Settings](https://docs.revenuehunt.com/how-to-guides/change-checkout-settings/) to either direct users to add subscription items directly to their cart.
-
-![how to recommend subscription products sample product](https://docs.revenuehunt.com/images/how%20to%20recommend%20subscription%20products%20sample%20product.png)
 
 **📝 Other Subscription Apps**: If you are using a different subscription app instead of ReCharge, you can still guide customers towards a subscription option by creating one-time purchase versions of your subscription products. Link these products to the quiz choices, and set the checkout settings to direct users to the product page where they can choose the subscription option.
 

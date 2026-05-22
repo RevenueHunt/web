@@ -59,8 +59,6 @@ Follow these expert tips to create a quiz that engages your audience, boosts you
 ✔️ **Provide instant feedback** on selections, such as "Great choice! This is one of our most common complaints from people with combination skin."
 
 > **💡Tip**: In [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) you can use [Conditional Logic](https://docs.revenuehunt.com/how-to-guides/use-conditional-logic/) to branch your quiz based on the customer answers.
-> 
-> ![how to hide content with logic jump logic](https://docs.revenuehunt.com/images/how%20to%20hide%20content%20with%20logic%20jump%20logic.png)
 
 ✔️ **Collect small amounts of information at different stages** rather than all at once. For example, ask for email addresses only after the user has engaged with several questions.
 
@@ -93,8 +91,6 @@ Follow these expert tips to create a quiz that engages your audience, boosts you
 ## Results
 
 ✔️ Quality, NOT Quantity! Quiz results are supposed to help the customer choose the right products. Best converting quizzes recommend 1 single product that matches all the customer criteria or (in the case of beauty stores) a routine with 1 product per step. **Recommending too many products will negatively impact your quiz sales**.
-
-> ![how to build a succesful quiz image7](https://docs.revenuehunt.com/images/how%20to%20build%20a%20succesful%20quiz%20image7.png)
 
 ✔️ Tailor the results page with **personalized product recommendations based on quiz responses**. Highlight how each product addresses the user's specific needs.
 

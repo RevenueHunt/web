@@ -75,8 +75,6 @@ Once you have your quiz, connecting it to MailChimp is very easy:
 -   Select the _MailChimp list_ to send your quiz leads to and their default _subscriber status_.
 -   Publish the changes with the top-right 'Publish' button.
 
-![how to send leads to mailchimp settings](https://docs.revenuehunt.com/images/how%20to%20send%20leads%20to%20mailchimp%20settings.png)
-
 > **💡 Tip:** Remember to **take a test quiz/preview** the quiz leaving a sample email address in order to send first data to MailChimp and test the connection. You can use your real email with a _+test1, +test2_ to test different answering routes. For example, _youremail+test1@email.com_ or _youremail+test2@email.com_.
 
 ### 2️⃣ Use Customer Tags for Segmentation
@@ -86,8 +84,6 @@ Once your quiz is connected you should consider what data you want to send to Ma
 > **📝Note:** Mailchimp API only supports **email, name, and customer tags** to be send from the quiz. To override Mailchimp's limitation on pushing detailed quiz data, you can use `customer tags` to represent customer responses.
 
 You can, for example, **create [customer tags](https://docs.revenuehunt.com/reference/quiz-builder/#customer-tags)** in Shop Quiz to represent different quiz responses. Then, link these tags to specific answers in your quiz.
-
-![how to send leads to mailchimp tags](https://docs.revenuehunt.com/images/how%20to%20send%20leads%20to%20mailchimp%20tags.png)
 
 Upon completion of the quiz by a participant, Mailchimp will receive all the tags that the customer picked based on their choices.
 

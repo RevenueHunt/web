@@ -1,0 +1,147 @@
+---
+import Base from "../layouts/Base.astro";
+
+/* Astro static + Cloudflare Pages emits this as dist/404.html, which Pages
+   serves with a 404 status for any unmatched route. Always noindex. */
+
+const popular: { label: string; href: string; external?: boolean }[] = [
+  { label: "Pricing", href: "/pricing/" },
+  { label: "Book a demo", href: "/demo/" },
+  { label: "Shopify quiz", href: "/product-recommendation-quiz-shopify/" },
+  { label: "Integrations", href: "/integrations/" },
+  { label: "Quiz templates", href: "/templates/" },
+  { label: "Blog", href: "/blog/" },
+  { label: "Help center", href: "https://docs.revenuehunt.com/", external: true },
+];
+---
+
+<Base
+  title="Page not found · RevenueHunt"
+  description="That page didn't match any answer. Here are a few good places to land."
+  noindex={true}
+>
+  <main class="relative isolate overflow-hidden">
+    <!-- Soft brand backdrop. Pure CSS, no asset. -->
+    <div
+      aria-hidden="true"
+      class="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[480px] bg-gradient-to-b from-amber-50 via-white to-white"
+    ></div>
+
+    <div class="mx-auto max-w-4xl px-6 pb-24 pt-20 text-center sm:pt-28">
+      <!-- Massive faded 404 + the quiz "no match" card sitting on top. -->
+      <div class="relative mx-auto mb-10 flex h-40 items-center justify-center sm:h-48">
+        <span
+          aria-hidden="true"
+          class="absolute select-none text-[12rem] font-black leading-none tracking-tighter text-slate-100 sm:text-[16rem]"
+        >404</span>
+        <svg
+          role="img"
+          aria-label="A quiz card with no matching answer"
+          viewBox="0 0 240 160"
+          class="relative h-32 w-auto sm:h-40"
+        >
+          <rect x="8" y="8" width="224" height="144" rx="14" fill="white" stroke="#0f172a" stroke-width="2"/>
+          <rect x="24" y="26" width="120" height="10" rx="5" fill="#0f172a"/>
+          <rect x="24" y="44" width="80" height="6" rx="3" fill="#cbd5e1"/>
+          <g>
+            <rect x="24" y="68" width="90" height="28" rx="8" fill="#f1f5f9" stroke="#e2e8f0"/>
+            <rect x="36" y="78" width="46" height="8" rx="4" fill="#94a3b8"/>
+          </g>
+          <g>
+            <rect x="126" y="68" width="90" height="28" rx="8" fill="#f1f5f9" stroke="#e2e8f0"/>
+            <rect x="138" y="78" width="34" height="8" rx="4" fill="#94a3b8"/>
+          </g>
+          <g>
+            <rect x="24" y="108" width="192" height="28" rx="8" fill="white" stroke="#0f172a" stroke-dasharray="4 4"/>
+            <text x="120" y="127" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="14" font-weight="600" fill="#0f172a">No matching answer</text>
+          </g>
+        </svg>
+      </div>
+
+      <p class="text-sm font-semibold uppercase tracking-wider text-amber-600">404 · Page not found</p>
+      <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+        This page didn't match any answer
+      </h1>
+      <p class="mx-auto mt-5 max-w-xl text-lg text-slate-700">
+        The link you followed is broken, or the page has moved. Head back home, or pick up where most visitors do.
+      </p>
+
+      <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <a
+          href="/"
+          class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
+        >
+          Back to home
+        </a>
+        <a
+          href="/blog/"
+          class="inline-flex items-center justify-center rounded-md border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-900 transition hover:border-slate-400 hover:bg-slate-50"
+        >
+          Browse the blog
+        </a>
+      </div>
+
+      <!-- Popular destinations. Sentence case; mirrors header/footer. -->
+      <section class="mt-16" aria-labelledby="popular-heading">
+        <h2 id="popular-heading" class="text-sm font-semibold uppercase tracking-wider text-slate-500">
+          Try one of these
+        </h2>
+        <ul class="mt-5 flex flex-wrap justify-center gap-2">
+          {popular.map((p) => (
+            <li>
+              <a
+                href={p.href}
+                {...(p.external ? { target: "_blank", rel: "external noopener" } : {})}
+                class="inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-400 hover:text-slate-900"
+              >
+                {p.label}
+                {p.external && <span aria-hidden="true" class="text-slate-400">↗</span>}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <!-- On-site search via Pagefind. The index is emitted at /pagefind/ by
+           astro.config.mjs's pagefindIntegration() on every build. -->
+      <section class="mt-16" aria-labelledby="search-heading">
+        <h2 id="search-heading" class="text-sm font-semibold uppercase tracking-wider text-slate-500">
+          Or search the site
+        </h2>
+        <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+        <div id="rh-404-search" class="mx-auto mt-4 max-w-lg text-left"></div>
+      </section>
+
+      <p class="mt-16 text-sm text-slate-500">
+        Still stuck? <a href="/contact/" class="font-medium text-slate-900 underline-offset-2 hover:underline">Contact us</a> and we'll point you to the right page.
+      </p>
+    </div>
+  </main>
+
+  <!-- Mount Pagefind UI once DOM is ready. The script lives at /pagefind/
+       (shipped by the pagefind integration), so 'self' in script-src covers it. -->
+  <script is:inline src="/pagefind/pagefind-ui.js"></script>
+  <script is:inline>
+    (function () {
+      function mount() {
+        var el = document.getElementById("rh-404-search");
+        if (!el || typeof PagefindUI === "undefined") return;
+        new PagefindUI({
+          element: "#rh-404-search",
+          showSubResults: true,
+          showImages: false,
+          resetStyles: false,
+          translations: {
+            placeholder: "Search revenuehunt.com",
+            zero_results: "No results for [SEARCH_TERM]. Try a shorter or more general term.",
+          },
+        });
+      }
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", mount);
+      } else {
+        mount();
+      }
+    })();
+  </script>
+</Base>

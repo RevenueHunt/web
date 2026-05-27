@@ -100,7 +100,7 @@ Klaviyo's segmentation engine is among the most powerful in the industry. But it
 
 **First-party data** is behavioral: pages visited, products purchased, emails opened. It tells you what someone _did._
 
-**Zero-party data** is intentional: preference information the customer explicitly provides. It tells you what someone _wants._
+**Zero-party data** is intentional: preference information the customer explicitly provides. It tells you what someone _wants._ (For a fuller treatment of the four data types and how they compare, see our [zero-party data guide](https://revenuehunt.com/zero-party-data/).)
 
 Both are valuable. But for Klaviyo segmentation, zero-party data is transformational because it creates segments that are structurally impossible to build from behavioral signals alone. You cannot infer skin type from browsing behavior. You cannot reliably infer primary concern from purchase history. You cannot infer whether someone is a gift buyer from any observational signal available to you.
 

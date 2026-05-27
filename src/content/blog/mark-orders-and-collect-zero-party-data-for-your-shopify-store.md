@@ -20,7 +20,7 @@ As a business owner, you know that data is key to your success. The more data yo
 
 ## What is Zero-Party Data and Why Should You Care?
 
-Zero-party data is information that a customer proactively and willingly shares with a business. This can include things like purchase behavior, preferences, and contact information. Unlike first- or third-party data, zero-party data is gathered directly from the customer rather than indirectly (first party) or from a third-party source.
+Zero-party data is information that a customer proactively and willingly shares with a business. This can include things like purchase behavior, preferences, and contact information. Unlike first- or third-party data, zero-party data is gathered directly from the customer rather than indirectly (first party) or from a third-party source. If you're new to the concept, start with our [complete zero-party data guide](https://revenuehunt.com/zero-party-data/): it covers the four data types side-by-side and the six methods for collecting them.
 
 There are several benefits of collecting zero-party data:
 

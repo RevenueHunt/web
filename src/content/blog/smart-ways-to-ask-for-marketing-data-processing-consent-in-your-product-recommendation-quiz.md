@@ -18,7 +18,7 @@ draft: false
 
 Marketing and data processing is crucial for building trust and ensuring compliance with regulations like GDPR and CCPA. For ecommerce platforms, especially those in the beauty sector, product recommendation quizzes offer a unique and engaging way to collect valuable customer data. However, asking for consent must be done thoughtfully to avoid deterring users.
 
-Here are smart, user-friendly **strategies to ask for marketing and data processing consent** in your [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/).
+Here are smart, user-friendly **strategies to ask for marketing and data processing consent** in your [RevenueHunt: Recommender Quiz for Shopify](https://revenuehunt.com/). If you want a primer on the underlying data category first, our [zero-party data guide](https://revenuehunt.com/zero-party-data/) explains how declared preferences fit alongside first-party, second-party and third-party data.
 
 ## First Consider **When** to Ask
 
@@ -58,7 +58,7 @@ Making the email/phone consent question optional can create a more user-friendly
 
 <table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif;"><thead><tr style="background-color: #f2f2f2;"><th style="padding: 10px; border: 1px solid #ddd; text-align: left;">Pros</th><th style="padding: 10px; border: 1px solid #ddd; text-align: left;">Cons</th></tr></thead><tbody><tr><td style="padding: 10px; border: 1px solid #ddd;">Higher quiz completion rates.</td><td style="padding: 10px; border: 1px solid #ddd;">Lower volume of data collection.</td></tr><tr><td style="padding: 10px; border: 1px solid #ddd;">Users feel less pressured, leading to a more positive brand experience.</td><td style="padding: 10px; border: 1px solid #ddd;">May require additional incentives to encourage users to opt-in.</td></tr></tbody></table>
 
-> **💡Tip:** In Shop Quiz: Product Recommendation Quiz you can choose if a quiz question should be mandatory or optional in [question settings](https://docs.revenuehunt.com/reference/quiz-builder/#question-settings).
+> **💡Tip:** In RevenueHunt: Recommender Quiz for Shopify you can choose if a quiz question should be mandatory or optional in [question settings](https://docs.revenuehunt.com/reference/quiz-builder/#question-settings).
 
 ## Then **How** to Ask for Marketing Consent
 
@@ -70,7 +70,7 @@ Clear and honest communication is key to gaining trust when asking for marketing
 
 ![Smart Ways to Ask for Marketing/Data Processing Consent in Your Product Recommendation Quiz - image 1](/img/blog/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/consent-simple-language1.png)
 
-> **💡Tip:** Use a [GDPR/Yes-No Question](https://docs.revenuehunt.com/how-to-guides/ask-for-marketing-consent/#option-3-gdpr-question) type to easily ask for consent in Shop Quiz: Product Recommendation Quiz.
+> **💡Tip:** Use a [GDPR/Yes-No Question](https://docs.revenuehunt.com/how-to-guides/ask-for-marketing-consent/#option-3-gdpr-question) type to easily ask for consent in RevenueHunt: Recommender Quiz for Shopify.
 
 **Example**: "We'd love to stay in touch to share the best skincare tips and product updates. Do we have your permission to send you emails?" or "Get the most out of our recommendations! Sign up for our newsletter to receive special offers and expert skincare advice." or "Do you agree to receive our personalized product recommendations and updates? \[ \] Yes \[ \] No".
 
@@ -80,7 +80,7 @@ Make your Privacy Policy easily accessible to add transparency and reassure user
 
 ![Smart Ways to Ask for Marketing/Data Processing Consent in Your Product Recommendation Quiz - image 2](/img/blog/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/Screenshot-2024-06-14-122634.png)
 
-> **💡Tip:** You can link to your Privacy Policy within any text element of the Shop Quiz: Product Recommendation Quiz using [Markdown Language](https://docs.revenuehunt.com/how-to-guides/use-markdown/).
+> **💡Tip:** You can link to your Privacy Policy within any text element of the RevenueHunt: Recommender Quiz for Shopify using [Markdown Language](https://docs.revenuehunt.com/how-to-guides/use-markdown/).
 > 
 > **💡Tip:** Follow [these instructions](https://docs.revenuehunt.com/how-to-guides/ask-for-marketing-consent/#option-2-marketing-checkmark) to add a marketing checkmark to any quiz slide.
 
@@ -96,7 +96,7 @@ The design and placement of consent requests can significantly impact user engag
 
 Ensure these options are accessible on all devices with large clickable areas for mobile users. Position consent requests at engaging points in the quiz to avoid disrupting the flow.
 
-> **💡Tip:** Use [Picture Questions](https://docs.revenuehunt.com/reference/quiz-builder/#question-types) to add animated gifs to your quiz choices in Shop Quiz: Product Recommendation Quiz.
+> **💡Tip:** Use [Picture Questions](https://docs.revenuehunt.com/reference/quiz-builder/#question-types) to add animated gifs to your quiz choices in RevenueHunt: Recommender Quiz for Shopify.
 
 **Example:** "Want to receive our updates? Click the heart to say yes! ❤️" or "Would you like to receive our updates? \[ \] Yes, absolutely! (Enthusiastic yes gif) \[ \] No, thanks. (Button shakes slightly)".
 
@@ -106,7 +106,7 @@ Respecting user choice is essential. Always provide a clear and **easy way for u
 
 ![Consent opt out hearts](/img/blog/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/consent-opt-out-hearts.png)
 
-> **💡Tip:** You can add additional information to each quiz slide by activating a [question description](https://docs.revenuehunt.com/how-to-guides/ask-for-marketing-consent/#option-1-question-description) in Shop Quiz: Product Recommendation Quiz.
+> **💡Tip:** You can add additional information to each quiz slide by activating a [question description](https://docs.revenuehunt.com/how-to-guides/ask-for-marketing-consent/#option-1-question-description) in RevenueHunt: Recommender Quiz for Shopify.
 
 **Example**: "You can unsubscribe at any time by clicking the link in our emails. You can still get your personalized recommendations without signing up for our newsletter."
 
@@ -116,7 +116,7 @@ Offer immediate rewards or incentives for giving consent, such as a **discount c
 
 ![Smart Ways to Ask for Marketing/Data Processing Consent in Your Product Recommendation Quiz - image 4](/img/blog/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/consent-discount3.png)
 
-> **💡Tip:** Check [this guide](https://docs.revenuehunt.com/how-to-guides/add-discount/) to learn how to offer discounts in your Shop Quiz: Product Recommendation Quiz.
+> **💡Tip:** Check [this guide](https://docs.revenuehunt.com/how-to-guides/add-discount/) to learn how to offer discounts in your RevenueHunt: Recommender Quiz for Shopify.
 
 **Example**: "Get 10% off your next purchase! Do you agree to receive our exclusive offers? \[ \] Yes, I love discounts! \[ \] No, I'm good for now."
 
@@ -132,6 +132,6 @@ Being transparent about how you will use the data builds trust and increases the
 
 **Obtaining consent** for marketing and data processing in product recommendation quizzes doesn't have to be a daunting task. By integrating consent requests into the quiz, using friendly and transparent wording, making smart design choices, offering clear opt-out options, and building trust through transparency, you can enhance user experience while ensuring compliance and building a strong relationship with your customers.
 
-> **💡Tip:** Try the [Shop Quiz: Product Recommendation Quiz app](https://revenuehunt.com/) and collect value leads for your e-commerce business.
+> **💡Tip:** Try the [RevenueHunt: Recommender Quiz for Shopify app](https://revenuehunt.com/) and collect value leads for your e-commerce business.
 
 Give these strategies a try in your quizzes today and watch your user engagement and data collection improve!

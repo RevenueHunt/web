@@ -329,4 +329,4 @@ Third-party data is purchased or aggregated by an intermediary you don't own and
 
 ## Start collecting zero-party data
 
-You can install [RevenueHunt: Recommender Quiz for Shopify](https://revenuehunt.com/) in under five minutes, pick a template, and have the first quiz answers flowing into Klaviyo, Shopify Orders and your ad platforms the same day. The free plan covers most stores up to their first thousand quiz completions, which is enough to validate the lift before you commit to anything.
+You can install [RevenueHunt: Recommender Quiz for Shopify](https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=platform_hero) in under five minutes, pick a template, and have the first quiz answers flowing into Klaviyo, Shopify Orders and your ad platforms the same day. The free plan covers most stores up to their first thousand quiz completions, which is enough to validate the lift before you commit to anything.

@@ -18,7 +18,7 @@ draft: false
 
 Marketing and data processing is crucial for building trust and ensuring compliance with regulations like GDPR and CCPA. For ecommerce platforms, especially those in the beauty sector, product recommendation quizzes offer a unique and engaging way to collect valuable customer data. However, asking for consent must be done thoughtfully to avoid deterring users.
 
-Here are smart, user-friendly **strategies to ask for marketing and data processing consent** in your [RevenueHunt: Recommender Quiz for Shopify](https://revenuehunt.com/). If you want a primer on the underlying data category first, our [zero-party data guide](https://revenuehunt.com/zero-party-data/) explains how declared preferences fit alongside first-party, second-party and third-party data.
+Here are smart, user-friendly **strategies to ask for marketing and data processing consent** in your [RevenueHunt: Recommender Quiz for Shopify](https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=platform_hero). If you want a primer on the underlying data category first, our [zero-party data guide](https://revenuehunt.com/zero-party-data/) explains how declared preferences fit alongside first-party, second-party and third-party data.
 
 ## First Consider **When** to Ask
 

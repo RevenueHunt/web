@@ -49,7 +49,7 @@ export const PLATFORM_CONFIGS: Record<string, PlatformConfig> = {
       gtagEvent: "download_woocommerce_plugin",
     },
     secondary: { label: "view demo store", href: "https://skincarequiz.myshopify.com", external: true },
-    youtubeId: "SX-BZBl1PFw",
+    youtubeId: "a3KnrwSooao",
     showComparison: true,
   },
   "product-recommendation-quiz-bigcommerce": {

@@ -91,7 +91,7 @@ Here's how the four types compare:
 
 The shorthand: **zero-party is what the customer told you, first-party is what you watched them do, second-party is what a partner shared, third-party is what someone else inferred about them.** They are not interchangeable.
 
-The other important distinction is the relationship between zero-party and first-party data. Zero-party is a *subset* of the broader first-party umbrella in some industry frameworks: you own both, you collected both, both live on your infrastructure. The reason marketers separate them is intent: first-party data is *observed*, zero-party data is *declared*. Observed data is excellent for retargeting, replenishment and propensity modelling. Declared data is excellent for personalisation, segmentation and consent. You want both. You almost certainly already have first-party data. The gap most stores have is zero-party data.
+The other important distinction is the relationship between zero-party and first-party data. Zero-party is a *subset* of the broader first-party umbrella in some industry frameworks: you own both, you collected both, both live on your infrastructure. The reason marketers separate them is intent: first-party data is *observed*, zero-party data is *declared*. Observed data is excellent for retargeting, replenishment and propensity modelling. Declared data is excellent for personalisation, segmentation and consent. You want both. You almost certainly already have first-party data. The gap most stores have is zero-party data. For [the broader first-party-data picture](https://revenuehunt.com/first-party-data/), see our companion guide covering the seven collection channels, activation channels and compliance obligations.
 
 ## Why zero-party data matters in 2026
 

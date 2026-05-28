@@ -15,7 +15,7 @@ author: "alex"
 legacySlug: "build-sales-funnel-shopify-store"
 legacyId: 1939
 legacyUrl: "https://revenuehunt.com/build-sales-funnel-shopify-store/"
-featuredImage: "/img/blog/build-sales-funnel-shopify-store/plus-background.png"
+featuredImage: "/img/blog/build-sales-funnel-shopify-store/plus-background.webp"
 draft: false
 ---
 

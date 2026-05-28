@@ -44,7 +44,7 @@ The top reason niche stores don't convert even after getting targeted traffic is
 RevenueHunt's Recommender Quiz acts like a **personal shopping assistant for your customers**. It asks a series of diagnostic questions, then routes shoppers directly to the right product on a personalised results page. Each answer syncs to your ESP (Klaviyo, Omnisend, Mailchimp) as a custom property, so the same data powers segmented email flows and ad audiences downstream. For the data category that makes this work, see our [zero-party data guide](https://revenuehunt.com/zero-party-data/).
 
 <div class="app-card app-card--featured">
-  <img class="app-card__logo" src="/img/blog/free-shopify-product-recommendation-apps/product-recommendation-quiz-logo.png" alt="RevenueHunt app logo" loading="lazy" />
+  <img class="app-card__logo" src="/img/blog/free-shopify-product-recommendation-apps/product-recommendation-quiz-logo.webp" alt="RevenueHunt app logo" loading="lazy" />
   <div class="app-card__body">
     <h3 class="app-card__title">RevenueHunt: Recommender Quiz for Shopify</h3>
     <p class="app-card__tag">Drive sales, segment your customers and grow your audience with a personalised quiz funnel.</p>
@@ -66,7 +66,7 @@ Used together with the Recommender Quiz, [you can send quiz responses straight t
 The 360-degree customer profile pulls behaviours, customer actions and quiz answers into one record. Automated flows can then recommend products inside personalised emails: replenishment, win-back, post-purchase upsells.
 
 <div class="app-card">
-  <img class="app-card__logo" src="/img/blog/free-shopify-product-recommendation-apps/klaviyo.jpg" alt="Klaviyo app logo" loading="lazy" />
+  <img class="app-card__logo" src="/img/blog/free-shopify-product-recommendation-apps/klaviyo.webp" alt="Klaviyo app logo" loading="lazy" />
   <div class="app-card__body">
     <h3 class="app-card__title">Klaviyo: Email Marketing</h3>
     <p class="app-card__tag">Email and SMS automation that uses quiz answers as custom properties.</p>
@@ -92,7 +92,7 @@ UpPromote works for stores of every size, with plans from FREE through to enterp
 - **Customer referrals.** Customers can refer products to friends and family and earn a commission.
 
 <div class="app-card">
-  <img class="app-card__logo" src="/img/blog/free-shopify-product-recommendation-apps/NEW_logo-1.png" alt="UpPromote app logo" loading="lazy" />
+  <img class="app-card__logo" src="/img/blog/free-shopify-product-recommendation-apps/NEW_logo-1.webp" alt="UpPromote app logo" loading="lazy" />
   <div class="app-card__body">
     <h3 class="app-card__title">UpPromote: Affiliate & Referral</h3>
     <p class="app-card__tag">Affiliate programs, referral programs, loyalty and rewards.</p>
@@ -139,7 +139,7 @@ If your goal is AOV via upsell and cross-sell, Wiser is one of the best apps in 
 The in-depth analytics make it easy to track which placements actually drive incremental revenue.
 
 <div class="app-card">
-  <img class="app-card__logo" src="/img/blog/free-shopify-product-recommendation-apps/wiser.jpg" alt="Wiser app logo" loading="lazy" />
+  <img class="app-card__logo" src="/img/blog/free-shopify-product-recommendation-apps/wiser.webp" alt="Wiser app logo" loading="lazy" />
   <div class="app-card__body">
     <h3 class="app-card__title">Wiser: Personalised Recommendations</h3>
     <p class="app-card__tag">Upsell, related products, frequently bought together, and post-purchase widgets.</p>
@@ -159,7 +159,7 @@ The post-purchase window is the highest-goodwill moment in the entire funnel. Re
 Post-purchase upsells (one click, no card re-entry) routinely produce a 10-20% take rate on a complementary SKU. That's pure incremental AOV with no acquisition cost.
 
 <div class="app-card">
-  <img class="app-card__logo" src="/img/blog/free-shopify-product-recommendation-apps/reconvert-logo.png" alt="ReConvert app logo" loading="lazy" />
+  <img class="app-card__logo" src="/img/blog/free-shopify-product-recommendation-apps/reconvert-logo.webp" alt="ReConvert app logo" loading="lazy" />
   <div class="app-card__body">
     <h3 class="app-card__title">ReConvert Upsell & Cross Sell</h3>
     <p class="app-card__tag">Customise the thank-you page with post-purchase upsells, cross-sells and order tracking.</p>
@@ -179,7 +179,7 @@ PowerBuy enables group-purchase discounts. It's a smart way to **integrate scarc
 You can use the PowerBuy button as a hover display or a regular button with a countdown timer, and the app auto-recommends personalised lists of products for the group-purchase mechanic. Social sharing is built in.
 
 <div class="app-card">
-  <img class="app-card__logo" src="/img/blog/free-shopify-product-recommendation-apps/powerbuy.png" alt="PowerBuy app logo" loading="lazy" />
+  <img class="app-card__logo" src="/img/blog/free-shopify-product-recommendation-apps/powerbuy.webp" alt="PowerBuy app logo" loading="lazy" />
   <div class="app-card__body">
     <h3 class="app-card__title">PowerBuy: Social Group Buying</h3>
     <p class="app-card__tag">Group-purchase discounts with countdown timers and social sharing built in.</p>
@@ -199,7 +199,7 @@ For pure display-based recommendations across the store (home, cart, search, etc
 Place personalised recommendations anywhere on your eCommerce store using a short code or theme block. Group products for upsell based on best-sellers, new arrivals, collections, product types, vendors, tags, or recently viewed products.
 
 <div class="app-card">
-  <img class="app-card__logo" src="/img/blog/free-shopify-product-recommendation-apps/product-recommendations-pro.png" alt="Product Recommendations PRO app logo" loading="lazy" />
+  <img class="app-card__logo" src="/img/blog/free-shopify-product-recommendation-apps/product-recommendations-pro.webp" alt="Product Recommendations PRO app logo" loading="lazy" />
   <div class="app-card__body">
     <h3 class="app-card__title">Product Recommendations PRO</h3>
     <p class="app-card__tag">Display personalised recommendations anywhere on your online store via shortcode.</p>
@@ -219,7 +219,7 @@ Also Bought is one of the longest-running cross-sell apps on the Shopify App Sto
 You also get full control over the widget's position on product pages and the checkout cart.
 
 <div class="app-card">
-  <img class="app-card__logo" src="/img/blog/free-shopify-product-recommendation-apps/also-bought.png" alt="Also Bought app logo" loading="lazy" />
+  <img class="app-card__logo" src="/img/blog/free-shopify-product-recommendation-apps/also-bought.webp" alt="Also Bought app logo" loading="lazy" />
   <div class="app-card__body">
     <h3 class="app-card__title">Also Bought: Cross Sell</h3>
     <p class="app-card__tag">Amazon-style "customers who bought this also bought" related-product recommendations.</p>

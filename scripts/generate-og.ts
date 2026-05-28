@@ -59,6 +59,8 @@ const BESPOKE: OgPage[] = [
   { slug: "partners", title: "Partners & affiliates", subtitle: "Grow your agency with our partner program." },
   { slug: "for-beauty-brands", title: "For beauty brands", subtitle: "Resources, tutorials, and strategies for beauty eCommerce." },
   { slug: "zero-party-data", title: "Zero-party data", subtitle: "Why and how to collect data your customers volunteer." },
+  { slug: "first-party-data", title: "First-party data", subtitle: "What it is, how to collect it on Shopify, and why it matters in 2026." },
+  { slug: "ecommerce-sales-funnel-examples", title: "11 ecommerce funnel examples", subtitle: "Real DTC funnels that convert — Function of Beauty, Stitch Fix, Casper, and more." },
   { slug: "faqs", title: "FAQs", subtitle: "Answers to common questions about RevenueHunt." },
   {
     slug: "how-it-works",

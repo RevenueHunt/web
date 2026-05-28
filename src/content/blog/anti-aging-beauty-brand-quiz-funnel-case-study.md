@@ -54,7 +54,7 @@ Verified via RevenueHunt analytics
 
 The brand operates in the premium at-home skincare device vertical. A fast-growing category driven by consumers seeking professional-grade results without the cost, inconvenience, or risk of in-clinic treatments. Their flagship product is a multi-function facial sculpting device priced at approximately $130 USD. The brand pairs the device with a complementary serum, frequently sold as a bundle.
 
-![How US Anti-Aging Device Brand Achieved 42.64% AOV Lift & $691K in 90 Days Using a Qualifying Funnel Quiz - image 1](/img/blog/anti-aging-beauty-brand-quiz-funnel-case-study/blog_casestudy_aov42_img2.png)
+![How US Anti-Aging Device Brand Achieved 42.64% AOV Lift & $691K in 90 Days Using a Qualifying Funnel Quiz - image 1](/img/blog/anti-aging-beauty-brand-quiz-funnel-case-study/blog_casestudy_aov42_img2.webp)
 
 Fig. 01  
 The brand's flagship product: an at-home facial sculpting device paired with a hydrating serum. AI-generated illustration. Not the actual product.
@@ -103,7 +103,7 @@ This decision was rooted in a clear hypothesis: the 55+ consumer arriving from a
 
 [RevenueHunt: Recommender Quiz app](https://revenuehunt.com/product-recommendation-quiz-shopify/) was selected as the platform because it supported the full architecture this approach required: conditional logic branching (so the quiz could route different age groups and concern profiles through customized paths), persuasion checkpoints between data-collection questions (informational screens that build the case for the product mid-flow), a single focused results page with a direct purchase CTA, and the visual customization needed to match the brand's blush-pink aesthetic without breaking the immersive experience. The no-code builder allowed the marketing team to build and iterate the quiz logic independently, without developer dependency.
 
-![How US Anti-Aging Device Brand Achieved 42.64% AOV Lift & $691K in 90 Days Using a Qualifying Funnel Quiz - image 2](/img/blog/anti-aging-beauty-brand-quiz-funnel-case-study/blog_casestudy_aov42_img3v3.png)
+![How US Anti-Aging Device Brand Achieved 42.64% AOV Lift & $691K in 90 Days Using a Qualifying Funnel Quiz - image 2](/img/blog/anti-aging-beauty-brand-quiz-funnel-case-study/blog_casestudy_aov42_img3v3.webp)
 
 Fig. 02  
 How the qualifying quiz funnel works: cold ad traffic enters a 12-step experience that alternates between data-collection questions and persuasion checkpoints before routing every completer to a single purchase-ready results page. Quiz answers sync automatically to Klaviyo for post-purchase segmentation.

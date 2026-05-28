@@ -157,6 +157,117 @@
   border-radius: 0.5rem;
 }
 
+/* App tiles in product roundups (e.g. /free-shopify-product-recommendation-apps/):
+   uniform card per app with logo, title, tagline, pricing and CTA. The
+   `.app-card--featured` variant highlights our own product with an
+   "Editor's pick" badge. Scoped to `.prose` so prose-typography defaults
+   don't bleed into the card's link/heading styling. */
+.prose .app-card {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 22px;
+  align-items: start;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 22px 24px;
+  margin: 24px 0;
+  background: #ffffff;
+}
+.prose .app-card--featured {
+  border: 2px solid #16161d;
+  background: #fafafa;
+  position: relative;
+  padding-top: 28px;
+}
+.prose .app-card--featured::before {
+  content: "★ Editor's pick";
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  background: #16161d;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 4px 12px;
+  border-radius: 100px;
+  text-transform: uppercase;
+}
+.prose .app-card__logo {
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+  object-fit: contain;
+  background: #ffffff;
+  border: 1px solid #f1f5f9;
+  margin: 0;
+  padding: 8px;
+}
+.prose .app-card__body {
+  min-width: 0;
+}
+.prose .app-card__title {
+  margin: 0 0 4px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+}
+.prose .app-card__tag {
+  margin: 0 0 14px;
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.45;
+}
+.prose .app-card__meta {
+  margin: 0 0 16px;
+  font-size: 13px;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 4px 14px;
+}
+.prose .app-card__meta dt {
+  color: #64748b;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 10.5px;
+  align-self: center;
+}
+.prose .app-card__meta dd {
+  margin: 0;
+  color: #334155;
+}
+.prose .app-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: #16161d;
+  color: #ffffff !important;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: background 0.15s;
+}
+.prose .app-card__cta:hover {
+  background: #2a2a35;
+}
+@media (max-width: 540px) {
+  .prose .app-card {
+    grid-template-columns: 56px 1fr;
+    gap: 16px;
+    padding: 20px 18px;
+  }
+  .prose .app-card__logo {
+    width: 56px;
+    height: 56px;
+    padding: 6px;
+  }
+}
+
 /* Product showcase grid in rendered markdown (e.g. the Skinology post):
    compact, evenly-sized thumbnails instead of full-width product images. */
 .product-grid {

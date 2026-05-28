@@ -1,6 +1,6 @@
 ---
-title: "Ecommerce sales funnel: stages, strategy, and how to build one in 2026"
-description: "A step-by-step guide to designing an ecommerce sales funnel that converts: the five stages, the strategic choices, and the exact build sequence on Shopify."
+title: "Ecommerce sales funnel: how to build one that converts"
+description: "How to build an ecommerce sales funnel that converts: the five stages, the strategic choices, and the exact build sequence on Shopify."
 pubDate: 2020-12-15T16:39:11Z
 updatedDate: 2026-05-28T11:00:00Z
 tags:
@@ -15,7 +15,7 @@ author: "alex"
 legacySlug: "build-sales-funnel-shopify-store"
 legacyId: 1939
 legacyUrl: "https://revenuehunt.com/build-sales-funnel-shopify-store/"
-featuredImage: "/img/blog/build-sales-funnel-shopify-store/plus-background.webp"
+featuredImage: "/img/blog/build-sales-funnel-shopify-store/plus-background.png"
 draft: false
 ---
 

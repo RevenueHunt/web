@@ -1,9 +1,11 @@
 ---
 import Base from "../../layouts/Base.astro";
 import PlanCards from "../../components/pages/PlanCards.astro";
-import { organization, breadcrumb } from "../../lib/schema";
+import Reviews from "../../components/Reviews.astro";
+import { organization, breadcrumb, productWithReviews } from "../../lib/schema";
 import { SITE } from "../../lib/site";
 import { PLANS } from "../../lib/plans";
+import { COMBINED_REVIEWS } from "../../lib/reviews";
 
 const jsonLd = [
   organization(),
@@ -11,28 +13,22 @@ const jsonLd = [
     { name: "Home", url: "/" },
     { name: "Pricing", url: "/pricing/" },
   ]),
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
+  productWithReviews({
     name: "RevenueHunt - Product Recommendation Quiz",
     description:
       "Product recommendation quizzes for ecommerce. Free plan, paid plans from $39/mo.",
-    image: new URL("/og/pricing.png", SITE.site_url).href,
-    brand: { "@type": "Brand", name: SITE.name },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      ratingCount: "450",
-    },
-    offers: PLANS.map((p) => ({
-      "@type": "Offer",
-      name: p.name,
-      price: p.price === "FREE" ? "0" : p.price,
-      priceCurrency: "USD",
-      availability: "https://schema.org/InStock",
-      url: SITE.site_url + "/pricing/",
+    image: "/og/pricing.png",
+    url: "/pricing/",
+    ratingValue: COMBINED_REVIEWS.ratingValue,
+    reviewCount: COMBINED_REVIEWS.reviewCount,
+    reviews: COMBINED_REVIEWS.reviews.map((r) => ({
+      author: r.author,
+      quote: r.quote,
+      rating: r.rating,
+      date: r.date,
     })),
-  },
+    offers: PLANS.map((p) => ({ name: p.name, price: p.price })),
+  }),
 ];
 ---
 
@@ -103,6 +99,8 @@ const jsonLd = [
       });
     })();
   </script>
+
+  <Reviews data={COMBINED_REVIEWS} heading="Loved by 500+ ecommerce merchants" bg="bg-white" />
 
   <!-- Enterprise / larger plans - two-column: title+CTA left, 5 checks right -->
   <section id="enterprise" class="mx-auto max-w-7xl px-6 py-12">

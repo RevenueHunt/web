@@ -2,10 +2,12 @@
 import type { CollectionEntry } from "astro:content";
 import { render } from "astro:content";
 import Base from "../../layouts/Base.astro";
-import { organization, breadcrumb } from "../../lib/schema";
+import { organization, breadcrumb, productWithReviews } from "../../lib/schema";
 import { SITE } from "../../lib/site";
 import { PLATFORM_CONFIGS, type PlatformConfig } from "../../lib/platforms";
+import { PLATFORM_REVIEWS } from "../../lib/reviews";
 import YouTubeFacade from "../YouTubeFacade.astro";
+import Reviews from "../Reviews.astro";
 
 interface Props {
   entry: CollectionEntry<"pages">;
@@ -68,12 +70,32 @@ const pillars = [
   },
 ];
 
+const reviews = PLATFORM_REVIEWS[currentSlug] ?? null;
+
 const jsonLd = [
   organization(),
   breadcrumb([
     { name: "Home", url: "/" },
     { name: entry.data.title, url: `/${entry.data.legacySlug}/` },
   ]),
+  ...(reviews
+    ? [
+        productWithReviews({
+          name: `RevenueHunt Product Recommendation Quiz for ${reviews.platform}`,
+          description: entry.data.description ?? SITE.description,
+          image: `/og/${currentSlug}.png`,
+          url: `/${currentSlug}/`,
+          ratingValue: reviews.ratingValue,
+          reviewCount: reviews.reviewCount,
+          reviews: reviews.reviews.map((r) => ({
+            author: r.author,
+            quote: r.quote,
+            rating: r.rating,
+            date: r.date,
+          })),
+        }),
+      ]
+    : []),
 ];
 
 function rel(c: { external?: boolean }) {
@@ -248,6 +270,14 @@ function rel(c: { external?: boolean }) {
       </ul>
     </div>
   </section>
+
+  {reviews && (
+    <Reviews
+      data={reviews}
+      heading={`Rated ${reviews.ratingValue} by ${config.platform} merchants`}
+      bg="bg-white"
+    />
+  )}
 
   <!-- Bottom CTA -->
   <section class="bg-[#16161D]">

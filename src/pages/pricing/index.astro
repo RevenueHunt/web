@@ -17,6 +17,7 @@ const jsonLd = [
     name: "RevenueHunt - Product Recommendation Quiz",
     description:
       "Product recommendation quizzes for ecommerce. Free plan, paid plans from $39/mo.",
+    image: new URL("/og/pricing.png", SITE.site_url).href,
     brand: { "@type": "Brand", name: SITE.name },
     offers: PLANS.map((p) => ({
       "@type": "Offer",

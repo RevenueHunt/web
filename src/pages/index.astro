@@ -1,6 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import PlanCards from "../components/pages/PlanCards.astro";
+import YouTubeFacade from "../components/YouTubeFacade.astro";
 import { organization, website, softwareApplication } from "../lib/schema";
 import { SITE } from "../lib/site";
 
@@ -205,14 +206,7 @@ const WOOCOMMERCE_REVIEWS =
 
         <div class="relative lg:mt-14">
           <div class="aspect-video overflow-hidden rounded-xl bg-slate-900 shadow-2xl">
-            <iframe
-              src={`https://www.youtube-nocookie.com/embed/${YOUTUBE_ID}?rel=0`}
-              title="RevenueHunt - Product Recommendation Quiz"
-              loading="lazy"
-              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-              class="h-full w-full"
-            ></iframe>
+            <YouTubeFacade id={YOUTUBE_ID} title="RevenueHunt - Product Recommendation Quiz" />
           </div>
         </div>
       </div>

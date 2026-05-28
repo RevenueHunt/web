@@ -5,6 +5,7 @@ import Base from "../../layouts/Base.astro";
 import { organization, breadcrumb } from "../../lib/schema";
 import { SITE } from "../../lib/site";
 import { PLATFORM_CONFIGS, type PlatformConfig } from "../../lib/platforms";
+import YouTubeFacade from "../YouTubeFacade.astro";
 
 interface Props {
   entry: CollectionEntry<"pages">;
@@ -132,14 +133,7 @@ function rel(c: { external?: boolean }) {
         {config.youtubeId && (
           <div>
             <div class="aspect-video overflow-hidden rounded-xl bg-slate-900 shadow-2xl">
-              <iframe
-                src={`https://www.youtube-nocookie.com/embed/${config.youtubeId}?rel=0`}
-                title={`${entry.data.title} - video tour`}
-                loading="lazy"
-                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-                class="h-full w-full"
-              />
+              <YouTubeFacade id={config.youtubeId} title={`${entry.data.title} - video tour`} />
             </div>
           </div>
         )}

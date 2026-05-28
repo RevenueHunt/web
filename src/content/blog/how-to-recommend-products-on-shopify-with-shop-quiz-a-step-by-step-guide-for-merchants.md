@@ -74,7 +74,10 @@ The **exclude** feature allows you to filter out products that may not be suitab
 
 Before proceeding, ensure you have added all the necessary questions and choices to your quiz.
 
-> **💡 Tip:** Check [this guide](https://docs.revenuehunt.com/how-to-guides/create-first-quiz/) for building your first product quiz with [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/).
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Check <a href="https://docs.revenuehunt.com/how-to-guides/create-first-quiz/" style="color:#16161D;text-decoration:underline;">this guide</a> for building your first product quiz with <a href="https://revenuehunt.com/product-recommendation-quiz/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz</a>.</p>
+</div>
 
 Once that is done, you can follow these steps to configure product recommendations in your quiz:
 
@@ -110,7 +113,10 @@ In this section, we will explore some advanced features of the Shop Quiz app tha
 
 To recommend a multi-step routine, use **Product Slot Blocks**. Each slot can represent a different category (e.g., cleanser, toner, serum) and will recommend the top-voted product for that step. This approach is particularly useful for industries like skincare, where a structured product sequence is beneficial.
 
-> **💡Tip:** Check [this guide](https://docs.revenuehunt.com/how-to-guides/recommend-skincare-routine-slots/) to learn how to set up slots step-by-step.
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Check <a href="https://docs.revenuehunt.com/how-to-guides/recommend-skincare-routine-slots/" style="color:#16161D;text-decoration:underline;">this guide</a> to learn how to set up slots step-by-step.</p>
+</div>
 
 #### **Matrix Criteria Recommendations**
 
@@ -120,7 +126,10 @@ For more complex criteria, such as combining age and skin type, create collectio
 
 For very complex product matrices, consider using conditional logic to create branching paths that offer even more tailored recommendations.
 
-> **💡Tip:** Check [this guide](https://docs.revenuehunt.com/how-to-guides/recommend-product-matrix/) to learn more about setting up complex quizzes.
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Check <a href="https://docs.revenuehunt.com/how-to-guides/recommend-product-matrix/" style="color:#16161D;text-decoration:underline;">this guide</a> to learn more about setting up complex quizzes.</p>
+</div>
 
 #### **Recommending Subscription Products**
 
@@ -132,7 +141,10 @@ Integrating ReCharge Subscriptions can enhance your recommendation strategy by p
 
 **📝 Other Subscription Apps**: If you are using a different subscription app instead of ReCharge, you can still guide customers towards a subscription option by creating one-time purchase versions of your subscription products. Link these products to the quiz choices, and set the checkout settings to direct users to the product page where they can choose the subscription option.
 
-> **💡Tip:** Check [this guide](https://docs.revenuehunt.com/how-to-guides/recommend-subscription-products/) for information about recommending subscription products.
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Check <a href="https://docs.revenuehunt.com/how-to-guides/recommend-subscription-products/" style="color:#16161D;text-decoration:underline;">this guide</a> for information about recommending subscription products.</p>
+</div>
 
 #### **Ensuring Specific Products Always Appear**
 
@@ -146,7 +158,10 @@ or
 
 Highlighting a product can be beneficial if you want to ensure visibility for new arrivals, promotional items, or products with high profit margins. However, make sure not to recommend too many products at once, as this can confuse the customer and potentially lower sales. Focusing on a few key items helps draw customer attention effectively and makes the purchasing decision easier.
 
-> **💡Tip:** Check [this guide](https://docs.revenuehunt.com/how-to-guides/always-recommend-the-same-product/) for step-by-step instructions on how to always recommend certain products.
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Check <a href="https://docs.revenuehunt.com/how-to-guides/always-recommend-the-same-product/" style="color:#16161D;text-decoration:underline;">this guide</a> for step-by-step instructions on how to always recommend certain products.</p>
+</div>
 
 ### Adding Explanations to Recommendations
 

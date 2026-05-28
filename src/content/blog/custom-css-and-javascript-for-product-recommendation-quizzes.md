@@ -27,17 +27,17 @@ This isn't just about tweaking colors or moving a button around - it's about tak
 
 No one said your quiz had to look or behave like anyone else's. Why not push the boundaries and see what you can create?
 
-> **Why Customize Your Quiz with CSS and JavaScript?**
-> 
-> Customizing your [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) with CSS and JavaScript allows you to:
-> 
-> **🏷️ Maintain Brand Consistency**: Ensure the quiz matches your brand's look and feel.
-> 
-> **💪 Enhance User Experience**: Improve the quiz interface to make it more user-friendly.
-> 
-> **✨ Add Unique Functionalities**: Introduce new features that are not available by default.
-> 
-> ![Custom CSS and JavaScript for Product Recommendation Quizzes - image 2](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2020-09-29-at-20.34.03-1024x594.png)
+**Why Customize Your Quiz with CSS and JavaScript?**
+
+Customizing your [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) with CSS and JavaScript allows you to:
+
+**🏷️ Maintain Brand Consistency**: Ensure the quiz matches your brand's look and feel.
+
+**💪 Enhance User Experience**: Improve the quiz interface to make it more user-friendly.
+
+**✨ Add Unique Functionalities**: Introduce new features that are not available by default.
+
+![Custom CSS and JavaScript for Product Recommendation Quizzes - image 2](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2020-09-29-at-20.34.03-1024x594.png)
 
 **Jump to:**
 
@@ -99,9 +99,11 @@ h1, h2, h3, h4, h5, h6, p, button, div{
 }
 </pre></td></tr></tbody></table>
 
-> **💡 Tip: Use Markdown for Text Styling**
-> 
-> You don't always need custom CSS to style your quiz. You can use [Markdown language](https://docs.revenuehunt.com/how-to-guides/use-markdown/) to format text within the quiz for basic styling such as headings, bold, italics, links, images, and videos.
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;"><strong>💡 Tip: Use Markdown for Text Styling</strong></p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">You don't always need custom CSS to style your quiz. You can use <a href="https://docs.revenuehunt.com/how-to-guides/use-markdown/" style="color:#16161D;text-decoration:underline;">Markdown language</a> to format text within the quiz for basic styling such as headings, bold, italics, links, images, and videos.</p>
+</div>
 
 ### Step 3: Advanced CSS Customizations
 
@@ -322,10 +324,10 @@ So go ahead, experiment, and make your quiz as bold, sleek, or playful as you wa
 
 Feel free to [reach out to our team](https://revenuehunt.com/contact/) for any specific customization queries or to share your unique customizations with us. We love seeing how our clients creatively use our tools to enhance their customer experience!
 
-> **💡 Tip:** For more detailed guides, visit the following:
-> 
-> [👉 Add JavaScript](https://docs.revenuehunt.com/how-to-guides/add-javascript/)
-> 
-> [👉 Customize Quiz Design](https://docs.revenuehunt.com/how-to-guides/customize-quiz-design/)
-> 
-> [👉 Usign the Callback Function](https://docs.revenuehunt.com/how-to-guides/use-callback-function/)
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">For more detailed guides, visit the following:</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;"><a href="https://docs.revenuehunt.com/how-to-guides/add-javascript/" style="color:#16161D;text-decoration:underline;">👉 Add JavaScript</a></p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;"><a href="https://docs.revenuehunt.com/how-to-guides/customize-quiz-design/" style="color:#16161D;text-decoration:underline;">👉 Customize Quiz Design</a></p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;"><a href="https://docs.revenuehunt.com/how-to-guides/use-callback-function/" style="color:#16161D;text-decoration:underline;">👉 Usign the Callback Function</a></p>
+</div>

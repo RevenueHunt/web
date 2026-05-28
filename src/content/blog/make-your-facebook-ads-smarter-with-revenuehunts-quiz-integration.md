@@ -26,16 +26,16 @@ By integrating **RevenueHunt's Product Recommendation Quiz** with your **Faceboo
 
 In this article, we'll explore why every Shopify merchant should integrate **Facebook Pixel** with their **RevenueHunt quiz** and how it can supercharge your business growth.
 
-> ### **Why Should Shopify Merchants Care About Facebook Pixel?**
-> 
-> The **Facebook Pixel** is a **small piece of code** you add to your store to track visitors and measure conversions from your Facebook and Instagram ads. It allows you to:
-> 
-> ✔️ **Retarget potential buyers** who didn't complete a purchase  
-> ✔️ **Optimize ad spend** by showing your ads to the most relevant audience  
-> ✔️ **Build Lookalike Audiences** to find new customers who resemble your best buyers  
-> ✔️ **Track conversions** and measure the real impact of your ads
-> 
-> But when paired with RevenueHunt's Product Recommendation Quiz, the Facebook Pixel becomes even more powerful.
+### **Why Should Shopify Merchants Care About Facebook Pixel?**
+
+The **Facebook Pixel** is a **small piece of code** you add to your store to track visitors and measure conversions from your Facebook and Instagram ads. It allows you to:
+
+✔️ **Retarget potential buyers** who didn't complete a purchase  
+✔️ **Optimize ad spend** by showing your ads to the most relevant audience  
+✔️ **Build Lookalike Audiences** to find new customers who resemble your best buyers  
+✔️ **Track conversions** and measure the real impact of your ads
+
+But when paired with RevenueHunt's Product Recommendation Quiz, the Facebook Pixel becomes even more powerful.
 
 ## **Combining Facebook Pixel with Your Quiz**
 

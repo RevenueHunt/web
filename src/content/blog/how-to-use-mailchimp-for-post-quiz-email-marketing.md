@@ -75,7 +75,10 @@ Once you have your quiz, connecting it to MailChimp is very easy:
 -   Select the _MailChimp list_ to send your quiz leads to and their default _subscriber status_.
 -   Publish the changes with the top-right 'Publish' button.
 
-> **💡 Tip:** Remember to **take a test quiz/preview** the quiz leaving a sample email address in order to send first data to MailChimp and test the connection. You can use your real email with a _+test1, +test2_ to test different answering routes. For example, _youremail+test1@email.com_ or _youremail+test2@email.com_.
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Remember to <strong>take a test quiz/preview</strong> the quiz leaving a sample email address in order to send first data to MailChimp and test the connection. You can use your real email with a _+test1, +test2_ to test different answering routes. For example, _youremail+test1@email.com_ or _youremail+test2@email.com_.</p>
+</div>
 
 ### 2️⃣ Use Customer Tags for Segmentation
 

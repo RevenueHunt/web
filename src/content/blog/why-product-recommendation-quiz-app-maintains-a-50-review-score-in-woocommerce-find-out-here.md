@@ -31,11 +31,11 @@ The [Product Recommendation Quiz app](https://revenuehunt.com/product-recommenda
 
 With an **impeccable rating of 5,0 from 95 reviews**, this app has become a favorite among WordPress/WooCommerce merchants. It offers a **free plan and a free trial**, making it accessible to businesses of all sizes. The app integrates seamlessly with WooCommerce admin interface and works with popular themes, making it a versatile addition to any online store.
 
-> **📝 Note:** There are actually **two versions** of the Product Recommendation Quiz available for WooCommerce users.
-> 
-> **Product Recommendation Quiz for eCommerce:** The [WordPress Plugin](https://wordpress.org/plugins/product-recommendation-quiz-for-ecommerce/) is free to install and puts you directly on our **Free plan**. The Free plan allows up to _100 quiz responses per month_ without any charges but has a "Powered by RevenueHunt" branding. If your usage exceeds the Free plan, you'll be asked to upgrade to a Basic plan which is billed monthly.
-> 
-> **Product Recommendation Quiz for WooCommerce:** The [WooCommerce extension](https://woocommerce.com/products/product-recommendation-quiz-for-woocommerce/) requires a yearly subscription (29$/year) to install the app and puts you on a **Starter Plan**. The Starter Plan allows up to _250 quiz responses per month_ and has the "Powered by RevenueHunt" branding removed. If your usage exceeds the Starter plan, you'll be asked to upgrade to a Basic plan which is billed monthly.
+**📝 Note:** There are actually **two versions** of the Product Recommendation Quiz available for WooCommerce users.
+
+**Product Recommendation Quiz for eCommerce:** The [WordPress Plugin](https://wordpress.org/plugins/product-recommendation-quiz-for-ecommerce/) is free to install and puts you directly on our **Free plan**. The Free plan allows up to _100 quiz responses per month_ without any charges but has a "Powered by RevenueHunt" branding. If your usage exceeds the Free plan, you'll be asked to upgrade to a Basic plan which is billed monthly.
+
+**Product Recommendation Quiz for WooCommerce:** The [WooCommerce extension](https://woocommerce.com/products/product-recommendation-quiz-for-woocommerce/) requires a yearly subscription (29$/year) to install the app and puts you on a **Starter Plan**. The Starter Plan allows up to _250 quiz responses per month_ and has the "Powered by RevenueHunt" branding removed. If your usage exceeds the Starter plan, you'll be asked to upgrade to a Basic plan which is billed monthly.
 
 ## Why WooCommerce Merchants Love Product Recommendation Quiz App?
 

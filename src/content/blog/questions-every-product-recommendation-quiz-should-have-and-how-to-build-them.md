@@ -34,7 +34,10 @@ All types of businesses can benefit from a warm, inviting introduction, particul
 
 **Example:** "Welcome to our personalized skincare quiz! Answer a few questions to find the perfect products for your skin type. Let's get started!"
 
-> **💡 Tip**: [Upload images or videos](https://docs.revenuehunt.com/how-to-guides/customize-quiz-design/#adding-images-and-videos) into your [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/) slides to grab the customer's attention and reduce drop-off. Visual quizzes sell better.
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;"><a href="https://docs.revenuehunt.com/how-to-guides/customize-quiz-design/#adding-images-and-videos" style="color:#16161D;text-decoration:underline;">Upload images or videos</a> into your <a href="https://revenuehunt.com/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz</a> slides to grab the customer's attention and reduce drop-off. Visual quizzes sell better.</p>
+</div>
 
 ### 2\. Thank You Message
 
@@ -62,7 +65,10 @@ Types of Businesses that should use Multiple-choice slides include Beauty and sk
 
 **Example:** "Which skincare products do you currently use?" Cleanser / Toner/ Serum / Moisturizer
 
-> **💡 Tip**: You can allow multiple-selection for any slide in [question settings](https://docs.revenuehunt.com/reference/quiz-builder/#question-settings).
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">You can allow multiple-selection for any slide in <a href="https://docs.revenuehunt.com/reference/quiz-builder/#question-settings" style="color:#16161D;text-decoration:underline;">question settings</a>.</p>
+</div>
 
 ### 4\. Yes/No
 
@@ -128,9 +134,11 @@ Types of Businesses that should ask longer open-ended questions include Consulti
 
 ## **Personal Information Collection**
 
-> **💡 Tip**: You can [join multiple slides](https://docs.revenuehunt.com/how-to-guides/join-questions/) into one for a smoother personal-data collection.
-> 
-> ![Questions Every Product Recommendation Quiz Should Have (and How to Build Them) - image 9](/img/blog/questions-every-product-recommendation-quiz-should-have-and-how-to-build-them/joinedslides.png)
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">You can <a href="https://docs.revenuehunt.com/how-to-guides/join-questions/" style="color:#16161D;text-decoration:underline;">join multiple slides</a> into one for a smoother personal-data collection.</p>
+  <img src="/img/blog/questions-every-product-recommendation-quiz-should-have-and-how-to-build-them/joinedslides.png" alt="Questions Every Product Recommendation Quiz Should Have (and How to Build Them) - image 9" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+</div>
 
 ### 9\. Name
 
@@ -156,7 +164,10 @@ All businesses should add an email question to their product quiz to build email
 
 **Example:** "What is your email address?" or "Get the most out of our recommendations! Sign up for our newsletter to receive special offers and expert skincare advice.".
 
-> **💡 Tip**: Check our [latest article](https://revenuehunt.com/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/) on how to ask to marketing consent in your [Shop Quiz: Product Recommendation Quiz.](https://revenuehunt.com/)
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Check our <a href="https://revenuehunt.com/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/" style="color:#16161D;text-decoration:underline;">latest article</a> on how to ask to marketing consent in your <a href="https://revenuehunt.com/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz.</a></p>
+</div>
 
 ### 11\. Phone Number
 
@@ -210,7 +221,10 @@ All businesses should have a GDPR question in their quiz to ensure legal complia
 
 **Example:** "Do you agree to our terms and conditions?"
 
-> **💡 Tip**: Use [Markdown language](https://docs.revenuehunt.com/how-to-guides/use-markdown/) in your [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/) to add a link to your privacy policy directly into the question.
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Use <a href="https://docs.revenuehunt.com/how-to-guides/use-markdown/" style="color:#16161D;text-decoration:underline;">Markdown language</a> in your <a href="https://revenuehunt.com/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz</a> to add a link to your privacy policy directly into the question.</p>
+</div>
 
 ## **File Upload and Informational Slides**
 
@@ -248,7 +262,10 @@ Here are some best practices to ensure your product recommendation quiz is as ef
 
 **☑️ Personalize Where Possible.** Personalizing questions based on user responses can significantly improve engagement and the accuracy of product recommendations. Tailoring the quiz experience to individual users makes them feel valued and understood.
 
-> **💡 Tip**: You can use [Information Recalls](https://docs.revenuehunt.com/how-to-guides/use-information-recalls/) in your [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/) to recall the customer's previous answers such as a name or a skintype.
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">You can use <a href="https://docs.revenuehunt.com/how-to-guides/use-information-recalls/" style="color:#16161D;text-decoration:underline;">Information Recalls</a> in your <a href="https://revenuehunt.com/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz</a> to recall the customer's previous answers such as a name or a skintype.</p>
+</div>
 
 By adding these question types to your product recommendation quiz, you can create an engaging experience that not only gathers valuable customer data but also provides personalized product recommendations.
 

@@ -46,7 +46,10 @@ Follow these expert tips to create a quiz that engages your audience, boosts you
 
 ☑️ Show empathy and understanding in the language used throughout the quiz. **Acknowledge the user's concerns and preferences**, creating a connection.
 
-> **💡Tip**: In [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) you can use [Information Recalls](https://docs.revenuehunt.com/how-to-guides/use-information-recalls/) to recall previous customer answers in other parts of the quiz.
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">In <a href="https://revenuehunt.com/product-recommendation-quiz/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz</a> you can use <a href="https://docs.revenuehunt.com/how-to-guides/use-information-recalls/" style="color:#16161D;text-decoration:underline;">Information Recalls</a> to recall previous customer answers in other parts of the quiz.</p>
+</div>
 
 **☑️ Mention a 🎁 reward at the start**, such as a personalized product recommendation or a special discount, to encourage users to finish the quiz.
 
@@ -58,29 +61,42 @@ Follow these expert tips to create a quiz that engages your audience, boosts you
 
 ✔️ **Provide instant feedback** on selections, such as "Great choice! This is one of our most common complaints from people with combination skin."
 
-> **💡Tip**: In [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) you can use [Conditional Logic](https://docs.revenuehunt.com/how-to-guides/use-conditional-logic/) to branch your quiz based on the customer answers.
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">In <a href="https://revenuehunt.com/product-recommendation-quiz/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz</a> you can use <a href="https://docs.revenuehunt.com/how-to-guides/use-conditional-logic/" style="color:#16161D;text-decoration:underline;">Conditional Logic</a> to branch your quiz based on the customer answers.</p>
+</div>
 
 ✔️ **Collect small amounts of information at different stages** rather than all at once. For example, ask for email addresses only after the user has engaged with several questions.
 
-> **💡Tip**: Check out t[his great guide](https://revenuehunt.com/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/) on how to effectively ask for marketing/data in your product recommendation quiz.
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Check out t<a href="https://revenuehunt.com/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/" style="color:#16161D;text-decoration:underline;">his great guide</a> on how to effectively ask for marketing/data in your product recommendation quiz.</p>
+</div>
 
 ✔️ Ensure the quiz is **fully optimized for mobile devices**. Use images optimized for mobile and ensure the interface is intuitive on smaller screens.
 
-> **💡Tip**: All quizzes created with [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) app are automatically optimized for both desktop and mobile viewing.
-> 
-> ![Product recommendation quiz beauty](/img/blog/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/product-recommendation-quiz-beauty.png)
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">All quizzes created with <a href="https://revenuehunt.com/product-recommendation-quiz/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz</a> app are automatically optimized for both desktop and mobile viewing.</p>
+  <img src="/img/blog/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/product-recommendation-quiz-beauty.png" alt="Product recommendation quiz beauty" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+</div>
 
 ## Visuals & CTA's
 
 ☑️ This may be shocking but **quiz visual is not the most important thing**! Start with a basic template, ensure that the quiz recommends the right products, add some picture choices or upload background images but don't fuss over the shape or color of the buttons. Publish a basic quiz first, check how it does with your audience, and only then invest time and effort into perfecting the quiz look.
 
-> **💡Tip**: At [RevenueHunt](https://revenuehunt.com/), we work with thousands of e-commerce merchants who use a product recommendation quiz. We've got plenty of customers who make amazing conversions with just a basic quiz template.
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">At <a href="https://revenuehunt.com/" style="color:#16161D;text-decoration:underline;">RevenueHunt</a>, we work with thousands of e-commerce merchants who use a product recommendation quiz. We've got plenty of customers who make amazing conversions with just a basic quiz template.</p>
+</div>
 
 ☑️ Incorporate elements that create a **sense of urgency or scarcity**, such as limited-time offers or low-stock alerts at the end of the quiz.
 
-> **💡Tip**: [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) gives an option to add dynamic discounts to your results page to encourage customers to shop more with a bigger discount.
-> 
-> ![Quick Tips Before You Build Your First Product Recommendation Quiz (from RevenueHunt team) - image 1](/img/blog/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/Screenshot-2023-06-08-082928.png)
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;"><a href="https://revenuehunt.com/product-recommendation-quiz/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz</a> gives an option to add dynamic discounts to your results page to encourage customers to shop more with a bigger discount.</p>
+  <img src="/img/blog/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/Screenshot-2023-06-08-082928.png" alt="Quick Tips Before You Build Your First Product Recommendation Quiz (from RevenueHunt team) - image 1" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+</div>
 
 ☑️ **Display testimonials, product reviews** or the number of users who have taken the quiz and found their perfect product. This leverages the bandwagon effect.
 
@@ -102,9 +118,11 @@ Follow these expert tips to create a quiz that engages your audience, boosts you
 
 ☑️ Send personalized **emails with the quiz results** and recommended products. Include a reminder of the reward for completing the quiz, like a discount code.
 
-> **💡Tip**: [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/) has a built-in option to [send personalized result emails](https://docs.revenuehunt.com/how-to-guides/send-result-emails/) after quiz completion
-> 
-> ![how to send result emails html template](/img/blog/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/manual_quizbuilder_notifications_torespondent_active_html.png)
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;"><a href="https://revenuehunt.com/product-recommendation-quiz/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz</a> has a built-in option to <a href="https://docs.revenuehunt.com/how-to-guides/send-result-emails/" style="color:#16161D;text-decoration:underline;">send personalized result emails</a> after quiz completion</p>
+  <img src="/img/blog/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/manual_quizbuilder_notifications_torespondent_active_html.png" alt="how to send result emails html template" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+</div>
 
 ☑️ Use the data gathered to **create targeted ads** on social media platforms, showing users the products they were recommended in the quiz.
 

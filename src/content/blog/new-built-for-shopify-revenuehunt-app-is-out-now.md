@@ -123,21 +123,21 @@ If you're a Shopify merchant looking to improve sales and engagement, the new be
   
 [👉 Reach out and Switch to the Beta Version Now](https://revenuehunt.com/contact/)  
 
-> Activating the new version of the app is super easy!
-> 
-> #### How to switch to the new Shopify Revenuehunt App
-> 
-> First, make sure that you have our [RevenueHunt App for Shopify](https://apps.shopify.com/product-recommendation-quiz-revenuehunt) installed in your store.
-> 
-> Open the RevenueHunt: Recommender Quiz app in your Shopify dashboard.
-> 
-> In the right-hand menu, select _Switch to Built for Shopify_.
-> 
-> Confirm app access and permissions.
-> 
-> ![New *Built for Shopify* RevenueHunt App Is Out Now! - image 6](/img/blog/new-built-for-shopify-revenuehunt-app-is-out-now/switch-e1741678242616.png)
-> 
-> 💡 **Switching back to V1 is always an option** if needed. If you ever want to go back to the legacy V1, no worries - there's a similar link in the same spot that lets you switch back anytime.
+Activating the new version of the app is super easy!
+
+#### How to switch to the new Shopify Revenuehunt App
+
+First, make sure that you have our [RevenueHunt App for Shopify](https://apps.shopify.com/product-recommendation-quiz-revenuehunt) installed in your store.
+
+Open the RevenueHunt: Recommender Quiz app in your Shopify dashboard.
+
+In the right-hand menu, select _Switch to Built for Shopify_.
+
+Confirm app access and permissions.
+
+![New *Built for Shopify* RevenueHunt App Is Out Now! - image 6](/img/blog/new-built-for-shopify-revenuehunt-app-is-out-now/switch-e1741678242616.png)
+
+💡 **Switching back to V1 is always an option** if needed. If you ever want to go back to the legacy V1, no worries - there's a similar link in the same spot that lets you switch back anytime.
 
 ## Ready to Try It Out?
 

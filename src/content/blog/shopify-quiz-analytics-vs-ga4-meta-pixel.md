@@ -131,39 +131,39 @@ You don't need Meta Pixel or GA4 to understand your quiz performance. You don't 
 
 Shopify already knows _what's selling._ Your quiz already knows _why it sells._ Together, they form the only analytics stack that actually matters: **clear, compliant, and conversion-focused.**
 
-> ## Quick Playbook: How to Access & Use Your Quiz Data
-> 
-> **1\. Open your analytics:**  
-> Go to your **RevenueHunt dashboard → pick your quiz → "..." → Analytics**.  
-> Use the date selector to view _Today_, _Last 30 days_, or any custom range.
-> 
-> ![Shopify quiz analytics access analytics](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/manual_shopifyV2_quizbuilder_matrics_analytics_accessfromdashboard1.png)
-> 
-> **2\. Customize your dashboard:**  
-> Click **Customize**, then add or rearrange cards like:
-> 
-> -   **Quiz Starts**, **Completion Rate**, **Drop-Off Rate**
->     
-> -   **Orders**, **Total Cart Value**, **Average Order Value**
->     
-> -   **Results Page Distribution**, **Section Visibility**, **Recommended Items**  
->     Save your layout so each team member sees what matters most.
->     
-> 
-> ![Shopify quiz analytics customize button](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/manual_shopifyV2_quizbuilder_metrics_analytics_customizebutton.png)
-> 
-> **3\. Dig deeper with Responses:**  
-> Open the quiz menu → **Responses → View → Analyze Response** to see each customer's path, their choices, and why products were (or weren't) recommended.
-> 
-> ![Shopify quiz analytics responses access](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/manual_shopifyV2_quizbuilder_openresponses.png)
-> 
-> **4\. Act on what you learn:**
-> 
-> -   Simplify slides with high drop-off
->     
-> -   Highlight top-performing products
->     
-> -   Use customer tags for segmented follow-up emails
->     
-> 
-> That's it. Everything you need to understand, improve, and grow your quiz performance, right inside Shopify.
+## Quick Playbook: How to Access & Use Your Quiz Data
+
+**1\. Open your analytics:**  
+Go to your **RevenueHunt dashboard → pick your quiz → "..." → Analytics**.  
+Use the date selector to view _Today_, _Last 30 days_, or any custom range.
+
+![Shopify quiz analytics access analytics](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/manual_shopifyV2_quizbuilder_matrics_analytics_accessfromdashboard1.png)
+
+**2\. Customize your dashboard:**  
+Click **Customize**, then add or rearrange cards like:
+
+-   **Quiz Starts**, **Completion Rate**, **Drop-Off Rate**
+    
+-   **Orders**, **Total Cart Value**, **Average Order Value**
+    
+-   **Results Page Distribution**, **Section Visibility**, **Recommended Items**  
+    Save your layout so each team member sees what matters most.
+    
+
+![Shopify quiz analytics customize button](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/manual_shopifyV2_quizbuilder_metrics_analytics_customizebutton.png)
+
+**3\. Dig deeper with Responses:**  
+Open the quiz menu → **Responses → View → Analyze Response** to see each customer's path, their choices, and why products were (or weren't) recommended.
+
+![Shopify quiz analytics responses access](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/manual_shopifyV2_quizbuilder_openresponses.png)
+
+**4\. Act on what you learn:**
+
+-   Simplify slides with high drop-off
+    
+-   Highlight top-performing products
+    
+-   Use customer tags for segmented follow-up emails
+    
+
+That's it. Everything you need to understand, improve, and grow your quiz performance, right inside Shopify.

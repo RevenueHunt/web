@@ -124,11 +124,11 @@ Open rates climb because the subject lines match the subscriber's actual concern
 
 The entire pipeline: quiz logic, Klaviyo sync, flow activation, is built with a no-code drag-and-drop builder. You configure the conditional logic (if answer = "oily skin" → recommend Product A), connect Klaviyo with a one-click OAuth, customize the design via CSS to match your brand, and publish. No developer. No agency ticket. No waiting until next month. You're the engineer.
 
-> **Revenue Per Recipient Comparison**
->
-> **$0.08 → $0.25+**
->
-> Popup-captured leads vs. quiz-captured leads with segmented flows - a **3x lift** in email revenue without growing your list by a single subscriber.
+**Revenue Per Recipient Comparison**
+
+**$0.08 → $0.25+**
+
+Popup-captured leads vs. quiz-captured leads with segmented flows - a **3x lift** in email revenue without growing your list by a single subscriber.
 
 ## What This Looks Like in Practice
 

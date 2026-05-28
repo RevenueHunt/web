@@ -22,7 +22,10 @@ This guide will walk you through creating a personality-type quiz using RevenueH
 
 ## Step-by-Step Guide to Building a Personality-Type Quiz
 
-> _**💡Tip:** Make you have the [RevenueHunt app](https://revenuehunt.com/product-recommendation-quiz/) installed before setting up your quiz._
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Make you have the <a href="https://revenuehunt.com/product-recommendation-quiz/" style="color:#16161D;text-decoration:underline;">RevenueHunt app</a> installed before setting up your quiz.</p>
+</div>
 
 ### Step 1: Define Your Quiz Questions and Outcomes
 
@@ -30,53 +33,53 @@ Decide the purpose of the quiz. For example, one common use of this type of a qu
 
 Map out the quiz questions and outcomes in one document based on the customer choices. Make sure you have the document at hand when building the quiz.
 
-> _**💡Tip:** You can use a simple tool like Google Sheets to map out your quiz_
-> 
-> _![how to recommend products complex matrix](/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/how_to_recommend_products_complexmatrix.png)_
-> 
-> _or a more advanced mapping tool like [Miro](https://miro.com/)._
-> 
-> ![Guide to Building a Personality-Type Quiz with RevenueHunt - image 1](/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/21017515516050.gif)
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">You can use a simple tool like Google Sheets to map out your quiz</p>
+  <img src="/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/how_to_recommend_products_complexmatrix.png" alt="how to recommend products complex matrix" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">or a more advanced mapping tool like <a href="https://miro.com/" style="color:#16161D;text-decoration:underline;">Miro</a>.</p>
+  <img src="/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/21017515516050.gif" alt="Guide to Building a Personality-Type Quiz with RevenueHunt - image 1" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+</div>
 
 ### Step 2: Add Questions to the Quiz
 
 Design questions that help narrow down the customer's traits. Each answer should map to a specific characteristic or product recommendation.
 
-> #### _Example Questions for Skin Type Quiz_
-> 
-> ![Guide to Building a Personality-Type Quiz with RevenueHunt - image 2](/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/determineskitypequizquestions.png)
-> 
-> _**Question 1: Oiliness**_
-> 
-> _How does your skin usually feel by the middle of the day?_
-> 
-> _⚪ Very oily, shiny all over. (Oily skin)_
-> 
-> _⚪ Oily in the T-zone (forehead, nose, chin), but dry elsewhere. (Combination skin)_
-> 
-> _⚪ Balanced, not too oily or dry. (Normal skin)_
-> 
-> _⚪ Dry and tight all over. (Dry skin)_
-> 
-> _**Question 2: Sensitivity**_
-> 
-> _How does your skin react to new products or environmental changes?_
-> 
-> _⚪ Easily irritated, red, or itchy. (Sensitive skin)_
-> 
-> _⚪ Rarely reacts, even to strong products. (Normal or Oily skin)_
-> 
-> _⚪ Reacts sometimes, but not consistently. (Combination skin)_
-> 
-> _**Question 3: Hydration**_
-> 
-> _Does your skin often feel dehydrated, regardless of oiliness?_
-> 
-> _⚪ Yes, it feels tight and flaky. (Dry or Dehydrated skin)_
-> 
-> _⚪ Sometimes, especially in colder months. (Combination or Normal skin)_
-> 
-> _⚪ Rarely or never. (Oily skin)_
+#### _Example Questions for Skin Type Quiz_
+
+![Guide to Building a Personality-Type Quiz with RevenueHunt - image 2](/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/determineskitypequizquestions.png)
+
+_**Question 1: Oiliness**_
+
+_How does your skin usually feel by the middle of the day?_
+
+_⚪ Very oily, shiny all over. (Oily skin)_
+
+_⚪ Oily in the T-zone (forehead, nose, chin), but dry elsewhere. (Combination skin)_
+
+_⚪ Balanced, not too oily or dry. (Normal skin)_
+
+_⚪ Dry and tight all over. (Dry skin)_
+
+_**Question 2: Sensitivity**_
+
+_How does your skin react to new products or environmental changes?_
+
+_⚪ Easily irritated, red, or itchy. (Sensitive skin)_
+
+_⚪ Rarely reacts, even to strong products. (Normal or Oily skin)_
+
+_⚪ Reacts sometimes, but not consistently. (Combination skin)_
+
+_**Question 3: Hydration**_
+
+_Does your skin often feel dehydrated, regardless of oiliness?_
+
+_⚪ Yes, it feels tight and flaky. (Dry or Dehydrated skin)_
+
+_⚪ Sometimes, especially in colder months. (Combination or Normal skin)_
+
+_⚪ Rarely or never. (Oily skin)_
 
 ### Step 3: Link Products to Choices
 
@@ -91,11 +94,12 @@ For example:
 
 This setup ensures that the quiz [product recommendation algorithm](https://docs.revenuehunt.com/how-to-guides/recommend-products/) will automatically provide the most relevant product suggestions.
 
-> _**💡Tip:** You can create collections of products in Shopify that correspond to each answer for faster quiz setup. You can make these new collections "hidden" in your Shopify store by unchecking the Online store publishing option._
-> 
-> ![Guide to Building a Personality-Type Quiz with RevenueHunt - image 4](/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/Screenshot-2025-01-13-092953.png)
-> 
-> _Learn more about creating collections in Shopify [here](https://help.shopify.com/en/manual/products/collections). After creating new collections, make sure to run a [catalog sync](https://docs.revenuehunt.com/how-to-guides/sync-catalog/) in the app._
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">You can create collections of products in Shopify that correspond to each answer for faster quiz setup. You can make these new collections "hidden" in your Shopify store by unchecking the Online store publishing option.</p>
+  <img src="/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/Screenshot-2025-01-13-092953.png" alt="Guide to Building a Personality-Type Quiz with RevenueHunt - image 4" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Learn more about creating collections in Shopify <a href="https://help.shopify.com/en/manual/products/collections" style="color:#16161D;text-decoration:underline;">here</a>. After creating new collections, make sure to run a <a href="https://docs.revenuehunt.com/how-to-guides/sync-catalog/" style="color:#16161D;text-decoration:underline;">catalog sync</a> in the app.</p>
+</div>
 
 ### Step 4: Display Results with Text Summaries
 
@@ -111,47 +115,50 @@ Add separate content blocks for each possible result (e.g., "You have Dry Skin,"
 
 Set visibility rules for each block based on customer answers.
 
-> _Example Block Logic Rules_
-> 
-> _**For Dry Skin:**_  
-> _– If the answer to **Question 1: Oiliness** is Dry and tight all over._  
-> _– AND the answer to **Question 2: Sensitivity** is Easily irritated, red, or itchy._  
-> _– AND the answer to **Question 3: Hydration** is Yes, it feels tight and flaky._
-> 
-> _Then this block will be **Visible**; otherwise, it remains hidden._
+_Example Block Logic Rules_
 
-> _**For Combination Skin:**_  
-> _Combination skin may result from varied answer paths. You'll need rules for multiple scenarios:_
-> 
-> _– If the answer to **Question 1: Oiliness** is Oily in the T-zone (forehead, nose, chin), but dry elsewhere._
-> 
-> _– AND the answer to **Question 2: Sensitivity** is Reacts sometimes, but not consistently._
-> 
-> _– AND the answer to **Question 3: Hydration** is Sometimes, especially in colder months._
-> 
-> _**OR**_
-> 
-> _– If the answer to **Question 1: Oiliness** is Very oily, shiny all over._
-> 
-> _– AND the answer to **Question 2: Sensitivity** is Easily irritated, red, or itchy._
-> 
-> _– AND the answer to **Question 3: Hydration** is Sometimes, especially in colder months._
-> 
-> _**OR**_
-> 
-> _– If the answer to **Question 1: Oiliness** is Oily in the T-zone (forehead, nose, chin), but dry elsewhere._
-> 
-> _– AND the answer to **Question 2: Sensitivity** is Easily irritated, red, or itchy._
-> 
-> _– AND the answer to **Question 3: Hydration** is Sometimes, but not consistently._
-> 
-> _Then this block will be **Visible**; otherwise, it remains hidden._
+_**For Dry Skin:**_  
+_– If the answer to **Question 1: Oiliness** is Dry and tight all over._  
+_– AND the answer to **Question 2: Sensitivity** is Easily irritated, red, or itchy._  
+_– AND the answer to **Question 3: Hydration** is Yes, it feels tight and flaky._
+
+_Then this block will be **Visible**; otherwise, it remains hidden._
+
+_**For Combination Skin:**_  
+_Combination skin may result from varied answer paths. You'll need rules for multiple scenarios:_
+
+_– If the answer to **Question 1: Oiliness** is Oily in the T-zone (forehead, nose, chin), but dry elsewhere._
+
+_– AND the answer to **Question 2: Sensitivity** is Reacts sometimes, but not consistently._
+
+_– AND the answer to **Question 3: Hydration** is Sometimes, especially in colder months._
+
+_**OR**_
+
+_– If the answer to **Question 1: Oiliness** is Very oily, shiny all over._
+
+_– AND the answer to **Question 2: Sensitivity** is Easily irritated, red, or itchy._
+
+_– AND the answer to **Question 3: Hydration** is Sometimes, especially in colder months._
+
+_**OR**_
+
+_– If the answer to **Question 1: Oiliness** is Oily in the T-zone (forehead, nose, chin), but dry elsewhere._
+
+_– AND the answer to **Question 2: Sensitivity** is Easily irritated, red, or itchy._
+
+_– AND the answer to **Question 3: Hydration** is Sometimes, but not consistently._
+
+_Then this block will be **Visible**; otherwise, it remains hidden._
 
 **Fianlly,  Repeat this process for all other possible combinations of answers.**
 
 You will have to **add similar rules to all the content blocks** on the Results Page to show the right text in the end. This means you will have to predict every possible combination of answers a customer can make and add it as Block logic to ensure that the correct text block is shown.
 
-> _**💡Tip:** If this no-coding solution seems like too much work, you can consider Option 2 below._
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">If this no-coding solution seems like too much work, you can consider Option 2 below.</p>
+</div>
 
 #### ➡️ Option 2: Custom JavaScript (Recommended for Complex Quizzes)
 
@@ -164,41 +171,16 @@ Ask your developer to create custom logic that:
 
 To implement custom JavaScript, ensure the developer is familiar with the RevenueHunt platform's structure and follows best practices for script integration. Instructions on adding custom JavaScript to your Product Recommendation Quiz can be found [here](https://docs.revenuehunt.com/how-to-guides/add-javascript/). This approach allows maximum flexibility, ensuring your quiz meets your brand's unique needs and offers a seamless experience for users.
 
-> _**💡Tip:** ChatGPT or a similar language model can be helpful in writning a custom JavaScript code._
-> 
-> _For example, you can ask ChatGPT to create a sample code snippet using **prq.getSlideValue(slideId)** function to help you get started with assigning points to choices in your quiz. This example shows how to assign 3 points for "Yes" and 1 point for "No" for one question, and you can adapt it for others:_
-> 
-> ```
-> 
-> document.addEventListener("DOMContentLoaded", function () {
-> // List of slide IDs and corresponding point values
-> var slidePoints = {
-> "mGiOjOq": { "Yes": 3, "No": 1 },
-> // Add more slides and mappings here
-> };// Initialize total points
-> var totalPoints = 0;// Loop through the slides to calculate points
-> for (var slideId in slidePoints) {
-> if (slidePoints.hasOwnProperty(slideId)) {
-> // Get the slide value dynamically
-> var slideValue = prq.getSlideValue(slideId);// Assign points based on the value
-> if (slideValue && slidePoints[slideId][slideValue] !== undefined) {
-> totalPoints += slidePoints[slideId][slideValue];
-> console.log(`Slide ${slideId} (${slideValue}): ${slidePoints[slideId][slideValue]} points`);
-> }
-> }
-> }// Display total points on the results page
-> var resultElement = document.getElementById("quizResults");
-> if (resultElement) {
-> resultElement.innerHTML = `Total Points: ${totalPoints}`;
-> }
-> 
-> console.log("Total Points:", totalPoints);
-> });
-> ```
-> 
-> _Note that this code would have to be added to the [Results Page Settings > Advanced > Custom JavaScript](https://docs.revenuehunt.com/how-to-guides/add-javascript/#results-page) section of your quiz._
-> 
-> ![Guide to Building a Personality-Type Quiz with RevenueHunt - image 7](/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/Screenshot-2025-01-13-094058.png)
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">ChatGPT or a similar language model can be helpful in writning a custom JavaScript code.</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">For example, you can ask ChatGPT to create a sample code snippet using <strong>prq.getSlideValue(slideId)</strong> function to help you get started with assigning points to choices in your quiz. This example shows how to assign 3 points for "Yes" and 1 point for "No" for one question, and you can adapt it for others:</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">```</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">document.addEventListener("DOMContentLoaded", function () { // List of slide IDs and corresponding point values var slidePoints = { "mGiOjOq": { "Yes": 3, "No": 1 }, // Add more slides and mappings here };// Initialize total points var totalPoints = 0;// Loop through the slides to calculate points for (var slideId in slidePoints) { if (slidePoints.hasOwnProperty(slideId)) { // Get the slide value dynamically var slideValue = prq.getSlideValue(slideId);// Assign points based on the value if (slideValue && slidePoints[slideId][slideValue] !== undefined) { totalPoints += slidePoints[slideId][slideValue]; console.log(<code style="background:#f1f5f9;padding:1px 6px;border-radius:4px;font-size:0.92em;">Slide ${slideId} (${slideValue}): ${slidePoints[slideId][slideValue]} points</code>); } } }// Display total points on the results page var resultElement = document.getElementById("quizResults"); if (resultElement) { resultElement.innerHTML = <code style="background:#f1f5f9;padding:1px 6px;border-radius:4px;font-size:0.92em;">Total Points: ${totalPoints}</code>; }</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">console.log("Total Points:", totalPoints); }); ```</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Note that this code would have to be added to the <a href="https://docs.revenuehunt.com/how-to-guides/add-javascript/#results-page" style="color:#16161D;text-decoration:underline;">Results Page Settings > Advanced > Custom JavaScript</a> section of your quiz.</p>
+  <img src="/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/Screenshot-2025-01-13-094058.png" alt="Guide to Building a Personality-Type Quiz with RevenueHunt - image 7" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+</div>
 
 > _The code uses prq.getSlideValue(slideId) to fetch the user's answers and assign points based on predefined rules._
 > 
@@ -216,7 +198,10 @@ Insert customer answers directly into the Results Page to provide context for re
 
 _For instance: "Based on your answer to \[Question 1\], your skin tends to be \[Customer's Answer\]."_
 
-> _**💡Tip:** To use Information Recalls in a question or a text block, type @ on your keyboard. A list of questions will be displayed, select from the list the question the answer to whcih you want to recall. Then the dynamic filed will be added to the text._
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">To use Information Recalls in a question or a text block, type @ on your keyboard. A list of questions will be displayed, select from the list the question the answer to whcih you want to recall. Then the dynamic filed will be added to the text.</p>
+</div>
 
 👉 **Use Predefined Product Descriptions**
 
@@ -229,9 +214,11 @@ _For example:_
 
 These descriptions can simplify the explanation process and eliminate the need for custom logic.
 
-> _**💡Tip:** To show product descriptions on the results page go to the **Results Page Settings**  and under **Individual Product Settings**  activate **→ Show description.**_
-> 
-> _![quiz builder resutls page resutls page settings basic individual product settings](/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/manual_quizbuilder_resultspage_settings_basic_individualproductsettings.png)_
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">To show product descriptions on the results page go to the <strong>Results Page Settings</strong>  and under <strong>Individual Product Settings</strong>  activate <strong>→ Show description.</strong></p>
+  <img src="/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/manual_quizbuilder_resultspage_settings_basic_individualproductsettings.png" alt="quiz builder resutls page resutls page settings basic individual product settings" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+</div>
 
 👉 **Base Results on a Single Pivotal Question**
 

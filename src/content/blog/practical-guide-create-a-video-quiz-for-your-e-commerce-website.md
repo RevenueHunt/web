@@ -33,9 +33,11 @@ You can, for example, briefly introduce your brand, the products, and what users
 
 <video class="wp-video-shortcode" id="video-9095-1" width="382" height="828" preload="metadata" controls="controls"><source type="video/mp4" src="https://revenuehunt.com/wp-content/uploads/2024/06/vid_23.mp4?_=1"><a href="https://revenuehunt.com/wp-content/uploads/2024/06/vid_23.mp4">https://revenuehunt.com/wp-content/uploads/2024/06/vid_23.mp4</a></video>
 
-> **💡 Tip**: To add an introduction video to the first slide of your [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/), go to _Quiz Builder > Welcome Slide > Question Settings > Video (upload)_ and select the _responsive (with play/stop/volume buttons)_ or _background (no buttons)_ option.
-> 
-> ![Practical Guide: Create a Video Quiz for your E-commerce Website - image 1](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/Screenshot-2024-07-01-092811.png)
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">To add an introduction video to the first slide of your <a href="https://revenuehunt.com/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz</a>, go to _Quiz Builder > Welcome Slide > Question Settings > Video (upload)_ and select the _responsive (with play/stop/volume buttons)_ or _background (no buttons)_ option.</p>
+  <img src="/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/Screenshot-2024-07-01-092811.png" alt="Practical Guide: Create a Video Quiz for your E-commerce Website - image 1" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+</div>
 
 **🟣 How-To or Explainer Videos**
 
@@ -45,9 +47,11 @@ For example, a skincare brand could include some step-by-step video guides, tips
 
 <video class="wp-video-shortcode" id="video-9095-2" width="502" height="1194" preload="metadata" controls="controls"><source type="video/mp4" src="https://revenuehunt.com/wp-content/uploads/2024/07/resultspagevideo.mp4?_=2"><a href="https://revenuehunt.com/wp-content/uploads/2024/07/resultspagevideo.mp4">https://revenuehunt.com/wp-content/uploads/2024/07/resultspagevideo.mp4</a></video>
 
-> **💡 Tip**: To add a video to the results page of your [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/), go to _Quiz Builder > Results Page_ and add a Content Block. In the content block use the _!\[\](https://youtu.be/0\_tO8HgJiLQ)_ [Markdown Language](https://docs.revenuehunt.com/how-to-guides/use-markdown/) rule to insert your video.
-> 
-> ![Practical Guide: Create a Video Quiz for your E-commerce Website - image 2](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/Screenshot-2024-07-01-093841.png)
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">To add a video to the results page of your <a href="https://revenuehunt.com/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz</a>, go to _Quiz Builder > Results Page_ and add a Content Block. In the content block use the _!\<a href="https://youtu.be/0\_tO8HgJiLQ" style="color:#16161D;text-decoration:underline;">\</a>_ <a href="https://docs.revenuehunt.com/how-to-guides/use-markdown/" style="color:#16161D;text-decoration:underline;">Markdown Language</a> rule to insert your video.</p>
+  <img src="/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/Screenshot-2024-07-01-093841.png" alt="Practical Guide: Create a Video Quiz for your E-commerce Website - image 2" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+</div>
 
 **🟣 Customer Testimonial Videos**
 
@@ -55,9 +59,11 @@ Build trust and credibility by showcasing real customer experiences. For example
 
 ![Practical Guide: Create a Video Quiz for your E-commerce Website - image 3](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/videotestimonialv2.gif)
 
-> **💡 Tip**: To add a split screen video to any slide of your [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/), go to _Quiz Builder >_ Select a Slide _\> Question Settings > Video (upload)_ and select the _responsive_ option.
-> 
-> ![Practical Guide: Create a Video Quiz for your E-commerce Website - image 4](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/Screenshot-2024-07-01-122338.png)
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">To add a split screen video to any slide of your <a href="https://revenuehunt.com/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz</a>, go to _Quiz Builder >_ Select a Slide _\> Question Settings > Video (upload)_ and select the _responsive_ option.</p>
+  <img src="/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/Screenshot-2024-07-01-122338.png" alt="Practical Guide: Create a Video Quiz for your E-commerce Website - image 4" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+</div>
 
 **🟣 Product Overview Videos**
 
@@ -139,11 +145,17 @@ To ensure your videos look professional and load efficiently on mobile devices, 
 
 7️⃣ Test the quiz on different mobile devices to ensure videos load quickly and play smoothly.
 
-> **💡 Note**: [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz-shopify/) offers **unlimited testing** with it's in-app _Preview_ feature. This means you can try the quiz as many times as necessary without any additional cost.
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;"><strong>💡 Note</strong>: <a href="https://revenuehunt.com/product-recommendation-quiz-shopify/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz</a> offers <strong>unlimited testing</strong> with it's in-app _Preview_ feature. This means you can try the quiz as many times as necessary without any additional cost.</p>
+</div>
 
 8️⃣ Publish the quiz on your website.
 
-> **💡 Tip**: You have the option to add the quiz as a popup, embedded inline, automatic popup, social media link and many more with [Shop Quiz: Product Recommender](https://revenuehunt.com/product-recommendation-quiz-shopify/). Click [here](https://docs.revenuehunt.com/how-to-guides/publish-quiz/) to learn how to publish your video quiz on your website.
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">You have the option to add the quiz as a popup, embedded inline, automatic popup, social media link and many more with <a href="https://revenuehunt.com/product-recommendation-quiz-shopify/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommender</a>. Click <a href="https://docs.revenuehunt.com/how-to-guides/publish-quiz/" style="color:#16161D;text-decoration:underline;">here</a> to learn how to publish your video quiz on your website.</p>
+</div>
 
 ## Key Takeaways
 

@@ -34,25 +34,25 @@ This article will guide you through integrating RevenueHunt with ActiveCampaign 
 
 ![RevenueHunt and ActiveCampaign: Tools That Do the Selling For You - image 1](/img/blog/revenuehunt-activecampaign-integration/thankyouslide.gif)
 
-> ## **Why Should eCommerce Merchants Integrate RevenueHunt with ActiveCampaign?**
-> 
-> **Integrating RevenueHunt app with ActiveCampaign gives you a powerful system for capturing, nurturing, and converting leads - ensuring your eCommerce business stays ahead of the competition.** 
-> 
-> **🤝 Capture High-Intent Leads**
-> 
-> Visitors who complete your product recommendation quiz are already interested in your products. By syncing their responses with ActiveCampaign, you can nurture these high-intent leads with personalized follow-ups.
-> 
-> **📩 Personalized Email Marketing**
-> 
-> With quiz data mapped to customer profiles, you can segment your audience based on preferences, needs, and buying behavior. This allows for targeted email campaigns that drive higher engagement and sales.
-> 
-> **🔄 Automated Follow-Ups**
-> 
-> ActiveCampaign's automation features enable merchants to set up follow-up sequences that educate, engage, and convert customers over time.
-> 
-> **🙋🏻‍♂️ Improved Customer Insights**
-> 
-> Syncing quiz data with ActiveCampaign provides a deeper understanding of your customers, helping you refine marketing strategies and improve product offerings.
+## **Why Should eCommerce Merchants Integrate RevenueHunt with ActiveCampaign?**
+
+**Integrating RevenueHunt app with ActiveCampaign gives you a powerful system for capturing, nurturing, and converting leads - ensuring your eCommerce business stays ahead of the competition.** 
+
+**🤝 Capture High-Intent Leads**
+
+Visitors who complete your product recommendation quiz are already interested in your products. By syncing their responses with ActiveCampaign, you can nurture these high-intent leads with personalized follow-ups.
+
+**📩 Personalized Email Marketing**
+
+With quiz data mapped to customer profiles, you can segment your audience based on preferences, needs, and buying behavior. This allows for targeted email campaigns that drive higher engagement and sales.
+
+**🔄 Automated Follow-Ups**
+
+ActiveCampaign's automation features enable merchants to set up follow-up sequences that educate, engage, and convert customers over time.
+
+**🙋🏻‍♂️ Improved Customer Insights**
+
+Syncing quiz data with ActiveCampaign provides a deeper understanding of your customers, helping you refine marketing strategies and improve product offerings.
 
 ## **How to Integrate RevenueHunt with ActiveCampaign**
 

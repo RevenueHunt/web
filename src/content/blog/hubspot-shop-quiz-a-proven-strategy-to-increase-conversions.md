@@ -87,9 +87,9 @@ Once the connection is complete, all quiz results will automatically flow into y
 -   To view this data, go to the **Contacts** section within HubSpot and select a contact who has taken the quiz.
 -   Click on **View All Properties** to examine the quiz-related details, which will be stored under a section labeled "Product Recommendation Quiz". This section contains all quiz answers and product recommendations.
 
-> ![Hubspot + Shop Quiz: A Proven Strategy to Increase Conversions - image 2](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Screenshot-2024-10-02-091609.png)
-> 
-> ![Hubspot + Shop Quiz: A Proven Strategy to Increase Conversions - image 3](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Screenshot-2024-10-02-091706.png)
+![Hubspot + Shop Quiz: A Proven Strategy to Increase Conversions - image 2](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Screenshot-2024-10-02-091609.png)
+
+![Hubspot + Shop Quiz: A Proven Strategy to Increase Conversions - image 3](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Screenshot-2024-10-02-091706.png)
 
 **3️⃣ Creating a Segmented List in HubSpot**
 
@@ -123,25 +123,25 @@ Now that you have your segmented list, you can set up an email workflow to autom
 
 ![Hubspot + Shop Quiz: A Proven Strategy to Increase Conversions - image 6](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Automation-Image-2c.png)
 
-> **Using Custom Quiz Properties in Email Templates**
-> 
-> To personalize your follow-up emails based on quiz data, you'll need to pull custom properties into the email templates.
-> 
-> In HubSpot, navigate to **Marketing** > **Email** > **Create email**.
-> 
-> In the email editor, use the **Personalization Token** feature.
-> 
-> Click on **Insert**, then select **Personalization Token** from the dropdown.
-> 
-> ![Hubspot + Shop Quiz: A Proven Strategy to Increase Conversions - image 7](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Screenshot-2024-10-02-092435.png)
-> 
-> Choose the custom quiz properties that were captured with your **Product Recommendation** **Quiz**. HubSpot will automatically replace these tokens with each contact's respective data during the email send.
-> 
-> Use the **Preview** feature to ensure that the custom properties are appearing correctly in your email.
-> 
-> ![Hubspot + Shop Quiz: A Proven Strategy to Increase Conversions - image 8](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Screenshot-2024-10-02-092627.png)
-> 
-> **📌Note**: While HubSpot handles text-based quiz data efficiently, it does not currently support embedding images into email templates as custom properties. Make sure to plan your quiz content accordingly to ensure a smooth integration and optimal use of HubSpot's features.
+**Using Custom Quiz Properties in Email Templates**
+
+To personalize your follow-up emails based on quiz data, you'll need to pull custom properties into the email templates.
+
+In HubSpot, navigate to **Marketing** > **Email** > **Create email**.
+
+In the email editor, use the **Personalization Token** feature.
+
+Click on **Insert**, then select **Personalization Token** from the dropdown.
+
+![Hubspot + Shop Quiz: A Proven Strategy to Increase Conversions - image 7](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Screenshot-2024-10-02-092435.png)
+
+Choose the custom quiz properties that were captured with your **Product Recommendation** **Quiz**. HubSpot will automatically replace these tokens with each contact's respective data during the email send.
+
+Use the **Preview** feature to ensure that the custom properties are appearing correctly in your email.
+
+![Hubspot + Shop Quiz: A Proven Strategy to Increase Conversions - image 8](/img/blog/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/Screenshot-2024-10-02-092627.png)
+
+**📌Note**: While HubSpot handles text-based quiz data efficiently, it does not currently support embedding images into email templates as custom properties. Make sure to plan your quiz content accordingly to ensure a smooth integration and optimal use of HubSpot's features.
 
 By following this guide, you'll be able to set up an automated post-quiz email flow with HubSpot, enhancing your marketing strategy through personalized, targeted follow-ups.
 

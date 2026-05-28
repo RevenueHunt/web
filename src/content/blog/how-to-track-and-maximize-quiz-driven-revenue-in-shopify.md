@@ -21,19 +21,19 @@ ECommerce is becoming more competitive by the day, and every online store owner 
 
 ![Track Quiz Revenue](/img/blog/how-to-track-and-maximize-quiz-driven-revenue-in-shopify/Track-Quiz-Revenue-FT-Image.png)
 
-> ## Why **Tracking Quiz Revenue Matters** for Your Business
-> 
-> Quizzes are powerful conversion tools, but without proper tracking, you may not realize how much revenue they're actually generating. By monitoring quiz-driven purchases, you can:
-> 
-> **✔️ Prove the ROI of your quizzes** – Know exactly how much revenue is coming from your quiz and justify the investment.
-> 
-> **✔️ Optimize quiz performance** – Identify high-converting quizzes and fine-tune those that underperform.
-> 
-> **✔️ Personalize marketing efforts** – Use quiz insights to refine your retargeting and email marketing campaigns.
-> 
-> **✔️ Make data-driven decisions** – Understand customer behavior and adjust your sales strategy accordingly.
-> 
-> With these benefits in mind, let's explore how RevenueHunt helps you track and use quiz revenue effectively.
+## Why **Tracking Quiz Revenue Matters** for Your Business
+
+Quizzes are powerful conversion tools, but without proper tracking, you may not realize how much revenue they're actually generating. By monitoring quiz-driven purchases, you can:
+
+**✔️ Prove the ROI of your quizzes** – Know exactly how much revenue is coming from your quiz and justify the investment.
+
+**✔️ Optimize quiz performance** – Identify high-converting quizzes and fine-tune those that underperform.
+
+**✔️ Personalize marketing efforts** – Use quiz insights to refine your retargeting and email marketing campaigns.
+
+**✔️ Make data-driven decisions** – Understand customer behavior and adjust your sales strategy accordingly.
+
+With these benefits in mind, let's explore how RevenueHunt helps you track and use quiz revenue effectively.
 
 ## **How to Track Revenue with RevenueHunt App**
 
@@ -75,7 +75,10 @@ Once connected, visit **Metrics > Analytics** in the RevenueHunt app to track:
 
 For best results, ensure that customers **add products to their cart directly from the quiz results page and proceed to checkout immediately**. Delayed purchases won't be attributed to the quiz, so optimizing your checkout flow is key.
 
-> _**💡 Pro Tip:** Adjust your **Results Page Checkout Settings** to ensure users go straight to the cart after completing the quiz._
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;"><strong>💡 Pro Tip:</strong> Adjust your <strong>Results Page Checkout Settings</strong> to ensure users go straight to the cart after completing the quiz.</p>
+</div>
 
 ### → Gain Deeper Insights with Google Analytics 📈
 
@@ -107,7 +110,10 @@ Using GA4, you can:
 -   Track traffic sources leading to quiz engagement.
 -   Improve user flow and reduce quiz abandonment rates.
 
-> _**💡Pro Tip**: Want more control over tracking quiz interactions? Use **custom JavaScript** to manually log events based on user actions. Simply embed our callback function into your **theme.liquid** file to track specific quiz events, like selections and conversions. Customize the script by defining your event name, category, and value to match your tracking needs. Regularly monitor and adjust to ensure optimal performance. Need help? Check out our [**FAQ on custom integrations**](https://docs.revenuehunt.com/how-to-guides/integrate-google-analytics/#add-custom-trackers) for step-by-step guidance! 🚀_
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;"><strong>💡Pro Tip</strong>: Want more control over tracking quiz interactions? Use <strong>custom JavaScript</strong> to manually log events based on user actions. Simply embed our callback function into your <strong>theme.liquid</strong> file to track specific quiz events, like selections and conversions. Customize the script by defining your event name, category, and value to match your tracking needs. Regularly monitor and adjust to ensure optimal performance. Need help? Check out our <a href="https://docs.revenuehunt.com/how-to-guides/integrate-google-analytics/#add-custom-trackers" style="color:#16161D;text-decoration:underline;"><strong>FAQ on custom integrations</strong></a> for step-by-step guidance! 🚀</p>
+</div>
 
 ### → Use Quiz Answers 🔖 to Improve Sales & Customer Retention
 
@@ -117,23 +123,23 @@ Use **Shopify Order Tagging** data to create hyper-personalized email campaigns,
 
 By continuously refining your quiz and marketing approach using real-time revenue tracking, you can **increase repeat purchases, reduce abandoned carts, and maximize customer lifetime value.**
 
-> ### **(Extra) Enable Shopify Orders Tagging &** **Use Quiz Answers to Drive Repeat Purchases**
-> 
-> Ensure your quiz is connected to **Shopify Customers**.
-> 
-> Activate **Order Notes** in Shopify Theme Settings.
-> 
-> In RevenueHunt app, go to the **Connect tab** and locate **Shopify Orders Tagging (Beta)**, click 'Connect'.
-> 
-> Publish the changes to apply the updates.
-> 
-> Now, every order in Shopify will include quiz-related tags, helping you:
-> 
-> **Personalize marketing campaigns** based on customer preferences.
-> 
-> **Upsell and cross-sell** by recommending complementary products.
-> 
-> **Build loyalty** by tailoring offers based on quiz responses.
+### **(Extra) Enable Shopify Orders Tagging &** **Use Quiz Answers to Drive Repeat Purchases**
+
+Ensure your quiz is connected to **Shopify Customers**.
+
+Activate **Order Notes** in Shopify Theme Settings.
+
+In RevenueHunt app, go to the **Connect tab** and locate **Shopify Orders Tagging (Beta)**, click 'Connect'.
+
+Publish the changes to apply the updates.
+
+Now, every order in Shopify will include quiz-related tags, helping you:
+
+**Personalize marketing campaigns** based on customer preferences.
+
+**Upsell and cross-sell** by recommending complementary products.
+
+**Build loyalty** by tailoring offers based on quiz responses.
 
 ## How does it work in practice?
 

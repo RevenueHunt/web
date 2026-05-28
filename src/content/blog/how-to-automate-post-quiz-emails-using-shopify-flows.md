@@ -41,15 +41,15 @@ When these two apps work together, Shop Quiz collects essential customer data, i
 
 This integration allows for highly personalized marketing efforts, ensuring customers receive relevant product recommendations and follow-up communications. It enhances customer engagement, boosts conversion rates, and provides valuable insights into customer preferences, all while automating the workflow to save time and effort for the merchant.
 
-> **Why Set Up Post-Quiz Email Flows?**
-> 
-> **🎯 Personalized Customer Experience**: Tailored follow-up emails based on quiz responses ensure your customers receive relevant product recommendations. This personalization enhances customer satisfaction and loyalty.
-> 
-> **📈 Boosted Conversion Rates**: Targeted product recommendations from quiz data significantly increase the likelihood of purchases. This method turns casual browsers into buyers.
-> 
-> **🔍 Enhanced Customer Insights**: Gathering quiz responses provides invaluable data on customer preferences and behaviors, allowing you to refine your marketing strategies and product offerings.
-> 
-> **🤖 Automated Marketing**: Automating your email flows reduces manual effort, ensures timely communication, and makes sure no lead is missed. This streamlines your marketing process and improves overall efficiency.
+**Why Set Up Post-Quiz Email Flows?**
+
+**🎯 Personalized Customer Experience**: Tailored follow-up emails based on quiz responses ensure your customers receive relevant product recommendations. This personalization enhances customer satisfaction and loyalty.
+
+**📈 Boosted Conversion Rates**: Targeted product recommendations from quiz data significantly increase the likelihood of purchases. This method turns casual browsers into buyers.
+
+**🔍 Enhanced Customer Insights**: Gathering quiz responses provides invaluable data on customer preferences and behaviors, allowing you to refine your marketing strategies and product offerings.
+
+**🤖 Automated Marketing**: Automating your email flows reduces manual effort, ensures timely communication, and makes sure no lead is missed. This streamlines your marketing process and improves overall efficiency.
 
 ## **Setting Up Post-Quiz Shopify Automation Flow**
 
@@ -59,7 +59,10 @@ Using [Shop Quiz: Product Recommender](https://apps.shopify.com/product-recommen
 
 ![How to Automate Post-Quiz Emails Using Shopify Flows - image 1](/img/blog/how-to-automate-post-quiz-emails-using-shopify-flows/Screenshot-2024-07-11-101743.png)
 
-> **💡Tip:** Check out [this video guide](https://docs.revenuehunt.com/tutorials/) on how to create your first Product Recommendation Quiz using the [Shop Quiz: Product Recommender](https://apps.shopify.com/product-recommendation-quiz-revenuehunt) app.
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Check out <a href="https://docs.revenuehunt.com/tutorials/" style="color:#16161D;text-decoration:underline;">this video guide</a> on how to create your first Product Recommendation Quiz using the <a href="https://apps.shopify.com/product-recommendation-quiz-revenuehunt" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommender</a> app.</p>
+</div>
 
 ### 2️⃣ Add Customer Tags to Choices
 
@@ -98,7 +101,10 @@ Congratulations! 🎉 You've successfully set up an automated, personalized emai
 
 Regularly monitor the performance of your email flows using Shopify's analytics tools, paying attention to open rates, click-through rates, and conversion rates. Based on the analytics and feedback, continually refine your email content to better meet customer needs and preferences.
 
-> **💡 Tip:** Implement [A/B testing](https://docs.revenuehunt.com/how-to-guides/ab-test-quiz/) to compare different quiz and email strategies and determine which ones are most effective.
+<div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Implement <a href="https://docs.revenuehunt.com/how-to-guides/ab-test-quiz/" style="color:#16161D;text-decoration:underline;">A/B testing</a> to compare different quiz and email strategies and determine which ones are most effective.</p>
+</div>
 
 ## Remember
 

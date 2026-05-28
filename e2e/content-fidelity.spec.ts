@@ -32,9 +32,15 @@ function parseEntries(dir: string, collection: "blog" | "pages"): Entry[] {
       const slug = fm.match(/^legacySlug:\s*"((?:[^"\\]|\\.)*)"/m)?.[1] ?? f.replace(/\.md$/, "");
       // First substantive paragraph: skip images, raw HTML, headings, list
       // items, blockquotes — those render with structural wrappers that don't
-      // survive plain-text extraction cleanly.
+      // survive plain-text extraction cleanly. Strip script/style blocks first
+      // (mirrors htmlToText) so their inner lines — e.g. a JSON-LD
+      // `"description": "..."` — aren't mistaken for prose; the rendered page
+      // drops those blocks, so they'd never match.
+      const prose = body
+        .replace(/<script[\s\S]*?<\/script>/gi, "")
+        .replace(/<style[\s\S]*?<\/style>/gi, "");
       const sample =
-        body
+        prose
           .split("\n")
           .map((l) => l.trim())
           .find(

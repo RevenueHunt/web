@@ -12,7 +12,7 @@ categories:
   - "eCommerce"
 author: "Paulina Chodura"
 legacySlug: "ecommerce-sales-funnel-examples"
-featuredImage: "/img/blog/ecommerce-sales-funnel-examples/blogtile_11examples.webp"
+featuredImage: "/img/blog/ecommerce-sales-funnel-examples/blogtile_11examples_new.webp"
 draft: false
 ---
 
@@ -161,6 +161,8 @@ Across all 11 examples, the same five-stage structure shows up. It's a deliberat
 ## How to build your own (free template)
 
 Every quiz-driven funnel above can be replicated on Shopify in under an hour using an industry-specific template. Install [RevenueHunt: Recommender Quiz for Shopify](https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=platform_hero), browse our [library of ready-made quiz templates](https://revenuehunt.com/templates/) (skin type finder, routine builder, wellness goal matcher, supplement diagnostic, eyewear fit, sleep quiz and more), wire up the native Klaviyo, Omnisend or Mailchimp connection, and the funnel is live the same day. The free plan covers most stores up to their first thousand quiz completions, which is enough to validate the model before committing to anything.
+
+For the strategy behind the build (the five funnel stages, the design choices that determine whether a funnel compounds or stalls, and the apps that fit each stage), see our [step-by-step funnel build guide](https://revenuehunt.com/build-sales-funnel-shopify-store/).
 
 ## Frequently asked questions
 

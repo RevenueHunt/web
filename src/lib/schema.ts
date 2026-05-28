@@ -6,7 +6,7 @@ export function organization() {
     "@type": "Organization",
     name: SITE.name,
     url: SITE.site_url,
-    logo: new URL("/img/logo.svg", SITE.site_url).href,
+    logo: new URL("/img/logos/revenuehunt-logo-horizontal.svg", SITE.site_url).href,
     sameAs: Object.values(SITE.social),
   };
 }

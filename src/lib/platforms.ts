@@ -89,7 +89,7 @@ export const PLATFORM_CONFIGS: Record<string, PlatformConfig> = {
     platform: "Google Product Feed",
     primary: { label: "get started free", href: "https://admin.revenuehunt.com/register/", external: true },
     secondary: { label: "view demo store", href: "https://skincarequiz.myshopify.com", external: true },
-    youtubeId: "fJqpGJUzZNE",
+    youtubeId: "fifkJo07Zgc",
   },
   "product-recommendation-quiz-pos-tablet-stands": {
     platform: "POS tablet stands",

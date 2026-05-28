@@ -6,7 +6,7 @@ updatedDate: 2025-10-14T10:30:34Z
 legacySlug: "product-recommendation-quiz-standalone-google-product-feed"
 legacyId: 5238
 legacyUrl: "https://revenuehunt.com/product-recommendation-quiz-standalone-google-product-feed/"
-featuredImage: "/img/pages/product-recommendation-quiz-standalone-google-product-feed/lukas-blazek-mcSDtbWXUZU-unsplash.jpg"
+featuredImage: "/img/pages/product-recommendation-quiz-standalone-google-product-feed/lukas-blazek-mcSDtbWXUZU-unsplash.webp"
 draft: false
 ---
 
@@ -100,12 +100,12 @@ We continuously work to improve the app and release new features regularly based
 
 <div class="rh-carousel">
 <div data-carousel class="rh-carousel__track">
-<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-1b.png" alt="Product Recommendation Quiz screenshot 1"></figure>
-<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-2b.png" alt="Product Recommendation Quiz screenshot 2"></figure>
-<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-3b.png" alt="Product Recommendation Quiz screenshot 3"></figure>
-<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-4b.png" alt="Product Recommendation Quiz screenshot 4"></figure>
-<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-5b.png" alt="Product Recommendation Quiz screenshot 5"></figure>
-<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-6b.png" alt="Product Recommendation Quiz screenshot 6"></figure>
+<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-1b.webp" alt="Product Recommendation Quiz screenshot 1"></figure>
+<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-2b.webp" alt="Product Recommendation Quiz screenshot 2"></figure>
+<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-3b.webp" alt="Product Recommendation Quiz screenshot 3"></figure>
+<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-4b.webp" alt="Product Recommendation Quiz screenshot 4"></figure>
+<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-5b.webp" alt="Product Recommendation Quiz screenshot 5"></figure>
+<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-6b.webp" alt="Product Recommendation Quiz screenshot 6"></figure>
 </div>
 <div data-carousel-dots class="rh-carousel__dots"></div>
 </div>

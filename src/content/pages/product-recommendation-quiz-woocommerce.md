@@ -6,7 +6,7 @@ updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "product-recommendation-quiz-woocommerce"
 legacyId: 826
 legacyUrl: "https://revenuehunt.com/product-recommendation-quiz-woocommerce/"
-featuredImage: "/img/pages/product-recommendation-quiz-woocommerce/3-scaled.png"
+featuredImage: "/img/pages/product-recommendation-quiz-woocommerce/3-scaled.webp"
 draft: false
 ---
 

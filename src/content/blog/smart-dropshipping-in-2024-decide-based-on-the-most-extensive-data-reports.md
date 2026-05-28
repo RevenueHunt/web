@@ -11,7 +11,7 @@ author: "Paulina Chodura"
 legacySlug: "smart-dropshipping-in-2024-decide-based-on-the-most-extensive-data-reports"
 legacyId: 8225
 legacyUrl: "https://revenuehunt.com/smart-dropshipping-in-2024-decide-based-on-the-most-extensive-data-reports/"
-featuredImage: "/img/blog/smart-dropshipping-in-2024-decide-based-on-the-most-extensive-data-reports/Macbook-analytics-bg.png"
+featuredImage: "/img/blog/smart-dropshipping-in-2024-decide-based-on-the-most-extensive-data-reports/Macbook-analytics-bg.webp"
 draft: false
 ---
 
@@ -41,7 +41,7 @@ And the best, you are able to filter this data:
 
 With this, guessing is no part of your business anymore and your decisions are explainable. And all of this data is explained perfectly in a supply chain data report. This is updated real-time and accessible whenever and wherever you want.
 
-![Supply Chain Report](/img/blog/smart-dropshipping-in-2024-decide-based-on-the-most-extensive-data-reports/Supply-Chain-Report.png)
+![Supply Chain Report](/img/blog/smart-dropshipping-in-2024-decide-based-on-the-most-extensive-data-reports/Supply-Chain-Report.webp)
 
 #### _Automations_
 

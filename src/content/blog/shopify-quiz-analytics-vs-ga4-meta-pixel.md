@@ -12,11 +12,11 @@ author: "Paulina Chodura"
 legacySlug: "shopify-quiz-analytics-vs-ga4-meta-pixel"
 legacyId: 11702
 legacyUrl: "https://revenuehunt.com/shopify-quiz-analytics-vs-ga4-meta-pixel/"
-featuredImage: "/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/13.png"
+featuredImage: "/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/13.webp"
 draft: false
 ---
 
-![Shopify quiz analytics title slide](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/track-what-matters.png)
+![Shopify quiz analytics title slide](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/track-what-matters.webp)
 
 _Why first-party quiz analytics are more accurate, faster, and privacy-compliant than any external tracking script._
 
@@ -38,7 +38,7 @@ When a shopper takes your quiz, they're not just clicking around – they're **t
 
 That's not guesswork, it's declared intent. This kind of data (willingly given, contextually relevant, and stored inside your Shopify store) is the foundation of modern marketing. It's not subject to browser limitations, cookie banners, or pixel fires. It's **first-party, consent-based, and infinitely more reliable**.
 
-![Shopify quiz analytics revenuehunt analytics dashboard](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/manual_shopifyV2_quizbuilder_metrics_analytics.png)
+![Shopify quiz analytics revenuehunt analytics dashboard](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/manual_shopifyV2_quizbuilder_metrics_analytics.webp)
 
 _RevenueHunt app Analytics dashboard_
 
@@ -60,22 +60,22 @@ They measure traffic and attribution, not the nuanced journey inside your store.
 **Quiz Starts and Completions**  
 Measured live, even if users have ad blockers or privacy settings enabled.
 
-![Shopify quiz analytics revenuehunt quiz starts and responses](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/ananlytics_responses.png)
+![Shopify quiz analytics revenuehunt quiz starts and responses](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/ananlytics_responses.webp)
 
 **Orders and Revenue**  
 Synced daily from Shopify's real order data, not sample estimates or cookies.
 
-![Shopify quiz analytics orders and revenue](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/ananlytics_orders.png)
+![Shopify quiz analytics orders and revenue](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/ananlytics_orders.webp)
 
 **Drop-Off per Question**  
 Pinpoint friction points and redesign high-exit slides before they cost conversions.
 
-![Shopify quiz analytics drop off](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/manual_shopifyV2_quizbuilder_metrics_analytics_dropoff.png)
+![Shopify quiz analytics drop off](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/manual_shopifyV2_quizbuilder_metrics_analytics_dropoff.webp)
 
 **Result Visibility**  
 See which product sections and outcomes are displayed most often and which customers actually reach them.
 
-![Shopify quiz analytics recommended products](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/manual_shopifyV2_quizbuilder_metrics_analytics_recommendeditems.png)
+![Shopify quiz analytics recommended products](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/manual_shopifyV2_quizbuilder_metrics_analytics_recommendeditems.webp)
 
 The best part? All of this happens without GA4 debugging, pixel delays, or missing UTMs. No inconsistent metrics, no attribution chaos: just one unified truth, right inside your Shopify dashboard.
 
@@ -99,7 +99,7 @@ Track `📊 Results Page Distribution` and `📊 Section Visibility` to see how 
 
 Each card updates live for quiz responses and daily for Shopify orders, so you're always seeing the latest truth, not yesterday's export. And because layouts can be saved, your growth manager, designer, and founder can all view performance through their own lens without touching a single pixel or script.
 
-![Shopify quiz analytics revenuehunt analytics customize](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/manual_shopifyV2_quizbuilder_metrics_analytics_customize.png)
+![Shopify quiz analytics revenuehunt analytics customize](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/manual_shopifyV2_quizbuilder_metrics_analytics_customize.webp)
 
 _RevenueHunt's [Analytics dashboard](https://docs.revenuehunt.com/reference/quiz-builder/metrics/#analytics) is fully customizible allowing you to add metrics/cards that matter to your business._
 
@@ -115,7 +115,7 @@ Most analytics tools tell you _what happened_. RevenueHunt tells you **why**. In
 
 It's like reading your personalization playbook: transparent, step-by-step, and specific. So when a quiz underperforms, you're not guessing. You can see if the conditions were too strict, if a section failed to show, or if the logic simply didn't match the customer's intent.
 
-![Shopify quiz analytics responses revenuehunt](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/ananlytics_responses_AI.png)
+![Shopify quiz analytics responses revenuehunt](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/ananlytics_responses_AI.webp)
 
 _RevenueHunt app's [Responses section](https://docs.revenuehunt.com/reference/quiz-builder/metrics/#responses) has a built-in **Quiz Copilot AI** assistant which can help you analyze the response and explain the recommendations._
 
@@ -137,7 +137,7 @@ Shopify already knows _what's selling._ Your quiz already knows _why it sells._ 
 Go to your **RevenueHunt dashboard → pick your quiz → "..." → Analytics**.  
 Use the date selector to view _Today_, _Last 30 days_, or any custom range.
 
-![Shopify quiz analytics access analytics](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/manual_shopifyV2_quizbuilder_matrics_analytics_accessfromdashboard1.png)
+![Shopify quiz analytics access analytics](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/manual_shopifyV2_quizbuilder_matrics_analytics_accessfromdashboard1.webp)
 
 **2\. Customize your dashboard:**  
 Click **Customize**, then add or rearrange cards like:
@@ -150,12 +150,12 @@ Click **Customize**, then add or rearrange cards like:
     Save your layout so each team member sees what matters most.
     
 
-![Shopify quiz analytics customize button](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/manual_shopifyV2_quizbuilder_metrics_analytics_customizebutton.png)
+![Shopify quiz analytics customize button](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/manual_shopifyV2_quizbuilder_metrics_analytics_customizebutton.webp)
 
 **3\. Dig deeper with Responses:**  
 Open the quiz menu → **Responses → View → Analyze Response** to see each customer's path, their choices, and why products were (or weren't) recommended.
 
-![Shopify quiz analytics responses access](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/manual_shopifyV2_quizbuilder_openresponses.png)
+![Shopify quiz analytics responses access](/img/blog/shopify-quiz-analytics-vs-ga4-meta-pixel/manual_shopifyV2_quizbuilder_openresponses.webp)
 
 **4\. Act on what you learn:**
 

@@ -11,7 +11,7 @@ author: "Paulina Chodura"
 legacySlug: "practical-guide-create-a-video-quiz-for-your-e-commerce-website"
 legacyId: 9095
 legacyUrl: "https://revenuehunt.com/practical-guide-create-a-video-quiz-for-your-e-commerce-website/"
-featuredImage: "/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/56.png"
+featuredImage: "/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/56.webp"
 draft: false
 ---
 
@@ -36,7 +36,7 @@ You can, for example, briefly introduce your brand, the products, and what users
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">To add an introduction video to the first slide of your <a href="https://revenuehunt.com/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz</a>, go to _Quiz Builder > Welcome Slide > Question Settings > Video (upload)_ and select the _responsive (with play/stop/volume buttons)_ or _background (no buttons)_ option.</p>
-  <img src="/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/Screenshot-2024-07-01-092811.png" alt="Practical Guide: Create a Video Quiz for your E-commerce Website - image 1" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+  <img src="/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/Screenshot-2024-07-01-092811.webp" alt="Practical Guide: Create a Video Quiz for your E-commerce Website - image 1" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
 </div>
 
 **🟣 How-To or Explainer Videos**
@@ -50,7 +50,7 @@ For example, a skincare brand could include some step-by-step video guides, tips
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">To add a video to the results page of your <a href="https://revenuehunt.com/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz</a>, go to _Quiz Builder > Results Page_ and add a Content Block. In the content block use the _!\<a href="https://youtu.be/0\_tO8HgJiLQ" style="color:#16161D;text-decoration:underline;">\</a>_ <a href="https://docs.revenuehunt.com/how-to-guides/use-markdown/" style="color:#16161D;text-decoration:underline;">Markdown Language</a> rule to insert your video.</p>
-  <img src="/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/Screenshot-2024-07-01-093841.png" alt="Practical Guide: Create a Video Quiz for your E-commerce Website - image 2" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+  <img src="/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/Screenshot-2024-07-01-093841.webp" alt="Practical Guide: Create a Video Quiz for your E-commerce Website - image 2" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
 </div>
 
 **🟣 Customer Testimonial Videos**
@@ -62,7 +62,7 @@ Build trust and credibility by showcasing real customer experiences. For example
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">To add a split screen video to any slide of your <a href="https://revenuehunt.com/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz</a>, go to _Quiz Builder >_ Select a Slide _\> Question Settings > Video (upload)_ and select the _responsive_ option.</p>
-  <img src="/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/Screenshot-2024-07-01-122338.png" alt="Practical Guide: Create a Video Quiz for your E-commerce Website - image 4" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+  <img src="/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/Screenshot-2024-07-01-122338.webp" alt="Practical Guide: Create a Video Quiz for your E-commerce Website - image 4" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
 </div>
 
 **🟣 Product Overview Videos**
@@ -104,11 +104,11 @@ Furthermore, mobile users are more likely to share their experiences on social m
 
 1️⃣ Prepare a 🗺️ **map of your quiz**. List down all the questions, choices, and possible recommendations.
 
-![Practical Guide: Create a Video Quiz for your E-commerce Website - image 8](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/quizmap1.png)
+![Practical Guide: Create a Video Quiz for your E-commerce Website - image 8](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/quizmap1.webp)
 
 2️⃣ Check **where to 🎬 add visuals** like videos, gifs or images for maximum impact.
 
-![Practical Guide: Create a Video Quiz for your E-commerce Website - image 9](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/videoplan.png)
+![Practical Guide: Create a Video Quiz for your E-commerce Website - image 9](/img/blog/practical-guide-create-a-video-quiz-for-your-e-commerce-website/videoplan.webp)
 
 Typically videos are most powerful when placed:
 

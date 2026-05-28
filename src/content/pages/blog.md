@@ -6,7 +6,7 @@ updatedDate: 2024-09-10T13:15:22Z
 legacySlug: "blog"
 legacyId: 10
 legacyUrl: "https://revenuehunt.com/blog/"
-featuredImage: "/img/pages/blog/Ecommerce-Infographic-Instagram-Post.png"
+featuredImage: "/img/pages/blog/Ecommerce-Infographic-Instagram-Post.webp"
 draft: false
 ---
 
@@ -22,7 +22,7 @@ What separates a quiz that consistently drives 15–25% conversion rates from on
 
 [Case Studies](https://revenuehunt.com/cat/case-studies/) [Tips & Tricks](https://revenuehunt.com/cat/tips-tricks/) [eCommerce](https://revenuehunt.com/cat/ecommerce/) [New Features](https://revenuehunt.com/cat/app-new-features/)
 
-[![Klaviyo graveyard](/img/pages/blog/blog_klaviyo_graveyard_tile-120x120.png)](https://revenuehunt.com/klaviyo-zero-party-data/ "Your Klaviyo List Is a Graveyard. Resurrect It with Zero-Party Data")
+[![Klaviyo graveyard](/img/pages/blog/blog_klaviyo_graveyard_tile-120x120.webp)](https://revenuehunt.com/klaviyo-zero-party-data/ "Your Klaviyo List Is a Graveyard. Resurrect It with Zero-Party Data")
 
 [
 
@@ -30,7 +30,7 @@ What separates a quiz that consistently drives 15–25% conversion rates from on
 
 ](https://revenuehunt.com/klaviyo-zero-party-data/ "Your Klaviyo List Is a Graveyard. Resurrect It with Zero-Party Data")5-5-2026   [eCommerce](https://revenuehunt.com/cat/ecommerce/) [Sales Funnels](https://revenuehunt.com/cat/sales-funnels/) [Shopify Apps](https://revenuehunt.com/cat/shopify-apps/)  
 
-[![April product update](/img/pages/blog/april_26_product_update-120x120.png)](https://revenuehunt.com/april-2026-product-updates/ "APRIL 2026 – Safer quizzes, smoother popups, and backend-powered saves")
+[![April product update](/img/pages/blog/april_26_product_update-120x120.webp)](https://revenuehunt.com/april-2026-product-updates/ "APRIL 2026 – Safer quizzes, smoother popups, and backend-powered saves")
 
 [
 
@@ -38,7 +38,7 @@ What separates a quiz that consistently drives 15–25% conversion rates from on
 
 ](https://revenuehunt.com/april-2026-product-updates/ "APRIL 2026 – Safer quizzes, smoother popups, and backend-powered saves")1-5-2026   [Product Updates](https://revenuehunt.com/cat/product-updates/)  
 
-[![eCommerce Blog - image 1](/img/pages/blog/blog_casestudy_aov42-120x120.png)](https://revenuehunt.com/anti-aging-beauty-brand-quiz-funnel-case-study/ "How US Anti-Aging Device Brand Achieved 42.64% AOV Lift & $691K in 90 Days Using a Qualifying Funnel Quiz")
+[![eCommerce Blog - image 1](/img/pages/blog/blog_casestudy_aov42-120x120.webp)](https://revenuehunt.com/anti-aging-beauty-brand-quiz-funnel-case-study/ "How US Anti-Aging Device Brand Achieved 42.64% AOV Lift & $691K in 90 Days Using a Qualifying Funnel Quiz")
 
 [
 
@@ -46,7 +46,7 @@ What separates a quiz that consistently drives 15–25% conversion rates from on
 
 ](https://revenuehunt.com/anti-aging-beauty-brand-quiz-funnel-case-study/ "How US Anti-Aging Device Brand Achieved 42.64% AOV Lift & $691K in 90 Days Using a Qualifying Funnel Quiz")16-4-2026   [Case Studies](https://revenuehunt.com/cat/case-studies/)  
 
-[![Product update march](/img/pages/blog/blog_tile_product_update_march_20261-120x120.png)](https://revenuehunt.com/march-2026-product-updates/ "MARCH 2026 – Legacy quiz import, pre-fill on retake, and the new Copilot engine for everyone")
+[![Product update march](/img/pages/blog/blog_tile_product_update_march_20261-120x120.webp)](https://revenuehunt.com/march-2026-product-updates/ "MARCH 2026 – Legacy quiz import, pre-fill on retake, and the new Copilot engine for everyone")
 
 [
 
@@ -54,7 +54,7 @@ What separates a quiz that consistently drives 15–25% conversion rates from on
 
 ](https://revenuehunt.com/march-2026-product-updates/ "MARCH 2026 – Legacy quiz import, pre-fill on retake, and the new Copilot engine for everyone")1-4-2026   [Product Updates](https://revenuehunt.com/cat/product-updates/)  
 
-[![eCommerce Blog - image 2](/img/pages/blog/12-120x120.png)](https://revenuehunt.com/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/ "Why Popups Are Walls and Quizzes Are Doors: Rethinking Lead Capture for DTC")
+[![eCommerce Blog - image 2](/img/pages/blog/12-120x120.webp)](https://revenuehunt.com/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/ "Why Popups Are Walls and Quizzes Are Doors: Rethinking Lead Capture for DTC")
 
 [
 
@@ -62,7 +62,7 @@ What separates a quiz that consistently drives 15–25% conversion rates from on
 
 ](https://revenuehunt.com/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/ "Why Popups Are Walls and Quizzes Are Doors: Rethinking Lead Capture for DTC")3-3-2026   [eCommerce](https://revenuehunt.com/cat/ecommerce/)  
 
-[![eCommerce Blog - image 3](/img/pages/blog/1-120x120.png)](https://revenuehunt.com/february-2026-product-updates/ "FEBRUARY 2026 – More capable Copilot, flexible slots, and faster catalogue syncs")
+[![eCommerce Blog - image 3](/img/pages/blog/1-120x120.webp)](https://revenuehunt.com/february-2026-product-updates/ "FEBRUARY 2026 – More capable Copilot, flexible slots, and faster catalogue syncs")
 
 [
 
@@ -70,7 +70,7 @@ What separates a quiz that consistently drives 15–25% conversion rates from on
 
 ](https://revenuehunt.com/february-2026-product-updates/ "FEBRUARY 2026 – More capable Copilot, flexible slots, and faster catalogue syncs")2-3-2026   [Product Updates](https://revenuehunt.com/cat/product-updates/)  
 
-[![eCommerce Blog - image 4](/img/pages/blog/14-120x120.png)](https://revenuehunt.com/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/ "Stop Paying for Traffic That Bounces. Why Quiz Funnels Outperform Collection Pages?")
+[![eCommerce Blog - image 4](/img/pages/blog/14-120x120.webp)](https://revenuehunt.com/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/ "Stop Paying for Traffic That Bounces. Why Quiz Funnels Outperform Collection Pages?")
 
 [
 
@@ -78,7 +78,7 @@ What separates a quiz that consistently drives 15–25% conversion rates from on
 
 ](https://revenuehunt.com/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/ "Stop Paying for Traffic That Bounces. Why Quiz Funnels Outperform Collection Pages?")27-2-2026   [eCommerce](https://revenuehunt.com/cat/ecommerce/)  
 
-[![eCommerce Blog - image 5](/img/pages/blog/2-120x120.png)](https://revenuehunt.com/january-2026-product-updates/ "JANUARY 2026 – Cleaner logic, better data, and more accessible quizzes")
+[![eCommerce Blog - image 5](/img/pages/blog/2-120x120.webp)](https://revenuehunt.com/january-2026-product-updates/ "JANUARY 2026 – Cleaner logic, better data, and more accessible quizzes")
 
 [
 
@@ -86,7 +86,7 @@ What separates a quiz that consistently drives 15–25% conversion rates from on
 
 ](https://revenuehunt.com/january-2026-product-updates/ "JANUARY 2026 – Cleaner logic, better data, and more accessible quizzes")2-2-2026   [Product Updates](https://revenuehunt.com/cat/product-updates/)  
 
-[![eCommerce Blog - image 6](/img/pages/blog/3-120x120.png)](https://revenuehunt.com/december-2025-product-updates/ "DECEMBER 2025 – Chart blocks, lighter quizzes, and a much smarter Copilot.")
+[![eCommerce Blog - image 6](/img/pages/blog/3-120x120.webp)](https://revenuehunt.com/december-2025-product-updates/ "DECEMBER 2025 – Chart blocks, lighter quizzes, and a much smarter Copilot.")
 
 [
 
@@ -94,7 +94,7 @@ What separates a quiz that consistently drives 15–25% conversion rates from on
 
 ](https://revenuehunt.com/december-2025-product-updates/ "DECEMBER 2025 – Chart blocks, lighter quizzes, and a much smarter Copilot.")11-12-2025   [Product Updates](https://revenuehunt.com/cat/product-updates/)  
 
-[![eCommerce Blog - image 7](/img/pages/blog/13-120x120.png)](https://revenuehunt.com/shopify-quiz-analytics-vs-ga4-meta-pixel/ "You Don't Need Meta Pixel or GA4 to Track Your Quiz Performance")
+[![eCommerce Blog - image 7](/img/pages/blog/13-120x120.webp)](https://revenuehunt.com/shopify-quiz-analytics-vs-ga4-meta-pixel/ "You Don't Need Meta Pixel or GA4 to Track Your Quiz Performance")
 
 [
 

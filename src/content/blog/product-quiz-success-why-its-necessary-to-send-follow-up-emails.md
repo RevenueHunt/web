@@ -12,13 +12,13 @@ author: "Paulina Chodura"
 legacySlug: "product-quiz-success-why-its-necessary-to-send-follow-up-emails"
 legacyId: 6093
 legacyUrl: "https://revenuehunt.com/product-quiz-success-why-its-necessary-to-send-follow-up-emails/"
-featuredImage: "/img/blog/product-quiz-success-why-its-necessary-to-send-follow-up-emails/45.png"
+featuredImage: "/img/blog/product-quiz-success-why-its-necessary-to-send-follow-up-emails/45.webp"
 draft: false
 ---
 
 Most Shopify brands install a product recommendation quiz, watch the completions roll in, and then send every single taker the same follow-up email. That's the equivalent of running a consultation, taking detailed notes, and then **handing every customer the same generic brochure** on the way out. The quiz gave you the most valuable data asset in your Klaviyo account. The follow-up is how you activate it – and if you're not doing that, you're leaving your biggest revenue lever untouched.
 
-![Product Quiz Success: Why Follow-Up Emails Are Your Biggest Revenue Lever - image 1](/img/blog/product-quiz-success-why-its-necessary-to-send-follow-up-emails/blog_emailsuccess_img1.png)
+![Product Quiz Success: Why Follow-Up Emails Are Your Biggest Revenue Lever - image 1](/img/blog/product-quiz-success-why-its-necessary-to-send-follow-up-emails/blog_emailsuccess_img1.webp)
 
 _Quiz is a source of data no pixel can provide – direct from the user and freely-given._
 
@@ -40,7 +40,7 @@ The moment a customer finishes your quiz, a rich data profile, skin type, goals,
 
 You're no longer sending an acne solution to an anti-aging customer. You're triggering the exact flow for the exact person, automatically.
 
-![Product Quiz Success: Why Follow-Up Emails Are Your Biggest Revenue Lever - image 2](/img/blog/product-quiz-success-why-its-necessary-to-send-follow-up-emails/how_it_works_example15.png)
+![Product Quiz Success: Why Follow-Up Emails Are Your Biggest Revenue Lever - image 2](/img/blog/product-quiz-success-why-its-necessary-to-send-follow-up-emails/how_it_works_example15.webp)
 
 _Sample Email Draft within the RevenueHunt: Recommender Quiz app for Shopify_
 
@@ -60,7 +60,7 @@ By day five to seven, follow up with targeted social proof. Not generic five-sta
 
 **Ongoing Cadence:** A well-targeted weekly email outperforms a daily blast on every metric - open rate, click rate, and unsubscribe rate.
 
-![Klaviyo email template example](/img/blog/product-quiz-success-why-its-necessary-to-send-follow-up-emails/image-22.png)
+![Klaviyo email template example](/img/blog/product-quiz-success-why-its-necessary-to-send-follow-up-emails/image-22.webp)
 
 ## Where Your Quiz Data Should Flow
 
@@ -94,7 +94,7 @@ Personalized post-quiz flows outperform generic email sequences because the cust
 -   **Abandoned Cart Recovery:** A well-designed quiz flow can recover a significant share of visitors who browsed their results but didn't purchase - because the follow-up email brings them back to a pre-filtered, personalized cart.
 -   **LTV Over 12 Months:** The customer who entered your ecosystem via a quiz is a higher-quality lead - they're segmented from day one, meaning every subsequent campaign they receive is relevant.
 
-![Product Quiz Success: Why Follow-Up Emails Are Your Biggest Revenue Lever - image 3](/img/blog/product-quiz-success-why-its-necessary-to-send-follow-up-emails/Untitled-design.png)
+![Product Quiz Success: Why Follow-Up Emails Are Your Biggest Revenue Lever - image 3](/img/blog/product-quiz-success-why-its-necessary-to-send-follow-up-emails/Untitled-design.webp)
 
 ## Build This Before You Think You Need It
 

@@ -12,7 +12,7 @@ author: "Paulina Chodura"
 legacySlug: "klaviyo-zero-party-data"
 legacyId: 12465
 legacyUrl: "https://revenuehunt.com/klaviyo-zero-party-data/"
-featuredImage: "/img/blog/klaviyo-zero-party-data/blog_klaviyo_graveyard_tile.png"
+featuredImage: "/img/blog/klaviyo-zero-party-data/blog_klaviyo_graveyard_tile.webp"
 draft: false
 ---
 
@@ -22,7 +22,7 @@ Email address. First name. One purchase (eight months ago). No custom properties
 
 You've built a list. You haven't built an asset.
 
-![Head of retention staring at an empty Klaviyo dashboard](/img/blog/klaviyo-zero-party-data/blog_klaviyo_graveyard_img1.png)
+![Head of retention staring at an empty Klaviyo dashboard](/img/blog/klaviyo-zero-party-data/blog_klaviyo_graveyard_img1.webp)
 
 Your email platform is not the problem. The data feeding it is.
 
@@ -112,7 +112,7 @@ The product recommendation quiz is not primarily a conversion tool. It is a **st
 
 If you're evaluating a quiz on on-site conversion lift alone, you're measuring the smallest part of its value. The downstream impact on your Klaviyo account (on the segments you can build, the flows you can personalize, the RPR you can generate from enriched profiles) is an order of magnitude larger. The quiz doesn't just give you a better popup. It gives you a populated Klaviyo account.
 
-![Before and after Klaviyo profile card - empty vs enriched with zero-party data](/img/blog/klaviyo-zero-party-data/blog_klaviyo_graveyard_img3.png)
+![Before and after Klaviyo profile card - empty vs enriched with zero-party data](/img/blog/klaviyo-zero-party-data/blog_klaviyo_graveyard_img3.webp)
 
 Five questions. Five properties. Five segments you couldn't build yesterday.
 
@@ -152,7 +152,7 @@ With these properties in place, the flows you've wanted to build become buildabl
 -   **Win-Back Flow:** References the customer's original quiz answers. "Still struggling with oily skin? Here's what's new since your last purchase." Personalization grounded in what the customer told you (not what an algorithm inferred).
 -   **Dynamic Campaign Content:** Content blocks that swap product images and copy based on `quiz_skin_type`. One email template but with five personalized versions. The same send volume butx exponentially more relevant.
 
-![RPR before and after quiz enrichment - same Klaviyo account, different data](/img/blog/klaviyo-zero-party-data/blog_klaviyo_graveyard_img2.png)
+![RPR before and after quiz enrichment - same Klaviyo account, different data](/img/blog/klaviyo-zero-party-data/blog_klaviyo_graveyard_img2.webp)
 
 13% of the list. 40%+ of email revenue. The only difference was the data inside the profiles.
 

@@ -6,7 +6,7 @@ updatedDate: 2026-05-19T00:00:00Z
 legacySlug: "tos"
 legacyId: 3
 legacyUrl: "https://revenuehunt.com/tos/"
-featuredImage: "/img/pages/tos/photo-1433439216031-9571132ce719.jpeg"
+featuredImage: "/img/pages/tos/photo-1433439216031-9571132ce719.webp"
 draft: false
 ---
 

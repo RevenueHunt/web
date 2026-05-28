@@ -11,7 +11,7 @@ author: "Paulina Chodura"
 legacySlug: "shopify-shipping-apps"
 legacyId: 11220
 legacyUrl: "https://revenuehunt.com/shopify-shipping-apps/"
-featuredImage: "/img/blog/shopify-shipping-apps/pluginhive.png"
+featuredImage: "/img/blog/shopify-shipping-apps/pluginhive.webp"
 draft: false
 ---
 
@@ -33,7 +33,7 @@ Based on expert roundups, user reviews, and feature sets, here are the standout 
 
 ### PH MultiCarrier Shipping Label
 
-![Mcsl shipping](/img/blog/shopify-shipping-apps/mcsl-shipping-2.jpg)
+![Mcsl shipping](/img/blog/shopify-shipping-apps/mcsl-shipping-2.webp)
 
 [PH MultiCarrier Shipping Label](https://apps.shopify.com/multi-carrier-shipping-label?) lets you connect multiple shipping carriers to Shopify, display real-time rates at checkout, and print shipping labels directly from your store. It supports domestic and international shipping with leading carriers like UPS, FedEx, USPS, Canada Post, and DHL Express, as well as Indian services like Blue Dart, Delhivery, XPRESSBEES, and many more.  The [Shopify app](https://www.pluginhive.com/shopify-multi-carrier-shipping-label-app/) automates rate calculation, label generation, order fulfillment, and tracking notifications, saving time and reducing shipping errors.
 
@@ -62,7 +62,7 @@ Based on expert roundups, user reviews, and feature sets, here are the standout 
 
 ### PH Ship Rate & Track for FedEx
 
-**![FED Rate](/img/blog/shopify-shipping-apps/FED-RATE.png)**
+**![FED Rate](/img/blog/shopify-shipping-apps/FED-RATE.webp)**
 
 [PH Ship Rate & Track for FedEx](https://apps.shopify.com/fedex-shipping?) is a FedEx-certified Shopify app that connects your FedEx account to your store, enabling real-time rates at checkout, [one-click label printing](https://www.pluginhive.com/create-fedex-shipping-label-online/), and automated order fulfillment. It supports FedEx Express, Ground, LTL Freight, Ground Economy, and Hold at Location services, ensuring flexible shipping options for your customers. With direct Shopify integration, it reduces manual work, prevents pricing errors, and sends tracking updates automatically, keeping customers informed and your operations smooth.
 
@@ -88,7 +88,7 @@ Based on expert roundups, user reviews, and feature sets, here are the standout 
 
 ### ShipStation
 
-**![Pasted Graphic](/img/blog/shopify-shipping-apps/PastedGraphic-1.png)**ShipStation is a multi-channel shipping and fulfillment solution for Shopify and other ecommerce platforms. It streamlines order management, automates shipping workflows, and offers discounted rates across top carriers. With support for domestic and international shipments, ShipStation saves time on label printing, tracking, and order syncing. Its multi-carrier platform and automation features help merchants scale efficiently and manage fulfillment from a single interface.
+**![Pasted Graphic](/img/blog/shopify-shipping-apps/PastedGraphic-1.webp)**ShipStation is a multi-channel shipping and fulfillment solution for Shopify and other ecommerce platforms. It streamlines order management, automates shipping workflows, and offers discounted rates across top carriers. With support for domestic and international shipments, ShipStation saves time on label printing, tracking, and order syncing. Its multi-carrier platform and automation features help merchants scale efficiently and manage fulfillment from a single interface.
 
 **Important Features**
 
@@ -139,7 +139,7 @@ Based on expert roundups, user reviews, and feature sets, here are the standout 
 
 ### ShippingEasy
 
-**![Pasted Graphic](/img/blog/shopify-shipping-apps/PastedGraphic-2.png)**ShippingEasy is a shipping and order management solution that helps Shopify merchants simplify fulfillment, access discounted USPS and UPS rates, and automate shipping tasks. It supports multi-channel selling by connecting marketplaces like Amazon, eBay, and Etsy, while also offering marketing tools for customer retention. Designed to save time and reduce costs, the platform includes automation rules, presets, and real-time support.
+**![Pasted Graphic](/img/blog/shopify-shipping-apps/PastedGraphic-2.webp)**ShippingEasy is a shipping and order management solution that helps Shopify merchants simplify fulfillment, access discounted USPS and UPS rates, and automate shipping tasks. It supports multi-channel selling by connecting marketplaces like Amazon, eBay, and Etsy, while also offering marketing tools for customer retention. Designed to save time and reduce costs, the platform includes automation rules, presets, and real-time support.
 
 **Key Features**
 

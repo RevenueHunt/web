@@ -10,7 +10,7 @@ author: "Paulina Chodura"
 legacySlug: "new-features-create-customized-results-emails"
 legacyId: 6269
 legacyUrl: "https://revenuehunt.com/new-features-create-customized-results-emails/"
-featuredImage: "/img/blog/new-features-create-customized-results-emails/66.png"
+featuredImage: "/img/blog/new-features-create-customized-results-emails/66.webp"
 draft: false
 ---
 
@@ -60,6 +60,6 @@ To download an email template, click the link below and paste it in the Notifica
 
 [Demo](https://skincarequiz.myshopify.com/#quiz-rkHm6Y) [Get this template](https://docs.google.com/document/d/18VvKreR3jhizQ_ReOumUpmmIuHoC0RTxYAEO0N-Clbc/edit?usp=sharing)
 
-![New Features: Create customized results emails - image 2](/img/blog/new-features-create-customized-results-emails/image-23.png)![New Features: Create customized results emails - image 3](/img/blog/new-features-create-customized-results-emails/image-24.png)
+![New Features: Create customized results emails - image 2](/img/blog/new-features-create-customized-results-emails/image-23.webp)![New Features: Create customized results emails - image 3](/img/blog/new-features-create-customized-results-emails/image-24.webp)
 
 So, what are you waiting for? Get started on your own product recommendation quiz today! And be sure to follow up with your quiz takers by email. It's a great way to increase sales and keep customers engaged with your brand. Ready to get started? Build your first Product Recommendation Quiz now for free!

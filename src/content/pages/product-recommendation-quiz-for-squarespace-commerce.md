@@ -6,7 +6,7 @@ updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "product-recommendation-quiz-for-squarespace-commerce"
 legacyId: 1816
 legacyUrl: "https://revenuehunt.com/product-recommendation-quiz-for-squarespace-commerce/"
-featuredImage: "/img/pages/product-recommendation-quiz-for-squarespace-commerce/personal-shopper-product-recommendation-quiz-sat.jpg"
+featuredImage: "/img/pages/product-recommendation-quiz-for-squarespace-commerce/personal-shopper-product-recommendation-quiz-sat.webp"
 draft: false
 ---
 

@@ -10,7 +10,7 @@ author: "Paulina Chodura"
 legacySlug: "11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it"
 legacyId: 6347
 legacyUrl: "https://revenuehunt.com/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/"
-featuredImage: "/img/blog/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/blog_11_way_to_promote.png"
+featuredImage: "/img/blog/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/blog_11_way_to_promote.webp"
 draft: false
 ---
 
@@ -20,7 +20,7 @@ Do you have a quiz on your website but aren't sure how to get more people to tak
 
 Another easy way to promote your quiz is to add it to your website. This will allow your website visitors to easily find and take the quiz. You can add a button or link to the quiz on your website homepage, or add it to a sidebar or footer. However, one of the most effective ways to promote the quiz is placing it directly in you're website's main menu. This way no customer can miss it!
 
-![11 Easy Ways to Promote Your Quiz and Get More People to Take It - image 1](/img/blog/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/Screenshot-2022-03-31-155833-1024x536.png)
+![11 Easy Ways to Promote Your Quiz and Get More People to Take It - image 1](/img/blog/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/Screenshot-2022-03-31-155833-1024x536.webp)
 
 Click [here](https://revenuehunt.com/faqs/publish-quiz-on-your-store/) to learn how to publish your quiz on your website.
 
@@ -28,7 +28,7 @@ Click [here](https://revenuehunt.com/faqs/publish-quiz-on-your-store/) to learn 
 
 The first tip for promoting your quiz is to share it on social media. This is an easy way to reach a large audience quickly and can be very effective in getting more people to take your quiz. Make sure to post about the quiz on all of your social media channels, and use relevant hashtags to help people find it. You can also create social media ads to promote the quiz.
 
-![11 Easy Ways to Promote Your Quiz and Get More People to Take It - image 2](/img/blog/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/Inked1C7F6839-801C-4815-8A57-206256180FAA_LI-601x1024.jpg)
+![11 Easy Ways to Promote Your Quiz and Get More People to Take It - image 2](/img/blog/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/Inked1C7F6839-801C-4815-8A57-206256180FAA_LI-601x1024.webp)
 
 Click [here](https://revenuehunt.com/faqs/publish-quiz-on-your-store/?preview_id=1021&preview_nonce=58d72d009d&_thumbnail_id=-1&preview=true#articleTOC_3) to learn how to share a direct link to the quiz on your social media account (Twitter, Instagram, Facebook).
 
@@ -42,7 +42,7 @@ Click [here](https://revenuehunt.com/faqs/publish-quiz-on-your-store/) to learn 
 
 Another great way to promote your quiz is to email your subscribers. If you have a list of email subscribers, you can send them an email about the quiz with a link to take it. This is a great way to reach your target audience and can be very effective in getting more people to take the quiz. You can also add a paragraph about the quiz in your weekly newsletter or marketing campaign.
 
-![Pink Minimalist Fashion Email Newsletter](/img/blog/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/Pink-Minimalist-Fashion-Email-Newsletter-724x1024.png)
+![Pink Minimalist Fashion Email Newsletter](/img/blog/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/Pink-Minimalist-Fashion-Email-Newsletter-724x1024.webp)
 
 ## Tip #05: Offer a discount for completing the quiz
 
@@ -54,7 +54,7 @@ Learn [here](https://revenuehunt.com/faqs/adding-discount-coupon-code/) how to s
 
 A beautiful eye-catching banner is exactly what your quiz needs to get every visitor's attention.
 
-!["A landing page of a beauty business with a CTA for taking the quiz](/img/blog/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/PIC1-UN_DID_Blurred-1024x536.png)
+!["A landing page of a beauty business with a CTA for taking the quiz](/img/blog/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/PIC1-UN_DID_Blurred-1024x536.webp)
 
 ## Tip #07: Promote the quiz on social media with influencers
 
@@ -68,7 +68,7 @@ Click [here](https://revenuehunt.com/faqs/publish-quiz-on-your-store/) to learn 
 
 If you send emails, you can add the quiz to your email signature. This is a great way to promote the quiz and also remind your contacts about it. You can add a link to the quiz and tell people what they can expect if they take it.
 
-![Green Feminine Fashion Designer Email Signature](/img/blog/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/Green-Feminine-Fashion-Designer-Email-Signature.png)
+![Green Feminine Fashion Designer Email Signature](/img/blog/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/Green-Feminine-Fashion-Designer-Email-Signature.webp)
 
 Click [here](https://revenuehunt.com/faqs/publish-quiz-on-your-store/?preview_id=1021&preview_nonce=58d72d009d&_thumbnail_id=-1&preview=true#articleTOC_3) to learn how to share a direct link to the quiz with others.
 
@@ -76,7 +76,7 @@ Click [here](https://revenuehunt.com/faqs/publish-quiz-on-your-store/?preview_id
 
 If you have the possibility, running ads for a dedicated quiz page can really pay off in a long run. Customers who are sure they will get additional value from the quiz, like personalized advice or a skincare routine tailored to their needs, will be more likely to buy and the costs of a marketing campaign will quickly be covered by the increased conversion rate!
 
-![Pink Modern Valentines Day Special Price Promotion Facebook Ad](/img/blog/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/Pink-Modern-Valentines-Day-Special-Price-Promotion-Facebook-Ad-1024x536.png)
+![Pink Modern Valentines Day Special Price Promotion Facebook Ad](/img/blog/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/Pink-Modern-Valentines-Day-Special-Price-Promotion-Facebook-Ad-1024x536.webp)
 
 You can track your quiz revenue and conversion rate with Google Analytics. Learn more [here](https://revenuehunt.com/faqs/track-quiz-performance-google-analytics/).
 
@@ -90,7 +90,7 @@ Click [here](https://revenuehunt.com/faqs/publish-quiz-on-your-store/?preview_id
 
 Finally, you can increase awareness of your quiz and get more people to take it by running a contest or giveaway. This is a great way to engage your audience and get them excited about the quiz. Make sure to announce the contest or giveaway on all of your social media channels and include a link to the quiz.
 
-![Pink Minimalist Abstract Giveaway Time Instagram Post](/img/blog/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/Pink-Minimalist-Abstract-Giveaway-Time-Instagram-Post-300x300.png)
+![Pink Minimalist Abstract Giveaway Time Instagram Post](/img/blog/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/Pink-Minimalist-Abstract-Giveaway-Time-Instagram-Post-300x300.webp)
 
 ## Conclusion
 

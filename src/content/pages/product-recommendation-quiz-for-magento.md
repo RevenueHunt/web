@@ -6,7 +6,7 @@ updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "product-recommendation-quiz-for-magento"
 legacyId: 1847
 legacyUrl: "https://revenuehunt.com/product-recommendation-quiz-for-magento/"
-featuredImage: "/img/pages/product-recommendation-quiz-for-magento/plus-background.png"
+featuredImage: "/img/pages/product-recommendation-quiz-for-magento/plus-background.webp"
 draft: false
 ---
 

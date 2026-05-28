@@ -6,7 +6,7 @@ updatedDate: 2026-01-14T16:00:29Z
 legacySlug: "templates"
 legacyId: 5520
 legacyUrl: "https://revenuehunt.com/templates/"
-featuredImage: "/img/pages/templates/foundation5.png"
+featuredImage: "/img/pages/templates/foundation5.webp"
 draft: false
 ---
 
@@ -35,7 +35,7 @@ Experience fully-functional product recommendation quizzes on our live Shopify d
   
   
 [  
-![Skincare Quiz](/img/pages/templates/skinquiz1.png)  
+![Skincare Quiz](/img/pages/templates/skinquiz1.webp)  
 ](https://skincarequiz.myshopify.com/pages/skin-analysis)  
 
 #### Skintype + Routine Quiz
@@ -48,7 +48,7 @@ Identify skin type and recommend a full routine.
   
   
 [  
-![Foundation Quiz](/img/pages/templates/foundation5.png)  
+![Foundation Quiz](/img/pages/templates/foundation5.webp)  
 ](https://skincarequiz.myshopify.com/pages/foundation-match)  
 
 #### Foundation Match
@@ -61,7 +61,7 @@ Choosing the right foundation shouldn't feel like guesswork.
   
   
 [  
-![Lipstick Quiz](/img/pages/templates/lips1-e1768405685573.png)  
+![Lipstick Quiz](/img/pages/templates/lips1-e1768405685573.webp)  
 ](https://skincarequiz.myshopify.com/pages/lipstick-shade-finder)  
 
 #### Lipstick Shade Finder
@@ -74,7 +74,7 @@ Match customers with their perfect lipstick shade based on tone and style.
   
   
 [  
-![Haircare Quiz](/img/pages/templates/hairquiz4.png)  
+![Haircare Quiz](/img/pages/templates/hairquiz4.webp)  
 ](https://skincarequiz.myshopify.com/pages/haircare-quiz)  
 
 #### Haircare Quiz
@@ -89,7 +89,7 @@ Recommend shampoos, conditioners, and treatments for individual hair goals.
   
   
 [  
-![Coffee Quiz](/img/pages/templates/coffee2.png)  
+![Coffee Quiz](/img/pages/templates/coffee2.webp)  
 ](https://skincarequiz.myshopify.com/pages/coffee-quiz)  
 
 #### Coffee Quiz
@@ -102,7 +102,7 @@ Guide customers to the ideal coffee blend based on taste and lifestyle.
   
   
 [  
-![Supplements Quiz](/img/pages/templates/supplements3.png)  
+![Supplements Quiz](/img/pages/templates/supplements3.webp)  
 ](https://skincarequiz.myshopify.com/pages/supplements-quiz)  
 
 #### Supplements Quiz
@@ -115,7 +115,7 @@ Recommend vitamins and supplements aligned with health goals.
   
   
 [  
-![CBD Quiz](/img/pages/templates/cbd1.png)  
+![CBD Quiz](/img/pages/templates/cbd1.webp)  
 ](https://skincarequiz.myshopify.com/pages/cbd-product-finder)  
 
 #### CBD Product Finder
@@ -128,7 +128,7 @@ Suggest the right CBD products for relaxation, sleep, or focus.
   
   
 [  
-![Dog Food Quiz](/img/pages/templates/dogquiz3.png)  
+![Dog Food Quiz](/img/pages/templates/dogquiz3.webp)  
 ](https://skincarequiz.myshopify.com/pages/dog-food)  
 
 #### Dog Food Quiz
@@ -143,7 +143,7 @@ Find the perfect meal for your dog based on their specific needs and preferences
   
   
 [  
-![Jewellery Quiz](/img/pages/templates/jewellery1-e1768405517428.png)  
+![Jewellery Quiz](/img/pages/templates/jewellery1-e1768405517428.webp)  
 ](https://skincarequiz.myshopify.com/pages/jewellery-quiz)  
 
 #### Jewellery Quiz
@@ -156,7 +156,7 @@ Help shoppers find the perfect jewellery piece to match their style.
   
   
 [  
-![Clothing Quiz](/img/pages/templates/style1.png)  
+![Clothing Quiz](/img/pages/templates/style1.webp)  
 ](https://skincarequiz.myshopify.com/pages/clothing-style-quiz)  
 
 #### Clothing Style Quiz
@@ -169,7 +169,7 @@ Find your fashion persona and get personalized recommendations.
   
   
 [  
-![Bicycle Quiz](/img/pages/templates/bike2.png)  
+![Bicycle Quiz](/img/pages/templates/bike2.webp)  
 ](https://skincarequiz.myshopify.com/pages/bicycle-quiz)  
 
 #### Bicycle Quiz
@@ -182,112 +182,112 @@ Match customers with the right bike for their riding style and needs.
 ### Quiz Examples Gallery
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2020-09-29-at-20.20.43.png)  
-](/img/pages/templates/Screenshot-2020-09-29-at-20.20.43.png)
+![Quiz Example](/img/pages/templates/Screenshot-2020-09-29-at-20.20.43.webp)  
+](/img/pages/templates/Screenshot-2020-09-29-at-20.20.43.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2020-09-29-at-20.33.39.png)  
-](/img/pages/templates/Screenshot-2020-09-29-at-20.33.39.png)
+![Quiz Example](/img/pages/templates/Screenshot-2020-09-29-at-20.33.39.webp)  
+](/img/pages/templates/Screenshot-2020-09-29-at-20.33.39.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2020-09-29-at-20.34.03.png)  
-](/img/pages/templates/Screenshot-2020-09-29-at-20.34.03.png)
+![Quiz Example](/img/pages/templates/Screenshot-2020-09-29-at-20.34.03.webp)  
+](/img/pages/templates/Screenshot-2020-09-29-at-20.34.03.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2020-09-29-at-20.34.16.png)  
-](/img/pages/templates/Screenshot-2020-09-29-at-20.34.16.png)
+![Quiz Example](/img/pages/templates/Screenshot-2020-09-29-at-20.34.16.webp)  
+](/img/pages/templates/Screenshot-2020-09-29-at-20.34.16.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2020-10-20-at-11.31.49.png)  
-](/img/pages/templates/Screenshot-2020-10-20-at-11.31.49.png)
+![Quiz Example](/img/pages/templates/Screenshot-2020-10-20-at-11.31.49.webp)  
+](/img/pages/templates/Screenshot-2020-10-20-at-11.31.49.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2020-10-20-at-11.32.06.png)  
-](/img/pages/templates/Screenshot-2020-10-20-at-11.32.06.png)
+![Quiz Example](/img/pages/templates/Screenshot-2020-10-20-at-11.32.06.webp)  
+](/img/pages/templates/Screenshot-2020-10-20-at-11.32.06.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2020-10-20-at-11.33.20.png)  
-](/img/pages/templates/Screenshot-2020-10-20-at-11.33.20.png)
+![Quiz Example](/img/pages/templates/Screenshot-2020-10-20-at-11.33.20.webp)  
+](/img/pages/templates/Screenshot-2020-10-20-at-11.33.20.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2020-10-20-at-11.33.57.png)  
-](/img/pages/templates/Screenshot-2020-10-20-at-11.33.57.png)
+![Quiz Example](/img/pages/templates/Screenshot-2020-10-20-at-11.33.57.webp)  
+](/img/pages/templates/Screenshot-2020-10-20-at-11.33.57.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2020-10-20-at-11.39.39.png)  
-](/img/pages/templates/Screenshot-2020-10-20-at-11.39.39.png)
+![Quiz Example](/img/pages/templates/Screenshot-2020-10-20-at-11.39.39.webp)  
+](/img/pages/templates/Screenshot-2020-10-20-at-11.39.39.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2020-10-20-at-11.41.15.png)  
-](/img/pages/templates/Screenshot-2020-10-20-at-11.41.15.png)
+![Quiz Example](/img/pages/templates/Screenshot-2020-10-20-at-11.41.15.webp)  
+](/img/pages/templates/Screenshot-2020-10-20-at-11.41.15.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2020-10-20-at-11.41.36.png)  
-](/img/pages/templates/Screenshot-2020-10-20-at-11.41.36.png)
+![Quiz Example](/img/pages/templates/Screenshot-2020-10-20-at-11.41.36.webp)  
+](/img/pages/templates/Screenshot-2020-10-20-at-11.41.36.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2020-10-20-at-11.41.51.png)  
-](/img/pages/templates/Screenshot-2020-10-20-at-11.41.51.png)
+![Quiz Example](/img/pages/templates/Screenshot-2020-10-20-at-11.41.51.webp)  
+](/img/pages/templates/Screenshot-2020-10-20-at-11.41.51.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2020-10-20-at-11.44.30.png)  
-](/img/pages/templates/Screenshot-2020-10-20-at-11.44.30.png)
+![Quiz Example](/img/pages/templates/Screenshot-2020-10-20-at-11.44.30.webp)  
+](/img/pages/templates/Screenshot-2020-10-20-at-11.44.30.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2020-10-20-at-11.45.11.png)  
-](/img/pages/templates/Screenshot-2020-10-20-at-11.45.11.png)
+![Quiz Example](/img/pages/templates/Screenshot-2020-10-20-at-11.45.11.webp)  
+](/img/pages/templates/Screenshot-2020-10-20-at-11.45.11.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2020-10-20-at-11.45.42.png)  
-](/img/pages/templates/Screenshot-2020-10-20-at-11.45.42.png)
+![Quiz Example](/img/pages/templates/Screenshot-2020-10-20-at-11.45.42.webp)  
+](/img/pages/templates/Screenshot-2020-10-20-at-11.45.42.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2020-11-16-at-14.34.09.png)  
-](/img/pages/templates/Screenshot-2020-11-16-at-14.34.09.png)
+![Quiz Example](/img/pages/templates/Screenshot-2020-11-16-at-14.34.09.webp)  
+](/img/pages/templates/Screenshot-2020-11-16-at-14.34.09.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2020-11-16-at-14.34.22.png)  
-](/img/pages/templates/Screenshot-2020-11-16-at-14.34.22.png)
+![Quiz Example](/img/pages/templates/Screenshot-2020-11-16-at-14.34.22.webp)  
+](/img/pages/templates/Screenshot-2020-11-16-at-14.34.22.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2020-11-16-at-14.34.34.png)  
-](/img/pages/templates/Screenshot-2020-11-16-at-14.34.34.png)
+![Quiz Example](/img/pages/templates/Screenshot-2020-11-16-at-14.34.34.webp)  
+](/img/pages/templates/Screenshot-2020-11-16-at-14.34.34.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2020-11-16-at-14.36.54.png)  
-](/img/pages/templates/Screenshot-2020-11-16-at-14.36.54.png)
+![Quiz Example](/img/pages/templates/Screenshot-2020-11-16-at-14.36.54.webp)  
+](/img/pages/templates/Screenshot-2020-11-16-at-14.36.54.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2020-12-04-at-08.38.54.png)  
-](/img/pages/templates/Screenshot-2020-12-04-at-08.38.54.png)
+![Quiz Example](/img/pages/templates/Screenshot-2020-12-04-at-08.38.54.webp)  
+](/img/pages/templates/Screenshot-2020-12-04-at-08.38.54.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2020-12-04-at-08.39.14.png)  
-](/img/pages/templates/Screenshot-2020-12-04-at-08.39.14.png)
+![Quiz Example](/img/pages/templates/Screenshot-2020-12-04-at-08.39.14.webp)  
+](/img/pages/templates/Screenshot-2020-12-04-at-08.39.14.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2020-12-04-at-08.39.25.png)  
-](/img/pages/templates/Screenshot-2020-12-04-at-08.39.25.png)
+![Quiz Example](/img/pages/templates/Screenshot-2020-12-04-at-08.39.25.webp)  
+](/img/pages/templates/Screenshot-2020-12-04-at-08.39.25.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2020-12-04-at-08.39.35.png)  
-](/img/pages/templates/Screenshot-2020-12-04-at-08.39.35.png)
+![Quiz Example](/img/pages/templates/Screenshot-2020-12-04-at-08.39.35.webp)  
+](/img/pages/templates/Screenshot-2020-12-04-at-08.39.35.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2021-04-14-at-04.13.10.png)  
-](/img/pages/templates/Screenshot-2021-04-14-at-04.13.10.png)
+![Quiz Example](/img/pages/templates/Screenshot-2021-04-14-at-04.13.10.webp)  
+](/img/pages/templates/Screenshot-2021-04-14-at-04.13.10.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2021-04-14-at-04.13.50.png)  
-](/img/pages/templates/Screenshot-2021-04-14-at-04.13.50.png)
+![Quiz Example](/img/pages/templates/Screenshot-2021-04-14-at-04.13.50.webp)  
+](/img/pages/templates/Screenshot-2021-04-14-at-04.13.50.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2021-04-14-at-04.14.16.png)  
-](/img/pages/templates/Screenshot-2021-04-14-at-04.14.16.png)
+![Quiz Example](/img/pages/templates/Screenshot-2021-04-14-at-04.14.16.webp)  
+](/img/pages/templates/Screenshot-2021-04-14-at-04.14.16.webp)
 
 [  
-![Quiz Example](/img/pages/templates/Screenshot-2021-05-13-at-22.49.10.png)  
-](/img/pages/templates/Screenshot-2021-05-13-at-22.49.10.png)
+![Quiz Example](/img/pages/templates/Screenshot-2021-05-13-at-22.49.10.webp)  
+](/img/pages/templates/Screenshot-2021-05-13-at-22.49.10.webp)
 
 ### Start Building Your Product Quiz Today
 

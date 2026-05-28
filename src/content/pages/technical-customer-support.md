@@ -6,7 +6,7 @@ updatedDate: 2025-07-02T20:38:09Z
 legacySlug: "technical-customer-support"
 legacyId: 2397
 legacyUrl: "https://revenuehunt.com/jobs/technical-customer-support/"
-featuredImage: "/img/pages/technical-customer-support/meeting-scheduled.jpg"
+featuredImage: "/img/pages/technical-customer-support/meeting-scheduled.webp"
 draft: false
 ---
 

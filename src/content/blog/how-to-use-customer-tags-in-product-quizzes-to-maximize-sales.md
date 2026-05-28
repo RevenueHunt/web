@@ -14,7 +14,7 @@ author: "Paulina Chodura"
 legacySlug: "how-to-use-customer-tags-in-product-quizzes-to-maximize-sales"
 legacyId: 8659
 legacyUrl: "https://revenuehunt.com/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/"
-featuredImage: "/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/Customer-Tags-V2.png"
+featuredImage: "/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/Customer-Tags-V2.webp"
 draft: false
 ---
 
@@ -23,7 +23,7 @@ Product recommendation quizzes have become a norm in e-commerce, but not many st
 
 We will explore how to use customer tags effectively, focusing on a **practical example** of a haircare store that uses a [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/) app to gather leads and [Klaviyo](https://www.klaviyo.com/) for segmented marketing campaigns.
 
-![How to Use Customer Tags in Product Quizzes to Maximize Sales - image 1](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/Customer-Tags-V2.png)
+![How to Use Customer Tags in Product Quizzes to Maximize Sales - image 1](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/Customer-Tags-V2.webp)
 
 ## Customer Tags 101
 
@@ -46,8 +46,8 @@ Customer tags are essential for segmented marketing, as 90% of marketers report 
 
 The process of creating and using customer tags in the [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/) app is straightforward. Here's how you can do it:
 
-1.  **Adding a New Tag**: To add a new tag, go to the [Customer Tags section](https://docs.revenuehunt.com/reference/quiz-builder/#customer-tags) of the Quiz Builder and simply type its name into the white bar next to one of the quiz choices. Confirm the creation by clicking "Add this as a new customer tag".![quiz builder customer tags add tag](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/manual_quizbuilder_customertags_addtag.png)
-2.  **Linking Tags to Choices**: Once created, these tags become available options that you can link to other choices. There is no limit to the number of tags you can create or link to a single choice, providing great flexibility in customer segmentation.![quiz builder customer tags added tag](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/manual_quizbuilder_customertags_tagadded.png)
+1.  **Adding a New Tag**: To add a new tag, go to the [Customer Tags section](https://docs.revenuehunt.com/reference/quiz-builder/#customer-tags) of the Quiz Builder and simply type its name into the white bar next to one of the quiz choices. Confirm the creation by clicking "Add this as a new customer tag".![quiz builder customer tags add tag](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/manual_quizbuilder_customertags_addtag.webp)
+2.  **Linking Tags to Choices**: Once created, these tags become available options that you can link to other choices. There is no limit to the number of tags you can create or link to a single choice, providing great flexibility in customer segmentation.![quiz builder customer tags added tag](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/manual_quizbuilder_customertags_tagadded.webp)
 
 ## How to use Customer Tags?
 
@@ -61,7 +61,7 @@ Create a quiz with questions about hair type (e.g., curly, straight, wavy), hair
 
 As customers answer these questions, assign relevant tags such as "Curly Hair," "Dry Hair," "Volume," "Anti-Frizz," and "Repair" to the choices in the quiz. This can be done in the Customer Tags tab within the Quiz Builder.
 
-![How to Use Customer Tags in Product Quizzes to Maximize Sales - image 2](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/Screenshot-2024-06-06-153844.png)
+![How to Use Customer Tags in Product Quizzes to Maximize Sales - image 2](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/Screenshot-2024-06-06-153844.webp)
 
 **3️⃣ Connect Quiz to Klaviyo**:
 
@@ -73,7 +73,7 @@ Once the quiz is connected, customer tags from the Shop Quiz app are automatical
 
 In Klaviyo, create segments based on the tags.
 
-![Kalviyo segement](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/kalviyo-segement.png)
+![Kalviyo segement](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/kalviyo-segement.webp)
 
 For example:
 
@@ -100,11 +100,11 @@ For example:
 -   **Repair Segment**: Promote reparative treatments, masks, and serums. Share insights on hair repair routines and exclusive offers on repair-focused products.
 
 [  
-![Sample Curly Hair Email](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/curly-campaign-212x300.png)  
+![Sample Curly Hair Email](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/curly-campaign-212x300.webp)  
 ](https://revenuehunt.com/wp-content/uploads/2024/06/curly-campaign.png)Sample Curly Hair Email
 
 [  
-![Sample Dry Hair Email](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/dry-campaign-212x300.png)  
+![Sample Dry Hair Email](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/dry-campaign-212x300.webp)  
 ](https://revenuehunt.com/wp-content/uploads/2024/06/dry-campaign.png)Sample Dry Hair Email
 
 **5️⃣ Monitor and Analyze Campaign Performance**:

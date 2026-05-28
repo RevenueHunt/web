@@ -10,7 +10,7 @@ author: "Paulina Chodura"
 legacySlug: "guide-to-building-a-personality-type-quiz-with-revenuehunt"
 legacyId: 10706
 legacyUrl: "https://revenuehunt.com/guide-to-building-a-personality-type-quiz-with-revenuehunt/"
-featuredImage: "/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/50.png"
+featuredImage: "/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/50.webp"
 draft: false
 ---
 
@@ -36,7 +36,7 @@ Map out the quiz questions and outcomes in one document based on the customer ch
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">You can use a simple tool like Google Sheets to map out your quiz</p>
-  <img src="/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/how_to_recommend_products_complexmatrix.png" alt="how to recommend products complex matrix" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+  <img src="/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/how_to_recommend_products_complexmatrix.webp" alt="how to recommend products complex matrix" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">or a more advanced mapping tool like <a href="https://miro.com/" style="color:#16161D;text-decoration:underline;">Miro</a>.</p>
   <img src="/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/21017515516050.gif" alt="Guide to Building a Personality-Type Quiz with RevenueHunt - image 1" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
 </div>
@@ -47,7 +47,7 @@ Design questions that help narrow down the customer's traits. Each answer should
 
 #### _Example Questions for Skin Type Quiz_
 
-![Guide to Building a Personality-Type Quiz with RevenueHunt - image 2](/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/determineskitypequizquestions.png)
+![Guide to Building a Personality-Type Quiz with RevenueHunt - image 2](/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/determineskitypequizquestions.webp)
 
 _**Question 1: Oiliness**_
 
@@ -85,7 +85,7 @@ _⚪ Rarely or never. (Oily skin)_
 
 Associate answer options with the most suitable products in your catalog.
 
-![Guide to Building a Personality-Type Quiz with RevenueHunt - image 3](/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/linkcollectionsdetermineskintype.png)
+![Guide to Building a Personality-Type Quiz with RevenueHunt - image 3](/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/linkcollectionsdetermineskintype.webp)
 
 For example:
 
@@ -97,7 +97,7 @@ This setup ensures that the quiz [product recommendation algorithm](https://doc
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">You can create collections of products in Shopify that correspond to each answer for faster quiz setup. You can make these new collections "hidden" in your Shopify store by unchecking the Online store publishing option.</p>
-  <img src="/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/Screenshot-2025-01-13-092953.png" alt="Guide to Building a Personality-Type Quiz with RevenueHunt - image 4" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+  <img src="/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/Screenshot-2025-01-13-092953.webp" alt="Guide to Building a Personality-Type Quiz with RevenueHunt - image 4" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Learn more about creating collections in Shopify <a href="https://help.shopify.com/en/manual/products/collections" style="color:#16161D;text-decoration:underline;">here</a>. After creating new collections, make sure to run a <a href="https://docs.revenuehunt.com/how-to-guides/sync-catalog/" style="color:#16161D;text-decoration:underline;">catalog sync</a> in the app.</p>
 </div>
 
@@ -179,7 +179,7 @@ To implement custom JavaScript, ensure the developer is familiar with the Revenu
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">document.addEventListener("DOMContentLoaded", function () { // List of slide IDs and corresponding point values var slidePoints = { "mGiOjOq": { "Yes": 3, "No": 1 }, // Add more slides and mappings here };// Initialize total points var totalPoints = 0;// Loop through the slides to calculate points for (var slideId in slidePoints) { if (slidePoints.hasOwnProperty(slideId)) { // Get the slide value dynamically var slideValue = prq.getSlideValue(slideId);// Assign points based on the value if (slideValue && slidePoints[slideId][slideValue] !== undefined) { totalPoints += slidePoints[slideId][slideValue]; console.log(<code style="background:#f1f5f9;padding:1px 6px;border-radius:4px;font-size:0.92em;">Slide ${slideId} (${slideValue}): ${slidePoints[slideId][slideValue]} points</code>); } } }// Display total points on the results page var resultElement = document.getElementById("quizResults"); if (resultElement) { resultElement.innerHTML = <code style="background:#f1f5f9;padding:1px 6px;border-radius:4px;font-size:0.92em;">Total Points: ${totalPoints}</code>; }</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">console.log("Total Points:", totalPoints); }); ```</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Note that this code would have to be added to the <a href="https://docs.revenuehunt.com/how-to-guides/add-javascript/#results-page" style="color:#16161D;text-decoration:underline;">Results Page Settings > Advanced > Custom JavaScript</a> section of your quiz.</p>
-  <img src="/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/Screenshot-2025-01-13-094058.png" alt="Guide to Building a Personality-Type Quiz with RevenueHunt - image 7" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+  <img src="/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/Screenshot-2025-01-13-094058.webp" alt="Guide to Building a Personality-Type Quiz with RevenueHunt - image 7" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
 </div>
 
 > _The code uses prq.getSlideValue(slideId) to fetch the user's answers and assign points based on predefined rules._
@@ -217,7 +217,7 @@ These descriptions can simplify the explanation process and eliminate the need f
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">To show product descriptions on the results page go to the <strong>Results Page Settings</strong>  and under <strong>Individual Product Settings</strong>  activate <strong>→ Show description.</strong></p>
-  <img src="/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/manual_quizbuilder_resultspage_settings_basic_individualproductsettings.png" alt="quiz builder resutls page resutls page settings basic individual product settings" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+  <img src="/img/blog/guide-to-building-a-personality-type-quiz-with-revenuehunt/manual_quizbuilder_resultspage_settings_basic_individualproductsettings.webp" alt="quiz builder resutls page resutls page settings basic individual product settings" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
 </div>
 
 👉 **Base Results on a Single Pivotal Question**

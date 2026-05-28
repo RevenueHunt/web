@@ -12,7 +12,7 @@ author: "Paulina Chodura"
 legacySlug: "fulfillman-features-revenuehunt-best-product-quiz-app-for-shopify"
 legacyId: 11375
 legacyUrl: "https://revenuehunt.com/fulfillman-features-revenuehunt-best-product-quiz-app-for-shopify/"
-featuredImage: "/img/blog/fulfillman-features-revenuehunt-best-product-quiz-app-for-shopify/15.png"
+featuredImage: "/img/blog/fulfillman-features-revenuehunt-best-product-quiz-app-for-shopify/15.webp"
 draft: false
 ---
 

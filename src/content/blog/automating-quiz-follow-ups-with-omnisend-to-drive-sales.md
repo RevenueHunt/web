@@ -13,7 +13,7 @@ author: "Paulina Chodura"
 legacySlug: "automating-quiz-follow-ups-with-omnisend-to-drive-sales"
 legacyId: 10597
 legacyUrl: "https://revenuehunt.com/automating-quiz-follow-ups-with-omnisend-to-drive-sales/"
-featuredImage: "/img/blog/automating-quiz-follow-ups-with-omnisend-to-drive-sales/21.png"
+featuredImage: "/img/blog/automating-quiz-follow-ups-with-omnisend-to-drive-sales/21.webp"
 draft: false
 ---
 
@@ -21,15 +21,15 @@ Aautomation and personalization are no longer luxuries - they're necessities. Mo
 
 Product recommendation quizzes have become popular tools for online stores, especially in industries like beauty, fashion, and wellness. They not only engage customers but also collect valuable data, offering personalized product recommendations that drive purchasing decisions. But the **challenge has always been turning this data into actionable insights and campaigns**. By connecting Shop Quiz: Product Recommendation Quiz to Omnisend, merchants can now automate the process, ensuring every quiz taker is nurtured through a customized journey, **from interest to purchase**.
 
-![Automating Quiz Follow-Ups with Omnisend to Drive Sales - image 1](/img/blog/automating-quiz-follow-ups-with-omnisend-to-drive-sales/Omnisend-Featured-Image.png)
+![Automating Quiz Follow-Ups with Omnisend to Drive Sales - image 1](/img/blog/automating-quiz-follow-ups-with-omnisend-to-drive-sales/Omnisend-Featured-Image.webp)
 
 ### Know Your Tools
 
-![Automating Quiz Follow-Ups with Omnisend to Drive Sales - image 2](/img/blog/automating-quiz-follow-ups-with-omnisend-to-drive-sales/8-150x150.png)
+![Automating Quiz Follow-Ups with Omnisend to Drive Sales - image 2](/img/blog/automating-quiz-follow-ups-with-omnisend-to-drive-sales/8-150x150.webp)
 
 [Omnisend](https://www.omnisend.com/) is a powerful marketing automation platform designed for ecommerce. It enables merchants to create targeted email and SMS campaigns using segmentation, workflows, and customizable templates. Integrated with Shop Quiz, Omnisend turns quiz data into actionable campaigns, automating follow-ups to convert leads into loyal customers.
 
-![Automating Quiz Follow-Ups with Omnisend to Drive Sales - image 3](/img/blog/automating-quiz-follow-ups-with-omnisend-to-drive-sales/Untitled_design__6_-removebg-preview-300x300.png)
+![Automating Quiz Follow-Ups with Omnisend to Drive Sales - image 3](/img/blog/automating-quiz-follow-ups-with-omnisend-to-drive-sales/Untitled_design__6_-removebg-preview-300x300.webp)
 
 [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/), a product by [RevenueHunt](https://revenuehunt.com/), app helps ecommerce merchants engage customers and boost sales by creating interactive quizzes that offer personalized product recommendations. By collecting insights into customers' preferences and needs, the app delivers tailored shopping experiences, building trust and driving conversions.
 
@@ -74,8 +74,8 @@ For example, a customer interested in anti-aging products might receive an email
 These emails aren't generic - they're crafted using quiz data to address specific concerns, making them far more effective than traditional marketing blasts.
 
 [  
-![Newsletter Example](/img/blog/automating-quiz-follow-ups-with-omnisend-to-drive-sales/newsletteromnisendexample.png)  
-](/img/blog/automating-quiz-follow-ups-with-omnisend-to-drive-sales/newsletteromnisendexample.png)
+![Newsletter Example](/img/blog/automating-quiz-follow-ups-with-omnisend-to-drive-sales/newsletteromnisendexample.webp)  
+](/img/blog/automating-quiz-follow-ups-with-omnisend-to-drive-sales/newsletteromnisendexample.webp)
 
 But automation doesn't stop at email campaigns. Omnisend's segmentation tools allow merchants to **group customers based on their quiz responses**. A segment could include all users with dry skin concerns, enabling businesses to create targeted promotions for hydrating skincare products. This level of precision ensures that every marketing dollar is spent wisely, reaching the customers most likely to convert.
 

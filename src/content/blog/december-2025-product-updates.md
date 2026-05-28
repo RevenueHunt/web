@@ -10,7 +10,7 @@ author: "Paulina Chodura"
 legacySlug: "december-2025-product-updates"
 legacyId: 11878
 legacyUrl: "https://revenuehunt.com/december-2025-product-updates/"
-featuredImage: "/img/blog/december-2025-product-updates/3.png"
+featuredImage: "/img/blog/december-2025-product-updates/3.webp"
 draft: false
 ---
 

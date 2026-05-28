@@ -6,7 +6,7 @@ updatedDate: 2021-01-31T20:07:43Z
 legacySlug: "message-sent"
 legacyId: 585
 legacyUrl: "https://revenuehunt.com/message-sent/"
-featuredImage: "/img/pages/message-sent/meeting-scheduled.jpg"
+featuredImage: "/img/pages/message-sent/meeting-scheduled.webp"
 draft: false
 ---
 

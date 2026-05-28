@@ -6,7 +6,7 @@ updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "product-recommendation-quiz"
 legacyId: 897
 legacyUrl: "https://revenuehunt.com/product-recommendation-quiz/"
-featuredImage: "/img/pages/product-recommendation-quiz/personal-shopper-product-recommendation-quiz-sat.jpg"
+featuredImage: "/img/pages/product-recommendation-quiz/personal-shopper-product-recommendation-quiz-sat.webp"
 draft: false
 ---
 

@@ -6,7 +6,7 @@ updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "product-recommendation-quiz-wix-stores"
 legacyId: 1799
 legacyUrl: "https://revenuehunt.com/product-recommendation-quiz-wix-stores/"
-featuredImage: "/img/pages/product-recommendation-quiz-wix-stores/personal-shopper-product-recommendation-quiz-sat.jpg"
+featuredImage: "/img/pages/product-recommendation-quiz-wix-stores/personal-shopper-product-recommendation-quiz-sat.webp"
 draft: false
 ---
 

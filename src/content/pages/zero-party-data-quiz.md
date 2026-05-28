@@ -6,7 +6,7 @@ updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "zero-party-data-quiz"
 legacyId: 0
 legacyUrl: "https://revenuehunt.com/zero-party-data-quiz/"
-featuredImage: "/img/pages/product-recommendation-quiz/personal-shopper-product-recommendation-quiz-sat.jpg"
+featuredImage: "/img/pages/product-recommendation-quiz/personal-shopper-product-recommendation-quiz-sat.webp"
 draft: false
 ---
 

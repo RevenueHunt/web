@@ -12,7 +12,7 @@ author: "Paulina Chodura"
 legacySlug: "how-to-recommend-products-on-shopify-with-shop-quiz-a-step-by-step-guide-for-merchants"
 legacyId: 10201
 legacyUrl: "https://revenuehunt.com/how-to-recommend-products-on-shopify-with-shop-quiz-a-step-by-step-guide-for-merchants/"
-featuredImage: "/img/blog/how-to-recommend-products-on-shopify-with-shop-quiz-a-step-by-step-guide-for-merchants/49.png"
+featuredImage: "/img/blog/how-to-recommend-products-on-shopify-with-shop-quiz-a-step-by-step-guide-for-merchants/49.webp"
 draft: false
 ---
 
@@ -27,7 +27,7 @@ However, one of the most impactful ways to recommend products is through **perso
 
 These quizzes engage customers by asking them targeted questions and providing tailored product suggestions based on their answers. This interactive experience not only makes shopping more fun but also ensures that the products recommended are precisely what the customer is looking for, leading to higher conversion rates and better overall satisfaction.
 
-![Begginersguide torecommendations](/img/blog/how-to-recommend-products-on-shopify-with-shop-quiz-a-step-by-step-guide-for-merchants/begginersguide-torecommendations-featured-image.png)
+![Begginersguide torecommendations](/img/blog/how-to-recommend-products-on-shopify-with-shop-quiz-a-step-by-step-guide-for-merchants/begginersguide-torecommendations-featured-image.webp)
 
 In this guide, you'll learn how to recommend products in Shopify using an interactive quiz built with Shop Quiz: Product Recommendation Quiz. Let's get started!
 
@@ -85,11 +85,11 @@ Once that is done, you can follow these steps to configure product recommendatio
 
 **2️⃣ Edit the Results Page**: In the [Results Page](https://docs.revenuehunt.com/reference/quiz-builder/#results-page) tab, add content and product blocks. Products can be displayed using either a **Product Block** (sorted by the number of votes) or **Product Slot Blocks** (ideal for recommending items in a clear order, such as a skincare routine).
 
-![quiz builder results page add block menu](/img/blog/how-to-recommend-products-on-shopify-with-shop-quiz-a-step-by-step-guide-for-merchants/manual_quizbuilder_resultspage_addblockmenu.png)
+![quiz builder results page add block menu](/img/blog/how-to-recommend-products-on-shopify-with-shop-quiz-a-step-by-step-guide-for-merchants/manual_quizbuilder_resultspage_addblockmenu.webp)
 
 **3️⃣ Test and Troubleshoot**: Test your quiz using the **Preview** function and adjust as needed. You can use the built-in search bar in the [Metrics > Responses](https://docs.revenuehunt.com/how-to-guides/troubleshoot-product-results/) section to identify any issues.
 
-![quiz builder top menu](/img/blog/how-to-recommend-products-on-shopify-with-shop-quiz-a-step-by-step-guide-for-merchants/manual_quizbuilder_topmenu.png)
+![quiz builder top menu](/img/blog/how-to-recommend-products-on-shopify-with-shop-quiz-a-step-by-step-guide-for-merchants/manual_quizbuilder_topmenu.webp)
 
 > **🛠️ Troubleshooting Tips**: If you encounter unexpected results, check that all choices are correctly linked to products. Make sure no products are unintentionally excluded, and that each quiz choice has at least one product linked. Use the responses data to pinpoint which selections might be causing incorrect or missing recommendations.
 
@@ -122,7 +122,7 @@ To recommend a multi-step routine, use **Product Slot Blocks**. Each slot can re
 
 For more complex criteria, such as combining age and skin type, create collections that cater to different segments (e.g., teenagers with oily skin). You can use a product matrix to link quiz questions and show recommendations that meet multiple requirements.
 
-![how to recommend products matrix table2](/img/blog/how-to-recommend-products-on-shopify-with-shop-quiz-a-step-by-step-guide-for-merchants/how_to_recommend_products_table3.png)
+![how to recommend products matrix table2](/img/blog/how-to-recommend-products-on-shopify-with-shop-quiz-a-step-by-step-guide-for-merchants/how_to_recommend_products_table3.webp)
 
 For very complex product matrices, consider using conditional logic to create branching paths that offer even more tailored recommendations.
 

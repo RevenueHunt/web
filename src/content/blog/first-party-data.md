@@ -10,7 +10,7 @@ categories:
   - "eCommerce"
 author: "alex"
 legacySlug: "first-party-data"
-featuredImage: "/img/blog/first-party-data/blog_tile_first_party_data.png"
+featuredImage: "/img/blog/first-party-data/blog_tile_first_party_data.webp"
 draft: false
 ---
 

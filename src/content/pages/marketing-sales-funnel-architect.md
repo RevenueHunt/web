@@ -6,7 +6,7 @@ updatedDate: 2021-03-26T20:30:50Z
 legacySlug: "marketing-sales-funnel-architect"
 legacyId: 2836
 legacyUrl: "https://revenuehunt.com/jobs/marketing-sales-funnel-architect/"
-featuredImage: "/img/pages/marketing-sales-funnel-architect/meeting-scheduled.jpg"
+featuredImage: "/img/pages/marketing-sales-funnel-architect/meeting-scheduled.webp"
 draft: false
 ---
 

@@ -6,7 +6,7 @@ updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "product-recommendation-quiz-shopify"
 legacyId: 819
 legacyUrl: "https://revenuehunt.com/product-recommendation-quiz-shopify/"
-featuredImage: "/img/pages/product-recommendation-quiz-shopify/2-scaled.png"
+featuredImage: "/img/pages/product-recommendation-quiz-shopify/2-scaled.webp"
 draft: false
 ---
 

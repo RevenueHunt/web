@@ -11,7 +11,7 @@ author: "Paulina Chodura"
 legacySlug: "why-your-product-quiz-is-not-converting-well"
 legacyId: 9325
 legacyUrl: "https://revenuehunt.com/why-your-product-quiz-is-not-converting-well/"
-featuredImage: "/img/blog/why-your-product-quiz-is-not-converting-well/55.png"
+featuredImage: "/img/blog/why-your-product-quiz-is-not-converting-well/55.webp"
 draft: false
 ---
 
@@ -21,7 +21,7 @@ Product quizzes are a great way to personalize shopping experiences and boost sa
 
 Here are some common reasons **why your quiz is not working well and how you can fix it**.
 
-![Purple Modern Line Chart Diagram Graph](/img/blog/why-your-product-quiz-is-not-converting-well/Purple-Modern-Line-Chart-Diagram-Graph.png)
+![Purple Modern Line Chart Diagram Graph](/img/blog/why-your-product-quiz-is-not-converting-well/Purple-Modern-Line-Chart-Diagram-Graph.webp)
 
 ## 🎯  You Don't Have Clear Goals
 
@@ -51,7 +51,7 @@ Long, complex, or irrelevant questions can also drive users away. If your questi
 
 Make your quiz visually appealing and interactive. Use images, videos, and animations to keep it interesting. Add elements like progress bars and instant feedback to make the experience more fun.
 
-![Why Your Product Quiz is NOT Converting Well - image 1](/img/blog/why-your-product-quiz-is-not-converting-well/Screenshot-2024-07-10-090342-e1720595102774.png)
+![Why Your Product Quiz is NOT Converting Well - image 1](/img/blog/why-your-product-quiz-is-not-converting-well/Screenshot-2024-07-10-090342-e1720595102774.webp)
 
 Keep your questions short, sweet, and to the point. Make sure they're relevant to what your customers care about. Use simple language and avoid jargon. Every question should help you understand your customers better or steer them toward the right product.
 
@@ -73,7 +73,7 @@ If your quiz results aren't personalized, users will feel like they wasted their
 
 Recommend a single product that matches all the customer criteria or a full routine with one product per step. This way the customer will know what to add to cart right away and it will significantly increase your conversion rate.
 
-![Why Your Product Quiz is NOT Converting Well - image 2](/img/blog/why-your-product-quiz-is-not-converting-well/Screenshot-2024-07-10-090001.png)
+![Why Your Product Quiz is NOT Converting Well - image 2](/img/blog/why-your-product-quiz-is-not-converting-well/Screenshot-2024-07-10-090001.webp)
 
 Use the data from the quiz to give personalized recommendations. Make sure the results are specific to each user's answers. Highlight why these products are perfect for them.
 
@@ -97,7 +97,7 @@ Make your CTAs clear and direct. Whether it's "Shop Now," "Learn More," or "Get 
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">You can change the text of any button or CTA in your <a href="https://revenuehunt.com/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz</a> in the <a href="https://docs.revenuehunt.com/reference/quiz-builder/#messages" style="color:#16161D;text-decoration:underline;">Quiz Settings > Messages</a> section or directly in each <a href="https://docs.revenuehunt.com/reference/quiz-builder/#question-settings" style="color:#16161D;text-decoration:underline;">question settings</a>.</p>
-  <img src="/img/blog/why-your-product-quiz-is-not-converting-well/Screenshot-2024-07-10-085825.png" alt="Why Your Product Quiz is NOT Converting Well - image 3" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+  <img src="/img/blog/why-your-product-quiz-is-not-converting-well/Screenshot-2024-07-10-085825.webp" alt="Why Your Product Quiz is NOT Converting Well - image 3" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
 </div>
 
 ## 💌 No Follow-Up
@@ -115,7 +115,7 @@ Use retargeting ads to remind users about their quiz results and encourage them 
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">With <a href="https://revenuehunt.com/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz</a> you can <a href="https://docs.revenuehunt.com/how-to-guides/send-result-emails/" style="color:#16161D;text-decoration:underline;">send follow-up emails</a> to quiz takers directly from the app or <a href="https://docs.revenuehunt.com/how-to-guides/send-leads-to-crm/" style="color:#16161D;text-decoration:underline;">connect the quiz to your CRM</a> and set up a post-quiz email flow there.</p>
-  <img src="/img/blog/why-your-product-quiz-is-not-converting-well/Screenshot-2024-07-10-085610.png" alt="Why Your Product Quiz is NOT Converting Well - image 4" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+  <img src="/img/blog/why-your-product-quiz-is-not-converting-well/Screenshot-2024-07-10-085610.webp" alt="Why Your Product Quiz is NOT Converting Well - image 4" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
 </div>
 
 ## Key Takeaways

@@ -12,13 +12,13 @@ author: "Paulina Chodura"
 legacySlug: "quiz-creation-mistakes-that-hurt-your-ecommerce-sales"
 legacyId: 7370
 legacyUrl: "https://revenuehunt.com/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/"
-featuredImage: "/img/blog/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/62.png"
+featuredImage: "/img/blog/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/62.webp"
 draft: false
 ---
 
 Quizzes can be a powerful tool for engaging your customers and driving sales for your e-commerce business. However, there are several common mistakes that can hurt the effectiveness of your quizzes and drive potential customers away. In this article, we'll discuss the top quiz creation mistakes every ecommerce business should avoid.
 
-![Quiz Creation Mistakes That Hurt Your Ecommerce Sales - image 1](/img/blog/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/Untitled-design-1.png)
+![Quiz Creation Mistakes That Hurt Your Ecommerce Sales - image 1](/img/blog/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/Untitled-design-1.webp)
 
 ## CONTENT MISTAKES
 
@@ -44,9 +44,9 @@ People have short attention spans and are easily distracted. If your quiz is too
 
 Use high-quality, descriptive pictures in your quiz to help guide the customers through the quiz. Remember that your customers are not experts and they may not know what's their skin type or hair type. Images can be a great help for the customer in their shopping journey and they will also make the quiz a lot more appealing.  A visual quiz gets 50% more completions than a fully-text based one.
 
-!["A quiz slide in which they ask, with 4 picture options, the type of hair the respondent has"](/img/blog/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/PIC5-TBJ-300x95.jpg)
+!["A quiz slide in which they ask, with 4 picture options, the type of hair the respondent has"](/img/blog/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/PIC5-TBJ-300x95.webp)
 
-![A quiz slide in which, with 4 different descriptive images, what kind of skin the respondent has](/img/blog/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/PIC6-LUCE-300x95.jpg)
+![A quiz slide in which, with 4 different descriptive images, what kind of skin the respondent has](/img/blog/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/PIC6-LUCE-300x95.webp)
 
 Adding a [Picture question](https://revenuehunt.com/faqs/create-product-recommendation-quiz/) to the Product Recommendation Quiz can be a great way to help the customer pick the right answer and help them make an educated purchasing decision. You can add real-life examples for your customer's to relate to or design your own beautiful icons which will match your store's style. Check [this video](https://youtu.be/gXht4-d-k-k), to see how to add a Picture question to your Product Recommendation Quiz.
 
@@ -64,7 +64,7 @@ Before launching your quiz, make sure to test it thoroughly to ensure that every
 
 Your quiz should fit seamlessly into your e-commerce store's design and branding. Make sure to use colors, fonts, and other design elements that match your store's look and feel.
 
-![Quiz Creation Mistakes That Hurt Your Ecommerce Sales - image 2](/img/blog/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/PIC1-OLAPLEX_Blurred-300x132.png)
+![Quiz Creation Mistakes That Hurt Your Ecommerce Sales - image 2](/img/blog/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/PIC1-OLAPLEX_Blurred-300x132.webp)
 
 A Product Recommendation Quiz can match your store's look to the finest details. In the Quiz Design tab, you can adjust the quiz's fonts, colors, add a background image, or even add custom CSS code. Check out these beautiful [customization examples](https://revenuehunt.com/templates/#customization) to gather inspiration for your next quiz project.
 
@@ -78,7 +78,7 @@ More and more people are using their mobile devices to shop online. Make sure yo
 
 Even the best quiz won't be successful if nobody knows about it. Make sure to [promote your quiz](https://revenuehunt.com/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/) through your website, social media channels, and email marketing campaigns. Encourage your customers to share your quiz with their friends and family to help spread the word.
 
-!["A landing page of a beauty business with a CTA for taking the quiz](/img/blog/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/PIC1-UN_DID_Blurred-300x157.png)
+!["A landing page of a beauty business with a CTA for taking the quiz](/img/blog/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/PIC1-UN_DID_Blurred-300x157.webp)
 
 Ensuring that the quiz is easy to find can make a big difference in your sales conversions. Most quiz takers try the quiz a few times before completing the purchase. Make the quiz visible and you'll see the sales go up!
 

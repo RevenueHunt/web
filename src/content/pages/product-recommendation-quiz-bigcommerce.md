@@ -6,7 +6,7 @@ updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "product-recommendation-quiz-bigcommerce"
 legacyId: 1501
 legacyUrl: "https://revenuehunt.com/product-recommendation-quiz-bigcommerce/"
-featuredImage: "/img/pages/product-recommendation-quiz-bigcommerce/personal-shopper-product-recommendation-quiz-sat.jpg"
+featuredImage: "/img/pages/product-recommendation-quiz-bigcommerce/personal-shopper-product-recommendation-quiz-sat.webp"
 draft: false
 ---
 

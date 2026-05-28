@@ -11,20 +11,20 @@ author: "Paulina Chodura"
 legacySlug: "the-only-product-recommendation-app-for-headless-ecommerce-2024"
 legacyId: 8757
 legacyUrl: "https://revenuehunt.com/the-only-product-recommendation-app-for-headless-ecommerce-2024/"
-featuredImage: "/img/blog/the-only-product-recommendation-app-for-headless-ecommerce-2024/30.png"
+featuredImage: "/img/blog/the-only-product-recommendation-app-for-headless-ecommerce-2024/30.webp"
 draft: false
 ---
 
 <iframe loading="lazy" class="alignnone size-full" title="YouTube video player" src="https://www.youtube.com/embed/tGP9TvFMWpM?si=TyA_AalYhbECmFtV" width="100%" height="400px" frameborder="0" allowfullscreen="allowfullscreen"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe>  
 If you're involved in e-commerce, you've likely heard about **headless architecture for ecommerce**. In a nutshell, it separates the frontend (what customers see) from the backend (where the magic happens) and works independently from any e-commerce provider like Shopify or WooCommerce. This separation allows for more creative freedom, better performance, and easier scaling. However, it also means businesses need new tools that can keep up with this flexible approach.
 
-![Standalone Quiz banner](/img/blog/the-only-product-recommendation-app-for-headless-ecommerce-2024/Standalone-Quiz-banner-1.png)
+![Standalone Quiz banner](/img/blog/the-only-product-recommendation-app-for-headless-ecommerce-2024/Standalone-Quiz-banner-1.webp)
 
 ### Breaking Free from Traditional E-commerce Platforms
 
 Contrary to what you may think, the percentage of the market that uses a headless solution for e-commerce is not small (various sources report around 18% of the market share attributed to headless e-commerce).  Custom e-commerce solutions are currently used by large brands like Nike, Lululemon, Under Armour, and Lego but also many smaller retailers.
 
-![Ecommerce platforms](/img/blog/the-only-product-recommendation-app-for-headless-ecommerce-2024/ecommerce-platforms-1024x1024.png)
+![Ecommerce platforms](/img/blog/the-only-product-recommendation-app-for-headless-ecommerce-2024/ecommerce-platforms-1024x1024.webp)
 
 **👉 Benefits of Headless Setup**
 
@@ -40,7 +40,7 @@ While there are many benefits to using a headless setup, there are also many **c
 
 One of the issues headless ecommerce stores face is that ecommerce trends change rapidly, and implementing new features often requires custom development and significant time. **Product quizzes**, for instance,  have become the norm in e-commerce but not all smaller ecommerce retailers can afford to build them from scratch. That is why at RevenueHunt, we offer a **[Standalone Product Recommendation Quiz app](https://revenuehunt.com/product-recommendation-quiz-standalone-google-product-feed/)**.
 
-![The Only Product Recommendation App for Headless Ecommerce 2024 - image 1](/img/blog/the-only-product-recommendation-app-for-headless-ecommerce-2024/buiderstandalone.png)
+![The Only Product Recommendation App for Headless Ecommerce 2024 - image 1](/img/blog/the-only-product-recommendation-app-for-headless-ecommerce-2024/buiderstandalone.webp)
 
 This innovative tool integrates with any headless setup, allows you to build multiple product quizzes for your e-commerce store, and offers advanced customization capabilities. By guiding customers through a tailored quiz experience, it delivers highly relevant product recommendations, improves user engagement, and boosts conversion rates.
 
@@ -64,7 +64,7 @@ Today's shoppers expect more than just a list of products. They want experiences
 
 **☑️ Easy Product Sync & Creation:** In the app, you can add products manually or upload them in bulk with your Google Product Feed from Google Merchant to recommend them to customers.
 
-![The Only Product Recommendation App for Headless Ecommerce 2024 - image 2](/img/blog/the-only-product-recommendation-app-for-headless-ecommerce-2024/googlefeedsatndalone.png)
+![The Only Product Recommendation App for Headless Ecommerce 2024 - image 2](/img/blog/the-only-product-recommendation-app-for-headless-ecommerce-2024/googlefeedsatndalone.webp)
 
 **☑️ Actionable Insights:** Our quiz doesn't just help customers – it helps you, too. The data it collects provides valuable insights into customer preferences and behaviors, which you can use to refine your marketing strategies and product offerings.
 
@@ -118,7 +118,7 @@ Subscription box companies can use the quiz to personalize the contents of each 
 
 Installing the Standalone Product Recommendation Quiz is a straightforward process designed to get you up and running quickly:
 
-1.  **Sign Up:** Visit our [Sign-Up Page](https://admin.revenuehunt.com/register) and create an account. ![The Only Product Recommendation App for Headless Ecommerce 2024 - image 3](/img/blog/the-only-product-recommendation-app-for-headless-ecommerce-2024/image-5.png)
+1.  **Sign Up:** Visit our [Sign-Up Page](https://admin.revenuehunt.com/register) and create an account. ![The Only Product Recommendation App for Headless Ecommerce 2024 - image 3](/img/blog/the-only-product-recommendation-app-for-headless-ecommerce-2024/image-5.webp)
 2.  **Set Up Your Quiz:** Log in to the [RevenueHunt dashboard](https://admin.revenuehunt.com/login) and follow the intuitive setup process. Create a quiz, customize the design, questions, and product categories to match your brand.
 3.  **Add Products:** Manually add products or upload them in bulk using your Google Product Feed from Google Merchant.
 4.  **Launch:** Once everything is set up, publish the quiz on your headless e-commerce site and start engaging your customers with personalized product recommendations.

@@ -10,7 +10,7 @@ author: "Paulina Chodura"
 legacySlug: "product-quiz-metrics-what-to-track-to-convert-better"
 legacyId: 8597
 legacyUrl: "https://revenuehunt.com/product-quiz-metrics-what-to-track-to-convert-better/"
-featuredImage: "/img/blog/product-quiz-metrics-what-to-track-to-convert-better/blog_quiz_metrics.png"
+featuredImage: "/img/blog/product-quiz-metrics-what-to-track-to-convert-better/blog_quiz_metrics.webp"
 draft: false
 ---
 
@@ -18,7 +18,7 @@ draft: false
 
 Data from product recommendation quizzes can significantly enhance your conversion rates. Understanding which metrics to track and how to interpret them is key to optimizing your quizzes for better performance. Here's a guide on the most critical quiz metrics and how they can drive better conversion outcomes.
 
-![Quiz Metrics](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/Quiz-Metrics.png)
+![Quiz Metrics](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/Quiz-Metrics.webp)
 
 ## Where to find the data?
 
@@ -26,9 +26,9 @@ Data from product recommendation quizzes can significantly enhance your conversi
 
 All the information gathered by your Shop Quiz: Product Recommendation Quiz can be found in the Quizzes [Metrics](https://docs.revenuehunt.com/reference/quiz-builder/#metrics) panel. The panel consists of three sections: Responses, Analytics, and Drop Off.
 
--   The **Responses** section shows the most recent 100 responses the quiz received organized by date/timestamp. Click on a date to open a specific response. Each response shows what choices the customer made, which products were upvoted or excluded, which products were recommended, and what customer tags carried out until the results page.![quiz builder metrics responses](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/manual_quizbuilder_metrics_responses.png)
--   The **Analytics** section provides graphs on quiz engagement, conversion rate, and revenue. You can analyze the data by date and compare it to past periods or other quizzes. ![quiz builder metrics analytics](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/manual_quizbuilder_metrics_analytics.png)
--   The **Drop Off** section displays a breakdown percentage of users leaving certain questions in your quiz. The data is shown in a table and graph format.![quiz builder metrics drop off](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/manual_quizbuilder_metrics_dropoff.png)
+-   The **Responses** section shows the most recent 100 responses the quiz received organized by date/timestamp. Click on a date to open a specific response. Each response shows what choices the customer made, which products were upvoted or excluded, which products were recommended, and what customer tags carried out until the results page.![quiz builder metrics responses](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/manual_quizbuilder_metrics_responses.webp)
+-   The **Analytics** section provides graphs on quiz engagement, conversion rate, and revenue. You can analyze the data by date and compare it to past periods or other quizzes. ![quiz builder metrics analytics](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/manual_quizbuilder_metrics_analytics.webp)
+-   The **Drop Off** section displays a breakdown percentage of users leaving certain questions in your quiz. The data is shown in a table and graph format.![quiz builder metrics drop off](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/manual_quizbuilder_metrics_dropoff.webp)
 
 **➡️ Download Raw Data**
 
@@ -50,7 +50,7 @@ Tracking the number of quiz starts and responses/completions is fundamental. Hig
 **Completion Rate**  
 Completion Rate is the percentage of people who have engaged with the quiz and completed it. The completion rate is a clear indicator of how engaging and user-friendly your quiz is. A higher completion rate suggests that users find the quiz relevant and easy to navigate, which increases the likelihood of them following through to purchase recommendations. The aim is to keep the completion rate as high as possible, around 90-100%.
 
-![quiz builder metrics analytics completion rate](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/manual_quizbuilder_metrics_analytics_comprate.png)
+![quiz builder metrics analytics completion rate](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/manual_quizbuilder_metrics_analytics_comprate.webp)
 
 **Drop-off Points / Drop-off Rate**  
 Identifying where users drop off in your quiz can provide insights into potential friction points. Are users abandoning the quiz at a specific question or step? Use this data to adjust those points, making them more intuitive or engaging.
@@ -67,7 +67,7 @@ Tracking how many users proceed to cart after completing the quiz can help you g
 **Average Cart Value**  
 Understanding the average value of products in the carts can help you assess the monetary impact of your quiz. This metric is crucial for evaluating the overall financial performance and can guide you in setting appropriate pricing strategies.
 
-![quiz builder metrics analytics average carts](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/manual_quizbuilder_metrics_analytics_avgcarts.png)
+![quiz builder metrics analytics average carts](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/manual_quizbuilder_metrics_analytics_avgcarts.webp)
 
 **Number of Orders and Total Orders Value**   
 For a more direct measure of conversion, track the number of orders placed and their total value. This data is especially powerful when integrated with Shopify Revenue Reports, allowing you to directly correlate quiz engagement with sales performance.

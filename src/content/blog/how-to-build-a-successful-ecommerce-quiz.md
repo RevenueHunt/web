@@ -15,7 +15,7 @@ author: "Paulina Chodura"
 legacySlug: "how-to-build-a-successful-ecommerce-quiz"
 legacyId: 4786
 legacyUrl: "https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/"
-featuredImage: "/img/blog/how-to-build-a-successful-ecommerce-quiz/blog_successful_prq.png"
+featuredImage: "/img/blog/how-to-build-a-successful-ecommerce-quiz/blog_successful_prq.webp"
 draft: false
 ---
 
@@ -37,7 +37,7 @@ The single most common mistake we see from new quiz builders is publishing a qui
 
 The old approach required iframe embedding with manual code injections. The new native block integration means your quiz loads as part of your theme – no iframe lag, no broken layouts, no developer required. You drag a block into your homepage, product page, or collection page directly from the Shopify editor.
 
-![A landing page of a beauty business with a CTA for taking the quiz](/img/blog/how-to-build-a-successful-ecommerce-quiz/PIC1-UN_DID_Blurred-300x157.png)
+![A landing page of a beauty business with a CTA for taking the quiz](/img/blog/how-to-build-a-successful-ecommerce-quiz/PIC1-UN_DID_Blurred-300x157.webp)
 
 High-performing stores treat the quiz as a primary CTA, not a secondary feature. Place it above the fold on your homepage with a compelling invitation ("Find Your Perfect Routine," "Take the Skin Type Quiz") and link to it from your main navigation. The more visible your quiz, the more data it collects, and the more data it collects, the smarter your Klaviyo segmentation becomes. Visibility is the multiplier on everything else in this guide.
 
@@ -51,7 +51,7 @@ For detailed setup instructions on each placement option, visit our [quiz placem
 
 Nothing erodes trust faster than a quiz that looks like it belongs to a different company. When a customer sees a jarring color scheme or mismatched font the moment they click "Start Quiz," you've already broken the immersive experience that makes consultative selling work. Design consistency is not a vanity metric – it directly affects completion rates and purchase confidence.
 
-![How to build a successful Product Recommendation Quiz (in 2026) - image 1](/img/blog/how-to-build-a-successful-ecommerce-quiz/PIC1-OLAPLEX_Blurred-300x132.png)
+![How to build a successful Product Recommendation Quiz (in 2026) - image 1](/img/blog/how-to-build-a-successful-ecommerce-quiz/PIC1-OLAPLEX_Blurred-300x132.webp)
 
 The new **💎Built for Shopify** version of RevenueHunt addresses this at the infrastructure level. When you add a quiz as a native Shopify block, it **automatically inherits your theme's typography, colors, and button styles**. For brands that want deeper customization, the block editor gives you full control over fonts, colors, background images, and layout, and for developers or design-forward teams, **custom CSS and JavaScript** are available on higher-tier plans.
 
@@ -63,7 +63,7 @@ Start with the auto-inherited theme styles, then adjust. Don't spend days perfec
 
 ##### The name of your quiz is the first copy your customer reads: make it outcome-focused.
 
-![A Quiz named Your Personalized Skin Prescription](/img/blog/how-to-build-a-successful-ecommerce-quiz/PIC3-ALPHAH-300x133.jpg)
+![A Quiz named Your Personalized Skin Prescription](/img/blog/how-to-build-a-successful-ecommerce-quiz/PIC3-ALPHAH-300x133.webp)
 
 What you call your quiz has a measurable impact on click-through and completion rates. Quizzes framed as **"product finders"** consistently outperform those labeled as "personality quizzes" because the customer's primary motivation is finding the right product, not learning something abstract about themselves. Names like "Skin Type Finder," "Shade Matcher," "Routine Builder," or "Your Personalized Supplement Plan" communicate a direct, tangible outcome.
 
@@ -79,7 +79,7 @@ The best names follow a simple formula: **\[Desired Outcome\] + \[Specific Categ
 
 This is the biggest change from our 2021 guide, and it's worth being direct: **the conventional wisdom about branching logic has been overstated.** When we analyzed our top-converting quizzes, the majority were built with completely linear question flows: every respondent sees every question in the same order. No conditional branches, no jump logic, no decision trees.
 
-![Visual structure of the conditional logic of the quiz](/img/blog/how-to-build-a-successful-ecommerce-quiz/PIC4-LOGIC-300x242.jpg)
+![Visual structure of the conditional logic of the quiz](/img/blog/how-to-build-a-successful-ecommerce-quiz/PIC4-LOGIC-300x242.webp)
 
 Why? Because linear quizzes are faster to build, easier to test, simpler to maintain, and _critically_ they tend to have **higher completion rates** because there are fewer technical failure points and the user experience is more predictable. Complexity in the quiz builder does not translate to complexity in the customer's experience if the extra logic isn't doing meaningful work.
 
@@ -95,9 +95,9 @@ Build linear first. Publish it. Collect real data. Only add conditional logic wh
 
 The quality of your answer choices determines how useful your recommendation engine can be. Questions should be phrased in plain, customer-friendly language: the way your best sales associate would phrase them, not the way a product manager would write a spec. "What's your main skin concern?" is answerable. "Which of the following dermatological presentations most affects your purchase decisions?" is not.
 
-![A quiz slide in which they ask, with 4 picture options, the type of hair the respondent has](/img/blog/how-to-build-a-successful-ecommerce-quiz/PIC5-TBJ-300x95.jpg)
+![A quiz slide in which they ask, with 4 picture options, the type of hair the respondent has](/img/blog/how-to-build-a-successful-ecommerce-quiz/PIC5-TBJ-300x95.webp)
 
-![A quiz slide in which, with 4 different descriptive images, what kind of skin the respondent has](/img/blog/how-to-build-a-successful-ecommerce-quiz/PIC6-LUCE-300x95.jpg)
+![A quiz slide in which, with 4 different descriptive images, what kind of skin the respondent has](/img/blog/how-to-build-a-successful-ecommerce-quiz/PIC6-LUCE-300x95.webp)
 
 Our platform data shows that **3 to 6 answer choices per question** is the optimal range. Fewer than 3 often feels too binary; more than 6 creates the same paradox of choice you're trying to solve for the customer. Keep each answer choice distinct and mutually exclusive where possible.
 
@@ -129,7 +129,7 @@ If your current quiz has fewer than 6 questions and conversion feels flat, consi
 
 Our platform data contains one of the most actionable statistics in this entire guide: **79% of top-converting quizzes use exactly ONE results page**, and that single-results-page configuration achieves an average conversion rate of **10.6%**. Quizzes with 11 or more results pages drop to just **7.1%**.
 
-![A screenshot of the results page of the product recommendation quiz, in which one product is being recommended](/img/blog/how-to-build-a-successful-ecommerce-quiz/PIC7-UNDID_Blurred-300x298.png)
+![A screenshot of the results page of the product recommendation quiz, in which one product is being recommended](/img/blog/how-to-build-a-successful-ecommerce-quiz/PIC7-UNDID_Blurred-300x298.webp)
 
 The implication is clear: your recommendation engine should do the work of narrowing down, not present the customer with another overwhelming list of options. Show them **1 to 3 products** with strong, confident framing ("Based on your answers, this is exactly what your skin needs") rather than 10 products with hedging language. The quiz has already built trust and investment: the results page needs to convert that trust into a purchase, not restart the decision-making process.
 

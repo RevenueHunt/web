@@ -6,7 +6,7 @@ updatedDate: 2021-04-06T10:13:48Z
 legacySlug: "sign-up"
 legacyId: 352
 legacyUrl: "https://revenuehunt.com/sign-up/"
-featuredImage: "/img/pages/sign-up/meeting-scheduled.jpg"
+featuredImage: "/img/pages/sign-up/meeting-scheduled.webp"
 draft: false
 ---
 

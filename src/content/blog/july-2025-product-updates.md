@@ -10,7 +10,7 @@ author: "alex"
 legacySlug: "july-2025-product-updates"
 legacyId: 11801
 legacyUrl: "https://revenuehunt.com/july-2025-product-updates/"
-featuredImage: "/img/blog/july-2025-product-updates/8.png"
+featuredImage: "/img/blog/july-2025-product-updates/8.webp"
 draft: false
 ---
 

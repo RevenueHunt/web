@@ -57,7 +57,7 @@ At the heart of Extreme Kids World's success are best-selling products like Cong
 <a href="https://extremekidsworld.com/products/modern-monkey-outdoor-playset-package-4">View product →</a>
 </div>
 <div class="product-card">
-<a href="https://extremekidsworld.com/products/16-round-epic-series-trampoline-epic16d07"><img src="/img/blog/extreme-kids-world-leading-e-commerce-with-interactive-personalization/SkywalkerTrampoline16_RoundEpicSeriesTrampoline_EPIC16D07_-withBoyJumping_627x627.jpg" alt="Skywalker Trampolines" loading="lazy" /></a>
+<a href="https://extremekidsworld.com/products/16-round-epic-series-trampoline-epic16d07"><img src="/img/blog/extreme-kids-world-leading-e-commerce-with-interactive-personalization/SkywalkerTrampoline16_RoundEpicSeriesTrampoline_EPIC16D07_-withBoyJumping_627x627.webp" alt="Skywalker Trampolines" loading="lazy" /></a>
 <p><strong>Skywalker Trampolines</strong></p>
 <a href="https://extremekidsworld.com/products/16-round-epic-series-trampoline-epic16d07">View product →</a>
 </div>

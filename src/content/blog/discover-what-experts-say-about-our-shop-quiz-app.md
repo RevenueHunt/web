@@ -12,7 +12,7 @@ author: "Paulina Chodura"
 legacySlug: "discover-what-experts-say-about-our-shop-quiz-app"
 legacyId: 8217
 legacyUrl: "https://revenuehunt.com/discover-what-experts-say-about-our-shop-quiz-app/"
-featuredImage: "/img/blog/discover-what-experts-say-about-our-shop-quiz-app/33.png"
+featuredImage: "/img/blog/discover-what-experts-say-about-our-shop-quiz-app/33.webp"
 draft: false
 ---
 

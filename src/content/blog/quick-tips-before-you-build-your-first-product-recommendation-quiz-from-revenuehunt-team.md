@@ -11,7 +11,7 @@ author: "Paulina Chodura"
 legacySlug: "quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team"
 legacyId: 9666
 legacyUrl: "https://revenuehunt.com/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/"
-featuredImage: "/img/blog/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/51.png"
+featuredImage: "/img/blog/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/51.webp"
 draft: false
 ---
 
@@ -21,7 +21,7 @@ At [RevenueHunt](https://revenuehunt.com/), we've gathered insights from our �
 
 This guide is packed with📝 **short practical tips to ensure your product recommendation quiz is a success from the start**. You'll find here everything you need to build a powerful e-commerce tool that converts browsers into buyers.
 
-![Building your first Porduct Quiz](/img/blog/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/Building-your-first-Porduct-Quiz.png)
+![Building your first Porduct Quiz](/img/blog/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/Building-your-first-Porduct-Quiz.webp)
 
 Follow these expert tips to create a quiz that engages your audience, boosts your sales, and elevates your e-commerce strategy:
 
@@ -78,7 +78,7 @@ Follow these expert tips to create a quiz that engages your audience, boosts you
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">All quizzes created with <a href="https://revenuehunt.com/product-recommendation-quiz/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz</a> app are automatically optimized for both desktop and mobile viewing.</p>
-  <img src="/img/blog/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/product-recommendation-quiz-beauty.png" alt="Product recommendation quiz beauty" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+  <img src="/img/blog/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/product-recommendation-quiz-beauty.webp" alt="Product recommendation quiz beauty" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
 </div>
 
 ## Visuals & CTA's
@@ -95,7 +95,7 @@ Follow these expert tips to create a quiz that engages your audience, boosts you
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;"><a href="https://revenuehunt.com/product-recommendation-quiz/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz</a> gives an option to add dynamic discounts to your results page to encourage customers to shop more with a bigger discount.</p>
-  <img src="/img/blog/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/Screenshot-2023-06-08-082928.png" alt="Quick Tips Before You Build Your First Product Recommendation Quiz (from RevenueHunt team) - image 1" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+  <img src="/img/blog/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/Screenshot-2023-06-08-082928.webp" alt="Quick Tips Before You Build Your First Product Recommendation Quiz (from RevenueHunt team) - image 1" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
 </div>
 
 ☑️ **Display testimonials, product reviews** or the number of users who have taken the quiz and found their perfect product. This leverages the bandwagon effect.
@@ -121,7 +121,7 @@ Follow these expert tips to create a quiz that engages your audience, boosts you
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;"><a href="https://revenuehunt.com/product-recommendation-quiz/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz</a> has a built-in option to <a href="https://docs.revenuehunt.com/how-to-guides/send-result-emails/" style="color:#16161D;text-decoration:underline;">send personalized result emails</a> after quiz completion</p>
-  <img src="/img/blog/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/manual_quizbuilder_notifications_torespondent_active_html.png" alt="how to send result emails html template" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+  <img src="/img/blog/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/manual_quizbuilder_notifications_torespondent_active_html.webp" alt="how to send result emails html template" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
 </div>
 
 ☑️ Use the data gathered to **create targeted ads** on social media platforms, showing users the products they were recommended in the quiz.

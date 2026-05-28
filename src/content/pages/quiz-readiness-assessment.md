@@ -6,7 +6,7 @@ updatedDate: 2025-11-17T10:43:45Z
 legacySlug: "quiz-readiness-assessment"
 legacyId: 11588
 legacyUrl: "https://revenuehunt.com/quiz-readiness-assessment/"
-featuredImage: "/img/pages/quiz-readiness-assessment/6.png"
+featuredImage: "/img/pages/quiz-readiness-assessment/6.webp"
 draft: false
 ---
 

@@ -14,13 +14,13 @@ author: "Paulina Chodura"
 legacySlug: "how-to-adapt-product-quizzes-for-different-markets-and-languages"
 legacyId: 9865
 legacyUrl: "https://revenuehunt.com/how-to-adapt-product-quizzes-for-different-markets-and-languages/"
-featuredImage: "/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/53.png"
+featuredImage: "/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/53.webp"
 draft: false
 ---
 
 Businesses must tailor their approaches to cater to diverse markets. Localization goes beyond simple translation; it involves adapting content to resonate with different cultural norms, preferences, and legal requirements.
 
-![Quizzes for markets](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Quizzes-for-markets.png)
+![Quizzes for markets](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Quizzes-for-markets.webp)
 
 This guide will walk you through essential tips for **localizing eCommerce product recommendation quizzes** to maximize engagement and conversions across various regions.
 
@@ -54,7 +54,7 @@ Key Points:
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">With <a href="https://revenuehunt.com/product-recommendation-quiz/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz</a> you can create multiple duplicates of your quiz and style them differently for different markets. You can easily add images and videos, change colors of questions and buttons based on your target market. You can even add custom CSS or JavaScript code to make the quiz pop. Check <a href="https://docs.revenuehunt.com/how-to-guides/customize-quiz-design/" style="color:#16161D;text-decoration:underline;">here</a> for more details about styling your multi-language quiz.</p>
-  <img src="/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-091327.png" alt="How to Adapt Product Quizzes for Different Markets and Languages - image 1" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+  <img src="/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-091327.webp" alt="How to Adapt Product Quizzes for Different Markets and Languages - image 1" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
 </div>
 
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
@@ -77,7 +77,7 @@ Key Points:
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Navigate to \<code style="background:#f1f5f9;padding:1px 6px;border-radius:4px;font-size:0.92em;">Quiz Settings > Messages\</code> in the <a href="https://revenuehunt.com/product-recommendation-quiz/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz</a> app to modify the language of interactive elements like buttons and popups. The transaltion of these elemenets can be done automaticallty and then adjuisted manually where necessary for each button or popup message/system message.</p>
-  <img src="/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-091452.png" alt="How to Adapt Product Quizzes for Different Markets and Languages - image 2" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+  <img src="/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-091452.webp" alt="How to Adapt Product Quizzes for Different Markets and Languages - image 2" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Note that questions and choices need manual translation, which allows for full flexibility when creating your localized quiz.</p>
 </div>
 
@@ -94,7 +94,7 @@ Each market has its own set of regulations that you must adhere to, especially r
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">To show the "grundpreis" or \<code style="background:#f1f5f9;padding:1px 6px;border-radius:4px;font-size:0.92em;">per 100ml\</code> price for cosmetic products <a href="https://revenuehunt.com/product-recommendation-quiz/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz</a> allows you to show these values by automatically <a href="https://docs.revenuehunt.com/how-to-guides/add-product-metafields/" style="color:#16161D;text-decoration:underline;">syncing the metafields/attributes of products</a> from your store.</p>
-  <img src="/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-091730.png" alt="How to Adapt Product Quizzes for Different Markets and Languages - image 3" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+  <img src="/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-091730.webp" alt="How to Adapt Product Quizzes for Different Markets and Languages - image 3" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;"><strong>💡Tip:</strong> <a href="https://revenuehunt.com/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/" style="color:#16161D;text-decoration:underline;">This article</a> explains in depth all the different ways you can ask for marketing and data processing consent in your Shop Quiz: Product Recommendation Quiz.</p>
 </div>
 
@@ -133,7 +133,7 @@ However, there are many tested [workarounds](https://docs.revenuehunt.com/how-to
 
 > **📢 First Step**: Begin by manually translating your quizzes into the desired languages. Each translated quiz will have a unique quiz ID. You can navigate to the \`Quiz Settings\` to modify the language of interactive elements like buttons or change the currency. However, note that questions and choices need manual translation.
 > 
-> ![How to Adapt Product Quizzes for Different Markets and Languages - image 4](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-092134.png)
+> ![How to Adapt Product Quizzes for Different Markets and Languages - image 4](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-092134.webp)
 
 Use JavaScript code in your eCommerce store to show the appropriate quiz to users based on their browser's language setting.
 
@@ -199,7 +199,7 @@ Key Points:
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;"><a href="https://revenuehunt.com/product-recommendation-quiz/" style="color:#16161D;text-decoration:underline;">Shop Quiz: Product Recommendation Quiz</a> app provides detailed analytics of your quiz engagement and responses.</p>
-  <img src="/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/manual_quizbuilder_metrics_analytics.png" alt="quiz builder metrics analytics" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
+  <img src="/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/manual_quizbuilder_metrics_analytics.webp" alt="quiz builder metrics analytics" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
 </div>
 
 ## Main Takeaways

@@ -12,7 +12,7 @@ author: "alex"
 legacySlug: "zero-party-data"
 legacyId: 6700
 legacyUrl: "https://revenuehunt.com/zero-party-data/"
-featuredImage: "/img/blog/zero-party-data/41.png"
+featuredImage: "/img/blog/zero-party-data/41.webp"
 draft: false
 ---
 
@@ -39,7 +39,7 @@ If you sell online in 2026, your customer-data stack determines what you can per
 
 This guide covers what zero-party data is, how it compares to first-party, second-party and third-party data, why it matters more in 2026 than it did in 2022, the six proven methods for collecting it, and the channels where it produces measurable lift.
 
-![Differences between zero, first, second and third party data](/img/blog/zero-party-data/differences-between-zero-first-second-third-party-data-1024x640.png)
+![Differences between zero, first, second and third party data](/img/blog/zero-party-data/differences-between-zero-first-second-third-party-data-1024x640.webp)
 
 ## Zero-party vs first-party vs second-party vs third-party data
 
@@ -117,7 +117,7 @@ A product recommendation quiz is the highest-yield zero-party collection mechani
 
 Why it dominates: the quiz wraps the data ask inside an obvious value exchange. The customer isn't filling out a form; they're being helped to choose. Completion rates regularly exceed 40% on well-designed quizzes, and every completion produces multiple preference attributes (skin type, primary concern, age range, budget, shopping-for, lifestyle) that map directly to email and ad platforms.
 
-![Zero-party data hyper-personalization](/img/blog/zero-party-data/zero-party-data-hyper-personalization-1024x695.png)
+![Zero-party data hyper-personalization](/img/blog/zero-party-data/zero-party-data-hyper-personalization-1024x695.webp)
 
 Quizzes also handle the consent layer cleanly. You can ask for email/SMS opt-in [as a natural step inside the quiz flow](https://revenuehunt.com/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/) rather than as a friction-inducing popup. For most Shopify and WooCommerce stores, this is the single biggest quick win available right now.
 

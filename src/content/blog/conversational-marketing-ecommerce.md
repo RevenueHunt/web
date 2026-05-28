@@ -11,7 +11,7 @@ author: "Paulina Chodura"
 legacySlug: "conversational-marketing-ecommerce"
 legacyId: 6838
 legacyUrl: "https://revenuehunt.com/conversational-marketing-ecommerce/"
-featuredImage: "/img/blog/conversational-marketing-ecommerce/conversational-marketing-ecommerce.png"
+featuredImage: "/img/blog/conversational-marketing-ecommerce/conversational-marketing-ecommerce.webp"
 draft: false
 ---
 
@@ -23,7 +23,7 @@ Conversational Marketing puts communication between brands and their customers a
 
 Instead of forcing people to go through obsolete lead capture forms and wait days for a response, at RevenueHunt, we've built a **Conversational Marketing platform for eCommerce** that leverages interactive quizzes to engage with buyers when they're on your store.
 
-![conversational marketing ecommerce](/img/blog/conversational-marketing-ecommerce/conversational-marketing-ecommerce.png)
+![conversational marketing ecommerce](/img/blog/conversational-marketing-ecommerce/conversational-marketing-ecommerce.webp)
 
 This makes it easier for shoppers to engage with your business and will also help you **collect actionable zero-party data** from your customers, which can be used for segmentation and personalization.
 
@@ -67,7 +67,7 @@ That's why, at RevenueHunt, we've built a [Conversational Marketing platform](ht
 
 The quiz is designed to **collect data about the shopper's preferences** and needs. It then provides them with personalized product recommendations based on their answers.
 
-![Conversational Marketing Platform for eCommerce](/img/blog/conversational-marketing-ecommerce/product-recommendation-quiz-logo.png)
+![Conversational Marketing Platform for eCommerce](/img/blog/conversational-marketing-ecommerce/product-recommendation-quiz-logo.webp)
 
 ##### Product Recommendation Quiz for eCommerce
 

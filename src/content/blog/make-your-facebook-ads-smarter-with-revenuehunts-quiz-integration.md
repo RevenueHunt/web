@@ -12,7 +12,7 @@ author: "Paulina Chodura"
 legacySlug: "make-your-facebook-ads-smarter-with-revenuehunts-quiz-integration"
 legacyId: 10818
 legacyUrl: "https://revenuehunt.com/make-your-facebook-ads-smarter-with-revenuehunts-quiz-integration/"
-featuredImage: "/img/blog/make-your-facebook-ads-smarter-with-revenuehunts-quiz-integration/19.png"
+featuredImage: "/img/blog/make-your-facebook-ads-smarter-with-revenuehunts-quiz-integration/19.webp"
 draft: false
 ---
 
@@ -20,7 +20,7 @@ If you're running an eCommerce business, you already know that **data is everyth
 
 But what if you could take this data a step further?
 
-![Make Ads Smarter](/img/blog/make-your-facebook-ads-smarter-with-revenuehunts-quiz-integration/Make-Ads-Smarter.png)
+![Make Ads Smarter](/img/blog/make-your-facebook-ads-smarter-with-revenuehunts-quiz-integration/Make-Ads-Smarter.webp)
 
 By integrating **RevenueHunt's Product Recommendation Quiz** with your **Facebook Pixel**, you unlock an entirely new level of customer intelligence. You're not just tracking generic page views - you're gathering **first-party data** directly from your customers, tracking their preferences, and using it to fine-tune your ad targeting.
 
@@ -78,7 +78,7 @@ Setting up Facebook Pixel with your quiz is **quick and easy**:
 -   Find the **Facebook Pixel** section and click **Connect**.
 -   Enter your **Pixel ID** and save the changes.
 
-![Connect Pixel](/img/blog/make-your-facebook-ads-smarter-with-revenuehunts-quiz-integration/Connect-Pixel.png)
+![Connect Pixel](/img/blog/make-your-facebook-ads-smarter-with-revenuehunts-quiz-integration/Connect-Pixel.webp)
 
 3️⃣ **Start Tracking & Optimizing**
 

@@ -12,7 +12,7 @@ author: "Paulina Chodura"
 legacySlug: "introducing-video-quizzes-the-future-of-customer-engagement-in-ecommerce"
 legacyId: 7822
 legacyUrl: "https://revenuehunt.com/introducing-video-quizzes-the-future-of-customer-engagement-in-ecommerce/"
-featuredImage: "/img/blog/introducing-video-quizzes-the-future-of-customer-engagement-in-ecommerce/56.png"
+featuredImage: "/img/blog/introducing-video-quizzes-the-future-of-customer-engagement-in-ecommerce/56.webp"
 draft: false
 ---
 

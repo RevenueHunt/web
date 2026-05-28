@@ -6,7 +6,7 @@ updatedDate: 2026-04-07T11:53:00Z
 legacySlug: "home"
 legacyId: 5
 legacyUrl: "https://revenuehunt.com/"
-featuredImage: "/img/pages/home/1-scaled.png"
+featuredImage: "/img/pages/home/1-scaled.webp"
 draft: false
 ---
 

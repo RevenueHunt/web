@@ -10,7 +10,7 @@ author: "Paulina Chodura"
 legacySlug: "january-2026-product-updates"
 legacyId: 11975
 legacyUrl: "https://revenuehunt.com/january-2026-product-updates/"
-featuredImage: "/img/blog/january-2026-product-updates/2.png"
+featuredImage: "/img/blog/january-2026-product-updates/2.webp"
 draft: false
 ---
 

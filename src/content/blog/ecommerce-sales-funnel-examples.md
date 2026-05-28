@@ -102,7 +102,7 @@ Where the result is disclosed publicly (case studies, podcast interviews, invest
 
 ## 8. Skinology (former RevenueHunt customer): luxury skincare via personalisation
 
-![Skinology product recommendation quiz](/img/blog/skinology-and-shop-quiz-crafting-personalized-skincare-journeys-online/Screenshot-2024-10-22-135007.png)
+![Skinology product recommendation quiz](/img/blog/skinology-and-shop-quiz-crafting-personalized-skincare-journeys-online/Screenshot-2024-10-22-135007.webp)
 
 **What makes it work.** Skinology sells high-ticket skincare in a category where shoppers are extremely cautious about choosing the wrong product. The brand uses a multi-step diagnostic quiz to play the role a clinic dermatologist would play, walking the customer through skin type, concerns, sensitivities and treatment goals before recommending a personalised routine. *Note: Skinology was on RevenueHunt during the period that produced the case-study results below; they have since moved to a custom-built quiz on the same mechanical pattern.*
 

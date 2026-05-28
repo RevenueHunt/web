@@ -6,7 +6,7 @@ updatedDate: 2026-05-05T09:51:04Z
 legacySlug: "contact"
 legacyId: 411
 legacyUrl: "https://revenuehunt.com/contact/"
-featuredImage: "/img/pages/contact/meeting-scheduled.jpg"
+featuredImage: "/img/pages/contact/meeting-scheduled.webp"
 draft: false
 ---
 

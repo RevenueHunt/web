@@ -10,7 +10,7 @@ author: "alex"
 legacySlug: "how-it-works"
 legacyId: 100
 legacyUrl: "https://revenuehunt.com/how-it-works/"
-featuredImage: "/img/blog/how-it-works/blog_how_it_works.png"
+featuredImage: "/img/blog/how-it-works/blog_how_it_works.webp"
 draft: false
 ---
 
@@ -55,9 +55,9 @@ Our app **engages your customer just like a salesperson would**. First of all, t
 
 In the meantime, the app will provide them with personalized feedback and tips. Once the quiz is complete, the app gives personalized product recommendations along with a story around why the recommended products are perfect for them.
 
-![How our Product Recommendation Quiz app works - image 1](/img/blog/how-it-works/how_it_works_example1.png)
+![How our Product Recommendation Quiz app works - image 1](/img/blog/how-it-works/how_it_works_example1.webp)
 
-![How our Product Recommendation Quiz app works - image 2](/img/blog/how-it-works/how_it_works_example2.png)
+![How our Product Recommendation Quiz app works - image 2](/img/blog/how-it-works/how_it_works_example2.webp)
 
 _Personalize the questions you ask to guide your customers throughout their shopping experience_
 
@@ -80,7 +80,7 @@ Our app allows you to customize multiple aspects of the quiz. With our **easy-to
 -   Add a background image to your quiz
 -   Add custom CSS code to your design
 
-![How our Product Recommendation Quiz app works - image 3](/img/blog/how-it-works/how_it_works_example4.png)
+![How our Product Recommendation Quiz app works - image 3](/img/blog/how-it-works/how_it_works_example4.webp)
 
 _Customize the quiz's design to match your e-Commerce's look & feel_
 
@@ -95,47 +95,47 @@ _Customize the quiz's design to match your e-Commerce's look & feel_
 
 **Quiz Copilot.** A smart AI assistant that can build and adapt the quiz for you in seconds with a single prompt.
 
-![How our Product Recommendation Quiz app works - image 4](/img/blog/how-it-works/how_it_works_example13.png)
+![How our Product Recommendation Quiz app works - image 4](/img/blog/how-it-works/how_it_works_example13.webp)
 
 _Quiz Copilot is there to assist you in any step of the quiz-building journey: from drafting to publishing_
 
 **Plug and play.** Easy to install and configure. No coding required. Sell more effectively within days, not weeks. _Choose between multiple display modes (link popup, inline quiz, automatic popup, chat icon)._
 
-![How our Product Recommendation Quiz app works - image 5](/img/blog/how-it-works/how_it_works_example5.png)
+![How our Product Recommendation Quiz app works - image 5](/img/blog/how-it-works/how_it_works_example5.webp)
 
 _Easy to install: embed it directly from your theme_
 
 **Conditional Logic.** This feature allows you to display different questions based on your customer's previous answers. This way, your customers won't see irrelevant questions because with Conditional Logic you can define rules automatically skip them. This leads to higher quiz completion rates, more conversions and more sales.
 
-![How our Product Recommendation Quiz app works - image 6](/img/blog/how-it-works/how_it_works_example6.png)
+![How our Product Recommendation Quiz app works - image 6](/img/blog/how-it-works/how_it_works_example6.webp)
 
 _Set conditional rules to skip irrelevant questions_
 
 **Product category slots.** There are many product categories you might want to recommend simultaneously. This feature is very useful if you want to recommend product bundles. For example, if you're a cosmetics store, you might want to recommend a complete skincare routine (cleanser, toner, serum, moisturizer... ).
 
-![How our Product Recommendation Quiz app works - image 7](/img/blog/how-it-works/how_it_works_example12.png)
+![How our Product Recommendation Quiz app works - image 7](/img/blog/how-it-works/how_it_works_example12.webp)
 
 _Slots allow you to [group product recommendations into different categories](https://revenuehunt.com/faqs/how-to-recommend-a-skincare-routine-with-slots/)_
 
 **Lead capture.** Incentivize your customers to leave their contact details like email or phone number (for you to follow-up with them or retarget them with ads) in exchange for a discount on their purchase.
 
-![How our Product Recommendation Quiz app works - image 8](/img/blog/how-it-works/how_it_works_example8.png)
+![How our Product Recommendation Quiz app works - image 8](/img/blog/how-it-works/how_it_works_example8.webp)
 
 _Optionally, you can set up your quiz to capture leads and retarget your customers_
 
 **E-mail notifications.** Receive an e-mail every time a potential customer gives his contact details so you can follow up with them. Your customer will also [receive a personalized email](https://revenuehunt.com/faqs/sending-results-to-customers-email/) with the results in their inbox. They can come back to the quiz later to finish the purchase if they haven't made up their mind yet.
 
-![How our Product Recommendation Quiz app works - image 9](/img/blog/how-it-works/how_it_works_example15.png)
+![How our Product Recommendation Quiz app works - image 9](/img/blog/how-it-works/how_it_works_example15.webp)
 
 **Integrations for retargeting.** Send captured leads automatically to Klaviyo, Omnisend, HubSpot, MailChimp, or connect to any other mailing list via Zapier. See a full list of our integrations [here](https://revenuehunt.com/integrations/).
 
-![How our Product Recommendation Quiz app works - image 10](/img/blog/how-it-works/how_it_works_example9.png)
+![How our Product Recommendation Quiz app works - image 10](/img/blog/how-it-works/how_it_works_example9.webp)
 
 _Automate your workflow by sending quiz results directly to your CRM_
 
 **Actionable insights.** Through [quiz metrics](https://revenuehunt.com/faqs/understanding-quiz-metrics/) and [integrations](https://revenuehunt.com/integrations/) like Google Analytics and Meta Pixel, gain vital insights into consumer behavior and product preferences to drive conversions and profitability.
 
-![How our Product Recommendation Quiz app works - image 11](/img/blog/how-it-works/how_it_works_example11.png)
+![How our Product Recommendation Quiz app works - image 11](/img/blog/how-it-works/how_it_works_example11.webp)
 
 _Check quiz performance directly in the app_
 

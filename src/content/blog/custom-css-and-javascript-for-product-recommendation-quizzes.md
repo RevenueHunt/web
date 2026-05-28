@@ -11,7 +11,7 @@ author: "Paulina Chodura"
 legacySlug: "custom-css-and-javascript-for-product-recommendation-quizzes"
 legacyId: 9740
 legacyUrl: "https://revenuehunt.com/custom-css-and-javascript-for-product-recommendation-quizzes/"
-featuredImage: "/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/52.png"
+featuredImage: "/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/52.webp"
 draft: false
 ---
 
@@ -37,7 +37,7 @@ Customizing your [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.co
 
 **✨ Add Unique Functionalities**: Introduce new features that are not available by default.
 
-![Custom CSS and JavaScript for Product Recommendation Quizzes - image 2](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2020-09-29-at-20.34.03-1024x594.png)
+![Custom CSS and JavaScript for Product Recommendation Quizzes - image 2](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2020-09-29-at-20.34.03-1024x594.webp)
 
 **Jump to:**
 
@@ -57,7 +57,7 @@ To open the custom CSS editor follow these steps:
 -   Navigate to the [**Quiz** **Design**](https://docs.revenuehunt.com/reference/quiz-builder/#quiz-design) section.
 -   Scroll down to the **Custom CSS** section and click on `Add` to open the CSS console where you can input your CSS code.
 
-![Custom CSS and JavaScript for Product Recommendation Quizzes - image 3](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2024-08-19-105145.png)
+![Custom CSS and JavaScript for Product Recommendation Quizzes - image 3](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2024-08-19-105145.webp)
 
 ### Step 2: Basic Customizations
 
@@ -67,9 +67,9 @@ In the CSS editor, you can insert any custom styling rules to adjust the quiz ap
 
 To find the correct CSS selector for any quiz element, simply right-click the element on your browser and select **Inspect**. This will open the browser's Developer Tools, where you can view the HTML and locate the exact selector to target.
 
-![Custom CSS and JavaScript for Product Recommendation Quizzes - image 4](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2024-08-30-091646.png)
+![Custom CSS and JavaScript for Product Recommendation Quizzes - image 4](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2024-08-30-091646.webp)
 
-![Custom CSS and JavaScript for Product Recommendation Quizzes - image 5](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2024-08-30-091731.png)
+![Custom CSS and JavaScript for Product Recommendation Quizzes - image 5](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2024-08-30-091731.webp)
 
 Here are some sample CSS codes you can use in your quiz:
 
@@ -199,11 +199,11 @@ Here are some examples of advanced CSS customizations you can apply to your quiz
 
 To enhance the appearance of your quiz, here are a few real creative customization ideas:
 
-![Custom CSS and JavaScript for Product Recommendation Quizzes - image 6](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2021-04-14-at-04.14.16.png)
+![Custom CSS and JavaScript for Product Recommendation Quizzes - image 6](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2021-04-14-at-04.14.16.webp)
 
-![Custom CSS and JavaScript for Product Recommendation Quizzes - image 7](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2020-10-20-at-11.41.36.png)
+![Custom CSS and JavaScript for Product Recommendation Quizzes - image 7](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2020-10-20-at-11.41.36.webp)
 
-![Custom CSS and JavaScript for Product Recommendation Quizzes - image 8](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2020-10-20-at-11.33.57.png)
+![Custom CSS and JavaScript for Product Recommendation Quizzes - image 8](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2020-10-20-at-11.33.57.webp)
 
 ## </> Adding Custom Features with JavaScript
 

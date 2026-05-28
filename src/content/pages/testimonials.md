@@ -108,7 +108,7 @@ I got help very fast - and without hesitation. Good customer service staff, that
 
 [
 
-![Testimonials - image 13](/img/pages/testimonials/cahaba.png)
+![Testimonials - image 13](/img/pages/testimonials/cahaba.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Oct. 15, 2021
 
@@ -150,7 +150,7 @@ This is the best App ever, We stuck with type form and could never finish our qu
 
 ](https://www.gkhair.com/)[
 
-![Testimonials - image 18](/img/pages/testimonials/color.png)
+![Testimonials - image 18](/img/pages/testimonials/color.webp)
 
 Rating:⭐⭐⭐⭐⭐ Posted:Sep. 16, 2021
 

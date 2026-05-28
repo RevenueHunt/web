@@ -11,7 +11,7 @@ author: "alex"
 legacySlug: "free-shopify-product-recommendation-apps"
 legacyId: 2186
 legacyUrl: "https://revenuehunt.com/free-shopify-product-recommendation-apps/"
-featuredImage: "/img/blog/free-shopify-product-recommendation-apps/shopify-product-recommendations.png"
+featuredImage: "/img/blog/free-shopify-product-recommendation-apps/shopify-product-recommendations.webp"
 draft: false
 ---
 
@@ -40,11 +40,11 @@ Now that you're known to different ways Shopify product recommendation apps help
 
 The top reason niche stores don't convert even after getting targeted traffic is that the customer is unable to find the product customized in accordance to his needs. Even, if you put-up tons of variations on your eCommerce store for a specific product, your audience won't be wanting to waste their time customizing the product. 
 
-<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" class="alignnone wp-image-11907 size-full" src="/img/blog/free-shopify-product-recommendation-apps/foundation5.png" alt="Best Shopify Product Recommendation Apps for FREE (2026) - figure 1" width="1286" height="869" srcset="/img/blog/free-shopify-product-recommendation-apps/foundation5.png 1286w, https://revenuehunt.com/wp-content/uploads/2026/01/foundation5-300x203.png 300w, https://revenuehunt.com/wp-content/uploads/2026/01/foundation5-1024x692.png 1024w, https://revenuehunt.com/wp-content/uploads/2026/01/foundation5-768x519.png 768w, https://revenuehunt.com/wp-content/uploads/2026/01/foundation5-120x81.png 120w" sizes="auto, (max-width: 1286px) 100vw, 1286px"></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" class="alignnone wp-image-11907 size-full" src="/img/blog/free-shopify-product-recommendation-apps/foundation5.webp" alt="Best Shopify Product Recommendation Apps for FREE (2026) - figure 1" width="1286" height="869" srcset="/img/blog/free-shopify-product-recommendation-apps/foundation5.webp 1286w, https://revenuehunt.com/wp-content/uploads/2026/01/foundation5-300x203.png 300w, https://revenuehunt.com/wp-content/uploads/2026/01/foundation5-1024x692.png 1024w, https://revenuehunt.com/wp-content/uploads/2026/01/foundation5-768x519.png 768w, https://revenuehunt.com/wp-content/uploads/2026/01/foundation5-120x81.png 120w" sizes="auto, (max-width: 1286px) 100vw, 1286px"></figure>
 
 Shopify's RevenueHunt: Recommender Quiz app is like a **personal shopping assistant for you customers**. It'll ask a bunch of questions from your visitors in quiz format. Once the customer checks the MCQs, he'll be redirected to the right products. This not only helps with conversion as well as with the cart abandonment issue. 
 
-![Product recommendation quiz logo](/img/blog/free-shopify-product-recommendation-apps/product-recommendation-quiz-logo.png)
+![Product recommendation quiz logo](/img/blog/free-shopify-product-recommendation-apps/product-recommendation-quiz-logo.webp)
 
 ##### Product Recommendation Quiz
 
@@ -64,7 +64,7 @@ Using the [Product Recommendation Quiz](https://apps.shopify.com/product-recomme
 
 Plus, the 360 degree customer profiles help you know behaviours, customer actions and other details for personalizing the customer experience in a few clicks. The best part about this app is that you can recommend products using automated emails created with custom workflows. 
 
-![Best Shopify Product Recommendation Apps for FREE (2026) - image 1](/img/blog/free-shopify-product-recommendation-apps/klaviyo.jpg)
+![Best Shopify Product Recommendation Apps for FREE (2026) - image 1](/img/blog/free-shopify-product-recommendation-apps/klaviyo.webp)
 
 ##### Klaviyo: Email Marketing
 
@@ -90,7 +90,7 @@ _Key features of_ _UpPromote: Affiliate & Referral_ _by Secomapp:_
 -   **Support to recruit affiliates** by free listing on [**UpPromote Marketplace**](https://marketplace.uppromote.com/market-place?utm_source=uppromote_blog&utm_medium=bfcm_article&utm_campaign=bfcm_article); or with a Multi-level Marketing feature.
 -   **The customer referral feature** allows your customers to refer your products to their friends and family and earn a small commission. 
 
-![NEW logo](/img/blog/free-shopify-product-recommendation-apps/NEW_logo-1.png)
+![NEW logo](/img/blog/free-shopify-product-recommendation-apps/NEW_logo-1.webp)
 
 ##### UpPromote: Affiliate & Referral
 
@@ -134,7 +134,7 @@ Wiser Product Recommendation provides multiple ways to recommend products to you
 
 You'll like the in-depth analytics that will help you track your sales like a pro. 
 
-![Best Shopify Product Recommendation Apps for FREE (2026) - image 2](/img/blog/free-shopify-product-recommendation-apps/wiser.jpg)
+![Best Shopify Product Recommendation Apps for FREE (2026) - image 2](/img/blog/free-shopify-product-recommendation-apps/wiser.webp)
 
 ##### Wiser – Personalized Recommendations
 
@@ -152,7 +152,7 @@ The post purchase experience will re-engage your customers. Rather than using co
 
 While the upselling & cross selling recommendation will be automated, you'll be able to use the drag and drop interface to fully customize the page.
 
-![Reconvert logo](/img/blog/free-shopify-product-recommendation-apps/reconvert-logo.png)
+![Reconvert logo](/img/blog/free-shopify-product-recommendation-apps/reconvert-logo.webp)
 
 ##### ReConvert Upsell & Cross Sell
 
@@ -170,7 +170,7 @@ PowerBuy is geared towards recommending group purchase for a discount. PowerBuy 
 
 This Shopify app also allows you to check products that are available for the PowerBuy button (with bulk discount). Next, it uses Artificial intelligence and automation for recommending personalized lists of products. You'll also be able to add a social sharing button along with a PowerBuy box.
 
-![Best Shopify Product Recommendation Apps for FREE (2026) - image 3](/img/blog/free-shopify-product-recommendation-apps/powerbuy.png)
+![Best Shopify Product Recommendation Apps for FREE (2026) - image 3](/img/blog/free-shopify-product-recommendation-apps/powerbuy.webp)
 
 ##### PowerBuy ‑ Social Group Buying
 
@@ -192,7 +192,7 @@ This app lets you make personalized recommendations anywhere on your eCommerce s
 
 You'll also be able to club products for upsell which are based on best sellers, new arrivals, collections, product types, product vendors, product tags and recently viewed products.
 
-![Product recommendations pro](/img/blog/free-shopify-product-recommendation-apps/product-recommendations-pro.png)
+![Product recommendations pro](/img/blog/free-shopify-product-recommendation-apps/product-recommendations-pro.webp)
 
 ##### Product Recommendations PRO
 
@@ -210,7 +210,7 @@ In the year 2019, Also Bought is awarded as one of the best Shopify app. You can
 
 The automated recommendations can be altered manually or via filters like collection, product type, etc. You'll also get to decide the position of the widget on the product pages and checkout cart.
 
-![Also bought](/img/blog/free-shopify-product-recommendation-apps/also-bought.png)
+![Also bought](/img/blog/free-shopify-product-recommendation-apps/also-bought.webp)
 
 ##### Also Bought • Cross Sell
 

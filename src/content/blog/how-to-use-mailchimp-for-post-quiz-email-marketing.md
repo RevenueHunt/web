@@ -12,7 +12,7 @@ author: "Paulina Chodura"
 legacySlug: "how-to-use-mailchimp-for-post-quiz-email-marketing"
 legacyId: 9448
 legacyUrl: "https://revenuehunt.com/how-to-use-mailchimp-for-post-quiz-email-marketing/"
-featuredImage: "/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/26.png"
+featuredImage: "/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/26.webp"
 draft: false
 ---
 
@@ -22,17 +22,17 @@ Using MailChimp for your post-quiz email marketing can transform how you engage 
 
 Imagine **sending highly personalized emails that speak directly to your customers' needs**, based on the answers they provide in your quizzes. This approach has a higher chance of grabbing the customer's attention and convincing them to buy from you because you know what the customer is looking for (they told you themselves!).
 
-![Automate email with mailchimp](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/automate-email-with-mailchimp.png)
+![Automate email with mailchimp](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/automate-email-with-mailchimp.webp)
 
 Here's how you can use [MailChimp](https://mailchimp.com/) together with RevenueHunt's [Shop Quiz: Product Recommendation Quiz](https://apps.shopify.com/product-recommendation-quiz-revenuehunt) app to make the most out of this personalized follow-up, **boost your sales, and why it works** so well.
 
 ## Know Your Tools
 
-![How to Use MailChimp for Post-Quiz Email Marketing - image 1](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/Untitled_design__5_-removebg-preview-300x300.png)
+![How to Use MailChimp for Post-Quiz Email Marketing - image 1](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/Untitled_design__5_-removebg-preview-300x300.webp)
 
 [MailChimp](https://mailchimp.com/) is a robust email marketing service that empowers businesses to design, send, and analyze email campaigns. It offers a user-friendly interface with a variety of templates, automation tools, and detailed analytics. MailChimp's features include audience segmentation, personalized email content, and marketing automation, making it an essential tool for managing customer relationships and driving engagement.
 
-![How to Use MailChimp for Post-Quiz Email Marketing - image 2](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/Untitled_design__6_-removebg-preview-300x300.png)
+![How to Use MailChimp for Post-Quiz Email Marketing - image 2](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/Untitled_design__6_-removebg-preview-300x300.webp)
 
 [Shop Quiz: Product Recommendation Quiz](https://revenuehunt.com/product-recommendation-quiz/), a product by [RevenueHunt](https://revenuehunt.com/), is an innovative tool designed for eCommerce platforms to create engaging product recommendation quizzes. These quizzes help businesses understand customer preferences and provide personalized product suggestions. The app integrates seamlessly with Shopify, WooCommerce, BigCommerce, and Magento, capturing valuable customer data and enhancing the shopping experience.
 
@@ -98,11 +98,11 @@ Once the quiz answers are covered with customer tags, all the information you ne
 
 You can start by setting up **Automations** (automated email flows) to trigger **based on specific tags** or quiz completions.
 
-![Mailchimp automations](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-automations.png)
+![Mailchimp automations](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-automations.webp)
 
 Then, create different email templates in MailChimp that correspond to different quiz outcomes or automation flows.
 
-![How to Use MailChimp for Post-Quiz Email Marketing - image 3](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/Screenshot-2024-07-29-093944.png)
+![How to Use MailChimp for Post-Quiz Email Marketing - image 3](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/Screenshot-2024-07-29-093944.webp)
 
 ## Example Flow
 
@@ -113,20 +113,20 @@ In MailChimp, you create an email series targeting these tags. For instance:
 **Day 1:** Introduction to products suitable for oily skin.
 
 [  
-![How to Use MailChimp for Post-Quiz Email Marketing - image 4](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-newsletter1.png)  
-](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-newsletter1.png)
+![How to Use MailChimp for Post-Quiz Email Marketing - image 4](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-newsletter1.webp)  
+](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-newsletter1.webp)
 
 **Day 3:** Customer testimonials and reviews for oily skin products.
 
 [  
-![Mailchimp newsletter](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-newsletter-2.png)  
-](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-newsletter-2.png)
+![Mailchimp newsletter](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-newsletter-2.webp)  
+](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-newsletter-2.webp)
 
 **Day 7:** Special discount on recommended products for oily skin.
 
 [  
-![Mailchimp newsletter](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-newsletter-3.png)  
-](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-newsletter-3.png)
+![Mailchimp newsletter](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-newsletter-3.webp)  
+](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-newsletter-3.webp)
 
 ## Key Takeaways
 

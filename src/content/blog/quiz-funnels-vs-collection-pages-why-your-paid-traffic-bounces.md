@@ -10,11 +10,11 @@ author: "Paulina Chodura"
 legacySlug: "quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces"
 legacyId: 11989
 legacyUrl: "https://revenuehunt.com/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/"
-featuredImage: "/img/blog/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/14.png"
+featuredImage: "/img/blog/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/14.webp"
 draft: false
 ---
 
-![Stop Paying for Traffic That Bounces. Why Quiz Funnels Outperform Collection Pages? - image 1](/img/blog/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/collectionvsquiz.png)
+![Stop Paying for Traffic That Bounces. Why Quiz Funnels Outperform Collection Pages? - image 1](/img/blog/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/collectionvsquiz.webp)
 
 _From endless product grids to guided recommendations._
 
@@ -32,7 +32,7 @@ Collection pages were designed for organic browsing – a customer who already k
 
 But paid traffic is a different animal. You're buying attention from someone who saw a 15-second creative, felt a spark of interest, and clicked. They arrive with intent but zero context. They don't know your product line. They don't know what's right for them. And you're greeting them with a wall of 30+ options.
 
-![Stop Paying for Traffic That Bounces. Why Quiz Funnels Outperform Collection Pages? - image 2](/img/blog/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/currentarchitecturevsquizfunnel.png)
+![Stop Paying for Traffic That Bounces. Why Quiz Funnels Outperform Collection Pages? - image 2](/img/blog/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/currentarchitecturevsquizfunnel.webp)
 
 _Turn anonymous traffic into actionable customer data._
 
@@ -101,7 +101,7 @@ Every quiz response – skin type, primary concern, age range, product preferenc
 This transforms your Klaviyo account from a list of anonymous email addresses into a segmented database of rich customer profiles. You can now trigger a "Your Perfect Routine" flow for someone who told you they have dry skin and are concerned about fine lines – not a generic welcome series that treats every subscriber identically.
 
 **The Data Shift**  
-A standard popup captures _who_ visited. A quiz captures _what they need_. That distinction is the difference between a Klaviyo account that's a graveyard and one that's a revenue engine – generating 3x revenue per recipient through segmented automation.![Without quiz data](/img/blog/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/with_without_quiz_data.png)_Generic email blasts vs. personalized campaigns powered by quiz data._
+A standard popup captures _who_ visited. A quiz captures _what they need_. That distinction is the difference between a Klaviyo account that's a graveyard and one that's a revenue engine – generating 3x revenue per recipient through segmented automation.![Without quiz data](/img/blog/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/with_without_quiz_data.webp)_Generic email blasts vs. personalized campaigns powered by quiz data._
 
 ### Mechanism 3: The Signal Reinforcement Loop
 

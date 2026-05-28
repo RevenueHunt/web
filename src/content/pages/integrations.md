@@ -6,7 +6,7 @@ updatedDate: 2026-01-14T16:20:29Z
 legacySlug: "integrations"
 legacyId: 4943
 legacyUrl: "https://revenuehunt.com/integrations/"
-featuredImage: "/img/pages/integrations/lukas-blazek-mcSDtbWXUZU-unsplash.jpg"
+featuredImage: "/img/pages/integrations/lukas-blazek-mcSDtbWXUZU-unsplash.webp"
 draft: false
 ---
 
@@ -51,7 +51,7 @@ Code Required
 Measure quiz performance, track conversions, and optimize your funnel with powerful analytics integrations. See exactly which questions drive sales and where customers drop off.
 
 [  
-![Google Analytics](/img/pages/integrations/ganalytics.png)
+![Google Analytics](/img/pages/integrations/ganalytics.webp)
 
 Google Analytics
 
@@ -62,7 +62,7 @@ Data
 [](https://docs.revenuehunt.com/how-to-guides/integrate-google-analytics/)
 
 [  
-![Meta Pixel](/img/pages/integrations/metapixel.png)
+![Meta Pixel](/img/pages/integrations/metapixel.webp)
 
 Meta Pixel
 
@@ -73,7 +73,7 @@ Data
 [](https://docs.revenuehunt.com/how-to-guides/integrate-meta-pixel/)
 
 [  
-![TikTok Pixel](/img/pages/integrations/tiktoklog.png)
+![TikTok Pixel](/img/pages/integrations/tiktoklog.webp)
 
 TikTok Pixel
 
@@ -84,7 +84,7 @@ Data
 [](https://docs.revenuehunt.com/how-to-guides/integrate-tiktok-pixel/)
 
 [  
-![Webhooks](/img/pages/integrations/webhooklog.png)
+![Webhooks](/img/pages/integrations/webhooklog.webp)
 
 Webhooks
 
@@ -95,7 +95,7 @@ Data
 [](https://docs.revenuehunt.com/how-to-guides/send-leads-to-webhooks/)
 
 [  
-![Google Product Feed](/img/pages/integrations/googleproductfeed.png)
+![Google Product Feed](/img/pages/integrations/googleproductfeed.webp)
 
 Google Product Feed
 
@@ -110,7 +110,7 @@ Products
 Automatically sync quiz leads to your email marketing platform or CRM. Send personalized follow-ups, segment customers based on their responses, and nurture leads into loyal buyers without lifting a finger.
 
 [  
-![Klaviyo](/img/pages/integrations/klaviyolog.png)
+![Klaviyo](/img/pages/integrations/klaviyolog.webp)
 
 Klaviyo
 
@@ -121,7 +121,7 @@ Email Marketing
 [](https://docs.revenuehunt.com/how-to-guides/send-leads-to-klaviyo/)
 
 [  
-![ActiveCampaign](/img/pages/integrations/activecampaignlog.png)
+![ActiveCampaign](/img/pages/integrations/activecampaignlog.webp)
 
 ActiveCampaign
 
@@ -132,7 +132,7 @@ Automation
 [](https://docs.revenuehunt.com/how-to-guides/send-leads-to-activecampaign/)
 
 [  
-![Mailchimp](/img/pages/integrations/mailchimplog.png)
+![Mailchimp](/img/pages/integrations/mailchimplog.webp)
 
 Mailchimp
 
@@ -143,7 +143,7 @@ Email Marketing
 [](https://docs.revenuehunt.com/how-to-guides/send-leads-to-mailchimp/)
 
 [  
-![Omnisend](/img/pages/integrations/omnisendlog.png)
+![Omnisend](/img/pages/integrations/omnisendlog.webp)
 
 Omnisend
 
@@ -154,7 +154,7 @@ Email Marketing
 [](https://docs.revenuehunt.com/how-to-guides/send-leads-to-omnisend/)
 
 [  
-![Zapier](/img/pages/integrations/zapierlog.png)
+![Zapier](/img/pages/integrations/zapierlog.webp)
 
 Zapier
 
@@ -165,7 +165,7 @@ Automation
 [](https://docs.revenuehunt.com/how-to-guides/send-leads-to-zapier/)
 
 [  
-![Hubspot](/img/pages/integrations/hubspotlog.png)
+![Hubspot](/img/pages/integrations/hubspotlog.webp)
 
 Hubspot
 
@@ -176,7 +176,7 @@ CRM
 [](https://docs.revenuehunt.com/how-to-guides/send-leads-to-hubspot/)
 
 [  
-![Shopify Customers](/img/pages/integrations/shopifylog.png)
+![Shopify Customers](/img/pages/integrations/shopifylog.webp)
 
 Shopify Customers
 
@@ -187,7 +187,7 @@ CRM
 [](https://docs.revenuehunt.com/how-to-guides/send-leads-to-shopify-customers/)
 
 [  
-![ReCharge](/img/pages/integrations/rechargelog.png)
+![ReCharge](/img/pages/integrations/rechargelog.webp)
 
 ReCharge
 
@@ -202,7 +202,7 @@ Subscriptions
 Boost trust and conversions by displaying product reviews directly in quiz results. Enable subscription products, show quizzes in-store with POS tablets, and reach mobile shoppers through the Shop App.
 
 [  
-![Shopify Product Reviews](/img/pages/integrations/shopifyreviews.png)
+![Shopify Product Reviews](/img/pages/integrations/shopifyreviews.webp)
 
 Shopify Reviews
 
@@ -213,7 +213,7 @@ Social Proof
 [](https://docs.revenuehunt.com/how-to-guides/show-product-reviews/)
 
 [  
-![Stamped](/img/pages/integrations/stampedlog.png)
+![Stamped](/img/pages/integrations/stampedlog.webp)
 
 Stamped
 
@@ -224,7 +224,7 @@ Social Proof
 [](https://docs.revenuehunt.com/how-to-guides/show-product-reviews/)
 
 [  
-![Judge.me](/img/pages/integrations/judgemelog.png)
+![Judge.me](/img/pages/integrations/judgemelog.webp)
 
 Judge.me
 
@@ -235,7 +235,7 @@ Social Proof
 [](https://docs.revenuehunt.com/how-to-guides/show-product-reviews/)
 
 [  
-![Rivyo Product Reviews](/img/pages/integrations/rivyolog.png)
+![Rivyo Product Reviews](/img/pages/integrations/rivyolog.webp)
 
 Rivyo Reviews
 
@@ -246,7 +246,7 @@ Social Proof
 [](https://docs.revenuehunt.com/how-to-guides/show-product-reviews/)
 
 [  
-![POS Tablet Stands](/img/pages/integrations/poslog.png)
+![POS Tablet Stands](/img/pages/integrations/poslog.webp)
 
 POS Tablet Stands
 
@@ -257,7 +257,7 @@ In-Store Sales
 [](https://revenuehunt.com/product-recommendation-quiz-pos-tablet-stands/)
 
 [  
-![Shop App](/img/pages/integrations/shopapplog.png)
+![Shop App](/img/pages/integrations/shopapplog.webp)
 
 Shop App
 

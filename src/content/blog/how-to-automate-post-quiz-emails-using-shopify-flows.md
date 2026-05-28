@@ -11,7 +11,7 @@ author: "Paulina Chodura"
 legacySlug: "how-to-automate-post-quiz-emails-using-shopify-flows"
 legacyId: 9389
 legacyUrl: "https://revenuehunt.com/how-to-automate-post-quiz-emails-using-shopify-flows/"
-featuredImage: "/img/blog/how-to-automate-post-quiz-emails-using-shopify-flows/28.png"
+featuredImage: "/img/blog/how-to-automate-post-quiz-emails-using-shopify-flows/28.webp"
 draft: false
 ---
 
@@ -21,7 +21,7 @@ While Product Recommendation Quizzes help e-commerce businesses improve conversi
 
 These tools work together to automate follow-up emails tailored to the preferences your customers share through quizzes. This process not only boosts engagement and sales but also gives you valuable insights into what your customers want.
 
-![Beige Minimalist Venn Diagram Self Care Instagram Post](/img/blog/how-to-automate-post-quiz-emails-using-shopify-flows/Copy-of-Beige-Minimalist-Venn-Diagram-Self-Care-Instagram-Post.png)
+![Beige Minimalist Venn Diagram Self Care Instagram Post](/img/blog/how-to-automate-post-quiz-emails-using-shopify-flows/Copy-of-Beige-Minimalist-Venn-Diagram-Self-Care-Instagram-Post.webp)
 
 Here's how you can set up these automated email flows to get the most out of your customer data and why it works:
 
@@ -57,7 +57,7 @@ This integration allows for highly personalized marketing efforts, ensuring cust
 
 Using [Shop Quiz: Product Recommender](https://apps.shopify.com/product-recommendation-quiz-revenuehunt) app, design an interactive quiz to gather customer preferences. Make sure to ask relevant questions that will help lead the customer towards the products that meet all their criteria.
 
-![How to Automate Post-Quiz Emails Using Shopify Flows - image 1](/img/blog/how-to-automate-post-quiz-emails-using-shopify-flows/Screenshot-2024-07-11-101743.png)
+![How to Automate Post-Quiz Emails Using Shopify Flows - image 1](/img/blog/how-to-automate-post-quiz-emails-using-shopify-flows/Screenshot-2024-07-11-101743.webp)
 
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
@@ -68,7 +68,7 @@ Using [Shop Quiz: Product Recommender](https://apps.shopify.com/product-recommen
 
 Assign specific [customer tags](https://docs.revenuehunt.com/how-to-guides/use-customer-tags/) to quiz responses. These tags are saved with each customer submission and help categorize customer preferences for targeted marketing campaigns.
 
-![How to Automate Post-Quiz Emails Using Shopify Flows - image 2](/img/blog/how-to-automate-post-quiz-emails-using-shopify-flows/Screenshot-2024-07-11-101949.png)
+![How to Automate Post-Quiz Emails Using Shopify Flows - image 2](/img/blog/how-to-automate-post-quiz-emails-using-shopify-flows/Screenshot-2024-07-11-101949.webp)
 
 > **📝 Note:** You can create and add to choices as many customer tags as you like in the [Shop Quiz: Product Recommender](https://apps.shopify.com/product-recommendation-quiz-revenuehunt) app.
 

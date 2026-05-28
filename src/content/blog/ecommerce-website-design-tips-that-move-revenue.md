@@ -11,7 +11,7 @@ author: "Paulina Chodura"
 legacySlug: "ecommerce-website-design-tips-that-move-revenue"
 legacyId: 7934
 legacyUrl: "https://revenuehunt.com/ecommerce-website-design-tips-that-move-revenue/"
-featuredImage: "/img/blog/ecommerce-website-design-tips-that-move-revenue/35.png"
+featuredImage: "/img/blog/ecommerce-website-design-tips-that-move-revenue/35.webp"
 draft: false
 ---
 
@@ -23,7 +23,7 @@ This article is about the ten design decisions that actually move revenue. Not a
 
 ## 1\. Design for Guidance, Not Just Browsing
 
-![10 eCommerce Design Decisions That Actually Move Revenue - image 1](/img/blog/ecommerce-website-design-tips-that-move-revenue/blog_10designtips_img1.png)
+![10 eCommerce Design Decisions That Actually Move Revenue - image 1](/img/blog/ecommerce-website-design-tips-that-move-revenue/blog_10designtips_img1.webp)
 
 _The default store assumes customers know what they want. Most don't._
 
@@ -41,7 +41,7 @@ The standard approach to email capture is an interruption. A popup fires after f
 
 This is a design failure, not a marketing failure. The solution is to make data capture a **value exchange embedded into the shopping journey**.
 
-![10 eCommerce Design Decisions That Actually Move Revenue - image 2](/img/blog/ecommerce-website-design-tips-that-move-revenue/blog_10designtips_img2.png)
+![10 eCommerce Design Decisions That Actually Move Revenue - image 2](/img/blog/ecommerce-website-design-tips-that-move-revenue/blog_10designtips_img2.webp)
 
 _The default store assumes customers know what they want. Most don't._
 
@@ -51,7 +51,7 @@ The design principle is simple: **the best-designed stores capture more data per
 
 ## 3\. Simplify the Decision, Not Just the Layout
 
-![10 eCommerce Design Decisions That Actually Move Revenue - image 3](/img/blog/ecommerce-website-design-tips-that-move-revenue/blog_10designtips_img6.png)
+![10 eCommerce Design Decisions That Actually Move Revenue - image 3](/img/blog/ecommerce-website-design-tips-that-move-revenue/blog_10designtips_img6.webp)
 
 _A clean layout is necessary but not sufficient. The real work is in the decision architecture beneath it._
 
@@ -65,7 +65,7 @@ Clean layout plus guided decision architecture equals the store that converts. O
 
 ## 4\. Design for Mobile Intent, Not Just Mobile Screens
 
-![man online shopping on mobile](/img/blog/ecommerce-website-design-tips-that-move-revenue/mobile-shopping.jpg)
+![man online shopping on mobile](/img/blog/ecommerce-website-design-tips-that-move-revenue/mobile-shopping.webp)
 
 _Mobile shoppers are in discovery mode. Give them a guided path, not a scrollable grid._
 
@@ -83,7 +83,7 @@ Don't just shrink your desktop store for mobile. Redesign the mobile journey aro
 
 Traditional ecommerce navigation is a map – it shows visitors where everything is and lets them wander. This works well for returning customers who know exactly what they want. It fails for new or undecided visitors, who are often the majority of your traffic.
 
-![10 eCommerce Design Decisions That Actually Move Revenue - image 4](/img/blog/ecommerce-website-design-tips-that-move-revenue/blog_10designtips_img3.png)
+![10 eCommerce Design Decisions That Actually Move Revenue - image 4](/img/blog/ecommerce-website-design-tips-that-move-revenue/blog_10designtips_img3.webp)
 
 _Search navigation serves customers who know what they want. A quiz link serves everyone else._
 
@@ -95,7 +95,7 @@ Go further with contextual quiz entry points. A "Find Your Shade" link on the fo
 
 The quiz results page is the most underutilized design surface in guided selling. Most brands treat it as a basic product list. The brands converting at 10%+ treat it as a **consultation summary:** a personalized prescription, not a search result.
 
-![10 eCommerce Design Decisions That Actually Move Revenue - image 5](/img/blog/ecommerce-website-design-tips-that-move-revenue/blog_10designtips_img4.png)
+![10 eCommerce Design Decisions That Actually Move Revenue - image 5](/img/blog/ecommerce-website-design-tips-that-move-revenue/blog_10designtips_img4.webp)
 
 _The right product recommendation, delivered with confidence, is more persuasive than a shelf of options._
 
@@ -105,13 +105,13 @@ The structural data is clear: a single focused results page converts at 10.6% on
 
 ## 7\. Design Trust Into Every Data Touchpoint
 
-![website valid SSL certificate](/img/blog/ecommerce-website-design-tips-that-move-revenue/ssl-certificate.png)
+![website valid SSL certificate](/img/blog/ecommerce-website-design-tips-that-move-revenue/ssl-certificate.webp)
 
 _SSL is expected. Transparent data consent, localized experiences, and brand-native design are what build trust in 2026._
 
 Trust in 2026 is not primarily about SSL certificates and padlock icons. Those are expected. Trust is about **how visibly and transparently you handle customer data,** especially as privacy regulations tighten across every major market.
 
-![website testimonials page](/img/blog/ecommerce-website-design-tips-that-move-revenue/customer-testimonials.png)
+![website testimonials page](/img/blog/ecommerce-website-design-tips-that-move-revenue/customer-testimonials.webp)
 
 _Social proof communicates trust retrospectively. Consent flows and localization build it proactively._
 
@@ -135,7 +135,7 @@ Quiz-based email capture produces the opposite profile. Platform data shows that
 
 ## 9\. Design for Speed Where It Matters Most
 
-![man checking out an online order on his phone with a credit card](/img/blog/ecommerce-website-design-tips-that-move-revenue/pexels-rdne-stock-project-7821552.jpg)
+![man checking out an online order on his phone with a credit card](/img/blog/ecommerce-website-design-tips-that-move-revenue/pexels-rdne-stock-project-7821552.webp)
 
 _Checkout is the highest-stakes moment in the customer journey. Every second of load time at this stage costs real revenue._
 
@@ -147,7 +147,7 @@ RevenueHunt's **Built for Shopify** app embeds natively into the Shopify theme: 
 
 ## 10\. Design for Iteration, Not for Launch-Day Perfection
 
-![10 eCommerce Design Decisions That Actually Move Revenue - image 6](/img/blog/ecommerce-website-design-tips-that-move-revenue/blog_10designtips_img5.png)
+![10 eCommerce Design Decisions That Actually Move Revenue - image 6](/img/blog/ecommerce-website-design-tips-that-move-revenue/blog_10designtips_img5.webp)
 
 _No store is optimized at launch. The best stores are the ones that test relentlessly after it._
 
@@ -161,7 +161,7 @@ The best ecommerce stores are not the ones that launched with the perfect design
 
 ## The Through-Line: Architecture Over Aesthetics
 
-![woman shopping online among paper bags](/img/blog/ecommerce-website-design-tips-that-move-revenue/online-shopping.jpg)
+![woman shopping online among paper bags](/img/blog/ecommerce-website-design-tips-that-move-revenue/online-shopping.webp)
 
 _The stores winning in 2026 aren't the prettiest ones. They're the ones built to guide, capture, and convert._
 

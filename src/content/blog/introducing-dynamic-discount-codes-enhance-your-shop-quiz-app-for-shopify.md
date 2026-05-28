@@ -12,7 +12,7 @@ author: "Paulina Chodura"
 legacySlug: "introducing-dynamic-discount-codes-enhance-your-shop-quiz-app-for-shopify"
 legacyId: 7626
 legacyUrl: "https://revenuehunt.com/introducing-dynamic-discount-codes-enhance-your-shop-quiz-app-for-shopify/"
-featuredImage: "/img/blog/introducing-dynamic-discount-codes-enhance-your-shop-quiz-app-for-shopify/61.png"
+featuredImage: "/img/blog/introducing-dynamic-discount-codes-enhance-your-shop-quiz-app-for-shopify/61.webp"
 draft: false
 ---
 
@@ -26,7 +26,7 @@ We understand the importance of creating personalized shopping experiences, and 
 
 Implementing dynamic discount codes into your Shop Quiz app is a breeze. Our intuitive interface allows merchants to seamlessly add multiple Shopify discount codes directly to their quiz results page.
 
-![Introducing Dynamic Discount Codes: Enhance Your Shop Quiz App for Shopify - image 1](/img/blog/introducing-dynamic-discount-codes-enhance-your-shop-quiz-app-for-shopify/Screenshot-2023-06-07-143355.png)
+![Introducing Dynamic Discount Codes: Enhance Your Shop Quiz App for Shopify - image 1](/img/blog/introducing-dynamic-discount-codes-enhance-your-shop-quiz-app-for-shopify/Screenshot-2023-06-07-143355.webp)
 
 ### Tailored Discounts
 
@@ -42,15 +42,15 @@ Gone are the days of customers manually entering discount codes at checkout. Our
 
 To further enhance the customer experience, merchants can choose to enable discount notifications on their results page. Once a customer qualifies for a discount based on their quiz results, a toast notification will appear, notifying them of the exciting offer they have unlocked. This instant notification adds an element of delight and encourages the customer to complete their purchase.
 
-![Introducing Dynamic Discount Codes: Enhance Your Shop Quiz App for Shopify - image 2](/img/blog/introducing-dynamic-discount-codes-enhance-your-shop-quiz-app-for-shopify/Screenshot-2023-06-07-143821.png)
+![Introducing Dynamic Discount Codes: Enhance Your Shop Quiz App for Shopify - image 2](/img/blog/introducing-dynamic-discount-codes-enhance-your-shop-quiz-app-for-shopify/Screenshot-2023-06-07-143821.webp)
 
 ### Encourage Discounts
 
 We believe in rewarding customer loyalty, and our Shop Quiz app goes the extra mile. Along with the discount notification, merchants can include a message in the toast notification, indicating how close the customer is to unlocking the next highest discount. This incentivizes customers to explore additional products or increase their cart value, encouraging them to avail themselves of even more enticing discounts.
 
-![Introducing Dynamic Discount Codes: Enhance Your Shop Quiz App for Shopify - image 3](/img/blog/introducing-dynamic-discount-codes-enhance-your-shop-quiz-app-for-shopify/Screenshot-2023-06-07-143844.png)
+![Introducing Dynamic Discount Codes: Enhance Your Shop Quiz App for Shopify - image 3](/img/blog/introducing-dynamic-discount-codes-enhance-your-shop-quiz-app-for-shopify/Screenshot-2023-06-07-143844.webp)
 
-![Introducing Dynamic Discount Codes: Enhance Your Shop Quiz App for Shopify - image 4](/img/blog/introducing-dynamic-discount-codes-enhance-your-shop-quiz-app-for-shopify/Screenshot-2023-06-08-082928.png)
+![Introducing Dynamic Discount Codes: Enhance Your Shop Quiz App for Shopify - image 4](/img/blog/introducing-dynamic-discount-codes-enhance-your-shop-quiz-app-for-shopify/Screenshot-2023-06-08-082928.webp)
 
 ### Increased Conversion and Customer Satisfaction
 

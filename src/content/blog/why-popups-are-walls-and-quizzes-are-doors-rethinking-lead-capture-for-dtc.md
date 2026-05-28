@@ -10,11 +10,11 @@ author: "Paulina Chodura"
 legacySlug: "why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc"
 legacyId: 12020
 legacyUrl: "https://revenuehunt.com/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/"
-featuredImage: "/img/blog/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/12.png"
+featuredImage: "/img/blog/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/12.webp"
 draft: false
 ---
 
-![Split image showing a popup as a wall blocking a storefront versus a quiz as an open door inviting customers in](/img/blog/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/wallsvsdoors.png)
+![Split image showing a popup as a wall blocking a storefront versus a quiz as an open door inviting customers in](/img/blog/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/wallsvsdoors.webp)
 
 The lead capture paradigm shift: one model interrupts and extracts, the other invites and exchanges. Same storefront. Different architecture. Different results.
 
@@ -52,7 +52,7 @@ A popup is a wall between the customer and the store. It takes before it gives. 
 
 This is where the structural failure becomes a system failure.
 
-![Circular diagram showing the Blast Doom Loop: no preference data leads to generic blasts, low engagement, degraded sender reputation, spam, and more unsubscribes](/img/blog/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/More_emails_in_spam_optimized_1000-e1772532253755.png)
+![Circular diagram showing the Blast Doom Loop: no preference data leads to generic blasts, low engagement, degraded sender reputation, spam, and more unsubscribes](/img/blog/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/More_emails_in_spam_optimized_1000-e1772532253755.webp)
 
 Every generic blast accelerates the cycle. The popup is the entry point, and without preference data, there's no exit.
 
@@ -72,7 +72,7 @@ Here's the reframe.
 
 **A door** invites. It offers help, asks diagnostic questions, and delivers personalized value, a tailored product recommendation, in exchange for preference data. The customer experience builds: curiosity → engagement → personalized result → trust → purchase → loyalty.
 
-![Side-by-side customer journey comparison: popup path declining toward unsubscribe versus quiz path building toward repeat purchase](/img/blog/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/twoarchitectures_optimized_1000-e1772532854735.png)
+![Side-by-side customer journey comparison: popup path declining toward unsubscribe versus quiz path building toward repeat purchase](/img/blog/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/twoarchitectures_optimized_1000-e1772532854735.webp)
 
 Two journeys, same traffic source. The divergence starts at capture – and compounds at every stage downstream.
 
@@ -108,7 +108,7 @@ This is the wall-to-door shift in action: instead of extracting an email with a 
 
 Every quiz response [syncs directly to Klaviyo](https://revenuehunt.com/integrations/) as customer properties, tags, or metafields. Natively. No Zapier. No CSV exports. No manual mapping. No developer ticket sitting in the backlog for three sprints.
 
-![Side-by-side Klaviyo profile cards: popup lead with only an email address versus quiz lead with skin type, concern, age, preference, and budget filled in](/img/blog/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/samesubscriber_optimized_1000.png)
+![Side-by-side Klaviyo profile cards: popup lead with only an email address versus quiz lead with skin type, concern, age, preference, and budget filled in](/img/blog/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/samesubscriber_optimized_1000.webp)
 
 The popup gives you an address. The quiz gives you a profile. Your Klaviyo flows can only be as smart as the data behind them.
 

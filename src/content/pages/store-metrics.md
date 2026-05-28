@@ -6,7 +6,7 @@ updatedDate: 2022-06-25T15:31:21Z
 legacySlug: "store-metrics"
 legacyId: 3874
 legacyUrl: "https://revenuehunt.com/store-metrics/"
-featuredImage: "/img/pages/store-metrics/plus-background.png"
+featuredImage: "/img/pages/store-metrics/plus-background.webp"
 draft: false
 ---
 
@@ -16,7 +16,7 @@ Store Metrics cuts through the noise and reveals the insights you need to make p
 
 [get started](https://apps.shopify.com/marketing-analytics-reports?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=store_metrics_landing_link_a)
 
-![Store Metrics for Shopify eCommerce Business](/img/pages/store-metrics/shopify-metrics-dashboard.png)
+![Store Metrics for Shopify eCommerce Business](/img/pages/store-metrics/shopify-metrics-dashboard.webp)
 
   
 
@@ -42,4 +42,4 @@ Metrics, insights, and engagement tools for Shopify stores. Measure what's happe
 
 [get started](https://apps.shopify.com/marketing-analytics-reports?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=store_metrics_landing_link_b)
 
-![Store Metrics for Shopify eCommerce Business](/img/pages/store-metrics/shopify-metrics-components.png)
+![Store Metrics for Shopify eCommerce Business](/img/pages/store-metrics/shopify-metrics-components.webp)

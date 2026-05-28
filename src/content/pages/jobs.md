@@ -6,7 +6,7 @@ updatedDate: 2025-06-11T16:26:37Z
 legacySlug: "jobs"
 legacyId: 2389
 legacyUrl: "https://revenuehunt.com/jobs/"
-featuredImage: "/img/pages/jobs/partner-program.jpeg"
+featuredImage: "/img/pages/jobs/partner-program.webp"
 draft: false
 ---
 

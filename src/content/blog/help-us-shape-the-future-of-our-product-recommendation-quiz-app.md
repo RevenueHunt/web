@@ -10,7 +10,7 @@ author: "Paulina Chodura"
 legacySlug: "help-us-shape-the-future-of-our-product-recommendation-quiz-app"
 legacyId: 10051
 legacyUrl: "https://revenuehunt.com/help-us-shape-the-future-of-our-product-recommendation-quiz-app/"
-featuredImage: "/img/blog/help-us-shape-the-future-of-our-product-recommendation-quiz-app/24.png"
+featuredImage: "/img/blog/help-us-shape-the-future-of-our-product-recommendation-quiz-app/24.webp"
 draft: false
 ---
 

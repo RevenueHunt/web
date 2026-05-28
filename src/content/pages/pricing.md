@@ -6,7 +6,7 @@ updatedDate: 2026-03-30T14:59:59Z
 legacySlug: "pricing"
 legacyId: 1265
 legacyUrl: "https://revenuehunt.com/pricing/"
-featuredImage: "/img/pages/pricing/partner-program.jpeg"
+featuredImage: "/img/pages/pricing/partner-program.webp"
 draft: false
 ---
 

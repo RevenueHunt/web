@@ -11,7 +11,7 @@ author: "Paulina Chodura"
 legacySlug: "video-10-golden-rules-of-a-successful-product-recommendation-quiz"
 legacyId: 6964
 legacyUrl: "https://revenuehunt.com/video-10-golden-rules-of-a-successful-product-recommendation-quiz/"
-featuredImage: "/img/blog/video-10-golden-rules-of-a-successful-product-recommendation-quiz/64.png"
+featuredImage: "/img/blog/video-10-golden-rules-of-a-successful-product-recommendation-quiz/64.webp"
 draft: false
 ---
 

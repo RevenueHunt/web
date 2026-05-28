@@ -10,7 +10,7 @@ author: "alex"
 legacySlug: "shopify-quiz-app"
 legacyId: 6765
 legacyUrl: "https://revenuehunt.com/shopify-quiz-app/"
-featuredImage: "/img/blog/shopify-quiz-app/roberto-cortese-ejhjSZKTeeg-unsplash-scaled.jpg"
+featuredImage: "/img/blog/shopify-quiz-app/roberto-cortese-ejhjSZKTeeg-unsplash-scaled.webp"
 draft: false
 ---
 
@@ -22,7 +22,7 @@ Install the [Shopify Quiz App](https://apps.shopify.com/product-recommendation-q
 
 Adding a quiz app to your Shopify store is simple and can be done in just a few steps. First, you will need to find a Shopify quiz app that you like. There are many different quiz apps available, so take some time to browse the options and find one that meets your needs. For the rest of this tutorial we'll go with **RevenueHunt**, which has a **5-star rating in the app store and offers a free plan**.
 
-![Product recommendation quiz logo](/img/blog/shopify-quiz-app/product-recommendation-quiz-logo.png)
+![Product recommendation quiz logo](/img/blog/shopify-quiz-app/product-recommendation-quiz-logo.webp)
 
 ##### Product Recommendation Quiz
 
@@ -44,15 +44,15 @@ You can either create the quiz from scratch or use one of the [quiz templates](h
 
 Generally, start by adding a few questions.
 
-![Shopify Quiz: How to Add a Quiz App to your Shopify Store - image 1](/img/blog/shopify-quiz-app/Screenshot-2022-07-11-134154-1024x735.png)
+![Shopify Quiz: How to Add a Quiz App to your Shopify Store - image 1](/img/blog/shopify-quiz-app/Screenshot-2022-07-11-134154-1024x735.webp)
 
 Next, link the relevant products to choices in the quiz.
 
-![Shopify Quiz: How to Add a Quiz App to your Shopify Store - image 2](/img/blog/shopify-quiz-app/Screenshot-2022-07-11-135826-1024x736.png)
+![Shopify Quiz: How to Add a Quiz App to your Shopify Store - image 2](/img/blog/shopify-quiz-app/Screenshot-2022-07-11-135826-1024x736.webp)
 
 Finally, customize the look and feel of your quiz to match your brand.
 
-![Shopify Quiz: How to Add a Quiz App to your Shopify Store - image 3](/img/blog/shopify-quiz-app/Screenshot-2022-07-11-133944-1024x732.png)
+![Shopify Quiz: How to Add a Quiz App to your Shopify Store - image 3](/img/blog/shopify-quiz-app/Screenshot-2022-07-11-133944-1024x732.webp)
 
 RevenueHunt has a great page with [video tutorials](https://revenuehunt.com/faqs/tutorial-videos/) that can take you through the quiz building process.
 
@@ -62,7 +62,7 @@ Once you're happy with the design, you should publish the quiz in your store. It
 
 Navigate to the _Share_ tab in the Quiz Builder and select a publishing mode.
 
-![Shopify Quiz - publish in your store](/img/blog/shopify-quiz-app/Screenshot-2022-07-11-141123-1024x578.png)
+![Shopify Quiz - publish in your store](/img/blog/shopify-quiz-app/Screenshot-2022-07-11-141123-1024x578.webp)
 
 You can:
 
@@ -101,13 +101,13 @@ Another benefit is **guided selling**. Shopping is VERY personal: every customer
 
 A Shopify quiz engages your customer just like a salesperson would do. The quiz asks your customer general questions. Once the customer finishes the quiz, the app gives **personalized product recommendations** along with a story around why the recommended products are perfect for him or her.
 
-![Shopify Quiz - Zero-Party Data App](/img/blog/shopify-quiz-app/zero-party-data-hyper-personalization-1024x695.png)
+![Shopify Quiz - Zero-Party Data App](/img/blog/shopify-quiz-app/zero-party-data-hyper-personalization-1024x695.webp)
 
 ### Get started today.
 
 A shopping quiz improves the customers' product discovery experience and guides them from start to cart. Install Product Recommendation Quiz in your store today and **start driving sales with conversational marketing**:
 
-![Product recommendation quiz logo](/img/blog/shopify-quiz-app/product-recommendation-quiz-logo.png)
+![Product recommendation quiz logo](/img/blog/shopify-quiz-app/product-recommendation-quiz-logo.webp)
 
 ##### Product Recommendation Quiz
 

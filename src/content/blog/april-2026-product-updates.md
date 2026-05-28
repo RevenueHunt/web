@@ -10,7 +10,7 @@ author: "Paulina Chodura"
 legacySlug: "april-2026-product-updates"
 legacyId: 12455
 legacyUrl: "https://revenuehunt.com/april-2026-product-updates/"
-featuredImage: "/img/blog/april-2026-product-updates/april_26_product_update.png"
+featuredImage: "/img/blog/april-2026-product-updates/april_26_product_update.webp"
 draft: false
 ---
 

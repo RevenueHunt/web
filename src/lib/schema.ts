@@ -18,6 +18,7 @@ export function softwareApplication() {
     name: "RevenueHunt Product Recommendation Quiz",
     url: SITE.site_url,
     description: SITE.description,
+    image: new URL("/og/index.png", SITE.site_url).href,
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     offers: {

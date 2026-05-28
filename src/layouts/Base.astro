@@ -173,6 +173,25 @@ const isProd = import.meta.env.PROD && SITE.site_url === "https://revenuehunt.co
         });
       }
       initRhCarousels();
+
+      // YouTube facades (hero + in-content): swap the poster for the real
+      // nocookie embed on click. Markup is emitted by YouTubeFacade.astro and
+      // by the migrated blog markdown; this handler is global so both work.
+      document.querySelectorAll<HTMLButtonElement>("button.yt-facade").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const id = btn.dataset.ytId;
+          if (!id) return;
+          const iframe = document.createElement("iframe");
+          iframe.src = `https://www.youtube-nocookie.com/embed/${id}?rel=0&autoplay=1`;
+          iframe.title =
+            btn.getAttribute("aria-label")?.replace(/^Play video:?\s*/, "") || "YouTube video";
+          iframe.allow =
+            "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+          iframe.allowFullscreen = true;
+          iframe.className = "h-full w-full";
+          btn.replaceWith(iframe);
+        });
+      });
     </script>
   </body>
 </html>

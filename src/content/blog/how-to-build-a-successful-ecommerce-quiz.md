@@ -19,7 +19,7 @@ featuredImage: "/img/blog/how-to-build-a-successful-ecommerce-quiz/blog_successf
 draft: false
 ---
 
-<iframe src="https://www.youtube.com/embed/eJaiwjhyNgI" allowfullscreen="allowfullscreen" title="Embedded video"></iframe>
+<div class="aspect-video overflow-hidden rounded-xl bg-slate-900 not-prose my-6"><button type="button" class="yt-facade group relative block h-full w-full cursor-pointer overflow-hidden" data-yt-id="eJaiwjhyNgI" aria-label="Play video"><picture><source srcset="https://i.ytimg.com/vi_webp/eJaiwjhyNgI/maxresdefault.webp" type="image/webp" /><img src="https://i.ytimg.com/vi/eJaiwjhyNgI/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async" class="h-full w-full object-cover" /></picture><span class="absolute inset-0 flex items-center justify-center bg-black/10 transition group-hover:bg-black/20"><span class="flex h-20 w-20 items-center justify-center rounded-full bg-black/70 shadow-lg transition group-hover:scale-105 group-hover:bg-[#FF0000]"><svg class="ml-0.5 h-9 w-9 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg></span></span></button></div>
 
 What separates a quiz that consistently drives 15–25% conversion rates from one that collects dust? We set out to answer that question by analyzing data from **over 900 product recommendation quizzes** built on RevenueHunt, covering **1.29 million quiz responses** and **$63.8 million in tracked revenue**. The findings were sometimes surprising  and they contradict a lot of the conventional wisdom you'll find on older guides, including our own from 2021.
 

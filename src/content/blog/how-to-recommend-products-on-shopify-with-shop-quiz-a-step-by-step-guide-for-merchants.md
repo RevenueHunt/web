@@ -70,7 +70,7 @@ The **exclude** feature allows you to filter out products that may not be suitab
 
 ## Setting Up Product Recommendations
 
-<iframe loading="lazy" class="alignnone size-full" title="YouTube video player" src="https://www.youtube.com/embed/bdt75wZnAZA?si=fs6WT3_j8aL1dDAj" width="100%" height="400px" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<div class="aspect-video overflow-hidden rounded-xl bg-slate-900 not-prose my-6"><button type="button" class="yt-facade group relative block h-full w-full cursor-pointer overflow-hidden" data-yt-id="bdt75wZnAZA" aria-label="Play video"><picture><source srcset="https://i.ytimg.com/vi_webp/bdt75wZnAZA/maxresdefault.webp" type="image/webp" /><img src="https://i.ytimg.com/vi/bdt75wZnAZA/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async" class="h-full w-full object-cover" /></picture><span class="absolute inset-0 flex items-center justify-center bg-black/10 transition group-hover:bg-black/20"><span class="flex h-20 w-20 items-center justify-center rounded-full bg-black/70 shadow-lg transition group-hover:scale-105 group-hover:bg-[#FF0000]"><svg class="ml-0.5 h-9 w-9 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg></span></span></button></div>
 
 Before proceeding, ensure you have added all the necessary questions and choices to your quiz.
 

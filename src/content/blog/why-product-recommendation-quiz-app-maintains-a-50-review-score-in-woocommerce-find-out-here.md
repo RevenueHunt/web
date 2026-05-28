@@ -15,7 +15,7 @@ featuredImage: "/img/blog/why-product-recommendation-quiz-app-maintains-a-50-rev
 draft: false
 ---
 
-<iframe loading="lazy" class="alignnone size-full" title="YouTube video player" src="https://www.youtube.com/embed/Fm3wS-h-juA?si=-o-UIo5HrzgIpMgG" width="100%" height="400px" frameborder="0" allowfullscreen="allowfullscreen"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe>
+<div class="aspect-video overflow-hidden rounded-xl bg-slate-900 not-prose my-6"><button type="button" class="yt-facade group relative block h-full w-full cursor-pointer overflow-hidden" data-yt-id="Fm3wS-h-juA" aria-label="Play video"><picture><source srcset="https://i.ytimg.com/vi_webp/Fm3wS-h-juA/maxresdefault.webp" type="image/webp" /><img src="https://i.ytimg.com/vi/Fm3wS-h-juA/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async" class="h-full w-full object-cover" /></picture><span class="absolute inset-0 flex items-center justify-center bg-black/10 transition group-hover:bg-black/20"><span class="flex h-20 w-20 items-center justify-center rounded-full bg-black/70 shadow-lg transition group-hover:scale-105 group-hover:bg-[#FF0000]"><svg class="ml-0.5 h-9 w-9 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg></span></span></button></div>
 
 Maintaining a perfect 5.0 review score is no small feat, and the **[Product Recommendation Quiz App](https://revenuehunt.com/product-recommendation-quiz-woocommerce/)**  by [RevenueHunt](https://revenuehunt.com/) on WooCommerce has achieved this with flying colors.
 

@@ -1,5 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
+import YouTubeFacade from "../../components/YouTubeFacade.astro";
 import { organization, breadcrumb } from "../../lib/schema";
 
 const jsonLd = [
@@ -82,14 +83,7 @@ const responseTiers = [
           Most questions are answered in the 3-minute walk-through. Have a quick watch before reaching out.
         </p>
         <div class="mt-6 aspect-video overflow-hidden rounded-xl bg-slate-900 shadow-xl">
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/oL1DnBd6N1U?rel=0"
-            title="RevenueHunt support tutorial"
-            loading="lazy"
-            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-            class="h-full w-full"
-          ></iframe>
+          <YouTubeFacade id="oL1DnBd6N1U" title="RevenueHunt support tutorial" />
         </div>
       </div>
       <div>

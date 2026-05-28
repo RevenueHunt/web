@@ -62,7 +62,7 @@ My team uses this tool every day. Whether you're an eCommerce owner who wants to
 
 Looking to grow your business? Then you need to hire an assistant. Here are the 10 rules of hiring which will help you in this task. I especially like how depending on the stage your business is on, you should look to hire different types of assistants.
 
-<iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/Cs2BLVlv_nM?rel=0&amp;autoplay=0&amp;showinfo=0&amp;enablejsapi=0" width="728" height="409" frameborder="0" allowfullscreen="allowfullscreen" data-mce-fragment="1" title="Embedded content"></iframe>
+<div class="aspect-video overflow-hidden rounded-xl bg-slate-900 not-prose my-6"><button type="button" class="yt-facade group relative block h-full w-full cursor-pointer overflow-hidden" data-yt-id="Cs2BLVlv_nM" aria-label="Play video"><picture><source srcset="https://i.ytimg.com/vi_webp/Cs2BLVlv_nM/maxresdefault.webp" type="image/webp" /><img src="https://i.ytimg.com/vi/Cs2BLVlv_nM/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async" class="h-full w-full object-cover" /></picture><span class="absolute inset-0 flex items-center justify-center bg-black/10 transition group-hover:bg-black/20"><span class="flex h-20 w-20 items-center justify-center rounded-full bg-black/70 shadow-lg transition group-hover:scale-105 group-hover:bg-[#FF0000]"><svg class="ml-0.5 h-9 w-9 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg></span></span></button></div>
 
 **🛍️ ORBE Geolocation**
 

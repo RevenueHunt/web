@@ -31,27 +31,12 @@ const posterJpg = `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`;
     />
   </picture>
   <span class="absolute inset-0 flex items-center justify-center bg-black/10 transition group-hover:bg-black/20">
-    <span class="flex h-16 w-16 items-center justify-center rounded-full bg-black/70 shadow-lg transition group-hover:scale-105 group-hover:bg-[#FF0000]">
-      <svg class="ml-1 h-7 w-7 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <span class="flex h-20 w-20 items-center justify-center rounded-full bg-black/70 shadow-lg transition group-hover:scale-105 group-hover:bg-[#FF0000]">
+      <svg class="ml-0.5 h-9 w-9 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
         <path d="M8 5v14l11-7z" />
       </svg>
     </span>
   </span>
 </button>
 
-<script>
-  document.querySelectorAll<HTMLButtonElement>("button.yt-facade").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const id = btn.dataset.ytId;
-      if (!id) return;
-      const iframe = document.createElement("iframe");
-      iframe.src = `https://www.youtube-nocookie.com/embed/${id}?rel=0&autoplay=1`;
-      iframe.title = btn.getAttribute("aria-label")?.replace(/^Play video: /, "") || "YouTube video";
-      iframe.allow =
-        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-      iframe.allowFullscreen = true;
-      iframe.className = "h-full w-full";
-      btn.replaceWith(iframe);
-    });
-  });
-</script>
+<!-- Click handling is global, in Base.astro, so in-content (markdown) facades work too. -->

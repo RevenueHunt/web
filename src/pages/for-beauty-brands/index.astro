@@ -1,5 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
+import YouTubeFacade from "../../components/YouTubeFacade.astro";
 import { organization, breadcrumb } from "../../lib/schema";
 import { SITE } from "../../lib/site";
 
@@ -139,14 +140,7 @@ const jsonLd = [
         </a>
       </div>
       <div class="aspect-video overflow-hidden rounded-xl bg-white shadow-lg">
-        <iframe
-          src="https://www.youtube.com/embed/fJqpGJUzZNE"
-          title="Product Recommendation Quiz tutorial"
-          loading="lazy"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-          class="h-full w-full"
-        ></iframe>
+        <YouTubeFacade id="fJqpGJUzZNE" title="Product Recommendation Quiz tutorial" />
       </div>
     </div>
   </section>

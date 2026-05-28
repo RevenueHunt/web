@@ -7,11 +7,29 @@ export function organization() {
     name: SITE.name,
     url: SITE.site_url,
     logo: new URL("/img/logo.svg", SITE.site_url).href,
-    sameAs: [
-      "https://twitter.com/revenuehunt",
-      "https://www.linkedin.com/company/revenuehunt",
-      "https://www.youtube.com/@revenuehunt",
-    ],
+    sameAs: Object.values(SITE.social),
+  };
+}
+
+export function softwareApplication() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "RevenueHunt Product Recommendation Quiz",
+    url: SITE.site_url,
+    description: SITE.description,
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.9",
+      ratingCount: "450",
+    },
   };
 }
 

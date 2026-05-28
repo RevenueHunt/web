@@ -1,7 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import PlanCards from "../components/pages/PlanCards.astro";
-import { organization, website } from "../lib/schema";
+import { organization, website, softwareApplication } from "../lib/schema";
 import { SITE } from "../lib/site";
 
 const SHOPIFY_INSTALL =
@@ -155,7 +155,7 @@ const WOOCOMMERCE_REVIEWS =
 <Base
   title={`${SITE.name} - product recommendation quiz that converts`}
   description="Turn passive browsers into buyers with a guided product recommendation quiz. Capture zero-party data, recommend the right product, lift conversion. No code."
-  jsonLd={[organization(), website()]}
+  jsonLd={[organization(), website(), softwareApplication()]}
 >
   <!-- Hero -->
   <section class="bg-gradient-to-b from-slate-50 to-white">

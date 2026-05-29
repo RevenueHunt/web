@@ -154,6 +154,8 @@ export default defineConfig({
       "/how-to-use-guided-selling-via-product-recommendation-quiz-to-increase-your-revenue/",
     "/interesting-examples-of-product-recommendation-quizzes-in-ecommerce/":
       "/10-brands-that-need-a-product-recommendation-quiz-with-examples/",
+    "/introducing-dynamic-discount-codes-enhance-your-shop-quiz-app-for-shopify/":
+      "/product-quiz-discounts/",
   },
   integrations: [
     (() => {

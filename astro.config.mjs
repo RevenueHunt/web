@@ -156,6 +156,8 @@ export default defineConfig({
       "/10-brands-that-need-a-product-recommendation-quiz-with-examples/",
     "/introducing-dynamic-discount-codes-enhance-your-shop-quiz-app-for-shopify/":
       "/product-quiz-discounts/",
+    "/introducing-video-quizzes-the-future-of-customer-engagement-in-ecommerce/":
+      "/video-quizzes/",
   },
   integrations: [
     (() => {

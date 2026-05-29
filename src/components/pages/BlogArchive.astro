@@ -27,9 +27,9 @@ const pageDescription =
       ? `Articles by ${name} - strategies, case studies, and product updates from the RevenueHunt team.`
       : `Articles tagged ${name} - strategies, case studies, and product updates from the RevenueHunt team.`;
 
-// Thin taxonomy archives shouldn't be indexed (WP/Yoast noindexed these too).
-// Author archives stay indexable.
-const noindex = kind === "tag" || kind === "category";
+// Thin archive listings shouldn't be indexed — they're duplicate views of the
+// same posts (WP/Yoast noindexed these too). Covers tag, category, and author.
+const noindex = true;
 
 const jsonLd = [
   organization(),

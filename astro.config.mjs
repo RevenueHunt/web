@@ -152,6 +152,8 @@ export default defineConfig({
       "/how-to-build-a-successful-ecommerce-quiz/",
     "/conversational-marketing-ecommerce/":
       "/how-to-use-guided-selling-via-product-recommendation-quiz-to-increase-your-revenue/",
+    "/interesting-examples-of-product-recommendation-quizzes-in-ecommerce/":
+      "/10-brands-that-need-a-product-recommendation-quiz-with-examples/",
   },
   integrations: [
     (() => {

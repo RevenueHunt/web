@@ -2,7 +2,7 @@
 title: "10 brands that need a product recommendation quiz"
 description: "10 brand types that benefit from a product recommendation quiz: skincare, haircare, supplements, coffee, jewellery and more, with live quiz examples."
 pubDate: 2022-01-14T15:26:01Z
-updatedDate: 2026-05-28T14:30:00Z
+updatedDate: 2026-05-29T11:00:00Z
 tags:
   - "ecommerce"
   - "marketing"
@@ -104,6 +104,17 @@ Pet owners care deeply about feeding their pets the right food, and most are unc
 Furniture and decor catalogues are visually overwhelming, and customers struggle to know which couch, mattress or rug will work in their actual space. A quiz that asks about style preference (modern, rustic, mid-century), room dimensions, budget and pet/child constraints can narrow the catalogue to a handful of confident recommendations. Mattress sellers in particular see strong results because the buying decision is high-stakes and high-AOV.
 
 **Live example:** [Mattress picker](https://skincarequiz.myshopify.com/#quiz-DmH5oz)
+
+## Famous brands using this approach
+
+Product recommendation quizzes aren't a Shopify-app novelty: large DTC and traditional retailers have leaned on them for years. A few well-known examples worth borrowing from:
+
+- **Sephora's Skincare IQ.** A multi-step diagnostic that maps shoppers to skincare routines based on skin type, concerns and goals. The model demonstrates how a quiz can route customers across a huge catalogue without overwhelming them, by surfacing one routine at the end rather than dozens of candidate SKUs.
+- **Warby Parker's frame finder.** A face-shape and style quiz that recommends frame collections. The takeaway: visual-prompt questions (face shape, frame silhouette) do work that text alone can't replicate, because the customer is being asked to identify something visually rather than describe it.
+- **Stitch Fix's Style Quiz.** Arguably the most well-known example of all. The quiz isn't an optional feature; it's the entire onboarding flow, capturing style, fit and budget preferences before any catalogue is shown. The lesson for smaller brands: when the recommendation is the product, the quiz earns top-of-funnel real estate.
+- **Bombas' sock finder.** Recommendations driven by intended activity (running, hiking, lounging) and seasonal preference. Demonstrates that even single-category brands benefit from a short discovery quiz, because the variety inside the category (fabric, height, cushioning, wear context) still produces real choice paralysis.
+
+What these examples share isn't the questions or the visual design: it's that the quiz is treated as a primary CTA, not a hidden feature. It sits in the main navigation, in hero placements and as the destination for paid ads, not buried three clicks deep on a help page.
 
 ## Build your first product recommendation quiz
 

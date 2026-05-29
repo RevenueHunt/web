@@ -20,6 +20,15 @@
 /blog/feed/  /feed.xml  301
 /comments/feed/  /feed.xml  301
 
+# --- WP-style pagination /blog/page/N/ — the new site paginates at /blog/2/../8/.
+# Old /blog/page/9/ etc. have no equivalent. MUST precede /blog/:slug/.
+/blog/page/*  /blog/  301
+
+# --- Renamed post whose /blog/:slug/ rewrite would land on a top-level slug
+# that doesn't exist (/what-is-zero-party-data/ 404s). Map it directly.
+# MUST precede /blog/:slug/.
+/blog/what-is-zero-party-data/  /zero-party-data/  301
+
 # Legacy /blog/<slug>/ → /<slug>/ — WP shipped both URLs but always 301'd
 # /blog/<slug>/ to /<slug>/. Preserve that behavior so old inbound links still work.
 /blog/:slug/  /:slug/  301
@@ -41,10 +50,24 @@
 # --- /shop/ — Shop-app page retired; send to the Shopify platform page.
 /shop/  /product-recommendation-quiz-shopify/  301
 
+# --- Renamed pages — old URLs that map cleanly to a current page.
+/privacy-policy/  /privacy/  301
+/quiz-templates/  /templates/  301
+
+# --- Un-migrated WP posts consolidated into the closest live page (301).
+/how-to-increase-sales-of-skincare-products-using-a-shopify-quiz-app/  /skincare-quiz-shopify-woocommerce/  301
+/sell-skincare-products-better-with-product-recommendation-quiz/  /skincare-quiz-shopify-woocommerce/  301
+/transform-your-amazing-ideas-into-a-solid-beauty-business-with-these-proven-tips/  /for-beauty-brands/  301
+/product-recommendation-quiz-app-introduces-integration-with-recharge-subscriptions/  /integrations/  301
+/the-pivotal-role-of-post-quiz-email-flows-in-ecommerce-a-deep-dive-into-sales-brand-recognition-and-zero-party-data-collection/  /how-to-automate-post-quiz-emails-using-shopify-flows/  301
+/new-feature-filter-product-recommendations-by-number-of-votes/  /whats-new/  301
+/product-recommendation-quiz-statistics/  /store-metrics/  301
+
 # --- Author archives — /author/alex/ and /author/pochodura/ are real routes
 # (src/pages/author/[slug]/). Only the retired "angel" slug redirects; it was
 # the same person as "alex".
 /author/angel/  /author/alex/  301
+/author/rachelgo/  /blog/  301
 
 # --- Knowledge base: /faqs/* migrated to docs.revenuehunt.com.
 #

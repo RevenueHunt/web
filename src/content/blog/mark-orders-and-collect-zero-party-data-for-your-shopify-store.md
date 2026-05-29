@@ -1,9 +1,14 @@
 ---
-title: "Mark Orders and Collect Zero-Party Data for your Shopify Store"
-description: "With Product Recommendation Quiz you can easily gather zero-party data from your customers. This zero-party data can be then used to mark orders in your Shopify store and make more effective marketing campaigns."
+title: "Mark Shopify orders with quiz answers and zero-party data"
+description: "How to tag Shopify orders and customer profiles with quiz answers from the RevenueHunt product recommendation quiz, for cleaner segmentation downstream."
 pubDate: 2022-08-22T09:50:55Z
-updatedDate: 2026-03-25T21:45:44Z
-tags: []
+updatedDate: 2026-05-28T20:00:00Z
+tags:
+  - "ecommerce"
+  - "shopify"
+  - "product recommendation quiz"
+  - "zero-party data"
+  - "klaviyo"
 categories:
   - "App New Features"
   - "Shopify Apps"
@@ -16,82 +21,98 @@ featuredImage: "/img/blog/mark-orders-and-collect-zero-party-data-for-your-shopi
 draft: false
 ---
 
-As a business owner, you know that data is key to your success. The more data you have, the better decisions you can make about your marketing campaigns, product offerings, and more. With Product Recommendation Quiz, collecting data is easy – and best of all, it's zero-party data! This means that the customer provides the information directly to you, rather than through a third party. In this blog post, we'll discuss how to use zero-party data to mark orders in your Shopify store and improve your marketing efforts. Let's get started!
+On the **Built for Shopify** version of the RevenueHunt app, Shopify access is granted automatically the moment you install. Every quiz-attributed order is tagged with the customer's quiz answers natively, the **Quiz Revenue** metric surfaces directly in the in-app **Analytics** tab, and zero-party data flows to your customer profiles without any additional setup. No "Connect" tab to enable, no extra permissions to grant.
 
-## What is Zero-Party Data and Why Should You Care?
+On **Shopify Legacy**, the same outcomes require a few minutes of manual configuration via the **Connect** tab. This guide covers both paths: the BFS-native behaviour up front, then the three Legacy integration paths for stores still on the older version.
 
-Zero-party data is information that a customer proactively and willingly shares with a business. This can include things like purchase behavior, preferences, and contact information. Unlike first- or third-party data, zero-party data is gathered directly from the customer rather than indirectly (first party) or from a third-party source. If you're new to the concept, start with our [complete zero-party data guide](https://revenuehunt.com/zero-party-data/): it covers the four data types side-by-side and the six methods for collecting them.
+## What is zero-party data, and why should you care?
 
-There are several benefits of collecting zero-party data:
+Zero-party data is information that a customer proactively and willingly shares with a business: preferences, intents, goals, sizes, ingredient sensitivities, budget tier. Unlike first-party data (observed behaviour) or third-party data (purchased from intermediaries), zero-party data is declared at the source. The customer told you; you didn't infer.
 
--   **improved customer experiences**: when you have accurate data about your customer's preferences and behaviors, you can tailor your marketing messages and product offerings to them more effectively. As a result, they're more likely to have a positive experience with your brand overall.
--   **increased conversions and sales**: because you're able to target your marketing efforts more effectively, you're more likely to see an increase in conversions and sales.
--   **better data quality**: since the data is coming directly from the source (i.e., your customers), you can be confident that it's accurate and up-to-date. This is in contrast to first- or third-party data, which may be outdated or inaccurate.
+If you're new to the concept, start with our [complete zero-party data guide](https://revenuehunt.com/zero-party-data/), which covers the four data types side-by-side and the six methods for collecting them. For the broader data architecture, see our [first-party data guide](https://revenuehunt.com/first-party-data/).
 
-As you can see, there are many reasons why you should care about zero-party data. Now let's discuss how to use it in your Shopify store!
+Three reasons it matters in 2026:
 
-## What Zero-Party Data can you collect via the quiz?
+- **Improved customer experiences.** Accurate preference data lets you tailor marketing messages and product recommendations precisely. Generic blast campaigns get replaced with segmented sequences that reference the customer's stated profile.
+- **Increased conversions.** Targeted, relevant outreach consistently outperforms broad campaigns on every metric: open rate, click rate, revenue per recipient.
+- **Better data quality.** Self-reported preferences don't decay the way behavioural inferences do. They survive iOS updates, cookie deprecation and privacy-regulation tightening because the customer consented to share them.
 
-There are several types of zero-party data that you can collect through the Product Recommendation Quiz:
+## What zero-party data can you collect via the quiz?
 
-📝 **Contact information:** this includes things like the customer's name, email address, and phone number.
+The RevenueHunt product recommendation quiz captures three categories of zero-party data per completion:
 
-**📝 Preference data:** this includes data about the customer's preferences, such as their preferred product type, style, size, etc.
+- **Contact information.** Name, email address, phone number.
+- **Preference data.** Skin type, hair type, shade, style preference, scent profile, size, formulation preference and so on.
+- **Goals and constraints.** Health goals, lifestyle, dietary restrictions, ingredient sensitivities, budget tier, shopping-for-self-or-gift.
 
-**📝 Goals and Challenges data:** this includes data about the customer's future goals or current challenges, such as whether the customer wants to improve their health, lose weight, treat acne, etc.
+Each answer maps to a custom attribute that flows downstream into your CRM, ESP and ad platforms. The structured nature of the data is what makes downstream segmentation work: a single "skin_type: oily" property powers a welcome series, a replenishment reminder, a Meta Custom Audience and a Klaviyo win-back flow all at the same time.
 
-Collecting this zero-party data will allow you to segment your customers more effectively and target your marketing efforts accordingly. In turn, this will lead to increased conversions and sales for your Shopify store!
+## On Built for Shopify: nothing to configure
 
-## How to Mark Orders for Zero-Party Collection?
+If you're on the Built for Shopify version of the app (the current Shopify version certified to Shopify's highest standards), the integration with Shopify Orders, Shopify Customers and the in-app Analytics dashboard is **active from the moment you install**.
 
-Product Recommendation Quiz makes it easy to collect zero-party data from your customers. To get started, simply install the app, create a quiz and add it to your Shopify store. Once you've done that, you can start marking orders for data collection.
+- **Order tagging works automatically.** Every quiz-attributed order is annotated with the customer's quiz answers without any "Connect" step. The full question/answer set appears on the Shopify order and the quiz-derived properties land on the customer profile.
+- **Quiz revenue shows in Analytics.** Open the **Analytics** tab inside the RevenueHunt app to see quiz-attributed orders and revenue alongside completion rate, start rate, and drop-off-by-question. No GA4 setup or third-party report-building needed.
+- **Customer Tags from quiz choices apply automatically.** Tags you set on individual quiz answer choices (covered in Path 3 below) write straight to the Shopify customer record without an additional integration toggle.
 
-**Connect Quiz and Shopify Orders**
+The full BFS setup guide is covered in our [Shopify quiz app](https://revenuehunt.com/shopify-quiz-app/) post.
 
-To do this, simply go to the "Connect" tab in your Product Recommendation Quiz and connect to the [Shopify Orders Tagging](https://revenuehunt.com/faqs/show-quiz-answers-in-the-shopify-orders/) service.
+The rest of this guide covers the manual setup flow that **Shopify Legacy** uses to achieve the same outcomes via the **Connect** tab.
 
-![Mark Orders and Collect Zero-Party Data for your Shopify Store - image 1](/img/blog/mark-orders-and-collect-zero-party-data-for-your-shopify-store/Screenshot-2022-08-16-114347.webp)
+## On Shopify Legacy: 3 integration paths
 
-Remember to publish the changes. Now when customers purchase products via the quiz, their data will be automatically collected and stored in your Shopify Orders account. This includes customer tags but also all the questions and answers you've set up in your quiz.
+The three paths below are equivalent to the BFS automatic behaviour, configured manually on the Legacy version.
 
-![Mark Orders and Collect Zero-Party Data for your Shopify Store - image 2](/img/blog/mark-orders-and-collect-zero-party-data-for-your-shopify-store/orders-1.webp)
+### Path 1: tag Shopify orders with quiz answers
 
-You can see all the customer quiz responses as _Notes_ on a specific Shopify order. This not only helps you get to know the customer better, but also save and review their preferences for future marketing purposes.
+The Shopify Orders Tagging integration writes every quiz answer to the order record at the moment of purchase. The customer's preferences become visible inside the Shopify admin alongside the order, which is useful for customer-service teams, fulfilment teams, and post-purchase email flows.
 
-## Automatically Send Leads to your Shopify Customers List
+Open the **Connect** tab in the RevenueHunt app and connect to the [Shopify Orders Tagging](https://revenuehunt.com/faqs/show-quiz-answers-in-the-shopify-orders/) service.
 
-If your eCommerce is built on Shopify, you can also [add new customers automatically to your account](https://revenuehunt.com/faqs/sending-leads-to-shopify-customers-list/) every time someone completes the quiz.
+![RevenueHunt Connect tab showing the Shopify Orders Tagging integration toggle](/img/blog/mark-orders-and-collect-zero-party-data-for-your-shopify-store/Screenshot-2022-08-16-114347.webp)
 
-To do that, simply go to your quiz and click on the "Connect" tab. Search for Shopify Customers and click the _connect_ button. This will authorize our app to connect with your Shopify Customers List.
+Publish the change. From that point forward, when a customer purchases via the quiz, their answers are automatically attached to the Shopify order: both as **customer tags** and as the full question/answer set in the order notes.
 
-![Mark Orders and Collect Zero-Party Data for your Shopify Store - image 3](/img/blog/mark-orders-and-collect-zero-party-data-for-your-shopify-store/Screenshot-2022-08-11-at-15.41.06.webp)
+![Shopify order showing quiz answers attached as notes alongside the order details](/img/blog/mark-orders-and-collect-zero-party-data-for-your-shopify-store/orders-1.webp)
 
-New captured leads will appear in your Shopify Customers List right after completing the quiz with their [Customer Tags](https://revenuehunt.com/faqs/use-customer-tags-segment-audience/) added to their profile:
+The quiz responses appear as **Notes** on the order itself. This isn't just record-keeping. It gives your customer-service team the context they need to handle inquiries without asking the customer to repeat their preferences, and it lets your post-purchase email flows reference the original quiz answers explicitly.
 
-![Mark Orders and Collect Zero-Party Data for your Shopify Store - image 4](/img/blog/mark-orders-and-collect-zero-party-data-for-your-shopify-store/Screenshot-2022-08-17-104623-1024x794.webp)
+### Path 2: auto-sync leads to your Shopify Customers list
 
-It's a simple automatic way to collect zero-party data that can be directly used in your [Shopify Marketing Flows](https://apps.shopify.com/flow).
+If you want quiz takers to enter your Shopify Customers list immediately (even if they didn't complete a purchase), enable the Shopify Customers integration. This is the [native sync that routes new captured leads to your account](https://revenuehunt.com/faqs/sending-leads-to-shopify-customers-list/) the moment the quiz is completed.
 
-## Tag quiz choices to segment customers
+In the **Connect** tab, search for **Shopify Customers** and click connect. The integration authorises RevenueHunt to write captured leads directly into your Shopify Customers list.
 
-With Product Recommendation Quiz you can use [customer tags](https://revenuehunt.com/faqs/use-customer-tags-segment-audience/) to mark any quiz choice with a relevant label.
+![RevenueHunt Connect tab showing the Shopify Customers integration](/img/blog/mark-orders-and-collect-zero-party-data-for-your-shopify-store/Screenshot-2022-08-11-at-15.41.06.webp)
 
-![Mark Orders and Collect Zero-Party Data for your Shopify Store - image 5](/img/blog/mark-orders-and-collect-zero-party-data-for-your-shopify-store/Screenshot-2021-11-29-145152.webp)
+New captured leads appear in your Shopify Customers list with their [Customer Tags](https://revenuehunt.com/faqs/use-customer-tags-segment-audience/) already applied to the profile.
 
-Just type your tag and the software will automatically create a reusable tag. It's that simple! These tags will be also visible on your Shopify order, once the customer has gone through the quiz.
+![Shopify Customer record with quiz-derived customer tags applied](/img/blog/mark-orders-and-collect-zero-party-data-for-your-shopify-store/Screenshot-2022-08-17-104623-1024x794.webp)
 
-Now when customers purchase products from your Shopify store via the quiz, their data will be automatically collected and stored in their Shopify account.
+The customer tags become available everywhere Shopify's tag system is referenced: [Shopify Flow automations](https://apps.shopify.com/flow), Shopify Email, and any third-party app that reads customer tags.
 
-## Tips for Collecting Zero-Party Data from Shopify Store Visitors
+### Path 3: tag specific quiz choices for downstream segmentation
 
-In addition to marking orders for data collection, there are a few other things you can do to collect zero-party data from your Shopify store visitors. Here are a few tips:
+The Customer Tags feature lets you attach a tag to any individual quiz answer choice, so the segmentation logic is baked into the quiz design itself. A customer who picks "sensitive skin" gets the `skin_sensitive` tag; a customer who picks "primary concern: acne" gets the `concern_acne` tag.
 
-– **Use exit-intent popups:** these are popups that appear when a visitor is about to leave your Shopify store. You can use them to collect data such as email addresses and contact information. Click [here](https://revenuehunt.com/faqs/publish-quiz-on-your-store/#articleTOC_10) to learn more.
+![Customer tag configuration on a quiz answer choice](/img/blog/mark-orders-and-collect-zero-party-data-for-your-shopify-store/Screenshot-2021-11-29-145152.webp)
 
-– **Offer discounts:** one way to encourage visitors to take your quiz is by offering them a discount on their purchase. This could be in the form of a coupon code or a percentage off their total order amount. Click [here](https://revenuehunt.com/faqs/adding-discount-coupon-code/) to learn more.
+Type the tag inside the choice settings and the app creates a reusable tag automatically. These tags surface on the Shopify order and on the customer record, and they're the joint key your ESP uses to filter segmented flows.
 
-– **Use social media:** another great way to collect zero-party data is by using social media. You can run ads on social media platforms like Facebook and Instagram that lead to your quiz. You can also use social media to drive traffic to your Shopify store.
+For the activation chain (how those tags become Klaviyo segments and segmented flows), see [how Klaviyo segmentation unlocks once zero-party data lands in profiles](https://revenuehunt.com/klaviyo-zero-party-data/).
 
-## Conclusions
+## Tips for collecting more zero-party data from your store
 
-By following these simple steps, you can easily mark orders and collect zero-party data from your Shopify store. This data can then be used to improve your marketing efforts and increase conversions. So, what are you waiting for? Start gathering data from your customers with the Product Recommendation Quiz and see how much easier it makes marking orders in your Shopify store.
+Beyond order tagging, a few practical placements consistently lift quiz completion volume:
+
+- **Exit-intent popups.** Trigger the quiz invitation when a visitor is about to leave. See [how to publish the quiz as a popup](https://revenuehunt.com/faqs/publish-quiz-on-your-store/#articleTOC_10).
+- **Discounts inside the quiz.** A 10-15% discount on the results page rewards completion and removes the last barrier to purchase. See [how to add a discount inside the quiz](https://revenuehunt.com/faqs/adding-discount-coupon-code/).
+- **Paid ads to a quiz landing page.** Quiz funnels convert 30%+ better than collection pages as paid-ad destinations. The Meta side is covered in detail in [how to make your Facebook ads smarter with quiz audiences](https://revenuehunt.com/make-your-facebook-ads-smarter-with-revenuehunts-quiz-integration/).
+
+For 11 placements that drive traffic to the quiz, see our guide on [how to promote your product recommendation quiz](https://revenuehunt.com/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/).
+
+## Where this fits
+
+Marking Shopify orders with quiz answers is one piece of the full data infrastructure that quiz-driven funnels build. The orders are the visible artefact; the structural value is the segmentation logic the tagged data enables across email, ads, on-site personalisation and customer service. For 11 real funnels that route quiz data this way, see our [real funnel examples](https://revenuehunt.com/ecommerce-sales-funnel-examples/). For the strategic framing, see our [step-by-step funnel build guide](https://revenuehunt.com/build-sales-funnel-shopify-store/).
+
+[Install RevenueHunt: Recommender Quiz for Shopify](https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=platform_hero) and start tagging your first quiz-attributed order the same day. Free plan available.

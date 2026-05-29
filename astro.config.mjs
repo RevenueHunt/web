@@ -148,6 +148,10 @@ export default defineConfig({
   redirects: {
     // Populate via scripts/scrape-wp.ts output. Any URL in the live
     // sitemap.xml that no Astro route produces must redirect here (or 410).
+    "/video-10-golden-rules-of-a-successful-product-recommendation-quiz/":
+      "/how-to-build-a-successful-ecommerce-quiz/",
+    "/conversational-marketing-ecommerce/":
+      "/how-to-use-guided-selling-via-product-recommendation-quiz-to-increase-your-revenue/",
   },
   integrations: [
     (() => {

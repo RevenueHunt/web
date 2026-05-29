@@ -86,6 +86,8 @@ RevenueHunt integrates natively with the platforms that matter most to Shopify o
 
 - **Zapier.** For custom workflows where a native integration doesn't exist. Treat this as a fallback rather than primary architecture.
 
+If you don't have Klaviyo or another ESP wired up yet, RevenueHunt also ships with an **in-app email sender** for a single personalised follow-up triggered the moment the quiz finishes. It works on every supported platform (Built for Shopify, Shopify Legacy, WooCommerce, Magento, BigCommerce and standalone) and is the fastest way to get a working follow-up live on a new store. For the setup walkthrough including SMTP configuration and the Liquid / Handlebars token reference, see [send quiz results emails on Shopify, WooCommerce and more](https://revenuehunt.com/new-features-create-customized-results-emails/).
+
 ## What this actually moves
 
 Personalised post-quiz flows outperform generic email sequences because the customer already told you what they need; you're not guessing. Across the metrics that matter:

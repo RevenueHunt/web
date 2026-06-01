@@ -18,11 +18,11 @@ featuredImage: "/img/blog/case-study-daughterela-redefining-natural-beauty-with-
 draft: false
 ---
 
-In the beauty industry, brands that prioritise natural ingredients and sustainable practices are gaining significant traction. [Daughterela](https://www.daughterela.com/), founded in 2019, is one such brand that has captured the hearts of makeup enthusiasts who value both aesthetics and skin health.
+Natural makeup is a category where the shade and ingredient questions a customer needs answered before buying are particularly hard to solve on a product page. [Daughterela](https://www.daughterela.com/), a Canadian natural-makeup brand founded in 2019, built a quiz-driven personalisation layer to bridge that gap: three on-site finders (lipstick colour, foundation shade, skincare routine) that replicate the in-store consultation experience online and capture zero-party data the brand can use downstream. This case study walks through the approach, the marketing stack that surrounds it, and what other natural-beauty brands can borrow.
 
-![Daughterela case study hero](/img/blog/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/Daughterela-Case-Study-1.webp)
+![Daughterela case study hero: natural-makeup brand using quiz-led personalisation on their Shopify store](/img/blog/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/Daughterela-Case-Study-1.webp)
 
-This case study explores how Daughterela has positioned itself as a go-to brand for natural, hypoallergenic makeup and how it continues to innovate in product development and customer engagement, particularly through the use of [RevenueHunt: Recommender Quiz for Shopify](https://revenuehunt.com/product-recommendation-quiz/).
+The case study is built around the [RevenueHunt: Recommender Quiz for Shopify](https://revenuehunt.com/product-recommendation-quiz/) implementation. The same approach generalises to any natural-beauty brand running on Shopify, particularly in categories where shade or ingredient sensitivity drives the purchase decision.
 
 <div style="margin:32px 0;padding:24px 28px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 14px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">What you'll learn</p>
@@ -118,16 +118,92 @@ What makes the quiz so appealing to brands like Daughterela? There are a few rea
 
 By setting up a quiz with RevenueHunt, Daughterela successfully elevated its online presence, providing a more personalised and satisfying shopping experience for its customers.
 
-## Future plans
+## What this approach demonstrates
 
-Looking ahead, Daughterela aims to **expand its product line** by formulating new natural makeup and skincare products, catering to a wider range of customer needs. Additionally, the brand plans to introduce **makeup courses and beauty tips** on their website. These resources will showcase their products and provide expert application techniques, enhancing the overall customer experience.
+Stripped to the playbook, Daughterela's setup illustrates four transferable patterns any natural-beauty brand can apply on Shopify:
 
-Through these initiatives, Daughterela seeks to strengthen customer relationships and solidify their position as a trusted partner in natural beauty.
+- **Multiple specialised finders, not one generic quiz.** Three separate finders (lipstick colour, foundation shade, skincare routine) outperform a single catch-all quiz because each one optimises for the specific decision the customer is trying to make. Shade-matching and routine-building are different consultation flows and benefit from being structured differently.
+- **Zero-party data as the natural-beauty differentiator.** Ingredient sensitivities, skin concerns and tone preferences are notoriously hard to infer behaviourally. A quiz captures them explicitly, with the customer's consent, which makes both the recommendation and the downstream email segmentation precise from the first touchpoint. For the broader data category framing, see our [zero-party data guide](https://revenuehunt.com/zero-party-data/).
+- **Email capture inside the quiz, not via a popup.** The customer hands over their email at a moment of stated intent (after taking the consultation), which produces leads more likely to convert than the generic "10% off — give us your email" popup pattern. For the consent design, see [smart ways to ask for marketing consent in a product quiz](https://revenuehunt.com/product-quiz-marketing-consent/).
+- **Sustainability messaging as a trust layer, not a marketing tagline.** When the brand commitment shows up in shipping, packaging and product formulation, the messaging in emails and on the quiz lands as substantive rather than as greenwashing.
 
-## Key takeaways
+## Frequently asked questions
 
-Daughterela represents a harmonious blend of natural ingredients, product diversity and customer-centric marketing. Their dedication to quality and sustainability, coupled with the innovative use of [RevenueHunt: Recommender Quiz for Shopify](https://revenuehunt.com/product-recommendation-quiz/), positions them well in a market increasingly drawn to ethical and personalised brands. As they continue to innovate and expand, Daughterela is poised to make a significant impact on the beauty industry.
+### Why does a natural-beauty brand need a product quiz?
+
+Two reasons specific to the category. First, shade matching (lipstick, foundation, blush) is notoriously difficult online without a sales associate; a quiz that asks about undertone, finish preference and existing routine narrows the catalogue to a single confident recommendation. Second, ingredient sensitivities in this category mean a generic "best-seller" recommendation can be wrong for individual customers; the quiz captures the specific sensitivity profile and routes accordingly.
+
+### Should I run one big quiz or several specialised finders?
+
+Several specialised finders typically perform better in beauty, as in the Daughterela setup (lipstick colour finder, foundation shade finder, skincare routine finder). Each finder optimises for one specific decision, so the questions are tightly scoped and the customer finishes faster. The trade-off is operational: more finders means more quiz versions to maintain. Most brands start with one finder and add others once the first is converting.
+
+### What zero-party data does a beauty quiz capture?
+
+Skin type, skin tone and undertone, primary skin concerns (acne, sensitivity, ageing, dryness), product preferences (matte vs satin vs glossy), routine complexity, ingredient sensitivities, budget tier and intent (gift vs personal). Each maps to a customer tag in the RevenueHunt Quiz Builder that flows directly to Klaviyo as a profile property. For the customer-tag setup walkthrough, see [how to use customer tags in product quizzes](https://revenuehunt.com/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/).
+
+### How does this approach work alongside email marketing?
+
+The quiz captures the customer's profile, Klaviyo receives the tags as profile properties, and per-segment email flows reference the customer's stated profile explicitly ("for your dry, sensitivity-prone skin"). Platform data: Klaviyo-integrated quizzes convert 24% better and generate 66% more orders than quizzes without the integration. See [how Klaviyo segmentation unlocks once zero-party data lands in profiles](https://revenuehunt.com/klaviyo-zero-party-data/) for the full activation chain.
+
+### What does the install look like on Shopify?
+
+The RevenueHunt: Recommender Quiz for Shopify installs as a Built for Shopify native block: no iframe, no theme bolt-on. The quiz inherits your theme's typography and colours automatically; you only need custom CSS for deeper design changes. For the full setup walkthrough, see [Shopify quiz app: how to add one to your store](https://revenuehunt.com/shopify-quiz-app/).
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why does a natural-beauty brand need a product quiz?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Two reasons specific to the category. First, shade matching (lipstick, foundation, blush) is difficult online without a sales associate; a quiz that asks about undertone, finish preference and existing routine narrows the catalogue to a single confident recommendation. Second, ingredient sensitivities in this category mean a generic best-seller recommendation can be wrong for individual customers; the quiz captures the specific sensitivity profile and routes accordingly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I run one big quiz or several specialised finders?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Several specialised finders typically perform better in beauty, as in the Daughterela setup (lipstick colour finder, foundation shade finder, skincare routine finder). Each finder optimises for one specific decision, so the questions are tightly scoped and the customer finishes faster. The trade-off is operational: more finders means more quiz versions to maintain. Most brands start with one finder and add others once the first is converting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What zero-party data does a beauty quiz capture?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Skin type, skin tone and undertone, primary skin concerns (acne, sensitivity, ageing, dryness), product preferences (matte vs satin vs glossy), routine complexity, ingredient sensitivities, budget tier and intent (gift vs personal). Each maps to a customer tag in the RevenueHunt Quiz Builder that flows directly to Klaviyo as a profile property."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does this approach work alongside email marketing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The quiz captures the customer's profile, Klaviyo receives the tags as profile properties, and per-segment email flows reference the customer's stated profile explicitly. Platform data: Klaviyo-integrated quizzes convert 24% better and generate 66% more orders than quizzes without the integration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the install look like on Shopify?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The RevenueHunt: Recommender Quiz for Shopify installs as a Built for Shopify native block: no iframe, no theme bolt-on. The quiz inherits your theme's typography and colours automatically; you only need custom CSS for deeper design changes."
+      }
+    }
+  ]
+}
+</script>
+
+## Where this fits
+
+The Daughterela setup is one specific configuration of the broader playbook: specialised quiz finders, zero-party data capture, Klaviyo segmentation downstream. For the foundations that produce a high-converting quiz, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/). For the metrics worth tracking once the quiz is live, see [product quiz metrics: what to track to convert better](https://revenuehunt.com/product-quiz-metrics-what-to-track-to-convert-better/). For 11 real DTC funnels using the same pattern across other categories, see [11 ecommerce sales funnel examples that convert in 2026](https://revenuehunt.com/ecommerce-sales-funnel-examples/).
+
+[Install RevenueHunt: Recommender Quiz for Shopify](https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=case_study_daughterela) and build your own natural-beauty finder this week. Free plan available.
 
 * * *
 
-_For more information on Daughterela and to explore their products, visit their [website](https://www.daughterela.com/)._
+_To explore Daughterela's products and brand, visit their [website](https://www.daughterela.com/)._

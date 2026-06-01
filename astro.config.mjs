@@ -172,6 +172,8 @@ export default defineConfig({
       "/product-quiz-question-types/",
     "/why-product-recommendation-quiz-app-maintains-a-50-review-score-in-woocommerce-find-out-here/":
       "/woocommerce-plugin-reviews-revenuehunt/",
+    "/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/":
+      "/product-quiz-quick-tips/",
   },
   integrations: [
     (() => {

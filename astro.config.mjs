@@ -162,6 +162,8 @@ export default defineConfig({
       "/headless-ecommerce-product-quiz/",
     "/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/":
       "/product-quiz-marketing-consent/",
+    "/why-shopify-merchants-love-the-shop-quiz-product-recommender-app-hear-from-them/":
+      "/shopify-merchant-reviews-revenuehunt/",
   },
   integrations: [
     (() => {

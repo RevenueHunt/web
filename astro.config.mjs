@@ -179,6 +179,12 @@ export default defineConfig({
     (() => {
       const lastmodMap = readLastmodMap();
       return sitemap({
+        // Keep noindex pages out of the sitemap. Tag/category/author archives
+        // are noindex (see BlogArchive.astro), and /message-sent/ is a form
+        // confirmation page — listing any of them trips Search Console's
+        // "submitted URL marked noindex" error.
+        filter: (page) =>
+          !/\/(tag|cat|author)\/[^/]+\//.test(page) && !page.endsWith("/message-sent/"),
         serialize(item) {
           const url = new URL(item.url);
           const slug = url.pathname.replace(/^\//, "").replace(/\/$/, "") || "index";

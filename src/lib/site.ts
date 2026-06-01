@@ -8,6 +8,7 @@ export const SITE = {
   social: {
     linkedin: "https://www.linkedin.com/company/revenuehuntapps/",
     youtube: "https://www.youtube.com/@revenuehunt",
+    github: "https://github.com/RevenueHunt/",
   },
 };
 

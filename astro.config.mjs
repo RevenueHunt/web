@@ -166,6 +166,8 @@ export default defineConfig({
       "/shopify-merchant-reviews-revenuehunt/",
     "/practical-guide-create-a-video-quiz-for-your-e-commerce-website/":
       "/video-quizzes/",
+    "/why-your-product-quiz-is-not-converting-well/":
+      "/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/",
   },
   integrations: [
     (() => {

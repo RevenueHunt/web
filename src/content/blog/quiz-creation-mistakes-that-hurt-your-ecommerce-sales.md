@@ -20,24 +20,26 @@ featuredImage: "/img/blog/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/
 draft: false
 ---
 
-The mistakes that quietly kill quiz conversion fall into three categories: content (wrong questions, wrong tone, wrong volume of recommendations), technical (broken tests, inconsistent design, no mobile QA), and marketing (no promotion, no follow-up, no incentive). Each one is correctable, and the fixes below are drawn from platform data across 900+ product recommendation quizzes representing 1.29M responses and $63.8M in tracked revenue. For the broader strategy this fits into, see our [step-by-step funnel build guide](https://revenuehunt.com/build-sales-funnel-shopify-store/).
+The mistakes that quietly kill quiz conversion fall into three categories: content (wrong questions, wrong tone, wrong volume of recommendations), technical (broken tests, inconsistent design, no mobile QA), and marketing (no promotion, weak CTAs, no follow-up, no incentive). Each one is correctable, and the fixes below are drawn from platform data across 900+ product recommendation quizzes representing 1.29M responses and $63.8M in tracked revenue. For the broader strategy this fits into, see our [step-by-step funnel build guide](https://revenuehunt.com/build-sales-funnel-shopify-store/).
+
+<div class="aspect-video overflow-hidden rounded-xl bg-slate-900 not-prose my-6"><button type="button" class="yt-facade group relative block h-full w-full cursor-pointer overflow-hidden" data-yt-id="7jmjHlwEErI" aria-label="Play video"><picture><source srcset="https://i.ytimg.com/vi_webp/7jmjHlwEErI/maxresdefault.webp" type="image/webp" /><img src="https://i.ytimg.com/vi/7jmjHlwEErI/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async" class="h-full w-full object-cover" /></picture><span class="absolute inset-0 flex items-center justify-center bg-black/10 transition group-hover:bg-black/20"><span class="flex h-20 w-20 items-center justify-center rounded-full bg-black/70 shadow-lg transition group-hover:scale-105 group-hover:bg-[#FF0000]"><svg class="ml-0.5 h-9 w-9 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg></span></span></button></div>
 
 <div style="margin:32px 0;padding:24px 28px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 14px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">What you'll learn</p>
   <ul style="list-style:none;padding:0;margin:0;">
     <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>Why the conventional "keep it under 6 questions" advice is wrong, and what the platform data shows instead.</span></li>
     <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>The 3.5-percentage-point gap between single-results-page quizzes and multi-page ones, and why it's the single highest-impact fix on this list.</span></li>
-    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>The 11 mistakes ranked across content, technical and marketing categories, with the symptom to look for and the fix that works.</span></li>
+    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>The 12 mistakes ranked across content, technical and marketing categories, with the symptom to look for and the fix that works.</span></li>
     <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>A self-audit checklist you can run against your own quiz in 60 seconds.</span></li>
   </ul>
 </div>
 
 ## Mistakes at a glance
 
-Eleven mistakes, grouped by category. The content mistakes leak the most revenue because they break the consultation contract before the customer ever sees a results page; technical mistakes are the easiest to catch with a quick QA pass; marketing mistakes leave a working quiz invisible.
+Twelve mistakes, grouped by category. The content mistakes leak the most revenue because they break the consultation contract before the customer ever sees a results page; technical mistakes are the easiest to catch with a quick QA pass; marketing mistakes leave a working quiz invisible.
 
 <div style="margin:24px 0;padding:24px 28px;background:#fff;border:1px solid #e2e8f0;border-radius:6px;">
-  <p style="margin:0 0 10px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#dc2626;">Content mistakes &mdash; highest revenue impact</p>
+  <p style="margin:0 0 10px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#dc2626;">Content mistakes (highest revenue impact)</p>
   <ol style="margin:0 0 18px;padding-left:22px;font-size:15px;color:#0f172a;line-height:1.6;">
     <li>Brand-first copy that reads like a brochure instead of a consultation.</li>
     <li>Recommending too many products on the results page.</li>
@@ -45,15 +47,16 @@ Eleven mistakes, grouped by category. The content mistakes leak the most revenue
     <li>Forcing text where images would help, or images where text would do.</li>
     <li>Category jargon that customers can't decode.</li>
   </ol>
-  <p style="margin:0 0 10px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#d97706;">Technical mistakes &mdash; easiest to catch</p>
+  <p style="margin:0 0 10px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#d97706;">Technical mistakes (easiest to catch)</p>
   <ol start="6" style="margin:0 0 18px;padding-left:22px;font-size:15px;color:#0f172a;line-height:1.6;">
     <li>No end-to-end test before launch.</li>
     <li>Quiz design that doesn't match the store.</li>
     <li>Skipping mobile QA entirely.</li>
   </ol>
-  <p style="margin:0 0 10px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#0284c7;">Marketing mistakes &mdash; most overlooked</p>
+  <p style="margin:0 0 10px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#0284c7;">Marketing mistakes (most overlooked)</p>
   <ol start="9" style="margin:0;padding-left:22px;font-size:15px;color:#0f172a;line-height:1.6;">
     <li>Burying the quiz on a help page instead of treating it as a primary CTA.</li>
+    <li>Weak or unclear CTA buttons on the results page.</li>
     <li>No post-quiz email sequence.</li>
     <li>Avoiding discounts on the results page.</li>
   </ol>
@@ -85,6 +88,8 @@ Beyond product recommendations, consider adding personalised advice or tips base
 If your quiz recommends too many products, it overwhelms the customer and reduces their likelihood of purchasing. That 3.5-percentage-point gap (between one results page and eleven-plus) is the single largest performance delta in the platform dataset. It's also the easiest mistake to fix: collapse your results page mapping until every customer lands on one page with one to three confident recommendations.
 
 Limit the results page to 1-3 products, or a complete routine with one product per step (cleanser, serum, moisturiser). Show confidence: "Based on your answers, this is exactly what your skin needs." Hedging language ("you might also like…") undoes the work the quiz did.
+
+![Quiz Builder results page showing a single confident product recommendation with explanatory copy](/img/blog/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/quizbuilder_results_page.webp)
 
 ### Being too long, or too short
 
@@ -149,11 +154,23 @@ Even the best quiz won't perform if nobody finds it. Treat the quiz as a primary
 
 For 11 placement and promotion ideas, see our guide on [how to promote your product recommendation quiz](https://revenuehunt.com/11-easy-ways-to-promote-your-quiz-and-get-more-people-to-take-it/).
 
+### Weak or unclear CTAs on the results page
+
+The recommended product can be perfect and the customer can still bounce if the call-to-action button doesn't tell them what to do. "Continue", "Submit", "See result" are all weak verbs that don't direct intent. The customer reads them as one more abstract step and the cart momentum dies.
+
+The fix is direct: use action-and-outcome verbs that match the next step the customer should take. "Shop now", "Add to cart", "Get your routine", "Claim my discount". The button text on the results page is the most direct conversion lever you have once the recommendation lands; testing two or three button-copy variants A/B for a week typically produces a measurable lift without any quiz redesign.
+
+![Quiz Builder Messages settings panel where you customise CTA button text for each stage of the quiz](/img/blog/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/quizbuilder_cta_messages.webp)
+
+Inside the RevenueHunt: Recommender Quiz for Shopify, every button label is editable in the Messages settings (or directly on each question), so A/B testing CTA copy doesn't require a code change. For the deeper discount-and-CTA pairing, see [product quiz discounts: the conversion playbook](https://revenuehunt.com/product-quiz-discounts/).
+
 ### Not following up with an email
 
 The post-quiz email sequence is where the quiz's value compounds into lifetime customer revenue. With [RevenueHunt: Recommender Quiz for Shopify](https://revenuehunt.com/product-recommendation-quiz-shopify/), you can [send a personalised results email](https://revenuehunt.com/faqs/sending-results-to-customers-email/) seconds after completion, and the quiz answers sync to Klaviyo as custom properties so segmented welcome, replenishment and win-back flows reference the shopper's stated preferences explicitly.
 
-For the full follow-up sequence that consistently outperforms generic blasts, see [quiz follow-up emails: the revenue lever you're missing](https://revenuehunt.com/product-quiz-success-why-its-necessary-to-send-follow-up-emails/). For the Klaviyo mapping chain, see [how Klaviyo segmentation unlocks once zero-party data lands in profiles](https://revenuehunt.com/klaviyo-zero-party-data/).
+![Quiz Builder follow-up email settings showing where to enable and configure the post-completion email](/img/blog/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/quizbuilder_followup_emails.webp)
+
+For the full follow-up sequence that consistently outperforms generic blasts, see [quiz follow-up emails: the revenue lever you're missing](https://revenuehunt.com/product-quiz-success-why-its-necessary-to-send-follow-up-emails/). For the Klaviyo mapping chain, see [how Klaviyo segmentation unlocks once zero-party data lands in profiles](https://revenuehunt.com/klaviyo-zero-party-data/). For Shopify Flow as the automation layer, see [how to automate post-quiz emails using Shopify Flows](https://revenuehunt.com/how-to-automate-post-quiz-emails-using-shopify-flows/).
 
 ### Being afraid of discounts
 
@@ -163,7 +180,7 @@ For premium or luxury brands, a dollar-amount discount ($15 off first order) oft
 
 ## Self-audit checklist
 
-Run through these eleven questions against your own quiz. Each "no" is a mistake quietly costing you conversion:
+Run through these twelve questions against your own quiz. Each "no" is a mistake quietly costing you conversion:
 
 <div style="margin:24px 0;padding:24px 28px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;">
   <ul style="list-style:none;padding:0;margin:0;">
@@ -175,6 +192,7 @@ Run through these eleven questions against your own quiz. Each "no" is a mistake
     <li style="display:flex;gap:12px;padding:8px 0;font-size:15px;color:#0f172a;line-height:1.55;border-bottom:1px solid #e2e8f0;"><span style="flex-shrink:0;font-size:20px;line-height:1;color:#cbd5e1;">☐</span><span>Have I tested all five most-common answer combinations end-to-end on mobile?</span></li>
     <li style="display:flex;gap:12px;padding:8px 0;font-size:15px;color:#0f172a;line-height:1.55;border-bottom:1px solid #e2e8f0;"><span style="flex-shrink:0;font-size:20px;line-height:1;color:#cbd5e1;">☐</span><span>Does my quiz inherit my theme's typography, colours and button styles?</span></li>
     <li style="display:flex;gap:12px;padding:8px 0;font-size:15px;color:#0f172a;line-height:1.55;border-bottom:1px solid #e2e8f0;"><span style="flex-shrink:0;font-size:20px;line-height:1;color:#cbd5e1;">☐</span><span>Is the quiz a primary CTA on my homepage hero and in my main navigation?</span></li>
+    <li style="display:flex;gap:12px;padding:8px 0;font-size:15px;color:#0f172a;line-height:1.55;border-bottom:1px solid #e2e8f0;"><span style="flex-shrink:0;font-size:20px;line-height:1;color:#cbd5e1;">☐</span><span>Are my results-page CTA buttons action-and-outcome verbs ("Shop now", "Claim my discount") rather than generic "Continue" or "Submit"?</span></li>
     <li style="display:flex;gap:12px;padding:8px 0;font-size:15px;color:#0f172a;line-height:1.55;border-bottom:1px solid #e2e8f0;"><span style="flex-shrink:0;font-size:20px;line-height:1;color:#cbd5e1;">☐</span><span>Do I require email capture and sync answers to Klaviyo as profile properties?</span></li>
     <li style="display:flex;gap:12px;padding:8px 0;font-size:15px;color:#0f172a;line-height:1.55;border-bottom:1px solid #e2e8f0;"><span style="flex-shrink:0;font-size:20px;line-height:1;color:#cbd5e1;">☐</span><span>Does the quiz trigger a personalised follow-up email referencing the customer's stated answers?</span></li>
     <li style="display:flex;gap:12px;padding:8px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;font-size:20px;line-height:1;color:#cbd5e1;">☐</span><span>Do I offer a discount on the results page (or in the follow-up email) to remove the last barrier?</span></li>

@@ -168,6 +168,8 @@ export default defineConfig({
       "/video-quizzes/",
     "/why-your-product-quiz-is-not-converting-well/":
       "/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/",
+    "/questions-every-product-recommendation-quiz-should-have-and-how-to-build-them/":
+      "/product-quiz-question-types/",
   },
   integrations: [
     (() => {

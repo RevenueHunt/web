@@ -160,6 +160,8 @@ export default defineConfig({
       "/video-quizzes/",
     "/the-only-product-recommendation-app-for-headless-ecommerce-2024/":
       "/headless-ecommerce-product-quiz/",
+    "/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/":
+      "/product-quiz-marketing-consent/",
   },
   integrations: [
     (() => {

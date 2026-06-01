@@ -6,7 +6,7 @@ export const SITE = {
   site_url: import.meta.env.PUBLIC_SITE_URL ?? "https://revenuehunt.com",
   signup_url: "https://admin.revenuehunt.com/register/",
   social: {
-    linkedin: "https://www.linkedin.com/company/revenuehunt",
+    linkedin: "https://www.linkedin.com/company/revenuehuntapps/",
     youtube: "https://www.youtube.com/@revenuehunt",
   },
 };

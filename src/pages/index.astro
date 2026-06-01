@@ -206,7 +206,13 @@ const WOOCOMMERCE_REVIEWS =
 
         <div class="relative lg:mt-14">
           <div class="aspect-video overflow-hidden rounded-xl bg-slate-900 shadow-2xl">
-            <YouTubeFacade id={YOUTUBE_ID} title="RevenueHunt - Product Recommendation Quiz" />
+            <YouTubeFacade
+              id={YOUTUBE_ID}
+              title="RevenueHunt - Product Recommendation Quiz"
+              poster="/img/home/video-poster.webp"
+              alt="RevenueHunt product recommendation quiz demo for Shopify and WooCommerce stores"
+              eager
+            />
           </div>
         </div>
       </div>
@@ -373,7 +379,7 @@ const WOOCOMMERCE_REVIEWS =
             <li class="brands-marquee__item" aria-hidden="true">
               <img
                 src={`/img/brands/${b.toLowerCase().replace(/ /g, "-")}.svg`}
-                alt=""
+                alt={`${b} logo`}
                 loading="lazy"
                 width="160"
                 height="40"

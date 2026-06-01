@@ -6,8 +6,15 @@
 interface Props {
   id: string;
   title: string;
+  /** Local poster (e.g. a same-origin webp). Skips the remote i.ytimg fetch -
+   *  use it for above-the-fold facades so the poster is the LCP and ships webp. */
+  poster?: string;
+  /** Above-the-fold? Loads the poster eagerly with high fetch priority. */
+  eager?: boolean;
+  /** Poster alt text. Defaults to "" (decorative); set it on LCP facades. */
+  alt?: string;
 }
-const { id, title } = Astro.props;
+const { id, title, poster, eager = false, alt = "" } = Astro.props;
 const posterWebp = `https://i.ytimg.com/vi_webp/${id}/maxresdefault.webp`;
 const posterJpg = `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`;
 ---
@@ -19,13 +26,14 @@ const posterJpg = `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`;
   aria-label={`Play video: ${title}`}
 >
   <picture>
-    <source srcset={posterWebp} type="image/webp" />
+    {!poster && <source srcset={posterWebp} type="image/webp" />}
     <img
-      src={posterJpg}
-      alt=""
+      src={poster ?? posterJpg}
+      alt={alt}
       width="1280"
       height="720"
-      loading="lazy"
+      loading={eager ? "eager" : "lazy"}
+      fetchpriority={eager ? "high" : undefined}
       decoding="async"
       class="h-full w-full object-cover"
     />

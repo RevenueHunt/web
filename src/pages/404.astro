@@ -20,7 +20,7 @@ const popular: { label: string; href: string; external?: boolean }[] = [
   description="We couldn't find that page. Try the home page, the pricing page, or search the site."
   noindex={true}
 >
-  <main class="relative isolate overflow-hidden">
+  <div class="relative isolate overflow-hidden">
     <!-- Soft brand backdrop. Pure CSS, no asset. -->
     <div
       aria-hidden="true"
@@ -92,7 +92,7 @@ const popular: { label: string; href: string; external?: boolean }[] = [
         Still stuck? <a href="/contact/" class="font-medium text-slate-900 underline-offset-2 hover:underline">Contact us</a> and we'll point you to the right page.
       </p>
     </div>
-  </main>
+  </div>
 
   <!-- Mount Pagefind UI once DOM is ready. The script lives at /pagefind/
        (shipped by the pagefind integration), so 'self' in script-src covers it. -->

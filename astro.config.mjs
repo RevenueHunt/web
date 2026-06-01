@@ -170,6 +170,8 @@ export default defineConfig({
       "/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/",
     "/questions-every-product-recommendation-quiz-should-have-and-how-to-build-them/":
       "/product-quiz-question-types/",
+    "/why-product-recommendation-quiz-app-maintains-a-50-review-score-in-woocommerce-find-out-here/":
+      "/woocommerce-plugin-reviews-revenuehunt/",
   },
   integrations: [
     (() => {

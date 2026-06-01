@@ -1,9 +1,14 @@
 ---
-title: "More Speed equals More Sales"
-description: "Improving your eCommerce's loading speed should be your top priority if you want to get more conversions and sales. Without this, nothing else matters."
+title: "More speed equals more sales: an ecommerce playbook"
+description: "Why page speed is the foundation of ecommerce conversion, where Shopify stores actually lose seconds, and the three audits that win them back."
 pubDate: 2023-12-15T10:23:30Z
-updatedDate: 2023-12-17T19:37:14Z
-tags: []
+updatedDate: 2026-05-29T16:00:00Z
+tags:
+  - "ecommerce"
+  - "shopify"
+  - "conversion optimisation"
+  - "page speed"
+  - "performance"
 categories:
   - "eCommerce"
   - "Tips &amp; Tricks"
@@ -11,111 +16,215 @@ author: "alex"
 legacySlug: "more-speed-equals-more-sales"
 legacyId: 7603
 legacyUrl: "https://revenuehunt.com/more-speed-equals-more-sales/"
-featuredImage: null
+featuredImage: "/img/blog/more-speed-equals-more-sales/blogtile_speedsales.webp"
 draft: false
 ---
 
-Improving your eCommerce's loading speed should be your top priority if you want to get more conversions and sales. Without this, nothing else matters.  
+Page speed is the foundation everything else sits on. If a customer clicks your ad and never sees the landing page because it's loading for eternity, they leave before any of your design decisions, copywriting, quiz placements or discount offers have a chance to do their work. Over half of online purchases now come from mobile, where connection quality is unpredictable, which makes the speed of those first few seconds the highest-leverage thing you can fix this week.
 
-_Reading time: about 4 minutes_
+This article covers where Shopify stores actually lose those seconds, how to measure it, and the three deeper audits that recover them: image lazy-loading and asset optimisation, third-party script auditing, and font-loading strategy.
 
-Hey there!
+<div style="margin:28px 0;padding:18px 22px;background:#f1f5f9;border-radius:8px;display:flex;align-items:flex-start;gap:16px;font-size:14px;color:#475569;line-height:1.6;">
+  <span style="display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#16161D;color:#fff;font-weight:700;font-size:15px;flex-shrink:0;letter-spacing:0.02em;">A</span>
+  <span><strong style="color:#0f172a;">Written by Alex, co-founder of RevenueHunt.</strong> Tactics drawn from years of speed-auditing Shopify stores at every scale: where the seconds actually go, which ones are recoverable without a re-platform, and which ones aren't worth the engineering hours.</span>
+</div>
 
-Welcome to the **Actionable Insights** newsletter, where eCommerce professionals like myself share valuable knowledge we acquire in our day-to-day.
+For the broader CRO playbook this sits inside, see [10 ecommerce conversion optimisation tips that move revenue](https://revenuehunt.com/ecommerce-conversion-optimization-tips/). For the funnel architecture, see our [step-by-step funnel build guide](https://revenuehunt.com/build-sales-funnel-shopify-store/).
 
-I'm Alex, the co-founder of RevenueHunt, the #1 product recommendation quiz app for eCommerce. Our quiz guides your customers throughout their shopping experience and helps them find the right products for them.
+## Why speed is the priority that comes before everything else
 
-Want to drive conversions and sales on your store? Get the app [here](https://revenuehunt.com/).
+The single most overlooked truth about ecommerce CRO is that the rest of the funnel doesn't matter if the page doesn't load. A 4-second page that converts at 5% beats a 1-second page that converts at 10% only on paper: the 4-second page never gets the chance, because half the traffic has already bounced.
 
-* * *
+Mobile makes this worse. Mobile shoppers are on flaky networks (commuting, low-coverage areas, congested wifi), and they have substantially less patience for a slow page than desktop users. Industry studies consistently show conversion drops sharply as load time increases past two seconds. Every speed gain compounds because it's a multiplier on every downstream funnel mechanic you've spent time perfecting.
 
-### 💡 ONE IDEA I WANT TO SHARE WITH YOU
+## How to measure: three tools, three angles
 
-Improving your store's loading speed **should be your top priority** if you want to get more conversions and sales. Without this, no other improvements you do on your store matter.
+Each tool measures something slightly different. Use all three, not just one.
 
-If someone clicks on your ad and never gets to see your actual landing page because it's loading for eternity, they're probably going to leave.
+**[Google PageSpeed Insights](https://pagespeed.web.dev/)** measures field data (real Chrome users on your live site) and lab data (a synthetic Lighthouse test). Field data is what Google uses for ranking; lab data is what you debug against. Run it on your three highest-traffic URLs: homepage, top product, top collection.
 
-Over 50% of online purchases now come from mobile devices and **Internet connection is not always that good for smartphones**, so make sure you check your website on Google PageSpeed Insights.
+**Shopify Online Store Speed report.** From the Shopify admin, navigate to Reports and search for "Online store speed". Shopify runs a weighted-average Lighthouse test against your homepage, top-visited product page, and top-visited collection page. Useful as a single number to track over time, less useful for diagnosing specific issues.
 
-If you're a Shopify store owner, log in to your dashboard. Navigate to the "Reports" section and search for the "Online store speed" report:
+![Shopify admin Reports section showing the Online store speed entry](/img/blog/more-speed-equals-more-sales/1e416992-b406-4f06-b109-a06708698749_1260x728.webp)
 
-<figure><div class="image2-inset"><picture><source srcset="https://substackcdn.com/image/fetch/w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1e416992-b406-4f06-b109-a06708698749_1260x728.png 424w, https://substackcdn.com/image/fetch/w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1e416992-b406-4f06-b109-a06708698749_1260x728.png 848w, https://substackcdn.com/image/fetch/w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1e416992-b406-4f06-b109-a06708698749_1260x728.png 1272w, https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1e416992-b406-4f06-b109-a06708698749_1260x728.png 1456w" type="image/webp" sizes="100vw"><img loading="lazy" decoding="async" class="sizing-normal" src="/img/blog/more-speed-equals-more-sales/1e416992-b406-4f06-b109-a06708698749_1260x728.webp" sizes="auto, 100vw" srcset="https://substackcdn.com/image/fetch/w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1e416992-b406-4f06-b109-a06708698749_1260x728.png 424w, https://substackcdn.com/image/fetch/w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1e416992-b406-4f06-b109-a06708698749_1260x728.png 848w, https://substackcdn.com/image/fetch/w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1e416992-b406-4f06-b109-a06708698749_1260x728.png 1272w, /img/blog/more-speed-equals-more-sales/1e416992-b406-4f06-b109-a06708698749_1260x728.webp 1456w" alt="More Speed equals More Sales - figure 1" width="1260" height="728" data-attrs="{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/1e416992-b406-4f06-b109-a06708698749_1260x728.png&quot;,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:728,&quot;width&quot;:1260,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:113064,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/png&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null}"></picture><div></div></div></figure>
+**Shopify Partners dashboard performance.** If you have Partner access (yours or your developer's), open Stores, find the store, click "More actions" → "View store performance". Same underlying Lighthouse engine, but cleaner historical tracking and a comparison view across multiple stores you manage.
 
-If you're a Shopify developer, head over to your **Shopify Partners dashboard**, navigate to the "Stores" section, and then click on "View store performance" under the "More actions" dropdown:
+![Shopify Partners dashboard with the View store performance option in the More actions dropdown](/img/blog/more-speed-equals-more-sales/a0aa04cd-4649-4ebf-8b17-5abea5fb6d43_1606x934.webp)
 
-<figure><div class="image2-inset"><picture><source srcset="https://substackcdn.com/image/fetch/w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa0aa04cd-4649-4ebf-8b17-5abea5fb6d43_1606x934.png 424w, https://substackcdn.com/image/fetch/w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa0aa04cd-4649-4ebf-8b17-5abea5fb6d43_1606x934.png 848w, https://substackcdn.com/image/fetch/w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa0aa04cd-4649-4ebf-8b17-5abea5fb6d43_1606x934.png 1272w, https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa0aa04cd-4649-4ebf-8b17-5abea5fb6d43_1606x934.png 1456w" type="image/webp" sizes="100vw"><img loading="lazy" decoding="async" class="sizing-normal" src="/img/blog/more-speed-equals-more-sales/a0aa04cd-4649-4ebf-8b17-5abea5fb6d43_1606x934.webp" sizes="auto, 100vw" srcset="https://substackcdn.com/image/fetch/w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa0aa04cd-4649-4ebf-8b17-5abea5fb6d43_1606x934.png 424w, https://substackcdn.com/image/fetch/w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa0aa04cd-4649-4ebf-8b17-5abea5fb6d43_1606x934.png 848w, https://substackcdn.com/image/fetch/w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa0aa04cd-4649-4ebf-8b17-5abea5fb6d43_1606x934.png 1272w, /img/blog/more-speed-equals-more-sales/a0aa04cd-4649-4ebf-8b17-5abea5fb6d43_1606x934.webp 1456w" alt="More Speed equals More Sales - figure 2" width="1456" height="847" data-attrs="{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/a0aa04cd-4649-4ebf-8b17-5abea5fb6d43_1606x934.png&quot;,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:847,&quot;width&quot;:1456,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:146969,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/png&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null}"></picture><div></div></div></figure>
+The score itself is a weighted average across three pages: the home page, the top-visited product page and the top-visited collection page. It's a useful trend line, but the diagnosis happens elsewhere.
 
-The speed score measures how fast the store performs in the Shopify test environment.
+![Shopify speed score breakdown showing the weighted average across home, product and collection pages](/img/blog/more-speed-equals-more-sales/a09a91cf-0aad-40f8-acc1-e2dd46c17e50_1266x750.webp)
 
-<figure><div class="image2-inset"><picture><source srcset="https://substackcdn.com/image/fetch/w_424,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa09a91cf-0aad-40f8-acc1-e2dd46c17e50_1266x750.png 424w, https://substackcdn.com/image/fetch/w_848,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa09a91cf-0aad-40f8-acc1-e2dd46c17e50_1266x750.png 848w, https://substackcdn.com/image/fetch/w_1272,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa09a91cf-0aad-40f8-acc1-e2dd46c17e50_1266x750.png 1272w, https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa09a91cf-0aad-40f8-acc1-e2dd46c17e50_1266x750.png 1456w" type="image/webp" sizes="100vw"><img loading="lazy" decoding="async" class="sizing-normal" src="/img/blog/more-speed-equals-more-sales/a09a91cf-0aad-40f8-acc1-e2dd46c17e50_1266x750.webp" sizes="auto, 100vw" srcset="https://substackcdn.com/image/fetch/w_424,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa09a91cf-0aad-40f8-acc1-e2dd46c17e50_1266x750.png 424w, https://substackcdn.com/image/fetch/w_848,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa09a91cf-0aad-40f8-acc1-e2dd46c17e50_1266x750.png 848w, https://substackcdn.com/image/fetch/w_1272,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa09a91cf-0aad-40f8-acc1-e2dd46c17e50_1266x750.png 1272w, /img/blog/more-speed-equals-more-sales/a09a91cf-0aad-40f8-acc1-e2dd46c17e50_1266x750.webp 1456w" alt="More Speed equals More Sales - figure 3" width="1266" height="750" data-attrs="{&quot;src&quot;:&quot;https://substack-post-media.s3.amazonaws.com/public/images/a09a91cf-0aad-40f8-acc1-e2dd46c17e50_1266x750.png&quot;,&quot;fullscreen&quot;:null,&quot;imageSize&quot;:null,&quot;height&quot;:750,&quot;width&quot;:1266,&quot;resizeWidth&quot;:null,&quot;bytes&quot;:127819,&quot;alt&quot;:null,&quot;title&quot;:null,&quot;type&quot;:&quot;image/png&quot;,&quot;href&quot;:null,&quot;belowTheFold&quot;:true,&quot;topImage&quot;:false,&quot;internalRedirect&quot;:null}"></picture><div></div></div></figure>
+What actually matters is the Core Web Vitals underneath: **Largest Contentful Paint (LCP) under 2.5s**, **Cumulative Layout Shift (CLS) under 0.1**, **Interaction to Next Paint (INP) under 200ms**. Optimise for those targets, not for the headline score.
 
-The score is based on a weighted average of [Lighthouse performance scores](https://web.dev/performance-scoring/) for 3 pages:
+## Where Shopify stores actually lose speed
 
--   the home page
--   the top-visited product page
--   the top-visited collection page
+Shopify's hosting infrastructure is excellent: CDN-served images, fast theme rendering, native lazy-loading, automatic format optimisation. The store you start with is fast. The store you end up with after twelve months of app installs is the one that's slow. Five things consistently cause that drift:
 
-This is a very high level report, so for more detailed info what I'd recommend is to go directly to the source: [Google PageSpeed Insights](https://pagespeed.web.dev/).
+1. **Too many tracking pixels.** GA4, Meta, TikTok, Pinterest, Klaviyo, every retargeting platform's own snippet. Each one loads JavaScript. Stack five of them and your first contentful paint slips half a second.
+2. **Poorly coded or bloated themes.** Every additional theme section, animation, and decorative carousel adds CSS and JS that loads on every page. The same look can usually be achieved with half the code.
+3. **Too many apps, even good ones.** Most Shopify apps inject their JavaScript globally rather than only where it's needed. An app that powers a single feature on one product page often loads on your homepage too.
+4. **Large media files.** A 4 MB hero image at 2000px width when the device is rendering it at 400px. A 30-second product GIF when a 4-second video would do.
+5. **Poorly coded apps that inject globally.** The worst case of #3: an app whose JS bundle is itself bloated and runs on every page, every time.
 
-**» Some things to take into account for Shopify:**
+The fix is rarely "buy a faster theme". The fix is auditing what you've added since launch and pruning what's not earning its weight.
 
--   Shopify stores by themselves are lightning fast. Their hosting is state of the art. It's what we add on top of the "raw" store which slows it down.
--   Shopify Already serves your images through CDN
--   Shopify already does Lazy Load for images
+## Audit 1: image lazy-loading and asset optimisation
 
-**» Where Shopify sites usually get bogged down is with:**
+Shopify lazy-loads images below the fold automatically via the `loading="lazy"` attribute. That covers most of the work, but three places trip people up:
 
-1.  Too many tracking pixels (JavaScript snippets hurt your loading speed)
-2.  Poorly coded, bloated themes
-3.  Too many apps (even if they're well coded)
-4.  Too many media files (e.g. images), or files which are too large
-5.  Poorly coded apps, which insert JavaScript globally throughout the site
+**Hero images shouldn't be lazy-loaded.** Your homepage hero is the Largest Contentful Paint candidate. If it's lazy-loaded, the browser delays fetching it, which delays LCP, which hurts Core Web Vitals. Override with `loading="eager"` and ideally `fetchpriority="high"` on the single most important above-the-fold image per page.
 
-There are tons of books written about web performance, and I know I should write a long-form post about this topic... but you're probably very busy running your business and I don't want to bore you with the technical stuff.
+**Use Shopify's image URL filters.** Liquid's `image_url` filter (and the older `img_url`) can automatically serve WebP and AVIF formats when supported, and resize images to whatever width you actually need. A hero image embedded at 1200px wide should be served at 1200px wide, not at 4000px and then scaled down by CSS. Audit your theme for raw `<img src="…">` tags and convert them to use the filter.
 
-**TL;DR → if you're ready to take action:**
+**Stop hotlinking from external sources.** Substack-hotlinked images, Imgur images, hotlinked stock photos — they bypass Shopify's CDN and image optimisation entirely. Re-upload to the Shopify CDN or the theme's asset folder.
 
-🚫 Uninstall any unused apps from your store
+**One overlooked file**: video. A 15-second product video is often 8-10 MB. If you're showing video on the homepage, either compress it aggressively (H.264 at 1500 kbps for 720p is usually fine) or use the YouTube embed pattern instead of self-hosting, which lets YouTube's CDN handle delivery. The [video quizzes piece](https://revenuehunt.com/video-quizzes/) covers the upload-vs-embed decision in more depth.
 
-⚡ Check the speed report in Shopify and on [Google PageSpeed Insights](https://pagespeed.web.dev/)
+## Audit 2: third-party script audit
 
-[📞](https://emojipedia.org/telephone-receiver/) Not happy with the results? [Get in touch](https://revenuehunt.com/contact/) with us!
+This is the audit that recovers the most time on most stores. Open Chrome DevTools → Network panel → Reload → sort by Transfer size.
 
-* * *
+Anything over 100 KB needs a justification. Anything over 250 KB needs to be defended out loud to your future self. Most stores find:
 
-### 🔗 TOP RESOURCES YOU CAN'T MISS
+- Two or three review apps loading simultaneously (only one is actually being used).
+- A popup app whose JS loads on every page even though the popup only fires on the product page.
+- An upsell app that loads on the homepage despite only running in the cart drawer.
+- Multiple analytics pixels duplicating each other's data collection.
+- An abandoned A/B testing tool still injecting its bundle months after the experiment ended.
 
-**🛠️ Thingstesting**
+**Three rules for cutting:**
 
-Do you need product ideas for your eCommerce, or do you just want design inspiration? Then check out [thingstesting.com](https://thingtesting.com)
+1. **One review app, not three.** Pick the one whose UI lives on your product pages and uninstall the others completely (not just disable, which often leaves the snippet behind).
+2. **Defer non-critical scripts.** Tag-manager tags can usually be set to "Window Loaded" instead of "Page View" without losing any data fidelity.
+3. **Question every "free" app.** Free apps frequently monetise via tracking, which means more JS than paid alternatives.
 
-**📕 Getting Real by Basecamp**
+Tracking pixels are necessary but should be consolidated through Google Tag Manager (or a server-side equivalent) rather than each platform getting its own page-load slot. GTM lets you defer, conditionally fire, and prune in one place.
 
-Hands down the best business book I've ever read for getting your business from 0 to 1M. It's especially targeted for software products, but the takeaways also apply for eCommerce and other lean businesses. You can [read it online for free](https://basecamp.com/gettingreal).
+## Audit 3: font loading strategy
 
-**🛍️ Flash Cart‑ Drawer Cross‑sells  
-**
+Custom fonts are pretty but expensive. A typical custom font (one family, four weights) adds 200-400 KB to first load and can block text rendering until it arrives.
 
-Built by ex-Shopify employees whom I know personally, I love how this app leverages their customizable side cart to upsell and cross-sell products. [14-day free trial here](https://apps.shopify.com/flash-cart).
+**Use `font-display: swap` always.** This tells the browser to render text in a fallback font immediately, then swap to the custom font when it loads. Without this, you get a "flash of invisible text" where the page appears blank for half a second. Most themes already do this; some legacy themes don't.
 
-* * *
+**Preconnect to your font CDN.** If you load fonts from Google Fonts, drop this in your `<head>` ahead of the actual font request:
 
-### 🚀 ONE LEARNING AS A FOUNDER
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+```
 
-**Generalists vs. Specialists and the 80-20 Rule**
+This starts the DNS lookup and TLS handshake early so the font request lands faster when it fires.
 
-In the ever-evolving world of business, the debate between being a generalist or a specialist is more relevant than ever. As a founder, understanding the nuances of this debate is crucial. **The 80-20 rule** offers a unique perspective: with the same effort, a specialist becomes 100% proficient in one area, while a generalist achieves about 80% proficiency in five diverse areas.
+**Subset to what you actually use.** Most Latin-only stores don't need the full Google Fonts character set with Cyrillic, Greek and Vietnamese ranges. Use the `&subset=latin` parameter or self-host a subset file.
+
+**Two weights for body, one for headings, max.** Every additional weight is another file download. The store with Regular + Medium + Bold loads faster than the store with Regular + Light + Medium + Semibold + Bold + Black, and the visual difference is rarely worth the seconds lost.
+
+## Where the quiz fits in the speed conversation
+
+Speed matters disproportionately at the moments of highest conversion leverage: homepage hero, quiz load, results page, checkout. A quiz that takes three seconds to render (because it's iframe-embedded and adds an extra HTTP request, plus the visual "flash" as the external frame loads) materially reduces completion rates. This is the structural weakness of many iframe-based quiz tools.
+
+RevenueHunt's **Built for Shopify** version embeds the quiz natively into the Shopify theme as a block: no iframes, no extra HTTP request, no visual flash. The quiz loads at theme speed and inherits the brand's typography and colours automatically, which means it doesn't even need its own CSS payload. For the full quiz foundations, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/).
+
+## Quick tools and resources
+
+**Page speed checks:** [Google PageSpeed Insights](https://pagespeed.web.dev/), Shopify Reports → "Online store speed", Shopify Partners → "View store performance".
+
+**App audit shortcut.** Uninstall any unused apps from your store (not just disable: fully uninstall so the snippet is removed). This is the single highest-yield 10-minute task you can run today.
+
+**Cart conversion app I rate.** Built by ex-Shopify employees I know personally, [Flash Cart](https://apps.shopify.com/flash-cart) leverages a customisable side cart to upsell and cross-sell products without adding the heavy global JS of most upsell apps. 14-day free trial.
+
+**Inspiration source:** [Thingstesting](https://thingtesting.com/) for product ideas and design references. The [Getting Real](https://basecamp.com/gettingreal) book by Basecamp remains the best framing for "build less, ship faster" thinking that applies as much to a store as it does to a software product.
+
+## Frequently asked questions
+
+### What page speed score should I aim for on Shopify?
+
+The score itself is less important than the underlying Core Web Vitals. Target Largest Contentful Paint (LCP) under 2.5 seconds, Cumulative Layout Shift (CLS) under 0.1, and Interaction to Next Paint (INP) under 200ms. Shopify's Online Store Speed report and Google PageSpeed Insights both surface these. Most well-optimised Shopify stores land in the 70-90 Lighthouse range; chasing 100 typically costs more engineering hours than the marginal conversion lift is worth.
+
+### Are Shopify apps actually slowing my store down that much?
+
+Often yes, but it depends on the app. The audit is straightforward: open Chrome DevTools, go to the Network panel, reload the page, sort by Transfer size and look for entries over 100 KB. Each one needs a justification. Apps that inject their JavaScript globally (loading on every page) cost more than apps scoped to specific templates. The single fastest fix on most Shopify stores is uninstalling apps that are no longer in active use.
+
+### Will switching themes solve my speed problem?
+
+Sometimes, but it's rarely the root cause. The store you start with on any modern Shopify theme is fast; what slows it down is everything added since: apps, tracking pixels, oversized images and theme customisations. Audit those first. Switch themes only if the theme itself is genuinely bloated (some older third-party themes carry significant CSS and JS weight) and a switch is the simpler fix.
+
+### Does the RevenueHunt quiz slow down my store?
+
+The Built for Shopify version embeds the quiz natively into your theme as a block, with no iframe and no extra HTTP request for an external widget. It loads at theme speed and inherits your store's typography and colours, which means it doesn't ship its own CSS payload. The Shopify Legacy version uses an iframe pattern and has a small load-time overhead by comparison; if speed is a top priority, the Built for Shopify version is the right install.
+
+### Should I optimise for the Lighthouse score or for real-user metrics?
+
+Real-user metrics (the "field data" Google shows in PageSpeed Insights and in Search Console's Core Web Vitals report) are what affect ranking and what your customers actually experience. The Lighthouse synthetic score is a debugging tool: it identifies what to fix and lets you test the impact of a change before it goes live. Use field data to decide what's worth fixing; use lab data to verify the fix worked.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What page speed score should I aim for on Shopify?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The score itself is less important than the underlying Core Web Vitals. Target Largest Contentful Paint (LCP) under 2.5 seconds, Cumulative Layout Shift (CLS) under 0.1, and Interaction to Next Paint (INP) under 200ms. Shopify's Online Store Speed report and Google PageSpeed Insights both surface these. Most well-optimised Shopify stores land in the 70-90 Lighthouse range; chasing 100 typically costs more engineering hours than the marginal conversion lift is worth."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Shopify apps actually slowing my store down that much?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Often yes, but it depends on the app. The audit is straightforward: open Chrome DevTools, go to the Network panel, reload the page, sort by Transfer size and look for entries over 100 KB. Each one needs a justification. Apps that inject their JavaScript globally cost more than apps scoped to specific templates. The single fastest fix on most Shopify stores is uninstalling apps that are no longer in active use."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will switching themes solve my speed problem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sometimes, but it's rarely the root cause. The store you start with on any modern Shopify theme is fast; what slows it down is everything added since: apps, tracking pixels, oversized images and theme customisations. Audit those first. Switch themes only if the theme itself is genuinely bloated and a switch is the simpler fix."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the RevenueHunt quiz slow down my store?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Built for Shopify version embeds the quiz natively into your theme as a block, with no iframe and no extra HTTP request for an external widget. It loads at theme speed and inherits your store's typography and colours, which means it doesn't ship its own CSS payload. The Shopify Legacy version uses an iframe pattern and has a small load-time overhead by comparison; if speed is a top priority, the Built for Shopify version is the right install."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I optimise for the Lighthouse score or for real-user metrics?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Real-user metrics (the field data Google shows in PageSpeed Insights and in Search Console's Core Web Vitals report) are what affect ranking and what your customers actually experience. The Lighthouse synthetic score is a debugging tool: it identifies what to fix and lets you test the impact of a change before it goes live. Use field data to decide what's worth fixing; use lab data to verify the fix worked."
+      }
+    }
+  ]
+}
+</script>
+
+## A founder's note on the skill stack this requires
+
+Image optimisation, JavaScript auditing and font-loading discipline are three different technical specialties. As a founder running a small team, you can't realistically be a 100% specialist in any of them, and you don't have to be. What you do need is reasonable proficiency across all three: an 80% generalist's grasp of each beats a 100% expert in only one when the problem is store-wide rather than function-specific.
+
+This is the **80/20 rule** applied to founder skill development. With the same effort, a specialist becomes 100% proficient in one area while a generalist reaches roughly 80% across five. For a store operator, the second profile compounds harder because every problem touches multiple disciplines at once.
+
+David Epstein's *Range: Why Generalists Triumph in a Specialized World* is the best framing of this tradeoff I've read. Recommended for any founder weighing depth versus breadth in their own skill stack:
 
 <iframe loading="lazy" title="Range: Why Generalists Triumph in a Specialized World" type="text/html" width="500" height="550" frameborder="0" allowfullscreen="" style="max-width:100%" src="https://read.amazon.com/kp/card?preview=inline&amp;linkCode=kpd&amp;ref_=k4w_oembed_3CAKi0IKeDeCG8&amp;asin=0735214484&amp;tag=kpembed-20"></iframe>
 
-For example, while a top-tier programmer might become the best in Python, a generalist founder, dedicating the same time and energy, can **become reasonably proficient in several areas**:
-
--   Programming: HTML, CSS, JS
--   Communication: Writing, Selling, Languages
--   UX/Design
--   Operations/Finance
--   Fitness/Health
-
-I really appreciate how Till Musshoff explains this concept in the following video, particularly his discussion on **Digital Literacy** as a meta-skill that is crucial in this day and age:
+Till Musshoff articulates a related idea: digital literacy as a meta-skill that compounds across all the other digital specialties a modern operator needs. The framing here is directly applicable to ecommerce speed work, where the operator who can read a Network panel, identify a bloated app and edit a Liquid template comfortably will always ship faster than the one who has to outsource each step.
 
 <div class="aspect-video overflow-hidden rounded-xl bg-slate-900 not-prose my-6"><button type="button" class="yt-facade group relative block h-full w-full cursor-pointer overflow-hidden" data-yt-id="29oyOLh6PNE" aria-label="Play video"><picture><source srcset="https://i.ytimg.com/vi_webp/29oyOLh6PNE/maxresdefault.webp" type="image/webp" /><img src="https://i.ytimg.com/vi/29oyOLh6PNE/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async" class="h-full w-full object-cover" /></picture><span class="absolute inset-0 flex items-center justify-center bg-black/10 transition group-hover:bg-black/20"><span class="flex h-20 w-20 items-center justify-center rounded-full bg-black/70 shadow-lg transition group-hover:scale-105 group-hover:bg-[#FF0000]"><svg class="ml-0.5 h-9 w-9 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg></span></span></button></div>
+
+## Where this fits
+
+Speed is the discipline that makes everything else possible. It can't replace a strong product-page hierarchy, a well-built quiz, or a discount strategy that earns its margin sacrifice. But every other tactic in the funnel compounds its return when the foundation underneath is fast.
+
+For the broader CRO playbook, see [10 ecommerce conversion optimisation tips](https://revenuehunt.com/ecommerce-conversion-optimization-tips/). For the funnel-design architecture this sits inside, see [10 ecommerce design decisions that actually move revenue](https://revenuehunt.com/ecommerce-website-design-tips-that-move-revenue/). For the data the quiz captures at speed, see our [zero-party data guide](https://revenuehunt.com/zero-party-data/).
+
+[Install RevenueHunt: Recommender Quiz for Shopify](https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=more_speed) and add the only quiz that loads at native theme speed. Free plan available.

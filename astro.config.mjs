@@ -158,6 +158,8 @@ export default defineConfig({
       "/product-quiz-discounts/",
     "/introducing-video-quizzes-the-future-of-customer-engagement-in-ecommerce/":
       "/video-quizzes/",
+    "/the-only-product-recommendation-app-for-headless-ecommerce-2024/":
+      "/headless-ecommerce-product-quiz/",
   },
   integrations: [
     (() => {

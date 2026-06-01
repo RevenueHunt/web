@@ -22,13 +22,16 @@ draft: false
 
 A video quiz embedded inside a product recommendation funnel does three things at once that a standalone video quiz tool can't. It drives measurable revenue (because the quiz ends in a product recommendation, not a thank-you page), it collects zero-party data that flows downstream into Klaviyo and the customer profile, and it lives on a single billing line in your tech stack instead of two. This article covers why that combination wins on ecommerce, where to place the video, and how to add one in under five minutes.
 
+<div class="aspect-video overflow-hidden rounded-xl bg-slate-900 not-prose my-6"><button type="button" class="yt-facade group relative block h-full w-full cursor-pointer overflow-hidden" data-yt-id="DCtd6BEJfb0" aria-label="Play video"><picture><source srcset="https://i.ytimg.com/vi_webp/DCtd6BEJfb0/maxresdefault.webp" type="image/webp" /><img src="https://i.ytimg.com/vi/DCtd6BEJfb0/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async" class="h-full w-full object-cover" /></picture><span class="absolute inset-0 flex items-center justify-center bg-black/10 transition group-hover:bg-black/20"><span class="flex h-20 w-20 items-center justify-center rounded-full bg-black/70 shadow-lg transition group-hover:scale-105 group-hover:bg-[#FF0000]"><svg class="ml-0.5 h-9 w-9 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg></span></span></button></div>
+
 <div style="margin:32px 0;padding:24px 28px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 14px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">What you'll learn</p>
   <ul style="list-style:none;padding:0;margin:0;">
     <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>Why video inside a product recommendation quiz outperforms a separate video-quiz tool on revenue, data and operational simplicity.</span></li>
     <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>The three placement modes (background, widget, results page) and which works best for which question type.</span></li>
-    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>Direct upload vs YouTube embed: when each is the right call.</span></li>
-    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>Cross-platform availability: identical capability on every RevenueHunt platform with no feature gating.</span></li>
+    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>Five types of video worth recording (introduction, explainer, testimonial, product overview, personalised recommendation) with sweet-spot durations.</span></li>
+    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>Mobile-first technical specs (resolution, aspect ratio, bitrate, format) that keep load times fast on imperfect connections.</span></li>
+    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>Direct upload vs YouTube embed, cross-platform availability and step-by-step setup in the Quiz Builder.</span></li>
   </ul>
 </div>
 
@@ -66,6 +69,42 @@ Drop a video into the recommendation page itself, alongside the recommended prod
 
 All three modes accept either a directly-uploaded video file or a YouTube embed.
 
+## Five types of video worth recording
+
+Different video types serve different roles in the quiz funnel. Each has a sweet-spot duration and a placement where it works best.
+
+### Introduction videos (20-30 seconds)
+
+Plays on the welcome slide. Briefly introduces the brand, explains what the quiz does, and tells the customer what they'll receive at the end. Functions as the elevator pitch for the quiz itself, which is why duration discipline matters: longer than 30 seconds and the customer abandons before answering question one.
+
+![Quiz Builder welcome-slide configuration showing the video upload option for the introduction slide](/img/blog/video-quizzes/welcome-slide-video-upload.webp)
+
+### How-to and explainer videos (1-2 minutes)
+
+Goes wherever an instruction needs more clarity than text can carry. Use these to show *how* to use a product step by step, or to explain a concept the quiz asks about ("what's your skin type?" with a 60-second primer on identifying it). Most useful on multi-choice questions where the customer needs context to answer confidently, and on the results page where the recommendation needs an ingredient explainer.
+
+### Customer testimonial videos (30-45 seconds)
+
+Builds trust at moments where the customer is weighing a decision (just before the results page, or on the results page itself). A real customer in their own setting talking about their experience consistently outperforms a logo grid of brand testimonials. Widget-mode placement works particularly well.
+
+![Quiz slide with a customer testimonial video in widget mode alongside the question content](/img/blog/video-quizzes/videotestimonialv2.gif)
+
+### Product overview videos (max 30 seconds per product)
+
+Best placed on the results page next to recommended products, or on this/that-style choice questions where the customer is picking between two SKUs. Highlights key features, benefits and usage in a fast clip; no need to be exhaustive. Animated GIF format also works for short product loops and is well-suited to picture-choice questions.
+
+![Quiz slide showing animated product overview videos for two bottle SKUs side by side](/img/blog/video-quizzes/bottles.gif)
+
+### Personalised recommendation videos (30-45 seconds)
+
+The most advanced placement: record a different short video for each major recommendation outcome, then conditionally show the right one on the results page based on the customer's answers. A skincare quiz might play "your routine for oily, acne-prone skin" when the customer's answers point there, and a different video for dry / sensitive. The recommendation feels genuinely tailored because the *delivery* is tailored, not just the product list.
+
+![Conditional results page playing a personalised recommendation video for one customer profile](/img/blog/video-quizzes/personalrecommendationvid.gif)
+
+![Conditional results page playing a different personalised recommendation video for another customer profile](/img/blog/video-quizzes/personalrecommendationvid2.gif)
+
+RevenueHunt supports [conditional content rules](https://docs.revenuehunt.com/how-to-guides/hide-content-with-logic/) on the results page, which is the mechanic that gates each video to the right answer combinations.
+
 ## Direct upload vs YouTube embed: when to use which
 
 **Direct upload** is the right choice when the video is short (under 30 seconds), brand-controlled, and you want the cleanest playback experience without YouTube UI chrome. The video plays inline with no related-video distractions at the end and no "watch on YouTube" link inviting the viewer to leave.
@@ -87,16 +126,62 @@ The video feature is present on every version of the RevenueHunt app with identi
 
 This is the inverse of the typical SaaS pattern where the headline feature is gated to one tier on one platform. Video has been built into the core quiz engine, so the same upload and embed mechanics work whether you're on a Built for Shopify install, running on WooCommerce, or running the Standalone version on a custom storefront.
 
+## Plan before you record
+
+Most video quiz problems are planning problems, not production problems. Two steps before you pick up a camera:
+
+**1. Map the quiz first.** Sketch the question flow, the choices at each step, and the recommendation outcomes. The map tells you which questions are worth a video and which are fine as text.
+
+![Quiz map sketch showing the question flow with branching paths and possible recommendation outcomes](/img/blog/video-quizzes/quizmap1.webp)
+
+**2. Mark the moments where a video adds the most.** Not every question benefits from video; over-using it dilutes the impact. Highlight the welcome slide, two or three high-leverage decision questions, and the results page. Skip the rest.
+
+![Annotated quiz map highlighting where to place each video type along the question flow](/img/blog/video-quizzes/videoplan.webp)
+
+Once you've mapped placements and durations, script each clip and storyboard the action before shooting. Recording without a script consistently produces videos that are 50% longer than they need to be, and trimming in post is slower than getting it right in the first take.
+
+## Mobile-first technical specs
+
+Most quiz traffic is mobile, and most mobile traffic is on imperfect connections. The video file specs below balance quality with file size so the playback stays smooth even on slow networks.
+
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin:24px 0;">
+  <thead>
+    <tr>
+      <th style="background:#16161D;color:#fff;padding:12px 14px;text-align:left;font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;">Spec</th>
+      <th style="background:#16161D;color:#fff;padding:12px 14px;text-align:left;font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;">Recommended value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;">Resolution</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;"><strong>1280×720 (720p)</strong> for high-quality playback while maintaining fast load times. <strong>854×480 (480p)</strong> is a viable alternative for catalogues with slower-connection visitors.</td></tr>
+    <tr><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;">Aspect ratio</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;"><strong>16:9</strong> for background-mode and results-page placements; <strong>9:16 vertical</strong> for widget-mode mobile-first videos.</td></tr>
+    <tr><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;">File format</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;"><strong>MP4 (H.264)</strong>. Universally supported, best size-to-quality ratio.</td></tr>
+    <tr><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;">Bitrate</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;"><strong>2.5-5 Mbps</strong> for 720p, <strong>1-2.5 Mbps</strong> for 480p. Lower bitrates are fine when the video is short and motion-light.</td></tr>
+    <tr><td style="padding:12px 14px;background:#fff;color:#334155;vertical-align:top;">Audio</td><td style="padding:12px 14px;background:#fff;color:#334155;"><strong>96 kbps minimum, 44.1 kHz</strong> sample rate. AAC codec.</td></tr>
+  </tbody>
+</table>
+
+Industry context: roughly two-thirds of ecommerce traffic comes from mobile devices, and ecommerce sales follow at a similar or higher share. Optimising for mobile-first playback isn't an option; it's the default.
+
 ## How to add video to a quiz question
 
 1. Open the RevenueHunt app and navigate to your quiz in the Quiz Builder.
-2. Select the question you want to add video to.
+2. Select the question (or welcome slide) you want to add video to.
 3. Open question settings (the wrench icon) and find the **Video** section.
 4. Click **Add** to upload a video file, or paste a YouTube URL to embed.
-5. Choose **Background** or **Widget** mode.
+5. Choose **Background** or **Widget** mode (or **Responsive** for the welcome slide, which surfaces play/stop/volume controls).
 6. Publish via the top-right Publish button.
 
-For the results-page placement, drop a Video block into the results page editor and configure it the same way. Full configuration reference: [video options in the Quiz Builder](https://docs.revenuehunt.com/reference/quiz-builder/questions/).
+![Quiz Builder demo showing the workflow of adding a video to a question slide](/img/blog/video-quizzes/quizbuildervideo.gif)
+
+For the results-page placement, drop a Video block into the results page editor and configure it the same way (or insert a video via Markdown inside a Content Block).
+
+![Results page editor showing a video block embedded alongside the recommended products](/img/blog/video-quizzes/results-page-video-embed.webp)
+
+For the split-screen layout where the video plays beside the question content rather than behind it, select the **responsive** layout option in the same Video section.
+
+![Quiz Builder split-screen video setup showing the responsive layout option](/img/blog/video-quizzes/split-screen-video-setup.webp)
+
+Full configuration reference: [video options in the Quiz Builder](https://docs.revenuehunt.com/reference/quiz-builder/questions/).
 
 ## Categories that benefit most
 
@@ -146,6 +231,10 @@ VideoAsk, Tolstoy and similar tools are dedicated video quiz platforms designed 
 
 The highest-impact placement is the results page (next to the recommended products), for a 30 to 60-second explainer that builds confidence at the decision moment. The second-highest is per-question widget mode on the two or three questions where the customer is making a category-specific decision (fit, ingredient, texture). Background mode works for hero or category-introduction slides where atmosphere matters more than information.
 
+### What technical specs should I use for mobile-friendly quiz videos?
+
+Target **720p resolution (1280×720)** in **MP4 (H.264)** format with a **2.5-5 Mbps bitrate** and **96 kbps AAC audio at 44.1 kHz**. Use **16:9** aspect for background-mode and results-page videos, **9:16 vertical** for widget-mode videos that need to render well on mobile-first layouts. Keep individual videos under 30 seconds when used per-question to avoid bloating the file size and the customer's patience.
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -189,6 +278,14 @@ The highest-impact placement is the results page (next to the recommended produc
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "The highest-impact placement is the results page next to the recommended products, for a 30 to 60-second explainer that builds confidence at the decision moment. The second-highest is per-question widget mode on the two or three questions where the customer is making a category-specific decision such as fit, ingredient or texture. Background mode works for hero or category-introduction slides where atmosphere matters more than information."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What technical specs should I use for mobile-friendly quiz videos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Target 720p resolution (1280x720) in MP4 (H.264) format with a 2.5-5 Mbps bitrate and 96 kbps AAC audio at 44.1 kHz. Use 16:9 aspect for background-mode and results-page videos, 9:16 vertical for widget-mode videos that need to render well on mobile-first layouts. Keep individual videos under 30 seconds when used per-question to avoid bloating the file size and the customer's patience."
       }
     }
   ]

@@ -164,6 +164,8 @@ export default defineConfig({
       "/product-quiz-marketing-consent/",
     "/why-shopify-merchants-love-the-shop-quiz-product-recommender-app-hear-from-them/":
       "/shopify-merchant-reviews-revenuehunt/",
+    "/practical-guide-create-a-video-quiz-for-your-e-commerce-website/":
+      "/video-quizzes/",
   },
   integrations: [
     (() => {

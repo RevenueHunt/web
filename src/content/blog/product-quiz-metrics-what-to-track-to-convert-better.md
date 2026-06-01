@@ -99,7 +99,7 @@ Completion Rate is the percentage of quiz-starters who reach the results page. I
 
 Platform data shows the 9-12 question sweet spot achieves **11.0% conversion** on average; quizzes with only 1-5 questions actually underperform at **9.8%** because the recommendation feels superficial and the customer doesn't trust it.
 
-![quiz builder metrics analytics completion rate](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/manual_quizbuilder_metrics_analytics_comprate.webp)
+![Quiz Builder Analytics panel showing completion rate trend over time](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/manual_quizbuilder_metrics_analytics_comprate.webp)
 
 **Drop-off Points / Drop-off Rate**  
 Identifying where users drop off in your quiz can provide insights into potential friction points. Are users abandoning the quiz at a specific question or step? Use this data to adjust those points, making them more intuitive or engaging.
@@ -116,7 +116,7 @@ Tracking how many users proceed to cart after completing the quiz can help you g
 **Average Cart Value**  
 Understanding the average value of products in the carts can help you assess the monetary impact of your quiz. This metric is crucial for evaluating the overall financial performance and can guide you in setting appropriate pricing strategies.
 
-![quiz builder metrics analytics average carts](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/manual_quizbuilder_metrics_analytics_avgcarts.webp)
+![Quiz Builder Analytics panel showing average cart value alongside number of carts and total cart value](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/manual_quizbuilder_metrics_analytics_avgcarts.webp)
 
 **Number of Orders and Total Orders Value**   
 For a more direct measure of conversion, track the number of orders placed and their total value. This data is especially powerful when integrated with Shopify Revenue Reports, allowing you to directly correlate quiz engagement with sales performance.

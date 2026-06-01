@@ -8,7 +8,9 @@ featuredImage: null
 draft: false
 ---
 
-Last updated: January 2025.
+Last updated: June 2025.
+
+Download a copy: [PDF](/legal/RevenueHunt-Data-Processing-Agreement.pdf).
 
 This Data Processing Agreement ("DPA") forms part of the [Terms of Service](/tos/) (the "Agreement") between:
 

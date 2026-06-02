@@ -174,6 +174,8 @@ export default defineConfig({
       "/woocommerce-plugin-reviews-revenuehunt/",
     "/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/":
       "/product-quiz-quick-tips/",
+    "/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/":
+      "/hubspot-quiz-integration/",
   },
   integrations: [
     (() => {

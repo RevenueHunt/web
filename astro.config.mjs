@@ -180,6 +180,8 @@ export default defineConfig({
       "/product-quiz-recommendation-systems/",
     "/skinology-and-shop-quiz-crafting-personalized-skincare-journeys-online/":
       "/skinology-case-study/",
+    "/shopifys-data-goldmine-essential-tools-for-ecommerce-in-2025/":
+      "/shopify-data-collection-tools/",
   },
   integrations: [
     (() => {

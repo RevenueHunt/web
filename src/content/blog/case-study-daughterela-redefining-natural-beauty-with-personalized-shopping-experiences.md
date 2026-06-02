@@ -14,13 +14,13 @@ author: "Paulina Chodura"
 legacySlug: "case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences"
 legacyId: 10234
 legacyUrl: "https://revenuehunt.com/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/"
-featuredImage: "/img/blog/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/Daughterela-Case-Study-1.webp"
+featuredImage: "/img/blog/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/blogtile_daughtrella.png"
 draft: false
 ---
 
 Natural makeup is a category where the shade and ingredient questions a customer needs answered before buying are particularly hard to solve on a product page. [Daughterela](https://www.daughterela.com/), a Canadian natural-makeup brand founded in 2019, built a quiz-driven personalisation layer to bridge that gap: three on-site finders (lipstick colour, foundation shade, skincare routine) that replicate the in-store consultation experience online and capture zero-party data the brand can use downstream. This case study walks through the approach, the marketing stack that surrounds it, and what other natural-beauty brands can borrow.
 
-![Daughterela case study hero: natural-makeup brand using quiz-led personalisation on their Shopify store](/img/blog/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/Daughterela-Case-Study-1.webp)
+![Daughterela case study hero: natural-makeup brand using quiz-led personalisation on their Shopify store](/img/blog/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/blogtile_daughtrella.png)
 
 The case study is built around the [RevenueHunt: Recommender Quiz for Shopify](https://revenuehunt.com/product-recommendation-quiz/) implementation. The same approach generalises to any natural-beauty brand running on Shopify, particularly in categories where shade or ingredient sensitivity drives the purchase decision.
 

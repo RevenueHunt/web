@@ -176,6 +176,8 @@ export default defineConfig({
       "/product-quiz-quick-tips/",
     "/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/":
       "/hubspot-quiz-integration/",
+    "/how-to-recommend-products-on-shopify-with-shop-quiz-a-step-by-step-guide-for-merchants/":
+      "/product-quiz-recommendation-systems/",
   },
   integrations: [
     (() => {

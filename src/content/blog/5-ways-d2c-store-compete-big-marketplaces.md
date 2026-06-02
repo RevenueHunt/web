@@ -122,7 +122,7 @@ Your D2C store *is* the trust relationship. In 2026, that trust is built on two 
 
 #### Data transparency
 
-GDPR and CCPA compliance isn't just legal hygiene. It's a visible trust signal that premium customers in the EU and UK actively look for. RevenueHunt's built-in consent flows ensure your quiz collects zero-party data with granular, compliant checkboxes. You're not just avoiding regulatory risk — you're signalling that you handle customer data responsibly. The operational detail is covered in [how to ask for marketing consent inside a quiz](https://revenuehunt.com/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/).
+GDPR and CCPA compliance isn't just legal hygiene. It's a visible trust signal that premium customers in the EU and UK actively look for. RevenueHunt's built-in consent flows ensure your quiz collects zero-party data with granular, compliant checkboxes. You're not just avoiding regulatory risk — you're signalling that you handle customer data responsibly. The operational detail is covered in [how to ask for marketing consent inside a quiz](/product-quiz-marketing-consent/).
 
 #### Localised experience
 

@@ -244,7 +244,7 @@ The mechanics matter:
 
 - **Length: three to seven questions.** Fewer than three rarely produces enough structured data to differentiate recommendations; more than seven produces diminishing returns on completion rate.
 - **Question type: stated preference, not personality test.** Skin type, primary concern, age range, budget, shopping-for, lifestyle. Each answer should map to a custom property in your ESP.
-- **Consent inside the flow.** Ask for marketing consent at a natural step inside the quiz, not as a separate popup. Our guide on [asking for marketing consent inside a quiz](https://revenuehunt.com/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/) covers when and how.
+- **Consent inside the flow.** Ask for marketing consent at a natural step inside the quiz, not as a separate popup. Our guide on [asking for marketing consent inside a quiz](/product-quiz-marketing-consent/) covers when and how.
 - **Native ESP integration.** Quiz answers must sync to Klaviyo / Omnisend / Mailchimp as custom properties (not tags) so they can power conditional flow splits. Anything that requires Zapier as middleware will break silently.
 
 The underlying data category is covered in detail in our [zero-party data guide](https://revenuehunt.com/zero-party-data/). For why a quiz outperforms a popup at this stage, see [why popups underperform quizzes for lead capture](https://revenuehunt.com/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/).

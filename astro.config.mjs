@@ -178,6 +178,8 @@ export default defineConfig({
       "/hubspot-quiz-integration/",
     "/how-to-recommend-products-on-shopify-with-shop-quiz-a-step-by-step-guide-for-merchants/":
       "/product-quiz-recommendation-systems/",
+    "/skinology-and-shop-quiz-crafting-personalized-skincare-journeys-online/":
+      "/skinology-case-study/",
   },
   integrations: [
     (() => {

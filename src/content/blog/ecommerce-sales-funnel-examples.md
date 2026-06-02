@@ -102,13 +102,13 @@ Where the result is disclosed publicly (case studies, podcast interviews, invest
 
 ## 8. Skinology (former RevenueHunt customer): luxury skincare via personalisation
 
-![Skinology product recommendation quiz](/img/blog/skinology-and-shop-quiz-crafting-personalized-skincare-journeys-online/Screenshot-2024-10-22-135007.webp)
+![Skinology product recommendation quiz](/img/blog/skinology-case-study/quiz-screenshot.webp)
 
 **What makes it work.** Skinology sells high-ticket skincare in a category where shoppers are extremely cautious about choosing the wrong product. The brand uses a multi-step diagnostic quiz to play the role a clinic dermatologist would play, walking the customer through skin type, concerns, sensitivities and treatment goals before recommending a personalised routine. *Note: Skinology was on RevenueHunt during the period that produced the case-study results below; they have since moved to a custom-built quiz on the same mechanical pattern.*
 
 **The funnel mechanic.** A multi-step diagnostic quiz captures structured zero-party data on each shopper, displays a routine of three to five products with the rationale per product, and routes the contact and preferences directly into the brand's email platform. The follow-up flow references the customer's quiz answers explicitly in subject lines and body copy. The pattern is replicable on any modern quiz tool with native ESP integration; Skinology originally ran it on RevenueHunt's builder with the native Shopify and Klaviyo connections, and has since rebuilt the same flow in-house.
 
-**Reported result.** Skinology reported significantly higher AOV from quiz-driven traffic than from category-page traffic during the period covered by the case study, with sustained conversion from the personalised email sequence. The full case study is here: [Skinology and the personalised skincare journey](https://revenuehunt.com/skinology-and-shop-quiz-crafting-personalized-skincare-journeys-online/).
+**Reported result.** Skinology reported significantly higher AOV from quiz-driven traffic than from category-page traffic during the period covered by the case study, with sustained conversion from the personalised email sequence. The full case study is here: [Skinology and the personalised skincare journey](/skinology-case-study/).
 
 ## 9. Daughterela (RevenueHunt customer): natural-beauty discovery
 

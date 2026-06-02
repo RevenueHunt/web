@@ -18,7 +18,7 @@ draft: false
 
 The single biggest decision when you build a product recommendation quiz is which recommendation **logic** to use. It controls how customer answers translate into the products on the results page, and it dictates how the quiz scales when you add more questions, more products, or more exceptions later.
 
-RevenueHunt supports **six distinct recommendation systems** — fixed lists, voting, slot routines, two scoring systems, and display logic. They're not interchangeable. Some are right for a 12-SKU candle store; others are designed for dosha quizzes or matrix-driven skincare routines.
+RevenueHunt supports **six distinct recommendation systems**: fixed lists, voting, slot routines, two scoring systems, and display logic. They're not interchangeable. Some are right for a 12-SKU candle store; others are designed for dosha quizzes or matrix-driven skincare routines.
 
 This guide walks the decision tree, explains each system, and gives you the platform-by-platform setup path.
 
@@ -29,7 +29,7 @@ This guide walks the decision tree, explains each system, and gives you the plat
     <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>The decision tree: a flowchart that points you to the right system in under a minute.</span></li>
     <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>How votes, scores, variables, and display logic actually compute the result.</span></li>
     <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>Platform differences: what Built for Shopify, Shopify Legacy, WooCommerce, Magento, BigCommerce, and Standalone each support.</span></li>
-    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>The setup walkthrough — link products, edit the results page, test — and the advanced patterns (slots, matrix, ReCharge, always-on products, explanations).</span></li>
+    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>The setup walkthrough (link products, edit the results page, test) and the advanced patterns: slots, matrix, ReCharge, always-on products, explanations.</span></li>
   </ul>
 </div>
 
@@ -53,7 +53,7 @@ Each system is suited to a different shape of problem. Read them in order; the c
 
 **Computes:** nothing. The list is hard-coded.
 
-**Complexity:** very low. **Maintenance:** low — but the recommendation is the same for everyone.
+**Complexity:** very low. **Maintenance:** low, but the recommendation is the same for everyone.
 
 **Example:** a tea brand with one bestseller bundle they want every quiz finisher to see, with a one-question quiz used purely as a lead-capture form.
 
@@ -67,7 +67,7 @@ Each system is suited to a different shape of problem. Read them in order; the c
 
 **Computes:** vote tally per product. Optional minimum-vote threshold filters out low-relevance products. Exclusions hard-veto a product regardless of votes.
 
-**Complexity:** low to medium. **Maintenance:** low — adding new products just means linking them to the relevant choices.
+**Complexity:** low to medium. **Maintenance:** low. Adding new products just means linking them to the relevant choices.
 
 **Example:** a customer picks **dry skin** and **30+ age group**. The hydrating serum is linked to both choices, so it gets two votes. The age-specific moisturiser is linked to one, so it gets one. The serum is recommended first.
 
@@ -81,7 +81,7 @@ Each system is suited to a different shape of problem. Read them in order; the c
 
 **Computes:** votes accumulate across the whole quiz, but each slot picks its top-voted product **within the slot's category filter**.
 
-**Complexity:** medium. **Maintenance:** medium — products need correct slot tags or collection membership.
+**Complexity:** medium. **Maintenance:** medium. Products need correct slot tags or collection membership.
 
 **Example:** the quiz returns one cleanser, one toner, one moisturiser. Each is the most-voted item that matches its slot's tag filter.
 
@@ -93,9 +93,9 @@ Each system is suited to a different shape of problem. Read them in order; the c
 
 **How it works:** you build multiple result sections (or multiple results pages), each with its own fixed product list. **Display logic conditions** evaluate the shopper's answers and show the right section (or route to the right page).
 
-**Computes:** boolean expressions over the answer set — `answer X is "oily" AND answer Y is "20-30"` → show section A.
+**Computes:** boolean expressions over the answer set, for example `answer X is "oily" AND answer Y is "20-30"` → show section A.
 
-**Complexity:** high. **Maintenance:** high — every catalogue change means revisiting the rules.
+**Complexity:** high. **Maintenance:** high. Every catalogue change means revisiting the rules.
 
 **Example:** a hair-care brand with **exactly 6 hair profiles**; each profile maps to a fixed three-product set, and there's no overlap or gradient between them.
 
@@ -109,7 +109,7 @@ Each system is suited to a different shape of problem. Read them in order; the c
 
 **Computes:** per-shopper tally of each variable; pick the variable with the highest count; show its associated products. Ties handled by display-logic rules you define.
 
-**Complexity:** medium. **Maintenance:** low — products are bound to the variable, not to individual choices.
+**Complexity:** medium. **Maintenance:** low. Products are bound to the variable, not to individual choices.
 
 **Example:** a yoga-mat brand runs a dosha quiz. 12 questions, each answer adds to Vata, Pitta, or Kapha. The winning dosha decides which three mats to recommend.
 
@@ -123,7 +123,7 @@ Each system is suited to a different shape of problem. Read them in order; the c
 
 **Computes:** numeric accumulation per variable, then conditional sections fire based on the totals.
 
-**Complexity:** medium to high. **Maintenance:** medium — the score thresholds need re-validating when you add new products.
+**Complexity:** medium to high. **Maintenance:** medium. The score thresholds need re-validating when you add new products.
 
 **Example:** a wine quiz. Tannin = 0–40, fruitiness = 0–40, body = 0–40. Display sections fire on bands: `tannin > 25 AND body > 30` → bold reds; `fruitiness > 25 AND tannin < 15` → light fruity reds; etc.
 
@@ -289,7 +289,7 @@ Two ways to guarantee a product appears on the results page:
 - **Link it to every choice in one question.** The product will accumulate at least one vote from any path, so it will always rank.
 - **Put it in a dedicated slot.** A standalone Product Slot, filled by a tag or collection that contains only that product, will always show it without affecting the voted recommendations elsewhere.
 
-Use this sparingly. A results page packed with "always-on" items dilutes the personalisation the quiz is meant to deliver — and platform data shows that quizzes with **more focused result sets convert better**.
+Use this sparingly. A results page packed with "always-on" items dilutes the personalisation the quiz is meant to deliver, and platform data shows that quizzes with **more focused result sets convert better**.
 
 ### Explaining why a product was recommended
 
@@ -307,7 +307,7 @@ Three rules-of-thumb after building hundreds of quizzes:
 2. **Use slots only when the result is a bundle.** If you're not actually recommending a kit or routine, a single Product Block is cleaner and converts better.
 3. **Reach for scoring when answers are weighted, not just counted.** "Three picks of A makes you a Vata" is Most Voted Variable. "How bold do you like your wine, on a 0-40 scale" is Score + Variable.
 
-The wrong system isn't a hard failure — most quizzes can be made to work with any of them. But the right system collapses days of rule-maintenance into a single configuration.
+The wrong system isn't a hard failure; most quizzes can be made to work with any of them. But the right system collapses days of rule-maintenance into a single configuration.
 
 ## FAQ
 
@@ -317,7 +317,7 @@ The **Voting System (Funnel Quiz)**. It's the default for a reason: it adapts to
 
 ### Can I combine systems in one quiz?
 
-Yes — within limits. A Voting System quiz can use **slots** for one section of the results page and a regular **Product Block** for another. A Score + Variable system uses display logic, which can also gate **Fixed Recommendations** sections. You can't run two voting algorithms in parallel, though; the choice is one or the other.
+Yes, within limits. A Voting System quiz can use **slots** for one section of the results page and a regular **Product Block** for another. A Score + Variable system uses display logic, which can also gate **Fixed Recommendations** sections. You can't run two voting algorithms in parallel, though; the choice is one or the other.
 
 ### What's the difference between Most Voted Variable and Score + Variable?
 
@@ -325,7 +325,7 @@ Yes — within limits. A Voting System quiz can use **slots** for one section of
 
 ### Can the quiz recommend Shopify collections directly?
 
-**On Built for Shopify, yes** — set the block's **Recommendations Type** to **Collections**. On Shopify Legacy, WooCommerce, Magento, BigCommerce, and Standalone, the quiz recommends product variants or main products only; you can use collections internally to **organise** linking, but the output on the results page will be products.
+**On Built for Shopify, yes**: set the block's **Recommendations Type** to **Collections**. On Shopify Legacy, WooCommerce, Magento, BigCommerce, and Standalone, the quiz recommends product variants or main products only; you can use collections internally to **organise** linking, but the output on the results page will be products.
 
 ### How do I make sure new products show up in recommendations after a catalogue change?
 

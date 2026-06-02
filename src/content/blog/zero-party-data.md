@@ -119,7 +119,7 @@ Why it dominates: the quiz wraps the data ask inside an obvious value exchange. 
 
 ![Zero-party data hyper-personalization](/img/blog/zero-party-data/zero-party-data-hyper-personalization-1024x695.webp)
 
-Quizzes also handle the consent layer cleanly. You can ask for email/SMS opt-in [as a natural step inside the quiz flow](https://revenuehunt.com/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/) rather than as a friction-inducing popup. For most Shopify and WooCommerce stores, this is the single biggest quick win available right now.
+Quizzes also handle the consent layer cleanly. You can ask for email/SMS opt-in [as a natural step inside the quiz flow](/product-quiz-marketing-consent/) rather than as a friction-inducing popup. For most Shopify and WooCommerce stores, this is the single biggest quick win available right now.
 
 ### 2. Preference centres
 
@@ -313,7 +313,7 @@ Third-party cookie deprecation has reduced cookie-based targeting effectiveness,
 
 ### Is collecting zero-party data GDPR-compliant?
 
-Zero-party data is the most GDPR-friendly category by definition: it is collected with the customer's active, specific consent in exchange for a stated value. To stay compliant you still need a clear privacy notice, a defined retention period, a documented purpose for processing, and an easy way for the customer to withdraw consent or request deletion. Our guide on [asking for marketing consent inside a quiz](https://revenuehunt.com/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/) covers the operational detail.
+Zero-party data is the most GDPR-friendly category by definition: it is collected with the customer's active, specific consent in exchange for a stated value. To stay compliant you still need a clear privacy notice, a defined retention period, a documented purpose for processing, and an easy way for the customer to withdraw consent or request deletion. Our guide on [asking for marketing consent inside a quiz](/product-quiz-marketing-consent/) covers the operational detail.
 
 ### How do I activate zero-party data in Klaviyo?
 

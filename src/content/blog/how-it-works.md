@@ -105,7 +105,7 @@ _Set conditional rules to skip irrelevant questions._
 
 _Slots allow you to [group product recommendations into different categories](https://revenuehunt.com/faqs/how-to-recommend-a-skincare-routine-with-slots/)._
 
-**Lead capture.** Incentivise customers to leave their contact details (email or phone number) in exchange for a discount on their purchase, so you can follow up or retarget them with ads. For the consent mechanics, see [how to ask for marketing consent inside a quiz](https://revenuehunt.com/smart-ways-to-ask-for-marketing-data-processing-consent-in-your-product-recommendation-quiz/).
+**Lead capture.** Incentivise customers to leave their contact details (email or phone number) in exchange for a discount on their purchase, so you can follow up or retarget them with ads. For the consent mechanics, see [how to ask for marketing consent inside a quiz](/product-quiz-marketing-consent/).
 
 ![Email lead capture step inside the quiz flow](/img/blog/how-it-works/how_it_works_example8.webp)
 

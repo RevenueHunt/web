@@ -182,6 +182,7 @@ export default defineConfig({
       "/skinology-case-study/",
     "/shopifys-data-goldmine-essential-tools-for-ecommerce-in-2025/":
       "/shopify-data-collection-tools/",
+    "/shop/": "/product-recommendation-quiz-shopify/",
   },
   integrations: [
     (() => {

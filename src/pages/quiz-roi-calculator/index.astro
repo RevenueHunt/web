@@ -43,11 +43,11 @@ const SECTORS = [
 // rounded down. The 5.5% benchmark is a platform average; consumable categories
 // run higher. Shown as a "conversion by category" proof block.
 const BY_VERTICAL = [
-  { v: "Fragrance", rate: "7%" },
-  { v: "Haircare", rate: "7%" },
-  { v: "Skincare & beauty", rate: "6%" },
-  { v: "Supplements", rate: "6%" },
-  { v: "Coffee & tea", rate: "5%" },
+  { v: "Fragrance", rate: "7%", lift: "AOV flat" },
+  { v: "Haircare", rate: "7%", lift: "+15% AOV" },
+  { v: "Skincare & beauty", rate: "6%", lift: "+20% AOV" },
+  { v: "Supplements", rate: "6%", lift: "+10% AOV" },
+  { v: "Coffee & tea", rate: "5%", lift: "AOV flat" },
 ];
 
 // Real, data-backed proof points shown on the page. The 275% is the measured
@@ -320,13 +320,14 @@ const jsonLd = [
       <div class="rounded-2xl border border-slate-200 bg-white p-6 sm:p-8">
         <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Conversion by category</h2>
         <p class="mt-3 max-w-2xl text-slate-600">
-          The 5.5% benchmark is a platform average. Some categories run higher, usually the ones people buy often and replace.
+          The 5.5% benchmark is a platform average. Some categories run higher, usually the ones people buy often and replace, and a few also see a bigger order value lift.
         </p>
         <dl class="mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-xl bg-slate-200 sm:grid-cols-5">
           {BY_VERTICAL.map((b) => (
             <div class="bg-white px-4 py-6 text-center">
               <dt class="text-3xl font-bold tracking-tight text-[#16161D]">{b.rate}</dt>
               <dd class="mt-1 text-sm text-slate-600">{b.v}</dd>
+              <dd class={`mt-2 text-xs font-medium ${b.lift.startsWith("+") ? "text-emerald-700" : "text-slate-400"}`}>{b.lift}</dd>
             </div>
           ))}
         </dl>

@@ -7,16 +7,31 @@ const SHOPIFY_INSTALL =
 // Free WordPress.org plugin (not the WooCommerce.com extension).
 const WOO_PLUGIN = "https://wordpress.org/plugins/product-recommendation-quiz-for-ecommerce/";
 
-// Inputs. The quiz-taker conversion rate is pre-filled with a benchmark
-// measured from real RevenueHunt data (see "benchmark" flag); everything else
-// is the merchant's own number. No AOV-uplift input: our aggregate data does
-// not support a positive AOV uplift, so we do not model one (fact-based only).
+// Inputs. Two fields carry a benchmark flag (RevenueHunt-data badge + helper
+// note): the quiz-taker conversion rate (5.5%, 1 in 18) and the AOV uplift.
+// The AOV uplift is the within-store paired result: comparing quiz orders to
+// non-quiz orders in the SAME store, quiz orders run a median +11% to +15%
+// (concentrated in skincare/beauty/supplements, flat in a few categories), so
+// we model a conservative, editable 10%. Everything else is the merchant's own
+// number. (Data pull + rationale: PRD-Octane-AI-SEO-Reverse-Engineering W7 note.)
 const controls = [
   { id: "visitors", label: "Monthly store visitors", min: 500, max: 500000, step: 500, value: 10000, suffix: "" },
   { id: "aov", label: "Your average order value", min: 10, max: 1000, step: 5, value: 60, suffix: "$" },
   { id: "cvr", label: "Your current conversion rate", min: 0.1, max: 15, step: 0.1, value: 2, suffix: "%" },
   { id: "engage", label: "Share of visitors who take the quiz", min: 1, max: 100, step: 1, value: 20, suffix: "%" },
-  { id: "quizcvr", label: "Quiz taker conversion rate", min: 1, max: 25, step: 0.5, value: 5.5, suffix: "%", benchmark: true },
+  { id: "quizcvr", label: "Quiz taker conversion rate", min: 1, max: 25, step: 0.5, value: 5.5, suffix: "%", benchmark: true, note: "Pre-filled with our measured benchmark: on average, 1 in 18 quiz takers place an order. Edit it to match your store." },
+  { id: "aovlift", label: "Quiz shopper AOV uplift", min: 0, max: 50, step: 1, value: 10, suffix: "%", benchmark: true, note: "In our data, quiz orders run about 10% higher than non-quiz orders in the same store. It varies by store and category. Set it to 0 to leave AOV out." },
+];
+
+// Per-vertical conversion (response to order), measured in RevenueHunt data and
+// rounded down. The 5.5% benchmark is a platform average; consumable categories
+// run higher. Shown as a "conversion by category" proof block.
+const BY_VERTICAL = [
+  { v: "Fragrance", rate: "7%" },
+  { v: "Haircare", rate: "7%" },
+  { v: "Skincare & beauty", rate: "6%" },
+  { v: "Supplements", rate: "6%" },
+  { v: "Coffee & tea", rate: "5%" },
 ];
 
 // Real, data-backed proof points shown on the page. The 275% is the measured
@@ -39,6 +54,11 @@ const faqs = [
     question: "How is the extra revenue calculated?",
     answer:
       "The calculator takes the share of your visitors who complete the quiz, applies the quiz taker conversion rate to them, and compares that against what those same visitors would convert at your current site rate. The difference, multiplied by your average order value, is the estimated extra revenue.",
+  },
+  {
+    question: "Do quiz shoppers spend more per order?",
+    answer:
+      "On average, yes, compared like for like. Within the same store, orders that came through a quiz run about 10% higher than orders that did not. It is not the same everywhere: strongest in categories like skincare, beauty and supplements, close to flat in others. The calculator pre-fills a conservative 10% that you can edit or set to 0.",
   },
   {
     question: "Is this based on real data or made-up multipliers?",
@@ -146,9 +166,9 @@ const jsonLd = [
                 class="mt-3 w-full accent-[#16161D]"
                 aria-label={`${c.label} slider`}
               />
-              {c.benchmark && (
+              {c.note && (
                 <p class="mt-2 text-xs text-slate-500">
-                  Pre-filled with our measured benchmark: on average, 1 in 18 quiz takers place an order. Edit it to match your store.
+                  {c.note}
                 </p>
               )}
             </div>
@@ -211,7 +231,7 @@ const jsonLd = [
         </div>
       </div>
       <p class="mt-4 text-xs text-slate-500">
-        The quiz taker conversion rate is a benchmark measured from real RevenueHunt data across 45M+ quiz responses; your store will vary, so edit it to match. Visitors, average order value, and current conversion rate are your own numbers. This is an estimate, not a guarantee, and actual results depend on your store, traffic, and quiz.
+        The quiz taker conversion rate and the AOV uplift are benchmarks measured from real RevenueHunt data; your store will vary, so edit them to match. Visitors, average order value, and current conversion rate are your own numbers. This is an estimate, not a guarantee, and actual results depend on your store, traffic, and quiz.
       </p>
     </div>
   </section>
@@ -268,6 +288,29 @@ const jsonLd = [
     </div>
   </section>
 
+  <!-- Conversion by category -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6 pb-14">
+      <div class="rounded-2xl border border-slate-200 bg-white p-6 sm:p-8">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Conversion by category</h2>
+        <p class="mt-3 max-w-2xl text-slate-600">
+          The 5.5% benchmark is a platform average. Some categories run higher, usually the ones people buy often and replace.
+        </p>
+        <dl class="mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-xl bg-slate-200 sm:grid-cols-5">
+          {BY_VERTICAL.map((b) => (
+            <div class="bg-white px-4 py-6 text-center">
+              <dt class="text-3xl font-bold tracking-tight text-[#16161D]">{b.rate}</dt>
+              <dd class="mt-1 text-sm text-slate-600">{b.v}</dd>
+            </div>
+          ))}
+        </dl>
+        <p class="mt-4 text-xs text-slate-500">
+          Measured across quiz responses in our data. Your store will vary.
+        </p>
+      </div>
+    </div>
+  </section>
+
   <!-- How it works -->
   <section class="bg-slate-50">
     <div class="mx-auto max-w-3xl px-6 py-16">
@@ -278,6 +321,9 @@ const jsonLd = [
         </p>
         <p>
           Based on the data collected across more than 45 million real quiz responses, 5.5% of shoppers who complete a RevenueHunt quiz (about 1 in 18) place a tracked order. Against a typical 2% store conversion rate, that is 2.75x, about 275% of what a store usually converts at. We pre-fill that figure and let you edit it.
+        </p>
+        <p>
+          We also looked at order value. Compared like for like, within the same store, quiz orders run about 10% higher than non-quiz orders. The uplift is strongest in categories like skincare, beauty and supplements, and close to flat in a few others. So we pre-fill a conservative 10% and let you edit it or set it to 0.
         </p>
         <p>
           The calculator uses your own <a href="/glossary/average-order-value/" class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">average order value</a> and ignores the email leads and zero-party data a quiz captures, which compound over time, so it tends to understate the full value.
@@ -351,7 +397,7 @@ const jsonLd = [
 
   <script is:inline>
     (function () {
-      var KEYS = ["visitors", "aov", "cvr", "engage", "quizcvr"];
+      var KEYS = ["visitors", "aov", "cvr", "engage", "quizcvr", "aovlift"];
       var usd = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
       var num = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
       function clamp(el, v) {
@@ -370,11 +416,15 @@ const jsonLd = [
         if (t) t.textContent = v;
       }
       function calc() {
-        var V = val("visitors"), A = val("aov"), c = val("cvr") / 100, q = val("engage") / 100, qc = val("quizcvr") / 100;
+        var V = val("visitors"), A = val("aov"), c = val("cvr") / 100, q = val("engage") / 100, qc = val("quizcvr") / 100, lift = val("aovlift") / 100;
         var takers = V * q;
         var quizOrders = takers * qc;
         var extraOrders = Math.max(0, takers * (qc - c));
-        var extra = extraOrders * A;
+        // Quiz orders carry a within-store AOV uplift; non-quiz baseline does not.
+        // Extra = quiz-taker revenue with the quiz, minus what those same takers
+        // would do at the site rate. With lift = 0 this is the old (qc - c) * A.
+        var quizAov = A * (1 + lift);
+        var extra = Math.max(0, quizOrders * quizAov - takers * c * A);
         var baseline = V * c * A;
         set("out-monthly", usd.format(extra));
         set("out-annual", usd.format(extra * 12));

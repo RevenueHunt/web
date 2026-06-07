@@ -199,14 +199,24 @@ function cell(value: string): { kind: "yes" | "no" | "text"; text: string } {
   <section class="bg-slate-50">
     <div class="mx-auto max-w-3xl px-6 py-16">
       <h2 class="text-3xl font-bold tracking-tight text-slate-900">Frequently asked questions</h2>
-      <dl class="mt-10 space-y-8">
+      <div class="mt-10 divide-y divide-slate-200 border-y border-slate-200">
         {c.faqs.map((faq) => (
-          <div>
-            <dt class="text-lg font-semibold text-slate-900">{faq.question}</dt>
-            <dd class="mt-2 text-slate-700">{faq.answer}</dd>
-          </div>
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 text-lg font-semibold text-slate-900 [&::-webkit-details-marker]:hidden">
+              <span>{faq.question}</span>
+              <svg
+                class="h-5 w-5 flex-shrink-0 text-slate-400 transition-transform duration-200 group-open:rotate-180"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+              </svg>
+            </summary>
+            <p class="pb-5 text-slate-700">{faq.answer}</p>
+          </details>
         ))}
-      </dl>
+      </div>
     </div>
   </section>
 

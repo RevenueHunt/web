@@ -33,6 +33,8 @@
 
 ## Compare (RevenueHunt vs alternatives)
 
+- [/compare/](https://revenuehunt.com/compare/) — Comparison hub: RevenueHunt vs all alternatives
+
 - [/compare/octane-ai/](https://revenuehunt.com/compare/octane-ai/) — RevenueHunt vs Octane AI (Octane AI alternative): free plan, no Shopify watermark, unlimited quizzes, from $39/mo
 - [/compare/zoovu/](https://revenuehunt.com/compare/zoovu/) — RevenueHunt vs Zoovu: a focused, self-serve Shopify quiz vs an enterprise product-discovery suite
 - [/compare/nosto/](https://revenuehunt.com/compare/nosto/) — RevenueHunt vs Nosto: a focused, self-serve zero-party quiz vs an enterprise personalization, search & merchandising suite

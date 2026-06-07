@@ -26,6 +26,7 @@ const jsonLd = [
   softwareApplication(),
   breadcrumb([
     { name: "Home", url: "/" },
+    { name: "Compare", url: "/compare/" },
     { name: `RevenueHunt vs ${c.name}`, url },
   ]),
   faqPage(c.faqs),
@@ -50,6 +51,8 @@ function cell(value: string): { kind: "yes" | "no" | "text"; text: string } {
     <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
       <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
         <a href="/" class="hover:text-slate-700">Home</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <a href="/compare/" class="hover:text-slate-700">Compare</a>
         <span class="mx-2 text-slate-300">/</span>
         <span class="text-slate-700">RevenueHunt vs {c.name}</span>
       </nav>

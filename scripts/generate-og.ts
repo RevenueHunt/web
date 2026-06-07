@@ -73,6 +73,7 @@ const BESPOKE: OgPage[] = [
     subtitle: "3-minute assessment + a step-by-step plan to grow eCommerce sales.",
   },
   { slug: "jobs", title: "Jobs", subtitle: "Join a small, distributed team building quizzes for 20,000+ brands." },
+  { slug: "compare", title: "Compare RevenueHunt", subtitle: "RevenueHunt vs Octane AI, Typeform, Zoovu, Nosto, Jebbit & Tolstoy — honest comparisons." },
   { slug: "compare-octane-ai", title: "RevenueHunt vs Octane AI", subtitle: "The Octane AI alternative for Shopify — free plan, no watermark, unlimited quizzes." },
   { slug: "compare-typeform", title: "RevenueHunt vs Typeform", subtitle: "The ecommerce product quiz Typeform isn't — recommends real products on Shopify." },
   { slug: "compare-zoovu", title: "RevenueHunt vs Zoovu", subtitle: "A focused, self-serve Shopify quiz — not an enterprise discovery suite." },

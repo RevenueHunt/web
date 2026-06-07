@@ -6,7 +6,7 @@ updatedDate: 2026-03-25T20:57:35Z
 tags: []
 categories:
   - "Product Updates"
-author: "alex"
+author: "Alex Diaz"
 legacySlug: "october-2025-product-updates"
 legacyId: 11812
 legacyUrl: "https://revenuehunt.com/october-2025-product-updates/"

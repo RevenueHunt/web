@@ -10,7 +10,7 @@ tags:
   - "product recommendation quiz"
 categories:
   - "eCommerce"
-author: "alex"
+author: "Alex Diaz"
 legacySlug: "product-recommendations-ultimate-ecommerce-marketing-guide"
 legacyId: 2651
 legacyUrl: "https://revenuehunt.com/product-recommendations-ultimate-ecommerce-marketing-guide/"

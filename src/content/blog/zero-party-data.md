@@ -8,7 +8,7 @@ tags:
   - "zero-party data"
 categories:
   - "eCommerce"
-author: "alex"
+author: "Alex Diaz"
 legacySlug: "zero-party-data"
 legacyId: 6700
 legacyUrl: "https://revenuehunt.com/zero-party-data/"

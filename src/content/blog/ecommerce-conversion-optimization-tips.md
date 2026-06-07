@@ -11,7 +11,7 @@ tags:
 categories:
   - "eCommerce"
   - "Tips &amp; Tricks"
-author: "alex"
+author: "Alex Diaz"
 legacySlug: "ecommerce-conversion-optimization-tips"
 legacyId: 7600
 legacyUrl: "https://revenuehunt.com/ecommerce-conversion-optimization-tips/"

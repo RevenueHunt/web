@@ -11,7 +11,7 @@ tags:
 categories:
   - "Sales Funnels"
   - "Shopify Apps"
-author: "alex"
+author: "Alex Diaz"
 legacySlug: "build-sales-funnel-shopify-store"
 legacyId: 1939
 legacyUrl: "https://revenuehunt.com/build-sales-funnel-shopify-store/"

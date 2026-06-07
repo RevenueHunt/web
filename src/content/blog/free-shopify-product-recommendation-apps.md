@@ -10,7 +10,7 @@ tags:
   - "product recommendation quiz"
 categories:
   - "Shopify Apps"
-author: "alex"
+author: "Alex Diaz"
 legacySlug: "free-shopify-product-recommendation-apps"
 legacyId: 2186
 legacyUrl: "https://revenuehunt.com/free-shopify-product-recommendation-apps/"

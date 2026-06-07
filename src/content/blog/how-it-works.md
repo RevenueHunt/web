@@ -9,7 +9,7 @@ tags:
   - "shopify"
 categories:
   - "eCommerce"
-author: "alex"
+author: "Alex Diaz"
 legacySlug: "how-it-works"
 legacyId: 100
 legacyUrl: "https://revenuehunt.com/how-it-works/"

@@ -6,7 +6,7 @@ updatedDate: 2026-03-25T20:59:57Z
 tags: []
 categories:
   - "Product Updates"
-author: "alex"
+author: "Alex Diaz"
 legacySlug: "august-2025-product-updates"
 legacyId: 11804
 legacyUrl: "https://revenuehunt.com/august-2025-product-updates/"

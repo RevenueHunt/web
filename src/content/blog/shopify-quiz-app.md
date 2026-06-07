@@ -11,7 +11,7 @@ tags:
   - "built for shopify"
 categories:
   - "Shopify Apps"
-author: "alex"
+author: "Alex Diaz"
 legacySlug: "shopify-quiz-app"
 legacyId: 6765
 legacyUrl: "https://revenuehunt.com/shopify-quiz-app/"

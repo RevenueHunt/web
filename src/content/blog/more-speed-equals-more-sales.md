@@ -12,7 +12,7 @@ tags:
 categories:
   - "eCommerce"
   - "Tips &amp; Tricks"
-author: "alex"
+author: "Alex Diaz"
 legacySlug: "more-speed-equals-more-sales"
 legacyId: 7603
 legacyUrl: "https://revenuehunt.com/more-speed-equals-more-sales/"

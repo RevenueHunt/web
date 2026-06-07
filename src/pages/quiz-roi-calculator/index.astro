@@ -277,7 +277,7 @@ const jsonLd = [
           The model is deliberately simple and honest. It takes the share of your visitors who complete the quiz, converts them at the quiz taker rate, and compares that against what the same visitors would have done at your current site <a href="/glossary/conversion-rate-optimization/" class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">conversion rate</a>. The gap is the estimated extra revenue.
         </p>
         <p>
-          Based on the data collected across more than 45 million real quiz responses, 5.5% of shoppers who complete a RevenueHunt quiz (about 1 in 18) place a tracked order. Against a typical 2% store conversion rate, that is 2.75x, about 275% of what a store usually converts at, which is why quiz traffic converts well above a category page. We pre-fill that figure and let you edit it.
+          Based on the data collected across more than 45 million real quiz responses, 5.5% of shoppers who complete a RevenueHunt quiz (about 1 in 18) place a tracked order. Against a typical 2% store conversion rate, that is 2.75x, about 275% of what a store usually converts at. We pre-fill that figure and let you edit it.
         </p>
         <p>
           The calculator uses your own <a href="/glossary/average-order-value/" class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">average order value</a> and ignores the email leads and zero-party data a quiz captures, which compound over time, so it tends to understate the full value.
@@ -416,7 +416,7 @@ const jsonLd = [
           set("out-plan", plan.name);
           set("out-plancost", "$" + plan.cost + " / mo");
           set("out-roi", extra > 0 ? (roi >= 10 ? Math.round(roi) + "x" : roi.toFixed(1) + "x") : "-");
-          set("out-net", extra > 0 ? (net >= 0 ? "+" + usd.format(net) + " / mo after the plan" : usd.format(net) + " / mo after the plan") : "");
+          set("out-net", extra > 0 ? (usd.format(extra) + " revenue minus " + usd.format(plan.cost) + " plan = " + usd.format(net) + "/mo net") : "");
           if (extra <= 0) {
             set("plan-note", "Set the quiz conversion rate above your current site conversion rate to see a return. The " + plan.name + " ($" + plan.cost + "/mo) covers about " + num.format(responses) + " responses a month.");
           } else {

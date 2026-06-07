@@ -76,6 +76,8 @@ const BESPOKE: OgPage[] = [
   { slug: "compare-octane-ai", title: "RevenueHunt vs Octane AI", subtitle: "The Octane AI alternative for Shopify — free plan, no watermark, unlimited quizzes." },
   { slug: "compare-digioh", title: "RevenueHunt vs Digioh", subtitle: "The self-serve Digioh alternative — transparent pricing, live the same day." },
   { slug: "compare-typeform", title: "RevenueHunt vs Typeform", subtitle: "The ecommerce product quiz Typeform isn't — recommends real products on Shopify." },
+  { slug: "compare-zoovu", title: "RevenueHunt vs Zoovu", subtitle: "A focused, self-serve Shopify quiz — not an enterprise discovery suite." },
+  { slug: "compare-jebbit", title: "RevenueHunt vs Jebbit", subtitle: "A standalone, self-serve Shopify quiz — Jebbit is now part of BlueConic." },
 ];
 
 const PLATFORM_TITLES: Record<string, string> = {

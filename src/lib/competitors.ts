@@ -299,7 +299,157 @@ export const COMPETITORS: Record<string, Competitor> = {
     ],
     verifiedAsOf: "2026-06-07",
   },
+
+  zoovu: {
+    slug: "zoovu",
+    name: "Zoovu",
+    category: "enterprise product-discovery platform",
+    title: "RevenueHunt vs Zoovu — a self-serve alternative",
+    description:
+      "RevenueHunt vs Zoovu: a focused, self-serve Shopify product quiz with a free plan and pricing from $39/mo — not an enterprise, sales-led discovery suite.",
+    h1: "RevenueHunt vs Zoovu",
+    heroSubtitle:
+      "Zoovu is an enterprise product-discovery and guided-selling platform sold by demo. RevenueHunt is a focused product quiz you can install today — free to start, transparent pricing, live the same day.",
+    intro: [
+      "Zoovu is an enterprise product-discovery platform that bundles AI search, guided selling, product recommendations, and visual configurators (CPQ) for large B2C and B2B brands with huge, complex catalogs. It's platform-agnostic, sold through demos with custom enterprise pricing, and has no free plan or self-serve signup.",
+      "RevenueHunt is a focused product recommendation quiz used by 20,000+ brands (4.9★, 450+ reviews). Instead of an enterprise discovery suite, it does one thing exceptionally well — guide Shopify shoppers to the right product — with transparent pricing, a free plan, and same-day setup, no sales call required.",
+    ],
+    rows: [
+      { feature: "Free plan", rh: RH.freePlan, them: "no" },
+      { feature: "Transparent public pricing", rh: RH.transparentPricing, them: "Custom / request a demo" },
+      { feature: "Starting price", rh: RH.startingPaid, them: "Sales-led (enterprise)" },
+      { feature: "Self-serve setup (no sales call)", rh: "yes", them: "no" },
+      { feature: "Purpose-built for product recommendation quizzes", rh: RH.ecommerceRecs, them: "Quiz is one module of a discovery suite" },
+      { feature: "Recommends real products from your catalog", rh: RH.catalogRecs, them: "yes" },
+      { feature: "Native Shopify app (Built for Shopify)", rh: RH.shopifyNative, them: "Via integration" },
+      { feature: "AI quiz builder (60-second setup)", rh: RH.aiBuilder, them: "Enterprise AI suite" },
+      { feature: "Unlimited quizzes", rh: RH.unlimitedQuizzes, them: "yes" },
+      { feature: "Unlimited conditional / branching logic", rh: RH.branching, them: "yes" },
+      { feature: "Question-by-question drop-off analytics", rh: RH.analytics, them: "yes" },
+      { feature: "Klaviyo & email / CRM integrations", rh: RH.emailIntegrations, them: "yes" },
+    ],
+    whySwitch: [
+      {
+        title: "Self-serve, not a sales call",
+        body: "Zoovu is sold through demos and custom enterprise contracts with no public pricing. RevenueHunt is install-and-go: pick a plan, build your quiz, and publish — no procurement, no implementation project.",
+      },
+      {
+        title: "Live in minutes, not a rollout",
+        body: "Zoovu is a heavyweight discovery suite that spans search, configurators, and guided selling across many systems. RevenueHunt is a focused quiz app most merchants launch the same day, with an AI Copilot that scaffolds a full quiz in 60 seconds.",
+      },
+      {
+        title: "Pricing that fits a growing brand",
+        body: "Enterprise discovery platforms are priced for global catalogs and big teams. RevenueHunt starts free and scales by responses from $39/month — right-sized for Shopify and Shopify Plus brands.",
+      },
+      {
+        title: "Built-for-Shopify simplicity",
+        body: "RevenueHunt is a Built-for-Shopify app with real-time catalog sync and Shopify Markets localization, rated 4.9★ by 450+ merchants — the depth you need for product discovery without enterprise overhead.",
+      },
+    ],
+    bestFor:
+      "Zoovu fits large enterprises with massive, complex catalogs — consumer electronics, appliances, industrial, B2B — that need configurators, CPQ, and guided selling across many systems, with the budget and team for an enterprise rollout. If you want a focused, affordable, self-serve Shopify quiz, RevenueHunt is the better fit.",
+    migration:
+      "Moving from Zoovu is straightforward: build your quiz in RevenueHunt (or generate it with the AI Copilot), embed it, and connect Klaviyo or your CRM. No implementation project — most stores are live the same day, and support helps you get there.",
+    faqs: [
+      {
+        question: "How much does RevenueHunt cost compared to Zoovu?",
+        answer:
+          "RevenueHunt has a free plan and transparent paid plans from $39/month. Zoovu does not publish pricing — it's an enterprise, sales-led platform that quotes custom pricing after a demo.",
+      },
+      {
+        question: "Is RevenueHunt an enterprise discovery platform like Zoovu?",
+        answer:
+          "No — and that's the point. Zoovu bundles AI search, configurators, CPQ, and guided selling for large catalogs. RevenueHunt focuses on product recommendation quizzes for Shopify and does that one job exceptionally well, with self-serve setup and no sales call.",
+      },
+      {
+        question: "Does RevenueHunt do guided selling like Zoovu?",
+        answer:
+          "Yes. A RevenueHunt quiz is guided selling: it asks the right questions and maps answers to the exact products from your catalog, with a personalized results page and direct add-to-cart — without enterprise pricing or a rollout.",
+      },
+      {
+        question: "How long does setup take versus Zoovu?",
+        answer:
+          "Most RevenueHunt merchants launch the same day, and the AI Quiz Copilot can scaffold a complete quiz in about 60 seconds. Zoovu is typically a sales-led enterprise implementation.",
+      },
+    ],
+    verifiedAsOf: "2026-06-07",
+  },
+
+  jebbit: {
+    slug: "jebbit",
+    name: "Jebbit",
+    category: "enterprise declared-data platform (now part of BlueConic)",
+    title: "RevenueHunt vs Jebbit — a self-serve alternative",
+    description:
+      "RevenueHunt vs Jebbit: a standalone, self-serve Shopify product quiz with a free plan from $39/mo. Jebbit is now part of BlueConic's enterprise CDP.",
+    h1: "RevenueHunt vs Jebbit",
+    heroSubtitle:
+      "Jebbit is now part of BlueConic's enterprise customer-data platform, sold by demo. RevenueHunt is a standalone, self-serve product quiz — free to start, Shopify-native, live the same day.",
+    intro: [
+      "Jebbit builds interactive quizzes, product finders, and preference flows to collect declared (zero-party) data. It was acquired and is now “Experiences by Jebbit,” part of BlueConic's customer-data platform — aimed at enterprise and mid-market B2C brands (L'Oréal, Express, Heineken), platform-agnostic, and sold through demos with no public pricing or free plan.",
+      "RevenueHunt is a standalone product recommendation quiz used by 20,000+ brands (4.9★, 450+ reviews). You don't have to buy a CDP to use it: it's a focused, Built-for-Shopify quiz with transparent pricing, a free plan, and same-day setup — self-serve, no sales call.",
+    ],
+    rows: [
+      { feature: "Free plan", rh: RH.freePlan, them: "no" },
+      { feature: "Transparent public pricing", rh: RH.transparentPricing, them: "Custom / request a demo" },
+      { feature: "Starting price", rh: RH.startingPaid, them: "Sales-led (enterprise)" },
+      { feature: "Self-serve setup (no sales call)", rh: "yes", them: "no" },
+      { feature: "Standalone product (no platform purchase required)", rh: "yes", them: "Now part of BlueConic CDP" },
+      { feature: "Recommends real products from your catalog", rh: RH.catalogRecs, them: "yes" },
+      { feature: "Native Shopify app (Built for Shopify)", rh: RH.shopifyNative, them: "Via integration" },
+      { feature: "AI quiz builder (60-second setup)", rh: RH.aiBuilder, them: "no" },
+      { feature: "Unlimited quizzes", rh: RH.unlimitedQuizzes, them: "yes" },
+      { feature: "Unlimited conditional / branching logic", rh: RH.branching, them: "yes" },
+      { feature: "Question-by-question drop-off analytics", rh: RH.analytics, them: "yes" },
+      { feature: "Captures zero-party / declared data", rh: "yes", them: "yes" },
+    ],
+    whySwitch: [
+      {
+        title: "A standalone quiz, not a platform purchase",
+        body: "Jebbit is now “Experiences by Jebbit” inside BlueConic's CDP. RevenueHunt is a focused app you can run on its own — no customer-data platform to buy or implement.",
+      },
+      {
+        title: "Self-serve, not a sales call",
+        body: "Jebbit/BlueConic is sold through demos and custom enterprise contracts with no public pricing. RevenueHunt is install-and-go with a free plan and transparent pricing from $39/month.",
+      },
+      {
+        title: "Built for Shopify, live the same day",
+        body: "RevenueHunt is a Built-for-Shopify app with real-time catalog sync and direct add-to-cart, and an AI Copilot that scaffolds a full quiz in 60 seconds — most merchants launch the same day.",
+      },
+      {
+        title: "Still own your zero-party data",
+        body: "Every quiz answer is zero-party data your shoppers volunteer. RevenueHunt syncs responses and customer tags to Klaviyo, Mailchimp, Omnisend, HubSpot, and more — no CDP required to put it to work.",
+      },
+    ],
+    bestFor:
+      "Jebbit, as part of BlueConic, fits enterprise B2C brands that want declared-data experiences tightly coupled to a full customer-data platform and activated across many channels, with the budget for a CDP. If you want a standalone, affordable, self-serve Shopify quiz, RevenueHunt is the better fit.",
+    migration:
+      "Moving off Jebbit — or evaluating BlueConic — is simple: build your quiz in RevenueHunt (or generate it with the AI Copilot), embed it, and connect Klaviyo or your CRM. Most stores are live the same day, and your zero-party data keeps flowing to your email tools.",
+    faqs: [
+      {
+        question: "Is Jebbit still available on its own?",
+        answer:
+          "Jebbit is now “Experiences by Jebbit,” part of BlueConic's customer-data platform. RevenueHunt is a standalone product quiz you can use without buying a CDP — self-serve, with a free plan from $39/month.",
+      },
+      {
+        question: "How much does RevenueHunt cost compared to Jebbit?",
+        answer:
+          "RevenueHunt has a free plan and transparent paid plans from $39/month. Jebbit/BlueConic does not publish pricing — it's an enterprise, sales-led platform that quotes custom pricing after a demo.",
+      },
+      {
+        question: "Does RevenueHunt collect zero-party (declared) data like Jebbit?",
+        answer:
+          "Yes. Every quiz answer is zero-party data your shoppers volunteer. RevenueHunt syncs responses and customer tags to Klaviyo, Mailchimp, Omnisend, HubSpot, and more for segmentation and personalized marketing.",
+      },
+      {
+        question: "How long does setup take versus Jebbit?",
+        answer:
+          "Most RevenueHunt merchants launch the same day, and the AI Quiz Copilot can scaffold a complete quiz in about 60 seconds. Jebbit/BlueConic is typically a sales-led enterprise implementation.",
+      },
+    ],
+    verifiedAsOf: "2026-06-07",
+  },
 };
 
 /** Stable order for sibling "other comparisons" links. */
-export const COMPETITOR_ORDER = ["octane-ai", "digioh", "typeform"] as const;
+export const COMPETITOR_ORDER = ["octane-ai", "digioh", "zoovu", "jebbit", "typeform"] as const;

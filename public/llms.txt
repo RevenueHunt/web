@@ -26,6 +26,7 @@
 - [/testimonials/](https://revenuehunt.com/testimonials/) - Customer stories
 - [/for-beauty-brands/](https://revenuehunt.com/for-beauty-brands/) - Beauty vertical
 - [/quiz-readiness-assessment/](https://revenuehunt.com/quiz-readiness-assessment/) - Self-assessment
+- [/quiz-roi-calculator/](https://revenuehunt.com/quiz-roi-calculator/) - Free quiz ROI calculator built on real data (1 in 18 quiz takers place an order, ~275% of a typical store conversion rate): estimates extra revenue, the recommended plan, and ROI
 - [/faqs/](https://revenuehunt.com/faqs/) - FAQ
 - [/contact/](https://revenuehunt.com/contact/) - Contact
 - [/blog/](https://revenuehunt.com/blog/) - Blog index

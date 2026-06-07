@@ -23,6 +23,23 @@ const controls = [
   { id: "aovlift", label: "Quiz shopper AOV uplift", min: 0, max: 50, step: 1, value: 10, suffix: "%", benchmark: true, note: "In our data, quiz orders run about 10% higher than non-quiz orders in the same store. It varies by store and category. Set it to 0 to leave AOV out." },
 ];
 
+// Sector presets for the "what do you sell?" selector. Each sets the quiz-taker
+// conversion rate and AOV uplift from measured RevenueHunt data, plus a "% of the
+// average store" figure (quiz rate / a 2% average). "All sectors" is the 5.5%
+// platform average (= 275%, the brand stat). "Other sectors" is the honest
+// residual (everything except the consumable stars), measured at ~3.6% (~180%).
+// Selecting a sector pre-fills quizcvr + aovlift; both stay editable.
+// (Data: PRD-Octane-AI-SEO-Reverse-Engineering W7 deep-dive note.)
+const SECTORS = [
+  { id: "all", label: "All sectors (average)", quizcvr: 5.5, aovlift: 10, pct: 275 },
+  { id: "haircare", label: "Haircare", quizcvr: 7, aovlift: 15, pct: 350 },
+  { id: "fragrance", label: "Fragrance", quizcvr: 7, aovlift: 0, pct: 350 },
+  { id: "beauty", label: "Beauty & skincare", quizcvr: 6, aovlift: 20, pct: 300 },
+  { id: "supplements", label: "Supplements & health", quizcvr: 6, aovlift: 10, pct: 300 },
+  { id: "coffee", label: "Coffee & tea", quizcvr: 5, aovlift: 0, pct: 250 },
+  { id: "other", label: "Other sectors", quizcvr: 3.6, aovlift: 10, pct: 180 },
+];
+
 // Per-vertical conversion (response to order), measured in RevenueHunt data and
 // rounded down. The 5.5% benchmark is a platform average; consumable categories
 // run higher. Shown as a "conversion by category" proof block.
@@ -131,6 +148,20 @@ const jsonLd = [
       <div class="grid gap-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm lg:grid-cols-2 lg:p-8">
         <!-- Inputs -->
         <form id="roi-form" class="space-y-6" aria-label="Quiz ROI inputs">
+          <div>
+            <label for="sector" class="text-sm font-medium text-slate-900">What do you sell?</label>
+            <select
+              id="sector"
+              class="mt-2 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-900 focus:border-[#16161D] focus:outline-none focus:ring-1 focus:ring-[#16161D]"
+            >
+              {SECTORS.map((s) => (
+                <option value={s.id} data-quizcvr={s.quizcvr} data-aovlift={s.aovlift} data-pct={s.pct}>{s.label}</option>
+              ))}
+            </select>
+            <p class="mt-2 rounded-md bg-emerald-50 px-3 py-2 text-xs text-emerald-800 ring-1 ring-inset ring-emerald-600/20">
+              <span id="sector-note">Across all RevenueHunt quizzes, takers convert at about 275% of the average store. Pick your sector for a closer benchmark.</span>
+            </p>
+          </div>
           {controls.map((c) => (
             <div>
               <div class="flex items-center justify-between gap-3">
@@ -167,7 +198,7 @@ const jsonLd = [
                 aria-label={`${c.label} slider`}
               />
               {c.note && (
-                <p class="mt-2 text-xs text-slate-500">
+                <p id={`${c.id}-note`} class="mt-2 text-xs text-slate-500">
                   {c.note}
                 </p>
               )}
@@ -415,7 +446,16 @@ const jsonLd = [
         var t = document.getElementById(id);
         if (t) t.textContent = v;
       }
+      // Keep the two benchmark helper notes truthful as the rate/uplift change.
+      function syncNotes() {
+        var qc = val("quizcvr");
+        if (qc > 0) set("quizcvr-note", "Pre-filled from RevenueHunt data: about 1 in " + Math.round(100 / qc) + " quiz takers place an order. Edit it to match your store.");
+        var lift = val("aovlift");
+        if (lift > 0) set("aovlift-note", "In RevenueHunt data, quiz orders run about " + lift + "% higher than non-quiz orders in the same store. Edit it or set it to 0.");
+        else set("aovlift-note", "In RevenueHunt data, quiz and non-quiz orders are about the same size for this sector. Raise it if your store sees a quiz uplift.");
+      }
       function calc() {
+        syncNotes();
         var V = val("visitors"), A = val("aov"), c = val("cvr") / 100, q = val("engage") / 100, qc = val("quizcvr") / 100, lift = val("aovlift") / 100;
         var takers = V * q;
         var quizOrders = takers * qc;
@@ -453,7 +493,7 @@ const jsonLd = [
           set("out-plancost", "Talk to us for higher volumes");
           set("out-roi", extra > 0 ? "High" : "-");
           set("out-net", "");
-          set("plan-note", "At about " + num.format(responses) + " quiz responses a month you are past the Premium tier, so a custom plan fits best. Based on a 5.5% quiz conversion rate, that traffic could add about " + usd.format(extra) + " a month.");
+          set("plan-note", "At about " + num.format(responses) + " quiz responses a month you are past the Premium tier, so a custom plan fits best. At a " + val("quizcvr") + "% quiz conversion rate, that traffic could add about " + usd.format(extra) + " a month.");
         } else if (plan.cost === 0) {
           set("out-plan", plan.name);
           set("out-plancost", "Free");
@@ -481,6 +521,29 @@ const jsonLd = [
         n.addEventListener("input", function () { r.value = clamp(n, val(k)); calc(); });
         r.addEventListener("input", function () { n.value = r.value; calc(); });
       });
+      // Sector selector: pre-fill the quiz rate + AOV uplift from the chosen
+      // sector and recompute everything. Unselected stays "All sectors" (275%).
+      var sector = document.getElementById("sector");
+      function applySector() {
+        var o = sector.options[sector.selectedIndex];
+        var qc = o.getAttribute("data-quizcvr");
+        var lift = o.getAttribute("data-aovlift");
+        var pct = o.getAttribute("data-pct");
+        function put(id, v) {
+          var n = document.getElementById(id), r = document.getElementById(id + "-range");
+          if (n) n.value = v;
+          if (r) r.value = clamp(r, parseFloat(v));
+        }
+        put("quizcvr", qc);
+        put("aovlift", lift);
+        if (o.value === "all") {
+          set("sector-note", "Across all RevenueHunt quizzes, takers convert at about " + pct + "% of the average store. Pick your sector for a closer benchmark.");
+        } else {
+          set("sector-note", o.text + " quiz takers convert at about " + pct + "% of the average store, measured in RevenueHunt data. All fields stay editable.");
+        }
+        calc();
+      }
+      if (sector) sector.addEventListener("change", applySector);
       calc();
     })();
   </script>

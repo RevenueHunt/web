@@ -1,7 +1,7 @@
 ---
 import Base from "../../layouts/Base.astro";
 import YouTubeFacade from "../../components/YouTubeFacade.astro";
-import { organization, breadcrumb } from "../../lib/schema";
+import { organization, breadcrumb, softwareApplication } from "../../lib/schema";
 import { SITE } from "../../lib/site";
 
 interface Resource {
@@ -47,6 +47,7 @@ const resources: Resource[] = [
 
 const jsonLd = [
   organization(),
+  softwareApplication(),
   breadcrumb([
     { name: "Home", url: "/" },
     { name: "For beauty brands", url: "/for-beauty-brands/" },

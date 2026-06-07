@@ -1,6 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
-import { organization, breadcrumb } from "../../lib/schema";
+import { organization, breadcrumb, softwareApplication } from "../../lib/schema";
 import { SITE } from "../../lib/site";
 
 interface Testimonial {
@@ -53,6 +53,7 @@ const groups: { id: string; label: string; cat: Testimonial["category"] }[] = [
 
 const jsonLd = [
   organization(),
+  softwareApplication(),
   breadcrumb([
     { name: "Home", url: "/" },
     { name: "Testimonials", url: "/testimonials/" },

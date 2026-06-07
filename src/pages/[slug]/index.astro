@@ -2,7 +2,7 @@
 import { getCollection, render } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import PlatformPage from "../../components/pages/PlatformPage.astro";
-import { article, breadcrumb, organization } from "../../lib/schema";
+import { article, breadcrumb, organization, softwareApplication } from "../../lib/schema";
 import { SITE } from "../../lib/site";
 import { PLATFORM_CONFIGS } from "../../lib/platforms";
 import {
@@ -119,6 +119,9 @@ const breadcrumbItems = isBlog
       { name: entry.data.title, url: `/${entry.data.legacySlug}/` },
     ];
 
+// Legal/utility pages should not carry product SoftwareApplication schema.
+const LEGAL_SLUGS = new Set(["privacy", "tos", "dpa", "security"]);
+
 const jsonLd = isBlog
   ? [
       article({
@@ -133,7 +136,12 @@ const jsonLd = isBlog
       }),
       breadcrumb(breadcrumbItems),
     ]
-  : [organization(), breadcrumb(breadcrumbItems)];
+  : [
+      organization(),
+      // SoftwareApplication + AggregateRating on marketing content pages, not legal/utility ones.
+      ...(LEGAL_SLUGS.has(entry.data.legacySlug) ? [] : [softwareApplication()]),
+      breadcrumb(breadcrumbItems),
+    ];
 
 // Share URLs
 const shareUrl = url;

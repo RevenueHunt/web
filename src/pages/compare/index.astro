@@ -1,6 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
-import { organization, breadcrumb } from "../../lib/schema";
+import { organization, breadcrumb, softwareApplication } from "../../lib/schema";
 import { SITE } from "../../lib/site";
 import { COMPETITORS, COMPETITOR_ORDER } from "../../lib/competitors";
 
@@ -11,6 +11,7 @@ const SHOPIFY_INSTALL =
 
 const jsonLd = [
   organization(),
+  softwareApplication(),
   breadcrumb([
     { name: "Home", url: "/" },
     { name: "Compare", url: "/compare/" },

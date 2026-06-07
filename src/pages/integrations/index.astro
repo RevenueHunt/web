@@ -1,6 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
-import { organization, breadcrumb } from "../../lib/schema";
+import { organization, breadcrumb, softwareApplication } from "../../lib/schema";
 
 interface Integration {
   name: string;
@@ -86,6 +86,7 @@ const WOOCOMMERCE_DOWNLOAD =
 
 const jsonLd = [
   organization(),
+  softwareApplication(),
   breadcrumb([
     { name: "Home", url: "/" },
     { name: "Integrations", url: "/integrations/" },

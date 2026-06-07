@@ -1199,4 +1199,9 @@ export const RELATED_GUIDES: SolutionLink[] = [
     href: "/guided-selling-quiz/",
     blurb: "How guided selling works in ecommerce and how to build the quiz.",
   },
+  {
+    label: "Glossary",
+    href: "/glossary/",
+    blurb: "Plain-English definitions of the quiz and personalization terms that matter in ecommerce.",
+  },
 ];

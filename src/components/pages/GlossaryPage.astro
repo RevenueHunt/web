@@ -1,0 +1,202 @@
+---
+import Base from "../../layouts/Base.astro";
+import { organization, breadcrumb, softwareApplication, faqPage, definedTerm } from "../../lib/schema";
+import { GLOSSARY, GLOSSARY_ORDER, type GlossaryTerm } from "../../lib/glossary";
+
+interface Props {
+  entry: GlossaryTerm;
+}
+
+const { entry } = Astro.props;
+const e = entry;
+const url = `/glossary/${e.slug}/`;
+const reviewed = new Date(e.verifiedAsOf).toLocaleDateString("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+
+const SHOPIFY_INSTALL = `https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=glossary_${e.slug.replace(/-/g, "_")}`;
+
+// Other glossary terms, for the "more terms" grid.
+const siblings = GLOSSARY_ORDER.filter((slug) => slug !== e.slug).map((slug) => GLOSSARY[slug]!);
+
+const jsonLd = [
+  organization(),
+  softwareApplication(),
+  definedTerm({ name: e.term, description: e.shortAnswer, url }),
+  breadcrumb([
+    { name: "Home", url: "/" },
+    { name: "Glossary", url: "/glossary/" },
+    { name: e.term, url },
+  ]),
+  faqPage(e.faqs),
+];
+---
+
+<Base
+  title={e.title}
+  description={e.description}
+  ogImage={`/og/glossary-${e.slug}.png`}
+  jsonLd={jsonLd}
+>
+  <!-- Hero + answer-first definition -->
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-3xl px-6 py-16 sm:py-20">
+      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-slate-700">Home</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <a href="/glossary/" class="hover:text-slate-700">Glossary</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <span class="text-slate-700">{e.term}</span>
+      </nav>
+      <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">
+        Glossary · {e.chip}
+      </p>
+      <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">{e.h1}</h1>
+      <!-- The featured-snippet hook: a 1-2 sentence answer directly under H1. -->
+      <p class="mt-6 border-l-4 border-[#16161D] bg-white py-3 pl-5 pr-4 text-xl text-slate-800">
+        {e.shortAnswer}
+      </p>
+      <p class="mt-3 text-sm text-slate-500">Last reviewed {reviewed}</p>
+      {e.intro.length > 0 && (
+        <div class="mt-6 space-y-4 text-lg text-slate-700">
+          {e.intro.map((p) => <p>{p}</p>)}
+        </div>
+      )}
+    </div>
+  </section>
+
+  <!-- Body sections -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-3xl px-6 py-12">
+      <div class="space-y-12">
+        {e.sections.map((sec) => (
+          <div>
+            <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">{sec.heading}</h2>
+            <div class="mt-5 space-y-5 text-lg text-slate-700">
+              {sec.body.map((p) => <p>{p}</p>)}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- With RevenueHunt -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-3xl px-6 py-14">
+      <div class="rounded-2xl border border-slate-200 bg-white p-8">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900">
+          {e.term} with RevenueHunt
+        </h2>
+        <div class="mt-5 space-y-4 text-lg text-slate-700">
+          {e.withRevenueHunt.map((p) => <p>{p}</p>)}
+        </div>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a
+            href={SHOPIFY_INSTALL}
+            target="_blank"
+            rel="external noopener nofollow"
+            onclick={`window.gtag&&gtag('event','shopify_app_install',{screen_name:'glossary_${e.slug}'})`}
+            class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
+          >
+            start free on Shopify
+          </a>
+          <a
+            href="/how-it-works/"
+            class="inline-flex items-center justify-center rounded-md border border-[#16161D] bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-50"
+          >
+            see how it works
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-3xl px-6 py-16">
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900">Frequently asked questions</h2>
+      <div class="mt-10 divide-y divide-slate-200 border-y border-slate-200">
+        {e.faqs.map((faq) => (
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 text-lg font-semibold text-slate-900 [&::-webkit-details-marker]:hidden">
+              <span>{faq.question}</span>
+              <svg
+                class="h-5 w-5 flex-shrink-0 text-slate-400 transition-transform duration-200 group-open:rotate-180"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+              </svg>
+            </summary>
+            <p class="pb-5 text-slate-700">{faq.answer}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Related + more terms -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900">Related reading</h2>
+      <ul class="mt-8 flex flex-wrap gap-3" role="list">
+        {e.related.map((r) => (
+          <li>
+            <a
+              href={r.href}
+              {...(r.external ? { target: "_blank", rel: "external noopener" } : {})}
+              class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-[#16161D] hover:text-[#16161D]"
+            >
+              {r.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <h2 class="mt-14 text-2xl font-bold tracking-tight text-slate-900">More glossary terms</h2>
+      <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" role="list">
+        {siblings.map((sib) => (
+          <li>
+            <a
+              href={`/glossary/${sib.slug}/`}
+              class="group block h-full rounded-xl border border-slate-200 bg-white p-6 transition hover:border-[#16161D] hover:shadow-md"
+            >
+              <h3 class="text-base font-semibold text-slate-900 group-hover:text-[#16161D]">{sib.term}</h3>
+              <p class="mt-2 text-sm text-slate-600">{sib.shortAnswer}</p>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Put it into practice with a product recommendation quiz.
+      </h2>
+      <div class="mt-10 flex flex-wrap justify-center gap-3">
+        <a
+          href={SHOPIFY_INSTALL}
+          target="_blank"
+          rel="external noopener nofollow"
+          onclick={`window.gtag&&gtag('event','shopify_app_install',{screen_name:'glossary_${e.slug}_bottom'})`}
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          start free on Shopify
+        </a>
+        <a
+          href="/pricing/"
+          class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
+        >
+          see pricing
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

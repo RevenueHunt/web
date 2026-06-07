@@ -65,6 +65,19 @@ By quiz type:
 - [/solutions/routine-builder/](https://revenuehunt.com/solutions/routine-builder/) - Routine builder quiz: return a complete multi-step routine
 - [/solutions/bundle-builder/](https://revenuehunt.com/solutions/bundle-builder/) - Bundle builder quiz: assemble a curated set from the shopper's answers
 
+## Glossary (quiz & personalization terms)
+
+- [/glossary/](https://revenuehunt.com/glossary/) - Glossary hub: definitions of quiz and personalization terms
+
+- [/glossary/conversational-commerce/](https://revenuehunt.com/glossary/conversational-commerce/) - Conversational commerce: selling through a two-way conversation, not a static grid; a quiz is its most reliable form
+- [/glossary/product-discovery/](https://revenuehunt.com/glossary/product-discovery/) - Product discovery: how shoppers find the right product (search, filters, guided quizzes); the conversion unlock for large catalogs
+- [/glossary/product-recommendation-engine/](https://revenuehunt.com/glossary/product-recommendation-engine/) - Product recommendation engine: the software that ranks a catalog per shopper; quiz-based engines have no cold-start problem
+- [/glossary/personalized-product-recommendations/](https://revenuehunt.com/glossary/personalized-product-recommendations/) - Personalized product recommendations: suggestions tailored per shopper from behavior or stated preferences; works on the first visit with a quiz
+- [/glossary/ecommerce-personalization/](https://revenuehunt.com/glossary/ecommerce-personalization/) - Ecommerce personalization: adapting the store to each shopper; a quiz is the lowest-lift entry point
+- [/glossary/shoppable-quiz/](https://revenuehunt.com/glossary/shoppable-quiz/) - Shoppable quiz: an interactive quiz that ends in add-to-cart on the results page, not a survey
+- [/glossary/quiz-funnel/](https://revenuehunt.com/glossary/quiz-funnel/) - Quiz funnel: a marketing funnel that uses a quiz to turn traffic into qualified, opted-in, segmented leads
+- [/glossary/lead-generation-quiz/](https://revenuehunt.com/glossary/lead-generation-quiz/) - Lead generation quiz: captures email plus zero-party preferences as an opt-in with a built-in reason to subscribe
+
 ## Help center
 
 Product docs and how-to guides live at https://docs.revenuehunt.com - these are NOT mirrored on this domain.

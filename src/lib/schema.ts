@@ -136,6 +136,41 @@ export function faqPage(items: { question: string; answer: string }[]) {
   };
 }
 
+export function definedTerm(opts: {
+  /** The term itself, e.g. "Conversational commerce". */
+  name: string;
+  /** 1-2 sentence definition. */
+  description: string;
+  /** Canonical URL of the glossary entry. */
+  url: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    name: opts.name,
+    description: opts.description,
+    url: new URL(opts.url, SITE.site_url).href,
+    inDefinedTermSet: new URL("/glossary/", SITE.site_url).href,
+  };
+}
+
+export function definedTermSet(
+  terms: { name: string; description: string; url: string }[],
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "DefinedTermSet",
+    name: "RevenueHunt quiz & personalization glossary",
+    url: new URL("/glossary/", SITE.site_url).href,
+    hasDefinedTerm: terms.map((t) => ({
+      "@type": "DefinedTerm",
+      name: t.name,
+      description: t.description,
+      url: new URL(t.url, SITE.site_url).href,
+    })),
+  };
+}
+
 export function breadcrumb(items: { name: string; url: string }[]) {
   return {
     "@context": "https://schema.org",

@@ -97,6 +97,15 @@ const BESPOKE: OgPage[] = [
   { slug: "solutions-shade-finder", title: "Shade finder quiz", subtitle: "Match foundation and color by undertone and depth." },
   { slug: "solutions-routine-builder", title: "Routine builder quiz", subtitle: "Return a complete multi-step routine, not a single product." },
   { slug: "solutions-bundle-builder", title: "Bundle builder quiz", subtitle: "Assemble a curated set from the shopper's answers and lift AOV." },
+  { slug: "glossary", title: "Quiz & personalization glossary", subtitle: "Plain-English definitions of the terms behind product quizzes." },
+  { slug: "glossary-conversational-commerce", title: "Conversational commerce", subtitle: "Selling through a two-way conversation, not a static product grid." },
+  { slug: "glossary-product-recommendation-engine", title: "Product recommendation engine", subtitle: "The software that decides which products to show each shopper." },
+  { slug: "glossary-shoppable-quiz", title: "Shoppable quiz", subtitle: "An interactive quiz that ends in add-to-cart on the results page." },
+  { slug: "glossary-quiz-funnel", title: "Quiz funnel", subtitle: "Turn traffic into qualified, opted-in leads with a quiz." },
+  { slug: "glossary-personalized-product-recommendations", title: "Personalized recommendations", subtitle: "Suggestions tailored to each shopper, not the same best-sellers." },
+  { slug: "glossary-ecommerce-personalization", title: "Ecommerce personalization", subtitle: "Adapt the store to each shopper to lift conversion and AOV." },
+  { slug: "glossary-product-discovery", title: "Product discovery", subtitle: "How shoppers find the right product in your catalog." },
+  { slug: "glossary-lead-generation-quiz", title: "Lead generation quiz", subtitle: "Capture qualified, opted-in leads with a reason to subscribe." },
 ];
 
 const PLATFORM_TITLES: Record<string, string> = {

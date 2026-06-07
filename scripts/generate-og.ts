@@ -78,6 +78,7 @@ const BESPOKE: OgPage[] = [
   { slug: "compare-zoovu", title: "RevenueHunt vs Zoovu", subtitle: "A focused, self-serve Shopify quiz — not an enterprise discovery suite." },
   { slug: "compare-jebbit", title: "RevenueHunt vs Jebbit", subtitle: "A standalone, self-serve Shopify quiz — Jebbit is now part of BlueConic." },
   { slug: "compare-nosto", title: "RevenueHunt vs Nosto", subtitle: "A focused, self-serve zero-party quiz — not an enterprise personalization suite." },
+  { slug: "compare-tolstoy", title: "RevenueHunt vs Tolstoy", subtitle: "A quiz-first product recommendation tool — not a video platform with a quiz add-on." },
 ];
 
 const PLATFORM_TITLES: Record<string, string> = {

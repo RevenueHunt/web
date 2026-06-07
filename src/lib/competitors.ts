@@ -449,7 +449,82 @@ export const COMPETITORS: Record<string, Competitor> = {
     ],
     verifiedAsOf: "2026-06-07",
   },
+
+  tolstoy: {
+    slug: "tolstoy",
+    name: "Tolstoy",
+    category: "shoppable-video & quiz platform",
+    title: "RevenueHunt vs Tolstoy — a quiz-first alternative",
+    description:
+      "RevenueHunt vs Tolstoy: a purpose-built product quiz with a real recommendation engine and zero-party data — vs a video platform with a quiz feature.",
+    h1: "RevenueHunt vs Tolstoy",
+    heroSubtitle:
+      "Tolstoy is a shoppable-video platform with a quiz feature. RevenueHunt is a purpose-built product recommendation quiz — with a real recommendation engine and zero-party data.",
+    intro: [
+      "Tolstoy is an AI commerce platform built around shoppable video, AI-generated media, and an AI shopping agent, with impression-based pricing from $19/month. It's a strong video-first tool — but the product quiz is a secondary feature alongside the video experience.",
+      "RevenueHunt is a product recommendation quiz used by 20,000+ brands (4.9★, 450+ reviews). It's quiz-first: a dedicated recommendation engine maps each shopper's answers to the right products from your catalog, captures zero-party data, and converts on a personalized results page — across Shopify, WooCommerce, BigCommerce, Magento, Wix, and more.",
+    ],
+    rows: [
+      { feature: "Free plan", rh: RH.freePlan, them: "yes (limited)" },
+      { feature: "Starting paid price", rh: RH.startingPaid, them: "$19/mo" },
+      { feature: "Pricing model", rh: "Flat, by responses", them: "By impressions + AI credits" },
+      { feature: "Purpose-built for product recommendation quizzes", rh: RH.ecommerceRecs, them: "Quiz is a secondary feature (video-first)" },
+      { feature: "Dedicated recommendation engine (upvote & exclusion, results page)", rh: "yes", them: "Video-led shopping" },
+      { feature: "Recommends real products from your catalog", rh: RH.catalogRecs, them: "yes" },
+      { feature: "Captures zero-party data (shoppers tell you directly)", rh: "yes", them: "Mainly video-engagement data" },
+      { feature: "Native Shopify app (Built for Shopify)", rh: RH.shopifyNative, them: "yes" },
+      { feature: "Works on WooCommerce, BigCommerce, Magento, Wix & more", rh: RH.multiPlatform, them: "no" },
+      { feature: "AI quiz builder (60-second setup)", rh: RH.aiBuilder, them: "Video-focused AI" },
+      { feature: "Question-by-question drop-off analytics", rh: RH.analytics, them: "yes" },
+      { feature: "Klaviyo & email / CRM integrations", rh: RH.emailIntegrations, them: "yes" },
+    ],
+    whySwitch: [
+      {
+        title: "A quiz-first tool, not a video add-on",
+        body: "Tolstoy is a shoppable-video platform where the quiz is a secondary feature. RevenueHunt is purpose-built for product recommendation quizzes, with a dedicated recommendation engine and a conversion-focused results page.",
+      },
+      {
+        title: "A real recommendation engine",
+        body: "RevenueHunt ranks the exact products, variants, and collections from your live catalog using an upvote-and-exclusion model, with conditional results blocks and direct add-to-cart — depth a video tool's quiz doesn't match.",
+      },
+      {
+        title: "Zero-party data you own",
+        body: "RevenueHunt captures what shoppers tell you — preferences, goals, constraints — and syncs it to Klaviyo, Mailchimp, Omnisend, and more for segmentation. Tolstoy's strength is video engagement, not structured quiz data.",
+      },
+      {
+        title: "Sell anywhere, proven at scale",
+        body: "RevenueHunt runs natively on Shopify and also on WooCommerce, BigCommerce, Magento, Wix, Squarespace, and standalone — trusted by 20,000+ brands with 4.9★ from 450+ reviews.",
+      },
+    ],
+    bestFor:
+      "Tolstoy is a strong choice if your strategy is video-led — shoppable video, UGC, TikTok Shop — and a quiz is a nice-to-have. If you want a dedicated product recommendation quiz with a real recommendation engine and zero-party data, RevenueHunt is the better fit.",
+    migration:
+      "If you've been running a quiz inside Tolstoy, moving is quick: rebuild it in RevenueHunt's builder (or generate it in 60 seconds with our AI Copilot), embed it, and connect Klaviyo. Most stores are live the same day, and our support team helps you migrate.",
+    faqs: [
+      {
+        question: "Is RevenueHunt better than Tolstoy for a product quiz?",
+        answer:
+          "For a dedicated product recommendation quiz, yes — RevenueHunt is purpose-built for it, with a real recommendation engine and zero-party data. Tolstoy is video-first, with the quiz as a secondary feature. For shoppable video specifically, Tolstoy is purpose-built.",
+      },
+      {
+        question: "Does Tolstoy do product recommendation quizzes?",
+        answer:
+          "Yes, as a secondary feature alongside its shoppable video. RevenueHunt is quiz-first: it's built around the quiz and its recommendation engine, results page, and zero-party data capture.",
+      },
+      {
+        question: "Does RevenueHunt support video too?",
+        answer:
+          "Yes. You can add video to quiz questions and to the personalized results page. RevenueHunt is quiz-first rather than a video platform, so video supports the quiz rather than the other way around.",
+      },
+      {
+        question: "Can I capture zero-party data and send it to Klaviyo?",
+        answer:
+          "Yes. RevenueHunt captures quiz answers as zero-party data and syncs responses and customer tags to Klaviyo, Mailchimp, Omnisend, HubSpot, and more for segmentation and personalized marketing.",
+      },
+    ],
+    verifiedAsOf: "2026-06-07",
+  },
 };
 
 /** Stable order for sibling "other comparisons" links. */
-export const COMPETITOR_ORDER = ["octane-ai", "typeform", "zoovu", "nosto", "jebbit"] as const;
+export const COMPETITOR_ORDER = ["octane-ai", "tolstoy", "typeform", "zoovu", "nosto", "jebbit"] as const;

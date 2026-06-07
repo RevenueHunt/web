@@ -106,6 +106,10 @@ const BESPOKE: OgPage[] = [
   { slug: "glossary-ecommerce-personalization", title: "Ecommerce personalization", subtitle: "Adapt the store to each shopper to lift conversion and AOV." },
   { slug: "glossary-product-discovery", title: "Product discovery", subtitle: "How shoppers find the right product in your catalog." },
   { slug: "glossary-lead-generation-quiz", title: "Lead generation quiz", subtitle: "Capture qualified, opted-in leads with a reason to subscribe." },
+  { slug: "glossary-conversion-rate-optimization", title: "Conversion rate optimization", subtitle: "Raise the share of visitors who buy, without more traffic." },
+  { slug: "glossary-average-order-value", title: "Average order value (AOV)", subtitle: "The average a customer spends per order, and how to raise it." },
+  { slug: "glossary-cross-selling-and-upselling", title: "Cross-selling vs upselling", subtitle: "Add related products, or trade up to a better one." },
+  { slug: "glossary-customer-segmentation", title: "Customer segmentation", subtitle: "Group buyers by shared traits to market to each specifically." },
 ];
 
 const PLATFORM_TITLES: Record<string, string> = {

@@ -609,6 +609,274 @@ export const GLOSSARY: Record<string, GlossaryTerm> = {
     ],
     verifiedAsOf: VERIFIED,
   },
+
+  "conversion-rate-optimization": {
+    slug: "conversion-rate-optimization",
+    term: "Conversion rate optimization (CRO)",
+    chip: "Concept",
+    title: "What is conversion rate optimization?",
+    description:
+      "Conversion rate optimization (CRO) raises the share of visitors who buy. How it is measured, where to focus, and the tactics that move the needle.",
+    h1: "What is conversion rate optimization (CRO)?",
+    shortAnswer:
+      "Conversion rate optimization (CRO) is the practice of increasing the percentage of visitors who take a desired action, usually a purchase. You measure conversion rate as conversions divided by visitors, then improve it without buying more traffic.",
+    intro: [
+      "CRO is about getting more out of the traffic you already have. Doubling your conversion rate has the same effect on revenue as doubling your traffic, but it costs far less.",
+    ],
+    sections: [
+      {
+        heading: "How conversion rate is calculated",
+        body: [
+          "Conversion rate is conversions divided by total visitors, expressed as a percentage. If 1,000 visitors produce 20 purchases, that is a 2% conversion rate. Average ecommerce conversion rates sit in the low single digits, so small absolute gains are large relative ones: moving from 2% to 3% is a 50% lift in orders.",
+          "The same math applies to any goal, not just purchases. Email signups, quiz completions, and add-to-carts are all conversions you can optimize.",
+        ],
+      },
+      {
+        heading: "Where CRO actually focuses",
+        body: [
+          "Good CRO finds the specific step where intent leaks away and fixes it. Common leaks: a product page that does not answer the shopper's real question, a checkout with too much friction, or a category page that drops an undecided shopper into a wall of options with no guidance.",
+          "It is a loop, not a one-time fix: form a hypothesis, change one thing, measure against a baseline, keep what wins. The discipline is changing one variable at a time so you know what moved the number.",
+        ],
+      },
+      {
+        heading: "Tactics that move the number",
+        body: [
+          "The durable wins are clarity and relevance: faster pages, honest product information, fewer checkout steps, and helping undecided shoppers choose. Discount popups can lift conversion in the short term, but they train shoppers to wait for deals and erode margin.",
+          "Helping shoppers choose is the most overlooked lever. A shopper who cannot decide does not convert, and a grid of options does not help them. A guided experience that narrows the catalog to a confident recommendation removes the indecision that quietly kills conversions.",
+        ],
+      },
+    ],
+    withRevenueHunt: [
+      "A product recommendation quiz is a CRO tactic aimed at the indecision leak. Instead of leaving a shopper to compare a wall of products, it asks a few questions and returns a confident, personalized recommendation, so more shoppers reach a buying decision.",
+      "It also captures email and preference data along the way, so the visitors who do not buy on the first visit are not lost. You can size the potential lift for your own numbers with the quiz ROI calculator.",
+    ],
+    faqs: [
+      {
+        question: "How do you calculate conversion rate?",
+        answer:
+          "Divide the number of conversions by the number of visitors and express it as a percentage. For example, 20 purchases from 1,000 visitors is a 2% conversion rate. The same formula works for any goal, like signups or quiz completions.",
+      },
+      {
+        question: "What is a good ecommerce conversion rate?",
+        answer:
+          "Most ecommerce stores convert in the low single digits, often around 1% to 3%. Because the base is small, modest absolute gains are large relative ones: moving from 2% to 3% is a 50% increase in orders.",
+      },
+      {
+        question: "How does a product quiz improve conversion rate?",
+        answer:
+          "It targets the indecision leak. A quiz narrows a large catalog to a confident, personalized recommendation, so undecided shoppers reach a buying decision instead of bouncing off a grid of options.",
+      },
+    ],
+    related: [
+      { label: "Average order value", href: "/glossary/average-order-value/" },
+      { label: "Product discovery", href: "/glossary/product-discovery/" },
+      { label: "Conversion optimization tips", href: "/ecommerce-conversion-optimization-tips/" },
+      { label: "Quiz ROI calculator", href: "/quiz-roi-calculator/" },
+      { label: "Quiz funnel", href: "/glossary/quiz-funnel/" },
+    ],
+    verifiedAsOf: VERIFIED,
+  },
+
+  "average-order-value": {
+    slug: "average-order-value",
+    term: "Average order value (AOV)",
+    chip: "Metric",
+    title: "What is average order value (AOV)?",
+    description:
+      "Average order value (AOV) is the average a customer spends per order. How to calculate it, why it matters, and how to raise it without more traffic.",
+    h1: "What is average order value (AOV)?",
+    shortAnswer:
+      "Average order value (AOV) is the average amount a customer spends in a single order. You calculate it by dividing total revenue by the number of orders over the same period.",
+    intro: [
+      "AOV is one of the three numbers that set your revenue, alongside traffic and conversion rate. Raising it lifts revenue from the exact same number of orders, which is why it is one of the cheapest growth levers you have.",
+    ],
+    sections: [
+      {
+        heading: "How to calculate AOV",
+        body: [
+          "Divide total revenue by the number of orders over a set period. If a store makes $50,000 from 1,000 orders in a month, its AOV is $50. Track it over time and by traffic source, because a higher-AOV channel can be worth more even if it converts less.",
+          "AOV interacts with everything else. A higher AOV means each conversion is worth more, which raises how much you can afford to spend acquiring a customer.",
+        ],
+      },
+      {
+        heading: "Why AOV matters",
+        body: [
+          "Traffic and conversion rate get most of the attention, but they are the expensive levers: more traffic costs ad spend, and conversion gains get harder as you optimize. AOV is the lever you can move on the orders you are already winning.",
+          "It also funds acquisition. The more each order is worth, the more you can bid for paid traffic and still stay profitable, which compounds across the whole funnel.",
+        ],
+      },
+      {
+        heading: "How to increase AOV",
+        body: [
+          "The honest ways to raise AOV all add genuine value: recommend complementary products, bundle items that belong together, and help shoppers buy the complete solution rather than a single piece. Cross-selling and upselling are the tactics; a relevant recommendation is what makes them work instead of annoy.",
+          "The key word is relevant. A generic add-on prompt gets ignored. A recommended set that actually fits what the shopper is buying gets purchased, because it reads as help, not a sales push.",
+        ],
+      },
+    ],
+    withRevenueHunt: [
+      "RevenueHunt raises AOV by recommending a complete set instead of one product. Recommendation slots reserve a place for each role in a routine, stack, or bundle, so the results page returns the whole solution with add-to-cart for the set and an optional discount tied to the answers.",
+      "Because each item is matched to the shopper's answers, the larger order feels like a recommendation, not an upsell. You can estimate the revenue impact for your store with the quiz ROI calculator.",
+    ],
+    faqs: [
+      {
+        question: "How is average order value calculated?",
+        answer:
+          "Divide total revenue by the number of orders over the same period. For example, $50,000 in revenue from 1,000 orders is an average order value of $50.",
+      },
+      {
+        question: "Why is AOV important?",
+        answer:
+          "It lifts revenue from the orders you already win, without paying for more traffic, and a higher AOV lets you spend more to acquire each customer while staying profitable. It is one of the cheapest growth levers available.",
+      },
+      {
+        question: "How can a product quiz increase AOV?",
+        answer:
+          "By recommending a complete set rather than a single product. Recommendation slots return a matched routine, stack, or bundle with add-to-cart for the whole set, so each order is larger while still feeling personalized.",
+      },
+    ],
+    related: [
+      { label: "Cross-selling and upselling", href: "/glossary/cross-selling-and-upselling/" },
+      { label: "Conversion rate optimization", href: "/glossary/conversion-rate-optimization/" },
+      { label: "Bundle builder quiz", href: "/solutions/bundle-builder/" },
+      { label: "Routine builder quiz", href: "/solutions/routine-builder/" },
+      { label: "Quiz ROI calculator", href: "/quiz-roi-calculator/" },
+    ],
+    verifiedAsOf: VERIFIED,
+  },
+
+  "cross-selling-and-upselling": {
+    slug: "cross-selling-and-upselling",
+    term: "Cross-selling and upselling",
+    chip: "Tactic",
+    title: "Cross-selling vs upselling explained",
+    description:
+      "Cross-selling adds related products; upselling trades up to a better one. Here is the difference, why both work, and how a quiz does it without the push.",
+    h1: "What is cross-selling and upselling?",
+    shortAnswer:
+      "Cross-selling recommends related products that complement what a shopper is buying, like a moisturizer with a cleanser. Upselling recommends a better or larger version of what they already want, like a bigger size or a premium tier. Both raise order value.",
+    intro: [
+      "The two get lumped together because both increase what a shopper spends, but they work in different directions. Knowing which one fits a moment is the difference between helpful and pushy.",
+    ],
+    sections: [
+      {
+        heading: "Cross-selling vs upselling: the difference",
+        body: [
+          "Cross-selling goes sideways. It adds complementary items to the order: the classic would you like fries with that, or a screen protector with a phone. The goal is a more complete purchase.",
+          "Upselling goes up. It moves the shopper to a higher-value version of what they are already considering: a larger size, a premium model, a longer subscription. The goal is a better fit at a higher price, not more items.",
+        ],
+      },
+      {
+        heading: "Why both work, when they are relevant",
+        body: [
+          "Both tactics raise average order value, and both can backfire. A relevant cross-sell or upsell reads as helpful advice; an irrelevant one reads as a store trying to pad the bill, and shoppers tune it out or resent it.",
+          "Relevance is everything, and relevance requires knowing the shopper. A recommendation based on what someone is actually trying to achieve lands. A generic you may also like rail, shown to everyone, does not.",
+        ],
+      },
+      {
+        heading: "How a quiz cross-sells and upsells without the push",
+        body: [
+          "A quiz knows the shopper's goal before it recommends anything, so the cross-sell and the upsell are built into the recommendation rather than bolted on at checkout. It can return a complete set (cross-sell) and steer toward the right tier for the stated need (upsell) in one move.",
+          "Because the recommendation answers the shopper's own questions, the larger order feels earned. The shopper sees a solution that fits, not a list of add-ons.",
+        ],
+      },
+    ],
+    withRevenueHunt: [
+      "RevenueHunt builds cross-sells and upsells into the recommendation itself. Recommendation slots reserve a place for each complementary role so the results page returns a full set, and answer-based logic steers shoppers to the size, tier, or bundle that fits what they told you.",
+      "The results page supports add-to-cart for the whole set plus a discount tied to the answers, so the order grows because the recommendation is right, not because a popup interrupted checkout.",
+    ],
+    faqs: [
+      {
+        question: "What is the difference between cross-selling and upselling?",
+        answer:
+          "Cross-selling adds complementary products to an order, like a moisturizer with a cleanser. Upselling trades up to a better or larger version of what the shopper already wants, like a premium tier or a bigger size. Both increase order value.",
+      },
+      {
+        question: "Do cross-selling and upselling actually work?",
+        answer:
+          "Yes, when the recommendation is relevant. A suggestion that fits the shopper's goal reads as helpful and gets bought. A generic, one-size-fits-all prompt gets ignored or resented, so relevance is what separates the two outcomes.",
+      },
+      {
+        question: "How does a quiz cross-sell and upsell?",
+        answer:
+          "It learns the shopper's goal first, then builds the cross-sell and upsell into the recommendation. Recommendation slots return a complete set, and answer-based logic steers toward the right tier, so the larger order feels like advice rather than a push.",
+      },
+    ],
+    related: [
+      { label: "Average order value", href: "/glossary/average-order-value/" },
+      { label: "Bundle builder quiz", href: "/solutions/bundle-builder/" },
+      { label: "Routine builder quiz", href: "/solutions/routine-builder/" },
+      { label: "Shoppable quiz", href: "/glossary/shoppable-quiz/" },
+      { label: "Personalized product recommendations", href: "/glossary/personalized-product-recommendations/" },
+    ],
+    verifiedAsOf: VERIFIED,
+  },
+
+  "customer-segmentation": {
+    slug: "customer-segmentation",
+    term: "Customer segmentation",
+    chip: "Marketing",
+    title: "What is customer segmentation?",
+    description:
+      "Customer segmentation groups buyers by shared traits so you can market to each group specifically. The types, why it works, and how a quiz feeds it.",
+    h1: "What is customer segmentation?",
+    shortAnswer:
+      "Customer segmentation is the practice of grouping customers by shared traits, like goals, behavior, or demographics, so you can market to each group with relevant messaging instead of sending everyone the same thing.",
+    intro: [
+      "A single message to your whole list speaks to no one in particular. Segmentation lets you say the right thing to the right group, which is why segmented campaigns consistently outperform batch-and-blast.",
+    ],
+    sections: [
+      {
+        heading: "The main ways to segment",
+        body: [
+          "Demographic segmentation groups by attributes like age or location. Behavioral segmentation groups by what customers do: past purchases, browsing, engagement. Psychographic segmentation groups by attitudes and values. Needs-based segmentation groups by the problem a customer is trying to solve.",
+          "For ecommerce, needs-based and behavioral segments tend to be the most actionable, because they map directly to what to recommend and what to say next.",
+        ],
+      },
+      {
+        heading: "Why segmentation works",
+        body: [
+          "Relevance drives response. A customer shopping for dry, sensitive skin should not get the same email as one shopping for a gift, and when they do not, open rates, clicks, and conversions all rise.",
+          "Segmentation also compounds over time. Every campaign you send to a well-defined segment teaches you more about it, which sharpens the next one. The list becomes an asset, not just a broadcast channel.",
+        ],
+      },
+      {
+        heading: "The data problem behind segmentation",
+        body: [
+          "You can only segment by what you know, and most stores do not know much about an anonymous visitor. Behavioral data accumulates slowly and breaks for new shoppers, and third-party data is being restricted by browsers and regulation.",
+          "The fix is to ask. When a shopper tells you their goal, preference, or constraint, you can segment on it immediately and accurately, with their consent. That volunteered information is zero-party data.",
+        ],
+      },
+    ],
+    withRevenueHunt: [
+      "RevenueHunt turns quiz answers into segments automatically. Each answer becomes a customer tag, like goal:sleep or skin:sensitive, that syncs to Klaviyo, Mailchimp, Omnisend, HubSpot, and more, so contacts arrive pre-segmented by what they told you.",
+      "Because the segments are built from data the shopper volunteered, they are accurate from the first visit and do not depend on tracking. Every campaign after the quiz can speak to the segment instead of the whole list.",
+    ],
+    faqs: [
+      {
+        question: "What are the main types of customer segmentation?",
+        answer:
+          "The common bases are demographic (age, location), behavioral (purchases, browsing, engagement), psychographic (attitudes, values), and needs-based (the problem a customer is solving). For ecommerce, needs-based and behavioral segments are usually the most actionable.",
+      },
+      {
+        question: "Why is customer segmentation important?",
+        answer:
+          "It makes messaging relevant, which lifts open rates, clicks, and conversions compared with sending everyone the same thing. It also compounds: each campaign to a defined segment teaches you more about it and sharpens the next one.",
+      },
+      {
+        question: "How does a quiz help with segmentation?",
+        answer:
+          "It asks shoppers directly, so each answer becomes a customer tag that syncs to your email tool. Contacts arrive pre-segmented by goal, preference, or constraint, accurate from the first visit and without relying on tracking.",
+      },
+    ],
+    related: [
+      { label: "Personalized product recommendations", href: "/glossary/personalized-product-recommendations/" },
+      { label: "Lead generation quiz", href: "/glossary/lead-generation-quiz/" },
+      { label: "Zero-party data", href: "/zero-party-data/" },
+      { label: "Ecommerce personalization", href: "/glossary/ecommerce-personalization/" },
+      { label: "Integrations", href: "/integrations/" },
+    ],
+    verifiedAsOf: VERIFIED,
+  },
 };
 
 /** Display order for the glossary hub. */
@@ -621,6 +889,10 @@ export const GLOSSARY_ORDER = [
   "shoppable-quiz",
   "quiz-funnel",
   "lead-generation-quiz",
+  "conversion-rate-optimization",
+  "average-order-value",
+  "cross-selling-and-upselling",
+  "customer-segmentation",
 ] as const;
 
 /** Guides and pages the glossary hub points to (existing dedicated pages we

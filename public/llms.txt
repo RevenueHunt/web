@@ -77,6 +77,10 @@ By quiz type:
 - [/glossary/shoppable-quiz/](https://revenuehunt.com/glossary/shoppable-quiz/) - Shoppable quiz: an interactive quiz that ends in add-to-cart on the results page, not a survey
 - [/glossary/quiz-funnel/](https://revenuehunt.com/glossary/quiz-funnel/) - Quiz funnel: a marketing funnel that uses a quiz to turn traffic into qualified, opted-in, segmented leads
 - [/glossary/lead-generation-quiz/](https://revenuehunt.com/glossary/lead-generation-quiz/) - Lead generation quiz: captures email plus zero-party preferences as an opt-in with a built-in reason to subscribe
+- [/glossary/conversion-rate-optimization/](https://revenuehunt.com/glossary/conversion-rate-optimization/) - Conversion rate optimization (CRO): raising the share of visitors who buy; a product quiz targets the indecision leak
+- [/glossary/average-order-value/](https://revenuehunt.com/glossary/average-order-value/) - Average order value (AOV): total revenue divided by orders; a quiz raises it by recommending a complete set, not one product
+- [/glossary/cross-selling-and-upselling/](https://revenuehunt.com/glossary/cross-selling-and-upselling/) - Cross-selling vs upselling: add complementary products vs trade up to a better one; a quiz builds both into the recommendation
+- [/glossary/customer-segmentation/](https://revenuehunt.com/glossary/customer-segmentation/) - Customer segmentation: grouping buyers by shared traits; quiz answers become customer tags synced to Klaviyo and more
 
 ## Help center
 

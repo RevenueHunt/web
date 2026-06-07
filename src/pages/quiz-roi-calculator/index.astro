@@ -7,20 +7,19 @@ const SHOPIFY_INSTALL =
 // Free WordPress.org plugin (not the WooCommerce.com extension).
 const WOO_PLUGIN = "https://wordpress.org/plugins/product-recommendation-quiz-for-ecommerce/";
 
-// Inputs. Two fields carry a benchmark flag (RevenueHunt-data badge + helper
-// note): the quiz-taker conversion rate (5.5%, 1 in 18) and the AOV uplift.
-// The AOV uplift is the within-store paired result: comparing quiz orders to
-// non-quiz orders in the SAME store, quiz orders run a median +11% to +15%
-// (concentrated in skincare/beauty/supplements, flat in a few categories), so
-// we model a conservative, editable 10%. Everything else is the merchant's own
-// number. (Data pull + rationale: PRD-Octane-AI-SEO-Reverse-Engineering W7 note.)
+// Inputs. The quiz-taker conversion rate carries a benchmark flag (RevenueHunt
+// data badge + helper note) and is editable. The AOV uplift is NOT a visible
+// input: it is set by the sector dropdown (hidden #aovlift field) from the
+// within-store paired result (median +11% to +15%, concentrated in skincare/
+// beauty/supplements, flat in a few categories) and folded into the math.
+// Everything else is the merchant's own number.
+// (Data: PRD-Octane-AI-SEO-Reverse-Engineering W7 deep-dive note.)
 const controls = [
   { id: "visitors", label: "Monthly store visitors", min: 500, max: 500000, step: 500, value: 10000, suffix: "" },
   { id: "aov", label: "Your average order value", min: 10, max: 1000, step: 5, value: 60, suffix: "$" },
   { id: "cvr", label: "Your current conversion rate", min: 0.1, max: 15, step: 0.1, value: 2, suffix: "%" },
   { id: "engage", label: "Share of visitors who take the quiz", min: 1, max: 100, step: 1, value: 20, suffix: "%" },
   { id: "quizcvr", label: "Quiz taker conversion rate", min: 1, max: 25, step: 0.5, value: 5.5, suffix: "%", benchmark: true, note: "Pre-filled with our measured benchmark: on average, 1 in 18 quiz takers place an order. Edit it to match your store." },
-  { id: "aovlift", label: "Quiz shopper AOV uplift", min: 0, max: 50, step: 1, value: 10, suffix: "%", benchmark: true, note: "In our data, quiz orders run about 10% higher than non-quiz orders in the same store. It varies by store and category. Set it to 0 to leave AOV out." },
 ];
 
 // Sector presets for the "what do you sell?" selector. Each sets the quiz-taker
@@ -75,7 +74,7 @@ const faqs = [
   {
     question: "Do quiz shoppers spend more per order?",
     answer:
-      "On average, yes, compared like for like. Within the same store, orders that came through a quiz run about 10% higher than orders that did not. It is not the same everywhere: strongest in categories like skincare, beauty and supplements, close to flat in others. The calculator pre-fills a conservative 10% that you can edit or set to 0.",
+      "On average, yes, compared like for like. Within the same store, orders that came through a quiz run about 10% higher than orders that did not. It is not the same everywhere: strongest in categories like skincare, beauty and supplements, close to flat in others. The calculator factors this in automatically based on the sector you pick.",
   },
   {
     question: "Is this based on real data or made-up multipliers?",
@@ -159,7 +158,7 @@ const jsonLd = [
               ))}
             </select>
             <p class="mt-2 rounded-md bg-emerald-50 px-3 py-2 text-xs text-emerald-800 ring-1 ring-inset ring-emerald-600/20">
-              <span id="sector-note">Across all RevenueHunt quizzes, takers convert at about 275% of the average store. Pick your sector for a closer benchmark.</span>
+              <span id="sector-note">Across all RevenueHunt quizzes, takers convert at about 275% of the average store and place orders about 10% larger. Pick your sector for a closer benchmark.</span>
             </p>
           </div>
           {controls.map((c) => (
@@ -204,6 +203,8 @@ const jsonLd = [
               )}
             </div>
           ))}
+          <!-- AOV uplift is not user-editable: the sector dropdown sets it. -->
+          <input type="hidden" id="aovlift" value="10" />
         </form>
 
         <!-- Results -->
@@ -262,7 +263,7 @@ const jsonLd = [
         </div>
       </div>
       <p class="mt-4 text-xs text-slate-500">
-        The quiz taker conversion rate and the AOV uplift are benchmarks measured from real RevenueHunt data; your store will vary, so edit them to match. Visitors, average order value, and current conversion rate are your own numbers. This is an estimate, not a guarantee, and actual results depend on your store, traffic, and quiz.
+        The quiz taker conversion rate is a benchmark you can edit, and the AOV uplift is applied automatically from your sector; both come from real RevenueHunt data and your store will vary. Visitors, average order value, and current conversion rate are your own numbers. This is an estimate, not a guarantee, and actual results depend on your store, traffic, and quiz.
       </p>
     </div>
   </section>
@@ -348,7 +349,7 @@ const jsonLd = [
           Based on the data collected across more than 45 million real quiz responses, 5.5% of shoppers who complete a RevenueHunt quiz (about 1 in 18) place a tracked order. Against a typical 2% store conversion rate, that is 2.75x, about 275% of what a store usually converts at. We pre-fill that figure and let you edit it.
         </p>
         <p>
-          We also looked at order value. Compared like for like, within the same store, quiz orders run about 10% higher than non-quiz orders. The uplift is strongest in categories like skincare, beauty and supplements, and close to flat in a few others. So we pre-fill a conservative 10% and let you edit it or set it to 0.
+          We also looked at order value. Compared like for like, within the same store, quiz orders run about 10% higher than non-quiz orders. The uplift is strongest in categories like skincare, beauty and supplements, and close to flat in a few others. The calculator applies a conservative, data-backed uplift based on the sector you pick, so you do not have to guess.
         </p>
         <p>
           The calculator uses your own <a href="/glossary/average-order-value/" class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">average order value</a> and ignores the email leads and zero-party data a quiz captures, which compound over time, so it tends to understate the full value.
@@ -422,7 +423,7 @@ const jsonLd = [
 
   <script is:inline>
     (function () {
-      var KEYS = ["visitors", "aov", "cvr", "engage", "quizcvr", "aovlift"];
+      var KEYS = ["visitors", "aov", "cvr", "engage", "quizcvr"];
       var usd = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
       var num = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
       function clamp(el, v) {
@@ -440,13 +441,10 @@ const jsonLd = [
         var t = document.getElementById(id);
         if (t) t.textContent = v;
       }
-      // Keep the two benchmark helper notes truthful as the rate/uplift change.
+      // Keep the quiz-rate helper note truthful as the rate changes.
       function syncNotes() {
         var qc = val("quizcvr");
         if (qc > 0) set("quizcvr-note", "Pre-filled from RevenueHunt data: about 1 in " + Math.round(100 / qc) + " quiz takers place an order. Edit it to match your store.");
-        var lift = val("aovlift");
-        if (lift > 0) set("aovlift-note", "In RevenueHunt data, quiz orders run about " + lift + "% higher than non-quiz orders in the same store. Edit it or set it to 0.");
-        else set("aovlift-note", "In RevenueHunt data, quiz and non-quiz orders are about the same size for this sector. Raise it if your store sees a quiz uplift.");
       }
       function calc() {
         syncNotes();
@@ -530,10 +528,12 @@ const jsonLd = [
         }
         put("quizcvr", qc);
         put("aovlift", lift);
+        var liftN = parseFloat(lift) || 0;
+        var aovPart = liftN > 0 ? " and place orders about " + liftN + "% larger" : "";
         if (o.value === "all") {
-          set("sector-note", "Across all RevenueHunt quizzes, takers convert at about " + pct + "% of the average store. Pick your sector for a closer benchmark.");
+          set("sector-note", "Across all RevenueHunt quizzes, takers convert at about " + pct + "% of the average store" + aovPart + ". Pick your sector for a closer benchmark.");
         } else {
-          set("sector-note", o.text + " quiz takers convert at about " + pct + "% of the average store, measured in RevenueHunt data. All fields stay editable.");
+          set("sector-note", o.text + " quiz takers convert at about " + pct + "% of the average store" + aovPart + ", measured in RevenueHunt data.");
         }
         calc();
       }

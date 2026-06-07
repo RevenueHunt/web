@@ -405,21 +405,15 @@ const jsonLd = [
           start free on Shopify
         </a>
         <a
-          href="/pricing/"
+          href={WOO_PLUGIN}
+          target="_blank"
+          rel="external noopener nofollow"
+          onclick="window.gtag&&gtag('event','woocommerce_plugin_click',{screen_name:'roi_calculator_bottom'})"
           class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
         >
-          see pricing
+          start free on WooCommerce
         </a>
       </div>
-      <a
-        href={WOO_PLUGIN}
-        target="_blank"
-        rel="external noopener nofollow"
-        onclick="window.gtag&&gtag('event','woocommerce_plugin_click',{screen_name:'roi_calculator_bottom'})"
-        class="mt-5 inline-block text-sm font-medium text-white/70 underline decoration-white/30 underline-offset-2 transition hover:text-white hover:decoration-white"
-      >
-        or start free on WooCommerce
-      </a>
     </div>
   </section>
 

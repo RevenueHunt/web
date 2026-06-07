@@ -150,81 +150,6 @@ export const COMPETITORS: Record<string, Competitor> = {
     verifiedAsOf: "2026-06-07",
   },
 
-  digioh: {
-    slug: "digioh",
-    name: "Digioh",
-    category: "enterprise personalization platform",
-    title: "RevenueHunt vs Digioh — a self-serve alternative",
-    description:
-      "RevenueHunt vs Digioh: a focused, self-serve product quiz app with a free plan and pricing from $39/mo — no enterprise sales call required.",
-    h1: "RevenueHunt vs Digioh",
-    heroSubtitle:
-      "Digioh is a sales-led enterprise personalization platform. RevenueHunt is a focused product quiz app you can install today — free to start, transparent pricing, live the same day.",
-    intro: [
-      "Digioh is a broad personalization platform that combines product quizzes, pop-ups, identity recognition, and onsite personalization, with 300+ integrations. It's aimed at enterprise teams and sold through demos and custom contracts — there's no public pricing and no free plan.",
-      "RevenueHunt is a focused product recommendation quiz used by 20,000+ brands (4.9★, 450+ reviews). It does one thing extremely well — turn shopper answers into the right product recommendations — with transparent pricing, a free plan, and same-day setup, no sales call required.",
-    ],
-    rows: [
-      { feature: "Free plan", rh: RH.freePlan, them: "no" },
-      { feature: "Transparent public pricing", rh: RH.transparentPricing, them: "Custom / request a demo" },
-      { feature: "Starting price", rh: RH.startingPaid, them: "Sales-led (enterprise)" },
-      { feature: "Self-serve setup (no sales call)", rh: "yes", them: "no" },
-      { feature: "Purpose-built for product recommendation quizzes", rh: RH.ecommerceRecs, them: "Quiz is one module of a platform" },
-      { feature: "Recommends real products from your catalog", rh: RH.catalogRecs, them: "yes" },
-      { feature: "Native Shopify app (Built for Shopify)", rh: RH.shopifyNative, them: "Via integration" },
-      { feature: "AI quiz builder (60-second setup)", rh: RH.aiBuilder, them: "no" },
-      { feature: "Unlimited quizzes", rh: RH.unlimitedQuizzes, them: "yes" },
-      { feature: "Unlimited conditional / branching logic", rh: RH.branching, them: "yes" },
-      { feature: "Question-by-question drop-off analytics", rh: RH.analytics, them: "yes" },
-      { feature: "Klaviyo & email / CRM integrations", rh: RH.emailIntegrations, them: "yes" },
-    ],
-    whySwitch: [
-      {
-        title: "Self-serve, not a sales call",
-        body: "Digioh is sold through demos and custom enterprise contracts with no public pricing. RevenueHunt is install-and-go: pick a plan, build your quiz, and publish — no contracts, no procurement.",
-      },
-      {
-        title: "Live in minutes, not weeks",
-        body: "Digioh is a full personalization platform that layers across your stack and typically needs onboarding. RevenueHunt is a focused quiz app most merchants launch the same day, with an AI Copilot that scaffolds a full quiz in 60 seconds.",
-      },
-      {
-        title: "Pricing that fits a growing brand",
-        body: "Enterprise contracts are overkill for most stores. RevenueHunt starts free and scales by responses from $39/month — you only pay for what your quizzes actually do.",
-      },
-      {
-        title: "Depth where it counts: recommendations",
-        body: "RevenueHunt's upvote-and-exclusion engine maps answers to the exact products, variants, and collections from your live catalog, with conditional results blocks and direct add-to-cart — purpose-built for product discovery rather than a quiz bolted onto a platform.",
-      },
-    ],
-    bestFor:
-      "Digioh fits enterprise teams that want a single platform for identity, pop-ups, and onsite personalization across many channels, and have the budget and team for a sales-led rollout. If you want a focused, affordable, self-serve product quiz, RevenueHunt is the better fit.",
-    migration:
-      "Moving from Digioh is straightforward: build your quiz in RevenueHunt (or generate it with the AI Copilot), embed it, and connect Klaviyo or your CRM. No implementation project — most stores are live the same day, and support helps you get there.",
-    faqs: [
-      {
-        question: "How much does RevenueHunt cost compared to Digioh?",
-        answer:
-          "RevenueHunt has a free plan and transparent paid plans from $39/month. Digioh does not publish pricing — it's a sales-led enterprise platform that quotes custom pricing after a demo.",
-      },
-      {
-        question: "Is RevenueHunt a full personalization platform like Digioh?",
-        answer:
-          "No — and that's the point. Digioh bundles quizzes, pop-ups, identity, and onsite personalization. RevenueHunt focuses on product recommendation quizzes and does that one job exceptionally well, with self-serve setup and no sales call.",
-      },
-      {
-        question: "How long does setup take versus Digioh?",
-        answer:
-          "Most RevenueHunt merchants launch the same day. The AI Quiz Copilot can scaffold a complete quiz — questions, logic, and product mappings — in about 60 seconds. Digioh is typically an onboarded, sales-led implementation.",
-      },
-      {
-        question: "Does RevenueHunt collect zero-party data like Digioh?",
-        answer:
-          "Yes. Every quiz answer is zero-party data your shoppers volunteer. RevenueHunt syncs responses and customer tags to Klaviyo, Mailchimp, Omnisend, HubSpot, and more for segmentation and personalized marketing.",
-      },
-    ],
-    verifiedAsOf: "2026-06-07",
-  },
-
   typeform: {
     slug: "typeform",
     name: "Typeform",
@@ -450,81 +375,6 @@ export const COMPETITORS: Record<string, Competitor> = {
     verifiedAsOf: "2026-06-07",
   },
 
-  lantern: {
-    slug: "lantern",
-    name: "Lantern",
-    category: "Shopify quiz app",
-    title: "RevenueHunt vs Lantern — a proven alternative",
-    description:
-      "RevenueHunt vs Lantern: a proven product quiz used by 20,000+ brands, with a free plan that works on live stores and support beyond Shopify. From $39/mo.",
-    h1: "RevenueHunt vs Lantern",
-    heroSubtitle:
-      "Both are AI product recommendation quiz builders for Shopify. RevenueHunt adds a proven track record with 20,000+ brands, a free plan for live stores, and multi-platform support.",
-    intro: [
-      "Lantern is a newer AI quiz builder for Shopify with usage-based pricing from $39/month and a feature set — AI quiz generation, unlimited quizzes, integrations, analytics — that overlaps closely with RevenueHunt's. Its free tier, however, is limited to development stores, not your live storefront.",
-      "RevenueHunt is the product recommendation quiz used by 20,000+ brands since 2019 (40M+ quizzes, $1.3B+ in influenced revenue, 4.9★ from 450+ reviews). It matches Lantern feature-for-feature on the essentials, then adds a proven track record at scale, a free plan that runs on your live store, and support across Shopify, WooCommerce, BigCommerce, Magento, Wix, and more.",
-    ],
-    rows: [
-      { feature: "Free plan on a live (non-dev) store", rh: RH.freePlan, them: "Dev stores only" },
-      { feature: "Starting paid price", rh: RH.startingPaid, them: "$39/mo" },
-      { feature: "Proven at scale", rh: "20,000+ brands · 40M+ quizzes", them: "Newer entrant" },
-      { feature: "Recommends real products from your catalog", rh: RH.catalogRecs, them: "yes" },
-      { feature: "Native Shopify app (Built for Shopify)", rh: RH.shopifyNative, them: "yes" },
-      { feature: "Works on WooCommerce, BigCommerce, Magento, Wix & more", rh: RH.multiPlatform, them: "no" },
-      { feature: "AI quiz builder (60-second setup)", rh: RH.aiBuilder, them: "yes" },
-      { feature: "Unlimited quizzes", rh: RH.unlimitedQuizzes, them: "yes" },
-      { feature: "Unlimited conditional / branching logic", rh: RH.branching, them: "yes" },
-      { feature: "Question-by-question drop-off analytics", rh: RH.analytics, them: "yes" },
-      { feature: "Klaviyo & email / CRM integrations", rh: RH.emailIntegrations, them: "yes" },
-      { feature: "Live chat, video-call & account-manager support", rh: "yes", them: "Email-first" },
-    ],
-    whySwitch: [
-      {
-        title: "A proven platform, not a newcomer",
-        body: "RevenueHunt has powered quizzes for 20,000+ brands since 2019 — 40M+ quizzes taken, $1.3B+ in influenced revenue, and 4.9★ from 450+ reviews. Lantern is a newer entrant. Build your quiz stack on a tool with a long, public track record.",
-      },
-      {
-        title: "A free plan that works on your live store",
-        body: "Lantern's free tier is limited to development stores. RevenueHunt's free plan runs on your real storefront — 100 responses/month, unlimited quizzes — so you can launch for free without a paid plan.",
-      },
-      {
-        title: "Sell anywhere, not just Shopify",
-        body: "Lantern is Shopify-only. RevenueHunt runs natively on Shopify and also on WooCommerce, BigCommerce, Magento, Wix, Squarespace, and as a standalone hosted quiz — one quiz tool for every storefront you run.",
-      },
-      {
-        title: "Support that scales with you",
-        body: "RevenueHunt backs every store with email support, plus live chat, video-call support, and a dedicated account manager on higher plans — hands-on help when your quiz is doing real revenue.",
-      },
-    ],
-    bestFor:
-      "Lantern is a capable, modern AI quiz builder and a reasonable choice if you're Shopify-only and want a newer tool. If you want a platform proven at scale, a free plan that works on a live store, multi-platform support, or deeper hands-on support, RevenueHunt is the better fit.",
-    migration:
-      "Switching from Lantern is quick: rebuild your quiz in RevenueHunt's builder (or generate it in 60 seconds with our AI Copilot), embed it, and connect Klaviyo. Most stores are live the same day, and our support team helps you migrate.",
-    faqs: [
-      {
-        question: "Is RevenueHunt a good Lantern alternative?",
-        answer:
-          "Yes. RevenueHunt matches Lantern on the essentials — AI quiz builder, unlimited quizzes, branching logic, integrations, analytics — and adds a track record at scale (20,000+ brands, 4.9★ from 450+ reviews), a free plan that works on live stores, and support beyond Shopify.",
-      },
-      {
-        question: "Does RevenueHunt have a free plan like Lantern?",
-        answer:
-          "Yes, and it works on your live store. Lantern's free tier is limited to development stores, while RevenueHunt's free plan runs on your real storefront with 100 responses per month and unlimited quizzes.",
-      },
-      {
-        question: "Does RevenueHunt work on platforms other than Shopify?",
-        answer:
-          "Yes. RevenueHunt works on Shopify, WooCommerce, BigCommerce, Magento, Wix, Squarespace, and as a standalone hosted quiz. Lantern is Shopify-only.",
-      },
-      {
-        question: "Can I migrate my Lantern quiz to RevenueHunt?",
-        answer:
-          "Yes. Recreate your quiz in RevenueHunt's builder or generate it with the AI Quiz Copilot, then connect your email tool. Most merchants are live the same day, and our team helps with the migration.",
-      },
-    ],
-    verifiedAsOf: "2026-06-07",
-  },
-
   nosto: {
     slug: "nosto",
     name: "Nosto",
@@ -602,4 +452,4 @@ export const COMPETITORS: Record<string, Competitor> = {
 };
 
 /** Stable order for sibling "other comparisons" links. */
-export const COMPETITOR_ORDER = ["octane-ai", "lantern", "typeform", "digioh", "zoovu", "nosto", "jebbit"] as const;
+export const COMPETITOR_ORDER = ["octane-ai", "typeform", "zoovu", "nosto", "jebbit"] as const;

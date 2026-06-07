@@ -74,11 +74,9 @@ const BESPOKE: OgPage[] = [
   },
   { slug: "jobs", title: "Jobs", subtitle: "Join a small, distributed team building quizzes for 20,000+ brands." },
   { slug: "compare-octane-ai", title: "RevenueHunt vs Octane AI", subtitle: "The Octane AI alternative for Shopify — free plan, no watermark, unlimited quizzes." },
-  { slug: "compare-digioh", title: "RevenueHunt vs Digioh", subtitle: "The self-serve Digioh alternative — transparent pricing, live the same day." },
   { slug: "compare-typeform", title: "RevenueHunt vs Typeform", subtitle: "The ecommerce product quiz Typeform isn't — recommends real products on Shopify." },
   { slug: "compare-zoovu", title: "RevenueHunt vs Zoovu", subtitle: "A focused, self-serve Shopify quiz — not an enterprise discovery suite." },
   { slug: "compare-jebbit", title: "RevenueHunt vs Jebbit", subtitle: "A standalone, self-serve Shopify quiz — Jebbit is now part of BlueConic." },
-  { slug: "compare-lantern", title: "RevenueHunt vs Lantern", subtitle: "A product quiz proven at scale — free on live stores, multi-platform." },
   { slug: "compare-nosto", title: "RevenueHunt vs Nosto", subtitle: "A focused, self-serve zero-party quiz — not an enterprise personalization suite." },
 ];
 

@@ -4,6 +4,8 @@ import { organization, breadcrumb, softwareApplication, faqPage } from "../../li
 
 const SHOPIFY_INSTALL =
   "https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=roi_calculator";
+// Free WordPress.org plugin (not the WooCommerce.com extension).
+const WOO_PLUGIN = "https://wordpress.org/plugins/product-recommendation-quiz-for-ecommerce/";
 
 // Inputs. The quiz-taker conversion rate is pre-filled with a benchmark
 // measured from real RevenueHunt data (see "benchmark" flag); everything else
@@ -14,7 +16,7 @@ const controls = [
   { id: "aov", label: "Your average order value", min: 10, max: 1000, step: 5, value: 60, suffix: "$" },
   { id: "cvr", label: "Your current conversion rate", min: 0.1, max: 15, step: 0.1, value: 2, suffix: "%" },
   { id: "engage", label: "Share of visitors who take the quiz", min: 1, max: 100, step: 1, value: 20, suffix: "%" },
-  { id: "quizcvr", label: "Quiz taker conversion rate", min: 1, max: 25, step: 0.5, value: 5, suffix: "%", benchmark: true },
+  { id: "quizcvr", label: "Quiz taker conversion rate", min: 1, max: 25, step: 0.5, value: 5.5, suffix: "%", benchmark: true },
 ];
 
 // Real, data-backed proof points shown on the page. The conversion figure is
@@ -22,7 +24,7 @@ const controls = [
 // across a 48k-response sample; attribution undercounts, so the floor is safe.
 const PROOF = [
   { stat: "45M+", label: "quiz responses analyzed" },
-  { stat: "1 in 20+", label: "quiz takers place an order" },
+  { stat: "5.5%", label: "of quiz takers place an order" },
   { stat: "$1.5B+", label: "merchant revenue influenced" },
   { stat: "20,000+", label: "brands" },
 ];
@@ -31,7 +33,7 @@ const faqs = [
   {
     question: "Where does the quiz conversion rate come from?",
     answer:
-      "It is a benchmark from real RevenueHunt data. Across our quiz responses, more than 1 in 20 shoppers who complete a quiz go on to place a tracked order. The field is pre-filled with that conservative figure and you can edit it to match your own store.",
+      "It is a benchmark from real RevenueHunt data. Across our quiz responses, 5.5% of shoppers who complete a quiz (about 1 in 18) go on to place a tracked order. The field is pre-filled with that benchmark, and you can edit it to match your own store.",
   },
   {
     question: "How is the extra revenue calculated?",
@@ -42,11 +44,6 @@ const faqs = [
     question: "Is this based on real data or made-up multipliers?",
     answer:
       "Real data. The quiz conversion benchmark is measured across more than 45 million quiz responses and over $1.5 billion in influenced merchant revenue. Your visitors, average order value, and current conversion rate are your own numbers. The output is an estimate, not a guarantee.",
-  },
-  {
-    question: "Why is there no average order value uplift field?",
-    answer:
-      "Because our aggregate data does not support one. Quiz-attributed orders are about the same value as non-quiz orders, so we do not pad the estimate with an AOV bump we cannot prove. The lift this calculator shows comes from conversion, not from inflating order value.",
   },
   {
     question: "Is the calculator free to use?",
@@ -68,7 +65,7 @@ const jsonLd = [
 
 <Base
   title="Quiz ROI calculator for ecommerce"
-  description="Free quiz ROI calculator built on real data: more than 1 in 20 quiz takers place an order. Estimate the extra revenue a quiz could add to your store."
+  description="Free quiz ROI calculator built on real data: 5.5% of quiz takers place an order. Estimate the extra revenue and ROI a quiz could add to your store."
   ogImage="/og/quiz-roi-calculator.png"
   jsonLd={jsonLd}
 >
@@ -84,7 +81,7 @@ const jsonLd = [
         <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">Free tool</p>
         <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">Quiz ROI calculator</h1>
         <p class="mx-auto mt-6 max-w-3xl text-xl text-slate-600">
-          See the extra revenue a product recommendation quiz could add to your store. The conversion benchmark is real, measured across 45M+ quiz responses, not a made-up multiplier. Adjust the inputs to match your numbers.
+          See the extra revenue a product recommendation quiz could add to your store. The 5.5% conversion benchmark is real, measured across 45M+ quiz responses, not a made-up multiplier. Adjust the inputs to match your numbers.
         </p>
       </div>
     </div>
@@ -151,7 +148,7 @@ const jsonLd = [
               />
               {c.benchmark && (
                 <p class="mt-2 text-xs text-slate-500">
-                  Pre-filled with our measured benchmark: more than 1 in 20 quiz takers place an order. Edit it to match your store.
+                  Pre-filled with our measured benchmark: 5.5% of quiz takers place an order, about 1 in 18. Edit it to match your store.
                 </p>
               )}
             </div>
@@ -202,11 +199,72 @@ const jsonLd = [
           >
             start free on Shopify
           </a>
+          <a
+            href={WOO_PLUGIN}
+            target="_blank"
+            rel="external noopener nofollow"
+            onclick="window.gtag&&gtag('event','woocommerce_plugin_click',{screen_name:'roi_calculator'})"
+            class="-mt-1 text-center text-sm font-medium text-slate-600 underline decoration-slate-300 underline-offset-2 transition hover:text-[#16161D] hover:decoration-[#16161D]"
+          >
+            or start free on WooCommerce
+          </a>
         </div>
       </div>
       <p class="mt-4 text-xs text-slate-500">
         The quiz taker conversion rate is a benchmark measured from real RevenueHunt data across 45M+ quiz responses; your store will vary, so edit it to match. Visitors, average order value, and current conversion rate are your own numbers. This is an estimate, not a guarantee, and actual results depend on your store, traffic, and quiz.
       </p>
+    </div>
+  </section>
+
+  <!-- Recommended plan + ROI -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6 pb-14">
+      <div class="rounded-2xl border-2 border-[#16161D] bg-slate-50 p-6 sm:p-8">
+        <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">Your recommended plan and ROI</p>
+        <div class="mt-5 grid gap-6 sm:grid-cols-3">
+          <div class="rounded-xl border border-slate-200 bg-white p-5">
+            <p class="text-xs text-slate-600">Estimated quiz responses / month</p>
+            <p id="out-responses" class="mt-1 text-3xl font-bold tracking-tight text-slate-900">0</p>
+          </div>
+          <div class="rounded-xl border border-slate-200 bg-white p-5">
+            <p class="text-xs text-slate-600">Recommended plan</p>
+            <p id="out-plan" class="mt-1 text-3xl font-bold tracking-tight text-slate-900">Free Plan</p>
+            <p id="out-plancost" class="text-sm text-slate-600">Free</p>
+          </div>
+          <div class="rounded-xl border border-slate-200 bg-white p-5">
+            <p class="text-xs text-slate-600">Return on the plan cost</p>
+            <p id="out-roi" class="mt-1 text-3xl font-bold tracking-tight text-emerald-600">-</p>
+            <p id="out-net" class="text-sm text-slate-600"></p>
+          </div>
+        </div>
+        <p id="plan-note" class="mt-5 text-sm text-slate-700"></p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a
+            href={SHOPIFY_INSTALL}
+            target="_blank"
+            rel="external noopener nofollow"
+            onclick="window.gtag&&gtag('event','shopify_app_install',{screen_name:'roi_calculator_plan'})"
+            class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
+          >
+            start free on Shopify
+          </a>
+          <a
+            href="/pricing/"
+            class="inline-flex items-center justify-center rounded-md border border-[#16161D] bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-50"
+          >
+            see all plans
+          </a>
+        </div>
+        <a
+          href={WOO_PLUGIN}
+          target="_blank"
+          rel="external noopener nofollow"
+          onclick="window.gtag&&gtag('event','woocommerce_plugin_click',{screen_name:'roi_calculator_plan'})"
+          class="mt-3 inline-block text-sm font-medium text-slate-600 underline decoration-slate-300 underline-offset-2 transition hover:text-[#16161D] hover:decoration-[#16161D]"
+        >
+          or start free on WooCommerce
+        </a>
+      </div>
     </div>
   </section>
 
@@ -219,10 +277,10 @@ const jsonLd = [
           The model is deliberately simple and honest. It takes the share of your visitors who complete the quiz, converts them at the quiz taker rate, and compares that against what the same visitors would have done at your current site <a href="/glossary/conversion-rate-optimization/" class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">conversion rate</a>. The gap is the estimated extra revenue.
         </p>
         <p>
-          The one number we did not invent is the quiz taker conversion rate. Across more than 45 million real quiz responses, more than 1 in 20 shoppers who complete a RevenueHunt quiz place a tracked order, which is why quiz traffic typically converts well above a category page. We pre-fill that figure and let you edit it.
+          The one number we did not invent is the quiz taker conversion rate. Across more than 45 million real quiz responses, 5.5% of shoppers who complete a RevenueHunt quiz (about 1 in 18) place a tracked order, which is why quiz traffic typically converts well above a category page. We pre-fill that figure and let you edit it.
         </p>
         <p>
-          We deliberately leave <a href="/glossary/average-order-value/" class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">average order value</a> as your own input and do not add an AOV uplift, because our data does not show quiz orders being larger than non-quiz orders. The calculator also ignores the email leads and zero-party data a quiz captures, which compound over time, so it tends to understate the full value.
+          The calculator uses your own <a href="/glossary/average-order-value/" class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">average order value</a> and ignores the email leads and zero-party data a quiz captures, which compound over time, so it tends to understate the full value.
         </p>
       </div>
     </div>
@@ -279,6 +337,15 @@ const jsonLd = [
           see pricing
         </a>
       </div>
+      <a
+        href={WOO_PLUGIN}
+        target="_blank"
+        rel="external noopener nofollow"
+        onclick="window.gtag&&gtag('event','woocommerce_plugin_click',{screen_name:'roi_calculator_bottom'})"
+        class="mt-5 inline-block text-sm font-medium text-white/70 underline decoration-white/30 underline-offset-2 transition hover:text-white hover:decoration-white"
+      >
+        or start free on WooCommerce
+      </a>
     </div>
   </section>
 
@@ -316,6 +383,46 @@ const jsonLd = [
         set("out-quizorders", num.format(quizOrders));
         set("out-baseline", usd.format(baseline));
         set("out-withquiz", usd.format(baseline + extra));
+
+        // Recommended plan (by monthly quiz responses) + cost + ROI.
+        // Tiers mirror /pricing/ (lib/plans.ts).
+        var responses = takers;
+        var PLANS = [
+          { name: "Free Plan", limit: 100, cost: 0 },
+          { name: "Basic Plan", limit: 500, cost: 39 },
+          { name: "Pro Plan", limit: 1000, cost: 99 },
+          { name: "Premium Plan", limit: 2500, cost: 199 },
+        ];
+        var plan = null;
+        for (var i = 0; i < PLANS.length; i++) {
+          if (responses <= PLANS[i].limit) { plan = PLANS[i]; break; }
+        }
+        set("out-responses", num.format(responses));
+        if (!plan) {
+          set("out-plan", "Custom plan");
+          set("out-plancost", "Talk to us for higher volumes");
+          set("out-roi", extra > 0 ? "High" : "-");
+          set("out-net", "");
+          set("plan-note", "At about " + num.format(responses) + " quiz responses a month you are past the Premium tier, so a custom plan fits best. Based on a 5.5% quiz conversion rate, that traffic could add about " + usd.format(extra) + " a month.");
+        } else if (plan.cost === 0) {
+          set("out-plan", plan.name);
+          set("out-plancost", "Free");
+          set("out-roi", extra > 0 ? "Pure upside" : "-");
+          set("out-net", extra > 0 ? "+" + usd.format(extra) + " / mo, at no cost" : "");
+          set("plan-note", "About " + num.format(responses) + " quiz responses a month fits the free plan (100 responses), so the estimated " + usd.format(extra) + " a month in extra revenue costs you nothing.");
+        } else {
+          var roi = extra / plan.cost;
+          var net = extra - plan.cost;
+          set("out-plan", plan.name);
+          set("out-plancost", "$" + plan.cost + " / mo");
+          set("out-roi", extra > 0 ? (roi >= 10 ? Math.round(roi) + "x" : roi.toFixed(1) + "x") : "-");
+          set("out-net", extra > 0 ? (net >= 0 ? "+" + usd.format(net) + " / mo after the plan" : usd.format(net) + " / mo after the plan") : "");
+          if (extra <= 0) {
+            set("plan-note", "Set the quiz conversion rate above your current site conversion rate to see a return. The " + plan.name + " ($" + plan.cost + "/mo) covers about " + num.format(responses) + " responses a month.");
+          } else {
+            set("plan-note", "About " + num.format(responses) + " quiz responses a month fits the " + plan.name + " at $" + plan.cost + " a month. The estimated " + usd.format(extra) + " a month in extra revenue is roughly " + (roi >= 10 ? Math.round(roi) : roi.toFixed(1)) + "x the plan cost.");
+          }
+        }
       }
       KEYS.forEach(function (k) {
         var n = document.getElementById(k);

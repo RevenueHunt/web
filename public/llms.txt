@@ -1,51 +1,74 @@
 # RevenueHunt
 
-> Product recommendation quizzes for Shopify, WooCommerce, BigCommerce, Wix, Squarespace, Magento, and headless stores. Turn passive browsers into qualified buyers by guiding them to the right product through an interactive quiz funnel — and capture zero-party data for segmentation, personalization, and email follow-up.
+> Product recommendation quizzes for Shopify, WooCommerce, BigCommerce, Wix, Squarespace, Magento, and headless stores. Turn passive browsers into qualified buyers by guiding them to the right product through an interactive quiz funnel - and capture zero-party data for segmentation, personalization, and email follow-up.
 
 ## What we do
 
 - Build product recommendation quizzes that surface the right item from a catalog of any size
-- Capture zero-party data (preferences, problems, goals) — richer than analytics, owned forever
+- Capture zero-party data (preferences, problems, goals) - richer than analytics, owned forever
 - Sync answers and recommendations to email/CRM/ads tools (Klaviyo, Mailchimp, ActiveCampaign, Omnisend, HubSpot, Meta Ads)
 - Power AI-personalized email follow-ups based on quiz responses
 - Run on every major ecommerce platform: Shopify (Built-for-Shopify certified), WooCommerce, BigCommerce, Wix, Squarespace, Magento, headless
 
 ## Key pages
 
-- [/](https://revenuehunt.com/) — Home
-- [/pricing/](https://revenuehunt.com/pricing/) — Plans and pricing
-- [/product-recommendation-quiz/](https://revenuehunt.com/product-recommendation-quiz/) — Product overview
-- [/product-recommendation-quiz-shopify/](https://revenuehunt.com/product-recommendation-quiz-shopify/) — Shopify-specific
-- [/product-recommendation-quiz-woocommerce/](https://revenuehunt.com/product-recommendation-quiz-woocommerce/) — WooCommerce
-- [/product-recommendation-quiz-bigcommerce/](https://revenuehunt.com/product-recommendation-quiz-bigcommerce/) — BigCommerce
-- [/product-recommendation-quiz-wix-stores/](https://revenuehunt.com/product-recommendation-quiz-wix-stores/) — Wix
-- [/product-recommendation-quiz-for-squarespace-commerce/](https://revenuehunt.com/product-recommendation-quiz-for-squarespace-commerce/) — Squarespace
-- [/product-recommendation-quiz-for-magento/](https://revenuehunt.com/product-recommendation-quiz-for-magento/) — Magento
-- [/templates/](https://revenuehunt.com/templates/) — Quiz templates
-- [/integrations/](https://revenuehunt.com/integrations/) — Integrations
-- [/testimonials/](https://revenuehunt.com/testimonials/) — Customer stories
-- [/for-beauty-brands/](https://revenuehunt.com/for-beauty-brands/) — Beauty vertical
-- [/quiz-readiness-assessment/](https://revenuehunt.com/quiz-readiness-assessment/) — Self-assessment
-- [/faqs/](https://revenuehunt.com/faqs/) — FAQ
-- [/contact/](https://revenuehunt.com/contact/) — Contact
-- [/blog/](https://revenuehunt.com/blog/) — Blog index
-- [/feed.xml](https://revenuehunt.com/feed.xml) — RSS feed for the blog
+- [/](https://revenuehunt.com/) - Home
+- [/pricing/](https://revenuehunt.com/pricing/) - Plans and pricing
+- [/product-recommendation-quiz/](https://revenuehunt.com/product-recommendation-quiz/) - Product overview
+- [/product-recommendation-quiz-shopify/](https://revenuehunt.com/product-recommendation-quiz-shopify/) - Shopify-specific
+- [/product-recommendation-quiz-woocommerce/](https://revenuehunt.com/product-recommendation-quiz-woocommerce/) - WooCommerce
+- [/product-recommendation-quiz-bigcommerce/](https://revenuehunt.com/product-recommendation-quiz-bigcommerce/) - BigCommerce
+- [/product-recommendation-quiz-wix-stores/](https://revenuehunt.com/product-recommendation-quiz-wix-stores/) - Wix
+- [/product-recommendation-quiz-for-squarespace-commerce/](https://revenuehunt.com/product-recommendation-quiz-for-squarespace-commerce/) - Squarespace
+- [/product-recommendation-quiz-for-magento/](https://revenuehunt.com/product-recommendation-quiz-for-magento/) - Magento
+- [/templates/](https://revenuehunt.com/templates/) - Quiz templates
+- [/integrations/](https://revenuehunt.com/integrations/) - Integrations
+- [/testimonials/](https://revenuehunt.com/testimonials/) - Customer stories
+- [/for-beauty-brands/](https://revenuehunt.com/for-beauty-brands/) - Beauty vertical
+- [/quiz-readiness-assessment/](https://revenuehunt.com/quiz-readiness-assessment/) - Self-assessment
+- [/faqs/](https://revenuehunt.com/faqs/) - FAQ
+- [/contact/](https://revenuehunt.com/contact/) - Contact
+- [/blog/](https://revenuehunt.com/blog/) - Blog index
+- [/feed.xml](https://revenuehunt.com/feed.xml) - RSS feed for the blog
 
 ## Compare (RevenueHunt vs alternatives)
 
-- [/compare/](https://revenuehunt.com/compare/) — Comparison hub: RevenueHunt vs all alternatives
+- [/compare/](https://revenuehunt.com/compare/) - Comparison hub: RevenueHunt vs all alternatives
 
-- [/compare/octane-ai/](https://revenuehunt.com/compare/octane-ai/) — RevenueHunt vs Octane AI (Octane AI alternative): free plan, no Shopify watermark, unlimited quizzes, from $39/mo
-- [/compare/zoovu/](https://revenuehunt.com/compare/zoovu/) — RevenueHunt vs Zoovu: a focused, self-serve Shopify quiz vs an enterprise product-discovery suite
-- [/compare/nosto/](https://revenuehunt.com/compare/nosto/) — RevenueHunt vs Nosto: a focused, self-serve zero-party quiz vs an enterprise personalization, search & merchandising suite
-- [/compare/jebbit/](https://revenuehunt.com/compare/jebbit/) — RevenueHunt vs Jebbit: a standalone, self-serve Shopify quiz (Jebbit is now part of BlueConic's CDP)
-- [/compare/tolstoy/](https://revenuehunt.com/compare/tolstoy/) — RevenueHunt vs Tolstoy: a quiz-first product recommendation tool vs a shoppable-video platform with a quiz feature
-- [/compare/typeform/](https://revenuehunt.com/compare/typeform/) — RevenueHunt vs Typeform: a Built-for-Shopify product quiz that recommends real products, not a general form builder
+- [/compare/octane-ai/](https://revenuehunt.com/compare/octane-ai/) - RevenueHunt vs Octane AI (Octane AI alternative): free plan, no Shopify watermark, unlimited quizzes, from $39/mo
+- [/compare/zoovu/](https://revenuehunt.com/compare/zoovu/) - RevenueHunt vs Zoovu: a focused, self-serve Shopify quiz vs an enterprise product-discovery suite
+- [/compare/nosto/](https://revenuehunt.com/compare/nosto/) - RevenueHunt vs Nosto: a focused, self-serve zero-party quiz vs an enterprise personalization, search & merchandising suite
+- [/compare/jebbit/](https://revenuehunt.com/compare/jebbit/) - RevenueHunt vs Jebbit: a standalone, self-serve Shopify quiz (Jebbit is now part of BlueConic's CDP)
+- [/compare/tolstoy/](https://revenuehunt.com/compare/tolstoy/) - RevenueHunt vs Tolstoy: a quiz-first product recommendation tool vs a shoppable-video platform with a quiz feature
+- [/compare/typeform/](https://revenuehunt.com/compare/typeform/) - RevenueHunt vs Typeform: a Built-for-Shopify product quiz that recommends real products, not a general form builder
+
+## Solutions (by industry and quiz type)
+
+- [/solutions/](https://revenuehunt.com/solutions/) - Solutions hub: product quiz by industry and quiz type
+
+By industry:
+- [/solutions/skincare/](https://revenuehunt.com/solutions/skincare/) - Skincare quiz: skin type and concerns to a personalized routine
+- [/solutions/beauty/](https://revenuehunt.com/solutions/beauty/) - Beauty and cosmetics quiz: shade match, regimen, and product finder
+- [/solutions/supplements/](https://revenuehunt.com/solutions/supplements/) - Supplement quiz: turn health goals into a recommended stack
+- [/solutions/fashion/](https://revenuehunt.com/solutions/fashion/) - Fashion and apparel style quiz: find the right fit and cut
+- [/solutions/coffee/](https://revenuehunt.com/solutions/coffee/) - Coffee and tea quiz: match taste profiles to the right roast
+- [/solutions/fitness/](https://revenuehunt.com/solutions/fitness/) - Fitness and nutrition quiz: goal-based gear, apparel, and programs
+- [/solutions/pet-products/](https://revenuehunt.com/solutions/pet-products/) - Pet product quiz: match food and gear by species, breed, and allergies
+- [/solutions/cbd/](https://revenuehunt.com/solutions/cbd/) - CBD and wellness quiz: guide shoppers to the right format and strength
+- [/solutions/jewelry/](https://revenuehunt.com/solutions/jewelry/) - Jewelry and accessories quiz: match style, metal, and occasion
+- [/solutions/home-goods/](https://revenuehunt.com/solutions/home-goods/) - Home and decor quiz: match furniture and decor to a shopper's space
+
+By quiz type:
+- [/solutions/gift-finder/](https://revenuehunt.com/solutions/gift-finder/) - Gift finder quiz: ask about the recipient, return a curated gift
+- [/solutions/size-finder/](https://revenuehunt.com/solutions/size-finder/) - Size and fit finder quiz: recommend the right size or compatible product
+- [/solutions/shade-finder/](https://revenuehunt.com/solutions/shade-finder/) - Shade finder quiz: match foundation and color by undertone and depth
+- [/solutions/routine-builder/](https://revenuehunt.com/solutions/routine-builder/) - Routine builder quiz: return a complete multi-step routine
+- [/solutions/bundle-builder/](https://revenuehunt.com/solutions/bundle-builder/) - Bundle builder quiz: assemble a curated set from the shopper's answers
 
 ## Help center
 
-Product docs and how-to guides live at https://docs.revenuehunt.com — these are NOT mirrored on this domain.
+Product docs and how-to guides live at https://docs.revenuehunt.com - these are NOT mirrored on this domain.
 
 ## App
 
-The product itself runs at https://admin.revenuehunt.com — sign up at https://admin.revenuehunt.com/register/.
+The product itself runs at https://admin.revenuehunt.com - sign up at https://admin.revenuehunt.com/register/.

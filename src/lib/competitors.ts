@@ -449,7 +449,157 @@ export const COMPETITORS: Record<string, Competitor> = {
     ],
     verifiedAsOf: "2026-06-07",
   },
+
+  lantern: {
+    slug: "lantern",
+    name: "Lantern",
+    category: "Shopify quiz app",
+    title: "RevenueHunt vs Lantern — a proven alternative",
+    description:
+      "RevenueHunt vs Lantern: a proven product quiz used by 20,000+ brands, with a free plan that works on live stores and support beyond Shopify. From $39/mo.",
+    h1: "RevenueHunt vs Lantern",
+    heroSubtitle:
+      "Both are AI product recommendation quiz builders for Shopify. RevenueHunt adds a proven track record with 20,000+ brands, a free plan for live stores, and multi-platform support.",
+    intro: [
+      "Lantern is a newer AI quiz builder for Shopify with usage-based pricing from $39/month and a feature set — AI quiz generation, unlimited quizzes, integrations, analytics — that overlaps closely with RevenueHunt's. Its free tier, however, is limited to development stores, not your live storefront.",
+      "RevenueHunt is the product recommendation quiz used by 20,000+ brands since 2019 (40M+ quizzes, $1.3B+ in influenced revenue, 4.9★ from 450+ reviews). It matches Lantern feature-for-feature on the essentials, then adds a proven track record at scale, a free plan that runs on your live store, and support across Shopify, WooCommerce, BigCommerce, Magento, Wix, and more.",
+    ],
+    rows: [
+      { feature: "Free plan on a live (non-dev) store", rh: RH.freePlan, them: "Dev stores only" },
+      { feature: "Starting paid price", rh: RH.startingPaid, them: "$39/mo" },
+      { feature: "Proven at scale", rh: "20,000+ brands · 40M+ quizzes", them: "Newer entrant" },
+      { feature: "Recommends real products from your catalog", rh: RH.catalogRecs, them: "yes" },
+      { feature: "Native Shopify app (Built for Shopify)", rh: RH.shopifyNative, them: "yes" },
+      { feature: "Works on WooCommerce, BigCommerce, Magento, Wix & more", rh: RH.multiPlatform, them: "no" },
+      { feature: "AI quiz builder (60-second setup)", rh: RH.aiBuilder, them: "yes" },
+      { feature: "Unlimited quizzes", rh: RH.unlimitedQuizzes, them: "yes" },
+      { feature: "Unlimited conditional / branching logic", rh: RH.branching, them: "yes" },
+      { feature: "Question-by-question drop-off analytics", rh: RH.analytics, them: "yes" },
+      { feature: "Klaviyo & email / CRM integrations", rh: RH.emailIntegrations, them: "yes" },
+      { feature: "Live chat, video-call & account-manager support", rh: "yes", them: "Email-first" },
+    ],
+    whySwitch: [
+      {
+        title: "A proven platform, not a newcomer",
+        body: "RevenueHunt has powered quizzes for 20,000+ brands since 2019 — 40M+ quizzes taken, $1.3B+ in influenced revenue, and 4.9★ from 450+ reviews. Lantern is a newer entrant. Build your quiz stack on a tool with a long, public track record.",
+      },
+      {
+        title: "A free plan that works on your live store",
+        body: "Lantern's free tier is limited to development stores. RevenueHunt's free plan runs on your real storefront — 100 responses/month, unlimited quizzes — so you can launch for free without a paid plan.",
+      },
+      {
+        title: "Sell anywhere, not just Shopify",
+        body: "Lantern is Shopify-only. RevenueHunt runs natively on Shopify and also on WooCommerce, BigCommerce, Magento, Wix, Squarespace, and as a standalone hosted quiz — one quiz tool for every storefront you run.",
+      },
+      {
+        title: "Support that scales with you",
+        body: "RevenueHunt backs every store with email support, plus live chat, video-call support, and a dedicated account manager on higher plans — hands-on help when your quiz is doing real revenue.",
+      },
+    ],
+    bestFor:
+      "Lantern is a capable, modern AI quiz builder and a reasonable choice if you're Shopify-only and want a newer tool. If you want a platform proven at scale, a free plan that works on a live store, multi-platform support, or deeper hands-on support, RevenueHunt is the better fit.",
+    migration:
+      "Switching from Lantern is quick: rebuild your quiz in RevenueHunt's builder (or generate it in 60 seconds with our AI Copilot), embed it, and connect Klaviyo. Most stores are live the same day, and our support team helps you migrate.",
+    faqs: [
+      {
+        question: "Is RevenueHunt a good Lantern alternative?",
+        answer:
+          "Yes. RevenueHunt matches Lantern on the essentials — AI quiz builder, unlimited quizzes, branching logic, integrations, analytics — and adds a track record at scale (20,000+ brands, 4.9★ from 450+ reviews), a free plan that works on live stores, and support beyond Shopify.",
+      },
+      {
+        question: "Does RevenueHunt have a free plan like Lantern?",
+        answer:
+          "Yes, and it works on your live store. Lantern's free tier is limited to development stores, while RevenueHunt's free plan runs on your real storefront with 100 responses per month and unlimited quizzes.",
+      },
+      {
+        question: "Does RevenueHunt work on platforms other than Shopify?",
+        answer:
+          "Yes. RevenueHunt works on Shopify, WooCommerce, BigCommerce, Magento, Wix, Squarespace, and as a standalone hosted quiz. Lantern is Shopify-only.",
+      },
+      {
+        question: "Can I migrate my Lantern quiz to RevenueHunt?",
+        answer:
+          "Yes. Recreate your quiz in RevenueHunt's builder or generate it with the AI Quiz Copilot, then connect your email tool. Most merchants are live the same day, and our team helps with the migration.",
+      },
+    ],
+    verifiedAsOf: "2026-06-07",
+  },
+
+  nosto: {
+    slug: "nosto",
+    name: "Nosto",
+    category: "enterprise personalization platform",
+    title: "RevenueHunt vs Nosto — a self-serve alternative",
+    description:
+      "RevenueHunt vs Nosto: a focused, self-serve product quiz that captures zero-party data, with a free plan from $39/mo — not an enterprise personalization suite.",
+    h1: "RevenueHunt vs Nosto",
+    heroSubtitle:
+      "Nosto is an enterprise personalization, search, and merchandising suite sold by demo. RevenueHunt is a focused, zero-party product quiz you can install today — free to start, live the same day.",
+    intro: [
+      "Nosto is a Commerce Experience Platform that bundles AI product recommendations, personalized site search, merchandising, and content personalization for enterprise and mid-market brands. It's platform-agnostic, sold through demos with custom enterprise pricing, and has no free plan or self-serve signup — and its personalization is driven mainly by behavioral data rather than quizzes.",
+      "RevenueHunt is a focused product recommendation quiz used by 20,000+ brands (4.9★, 450+ reviews). Instead of an enterprise suite, it guides shoppers to the right product by asking them directly — capturing zero-party data you own — with transparent pricing, a free plan, and same-day setup, no sales call required.",
+    ],
+    rows: [
+      { feature: "Free plan", rh: RH.freePlan, them: "no" },
+      { feature: "Transparent public pricing", rh: RH.transparentPricing, them: "Custom / request a demo" },
+      { feature: "Starting price", rh: RH.startingPaid, them: "Sales-led (enterprise)" },
+      { feature: "Self-serve setup (no sales call)", rh: "yes", them: "no" },
+      { feature: "Purpose-built for product recommendation quizzes", rh: RH.ecommerceRecs, them: "Personalization suite, not quiz-led" },
+      { feature: "Captures zero-party data (shoppers tell you directly)", rh: "yes", them: "Mainly behavioral / predictive" },
+      { feature: "Recommends real products from your catalog", rh: RH.catalogRecs, them: "yes" },
+      { feature: "Native Shopify app (Built for Shopify)", rh: RH.shopifyNative, them: "yes" },
+      { feature: "AI quiz builder (60-second setup)", rh: RH.aiBuilder, them: "no" },
+      { feature: "Unlimited quizzes", rh: RH.unlimitedQuizzes, them: "Not a quiz tool" },
+      { feature: "Question-by-question drop-off analytics", rh: RH.analytics, them: "yes" },
+      { feature: "Klaviyo & email / CRM integrations", rh: RH.emailIntegrations, them: "yes" },
+    ],
+    whySwitch: [
+      {
+        title: "Self-serve, not a sales call",
+        body: "Nosto is sold through demos and custom enterprise contracts with no public pricing. RevenueHunt is install-and-go: pick a plan, build your quiz, and publish — with a free plan and transparent pricing from $39/month.",
+      },
+      {
+        title: "Zero-party data, not just behavioral tracking",
+        body: "Nosto personalizes mainly from behavioral and predictive signals. RevenueHunt asks shoppers directly through a quiz, capturing zero-party data you own and can sync to Klaviyo, Mailchimp, Omnisend, and more.",
+      },
+      {
+        title: "Live in minutes, not a rollout",
+        body: "Nosto is a multi-module suite — recommendations, search, merchandising — that typically needs onboarding. RevenueHunt is a focused quiz app most merchants launch the same day, with an AI Copilot that scaffolds a full quiz in 60 seconds.",
+      },
+      {
+        title: "Pricing that fits a growing brand",
+        body: "Enterprise personalization suites are priced for big teams and catalogs. RevenueHunt starts free and scales by responses from $39/month — right-sized for Shopify and Shopify Plus brands.",
+      },
+    ],
+    bestFor:
+      "Nosto fits enterprise and mid-market brands that want a full behavioral personalization, search, and merchandising suite across multiple storefronts, with the budget and team for an enterprise rollout. If you want a focused, affordable, self-serve product quiz that captures zero-party data, RevenueHunt is the better fit.",
+    migration:
+      "Moving from Nosto is straightforward: build your quiz in RevenueHunt (or generate it with the AI Copilot), embed it, and connect Klaviyo or your CRM. No implementation project — most stores are live the same day, and your zero-party data flows straight to your email tools.",
+    faqs: [
+      {
+        question: "How much does RevenueHunt cost compared to Nosto?",
+        answer:
+          "RevenueHunt has a free plan and transparent paid plans from $39/month. Nosto does not publish pricing — it's an enterprise, sales-led platform that quotes custom pricing after a demo.",
+      },
+      {
+        question: "Is RevenueHunt a personalization suite like Nosto?",
+        answer:
+          "No — and that's the point. Nosto bundles behavioral recommendations, site search, and merchandising. RevenueHunt focuses on product recommendation quizzes that capture zero-party data, with self-serve setup and no sales call.",
+      },
+      {
+        question: "Does RevenueHunt use zero-party data instead of behavioral tracking?",
+        answer:
+          "Yes. RevenueHunt guides shoppers through a quiz and they tell you their preferences, goals, and constraints directly — zero-party data you own — rather than inferring intent from behavior and cookies.",
+      },
+      {
+        question: "How long does setup take versus Nosto?",
+        answer:
+          "Most RevenueHunt merchants launch the same day, and the AI Quiz Copilot can scaffold a complete quiz in about 60 seconds. Nosto is typically a sales-led enterprise implementation.",
+      },
+    ],
+    verifiedAsOf: "2026-06-07",
+  },
 };
 
 /** Stable order for sibling "other comparisons" links. */
-export const COMPETITOR_ORDER = ["octane-ai", "digioh", "zoovu", "jebbit", "typeform"] as const;
+export const COMPETITOR_ORDER = ["octane-ai", "lantern", "typeform", "digioh", "zoovu", "nosto", "jebbit"] as const;

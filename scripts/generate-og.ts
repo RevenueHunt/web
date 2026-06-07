@@ -78,6 +78,8 @@ const BESPOKE: OgPage[] = [
   { slug: "compare-typeform", title: "RevenueHunt vs Typeform", subtitle: "The ecommerce product quiz Typeform isn't — recommends real products on Shopify." },
   { slug: "compare-zoovu", title: "RevenueHunt vs Zoovu", subtitle: "A focused, self-serve Shopify quiz — not an enterprise discovery suite." },
   { slug: "compare-jebbit", title: "RevenueHunt vs Jebbit", subtitle: "A standalone, self-serve Shopify quiz — Jebbit is now part of BlueConic." },
+  { slug: "compare-lantern", title: "RevenueHunt vs Lantern", subtitle: "A product quiz proven at scale — free on live stores, multi-platform." },
+  { slug: "compare-nosto", title: "RevenueHunt vs Nosto", subtitle: "A focused, self-serve zero-party quiz — not an enterprise personalization suite." },
 ];
 
 const PLATFORM_TITLES: Record<string, string> = {

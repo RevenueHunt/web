@@ -37,6 +37,8 @@
 - [/compare/digioh/](https://revenuehunt.com/compare/digioh/) — RevenueHunt vs Digioh: self-serve, transparent pricing vs an enterprise sales-led platform
 - [/compare/zoovu/](https://revenuehunt.com/compare/zoovu/) — RevenueHunt vs Zoovu: a focused, self-serve Shopify quiz vs an enterprise product-discovery suite
 - [/compare/jebbit/](https://revenuehunt.com/compare/jebbit/) — RevenueHunt vs Jebbit: a standalone, self-serve Shopify quiz (Jebbit is now part of BlueConic's CDP)
+- [/compare/lantern/](https://revenuehunt.com/compare/lantern/) — RevenueHunt vs Lantern: a product quiz proven at scale, free on live stores, multi-platform (vs a newer Shopify-only app)
+- [/compare/nosto/](https://revenuehunt.com/compare/nosto/) — RevenueHunt vs Nosto: a focused, self-serve zero-party quiz vs an enterprise personalization, search & merchandising suite
 - [/compare/typeform/](https://revenuehunt.com/compare/typeform/) — RevenueHunt vs Typeform: a Built-for-Shopify product quiz that recommends real products, not a general form builder
 
 ## Help center

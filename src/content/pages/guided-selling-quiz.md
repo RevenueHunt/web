@@ -154,4 +154,4 @@ Especially well. The higher the AOV, the more decision-paralysis a shopper feels
 
 ### Read more
 
-[Full product recommendation quiz guide →](/product-recommendation-quiz/) | [Pricing →](/pricing/) | [See 12 live quizzes →](https://productrecommendationquiz.com/?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=guided-selling-quiz-readmore)
+[Full product recommendation quiz guide →](/product-recommendation-quiz/) | [Quiz solutions by industry →](/solutions/) | [Pricing →](/pricing/) | [See 12 live quizzes →](https://productrecommendationquiz.com/?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=guided-selling-quiz-readmore)

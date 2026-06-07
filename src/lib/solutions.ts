@@ -33,6 +33,8 @@ export interface SolutionLink {
   href: string;
   /** Off-site link (opens in a new tab, gets rel=external). */
   external?: boolean;
+  /** Optional one-line description, shown when rendered as a card. */
+  blurb?: string;
 }
 
 export interface SolutionDemo {
@@ -1156,10 +1158,45 @@ export const USECASE_ORDER = [
   "bundle-builder",
 ] as const;
 
-/** Existing intent guides we cross-link to (no /solutions/ duplicate exists). */
+/** Curated subset for cross-link sections on related pages (platform pages,
+ *  templates gallery). A mix of top industries and quiz types. */
+export const FEATURED_SOLUTIONS = [
+  "skincare",
+  "supplements",
+  "fashion",
+  "coffee",
+  "pet-products",
+  "gift-finder",
+  "size-finder",
+  "bundle-builder",
+] as const;
+
+/** Guides and explainers surfaced on the /solutions/ hub. The first three
+ *  also live here instead of the header Resources menu, so keep them visible. */
 export const RELATED_GUIDES: SolutionLink[] = [
-  { label: "Product finder quiz", href: "/product-finder-quiz/" },
-  { label: "Guided selling quiz", href: "/guided-selling-quiz/" },
-  { label: "Zero-party data quiz", href: "/zero-party-data-quiz/" },
-  { label: "For beauty brands", href: "/for-beauty-brands/" },
+  {
+    label: "How it works",
+    href: "/how-it-works/",
+    blurb: "From shopper answers to a personalized results page: how the recommendation engine maps answers to products.",
+  },
+  {
+    label: "Zero-party data",
+    href: "/zero-party-data/",
+    blurb: "What zero-party data is, why it beats behavioral tracking, and how a quiz captures it.",
+  },
+  {
+    label: "For beauty brands",
+    href: "/for-beauty-brands/",
+    blurb: "Strategies, tutorials, and resources for beauty and skincare ecommerce.",
+  },
+  {
+    label: "Product finder quiz",
+    href: "/product-finder-quiz/",
+    blurb: "What a product finder quiz is, when to use one, and 12 live examples.",
+  },
+  {
+    label: "Guided selling quiz",
+    href: "/guided-selling-quiz/",
+    blurb: "How guided selling works in ecommerce and how to build the quiz.",
+  },
 ];

@@ -115,6 +115,34 @@ const jsonLd = [
     </ul>
   </section>
 
+  <!-- Beauty quiz solutions cross-link -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-6 pt-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900">Beauty quiz solutions</h2>
+      <p class="mt-3 max-w-3xl text-slate-700">
+        The best quiz type for your catalog, with examples and FAQs: skincare routines, shade matching, and more.
+      </p>
+      <ul class="mt-6 flex flex-wrap gap-3" role="list">
+        {[
+          { label: "Skincare quiz", href: "/solutions/skincare/" },
+          { label: "Beauty & cosmetics quiz", href: "/solutions/beauty/" },
+          { label: "Shade finder quiz", href: "/solutions/shade-finder/" },
+          { label: "Routine builder quiz", href: "/solutions/routine-builder/" },
+          { label: "All solutions", href: "/solutions/" },
+        ].map((l) => (
+          <li>
+            <a
+              href={l.href}
+              class="inline-flex items-center rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-[#16161D] hover:text-[#16161D]"
+            >
+              {l.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
   <!-- Featured tutorial highlight -->
   <section class="mx-auto max-w-7xl px-6 py-16">
     <div class="grid items-center gap-10 rounded-2xl bg-gradient-to-br from-pink-50 via-slate-50 to-amber-50 p-8 lg:grid-cols-2 lg:p-12">

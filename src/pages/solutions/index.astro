@@ -114,18 +114,29 @@ const jsonLd = [
     </div>
   </section>
 
-  <!-- Related guides (existing intent pages, cross-linked, not duplicated) -->
+  <!-- Learn more (guides + explainers, incl. items moved out of the nav menu) -->
   <section class="bg-white">
     <div class="mx-auto max-w-5xl px-6 py-16">
-      <h2 class="text-2xl font-bold tracking-tight text-slate-900">Related guides</h2>
-      <ul class="mt-8 flex flex-wrap gap-3" role="list">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900">Learn more</h2>
+      <p class="mt-3 max-w-3xl text-slate-700">
+        Guides and explainers to help you plan, build, and get the most from your quiz.
+      </p>
+      <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" role="list">
         {RELATED_GUIDES.map((g) => (
           <li>
             <a
               href={g.href}
-              class="inline-flex items-center rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-[#16161D] hover:text-[#16161D]"
+              {...(g.external ? { target: "_blank", rel: "external noopener" } : {})}
+              class="group block h-full rounded-xl border border-slate-200 p-6 transition hover:border-[#16161D] hover:shadow-md"
             >
-              {g.label}
+              <h3 class="text-lg font-semibold text-slate-900 group-hover:text-[#16161D]">{g.label}</h3>
+              {g.blurb && <p class="mt-2 text-sm text-slate-600">{g.blurb}</p>}
+              <span class="mt-4 inline-flex items-center text-sm font-medium text-[#16161D]">
+                Read more
+                <svg class="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M7.21 4.29a1 1 0 011.42 0l5 5a1 1 0 010 1.42l-5 5a1 1 0 11-1.42-1.42L11.09 10 7.21 6.12a1 1 0 010-1.42z" clip-rule="evenodd" />
+                </svg>
+              </span>
             </a>
           </li>
         ))}

@@ -153,4 +153,4 @@ Brands using RevenueHunt typically see 2 to 4× higher conversion rates from fin
 
 ### Read more
 
-[Full product recommendation quiz guide →](/product-recommendation-quiz/) | [Pricing →](/pricing/) | [See 12 live finder quizzes →](https://productrecommendationquiz.com/?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-finder-quiz-readmore)
+[Full product recommendation quiz guide →](/product-recommendation-quiz/) | [Quiz solutions by industry →](/solutions/) | [Pricing →](/pricing/) | [See 12 live finder quizzes →](https://productrecommendationquiz.com/?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-finder-quiz-readmore)

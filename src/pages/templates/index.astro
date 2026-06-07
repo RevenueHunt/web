@@ -2,6 +2,9 @@
 import Base from "../../layouts/Base.astro";
 import { organization, breadcrumb } from "../../lib/schema";
 import { SITE } from "../../lib/site";
+import { SOLUTIONS, FEATURED_SOLUTIONS } from "../../lib/solutions";
+
+const featuredSolutions = FEATURED_SOLUTIONS.map((slug) => SOLUTIONS[slug]!);
 
 interface Template {
   title: string;
@@ -226,6 +229,38 @@ const jsonLd = [
           </li>
         ))}
       </ul>
+    </div>
+  </section>
+
+  <!-- Solutions cross-link -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6 pb-4">
+      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-8">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900">Not sure which quiz to build?</h2>
+        <p class="mt-3 text-slate-700">
+          Our quiz solutions explain the best quiz type for your industry, from skincare routines to gift finders, with examples and FAQs.
+        </p>
+        <ul class="mt-6 flex flex-wrap gap-3" role="list">
+          {featuredSolutions.map((s) => (
+            <li>
+              <a
+                href={`/solutions/${s.slug}/`}
+                class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-[#16161D] hover:text-[#16161D]"
+              >
+                {s.name}
+              </a>
+            </li>
+          ))}
+          <li>
+            <a
+              href="/solutions/"
+              class="inline-flex items-center rounded-full bg-[#16161D] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#26262e]"
+            >
+              All solutions →
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 

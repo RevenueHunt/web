@@ -5,6 +5,7 @@ import Base from "../../layouts/Base.astro";
 import { organization, breadcrumb, productWithReviews } from "../../lib/schema";
 import { SITE } from "../../lib/site";
 import { PLATFORM_CONFIGS, type PlatformConfig } from "../../lib/platforms";
+import { SOLUTIONS, FEATURED_SOLUTIONS } from "../../lib/solutions";
 import { PLATFORM_REVIEWS } from "../../lib/reviews";
 import YouTubeFacade from "../YouTubeFacade.astro";
 import Reviews from "../Reviews.astro";
@@ -69,6 +70,8 @@ const pillars = [
       "Send captured leads to your mailing list or CRM. Leverage customer profile data to create more personalized, higher ROI marketing campaigns.",
   },
 ];
+
+const featuredSolutions = FEATURED_SOLUTIONS.map((slug) => SOLUTIONS[slug]!);
 
 const reviews = PLATFORM_REVIEWS[currentSlug] ?? null;
 
@@ -271,11 +274,47 @@ function rel(c: { external?: boolean }) {
     </div>
   </section>
 
+  <!-- Quiz solutions by industry & quiz type -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-6 py-16 sm:py-20">
+      <div class="max-w-3xl">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+          A quiz for your industry
+        </h2>
+        <p class="mt-4 text-slate-700">
+          However you sell on {config.platform}, build the quiz that fits your catalog. Explore solutions by industry and quiz type.
+        </p>
+      </div>
+      <ul class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4" role="list">
+        {featuredSolutions.map((s) => (
+          <li>
+            <a
+              href={`/solutions/${s.slug}/`}
+              class="group block h-full rounded-xl border border-slate-200 bg-white p-5 transition hover:border-[#16161D] hover:shadow-md"
+            >
+              <h3 class="text-base font-semibold text-slate-900 group-hover:text-[#16161D]">{s.name}</h3>
+              <span class="mt-3 inline-flex items-center text-sm font-medium text-[#16161D]">
+                View solution
+                <svg class="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M7.21 4.29a1 1 0 011.42 0l5 5a1 1 0 010 1.42l-5 5a1 1 0 11-1.42-1.42L11.09 10 7.21 6.12a1 1 0 010-1.42z" clip-rule="evenodd" />
+                </svg>
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <a href="/solutions/" class="mt-8 inline-flex items-center text-sm font-semibold text-[#16161D]">
+        See all quiz solutions
+        <span aria-hidden="true" class="ml-1">→</span>
+      </a>
+    </div>
+  </section>
+
   {reviews && (
     <Reviews
       data={reviews}
       heading={`Rated ${reviews.ratingValue} by ${config.platform} merchants`}
-      bg="bg-white"
+      bg="bg-slate-50"
     />
   )}
 

@@ -19,12 +19,12 @@ const controls = [
   { id: "quizcvr", label: "Quiz taker conversion rate", min: 1, max: 25, step: 0.5, value: 5.5, suffix: "%", benchmark: true },
 ];
 
-// Real, data-backed proof points shown on the page. The conversion figure is
-// the conservative floor of a measured ~5.5% (1 in 18) response-to-order rate
-// across a 48k-response sample; attribution undercounts, so the floor is safe.
+// Real, data-backed proof points shown on the page. The 275% is the measured
+// 5.5% quiz-taker conversion (1 in 18) expressed against a typical 2% store
+// rate: 5.5 / 2 = 2.75x = 275% of baseline (accurate as "of", not "+lift").
 const PROOF = [
   { stat: "45M+", label: "quiz responses analyzed" },
-  { stat: "1 in 18", label: "quiz takers place an order" },
+  { stat: "275%", label: "of a typical store conversion rate" },
   { stat: "$1.5B+", label: "merchant revenue influenced" },
   { stat: "20,000+", label: "brands" },
 ];
@@ -277,7 +277,7 @@ const jsonLd = [
           The model is deliberately simple and honest. It takes the share of your visitors who complete the quiz, converts them at the quiz taker rate, and compares that against what the same visitors would have done at your current site <a href="/glossary/conversion-rate-optimization/" class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">conversion rate</a>. The gap is the estimated extra revenue.
         </p>
         <p>
-          The one number we did not invent is the quiz taker conversion rate. Across more than 45 million real quiz responses, 5.5% of shoppers who complete a RevenueHunt quiz (about 1 in 18) place a tracked order, which is why quiz traffic typically converts well above a category page. We pre-fill that figure and let you edit it.
+          The one number we did not invent is the quiz taker conversion rate. Across more than 45 million real quiz responses, 5.5% of shoppers who complete a RevenueHunt quiz (about 1 in 18) place a tracked order. Against a typical 2% store conversion rate, that is 2.75x, about 275% of what a store usually converts at, which is why quiz traffic converts well above a category page. We pre-fill that figure and let you edit it.
         </p>
         <p>
           The calculator uses your own <a href="/glossary/average-order-value/" class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">average order value</a> and ignores the email leads and zero-party data a quiz captures, which compound over time, so it tends to understate the full value.

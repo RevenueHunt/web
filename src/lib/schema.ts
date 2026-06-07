@@ -124,6 +124,18 @@ export function article(opts: {
   };
 }
 
+export function faqPage(items: { question: string; answer: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((it) => ({
+      "@type": "Question",
+      name: it.question,
+      acceptedAnswer: { "@type": "Answer", text: it.answer },
+    })),
+  };
+}
+
 export function breadcrumb(items: { name: string; url: string }[]) {
   return {
     "@context": "https://schema.org",

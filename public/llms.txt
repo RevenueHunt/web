@@ -31,6 +31,12 @@
 - [/blog/](https://revenuehunt.com/blog/) — Blog index
 - [/feed.xml](https://revenuehunt.com/feed.xml) — RSS feed for the blog
 
+## Compare (RevenueHunt vs alternatives)
+
+- [/compare/octane-ai/](https://revenuehunt.com/compare/octane-ai/) — RevenueHunt vs Octane AI (Octane AI alternative): free plan, no Shopify watermark, unlimited quizzes, from $39/mo
+- [/compare/digioh/](https://revenuehunt.com/compare/digioh/) — RevenueHunt vs Digioh: self-serve, transparent pricing vs an enterprise sales-led platform
+- [/compare/typeform/](https://revenuehunt.com/compare/typeform/) — RevenueHunt vs Typeform: a Built-for-Shopify product quiz that recommends real products, not a general form builder
+
 ## Help center
 
 Product docs and how-to guides live at https://docs.revenuehunt.com — these are NOT mirrored on this domain.

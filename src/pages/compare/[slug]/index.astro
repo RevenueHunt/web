@@ -1,0 +1,15 @@
+---
+import ComparePage from "../../../components/pages/ComparePage.astro";
+import { COMPETITORS } from "../../../lib/competitors";
+
+export function getStaticPaths() {
+  return Object.values(COMPETITORS).map((competitor) => ({
+    params: { slug: competitor.slug },
+    props: { competitor },
+  }));
+}
+
+const { competitor } = Astro.props;
+---
+
+<ComparePage competitor={competitor} />

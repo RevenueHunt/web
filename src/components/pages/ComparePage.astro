@@ -1,0 +1,269 @@
+---
+import Base from "../../layouts/Base.astro";
+import { organization, breadcrumb, softwareApplication, faqPage } from "../../lib/schema";
+import { SITE } from "../../lib/site";
+import { COMPETITORS, COMPETITOR_ORDER, type Competitor } from "../../lib/competitors";
+
+interface Props {
+  competitor: Competitor;
+}
+
+const { competitor } = Astro.props;
+const c = competitor;
+const url = `/compare/${c.slug}/`;
+
+const SHOPIFY_INSTALL =
+  "https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=compare_hero";
+const DEMO_STORE = "https://skincarequiz.myshopify.com";
+
+// Sibling comparisons - every compare page links to the others.
+const siblings = COMPETITOR_ORDER.filter((slug) => slug !== c.slug).map(
+  (slug) => COMPETITORS[slug]!,
+);
+
+const jsonLd = [
+  organization(),
+  softwareApplication(),
+  breadcrumb([
+    { name: "Home", url: "/" },
+    { name: `RevenueHunt vs ${c.name}`, url },
+  ]),
+  faqPage(c.faqs),
+];
+
+// Cell renderer: "yes" -> check, "no" -> dash, else literal text.
+function cell(value: string): { kind: "yes" | "no" | "text"; text: string } {
+  if (value === "yes") return { kind: "yes", text: "Yes" };
+  if (value === "no") return { kind: "no", text: "No" };
+  return { kind: "text", text: value };
+}
+---
+
+<Base
+  title={c.title}
+  description={c.description}
+  ogImage={`/og/compare-${c.slug}.png`}
+  jsonLd={jsonLd}
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-slate-700">Home</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <span class="text-slate-700">RevenueHunt vs {c.name}</span>
+      </nav>
+      <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">
+        Comparison · RevenueHunt vs {c.category}
+      </p>
+      <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">{c.h1}</h1>
+      <p class="mt-6 max-w-3xl text-xl text-slate-600">{c.heroSubtitle}</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a
+          href={SHOPIFY_INSTALL}
+          target="_blank"
+          rel="external noopener nofollow"
+          onclick={`window.gtag&&gtag('event','shopify_app_install',{screen_name:'compare_${c.slug}'})`}
+          class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
+        >
+          install on Shopify
+        </a>
+        <a
+          href={DEMO_STORE}
+          target="_blank"
+          rel="external noopener"
+          class="inline-flex items-center justify-center rounded-md border border-[#16161D] bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-50"
+        >
+          see a live demo
+        </a>
+      </div>
+      <p class="mt-4 text-sm text-slate-500">
+        Free plan available · 15-day free trial · 30-day money-back guarantee
+      </p>
+    </div>
+  </section>
+
+  <!-- Intro / answer-first framing -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-3xl px-6 py-14">
+      <div class="space-y-5 text-lg text-slate-700">
+        {c.intro.map((p) => <p set:html={p} />)}
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison table -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+        RevenueHunt vs {c.name} at a glance
+      </h2>
+      <p class="mt-4 text-slate-700">The features that matter most for a Shopify product quiz.</p>
+      <div class="mt-8 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-slate-50 text-slate-900">
+            <tr>
+              <th scope="col" class="px-4 py-3 font-semibold">Feature</th>
+              <th scope="col" class="px-4 py-3 text-center font-semibold text-[#16161D]">RevenueHunt</th>
+              <th scope="col" class="px-4 py-3 text-center font-semibold">{c.name}</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 text-slate-700">
+            {c.rows.map((row) => {
+              const rh = cell(row.rh);
+              const them = cell(row.them);
+              return (
+                <tr>
+                  <td class="px-4 py-3">{row.feature}</td>
+                  <td class="px-4 py-3 text-center">
+                    {rh.kind === "yes" ? (
+                      <span class="font-semibold text-emerald-600" aria-label="Yes">✓</span>
+                    ) : rh.kind === "no" ? (
+                      <span class="text-slate-400" aria-label="No">–</span>
+                    ) : (
+                      <span class="font-medium text-slate-900">{rh.text}</span>
+                    )}
+                  </td>
+                  <td class="px-4 py-3 text-center">
+                    {them.kind === "yes" ? (
+                      <span class="text-slate-500" aria-label="Yes">✓</span>
+                    ) : them.kind === "no" ? (
+                      <span class="text-slate-400" aria-label="No">–</span>
+                    ) : (
+                      <span class="text-slate-600">{them.text}</span>
+                    )}
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-xs text-slate-500">
+        Comparison based on publicly available information from each vendor as of {c.verifiedAsOf}. {c.name} pricing and features may have changed since — check their site for the latest.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why merchants switch -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+        Why merchants choose RevenueHunt over {c.name}
+      </h2>
+      <div class="mt-10 grid gap-8 md:grid-cols-2">
+        {c.whySwitch.map((card) => (
+          <div class="rounded-xl border border-slate-200 p-6">
+            <h3 class="text-lg font-semibold text-slate-900">{card.title}</h3>
+            <p class="mt-3 text-slate-600">{card.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- When the competitor is the better fit (fairness/credibility) -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-3xl px-6 py-14">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900">When {c.name} might be the better fit</h2>
+      <p class="mt-4 text-lg text-slate-700">{c.bestFor}</p>
+    </div>
+  </section>
+
+  <!-- Migration -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-3xl px-6 py-14">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900">Switching from {c.name}</h2>
+      <p class="mt-4 text-lg text-slate-700">{c.migration}</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a
+          href={SHOPIFY_INSTALL}
+          target="_blank"
+          rel="external noopener nofollow"
+          onclick={`window.gtag&&gtag('event','shopify_app_install',{screen_name:'compare_${c.slug}_mid'})`}
+          class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
+        >
+          start free on Shopify
+        </a>
+        <a
+          href="/demo/"
+          class="inline-flex items-center justify-center rounded-md border border-[#16161D] bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-50"
+        >
+          book a demo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-3xl px-6 py-16">
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900">Frequently asked questions</h2>
+      <dl class="mt-10 space-y-8">
+        {c.faqs.map((faq) => (
+          <div>
+            <dt class="text-lg font-semibold text-slate-900">{faq.question}</dt>
+            <dd class="mt-2 text-slate-700">{faq.answer}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  </section>
+
+  <!-- Other comparisons (sibling links) -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900">Compare other quiz tools</h2>
+      <ul class="mt-8 grid gap-4 sm:grid-cols-2" role="list">
+        {siblings.map((s) => (
+          <li>
+            <a
+              href={`/compare/${s.slug}/`}
+              class="group block h-full rounded-xl border border-slate-200 p-6 transition hover:border-[#16161D] hover:shadow-md"
+            >
+              <h3 class="text-lg font-semibold text-slate-900 group-hover:text-[#16161D]">
+                RevenueHunt vs {s.name}
+              </h3>
+              <p class="mt-2 text-sm text-slate-600">{s.heroSubtitle}</p>
+              <span class="mt-4 inline-flex items-center text-sm font-medium text-[#16161D]">
+                See comparison
+                <svg class="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M7.21 4.29a1 1 0 011.42 0l5 5a1 1 0 010 1.42l-5 5a1 1 0 11-1.42-1.42L11.09 10 7.21 6.12a1 1 0 010-1.42z" clip-rule="evenodd" />
+                </svg>
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <p class="mb-3 text-sm font-semibold uppercase tracking-wider text-white/70">
+        Most shoppers leave because they can't find the right product
+      </p>
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Turn shoppers into confident buyers with a Product Recommendation Quiz that drives sales.
+      </h2>
+      <div class="mt-10 flex flex-wrap justify-center gap-3">
+        <a
+          href={SHOPIFY_INSTALL}
+          target="_blank"
+          rel="external noopener nofollow"
+          onclick={`window.gtag&&gtag('event','shopify_app_install',{screen_name:'compare_${c.slug}_bottom'})`}
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          install on Shopify
+        </a>
+        <a
+          href="/pricing/"
+          class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
+        >
+          see pricing
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

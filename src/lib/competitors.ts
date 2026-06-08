@@ -99,7 +99,7 @@ export const COMPETITORS: Record<string, Competitor> = {
       { feature: "Unlimited quizzes on the entry plan", rh: RH.unlimitedQuizzes, them: "no" },
       { feature: "No provider watermark on Shopify (any plan)", rh: RH.noForcedBranding, them: "Logo until $200/mo Plus" },
       { feature: "Recommends real products from your catalog", rh: RH.catalogRecs, them: "yes" },
-      { feature: "Native Shopify app (Built for Shopify)", rh: RH.shopifyNative, them: "yes" },
+      { feature: "Native Shopify app (Built for Shopify)", rh: RH.shopifyNative, them: "no" },
       { feature: "Works on WooCommerce, BigCommerce, Magento, Wix & more", rh: RH.multiPlatform, them: "no" },
       { feature: "AI quiz builder (60-second setup)", rh: RH.aiBuilder, them: "yes" },
       { feature: "Unlimited conditional / branching logic", rh: RH.branching, them: "yes" },

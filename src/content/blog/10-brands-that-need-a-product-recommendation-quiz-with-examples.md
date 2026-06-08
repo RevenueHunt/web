@@ -31,7 +31,7 @@ Here are 10 brand types that absolutely benefit from a product recommendation qu
 
 Do your customers know which products are right for their skin type? Do they know how to care for their skin at different stages of life? Most don't, and that's where the quiz earns its keep. A short diagnostic can map the customer to a routine: which products to use, in which order, and when. Results can be organised into routine slots, and the customer can add the entire routine to cart in one click.
 
-**Live example:** [Skincare quiz](https://skincarequiz.myshopify.com/#quiz-rkHm6Y)
+**Live example:** [Skincare quiz](https://productrecommendationquiz.com/#quiz-rkHm6Y)
 
 ## 2. Haircare brands
 
@@ -55,7 +55,7 @@ How do your customers make their coffee? Espresso, Aeropress, pour-over, French 
 
 Foundation matching, lip shade selection and mascara choice are notoriously hard online without a visual try-on. Cosmetic brands need to cover the entire spectrum of skin colours and tones, which produces classic discovery friction. A quiz collects skin tone, undertone, finish preference and existing routine, then surfaces the right SKU. Pair it with social-proof reviews from the same segment to close the confidence gap.
 
-**Live example:** [Lipstick shade finder](https://skincarequiz.myshopify.com/pages/lipstick-shade-finder)
+**Live example:** [Lipstick shade finder](https://productrecommendationquiz.com/pages/lipstick-shade-finder)
 
 ## 5. Perfume brands
 
@@ -63,7 +63,7 @@ Foundation matching, lip shade selection and mascara choice are notoriously hard
 
 Buying perfume online is uniquely hard because there are no fragrance samples to try right next to you. Most customers either stick with already-familiar scents or end up disappointed. A quiz built around scent families (citrus, woody, floral, oriental), occasion (everyday vs evening) and personal associations can produce a confident recommendation that closes the gap a brick-and-mortar sales assistant would normally fill.
 
-**Live example:** [Fragrance finder](https://skincarequiz.myshopify.com/#quiz-RbHkvv)
+**Live example:** [Fragrance finder](https://productrecommendationquiz.com/#quiz-RbHkvv)
 
 ## 6. Jewellery brands
 
@@ -71,7 +71,7 @@ Buying perfume online is uniquely hard because there are no fragrance samples to
 
 A vast jewellery catalogue overwhelms shoppers who don't know whether to choose silver, gold or mixed metals, or who have budget restrictions. A quiz can route them to the right pendants, rings or bracelets in the appropriate material and price range. The gift-buying use case is even stronger: a quiz that asks about the recipient (partner, parent, friend), the occasion (anniversary, birthday, Valentine's) and the budget converts gift-buyers who would otherwise abandon the catalogue.
 
-**Live example:** [Valentine's gift finder](https://skincarequiz.myshopify.com/pages/jewellery-quiz)
+**Live example:** [Valentine's gift finder](https://productrecommendationquiz.com/pages/jewellery-quiz)
 
 ## 7. Supplement brands
 
@@ -87,7 +87,7 @@ Vitamins and supplements are the category with the highest pre-purchase sceptici
 
 Bikes, yoga mats, skateboards, surfboards: most customers in this category are completely overwhelmed by the technical spec sheets. They'll either trawl through your documentation, contact support, or ask a friend. None of those produce a confident purchase. A short interactive questionnaire (5-8 questions on skill level, intended use, budget) can match them to the right SKU in minutes and reduce the support load at the same time.
 
-**Live example:** [Find the perfect bike](https://skincarequiz.myshopify.com/pages/bicycle-quiz)
+**Live example:** [Find the perfect bike](https://productrecommendationquiz.com/pages/bicycle-quiz)
 
 ## 9. Pet food brands
 
@@ -103,7 +103,7 @@ Pet owners care deeply about feeding their pets the right food, and most are unc
 
 Furniture and decor catalogues are visually overwhelming, and customers struggle to know which couch, mattress or rug will work in their actual space. A quiz that asks about style preference (modern, rustic, mid-century), room dimensions, budget and pet/child constraints can narrow the catalogue to a handful of confident recommendations. Mattress sellers in particular see strong results because the buying decision is high-stakes and high-AOV.
 
-**Live example:** [Mattress picker](https://skincarequiz.myshopify.com/#quiz-DmH5oz)
+**Live example:** [Mattress picker](https://productrecommendationquiz.com/#quiz-DmH5oz)
 
 ## Famous brands using this approach
 

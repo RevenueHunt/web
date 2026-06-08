@@ -22,7 +22,7 @@ These **customizable HTML quiz templates** come with pre-written questions, cond
 
 Experience fully-functional product recommendation quizzes on our live Shopify demo store. Test different quiz types, explore conditional logic, branching questions, and personalized product recommendations in action.
 
-[Explore Live Quiz Demos](https://skincarequiz.myshopify.com/)
+[Explore Live Quiz Demos](https://productrecommendationquiz.com/)
 
 [Skincare & Cosmetics](#skincare)  
 [Nutrition & Health](#food)  
@@ -36,52 +36,52 @@ Experience fully-functional product recommendation quizzes on our live Shopify d
   
 [  
 ![Skincare Quiz](/img/pages/templates/skinquiz1.webp)  
-](https://skincarequiz.myshopify.com/pages/skin-analysis)  
+](https://productrecommendationquiz.com/pages/skin-analysis)  
 
 #### Skintype + Routine Quiz
 
 Identify skin type and recommend a full routine.
 
-[Demo](https://skincarequiz.myshopify.com/pages/skin-analysis)  
+[Demo](https://productrecommendationquiz.com/pages/skin-analysis)  
 [Get this template](https://revenuehunt.com/product-recommendation-quiz/)
 
   
   
 [  
 ![Foundation Quiz](/img/pages/templates/foundation5.webp)  
-](https://skincarequiz.myshopify.com/pages/foundation-match)  
+](https://productrecommendationquiz.com/pages/foundation-match)  
 
 #### Foundation Match
 
 Choosing the right foundation shouldn't feel like guesswork.
 
-[Demo](https://skincarequiz.myshopify.com/pages/foundation-match)  
+[Demo](https://productrecommendationquiz.com/pages/foundation-match)  
 [Get this template](https://revenuehunt.com/product-recommendation-quiz/)
 
   
   
 [  
 ![Lipstick Quiz](/img/pages/templates/lips1-e1768405685573.webp)  
-](https://skincarequiz.myshopify.com/pages/lipstick-shade-finder)  
+](https://productrecommendationquiz.com/pages/lipstick-shade-finder)  
 
 #### Lipstick Shade Finder
 
 Match customers with their perfect lipstick shade based on tone and style.
 
-[Demo](https://skincarequiz.myshopify.com/pages/lipstick-shade-finder)  
+[Demo](https://productrecommendationquiz.com/pages/lipstick-shade-finder)  
 [Get this template](https://revenuehunt.com/product-recommendation-quiz/)
 
   
   
 [  
 ![Haircare Quiz](/img/pages/templates/hairquiz4.webp)  
-](https://skincarequiz.myshopify.com/pages/haircare-quiz)  
+](https://productrecommendationquiz.com/pages/haircare-quiz)  
 
 #### Haircare Quiz
 
 Recommend shampoos, conditioners, and treatments for individual hair goals.
 
-[Demo](https://skincarequiz.myshopify.com/pages/haircare-quiz)  
+[Demo](https://productrecommendationquiz.com/pages/haircare-quiz)  
 [Get this template](https://revenuehunt.com/product-recommendation-quiz/)
 
 ### Nutrition & Health
@@ -90,52 +90,52 @@ Recommend shampoos, conditioners, and treatments for individual hair goals.
   
 [  
 ![Coffee Quiz](/img/pages/templates/coffee2.webp)  
-](https://skincarequiz.myshopify.com/pages/coffee-quiz)  
+](https://productrecommendationquiz.com/pages/coffee-quiz)  
 
 #### Coffee Quiz
 
 Guide customers to the ideal coffee blend based on taste and lifestyle.
 
-[Demo](https://skincarequiz.myshopify.com/pages/coffee-quiz)  
+[Demo](https://productrecommendationquiz.com/pages/coffee-quiz)  
 [Get this template](https://revenuehunt.com/product-recommendation-quiz/)
 
   
   
 [  
 ![Supplements Quiz](/img/pages/templates/supplements3.webp)  
-](https://skincarequiz.myshopify.com/pages/supplements-quiz)  
+](https://productrecommendationquiz.com/pages/supplements-quiz)  
 
 #### Supplements Quiz
 
 Recommend vitamins and supplements aligned with health goals.
 
-[Demo](https://skincarequiz.myshopify.com/pages/supplements-quiz)  
+[Demo](https://productrecommendationquiz.com/pages/supplements-quiz)  
 [Get this template](https://revenuehunt.com/product-recommendation-quiz/)
 
   
   
 [  
 ![CBD Quiz](/img/pages/templates/cbd1.webp)  
-](https://skincarequiz.myshopify.com/pages/cbd-product-finder)  
+](https://productrecommendationquiz.com/pages/cbd-product-finder)  
 
 #### CBD Product Finder
 
 Suggest the right CBD products for relaxation, sleep, or focus.
 
-[Demo](https://skincarequiz.myshopify.com/pages/cbd-product-finder)  
+[Demo](https://productrecommendationquiz.com/pages/cbd-product-finder)  
 [Get this template](https://revenuehunt.com/product-recommendation-quiz/)
 
   
   
 [  
 ![Dog Food Quiz](/img/pages/templates/dogquiz3.webp)  
-](https://skincarequiz.myshopify.com/pages/dog-food)  
+](https://productrecommendationquiz.com/pages/dog-food)  
 
 #### Dog Food Quiz
 
 Find the perfect meal for your dog based on their specific needs and preferences.
 
-[Demo](https://skincarequiz.myshopify.com/pages/dog-food)  
+[Demo](https://productrecommendationquiz.com/pages/dog-food)  
 [Get this template](https://revenuehunt.com/product-recommendation-quiz/)
 
 ### Sports, Clothing & Apparel
@@ -144,39 +144,39 @@ Find the perfect meal for your dog based on their specific needs and preferences
   
 [  
 ![Jewellery Quiz](/img/pages/templates/jewellery1-e1768405517428.webp)  
-](https://skincarequiz.myshopify.com/pages/jewellery-quiz)  
+](https://productrecommendationquiz.com/pages/jewellery-quiz)  
 
 #### Jewellery Quiz
 
 Help shoppers find the perfect jewellery piece to match their style.
 
-[Demo](https://skincarequiz.myshopify.com/pages/jewellery-quiz)  
+[Demo](https://productrecommendationquiz.com/pages/jewellery-quiz)  
 [Get this template](https://revenuehunt.com/product-recommendation-quiz/)
 
   
   
 [  
 ![Clothing Quiz](/img/pages/templates/style1.webp)  
-](https://skincarequiz.myshopify.com/pages/clothing-style-quiz)  
+](https://productrecommendationquiz.com/pages/clothing-style-quiz)  
 
 #### Clothing Style Quiz
 
 Find your fashion persona and get personalized recommendations.
 
-[Demo](https://skincarequiz.myshopify.com/pages/clothing-style-quiz)  
+[Demo](https://productrecommendationquiz.com/pages/clothing-style-quiz)  
 [Get this template](https://revenuehunt.com/product-recommendation-quiz/)
 
   
   
 [  
 ![Bicycle Quiz](/img/pages/templates/bike2.webp)  
-](https://skincarequiz.myshopify.com/pages/bicycle-quiz)  
+](https://productrecommendationquiz.com/pages/bicycle-quiz)  
 
 #### Bicycle Quiz
 
 Match customers with the right bike for their riding style and needs.
 
-[Demo](https://skincarequiz.myshopify.com/pages/bicycle-quiz)  
+[Demo](https://productrecommendationquiz.com/pages/bicycle-quiz)  
 [Get this template](https://revenuehunt.com/product-recommendation-quiz/)
 
 ### Quiz Examples Gallery
@@ -293,7 +293,7 @@ Match customers with the right bike for their riding style and needs.
 
 Create engaging product recommendation quizzes for your Shopify or WooCommerce store in minutes. No coding required. Use our templates to build personalized shopping experiences that increase conversions and boost AOV.
 
-[Try Quiz Templates Free](https://skincarequiz.myshopify.com/)
+[Try Quiz Templates Free](https://productrecommendationquiz.com/)
 
 ## Why Use Product Quiz Templates for Your eCommerce Store?
 

@@ -43,7 +43,7 @@ Pick whichever channel fits the kind of feedback you have. None of these are gat
 
 The quickest path. Takes 3-5 minutes, fully anonymous, no email required.
 
-> [→ Take the survey](https://skincarequiz.myshopify.com/#quiz-meHvvZo)
+> [→ Take the survey](https://productrecommendationquiz.com/#quiz-meHvvZo)
 
 Best for: lightweight thoughts, feature votes, "this annoyed me" feedback that doesn't need a back-and-forth.
 

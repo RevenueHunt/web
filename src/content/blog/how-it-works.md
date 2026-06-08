@@ -59,7 +59,7 @@ _Personalise the questions you ask to guide your customers throughout their shop
 
 Check out a demo version to see how it works:
 
-[View live example](https://skincarequiz.myshopify.com/ "View live example")
+[View live example](https://productrecommendationquiz.com/ "View live example")
 
 ### Customising the quiz to your specific needs
 

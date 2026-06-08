@@ -41,7 +41,7 @@ const SHOPIFY: PlatformReviews = {
   reviews: [
     {
       author: "Matcha Union",
-      location: "United Kingdom",
+      location: "UK",
       date: "2026-04-16",
       rating: 5,
       quote:

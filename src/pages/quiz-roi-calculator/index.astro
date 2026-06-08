@@ -208,7 +208,7 @@ const jsonLd = [
                       <button
                         type="button"
                         id={`${c.id}-reset`}
-                        class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]"
+                        class="hidden font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]"
                       >
                         Reset to RevenueHunt data
                       </button>
@@ -479,8 +479,16 @@ const jsonLd = [
         var qc = val("quizcvr");
         if (qc > 0) set("quizcvr-note", "Pre-filled from RevenueHunt data: about 1 in " + Math.round(100 / qc) + " quiz takers place an order. Edit it to match your store.");
       }
+      // Only show the reset link when the quiz rate is off its data value — i.e.
+      // the merchant edited it, or lowered their current rate so it sits above
+      // the benchmark. At the data value there is nothing to reset.
+      function syncReset() {
+        var btn = document.getElementById("quizcvr-reset");
+        if (btn) btn.classList.toggle("hidden", Math.abs(val("quizcvr") - quizFloor()) <= 0.05);
+      }
       function calc() {
         syncNotes();
+        syncReset();
         var V = val("visitors"), A = val("aov"), c = val("cvr") / 100, q = val("engage") / 100, qc = val("quizcvr") / 100, lift = val("aovlift") / 100;
         var takers = V * q;
         var quizOrders = takers * qc;

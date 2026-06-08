@@ -15,6 +15,8 @@ const url = `/compare/${c.slug}/`;
 const SHOPIFY_INSTALL =
   "https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=compare_hero";
 const DEMO_STORE = "https://skincarequiz.myshopify.com";
+// Free WordPress.org plugin (not the WooCommerce.com extension).
+const WOO_PLUGIN = "https://wordpress.org/plugins/product-recommendation-quiz-for-ecommerce/";
 
 // Sibling comparisons - every compare page links to the others.
 const siblings = COMPETITOR_ORDER.filter((slug) => slug !== c.slug).map(
@@ -273,10 +275,13 @@ function cell(value: string): { kind: "yes" | "no" | "text"; text: string } {
           install on Shopify
         </a>
         <a
-          href="/pricing/"
+          href={WOO_PLUGIN}
+          target="_blank"
+          rel="external noopener nofollow"
+          onclick={`window.gtag&&gtag('event','woocommerce_plugin_click',{screen_name:'compare_${c.slug}_bottom'})`}
           class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
         >
-          see pricing
+          start free on WooCommerce
         </a>
       </div>
     </div>

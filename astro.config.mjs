@@ -2,7 +2,8 @@
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
-import { readFileSync, readdirSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
+import { execSync } from "node:child_process";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -29,6 +30,46 @@ function readLastmodMap() {
     }
   }
   return map;
+}
+
+/** Last git commit date (ISO) for a file, cached. Returns null when git or the
+ *  file's history is unavailable (e.g. a shallow CI clone) so the build never
+ *  breaks — lastmod is simply omitted for that URL. `:(literal)` keeps the
+ *  `[slug]` dynamic-route dirs from being read as glob character classes. */
+const _gitDateCache = new Map();
+/** @param {string} file */
+function gitDate(file) {
+  if (_gitDateCache.has(file)) return _gitDateCache.get(file);
+  let iso = null;
+  try {
+    const out = execSync(`git log -1 --format=%cI -- ${JSON.stringify(":(literal)" + file)}`, {
+      encoding: "utf8",
+      stdio: ["ignore", "pipe", "ignore"],
+    }).trim();
+    if (out) iso = out;
+  } catch { /* git unavailable */ }
+  _gitDateCache.set(file, iso);
+  return iso;
+}
+
+/** Source file(s) whose git history reflects a route's content. The most recent
+ *  commit across them becomes the sitemap lastmod. Data-driven dynamic pages
+ *  pair their [slug] template with the data module that actually holds the copy.
+ *  @param {string} pathname */
+function sourceFilesFor(pathname) {
+  const clean = pathname.replace(/^\//, "").replace(/\/$/, "");
+  if (clean === "") return ["src/pages/index.astro"];
+  const seg = clean.split("/");
+  /** @type {Record<string, string>} */
+  const collections = {
+    solutions: "src/lib/solutions.ts",
+    compare: "src/lib/competitors.ts",
+    glossary: "src/lib/glossary.ts",
+  };
+  if (seg.length === 2 && collections[seg[0]]) {
+    return [`src/pages/${seg[0]}/[slug]/index.astro`, collections[seg[0]]];
+  }
+  return [`src/pages/${clean}/index.astro`, `src/pages/${clean}.astro`];
 }
 
 /** Remove the first H1 from each Markdown document — the [slug] layout
@@ -196,8 +237,19 @@ export default defineConfig({
           !/\/(tag|cat|author)\/[^/]+\//.test(page) && !page.endsWith("/message-sent/"),
         serialize(item) {
           const url = new URL(item.url);
-          const slug = url.pathname.replace(/^\//, "").replace(/\/$/, "") || "index";
-          if (lastmodMap[slug]) item.lastmod = lastmodMap[slug];
+          const path = url.pathname.replace(/^\//, "").replace(/\/$/, "");
+          // 1) Content collections (blog + pages) carry frontmatter dates. Blog
+          //    posts live under /blog/<slug>/ but key the map by bare filename.
+          const contentSlug = path.startsWith("blog/") ? path.slice(5) : path;
+          if (lastmodMap[contentSlug]) {
+            item.lastmod = lastmodMap[contentSlug];
+            return item;
+          }
+          // 2) Everything else: most-recent git commit across the route's sources.
+          const dates = sourceFilesFor(url.pathname).filter(existsSync).map(gitDate).filter(Boolean);
+          if (dates.length) {
+            item.lastmod = dates.reduce((a, b) => (new Date(b) > new Date(a) ? b : a));
+          }
           return item;
         },
       });

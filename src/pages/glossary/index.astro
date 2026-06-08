@@ -11,6 +11,8 @@ const terms = GLOSSARY_ORDER.map((slug) => GLOSSARY[slug]!);
 
 const SHOPIFY_INSTALL =
   "https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=glossary_index";
+// Free WordPress.org plugin (not the WooCommerce.com extension).
+const WOO_PLUGIN = "https://wordpress.org/plugins/product-recommendation-quiz-for-ecommerce/";
 
 const jsonLd = [
   organization(),
@@ -123,10 +125,12 @@ const jsonLd = [
           start free on Shopify
         </a>
         <a
-          href="/pricing/"
+          href={WOO_PLUGIN}
+          target="_blank"
+          rel="external noopener nofollow"
           class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
         >
-          see pricing
+          start free on WooCommerce
         </a>
       </div>
     </div>

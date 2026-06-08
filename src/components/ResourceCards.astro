@@ -1,0 +1,46 @@
+---
+// Two free, data-backed resources surfaced contextually (blog posts, content
+// pages). Both are also in the header Resources dropdown + footer; this is the
+// in-content placement. Kept self-contained so it can be reused anywhere.
+const resources = [
+  {
+    href: "/quiz-roi-calculator/",
+    eyebrow: "Free tool",
+    title: "Quiz ROI calculator",
+    blurb:
+      "Estimate the extra revenue and ROI a product recommendation quiz could add to your store. Built on real data, no email required.",
+    cta: "Calculate your ROI",
+  },
+  {
+    href: "/state-of-product-recommendation-quizzes/",
+    eyebrow: "Free report",
+    title: "Ecommerce quiz benchmark report",
+    blurb:
+      "How product recommendation quizzes really perform: conversion by category, AOV uplift, and completion, from 45M+ real quiz responses.",
+    cta: "Read the report",
+  },
+];
+---
+
+<section class="border-t border-slate-200 bg-white">
+  <div class="mx-auto max-w-6xl px-6 py-16">
+    <h2 class="text-2xl font-bold tracking-tight text-slate-900">Free tools &amp; data</h2>
+    <p class="mt-2 text-slate-600">Put these benchmarks to work on your own store.</p>
+    <div class="mt-8 grid gap-6 sm:grid-cols-2">
+      {resources.map((r) => (
+        <a
+          href={r.href}
+          class="group flex flex-col rounded-xl border border-slate-200 bg-white p-6 transition hover:border-[#16161D] hover:shadow-sm"
+        >
+          <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">{r.eyebrow}</p>
+          <h3 class="mt-2 text-lg font-bold text-slate-900 group-hover:text-[#16161D]">{r.title}</h3>
+          <p class="mt-2 flex-1 text-sm text-slate-600">{r.blurb}</p>
+          <span class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[#16161D]">
+            {r.cta}
+            <svg class="h-4 w-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 0 1 .02-1.06L11.168 10 7.23 6.29a.75.75 0 1 1 1.04-1.08l4.5 4.25a.75.75 0 0 1 0 1.08l-4.5 4.25a.75.75 0 0 1-1.06-.02Z" clip-rule="evenodd" /></svg>
+          </span>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

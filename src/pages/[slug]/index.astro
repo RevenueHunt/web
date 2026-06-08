@@ -2,6 +2,7 @@
 import { getCollection, render } from "astro:content";
 import Base from "../../layouts/Base.astro";
 import PlatformPage from "../../components/pages/PlatformPage.astro";
+import ResourceCards from "../../components/ResourceCards.astro";
 import { article, breadcrumb, organization, softwareApplication } from "../../lib/schema";
 import { SITE } from "../../lib/site";
 import { PLATFORM_CONFIGS } from "../../lib/platforms";
@@ -318,6 +319,9 @@ const linkedinShare = `https://www.linkedin.com/sharing/share-offsite/?url=${enc
           </div>
         </div>
 
+        {/* Free tools & data (ROI calculator + benchmark report) */}
+        <ResourceCards />
+
         {/* Related posts */}
         {related.length > 0 && (
           <section class="border-t border-slate-200 bg-slate-50">
@@ -419,6 +423,9 @@ const linkedinShare = `https://www.linkedin.com/sharing/share-offsite/?url=${enc
             <Content />
           </article>
         </div>
+
+        {/* Free tools & data — on content pages, not legal/utility ones */}
+        {!LEGAL_SLUGS.has(entry.data.legacySlug) && <ResourceCards />}
 
         <section class="bg-[#16161D]">
           <div class="mx-auto max-w-4xl px-6 py-20 text-center">

@@ -121,28 +121,30 @@ const pooled = VERTICAL_CONVERSION.find((r) => r.kind === "total")!;
   </section>
 
   <!-- Dataset band -->
-  <section class="bg-[#16161D]">
-    <div class="mx-auto max-w-5xl px-6 py-14">
-      <p class="text-center text-sm font-semibold uppercase tracking-wider text-white/50">
-        The dataset
-      </p>
-      <dl class="mt-6 grid grid-cols-1 gap-8 text-center sm:grid-cols-3">
-        <div>
-          <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.responses}</dt>
-          <dd class="mt-1 text-sm text-white/70">{DATASET.responsesNote}</dd>
-        </div>
-        <div>
-          <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.revenue}</dt>
-          <dd class="mt-1 text-sm text-white/70">{DATASET.revenueNote}</dd>
-        </div>
-        <div>
-          <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.brands}</dt>
-          <dd class="mt-1 text-sm text-white/70">{DATASET.brandsNote}</dd>
-        </div>
-      </dl>
-      <p class="mx-auto mt-6 max-w-3xl text-center text-sm text-white/60">
-        Aggregate and anonymized, across {DATASET.platforms}. No individual store is identifiable. Every figure below is a floor: attribution is still attaching, so the real numbers are higher, not lower.
-      </p>
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6">
+      <div class="rounded-2xl bg-[#16161D] px-6 py-10 sm:px-10">
+        <p class="text-center text-sm font-semibold uppercase tracking-wider text-white/50">
+          The dataset
+        </p>
+        <dl class="mt-6 grid grid-cols-1 gap-8 text-center sm:grid-cols-3">
+          <div>
+            <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.responses}</dt>
+            <dd class="mt-1 text-sm text-white/70">{DATASET.responsesNote}</dd>
+          </div>
+          <div>
+            <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.revenue}</dt>
+            <dd class="mt-1 text-sm text-white/70">{DATASET.revenueNote}</dd>
+          </div>
+          <div>
+            <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.brands}</dt>
+            <dd class="mt-1 text-sm text-white/70">{DATASET.brandsNote}</dd>
+          </div>
+        </dl>
+        <p class="mx-auto mt-6 max-w-3xl text-center text-sm text-white/60">
+          Aggregate and anonymized, across {DATASET.platforms}. No individual store is identifiable. Every figure below is a floor: attribution is still attaching, so the real numbers are higher.
+        </p>
+      </div>
     </div>
   </section>
 

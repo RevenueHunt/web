@@ -37,7 +37,7 @@ export const DATASET = {
   revenueNote: "in merchant revenue generated",
   brands: "20,000+",
   brandsNote: "ecommerce stores",
-  platforms: "Shopify, WooCommerce, BigCommerce, Magento, Wix and standalone",
+  platforms: "Shopify, WooCommerce, BigCommerce, Magento and standalone",
 };
 
 /**

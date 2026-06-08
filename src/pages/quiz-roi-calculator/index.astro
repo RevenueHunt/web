@@ -502,24 +502,21 @@ const jsonLd = [
         // Recommended plan (by monthly quiz responses) + cost + ROI.
         // Tiers mirror /pricing/ (lib/plans.ts).
         var responses = takers;
+        // Anything above the Premium tier (2,500/mo) lands on the Unlimited Plan
+        // at $299/mo with no response cap, so the ROI is computed off $299.
         var PLANS = [
           { name: "Free Plan", limit: 100, cost: 0 },
           { name: "Basic Plan", limit: 500, cost: 39 },
           { name: "Pro Plan", limit: 1000, cost: 99 },
           { name: "Premium Plan", limit: 2500, cost: 199 },
+          { name: "Unlimited Plan", limit: Infinity, cost: 299, unlimited: true },
         ];
-        var plan = null;
+        var plan = PLANS[0];
         for (var i = 0; i < PLANS.length; i++) {
           if (responses <= PLANS[i].limit) { plan = PLANS[i]; break; }
         }
         set("out-responses", num.format(responses));
-        if (!plan) {
-          set("out-plan", "Custom plan");
-          set("out-plancost", "Talk to us for higher volumes");
-          set("out-roi", extra > 0 ? "High" : "-");
-          set("out-net", "");
-          set("plan-note", "At about " + num.format(responses) + " quiz responses a month you are past the Premium tier, so a custom plan fits best. At a " + val("quizcvr") + "% quiz conversion rate, that traffic could add about " + usd.format(extra) + " a month.");
-        } else if (plan.cost === 0) {
+        if (plan.cost === 0) {
           set("out-plan", plan.name);
           set("out-plancost", "Free");
           set("out-roi", extra > 0 ? "Pure upside" : "-");
@@ -533,9 +530,12 @@ const jsonLd = [
           set("out-roi", extra > 0 ? (roi >= 10 ? Math.round(roi) + "x" : roi.toFixed(1) + "x") : "-");
           set("out-net", extra > 0 ? (usd.format(extra) + " revenue minus " + usd.format(plan.cost) + " plan = " + usd.format(net) + "/mo net") : "");
           if (extra <= 0) {
-            set("plan-note", "Set the quiz conversion rate above your current site conversion rate to see a return. The " + plan.name + " ($" + plan.cost + "/mo) covers about " + num.format(responses) + " responses a month.");
+            set("plan-note", "Set the quiz conversion rate above your current site conversion rate to see a return. The " + plan.name + " ($" + plan.cost + "/mo) covers " + (plan.unlimited ? "unlimited responses." : "about " + num.format(responses) + " responses a month."));
           } else {
-            set("plan-note", "About " + num.format(responses) + " quiz responses a month fits the " + plan.name + " at $" + plan.cost + " a month. The estimated " + usd.format(extra) + " a month in extra revenue is roughly " + (roi >= 10 ? Math.round(roi) : roi.toFixed(1)) + "x the plan cost.");
+            var fit = plan.unlimited
+              ? "About " + num.format(responses) + " quiz responses a month puts you on the " + plan.name + " at $" + plan.cost + " a month, with unlimited responses."
+              : "About " + num.format(responses) + " quiz responses a month fits the " + plan.name + " at $" + plan.cost + " a month.";
+            set("plan-note", fit + " The estimated " + usd.format(extra) + " a month in extra revenue is roughly " + (roi >= 10 ? Math.round(roi) : roi.toFixed(1)) + "x the plan cost.");
           }
         }
       }

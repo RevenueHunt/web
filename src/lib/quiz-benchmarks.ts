@@ -155,7 +155,15 @@ export const METHODOLOGY = [
   "Every conversion figure is a floor. Attribution is still attaching as merchants sync orders (9% of first orders land more than 30 days after the quiz), and cross-device or untracked orders never attach at all. The real numbers are higher, not lower.",
 ];
 
-export const FAQ = [
+export interface FaqItem {
+  question: string;
+  /** Plain-text answer; used for the FAQPage schema. */
+  answer: string;
+  /** Optional HTML answer (may contain links); used for on-page display. Falls back to `answer`. */
+  answerHtml?: string;
+}
+
+export const FAQ: FaqItem[] = [
   {
     question: "How is quiz conversion measured?",
     answer:
@@ -164,17 +172,19 @@ export const FAQ = [
   {
     question: "Why is the quiz conversion rate so much higher than the average store?",
     answer:
-      "Two reasons. Part of it is the quiz itself: it replaces an overwhelming catalog with a short conversation and a clear recommendation, which removes the indecision that leaks sales. Part of it is selection: someone who finishes a quiz has already raised their hand. The honest read is that both are at work, which is why we report the quiz-taker rate plainly instead of dressing it up as a site-wide number.",
+      "Two reasons. First, the quiz itself: it replaces an overwhelming catalog with a short conversation and a clear recommendation, which removes the indecision that leaks sales. Second, what happens after the answers come in: every quiz captures zero-party data and tags the shopper, which powers segmented follow-up flows and retargeting. Segmented campaigns earn more than 3x the revenue per recipient of generic sends (Klaviyo segmentation benchmark), so a quiz keeps converting through personalized email and ads, not just on the results page.",
+    answerHtml:
+      "Two reasons. First, the quiz itself: it replaces an overwhelming catalog with a short conversation and a clear recommendation, which removes the indecision that leaks sales. Second, what happens after the answers come in: every quiz captures zero-party data and tags the shopper, which powers segmented follow-up flows and retargeting. Segmented campaigns earn more than 3x the revenue per recipient of generic sends (<a href=\"https://www.klaviyo.com/marketing-resources/segmentation-benchmark-report\" target=\"_blank\" rel=\"external noopener nofollow\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">Klaviyo segmentation benchmark</a>), so a quiz keeps converting through personalized email and ads, not just on the results page.",
   },
   {
     question: "Do quiz shoppers really spend more per order?",
     answer:
-      "On average, yes, measured like for like. Within the same store, orders that came through a quiz run about 11% to 15% higher than orders that did not, and that holds in roughly 7 in 10 stores. It is strongest in beauty and skincare (about +20%), flatter in categories like fragrance and coffee. It is not universal, which is exactly why a naive platform-wide average hides it.",
+      "On average, yes, measured like for like. Within the same store, orders that came through a quiz run about 11% to 15% higher than orders that did not, and that holds in roughly 7 in 10 stores. It is not universal, though: it is strongest in beauty and skincare (about +20%), flatter in categories like fragrance and coffee.",
   },
   {
     question: "Is the data anonymized?",
     answer:
-      "Yes. Every figure is aggregate and pooled across thousands of responses and hundreds of stores. No individual store is identifiable, and our own demo stores are excluded. The report exists to share what the dataset says, not to expose any merchant.",
+      "Yes. Every figure is aggregate and pooled across millions of responses and thousands of stores. No individual store is identifiable. The report exists to share what the dataset says, not to expose any merchant.",
   },
   {
     question: "Can I use these numbers?",

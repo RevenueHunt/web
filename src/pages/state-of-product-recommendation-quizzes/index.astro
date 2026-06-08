@@ -296,7 +296,7 @@ const pooled = VERTICAL_CONVERSION.find((r) => r.kind === "total")!;
         </div>
       </div>
       <p class="mx-auto mt-6 max-w-3xl text-slate-700 text-center">
-        About <strong>1 in 5 of all quiz-attributed orders land more than 30 days after the quiz</strong>. The quiz is not just a checkout nudge: it segments the shopper, and that segmentation keeps converting for months.
+        About <strong>1 in 5 of all quiz-attributed orders land more than 30 days after the quiz</strong>. The quiz is not just a checkout nudge: every answer is zero-party data that tags the shopper and feeds segmented follow-up flows and retargeting. <a href="https://www.klaviyo.com/marketing-resources/segmentation-benchmark-report" target="_blank" rel="external noopener nofollow" class="font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]">Segmented campaigns earn more than 3x the revenue per recipient</a> of generic sends, so a single quiz keeps converting through personalized email and ads for months.
       </p>
     </div>
   </section>
@@ -369,7 +369,7 @@ const pooled = VERTICAL_CONVERSION.find((r) => r.kind === "total")!;
                 <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
               </svg>
             </summary>
-            <p class="pb-5 text-slate-700">{f.answer}</p>
+            <p class="pb-5 text-slate-700" set:html={f.answerHtml ?? f.answer} />
           </details>
         ))}
       </div>

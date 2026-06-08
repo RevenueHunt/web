@@ -127,7 +127,7 @@ li { margin: 5pt 0; }
   <p class="note">Currency-robust and store-mix-controlled. Triangulated across three independent samples at +11%, +15% and +14% median.</p>
 
   <h2>A quiz keeps paying after the session</h2>
-  <p>${ATTRIBUTION.sameDay}% of first quiz-attributed orders happen the same day, ${ATTRIBUTION.within7}% within 7 days, ${ATTRIBUTION.within30}% within 30 days. But about 1 in 5 of all quiz-attributed orders land more than 30 days after the quiz. The quiz segments the shopper, and that segmentation keeps converting for months.</p>
+  <p>${ATTRIBUTION.sameDay}% of first quiz-attributed orders happen the same day, ${ATTRIBUTION.within7}% within 7 days, ${ATTRIBUTION.within30}% within 30 days. But about 1 in 5 of all quiz-attributed orders land more than 30 days after the quiz. The quiz is not just a checkout nudge: every answer is zero-party data that tags the shopper and feeds segmented follow-up flows and retargeting. Segmented campaigns earn more than 3x the revenue per recipient of generic sends (Klaviyo), so a single quiz keeps converting through personalized email and ads for months.</p>
 
   <h2>What counts as "the average store"</h2>
   <p>There is no single true number for ecommerce conversion. The honest range is roughly 1.6% to 2.9%. We benchmark against a round ${HEADLINE.baselinePct}%, which puts quiz takers at about ${HEADLINE.multiple}x the average store.</p>

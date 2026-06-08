@@ -34,7 +34,7 @@ export const PLATFORM_CONFIGS: Record<string, PlatformConfig> = {
     },
     secondary: {
       label: "view demo store",
-      href: "https://skincarequiz.myshopify.com",
+      href: "https://productrecommendationquiz.com/",
       external: true,
     },
     youtubeId: "fJqpGJUzZNE",
@@ -48,7 +48,7 @@ export const PLATFORM_CONFIGS: Record<string, PlatformConfig> = {
       external: true,
       gtagEvent: "download_woocommerce_plugin",
     },
-    secondary: { label: "view demo store", href: "https://skincarequiz.myshopify.com", external: true },
+    secondary: { label: "view demo store", href: "https://productrecommendationquiz.com/", external: true },
     youtubeId: "a3KnrwSooao",
     showComparison: true,
   },
@@ -60,20 +60,20 @@ export const PLATFORM_CONFIGS: Record<string, PlatformConfig> = {
       external: true,
       gtagEvent: "bigcommerce_app_install",
     },
-    secondary: { label: "view demo store", href: "https://skincarequiz.myshopify.com", external: true },
+    secondary: { label: "view demo store", href: "https://productrecommendationquiz.com/", external: true },
     youtubeId: "9uGXJYk4mgY",
     showComparison: true,
   },
   "product-recommendation-quiz-wix-stores": {
     platform: "Wix",
     primary: { label: "sign up", href: "https://admin.revenuehunt.com/register/", external: true },
-    secondary: { label: "view demo store", href: "https://skincarequiz.myshopify.com", external: true },
+    secondary: { label: "view demo store", href: "https://productrecommendationquiz.com/", external: true },
     youtubeId: "fJqpGJUzZNE",
   },
   "product-recommendation-quiz-for-squarespace-commerce": {
     platform: "Squarespace",
     primary: { label: "sign up", href: "https://admin.revenuehunt.com/register/", external: true },
-    secondary: { label: "view demo store", href: "https://skincarequiz.myshopify.com", external: true },
+    secondary: { label: "view demo store", href: "https://productrecommendationquiz.com/", external: true },
     youtubeId: "fJqpGJUzZNE",
   },
   "product-recommendation-quiz-for-magento": {
@@ -88,7 +88,7 @@ export const PLATFORM_CONFIGS: Record<string, PlatformConfig> = {
   "product-recommendation-quiz-standalone-google-product-feed": {
     platform: "Google Product Feed",
     primary: { label: "get started free", href: "https://admin.revenuehunt.com/register/", external: true },
-    secondary: { label: "view demo store", href: "https://skincarequiz.myshopify.com", external: true },
+    secondary: { label: "view demo store", href: "https://productrecommendationquiz.com/", external: true },
     youtubeId: "fifkJo07Zgc",
   },
   "product-recommendation-quiz-pos-tablet-stands": {

@@ -33,7 +33,7 @@ export const REPORT = {
 export const DATASET = {
   responses: "45M+",
   responsesNote: "quiz responses analyzed",
-  revenue: "$1.5B+",
+  revenue: "$370M+",
   revenueNote: "in merchant revenue generated",
   brands: "20,000+",
   brandsNote: "ecommerce stores",

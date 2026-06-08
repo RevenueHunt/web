@@ -125,7 +125,7 @@ const jsonLd = [
         <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">Free tool</p>
         <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">Quiz ROI calculator</h1>
         <p class="mx-auto mt-6 max-w-3xl text-xl text-slate-600">
-          See the extra revenue a product recommendation quiz could add to your store. The 5.5% conversion benchmark is real, <a href="/state-of-product-recommendation-quizzes/" class="font-semibold text-[#16161D] underline decoration-2 decoration-[#16161D]/40 underline-offset-2 hover:decoration-[#16161D]">measured across 45M+ quiz responses</a>, not a made-up multiplier. Adjust the inputs to match your numbers.
+          See the extra revenue a product recommendation quiz could add to your store. The 275% conversion benchmark is real, <a href="/state-of-product-recommendation-quizzes/" class="font-semibold text-[#16161D] underline decoration-2 decoration-[#16161D]/40 underline-offset-2 hover:decoration-[#16161D]">measured across 45M+ quiz responses</a>, not a made-up multiplier. Adjust the inputs to match your numbers.
         </p>
       </div>
     </div>
@@ -473,10 +473,17 @@ const jsonLd = [
         var f = quizFloor();
         if (val("quizcvr") < f) setQuizCvr(f);
       }
-      // Keep the quiz-rate helper note truthful as the rate changes.
+      // Keep the quiz-rate helper note truthful as the rate changes. At the
+      // benchmark it's the pre-filled RevenueHunt figure; once the merchant edits
+      // it off the benchmark it's their own value (the reset link gets them back).
       function syncNotes() {
         var qc = val("quizcvr");
-        if (qc > 0) set("quizcvr-note", "Pre-filled from RevenueHunt data: about 1 in " + Math.round(100 / qc) + " quiz takers place an order. Edit it to match your store.");
+        if (qc <= 0) return;
+        var oneIn = Math.round(100 / qc);
+        var edited = Math.abs(qc - quizFloor()) > 0.05;
+        set("quizcvr-note", edited
+          ? "Your value: about 1 in " + oneIn + " quiz takers place an order."
+          : "Pre-filled from RevenueHunt data: about 1 in " + oneIn + " quiz takers place an order. Edit it to match your store.");
       }
       // Only show the reset link when the quiz rate is off its data value — i.e.
       // the merchant edited it, or lowered their current rate so it sits above

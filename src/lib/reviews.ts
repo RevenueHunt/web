@@ -3,8 +3,8 @@
  *  Keep ratingValue/reviewCount in sync with the live marketplace listings -
  *  the structured data must reflect genuine, on-page reviews (Google policy).
  *
- *  Last verified: 2026-06-02
- *  - Shopify App Store:  4.9 / 417  (apps.shopify.com)
+ *  Last verified: 2026-06-08
+ *  - Shopify App Store:  4.9 / 421  (apps.shopify.com)
  *  - WordPress.org:      5.0 / 100  (wordpress.org plugin reviews)
  *  - BigCommerce:        5.0 / 6    (bigcommerce.com app listing)
  */
@@ -34,7 +34,7 @@ export interface PlatformReviews {
 const SHOPIFY: PlatformReviews = {
   platform: "Shopify",
   ratingValue: "4.9",
-  reviewCount: "417",
+  reviewCount: "421",
   sourceLabel: "Shopify App Store",
   sourceUrl:
     "https://apps.shopify.com/product-recommendation-quiz-revenuehunt/reviews",

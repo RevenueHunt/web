@@ -81,6 +81,7 @@ const BESPOKE: OgPage[] = [
   { slug: "compare-nosto", title: "RevenueHunt vs Nosto", subtitle: "A focused, self-serve zero-party quiz, not an enterprise personalization suite." },
   { slug: "compare-tolstoy", title: "RevenueHunt vs Tolstoy", subtitle: "A quiz-first product recommendation tool, not a video platform with a quiz add-on." },
   { slug: "quiz-roi-calculator", title: "Quiz ROI calculator", subtitle: "Estimate the extra revenue a product recommendation quiz could add." },
+  { slug: "state-of-product-recommendation-quizzes", title: "The state of product recommendation quizzes", subtitle: "2026 benchmark report: conversion, completion, and AOV from 45M+ real quiz responses." },
   { slug: "solutions", title: "Quiz solutions", subtitle: "A product recommendation quiz for your industry and quiz type." },
   { slug: "solutions-skincare", title: "Skincare quiz", subtitle: "Read skin type and concerns, then recommend a personalized routine." },
   { slug: "solutions-beauty", title: "Beauty quiz", subtitle: "Match shade, build a regimen, and find the right product." },

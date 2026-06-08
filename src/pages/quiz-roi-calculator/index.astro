@@ -480,10 +480,14 @@ const jsonLd = [
         var qc = val("quizcvr");
         if (qc <= 0) return;
         var oneIn = Math.round(100 / qc);
-        var edited = Math.abs(qc - quizFloor()) > 0.05;
-        set("quizcvr-note", edited
-          ? "Your value: about 1 in " + oneIn + " quiz takers place an order."
-          : "Pre-filled from RevenueHunt data: about 1 in " + oneIn + " quiz takers place an order. Edit it to match your store.");
+        var bench = quizFloor();
+        if (Math.abs(qc - bench) <= 0.05) {
+          set("quizcvr-note", "Pre-filled from RevenueHunt data: about 1 in " + oneIn + " quiz takers place an order. Edit it to match your store.");
+        } else {
+          var d = Math.round((qc / bench - 1) * 100);
+          var rel = d >= 0 ? d + "% above" : Math.abs(d) + "% below";
+          set("quizcvr-note", "Your value: about 1 in " + oneIn + " quiz takers place an order. That's " + rel + " the average quiz conversion rate.");
+        }
       }
       // Only show the reset link when the quiz rate is off its data value — i.e.
       // the merchant edited it, or lowered their current rate so it sits above

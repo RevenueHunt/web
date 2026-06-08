@@ -27,7 +27,7 @@
 - [/for-beauty-brands/](https://revenuehunt.com/for-beauty-brands/) - Beauty vertical
 - [/quiz-readiness-assessment/](https://revenuehunt.com/quiz-readiness-assessment/) - Self-assessment
 - [/quiz-roi-calculator/](https://revenuehunt.com/quiz-roi-calculator/) - Free quiz ROI calculator built on real data (1 in 18 quiz takers place an order, ~275% of a typical store conversion rate): estimates extra revenue, the recommended plan, and ROI
-- [/state-of-product-recommendation-quizzes/](https://revenuehunt.com/state-of-product-recommendation-quizzes/) - The state of product recommendation quizzes 2026: a benchmark report from 45M+ real quiz responses across 20,000+ stores. Quiz finishers convert at 5.5% (1 in 18, ~2.75x a typical store), conversion by category (fragrance 6.9%, haircare 6.7%, beauty 6.1%, down to ~0.7% for high-ticket), within-store AOV uplift +11-15%, 69% completion, and 1 in 5 orders landing 30+ days later. Free, ungated, downloadable PDF
+- [/state-of-product-recommendation-quizzes/](https://revenuehunt.com/state-of-product-recommendation-quizzes/) - The state of product recommendation quizzes 2026: a benchmark report from 45M+ real quiz responses across 20,000+ stores. Quiz takers convert at 5.5% (1 in 18, ~2.75x a typical store), conversion by category (fragrance 6.9%, haircare 6.7%, beauty 6.1%, down to ~0.7% for high-ticket), within-store AOV uplift +11-15%, 69% completion, and 1 in 5 orders landing 30+ days later. Free, ungated, downloadable PDF
 - [/faqs/](https://revenuehunt.com/faqs/) - FAQ
 - [/contact/](https://revenuehunt.com/contact/) - Contact
 - [/blog/](https://revenuehunt.com/blog/) - Blog index

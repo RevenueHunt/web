@@ -91,10 +91,10 @@ export const VERTICAL_CONVERSION: VerticalRow[] = [
   },
   {
     vertical: "All quiz categories (pooled)",
-    rate: 5.6,
+    rate: 5.5,
     n: null,
     kind: "total",
-    note: "Matches the 5.5% platform headline. Generic, unnamed quizzes (~78% of responses) are excluded from the per-category rows and drag the all-in number down to ~4%.",
+    note: "The platform headline: 5.5% (1 in 18), about 275% of a typical 2% store. Generic, unnamed quizzes (~78% of responses) are excluded from the per-category rows and drag the all-in number down to ~4%.",
   },
 ];
 
@@ -149,7 +149,7 @@ export const BASELINES = [
 /** Honest method + caveats. Drives the methodology section and the PDF appendix. */
 export const METHODOLOGY = [
   "Source: RevenueHunt's own platform, across every ecommerce platform we support. Aggregate and anonymized: no individual store is identifiable, and our own demo stores are excluded everywhere.",
-  "Conversion is a quiz-taker rate: orders attributed to a quiz response, divided by completed quizzes. It is not a site-wide rate. Quiz finishers are self-selected and more engaged than the average visitor, so this is not a like-for-like comparison to a store's overall conversion rate. We say so wherever we make the comparison.",
+  "Conversion is a quiz-taker rate: orders attributed to a quiz response, divided by completed quizzes. It is not a site-wide rate. Quiz takers are self-selected and more engaged than the average visitor, so this is not a like-for-like comparison to a store's overall conversion rate. We say so wherever we make the comparison.",
   "Category is derived from the merchant-authored quiz name (for example \"Skincare quiz\", \"Dog food quiz\"). About 78% of responses come from generic or unnamed quizzes and are excluded from every per-category figure.",
   "Average order value uplift is measured within-store: the same store's median quiz order value against its median non-quiz order value. This is currency-robust and removes the store-mix bias that washes the effect out in a naive platform-wide average.",
   "Every conversion figure is a floor. Attribution is still attaching as merchants sync orders (9% of first orders land more than 30 days after the quiz), and cross-device or untracked orders never attach at all. The real numbers are higher, not lower.",
@@ -159,7 +159,7 @@ export const FAQ = [
   {
     question: "How is quiz conversion measured?",
     answer:
-      "Orders attributed to a quiz response, divided by completed quizzes. Across the platform, 5.5% of shoppers who finish a quiz (about 1 in 18) place a tracked order. It is a quiz-taker rate, not a site-wide rate: quiz finishers are more engaged than the average visitor, so it is not directly comparable to a store's overall conversion rate.",
+      "Orders attributed to a quiz response, divided by completed quizzes. Across the platform, 5.5% of shoppers who finish a quiz (about 1 in 18) place a tracked order. It is a quiz-taker rate, not a site-wide rate: quiz takers are more engaged than the average visitor, so it is not directly comparable to a store's overall conversion rate.",
   },
   {
     question: "Why is the quiz conversion rate so much higher than the average store?",

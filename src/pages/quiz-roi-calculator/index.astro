@@ -61,7 +61,7 @@ const PROOF = [
   { stat: "20,000+", label: "brands using RevenueHunt" },
 ];
 
-const faqs = [
+const faqs: { question: string; answer: string; answerHtml?: string }[] = [
   {
     question: "Where does the quiz conversion rate come from?",
     answer:
@@ -81,6 +81,13 @@ const faqs = [
     question: "Is this based on real data or made-up multipliers?",
     answer:
       "Real data. The quiz conversion benchmark is measured across more than 45 million quiz responses and over $1.5 billion in merchant revenue generated. Your visitors, average order value, and current conversion rate are your own numbers. The output is an estimate, not a guarantee.",
+  },
+  {
+    question: "Where can I see the full data behind these benchmarks?",
+    answer:
+      "In our ecommerce quiz benchmark report. It breaks down conversion by category, average order value uplift, completion, and attribution across 45M+ real quiz responses. The 5.5% benchmark and the per-sector figures in this calculator come straight from it.",
+    answerHtml:
+      "In our <a href=\"/state-of-product-recommendation-quizzes/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">ecommerce quiz benchmark report</a>. It breaks down conversion by category, average order value uplift, completion, and attribution across 45M+ real quiz responses. The 5.5% benchmark and the per-sector figures in this calculator come straight from it.",
   },
   {
     question: "Is the calculator free to use?",
@@ -131,6 +138,9 @@ const jsonLd = [
         <span class="inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>
         <p class="text-sm font-semibold uppercase tracking-wider text-slate-600">Based on real RevenueHunt data</p>
       </div>
+      <p class="mt-2 text-center text-sm text-slate-500">
+        Straight from our <a href="/state-of-product-recommendation-quizzes/" class="font-medium text-[#16161D] underline decoration-slate-400 underline-offset-2 hover:decoration-[#16161D]">ecommerce quiz benchmark report</a>.
+      </p>
       <dl class="mt-5 grid grid-cols-2 gap-px overflow-hidden rounded-xl bg-slate-200 sm:grid-cols-4">
         {PROOF.map((p) => (
           <div class="bg-white px-4 py-6 text-center">
@@ -378,7 +388,7 @@ const jsonLd = [
                 <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
               </svg>
             </summary>
-            <p class="pb-5 text-slate-700">{faq.answer}</p>
+            <p class="pb-5 text-slate-700" set:html={faq.answerHtml ?? faq.answer} />
           </details>
         ))}
       </div>

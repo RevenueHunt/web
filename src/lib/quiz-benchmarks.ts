@@ -182,6 +182,13 @@ export const FAQ: FaqItem[] = [
       "On average, yes, measured like for like. Within the same store, orders that came through a quiz run about 11% to 15% higher than orders that did not, and that holds in roughly 7 in 10 stores. It is not universal, though: it is strongest in beauty and skincare (about +20%), flatter in categories like fragrance and coffee.",
   },
   {
+    question: "How do these benchmarks apply to my store?",
+    answer:
+      "Plug your own traffic, average order value, and current conversion rate into our quiz ROI calculator. It runs these same benchmarks (the 5.5% quiz-taker rate, the per-category conversion, the AOV uplift) against your numbers to estimate the extra revenue a quiz could add.",
+    answerHtml:
+      "Plug your own traffic, average order value, and current conversion rate into our <a href=\"/quiz-roi-calculator/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">quiz ROI calculator</a>. It runs these same benchmarks (the 5.5% quiz-taker rate, the per-category conversion, the AOV uplift) against your numbers to estimate the extra revenue a quiz could add.",
+  },
+  {
     question: "Is the data anonymized?",
     answer:
       "Yes. Every figure is aggregate and pooled across millions of responses and thousands of stores. No individual store is identifiable. The report exists to share what the dataset says, not to expose any merchant.",

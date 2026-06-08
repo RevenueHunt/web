@@ -16,10 +16,10 @@ const WOO_PLUGIN = "https://downloads.wordpress.org/plugin/product-recommendatio
 // (Data: PRD-Octane-AI-SEO-Reverse-Engineering W7 deep-dive note.)
 const controls = [
   { id: "visitors", label: "Monthly store visitors", min: 500, max: 500000, step: 500, value: 10000, suffix: "" },
+  { id: "engage", label: "Share of visitors who take the quiz", min: 1, max: 100, step: 1, value: 20, suffix: "%" },
   { id: "aov", label: "Your average order value", min: 10, max: 1000, step: 5, value: 60, suffix: "$" },
   { id: "cvr", label: "Your current conversion rate", min: 0.1, max: 15, step: 0.1, value: 2, suffix: "%" },
-  { id: "engage", label: "Share of visitors who take the quiz", min: 1, max: 100, step: 1, value: 20, suffix: "%" },
-  { id: "quizcvr", label: "Quiz taker conversion rate", min: 1, max: 25, step: 0.5, value: 5.5, suffix: "%", benchmark: true, note: "Pre-filled with our measured benchmark: on average, 1 in 18 quiz takers place an order. Edit it to match your store." },
+  { id: "quizcvr", label: "Quiz taker conversion rate", min: 1, max: 50, step: 0.5, value: 5.5, suffix: "%", benchmark: true, note: "Pre-filled with our measured benchmark: on average, 1 in 18 quiz takers place an order. Edit it to match your store." },
 ];
 
 // Sector presets for the "what do you sell?" selector. Each sets the quiz-taker
@@ -174,11 +174,6 @@ const jsonLd = [
               <div class="flex items-center justify-between gap-3">
                 <label for={c.id} class="text-sm font-medium text-slate-900">
                   {c.label}
-                  {c.benchmark && (
-                    <span class="ml-2 inline-flex items-center rounded-full bg-[#D8F0FE] px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-[#2c81b2] ring-1 ring-inset ring-[#2c81b2]/20">
-                      RevenueHunt data
-                    </span>
-                  )}
                 </label>
                 <div class="flex items-center gap-1 text-sm">
                   {c.suffix === "$" && <span class="text-slate-500">$</span>}
@@ -205,8 +200,20 @@ const jsonLd = [
                 aria-label={`${c.label} slider`}
               />
               {c.note && (
-                <p id={`${c.id}-note`} class="mt-2 text-xs text-slate-500">
-                  {c.note}
+                <p class="mt-2 text-xs text-slate-500">
+                  <span id={`${c.id}-note`}>{c.note}</span>
+                  {c.benchmark && (
+                    <>
+                      {" "}
+                      <button
+                        type="button"
+                        id={`${c.id}-reset`}
+                        class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]"
+                      >
+                        Reset to RevenueHunt data
+                      </button>
+                    </>
+                  )}
                 </p>
               )}
             </div>
@@ -444,6 +451,29 @@ const jsonLd = [
         var t = document.getElementById(id);
         if (t) t.textContent = v;
       }
+      // Quiz takers convert at a fixed multiple of a normal store. The sector
+      // benchmark is that rate measured at a 2% reference store (5.5% = 2.75x,
+      // 3.6% = 1.8x, ...). Express the quiz-taker rate as that same multiple
+      // applied to the merchant's OWN rate, but never below the 2% reference, so
+      // even a high-converting store still sees a lift instead of a flat $0. The
+      // multiple is always >= 1.8, so the result always clears the current rate.
+      var sectorBenchmark = 5.5;
+      function quizFloor() {
+        return Math.round(sectorBenchmark * Math.max(2, val("cvr")) / 2 * 10) / 10;
+      }
+      function setQuizCvr(v) {
+        var n = document.getElementById("quizcvr"), r = document.getElementById("quizcvr-range");
+        if (!n) return;
+        v = Math.min(v, parseFloat(n.max));
+        n.value = v;
+        if (r) r.value = clamp(r, v);
+      }
+      // Raising the current rate lifts the quiz rate to keep the multiple; it
+      // never lowers a manual edit the merchant made above the floor.
+      function ensureBoost() {
+        var f = quizFloor();
+        if (val("quizcvr") < f) setQuizCvr(f);
+      }
       // Keep the quiz-rate helper note truthful as the rate changes.
       function syncNotes() {
         var qc = val("quizcvr");
@@ -513,8 +543,8 @@ const jsonLd = [
         var n = document.getElementById(k);
         var r = document.getElementById(k + "-range");
         if (!n || !r) return;
-        n.addEventListener("input", function () { r.value = clamp(n, val(k)); calc(); });
-        r.addEventListener("input", function () { n.value = r.value; calc(); });
+        n.addEventListener("input", function () { r.value = clamp(n, val(k)); if (k === "cvr") ensureBoost(); calc(); });
+        r.addEventListener("input", function () { n.value = r.value; if (k === "cvr") ensureBoost(); calc(); });
       });
       // Sector selector: pre-fill the quiz rate + AOV uplift from the chosen
       // sector and recompute everything. Unselected stays "All sectors" (275%).
@@ -529,7 +559,13 @@ const jsonLd = [
           if (n) n.value = v;
           if (r) r.value = clamp(r, parseFloat(v));
         }
-        put("quizcvr", qc);
+        sectorBenchmark = parseFloat(qc) || sectorBenchmark;
+        // Reset the current rate to its default first, so the quiz rate lands on
+        // the sector's published benchmark (5.5%, 3.6%, ...) rather than scaling
+        // off whatever the merchant had dragged the current rate to.
+        var cvrEl = document.getElementById("cvr");
+        if (cvrEl) put("cvr", cvrEl.defaultValue);
+        setQuizCvr(quizFloor());
         put("aovlift", lift);
         var liftN = parseFloat(lift) || 0;
         var aovPart = liftN > 0 ? " and place orders about " + liftN + "% larger" : "";
@@ -541,6 +577,10 @@ const jsonLd = [
         calc();
       }
       if (sector) sector.addEventListener("change", applySector);
+      // Reset link: restore the quiz-taker rate to the RevenueHunt benchmark for
+      // the current sector and store rate, in case the merchant dragged it away.
+      var quizReset = document.getElementById("quizcvr-reset");
+      if (quizReset) quizReset.addEventListener("click", function () { setQuizCvr(quizFloor()); calc(); });
       calc();
     })();
   </script>

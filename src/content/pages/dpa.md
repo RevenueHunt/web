@@ -2,13 +2,13 @@
 title: "Data Processing Agreement"
 description: "RevenueHunt's GDPR Data Processing Agreement, including our subprocessor list, technical and organizational security measures, and the Standard Contractual Clauses for international data transfers."
 pubDate: 2026-01-18T00:00:00Z
-updatedDate: 2026-05-19T00:00:00Z
+updatedDate: 2026-06-08T00:00:00Z
 legacySlug: "dpa"
 featuredImage: null
 draft: false
 ---
 
-Last updated: June 2025.
+Last updated: June 8, 2026.
 
 Download a copy: [PDF](/legal/RevenueHunt-Data-Processing-Agreement.pdf).
 

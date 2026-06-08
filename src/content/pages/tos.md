@@ -1,6 +1,6 @@
 ---
 title: "Terms of Service"
-description: "Last updated: January 18, 2026. Welcome to RevenueHunt Thank you for using RevenueHunt's products and services. The use of this website implies the acceptance of each and every one of the Terms of Service on this page. We want you to read these Terms of Service, therefore, they a"
+description: "The terms governing your use of RevenueHunt's website, products, and services. RevenueHunt is a product of Dairy Capital Limited, incorporated in England and Wales."
 pubDate: 2019-07-21T22:45:31Z
 updatedDate: 2026-05-19T00:00:00Z
 legacySlug: "tos"

@@ -1,9 +1,20 @@
 ---
-import { PLANS } from "../../lib/plans";
+import { PLANS_BY_LANG } from "../../lib/plans";
+import { localizedHref, type Lang } from "../../lib/i18n";
+import { CHROME, fill } from "../../lib/content/chrome";
+
+interface Props {
+  lang?: Lang;
+}
+const { lang = "en" } = Astro.props;
+const plans = PLANS_BY_LANG[lang];
+const chrome = CHROME[lang];
+const enterprise = fill(chrome.plans_enterprise, { price: "$299/mo." });
+const [enterpriseBefore, enterpriseAfter] = enterprise.split("$299/mo.");
 ---
 
 <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-  {PLANS.map((plan) => (
+  {plans.map((plan) => (
     <li>
       <article class="flex h-full flex-col rounded-2xl bg-white p-6 shadow-sm">
         <h3 class="text-sm font-medium text-slate-700">{plan.name}</h3>
@@ -66,8 +77,6 @@ import { PLANS } from "../../lib/plans";
 </ul>
 
 <p class="mx-auto mt-12 max-w-4xl text-center text-base text-slate-700">
-  Large brand? We&rsquo;ve got you covered. Get a custom Enterprise Plan
-  {" "}<strong class="font-semibold">starting at $299/mo.</strong>{" "}
-  for unlimited quiz responses.{" "}
-  <a href="/demo/" class="font-semibold text-slate-900 underline underline-offset-4 hover:text-slate-700">Book a strategy call</a>.
+  {enterpriseBefore}<strong class="font-semibold">$299/mo.</strong>{enterpriseAfter}{" "}
+  <a href={localizedHref("/demo/", lang)} class="font-semibold text-slate-900 underline underline-offset-4 hover:text-slate-700">{chrome.plans_enterprise_cta}</a>.
 </p>

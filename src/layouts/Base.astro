@@ -3,6 +3,7 @@ import "../styles/global.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE, ogImageForPath } from "../lib/site";
+import { type Lang, LANGS, OG_LOCALE, altLangUrl } from "../lib/i18n";
 
 interface Props {
   title: string;
@@ -12,6 +13,12 @@ interface Props {
   jsonLd?: unknown;
   /** Set false on landing pages that have their own chrome. */
   showChrome?: boolean;
+  /** Page locale. Drives <html lang>, og:locale, and the header/footer copy. */
+  lang?: Lang;
+  /** True when this page has equivalents in every locale (in-scope pages). Emits
+   *  hreflang alternates + x-default. Leave false for English-only pages (blog,
+   *  legal) so we never advertise URLs that don't exist. */
+  translated?: boolean;
 }
 
 const {
@@ -21,9 +28,22 @@ const {
   noindex = false,
   jsonLd,
   showChrome = true,
+  lang = "en",
+  translated = false,
 } = Astro.props;
 
 const canonical = new URL(Astro.url.pathname, SITE.site_url).href;
+
+// hreflang alternates: one per locale (incl. self) plus x-default → English.
+const alternates = translated
+  ? LANGS.map((l) => ({
+      lang: l,
+      href: new URL(altLangUrl(Astro.url.pathname, l), SITE.site_url).href,
+    }))
+  : [];
+const xDefault = translated
+  ? new URL(altLangUrl(Astro.url.pathname, "en"), SITE.site_url).href
+  : null;
 
 // Index + analytics are ON by default - site_url defaults to the production
 // domain (lib/site.ts), so a live build is indexable without any env var.
@@ -34,7 +54,7 @@ const isProd = import.meta.env.PROD && SITE.site_url === "https://revenuehunt.co
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -42,6 +62,10 @@ const isProd = import.meta.env.PROD && SITE.site_url === "https://revenuehunt.co
     <meta name="description" content={description} />
     {(noindex || !isProd) && <meta name="robots" content="noindex, nofollow" />}
     <link rel="canonical" href={canonical} />
+    {alternates.map((a) => (
+      <link rel="alternate" hreflang={a.lang} href={a.href} />
+    ))}
+    {xDefault && <link rel="alternate" hreflang="x-default" href={xDefault} />}
     <meta name="google-site-verification" content="ndBR1A0ofVyaMGneJb5xHEqI1BFSKBZZPUzM8DdGDiE" />
 
     <meta property="og:title" content={title} />
@@ -49,7 +73,7 @@ const isProd = import.meta.env.PROD && SITE.site_url === "https://revenuehunt.co
     <meta property="og:url" content={canonical} />
     <meta property="og:type" content="website" />
     <meta property="og:image" content={new URL(ogImage, SITE.site_url).href} />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content={OG_LOCALE[lang]} />
     <meta property="og:site_name" content={SITE.name} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
@@ -92,11 +116,11 @@ const isProd = import.meta.env.PROD && SITE.site_url === "https://revenuehunt.co
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDNVZDJ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
       </noscript>
     )}
-    {showChrome && <Header />}
+    {showChrome && <Header lang={lang} translated={translated} />}
     <main>
       <slot />
     </main>
-    {showChrome && <Footer />}
+    {showChrome && <Footer lang={lang} />}
 
     <script>
       // Generic carousel - mirrors the legacy theme's initCarousel: native

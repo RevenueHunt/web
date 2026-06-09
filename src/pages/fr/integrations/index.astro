@@ -1,0 +1,226 @@
+---
+import Base from "../../../layouts/Base.astro";
+import { organization, breadcrumb, softwareApplication } from "../../../lib/schema";
+import { localizedHref } from "../../../lib/i18n";
+
+interface Integration {
+  name: string;
+  category: string;
+  logo: string;
+  href: string;
+}
+
+const groups: { heading: string; emoji: string; intro: string; items: Integration[] }[] = [
+  {
+    heading: "Analytique et suivi",
+    emoji: "📊",
+    intro:
+      "Mesurez les performances du quiz, suivez les conversions et optimisez votre tunnel. Voyez exactement quelles questions génèrent des ventes et où vos clients abandonnent.",
+    items: [
+      { name: "Google Analytics", category: "Données", logo: "/img/pages/integrations/ganalytics.webp", href: "https://docs.revenuehunt.com/how-to-guides/integrate-google-analytics/" },
+      { name: "Meta Pixel", category: "Données", logo: "/img/pages/integrations/metapixel.webp", href: "https://docs.revenuehunt.com/how-to-guides/integrate-meta-pixel/" },
+      { name: "TikTok Pixel", category: "Données", logo: "/img/pages/integrations/tiktoklog.webp", href: "https://docs.revenuehunt.com/how-to-guides/integrate-tiktok-pixel/" },
+      { name: "Webhooks", category: "Données", logo: "/img/pages/integrations/webhooklog.webp", href: "https://docs.revenuehunt.com/how-to-guides/send-leads-to-webhooks/" },
+      { name: "Google Product Feed", category: "Produits", logo: "/img/pages/integrations/googleproductfeed.webp", href: "/product-recommendation-quiz-standalone-google-product-feed/" },
+    ],
+  },
+  {
+    heading: "Marketing et automatisation",
+    emoji: "✉️",
+    intro:
+      "Synchronisez les leads du quiz avec votre plateforme d'emailing ou votre CRM. Envoyez des relances personnalisées, segmentez vos clients selon leurs réponses et transformez automatiquement vos leads en acheteurs fidèles.",
+    items: [
+      { name: "Klaviyo", category: "Email marketing", logo: "/img/pages/integrations/klaviyolog.webp", href: "https://docs.revenuehunt.com/how-to-guides/send-leads-to-klaviyo/" },
+      { name: "ActiveCampaign", category: "Automatisation", logo: "/img/pages/integrations/activecampaignlog.webp", href: "https://docs.revenuehunt.com/how-to-guides/send-leads-to-activecampaign/" },
+      { name: "Mailchimp", category: "Email marketing", logo: "/img/pages/integrations/mailchimplog.webp", href: "https://docs.revenuehunt.com/how-to-guides/send-leads-to-mailchimp/" },
+      { name: "Omnisend", category: "Email marketing", logo: "/img/pages/integrations/omnisendlog.webp", href: "https://docs.revenuehunt.com/how-to-guides/send-leads-to-omnisend/" },
+      { name: "Zapier", category: "Automatisation", logo: "/img/pages/integrations/zapierlog.webp", href: "https://docs.revenuehunt.com/how-to-guides/send-leads-to-zapier/" },
+      { name: "HubSpot", category: "CRM", logo: "/img/pages/integrations/hubspotlog.webp", href: "https://docs.revenuehunt.com/how-to-guides/send-leads-to-hubspot/" },
+      { name: "Shopify Customers", category: "CRM", logo: "/img/pages/integrations/shopifylog.webp", href: "https://docs.revenuehunt.com/how-to-guides/send-leads-to-shopify-customers/" },
+    ],
+  },
+  {
+    heading: "Ventes et preuve sociale",
+    emoji: "⭐",
+    intro:
+      "Taguez vos clients dans Shopify, recommandez des abonnements et affichez des avis, le tout à partir des réponses au quiz, pour que chaque client voie exactement la preuve et l'offre qui comptent pour lui.",
+    items: [
+      { name: "ReCharge", category: "Abonnements", logo: "/img/pages/integrations/rechargelog.webp", href: "https://docs.revenuehunt.com/how-to-guides/recommend-subscriptions/" },
+      { name: "Shopify Reviews", category: "Preuve sociale", logo: "/img/pages/integrations/shopifyreviews.webp", href: "https://docs.revenuehunt.com/how-to-guides/show-product-reviews/" },
+      { name: "Stamped", category: "Preuve sociale", logo: "/img/pages/integrations/stampedlog.webp", href: "https://docs.revenuehunt.com/how-to-guides/show-product-reviews/" },
+      { name: "Judge.me", category: "Preuve sociale", logo: "/img/pages/integrations/judgemelog.webp", href: "https://docs.revenuehunt.com/how-to-guides/show-product-reviews/" },
+      { name: "Rivyo Reviews", category: "Preuve sociale", logo: "/img/pages/integrations/rivyolog.webp", href: "https://docs.revenuehunt.com/how-to-guides/show-product-reviews/" },
+      { name: "POS Tablet Stands", category: "Ventes en boutique", logo: "/img/pages/integrations/poslog.webp", href: "/product-recommendation-quiz-pos-tablet-stands/" },
+      { name: "Shop App", category: "Ventes sur mobile", logo: "/img/pages/integrations/shopapplog.webp", href: "https://docs.revenuehunt.com/how-to-guides/show-quiz-in-shop-app/" },
+    ],
+  },
+];
+
+const pillars = [
+  {
+    emoji: "📊",
+    title: "Tout mesurer",
+    body: "Connectez Google Analytics, Meta Pixel et TikTok pour mesurer les performances du quiz et optimiser vos campagnes.",
+  },
+  {
+    emoji: "✉️",
+    title: "Automatiser les relances",
+    body: "Synchronisez les leads du quiz avec Klaviyo, Mailchimp ou ActiveCampaign pour envoyer automatiquement des recommandations de produits personnalisées.",
+  },
+  {
+    emoji: "💰",
+    title: "Augmenter le chiffre d'affaires",
+    body: "Taguez vos clients dans Shopify, recommandez des abonnements via ReCharge et affichez de la preuve sociale avec des apps d'avis.",
+  },
+];
+
+const stats = [
+  { value: "20+", label: "Intégrations natives" },
+  { value: "5 min", label: "Temps de configuration moyen" },
+  { value: "Zéro", label: "Code requis" },
+];
+
+const SHOPIFY_INSTALL =
+  "https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=integrations";
+const WOOCOMMERCE_DOWNLOAD =
+  "https://downloads.wordpress.org/plugin/product-recommendation-quiz-for-ecommerce.latest-stable.zip";
+
+const jsonLd = [
+  organization(),
+  softwareApplication(),
+  breadcrumb([
+    { name: "Accueil", url: "/" },
+    { name: "Intégrations", url: "/integrations/" },
+  ]),
+];
+
+function isExternal(href: string) {
+  return /^https?:\/\//.test(href);
+}
+---
+
+<Base
+  title="Intégrations - RevenueHunt"
+  description="Connectez votre quiz RevenueHunt à Klaviyo, Meta Pixel, Mailchimp, Omnisend, GA4 et plus encore. Synchronisez leads et réponses en 5 minutes, sans code."
+  jsonLd={jsonLd}
+  lang="fr"
+  translated={true}
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-5xl px-6 py-20 sm:py-24">
+      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
+        <a href={localizedHref("/", "fr")} class="hover:text-slate-700">Accueil</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <span class="text-slate-700">Intégrations</span>
+      </nav>
+      <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+        Des intégrations fluides qui amplifient les résultats de votre quiz
+      </h1>
+      <p class="mt-6 max-w-3xl text-xl text-slate-600">
+        Transformez les réponses au quiz en chiffre d'affaires grâce à des intégrations puissantes. Connectez RevenueHunt à votre stack marketing actuelle pour automatiser les relances, personnaliser vos campagnes, suivre les performances et convertir plus de visiteurs en acheteurs. <strong class="text-slate-900">Aucun code requis.</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- 3-up pillars -->
+  <section class="border-y border-slate-200 bg-white">
+    <div class="mx-auto max-w-6xl px-6 py-16">
+      <div class="grid gap-10 md:grid-cols-3">
+        {pillars.map((p) => (
+          <div>
+            <div class="text-4xl" aria-hidden="true">{p.emoji}</div>
+            <h2 class="mt-4 text-xl font-semibold text-slate-900">{p.title}</h2>
+            <p class="mt-3 text-slate-600">{p.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats bar -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-5xl px-6 py-14">
+      <dl class="grid grid-cols-3 gap-x-8 gap-y-8">
+        {stats.map((s) => (
+          <div class="text-center">
+            <dt class="text-3xl font-bold tracking-tight text-white sm:text-4xl">{s.value}</dt>
+            <dd class="mt-2 text-sm text-white/70">{s.label}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  </section>
+
+  <!-- Integration library -->
+  <section class="mx-auto max-w-6xl px-6 py-20">
+    <div class="text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Explorez notre bibliothèque d'intégrations</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-slate-600">
+        Cliquez sur une intégration pour consulter son guide de configuration dans notre centre d'aide.
+      </p>
+    </div>
+
+    {groups.map((g) => (
+      <div class="mt-16">
+        <div class="mb-6 flex items-baseline gap-3">
+          <span class="text-2xl" aria-hidden="true">{g.emoji}</span>
+          <h3 class="text-2xl font-semibold tracking-tight text-slate-900">{g.heading}</h3>
+        </div>
+        <p class="max-w-3xl text-slate-600">{g.intro}</p>
+
+        <ul class="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+          {g.items.map((it) => (
+            <li>
+              <a
+                href={it.href}
+                {...(isExternal(it.href) ? { target: "_blank", rel: "external noopener" } : {})}
+                class="flex h-full flex-col items-center gap-3 rounded-xl border border-slate-200 bg-white p-5 text-center transition hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md"
+              >
+                <img
+                  src={it.logo}
+                  alt={`Logo ${it.name}`}
+                  width="80"
+                  height="80"
+                  loading="lazy"
+                  class="h-14 w-14 object-contain"
+                />
+                <div>
+                  <p class="text-base font-semibold text-slate-900">{it.name}</p>
+                  <p class="mt-1 text-xs uppercase tracking-wider text-slate-500">{it.category}</p>
+                </div>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Prêt à connecter votre quiz à votre stack marketing ?
+      </h2>
+      <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
+        <a
+          href={SHOPIFY_INSTALL}
+          target="_blank"
+          rel="external noopener nofollow"
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          installer sur Shopify
+        </a>
+        <a
+          href={WOOCOMMERCE_DOWNLOAD}
+          target="_blank"
+          rel="external noopener nofollow"
+          class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
+        >
+          télécharger pour WooCommerce
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

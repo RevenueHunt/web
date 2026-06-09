@@ -1,3 +1,5 @@
+import type { Lang } from "./i18n";
+
 export interface PlanFeature {
   text: string;
   link?: { label: string; href: string };
@@ -88,3 +90,145 @@ export const PLANS: Plan[] = [
     ],
   },
 ];
+
+const PLANS_ES: Plan[] = [
+  {
+    name: "Plan gratuito",
+    price: "FREE",
+    priceNote: "* ¡Sí, en serio!",
+    tagline: "Perfecto para marcas nuevas.",
+    features: [
+      { text: "100 respuestas de quiz/mes" },
+      { text: "Soporte por email" },
+      { text: "Crea quizzes ilimitados" },
+      { text: "Diseño de quiz personalizado" },
+      { text: "Lógica condicional" },
+      { text: "Analítica avanzada de quiz" },
+      { text: "Shopify Markets" },
+      { text: "Exporta leads del quiz a CSV" },
+      { text: "Cumple GDPR y CCPA" },
+    ],
+  },
+  {
+    name: "Plan básico",
+    price: "39",
+    priceYearly: "31",
+    priceSuffix: "USD/mes",
+    priceNote: "* Facturación mensual",
+    priceNoteYearly: "* Facturación anual",
+    tagline: "Para tiendas medianas en crecimiento.",
+    features: [
+      { text: "500 respuestas de quiz/mes" },
+      { text: "Funciones del gratuito +" },
+      { text: "Soporte por chat en vivo" },
+      { text: "HTML, CSS y JS personalizados" },
+      { text: "GA4 y Meta Pixel" },
+      { text: "Webhooks y Zapier" },
+      { text: "Klaviyo, Omnisend y", link: { label: "más integraciones", href: "/integrations/" } },
+    ],
+  },
+  {
+    name: "Plan Pro",
+    price: "99",
+    priceYearly: "79",
+    priceSuffix: "USD/mes",
+    priceNote: "* Facturación mensual",
+    priceNoteYearly: "* Facturación anual",
+    tagline: "Para marcas listas para escalar.",
+    features: [
+      { text: "1.000 respuestas de quiz/mes" },
+      { text: "Funciones del básico +" },
+      { text: "Soporte por videollamada" },
+      { text: "Gestor de cuenta" },
+    ],
+  },
+  {
+    name: "Plan Premium",
+    price: "199",
+    priceYearly: "159",
+    priceSuffix: "USD/mes",
+    priceNote: "* Facturación mensual",
+    priceNoteYearly: "* Facturación anual",
+    tagline: "Marcas consolidadas y multimercado.",
+    features: [
+      { text: "2.500 respuestas de quiz/mes" },
+      { text: "Funciones del Pro +" },
+      { text: "Revisión de estrategia trimestral" },
+      { text: "Planes mayores -", link: { label: "ver", href: "/demo/" }, plus: true },
+    ],
+  },
+];
+
+const PLANS_FR: Plan[] = [
+  {
+    name: "Offre gratuite",
+    price: "FREE",
+    priceNote: "* Oui, vraiment !",
+    tagline: "Parfait pour les nouvelles marques.",
+    features: [
+      { text: "100 réponses de quiz/mois" },
+      { text: "Support par email" },
+      { text: "Créez des quiz illimités" },
+      { text: "Design de quiz personnalisé" },
+      { text: "Logique conditionnelle" },
+      { text: "Analyse avancée des quiz" },
+      { text: "Shopify Markets" },
+      { text: "Exportez les leads du quiz en CSV" },
+      { text: "Conforme RGPD et CCPA" },
+    ],
+  },
+  {
+    name: "Offre Basic",
+    price: "39",
+    priceYearly: "31",
+    priceSuffix: "USD/mois",
+    priceNote: "* Facturation mensuelle",
+    priceNoteYearly: "* Facturation annuelle",
+    tagline: "Pour les boutiques intermédiaires en croissance.",
+    features: [
+      { text: "500 réponses de quiz/mois" },
+      { text: "Fonctionnalités de l'offre gratuite +" },
+      { text: "Support par chat en direct" },
+      { text: "HTML, CSS et JS personnalisés" },
+      { text: "GA4 et Meta Pixel" },
+      { text: "Webhooks et Zapier" },
+      { text: "Klaviyo, Omnisend et", link: { label: "plus d'intégrations", href: "/integrations/" } },
+    ],
+  },
+  {
+    name: "Offre Pro",
+    price: "99",
+    priceYearly: "79",
+    priceSuffix: "USD/mois",
+    priceNote: "* Facturation mensuelle",
+    priceNoteYearly: "* Facturation annuelle",
+    tagline: "Pour les marques prêtes à passer à l'échelle.",
+    features: [
+      { text: "1 000 réponses de quiz/mois" },
+      { text: "Fonctionnalités de l'offre Basic +" },
+      { text: "Support par appel vidéo" },
+      { text: "Gestionnaire de compte" },
+    ],
+  },
+  {
+    name: "Offre Premium",
+    price: "199",
+    priceYearly: "159",
+    priceSuffix: "USD/mois",
+    priceNote: "* Facturation mensuelle",
+    priceNoteYearly: "* Facturation annuelle",
+    tagline: "Marques établies et multi-marchés.",
+    features: [
+      { text: "2 500 réponses de quiz/mois" },
+      { text: "Fonctionnalités de l'offre Pro +" },
+      { text: "Revue de stratégie trimestrielle" },
+      { text: "Offres plus larges -", link: { label: "voir", href: "/demo/" }, plus: true },
+    ],
+  },
+];
+
+export const PLANS_BY_LANG: Record<Lang, Plan[]> = {
+  en: PLANS,
+  es: PLANS_ES,
+  fr: PLANS_FR,
+};

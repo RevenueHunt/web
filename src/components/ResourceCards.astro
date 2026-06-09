@@ -2,30 +2,38 @@
 // Two free, data-backed resources surfaced contextually (blog posts, content
 // pages). Both are also in the header Resources dropdown + footer; this is the
 // in-content placement. Kept self-contained so it can be reused anywhere.
+import { type Lang, localizedHref } from "../lib/i18n";
+import { CHROME } from "../lib/content/chrome";
+
+interface Props {
+  lang?: Lang;
+}
+const { lang = "en" } = Astro.props;
+const c = CHROME[lang];
+const lp = (path: string) => localizedHref(path, lang);
+
 const resources = [
   {
-    href: "/quiz-roi-calculator/",
-    eyebrow: "Free tool",
-    title: "Quiz ROI calculator",
-    blurb:
-      "Estimate the extra revenue and ROI a product recommendation quiz could add to your store. Built on real data, no email required.",
-    cta: "Calculate your ROI",
+    href: lp("/quiz-roi-calculator/"),
+    eyebrow: c.rc_roi_eyebrow,
+    title: c.rc_roi_title,
+    blurb: c.rc_roi_blurb,
+    cta: c.rc_roi_cta,
   },
   {
-    href: "/state-of-product-recommendation-quizzes/",
-    eyebrow: "Free report",
-    title: "Ecommerce quiz benchmark report",
-    blurb:
-      "How product recommendation quizzes really perform: conversion by category, AOV uplift, and completion, from 45M+ real quiz responses.",
-    cta: "Read the report",
+    href: lp("/state-of-product-recommendation-quizzes/"),
+    eyebrow: c.rc_report_eyebrow,
+    title: c.rc_report_title,
+    blurb: c.rc_report_blurb,
+    cta: c.rc_report_cta,
   },
 ];
 ---
 
 <section class="border-t border-slate-200 bg-white">
   <div class="mx-auto max-w-6xl px-6 py-16">
-    <h2 class="text-2xl font-bold tracking-tight text-slate-900">Free tools &amp; data</h2>
-    <p class="mt-2 text-slate-600">Put these benchmarks to work on your own store.</p>
+    <h2 class="text-2xl font-bold tracking-tight text-slate-900">{c.rc_heading}</h2>
+    <p class="mt-2 text-slate-600">{c.rc_sub}</p>
     <div class="mt-8 grid gap-6 sm:grid-cols-2">
       {resources.map((r) => (
         <a

@@ -1,11 +1,10 @@
 ---
 import { getCollection, render } from "astro:content";
 import Base from "../../layouts/Base.astro";
-import PlatformPage from "../../components/pages/PlatformPage.astro";
+import ContentPage from "../../components/pages/ContentPage.astro";
 import ResourceCards from "../../components/ResourceCards.astro";
-import { article, breadcrumb, organization, softwareApplication } from "../../lib/schema";
+import { article, breadcrumb } from "../../lib/schema";
 import { SITE } from "../../lib/site";
-import { PLATFORM_CONFIGS } from "../../lib/platforms";
 import {
   categoryHref,
   normalizeName,
@@ -18,7 +17,14 @@ import {
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog", ({ data }) => !data.draft);
-  const pages = await getCollection("pages", ({ data }) => !data.draft);
+  const allPages = await getCollection("pages", ({ data }) => !data.draft);
+  // English pages render here; translations render under their /<lang>/[slug] route.
+  const pages = allPages.filter((p) => p.data.lang === "en");
+  // A slug is "translated" when a non-English version of it exists → its English
+  // page advertises hreflang alternates.
+  const translatedSlugs = new Set(
+    allPages.filter((p) => p.data.lang !== "en").map((p) => p.data.legacySlug),
+  );
 
   const sorted = posts
     .slice()
@@ -26,7 +32,7 @@ export async function getStaticPaths() {
 
   const postPaths = posts.map((post) => ({
     params: { slug: post.data.legacySlug },
-    props: { entry: post, kind: "blog" as const, allPosts: sorted },
+    props: { entry: post, kind: "blog" as const, allPosts: sorted, translated: false },
   }));
   // Pages with hand-built bespoke routes elsewhere - skip in the catch-all.
   const explicitlyOverridden = new Set([
@@ -52,31 +58,26 @@ export async function getStaticPaths() {
     .filter((p) => !explicitlyOverridden.has(p.data.legacySlug))
     .map((page) => ({
       params: { slug: page.data.legacySlug },
-      props: { entry: page, kind: "page" as const, allPosts: [] },
+      props: {
+        entry: page,
+        kind: "page" as const,
+        allPosts: [],
+        translated: translatedSlugs.has(page.data.legacySlug),
+      },
     }));
   return [...postPaths, ...pagePaths];
 }
 
-const { entry, kind, allPosts } = Astro.props;
+const { entry, kind, allPosts, translated = false } = Astro.props;
 
-// Platform pages get a bespoke layout (hero + CTAs + YouTube + pillars).
-// Narrow with a type guard so the platform layout can take a CollectionEntry<"pages">.
-const isPagePlatform =
-  kind === "page" && entry.data.legacySlug in PLATFORM_CONFIGS;
-const platformEntry = isPagePlatform
-  ? (entry as Extract<typeof entry, { collection: "pages" }>)
-  : null;
-const platformConfig = platformEntry
-  ? PLATFORM_CONFIGS[platformEntry.data.legacySlug]
-  : null;
-
-// Non-platform paths render through the generic layout below.
+// Blog posts render their full article in this file; non-blog `pages` entries
+// delegate to <ContentPage> (which also handles the bespoke platform layout).
+const isBlog = kind === "blog";
 const { Content, headings } = await render(entry);
 
 const url = `${SITE.site_url}/${entry.data.legacySlug}/`;
 
 // Blog-specific derived data
-const isBlog = kind === "blog";
 const blogEntry = isBlog ? entry : null;
 const primaryCategoryRaw = blogEntry?.data.categories?.[0] ?? null;
 const primaryCategory = primaryCategoryRaw ? normalizeName(primaryCategoryRaw) : null;
@@ -105,7 +106,8 @@ const SHOPIFY_INSTALL =
 const WOOCOMMERCE_DOWNLOAD =
   "https://downloads.wordpress.org/plugin/product-recommendation-quiz-for-ecommerce.latest-stable.zip";
 
-// JSON-LD: BreadcrumbList includes category for blog posts when available.
+// JSON-LD for blog posts (non-blog `pages` build their own in <ContentPage>).
+// BreadcrumbList includes category for blog posts when available.
 const breadcrumbItems = isBlog
   ? [
       { name: "Home", url: "/" },
@@ -115,13 +117,7 @@ const breadcrumbItems = isBlog
         : []),
       { name: blogEntry!.data.title, url: `/${blogEntry!.data.legacySlug}/` },
     ]
-  : [
-      { name: "Home", url: "/" },
-      { name: entry.data.title, url: `/${entry.data.legacySlug}/` },
-    ];
-
-// Legal/utility pages should not carry product SoftwareApplication schema.
-const LEGAL_SLUGS = new Set(["privacy", "tos", "dpa", "security"]);
+  : [];
 
 const jsonLd = isBlog
   ? [
@@ -137,12 +133,7 @@ const jsonLd = isBlog
       }),
       breadcrumb(breadcrumbItems),
     ]
-  : [
-      organization(),
-      // SoftwareApplication + AggregateRating on marketing content pages, not legal/utility ones.
-      ...(LEGAL_SLUGS.has(entry.data.legacySlug) ? [] : [softwareApplication()]),
-      breadcrumb(breadcrumbItems),
-    ];
+  : [];
 
 // Share URLs
 const shareUrl = url;
@@ -151,16 +142,13 @@ const xShare = `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareU
 const linkedinShare = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`;
 ---
 
-{platformEntry && platformConfig ? (
-  <PlatformPage entry={platformEntry} config={platformConfig} />
-) : (
+{isBlog ? (
   <Base
     title={`${entry.data.title} - ${SITE.name}`}
     description={entry.data.description}
     ogImage={entry.data.featuredImage ?? undefined}
     jsonLd={jsonLd}
   >
-    {isBlog ? (
       <article
         data-pagefind-body
         data-pagefind-meta={`date:${blogEntry!.data.pubDate.toISOString().slice(0, 10)}`}
@@ -393,69 +381,7 @@ const linkedinShare = `https://www.linkedin.com/sharing/share-offsite/?url=${enc
           });
         </script>
       </article>
-    ) : (
-      <>
-        <section class="bg-gradient-to-b from-slate-50 to-white">
-          <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
-            <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
-              <a href="/" class="hover:text-slate-700">Home</a>
-              <span class="mx-2 text-slate-300">/</span>
-              <span class="text-slate-700">{entry.data.title}</span>
-            </nav>
-            <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">{entry.data.title}</h1>
-            {entry.data.description && (
-              <p class="mt-6 max-w-3xl text-xl text-slate-600">{entry.data.description}</p>
-            )}
-          </div>
-        </section>
-
-        <div class="mx-auto max-w-5xl px-6 py-12 sm:py-16">
-          <article class="prose prose-slate prose-lg max-w-none
-            prose-headings:tracking-tight prose-headings:text-slate-900
-            prose-h2:mt-16 prose-h2:text-3xl prose-h2:font-bold prose-h2:border-b prose-h2:border-slate-200 prose-h2:pb-3
-            prose-h3:mt-10 prose-h3:text-xl prose-h3:font-semibold
-            prose-h6:mt-8 prose-h6:text-sm prose-h6:font-semibold prose-h6:uppercase prose-h6:tracking-wider prose-h6:text-slate-500
-            prose-p:text-slate-700
-            prose-img:rounded-lg prose-img:my-6
-            prose-a:text-slate-900 prose-a:underline-offset-4 hover:prose-a:text-slate-700
-            prose-strong:text-slate-900
-            prose-li:my-1">
-            <Content />
-          </article>
-        </div>
-
-        {/* Free tools & data — on content pages, not legal/utility ones */}
-        {!LEGAL_SLUGS.has(entry.data.legacySlug) && <ResourceCards />}
-
-        <section class="bg-[#16161D]">
-          <div class="mx-auto max-w-4xl px-6 py-20 text-center">
-            <p class="mb-3 text-sm font-semibold uppercase tracking-wider text-white/70">
-              Most shoppers leave because they can't find the right product
-            </p>
-            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Turn shoppers into confident buyers with a Product Recommendation Quiz that drives sales.
-            </h2>
-            <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
-              <a
-                href={SHOPIFY_INSTALL}
-                target="_blank"
-                rel="external noopener nofollow"
-                class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
-              >
-                install on Shopify
-              </a>
-              <a
-                href={WOOCOMMERCE_DOWNLOAD}
-                target="_blank"
-                rel="external noopener nofollow"
-                class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
-              >
-                get for WooCommerce
-              </a>
-            </div>
-          </div>
-        </section>
-      </>
-    )}
   </Base>
+) : (
+  <ContentPage entry={entry} lang="en" translated={translated} />
 )}

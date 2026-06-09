@@ -1,0 +1,93 @@
+---
+import Base from "../../../layouts/Base.astro";
+import { organization, breadcrumb } from "../../../lib/schema";
+import { SITE } from "../../../lib/site";
+import { localizedHref } from "../../../lib/i18n";
+
+const QUIZ_URL = "https://admin.revenuehunt.com/public/quiz/8qHyAD6";
+
+const jsonLd = [
+  organization(),
+  breadcrumb([
+    { name: "Accueil", url: "/" },
+    { name: "Réserver une démo", url: "/demo/" },
+  ]),
+];
+---
+
+<Base
+  title="Réserver une démo - RevenueHunt"
+  description="Découvrez RevenueHunt en action. Réservez un appel de 30 minutes avec notre équipe pour parcourir le produit, poser vos questions et planifier votre tunnel de quiz."
+  jsonLd={jsonLd}
+  lang="fr"
+  translated={true}
+>
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
+        <a href={localizedHref("/", "fr")} class="hover:text-slate-700">Accueil</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <span class="text-slate-700">Réserver une démo</span>
+      </nav>
+      <div class="grid gap-12 lg:grid-cols-2 lg:gap-16">
+        <div>
+          <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+            Réservez une démo avec notre équipe
+          </h1>
+          <p class="mt-6 text-lg text-slate-700">
+            La plupart des clients partent parce qu'ils ne trouvent pas le bon produit. Nous vous montrerons comment un Product Recommendation Quiz résout ce problème - en direct sur une vraie boutique Shopify, avec vos questions au premier plan.
+          </p>
+          <ul class="mt-8 space-y-3 text-slate-700">
+            <li class="flex gap-3">
+              <svg class="mt-1 h-5 w-5 flex-shrink-0 text-emerald-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.7 5.3a1 1 0 010 1.4l-7 7a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.3 6.3-6.3a1 1 0 011.4 0z" clip-rule="evenodd"/></svg>
+              Démonstration de 30 minutes du constructeur de quiz, de la page de résultats et des intégrations
+            </li>
+            <li class="flex gap-3">
+              <svg class="mt-1 h-5 w-5 flex-shrink-0 text-emerald-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.7 5.3a1 1 0 010 1.4l-7 7a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.3 6.3-6.3a1 1 0 011.4 0z" clip-rule="evenodd"/></svg>
+              Adaptée à la taille de votre catalogue, à votre source de trafic et à vos objectifs de segmentation
+            </li>
+            <li class="flex gap-3">
+              <svg class="mt-1 h-5 w-5 flex-shrink-0 text-emerald-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.7 5.3a1 1 0 010 1.4l-7 7a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.3 6.3-6.3a1 1 0 011.4 0z" clip-rule="evenodd"/></svg>
+              Aucune pression pour vous engager - nous vous montrons ce qui est possible, puis la décision vous appartient
+            </li>
+          </ul>
+          <div class="mt-10 flex flex-wrap gap-3">
+            <a
+              href="https://docs.revenuehunt.com/"
+              target="_blank"
+              rel="external noopener"
+              class="inline-flex items-center justify-center rounded-md border border-[#16161D] bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-50"
+            >
+              Parcourir le centre d'aide ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border border-slate-200 bg-white p-1 shadow-lg">
+          <iframe
+            src={QUIZ_URL}
+            title="Réservez une démo avec RevenueHunt"
+            loading="lazy"
+            class="h-[600px] w-full rounded-xl"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Vous préférez explorer par vous-même ? Commencez gratuitement.
+      </h2>
+      <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
+        <a
+          href={SITE.signup_url}
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          S'inscrire
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

@@ -1,33 +1,63 @@
 ---
 import { SITE } from "../lib/site";
+import {
+  t,
+  type Lang,
+  LANGS,
+  LANG_LABELS,
+  langPrefix,
+  localizedHref,
+  altLangUrl,
+} from "../lib/i18n";
+
+interface Props {
+  lang?: Lang;
+  /** True when the current page exists in every locale: the picker swaps the
+   *  same page between languages. False (English-only page): the picker points
+   *  at the locale home so we never link to a URL that doesn't exist. */
+  translated?: boolean;
+}
+const { lang = "en", translated = false } = Astro.props;
+const tr = t[lang];
 
 /* Nav structure mirrors the design screenshot (2026-05-15):
-   Home · Platforms ▾ · Pricing · Resources ▾ · [Book a demo] [Sign up] */
+   Home · Platforms ▾ · Pricing · Resources ▾ · [Book a demo] [Sign up]
+   `loc: true` links have per-locale pages and get a /<lang>/ prefix. */
+const lp = (path: string) => localizedHref(path, lang);
+
 const platforms = [
-  { label: "Shopify", href: "/product-recommendation-quiz-shopify/" },
-  { label: "WooCommerce", href: "/product-recommendation-quiz-woocommerce/" },
-  { label: "BigCommerce", href: "/product-recommendation-quiz-bigcommerce/" },
-  { label: "Other eCommerce platforms", href: "/product-recommendation-quiz-standalone-google-product-feed/" },
+  { label: "Shopify", href: lp("/product-recommendation-quiz-shopify/") },
+  { label: "WooCommerce", href: lp("/product-recommendation-quiz-woocommerce/") },
+  { label: "BigCommerce", href: lp("/product-recommendation-quiz-bigcommerce/") },
+  { label: tr.nav_other_platforms, href: lp("/product-recommendation-quiz-standalone-google-product-feed/") },
 ];
 
 const resources = [
-  { label: "Solutions by industry", href: "/solutions/" },
-  { label: "Quiz ROI calculator", href: "/quiz-roi-calculator/" },
-  { label: "Ecommerce quiz benchmark report", href: "/state-of-product-recommendation-quizzes/" },
-  { label: "Blog", href: "/blog/" },
-  { label: "Testimonials", href: "/testimonials/" },
-  { label: "Integrations", href: "/integrations/" },
-  { label: "Quiz templates", href: "/templates/" },
-  { label: "Partners & affiliates", href: "/partners/" },
-  { label: "FAQs - Help center", href: "https://docs.revenuehunt.com/", external: true },
+  { label: tr.nav_solutions, href: lp("/solutions/") },
+  { label: tr.nav_roi, href: lp("/quiz-roi-calculator/") },
+  { label: tr.nav_benchmark, href: lp("/state-of-product-recommendation-quizzes/") },
+  { label: tr.nav_blog, href: "/blog/" },
+  { label: tr.nav_testimonials, href: lp("/testimonials/") },
+  { label: tr.nav_integrations, href: lp("/integrations/") },
+  { label: tr.nav_templates, href: lp("/templates/") },
+  { label: tr.nav_partners, href: lp("/partners/") },
+  { label: tr.nav_faqs, href: "https://docs.revenuehunt.com/", external: true },
 ];
 
 const SIGNUP_URL = SITE.signup_url;
+
+// Language picker: each option points at the same page in that language (for
+// translated pages) or that language's home (for English-only pages).
+const langOptions = LANGS.map((l) => ({
+  code: l,
+  label: LANG_LABELS[l],
+  href: translated ? altLangUrl(Astro.url.pathname, l) : `${langPrefix(l)}/`,
+}));
 ---
 
 <header class="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur">
   <div class="mx-auto flex max-w-6xl items-center gap-6 px-6 py-4">
-    <a href="/" class="flex items-center" aria-label={`${SITE.name} home`}>
+    <a href={lp("/")} class="flex items-center" aria-label={`${SITE.name} home`}>
       <img
         src="/img/logos/revenuehunt-logo-horizontal.svg"
         alt="RevenueHunt"
@@ -40,7 +70,7 @@ const SIGNUP_URL = SITE.signup_url;
 
     <!-- Desktop nav (floats to the right, sits next to CTAs) -->
     <nav class="ml-auto hidden items-center gap-1 lg:flex" aria-label="Primary">
-      <a href="/" class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-slate-900">Home</a>
+      <a href={lp("/")} class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-slate-900">{tr.nav_home}</a>
 
       <!-- Platforms dropdown -->
       <div class="group relative">
@@ -49,7 +79,7 @@ const SIGNUP_URL = SITE.signup_url;
           class="flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium text-slate-700 transition hover:text-slate-900 group-hover:bg-slate-50 group-focus-within:bg-slate-50"
           aria-haspopup="true"
         >
-          Platforms
+          {tr.nav_platforms}
           <svg class="h-4 w-4 text-slate-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
             <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 011.08 1.04l-4.25 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
           </svg>
@@ -67,7 +97,7 @@ const SIGNUP_URL = SITE.signup_url;
         </div>
       </div>
 
-      <a href="/pricing/" class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-slate-900">Pricing</a>
+      <a href={lp("/pricing/")} class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-slate-900">{tr.nav_pricing}</a>
 
       <!-- Resources dropdown -->
       <div class="group relative">
@@ -76,7 +106,7 @@ const SIGNUP_URL = SITE.signup_url;
           class="flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium text-slate-700 transition hover:text-slate-900 group-hover:bg-slate-50 group-focus-within:bg-slate-50"
           aria-haspopup="true"
         >
-          Resources
+          {tr.nav_resources}
           <svg class="h-4 w-4 text-slate-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
             <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 011.08 1.04l-4.25 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
           </svg>
@@ -99,36 +129,70 @@ const SIGNUP_URL = SITE.signup_url;
       </div>
     </nav>
 
-    <!-- Desktop CTAs -->
+    <!-- Desktop CTAs + language picker -->
     <div class="hidden items-center gap-3 lg:flex">
+      <!-- Language picker -->
+      <details class="relative" data-lang-dropdown>
+        <summary
+          class="flex cursor-pointer list-none items-center gap-1.5 rounded-md px-2.5 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-slate-900 [&::-webkit-details-marker]:hidden"
+          aria-label={tr.language_picker}
+        >
+          <svg class="h-4 w-4 text-slate-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/>
+          </svg>
+          <span>{LANG_LABELS[lang]}</span>
+          <svg class="h-4 w-4 text-slate-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 011.08 1.04l-4.25 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+          </svg>
+        </summary>
+        <ul class="absolute right-0 top-full mt-2 w-44 rounded-lg border border-slate-200 bg-white p-2 shadow-lg" role="menu">
+          {langOptions.map((o) => (
+            <li>
+              <a
+                role="menuitem"
+                href={o.href}
+                hreflang={o.code}
+                data-lang={o.code}
+                class:list={[
+                  "block rounded-md px-3 py-2 text-sm transition",
+                  o.code === lang ? "font-semibold text-slate-900" : "text-slate-700 hover:bg-slate-50 hover:text-slate-900",
+                ]}
+              >
+                {o.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </details>
+
       <a
-        href="/demo/"
+        href={lp("/demo/")}
         class="inline-flex items-center justify-center rounded-md border border-[#16161D] bg-white px-4 py-2 text-sm font-semibold text-[#16161D] transition hover:bg-slate-50"
       >
-        Book a demo
+        {tr.cta_demo}
       </a>
       <a
         href={SIGNUP_URL}
         class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#26262e]"
       >
-        Sign up
+        {tr.cta_signup}
       </a>
     </div>
 
     <!-- Mobile menu trigger (details/summary - no JS) -->
     <details class="relative ml-auto lg:hidden">
-      <summary class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-md border border-slate-200 text-slate-700 [&::-webkit-details-marker]:hidden [&::marker]:hidden" aria-label="Open menu">
+      <summary class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-md border border-slate-200 text-slate-700 [&::-webkit-details-marker]:hidden [&::marker]:hidden" aria-label={tr.menu_open}>
         <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
       </summary>
       <div class="fixed inset-x-0 top-[65px] z-50 max-h-[calc(100vh-65px)] overflow-y-auto border-b border-slate-200 bg-white shadow-lg">
         <nav class="mx-auto max-w-6xl px-6 py-6" aria-label="Mobile primary">
-          <a href="/" class="block border-b border-slate-100 py-3 text-base font-semibold text-slate-900">Home</a>
+          <a href={lp("/")} class="block border-b border-slate-100 py-3 text-base font-semibold text-slate-900">{tr.nav_home}</a>
 
           <details class="group/sub border-b border-slate-100 py-3">
             <summary class="flex cursor-pointer items-center justify-between text-base font-semibold text-slate-900">
-              Platforms
+              {tr.nav_platforms}
               <svg class="h-5 w-5 text-slate-400 transition group-open/sub:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 011.08 1.04l-4.25 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
               </svg>
@@ -140,11 +204,11 @@ const SIGNUP_URL = SITE.signup_url;
             </ul>
           </details>
 
-          <a href="/pricing/" class="block border-b border-slate-100 py-3 text-base font-semibold text-slate-900">Pricing</a>
+          <a href={lp("/pricing/")} class="block border-b border-slate-100 py-3 text-base font-semibold text-slate-900">{tr.nav_pricing}</a>
 
           <details class="group/sub border-b border-slate-100 py-3">
             <summary class="flex cursor-pointer items-center justify-between text-base font-semibold text-slate-900">
-              Resources
+              {tr.nav_resources}
               <svg class="h-5 w-5 text-slate-400 transition group-open/sub:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 011.08 1.04l-4.25 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
               </svg>
@@ -164,18 +228,43 @@ const SIGNUP_URL = SITE.signup_url;
             </ul>
           </details>
 
+          <!-- Language picker (mobile) -->
+          <details class="group/sub border-b border-slate-100 py-3">
+            <summary class="flex cursor-pointer items-center justify-between text-base font-semibold text-slate-900">
+              {tr.language_picker}
+              <svg class="h-5 w-5 text-slate-400 transition group-open/sub:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 011.08 1.04l-4.25 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+              </svg>
+            </summary>
+            <ul class="mt-3 space-y-2 pl-2">
+              {langOptions.map((o) => (
+                <li>
+                  <a
+                    href={o.href}
+                    hreflang={o.code}
+                    data-lang={o.code}
+                    class:list={[
+                      "block py-1 text-sm",
+                      o.code === lang ? "font-semibold text-slate-900" : "text-slate-700 hover:text-slate-900",
+                    ]}
+                  >{o.label}</a>
+                </li>
+              ))}
+            </ul>
+          </details>
+
           <div class="mt-6 flex flex-col gap-3">
             <a
               href={SIGNUP_URL}
               class="rounded-md bg-[#16161D] px-4 py-3 text-center text-base font-semibold text-white"
             >
-              Sign up
+              {tr.cta_signup}
             </a>
             <a
-              href="/demo/"
+              href={lp("/demo/")}
               class="rounded-md border border-[#16161D] bg-white px-4 py-3 text-center text-base font-semibold text-[#16161D]"
             >
-              Book a demo
+              {tr.cta_demo}
             </a>
           </div>
         </nav>

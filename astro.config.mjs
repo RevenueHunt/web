@@ -186,6 +186,16 @@ export default defineConfig({
   site: "https://revenuehunt.com",
   output: "static",
   trailingSlash: "always",
+  // English is the default locale at the root (no prefix); other languages live
+  // under /<lang>/ via physical folders in src/pages/. hreflang alternates are
+  // emitted per-page in Base.astro (not via sitemap i18n) so English-only pages
+  // like the blog don't advertise non-existent localized URLs. Phase 2 adds
+  // de, pt, it here.
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en", "es", "fr"],
+    routing: { prefixDefaultLocale: false },
+  },
   redirects: {
     // Populate via scripts/scrape-wp.ts output. Any URL in the live
     // sitemap.xml that no Astro route produces must redirect here (or 410).

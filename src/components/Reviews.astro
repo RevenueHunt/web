@@ -1,17 +1,31 @@
 ---
 import type { PlatformReviews } from "../lib/reviews";
 import Stars from "./Stars.astro";
+import { CHROME } from "../lib/content/chrome";
+import { OG_LOCALE, type Lang } from "../lib/i18n";
 
 interface Props {
   data: PlatformReviews;
   heading?: string;
+  lang?: Lang;
   /** Background utility class for the section. */
   bg?: string;
 }
-const { data, heading = "What merchants say", bg = "bg-white" } = Astro.props;
+const { data, heading, lang = "en", bg = "bg-white" } = Astro.props;
+const chrome = CHROME[lang];
+const resolvedHeading = heading ?? chrome.reviews_default_heading;
+const dateLocale = OG_LOCALE[lang].replace("_", "-");
+
+// "from {count} reviews on {source}" — the link wraps "{count} <noun>", so split
+// the template into: prefix · linked count+noun · connector · {source}.
+const fromTpl = chrome.reviews_from;
+const [fromPrefix, afterCount] = fromTpl.split("{count}");
+const [middle, fromSuffix = ""] = afterCount.split("{source}");
+const noun = middle.trim().split(" ")[0];
+const connector = middle.trim().slice(noun.length); // " on" / " en" / " sur"
 
 function fmt(iso: string) {
-  return new Date(iso).toLocaleDateString("en-US", {
+  return new Date(iso).toLocaleDateString(dateLocale, {
     year: "numeric",
     month: "short",
   });
@@ -20,20 +34,18 @@ function fmt(iso: string) {
 <section class={bg}>
   <div class="mx-auto max-w-7xl px-6 py-16 sm:py-20">
     <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">{heading}</h2>
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">{resolvedHeading}</h2>
       <div class="mt-4 flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
         <Stars value={Number(data.ratingValue)} />
         <span class="text-lg font-semibold text-slate-900">{data.ratingValue}</span>
         <span class="text-slate-600">
-          from{" "}
+          {fromPrefix}
           <a
             href={data.sourceUrl}
             target="_blank"
             rel="external noopener nofollow"
             class="font-semibold text-slate-900 underline underline-offset-4 hover:text-slate-700"
-          >{data.reviewCount} reviews</a>{" "}
-          on {data.sourceLabel}
-        </span>
+          >{data.reviewCount} {noun}</a>{connector}{" "}{data.sourceLabel}{fromSuffix}
       </div>
     </div>
 

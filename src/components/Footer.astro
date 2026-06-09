@@ -1,37 +1,47 @@
 ---
 import { SITE } from "../lib/site";
+import { t, type Lang, localizedHref } from "../lib/i18n";
 
-/* Columns mirror revenuehunt.com footer (audited 2026-05-15). */
+interface Props {
+  lang?: Lang;
+}
+const { lang = "en" } = Astro.props;
+const tr = t[lang];
+const lp = (path: string) => localizedHref(path, lang);
+
+/* Columns mirror revenuehunt.com footer (audited 2026-05-15).
+   `loc` links have per-locale pages and get a /<lang>/ prefix; the rest stay
+   English (blog, what's new, jobs, glossary, compare, external docs). */
 const groups: { heading: string; links: { label: string; href: string; external?: boolean }[] }[] = [
   {
-    heading: "Product",
+    heading: tr.footer_product,
     links: [
-      { label: "Product recommendation quiz", href: "/product-recommendation-quiz/" },
-      { label: "Plans and pricing", href: "/pricing/" },
-      { label: "What's new", href: "/whats-new/" },
-      { label: "Integrations", href: "/integrations/" },
-      { label: "FAQs", href: "https://docs.revenuehunt.com/", external: true },
-      { label: "Tutorial videos", href: "https://docs.revenuehunt.com/tutorials/", external: true },
+      { label: tr.footer_link_prq, href: lp("/product-recommendation-quiz/") },
+      { label: tr.footer_link_pricing, href: lp("/pricing/") },
+      { label: tr.footer_link_whatsnew, href: "/whats-new/" },
+      { label: tr.footer_link_integrations, href: lp("/integrations/") },
+      { label: tr.footer_link_faqs, href: "https://docs.revenuehunt.com/", external: true },
+      { label: tr.footer_link_tutorials, href: "https://docs.revenuehunt.com/tutorials/", external: true },
     ],
   },
   {
-    heading: "Company",
+    heading: tr.footer_company,
     links: [
-      { label: "Contact us", href: "/contact/" },
-      { label: "Blog", href: "/blog/" },
-      { label: "Jobs", href: "/jobs/" },
-      { label: "Testimonials", href: "/testimonials/" },
-      { label: "Partners and affiliates", href: "/partners/" },
+      { label: tr.footer_link_contact, href: lp("/contact/") },
+      { label: tr.footer_link_blog, href: "/blog/" },
+      { label: tr.footer_link_jobs, href: "/jobs/" },
+      { label: tr.footer_link_testimonials, href: lp("/testimonials/") },
+      { label: tr.footer_link_partners, href: lp("/partners/") },
     ],
   },
   {
-    heading: "Resources",
+    heading: tr.footer_resources,
     links: [
-      { label: "Quiz ROI calculator", href: "/quiz-roi-calculator/" },
-      { label: "Ecommerce quiz benchmark report", href: "/state-of-product-recommendation-quizzes/" },
-      { label: "Solutions by industry", href: "/solutions/" },
-      { label: "Glossary", href: "/glossary/" },
-      { label: "Competitor comparisons", href: "/compare/" },
+      { label: tr.footer_link_roi, href: lp("/quiz-roi-calculator/") },
+      { label: tr.footer_link_benchmark, href: lp("/state-of-product-recommendation-quizzes/") },
+      { label: tr.footer_link_solutions, href: lp("/solutions/") },
+      { label: tr.footer_link_glossary, href: "/glossary/" },
+      { label: tr.footer_link_compare, href: "/compare/" },
     ],
   },
 ];
@@ -99,11 +109,11 @@ const year = new Date().getFullYear();
         </ul>
       </div>
       <ul class="flex flex-wrap gap-x-5 gap-y-2">
-        <li><a href="/tos/" class="transition hover:text-slate-900">Terms of Service</a></li>
-        <li><a href="/privacy/" class="transition hover:text-slate-900">Privacy Policy</a></li>
-        <li><a href="/security/" class="transition hover:text-slate-900">Security</a></li>
-        <li><a href="/dpa/" class="transition hover:text-slate-900">DPA</a></li>
-        <li><a href="/feed.xml" class="transition hover:text-slate-900">RSS</a></li>
+        <li><a href="/tos/" class="transition hover:text-slate-900">{tr.footer_tos}</a></li>
+        <li><a href="/privacy/" class="transition hover:text-slate-900">{tr.footer_privacy}</a></li>
+        <li><a href="/security/" class="transition hover:text-slate-900">{tr.footer_security}</a></li>
+        <li><a href="/dpa/" class="transition hover:text-slate-900">{tr.footer_dpa}</a></li>
+        <li><a href="/feed.xml" class="transition hover:text-slate-900">{tr.footer_rss}</a></li>
       </ul>
     </div>
   </div>

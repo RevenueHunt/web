@@ -1,0 +1,608 @@
+---
+import Base from "../../../layouts/Base.astro";
+import { organization, breadcrumb, softwareApplication, faqPage } from "../../../lib/schema";
+import { localizedHref } from "../../../lib/i18n";
+
+const SHOPIFY_INSTALL =
+  "https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=roi_calculator";
+// Free WordPress.org plugin (not the WooCommerce.com extension).
+const WOO_PLUGIN = "https://downloads.wordpress.org/plugin/product-recommendation-quiz-for-ecommerce.latest-stable.zip";
+
+// Inputs. The quiz-taker conversion rate carries a benchmark flag (RevenueHunt
+// data badge + helper note) and is editable. The AOV uplift is NOT a visible
+// input: it is set by the sector dropdown (hidden #aovlift field) from the
+// within-store paired result (median +11% to +15%, concentrated in skincare/
+// beauty/supplements, flat in a few categories) and folded into the math.
+// Everything else is the merchant's own number.
+// (Data: PRD-Octane-AI-SEO-Reverse-Engineering W7 deep-dive note.)
+const controls = [
+  { id: "visitors", label: "Visitantes mensuales de la tienda", min: 500, max: 500000, step: 500, value: 10000, suffix: "" },
+  { id: "engage", label: "Porcentaje de visitantes que hacen el quiz", min: 1, max: 100, step: 1, value: 20, suffix: "%" },
+  { id: "aov", label: "Tu valor medio del pedido", min: 10, max: 1000, step: 5, value: 60, suffix: "$" },
+  { id: "cvr", label: "Tu tasa de conversión actual", min: 0.1, max: 15, step: 0.1, value: 2, suffix: "%" },
+  { id: "quizcvr", label: "Tasa de conversión de quien hace el quiz", min: 1, max: 50, step: 0.5, value: 5.5, suffix: "%", benchmark: true, note: "Precargado con nuestro benchmark medido: de media, 1 de cada 18 personas que hacen el quiz realizan un pedido. Edítalo para que coincida con tu tienda." },
+];
+
+// Sector presets for the "what do you sell?" selector. Each sets the quiz-taker
+// conversion rate and AOV uplift from measured RevenueHunt data, plus a "% of the
+// average store" figure (quiz rate / a 2% average). "All sectors" is the 5.5%
+// platform average (= 275%, the brand stat). "Other sectors" is the honest
+// residual (everything except the consumable stars), measured at ~3.6% (~180%).
+// Selecting a sector pre-fills quizcvr + aovlift; both stay editable.
+// (Data: PRD-Octane-AI-SEO-Reverse-Engineering W7 deep-dive note.)
+const SECTORS = [
+  { id: "all", label: "Todos los sectores (media)", quizcvr: 5.5, aovlift: 10, pct: 275 },
+  { id: "haircare", label: "Cuidado del cabello", quizcvr: 7, aovlift: 15, pct: 350 },
+  { id: "fragrance", label: "Fragancias", quizcvr: 7, aovlift: 0, pct: 350 },
+  { id: "beauty", label: "Belleza y cuidado de la piel", quizcvr: 6, aovlift: 20, pct: 300 },
+  { id: "supplements", label: "Suplementos y salud", quizcvr: 6, aovlift: 10, pct: 300 },
+  { id: "coffee", label: "Café y té", quizcvr: 5, aovlift: 0, pct: 250 },
+  { id: "other", label: "Otros sectores", quizcvr: 3.6, aovlift: 10, pct: 180 },
+];
+
+// Per-vertical conversion (response to order), measured in RevenueHunt data and
+// rounded down. The 5.5% benchmark is a platform average; consumable categories
+// run higher. Shown as a "conversion by category" proof block.
+const BY_VERTICAL = [
+  { v: "Cuidado del cabello", pct: "350%", lift: "+15% AOV" },
+  { v: "Fragancias", pct: "350%", lift: "AOV sin cambios" },
+  { v: "Cuidado de la piel y belleza", pct: "300%", lift: "+20% AOV" },
+  { v: "Suplementos", pct: "300%", lift: "+10% AOV" },
+  { v: "Café y té", pct: "250%", lift: "AOV sin cambios" },
+  { v: "Otros sectores", pct: "180%", lift: "+10% AOV" },
+];
+
+// Real, data-backed proof points shown on the page. The 275% is the measured
+// 5.5% quiz-taker conversion (1 in 18) expressed against a typical 2% store
+// rate: 5.5 / 2 = 2.75x = 275% of baseline (accurate as "of", not "+lift").
+const PROOF = [
+  { stat: "45M+", label: "respuestas de quiz analizadas" },
+  { stat: "275%", label: "de la tasa de conversión media" },
+  { stat: "$370M+", label: "de ingresos generados para comerciantes" },
+  { stat: "20.000+", label: "marcas usan RevenueHunt" },
+];
+
+const faqs: { question: string; answer: string; answerHtml?: string }[] = [
+  {
+    question: "¿De dónde sale la tasa de conversión del quiz?",
+    answer:
+      "Es un benchmark de datos reales de RevenueHunt. En el conjunto de respuestas de quiz, el 5,5% de los compradores que completan un quiz (alrededor de 1 de cada 18) acaban realizando un pedido medido. El campo viene precargado con ese benchmark, y puedes editarlo para que coincida con tu propia tienda.",
+  },
+  {
+    question: "¿Cómo se calculan los ingresos extra?",
+    answer:
+      "La calculadora toma el porcentaje de tus visitantes que completan el quiz, les aplica la tasa de conversión de quien hace el quiz, y la compara con la conversión que esos mismos visitantes tendrían a la tasa actual de tu sitio. La diferencia, multiplicada por tu valor medio del pedido, son los ingresos extra estimados.",
+  },
+  {
+    question: "¿Gastan más por pedido los compradores que hacen el quiz?",
+    answer:
+      "De media, sí, comparando como con como. Dentro de una misma tienda, los pedidos que llegaron a través de un quiz son alrededor de un 10% más altos que los que no. No es igual en todas partes: más fuerte en categorías como cuidado de la piel, belleza y suplementos, y casi sin cambios en otras. La calculadora lo tiene en cuenta automáticamente según el sector que elijas.",
+  },
+  {
+    question: "¿Esto se basa en datos reales o en multiplicadores inventados?",
+    answer:
+      "Datos reales. El benchmark de conversión del quiz está medido sobre más de 45 millones de respuestas de quiz y más de 370 millones de dólares en ingresos generados para comerciantes. Tus visitantes, tu valor medio del pedido y tu tasa de conversión actual son tus propios números. El resultado es una estimación, no una garantía.",
+  },
+  {
+    question: "¿Dónde puedo ver todos los datos detrás de estos benchmarks?",
+    answer:
+      "En nuestro informe benchmark de quizzes de ecommerce. Desglosa la conversión por categoría, el incremento del valor medio del pedido, la finalización y la atribución a lo largo de más de 45M de respuestas de quiz reales. El benchmark del 5,5% y las cifras por sector de esta calculadora salen directamente de él.",
+    answerHtml:
+      "En nuestro <a href=\"" + localizedHref("/state-of-product-recommendation-quizzes/", "es") + "\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">informe benchmark de quizzes de ecommerce</a>. Desglosa la conversión por categoría, el incremento del valor medio del pedido, la finalización y la atribución a lo largo de más de 45M de respuestas de quiz reales. El benchmark del 5,5% y las cifras por sector de esta calculadora salen directamente de él.",
+  },
+  {
+    question: "¿La calculadora es gratis?",
+    answer:
+      "Sí. Es gratuita y sin barreras, no hace falta email. RevenueHunt en sí también tiene un plan gratuito con 100 respuestas de quiz al mes, así que puedes medir el incremento real en tu propia tienda.",
+  },
+];
+
+const jsonLd = [
+  organization(),
+  softwareApplication(),
+  breadcrumb([
+    { name: "Inicio", url: "/" },
+    { name: "Calculadora de ROI del quiz", url: "/quiz-roi-calculator/" },
+  ]),
+  faqPage(faqs),
+];
+---
+
+<Base
+  title="Calculadora de ROI del quiz para ecommerce"
+  description="Calculadora de ROI del quiz gratuita basada en datos reales: el 5,5% de quienes hacen el quiz realizan un pedido. Estima los ingresos extra y el ROI que un quiz podría aportar a tu tienda."
+  ogImage="/og/quiz-roi-calculator.png"
+  jsonLd={jsonLd}
+  lang="es"
+  translated={true}
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
+        <a href={localizedHref("/", "es")} class="hover:text-slate-700">Inicio</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <span class="text-slate-700">Calculadora de ROI del quiz</span>
+      </nav>
+      <div class="text-center">
+        <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">Herramienta gratuita</p>
+        <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">Calculadora de ROI del quiz</h1>
+        <p class="mx-auto mt-6 max-w-3xl text-xl text-slate-600">
+          Descubre los ingresos extra que un quiz de recomendación de productos podría aportar a tu tienda. El benchmark de conversión del 275% es real, <a href={localizedHref("/state-of-product-recommendation-quizzes/", "es")} class="font-semibold text-[#16161D] underline decoration-2 decoration-[#16161D]/40 underline-offset-2 hover:decoration-[#16161D]">medido sobre más de 45M de respuestas de quiz</a>, no un multiplicador inventado. Ajusta los datos para que coincidan con tus números.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Real-data proof band -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6 py-8">
+      <div class="rounded-2xl bg-[#16161D] px-6 py-10 sm:px-10">
+        <p class="text-center text-sm font-semibold uppercase tracking-wider text-white/50">Basado en datos reales de RevenueHunt</p>
+        <dl class="mt-6 grid grid-cols-2 gap-8 text-center sm:grid-cols-4">
+          {PROOF.map((p) => (
+            <div>
+              <dt class="text-3xl font-bold tracking-tight text-white">{p.stat}</dt>
+              <dd class="mt-1 text-sm text-white/70">{p.label}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calculator -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6 pb-8 pt-10">
+      <div class="grid gap-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm lg:grid-cols-2 lg:p-8">
+        <!-- Inputs -->
+        <form id="roi-form" class="space-y-6" aria-label="Datos del ROI del quiz">
+          <div>
+            <label for="sector" class="text-sm font-medium text-slate-900">¿Qué vendes?</label>
+            <select
+              id="sector"
+              class="mt-2 w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-900 focus:border-[#16161D] focus:outline-none focus:ring-1 focus:ring-[#16161D]"
+            >
+              {SECTORS.map((s) => (
+                <option value={s.id} data-quizcvr={s.quizcvr} data-aovlift={s.aovlift} data-pct={s.pct}>{s.label}</option>
+              ))}
+            </select>
+            <p class="mt-2 rounded-md bg-[#D8F0FE] px-3 py-2 text-xs text-[#2c81b2] ring-1 ring-inset ring-[#2c81b2]/20">
+              <span id="sector-note">En el conjunto de quizzes de RevenueHunt, quienes hacen el quiz convierten a cerca del 275% de la tienda media y realizan pedidos alrededor de un 10% más grandes. Elige tu sector para un benchmark más ajustado.</span>
+            </p>
+          </div>
+          {controls.map((c) => (
+            <div>
+              <div class="flex items-center justify-between gap-3">
+                <label for={c.id} class="text-sm font-medium text-slate-900">
+                  {c.label}
+                </label>
+                <div class="flex items-center gap-1 text-sm">
+                  {c.suffix === "$" && <span class="text-slate-500">$</span>}
+                  <input
+                    type="number"
+                    id={c.id}
+                    min={c.min}
+                    max={c.max}
+                    step={c.step}
+                    value={c.value}
+                    class="w-24 rounded-md border border-slate-300 px-2 py-1 text-right font-semibold text-slate-900 focus:border-[#16161D] focus:outline-none focus:ring-1 focus:ring-[#16161D]"
+                  />
+                  {c.suffix === "%" && <span class="text-slate-500">%</span>}
+                </div>
+              </div>
+              <input
+                type="range"
+                id={`${c.id}-range`}
+                min={c.min}
+                max={c.max}
+                step={c.step}
+                value={c.value}
+                class="mt-3 w-full accent-[#16161D]"
+                aria-label={`${c.label} slider`}
+              />
+              {c.note && (
+                <p class="mt-2 text-xs text-slate-500">
+                  <span id={`${c.id}-note`}>{c.note}</span>
+                  {c.benchmark && (
+                    <>
+                      {" "}
+                      <button
+                        type="button"
+                        id={`${c.id}-reset`}
+                        class="hidden font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]"
+                      >
+                        Restablecer a los datos de RevenueHunt
+                      </button>
+                    </>
+                  )}
+                </p>
+              )}
+            </div>
+          ))}
+          <!-- AOV uplift is not user-editable: the sector dropdown sets it. -->
+          <input type="hidden" id="aovlift" value="10" />
+        </form>
+
+        <!-- Results -->
+        <div class="flex flex-col gap-4 rounded-xl bg-slate-50 p-6">
+          <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">Impacto estimado</p>
+          <div>
+            <p class="text-sm text-slate-600">Ingresos extra al mes</p>
+            <p id="out-monthly" class="mt-1 text-4xl font-bold tracking-tight text-[#16161D]">$0</p>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="rounded-lg border border-slate-200 bg-white p-4">
+              <p class="text-xs text-slate-600">Ingresos extra al año</p>
+              <p id="out-annual" class="mt-1 text-xl font-bold text-slate-900">$0</p>
+            </div>
+            <div class="rounded-lg border border-slate-200 bg-white p-4">
+              <p class="text-xs text-slate-600">Pedidos extra al mes</p>
+              <p id="out-orders" class="mt-1 text-xl font-bold text-slate-900">0</p>
+            </div>
+          </div>
+          <dl class="mt-2 space-y-1 text-sm text-slate-600">
+            <div class="flex justify-between">
+              <dt>Personas que hacen el quiz al mes</dt>
+              <dd id="out-takers" class="font-medium text-slate-900">0</dd>
+            </div>
+            <div class="flex justify-between">
+              <dt>Pedidos del quiz al mes</dt>
+              <dd id="out-quizorders" class="font-medium text-slate-900">0</dd>
+            </div>
+            <div class="flex justify-between">
+              <dt>Ingresos mensuales de base</dt>
+              <dd id="out-baseline" class="font-medium text-slate-900">$0</dd>
+            </div>
+            <div class="flex justify-between">
+              <dt>Con un quiz</dt>
+              <dd id="out-withquiz" class="font-medium text-slate-900">$0</dd>
+            </div>
+          </dl>
+          <a
+            href={SHOPIFY_INSTALL}
+            target="_blank"
+            rel="external noopener nofollow"
+            onclick="window.gtag&&gtag('event','shopify_app_install',{event_label:'roi_calculator'})"
+            class="mt-2 inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
+          >
+            instalar en Shopify
+          </a>
+          <a
+            href={WOO_PLUGIN}
+            target="_blank"
+            rel="external noopener nofollow"
+            onclick="window.gtag&&gtag('event','woocommerce_plugin_click',{event_label:'roi_calculator'})"
+            class="inline-flex items-center justify-center rounded-md border border-[#16161D] bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-50"
+          >
+            instalar en WooCommerce
+          </a>
+        </div>
+      </div>
+      <p class="mt-4 text-xs text-slate-500">
+        La tasa de conversión de quien hace el quiz es un benchmark que puedes editar, y el incremento del AOV se aplica automáticamente según tu sector; ambos provienen de datos reales de RevenueHunt y tu tienda variará. Los visitantes, el valor medio del pedido y la tasa de conversión actual son tus propios números. Esto es una estimación, no una garantía, y los resultados reales dependen de tu tienda, tu tráfico y tu quiz.
+      </p>
+    </div>
+  </section>
+
+  <!-- Recommended plan + ROI -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6 pb-14">
+      <div class="rounded-2xl border-2 border-[#16161D] bg-slate-50 p-6 sm:p-8">
+        <p class="text-center text-sm font-semibold uppercase tracking-wider text-slate-500">Tu plan recomendado y ROI</p>
+        <div class="mt-5 grid gap-6 sm:grid-cols-3">
+          <div class="rounded-xl border border-slate-200 bg-white p-5">
+            <p class="text-xs text-slate-600">Respuestas de quiz estimadas / mes</p>
+            <p id="out-responses" class="mt-1 text-3xl font-bold tracking-tight text-slate-900">0</p>
+          </div>
+          <div class="rounded-xl border border-slate-200 bg-white p-5">
+            <p class="text-xs text-slate-600">Plan recomendado</p>
+            <p id="out-plan" class="mt-1 text-3xl font-bold tracking-tight text-slate-900">Free Plan</p>
+            <p id="out-plancost" class="text-sm text-slate-600">Gratis</p>
+          </div>
+          <div class="rounded-xl border border-slate-200 bg-white p-5">
+            <p class="text-xs text-slate-600">Retorno sobre el coste del plan</p>
+            <p id="out-roi" class="mt-1 text-3xl font-bold tracking-tight text-emerald-600">-</p>
+            <p id="out-net" class="text-sm text-slate-600"></p>
+          </div>
+        </div>
+        <p class="mt-5 text-center text-sm text-slate-700"><span id="plan-note"></span> <a href={localizedHref("/pricing/", "es")} class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">Ver todos los planes</a>.</p>
+        <div class="mt-6 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
+          <a
+            href={SHOPIFY_INSTALL}
+            target="_blank"
+            rel="external noopener nofollow"
+            onclick="window.gtag&&gtag('event','shopify_app_install',{event_label:'roi_calculator_plan'})"
+            class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
+          >
+            empezar gratis en Shopify
+          </a>
+          <a
+            href={WOO_PLUGIN}
+            target="_blank"
+            rel="external noopener nofollow"
+            onclick="window.gtag&&gtag('event','woocommerce_plugin_click',{event_label:'roi_calculator_plan'})"
+            class="inline-flex items-center justify-center rounded-md border border-[#16161D] bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-50"
+          >
+            empezar gratis en WooCommerce
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conversion by category -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6 pb-14">
+      <div class="rounded-2xl border border-slate-200 bg-white p-6 sm:p-8">
+        <h2 class="text-center text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Aumento de la tasa de conversión por sector</h2>
+        <p class="mx-auto mt-3 max-w-2xl text-center text-slate-600">
+          Comparado con una tienda típica del 2%, quienes hacen el quiz de RevenueHunt convierten varias veces más. Aquí tienes cada categoría como porcentaje de esa media, con el incremento del valor del pedido donde lo vemos.
+        </p>
+        <dl class="mt-6 grid grid-cols-2 gap-px overflow-hidden rounded-xl bg-slate-200 sm:grid-cols-3 lg:grid-cols-6">
+          {BY_VERTICAL.map((b) => (
+            <div class="bg-white px-4 py-6 text-center">
+              <dt class="text-3xl font-bold tracking-tight text-[#16161D]">{b.pct}</dt>
+              <dd class="mt-1 text-sm text-slate-600">{b.v}</dd>
+              <dd class={`mt-2 text-xs font-medium ${b.lift.startsWith("+") ? "text-emerald-700" : "text-slate-400"}`}>{b.lift}</dd>
+            </div>
+          ))}
+        </dl>
+        <p class="mt-4 text-center text-xs text-slate-500">
+          Mostrado como porcentaje de una tasa de conversión típica de tienda del 2%, medida en nuestros datos. Tu tienda variará.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-3xl px-6 py-16">
+      <h2 class="text-center text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Cómo funciona la calculadora</h2>
+      <div class="mt-8 space-y-5 text-lg text-slate-700">
+        <p>
+          El modelo es deliberadamente simple y honesto. Toma el porcentaje de tus visitantes que completan el quiz, los convierte a la tasa de quien hace el quiz, y lo compara con lo que esos mismos visitantes habrían hecho a la <a href="/glossary/conversion-rate-optimization/" class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">tasa de conversión</a> actual de tu sitio. La diferencia son los ingresos extra estimados.
+        </p>
+        <p>
+          Según los datos recogidos a lo largo de más de 45 millones de respuestas de quiz reales, el 5,5% de los compradores que completan un quiz de RevenueHunt (alrededor de 1 de cada 18) realiza un pedido medido. Frente a una tasa de conversión típica de tienda del 2%, eso es 2,75x, alrededor del 275% de lo que una tienda suele convertir. Precargamos esa cifra y te dejamos editarla.
+        </p>
+        <p>
+          También analizamos el valor del pedido. Comparando como con como, dentro de una misma tienda, los pedidos del quiz son alrededor de un 10% más altos que los pedidos sin quiz. El incremento es más fuerte en categorías como cuidado de la piel, belleza y suplementos, y casi sin cambios en algunas otras. La calculadora aplica un incremento conservador y respaldado por datos según el sector que elijas, así no tienes que adivinar.
+        </p>
+        <p>
+          La calculadora usa tu propio <a href="/glossary/average-order-value/" class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">valor medio del pedido</a> e ignora los leads de email y los datos zero-party que captura un quiz, que se acumulan con el tiempo, así que tiende a subestimar el valor total.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-3xl px-6 py-16">
+      <h2 class="text-center text-3xl font-bold tracking-tight text-slate-900">Preguntas frecuentes</h2>
+      <div class="mt-10 divide-y divide-slate-200 border-y border-slate-200">
+        {faqs.map((faq) => (
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 text-lg font-semibold text-slate-900 [&::-webkit-details-marker]:hidden">
+              <span>{faq.question}</span>
+              <svg
+                class="h-5 w-5 flex-shrink-0 text-slate-400 transition-transform duration-200 group-open:rotate-180"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+              </svg>
+            </summary>
+            <p class="pb-5 text-slate-700" set:html={faq.answerHtml ?? faq.answer} />
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Pon el incremento a prueba, gratis.
+      </h2>
+      <p class="mx-auto mt-4 max-w-2xl text-white/80">
+        Crea un quiz de recomendación de productos y mide el impacto real en tu tienda. Plan gratuito, sin tarjeta de crédito.
+      </p>
+      <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
+        <a
+          href={SHOPIFY_INSTALL}
+          target="_blank"
+          rel="external noopener nofollow"
+          onclick="window.gtag&&gtag('event','shopify_app_install',{event_label:'roi_calculator_bottom'})"
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          empezar gratis en Shopify
+        </a>
+        <a
+          href={WOO_PLUGIN}
+          target="_blank"
+          rel="external noopener nofollow"
+          onclick="window.gtag&&gtag('event','woocommerce_plugin_click',{event_label:'roi_calculator_bottom'})"
+          class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
+        >
+          empezar gratis en WooCommerce
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    (function () {
+      var KEYS = ["visitors", "aov", "cvr", "engage", "quizcvr"];
+      var usd = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
+      var num = new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 });
+      function clamp(el, v) {
+        var min = parseFloat(el.min), max = parseFloat(el.max);
+        if (!isNaN(min) && v < min) v = min;
+        if (!isNaN(max) && v > max) v = max;
+        return v;
+      }
+      function val(id) {
+        var el = document.getElementById(id);
+        var v = parseFloat(el.value);
+        return isNaN(v) ? 0 : v;
+      }
+      function set(id, v) {
+        var t = document.getElementById(id);
+        if (t) t.textContent = v;
+      }
+      // Quiz takers convert at a fixed multiple of a normal store. The sector
+      // benchmark is that rate measured at a 2% reference store (5.5% = 2.75x,
+      // 3.6% = 1.8x, ...). Express the quiz-taker rate as that same multiple
+      // applied to the merchant's OWN rate, but never below the 2% reference, so
+      // even a high-converting store still sees a lift instead of a flat $0. The
+      // multiple is always >= 1.8, so the result always clears the current rate.
+      var sectorBenchmark = 5.5;
+      function quizFloor() {
+        return Math.round(sectorBenchmark * Math.max(2, val("cvr")) / 2 * 10) / 10;
+      }
+      function setQuizCvr(v) {
+        var n = document.getElementById("quizcvr"), r = document.getElementById("quizcvr-range");
+        if (!n) return;
+        v = Math.min(v, parseFloat(n.max));
+        n.value = v;
+        if (r) r.value = clamp(r, v);
+      }
+      // Raising the current rate lifts the quiz rate to keep the multiple; it
+      // never lowers a manual edit the merchant made above the floor.
+      function ensureBoost() {
+        var f = quizFloor();
+        if (val("quizcvr") < f) setQuizCvr(f);
+      }
+      // Keep the quiz-rate helper note truthful as the rate changes. At the
+      // benchmark it's the pre-filled RevenueHunt figure; once the merchant edits
+      // it off the benchmark it's their own value (the reset link gets them back).
+      function syncNotes() {
+        var qc = val("quizcvr");
+        if (qc <= 0) return;
+        var oneIn = Math.round(100 / qc);
+        var bench = quizFloor();
+        if (Math.abs(qc - bench) <= 0.05) {
+          set("quizcvr-note", "Precargado con datos de RevenueHunt: alrededor de 1 de cada " + oneIn + " personas que hacen el quiz realizan un pedido. Edítalo para que coincida con tu tienda.");
+        } else {
+          var d = Math.round((qc / bench - 1) * 100);
+          var rel = d >= 0 ? d + "% por encima de" : Math.abs(d) + "% por debajo de";
+          set("quizcvr-note", "Tu valor: alrededor de 1 de cada " + oneIn + " personas que hacen el quiz realizan un pedido. Eso es un " + rel + " la tasa de conversión media del quiz.");
+        }
+      }
+      // Only show the reset link when the quiz rate is off its data value — i.e.
+      // the merchant edited it, or lowered their current rate so it sits above
+      // the benchmark. At the data value there is nothing to reset.
+      function syncReset() {
+        var btn = document.getElementById("quizcvr-reset");
+        if (btn) btn.classList.toggle("hidden", Math.abs(val("quizcvr") - quizFloor()) <= 0.05);
+      }
+      function calc() {
+        syncNotes();
+        syncReset();
+        var V = val("visitors"), A = val("aov"), c = val("cvr") / 100, q = val("engage") / 100, qc = val("quizcvr") / 100, lift = val("aovlift") / 100;
+        var takers = V * q;
+        var quizOrders = takers * qc;
+        var extraOrders = Math.max(0, takers * (qc - c));
+        // Quiz orders carry a within-store AOV uplift; non-quiz baseline does not.
+        // Extra = quiz-taker revenue with the quiz, minus what those same takers
+        // would do at the site rate. With lift = 0 this is the old (qc - c) * A.
+        var quizAov = A * (1 + lift);
+        var extra = Math.max(0, quizOrders * quizAov - takers * c * A);
+        var baseline = V * c * A;
+        set("out-monthly", usd.format(extra));
+        set("out-annual", usd.format(extra * 12));
+        set("out-orders", num.format(extraOrders));
+        set("out-takers", num.format(takers));
+        set("out-quizorders", num.format(quizOrders));
+        set("out-baseline", usd.format(baseline));
+        set("out-withquiz", usd.format(baseline + extra));
+
+        // Recommended plan (by monthly quiz responses) + cost + ROI.
+        // Tiers mirror /pricing/ (lib/plans.ts).
+        var responses = takers;
+        // Anything above the Premium tier (2,500/mo) lands on the Unlimited Plan
+        // at $299/mo with no response cap, so the ROI is computed off $299.
+        var PLANS = [
+          { name: "Free Plan", limit: 100, cost: 0 },
+          { name: "Basic Plan", limit: 500, cost: 39 },
+          { name: "Pro Plan", limit: 1000, cost: 99 },
+          { name: "Premium Plan", limit: 2500, cost: 199 },
+          { name: "Unlimited Plan", limit: Infinity, cost: 299, unlimited: true },
+        ];
+        var plan = PLANS[0];
+        for (var i = 0; i < PLANS.length; i++) {
+          if (responses <= PLANS[i].limit) { plan = PLANS[i]; break; }
+        }
+        set("out-responses", num.format(responses));
+        if (plan.cost === 0) {
+          set("out-plan", plan.name);
+          set("out-plancost", "Gratis");
+          set("out-roi", extra > 0 ? "Pura ganancia" : "-");
+          set("out-net", extra > 0 ? "+" + usd.format(extra) + " / mes, sin coste" : "");
+          set("plan-note", "Unas " + num.format(responses) + " respuestas de quiz al mes caben en el plan gratuito (100 respuestas), así que los " + usd.format(extra) + " al mes estimados en ingresos extra no te cuestan nada.");
+        } else {
+          var roi = extra / plan.cost;
+          var net = extra - plan.cost;
+          set("out-plan", plan.name);
+          set("out-plancost", "$" + plan.cost + " / mes");
+          set("out-roi", extra > 0 ? (roi >= 10 ? Math.round(roi) + "x" : roi.toFixed(1) + "x") : "-");
+          set("out-net", extra > 0 ? (usd.format(extra) + " de ingresos menos " + usd.format(plan.cost) + " del plan = " + usd.format(net) + "/mes neto") : "");
+          if (extra <= 0) {
+            set("plan-note", "Pon la tasa de conversión del quiz por encima de tu tasa de conversión actual del sitio para ver un retorno. El " + plan.name + " ($" + plan.cost + "/mes) cubre " + (plan.unlimited ? "respuestas ilimitadas." : "unas " + num.format(responses) + " respuestas al mes."));
+          } else {
+            var fit = plan.unlimited
+              ? "Unas " + num.format(responses) + " respuestas de quiz al mes te sitúan en el " + plan.name + " a $" + plan.cost + " al mes, con respuestas ilimitadas."
+              : "Unas " + num.format(responses) + " respuestas de quiz al mes caben en el " + plan.name + " a $" + plan.cost + " al mes.";
+            set("plan-note", fit + " Los " + usd.format(extra) + " al mes estimados en ingresos extra son aproximadamente " + (roi >= 10 ? Math.round(roi) : roi.toFixed(1)) + "x el coste del plan.");
+          }
+        }
+      }
+      KEYS.forEach(function (k) {
+        var n = document.getElementById(k);
+        var r = document.getElementById(k + "-range");
+        if (!n || !r) return;
+        n.addEventListener("input", function () { r.value = clamp(n, val(k)); if (k === "cvr") ensureBoost(); calc(); });
+        r.addEventListener("input", function () { n.value = r.value; if (k === "cvr") ensureBoost(); calc(); });
+      });
+      // Sector selector: pre-fill the quiz rate + AOV uplift from the chosen
+      // sector and recompute everything. Unselected stays "All sectors" (275%).
+      var sector = document.getElementById("sector");
+      function applySector() {
+        var o = sector.options[sector.selectedIndex];
+        var qc = o.getAttribute("data-quizcvr");
+        var lift = o.getAttribute("data-aovlift");
+        var pct = o.getAttribute("data-pct");
+        function put(id, v) {
+          var n = document.getElementById(id), r = document.getElementById(id + "-range");
+          if (n) n.value = v;
+          if (r) r.value = clamp(r, parseFloat(v));
+        }
+        sectorBenchmark = parseFloat(qc) || sectorBenchmark;
+        // Reset the current rate to its default first, so the quiz rate lands on
+        // the sector's published benchmark (5.5%, 3.6%, ...) rather than scaling
+        // off whatever the merchant had dragged the current rate to.
+        var cvrEl = document.getElementById("cvr");
+        if (cvrEl) put("cvr", cvrEl.defaultValue);
+        setQuizCvr(quizFloor());
+        put("aovlift", lift);
+        var liftN = parseFloat(lift) || 0;
+        var aovPart = liftN > 0 ? " y realizan pedidos alrededor de un " + liftN + "% más grandes" : "";
+        if (o.value === "all") {
+          set("sector-note", "En el conjunto de quizzes de RevenueHunt, quienes hacen el quiz convierten a cerca del " + pct + "% de la tienda media" + aovPart + ". Elige tu sector para un benchmark más ajustado.");
+        } else {
+          set("sector-note", "Quienes hacen el quiz en " + o.text + " convierten a cerca del " + pct + "% de la tienda media" + aovPart + ", medido en datos de RevenueHunt.");
+        }
+        calc();
+      }
+      if (sector) sector.addEventListener("change", applySector);
+      // Reset link: restore the quiz-taker rate to the RevenueHunt benchmark for
+      // the current sector and store rate, in case the merchant dragged it away.
+      var quizReset = document.getElementById("quizcvr-reset");
+      if (quizReset) quizReset.addEventListener("click", function () { setQuizCvr(quizFloor()); calc(); });
+      calc();
+    })();
+  </script>
+</Base>

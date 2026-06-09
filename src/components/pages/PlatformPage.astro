@@ -9,40 +9,36 @@ import { SOLUTIONS, FEATURED_SOLUTIONS } from "../../lib/solutions";
 import { PLATFORM_REVIEWS } from "../../lib/reviews";
 import YouTubeFacade from "../YouTubeFacade.astro";
 import Reviews from "../Reviews.astro";
+import { t, type Lang, localizedHref } from "../../lib/i18n";
+import { CHROME, fill } from "../../lib/content/chrome";
 
 interface Props {
   entry: CollectionEntry<"pages">;
   config: PlatformConfig;
+  lang?: Lang;
+  /** True when this page exists in every locale (emits hreflang). */
+  translated?: boolean;
 }
 
-const { entry, config } = Astro.props;
+const { entry, config, lang = "en", translated = false } = Astro.props;
 const { Content } = await render(entry);
+const c = CHROME[lang];
+const lp = (path: string) => localizedHref(path, lang);
+const ctaLabel = (label: string) => c.cta_labels[label] ?? label;
+// Localize internal config CTA hrefs; leave external/absolute links untouched.
+const cfgHref = (cta: { href: string; external?: boolean }) =>
+  cta.external || !cta.href.startsWith("/") ? cta.href : lp(cta.href);
 
 // Sibling platform links - every platform page links to all other platform pages.
-// Source of truth: PLATFORM_CONFIGS keyed by slug. Adding a new entry there will
-// automatically surface it in every other platform page's sibling block.
-const SIBLING_TAGLINES: Record<string, string> = {
-  "product-recommendation-quiz-shopify": "Native Shopify app, free plan, instant install",
-  "product-recommendation-quiz-woocommerce": "Self-hosted WordPress plugin, no monthly fee",
-  "product-recommendation-quiz-bigcommerce": "Native BigCommerce app with deep catalog sync",
-  "product-recommendation-quiz-wix-stores": "Embed via universal script - works on any Wix store",
-  "product-recommendation-quiz-for-squarespace-commerce": "Embed via universal script - works on any Squarespace site",
-  "product-recommendation-quiz-for-magento": "Standalone hosted solution, no Magento extension required",
-  "product-recommendation-quiz-standalone-google-product-feed":
-    "Platform-agnostic - runs on Google Product Feed, no store integration needed",
-  "product-recommendation-quiz-pos-tablet-stands": "In-store quizzes on iPad / Android POS tablets",
-  "product-recommendation-quiz":
-    "The all-platforms overview - start here if you're comparing options",
-};
-
+// Source of truth: PLATFORM_CONFIGS keyed by slug. Taglines are localized in CHROME.
 const currentSlug = entry.data.legacySlug;
 const siblings = Object.entries(PLATFORM_CONFIGS)
   .filter(([slug]) => slug !== currentSlug)
   .map(([slug, cfg]) => ({
     slug,
     platform: cfg.platform,
-    href: `/${slug}/`,
-    tagline: SIBLING_TAGLINES[slug] ?? "",
+    href: lp(`/${slug}/`),
+    tagline: c.sibling_taglines[slug] ?? "",
   }));
 
 const SHOPIFY_INSTALL =
@@ -50,26 +46,7 @@ const SHOPIFY_INSTALL =
 const WOOCOMMERCE_DOWNLOAD =
   "https://downloads.wordpress.org/plugin/product-recommendation-quiz-for-ecommerce.latest-stable.zip";
 
-const pillars = [
-  {
-    image: "/img/pages/home/recommend-right-products.svg",
-    title: "Recommend the right products",
-    body:
-      "Shoppable quizzes drive sales, advise customers on finding the right products for them, and help them make confident purchasing decisions.",
-  },
-  {
-    image: "/img/pages/home/know-your-customers.svg",
-    title: "Know your customers",
-    body:
-      "Quizzes let you collect actionable data by asking your customers targeted questions. Segment and tag your shoppers based on their responses.",
-  },
-  {
-    image: "/img/pages/home/grow-your-audience.svg",
-    title: "Grow your audience",
-    body:
-      "Send captured leads to your mailing list or CRM. Leverage customer profile data to create more personalized, higher ROI marketing campaigns.",
-  },
-];
+const pillars = c.pillars;
 
 const featuredSolutions = FEATURED_SOLUTIONS.map((slug) => SOLUTIONS[slug]!);
 
@@ -111,12 +88,14 @@ function rel(c: { external?: boolean }) {
   description={entry.data.description}
   ogImage={entry.data.featuredImage ?? undefined}
   jsonLd={jsonLd}
+  lang={lang}
+  translated={translated}
 >
   <!-- Hero -->
   <section class="bg-gradient-to-b from-slate-50 to-white">
     <div class="mx-auto max-w-7xl px-6 py-16 lg:py-20">
       <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
-        <a href="/" class="hover:text-slate-700">Home</a>
+        <a href={lp("/")} class="hover:text-slate-700">{t[lang].breadcrumb_home}</a>
         <span class="mx-2 text-slate-300">/</span>
         <span class="text-slate-700">{config.platform}</span>
       </nav>
@@ -131,27 +110,27 @@ function rel(c: { external?: boolean }) {
           )}
           <div class="mt-8 flex flex-wrap gap-3">
             <a
-              href={config.primary.href}
+              href={cfgHref(config.primary)}
               {...rel(config.primary)}
               onclick={config.primary.gtagEvent
                 ? `window.gtag&&gtag('event','${config.primary.gtagEvent}',{event_label:'${config.platform}_hero'})`
                 : undefined}
               class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
             >
-              {config.primary.label}
+              {ctaLabel(config.primary.label)}
             </a>
             {config.secondary && (
               <a
-                href={config.secondary.href}
+                href={cfgHref(config.secondary)}
                 {...rel(config.secondary)}
                 class="inline-flex items-center justify-center rounded-md border border-[#16161D] bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-50"
               >
-                {config.secondary.label}
+                {ctaLabel(config.secondary.label)}
               </a>
             )}
           </div>
           <p class="mt-4 text-sm text-slate-500">
-            Free plan available · 15-day free trial · 30-day money-back guarantee
+            {c.trial_note}
           </p>
         </div>
 
@@ -201,33 +180,33 @@ function rel(c: { external?: boolean }) {
   {config.showComparison && (
     <section class="bg-white">
       <div class="mx-auto max-w-5xl px-6 py-16">
-        <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">How we compare</h2>
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">{c.compare_h2}</h2>
         <p class="mt-4 text-slate-700">
-          RevenueHunt vs. Octane AI vs. Quiz Kit - the features that matter for serious eCommerce stores.
+          {c.compare_sub}
         </p>
         <div class="mt-8 overflow-x-auto rounded-xl border border-slate-200">
           <table class="w-full text-left text-sm">
             <thead class="bg-slate-50 text-slate-900">
               <tr>
-                <th class="px-4 py-3 font-semibold">Feature</th>
+                <th class="px-4 py-3 font-semibold">{c.compare_col_feature}</th>
                 <th class="px-4 py-3 text-center font-semibold">RevenueHunt</th>
                 <th class="px-4 py-3 text-center font-semibold">Quiz Kit</th>
                 <th class="px-4 py-3 text-center font-semibold">Octane AI</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-slate-200 text-slate-700">
-              <tr><td class="px-4 py-3">Klaviyo / Mailchimp integration</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center">✓</td></tr>
-              <tr><td class="px-4 py-3">Conditional / branching logic</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center">✓</td></tr>
-              <tr><td class="px-4 py-3">AI quiz builder (60-second setup)</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center text-slate-400"> - </td><td class="px-4 py-3 text-center">✓</td></tr>
-              <tr><td class="px-4 py-3">Built for Shopify</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center text-slate-400"> - </td></tr>
-              <tr><td class="px-4 py-3">Drop-off analytics</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center text-slate-400"> - </td><td class="px-4 py-3 text-center">✓</td></tr>
-              <tr><td class="px-4 py-3">WooCommerce &amp; other platforms</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center text-slate-400"> - </td><td class="px-4 py-3 text-center text-slate-400"> - </td></tr>
-              <tr><td class="px-4 py-3">Free plan available</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center text-slate-400"> - </td><td class="px-4 py-3 text-center text-slate-400"> - </td></tr>
-              <tr><td class="px-4 py-3 font-semibold">Starting price</td><td class="px-4 py-3 text-center font-semibold">Free</td><td class="px-4 py-3 text-center">$59/mo</td><td class="px-4 py-3 text-center">$50/mo</td></tr>
+              <tr><td class="px-4 py-3">{c.compare_rows[0]}</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center">✓</td></tr>
+              <tr><td class="px-4 py-3">{c.compare_rows[1]}</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center">✓</td></tr>
+              <tr><td class="px-4 py-3">{c.compare_rows[2]}</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center text-slate-400"> - </td><td class="px-4 py-3 text-center">✓</td></tr>
+              <tr><td class="px-4 py-3">{c.compare_rows[3]}</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center text-slate-400"> - </td></tr>
+              <tr><td class="px-4 py-3">{c.compare_rows[4]}</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center text-slate-400"> - </td><td class="px-4 py-3 text-center">✓</td></tr>
+              <tr><td class="px-4 py-3">{c.compare_rows[5]}</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center text-slate-400"> - </td><td class="px-4 py-3 text-center text-slate-400"> - </td></tr>
+              <tr><td class="px-4 py-3">{c.compare_rows[6]}</td><td class="px-4 py-3 text-center">✓</td><td class="px-4 py-3 text-center text-slate-400"> - </td><td class="px-4 py-3 text-center text-slate-400"> - </td></tr>
+              <tr><td class="px-4 py-3 font-semibold">{c.compare_starting_price}</td><td class="px-4 py-3 text-center font-semibold">{c.compare_free}</td><td class="px-4 py-3 text-center">$59/mo</td><td class="px-4 py-3 text-center">$50/mo</td></tr>
             </tbody>
           </table>
         </div>
-        <p class="mt-4 text-xs text-slate-500">Comparison based on publicly available information as of 2026.</p>
+        <p class="mt-4 text-xs text-slate-500">{c.compare_note}</p>
       </div>
     </section>
   )}
@@ -237,10 +216,10 @@ function rel(c: { external?: boolean }) {
     <div class="mx-auto max-w-7xl px-6 py-16 sm:py-20">
       <div class="max-w-3xl">
         <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-          Available for every platform
+          {c.platforms_h2}
         </h2>
         <p class="mt-4 text-slate-700">
-          Not on {config.platform}? RevenueHunt's product recommendation quiz works wherever you sell - pick your stack.
+          {fill(c.platforms_sub, { platform: config.platform })}
         </p>
       </div>
       <ul class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" role="list">
@@ -251,13 +230,13 @@ function rel(c: { external?: boolean }) {
               class="group block h-full rounded-xl border border-slate-200 bg-white p-6 transition hover:border-[#16161D] hover:shadow-md"
             >
               <h3 class="text-lg font-semibold text-slate-900 group-hover:text-[#16161D]">
-                Product recommendation quiz for {s.platform}
+                {fill(c.platforms_card_title, { platform: s.platform })}
               </h3>
               {s.tagline && (
                 <p class="mt-2 text-sm text-slate-600">{s.tagline}</p>
               )}
               <span class="mt-4 inline-flex items-center text-sm font-medium text-[#16161D]">
-                See {s.platform} page
+                {fill(c.platforms_card_cta, { platform: s.platform })}
                 <svg
                   class="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5"
                   viewBox="0 0 20 20"
@@ -279,10 +258,10 @@ function rel(c: { external?: boolean }) {
     <div class="mx-auto max-w-7xl px-6 py-16 sm:py-20">
       <div class="max-w-3xl">
         <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-          A quiz for your industry
+          {c.industry_h2}
         </h2>
         <p class="mt-4 text-slate-700">
-          However you sell on {config.platform}, build the quiz that fits your catalog. Explore solutions by industry and quiz type.
+          {fill(c.industry_sub, { platform: config.platform })}
         </p>
       </div>
       <ul class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4" role="list">
@@ -294,7 +273,7 @@ function rel(c: { external?: boolean }) {
             >
               <h3 class="text-base font-semibold text-slate-900 group-hover:text-[#16161D]">{s.name}</h3>
               <span class="mt-3 inline-flex items-center text-sm font-medium text-[#16161D]">
-                View solution
+                {c.industry_view}
                 <svg class="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd" d="M7.21 4.29a1 1 0 011.42 0l5 5a1 1 0 010 1.42l-5 5a1 1 0 11-1.42-1.42L11.09 10 7.21 6.12a1 1 0 010-1.42z" clip-rule="evenodd" />
                 </svg>
@@ -303,8 +282,8 @@ function rel(c: { external?: boolean }) {
           </li>
         ))}
       </ul>
-      <a href="/solutions/" class="mt-8 inline-flex items-center text-sm font-semibold text-[#16161D]">
-        See all quiz solutions
+      <a href={lp("/solutions/")} class="mt-8 inline-flex items-center text-sm font-semibold text-[#16161D]">
+        {c.industry_see_all}
         <span aria-hidden="true" class="ml-1">→</span>
       </a>
     </div>
@@ -313,7 +292,7 @@ function rel(c: { external?: boolean }) {
   {reviews && (
     <Reviews
       data={reviews}
-      heading={`Rated ${reviews.ratingValue} by ${config.platform} merchants`}
+      heading={fill(c.reviews_heading, { rating: String(reviews.ratingValue), platform: config.platform })}
       bg="bg-slate-50"
     />
   )}
@@ -322,10 +301,10 @@ function rel(c: { external?: boolean }) {
   <section class="bg-[#16161D]">
     <div class="mx-auto max-w-4xl px-6 py-20 text-center">
       <p class="mb-3 text-sm font-semibold uppercase tracking-wider text-white/70">
-        Most shoppers leave because they can't find the right product
+        {c.cta_kicker}
       </p>
       <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-        Turn shoppers into confident buyers with a Product Recommendation Quiz that drives sales.
+        {c.cta_h2}
       </h2>
       <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
         <a
@@ -335,7 +314,7 @@ function rel(c: { external?: boolean }) {
           onclick={`window.gtag&&gtag('event','shopify_app_install',{event_label:'${config.platform}_bottom'})`}
           class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
         >
-          install on Shopify
+          {c.cta_install_shopify}
         </a>
         <a
           href={WOOCOMMERCE_DOWNLOAD}
@@ -344,7 +323,7 @@ function rel(c: { external?: boolean }) {
           onclick={`window.gtag&&gtag('event','download_woocommerce_plugin',{event_label:'${config.platform}_bottom'})`}
           class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
         >
-          get for WooCommerce
+          {c.cta_get_woocommerce}
         </a>
       </div>
     </div>

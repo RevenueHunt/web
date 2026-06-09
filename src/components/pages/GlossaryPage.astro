@@ -100,7 +100,7 @@ const jsonLd = [
             href={SHOPIFY_INSTALL}
             target="_blank"
             rel="external noopener nofollow"
-            onclick={`window.gtag&&gtag('event','shopify_app_install',{screen_name:'glossary_${e.slug}'})`}
+            onclick={`window.gtag&&gtag('event','shopify_app_install',{cta_location:'glossary_${e.slug}'})`}
             class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
           >
             start free on Shopify
@@ -187,7 +187,7 @@ const jsonLd = [
           href={SHOPIFY_INSTALL}
           target="_blank"
           rel="external noopener nofollow"
-          onclick={`window.gtag&&gtag('event','shopify_app_install',{screen_name:'glossary_${e.slug}_bottom'})`}
+          onclick={`window.gtag&&gtag('event','shopify_app_install',{cta_location:'glossary_${e.slug}_bottom'})`}
           class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
         >
           start free on Shopify
@@ -196,7 +196,7 @@ const jsonLd = [
           href={WOO_PLUGIN}
           target="_blank"
           rel="external noopener nofollow"
-          onclick={`window.gtag&&gtag('event','woocommerce_plugin_click',{screen_name:'glossary_${e.slug}_bottom'})`}
+          onclick={`window.gtag&&gtag('event','woocommerce_plugin_click',{cta_location:'glossary_${e.slug}_bottom'})`}
           class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
         >
           start free on WooCommerce

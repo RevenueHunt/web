@@ -163,7 +163,12 @@ const WOOCOMMERCE_REVIEWS =
     <div class="mx-auto max-w-7xl px-6 py-16 lg:py-24">
       <div class="grid items-center gap-12 lg:grid-cols-2 lg:items-start lg:gap-16">
         <div>
-          <a href={SHOPIFY_INSTALL} class="mb-6 inline-block">
+          <a
+            href={SHOPIFY_INSTALL}
+            rel="external nofollow"
+            onclick="window.gtag&&gtag('event','shopify_app_install',{screen_name:'Home'})"
+            class="mb-6 inline-block"
+          >
             <img
               src="/img/home/bfs-badge.webp"
               alt="Built for Shopify"

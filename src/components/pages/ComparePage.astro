@@ -69,7 +69,7 @@ function cell(value: string): { kind: "yes" | "no" | "text"; text: string } {
             href={SHOPIFY_INSTALL}
             target="_blank"
             rel="external noopener nofollow"
-            onclick={`window.gtag&&gtag('event','shopify_app_install',{cta_location:'compare_${c.slug}'})`}
+            onclick={`window.gtag&&gtag('event','shopify_app_install',{event_label:'compare_${c.slug}'})`}
             class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
           >
             install on Shopify
@@ -187,7 +187,7 @@ function cell(value: string): { kind: "yes" | "no" | "text"; text: string } {
           href={SHOPIFY_INSTALL}
           target="_blank"
           rel="external noopener nofollow"
-          onclick={`window.gtag&&gtag('event','shopify_app_install',{cta_location:'compare_${c.slug}_mid'})`}
+          onclick={`window.gtag&&gtag('event','shopify_app_install',{event_label:'compare_${c.slug}_mid'})`}
           class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
         >
           start free on Shopify
@@ -269,7 +269,7 @@ function cell(value: string): { kind: "yes" | "no" | "text"; text: string } {
           href={SHOPIFY_INSTALL}
           target="_blank"
           rel="external noopener nofollow"
-          onclick={`window.gtag&&gtag('event','shopify_app_install',{cta_location:'compare_${c.slug}_bottom'})`}
+          onclick={`window.gtag&&gtag('event','shopify_app_install',{event_label:'compare_${c.slug}_bottom'})`}
           class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
         >
           install on Shopify
@@ -278,7 +278,7 @@ function cell(value: string): { kind: "yes" | "no" | "text"; text: string } {
           href={WOO_PLUGIN}
           target="_blank"
           rel="external noopener nofollow"
-          onclick={`window.gtag&&gtag('event','woocommerce_plugin_click',{cta_location:'compare_${c.slug}_bottom'})`}
+          onclick={`window.gtag&&gtag('event','woocommerce_plugin_click',{event_label:'compare_${c.slug}_bottom'})`}
           class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
         >
           start free on WooCommerce

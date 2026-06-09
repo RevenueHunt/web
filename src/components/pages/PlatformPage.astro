@@ -134,7 +134,7 @@ function rel(c: { external?: boolean }) {
               href={config.primary.href}
               {...rel(config.primary)}
               onclick={config.primary.gtagEvent
-                ? `window.gtag&&gtag('event','${config.primary.gtagEvent}',{cta_location:'${config.platform}_hero'})`
+                ? `window.gtag&&gtag('event','${config.primary.gtagEvent}',{event_label:'${config.platform}_hero'})`
                 : undefined}
               class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
             >
@@ -332,7 +332,7 @@ function rel(c: { external?: boolean }) {
           href={SHOPIFY_INSTALL}
           target="_blank"
           rel="external noopener nofollow"
-          onclick={`window.gtag&&gtag('event','shopify_app_install',{cta_location:'${config.platform}_bottom'})`}
+          onclick={`window.gtag&&gtag('event','shopify_app_install',{event_label:'${config.platform}_bottom'})`}
           class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
         >
           install on Shopify
@@ -341,7 +341,7 @@ function rel(c: { external?: boolean }) {
           href={WOOCOMMERCE_DOWNLOAD}
           target="_blank"
           rel="external noopener nofollow"
-          onclick={`window.gtag&&gtag('event','download_woocommerce_plugin',{cta_location:'${config.platform}_bottom'})`}
+          onclick={`window.gtag&&gtag('event','download_woocommerce_plugin',{event_label:'${config.platform}_bottom'})`}
           class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
         >
           get for WooCommerce

@@ -13,8 +13,6 @@ import {
   PRICING,
   GEOGRAPHY,
   QUIZ_LANE,
-  METHODOLOGY,
-  FAQ,
 } from "../../../lib/app-economy";
 
 const pageUrl = new URL(`/fi/${REPORT.slug}/`, SITE.site_url).href;
@@ -29,6 +27,47 @@ const publishedLabel = new Date(REPORT.datePublished).toLocaleDateString("fi-FI"
 const title = "Shopifyn sovellustalouden tila";
 const description =
   "Shopify App Storessa on 22 546 aktiivista sovellusta, eivätkä lähes mitkään niistä pääse mihinkään. Datapohjainen raportti kasvusta, arvosteluista, tulojen keskittymisestä, hinnoittelusta ja siitä, kuka ne tekee - pohjautuen tilannekuvaan jokaisesta aktiivisesta sovelluksesta.";
+
+// Methodology + FAQ, translated. The lead clause of each methodology note is
+// bolded inline (the English source bolded it via string replace, which cannot
+// match translated text). Defined before jsonLd so faqPage(FAQ) can use it.
+const METHODOLOGY = [
+  "<strong>Lähde:</strong> tilannekuva julkisesta Shopify App Storesta, 22 546 aktiivista sovelluslistausta, otettu kesäkuussa 2026. Jokainen kenttä on peräisin julkisesta listauksesta, ei Shopifyn sisäisestä datasta eikä minkään kauppiaan tililtä.",
+  "<strong>Tulot on arvioitu, ei mitattu.</strong> Ne on mallinnettu kunkin sovelluksen julkaistuista hinnoittelutasoista yhdessä arvostelu- ja asennussignaalien kanssa. Käsittele tuloluvut suuntaa antavana mallina siitä, kuinka keskittyneitä ansiot ovat, älä laskutusdatana. Ne on merkitty sanalla \"arvioitu\" kaikkialla, missä ne esiintyvät.",
+  "<strong>Kasvu pohjautuu kunkin listauksen julkaistuun julkaisupäivään.</strong> Lähteeseen kasaantui noin 2 800 julkaisupäivää toukokuussa 2026, joten käyrä luetaan aktiivisten sovellusten kumulatiivisena määränä vuoden mukaan (päätepiste on todellinen nykyinen kokonaismäärä), ja luku \"6 000+ viimeisen 12 kuukauden aikana\" karsii tuon yhden kuukauden vääristymän.",
+  "<strong>Arvostelut ovat vetovoiman mittari, eivät täydellinen sellainen:</strong> loistava sovellus voi olla uusi, ja arvostelumäärät laahaavat todellisen käytön perässä. Käytämme niitä, koska ne ovat selkein julkinen, vertailukelpoinen signaali todellisesta kauppiaspohjasta kaikkien 22 546 sovelluksen joukossa.",
+  "App Storen kategoriat ovat ominaisuustunnisteita, joita sovellus voi itse lisätä itselleen, ja monella sovelluksella on niitä useita tai ei yhtäkään, joten raportoimme ne leikkaukset, jotka ovat yksiselitteisiä (arvostelut, hinnoittelu, julkaisupäivä, kehittäjän maa) ja vältämme tunnistetaksonomian ylitulkintaa.",
+];
+
+const FAQ = [
+  {
+    question: "Kuinka monta sovellusta Shopify App Storessa on?",
+    answer:
+      "22 546 aktiivista sovellusta tässä kesäkuun 2026 tilannekuvassa. Store on kasvanut noin 10-kertaiseksi vuodesta 2020 ja kasvanut yli 6 000 sovelluksella pelkästään viimeisen 12 kuukauden aikana, noin 1 jokaisesta 4:stä kaikesta tällä hetkellä aktiivisesta. Tekoälyavusteinen kehitys muutti aiemmin puolen vuoden rakennusurakan viikonlopun työksi.",
+  },
+  {
+    question: "Miksi useimmat Shopify-sovellukset epäonnistuvat?",
+    answer:
+      "Rakentaminen ei ole enää pullonkaula, joten store tulvii sovelluksia, jotka eivät koskaan löydä kauppiaspohjaa. 51 %:lla on nolla arvostelua ja 74 %:lla alle viisi. Harvinaista on jakelu ja luottamus: tukikysymyksiin vastaaminen, arvostelujen ansaitseminen kauppias kerrallaan, paikalla oleminen vuosikausia. Sitä osaa tekoäly ei voi tehdä puolestasi.",
+  },
+  {
+    question: "Kuinka paljon Shopify-sovellukset ansaitsevat?",
+    answer:
+      "Ansiot ovat äärimmäisen keskittyneitä. Arviomme mukaan sovellusten ylin 1 % (225 niistä) vie noin 72 % kaikista sovellustuloista, ja pelkästään 10 parasta vie lähes kolmanneksen. Vain noin 36 % sovelluksista näyttää ansaitsevan yhtään mitään. Tulot on tässä arvioitu julkisesta hinnoittelusta ja käyttösignaaleista, ei laskutusdatasta.",
+  },
+  {
+    question: "Ovatko useimmat Shopify-sovellukset ilmaisia?",
+    answer:
+      "Käytännössä kyllä. 46,9 % on ilmaisia ja toiset 48,6 % aloittavat ilmaisella kokeilulla; vain 4,5 % veloittaa rahaa etukäteen. Lähes 45 % tarjoaa pysyvästi ilmaisen tason. Shopify App Storessa ilmainen sisäänpääsy ei ole kasvutaktiikka, vaan perusodotus.",
+  },
+  {
+    question: "Mistä voin nähdä taustalla olevan datan?",
+    answer:
+      "Tämä raportti on täyden datan kumppani LinkedIn-kenttämuistiinpanollemme sovellustaloudesta. Luvut ovat peräisin tilannekuvasta, jota ylläpidämme jokaisesta aktiivisesta Shopify-sovelluksesta: julkaisupäivät, arvostelut, hinnoittelu, Built for Shopify -merkki ja kehittäjän maa. Jos rakennat Shopifyn päälle ja haluat tietyn leikkauksen, ota yhteyttä.",
+    answerHtml:
+      "Tämä raportti on täyden datan kumppani LinkedIn-kenttämuistiinpanollemme sovellustaloudesta. Luvut ovat peräisin tilannekuvasta, jota ylläpidämme jokaisesta aktiivisesta Shopify-sovelluksesta: julkaisupäivät, arvostelut, hinnoittelu, Built for Shopify -merkki ja kehittäjän maa. Jos rakennat Shopifyn päälle ja haluat tietyn leikkauksen, <a href=\"/fi/contact/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">ota yhteyttä</a>.",
+  },
+];
 
 const jsonLd = [
   organization(),
@@ -94,16 +133,8 @@ const quizParas = [
   `Emme päässeet huipulle koodaamalla. <strong>Arvostelut ovat jäännös operatiivisesta arpikudoksesta</strong>, joka on niiden takana: kuusi vuotta tukikysymyksiin vastaamista, puhelimeen tarttumista kauppiaiden kanssa, jotka eivät koskaan maksaisi, ja luottamuksen ansaitsemista kauppa kerrallaan. Octane AI ja Quiz Kit tekivät saman kovan työn vuosien ajan, <strong>ja kunnioitamme heitä siitä</strong>. Kunniamaininta Lanternille ja Quizellille, joilla molemmilla on hieman yli 120 arvostelua.`,
 ];
 
-// Methodology stays in English (shared data module), with the lead phrase of each note bolded.
-const METHOD_BOLD = [
-  "Source: ",
-  "Revenue is estimated, not measured.",
-  "Growth uses each listing's published launch date. ",
-  "Reviews are a proxy for traction",
-];
-const methodologyHtml = METHODOLOGY.map((m) =>
-  METHOD_BOLD.reduce((acc, lead) => acc.replace(lead, `<strong>${lead}</strong>`), m),
-);
+// Methodology bullets carry their own inline <strong>; render as-is.
+const methodologyHtml = METHODOLOGY;
 ---
 
 <Base
@@ -212,7 +243,11 @@ const methodologyHtml = METHODOLOGY.map((m) =>
             <p class="mt-1 text-slate-700">on alle viisi arvostelua</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
-            <p class="text-3xl font-bold text-[#16161D]">{REVIEWS.avgRating}</p>
+            <p class="font-bold text-[#16161D]"><span class="text-3xl">{REVIEWS.avgReviews}</span> <span class="text-sm font-medium text-slate-500">arvostelua</span></p>
+            <p class="mt-1 text-slate-700">keskimäärin niissä sovelluksissa, joilla on arvosteluja</p>
+          </div>
+          <div class="rounded-xl border border-slate-200 p-6">
+            <p class="font-bold text-[#16161D]"><span class="text-amber-400">★</span> <span class="text-3xl">{REVIEWS.avgRating}</span> <span class="text-sm font-medium text-slate-500">tähteä</span></p>
             <p class="mt-1 text-slate-700">keskiarvosana niiden {REVIEWS.ratedCount} sovelluksen joukossa, joilla on sellainen</p>
           </div>
         </div>
@@ -397,7 +432,7 @@ const methodologyHtml = METHODOLOGY.map((m) =>
 
 <script>
   import Chart from "chart.js/auto";
-  import { GROWTH, REVIEWS, REVENUE, PRICING, GEOGRAPHY, COLORS } from "../../../lib/app-economy";
+  import { GROWTH, REVIEWS, REVENUE, PRICING, GEOGRAPHY, COLORS, CHART_LABELS } from "../../../lib/app-economy";
 
   Chart.defaults.font.family =
     "Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif";
@@ -407,6 +442,7 @@ const methodologyHtml = METHODOLOGY.map((m) =>
   const el = (id: string) => document.getElementById(id) as HTMLCanvasElement | null;
   const grid = "#eef0f2";
   const kfmt = (v: number) => (v >= 1000 ? v / 1000 + "K" : "" + v);
+  const L = CHART_LABELS[document.documentElement.lang] ?? CHART_LABELS.en;
 
   const growth = el("c-growth");
   if (growth)
@@ -456,7 +492,7 @@ const methodologyHtml = METHODOLOGY.map((m) =>
   if (reviews)
     new Chart(reviews, {
       type: "doughnut",
-      data: { labels: REVIEWS.labels, datasets: [{ data: REVIEWS.values, backgroundColor: REVIEWS.colors, borderWidth: 0 }] },
+      data: { labels: L.reviews, datasets: [{ data: REVIEWS.values, backgroundColor: REVIEWS.colors, borderWidth: 0 }] },
       options: donutOpts("%"),
     });
 
@@ -464,7 +500,7 @@ const methodologyHtml = METHODOLOGY.map((m) =>
   if (revDonut)
     new Chart(revDonut, {
       type: "doughnut",
-      data: { labels: REVENUE.donut.labels, datasets: [{ data: REVENUE.donut.values, backgroundColor: REVENUE.donut.colors, borderWidth: 0 }] },
+      data: { labels: L.revenueDonut, datasets: [{ data: REVENUE.donut.values, backgroundColor: REVENUE.donut.colors, borderWidth: 0 }] },
       options: donutOpts("%"),
     });
 
@@ -472,7 +508,7 @@ const methodologyHtml = METHODOLOGY.map((m) =>
   if (revBars)
     new Chart(revBars, {
       type: "bar",
-      data: { labels: REVENUE.bars.labels, datasets: [{ data: REVENUE.bars.values, backgroundColor: COLORS.primary, borderRadius: 4, barThickness: 26 }] },
+      data: { labels: L.revenueBars, datasets: [{ data: REVENUE.bars.values, backgroundColor: COLORS.primary, borderRadius: 4, barThickness: 26 }] },
       options: {
         indexAxis: "y",
         responsive: true,
@@ -486,7 +522,7 @@ const methodologyHtml = METHODOLOGY.map((m) =>
   if (pricing)
     new Chart(pricing, {
       type: "doughnut",
-      data: { labels: PRICING.labels, datasets: [{ data: PRICING.values, backgroundColor: PRICING.colors, borderWidth: 0 }] },
+      data: { labels: L.pricing, datasets: [{ data: PRICING.values, backgroundColor: PRICING.colors, borderWidth: 0 }] },
       options: donutOpts("%"),
     });
 

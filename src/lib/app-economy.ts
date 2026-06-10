@@ -73,10 +73,11 @@ export const GROWTH = {
 
 /** Review distribution across all 22,546 apps (the "traction" donut). */
 export const REVIEWS = {
-  labels: ["Zero reviews", "One to five", "More than five"],
-  values: [51.0, 25.5, 23.5],
-  colors: [COLORS.gray, COLORS.secondary, COLORS.primary],
+  labels: ["0", "1–10", "11–100", "101–1,000", "1,000+"],
+  values: [51.0, 31.2, 12.5, 4.7, 0.7],
+  colors: [COLORS.gray, "#a9e2ff", COLORS.secondary, "#579cff", COLORS.primary],
   avgRating: 4.43,
+  avgReviews: 77,
   ratedCount: "11,040",
   caption:
     "Half the Shopify App Store has never earned a single review. Three in four apps have fewer than five. A review is the clearest public proxy for a real, retained merchant, and most apps never get one.",
@@ -176,3 +177,99 @@ export const FAQ: FaqItem[] = [
       "This report is the full-data companion to our LinkedIn field note on the app economy. The figures come from a snapshot we keep of every live Shopify app: launch dates, reviews, pricing, the Built for Shopify badge, and developer country. If you build on Shopify and want a specific cut, <a href=\"/contact/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">get in touch</a>.",
   },
 ];
+
+/**
+ * Translated Chart.js legend/segment labels, keyed by locale. The chart script
+ * reads `document.documentElement.lang` and picks the matching set (falling back
+ * to `en`). Numbers/values stay in the language-neutral exports above; only the
+ * human-readable category labels are localized. Country names (GEOGRAPHY.labels)
+ * stay as-is. Order matches REVIEWS.labels / REVENUE.donut.labels /
+ * REVENUE.bars.labels / PRICING.labels.
+ */
+export interface ChartLabels {
+  reviews: [string, string, string];
+  revenueDonut: [string, string];
+  revenueBars: [string, string, string];
+  pricing: [string, string, string];
+}
+
+export const CHART_LABELS: Record<string, ChartLabels> = {
+  en: {
+    reviews: ["Zero reviews", "One to five", "More than five"],
+    revenueDonut: ["Top 1% of apps", "The other 99%"],
+    revenueBars: ["Top 10 apps", "Top 100 apps", "Top 1% (225 apps)"],
+    pricing: ["Free", "Free trial", "Paid up front"],
+  },
+  es: {
+    reviews: ["Sin reseñas", "De una a cinco", "Más de cinco"],
+    revenueDonut: ["1% superior de apps", "El otro 99%"],
+    revenueBars: ["Top 10 apps", "Top 100 apps", "1% superior (225 apps)"],
+    pricing: ["Gratis", "Prueba gratis", "De pago por adelantado"],
+  },
+  de: {
+    reviews: ["Keine Bewertungen", "Eine bis fünf", "Mehr als fünf"],
+    revenueDonut: ["Top 1% der Apps", "Die anderen 99%"],
+    revenueBars: ["Top 10 Apps", "Top 100 Apps", "Top 1% (225 Apps)"],
+    pricing: ["Kostenlos", "Kostenlose Testversion", "Vorab kostenpflichtig"],
+  },
+  fr: {
+    reviews: ["Aucun avis", "Un à cinq", "Plus de cinq"],
+    revenueDonut: ["Top 1% des apps", "Les 99% restants"],
+    revenueBars: ["Top 10 apps", "Top 100 apps", "Top 1% (225 apps)"],
+    pricing: ["Gratuit", "Essai gratuit", "Payant d'avance"],
+  },
+  it: {
+    reviews: ["Nessuna recensione", "Da una a cinque", "Più di cinque"],
+    revenueDonut: ["Top 1% delle app", "L'altro 99%"],
+    revenueBars: ["Top 10 app", "Top 100 app", "Top 1% (225 app)"],
+    pricing: ["Gratis", "Prova gratuita", "A pagamento in anticipo"],
+  },
+  nl: {
+    reviews: ["Geen reviews", "Een tot vijf", "Meer dan vijf"],
+    revenueDonut: ["Top 1% van apps", "De andere 99%"],
+    revenueBars: ["Top 10 apps", "Top 100 apps", "Top 1% (225 apps)"],
+    pricing: ["Gratis", "Gratis proefperiode", "Vooraf betaald"],
+  },
+  sv: {
+    reviews: ["Inga recensioner", "En till fem", "Fler än fem"],
+    revenueDonut: ["Topp 1% av apparna", "De övriga 99%"],
+    revenueBars: ["Topp 10 appar", "Topp 100 appar", "Topp 1% (225 appar)"],
+    pricing: ["Gratis", "Gratis provperiod", "Betalning i förskott"],
+  },
+  fi: {
+    reviews: ["Ei arvosteluja", "Yhdestä viiteen", "Yli viisi"],
+    revenueDonut: ["Top 1% sovelluksista", "Loput 99%"],
+    revenueBars: ["Top 10 sovellusta", "Top 100 sovellusta", "Top 1% (225 sovellusta)"],
+    pricing: ["Ilmainen", "Ilmainen kokeilu", "Maksullinen etukäteen"],
+  },
+  pl: {
+    reviews: ["Brak opinii", "Od jednej do pięciu", "Więcej niż pięć"],
+    revenueDonut: ["1% najlepszych aplikacji", "Pozostałe 99%"],
+    revenueBars: ["Top 10 aplikacji", "Top 100 aplikacji", "Top 1% (225 aplikacji)"],
+    pricing: ["Za darmo", "Bezpłatny okres próbny", "Płatne z góry"],
+  },
+  cs: {
+    reviews: ["Žádné recenze", "Jedna až pět", "Více než pět"],
+    revenueDonut: ["1% nejlepších aplikací", "Zbylých 99%"],
+    revenueBars: ["Top 10 aplikací", "Top 100 aplikací", "Top 1% (225 aplikací)"],
+    pricing: ["Zdarma", "Zkušební verze zdarma", "Placené předem"],
+  },
+  pt: {
+    reviews: ["Sem avaliações", "De uma a cinco", "Mais de cinco"],
+    revenueDonut: ["1% no topo das apps", "Os outros 99%"],
+    revenueBars: ["Top 10 apps", "Top 100 apps", "Top 1% (225 apps)"],
+    pricing: ["Grátis", "Teste grátis", "Pago antecipadamente"],
+  },
+  ar: {
+    reviews: ["بلا مراجعات", "من واحدة إلى خمس", "أكثر من خمس"],
+    revenueDonut: ["أعلى 1% من التطبيقات", "الـ99% الأخرى"],
+    revenueBars: ["أفضل 10 تطبيقات", "أفضل 100 تطبيق", "أعلى 1% (225 تطبيقًا)"],
+    pricing: ["مجاني", "تجربة مجانية", "مدفوع مقدمًا"],
+  },
+  he: {
+    reviews: ["ללא ביקורות", "אחת עד חמש", "יותר מחמש"],
+    revenueDonut: ["1% העליון של האפליקציות", "99% הנותרים"],
+    revenueBars: ["10 האפליקציות המובילות", "100 האפליקציות המובילות", "1% העליון (225 אפליקציות)"],
+    pricing: ["חינם", "ניסיון חינם", "בתשלום מראש"],
+  },
+};

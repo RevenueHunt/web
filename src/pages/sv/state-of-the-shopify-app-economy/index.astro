@@ -13,8 +13,6 @@ import {
   PRICING,
   GEOGRAPHY,
   QUIZ_LANE,
-  METHODOLOGY,
-  FAQ,
 } from "../../../lib/app-economy";
 
 const pageUrl = new URL(`/sv/${REPORT.slug}/`, SITE.site_url).href;
@@ -29,6 +27,48 @@ const publishedLabel = new Date(REPORT.datePublished).toLocaleDateString("sv-SE"
 const title = "Läget för Shopifys app-ekonomi";
 const description =
   "Det finns 22 546 aktiva appar i Shopify App Store, och nästan ingen av dem kommer någonstans. En datarapport om tillväxt, recensioner, intäktskoncentration, priser och vilka som bygger dem, baserad på en ögonblicksbild av varenda aktiv app.";
+
+// Metodik + Vanliga frågor, översatta. Inledningssatsen i varje metodiknotis
+// är fetstilad inline (den engelska källan fetstilade den via en stränger-
+// sättning, som inte kan matcha översatt text). Definieras före jsonLd så att
+// faqPage(FAQ) kan använda den.
+const METHODOLOGY = [
+  "<strong>Källa:</strong> en ögonblicksbild av den offentliga Shopify App Store, 22 546 aktiva appannonser, tagen i juni 2026. Varje fält kommer från den offentliga annonseringen, inte från Shopifys interna data eller någon handlares konto.",
+  "<strong>Intäkterna är uppskattade, inte uppmätta.</strong> De är modellerade utifrån varje apps publicerade prisnivåer tillsammans med recensions- och installationssignaler. Behandla intäktssiffrorna som en riktningsgivande modell över hur koncentrerade intäkterna är, inte som faktureringsdata. De är märkta som \"uppskattade\" överallt där de förekommer.",
+  "<strong>Tillväxten utgår från varje annonserings publicerade lanseringsdatum.</strong> Källan samlade ungefär 2 800 lanseringsdatum i maj 2026, så kurvan läses som ackumulerade aktiva appar per år (slutpunkten är den verkliga aktuella totalen), och siffran \"6 000+ under de senaste 12 månaderna\" rensar bort den enskilda månadens artefakt.",
+  "<strong>Recensioner är en proxy för genomslag</strong>, inte en perfekt sådan: en bra app kan vara ny, och antalet recensioner släpar efter den verkliga användningen. Vi använder dem eftersom de är den tydligaste offentliga, jämförbara signalen på en verklig handlarbas över 22 546 appar.",
+  "Kategorier i App Store är funktionstaggar som en app kan tillämpa på sig själv, och många appar bär flera eller inga, så vi rapporterar de snitt som är entydiga (recensioner, priser, lanseringsdatum, utvecklarland) och undviker att övertolka taggtaxonomin.",
+];
+
+const FAQ = [
+  {
+    question: "Hur många appar finns i Shopify App Store?",
+    answer:
+      "22 546 aktiva appar i den här ögonblicksbilden från juni 2026. Butiken har vuxit ungefär tiodubbelt sedan 2020 och lagt till över 6 000 appar bara under de senaste 12 månaderna, ungefär 1 av 4 av allt som är aktivt i dag. AI-assisterad utveckling förvandlade det som förut var ett halvårsbygge till en helg.",
+  },
+  {
+    question: "Varför misslyckas de flesta Shopify-appar?",
+    answer:
+      "Att bygga är inte längre begränsningen, så butiken översvämmas av appar som aldrig hittar en handlarbas. 51 % har noll recensioner och 74 % har färre än fem. Det som är sällsynt är distribution och förtroende: att svara på support, att förtjäna recensioner en handlare i taget, att finnas där i åratal. Det är den delen AI inte kan göra åt dig.",
+  },
+  {
+    question: "Hur mycket tjänar Shopify-appar?",
+    answer:
+      "Intäkterna är extremt koncentrerade. Enligt vår uppskattning tar den översta 1 % av apparna (225 av dem) ungefär 72 % av alla appintäkter, och bara de 10 främsta tar nästan en tredjedel. Bara omkring 36 % av apparna verkar tjäna något alls. Intäkterna här är uppskattade utifrån offentliga priser och användningssignaler, inte faktureringsdata.",
+  },
+  {
+    question: "Är de flesta Shopify-appar gratis?",
+    answer:
+      "I praktiken, ja. 46,9 % är gratis och ytterligare 48,6 % inleder med en gratis provperiod; bara 4,5 % tar betalt i förväg. Nästan 45 % erbjuder en permanent gratisnivå. I Shopify App Store är en gratis ingångspunkt inte en tillväxttaktik, det är grundförväntningen.",
+  },
+  {
+    question: "Var kan jag se den underliggande datan?",
+    answer:
+      "Den här rapporten är den datafullständiga följeslagaren till vår fältanteckning på LinkedIn om app-ekonomin. Siffrorna kommer från en ögonblicksbild vi håller av varenda aktiv Shopify-app: lanseringsdatum, recensioner, priser, märket Built for Shopify och utvecklarland. Om du bygger på Shopify och vill ha ett specifikt snitt, hör av dig.",
+    answerHtml:
+      "Den här rapporten är den datafullständiga följeslagaren till vår fältanteckning på LinkedIn om app-ekonomin. Siffrorna kommer från en ögonblicksbild vi håller av varenda aktiv Shopify-app: lanseringsdatum, recensioner, priser, märket Built for Shopify och utvecklarland. Om du bygger på Shopify och vill ha ett specifikt snitt, <a href=\"/sv/contact/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">hör av dig</a>.",
+  },
+];
 
 const jsonLd = [
   organization(),
@@ -94,16 +134,8 @@ const quizParas = [
   `Vi nådde toppen inte genom kod. <strong>Recensioner är resterna av den operativa ärrvävnad</strong> som ligger bakom: sex år av att svara på support, att lyfta luren med handlare som aldrig skulle betala och att förtjäna förtroende butik för butik. Octane AI och Quiz Kit gjorde samma hårda jobb i åratal, <strong>och det respekterar vi dem för</strong>. Ett hedersomnämnande till Lantern och Quizell, båda med drygt 120 recensioner.`,
 ];
 
-// Methodology stays in English (shared data module), with the lead phrase of each note bolded.
-const METHOD_BOLD = [
-  "Source: ",
-  "Revenue is estimated, not measured.",
-  "Growth uses each listing's published launch date. ",
-  "Reviews are a proxy for traction",
-];
-const methodologyHtml = METHODOLOGY.map((m) =>
-  METHOD_BOLD.reduce((acc, lead) => acc.replace(lead, `<strong>${lead}</strong>`), m),
-);
+// Methodology bullets carry their own inline <strong>; render as-is.
+const methodologyHtml = METHODOLOGY;
 ---
 
 <Base
@@ -212,7 +244,11 @@ const methodologyHtml = METHODOLOGY.map((m) =>
             <p class="mt-1 text-slate-700">har färre än fem recensioner</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
-            <p class="text-3xl font-bold text-[#16161D]">{REVIEWS.avgRating}</p>
+            <p class="font-bold text-[#16161D]"><span class="text-3xl">{REVIEWS.avgReviews}</span> <span class="text-sm font-medium text-slate-500">recensioner</span></p>
+            <p class="mt-1 text-slate-700">i snitt, bland de appar som har en</p>
+          </div>
+          <div class="rounded-xl border border-slate-200 p-6">
+            <p class="font-bold text-[#16161D]"><span class="text-amber-400">★</span> <span class="text-3xl">{REVIEWS.avgRating}</span> <span class="text-sm font-medium text-slate-500">stjärnor</span></p>
             <p class="mt-1 text-slate-700">snittbetyg, bland de {REVIEWS.ratedCount} appar som har ett</p>
           </div>
         </div>
@@ -397,7 +433,7 @@ const methodologyHtml = METHODOLOGY.map((m) =>
 
 <script>
   import Chart from "chart.js/auto";
-  import { GROWTH, REVIEWS, REVENUE, PRICING, GEOGRAPHY, COLORS } from "../../../lib/app-economy";
+  import { GROWTH, REVIEWS, REVENUE, PRICING, GEOGRAPHY, COLORS, CHART_LABELS } from "../../../lib/app-economy";
 
   Chart.defaults.font.family =
     "Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif";
@@ -407,6 +443,7 @@ const methodologyHtml = METHODOLOGY.map((m) =>
   const el = (id: string) => document.getElementById(id) as HTMLCanvasElement | null;
   const grid = "#eef0f2";
   const kfmt = (v: number) => (v >= 1000 ? v / 1000 + "K" : "" + v);
+  const L = CHART_LABELS[document.documentElement.lang] ?? CHART_LABELS.en;
 
   const growth = el("c-growth");
   if (growth)
@@ -456,7 +493,7 @@ const methodologyHtml = METHODOLOGY.map((m) =>
   if (reviews)
     new Chart(reviews, {
       type: "doughnut",
-      data: { labels: REVIEWS.labels, datasets: [{ data: REVIEWS.values, backgroundColor: REVIEWS.colors, borderWidth: 0 }] },
+      data: { labels: L.reviews, datasets: [{ data: REVIEWS.values, backgroundColor: REVIEWS.colors, borderWidth: 0 }] },
       options: donutOpts("%"),
     });
 
@@ -464,7 +501,7 @@ const methodologyHtml = METHODOLOGY.map((m) =>
   if (revDonut)
     new Chart(revDonut, {
       type: "doughnut",
-      data: { labels: REVENUE.donut.labels, datasets: [{ data: REVENUE.donut.values, backgroundColor: REVENUE.donut.colors, borderWidth: 0 }] },
+      data: { labels: L.revenueDonut, datasets: [{ data: REVENUE.donut.values, backgroundColor: REVENUE.donut.colors, borderWidth: 0 }] },
       options: donutOpts("%"),
     });
 
@@ -472,7 +509,7 @@ const methodologyHtml = METHODOLOGY.map((m) =>
   if (revBars)
     new Chart(revBars, {
       type: "bar",
-      data: { labels: REVENUE.bars.labels, datasets: [{ data: REVENUE.bars.values, backgroundColor: COLORS.primary, borderRadius: 4, barThickness: 26 }] },
+      data: { labels: L.revenueBars, datasets: [{ data: REVENUE.bars.values, backgroundColor: COLORS.primary, borderRadius: 4, barThickness: 26 }] },
       options: {
         indexAxis: "y",
         responsive: true,
@@ -486,7 +523,7 @@ const methodologyHtml = METHODOLOGY.map((m) =>
   if (pricing)
     new Chart(pricing, {
       type: "doughnut",
-      data: { labels: PRICING.labels, datasets: [{ data: PRICING.values, backgroundColor: PRICING.colors, borderWidth: 0 }] },
+      data: { labels: L.pricing, datasets: [{ data: PRICING.values, backgroundColor: PRICING.colors, borderWidth: 0 }] },
       options: donutOpts("%"),
     });
 

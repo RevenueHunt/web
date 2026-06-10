@@ -13,8 +13,6 @@ import {
   PRICING,
   GEOGRAPHY,
   QUIZ_LANE,
-  METHODOLOGY,
-  FAQ,
 } from "../../../lib/app-economy";
 
 const pageUrl = new URL(`/it/${REPORT.slug}/`, SITE.site_url).href;
@@ -29,6 +27,46 @@ const publishedLabel = new Date(REPORT.datePublished).toLocaleDateString("it-IT"
 const title = "Lo stato dell'economia delle app di Shopify";
 const description =
   "Ci sono 22.546 app attive sullo Shopify App Store e quasi nessuna arriva da qualche parte. Un report di dati su crescita, recensioni, concentrazione dei ricavi, prezzi e chi le crea, a partire da un'istantanea di ogni app attiva.";
+
+// Metodologia + FAQ, tradotte. La frase iniziale di ogni nota di metodologia
+// è in grassetto inline. Definite prima di jsonLd perché faqPage(FAQ) le usi.
+const METHODOLOGY = [
+  "<strong>Fonte:</strong> un'istantanea dello Shopify App Store pubblico, 22.546 schede di app attive, scattata a giugno 2026. Ogni campo proviene dalla scheda pubblica, non dai dati interni di Shopify né dall'account di alcun merchant.",
+  "<strong>I ricavi sono stimati, non misurati.</strong> Sono modellati a partire dai piani di prezzo pubblicati di ogni app insieme ai segnali di recensioni e installazioni. Considera le cifre dei ricavi come un modello direzionale di quanto siano concentrati i guadagni, non come dati di fatturazione. Sono etichettate come \"stimate\" ovunque compaiano.",
+  "<strong>La crescita usa la data di lancio pubblicata di ogni scheda.</strong> La fonte ha concentrato circa 2.800 date di lancio a maggio 2026, quindi la curva è letta come app attive cumulate per anno (il punto finale è il vero totale attuale), e la cifra dei \"oltre 6.000 negli ultimi 12 mesi\" elimina quell'artefatto di un singolo mese.",
+  "<strong>Le recensioni sono un'approssimazione della trazione</strong>, non perfetta: un'ottima app può essere nuova, e il numero di recensioni è in ritardo rispetto all'utilizzo reale. Le usiamo perché sono il segnale pubblico e comparabile più chiaro di una base merchant reale su 22.546 app.",
+  "Le categorie nell'App Store sono tag di funzionalità che un'app può autoassegnarsi, e molte app ne portano diverse o nessuna, quindi riportiamo i tagli che non sono ambigui (recensioni, prezzi, data di lancio, paese dello sviluppatore) ed evitiamo di sovrainterpretare la tassonomia dei tag.",
+];
+
+const FAQ = [
+  {
+    question: "Quante app ci sono sullo Shopify App Store?",
+    answer:
+      "22.546 app attive in questa istantanea di giugno 2026. Lo store è cresciuto di circa 10 volte dal 2020 e ha aggiunto oltre 6.000 app solo negli ultimi 12 mesi, circa 1 su 4 di tutto ciò che è attivo oggi. Lo sviluppo assistito dall'IA ha trasformato quella che una volta era una creazione di sei mesi in un weekend.",
+  },
+  {
+    question: "Perché la maggior parte delle app di Shopify fallisce?",
+    answer:
+      "Creare non è più il vincolo, quindi lo store si riempie di app che non trovano mai una base merchant. Il 51% non ha nessuna recensione e il 74% ne ha meno di cinque. La cosa rara è la distribuzione e la fiducia: rispondere al supporto, guadagnarsi recensioni un merchant alla volta, esserci per anni. È la parte che l'IA non può fare per te.",
+  },
+  {
+    question: "Quanto guadagnano le app di Shopify?",
+    answer:
+      "I guadagni sono estremamente concentrati. Secondo la nostra stima, l'1% in cima delle app (225 di esse) si prende circa il 72% di tutti i ricavi delle app, e le prime 10 da sole si prendono quasi un terzo. Solo circa il 36% delle app sembra guadagnare qualcosa. I ricavi qui sono stimati a partire dai prezzi pubblici e dai segnali di utilizzo, non da dati di fatturazione.",
+  },
+  {
+    question: "La maggior parte delle app di Shopify sono gratis?",
+    answer:
+      "Di fatto, sì. Il 46,9% è gratis e un altro 48,6% parte con una prova gratuita; solo il 4,5% fa pagare in anticipo. Quasi il 45% offre un piano gratis permanente. Sullo Shopify App Store un punto d'ingresso gratuito non è una tattica di crescita, è l'aspettativa di base.",
+  },
+  {
+    question: "Dove posso vedere i dati di base?",
+    answer:
+      "Questo report è il complemento ricco di dati della nostra nota sul campo su LinkedIn sull'economia delle app. Le cifre provengono da un'istantanea che teniamo di ogni app di Shopify attiva: date di lancio, recensioni, prezzi, il badge Built for Shopify e il paese dello sviluppatore. Se crei su Shopify e vuoi un taglio specifico, contattaci.",
+    answerHtml:
+      "Questo report è il complemento ricco di dati della nostra nota sul campo su LinkedIn sull'economia delle app. Le cifre provengono da un'istantanea che teniamo di ogni app di Shopify attiva: date di lancio, recensioni, prezzi, il badge Built for Shopify e il paese dello sviluppatore. Se crei su Shopify e vuoi un taglio specifico, <a href=\"/it/contact/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">contattaci</a>.",
+  },
+];
 
 const jsonLd = [
   organization(),
@@ -94,16 +132,8 @@ const quizParas = [
   `Non siamo arrivati in cima a forza di codice. <strong>Le recensioni sono il residuo del tessuto cicatriziale operativo</strong> che c'è dietro: sei anni a rispondere al supporto, a metterci al telefono con merchant che non avrebbero mai pagato e a guadagnarci la fiducia negozio per negozio. Octane AI e Quiz Kit hanno fatto lo stesso lavoro duro per anni, <strong>e glielo riconosciamo</strong>. Menzione d'onore per Lantern e Quizell, entrambe con poco più di 120 recensioni.`,
 ];
 
-// Methodology stays in English (shared data module), with the lead phrase of each note bolded.
-const METHOD_BOLD = [
-  "Source: ",
-  "Revenue is estimated, not measured.",
-  "Growth uses each listing's published launch date. ",
-  "Reviews are a proxy for traction",
-];
-const methodologyHtml = METHODOLOGY.map((m) =>
-  METHOD_BOLD.reduce((acc, lead) => acc.replace(lead, `<strong>${lead}</strong>`), m),
-);
+// Methodology bullets carry their own inline <strong>; render as-is.
+const methodologyHtml = METHODOLOGY;
 ---
 
 <Base
@@ -212,7 +242,11 @@ const methodologyHtml = METHODOLOGY.map((m) =>
             <p class="mt-1 text-slate-700">hanno meno di cinque recensioni</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
-            <p class="text-3xl font-bold text-[#16161D]">{REVIEWS.avgRating}</p>
+            <p class="font-bold text-[#16161D]"><span class="text-3xl">{REVIEWS.avgReviews}</span> <span class="text-sm font-medium text-slate-500">recensioni</span></p>
+            <p class="mt-1 text-slate-700">in media, tra le app che ne hanno una</p>
+          </div>
+          <div class="rounded-xl border border-slate-200 p-6">
+            <p class="font-bold text-[#16161D]"><span class="text-amber-400">★</span> <span class="text-3xl">{REVIEWS.avgRating}</span> <span class="text-sm font-medium text-slate-500">stelle</span></p>
             <p class="mt-1 text-slate-700">valutazione media, tra le {REVIEWS.ratedCount} app che ne hanno una</p>
           </div>
         </div>
@@ -397,7 +431,7 @@ const methodologyHtml = METHODOLOGY.map((m) =>
 
 <script>
   import Chart from "chart.js/auto";
-  import { GROWTH, REVIEWS, REVENUE, PRICING, GEOGRAPHY, COLORS } from "../../../lib/app-economy";
+  import { GROWTH, REVIEWS, REVENUE, PRICING, GEOGRAPHY, COLORS, CHART_LABELS } from "../../../lib/app-economy";
 
   Chart.defaults.font.family =
     "Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif";
@@ -407,6 +441,7 @@ const methodologyHtml = METHODOLOGY.map((m) =>
   const el = (id: string) => document.getElementById(id) as HTMLCanvasElement | null;
   const grid = "#eef0f2";
   const kfmt = (v: number) => (v >= 1000 ? v / 1000 + "K" : "" + v);
+  const L = CHART_LABELS[document.documentElement.lang] ?? CHART_LABELS.en;
 
   const growth = el("c-growth");
   if (growth)
@@ -456,7 +491,7 @@ const methodologyHtml = METHODOLOGY.map((m) =>
   if (reviews)
     new Chart(reviews, {
       type: "doughnut",
-      data: { labels: REVIEWS.labels, datasets: [{ data: REVIEWS.values, backgroundColor: REVIEWS.colors, borderWidth: 0 }] },
+      data: { labels: L.reviews, datasets: [{ data: REVIEWS.values, backgroundColor: REVIEWS.colors, borderWidth: 0 }] },
       options: donutOpts("%"),
     });
 
@@ -464,7 +499,7 @@ const methodologyHtml = METHODOLOGY.map((m) =>
   if (revDonut)
     new Chart(revDonut, {
       type: "doughnut",
-      data: { labels: REVENUE.donut.labels, datasets: [{ data: REVENUE.donut.values, backgroundColor: REVENUE.donut.colors, borderWidth: 0 }] },
+      data: { labels: L.revenueDonut, datasets: [{ data: REVENUE.donut.values, backgroundColor: REVENUE.donut.colors, borderWidth: 0 }] },
       options: donutOpts("%"),
     });
 
@@ -472,7 +507,7 @@ const methodologyHtml = METHODOLOGY.map((m) =>
   if (revBars)
     new Chart(revBars, {
       type: "bar",
-      data: { labels: REVENUE.bars.labels, datasets: [{ data: REVENUE.bars.values, backgroundColor: COLORS.primary, borderRadius: 4, barThickness: 26 }] },
+      data: { labels: L.revenueBars, datasets: [{ data: REVENUE.bars.values, backgroundColor: COLORS.primary, borderRadius: 4, barThickness: 26 }] },
       options: {
         indexAxis: "y",
         responsive: true,
@@ -486,7 +521,7 @@ const methodologyHtml = METHODOLOGY.map((m) =>
   if (pricing)
     new Chart(pricing, {
       type: "doughnut",
-      data: { labels: PRICING.labels, datasets: [{ data: PRICING.values, backgroundColor: PRICING.colors, borderWidth: 0 }] },
+      data: { labels: L.pricing, datasets: [{ data: PRICING.values, backgroundColor: PRICING.colors, borderWidth: 0 }] },
       options: donutOpts("%"),
     });
 

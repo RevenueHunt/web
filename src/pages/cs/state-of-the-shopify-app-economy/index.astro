@@ -13,8 +13,6 @@ import {
   PRICING,
   GEOGRAPHY,
   QUIZ_LANE,
-  METHODOLOGY,
-  FAQ,
 } from "../../../lib/app-economy";
 
 const pageUrl = new URL(`/cs/${REPORT.slug}/`, SITE.site_url).href;
@@ -29,6 +27,47 @@ const publishedLabel = new Date(REPORT.datePublished).toLocaleDateString("cs-CZ"
 const title = "Stav ekonomiky aplikací Shopify";
 const description =
   "Na Shopify App Store je 22 546 aktivních aplikací a téměř žádná se nikam nedostane. Datový report o růstu, recenzích, koncentraci příjmů, cenách a o tom, kdo je tvoří, na základě snímku každé aktivní aplikace.";
+
+// Metodika + FAQ, přeloženo. Úvodní věta každé poznámky metodiky je
+// zvýrazněna inline (anglický zdroj ji zvýrazňoval přes string replace, který
+// neumí zachytit přeložený text). Definováno před jsonLd, aby faqPage(FAQ) mohlo použít.
+const METHODOLOGY = [
+  "<strong>Zdroj:</strong> snímek veřejného Shopify App Store, 22 546 aktivních karet aplikací, pořízený v červnu 2026. Každá hodnota pochází z veřejné karty, ne z interních dat Shopify ani z účtu některého obchodníka.",
+  "<strong>Příjmy jsou odhadované, ne změřené.</strong> Jsou modelované ze zveřejněných cenových úrovní každé aplikace spolu se signály z recenzí a instalací. Ber čísla příjmů jako směrový model toho, jak koncentrované výdělky jsou, ne jako fakturační data. Všude, kde se objevují, jsou označeny jako „odhadované“.",
+  "<strong>Růst vychází ze zveřejněného data spuštění každé karty.</strong> Zdroj nakupil zhruba 2 800 dat spuštění do května 2026, takže se křivka čte jako kumulativní počet aktivních aplikací podle roku (koncový bod je skutečný aktuální součet) a údaj „6 000+ za posledních 12 měsíců“ tento artefakt jediného měsíce odstraňuje.",
+  "<strong>Recenze jsou ukazatel trakce</strong>, ne dokonalý: skvělá aplikace může být nová a počty recenzí zaostávají za skutečným používáním. Používáme je, protože jsou nejjasnějším veřejným a srovnatelným signálem skutečné základny obchodníků napříč 22 546 aplikacemi.",
+  "Kategorie na App Store jsou štítky funkcí, které si aplikace může sama přidělit, a mnoho aplikací jich nese několik nebo žádný, takže reportujeme jen jednoznačné řezy (recenze, ceny, datum spuštění, země vývojáře) a vyhýbáme se přílišnému vyčítání z taxonomie štítků.",
+];
+
+const FAQ = [
+  {
+    question: "Kolik aplikací je na Shopify App Store?",
+    answer:
+      "22 546 aktivních aplikací v tomto snímku z června 2026. Store od roku 2020 zhruba zdesetinásobil svou velikost a jen za posledních 12 měsíců přibylo přes 6 000 aplikací, tedy zhruba 1 ze 4 ze všeho, co je dnes aktivní. Vývoj s pomocí AI proměnil to, co dřív byla půlroční práce, ve víkend.",
+  },
+  {
+    question: "Proč většina aplikací Shopify selže?",
+    answer:
+      "Vytvořit aplikaci už není to omezení, takže se store zaplavuje aplikacemi, které nikdy nenajdou základnu obchodníků. 51 % nemá jedinou recenzi a 74 % jich má méně než pět. Vzácnost je distribuce a důvěra: odpovídat na podporu, získávat recenze obchod po obchodu, být tu roky. To je ta část, kterou za tebe AI neudělá.",
+  },
+  {
+    question: "Kolik aplikace Shopify vydělávají?",
+    answer:
+      "Výdělky jsou extrémně koncentrované. Podle našeho odhadu si horní 1 % aplikací (225 z nich) bere zhruba 72 % všech příjmů z aplikací a jen prvních 10 si bere téměř třetinu. Zdá se, že vůbec něco vydělává jen kolem 36 % aplikací. Příjmy tady jsou odhadnuté z veřejných cen a signálů o používání, ne z fakturačních dat.",
+  },
+  {
+    question: "Je většina aplikací Shopify zdarma?",
+    answer:
+      "Fakticky ano. 46,9 % je zdarma a dalších 48,6 % začíná zkušební verzí zdarma; jen 4,5 % si účtuje peníze předem. Téměř 45 % nabízí trvale bezplatný plán. Na Shopify App Store není bezplatný vstupní bod růstová taktika, je to základní očekávání.",
+  },
+  {
+    question: "Kde si můžu prohlédnout zdrojová data?",
+    answer:
+      "Tento report je datový doprovod naší poznámky z terénu na LinkedInu o ekonomice aplikací. Čísla pocházejí ze snímku, který udržujeme, každé aktivní aplikace Shopify: data spuštění, recenze, ceny, odznak Built for Shopify a země vývojáře. Pokud stavíš na Shopify a chceš konkrétní řez, ozvi se nám.",
+    answerHtml:
+      "Tento report je datový doprovod naší poznámky z terénu na LinkedInu o ekonomice aplikací. Čísla pocházejí ze snímku, který udržujeme, každé aktivní aplikace Shopify: data spuštění, recenze, ceny, odznak Built for Shopify a země vývojáře. Pokud stavíš na Shopify a chceš konkrétní řez, <a href=\"/cs/contact/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">ozvi se nám</a>.",
+  },
+];
 
 const jsonLd = [
   organization(),
@@ -94,16 +133,8 @@ const quizParas = [
   `Na špici jsme se nedostali díky kódu. <strong>Recenze jsou pozůstatkem provozní jizevnaté tkáně</strong>, která za nimi stojí: šest let odpovídání na podporu, telefonování s obchody, které by nikdy nezaplatily, a budování důvěry obchod po obchodu. Octane AI a Quiz Kit dělaly tu samou dřinu po léta <strong>a my je za to respektujeme</strong>. Čestná zmínka patří Lantern a Quizell, obě mají něco přes 120 recenzí.`,
 ];
 
-// Methodology stays in English (shared data module), with the lead phrase of each note bolded.
-const METHOD_BOLD = [
-  "Source: ",
-  "Revenue is estimated, not measured.",
-  "Growth uses each listing's published launch date. ",
-  "Reviews are a proxy for traction",
-];
-const methodologyHtml = METHODOLOGY.map((m) =>
-  METHOD_BOLD.reduce((acc, lead) => acc.replace(lead, `<strong>${lead}</strong>`), m),
-);
+// Methodology bullets carry their own inline <strong>; render as-is.
+const methodologyHtml = METHODOLOGY;
 ---
 
 <Base
@@ -212,7 +243,11 @@ const methodologyHtml = METHODOLOGY.map((m) =>
             <p class="mt-1 text-slate-700">má méně než pět recenzí</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
-            <p class="text-3xl font-bold text-[#16161D]">{REVIEWS.avgRating}</p>
+            <p class="font-bold text-[#16161D]"><span class="text-3xl">{REVIEWS.avgReviews}</span> <span class="text-sm font-medium text-slate-500">recenzí</span></p>
+            <p class="mt-1 text-slate-700">v průměru mezi aplikacemi, které nějaké mají</p>
+          </div>
+          <div class="rounded-xl border border-slate-200 p-6">
+            <p class="font-bold text-[#16161D]"><span class="text-amber-400">★</span> <span class="text-3xl">{REVIEWS.avgRating}</span> <span class="text-sm font-medium text-slate-500">hvězdy</span></p>
             <p class="mt-1 text-slate-700">průměrné hodnocení mezi {REVIEWS.ratedCount} aplikacemi, které nějaké mají</p>
           </div>
         </div>
@@ -397,7 +432,7 @@ const methodologyHtml = METHODOLOGY.map((m) =>
 
 <script>
   import Chart from "chart.js/auto";
-  import { GROWTH, REVIEWS, REVENUE, PRICING, GEOGRAPHY, COLORS } from "../../../lib/app-economy";
+  import { GROWTH, REVIEWS, REVENUE, PRICING, GEOGRAPHY, COLORS, CHART_LABELS } from "../../../lib/app-economy";
 
   Chart.defaults.font.family =
     "Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif";
@@ -407,6 +442,7 @@ const methodologyHtml = METHODOLOGY.map((m) =>
   const el = (id: string) => document.getElementById(id) as HTMLCanvasElement | null;
   const grid = "#eef0f2";
   const kfmt = (v: number) => (v >= 1000 ? v / 1000 + "K" : "" + v);
+  const L = CHART_LABELS[document.documentElement.lang] ?? CHART_LABELS.en;
 
   const growth = el("c-growth");
   if (growth)
@@ -456,7 +492,7 @@ const methodologyHtml = METHODOLOGY.map((m) =>
   if (reviews)
     new Chart(reviews, {
       type: "doughnut",
-      data: { labels: REVIEWS.labels, datasets: [{ data: REVIEWS.values, backgroundColor: REVIEWS.colors, borderWidth: 0 }] },
+      data: { labels: L.reviews, datasets: [{ data: REVIEWS.values, backgroundColor: REVIEWS.colors, borderWidth: 0 }] },
       options: donutOpts("%"),
     });
 
@@ -464,7 +500,7 @@ const methodologyHtml = METHODOLOGY.map((m) =>
   if (revDonut)
     new Chart(revDonut, {
       type: "doughnut",
-      data: { labels: REVENUE.donut.labels, datasets: [{ data: REVENUE.donut.values, backgroundColor: REVENUE.donut.colors, borderWidth: 0 }] },
+      data: { labels: L.revenueDonut, datasets: [{ data: REVENUE.donut.values, backgroundColor: REVENUE.donut.colors, borderWidth: 0 }] },
       options: donutOpts("%"),
     });
 
@@ -472,7 +508,7 @@ const methodologyHtml = METHODOLOGY.map((m) =>
   if (revBars)
     new Chart(revBars, {
       type: "bar",
-      data: { labels: REVENUE.bars.labels, datasets: [{ data: REVENUE.bars.values, backgroundColor: COLORS.primary, borderRadius: 4, barThickness: 26 }] },
+      data: { labels: L.revenueBars, datasets: [{ data: REVENUE.bars.values, backgroundColor: COLORS.primary, borderRadius: 4, barThickness: 26 }] },
       options: {
         indexAxis: "y",
         responsive: true,
@@ -486,7 +522,7 @@ const methodologyHtml = METHODOLOGY.map((m) =>
   if (pricing)
     new Chart(pricing, {
       type: "doughnut",
-      data: { labels: PRICING.labels, datasets: [{ data: PRICING.values, backgroundColor: PRICING.colors, borderWidth: 0 }] },
+      data: { labels: L.pricing, datasets: [{ data: PRICING.values, backgroundColor: PRICING.colors, borderWidth: 0 }] },
       options: donutOpts("%"),
     });
 

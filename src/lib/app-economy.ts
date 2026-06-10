@@ -76,7 +76,7 @@ export const REVIEWS = {
   avgRating: 4.43,
   ratedCount: "11,040",
   caption:
-    "Half the App Store has never earned a single review. Three in four apps have fewer than five. A review is the clearest public proxy for a real, retained merchant, and most apps never get one.",
+    "Half the Shopify App Store has never earned a single review. Three in four apps have fewer than five. A review is the clearest public proxy for a real, retained merchant, and most apps never get one.",
 };
 
 /**

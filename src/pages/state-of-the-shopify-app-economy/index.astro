@@ -70,6 +70,11 @@ const jsonLd = [
 // Section eyebrows for the editorial "field notes" feel.
 const E = (n: string, label: string) => `${n} · ${label}`;
 
+const growthCaptionHtml = GROWTH.caption.replace(
+  "The store has roughly 10x'd since 2020",
+  "<strong>The store has roughly 10x'd since 2020</strong>",
+);
+
 // Quiz-lane paragraphs. Link "Shopify's quiz search" to the live search (so the
 // 149 figure is verifiable) and bold the load-bearing line. Caption text stays
 // the single source of truth.
@@ -175,7 +180,7 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
     <div class="mx-auto max-w-5xl px-6 py-16">
       <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-indigo-500">{E("01", "Growth")}</p>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Up 10x since 2020</h2>
-      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">{GROWTH.caption}</p>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center" set:html={growthCaptionHtml} />
       <div class="mt-8 rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
         <div class="h-72 sm:h-80"><canvas id="c-growth" aria-label="Cumulative live Shopify apps by year" role="img"></canvas></div>
       </div>

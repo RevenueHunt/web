@@ -11,8 +11,6 @@ import {
   AOV_UPLIFT,
   ATTRIBUTION,
   BASELINES,
-  METHODOLOGY,
-  FAQ,
 } from "../../../lib/quiz-benchmarks";
 
 const pageUrl = new URL(`/${REPORT.slug}/`, SITE.site_url).href;
@@ -29,6 +27,53 @@ const formatN = (n: number | null) =>
 
 // Conversion expressed against a typical 2% store: 6.9% / 2% = 345%.
 const boost = (rate: number) => Math.round((rate / HEADLINE.baselinePct) * 100);
+
+// Přeložená metodika + FAQ (sdílený datový modul zůstává anglicky kvůli PDF
+// a stat kartám). Definováno před jsonLd, aby faqPage(FAQ) použilo přeloženou sadu.
+const METHODOLOGY = [
+  "Zdroj: vlastní platforma RevenueHunt, napříč každou ecommerce platformou, kterou podporujeme. Agregované a anonymizované: žádný jednotlivý obchod není identifikovatelný a naše vlastní demo obchody jsou všude vyloučeny.",
+  "Konverze je míra na osobu, která vyplní kvíz: objednávky přiřazené odpovědi v kvízu, vydělené dokončenými kvízy. Není to míra za celý web. Ti, kdo vyplní kvíz, se sami vybírají a jsou angažovanější než průměrný návštěvník, takže to není srovnání jedna ku jedné s celkovou konverzí obchodu. Říkáme to všude, kde to srovnání děláme.",
+  "Kategorie se odvozuje z názvu kvízu, který napsal obchodník (například „Kvíz na péči o pleť“, „Kvíz na krmivo pro psy“). Zhruba 78 % odpovědí pochází z generických nebo nepojmenovaných kvízů a je vyloučeno z každého čísla podle kategorie.",
+  "Nárůst average order value se měří v rámci jednoho obchodu: medián hodnoty objednávky z kvízu daného obchodu oproti jeho mediánu hodnoty objednávky bez kvízu. To je robustní vůči měně a odstraňuje to zkreslení mixem obchodů, které ten efekt rozmělní v naivním průměru přes celou platformu.",
+  "Každé číslo konverze je minimum. Atribuce se stále hromadí, jak obchodníci synchronizují objednávky (9 % prvních objednávek přichází více než 30 dní po kvízu), a objednávky napříč zařízeními nebo nesledované se nepřipojí nikdy. Skutečná čísla jsou vyšší, ne nižší.",
+];
+
+const FAQ = [
+  {
+    question: "Jak se měří konverze kvízu?",
+    answer:
+      "Objednávky přiřazené odpovědi v kvízu, vydělené dokončenými kvízy. Napříč platformou 5,5 % kupujících, kteří dokončí kvíz (zhruba 1 z 18), provede sledovanou objednávku. Je to míra na osobu, která vyplní kvíz, ne míra za celý web: ti, kdo vyplní kvíz, jsou angažovanější než průměrný návštěvník, takže to není přímo srovnatelné s celkovou konverzí obchodu.",
+  },
+  {
+    question: "Proč je konverze kvízu tolik vyšší než u průměrného obchodu?",
+    answer:
+      "Dva důvody. Zaprvé samotný kvíz: nahrazuje zahlcující katalog krátkou konverzací a jasným doporučením, což odstraňuje nerozhodnost, která prosakuje prodeje. Zadruhé to, co se děje poté, co dorazí odpovědi: každý kvíz zachytí zero-party data a označí kupujícího, což pohání segmentované follow-up toky a retargeting. Segmentované kampaně generují více než 3krát vyšší tržby na příjemce než plošná rozesílání (segmentační benchmark Klaviyo), takže kvíz dál konvertuje prostřednictvím personalizovaného e-mailu a reklam, ne jen na stránce s výsledky.",
+    answerHtml:
+      "Dva důvody. Zaprvé samotný kvíz: nahrazuje zahlcující katalog krátkou konverzací a jasným doporučením, což odstraňuje nerozhodnost, která prosakuje prodeje. Zadruhé to, co se děje poté, co dorazí odpovědi: každý kvíz zachytí zero-party data a označí kupujícího, což pohání segmentované follow-up toky a retargeting. Segmentované kampaně generují více než 3krát vyšší tržby na příjemce než plošná rozesílání (<a href=\"https://www.klaviyo.com/marketing-resources/segmentation-benchmark-report\" target=\"_blank\" rel=\"external noopener nofollow\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">segmentační benchmark Klaviyo</a>), takže kvíz dál konvertuje prostřednictvím personalizovaného e-mailu a reklam, ne jen na stránce s výsledky.",
+  },
+  {
+    question: "Utrácejí kupující z kvízu opravdu víc na objednávku?",
+    answer:
+      "V průměru ano, měřeno srovnatelně. V rámci stejného obchodu jsou objednávky, které přišly přes kvíz, zhruba o 11 % až 15 % vyšší než ty, které ne, a to platí zhruba v 7 z 10 obchodů. Není to univerzální: nejsilnější je to v kráse a péči o pleť (zhruba +20 %), plošší v kategoriích jako parfémy a káva.",
+  },
+  {
+    question: "Jak se tyto benchmarky vztahují na můj obchod?",
+    answer:
+      "Zadej svou vlastní návštěvnost, average order value a aktuální konverzi do naší kalkulačky ROI kvízu. Ta prožene tytéž benchmarky (míru 5,5 % na osobu, která vyplní kvíz, konverzi podle kategorie, nárůst AOV) tvými čísly, aby odhadla, kolik tržeb navíc by kvíz mohl přidat.",
+    answerHtml:
+      "Zadej svou vlastní návštěvnost, average order value a aktuální konverzi do naší <a href=\"/cs/quiz-roi-calculator/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">kalkulačky ROI kvízu</a>. Ta prožene tytéž benchmarky (míru 5,5 % na osobu, která vyplní kvíz, konverzi podle kategorie, nárůst AOV) tvými čísly, aby odhadla, kolik tržeb navíc by kvíz mohl přidat.",
+  },
+  {
+    question: "Jsou data anonymizovaná?",
+    answer:
+      "Ano. Každé číslo je agregované a sdružené přes miliony odpovědí a tisíce obchodů. Žádný jednotlivý obchod není identifikovatelný. Report existuje proto, aby sdílel, co data říkají, ne aby odhalil kteréhokoli obchodníka.",
+  },
+  {
+    question: "Můžu tato čísla použít?",
+    answer:
+      "Ano. Cituj je s odkazem na tuto stránku. Report je zdarma a bez bran, PDF je ke stažení a klíčová čísla jsou k dispozici jako karty ke sdílení.",
+  },
+];
 
 const jsonLd = [
   organization(),
@@ -83,10 +128,35 @@ const publishedLabel = new Date(REPORT.datePublished).toLocaleDateString("cs-CZ"
   day: "numeric",
 });
 
-const consumable = VERTICAL_CONVERSION.filter((r) => r.kind === "consumable");
-const considered = VERTICAL_CONVERSION.filter((r) => r.kind === "considered");
-const grouped = VERTICAL_CONVERSION.find((r) => r.kind === "grouped")!;
-const pooled = VERTICAL_CONVERSION.find((r) => r.kind === "total")!;
+// Popisky kategorií a dvě dlouhé poznámky pod tabulkou, přeloženo. Čísla zůstávají
+// ze sdíleného datového modulu; lokalizují se jen čitelné popisky/poznámky.
+const VERT_LABEL: Record<string, string> = {
+  "Fragrance": "Parfémy",
+  "Haircare": "Péče o vlasy",
+  "Supplements & health": "Doplňky a zdraví",
+  "Beauty & skincare": "Krása a péče o pleť",
+  "Coffee & tea": "Káva a čaj",
+  "CBD": "CBD",
+  "Other sectors": "Ostatní obory",
+  "All quiz categories (pooled)": "Všechny kategorie kvízů (sdruženo)",
+};
+const GROUPED_NOTE =
+  "Vše mimo pojmenované kategorie, včetně generických kvízů a kvízů s vyšší mírou zvažování. Naměřeno zhruba 3,6 %, asi 180 % typického obchodu.";
+const POOLED_NOTE =
+  "Titulní číslo platformy: 5,5 % (1 z 18), asi 275 % typického obchodu se 2 %. Generické, nepojmenované kvízy (~78 % odpovědí) jsou vyloučeny z řádků podle kategorií a stahují celkové číslo dolů na ~4 %.";
+const SCOPE: Record<string, string> = {
+  "Statista": "Globálně, 2025",
+  "IRP Commerce": "Živá data obchodníků UK/IE, 2025",
+  "Dynamic Yield": "400+ středně velkých až velkých značek, 2025",
+  "Shopify": "Vlastní zveřejněné doporučení Shopify",
+};
+const tr = <T extends { vertical: string }>(r: T) => ({ ...r, vertical: VERT_LABEL[r.vertical] ?? r.vertical });
+const consumable = VERTICAL_CONVERSION.filter((r) => r.kind === "consumable").map(tr);
+const considered = VERTICAL_CONVERSION.filter((r) => r.kind === "considered").map(tr);
+const grouped = { ...tr(VERTICAL_CONVERSION.find((r) => r.kind === "grouped")!), note: GROUPED_NOTE };
+const pooled = { ...tr(VERTICAL_CONVERSION.find((r) => r.kind === "total")!), note: POOLED_NOTE };
+const aovRows = AOV_UPLIFT.perVertical.map(tr);
+const baselines = BASELINES.map((b) => ({ ...b, scope: SCOPE[b.source] ?? b.scope }));
 ---
 
 <Base
@@ -133,19 +203,19 @@ const pooled = VERTICAL_CONVERSION.find((r) => r.kind === "total")!;
         <dl class="mt-6 grid grid-cols-1 gap-8 text-center sm:grid-cols-3">
           <div>
             <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.responses}</dt>
-            <dd class="mt-1 text-sm text-white/70">{DATASET.responsesNote}</dd>
+            <dd class="mt-1 text-sm text-white/70">analyzovaných odpovědí v kvízu</dd>
           </div>
           <div>
             <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.revenue}</dt>
-            <dd class="mt-1 text-sm text-white/70">{DATASET.revenueNote}</dd>
+            <dd class="mt-1 text-sm text-white/70">tržeb vygenerovaných obchodníkům</dd>
           </div>
           <div>
             <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.brands}</dt>
-            <dd class="mt-1 text-sm text-white/70">{DATASET.brandsNote}</dd>
+            <dd class="mt-1 text-sm text-white/70">ecommerce obchodů</dd>
           </div>
         </dl>
         <p class="mx-auto mt-6 max-w-3xl text-center text-sm text-white/60">
-          Agregováno a anonymizováno, napříč {DATASET.platforms}. Žádný jednotlivý obchod není identifikovatelný. Každé číslo níže je minimum: atribuce se stále hromadí, takže skutečná čísla jsou vyšší.
+          Agregováno a anonymizováno, napříč platformami Shopify, WooCommerce, BigCommerce, Magento a samostatnými řešeními. Žádný jednotlivý obchod není identifikovatelný. Každé číslo níže je minimum: atribuce se stále hromadí, takže skutečná čísla jsou vyšší.
         </p>
       </div>
     </div>
@@ -255,7 +325,7 @@ const pooled = VERTICAL_CONVERSION.find((r) => r.kind === "total")!;
             </tr>
           </thead>
           <tbody class="text-slate-900">
-            {AOV_UPLIFT.perVertical.map((r) => (
+            {aovRows.map((r) => (
               <tr class="border-b border-slate-200">
                 <td class="py-3 pr-4 font-medium">{r.vertical}</td>
                 <td class="py-3 pr-4 text-right font-semibold tabular-nums">
@@ -323,7 +393,7 @@ const pooled = VERTICAL_CONVERSION.find((r) => r.kind === "total")!;
             </tr>
           </thead>
           <tbody class="text-slate-900">
-            {BASELINES.map((b) => (
+            {baselines.map((b) => (
               <tr class="border-b border-slate-200">
                 <td class="py-3 pr-4 font-medium">
                   <a href={b.href} target="_blank" rel="external noopener nofollow" class="text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-slate-500">{b.source}</a>

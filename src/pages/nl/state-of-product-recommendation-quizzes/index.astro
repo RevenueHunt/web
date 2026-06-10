@@ -11,8 +11,6 @@ import {
   AOV_UPLIFT,
   ATTRIBUTION,
   BASELINES,
-  METHODOLOGY,
-  FAQ,
 } from "../../../lib/quiz-benchmarks";
 
 const pageUrl = new URL(`/${REPORT.slug}/`, SITE.site_url).href;
@@ -29,6 +27,53 @@ const formatN = (n: number | null) =>
 
 // Conversion expressed against a typical 2% store: 6.9% / 2% = 345%.
 const boost = (rate: number) => Math.round((rate / HEADLINE.baselinePct) * 100);
+
+// Translated methodology + FAQ (the shared data module stays English for the PDF
+// and stat cards). Defined before jsonLd so faqPage(FAQ) uses the translated set.
+const METHODOLOGY = [
+  "Bron: het eigen platform van RevenueHunt, over elk ecommerce-platform dat we ondersteunen. Geaggregeerd en geanonimiseerd: geen enkele individuele winkel is herleidbaar, en onze eigen demowinkels zijn overal uitgesloten.",
+  "Conversie is een percentage per persoon die de quiz maakt: bestellingen die aan een quizantwoord worden toegeschreven, gedeeld door voltooide quizzen. Het is geen percentage voor de hele site. Wie de quiz maken selecteren zichzelf en zijn meer betrokken dan de gemiddelde bezoeker, dus dit is geen eerlijke vergelijking met de algehele conversie van een winkel. We zeggen dat overal waar we de vergelijking maken.",
+  "De categorie wordt afgeleid uit de door de merchant zelf gekozen quiznaam (bijvoorbeeld \"Huidverzorgingsquiz\", \"Hondenvoerquiz\"). Ongeveer 78% van de antwoorden komt uit generieke of naamloze quizzen en wordt uitgesloten van elk cijfer per categorie.",
+  "De stijging in average order value wordt binnen de winkel gemeten: de mediane quizbestelwaarde van dezelfde winkel tegenover zijn mediane bestelwaarde zonder quiz. Dit is robuust tegen valuta en haalt de winkelmix-bias weg die het effect uitvlakt in een naïef platformbreed gemiddelde.",
+  "Elk conversiecijfer is een ondergrens. De attributie loopt nog op terwijl merchants bestellingen synchroniseren (9% van de eerste bestellingen komt meer dan 30 dagen na de quiz binnen), en bestellingen over meerdere apparaten of zonder tracking koppelen nooit. De echte cijfers liggen hoger, niet lager.",
+];
+
+const FAQ = [
+  {
+    question: "Hoe wordt de quizconversie gemeten?",
+    answer:
+      "Bestellingen die aan een quizantwoord worden toegeschreven, gedeeld door voltooide quizzen. Over het hele platform plaatst 5,5% van de shoppers die een quiz afmaken (ongeveer 1 op de 18) een getrackte bestelling. Het is een percentage per persoon die de quiz maakt, geen percentage voor de hele site: wie de quiz maken zijn meer betrokken dan de gemiddelde bezoeker, dus het is niet direct vergelijkbaar met de algehele conversie van een winkel.",
+  },
+  {
+    question: "Waarom ligt de quizconversie zo veel hoger dan de gemiddelde winkel?",
+    answer:
+      "Twee redenen. Ten eerste de quiz zelf: hij vervangt een overweldigende catalogus door een kort gesprek en een duidelijke aanbeveling, wat de besluiteloosheid wegneemt die verkopen lekt. Ten tweede wat er gebeurt nadat de antwoorden binnenkomen: elke quiz legt zero-party data vast en tagt de shopper, wat gesegmenteerde follow-upflows en retargeting voedt. Gesegmenteerde campagnes leveren meer dan 3 keer de omzet per ontvanger op van generieke verzendingen (Klaviyo-segmentatiebenchmark), dus een quiz blijft converteren via gepersonaliseerde e-mail en advertenties, niet alleen op de resultatenpagina.",
+    answerHtml:
+      "Twee redenen. Ten eerste de quiz zelf: hij vervangt een overweldigende catalogus door een kort gesprek en een duidelijke aanbeveling, wat de besluiteloosheid wegneemt die verkopen lekt. Ten tweede wat er gebeurt nadat de antwoorden binnenkomen: elke quiz legt zero-party data vast en tagt de shopper, wat gesegmenteerde follow-upflows en retargeting voedt. Gesegmenteerde campagnes leveren meer dan 3 keer de omzet per ontvanger op van generieke verzendingen (<a href=\"https://www.klaviyo.com/marketing-resources/segmentation-benchmark-report\" target=\"_blank\" rel=\"external noopener nofollow\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">Klaviyo-segmentatiebenchmark</a>), dus een quiz blijft converteren via gepersonaliseerde e-mail en advertenties, niet alleen op de resultatenpagina.",
+  },
+  {
+    question: "Geven quizshoppers echt meer uit per bestelling?",
+    answer:
+      "Gemiddeld wel, vergelijkbaar gemeten. Binnen dezelfde winkel liggen bestellingen die via een quiz binnenkwamen ongeveer 11% tot 15% hoger dan bestellingen die dat niet deden, en dat geldt in ongeveer 7 van de 10 winkels. Het is echter niet universeel: het is het sterkst in beauty en huidverzorging (ongeveer +20%), vlakker in categorieën zoals parfum en koffie.",
+  },
+  {
+    question: "Hoe zijn deze benchmarks van toepassing op mijn winkel?",
+    answer:
+      "Vul je eigen verkeer, average order value en huidige conversie in onze quiz-ROI-calculator in. Hij draait deze zelfde benchmarks (het percentage van 5,5% per persoon die de quiz maakt, de conversie per categorie, de AOV-stijging) tegen jouw cijfers om de extra omzet te schatten die een quiz zou kunnen toevoegen.",
+    answerHtml:
+      "Vul je eigen verkeer, average order value en huidige conversie in onze <a href=\"/nl/quiz-roi-calculator/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">quiz-ROI-calculator</a> in. Hij draait deze zelfde benchmarks (het percentage van 5,5% per persoon die de quiz maakt, de conversie per categorie, de AOV-stijging) tegen jouw cijfers om de extra omzet te schatten die een quiz zou kunnen toevoegen.",
+  },
+  {
+    question: "Zijn de data geanonimiseerd?",
+    answer:
+      "Ja. Elk cijfer is geaggregeerd en gepoold over miljoenen antwoorden en duizenden winkels. Geen enkele individuele winkel is herleidbaar. Het rapport bestaat om te delen wat de dataset zegt, niet om een merchant bloot te stellen.",
+  },
+  {
+    question: "Mag ik deze cijfers gebruiken?",
+    answer:
+      "Ja. Citeer ze met een link naar deze pagina. Het rapport is gratis en zonder formulier, de PDF is te downloaden en de belangrijkste cijfers zijn beschikbaar als deelbare kaarten.",
+  },
+];
 
 const jsonLd = [
   organization(),
@@ -83,10 +128,35 @@ const publishedLabel = new Date(REPORT.datePublished).toLocaleDateString("nl-NL"
   day: "numeric",
 });
 
-const consumable = VERTICAL_CONVERSION.filter((r) => r.kind === "consumable");
-const considered = VERTICAL_CONVERSION.filter((r) => r.kind === "considered");
-const grouped = VERTICAL_CONVERSION.find((r) => r.kind === "grouped")!;
-const pooled = VERTICAL_CONVERSION.find((r) => r.kind === "total")!;
+// Category/vertical labels and the two long table notes, translated. Numbers stay
+// from the shared data module; only the human-readable labels/notes are localized.
+const VERT_LABEL: Record<string, string> = {
+  "Fragrance": "Parfum",
+  "Haircare": "Haarverzorging",
+  "Supplements & health": "Supplementen & gezondheid",
+  "Beauty & skincare": "Beauty & huidverzorging",
+  "Coffee & tea": "Koffie & thee",
+  "CBD": "CBD",
+  "Other sectors": "Overige sectoren",
+  "All quiz categories (pooled)": "Alle quizcategorieën (gepoold)",
+};
+const GROUPED_NOTE =
+  "Alles buiten de genoemde categorieën, inclusief generieke en quizzen met meer afweging. Gemeten op ongeveer 3,6%, ongeveer 180% van een typische winkel.";
+const POOLED_NOTE =
+  "De headline van het platform: 5,5% (1 op de 18), ongeveer 275% van een typische winkel van 2%. Generieke, naamloze quizzen (~78% van de antwoorden) zijn uitgesloten van de rijen per categorie en trekken het totaalcijfer omlaag naar ~4%.";
+const SCOPE: Record<string, string> = {
+  "Statista": "Wereldwijd, 2025",
+  "IRP Commerce": "Live merchant-data VK/IE, 2025",
+  "Dynamic Yield": "400+ middelgrote tot grote merken, 2025",
+  "Shopify": "Shopify's eigen gepubliceerde richtlijnen",
+};
+const tr = <T extends { vertical: string }>(r: T) => ({ ...r, vertical: VERT_LABEL[r.vertical] ?? r.vertical });
+const consumable = VERTICAL_CONVERSION.filter((r) => r.kind === "consumable").map(tr);
+const considered = VERTICAL_CONVERSION.filter((r) => r.kind === "considered").map(tr);
+const grouped = { ...tr(VERTICAL_CONVERSION.find((r) => r.kind === "grouped")!), note: GROUPED_NOTE };
+const pooled = { ...tr(VERTICAL_CONVERSION.find((r) => r.kind === "total")!), note: POOLED_NOTE };
+const aovRows = AOV_UPLIFT.perVertical.map(tr);
+const baselines = BASELINES.map((b) => ({ ...b, scope: SCOPE[b.source] ?? b.scope }));
 ---
 
 <Base
@@ -133,19 +203,19 @@ const pooled = VERTICAL_CONVERSION.find((r) => r.kind === "total")!;
         <dl class="mt-6 grid grid-cols-1 gap-8 text-center sm:grid-cols-3">
           <div>
             <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.responses}</dt>
-            <dd class="mt-1 text-sm text-white/70">{DATASET.responsesNote}</dd>
+            <dd class="mt-1 text-sm text-white/70">quizantwoorden geanalyseerd</dd>
           </div>
           <div>
             <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.revenue}</dt>
-            <dd class="mt-1 text-sm text-white/70">{DATASET.revenueNote}</dd>
+            <dd class="mt-1 text-sm text-white/70">aan gegenereerde omzet voor merchants</dd>
           </div>
           <div>
             <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.brands}</dt>
-            <dd class="mt-1 text-sm text-white/70">{DATASET.brandsNote}</dd>
+            <dd class="mt-1 text-sm text-white/70">ecommerce-winkels</dd>
           </div>
         </dl>
         <p class="mx-auto mt-6 max-w-3xl text-center text-sm text-white/60">
-          Geaggregeerd en geanonimiseerd, over {DATASET.platforms}. Geen enkele individuele winkel is herleidbaar. Elk cijfer hieronder is een ondergrens: de attributie loopt nog op, dus de echte cijfers liggen hoger.
+          Geaggregeerd en geanonimiseerd, over Shopify, WooCommerce, BigCommerce, Magento en standalone. Geen enkele individuele winkel is herleidbaar. Elk cijfer hieronder is een ondergrens: de attributie loopt nog op, dus de echte cijfers liggen hoger.
         </p>
       </div>
     </div>
@@ -255,7 +325,7 @@ const pooled = VERTICAL_CONVERSION.find((r) => r.kind === "total")!;
             </tr>
           </thead>
           <tbody class="text-slate-900">
-            {AOV_UPLIFT.perVertical.map((r) => (
+            {aovRows.map((r) => (
               <tr class="border-b border-slate-200">
                 <td class="py-3 pr-4 font-medium">{r.vertical}</td>
                 <td class="py-3 pr-4 text-right font-semibold tabular-nums">
@@ -323,7 +393,7 @@ const pooled = VERTICAL_CONVERSION.find((r) => r.kind === "total")!;
             </tr>
           </thead>
           <tbody class="text-slate-900">
-            {BASELINES.map((b) => (
+            {baselines.map((b) => (
               <tr class="border-b border-slate-200">
                 <td class="py-3 pr-4 font-medium">
                   <a href={b.href} target="_blank" rel="external noopener nofollow" class="text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-slate-500">{b.source}</a>

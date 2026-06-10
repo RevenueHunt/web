@@ -11,8 +11,6 @@ import {
   AOV_UPLIFT,
   ATTRIBUTION,
   BASELINES,
-  METHODOLOGY,
-  FAQ,
 } from "../../../lib/quiz-benchmarks";
 
 const pageUrl = new URL(`/${REPORT.slug}/`, SITE.site_url).href;
@@ -29,6 +27,53 @@ const formatN = (n: number | null) =>
 
 // Conversion expressed against a typical 2% store: 6.9% / 2% = 345%.
 const boost = (rate: number) => Math.round((rate / HEADLINE.baselinePct) * 100);
+
+// Translated methodology + FAQ (the shared data module stays English for the PDF
+// and stat cards). Defined before jsonLd so faqPage(FAQ) uses the translated set.
+const METHODOLOGY = [
+  "Lähde: RevenueHuntin oma alusta, kaikilla tukemillamme verkkokauppa-alustoilla. Koottu ja anonymisoitu: yksittäistä kauppaa ei voi tunnistaa, ja omat demokauppamme on rajattu kaikkialta pois.",
+  "Konversio on kyselyn tekijää kohden laskettu prosentti: kyselyvastaukselle attribuoidut tilaukset jaettuna suoritetuilla kyselyillä. Se ei ole koko sivuston prosentti. Kyselyn tekijät valikoituvat itse ja ovat sitoutuneempia kuin keskimääräinen kävijä, joten tämä ei ole vastaava vertailu kaupan kokonaiskonversioon. Sanomme tämän kaikkialla, missä teemme vertailun.",
+  "Kategoria johdetaan kauppiaan itse kirjoittamasta kyselyn nimestä (esimerkiksi \"Ihonhoitokysely\", \"Koiranruokakysely\"). Noin 78 % vastauksista tulee geneerisistä tai nimettömistä kyselyistä ja on rajattu pois jokaisesta kategoriakohtaisesta luvusta.",
+  "Average order valuen kasvu mitataan kaupan sisällä: saman kaupan kyselytilausten mediaaniarvo verrattuna sen kyselyttömien tilausten mediaaniarvoon. Tämä on vakaa valuutan suhteen ja poistaa kaupan tuotemixin vinouman, joka hukuttaa vaikutuksen naiiviin koko alustan keskiarvoon.",
+  "Jokainen konversioluku on vähimmäismäärä. Attribuutio kertyy edelleen kauppiaiden synkronoidessa tilauksia (9 % ensimmäisistä tilauksista saapuu yli 30 päivää kyselyn jälkeen), eivätkä laitteiden väliset tai seuraamattomat tilaukset koskaan kytkeydy. Todelliset luvut ovat korkeampia, eivät matalampia.",
+];
+
+const FAQ = [
+  {
+    question: "Miten kyselyn konversio mitataan?",
+    answer:
+      "Kyselyvastaukselle attribuoidut tilaukset jaettuna suoritetuilla kyselyillä. Koko alustalla 5,5 % ostajista, jotka suorittavat kyselyn (noin 1 jokaisesta 18:sta), tekee seuratun tilauksen. Se on kyselyn tekijää kohden laskettu prosentti, ei koko sivuston prosentti: kyselyn tekijät ovat sitoutuneempia kuin keskimääräinen kävijä, joten sitä ei voi suoraan verrata kaupan kokonaiskonversioon.",
+  },
+  {
+    question: "Miksi kyselyn konversio on niin paljon korkeampi kuin keskimääräisessä kaupassa?",
+    answer:
+      "Kaksi syytä. Ensinnäkin kysely itsessään: se korvaa ylenpalttisen tuoteluettelon lyhyellä keskustelulla ja selkeällä suosituksella, mikä poistaa epäröinnin, joka vuotaa myyntiä. Toiseksi se, mitä tapahtuu, kun vastaukset saapuvat: jokainen kysely kerää zero-party-dataa ja merkitsee ostajan, mikä käynnistää segmentoidut jatkovirrat ja uudelleenmarkkinoinnin. Segmentoidut kampanjat tuottavat yli 3 kertaa enemmän liikevaihtoa vastaanottajaa kohden kuin geneeriset lähetykset (Klaviyon segmentointibenchmark), joten kysely jatkaa konvertointia personoidun sähköpostin ja mainosten kautta, ei pelkästään tulossivulla.",
+    answerHtml:
+      "Kaksi syytä. Ensinnäkin kysely itsessään: se korvaa ylenpalttisen tuoteluettelon lyhyellä keskustelulla ja selkeällä suosituksella, mikä poistaa epäröinnin, joka vuotaa myyntiä. Toiseksi se, mitä tapahtuu, kun vastaukset saapuvat: jokainen kysely kerää zero-party-dataa ja merkitsee ostajan, mikä käynnistää segmentoidut jatkovirrat ja uudelleenmarkkinoinnin. Segmentoidut kampanjat tuottavat yli 3 kertaa enemmän liikevaihtoa vastaanottajaa kohden kuin geneeriset lähetykset (<a href=\"https://www.klaviyo.com/marketing-resources/segmentation-benchmark-report\" target=\"_blank\" rel=\"external noopener nofollow\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">Klaviyon segmentointibenchmark</a>), joten kysely jatkaa konvertointia personoidun sähköpostin ja mainosten kautta, ei pelkästään tulossivulla.",
+  },
+  {
+    question: "Käyttävätkö kyselyn tehneet ostajat todella enemmän rahaa tilausta kohden?",
+    answer:
+      "Keskimäärin kyllä, vastaavalla tavalla mitattuna. Saman kaupan sisällä kyselyn kautta tulleet tilaukset ovat noin 11-15 % suurempia kuin ne, jotka eivät tulleet, ja se pätee noin 7 kaupassa 10:stä. Se ei kuitenkaan ole universaalia: vahvinta kauneudessa ja ihonhoidossa (noin +20 %), tasaisempaa kategorioissa kuten tuoksut ja kahvi.",
+  },
+  {
+    question: "Miten nämä benchmarkit soveltuvat omaan kauppaani?",
+    answer:
+      "Syötä oma liikenteesi, keskiostoksesi ja nykyinen konversiosi kyselyn ROI-laskuriimme. Se ajaa nämä samat benchmarkit (5,5 %:n kyselyn tekijää kohden lasketun prosentin, kategoriakohtaisen konversion, AOV:n kasvun) lukujasi vasten arvioidakseen lisätulot, jotka kysely voisi tuoda.",
+    answerHtml:
+      "Syötä oma liikenteesi, keskiostoksesi ja nykyinen konversiosi <a href=\"/fi/quiz-roi-calculator/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">kyselyn ROI-laskuriimme</a>. Se ajaa nämä samat benchmarkit (5,5 %:n kyselyn tekijää kohden lasketun prosentin, kategoriakohtaisen konversion, AOV:n kasvun) lukujasi vasten arvioidakseen lisätulot, jotka kysely voisi tuoda.",
+  },
+  {
+    question: "Onko data anonymisoitu?",
+    answer:
+      "Kyllä. Jokainen luku on koottu ja yhdistetty miljoonien vastausten ja tuhansien kauppojen kesken. Yksittäistä kauppaa ei voi tunnistaa. Raportti on olemassa jakaakseen sen, mitä data kertoo, ei paljastaakseen ketään kauppiasta.",
+  },
+  {
+    question: "Voinko käyttää näitä lukuja?",
+    answer:
+      "Kyllä. Viittaa niihin linkillä tälle sivulle. Raportti on ilmainen ja vapaasti saatavilla, PDF on ladattavissa, ja tärkeimmät luvut ovat saatavilla jaettavina kortteina.",
+  },
+];
 
 const jsonLd = [
   organization(),
@@ -83,10 +128,35 @@ const publishedLabel = new Date(REPORT.datePublished).toLocaleDateString("fi-FI"
   day: "numeric",
 });
 
-const consumable = VERTICAL_CONVERSION.filter((r) => r.kind === "consumable");
-const considered = VERTICAL_CONVERSION.filter((r) => r.kind === "considered");
-const grouped = VERTICAL_CONVERSION.find((r) => r.kind === "grouped")!;
-const pooled = VERTICAL_CONVERSION.find((r) => r.kind === "total")!;
+// Category/vertical labels and the two long table notes, translated. Numbers stay
+// from the shared data module; only the human-readable labels/notes are localized.
+const VERT_LABEL: Record<string, string> = {
+  "Fragrance": "Tuoksut",
+  "Haircare": "Hiustenhoito",
+  "Supplements & health": "Ravintolisät ja terveys",
+  "Beauty & skincare": "Kauneus ja ihonhoito",
+  "Coffee & tea": "Kahvi ja tee",
+  "CBD": "CBD",
+  "Other sectors": "Muut sektorit",
+  "All quiz categories (pooled)": "Kaikki kyselykategoriat (koottu)",
+};
+const GROUPED_NOTE =
+  "Kaikki nimettyjen kategorioiden ulkopuolella, mukaan lukien geneeriset ja enemmän harkintaa vaativat kyselyt. Mitattu noin 3,6 %, noin 180 % tyypillisestä kaupasta.";
+const POOLED_NOTE =
+  "Alustan otsikkoluku: 5,5 % (1 jokaisesta 18:sta), noin 275 % tyypillisestä 2 %:n kaupasta. Geneeriset, nimettömät kyselyt (~78 % vastauksista) on rajattu pois kategoriakohtaisilta riveiltä ja vetävät kokonaisluvun alas ~4 %:iin.";
+const SCOPE: Record<string, string> = {
+  "Statista": "Globaali, 2025",
+  "IRP Commerce": "Iso-Britannian/Irlannin live-kauppiasdata, 2025",
+  "Dynamic Yield": "400+ keskisuurta-suurta brändiä, 2025",
+  "Shopify": "Shopifyn oma julkaistu ohjeistus",
+};
+const tr = <T extends { vertical: string }>(r: T) => ({ ...r, vertical: VERT_LABEL[r.vertical] ?? r.vertical });
+const consumable = VERTICAL_CONVERSION.filter((r) => r.kind === "consumable").map(tr);
+const considered = VERTICAL_CONVERSION.filter((r) => r.kind === "considered").map(tr);
+const grouped = { ...tr(VERTICAL_CONVERSION.find((r) => r.kind === "grouped")!), note: GROUPED_NOTE };
+const pooled = { ...tr(VERTICAL_CONVERSION.find((r) => r.kind === "total")!), note: POOLED_NOTE };
+const aovRows = AOV_UPLIFT.perVertical.map(tr);
+const baselines = BASELINES.map((b) => ({ ...b, scope: SCOPE[b.source] ?? b.scope }));
 ---
 
 <Base
@@ -133,19 +203,19 @@ const pooled = VERTICAL_CONVERSION.find((r) => r.kind === "total")!;
         <dl class="mt-6 grid grid-cols-1 gap-8 text-center sm:grid-cols-3">
           <div>
             <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.responses}</dt>
-            <dd class="mt-1 text-sm text-white/70">{DATASET.responsesNote}</dd>
+            <dd class="mt-1 text-sm text-white/70">analysoitua kyselyvastausta</dd>
           </div>
           <div>
             <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.revenue}</dt>
-            <dd class="mt-1 text-sm text-white/70">{DATASET.revenueNote}</dd>
+            <dd class="mt-1 text-sm text-white/70">kauppiaiden tuottamaa liikevaihtoa</dd>
           </div>
           <div>
             <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.brands}</dt>
-            <dd class="mt-1 text-sm text-white/70">{DATASET.brandsNote}</dd>
+            <dd class="mt-1 text-sm text-white/70">verkkokauppaa</dd>
           </div>
         </dl>
         <p class="mx-auto mt-6 max-w-3xl text-center text-sm text-white/60">
-          Koottu ja anonymisoitu, lähteistä {DATASET.platforms}. Yksittäistä kauppaa ei voi tunnistaa. Jokainen alla oleva luku on vähimmäismäärä: attribuutio kertyy edelleen, joten todelliset luvut ovat korkeampia.
+          Koottu ja anonymisoitu, lähteinä Shopify, WooCommerce, BigCommerce, Magento ja itsenäiset alustat. Yksittäistä kauppaa ei voi tunnistaa. Jokainen alla oleva luku on vähimmäismäärä: attribuutio kertyy edelleen, joten todelliset luvut ovat korkeampia.
         </p>
       </div>
     </div>
@@ -255,7 +325,7 @@ const pooled = VERTICAL_CONVERSION.find((r) => r.kind === "total")!;
             </tr>
           </thead>
           <tbody class="text-slate-900">
-            {AOV_UPLIFT.perVertical.map((r) => (
+            {aovRows.map((r) => (
               <tr class="border-b border-slate-200">
                 <td class="py-3 pr-4 font-medium">{r.vertical}</td>
                 <td class="py-3 pr-4 text-right font-semibold tabular-nums">
@@ -323,7 +393,7 @@ const pooled = VERTICAL_CONVERSION.find((r) => r.kind === "total")!;
             </tr>
           </thead>
           <tbody class="text-slate-900">
-            {BASELINES.map((b) => (
+            {baselines.map((b) => (
               <tr class="border-b border-slate-200">
                 <td class="py-3 pr-4 font-medium">
                   <a href={b.href} target="_blank" rel="external noopener nofollow" class="text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-slate-500">{b.source}</a>

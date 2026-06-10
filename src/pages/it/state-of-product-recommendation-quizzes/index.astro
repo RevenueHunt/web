@@ -11,8 +11,6 @@ import {
   AOV_UPLIFT,
   ATTRIBUTION,
   BASELINES,
-  METHODOLOGY,
-  FAQ,
 } from "../../../lib/quiz-benchmarks";
 
 const pageUrl = new URL(`/${REPORT.slug}/`, SITE.site_url).href;
@@ -29,6 +27,53 @@ const formatN = (n: number | null) =>
 
 // Conversion expressed against a typical 2% store: 6.9% / 2% = 345%.
 const boost = (rate: number) => Math.round((rate / HEADLINE.baselinePct) * 100);
+
+// Metodologia + FAQ tradotte (il modulo dati condiviso resta in inglese per il PDF
+// e le stat card). Definite prima di jsonLd perché faqPage(FAQ) usi il set tradotto.
+const METHODOLOGY = [
+  "Fonte: la piattaforma di RevenueHunt stessa, su ogni piattaforma di ecommerce che supportiamo. Aggregata e anonimizzata: nessun singolo negozio è identificabile, e i nostri negozi demo sono esclusi ovunque.",
+  "La conversione è un tasso per chi fa il quiz: ordini attribuiti a una risposta del quiz, divisi per i quiz completati. Non è un tasso a livello di sito. Chi fa il quiz si auto-seleziona ed è più coinvolto del visitatore medio, quindi non è un confronto a parità di condizioni con il tasso di conversione complessivo di un negozio. Lo diciamo ovunque facciamo il confronto.",
+  "La categoria è derivata dal nome del quiz scritto dal merchant (per esempio \"Quiz skincare\", \"Quiz cibo per cani\"). Circa il 78% delle risposte proviene da quiz generici o senza nome ed è escluso da ogni cifra per categoria.",
+  "L'aumento dell'average order value è misurato all'interno del negozio: il valore mediano degli ordini del quiz dello stesso negozio rispetto al valore mediano dei suoi ordini senza quiz. Questo è robusto rispetto alla valuta e rimuove la distorsione del mix di negozi che annacqua l'effetto in una media ingenua su tutta la piattaforma.",
+  "Ogni cifra di conversione è un minimo. L'attribuzione si sta ancora consolidando mentre i merchant sincronizzano gli ordini (il 9% dei primi ordini arriva oltre 30 giorni dopo il quiz), e gli ordini cross-device o non tracciati non si attribuiscono mai. I numeri reali sono più alti, non più bassi.",
+];
+
+const FAQ = [
+  {
+    question: "Come si misura la conversione del quiz?",
+    answer:
+      "Ordini attribuiti a una risposta del quiz, divisi per i quiz completati. Sull'intera piattaforma, il 5,5% degli acquirenti che completa un quiz (circa 1 su 18) effettua un ordine tracciato. È un tasso per chi fa il quiz, non un tasso a livello di sito: chi fa il quiz è più coinvolto del visitatore medio, quindi non è direttamente confrontabile con il tasso di conversione complessivo di un negozio.",
+  },
+  {
+    question: "Perché il tasso di conversione del quiz è così più alto del negozio medio?",
+    answer:
+      "Due ragioni. Primo, il quiz stesso: sostituisce un catalogo opprimente con una breve conversazione e una raccomandazione chiara, eliminando l'indecisione che fa perdere vendite. Secondo, ciò che succede dopo che arrivano le risposte: ogni quiz cattura zero-party data ed etichetta l'acquirente, alimentando flussi di follow-up segmentati e retargeting. Le campagne segmentate generano oltre 3 volte il fatturato per destinatario rispetto agli invii generici (benchmark di segmentazione di Klaviyo), così un quiz continua a convertire tramite email e annunci personalizzati, non solo nella pagina dei risultati.",
+    answerHtml:
+      "Due ragioni. Primo, il quiz stesso: sostituisce un catalogo opprimente con una breve conversazione e una raccomandazione chiara, eliminando l'indecisione che fa perdere vendite. Secondo, ciò che succede dopo che arrivano le risposte: ogni quiz cattura zero-party data ed etichetta l'acquirente, alimentando flussi di follow-up segmentati e retargeting. Le campagne segmentate generano oltre 3 volte il fatturato per destinatario rispetto agli invii generici (<a href=\"https://www.klaviyo.com/marketing-resources/segmentation-benchmark-report\" target=\"_blank\" rel=\"external noopener nofollow\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">benchmark di segmentazione di Klaviyo</a>), così un quiz continua a convertire tramite email e annunci personalizzati, non solo nella pagina dei risultati.",
+  },
+  {
+    question: "Gli acquirenti del quiz spendono davvero di più per ordine?",
+    answer:
+      "In media, sì, misurato a parità di condizioni. All'interno dello stesso negozio, gli ordini arrivati tramite un quiz sono circa dall'11% al 15% più grandi di quelli che non lo sono, e questo vale in circa 7 negozi su 10. Non è universale, però: è più forte nel beauty e skincare (circa +20%), più piatto in categorie come profumi e caffè.",
+  },
+  {
+    question: "Come si applicano questi benchmark al mio negozio?",
+    answer:
+      "Inserisci il tuo traffico, l'average order value e il tasso di conversione attuale nel nostro calcolatore di ROI del quiz. Esegue questi stessi benchmark (il tasso del 5,5% per chi fa il quiz, la conversione per categoria, l'aumento di AOV) sui tuoi numeri per stimare il fatturato aggiuntivo che un quiz potrebbe portare.",
+    answerHtml:
+      "Inserisci il tuo traffico, l'average order value e il tasso di conversione attuale nel nostro <a href=\"/it/quiz-roi-calculator/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">calcolatore di ROI del quiz</a>. Esegue questi stessi benchmark (il tasso del 5,5% per chi fa il quiz, la conversione per categoria, l'aumento di AOV) sui tuoi numeri per stimare il fatturato aggiuntivo che un quiz potrebbe portare.",
+  },
+  {
+    question: "I dati sono anonimizzati?",
+    answer:
+      "Sì. Ogni cifra è aggregata e raccolta su milioni di risposte e migliaia di negozi. Nessun singolo negozio è identificabile. Il report esiste per condividere cosa dicono i dati, non per esporre alcun merchant.",
+  },
+  {
+    question: "Posso usare questi numeri?",
+    answer:
+      "Sì. Citali con un link a questa pagina. Il report è gratuito e senza barriere, il PDF è scaricabile e i numeri principali sono disponibili come card da condividere.",
+  },
+];
 
 const jsonLd = [
   organization(),
@@ -83,10 +128,35 @@ const publishedLabel = new Date(REPORT.datePublished).toLocaleDateString("it-IT"
   day: "numeric",
 });
 
-const consumable = VERTICAL_CONVERSION.filter((r) => r.kind === "consumable");
-const considered = VERTICAL_CONVERSION.filter((r) => r.kind === "considered");
-const grouped = VERTICAL_CONVERSION.find((r) => r.kind === "grouped")!;
-const pooled = VERTICAL_CONVERSION.find((r) => r.kind === "total")!;
+// Category/vertical labels and the two long table notes, translated. Numbers stay
+// from the shared data module; only the human-readable labels/notes are localized.
+const VERT_LABEL: Record<string, string> = {
+  "Fragrance": "Profumi",
+  "Haircare": "Cura dei capelli",
+  "Supplements & health": "Integratori e salute",
+  "Beauty & skincare": "Beauty e skincare",
+  "Coffee & tea": "Caffè e tè",
+  "CBD": "CBD",
+  "Other sectors": "Altri settori",
+  "All quiz categories (pooled)": "Tutte le categorie di quiz (aggregate)",
+};
+const GROUPED_NOTE =
+  "Tutto ciò che è fuori dalle categorie nominate, inclusi i quiz generici e ad alta valutazione. Misurato a circa il 3,6%, all'incirca il 180% di un negozio tipico.";
+const POOLED_NOTE =
+  "Il dato principale della piattaforma: 5,5% (1 su 18), circa il 275% di un tipico negozio al 2%. I quiz generici e senza nome (~78% delle risposte) sono esclusi dalle righe per categoria e tirano giù il numero complessivo al ~4%.";
+const SCOPE: Record<string, string> = {
+  "Statista": "Globale, 2025",
+  "IRP Commerce": "Dati di merchant attivi UK/IE, 2025",
+  "Dynamic Yield": "400+ brand di medie-grandi dimensioni, 2025",
+  "Shopify": "Linee guida pubblicate da Shopify stessa",
+};
+const tr = <T extends { vertical: string }>(r: T) => ({ ...r, vertical: VERT_LABEL[r.vertical] ?? r.vertical });
+const consumable = VERTICAL_CONVERSION.filter((r) => r.kind === "consumable").map(tr);
+const considered = VERTICAL_CONVERSION.filter((r) => r.kind === "considered").map(tr);
+const grouped = { ...tr(VERTICAL_CONVERSION.find((r) => r.kind === "grouped")!), note: GROUPED_NOTE };
+const pooled = { ...tr(VERTICAL_CONVERSION.find((r) => r.kind === "total")!), note: POOLED_NOTE };
+const aovRows = AOV_UPLIFT.perVertical.map(tr);
+const baselines = BASELINES.map((b) => ({ ...b, scope: SCOPE[b.source] ?? b.scope }));
 ---
 
 <Base
@@ -133,19 +203,19 @@ const pooled = VERTICAL_CONVERSION.find((r) => r.kind === "total")!;
         <dl class="mt-6 grid grid-cols-1 gap-8 text-center sm:grid-cols-3">
           <div>
             <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.responses}</dt>
-            <dd class="mt-1 text-sm text-white/70">{DATASET.responsesNote}</dd>
+            <dd class="mt-1 text-sm text-white/70">risposte al quiz analizzate</dd>
           </div>
           <div>
             <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.revenue}</dt>
-            <dd class="mt-1 text-sm text-white/70">{DATASET.revenueNote}</dd>
+            <dd class="mt-1 text-sm text-white/70">di fatturato generato per i merchant</dd>
           </div>
           <div>
             <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.brands}</dt>
-            <dd class="mt-1 text-sm text-white/70">{DATASET.brandsNote}</dd>
+            <dd class="mt-1 text-sm text-white/70">negozi ecommerce</dd>
           </div>
         </dl>
         <p class="mx-auto mt-6 max-w-3xl text-center text-sm text-white/60">
-          Aggregato e anonimizzato, su {DATASET.platforms}. Nessun singolo negozio è identificabile. Ogni cifra qui sotto è un minimo: l'attribuzione si sta ancora consolidando, quindi i numeri reali sono più alti.
+          Aggregato e anonimizzato, su Shopify, WooCommerce, BigCommerce, Magento e standalone. Nessun singolo negozio è identificabile. Ogni cifra qui sotto è un minimo: l'attribuzione si sta ancora consolidando, quindi i numeri reali sono più alti.
         </p>
       </div>
     </div>
@@ -255,7 +325,7 @@ const pooled = VERTICAL_CONVERSION.find((r) => r.kind === "total")!;
             </tr>
           </thead>
           <tbody class="text-slate-900">
-            {AOV_UPLIFT.perVertical.map((r) => (
+            {aovRows.map((r) => (
               <tr class="border-b border-slate-200">
                 <td class="py-3 pr-4 font-medium">{r.vertical}</td>
                 <td class="py-3 pr-4 text-right font-semibold tabular-nums">
@@ -323,7 +393,7 @@ const pooled = VERTICAL_CONVERSION.find((r) => r.kind === "total")!;
             </tr>
           </thead>
           <tbody class="text-slate-900">
-            {BASELINES.map((b) => (
+            {baselines.map((b) => (
               <tr class="border-b border-slate-200">
                 <td class="py-3 pr-4 font-medium">
                   <a href={b.href} target="_blank" rel="external noopener nofollow" class="text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-slate-500">{b.source}</a>

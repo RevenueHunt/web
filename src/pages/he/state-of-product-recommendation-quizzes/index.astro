@@ -11,8 +11,6 @@ import {
   AOV_UPLIFT,
   ATTRIBUTION,
   BASELINES,
-  METHODOLOGY,
-  FAQ,
 } from "../../../lib/quiz-benchmarks";
 
 const pageUrl = new URL(`/${REPORT.slug}/`, SITE.site_url).href;
@@ -29,6 +27,53 @@ const formatN = (n: number | null) =>
 
 // Conversion expressed against a typical 2% store: 6.9% / 2% = 345%.
 const boost = (rate: number) => Math.round((rate / HEADLINE.baselinePct) * 100);
+
+// Translated methodology + FAQ (the shared data module stays English for the PDF
+// and stat cards). Defined before jsonLd so faqPage(FAQ) uses the translated set.
+const METHODOLOGY = [
+  "מקור: הפלטפורמה של RevenueHunt עצמה, על פני כל פלטפורמת איקומרס שאנחנו תומכים בה. מצרפי ואנונימי: אף חנות בודדת אינה ניתנת לזיהוי, וחנויות הדמו שלנו מוחרגות בכל מקום.",
+  "המרה היא שיעור לכל אדם שמבצע את החידון: הזמנות המיוחסות לתשובת חידון, חלקי חידונים שהושלמו. זה לא שיעור של כל האתר. מי שמבצע את החידון בוחרים בעצמם ומעורבים יותר מהמבקר הממוצע, ולכן זו אינה השוואה שווה-בשווה לשיעור ההמרה הכולל של חנות. אנחנו אומרים זאת בכל מקום שבו אנחנו עושים את ההשוואה.",
+  "הקטגוריה נגזרת משם החידון שכתב הסוחר (למשל \"חידון טיפוח עור\", \"חידון אוכל לכלבים\"). בערך 78% מהתשובות מגיעות מחידונים גנריים או ללא שם ומוחרגות מכל נתון לפי קטגוריה.",
+  "גידול ב-average order value נמדד בתוך החנות: ערך ההזמנה החציוני של אותה חנות בחידון מול ערך ההזמנה החציוני שלה ללא חידון. זה עמיד מול מטבע ומסיר את הטיית מיקס-החנות שמטשטשת את האפקט בממוצע נאיבי על פני כל הפלטפורמה.",
+  "כל נתון המרה הוא רצפה. הייחוס עדיין מצטבר ככל שסוחרים מסנכרנים הזמנות (9% מההזמנות הראשונות מגיעות יותר מ-30 יום אחרי החידון), והזמנות חוצות-מכשירים או לא-מנוטרות לעולם אינן מתחברות. המספרים האמיתיים גבוהים יותר, לא נמוכים יותר.",
+];
+
+const FAQ = [
+  {
+    question: "איך נמדדת המרת החידון?",
+    answer:
+      "הזמנות המיוחסות לתשובת חידון, חלקי חידונים שהושלמו. על פני הפלטפורמה, 5.5% מהקונים שמסיימים חידון (בערך 1 מתוך 18) מבצעים הזמנה מנוטרת. זהו שיעור לכל אדם שמבצע את החידון, לא שיעור של כל האתר: מי שמבצע את החידון מעורבים יותר מהמבקר הממוצע, ולכן זה לא ישיר להשוואה לשיעור ההמרה הכולל של חנות.",
+  },
+  {
+    question: "למה שיעור המרת החידון כל כך גבוה מהחנות הממוצעת?",
+    answer:
+      "שתי סיבות. ראשית, החידון עצמו: הוא מחליף קטלוג מוצף בשיחה קצרה ובהמלצה ברורה, מה שמסיר את חוסר ההחלטיות שמדליף מכירות. שנית, מה שקורה אחרי שהתשובות מגיעות: כל חידון לוכד zero-party data ומתייג את הקונה, מה שמפעיל זרימות מעקב מסוגמנטות וריטרגטינג. קמפיינים מסוגמנטים מייצרים יותר מפי 3 הכנסות לנמען מאשר שליחות גנריות (benchmark הסגמנטציה של Klaviyo), כך שחידון ממשיך להמיר דרך אימייל ומודעות מותאמים אישית, לא רק בעמוד התוצאות.",
+    answerHtml:
+      "שתי סיבות. ראשית, החידון עצמו: הוא מחליף קטלוג מוצף בשיחה קצרה ובהמלצה ברורה, מה שמסיר את חוסר ההחלטיות שמדליף מכירות. שנית, מה שקורה אחרי שהתשובות מגיעות: כל חידון לוכד zero-party data ומתייג את הקונה, מה שמפעיל זרימות מעקב מסוגמנטות וריטרגטינג. קמפיינים מסוגמנטים מייצרים יותר מפי 3 הכנסות לנמען מאשר שליחות גנריות (<a href=\"https://www.klaviyo.com/marketing-resources/segmentation-benchmark-report\" target=\"_blank\" rel=\"external noopener nofollow\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">benchmark הסגמנטציה של Klaviyo</a>), כך שחידון ממשיך להמיר דרך אימייל ומודעות מותאמים אישית, לא רק בעמוד התוצאות.",
+  },
+  {
+    question: "האם הקונים שמבצעים את החידון באמת מוציאים יותר להזמנה?",
+    answer:
+      "בממוצע, כן, מדוד בצורה שקולה. בתוך אותה חנות, הזמנות שהגיעו דרך חידון גדולות בערך ב-11% עד 15% מהזמנות שלא, וזה נשמר בערך ב-7 מתוך 10 חנויות. זה לא אוניברסלי: הכי חזק ביופי וטיפוח עור (בערך +20%), שטוח יותר בקטגוריות כמו בושם וקפה.",
+  },
+  {
+    question: "איך הנתונים האלה חלים על החנות שלי?",
+    answer:
+      "הכניסו את התנועה, ערך ההזמנה הממוצע ושיעור ההמרה הנוכחי שלכם למחשבון ה-ROI של החידון שלנו. הוא מריץ את אותם נתונים (שיעור 5.5% לכל מבצע חידון, ההמרה לפי קטגוריה, הגידול ב-AOV) מול המספרים שלכם כדי להעריך את ההכנסה הנוספת שחידון יכול להוסיף.",
+    answerHtml:
+      "הכניסו את התנועה, ערך ההזמנה הממוצע ושיעור ההמרה הנוכחי שלכם ל<a href=\"/he/quiz-roi-calculator/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">מחשבון ה-ROI של החידון</a> שלנו. הוא מריץ את אותם נתונים (שיעור 5.5% לכל מבצע חידון, ההמרה לפי קטגוריה, הגידול ב-AOV) מול המספרים שלכם כדי להעריך את ההכנסה הנוספת שחידון יכול להוסיף.",
+  },
+  {
+    question: "האם הנתונים אנונימיים?",
+    answer:
+      "כן. כל נתון הוא מצרפי ומאוחד על פני מיליוני תשובות ואלפי חנויות. אף חנות בודדת אינה ניתנת לזיהוי. הדוח קיים כדי לשתף מה שהנתונים אומרים, לא כדי לחשוף סוחר כלשהו.",
+  },
+  {
+    question: "האם אני יכול להשתמש במספרים האלה?",
+    answer:
+      "כן. צטטו אותם עם קישור לעמוד הזה. הדוח חינמי וללא חסם, ה-PDF ניתן להורדה, והנתונים הבולטים זמינים ככרטיסים לשיתוף.",
+  },
+];
 
 const jsonLd = [
   organization(),
@@ -83,10 +128,35 @@ const publishedLabel = new Date(REPORT.datePublished).toLocaleDateString("he-IL"
   day: "numeric",
 });
 
-const consumable = VERTICAL_CONVERSION.filter((r) => r.kind === "consumable");
-const considered = VERTICAL_CONVERSION.filter((r) => r.kind === "considered");
-const grouped = VERTICAL_CONVERSION.find((r) => r.kind === "grouped")!;
-const pooled = VERTICAL_CONVERSION.find((r) => r.kind === "total")!;
+// Category/vertical labels and the two long table notes, translated. Numbers stay
+// from the shared data module; only the human-readable labels/notes are localized.
+const VERT_LABEL: Record<string, string> = {
+  "Fragrance": "בושם",
+  "Haircare": "טיפוח שיער",
+  "Supplements & health": "תוספים ובריאות",
+  "Beauty & skincare": "יופי וטיפוח עור",
+  "Coffee & tea": "קפה ותה",
+  "CBD": "CBD",
+  "Other sectors": "מגזרים אחרים",
+  "All quiz categories (pooled)": "כל קטגוריות החידון (מאוחד)",
+};
+const GROUPED_NOTE =
+  "כל מה שמחוץ לקטגוריות הנקובות, כולל חידונים גנריים ובעלי שיקול גבוה יותר. נמדד בערך 3.6%, בערך 180% מחנות טיפוסית.";
+const POOLED_NOTE =
+  "הכותרת של הפלטפורמה: 5.5% (1 מתוך 18), בערך 275% מחנות טיפוסית של 2%. חידונים גנריים ללא שם (~78% מהתשובות) מוחרגים משורות הקטגוריות וגוררים את המספר הכולל למטה ל-~4%.";
+const SCOPE: Record<string, string> = {
+  "Statista": "גלובלי, 2025",
+  "IRP Commerce": "נתוני סוחרים חיים בבריטניה/אירלנד, 2025",
+  "Dynamic Yield": "400+ מותגים בינוניים-גדולים, 2025",
+  "Shopify": "ההנחיות המפורסמות של Shopify עצמה",
+};
+const tr = <T extends { vertical: string }>(r: T) => ({ ...r, vertical: VERT_LABEL[r.vertical] ?? r.vertical });
+const consumable = VERTICAL_CONVERSION.filter((r) => r.kind === "consumable").map(tr);
+const considered = VERTICAL_CONVERSION.filter((r) => r.kind === "considered").map(tr);
+const grouped = { ...tr(VERTICAL_CONVERSION.find((r) => r.kind === "grouped")!), note: GROUPED_NOTE };
+const pooled = { ...tr(VERTICAL_CONVERSION.find((r) => r.kind === "total")!), note: POOLED_NOTE };
+const aovRows = AOV_UPLIFT.perVertical.map(tr);
+const baselines = BASELINES.map((b) => ({ ...b, scope: SCOPE[b.source] ?? b.scope }));
 ---
 
 <Base
@@ -133,19 +203,19 @@ const pooled = VERTICAL_CONVERSION.find((r) => r.kind === "total")!;
         <dl class="mt-6 grid grid-cols-1 gap-8 text-center sm:grid-cols-3">
           <div>
             <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.responses}</dt>
-            <dd class="mt-1 text-sm text-white/70">{DATASET.responsesNote}</dd>
+            <dd class="mt-1 text-sm text-white/70">תשובות חידון שנותחו</dd>
           </div>
           <div>
             <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.revenue}</dt>
-            <dd class="mt-1 text-sm text-white/70">{DATASET.revenueNote}</dd>
+            <dd class="mt-1 text-sm text-white/70">בהכנסות שנוצרו לסוחרים</dd>
           </div>
           <div>
             <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.brands}</dt>
-            <dd class="mt-1 text-sm text-white/70">{DATASET.brandsNote}</dd>
+            <dd class="mt-1 text-sm text-white/70">חנויות איקומרס</dd>
           </div>
         </dl>
         <p class="mx-auto mt-6 max-w-3xl text-center text-sm text-white/60">
-          מצרפי ואנונימי, לאורך {DATASET.platforms}. אף חנות בודדת אינה ניתנת לזיהוי. כל נתון למטה הוא מינימום: הייחוס עדיין מצטבר, כך שהמספרים האמיתיים גבוהים יותר.
+          מצרפי ואנונימי, לאורך Shopify, WooCommerce, BigCommerce, Magento ועצמאי. אף חנות בודדת אינה ניתנת לזיהוי. כל נתון למטה הוא מינימום: הייחוס עדיין מצטבר, כך שהמספרים האמיתיים גבוהים יותר.
         </p>
       </div>
     </div>
@@ -255,7 +325,7 @@ const pooled = VERTICAL_CONVERSION.find((r) => r.kind === "total")!;
             </tr>
           </thead>
           <tbody class="text-slate-900">
-            {AOV_UPLIFT.perVertical.map((r) => (
+            {aovRows.map((r) => (
               <tr class="border-b border-slate-200">
                 <td class="py-3 pr-4 font-medium">{r.vertical}</td>
                 <td class="py-3 pr-4 text-right font-semibold tabular-nums">
@@ -323,7 +393,7 @@ const pooled = VERTICAL_CONVERSION.find((r) => r.kind === "total")!;
             </tr>
           </thead>
           <tbody class="text-slate-900">
-            {BASELINES.map((b) => (
+            {baselines.map((b) => (
               <tr class="border-b border-slate-200">
                 <td class="py-3 pr-4 font-medium">
                   <a href={b.href} target="_blank" rel="external noopener nofollow" class="text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-slate-500">{b.source}</a>

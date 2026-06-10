@@ -100,12 +100,21 @@ export const REVENUE = {
     "Estimated monthly revenue is brutally top-heavy. The top 1% of apps (225 of them) take an estimated 72% of it, and just 10 of those apps take nearly 30% of all app revenue on their own. (And one name towers over the whole ecosystem: an app which draws an estimated 78% of its roughly $1B in annual revenue from merchants who also run on Shopify. Yes, we're looking at you, <a href='https://www.sec.gov/Archives/edgar/data/1835830/000162828023030618/klaviyoincs-1.htm' target='_blank' rel='external noopener nofollow' class='font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]'>Klaviyo</a>.) Only about 36% of apps look like they earn anything at all. And it clusters by geography: <strong>the US and Canada alone take an estimated 57%</strong> of the Shopify App Store revenue.",
 };
 
-/** Pricing model split + the permanent-free-tier figure (the pricing donut). */
+/**
+ * Pricing model split + the permanent-free-tier figure (the pricing donut).
+ * Four mutually exclusive entry-level tiers, derived from each listing's
+ * pricing_type + has_free_plan flags across all 22,546 live apps:
+ *   completely free (no paid plan)        4,733  = 21.0%
+ *   free plan available (freemium)       10,105  = 44.8%  (= permanentFree)
+ *   free trial (paid, leads with trial)   6,689  = 29.7%
+ *   paid up front (no free entry)         1,019  =  4.5%
+ */
 export const PRICING = {
-  labels: ["Free", "Free trial", "Paid up front"],
-  values: [46.9, 48.6, 4.5],
-  colors: [COLORS.gray, COLORS.secondary, COLORS.primary],
+  labels: ["Completely free", "Free plan available", "Free trial", "Paid up front"],
+  values: [21.0, 44.8, 29.7, 4.5],
+  colors: [COLORS.gray, COLORS.secondary, "#579cff", COLORS.primary],
   permanentFree: "44.8%",
+  completelyFree: "21%",
   caption:
     "Nearly half the store charges nothing up front, and fewer than 1 in 20 apps ask for money before the first install. Almost 45% offer a permanent free tier. Freemium is not a strategy here, it is the table stakes.",
 };
@@ -219,7 +228,7 @@ export interface ChartLabels {
   revenueDonut: [string, string, string];
   revenueCountries: string[];
   revenueCountriesFull: string[];
-  pricing: [string, string, string];
+  pricing: [string, string, string, string];
   /** Top builder countries, same order as GEOGRAPHY.labels. Country names. */
   geography: string[];
   /** Stacked geography chart: review-tier legend. Optional until locale fan-out. */
@@ -234,7 +243,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     revenueDonut: ["Top 10 apps", "Rest of the top 1%", "The other 99%"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "Rest of world"],
     revenueCountriesFull: ["🇺🇸 United States", "🇨🇦 Canada", "🇻🇳 Vietnam", "🇮🇳 India", "🇬🇧 United Kingdom", "🇮🇱 Israel", "🇸🇬 Singapore", "🇫🇷 France", "🇱🇹 Lithuania", "Rest of world"],
-    pricing: ["Free", "Free trial", "Paid up front"],
+    pricing: ["Completely free", "Free plan available", "Free trial", "Paid up front"],
     geography: ["US", "India", "UK", "Canada", "Vietnam", "China", "Japan", "Germany", "Australia", "France"],
     reviewsTip: { title: "Apps with {x} reviews", body: "{n} apps ({p}%)" },
     geoTiers: ["0 reviews", "1–9 reviews", "10+ reviews"],
@@ -245,7 +254,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     revenueDonut: ["Las 10 primeras apps", "Resto del 1% superior", "El otro 99%"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "Resto del mundo"],
     revenueCountriesFull: ["🇺🇸 Estados Unidos", "🇨🇦 Canadá", "🇻🇳 Vietnam", "🇮🇳 India", "🇬🇧 Reino Unido", "🇮🇱 Israel", "🇸🇬 Singapur", "🇫🇷 Francia", "🇱🇹 Lituania", "Resto del mundo"],
-    pricing: ["Gratis", "Prueba gratis", "De pago por adelantado"],
+    pricing: ["Totalmente gratis", "Plan gratis disponible", "Prueba gratis", "De pago por adelantado"],
     geography: ["EE. UU.", "India", "Reino Unido", "Canadá", "Vietnam", "China", "Japón", "Alemania", "Australia", "Francia"],
     reviewsTip: { title: "Apps con {x} reseñas", body: "{n} apps ({p}%)" },
   },
@@ -254,7 +263,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     revenueDonut: ["Die Top 10 Apps", "Rest der Top 1%", "Die anderen 99%"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "Übrige Welt"],
     revenueCountriesFull: ["🇺🇸 Vereinigte Staaten", "🇨🇦 Kanada", "🇻🇳 Vietnam", "🇮🇳 Indien", "🇬🇧 Vereinigtes Königreich", "🇮🇱 Israel", "🇸🇬 Singapur", "🇫🇷 Frankreich", "🇱🇹 Litauen", "Übrige Welt"],
-    pricing: ["Kostenlos", "Kostenlose Testversion", "Vorab kostenpflichtig"],
+    pricing: ["Komplett kostenlos", "Kostenloser Tarif verfügbar", "Kostenlose Testversion", "Vorab kostenpflichtig"],
     geography: ["USA", "Indien", "UK", "Kanada", "Vietnam", "China", "Japan", "Deutschland", "Australien", "Frankreich"],
     reviewsTip: { title: "Apps mit {x} Bewertungen", body: "{n} Apps ({p}%)" },
   },
@@ -263,7 +272,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     revenueDonut: ["Le top 10 des apps", "Reste du top 1%", "Les 99% restants"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "Reste du monde"],
     revenueCountriesFull: ["🇺🇸 États-Unis", "🇨🇦 Canada", "🇻🇳 Vietnam", "🇮🇳 Inde", "🇬🇧 Royaume-Uni", "🇮🇱 Israël", "🇸🇬 Singapour", "🇫🇷 France", "🇱🇹 Lituanie", "Reste du monde"],
-    pricing: ["Gratuit", "Essai gratuit", "Payant d'avance"],
+    pricing: ["Entièrement gratuit", "Forfait gratuit disponible", "Essai gratuit", "Payant d'avance"],
     geography: ["États-Unis", "Inde", "Royaume-Uni", "Canada", "Vietnam", "Chine", "Japon", "Allemagne", "Australie", "France"],
     reviewsTip: { title: "Apps avec {x} avis", body: "{n} apps ({p}%)" },
   },
@@ -272,7 +281,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     revenueDonut: ["Le prime 10 app", "Resto del top 1%", "L'altro 99%"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "Resto del mondo"],
     revenueCountriesFull: ["🇺🇸 Stati Uniti", "🇨🇦 Canada", "🇻🇳 Vietnam", "🇮🇳 India", "🇬🇧 Regno Unito", "🇮🇱 Israele", "🇸🇬 Singapore", "🇫🇷 Francia", "🇱🇹 Lituania", "Resto del mondo"],
-    pricing: ["Gratis", "Prova gratuita", "A pagamento in anticipo"],
+    pricing: ["Completamente gratis", "Piano gratuito disponibile", "Prova gratuita", "A pagamento in anticipo"],
     geography: ["USA", "India", "Regno Unito", "Canada", "Vietnam", "Cina", "Giappone", "Germania", "Australia", "Francia"],
     reviewsTip: { title: "App con {x} recensioni", body: "{n} app ({p}%)" },
   },
@@ -281,7 +290,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     revenueDonut: ["De top 10 apps", "Rest van de top 1%", "De andere 99%"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "Rest van de wereld"],
     revenueCountriesFull: ["🇺🇸 Verenigde Staten", "🇨🇦 Canada", "🇻🇳 Vietnam", "🇮🇳 India", "🇬🇧 Verenigd Koninkrijk", "🇮🇱 Israël", "🇸🇬 Singapore", "🇫🇷 Frankrijk", "🇱🇹 Litouwen", "Rest van de wereld"],
-    pricing: ["Gratis", "Gratis proefperiode", "Vooraf betaald"],
+    pricing: ["Volledig gratis", "Gratis abonnement beschikbaar", "Gratis proefperiode", "Vooraf betaald"],
     geography: ["VS", "India", "VK", "Canada", "Vietnam", "China", "Japan", "Duitsland", "Australië", "Frankrijk"],
     reviewsTip: { title: "Apps met {x} reviews", body: "{n} apps ({p}%)" },
   },
@@ -290,7 +299,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     revenueDonut: ["De 10 främsta apparna", "Resten av topp 1%", "De övriga 99%"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "Övriga världen"],
     revenueCountriesFull: ["🇺🇸 USA", "🇨🇦 Kanada", "🇻🇳 Vietnam", "🇮🇳 Indien", "🇬🇧 Storbritannien", "🇮🇱 Israel", "🇸🇬 Singapore", "🇫🇷 Frankrike", "🇱🇹 Litauen", "Övriga världen"],
-    pricing: ["Gratis", "Gratis provperiod", "Betalning i förskott"],
+    pricing: ["Helt gratis", "Gratisplan tillgänglig", "Gratis provperiod", "Betalning i förskott"],
     geography: ["USA", "Indien", "Storbritannien", "Kanada", "Vietnam", "Kina", "Japan", "Tyskland", "Australien", "Frankrike"],
     reviewsTip: { title: "Appar med {x} recensioner", body: "{n} appar ({p}%)" },
   },
@@ -299,7 +308,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     revenueDonut: ["10 parasta sovellusta", "Loput top 1%:sta", "Loput 99%"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "Muu maailma"],
     revenueCountriesFull: ["🇺🇸 Yhdysvallat", "🇨🇦 Kanada", "🇻🇳 Vietnam", "🇮🇳 Intia", "🇬🇧 Britannia", "🇮🇱 Israel", "🇸🇬 Singapore", "🇫🇷 Ranska", "🇱🇹 Liettua", "Muu maailma"],
-    pricing: ["Ilmainen", "Ilmainen kokeilu", "Maksullinen etukäteen"],
+    pricing: ["Täysin ilmainen", "Ilmainen taso saatavilla", "Ilmainen kokeilu", "Maksullinen etukäteen"],
     geography: ["USA", "Intia", "Britannia", "Kanada", "Vietnam", "Kiina", "Japani", "Saksa", "Australia", "Ranska"],
     reviewsTip: { title: "Sovellukset, joilla on {x} arvostelua", body: "{n} sovellusta ({p}%)" },
   },
@@ -308,7 +317,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     revenueDonut: ["10 najlepszych aplikacji", "Reszta z 1% najlepszych", "Pozostałe 99%"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "Reszta świata"],
     revenueCountriesFull: ["🇺🇸 Stany Zjednoczone", "🇨🇦 Kanada", "🇻🇳 Wietnam", "🇮🇳 Indie", "🇬🇧 Wielka Brytania", "🇮🇱 Izrael", "🇸🇬 Singapur", "🇫🇷 Francja", "🇱🇹 Litwa", "Reszta świata"],
-    pricing: ["Za darmo", "Bezpłatny okres próbny", "Płatne z góry"],
+    pricing: ["Całkowicie za darmo", "Dostępny darmowy plan", "Bezpłatny okres próbny", "Płatne z góry"],
     geography: ["USA", "Indie", "Wielka Brytania", "Kanada", "Wietnam", "Chiny", "Japonia", "Niemcy", "Australia", "Francja"],
     reviewsTip: { title: "Aplikacje z {x} recenzjami", body: "{n} aplikacji ({p}%)" },
   },
@@ -317,7 +326,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     revenueDonut: ["Prvních 10 aplikací", "Zbytek z 1% nejlepších", "Zbylých 99%"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "Zbytek světa"],
     revenueCountriesFull: ["🇺🇸 Spojené státy", "🇨🇦 Kanada", "🇻🇳 Vietnam", "🇮🇳 Indie", "🇬🇧 Spojené království", "🇮🇱 Izrael", "🇸🇬 Singapur", "🇫🇷 Francie", "🇱🇹 Litva", "Zbytek světa"],
-    pricing: ["Zdarma", "Zkušební verze zdarma", "Placené předem"],
+    pricing: ["Zcela zdarma", "Bezplatný tarif k dispozici", "Zkušební verze zdarma", "Placené předem"],
     geography: ["USA", "Indie", "Velká Británie", "Kanada", "Vietnam", "Čína", "Japonsko", "Německo", "Austrálie", "Francie"],
     reviewsTip: { title: "Aplikace s {x} recenzemi", body: "{n} aplikací ({p}%)" },
   },
@@ -326,7 +335,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     revenueDonut: ["As 10 primeiras apps", "Resto do 1% do topo", "Os outros 99%"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "Resto do mundo"],
     revenueCountriesFull: ["🇺🇸 Estados Unidos", "🇨🇦 Canadá", "🇻🇳 Vietname", "🇮🇳 Índia", "🇬🇧 Reino Unido", "🇮🇱 Israel", "🇸🇬 Singapura", "🇫🇷 França", "🇱🇹 Lituânia", "Resto do mundo"],
-    pricing: ["Grátis", "Teste grátis", "Pago antecipadamente"],
+    pricing: ["Totalmente grátis", "Plano grátis disponível", "Teste grátis", "Pago antecipadamente"],
     geography: ["EUA", "Índia", "Reino Unido", "Canadá", "Vietname", "China", "Japão", "Alemanha", "Austrália", "França"],
     reviewsTip: { title: "Apps com {x} avaliações", body: "{n} apps ({p}%)" },
   },
@@ -335,7 +344,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     revenueDonut: ["أفضل 10 تطبيقات", "بقية أعلى 1%", "الـ99% الأخرى"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "بقية العالم"],
     revenueCountriesFull: ["🇺🇸 الولايات المتحدة", "🇨🇦 كندا", "🇻🇳 فيتنام", "🇮🇳 الهند", "🇬🇧 المملكة المتحدة", "🇮🇱 إسرائيل", "🇸🇬 سنغافورة", "🇫🇷 فرنسا", "🇱🇹 ليتوانيا", "بقية العالم"],
-    pricing: ["مجاني", "تجربة مجانية", "مدفوع مقدمًا"],
+    pricing: ["مجاني تمامًا", "خطة مجانية متاحة", "تجربة مجانية", "مدفوع مقدمًا"],
     geography: ["الولايات المتحدة", "الهند", "المملكة المتحدة", "كندا", "فيتنام", "الصين", "اليابان", "ألمانيا", "أستراليا", "فرنسا"],
     reviewsTip: { title: "تطبيقات لها {x} مراجعات", body: "{n} تطبيق ({p}%)" },
   },
@@ -344,7 +353,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     revenueDonut: ["10 האפליקציות המובילות", "שאר 1% העליון", "99% הנותרים"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "שאר העולם"],
     revenueCountriesFull: ["🇺🇸 ארצות הברית", "🇨🇦 קנדה", "🇻🇳 וייטנאם", "🇮🇳 הודו", "🇬🇧 בריטניה", "🇮🇱 ישראל", "🇸🇬 סינגפור", "🇫🇷 צרפת", "🇱🇹 ליטא", "שאר העולם"],
-    pricing: ["חינם", "ניסיון חינם", "בתשלום מראש"],
+    pricing: ["חינם לחלוטין", "תוכנית חינמית זמינה", "ניסיון חינם", "בתשלום מראש"],
     geography: ["ארצות הברית", "הודו", "בריטניה", "קנדה", "וייטנאם", "סין", "יפן", "גרמניה", "אוסטרליה", "צרפת"],
     reviewsTip: { title: "אפליקציות עם {x} ביקורות", body: "{n} אפליקציות ({p}%)" },
   },

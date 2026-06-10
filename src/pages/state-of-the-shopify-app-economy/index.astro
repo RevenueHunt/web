@@ -255,12 +255,18 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">{PRICING.caption}</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <div class="h-72 sm:h-80"><canvas id="c-pricing" aria-label="Pricing model split across all live apps" role="img"></canvas></div>
+          <p class="text-sm font-semibold text-slate-900">Entry pricing across all 22,546 live apps</p>
+          <p class="mt-0.5 text-xs text-slate-500">Four mutually exclusive tiers, by what the app asks for up front.</p>
+          <div class="mt-4 h-72 sm:h-80"><canvas id="c-pricing" aria-label="Pricing model split across all live apps, by entry tier" role="img"></canvas></div>
         </div>
         <div class="space-y-4">
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="text-3xl font-bold text-[#16161D]">{PRICING.permanentFree}</p>
             <p class="mt-1 text-slate-700">offer a permanent free tier, not just a trial</p>
+          </div>
+          <div class="rounded-xl border border-slate-200 p-6">
+            <p class="text-3xl font-bold text-[#16161D]">{PRICING.completelyFree}</p>
+            <p class="mt-1 text-slate-700">are completely free, with no paid plan at all</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="text-3xl font-bold text-[#16161D]">1 in 20</p>

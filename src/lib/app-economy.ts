@@ -77,7 +77,6 @@ export const REVIEWS = {
   values: [81.4, 13.2, 4.7, 0.7],
   colors: [COLORS.gray, COLORS.secondary, "#579cff", COLORS.primary],
   avgRating: 4.43,
-  avgReviews: 77,
   medianReviews: 5,
   ratedCount: "11,040",
   caption:

@@ -171,7 +171,7 @@ const methodologyHtml = METHODOLOGY;
   <section class="bg-white">
     <div class="mx-auto max-w-5xl px-6">
       <div class="rounded-2xl bg-[#16161D] px-6 py-10 sm:px-10">
-        <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-white/50">
+        <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#4dcaff]">
           L'instantané
         </p>
         <dl class="mt-6 grid grid-cols-2 gap-8 text-center sm:grid-cols-4">
@@ -494,7 +494,18 @@ const methodologyHtml = METHODOLOGY;
     new Chart(reviews, {
       type: "doughnut",
       data: { labels: L.reviews, datasets: [{ data: REVIEWS.values, backgroundColor: REVIEWS.colors, borderWidth: 0 }] },
-      options: donutOpts("%"),
+      options: {
+        ...donutOpts("%"),
+        plugins: {
+          legend: { position: "bottom" as const, labels: { boxWidth: 12, boxHeight: 12, padding: 16 } },
+          tooltip: {
+            callbacks: {
+              title: (it: any) => L.reviewsTip.title.replace("{x}", it[0].label),
+              label: (c: any) => L.reviewsTip.body.replace("{n}", REVIEWS.counts[c.dataIndex].toLocaleString()).replace("{p}", c.parsed),
+            },
+          },
+        },
+      },
     });
 
   const revDonut = el("c-revenue-donut");

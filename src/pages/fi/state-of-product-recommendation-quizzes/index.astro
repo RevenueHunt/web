@@ -75,6 +75,9 @@ const FAQ = [
   },
 ];
 
+const pageTitle = "Tuotesuosittelukyselyiden tila: benchmark-raportti 2026";
+const pageDescription = "Miten tuotesuosittelukyselyt todella toimivat: konversio, loppuunsaattaminen ja keskimääräinen tilausarvo, vertailtuna yli 45M todellisesta kyselyvastauksesta yli 20 000 verkkokaupassa.";
+
 const jsonLd = [
   organization(),
   breadcrumb([
@@ -82,8 +85,8 @@ const jsonLd = [
     { name: "Tuotesuosittelukyselyiden tila", url: localizedHref(`/${REPORT.slug}/`, "fi") },
   ]),
   article({
-    title: `${REPORT.title}: ${REPORT.subtitle}`,
-    description: REPORT.description,
+    title: pageTitle,
+    description: pageDescription,
     url: pageUrl,
     image: ogImage,
     datePublished: REPORT.datePublished,
@@ -100,7 +103,7 @@ const jsonLd = [
     "@context": "https://schema.org",
     "@type": "Dataset",
     name: "RevenueHunt tuotesuosittelukysely benchmarks 2026",
-    description: REPORT.description,
+    description: pageDescription,
     url: pageUrl,
     creator: organization(),
     license: "https://creativecommons.org/licenses/by/4.0/",
@@ -160,8 +163,8 @@ const baselines = BASELINES.map((b) => ({ ...b, scope: SCOPE[b.source] ?? b.scop
 ---
 
 <Base
-  title={`${REPORT.title}: ${REPORT.subtitle}`}
-  description={REPORT.description}
+  title={pageTitle}
+  description={pageDescription}
   ogImage={ogImage}
   jsonLd={jsonLd}
   lang="fi"

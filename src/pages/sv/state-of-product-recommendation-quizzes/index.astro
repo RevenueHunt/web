@@ -76,6 +76,9 @@ const FAQ = [
   },
 ];
 
+const pageTitle = "Läget för produktrekommendationsquiz: benchmarkrapport 2026";
+const pageDescription = "Hur produktrekommendationsquiz verkligen presterar: konvertering, slutförande och genomsnittligt ordervärde, benchmarkat utifrån över 45M verkliga quizsvar i fler än 20 000 e-handelsbutiker.";
+
 const jsonLd = [
   organization(),
   breadcrumb([
@@ -83,8 +86,8 @@ const jsonLd = [
     { name: "Läget för produktrekommendationsquiz", url: localizedHref(`/${REPORT.slug}/`, "sv") },
   ]),
   article({
-    title: `${REPORT.title}: ${REPORT.subtitle}`,
-    description: REPORT.description,
+    title: pageTitle,
+    description: pageDescription,
     url: pageUrl,
     image: ogImage,
     datePublished: REPORT.datePublished,
@@ -101,7 +104,7 @@ const jsonLd = [
     "@context": "https://schema.org",
     "@type": "Dataset",
     name: "RevenueHunt produktrekommendationsquiz benchmarks 2026",
-    description: REPORT.description,
+    description: pageDescription,
     url: pageUrl,
     creator: organization(),
     license: "https://creativecommons.org/licenses/by/4.0/",
@@ -161,8 +164,8 @@ const baselines = BASELINES.map((b) => ({ ...b, scope: SCOPE[b.source] ?? b.scop
 ---
 
 <Base
-  title={`${REPORT.title}: ${REPORT.subtitle}`}
-  description={REPORT.description}
+  title={pageTitle}
+  description={pageDescription}
   ogImage={ogImage}
   jsonLd={jsonLd}
   lang="sv"

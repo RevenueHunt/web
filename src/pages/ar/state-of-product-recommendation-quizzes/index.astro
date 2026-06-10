@@ -75,6 +75,9 @@ const FAQ = [
   },
 ];
 
+const pageTitle = "حالة اختبارات التوصية بالمنتجات: تقرير المقارنة المعيارية 2026";
+const pageDescription = "كيف تؤدي اختبارات التوصية بالمنتجات فعليًا: التحويل والإكمال ومتوسط قيمة الطلب، استنادًا إلى أكثر من 45 مليون إجابة حقيقية عبر أكثر من 20,000 متجر للتجارة الإلكترونية.";
+
 const jsonLd = [
   organization(),
   breadcrumb([
@@ -82,8 +85,8 @@ const jsonLd = [
     { name: "حالة اختبارات التوصية بالمنتجات", url: localizedHref(`/${REPORT.slug}/`, "ar") },
   ]),
   article({
-    title: `${REPORT.title}: ${REPORT.subtitle}`,
-    description: REPORT.description,
+    title: pageTitle,
+    description: pageDescription,
     url: pageUrl,
     image: ogImage,
     datePublished: REPORT.datePublished,
@@ -100,7 +103,7 @@ const jsonLd = [
     "@context": "https://schema.org",
     "@type": "Dataset",
     name: "RevenueHunt معايير اختبار التوصية بالمنتجات 2026",
-    description: REPORT.description,
+    description: pageDescription,
     url: pageUrl,
     creator: organization(),
     license: "https://creativecommons.org/licenses/by/4.0/",
@@ -160,8 +163,8 @@ const baselines = BASELINES.map((b) => ({ ...b, scope: SCOPE[b.source] ?? b.scop
 ---
 
 <Base
-  title={`${REPORT.title}: ${REPORT.subtitle}`}
-  description={REPORT.description}
+  title={pageTitle}
+  description={pageDescription}
   ogImage={ogImage}
   jsonLd={jsonLd}
   lang="ar"

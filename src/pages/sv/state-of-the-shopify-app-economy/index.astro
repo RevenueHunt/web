@@ -248,6 +248,10 @@ const methodologyHtml = METHODOLOGY;
             <p class="mt-1 text-slate-700">i snitt, bland de appar som har en</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
+            <p class="font-bold text-[#16161D]"><span class="text-3xl">{REVIEWS.medianReviews}</span> <span class="text-sm font-medium text-slate-500">recensioner</span></p>
+            <p class="mt-1 text-slate-700">för den typiska appen</p>
+          </div>
+          <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-amber-400">★</span> <span class="text-3xl">{REVIEWS.avgRating}</span> <span class="text-sm font-medium text-slate-500">stjärnor</span></p>
             <p class="mt-1 text-slate-700">snittbetyg, bland de {REVIEWS.ratedCount} appar som har ett</p>
           </div>
@@ -531,7 +535,7 @@ const methodologyHtml = METHODOLOGY;
   if (geo)
     new Chart(geo, {
       type: "bar",
-      data: { labels: GEOGRAPHY.labels, datasets: [{ data: GEOGRAPHY.values, backgroundColor: GEOGRAPHY.labels.map((_, i) => (i < 2 ? COLORS.primary : COLORS.secondary)), borderRadius: 4 }] },
+      data: { labels: L.geography, datasets: [{ data: GEOGRAPHY.values, backgroundColor: GEOGRAPHY.labels.map((_, i) => (i < 2 ? COLORS.primary : COLORS.secondary)), borderRadius: 4 }] },
       options: {
         indexAxis: "y",
         responsive: true,

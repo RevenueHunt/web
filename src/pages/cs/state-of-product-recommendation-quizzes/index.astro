@@ -75,6 +75,9 @@ const FAQ = [
   },
 ];
 
+const pageTitle = "Stav kvízů s doporučením produktů: benchmarkový report 2026";
+const pageDescription = "Jak si kvízy s doporučením produktů opravdu vedou: konverze, dokončení a průměrná hodnota objednávky, na základě více než 45M reálných odpovědí z více než 20 000 e-commerce obchodů.";
+
 const jsonLd = [
   organization(),
   breadcrumb([
@@ -82,8 +85,8 @@ const jsonLd = [
     { name: "Stav kvízů s doporučením produktů", url: localizedHref(`/${REPORT.slug}/`, "cs") },
   ]),
   article({
-    title: `${REPORT.title}: ${REPORT.subtitle}`,
-    description: REPORT.description,
+    title: pageTitle,
+    description: pageDescription,
     url: pageUrl,
     image: ogImage,
     datePublished: REPORT.datePublished,
@@ -100,7 +103,7 @@ const jsonLd = [
     "@context": "https://schema.org",
     "@type": "Dataset",
     name: "RevenueHunt benchmarky kvízu s doporučením produktů 2026",
-    description: REPORT.description,
+    description: pageDescription,
     url: pageUrl,
     creator: organization(),
     license: "https://creativecommons.org/licenses/by/4.0/",
@@ -160,8 +163,8 @@ const baselines = BASELINES.map((b) => ({ ...b, scope: SCOPE[b.source] ?? b.scop
 ---
 
 <Base
-  title={`${REPORT.title}: ${REPORT.subtitle}`}
-  description={REPORT.description}
+  title={pageTitle}
+  description={pageDescription}
   ogImage={ogImage}
   jsonLd={jsonLd}
   lang="cs"

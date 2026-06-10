@@ -73,11 +73,12 @@ export const GROWTH = {
 
 /** Review distribution across all 22,546 apps (the "traction" donut). */
 export const REVIEWS = {
-  labels: ["0", "1–10", "11–100", "101–1,000", "1,000+"],
-  values: [51.0, 31.2, 12.5, 4.7, 0.7],
-  colors: [COLORS.gray, "#a9e2ff", COLORS.secondary, "#579cff", COLORS.primary],
+  labels: ["Fewer than 10", "10–99", "100–999", "1,000+"],
+  values: [81.4, 13.2, 4.7, 0.7],
+  colors: [COLORS.gray, COLORS.secondary, "#579cff", COLORS.primary],
   avgRating: 4.43,
   avgReviews: 77,
+  medianReviews: 5,
   ratedCount: "11,040",
   caption:
     "Half the Shopify App Store has never earned a single review. Three in four apps have fewer than five. A review is the clearest public proxy for a real, retained merchant, and most apps never get one.",
@@ -187,89 +188,104 @@ export const FAQ: FaqItem[] = [
  * REVENUE.bars.labels / PRICING.labels.
  */
 export interface ChartLabels {
-  reviews: [string, string, string];
+  reviews: string[];
   revenueDonut: [string, string];
   revenueBars: [string, string, string];
   pricing: [string, string, string];
+  /** Top builder countries, same order as GEOGRAPHY.labels. Country names. */
+  geography: string[];
 }
 
 export const CHART_LABELS: Record<string, ChartLabels> = {
   en: {
-    reviews: ["Zero reviews", "One to five", "More than five"],
+    reviews: ["Fewer than 10", "10–99", "100–999", "1,000+"],
     revenueDonut: ["Top 1% of apps", "The other 99%"],
     revenueBars: ["Top 10 apps", "Top 100 apps", "Top 1% (225 apps)"],
     pricing: ["Free", "Free trial", "Paid up front"],
+    geography: ["US", "India", "UK", "Canada", "Vietnam", "China", "Japan", "Germany", "Australia", "France"],
   },
   es: {
-    reviews: ["Sin reseñas", "De una a cinco", "Más de cinco"],
+    reviews: ["Menos de 10", "10–99", "100–999", "1,000+"],
     revenueDonut: ["1% superior de apps", "El otro 99%"],
     revenueBars: ["Top 10 apps", "Top 100 apps", "1% superior (225 apps)"],
     pricing: ["Gratis", "Prueba gratis", "De pago por adelantado"],
+    geography: ["EE. UU.", "India", "Reino Unido", "Canadá", "Vietnam", "China", "Japón", "Alemania", "Australia", "Francia"],
   },
   de: {
-    reviews: ["Keine Bewertungen", "Eine bis fünf", "Mehr als fünf"],
+    reviews: ["Weniger als 10", "10–99", "100–999", "1,000+"],
     revenueDonut: ["Top 1% der Apps", "Die anderen 99%"],
     revenueBars: ["Top 10 Apps", "Top 100 Apps", "Top 1% (225 Apps)"],
     pricing: ["Kostenlos", "Kostenlose Testversion", "Vorab kostenpflichtig"],
+    geography: ["USA", "Indien", "UK", "Kanada", "Vietnam", "China", "Japan", "Deutschland", "Australien", "Frankreich"],
   },
   fr: {
-    reviews: ["Aucun avis", "Un à cinq", "Plus de cinq"],
+    reviews: ["Moins de 10", "10–99", "100–999", "1,000+"],
     revenueDonut: ["Top 1% des apps", "Les 99% restants"],
     revenueBars: ["Top 10 apps", "Top 100 apps", "Top 1% (225 apps)"],
     pricing: ["Gratuit", "Essai gratuit", "Payant d'avance"],
+    geography: ["États-Unis", "Inde", "Royaume-Uni", "Canada", "Vietnam", "Chine", "Japon", "Allemagne", "Australie", "France"],
   },
   it: {
-    reviews: ["Nessuna recensione", "Da una a cinque", "Più di cinque"],
+    reviews: ["Meno di 10", "10–99", "100–999", "1,000+"],
     revenueDonut: ["Top 1% delle app", "L'altro 99%"],
     revenueBars: ["Top 10 app", "Top 100 app", "Top 1% (225 app)"],
     pricing: ["Gratis", "Prova gratuita", "A pagamento in anticipo"],
+    geography: ["USA", "India", "Regno Unito", "Canada", "Vietnam", "Cina", "Giappone", "Germania", "Australia", "Francia"],
   },
   nl: {
-    reviews: ["Geen reviews", "Een tot vijf", "Meer dan vijf"],
+    reviews: ["Minder dan 10", "10–99", "100–999", "1,000+"],
     revenueDonut: ["Top 1% van apps", "De andere 99%"],
     revenueBars: ["Top 10 apps", "Top 100 apps", "Top 1% (225 apps)"],
     pricing: ["Gratis", "Gratis proefperiode", "Vooraf betaald"],
+    geography: ["VS", "India", "VK", "Canada", "Vietnam", "China", "Japan", "Duitsland", "Australië", "Frankrijk"],
   },
   sv: {
-    reviews: ["Inga recensioner", "En till fem", "Fler än fem"],
+    reviews: ["Färre än 10", "10–99", "100–999", "1,000+"],
     revenueDonut: ["Topp 1% av apparna", "De övriga 99%"],
     revenueBars: ["Topp 10 appar", "Topp 100 appar", "Topp 1% (225 appar)"],
     pricing: ["Gratis", "Gratis provperiod", "Betalning i förskott"],
+    geography: ["USA", "Indien", "Storbritannien", "Kanada", "Vietnam", "Kina", "Japan", "Tyskland", "Australien", "Frankrike"],
   },
   fi: {
-    reviews: ["Ei arvosteluja", "Yhdestä viiteen", "Yli viisi"],
+    reviews: ["Alle 10", "10–99", "100–999", "1,000+"],
     revenueDonut: ["Top 1% sovelluksista", "Loput 99%"],
     revenueBars: ["Top 10 sovellusta", "Top 100 sovellusta", "Top 1% (225 sovellusta)"],
     pricing: ["Ilmainen", "Ilmainen kokeilu", "Maksullinen etukäteen"],
+    geography: ["USA", "Intia", "Britannia", "Kanada", "Vietnam", "Kiina", "Japani", "Saksa", "Australia", "Ranska"],
   },
   pl: {
-    reviews: ["Brak opinii", "Od jednej do pięciu", "Więcej niż pięć"],
+    reviews: ["Mniej niż 10", "10–99", "100–999", "1,000+"],
     revenueDonut: ["1% najlepszych aplikacji", "Pozostałe 99%"],
     revenueBars: ["Top 10 aplikacji", "Top 100 aplikacji", "Top 1% (225 aplikacji)"],
     pricing: ["Za darmo", "Bezpłatny okres próbny", "Płatne z góry"],
+    geography: ["USA", "Indie", "Wielka Brytania", "Kanada", "Wietnam", "Chiny", "Japonia", "Niemcy", "Australia", "Francja"],
   },
   cs: {
-    reviews: ["Žádné recenze", "Jedna až pět", "Více než pět"],
+    reviews: ["Méně než 10", "10–99", "100–999", "1,000+"],
     revenueDonut: ["1% nejlepších aplikací", "Zbylých 99%"],
     revenueBars: ["Top 10 aplikací", "Top 100 aplikací", "Top 1% (225 aplikací)"],
     pricing: ["Zdarma", "Zkušební verze zdarma", "Placené předem"],
+    geography: ["USA", "Indie", "Velká Británie", "Kanada", "Vietnam", "Čína", "Japonsko", "Německo", "Austrálie", "Francie"],
   },
   pt: {
-    reviews: ["Sem avaliações", "De uma a cinco", "Mais de cinco"],
+    reviews: ["Menos de 10", "10–99", "100–999", "1,000+"],
     revenueDonut: ["1% no topo das apps", "Os outros 99%"],
     revenueBars: ["Top 10 apps", "Top 100 apps", "Top 1% (225 apps)"],
     pricing: ["Grátis", "Teste grátis", "Pago antecipadamente"],
+    geography: ["EUA", "Índia", "Reino Unido", "Canadá", "Vietname", "China", "Japão", "Alemanha", "Austrália", "França"],
   },
   ar: {
-    reviews: ["بلا مراجعات", "من واحدة إلى خمس", "أكثر من خمس"],
+    reviews: ["أقل من 10", "10–99", "100–999", "1,000+"],
     revenueDonut: ["أعلى 1% من التطبيقات", "الـ99% الأخرى"],
     revenueBars: ["أفضل 10 تطبيقات", "أفضل 100 تطبيق", "أعلى 1% (225 تطبيقًا)"],
     pricing: ["مجاني", "تجربة مجانية", "مدفوع مقدمًا"],
+    geography: ["الولايات المتحدة", "الهند", "المملكة المتحدة", "كندا", "فيتنام", "الصين", "اليابان", "ألمانيا", "أستراليا", "فرنسا"],
   },
   he: {
-    reviews: ["ללא ביקורות", "אחת עד חמש", "יותר מחמש"],
+    reviews: ["פחות מ-10", "10–99", "100–999", "1,000+"],
     revenueDonut: ["1% העליון של האפליקציות", "99% הנותרים"],
     revenueBars: ["10 האפליקציות המובילות", "100 האפליקציות המובילות", "1% העליון (225 אפליקציות)"],
     pricing: ["חינם", "ניסיון חינם", "בתשלום מראש"],
+    geography: ["ארצות הברית", "הודו", "בריטניה", "קנדה", "וייטנאם", "סין", "יפן", "גרמניה", "אוסטרליה", "צרפת"],
   },
 };

@@ -75,6 +75,9 @@ const FAQ = [
   },
 ];
 
+const pageTitle = "Lo stato dei quiz di raccomandazione prodotti: report benchmark 2026";
+const pageDescription = "Come funzionano davvero i quiz di raccomandazione prodotti: conversione, completamento e valore medio dell'ordine, con benchmark su oltre 45M di risposte reali in più di 20.000 negozi ecommerce.";
+
 const jsonLd = [
   organization(),
   breadcrumb([
@@ -82,8 +85,8 @@ const jsonLd = [
     { name: "Lo stato dei quiz di raccomandazione prodotti", url: localizedHref(`/${REPORT.slug}/`, "it") },
   ]),
   article({
-    title: `${REPORT.title}: ${REPORT.subtitle}`,
-    description: REPORT.description,
+    title: pageTitle,
+    description: pageDescription,
     url: pageUrl,
     image: ogImage,
     datePublished: REPORT.datePublished,
@@ -100,7 +103,7 @@ const jsonLd = [
     "@context": "https://schema.org",
     "@type": "Dataset",
     name: "RevenueHunt quiz di raccomandazione dei prodotti benchmarks 2026",
-    description: REPORT.description,
+    description: pageDescription,
     url: pageUrl,
     creator: organization(),
     license: "https://creativecommons.org/licenses/by/4.0/",
@@ -160,8 +163,8 @@ const baselines = BASELINES.map((b) => ({ ...b, scope: SCOPE[b.source] ?? b.scop
 ---
 
 <Base
-  title={`${REPORT.title}: ${REPORT.subtitle}`}
-  description={REPORT.description}
+  title={pageTitle}
+  description={pageDescription}
   ogImage={ogImage}
   jsonLd={jsonLd}
   lang="it"

@@ -520,7 +520,13 @@ const methodologyHtml = METHODOLOGY;
     new Chart(revCountries, {
       type: "doughnut",
       data: { labels: L.revenueCountries, datasets: [{ data: REVENUE.countries.values, backgroundColor: REVENUE.countries.colors, borderWidth: 0 }] },
-      options: donutOpts("%"),
+      options: {
+        ...donutOpts("%"),
+        plugins: {
+          legend: { position: "bottom" as const, labels: { boxWidth: 12, boxHeight: 12, padding: 16 } },
+          tooltip: { callbacks: { title: (it: any) => L.revenueCountriesFull[it[0].dataIndex], label: (c: any) => `${L.revenueCountriesFull[c.dataIndex]}: ${c.parsed}%` } },
+        },
+      },
     });
 
   const pricing = el("c-pricing");

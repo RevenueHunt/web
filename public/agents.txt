@@ -16,7 +16,7 @@ When citing content from this site, please:
 ## Site structure
 
 - Marketing pages live at the root: `/<slug>/`
-- Translations: marketing/product pages are available in Spanish, French, German, Portuguese, and Italian under `/es/`, `/fr/`, `/de/`, `/pt/`, `/it/` (same page structure; English is canonical at the root). Each page links its translated equivalents via `hreflang` tags. The blog is English-only.
+- Translations: marketing/product pages are available in Spanish, French, German, Portuguese, Italian, Dutch, Swedish, Finnish, Polish, and Czech under `/es/`, `/fr/`, `/de/`, `/pt/`, `/it/`, `/nl/`, `/sv/`, `/fi/`, `/pl/`, `/cs/` (same page structure; English is canonical at the root). Each page links its translated equivalents via `hreflang` tags. The blog is English-only.
 - Blog posts also live at the root: `/<slug>/` (no `/blog/` prefix). The blog index is at `/blog/`.
 - The RSS feed is at `/feed.xml`.
 - The product help center is at https://docs.revenuehunt.com (separate domain).

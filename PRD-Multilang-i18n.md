@@ -111,11 +111,15 @@ Phase-2 note: `.translation-brief.md` (repo root) is the shared brief for transl
 reuse it for DE/PT/IT, then delete before the final commit.
 
 ### Phase 2 — German + Portuguese + Italian
-- [ ] Expand `LANGS` to all 6
-- [ ] Translate all in-scope pages → DE + PT + IT (subagents)
-- [ ] Locale wrappers `/de/…`, `/pt/…`, `/it/…`
-- [ ] typecheck + build + e2e green
-- [ ] **Commit, push, deploy**
+- [x] Expand `Lang`/`LANGS`/labels/og/prefixes + `t` to all 6; content schema enum; chrome.ts + plans.ts (`PLANS_BY_LANG`) de/pt/it
+- [x] Translate all in-scope pages → DE + PT + IT (subagents, small batches after an infra-stall recovery)
+- [x] Locale wrappers `/de/…`, `/pt/…`, `/it/…` + `[slug]` routes
+- [x] House-style fix: normalized translator em dashes (`—`) → spaced hyphen (` - `) in all locale copy
+- [x] typecheck (0 errors) + build green (334 pages) + e2e (420 passed)
+- [x] **Commit** → merge to main → push → Cloudflare Pages auto-deploy
+
+All 6 languages live: English (root) + Español, Français, Deutsch, Português, Italiano.
+Pre-existing e2e failures (`/call-scheduled/`, content-fidelity ≥95) remain — unrelated to i18n.
 
 ## Notes / decisions
 - OG images: translated pages reuse existing English `/og/<slug>.png` (no localized OG art).

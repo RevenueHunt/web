@@ -1,0 +1,513 @@
+---
+import Base from "../../layouts/Base.astro";
+import PlanCards from "../../components/pages/PlanCards.astro";
+import YouTubeFacade from "../../components/YouTubeFacade.astro";
+import { organization, website, softwareApplication } from "../../lib/schema";
+import { SITE } from "../../lib/site";
+import { localizedHref } from "../../lib/i18n";
+
+const SHOPIFY_INSTALL =
+  "https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=bfs_badge_hero";
+const WOOCOMMERCE_DOWNLOAD =
+  "https://downloads.wordpress.org/plugin/product-recommendation-quiz-for-ecommerce.latest-stable.zip";
+const YOUTUBE_ID = "fJqpGJUzZNE";
+
+const stats = [
+  { value: "+20,000", label: "Brand che usano RevenueHunt" },
+  { value: "+45M", label: "Quiz completati" },
+  { value: "+370M USD", label: "Fatturato per i merchant" },
+  { value: "4.9 ★", label: "450+ recensioni a cinque stelle" },
+];
+
+const pillars = [
+  {
+    image: "/img/pages/home/recommend-right-products.svg",
+    title: "Consiglia i prodotti giusti",
+    body:
+      "I quiz shoppable aumentano le vendite, aiutano i clienti a trovare i prodotti giusti per loro e li accompagnano verso decisioni di acquisto sicure.",
+  },
+  {
+    image: "/img/pages/home/know-your-customers.svg",
+    title: "Conosci i tuoi clienti",
+    body:
+      "I quiz ti permettono di raccogliere dati utili ponendo domande mirate ai tuoi clienti. Segmenta e tagga i tuoi shopper in base alle loro risposte.",
+  },
+  {
+    image: "/img/pages/home/grow-your-audience.svg",
+    title: "Fai crescere la tua audience",
+    body:
+      "Invia i lead acquisiti alla tua mailing list o al tuo CRM. Sfrutta i dati di profilo dei clienti per creare campagne di marketing più personalizzate e con un ROI più alto.",
+  },
+];
+
+const features = [
+  {
+    kicker: "AI quiz copilot",
+    title: "Crea un quiz in 60 secondi con l'AI",
+    body:
+      "Descrivi il tuo store e il nostro copilot AI genera un quiz completamente configurato - domande, logica e mappature dei prodotti - pronto da pubblicare.",
+  },
+  {
+    kicker: "Conditional logic",
+    title: "Logica di ramificazione drag-and-drop",
+    body:
+      "Mostra o nascondi le domande in base alle risposte precedenti. Guida ogni shopper lungo il percorso che porta all'acquisto - senza codice.",
+  },
+  {
+    kicker: "Quiz design",
+    title: "Rendilo tuo - senza codice",
+    body:
+      "Personalizza colori, font, immagini e layout per adattarli al tuo brand. Il tuo quiz sembra parte del tuo store, non un widget di terze parti.",
+  },
+  {
+    kicker: "Results page",
+    title: "Una pagina dei risultati pronta al checkout che converte",
+    body:
+      "Mostra suggerimenti di prodotto personalizzati raggruppati per fase della routine - con immagini, prezzi e pulsanti aggiungi al carrello. Gli shopper acquistano direttamente dalla pagina dei risultati.",
+  },
+  {
+    kicker: "Drop-off analytics",
+    title: "Scopri esattamente dove gli shopper abbandonano",
+    body:
+      "Vedi i tassi di abbandono, le destinazioni e gli esiti domanda per domanda. Risolvi i punti di attrito, migliora i completamenti e recupera il fatturato perso.",
+  },
+  {
+    kicker: "Third-party integrations",
+    title: "Collega l'intero tuo stack di marketing",
+    body:
+      "Invia i dati del quiz a Google Analytics, attiva eventi del Meta Pixel per il retargeting e sincronizza i lead con Klaviyo - tutto da un'unica pagina delle impostazioni. Niente codice, niente middleware.",
+  },
+];
+
+const steps = [
+  {
+    title: "Installa l'app",
+    body: "Installazione con un clic dallo Shopify App Store o dalla directory dei plugin di WordPress.",
+  },
+  {
+    title: "Crea il tuo quiz",
+    body: "Usa il copilot AI o il builder drag-and-drop. Aggiungi le tue domande, imposta la tua logica.",
+  },
+  {
+    title: "Mappa i tuoi prodotti",
+    body: "Collega le risposte del quiz al tuo catalogo prodotti. Consiglia la corrispondenza migliore per ogni risultato.",
+  },
+  {
+    title: "Pubblica e promuovi",
+    body: "Incorporalo in qualsiasi pagina, mostralo in exit intent o collegalo dai tuoi annunci.",
+  },
+];
+
+const testimonials = [
+  {
+    quote:
+      "Sono passato da Octane. Il processo di design era molto più intuitivo e gradevole a livello visivo. Quando ho avuto un intoppo con Klaviyo, il supporto ha risposto con una rapidità fulminea e un atteggiamento super disponibile e alla mano.",
+    author: "Kae Paché",
+  },
+  {
+    quote:
+      "Eric è stato estremamente paziente, competente e accurato - mi ha guidato passo dopo passo nella configurazione del quiz. Un supporto così è raro.",
+    author: "Marcelle",
+  },
+  {
+    quote:
+      "L'app in sé è eccellente: funzionalità potenti, usabilità intuitiva. Il team ha creato per noi un tutorial guidato personalizzato. La usiamo da oltre 3 anni.",
+    author: "Didymos",
+  },
+  {
+    quote:
+      "Di gran lunga la migliore app di quiz e raccomandazione prodotti che ho testato su Shopify. Il team si è preso il tempo di indagare, spiegare ogni passaggio con chiarezza e accompagnarmi finché il problema non è stato del tutto risolto.",
+    author: "REYNA",
+  },
+  {
+    quote:
+      "Era la 5ª app di quiz che provavo ed è stata l'unica a supportare pienamente ciò di cui avevo bisogno. Sono riuscito a creare il mio primo quiz molto rapidamente.",
+    author: "CCA Printing",
+  },
+  {
+    quote:
+      "L'assistenza clienti si distingue - un agente ha registrato un video e mi ha guidato passo dopo passo nella soluzione. Molto reattivo e super disponibile.",
+    author: "The Love U Collective",
+  },
+];
+
+const verticals = [
+  { icon: "💄", title: "Bellezza e skincare", body: "Trova-tipo-di-pelle, abbinamento delle tonalità, costruttori di routine." },
+  { icon: "💊", title: "Integratori", body: "Quiz sugli obiettivi di salute che consigliano lo stack giusto." },
+  { icon: "👗", title: "Moda", body: "Quiz di stile che fanno emergere la vestibilità, il colore e il taglio giusti." },
+  { icon: "🐾", title: "Animali domestici", body: "Raccomandazioni di prodotto specifiche per razza per ogni proprietario." },
+  { icon: "🍵", title: "Cibo e bevande", body: "Quiz sul profilo di gusto che trasformano i curiosi in abbonati." },
+  { icon: "🏋️", title: "Fitness", body: "Funnel basati sugli obiettivi per attrezzatura, abbigliamento e programmi." },
+  { icon: "🏠", title: "Casa e arredo", body: "Quiz di stile che abbinano i mobili a ogni spazio abitativo." },
+  { icon: "🌿", title: "Eco e sostenibile", body: "Quiz di abbinamento dei valori per il consumatore consapevole." },
+];
+
+const brands = [
+  "Olaplex", "Madluvv", "Mattel", "Alt", "Baia", "Bare", "Biktrix",
+  "Dermocracy", "Diego", "Gisou", "Laura", "Nuxe", "Olcay",
+  "Salad Code", "Salugea", "Sunday", "Tushy", "Tiege",
+];
+
+const SHOPIFY_REVIEWS =
+  "https://apps.shopify.com/product-recommendation-quiz-revenuehunt/reviews?ratings%5B%5D=5&sort_by=relevance";
+const WOOCOMMERCE_REVIEWS =
+  "https://wordpress.org/support/plugin/product-recommendation-quiz-for-ecommerce/reviews/?filter=5";
+---
+
+<Base translated={true}
+  lang="it"
+  title={`${SITE.name} - il Product Recommendation Quiz che converte`}
+  description="Trasforma i curiosi passivi in acquirenti con un Product Recommendation Quiz guidato. Raccogli zero-party data, consiglia il prodotto giusto, aumenta la conversione. Senza codice."
+  jsonLd={[organization(), website(), softwareApplication()]}
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-7xl px-6 py-16 lg:py-24">
+      <div class="grid items-center gap-12 lg:grid-cols-2 lg:items-start lg:gap-16">
+        <div>
+          <a
+            href={SHOPIFY_INSTALL}
+            rel="external nofollow"
+            onclick="window.gtag&&gtag('event','shopify_app_install',{event_label:'home_hero_badge'})"
+            class="mb-6 inline-block"
+          >
+            <img
+              src="/img/home/bfs-badge.webp"
+              alt="Built for Shopify"
+              width="120"
+              height="38"
+              class="h-8 w-auto"
+              loading="eager"
+            />
+          </a>
+          <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+            Il Product Recommendation Quiz che trasforma i curiosi in acquirenti
+          </h1>
+          <p class="mt-6 max-w-xl text-lg text-slate-700">
+            Gli annunci a pagamento portano clic - i nostri quiz li trasformano in vendite. RevenueHunt guida gli shopper verso i prodotti giusti,
+            raccoglie dati e aumenta le conversioni. Facile da installare, senza codice.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a
+              href={SHOPIFY_INSTALL}
+              rel="external nofollow"
+              onclick="window.gtag&&gtag('event','shopify_app_install',{event_label:'home_hero'})"
+              class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
+            >
+              installa su Shopify
+            </a>
+            <a
+              href={WOOCOMMERCE_DOWNLOAD}
+              rel="external nofollow"
+              onclick="window.gtag&&gtag('event','download_woocommerce_plugin',{event_label:'home_hero'})"
+              class="inline-flex items-center justify-center rounded-md border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-900 transition hover:border-slate-400 hover:bg-slate-50"
+            >
+              ottieni per WooCommerce
+            </a>
+          </div>
+          <p class="mt-4 text-sm text-slate-500">
+            Piano gratuito disponibile · 15 giorni di prova gratuita · 30 giorni di garanzia soddisfatti o rimborsati
+          </p>
+        </div>
+
+        <div class="relative lg:mt-14">
+          <div class="aspect-video overflow-hidden rounded-xl bg-slate-900 shadow-2xl">
+            <YouTubeFacade
+              id={YOUTUBE_ID}
+              title="RevenueHunt - Product Recommendation Quiz"
+              poster="/img/home/video-poster.webp"
+              alt="Demo del Product Recommendation Quiz di RevenueHunt per store Shopify e WooCommerce"
+              eager
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats / proof bar -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-7xl px-6 py-16">
+      <p class="text-center text-sm font-semibold uppercase tracking-wider text-white/70">
+        Perché scegliere RevenueHunt? Il nostro impatto parla da sé
+      </p>
+      <dl class="mt-8 grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-4">
+        {stats.map((s) => (
+          <div class="text-center">
+            <dt class="text-3xl font-bold tracking-tight text-white sm:text-4xl">{s.value}</dt>
+            <dd class="mt-2 text-sm text-white/70">{s.label}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  </section>
+
+  <!-- Problem framing -->
+  <section class="mx-auto max-w-4xl px-6 py-20 text-center">
+    <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+      Gli shopper non sanno sempre cosa comprare - e questo significa vendite perse.
+    </h2>
+    <p class="mx-auto mt-6 max-w-2xl text-lg text-slate-700">
+      Il nostro <a href={localizedHref("/product-recommendation-quiz/", "it")} class="font-semibold text-slate-900 underline underline-offset-4 hover:text-slate-700">Product Recommendation Quiz</a> guida ogni cliente lungo il suo percorso, aiutandolo a scoprire e ad acquistare i prodotti giusti per lui.
+    </p>
+  </section>
+
+  <!-- 3-up pillars -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <div class="grid gap-10 md:grid-cols-3">
+        {pillars.map((p) => (
+          <div class="text-center">
+            <img src={p.image} alt={p.title} width="120" height="120" class="mx-auto h-24 w-24" loading="lazy" />
+            <h3 class="mt-6 text-xl font-semibold text-slate-900">{p.title}</h3>
+            <p class="mt-3 text-slate-600">{p.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Features grid -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Tutto ciò che ti serve per vendere in modo più intelligente</h2>
+      </div>
+      <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {features.map((f) => (
+          <div class="rounded-xl border border-slate-200 bg-white p-6">
+            <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">{f.kicker}</p>
+            <h3 class="mt-2 text-xl font-semibold text-slate-900">{f.title}</h3>
+            <p class="mt-3 text-slate-600">{f.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 4-step setup -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Online in 4 passaggi. In meno di 15 minuti.</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-slate-700">
+          Niente sviluppatori. Niente codice. Solo un quiz che i tuoi clienti adoreranno.
+        </p>
+      </div>
+      <ol class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        {steps.map((s, i) => (
+          <li class="rounded-xl border border-slate-200 bg-white p-6">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#16161D] text-sm font-bold text-white">{i + 1}</span>
+            <h3 class="mt-4 text-lg font-semibold text-slate-900">{s.title}</h3>
+            <p class="mt-2 text-slate-600">{s.body}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+          Scopri perché i merchant adorano il Product Recommendation Quiz
+        </h2>
+        <p class="mx-auto mt-4 max-w-3xl text-lg text-slate-700">
+          Usato da oltre 20.000 brand e supportato da 450+ recensioni a cinque stelle su Shopify, WooCommerce e altro -
+          RevenueHunt è l'app di quiz di riferimento per spingere le vendite attraverso la personalizzazione. Ma non fidarti solo della nostra parola.
+        </p>
+        <div class="mt-6 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap text-sm">
+          <a href={SHOPIFY_REVIEWS} rel="external nofollow" class="font-semibold text-[#16161D] underline-offset-4 hover:underline">
+            Recensioni su Shopify →
+          </a>
+          <a href={WOOCOMMERCE_REVIEWS} rel="external nofollow" class="font-semibold text-[#16161D] underline-offset-4 hover:underline">
+            Recensioni su WooCommerce →
+          </a>
+        </div>
+      </div>
+
+      <h3 class="mt-16 text-center text-xl font-semibold text-slate-900">Cosa dicono i merchant</h3>
+      <div class="rh-carousel mt-8">
+        <ul data-carousel class="rh-carousel__track" aria-label="Testimonianze dei merchant">
+          {testimonials.map((t) => (
+            <li class="rounded-xl border border-slate-200 bg-white p-6">
+              <p class="text-amber-500" aria-label="5 stelle su 5">★★★★★</p>
+              <blockquote class="mt-3 text-slate-700">"{t.quote}"</blockquote>
+              <p class="mt-4 text-sm font-semibold text-slate-900"> - {t.author}</p>
+            </li>
+          ))}
+        </ul>
+        <div data-carousel-dots class="rh-carousel__dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Verticals -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Pensato per ogni settore dell'eCommerce</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-slate-700">
+          Che tu venda skincare, integratori o divani - un quiz che aiuta gli shopper a trovare il prodotto giusto converte meglio di qualsiasi pagina di collezione.
+        </p>
+      </div>
+      <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {verticals.map((v) => (
+          <div class="rounded-xl border border-slate-200 bg-white p-6">
+            <span class="block text-3xl" aria-hidden="true">{v.icon}</span>
+            <h3 class="mt-3 text-base font-semibold text-slate-900">{v.title}</h3>
+            <p class="mt-2 text-sm text-slate-600">{v.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand logos -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-7xl px-6 py-16">
+      <h2 class="text-center text-2xl font-bold tracking-tight text-white sm:text-3xl">Diamo forza ai migliori brand dell'eCommerce</h2>
+      <div class="brands-marquee mt-10">
+        <ul class="brands-marquee__track" aria-label="Logo dei brand clienti">
+          {brands.map((b) => (
+            <li class="brands-marquee__item">
+              <img
+                src={`/img/brands/${b.toLowerCase().replace(/ /g, "-")}.svg`}
+                alt={b}
+                loading="lazy"
+                width="160"
+                height="40"
+              />
+            </li>
+          ))}
+          {brands.map((b) => (
+            <li class="brands-marquee__item" aria-hidden="true">
+              <img
+                src={`/img/brands/${b.toLowerCase().replace(/ /g, "-")}.svg`}
+                alt={`${b} logo`}
+                loading="lazy"
+                width="160"
+                height="40"
+              />
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .brands-marquee {
+      overflow: hidden;
+      -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+      mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    }
+    .brands-marquee__track {
+      display: flex;
+      align-items: center;
+      width: max-content;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      animation: brands-marquee 40s linear infinite;
+    }
+    .brands-marquee:hover .brands-marquee__track {
+      animation-play-state: paused;
+    }
+    .brands-marquee__item {
+      flex-shrink: 0;
+      padding: 10px 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+    }
+    .brands-marquee__item img {
+      height: 100%;
+      width: auto;
+      max-width: 160px;
+      object-fit: contain;
+      /* Normalize mixed-fill SVGs to white on the dark strip. */
+      filter: brightness(0) invert(1);
+      opacity: 0.85;
+    }
+    @keyframes brands-marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .brands-marquee__track { animation: none; }
+    }
+  </style>
+
+  <!-- Plans summary -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Scegli il piano migliore per il tuo eCommerce</h2>
+        <p class="mt-4 text-base text-slate-700 sm:text-lg">
+          Piano gratuito disponibile. 15 giorni di prova gratuita con risposte al quiz illimitate &amp; tutte le funzionalità. 30 giorni di garanzia soddisfatti o rimborsati.
+        </p>
+      </div>
+
+      <div class="mt-12">
+        <PlanCards lang="it" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Multi-platform strip -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-6 py-16 text-center">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Funziona su più piattaforme di eCommerce</h2>
+      <!-- Logos are white SVGs (built for a dark bg); brightness-0 inverts them to dark for this white section. -->
+      <ul class="mt-10 flex flex-wrap items-center justify-center gap-x-14 gap-y-8">
+        <li>
+          <a href="/product-recommendation-quiz-shopify/" aria-label="Product Recommendation Quiz per Shopify">
+            <img src="/img/logos/shopify_monotone_white.svg" alt="Shopify" class="h-8 w-auto opacity-60 brightness-0 transition hover:opacity-100" />
+          </a>
+        </li>
+        <li>
+          <a href="/product-recommendation-quiz-woocommerce/" aria-label="Product Recommendation Quiz per WooCommerce">
+            <img src="/img/logos/woo_logo_white.svg" alt="WooCommerce" class="h-8 w-auto opacity-60 brightness-0 transition hover:opacity-100" />
+          </a>
+        </li>
+        <li>
+          <a href="/product-recommendation-quiz-bigcommerce/" aria-label="Product Recommendation Quiz per BigCommerce">
+            <img src="/img/logos/bigcommerce_logo_white.svg" alt="BigCommerce" class="h-7 w-auto opacity-60 brightness-0 transition hover:opacity-100" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <p class="mb-3 text-sm font-semibold uppercase tracking-wider text-white/70">
+        La maggior parte degli shopper se ne va perché non trova il prodotto giusto
+      </p>
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Trasforma gli shopper in acquirenti sicuri con un Product Recommendation Quiz che fa crescere le vendite.
+      </h2>
+      <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
+        <a
+          href={SHOPIFY_INSTALL}
+          rel="external nofollow"
+          onclick="window.gtag&&gtag('event','shopify_app_install',{event_label:'home_bottom'})"
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          installa su Shopify
+        </a>
+        <a
+          href={WOOCOMMERCE_DOWNLOAD}
+          rel="external nofollow"
+          onclick="window.gtag&&gtag('event','download_woocommerce_plugin',{event_label:'home_bottom'})"
+          class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
+        >
+          ottieni per WooCommerce
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,44 @@
+---
+// Spanish content/markdown pages. Mirrors the English [slug] route but only for
+// `pages` collection entries with lang === "de" (translations live in
+// src/content/pages/de/). Rendering is shared via <ContentPage>.
+import { getCollection } from "astro:content";
+import ContentPage from "../../../components/pages/ContentPage.astro";
+
+export async function getStaticPaths() {
+  const pages = await getCollection(
+    "pages",
+    ({ data }) => !data.draft && data.lang === "de",
+  );
+  // Slugs with hand-built bespoke locale routes elsewhere are skipped here.
+  const explicitlyOverridden = new Set([
+    "home",
+    "blog",
+    "integrations",
+    "pricing",
+    "demo",
+    "newsletter",
+    "sign-up",
+    "message-sent",
+    "jobs",
+    "whats-new",
+    "why-your-traffic-isnt-converting",
+    "testimonials",
+    "templates",
+    "for-beauty-brands",
+    "partners",
+    "contact",
+    "quiz-readiness-assessment",
+  ]);
+  return pages
+    .filter((p) => !explicitlyOverridden.has(p.data.legacySlug))
+    .map((page) => ({
+      params: { slug: page.data.legacySlug },
+      props: { entry: page },
+    }));
+}
+
+const { entry } = Astro.props;
+---
+
+<ContentPage entry={entry} lang="de" translated={true} />

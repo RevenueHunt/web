@@ -40,7 +40,7 @@ Comme nous n'avons pas d'accès direct au backend de votre boutique, la fonction
 <details>
 <summary><strong>Comment m'inscrire ?</strong></summary>
 
-L'inscription est rapide et facile. Il vous suffit de [cliquer ici](https://admin.revenuehunt.com/register/), de saisir votre adresse email et de créer un mot de passe — aucune étape supplémentaire n'est requise. Une fois cela fait, vous accédez immédiatement au tableau de bord de l'application pour commencer à créer vos quiz.
+L'inscription est rapide et facile. Il vous suffit de [cliquer ici](https://admin.revenuehunt.com/register/), de saisir votre adresse email et de créer un mot de passe - aucune étape supplémentaire n'est requise. Une fois cela fait, vous accédez immédiatement au tableau de bord de l'application pour commencer à créer vos quiz.
 </details>
 
 <details>

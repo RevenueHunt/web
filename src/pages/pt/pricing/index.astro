@@ -1,0 +1,194 @@
+---
+import Base from "../../../layouts/Base.astro";
+import PlanCards from "../../../components/pages/PlanCards.astro";
+import Reviews from "../../../components/Reviews.astro";
+import { organization, breadcrumb, productWithReviews } from "../../../lib/schema";
+import { SITE } from "../../../lib/site";
+import { PLANS } from "../../../lib/plans";
+import { COMBINED_REVIEWS } from "../../../lib/reviews";
+import { localizedHref } from "../../../lib/i18n";
+
+const jsonLd = [
+  organization(),
+  breadcrumb([
+    { name: "Início", url: "/" },
+    { name: "Preços", url: "/pricing/" },
+  ]),
+  productWithReviews({
+    name: "RevenueHunt - Product Recommendation Quiz",
+    description:
+      "Quizzes de recomendação de produtos para e-commerce. Plano gratuito, planos pagos a partir de $39/mês.",
+    image: "/og/pricing.png",
+    url: "/pricing/",
+    ratingValue: COMBINED_REVIEWS.ratingValue,
+    reviewCount: COMBINED_REVIEWS.reviewCount,
+    reviews: COMBINED_REVIEWS.reviews.map((r) => ({
+      author: r.author,
+      quote: r.quote,
+      rating: r.rating,
+      date: r.date,
+    })),
+    offers: PLANS.map((p) => ({ name: p.name, price: p.price })),
+  }),
+];
+---
+
+<Base
+  title="Preços - RevenueHunt"
+  description="Preços da RevenueHunt: plano gratuito disponível. Planos pagos a partir de $39/mês. Teste gratuito de 15 dias com respostas ilimitadas. Garantia de devolução do dinheiro de 30 dias."
+  jsonLd={jsonLd}
+  lang="pt"
+  translated={true}
+>
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-6 py-16 sm:py-20">
+      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
+        <a href={localizedHref("/", "pt")} class="hover:text-slate-700">Início</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <span class="text-slate-700">Preços</span>
+      </nav>
+
+      <div class="text-center">
+        <h1 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+          Escolhe o melhor plano para o teu eCommerce
+        </h1>
+        <p class="mt-4 text-base text-slate-700 sm:text-lg">
+          Plano gratuito disponível. Teste gratuito de 15 dias com respostas de quiz ilimitadas &amp; todas as funcionalidades. Garantia de devolução do dinheiro de 30 dias.
+        </p>
+      </div>
+
+      <div class="mt-10 flex items-center justify-center gap-3" data-pricing-toggle>
+        <span class="text-sm font-semibold text-slate-900" data-billing-label="monthly">Mensal</span>
+        <button
+          type="button"
+          role="switch"
+          aria-checked="false"
+          aria-label="Toggle yearly billing"
+          class="relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-slate-300 transition-colors aria-checked:bg-[#16161D]"
+          data-pricing-switch
+        >
+          <span aria-hidden="true" class="pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition translate-x-0 [[aria-checked=true]_&]:translate-x-5"></span>
+        </button>
+        <span class="text-sm text-slate-700">
+          <span data-billing-label="yearly" class="font-semibold text-slate-700">Anual</span>
+          <span class="ml-1 inline-flex items-center rounded-full bg-emerald-100 px-2 py-0.5 text-xs font-semibold text-emerald-800">poupa 20%</span>
+        </span>
+      </div>
+
+      <div class="mt-8" id="plans">
+        <h2 class="sr-only">Planos</h2>
+        <PlanCards lang="pt" />
+      </div>
+    </div>
+  </section>
+
+  <script is:inline>
+    (function () {
+      const sw = document.querySelector("[data-pricing-switch]");
+      if (!sw) return;
+      const monthly = document.querySelectorAll('[data-billing="monthly"]');
+      const yearly = document.querySelectorAll('[data-billing="yearly"]');
+      const monthlyLabel = document.querySelector('[data-billing-label="monthly"]');
+      const yearlyLabel = document.querySelector('[data-billing-label="yearly"]');
+      sw.addEventListener("click", () => {
+        const on = sw.getAttribute("aria-checked") !== "true";
+        sw.setAttribute("aria-checked", on ? "true" : "false");
+        monthly.forEach((el) => { el.hidden = on; });
+        yearly.forEach((el) => { el.hidden = !on; });
+        if (monthlyLabel) monthlyLabel.classList.toggle("text-slate-700", on);
+        if (monthlyLabel) monthlyLabel.classList.toggle("text-slate-900", !on);
+        if (yearlyLabel) yearlyLabel.classList.toggle("text-slate-900", on);
+        if (yearlyLabel) yearlyLabel.classList.toggle("text-slate-700", !on);
+      });
+    })();
+  </script>
+
+  <Reviews data={COMBINED_REVIEWS} heading="Adorado por mais de 500 comerciantes de e-commerce" bg="bg-white" lang="pt" />
+
+  <!-- Enterprise / larger plans - two-column: title+CTA left, 5 checks right -->
+  <section id="enterprise" class="mx-auto max-w-7xl px-6 py-12">
+    <div class="overflow-hidden rounded-2xl bg-[#16161D] text-white">
+      <div class="grid gap-10 p-8 md:grid-cols-2 md:p-12 lg:gap-16">
+        <div>
+          <p class="text-3xl font-bold tracking-tight sm:text-4xl">Precisas de um plano maior?</p>
+          <h2 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">Pergunta sobre o Enterprise.</h2>
+          <a
+            href={localizedHref("/demo/", "pt")}
+            class="mt-10 inline-flex items-center justify-center rounded-md border border-white bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:bg-white/10"
+          >
+            agendar uma demo
+          </a>
+        </div>
+        <ul class="space-y-5 md:pt-2">
+          <li class="flex gap-3">
+            <svg class="mt-1 h-5 w-5 flex-shrink-0 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5 12 10 17 19 7"/></svg>
+            <span class="text-white"><strong class="font-semibold">A partir de 299 USD/mês.</strong> (respostas ilimitadas/mês.)</span>
+          </li>
+          <li class="flex gap-3">
+            <svg class="mt-1 h-5 w-5 flex-shrink-0 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5 12 10 17 19 7"/></svg>
+            <span class="text-white">Concebido para crescimento ao nível do Shopify Plus. Todas as funcionalidades incluídas.</span>
+          </li>
+          <li class="flex gap-3">
+            <svg class="mt-1 h-5 w-5 flex-shrink-0 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5 12 10 17 19 7"/></svg>
+            <span class="text-white">Preços escaláveis para marcas de alto volume &amp; multimercado</span>
+          </li>
+          <li class="flex gap-3">
+            <svg class="mt-1 h-5 w-5 flex-shrink-0 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5 12 10 17 19 7"/></svg>
+            <span class="text-white">Traz os teus próprios contratos &amp; acordos (SLA, NDA...)</span>
+          </li>
+          <li class="flex gap-3">
+            <svg class="mt-1 h-5 w-5 flex-shrink-0 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="5 12 10 17 19 7"/></svg>
+            <span class="text-white">Serviços de criação de quizzes feitos por nós (add-on pago)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Two link rows beneath Enterprise block -->
+  <section class="mx-auto max-w-3xl px-6 pb-20 text-center">
+    <p class="text-slate-700">
+      Tens alguma questão sobre os nossos planos &amp; preços? - {" "}
+      <a
+        href="https://docs.revenuehunt.com/customer-success/plans-pricing-faq/"
+        target="_blank"
+        rel="external noopener"
+        class="font-semibold text-slate-900 underline underline-offset-4 hover:text-slate-700"
+      >
+        consulta este artigo de FAQs
+      </a>
+    </p>
+    <p class="mt-3 text-slate-700">
+      Precisas de um plano com respostas de quiz ilimitadas? - {" "}
+      <a href={localizedHref("/demo/", "pt")} class="font-semibold text-slate-900 underline underline-offset-4 hover:text-slate-700">
+        Agenda uma demo
+      </a>
+    </p>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <p class="mb-3 text-sm font-semibold uppercase tracking-wider text-white/70">
+        A maioria dos compradores vai-se embora porque não encontra o produto certo
+      </p>
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Transforma compradores em clientes confiantes com um Product Recommendation Quiz que gera vendas.
+      </h2>
+      <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
+        <a
+          href={SITE.signup_url}
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          Registar
+        </a>
+        <a
+          href={localizedHref("/demo/", "pt")}
+          class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
+        >
+          Agenda uma demo
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

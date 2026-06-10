@@ -362,7 +362,289 @@ const fr: Chrome = {
   },
 };
 
-export const CHROME = { en, es, fr } satisfies Record<Lang, Chrome>;
+const de: Chrome = {
+  rc_heading: "Kostenlose Tools & Daten",
+  rc_sub: "Setze diese Benchmarks in deinem eigenen Shop ein.",
+  rc_roi_eyebrow: "Kostenloses Tool",
+  rc_roi_title: "Quiz-ROI-Rechner",
+  rc_roi_blurb:
+    "Schätze den zusätzlichen Umsatz und ROI, den ein Product Recommendation Quiz deinem Shop bringen kann. Auf echten Daten basierend, ohne E-Mail.",
+  rc_roi_cta: "Berechne deinen ROI",
+  rc_report_eyebrow: "Kostenloser Report",
+  rc_report_title: "E-Commerce-Quiz-Benchmark-Report",
+  rc_report_blurb:
+    "Wie Product Recommendation Quizzes wirklich abschneiden: Conversion nach Kategorie, AOV-Steigerung und Abschlussrate, aus über 45 Mio. echten Quiz-Antworten.",
+  rc_report_cta: "Report lesen",
+  cta_kicker: "Die meisten Käufer gehen, weil sie das passende Produkt nicht finden",
+  cta_h2: "Mach aus Käufern überzeugte Kunden mit einem Product Recommendation Quiz, das den Umsatz steigert.",
+  cta_install_shopify: "auf Shopify installieren",
+  cta_get_woocommerce: "für WooCommerce holen",
+  trial_note: "Kostenloser Plan verfügbar · 15 Tage kostenlos testen · 30 Tage Geld-zurück-Garantie",
+  pillars: [
+    {
+      image: PILLAR_IMAGES.recommend,
+      title: "Empfiehl die richtigen Produkte",
+      body: "Shoppable Quizzes steigern den Umsatz, beraten Kunden bei der Suche nach den passenden Produkten und helfen ihnen, sichere Kaufentscheidungen zu treffen.",
+    },
+    {
+      image: PILLAR_IMAGES.know,
+      title: "Lerne deine Kunden kennen",
+      body: "Quizzes liefern dir verwertbare Daten, indem sie deinen Kunden gezielte Fragen stellen. Segmentiere und tagge deine Käufer anhand ihrer Antworten.",
+    },
+    {
+      image: PILLAR_IMAGES.grow,
+      title: "Lass deine Audience wachsen",
+      body: "Sende erfasste Leads an deine Mailingliste oder dein CRM. Nutze Kundenprofildaten für persönlichere Marketingkampagnen mit höherem ROI.",
+    },
+  ],
+  compare_h2: "So schneiden wir ab",
+  compare_sub:
+    "RevenueHunt vs. Octane AI vs. Quiz Kit - die Funktionen, die für seriöse eCommerce-Shops zählen.",
+  compare_col_feature: "Funktion",
+  compare_rows: [
+    "Klaviyo / Mailchimp Integration",
+    "Bedingte / verzweigte Logik",
+    "KI-Quiz-Builder (Einrichtung in 60 Sekunden)",
+    "Built for Shopify",
+    "Drop-off-Analytics",
+    "WooCommerce & andere Plattformen",
+    "Kostenloser Plan verfügbar",
+  ],
+  compare_starting_price: "Startpreis",
+  compare_free: "Kostenlos",
+  compare_note: "Vergleich basierend auf öffentlich verfügbaren Informationen Stand 2026.",
+  platforms_h2: "Für jede Plattform verfügbar",
+  platforms_sub:
+    "Nicht auf {platform}? Das Product Recommendation Quiz von RevenueHunt funktioniert überall, wo du verkaufst - wähle deinen Stack.",
+  platforms_card_title: "Product Recommendation Quiz für {platform}",
+  platforms_card_cta: "{platform}-Seite ansehen",
+  industry_h2: "Ein Quiz für deine Branche",
+  industry_sub:
+    "Egal wie du auf {platform} verkaufst, baue das Quiz, das zu deinem Katalog passt. Entdecke Lösungen nach Branche und Quiz-Typ.",
+  industry_view: "Lösung ansehen",
+  industry_see_all: "Alle Quiz-Lösungen ansehen",
+  reviews_heading: "Mit {rating} von {platform}-Händlern bewertet",
+  reviews_default_heading: "Was Händler sagen",
+  reviews_from: "aus {count} Bewertungen auf {source}",
+  plans_enterprise:
+    "Große Marke? Wir haben dich abgedeckt. Hol dir einen maßgeschneiderten Enterprise-Plan ab {price} für unbegrenzte Quiz-Antworten.",
+  plans_enterprise_cta: "Strategiegespräch buchen",
+  cta_labels: {
+    "install on Shopify": "auf Shopify installieren",
+    "view demo store": "Demo-Shop ansehen",
+    "download the plugin": "Plugin herunterladen",
+    "install on BigCommerce": "auf BigCommerce installieren",
+    "sign up": "registrieren",
+    "use the standalone solution": "Standalone-Lösung nutzen",
+    "use on Shopify instead": "stattdessen auf Shopify nutzen",
+    "get started free": "kostenlos loslegen",
+    "see quiz templates": "Quiz-Vorlagen ansehen",
+    "get for Shopify": "für Shopify holen",
+    "get for WooCommerce": "für WooCommerce holen",
+  },
+  sibling_taglines: {
+    [SLUGS.shopify]: "Native Shopify-App, kostenloser Plan, sofortige Installation",
+    [SLUGS.woocommerce]: "Selbst gehostetes WordPress-Plugin, ohne monatliche Gebühr",
+    [SLUGS.bigcommerce]: "Native BigCommerce-App mit tiefer Katalogsynchronisation",
+    [SLUGS.wix]: "Einbindung per Universalskript - funktioniert in jedem Wix-Shop",
+    [SLUGS.squarespace]: "Einbindung per Universalskript - funktioniert auf jeder Squarespace-Site",
+    [SLUGS.magento]: "Eigenständige gehostete Lösung, keine Magento-Erweiterung nötig",
+    [SLUGS.standalone]:
+      "Plattformunabhängig - läuft mit Google Product Feed, ohne Shop-Integration",
+    [SLUGS.pos]: "In-Store-Quizzes auf iPad- / Android-POS-Tablets",
+    [SLUGS.all]: "Der Überblick über alle Plattformen - starte hier, wenn du Optionen vergleichst",
+  },
+};
+
+const pt: Chrome = {
+  rc_heading: "Ferramentas e dados grátis",
+  rc_sub: "Põe estes benchmarks a trabalhar na tua própria loja.",
+  rc_roi_eyebrow: "Ferramenta grátis",
+  rc_roi_title: "Calculadora de ROI do quiz",
+  rc_roi_blurb:
+    "Calcula a receita extra e o ROI que um Product Recommendation Quiz pode trazer à tua loja. Baseado em dados reais, sem email necessário.",
+  rc_roi_cta: "Calcula o teu ROI",
+  rc_report_eyebrow: "Relatório grátis",
+  rc_report_title: "Relatório benchmark de quizzes de e-commerce",
+  rc_report_blurb:
+    "Como os Product Recommendation Quizzes realmente funcionam: conversão por categoria, aumento do AOV e taxa de conclusão, a partir de mais de 45M de respostas reais.",
+  rc_report_cta: "Ler o relatório",
+  cta_kicker: "A maioria dos compradores sai porque não encontra o produto certo",
+  cta_h2: "Transforma compradores em clientes confiantes com um Product Recommendation Quiz que impulsiona as vendas.",
+  cta_install_shopify: "instalar no Shopify",
+  cta_get_woocommerce: "obter para WooCommerce",
+  trial_note: "Plano grátis disponível · 15 dias de teste grátis · garantia de devolução de 30 dias",
+  pillars: [
+    {
+      image: PILLAR_IMAGES.recommend,
+      title: "Recomenda os produtos certos",
+      body: "Os quizzes shoppable impulsionam as vendas, ajudam os clientes a encontrar os produtos ideais para eles e permitem-lhes tomar decisões de compra com confiança.",
+    },
+    {
+      image: PILLAR_IMAGES.know,
+      title: "Conhece os teus clientes",
+      body: "Os quizzes permitem-te recolher dados acionáveis fazendo perguntas específicas aos teus clientes. Segmenta e etiqueta os teus compradores com base nas respostas.",
+    },
+    {
+      image: PILLAR_IMAGES.grow,
+      title: "Faz crescer a tua audiência",
+      body: "Envia os leads captados para a tua lista de email ou CRM. Aproveita os dados de perfil do cliente para criar campanhas de marketing mais personalizadas e com maior ROI.",
+    },
+  ],
+  compare_h2: "Como nos comparamos",
+  compare_sub:
+    "RevenueHunt vs. Octane AI vs. Quiz Kit - as funcionalidades que importam para lojas de eCommerce sérias.",
+  compare_col_feature: "Funcionalidade",
+  compare_rows: [
+    "Integração com Klaviyo / Mailchimp",
+    "Lógica condicional / de ramificação",
+    "Construtor de quiz com IA (configuração em 60 segundos)",
+    "Built for Shopify",
+    "Análise de abandono",
+    "WooCommerce e outras plataformas",
+    "Plano grátis disponível",
+  ],
+  compare_starting_price: "Preço inicial",
+  compare_free: "Grátis",
+  compare_note: "Comparação baseada em informação pública disponível em 2026.",
+  platforms_h2: "Disponível para todas as plataformas",
+  platforms_sub:
+    "Não usas {platform}? O Product Recommendation Quiz da RevenueHunt funciona onde quer que vendas - escolhe o teu stack.",
+  platforms_card_title: "Product Recommendation Quiz para {platform}",
+  platforms_card_cta: "Ver página de {platform}",
+  industry_h2: "Um quiz para o teu setor",
+  industry_sub:
+    "Sejas qual for a forma como vendes no {platform}, cria o quiz que encaixa no teu catálogo. Explora soluções por setor e tipo de quiz.",
+  industry_view: "Ver solução",
+  industry_see_all: "Ver todas as soluções de quiz",
+  reviews_heading: "Avaliado com {rating} por comerciantes de {platform}",
+  reviews_default_heading: "O que dizem os comerciantes",
+  reviews_from: "de {count} avaliações em {source}",
+  plans_enterprise:
+    "Marca grande? Temos tudo o que precisas. Obtém um Plano Enterprise à medida a partir de {price} para respostas de quiz ilimitadas.",
+  plans_enterprise_cta: "Agendar uma chamada de estratégia",
+  cta_labels: {
+    "install on Shopify": "instalar no Shopify",
+    "view demo store": "ver loja demo",
+    "download the plugin": "descarregar o plugin",
+    "install on BigCommerce": "instalar no BigCommerce",
+    "sign up": "regista-te",
+    "use the standalone solution": "usar a solução autónoma",
+    "use on Shopify instead": "usar no Shopify",
+    "get started free": "começa grátis",
+    "see quiz templates": "ver modelos de quiz",
+    "get for Shopify": "obter para Shopify",
+    "get for WooCommerce": "obter para WooCommerce",
+  },
+  sibling_taglines: {
+    [SLUGS.shopify]: "App nativa do Shopify, plano grátis, instalação instantânea",
+    [SLUGS.woocommerce]: "Plugin WordPress self-hosted, sem mensalidade",
+    [SLUGS.bigcommerce]: "App nativa do BigCommerce com sincronização profunda do catálogo",
+    [SLUGS.wix]: "Integra via script universal - funciona em qualquer loja Wix",
+    [SLUGS.squarespace]: "Integra via script universal - funciona em qualquer site Squarespace",
+    [SLUGS.magento]: "Solução alojada autónoma, sem extensão Magento necessária",
+    [SLUGS.standalone]:
+      "Independente da plataforma - funciona com Google Product Feed, sem integração com a loja",
+    [SLUGS.pos]: "Quizzes na loja em tablets POS iPad / Android",
+    [SLUGS.all]: "A visão geral de todas as plataformas - começa aqui se estás a comparar opções",
+  },
+};
+
+const it: Chrome = {
+  rc_heading: "Strumenti e dati gratuiti",
+  rc_sub: "Metti questi benchmark al lavoro nel tuo negozio.",
+  rc_roi_eyebrow: "Strumento gratuito",
+  rc_roi_title: "Calcolatore di ROI del quiz",
+  rc_roi_blurb:
+    "Stima il fatturato extra e il ROI che un Product Recommendation Quiz può portare al tuo negozio. Basato su dati reali, senza email richiesta.",
+  rc_roi_cta: "Calcola il tuo ROI",
+  rc_report_eyebrow: "Report gratuito",
+  rc_report_title: "Report benchmark dei quiz e-commerce",
+  rc_report_blurb:
+    "Come performano davvero i Product Recommendation Quiz: conversione per categoria, aumento dell'AOV e tasso di completamento, da oltre 45M di risposte reali.",
+  rc_report_cta: "Leggi il report",
+  cta_kicker: "La maggior parte dei clienti se ne va perché non trova il prodotto giusto",
+  cta_h2: "Trasforma i clienti in acquirenti sicuri con un Product Recommendation Quiz che fa crescere le vendite.",
+  cta_install_shopify: "installa su Shopify",
+  cta_get_woocommerce: "ottieni per WooCommerce",
+  trial_note: "Piano gratuito disponibile · 15 giorni di prova gratuita · garanzia di rimborso di 30 giorni",
+  pillars: [
+    {
+      image: PILLAR_IMAGES.recommend,
+      title: "Consiglia i prodotti giusti",
+      body: "I quiz shoppable fanno crescere le vendite, guidano i clienti nella ricerca dei prodotti ideali per loro e li aiutano a fare scelte d'acquisto sicure.",
+    },
+    {
+      image: PILLAR_IMAGES.know,
+      title: "Conosci i tuoi clienti",
+      body: "I quiz ti permettono di raccogliere dati utili ponendo domande mirate ai tuoi clienti. Segmenta e tagga i tuoi clienti in base alle loro risposte.",
+    },
+    {
+      image: PILLAR_IMAGES.grow,
+      title: "Fai crescere la tua audience",
+      body: "Invia i lead raccolti alla tua mailing list o al tuo CRM. Sfrutta i dati del profilo cliente per creare campagne marketing più personalizzate e con ROI più alto.",
+    },
+  ],
+  compare_h2: "Come ci confrontiamo",
+  compare_sub:
+    "RevenueHunt vs. Octane AI vs. Quiz Kit - le funzionalità che contano per gli store eCommerce seri.",
+  compare_col_feature: "Funzionalità",
+  compare_rows: [
+    "Integrazione con Klaviyo / Mailchimp",
+    "Logica condizionale / di ramificazione",
+    "Builder di quiz con IA (configurazione in 60 secondi)",
+    "Built for Shopify",
+    "Analisi degli abbandoni",
+    "WooCommerce e altre piattaforme",
+    "Piano gratuito disponibile",
+  ],
+  compare_starting_price: "Prezzo di partenza",
+  compare_free: "Gratuito",
+  compare_note: "Confronto basato su informazioni pubblicamente disponibili al 2026.",
+  platforms_h2: "Disponibile per ogni piattaforma",
+  platforms_sub:
+    "Non sei su {platform}? Il Product Recommendation Quiz di RevenueHunt funziona ovunque tu venda - scegli il tuo stack.",
+  platforms_card_title: "Product Recommendation Quiz per {platform}",
+  platforms_card_cta: "Vedi la pagina {platform}",
+  industry_h2: "Un quiz per il tuo settore",
+  industry_sub:
+    "Comunque tu venda su {platform}, crea il quiz adatto al tuo catalogo. Esplora le soluzioni per settore e tipo di quiz.",
+  industry_view: "Vedi soluzione",
+  industry_see_all: "Vedi tutte le soluzioni di quiz",
+  reviews_heading: "Valutato {rating} dai merchant {platform}",
+  reviews_default_heading: "Cosa dicono i merchant",
+  reviews_from: "da {count} recensioni su {source}",
+  plans_enterprise:
+    "Brand grande? Ci pensiamo noi. Ottieni un Piano Enterprise su misura a partire da {price} per risposte di quiz illimitate.",
+  plans_enterprise_cta: "Prenota una call strategica",
+  cta_labels: {
+    "install on Shopify": "installa su Shopify",
+    "view demo store": "vedi lo store demo",
+    "download the plugin": "scarica il plugin",
+    "install on BigCommerce": "installa su BigCommerce",
+    "sign up": "registrati",
+    "use the standalone solution": "usa la soluzione standalone",
+    "use on Shopify instead": "usa su Shopify",
+    "get started free": "inizia gratis",
+    "see quiz templates": "vedi i template di quiz",
+    "get for Shopify": "ottieni per Shopify",
+    "get for WooCommerce": "ottieni per WooCommerce",
+  },
+  sibling_taglines: {
+    [SLUGS.shopify]: "App Shopify nativa, piano gratuito, installazione istantanea",
+    [SLUGS.woocommerce]: "Plugin WordPress self-hosted, senza canone mensile",
+    [SLUGS.bigcommerce]: "App BigCommerce nativa con sincronizzazione approfondita del catalogo",
+    [SLUGS.wix]: "Integrazione via script universale - funziona su qualsiasi store Wix",
+    [SLUGS.squarespace]: "Integrazione via script universale - funziona su qualsiasi sito Squarespace",
+    [SLUGS.magento]: "Soluzione hosted standalone, senza estensione Magento necessaria",
+    [SLUGS.standalone]:
+      "Indipendente dalla piattaforma - funziona con Google Product Feed, senza integrazione con lo store",
+    [SLUGS.pos]: "Quiz in negozio su tablet POS iPad / Android",
+    [SLUGS.all]: "La panoramica di tutte le piattaforme - parti da qui se stai confrontando le opzioni",
+  },
+};
+
+export const CHROME = { en, es, fr, de, pt, it } satisfies Record<Lang, Chrome>;
 
 /** Fill {platform} / {rating} placeholders. */
 export function fill(tpl: string, vars: Record<string, string>): string {

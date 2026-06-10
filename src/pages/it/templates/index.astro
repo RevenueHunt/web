@@ -1,0 +1,313 @@
+---
+import Base from "../../../layouts/Base.astro";
+import { organization, breadcrumb, softwareApplication } from "../../../lib/schema";
+import { SITE } from "../../../lib/site";
+import { SOLUTIONS, FEATURED_SOLUTIONS } from "../../../lib/solutions";
+import { localizedHref } from "../../../lib/i18n";
+
+const featuredSolutions = FEATURED_SOLUTIONS.map((slug) => SOLUTIONS[slug]!);
+
+interface Template {
+  title: string;
+  description: string;
+  image: string;
+  demo: string;
+}
+
+interface TemplateGroup {
+  id: string;
+  label: string;
+  items: Template[];
+}
+
+const groups: TemplateGroup[] = [
+  {
+    id: "skincare",
+    label: "Skincare, haircare, cosmetici",
+    items: [
+      { title: "Quiz tipo di pelle + routine", description: "Identifica il tipo di pelle e consiglia una routine completa.", image: "/img/pages/templates/skinquiz1.webp", demo: "https://productrecommendationquiz.com/pages/skin-analysis" },
+      { title: "Match del fondotinta", description: "Scegliere il fondotinta giusto non dovrebbe sembrare un gioco a indovinare.", image: "/img/pages/templates/foundation5.webp", demo: "https://productrecommendationquiz.com/pages/foundation-match" },
+      { title: "Trova la tonalità del rossetto", description: "Abbina i clienti alla loro tonalità di rossetto perfetta in base al sottotono e allo stile.", image: "/img/pages/templates/lips1-e1768405685573.webp", demo: "https://productrecommendationquiz.com/pages/lipstick-shade-finder" },
+      { title: "Quiz haircare", description: "Consiglia shampoo, balsami e trattamenti per obiettivi specifici dei capelli.", image: "/img/pages/templates/hairquiz4.webp", demo: "https://productrecommendationquiz.com/pages/haircare-quiz" },
+    ],
+  },
+  {
+    id: "food",
+    label: "Nutrizione e salute",
+    items: [
+      { title: "Quiz caffè", description: "Guida i clienti verso la miscela di caffè ideale in base al gusto e allo stile di vita.", image: "/img/pages/templates/coffee2.webp", demo: "https://productrecommendationquiz.com/pages/coffee-quiz" },
+      { title: "Quiz integratori", description: "Consiglia vitamine e integratori in linea con gli obiettivi di salute.", image: "/img/pages/templates/supplements3.webp", demo: "https://productrecommendationquiz.com/pages/supplements-quiz" },
+      { title: "Trova i prodotti CBD", description: "Suggerisci i prodotti CBD giusti per rilassamento, sonno o concentrazione.", image: "/img/pages/templates/cbd1.webp", demo: "https://productrecommendationquiz.com/pages/cbd-product-finder" },
+      { title: "Quiz cibo per cani", description: "Trova il pasto perfetto per il tuo cane in base alle sue esigenze e preferenze specifiche.", image: "/img/pages/templates/dogquiz3.webp", demo: "https://productrecommendationquiz.com/pages/dog-food" },
+    ],
+  },
+  {
+    id: "clothes",
+    label: "Sport, abbigliamento e moda",
+    items: [
+      { title: "Quiz gioielli", description: "Aiuta i clienti a trovare il gioiello perfetto in abbinamento al loro stile.", image: "/img/pages/templates/jewellery1-e1768405517428.webp", demo: "https://productrecommendationquiz.com/pages/jewellery-quiz" },
+      { title: "Quiz stile di abbigliamento", description: "Scopri la tua persona di moda e ricevi consigli personalizzati.", image: "/img/pages/templates/style1.webp", demo: "https://productrecommendationquiz.com/pages/clothing-style-quiz" },
+      { title: "Quiz biciclette", description: "Abbina i clienti alla bici giusta per il loro stile di guida e le loro esigenze.", image: "/img/pages/templates/bike2.webp", demo: "https://productrecommendationquiz.com/pages/bicycle-quiz" },
+    ],
+  },
+];
+
+const gallery = [
+  "Screenshot-2020-09-29-at-20.20.43.webp",
+  "Screenshot-2020-09-29-at-20.33.39.webp",
+  "Screenshot-2020-09-29-at-20.34.03.webp",
+  "Screenshot-2020-09-29-at-20.34.16.webp",
+  "Screenshot-2020-10-20-at-11.31.49.webp",
+  "Screenshot-2020-10-20-at-11.32.06.webp",
+  "Screenshot-2020-10-20-at-11.33.20.webp",
+  "Screenshot-2020-10-20-at-11.33.57.webp",
+  "Screenshot-2020-10-20-at-11.39.39.webp",
+  "Screenshot-2020-10-20-at-11.41.15.webp",
+  "Screenshot-2020-10-20-at-11.41.36.webp",
+  "Screenshot-2020-10-20-at-11.41.51.webp",
+  "Screenshot-2020-10-20-at-11.44.30.webp",
+  "Screenshot-2020-10-20-at-11.45.11.webp",
+  "Screenshot-2020-10-20-at-11.45.42.webp",
+  "Screenshot-2020-11-16-at-14.34.09.webp",
+  "Screenshot-2020-11-16-at-14.34.22.webp",
+  "Screenshot-2020-11-16-at-14.34.34.webp",
+  "Screenshot-2020-11-16-at-14.36.54.webp",
+  "Screenshot-2020-12-04-at-08.38.54.webp",
+  "Screenshot-2020-12-04-at-08.39.14.webp",
+  "Screenshot-2020-12-04-at-08.39.25.webp",
+  "Screenshot-2020-12-04-at-08.39.35.webp",
+  "Screenshot-2021-04-14-at-04.13.10.webp",
+  "Screenshot-2021-04-14-at-04.13.50.webp",
+  "Screenshot-2021-04-14-at-04.14.16.webp",
+  "Screenshot-2021-05-13-at-22.49.10.webp",
+];
+
+const reasons = [
+  { emoji: "🚀", title: "Configurazione rapida per Shopify e WooCommerce", body: "I template si integrano perfettamente con Shopify, WooCommerce, BigCommerce e siti standalone. Nessun codice richiesto - installa l'app, scegli un template e personalizzalo in base al tuo brand." },
+  { emoji: "💡", title: "Logica e domande del quiz già pronte", body: "Ogni template include domande create da esperti, logica condizionale e algoritmi di raccomandazione prodotti. Costruito su framework collaudati che generano conversioni in beauty, wellness, cura degli animali e lifestyle." },
+  { emoji: "📊", title: "Aumenta le conversioni e l'AOV", body: "Le raccomandazioni personalizzate trasformano chi naviga in chi acquista. I template sono ottimizzati per tassi di conversione più alti, carrelli più grandi e lead meglio qualificati." },
+  { emoji: "🎨", title: "HTML completamente personalizzabile", body: "Modifica testi, design, branding e logica senza toccare il codice. Per progetti avanzati, ogni template è inoltre completamente accessibile tramite HTML, CSS e JS personalizzati." },
+  { emoji: "📧", title: "Raccogli zero-party data", body: "Cattura preferenze, intenzione e dati di segmentazione direttamente dallo shopper, poi sincronizzali con Klaviyo, Omnisend, Meta o GA4 per alimentare il marketing a valle." },
+  { emoji: "⚡", title: "Responsive e ottimizzato per mobile", body: "Ogni template viene rilasciato mobile-first. Veloce, accessibile e progettato per sembrare nativo su smartphone, tablet e desktop." },
+];
+
+const jsonLd = [
+  organization(),
+  softwareApplication(),
+  breadcrumb([
+    { name: "Home", url: "/" },
+    { name: "Template di quiz", url: "/templates/" },
+  ]),
+];
+---
+
+<Base translated={true}
+  lang="it"
+  title="Template di quiz - RevenueHunt"
+  description="Template di quiz sui prodotti per Shopify, WooCommerce, BigCommerce e negozi standalone. Skincare, beauty, integratori, cibo per animali, abbigliamento, sport e altro ancora - domande già pronte, logica condizionale e algoritmi di raccomandazione prodotti."
+  jsonLd={jsonLd}
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20 text-center">
+      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
+        <a href={localizedHref("/", "it")} class="hover:text-slate-700">Home</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <span class="text-slate-700">Template di quiz</span>
+      </nav>
+      <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+        Template di quiz sui prodotti per Shopify &amp; WooCommerce
+      </h1>
+      <p class="mt-4 text-xl font-semibold text-slate-700">
+        Template di Product Recommendation Quiz interattivi - pronti all'uso
+      </p>
+      <p class="mx-auto mt-6 max-w-3xl text-slate-600">
+        Scopri la nostra raccolta di <strong class="font-semibold text-slate-900">template di quiz gratuiti</strong> pensati per i negozi e-commerce.
+        Dai quiz su skincare e beauty agli integratori, al cibo per animali e ai prodotti lifestyle - ogni template è costruito per aiutarti a creare
+        un'esperienza di acquisto personalizzata che converte. Perfetto per <strong class="font-semibold text-slate-900">Shopify</strong>,
+        <strong class="font-semibold text-slate-900">WooCommerce</strong>, <strong class="font-semibold text-slate-900">BigCommerce</strong>
+        e negozi <strong class="font-semibold text-slate-900">standalone</strong>.
+      </p>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-600">
+        Questi template di quiz in HTML personalizzabili includono domande già scritte, logica condizionale e algoritmi di raccomandazione prodotti.
+        Scegli un template, collega i tuoi prodotti, personalizza il design e pubblica. Clicca su un qualsiasi template qui sotto per vedere una demo live.
+      </p>
+    </div>
+  </section>
+
+  <!-- Top CTA banner -->
+  <section class="mx-auto max-w-7xl px-6 pb-8">
+    <div class="overflow-hidden rounded-2xl bg-[#16161D] px-8 py-12 text-center text-white">
+      <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">Prova i nostri template di quiz sui prodotti dal vivo</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-white/80">
+        Prova quiz di raccomandazione prodotti completamente funzionanti nel nostro negozio demo Shopify live. Testa diversi tipi di quiz,
+        esplora la logica condizionale, le domande con ramificazione e le raccomandazioni di prodotti personalizzate in azione.
+      </p>
+      <a
+        href="https://productrecommendationquiz.com/"
+        target="_blank"
+        rel="external noopener nofollow"
+        class="mt-8 inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+      >
+        Esplora le demo dei quiz live
+      </a>
+    </div>
+  </section>
+
+  <!-- Category nav -->
+  <nav class="sticky top-[60px] z-30 border-y border-slate-200 bg-white/95 backdrop-blur" aria-label="Template categories">
+    <ul class="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-2 px-6 py-3">
+      {groups.map((g) => (
+        <li>
+          <a
+            href={`#${g.id}`}
+            class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-[#16161D] hover:text-[#16161D]"
+          >
+            {g.label}
+          </a>
+        </li>
+      ))}
+      <li>
+        <a
+          href="#gallery"
+          class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-[#16161D] hover:text-[#16161D]"
+        >
+          Galleria di esempi di quiz
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Template grids -->
+  <section class="mx-auto max-w-7xl px-6 py-12">
+    {groups.map((g) => (
+      <div id={g.id} class="mb-16 scroll-mt-32 last:mb-0">
+        <h2 class="mb-8 text-center text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">{g.label}</h2>
+        <ul class="grid gap-6 md:grid-cols-2">
+          {g.items.map((t) => (
+            <li class="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md">
+              <a
+                href={t.demo}
+                target="_blank"
+                rel="external noopener nofollow"
+                class="block aspect-[321/217] overflow-hidden bg-slate-50"
+              >
+                <img src={t.image} alt={t.title} loading="lazy" class="h-full w-full object-cover" />
+              </a>
+              <div class="flex flex-1 flex-col p-5">
+                <h3 class="text-lg font-semibold text-slate-900">{t.title}</h3>
+                <p class="mt-2 text-sm text-slate-600">{t.description}</p>
+                <div class="mt-5 flex flex-wrap gap-2">
+                  <a
+                    href={t.demo}
+                    target="_blank"
+                    rel="external noopener nofollow"
+                    class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#26262e]"
+                  >
+                    Demo
+                  </a>
+                  <a
+                    href={localizedHref("/product-recommendation-quiz/", "it")}
+                    class="inline-flex items-center justify-center rounded-md border border-[#16161D] bg-white px-4 py-2 text-sm font-semibold text-[#16161D] transition hover:bg-slate-50"
+                  >
+                    Ottieni questo template
+                  </a>
+                </div>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+
+    <!-- Examples gallery -->
+    <div id="gallery" class="scroll-mt-32">
+      <h2 class="mb-8 text-center text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Galleria di esempi di quiz</h2>
+      <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {gallery.map((file) => (
+          <li class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
+            <a href={`/img/pages/templates/${file}`} target="_blank" rel="noopener" class="block aspect-video overflow-hidden bg-slate-50">
+              <img src={`/img/pages/templates/${file}`} alt="Esempio di quiz" loading="lazy" class="h-full w-full object-cover" />
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Solutions cross-link -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6 pb-4">
+      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-8">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900">Non sai quale quiz costruire?</h2>
+        <p class="mt-3 text-slate-700">
+          Le nostre soluzioni di quiz spiegano il miglior tipo di quiz per il tuo settore, dalle routine skincare ai trova-regalo, con esempi e FAQ.
+        </p>
+        <ul class="mt-6 flex flex-wrap gap-3" role="list">
+          {featuredSolutions.map((s) => (
+            <li>
+              <a
+                href={`/solutions/${s.slug}/`}
+                class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-[#16161D] hover:text-[#16161D]"
+              >
+                {s.name}
+              </a>
+            </li>
+          ))}
+          <li>
+            <a
+              href={localizedHref("/solutions/", "it")}
+              class="inline-flex items-center rounded-full bg-[#16161D] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#26262e]"
+            >
+              Tutte le soluzioni →
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why use templates -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-6 py-16">
+      <h2 class="text-center text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+        Perché usare i template di quiz sui prodotti nel tuo negozio e-commerce?
+      </h2>
+      <ul class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {reasons.map((r) => (
+          <li class="rounded-xl border border-slate-200 bg-white p-6">
+            <div class="text-2xl">{r.emoji}</div>
+            <h3 class="mt-3 text-lg font-semibold text-slate-900">{r.title}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">{r.body}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Inizia oggi a costruire il tuo quiz sui prodotti
+      </h2>
+      <p class="mx-auto mt-4 max-w-2xl text-white/80">
+        Crea in pochi minuti quiz di raccomandazione prodotti coinvolgenti per il tuo negozio Shopify o WooCommerce. Nessun codice richiesto.
+      </p>
+      <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
+        <a
+          href={SITE.signup_url}
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          Prova i template di quiz gratis
+        </a>
+        <a
+          href={localizedHref("/demo/", "it")}
+          class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
+        >
+          Prenota una demo
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

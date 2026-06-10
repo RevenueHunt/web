@@ -167,5 +167,7 @@ export const FAQ: FaqItem[] = [
     question: "Where can I see the underlying data?",
     answer:
       "This report is the full-data companion to our LinkedIn field note on the app economy. The figures come from a snapshot we keep of every live Shopify app: launch dates, reviews, pricing, the Built for Shopify badge, and developer country. If you build on Shopify and want a specific cut, get in touch.",
+    answerHtml:
+      "This report is the full-data companion to our LinkedIn field note on the app economy. The figures come from a snapshot we keep of every live Shopify app: launch dates, reviews, pricing, the Built for Shopify badge, and developer country. If you build on Shopify and want a specific cut, <a href=\"/contact/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">get in touch</a>.",
   },
 ];

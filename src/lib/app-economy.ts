@@ -110,6 +110,11 @@ export const REVENUE = {
  *   free plan available (freemium)       10,105  = 44.8%  (= permanentFree)
  *   free trial (paid, leads with trial)   6,689  = 29.7%
  *   paid up front (no free entry)         1,019  =  4.5%
+ *
+ * entryPrice/entryPriceCount/ninetyNineShare describe the cheapest non-zero
+ * monthly plan ("entry price") across the 15,170 apps that have a paid plan:
+ * $9.99 is both the median and the single most common entry price (1,447 apps),
+ * and 43.9% of entry prices end in .99 or .95.
  */
 export const PRICING = {
   labels: ["Completely free", "Free plan available", "Free trial", "Paid up front"],
@@ -117,6 +122,9 @@ export const PRICING = {
   colors: [COLORS.gray, COLORS.secondary, "#579cff", COLORS.primary],
   permanentFree: "44.8%",
   completelyFree: "21%",
+  entryPrice: "$9.99",
+  entryPriceCount: "1,447",
+  ninetyNineShare: "44%",
   caption:
     "Nearly half the store charges nothing up front, and fewer than 1 in 20 apps ask for money before the first install. Almost 45% offer a permanent free tier. Freemium is not a strategy here, it is the table stakes.",
 };

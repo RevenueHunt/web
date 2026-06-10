@@ -298,8 +298,8 @@ const methodologyHtml = METHODOLOGY;
             <p class="mt-1 text-slate-700">sono completamente gratis, senza alcun piano a pagamento</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
-            <p class="text-3xl font-bold text-[#16161D]">1 su 20</p>
-            <p class="mt-1 text-slate-700">app fanno pagare soldi all'installazione</p>
+            <p class="text-3xl font-bold text-[#16161D]">{PRICING.entryPrice}</p>
+            <p class="mt-1 text-slate-700">il prezzo d'ingresso più comune, e la mediana - {PRICING.entryPriceCount} app chiedono esattamente questo, e il {PRICING.ninetyNineShare} dei prezzi a pagamento finisce in .99 o .95</p>
           </div>
         </div>
       </div>
@@ -312,7 +312,7 @@ const methodologyHtml = METHODOLOGY;
       <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("05", "Chi le crea")}</p>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Segnale contro rumore</h2>
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Due dominano: <strong>USA (24%) e India (15%) creano insieme due app su cinque</strong> dello store. Ma <strong>il volume non è trazione</strong>. Se ordini i paesi solo per le app che hanno superato le 10+ recensioni, la classifica si ridisegna - il <strong>Vietnam</strong>, uno sviluppatore di medie dimensioni, piazza più app con trazione reale di quanto la sua dimensione suggerisca, mentre <strong>Giappone e Cina scivolano in basso</strong>.</p>
-      <div class="mt-8 grid gap-8 lg:grid-cols-2">
+      <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
           <p class="text-center text-sm font-semibold text-slate-900">Tutte le app, per fascia di recensioni</p>
           <p class="mt-0.5 text-center text-xs text-slate-500">Top 10 sviluppatori per numero di app. Clicca una fascia per mostrarla o nasconderla - nascondi le fasce 0 e 1–9 e la classifica si riordina per trazione: Vietnam, Israele e Singapore salgono.</p>

@@ -299,8 +299,8 @@ const methodologyHtml = METHODOLOGY;
             <p class="mt-1 text-slate-700">são totalmente gratuitas, sem qualquer plano pago</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
-            <p class="text-3xl font-bold text-[#16161D]">1 em cada 20</p>
-            <p class="mt-1 text-slate-700">apps cobram dinheiro na instalação</p>
+            <p class="text-3xl font-bold text-[#16161D]">{PRICING.entryPrice}</p>
+            <p class="mt-1 text-slate-700">o preço de entrada mais comum, e a mediana - {PRICING.entryPriceCount} apps cobram exatamente isto, e {PRICING.ninetyNineShare} dos preços pagos terminam em .99 ou .95</p>
           </div>
         </div>
       </div>
@@ -313,7 +313,7 @@ const methodologyHtml = METHODOLOGY;
       <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("05", "Quem as cria")}</p>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Sinal versus ruído</h2>
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Dois dominam: <strong>os EUA (24%) e a Índia (15%) criam, entre os dois, duas em cada cinco</strong> apps da store. Mas <strong>volume não é tração</strong>. Se ordenarmos os países apenas pelas apps que ultrapassaram as 10+ avaliações, a tabela redesenha-se - o <strong>Vietname</strong>, um programador de dimensão média, coloca mais apps com tração real do que o seu tamanho deixaria supor, enquanto o <strong>Japão e a China desaparecem</strong>.</p>
-      <div class="mt-8 grid gap-8 lg:grid-cols-2">
+      <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
           <p class="text-center text-sm font-semibold text-slate-900">Todas as apps, por escalão de avaliações</p>
           <p class="mt-0.5 text-center text-xs text-slate-500">Os 10 principais programadores por número de apps. Clica num escalão para o ativar ou desativar - oculta os escalões 0 e 1–9 e a classificação reordena-se por tração: Vietname, Israel e Singapura sobem.</p>

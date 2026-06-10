@@ -300,8 +300,8 @@ const methodologyHtml = METHODOLOGY;
             <p class="mt-1 text-slate-700">sind komplett kostenlos, ohne jeglichen bezahlten Plan</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
-            <p class="text-3xl font-bold text-[#16161D]">1 von 20</p>
-            <p class="mt-1 text-slate-700">Apps verlangen Geld bei der Installation</p>
+            <p class="text-3xl font-bold text-[#16161D]">{PRICING.entryPrice}</p>
+            <p class="mt-1 text-slate-700">der häufigste Einstiegspreis, und der Median - {PRICING.entryPriceCount} Apps verlangen genau das, und {PRICING.ninetyNineShare} der bezahlten Preise enden auf .99 oder .95</p>
           </div>
         </div>
       </div>
@@ -314,7 +314,7 @@ const methodologyHtml = METHODOLOGY;
       <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("05", "Wer sie baut")}</p>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Signal gegen Rauschen</h2>
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Zwei dominieren: <strong>die USA (24 %) und Indien (15 %) bauen zusammen zwei von fünf</strong> Apps des Stores. Aber <strong>Volumen ist nicht Traktion</strong>. Sortiert man die Länder nur nach den Apps, die 10+ Bewertungen geknackt haben, zeichnet sich die Rangliste neu - <strong>Vietnam</strong>, ein mittelgroßer Entwickler, platziert mehr Apps mit echter Traktion, als seine Größe vermuten lässt, während <strong>Japan und China abrutschen</strong>.</p>
-      <div class="mt-8 grid gap-8 lg:grid-cols-2">
+      <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
           <p class="text-center text-sm font-semibold text-slate-900">Alle Apps, nach Bewertungsstufe</p>
           <p class="mt-0.5 text-center text-xs text-slate-500">Top 10 Entwickler nach App-Anzahl. Klicke auf eine Stufe, um sie ein- oder auszublenden - blende die Stufen 0 und 1–9 aus und die Rangliste ordnet sich nach Traktion neu: Vietnam, Israel und Singapur steigen auf.</p>

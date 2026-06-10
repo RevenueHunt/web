@@ -299,8 +299,8 @@ const methodologyHtml = METHODOLOGY;
             <p class="mt-1 text-slate-700">on täysin ilmaisia, ilman lainkaan maksullista pakettia</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
-            <p class="text-3xl font-bold text-[#16161D]">1 jokaisesta 20:stä</p>
-            <p class="mt-1 text-slate-700">sovelluksesta veloittaa rahaa asennettaessa</p>
+            <p class="text-3xl font-bold text-[#16161D]">{PRICING.entryPrice}</p>
+            <p class="mt-1 text-slate-700">yleisin aloitushinta, ja mediaani - {PRICING.entryPriceCount} sovellusta veloittaa juuri tämän, ja {PRICING.ninetyNineShare} maksullisista hinnoista päättyy .99 tai .95</p>
           </div>
         </div>
       </div>
@@ -313,7 +313,7 @@ const methodologyHtml = METHODOLOGY;
       <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("05", "Kuka ne tekee")}</p>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Signaali vastaan kohina</h2>
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Kaksi hallitsee: <strong>Yhdysvallat (24 %) ja Intia (15 %) tekevät yhdessä kaksi viidestä</strong> storen sovelluksesta. Mutta <strong>volyymi ei ole vetovoimaa</strong>. Kun maat järjestetään vain niiden sovellusten mukaan, jotka ovat ylittäneet 10+ arvostelua, sijoitus piirtyy uudelleen - <strong>Vietnam</strong>, keskikokoinen kehittäjä, tuottaa enemmän todellista vetovoimaa saaneita sovelluksia kuin sen koko antaisi olettaa, kun taas <strong>Japani ja Kiina putoavat pois</strong>.</p>
-      <div class="mt-8 grid gap-8 lg:grid-cols-2">
+      <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
           <p class="text-center text-sm font-semibold text-slate-900">Kaikki sovellukset, arvostelutason mukaan</p>
           <p class="mt-0.5 text-center text-xs text-slate-500">10 suurinta kehittäjää sovellusten määrän mukaan. Klikkaa tasoa näyttääksesi tai piilottaaksesi sen - piilota tasot 0 ja 1–9, niin lista järjestyy vetovoiman mukaan: Vietnam, Israel ja Singapore nousevat.</p>

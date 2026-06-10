@@ -1,0 +1,176 @@
+---
+import Base from "../../../layouts/Base.astro";
+import { organization, breadcrumb, softwareApplication } from "../../../lib/schema";
+import { SITE } from "../../../lib/site";
+import { localizedHref } from "../../../lib/i18n";
+
+interface Testimonial {
+  store: string;
+  url: string;
+  logo: string;
+  date: string;
+  quote: string;
+  category: "Skincare" | "Beauty" | "More";
+}
+
+const testimonials: Testimonial[] = [
+  // Skincare
+  { category: "Skincare", store: "Earth Tonics Skincare", url: "https://earthtonicsskincare.com/", logo: "/img/pages/testimonials/tonic.webp", date: "Jan 12, 2022", quote: "كان هذا التطبيق بالضبط ما كنت أبحث عنه... يمكنك إبقاؤه بسيطاً أو جعله فائق الوظائف والذكاء. استخدمته لخط العناية بالبشرة لدينا لمساعدة العملاء على مطابقة نظام المنتجات المثالي لهم. لقد رأيت بالتأكيد زيادة في المتوسط..." },
+  { category: "Skincare", store: "MDO Skin", url: "https://mdo-skin.com/", logo: "/img/pages/testimonials/mdo.webp", date: "Jan 6, 2022", quote: "تطبيق رائع تماماً. عندما كنا نقيّم التطبيقات، لم يكن هناك أي تطبيق آخر منحنا المرونة والوظائف المطلوبة، إنه جيد حقاً. كما أن الدعم رائع وسريع الاستجابة جداً. أوصي به بشدة." },
+  { category: "Skincare", store: "Revoderm", url: "https://www.revoderm.com/", logo: "/img/pages/testimonials/derm.webp", date: "Dec 29, 2021", quote: "استخدمت هذا التطبيق لإعداد اختبار للعناية بالبشرة على متجر Shopify الخاص بأحد عملائي. التطبيق قوي ومصمم بشكل جميل. كان الدعم التقني ممتازاً. أرسلوا ردوداً واضحة خلال دقائق في كل مرة. عمل رائع!" },
+  { category: "Skincare", store: "Proverb Skin", url: "https://proverbskin.com/", logo: "/img/pages/testimonials/proverb.webp", date: "Jan 6, 2022", quote: "تطبيق رائع، بالضبط ما كنا نبحث عنه. بديهي جداً وممتع الاستخدام. خيارات لا نهائية مدمجة وإمكانية التخصيص حسب الحاجة. مذهل." },
+  { category: "Skincare", store: "Brown Rose Essentials", url: "https://brownroseessentials.com/", logo: "/img/pages/testimonials/brown.webp", date: "Jan 5, 2022", quote: "هذا التطبيق رائع! لست أكثر الناس إلماماً بالتقنية وواجهت بعض الصعوبة في إعداد اختباري. ومع ذلك، كان فريق دعم العملاء أكثر من متعاون في مساعدتي، وبسرعة كبيرة! أوصي بشدة باستخدام هذا التطبيق لإعداد اختبارات منتجاتك!" },
+  { category: "Skincare", store: "Glow Therapy", url: "https://glowtherapy.ca/", logo: "/img/pages/testimonials/glow.webp", date: "Jul 18, 2021", quote: "ظل يتحسن باستمرار! ظننت أنه بقدرة بعض التطبيقات الأخرى، ثم أدركت أن لديه المزيد. ثم أمور ظننت أنها لن تكون ممكنة كانت ممكنة، وبعد ذلك سمحوا لي بجعله يبدو بهوية علامتي التجارية تماماً كبقية موقعي. آه نعم، وفريق الدعم رائع أيضاً!" },
+  { category: "Skincare", store: "Yu-Be", url: "https://yu-be.com/", logo: "/img/pages/testimonials/yube.webp", date: "Jun 28, 2022", quote: "خدمة عملاء رائعة. كان لدي الكثير من الأسئلة وكان فريق الدعم ودوداً جداً وبذل جهداً إضافياً لمساعدتي في إعداد كل شيء تماماً كما أردته. والآن أنتظر النتائج فحسب!" },
+  { category: "Skincare", store: "Naya Glow", url: "https://nayaglow.com/", logo: "/img/pages/testimonials/naya.webp", date: "Jun 17, 2022", quote: "أحب الدعم وأحب التطبيق. مدروس بعناية! واصلوا العمل الجيد وأتطلع إلى الميزات الجديدة." },
+  { category: "Skincare", store: "Smood Skin", url: "https://www.smoodskin.com/", logo: "/img/pages/testimonials/smood.webp", date: "Jun 20, 2021", quote: "حصلت على المساعدة بسرعة كبيرة - ودون تردد. فريق خدمة عملاء جيد، وقد عرفته بالفعل في بداية استخدام التطبيق." },
+  // Beauty
+  { category: "Beauty", store: "Cahaba Derm", url: "https://cahabaderm.com/", logo: "/img/pages/testimonials/cahaba.webp", date: "Oct 15, 2021", quote: "سهل الاستخدام جداً مقارنة بتطبيقات أخرى. جربت بعض تطبيقات الاختبار واخترت هذا بسبب البساطة، لكنه لا يزال معقداً بما يكفي للقيام بالتخصيصات التي أريدها. خدمة عملاء سريعة جداً أيضاً! أوصي به بالتأكيد." },
+  { category: "Beauty", store: "K-Beauty", url: "https://www.k-beauty.co.uk/", logo: "/img/pages/testimonials/K_Beauty_Logo_200x.webp", date: "Nov 2, 2021", quote: "ممتاز! منبهر جداً، الكثير من القوالب للاختيار من بينها. سهل الاستخدام ومرن جداً في كيفية تصميم اختباراتك. بالإضافة إلى خدمة عملاء من الدرجة الأولى." },
+  { category: "Beauty", store: "Antibeauty", url: "https://www.antibeauty.com.au/", logo: "/img/pages/testimonials/antibeauty.webp", date: "Nov 11, 2021", quote: "خدمة عملاء رائعة تماماً! واجهت مشكلة مع القالب الخاص بي قال الجميع حرفياً إنها لا يمكن إصلاحها أساساً... وتأكد مطورو هذا التطبيق من أن اختباري يعمل رغم ذلك! أوصي به بشدة، أحب أيضاً مدى قابلية التطبيق للتخصيص، أتلقى ملاحظات رائعة عنه!" },
+  { category: "Beauty", store: "House of Beauty India", url: "https://houseofbeautyindia.com/", logo: "/img/pages/testimonials/hob.webp", date: "Oct 15, 2021", quote: "تطبيق جميل، ودعم رعاية عملاء أفضل. رائع - سألتهم عن مسألة بسيطة وحُلّت خلال دقائق." },
+  { category: "Beauty", store: "GK Hair", url: "https://www.gkhair.com/", logo: "/img/pages/testimonials/gkhair.webp", date: "Sep 1, 2021", quote: "هذا أفضل تطبيق على الإطلاق. تمسكنا بـ Typeform ولم نتمكن قط من إنهاء اختبارنا، أوصى أحدهم بهذا التطبيق ونحن مذهولون من المرونة والنتائج. كان سهلاً جداً، لم نحتج إلى أي مساعدة من مطوّر. أفضل ما أعجبنا في هذا التطبيق هو تكامله السلس مع Klaviyo. كل شيء معدّ وبمجرد أن يملأ المستخدم الاختبار تُطلق تدفقاتنا لتقوم بالسحر. والأهم أن الدعم والمساعدة من الفريق كانا رائعين!" },
+  { category: "Beauty", store: "Colorescience UK", url: "https://colorescienceuk.com/", logo: "/img/pages/testimonials/color.webp", date: "Sep 16, 2021", quote: "تطبيق رائع، أوصي به بشدة! سهل الإعداد، يساعد كثيراً في التحويل ويشرك العملاء للتفاعل مع متجرك. إذا احتجت إلى مساعدة، فخدمة العملاء فائقة السرعة ومفيدة جداً!" },
+  { category: "Beauty", store: "Aklasu", url: "https://aklasu.co/", logo: "/img/pages/testimonials/aklasu.webp", date: "Jul 4, 2021", quote: "اختبرت كل اختبار منتجات في Shopify App Store. هذا، بلا منازع، هو الأفضل عندما تأخذ في الاعتبار السعر والقابلية للتخصيص والوظيفة. بعد أن تعمقت ورأيت أن هذا هو التطبيق الذي يجب استخدامه، فوجئت بسرور بسرعة استجابة فريق الدعم. كانوا سريعين وبدوا مهتمين بنجاحي مع التطبيق. كما أن لديهم توثيقاً جيداً جداً. عمل رائع! أوصي به بشدة." },
+  { category: "Beauty", store: "Madluvv", url: "https://madluvv.com/", logo: "/img/pages/testimonials/madluvv.webp", date: "Jun 11, 2021", quote: "كان مطوّر التطبيق متعاوناً جداً ونحب وظيفة الاختبار. لقد ساعدت كثيراً في تحويلنا ونخطط للاحتفاظ به لفترة طويلة!" },
+  { category: "Beauty", store: "Zeyl Beauty", url: "https://zeylbeauty.com/", logo: "/img/pages/testimonials/zeylb.webp", date: "Jun 9, 2021", quote: "تطبيق اختبار مذهل، سهل الاستخدام والتخصيص للغاية. خدمتهم رائعة، يردون دائماً بسرعة ويفعلون كل ما بوسعهم لمساعدتي. أوصي به على أي تطبيق اختبار آخر جربته!" },
+  // More
+  { category: "More", store: "Balance Wine Co.", url: "https://balancewineco.com.au/", logo: "/img/pages/testimonials/balance.webp", date: "Feb 4, 2022", quote: "التطبيق مبني بشكل جيد جداً، ويتكامل بسلاسة مع Klaviyo (يغذيه بالإجابات) وكان الفريق متعاوناً وسريعاً حقاً في الإجابة عن أي أسئلة. لا أمزح - في اليوم الأول من إطلاق الاختبار، حققت عملية بيع!" },
+  { category: "More", store: "Creatively Intentional", url: "https://creativelyintentional.com/", logo: "/img/pages/testimonials/creative.webp", date: "Feb 1, 2022", quote: "بصفتي صانعة شموع، أعرف أن بعض عملائي المحتملين أو الحاليين يحتاجون إلى المساعدة في معرفة العطور التي يختارونها عبر الإنترنت. منحني اختبار التوصية بالمنتجات طريقة سهلة لتقديم المساعدة عبر اختبار بسيط، وكذلك طريقة لبناء قائمة المشتركين لدي. إذا كانت لديك أي أسئلة، فدعم العملاء رائع! أوصي بهذا التطبيق بشدة." },
+  { category: "More", store: "Dio Candle Company", url: "https://diocandlecompany.com/", logo: "/img/pages/testimonials/dio.webp", date: "Feb 11, 2022", quote: "أحب حقاً اختبار التوصية بالمنتجات هذا. عملائي يحبونه! أحب بشكل خاص خيارات التخصيص وخيارات العرض القابلة للتطبيق. أوصي به بشدة!" },
+  { category: "More", store: "Jump", url: "https://www.jump.ca/", logo: "/img/pages/testimonials/jump.webp", date: "Mar 4, 2022", quote: "تطبيق رائع مع كل التخصيص الذي تحتاجه لمطابقة علامتك التجارية. يرسلون رسائل إرشادية بشكل صحيح دون إغراق صندوق بريدك بالرسائل. كما أن خدمة العملاء مذهلة - لست متأكداً إن كنت قد رأيت وقت استجابة بسرعة RevenueHunt!" },
+  { category: "More", store: "Maison Kkot", url: "https://www.maisonkkot.com/", logo: "/img/pages/testimonials/kkot.webp", date: "Mar 4, 2022", quote: "هذا التطبيق رائع. الاستخدام بديهي وخدمة العملاء يقظة وفعّالة. أوصي به." },
+  { category: "More", store: "Outdoor Master", url: "https://outdoormaster.com/", logo: "/img/pages/testimonials/logo_black.svg", date: "Feb 25, 2022", quote: "فريق مذهل، دعم رائع. نستخدم هذا التطبيق لتخصيص التوصيات لعملائنا. من السهل جداً إنشاء اختبار والبدء. سار التكامل مع منصة التسويق عبر البريد الإلكتروني لدينا بسلاسة أيضاً. تحية لفريق الدعم المتعاون الذي يرد على أسئلتي بسرعة وصبر، ويحل مشكلاتي خلال ساعتين. أوصي به بالتأكيد." },
+  { category: "More", store: "Cascadian Water", url: "https://cascadianwater.com/", logo: "/img/pages/testimonials/water.webp", date: "Feb 23, 2022", quote: "استخدمت هذا التطبيق لمساعدة العملاء على ضبط أفضل حل لاحتياجاتهم المحددة. قوي جداً لكنه بسيط الاستخدام. كلما كان لدي سؤال حصلت على إجابة خلال وقت قصير." },
+  { category: "More", store: "Salt Wrap", url: "https://saltwrap.com/", logo: "/img/pages/testimonials/wrap.webp", date: "Feb 21, 2022", quote: "جربت بعض التطبيقات الأخرى قبل أن أستقر هنا. الأسهل في الإعداد، تصميم رائع، دعم سريع الاستجابة، وأفضل قيمة مقابل المال. أوصي به بشدة." },
+  { category: "More", store: "Her Scents", url: "https://herscents.co/", logo: "/img/pages/testimonials/scents.webp", date: "Feb 20, 2022", quote: "فريق متعاون! ساعدوني في عملية إعداد اختباري ويردون بسرعة كبيرة! التطبيق يعمل جيداً أيضاً!" },
+];
+
+const groups: { id: string; label: string; cat: Testimonial["category"] }[] = [
+  { id: "skincare", label: "العناية بالبشرة", cat: "Skincare" },
+  { id: "beauty", label: "الجمال", cat: "Beauty" },
+  { id: "more", label: "المزيد من التقييمات", cat: "More" },
+];
+
+const jsonLd = [
+  organization(),
+  softwareApplication(),
+  breadcrumb([
+    { name: "الرئيسية", url: "/" },
+    { name: "الشهادات", url: "/testimonials/" },
+  ]),
+];
+---
+
+<Base
+  title="الشهادات - RevenueHunt"
+  description="تقييمات حقيقية من علامات تجارية للعناية بالبشرة والجمال والتجارة الإلكترونية تستخدم اختبارات RevenueHunt على Shopify وWooCommerce وBigCommerce وغيرها."
+  jsonLd={jsonLd}
+  lang="ar"
+  translated={true}
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20 text-center">
+      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
+        <a href={localizedHref("/", "ar")} class="hover:text-slate-700">الرئيسية</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <span class="text-slate-700">الشهادات</span>
+      </nav>
+      <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">اكتشف لماذا يحب عملاؤنا</p>
+      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+        اختبار التوصية بالمنتجات
+      </h1>
+      <p class="mx-auto mt-8 max-w-3xl text-lg text-slate-700">
+        <span class="font-semibold text-slate-900">الجميع يحب التوصيات المخصصة.</span>
+        الآن يمكنك إنشاؤها وتحويلها إلى عملاء محتملين مقسّمين يحققون التحويل.
+      </p>
+      <p class="mx-auto mt-6 max-w-3xl text-slate-600">
+        المبيعات عبر الإنترنت في أعلى مستوياتها على الإطلاق، لكن ما يدفع المتسوقين إلى الشراء هو مساعدتهم على اختيار المنتج المناسب.
+        سواء كنت تبيع عشرة منتجات أو ألفاً، يجعل RevenueHunt هذا الاختيار سهلاً للغاية.
+      </p>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-600">
+        أطلق اختبار توصية بالمنتجات يرشد كل زائر نحو خياره المثالي، ويلتقط إجاباته،
+        ويرسل عملاء محتملين مقسّمين مباشرة إلى Klaviyo أو Meta أو GA4. دون برمجة. دون احتكاك. تحويلات فحسب.
+      </p>
+      <p class="mt-6 font-semibold text-slate-900">لكن لا تأخذ بكلامنا فحسب.</p>
+    </div>
+  </section>
+
+  <!-- Category tabs (anchor links - no JS) -->
+  <nav class="border-b border-slate-200 bg-white" aria-label="Testimonial categories">
+    <ul class="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-8 gap-y-2 px-6 py-4 text-sm font-semibold">
+      {groups.map((g) => (
+        <li>
+          <a href={`#${g.id}`} class="text-slate-700 underline-offset-4 hover:text-[#16161D] hover:underline">
+            {g.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+
+  <!-- Testimonial card grid, grouped by category -->
+  <section class="mx-auto max-w-7xl px-6 py-12 sm:py-16">
+    {groups.map((g) => (
+      <div id={g.id} class="mb-16 scroll-mt-24 last:mb-0">
+        <h2 class="mb-8 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">{g.label}</h2>
+        <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {testimonials.filter((t) => t.category === g.cat).map((t) => (
+            <li>
+              <a
+                href={t.url}
+                target="_blank"
+                rel="external noopener nofollow"
+                class="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 transition hover:border-slate-300 hover:shadow-md"
+              >
+                <div class="flex h-16 items-center">
+                  <img
+                    src={t.logo}
+                    alt={`${t.store} logo`}
+                    loading="lazy"
+                    class="max-h-14 max-w-[180px] object-contain"
+                  />
+                </div>
+                <div class="mt-4 flex items-center gap-3 text-xs text-slate-500">
+                  <span aria-label="5 stars">⭐⭐⭐⭐⭐</span>
+                  <span>{t.date}</span>
+                </div>
+                <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-700">{t.quote}</p>
+                <span class="mt-4 inline-flex items-center gap-1 text-xs font-semibold uppercase tracking-wider text-slate-500 group-hover:text-[#16161D]">
+                  زيارة {t.store} <span aria-hidden="true">↗</span>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <p class="mb-3 text-sm font-semibold uppercase tracking-wider text-white/70">
+        يغادر معظم المتسوقين لأنهم لا يجدون المنتج المناسب
+      </p>
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        حوّل المتسوقين إلى مشترين واثقين باختبار توصية بالمنتجات يدفع المبيعات.
+      </h2>
+      <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
+        <a
+          href={SITE.signup_url}
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          سجّل مجاناً
+        </a>
+        <a
+          href={localizedHref("/demo/", "ar")}
+          class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
+        >
+          احجز عرضاً توضيحياً
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

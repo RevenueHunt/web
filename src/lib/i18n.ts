@@ -7,10 +7,18 @@
 // the locale to `Lang`, `LANGS`, `LANG_LABELS`, `LANG_PREFIXES`, `OG_LOCALE`, and
 // the `t` dictionary below (plus the per-page content dicts and locale wrappers).
 
-export type Lang = "en" | "es" | "fr" | "de" | "pt" | "it" | "nl" | "sv" | "fi" | "pl" | "cs";
+export type Lang = "en" | "es" | "fr" | "de" | "pt" | "it" | "nl" | "sv" | "fi" | "pl" | "cs" | "ar" | "he";
 
 // Order here drives the language-picker dropdown order (Header.astro maps LANGS).
-export const LANGS: Lang[] = ["en", "de", "fr", "nl", "es", "it", "sv", "fi", "pl", "cs", "pt"];
+export const LANGS: Lang[] = ["en", "de", "fr", "nl", "es", "it", "sv", "fi", "pl", "cs", "pt", "ar", "he"];
+
+// Right-to-left locales. dir(lang) drives the <html dir> attribute in Base.astro.
+export const RTL_LANGS = new Set<Lang>(["ar", "he"]);
+
+/** Text direction for a given lang. */
+export function dir(lang: Lang): "rtl" | "ltr" {
+  return RTL_LANGS.has(lang) ? "rtl" : "ltr";
+}
 
 export const LANG_LABELS: Record<Lang, string> = {
   en: "English",
@@ -24,6 +32,8 @@ export const LANG_LABELS: Record<Lang, string> = {
   fi: "Suomi",
   pl: "Polski",
   cs: "Čeština",
+  ar: "العربية",
+  he: "עברית",
 };
 
 /** og:locale value per language. */
@@ -39,6 +49,8 @@ export const OG_LOCALE: Record<Lang, string> = {
   fi: "fi_FI",
   pl: "pl_PL",
   cs: "cs_CZ",
+  ar: "ar_AR",
+  he: "he_IL",
 };
 
 const LANG_PREFIXES: Record<Lang, string> = {
@@ -53,6 +65,8 @@ const LANG_PREFIXES: Record<Lang, string> = {
   fi: "/fi",
   pl: "/pl",
   cs: "/cs",
+  ar: "/ar",
+  he: "/he",
 };
 
 /** URL prefix for a given lang. EN is at the root; the rest are at `/<lang>/...`. */
@@ -608,4 +622,96 @@ const cs: Strings = {
   breadcrumb_home: "Domů",
 };
 
-export const t = { en, es, fr, de, pt, it, nl, sv, fi, pl, cs } satisfies Record<Lang, Strings>;
+const ar: Strings = {
+  nav_home: "الرئيسية",
+  nav_platforms: "المنصات",
+  nav_pricing: "الأسعار",
+  nav_resources: "الموارد",
+  nav_other_platforms: "منصات تجارة إلكترونية أخرى",
+  nav_solutions: "حلول حسب القطاع",
+  nav_roi: "حاسبة عائد الاستثمار للاختبار",
+  nav_benchmark: "تقرير مقارنة أداء اختبارات التجارة الإلكترونية",
+  nav_blog: "المدونة",
+  nav_testimonials: "آراء العملاء",
+  nav_integrations: "التكاملات",
+  nav_templates: "قوالب الاختبارات",
+  nav_partners: "الشركاء والمسوّقون بالعمولة",
+  nav_faqs: "الأسئلة الشائعة - مركز المساعدة",
+  cta_demo: "احجز عرضًا توضيحيًا",
+  cta_signup: "سجّل الآن",
+  menu_open: "افتح القائمة",
+  language_picker: "اللغة",
+  footer_product: "المنتج",
+  footer_company: "الشركة",
+  footer_resources: "الموارد",
+  footer_link_prq: "اختبار التوصية بالمنتجات",
+  footer_link_pricing: "الخطط والأسعار",
+  footer_link_whatsnew: "ما الجديد",
+  footer_link_integrations: "التكاملات",
+  footer_link_faqs: "الأسئلة الشائعة",
+  footer_link_tutorials: "فيديوهات تعليمية",
+  footer_link_contact: "اتصل بنا",
+  footer_link_blog: "المدونة",
+  footer_link_jobs: "الوظائف",
+  footer_link_testimonials: "آراء العملاء",
+  footer_link_partners: "الشركاء والمسوّقون بالعمولة",
+  footer_link_roi: "حاسبة عائد الاستثمار للاختبار",
+  footer_link_benchmark: "تقرير مقارنة أداء اختبارات التجارة الإلكترونية",
+  footer_link_solutions: "حلول حسب القطاع",
+  footer_link_glossary: "قائمة المصطلحات",
+  footer_link_compare: "مقارنات المنافسين",
+  footer_tos: "شروط الخدمة",
+  footer_privacy: "سياسة الخصوصية",
+  footer_security: "الأمان",
+  footer_dpa: "DPA",
+  footer_rss: "RSS",
+  breadcrumb_home: "الرئيسية",
+};
+
+const he: Strings = {
+  nav_home: "בית",
+  nav_platforms: "פלטפורמות",
+  nav_pricing: "תמחור",
+  nav_resources: "משאבים",
+  nav_other_platforms: "פלטפורמות מסחר אחרות",
+  nav_solutions: "פתרונות לפי תחום",
+  nav_roi: "מחשבון ROI לחידון",
+  nav_benchmark: "דוח בנצ'מארק לחידוני מסחר אלקטרוני",
+  nav_blog: "בלוג",
+  nav_testimonials: "המלצות",
+  nav_integrations: "אינטגרציות",
+  nav_templates: "תבניות חידון",
+  nav_partners: "שותפים ושותפי אפיליאציה",
+  nav_faqs: "שאלות נפוצות - מרכז העזרה",
+  cta_demo: "הזמינו הדגמה",
+  cta_signup: "הירשמו",
+  menu_open: "פתחו תפריט",
+  language_picker: "שפה",
+  footer_product: "מוצר",
+  footer_company: "החברה",
+  footer_resources: "משאבים",
+  footer_link_prq: "חידון המלצת מוצרים",
+  footer_link_pricing: "תוכניות ומחירים",
+  footer_link_whatsnew: "מה חדש",
+  footer_link_integrations: "אינטגרציות",
+  footer_link_faqs: "שאלות נפוצות",
+  footer_link_tutorials: "סרטוני הדרכה",
+  footer_link_contact: "צרו קשר",
+  footer_link_blog: "בלוג",
+  footer_link_jobs: "דרושים",
+  footer_link_testimonials: "המלצות",
+  footer_link_partners: "שותפים ושותפי אפיליאציה",
+  footer_link_roi: "מחשבון ROI לחידון",
+  footer_link_benchmark: "דוח בנצ'מארק לחידוני מסחר אלקטרוני",
+  footer_link_solutions: "פתרונות לפי תחום",
+  footer_link_glossary: "מילון מונחים",
+  footer_link_compare: "השוואות מתחרים",
+  footer_tos: "תנאי שימוש",
+  footer_privacy: "מדיניות פרטיות",
+  footer_security: "אבטחה",
+  footer_dpa: "DPA",
+  footer_rss: "RSS",
+  breadcrumb_home: "בית",
+};
+
+export const t = { en, es, fr, de, pt, it, nl, sv, fi, pl, cs, ar, he } satisfies Record<Lang, Strings>;

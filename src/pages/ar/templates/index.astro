@@ -1,0 +1,317 @@
+---
+import Base from "../../../layouts/Base.astro";
+import { organization, breadcrumb, softwareApplication } from "../../../lib/schema";
+import { SITE } from "../../../lib/site";
+import { SOLUTIONS, FEATURED_SOLUTIONS } from "../../../lib/solutions";
+import { localizedHref } from "../../../lib/i18n";
+
+const lang = "ar";
+const lp = (path: string) => localizedHref(path, lang);
+
+const featuredSolutions = FEATURED_SOLUTIONS.map((slug) => SOLUTIONS[slug]!);
+
+interface Template {
+  title: string;
+  description: string;
+  image: string;
+  demo: string;
+}
+
+interface TemplateGroup {
+  id: string;
+  label: string;
+  items: Template[];
+}
+
+const groups: TemplateGroup[] = [
+  {
+    id: "skincare",
+    label: "العناية بالبشرة والشعر ومستحضرات التجميل",
+    items: [
+      { title: "اختبار نوع البشرة + الروتين", description: "حدّد نوع البشرة وأوصِ بروتين كامل.", image: "/img/pages/templates/skinquiz1.webp", demo: "https://productrecommendationquiz.com/pages/skin-analysis" },
+      { title: "اعثر على كريم الأساس المناسب", description: "اختيار كريم الأساس المناسب لا ينبغي أن يكون مسألة تخمين.", image: "/img/pages/templates/foundation5.webp", demo: "https://productrecommendationquiz.com/pages/foundation-match" },
+      { title: "محدد درجات أحمر الشفاه", description: "اعثر لكل عميل على درجة أحمر الشفاه المثالية وفقاً لدرجة بشرته وأسلوبه.", image: "/img/pages/templates/lips1-e1768405685573.webp", demo: "https://productrecommendationquiz.com/pages/lipstick-shade-finder" },
+      { title: "اختبار العناية بالشعر", description: "أوصِ بالشامبو وبلسم الشعر والعلاجات وفقاً لأهداف كل شخص الخاصة بالشعر.", image: "/img/pages/templates/hairquiz4.webp", demo: "https://productrecommendationquiz.com/pages/haircare-quiz" },
+    ],
+  },
+  {
+    id: "food",
+    label: "التغذية والصحة",
+    items: [
+      { title: "اختبار القهوة", description: "وجّه عملاءك إلى مزيج القهوة المثالي وفقاً لذوقهم ونمط حياتهم.", image: "/img/pages/templates/coffee2.webp", demo: "https://productrecommendationquiz.com/pages/coffee-quiz" },
+      { title: "اختبار المكملات الغذائية", description: "أوصِ بالفيتامينات والمكملات المتوافقة مع أهدافهم الصحية.", image: "/img/pages/templates/supplements3.webp", demo: "https://productrecommendationquiz.com/pages/supplements-quiz" },
+      { title: "محدد منتجات CBD", description: "اقترح منتجات CBD المناسبة للاسترخاء أو النوم أو التركيز.", image: "/img/pages/templates/cbd1.webp", demo: "https://productrecommendationquiz.com/pages/cbd-product-finder" },
+      { title: "اختبار طعام الكلاب", description: "اعثر على الطعام المثالي لكلبك وفقاً لاحتياجاته وتفضيلاته الخاصة.", image: "/img/pages/templates/dogquiz3.webp", demo: "https://productrecommendationquiz.com/pages/dog-food" },
+    ],
+  },
+  {
+    id: "clothes",
+    label: "الرياضة والملابس والأزياء",
+    items: [
+      { title: "اختبار المجوهرات", description: "ساعد متسوقيك على إيجاد قطعة المجوهرات المثالية لأسلوبهم.", image: "/img/pages/templates/jewellery1-e1768405517428.webp", demo: "https://productrecommendationquiz.com/pages/jewellery-quiz" },
+      { title: "اختبار أسلوب الملابس", description: "اكتشف شخصيتك في الأزياء واحصل على توصيات مخصصة.", image: "/img/pages/templates/style1.webp", demo: "https://productrecommendationquiz.com/pages/clothing-style-quiz" },
+      { title: "اختبار الدراجات", description: "اعثر لكل عميل على الدراجة المناسبة وفقاً لأسلوب قيادته واحتياجاته.", image: "/img/pages/templates/bike2.webp", demo: "https://productrecommendationquiz.com/pages/bicycle-quiz" },
+    ],
+  },
+];
+
+const gallery = [
+  "Screenshot-2020-09-29-at-20.20.43.webp",
+  "Screenshot-2020-09-29-at-20.33.39.webp",
+  "Screenshot-2020-09-29-at-20.34.03.webp",
+  "Screenshot-2020-09-29-at-20.34.16.webp",
+  "Screenshot-2020-10-20-at-11.31.49.webp",
+  "Screenshot-2020-10-20-at-11.32.06.webp",
+  "Screenshot-2020-10-20-at-11.33.20.webp",
+  "Screenshot-2020-10-20-at-11.33.57.webp",
+  "Screenshot-2020-10-20-at-11.39.39.webp",
+  "Screenshot-2020-10-20-at-11.41.15.webp",
+  "Screenshot-2020-10-20-at-11.41.36.webp",
+  "Screenshot-2020-10-20-at-11.41.51.webp",
+  "Screenshot-2020-10-20-at-11.44.30.webp",
+  "Screenshot-2020-10-20-at-11.45.11.webp",
+  "Screenshot-2020-10-20-at-11.45.42.webp",
+  "Screenshot-2020-11-16-at-14.34.09.webp",
+  "Screenshot-2020-11-16-at-14.34.22.webp",
+  "Screenshot-2020-11-16-at-14.34.34.webp",
+  "Screenshot-2020-11-16-at-14.36.54.webp",
+  "Screenshot-2020-12-04-at-08.38.54.webp",
+  "Screenshot-2020-12-04-at-08.39.14.webp",
+  "Screenshot-2020-12-04-at-08.39.25.webp",
+  "Screenshot-2020-12-04-at-08.39.35.webp",
+  "Screenshot-2021-04-14-at-04.13.10.webp",
+  "Screenshot-2021-04-14-at-04.13.50.webp",
+  "Screenshot-2021-04-14-at-04.14.16.webp",
+  "Screenshot-2021-05-13-at-22.49.10.webp",
+];
+
+const reasons = [
+  { emoji: "🚀", title: "إعداد سريع لـ Shopify وWooCommerce", body: "تتكامل القوالب بسلاسة مع Shopify وWooCommerce وBigCommerce والمواقع المستقلة. دون برمجة: ثبّت التطبيق، واختر قالباً، وخصّصه ليتناسب مع علامتك التجارية." },
+  { emoji: "💡", title: "منطق وأسئلة اختبار جاهزة التصميم", body: "يتضمن كل قالب أسئلة صاغها خبراء، ومنطقاً شرطياً، وخوارزميات للتوصية بالمنتجات. مبنية على أطر مجرّبة تدفع التحويلات في مجالات الجمال والعافية ورعاية الحيوانات الأليفة وأسلوب الحياة." },
+  { emoji: "📊", title: "ارفع التحويلات ومتوسط قيمة الطلب AOV", body: "التوصيات المخصصة تحوّل المتصفحين إلى مشترين. القوالب مُحسّنة لمعدلات تحويل أعلى، وسلال أكبر، وعملاء محتملين مؤهلين بشكل أفضل." },
+  { emoji: "🎨", title: "HTML قابل للتخصيص بالكامل", body: "حرّر النصوص والتصميم والعلامة التجارية والمنطق دون لمس أي كود. للتطويرات المتقدمة، يكون كل قالب أيضاً قابلاً للوصول الكامل عبر HTML وCSS وJS مخصصة." },
+  { emoji: "📧", title: "اجمع zero-party data", body: "التقط التفضيلات والنية وبيانات التقسيم مباشرة من المتسوق، ثم زامنها مع Klaviyo أو Omnisend أو Meta أو GA4 لتعزيز تسويقك اللاحق." },
+  { emoji: "⚡", title: "متجاوبة ومحسّنة للهاتف المحمول", body: "يأتي كل قالب بنهج mobile-first. سريعة، وقابلة للوصول، ومصممة لتبدو أصلية على الهواتف والأجهزة اللوحية والحواسيب." },
+];
+
+const jsonLd = [
+  organization(),
+  softwareApplication(),
+  breadcrumb([
+    { name: "الرئيسية", url: "/" },
+    { name: "قوالب الاختبار", url: "/templates/" },
+  ]),
+];
+---
+
+<Base
+  title="قوالب الاختبار - RevenueHunt"
+  description="قوالب اختبار المنتجات لـ Shopify وWooCommerce وBigCommerce والمتاجر المستقلة. العناية بالبشرة والجمال والمكملات الغذائية وطعام الحيوانات الأليفة والملابس والرياضة وغيرها: أسئلة جاهزة التصميم، ومنطق شرطي، وخوارزميات للتوصية بالمنتجات."
+  jsonLd={jsonLd}
+  lang="ar"
+  translated={true}
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20 text-center">
+      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
+        <a href={lp("/")} class="hover:text-slate-700">الرئيسية</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <span class="text-slate-700">قوالب الاختبار</span>
+      </nav>
+      <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+        قوالب اختبار المنتجات لـ Shopify وWooCommerce
+      </h1>
+      <p class="mt-4 text-xl font-semibold text-slate-700">
+        قوالب اختبار توصية بالمنتجات تفاعلية: جاهزة للاستخدام
+      </p>
+      <p class="mx-auto mt-6 max-w-3xl text-slate-600">
+        اكتشف مجموعتنا من <strong class="font-semibold text-slate-900">قوالب الاختبار المجانية</strong> المصممة لمتاجر التجارة الإلكترونية.
+        من اختبارات العناية بالبشرة والجمال إلى المكملات الغذائية وطعام الحيوانات الأليفة ومنتجات أسلوب الحياة: كل قالب مصمم لمساعدتك على تقديم
+        تجربة تسوّق مخصصة تحقق التحويل. مثالية لـ <strong class="font-semibold text-slate-900">Shopify</strong>،
+        <strong class="font-semibold text-slate-900">WooCommerce</strong>، <strong class="font-semibold text-slate-900">BigCommerce</strong>،
+        والمتاجر <strong class="font-semibold text-slate-900">المستقلة</strong>.
+      </p>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-600">
+        تتضمن قوالب الاختبار هذه بصيغة HTML قابلة للتخصيص أسئلة مكتوبة مسبقاً، ومنطقاً شرطياً، وخوارزميات للتوصية بالمنتجات.
+        اختر قالباً، واربط منتجاتك، وخصّص التصميم، وانشر. انقر على أي قالب أدناه لمشاهدة عرض توضيحي مباشر.
+      </p>
+    </div>
+  </section>
+
+  <!-- Top CTA banner -->
+  <section class="mx-auto max-w-7xl px-6 pb-8">
+    <div class="overflow-hidden rounded-2xl bg-[#16161D] px-8 py-12 text-center text-white">
+      <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">جرّب قوالب اختبار المنتجات الخاصة بنا مباشرة</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-white/80">
+        جرّب اختبارات توصية بالمنتجات كاملة الوظائف في متجر العرض التوضيحي المباشر لدينا على Shopify. جرّب أنواعاً مختلفة من الاختبارات،
+        واستكشف المنطق الشرطي، والأسئلة المتفرّعة، وتوصيات المنتجات المخصصة أثناء العمل.
+      </p>
+      <a
+        href="https://productrecommendationquiz.com/"
+        target="_blank"
+        rel="external noopener nofollow"
+        class="mt-8 inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+      >
+        استكشف العروض التوضيحية المباشرة للاختبار
+      </a>
+    </div>
+  </section>
+
+  <!-- Category nav -->
+  <nav class="sticky top-[60px] z-30 border-y border-slate-200 bg-white/95 backdrop-blur" aria-label="Template categories">
+    <ul class="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-2 px-6 py-3">
+      {groups.map((g) => (
+        <li>
+          <a
+            href={`#${g.id}`}
+            class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-[#16161D] hover:text-[#16161D]"
+          >
+            {g.label}
+          </a>
+        </li>
+      ))}
+      <li>
+        <a
+          href="#gallery"
+          class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-[#16161D] hover:text-[#16161D]"
+        >
+          معرض أمثلة الاختبار
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Template grids -->
+  <section class="mx-auto max-w-7xl px-6 py-12">
+    {groups.map((g) => (
+      <div id={g.id} class="mb-16 scroll-mt-32 last:mb-0">
+        <h2 class="mb-8 text-center text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">{g.label}</h2>
+        <ul class="grid gap-6 md:grid-cols-2">
+          {g.items.map((t) => (
+            <li class="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md">
+              <a
+                href={t.demo}
+                target="_blank"
+                rel="external noopener nofollow"
+                class="block aspect-[321/217] overflow-hidden bg-slate-50"
+              >
+                <img src={t.image} alt={t.title} loading="lazy" class="h-full w-full object-cover" />
+              </a>
+              <div class="flex flex-1 flex-col p-5">
+                <h3 class="text-lg font-semibold text-slate-900">{t.title}</h3>
+                <p class="mt-2 text-sm text-slate-600">{t.description}</p>
+                <div class="mt-5 flex flex-wrap gap-2">
+                  <a
+                    href={t.demo}
+                    target="_blank"
+                    rel="external noopener nofollow"
+                    class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#26262e]"
+                  >
+                    عرض توضيحي
+                  </a>
+                  <a
+                    href={lp("/product-recommendation-quiz/")}
+                    class="inline-flex items-center justify-center rounded-md border border-[#16161D] bg-white px-4 py-2 text-sm font-semibold text-[#16161D] transition hover:bg-slate-50"
+                  >
+                    احصل على هذا القالب
+                  </a>
+                </div>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+
+    <!-- Examples gallery -->
+    <div id="gallery" class="scroll-mt-32">
+      <h2 class="mb-8 text-center text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">معرض أمثلة الاختبار</h2>
+      <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {gallery.map((file) => (
+          <li class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
+            <a href={`/img/pages/templates/${file}`} target="_blank" rel="noopener" class="block aspect-video overflow-hidden bg-slate-50">
+              <img src={`/img/pages/templates/${file}`} alt="مثال على اختبار" loading="lazy" class="h-full w-full object-cover" />
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Solutions cross-link -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6 pb-4">
+      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-8">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900">لا تعرف أي اختبار تنشئ؟</h2>
+        <p class="mt-3 text-slate-700">
+          توضح حلول الاختبار لدينا أفضل نوع اختبار لقطاعك، من روتين العناية بالبشرة إلى محددات الهدايا، مع أمثلة وأسئلة شائعة.
+        </p>
+        <ul class="mt-6 flex flex-wrap gap-3" role="list">
+          {featuredSolutions.map((s) => (
+            <li>
+              <a
+                href={`/solutions/${s.slug}/`}
+                class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-[#16161D] hover:text-[#16161D]"
+              >
+                {s.name}
+              </a>
+            </li>
+          ))}
+          <li>
+            <a
+              href={lp("/solutions/")}
+              class="inline-flex items-center rounded-full bg-[#16161D] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#26262e]"
+            >
+              جميع الحلول →
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why use templates -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-6 py-16">
+      <h2 class="text-center text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+        لماذا تستخدم قوالب اختبار المنتجات في متجرك للتجارة الإلكترونية؟
+      </h2>
+      <ul class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {reasons.map((r) => (
+          <li class="rounded-xl border border-slate-200 bg-white p-6">
+            <div class="text-2xl">{r.emoji}</div>
+            <h3 class="mt-3 text-lg font-semibold text-slate-900">{r.title}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">{r.body}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        ابدأ في إنشاء اختبار منتجاتك اليوم
+      </h2>
+      <p class="mx-auto mt-4 max-w-2xl text-white/80">
+        أنشئ اختبارات توصية بالمنتجات جذّابة لمتجر Shopify أو WooCommerce الخاص بك في دقائق. دون برمجة.
+      </p>
+      <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
+        <a
+          href={SITE.signup_url}
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          جرّب قوالب الاختبار مجاناً
+        </a>
+        <a
+          href={lp("/demo/")}
+          class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
+        >
+          احجز عرضاً توضيحياً
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

@@ -1114,7 +1114,195 @@ const cs: Chrome = {
   },
 };
 
-export const CHROME = { en, es, fr, de, pt, it, nl, sv, fi, pl, cs } satisfies Record<Lang, Chrome>;
+const ar: Chrome = {
+  rc_heading: "أدوات وبيانات مجانية",
+  rc_sub: "وظّف هذه المعايير في متجرك الخاص.",
+  rc_roi_eyebrow: "أداة مجانية",
+  rc_roi_title: "حاسبة عائد الاستثمار للاختبار",
+  rc_roi_blurb:
+    "احسب الإيرادات الإضافية وعائد الاستثمار الذي يمكن أن يضيفه اختبار التوصية بالمنتجات إلى متجرك. مبني على بيانات حقيقية، دون الحاجة إلى بريد إلكتروني.",
+  rc_roi_cta: "احسب عائد استثمارك",
+  rc_report_eyebrow: "تقرير مجاني",
+  rc_report_title: "تقرير معيار اختبارات التجارة الإلكترونية",
+  rc_report_blurb:
+    "كيف تؤدي اختبارات التوصية بالمنتجات فعليًا: التحويل حسب الفئة، وارتفاع AOV، ومعدل الإكمال، من أكثر من 45 مليون إجابة اختبار حقيقية.",
+  rc_report_cta: "اقرأ التقرير",
+  cta_kicker: "معظم المتسوقين يغادرون لأنهم لا يجدون المنتج المناسب",
+  cta_h2: "حوّل المتسوقين إلى مشترين واثقين عبر اختبار التوصية بالمنتجات الذي يزيد المبيعات.",
+  cta_install_shopify: "التثبيت على Shopify",
+  cta_get_woocommerce: "الحصول عليه لـ WooCommerce",
+  trial_note: "خطة مجانية متاحة · تجربة مجانية لمدة 15 يومًا · ضمان استرداد المال خلال 30 يومًا",
+  pillars: [
+    {
+      image: PILLAR_IMAGES.recommend,
+      title: "أوصِ بالمنتجات المناسبة",
+      body: "الاختبارات القابلة للشراء تزيد المبيعات، وترشد العملاء إلى العثور على المنتجات المناسبة لهم، وتساعدهم على اتخاذ قرارات شراء واثقة.",
+    },
+    {
+      image: PILLAR_IMAGES.know,
+      title: "اعرف عملاءك",
+      body: "تتيح لك الاختبارات جمع بيانات قابلة للتنفيذ عبر طرح أسئلة مستهدفة على عملائك. قسّم متسوقيك وضع لهم وسومًا بناءً على إجاباتهم.",
+    },
+    {
+      image: PILLAR_IMAGES.grow,
+      title: "نمِّ جمهورك",
+      body: "أرسل العملاء المحتملين الذين جمعتهم إلى قائمتك البريدية أو نظام CRM. استفد من بيانات ملف العميل لإنشاء حملات تسويقية أكثر تخصيصًا وبعائد استثمار أعلى.",
+    },
+  ],
+  compare_h2: "كيف نتقارن",
+  compare_sub:
+    "RevenueHunt مقابل Octane AI مقابل Quiz Kit - الميزات التي تهم متاجر التجارة الإلكترونية الجادة.",
+  compare_col_feature: "الميزة",
+  compare_rows: [
+    "تكامل Klaviyo / Mailchimp",
+    "منطق شرطي / متفرع",
+    "منشئ اختبارات بالذكاء الاصطناعي (إعداد في 60 ثانية)",
+    "Built for Shopify",
+    "تحليلات التسرب",
+    "WooCommerce ومنصات أخرى",
+    "خطة مجانية متاحة",
+  ],
+  compare_starting_price: "السعر الابتدائي",
+  compare_free: "مجاني",
+  compare_note: "المقارنة مبنية على معلومات متاحة للعموم حتى 2026.",
+  platforms_h2: "متاح لكل منصة",
+  platforms_sub:
+    "لست على {platform}؟ اختبار التوصية بالمنتجات من RevenueHunt يعمل أينما تبيع - اختر منصتك.",
+  platforms_card_title: "اختبار التوصية بالمنتجات لـ {platform}",
+  platforms_card_cta: "عرض صفحة {platform}",
+  industry_h2: "اختبار لمجال عملك",
+  industry_sub:
+    "مهما كانت طريقة بيعك على {platform}، أنشئ الاختبار الذي يناسب كتالوجك. استكشف الحلول حسب المجال ونوع الاختبار.",
+  industry_view: "عرض الحل",
+  industry_see_all: "عرض جميع حلول الاختبارات",
+  reviews_heading: "مقيّم بـ {rating} من قِبل تجار {platform}",
+  reviews_default_heading: "ماذا يقول التجار",
+  reviews_from: "من {count} مراجعة على {source}",
+  plans_enterprise:
+    "علامة تجارية كبيرة؟ نحن نغطيك. احصل على خطة Enterprise مخصصة تبدأ من {price} لإجابات اختبار غير محدودة.",
+  plans_enterprise_cta: "احجز مكالمة استراتيجية",
+  cta_labels: {
+    "install on Shopify": "التثبيت على Shopify",
+    "view demo store": "عرض المتجر التجريبي",
+    "download the plugin": "تنزيل الإضافة",
+    "install on BigCommerce": "التثبيت على BigCommerce",
+    "sign up": "التسجيل",
+    "use the standalone solution": "استخدام الحل المستقل",
+    "use on Shopify instead": "الاستخدام على Shopify",
+    "get started free": "ابدأ مجانًا",
+    "see quiz templates": "عرض قوالب الاختبارات",
+    "get for Shopify": "الحصول عليه لـ Shopify",
+    "get for WooCommerce": "الحصول عليه لـ WooCommerce",
+  },
+  sibling_taglines: {
+    [SLUGS.shopify]: "تطبيق Shopify أصلي، خطة مجانية، تثبيت فوري",
+    [SLUGS.woocommerce]: "إضافة WordPress ذاتية الاستضافة، دون رسوم شهرية",
+    [SLUGS.bigcommerce]: "تطبيق BigCommerce أصلي بمزامنة عميقة للكتالوج",
+    [SLUGS.wix]: "التضمين عبر سكربت عالمي - يعمل على أي متجر Wix",
+    [SLUGS.squarespace]: "التضمين عبر سكربت عالمي - يعمل على أي موقع Squarespace",
+    [SLUGS.magento]: "حل مستضاف مستقل، دون حاجة إلى امتداد Magento",
+    [SLUGS.standalone]:
+      "مستقل عن المنصة - يعمل على Google Product Feed، دون حاجة إلى تكامل المتجر",
+    [SLUGS.pos]: "اختبارات داخل المتجر على أجهزة POS اللوحية iPad / Android",
+    [SLUGS.all]: "نظرة عامة على جميع المنصات - ابدأ هنا إذا كنت تقارن الخيارات",
+  },
+};
+
+const he: Chrome = {
+  rc_heading: "כלים ונתונים בחינם",
+  rc_sub: "הפעילו את המדדים האלה בחנות שלכם.",
+  rc_roi_eyebrow: "כלי חינמי",
+  rc_roi_title: "מחשבון ROI לחידון",
+  rc_roi_blurb:
+    "העריכו את ההכנסה הנוספת וה-ROI שחידון המלצת מוצרים יכול להוסיף לחנות שלכם. בנוי על נתונים אמיתיים, בלי צורך באימייל.",
+  rc_roi_cta: "חשבו את ה-ROI שלכם",
+  rc_report_eyebrow: "דוח חינמי",
+  rc_report_title: "דוח בנצ'מרק לחידוני איקומרס",
+  rc_report_blurb:
+    "איך חידוני המלצת מוצרים באמת מתפקדים: המרה לפי קטגוריה, עליית AOV והשלמה, מתוך יותר מ-45M תשובות חידון אמיתיות.",
+  rc_report_cta: "קראו את הדוח",
+  cta_kicker: "רוב הקונים עוזבים כי הם לא מוצאים את המוצר הנכון",
+  cta_h2: "הפכו קונים לקונים בטוחים בעצמם עם חידון המלצת מוצרים שמגדיל מכירות.",
+  cta_install_shopify: "התקינו ב-Shopify",
+  cta_get_woocommerce: "השיגו ל-WooCommerce",
+  trial_note: "תוכנית חינמית זמינה · 15 ימי ניסיון בחינם · החזר כספי תוך 30 יום",
+  pillars: [
+    {
+      image: PILLAR_IMAGES.recommend,
+      title: "המליצו על המוצרים הנכונים",
+      body: "חידונים ניתנים לקנייה מגדילים מכירות, מייעצים ללקוחות איך למצוא את המוצרים המתאימים להם ועוזרים להם לקבל החלטות רכישה בטוחות.",
+    },
+    {
+      image: PILLAR_IMAGES.know,
+      title: "הכירו את הלקוחות שלכם",
+      body: "חידונים מאפשרים לכם לאסוף נתונים ניתנים לפעולה על ידי שאילת שאלות ממוקדות ללקוחות. פלחו ותייגו את הקונים שלכם לפי התשובות שלהם.",
+    },
+    {
+      image: PILLAR_IMAGES.grow,
+      title: "הגדילו את הקהל שלכם",
+      body: "שלחו את הלידים שאספתם לרשימת התפוצה או ל-CRM שלכם. נצלו את נתוני פרופיל הלקוח כדי ליצור קמפיינים שיווקיים מותאמים יותר עם ROI גבוה יותר.",
+    },
+  ],
+  compare_h2: "איך אנחנו מתחרים",
+  compare_sub:
+    "RevenueHunt מול Octane AI מול Quiz Kit - הפיצ'רים שחשובים לחנויות eCommerce רציניות.",
+  compare_col_feature: "פיצ'ר",
+  compare_rows: [
+    "אינטגרציית Klaviyo / Mailchimp",
+    "לוגיקה מותנית / מסתעפת",
+    "בונה חידונים מבוסס AI (הקמה ב-60 שניות)",
+    "Built for Shopify",
+    "אנליטיקת נטישה",
+    "WooCommerce ופלטפורמות נוספות",
+    "תוכנית חינמית זמינה",
+  ],
+  compare_starting_price: "מחיר התחלתי",
+  compare_free: "חינם",
+  compare_note: "ההשוואה מבוססת על מידע ציבורי זמין נכון ל-2026.",
+  platforms_h2: "זמין לכל פלטפורמה",
+  platforms_sub:
+    "לא על {platform}? חידון המלצת המוצרים של RevenueHunt עובד בכל מקום שאתם מוכרים - בחרו את הסטאק שלכם.",
+  platforms_card_title: "חידון המלצת מוצרים ל-{platform}",
+  platforms_card_cta: "צפו בעמוד {platform}",
+  industry_h2: "חידון לתחום שלכם",
+  industry_sub:
+    "לא משנה איך אתם מוכרים ב-{platform}, בנו את החידון שמתאים לקטלוג שלכם. גלו פתרונות לפי תחום וסוג חידון.",
+  industry_view: "צפו בפתרון",
+  industry_see_all: "צפו בכל פתרונות החידונים",
+  reviews_heading: "דורג {rating} על ידי סוחרי {platform}",
+  reviews_default_heading: "מה סוחרים אומרים",
+  reviews_from: "מתוך {count} ביקורות ב-{source}",
+  plans_enterprise:
+    "מותג גדול? אנחנו מכוסים. קבלו תוכנית Enterprise מותאמת אישית החל מ-{price} לתשובות חידון בלתי מוגבלות.",
+  plans_enterprise_cta: "קבעו שיחת אסטרטגיה",
+  cta_labels: {
+    "install on Shopify": "התקינו ב-Shopify",
+    "view demo store": "צפו בחנות הדגמה",
+    "download the plugin": "הורידו את התוסף",
+    "install on BigCommerce": "התקינו ב-BigCommerce",
+    "sign up": "הירשמו",
+    "use the standalone solution": "השתמשו בפתרון העצמאי",
+    "use on Shopify instead": "השתמשו ב-Shopify",
+    "get started free": "התחילו בחינם",
+    "see quiz templates": "צפו בתבניות חידונים",
+    "get for Shopify": "השיגו ל-Shopify",
+    "get for WooCommerce": "השיגו ל-WooCommerce",
+  },
+  sibling_taglines: {
+    [SLUGS.shopify]: "אפליקציית Shopify מקורית, תוכנית חינמית, התקנה מיידית",
+    [SLUGS.woocommerce]: "תוסף WordPress בהתארחות עצמית, ללא תשלום חודשי",
+    [SLUGS.bigcommerce]: "אפליקציית BigCommerce מקורית עם סנכרון קטלוג מעמיק",
+    [SLUGS.wix]: "הטמעה דרך סקריפט אוניברסלי - עובד בכל חנות Wix",
+    [SLUGS.squarespace]: "הטמעה דרך סקריפט אוניברסלי - עובד בכל אתר Squarespace",
+    [SLUGS.magento]: "פתרון מתארח עצמאי, ללא צורך בתוסף Magento",
+    [SLUGS.standalone]:
+      "בלתי תלוי בפלטפורמה - רץ על Google Product Feed, ללא צורך באינטגרציית חנות",
+    [SLUGS.pos]: "חידונים בחנות על טאבלטי POS מסוג iPad / Android",
+    [SLUGS.all]: "סקירת כל הפלטפורמות - התחילו כאן אם אתם משווים אפשרויות",
+  },
+};
+
+export const CHROME = { en, es, fr, de, pt, it, nl, sv, fi, pl, cs, ar, he } satisfies Record<Lang, Chrome>;
 
 /** Fill {platform} / {rating} placeholders. */
 export function fill(tpl: string, vars: Record<string, string>): string {

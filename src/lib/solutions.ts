@@ -29,6 +29,8 @@ import { SOLUTIONS_SV } from "./content/solutions.sv";
 import { SOLUTIONS_FI } from "./content/solutions.fi";
 import { SOLUTIONS_PL } from "./content/solutions.pl";
 import { SOLUTIONS_CS } from "./content/solutions.cs";
+import { SOLUTIONS_AR } from "./content/solutions.ar";
+import { SOLUTIONS_HE } from "./content/solutions.he";
 
 export interface SolutionQuizType {
   title: string;
@@ -1231,4 +1233,6 @@ export const SOLUTIONS_BY_LANG: Record<Lang, Record<string, Solution>> = {
   fi: SOLUTIONS_FI,
   pl: SOLUTIONS_PL,
   cs: SOLUTIONS_CS,
+  ar: SOLUTIONS_AR,
+  he: SOLUTIONS_HE,
 };

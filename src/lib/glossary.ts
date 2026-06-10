@@ -31,6 +31,8 @@ import { GLOSSARY_SV, GLOSSARY_RELATED_GUIDES_SV } from "./content/glossary.sv";
 import { GLOSSARY_FI, GLOSSARY_RELATED_GUIDES_FI } from "./content/glossary.fi";
 import { GLOSSARY_PL, GLOSSARY_RELATED_GUIDES_PL } from "./content/glossary.pl";
 import { GLOSSARY_CS, GLOSSARY_RELATED_GUIDES_CS } from "./content/glossary.cs";
+import { GLOSSARY_AR, GLOSSARY_RELATED_GUIDES_AR } from "./content/glossary.ar";
+import { GLOSSARY_HE, GLOSSARY_RELATED_GUIDES_HE } from "./content/glossary.he";
 
 export interface GlossaryFaq {
   question: string;
@@ -950,6 +952,8 @@ export const GLOSSARY_BY_LANG: Record<Lang, Record<string, GlossaryTerm>> = {
   fi: GLOSSARY_FI,
   pl: GLOSSARY_PL,
   cs: GLOSSARY_CS,
+  ar: GLOSSARY_AR,
+  he: GLOSSARY_HE,
 };
 
 export const GLOSSARY_RELATED_GUIDES_BY_LANG: Record<Lang, GlossaryLink[]> = {
@@ -964,4 +968,6 @@ export const GLOSSARY_RELATED_GUIDES_BY_LANG: Record<Lang, GlossaryLink[]> = {
   fi: GLOSSARY_RELATED_GUIDES_FI,
   pl: GLOSSARY_RELATED_GUIDES_PL,
   cs: GLOSSARY_RELATED_GUIDES_CS,
+  ar: GLOSSARY_RELATED_GUIDES_AR,
+  he: GLOSSARY_RELATED_GUIDES_HE,
 };

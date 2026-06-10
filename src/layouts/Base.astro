@@ -3,7 +3,7 @@ import "../styles/global.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE, ogImageForPath } from "../lib/site";
-import { type Lang, LANGS, OG_LOCALE, altLangUrl } from "../lib/i18n";
+import { type Lang, LANGS, OG_LOCALE, altLangUrl, dir } from "../lib/i18n";
 
 interface Props {
   title: string;
@@ -54,7 +54,7 @@ const isProd = import.meta.env.PROD && SITE.site_url === "https://revenuehunt.co
 ---
 
 <!doctype html>
-<html lang={lang}>
+<html lang={lang} dir={dir(lang)}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />

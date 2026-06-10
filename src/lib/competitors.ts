@@ -24,6 +24,8 @@ import { COMPETITORS_SV } from "./content/competitors.sv";
 import { COMPETITORS_FI } from "./content/competitors.fi";
 import { COMPETITORS_PL } from "./content/competitors.pl";
 import { COMPETITORS_CS } from "./content/competitors.cs";
+import { COMPETITORS_AR } from "./content/competitors.ar";
+import { COMPETITORS_HE } from "./content/competitors.he";
 
 export interface CompareRow {
   feature: string;
@@ -557,4 +559,6 @@ export const COMPETITORS_BY_LANG: Record<Lang, Record<string, Competitor>> = {
   fi: COMPETITORS_FI,
   pl: COMPETITORS_PL,
   cs: COMPETITORS_CS,
+  ar: COMPETITORS_AR,
+  he: COMPETITORS_HE,
 };

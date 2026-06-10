@@ -28,7 +28,7 @@ const pages = defineCollection({
     // Locale of this page. English files live at the collection root and default
     // to "en"; translations live in per-locale subfolders (pages/es/…, pages/fr/…)
     // and set this explicitly. Drives which [slug] route renders the entry.
-    lang: z.enum(["en", "es", "fr", "de", "pt", "it", "nl", "sv", "fi", "pl", "cs"]).optional().default("en"),
+    lang: z.enum(["en", "es", "fr", "de", "pt", "it", "nl", "sv", "fi", "pl", "cs", "ar", "he"]).optional().default("en"),
     pubDate: z.coerce.date().optional(),
     updatedDate: z.coerce.date().optional(),
     legacySlug: z.string(),

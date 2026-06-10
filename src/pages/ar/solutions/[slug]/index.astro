@@ -1,0 +1,14 @@
+---
+import SolutionPage from "../../../../components/pages/SolutionPage.astro";
+import { SOLUTIONS_BY_LANG } from "../../../../lib/solutions";
+
+export function getStaticPaths() {
+  return Object.values(SOLUTIONS_BY_LANG["ar"]).map((solution) => ({
+    params: { slug: solution.slug },
+    props: { solution },
+  }));
+}
+const { solution } = Astro.props;
+---
+
+<SolutionPage solution={solution} lang="ar" translated={true} />

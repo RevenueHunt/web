@@ -192,7 +192,7 @@ export default defineConfig({
   // like the blog don't advertise non-existent localized URLs.
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "es", "fr", "de", "pt", "it", "nl", "sv", "fi", "pl", "cs"],
+    locales: ["en", "es", "fr", "de", "pt", "it", "nl", "sv", "fi", "pl", "cs", "ar", "he"],
     routing: { prefixDefaultLocale: false },
   },
   redirects: {

@@ -1,0 +1,152 @@
+---
+import Base from "../../../layouts/Base.astro";
+import YouTubeFacade from "../../../components/YouTubeFacade.astro";
+import { organization, breadcrumb } from "../../../lib/schema";
+import { localizedHref } from "../../../lib/i18n";
+
+const jsonLd = [
+  organization(),
+  breadcrumb([
+    { name: "الرئيسية", url: "/" },
+    { name: "اتصل بنا", url: "/contact/" },
+  ]),
+];
+
+const channels = [
+  {
+    label: "اقرأ أدلة المساعدة",
+    href: "https://docs.revenuehunt.com/",
+    note: "توثيق الخدمة الذاتية، التكاملات، حل المشكلات.",
+    external: true,
+  },
+  {
+    label: "الدعم والمبيعات عبر البريد الإلكتروني",
+    href: "mailto:team@revenuehunt.com",
+    note: "team@revenuehunt.com - اطّلع على أوقات الاستجابة أدناه.",
+  },
+  {
+    label: "تحقق من حالة النظام",
+    href: "https://status.revenuehunt.com/",
+    note: "صحة الخدمة في الوقت الفعلي وسجل الحوادث. توفر بنسبة 99.98%+.",
+    external: true,
+  },
+];
+
+const responseTiers = [
+  {
+    label: "حرج - الإنتاج متوقف، الأمان، سلامة البيانات",
+    sla: "أول استجابة خلال 30 دقيقة، على مدار الساعة طوال أيام الأسبوع في جميع أنحاء العالم",
+  },
+  {
+    label: "عالٍ - ميزة مهمة متأثرة، عدة مستخدمين متأثرين",
+    sla: "أول استجابة خلال 12 ساعة",
+  },
+  {
+    label: "قياسي - أسئلة، مساعدة في الإعداد",
+    sla: "يوم عمل واحد",
+  },
+  {
+    label: "أولوية منخفضة - ملاحظات، طلبات ميزات",
+    sla: "حتى 3 أيام عمل",
+  },
+];
+---
+
+<Base
+  title="اتصل بنا - RevenueHunt"
+  description="تواصل مع فريق دعم RevenueHunt. اقرأ أدلة المساعدة، شاهد الشرح التفصيلي أو أجرِ اختبار الدعم للحصول على رد مخصص خلال دقائق."
+  jsonLd={jsonLd}
+  lang="ar"
+  translated={true}
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20 text-center">
+      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
+        <a href={localizedHref("/", "ar")} class="hover:text-slate-700">الرئيسية</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <span class="text-slate-700">اتصل بنا</span>
+      </nav>
+      <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+        تواصل معنا
+      </h1>
+      <p class="mx-auto mt-6 max-w-2xl text-lg text-slate-600">
+        اقرأ أدلة المساعدة، شاهد الشرح التفصيلي أو أجرِ اختبار الدعم الخاص بنا أدناه - وسيرد عليك أذكى وألطف
+        فريق دعم في التجارة الإلكترونية.
+      </p>
+    </div>
+  </section>
+
+  <!-- Two-column: video + channels -->
+  <section class="mx-auto max-w-7xl px-6 py-12">
+    <div class="grid gap-10 lg:grid-cols-2 lg:gap-16">
+      <div>
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900">ابدأ بالشرح التفصيلي</h2>
+        <p class="mt-3 text-slate-600">
+          تُحَل معظم الأسئلة في دليل الـ 3 دقائق. ألقِ نظرة سريعة عليه قبل أن تراسلنا.
+        </p>
+        <div class="mt-6 aspect-video overflow-hidden rounded-xl bg-slate-900 shadow-xl">
+          <YouTubeFacade id="oL1DnBd6N1U" title="الشرح التفصيلي لدعم RevenueHunt" />
+        </div>
+      </div>
+      <div>
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900">كيف تتواصل معنا</h2>
+        <ul class="mt-6 space-y-3">
+          {channels.map((c) => (
+            <li>
+              <a
+                href={c.href}
+                target={c.external ? "_blank" : undefined}
+                rel={c.external ? "external noopener" : undefined}
+                class="group flex items-start justify-between gap-4 rounded-xl border border-slate-200 bg-white p-5 transition hover:border-slate-300 hover:shadow-md"
+              >
+                <div>
+                  <p class="text-base font-semibold text-slate-900 group-hover:text-[#16161D]">{c.label}</p>
+                  <p class="mt-1 text-sm text-slate-600">{c.note}</p>
+                </div>
+                <span class="mt-1 shrink-0 text-slate-400 transition group-hover:text-[#16161D]" aria-hidden="true">→</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Support quiz -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-5xl px-6 py-16 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">أجرِ اختبار الدعم الخاص بنا</h2>
+      <p class="mx-auto mt-3 max-w-2xl text-slate-600">
+        أجب عن بضعة أسئلة سريعة وسنوجهك إلى المساعدة المناسبة - التوثيق أو الشرح التفصيلي أو رد من شخص حقيقي.
+      </p>
+      <div class="mx-auto mt-8 max-w-4xl overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <iframe
+          src="https://admin.revenuehunt.com/public/quiz/ZAHJoMM"
+          title="اختبار الدعم الخاص بـ RevenueHunt"
+          loading="lazy"
+          class="block h-[600px] w-full"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Response times — moved here from the right column so it sits under
+       the quiz, since that's where visitors land after asking for help. -->
+  <section class="mx-auto max-w-4xl px-6 py-16">
+    <div class="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm sm:p-10">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900">أوقات الاستجابة</h2>
+      <p class="mt-3 text-slate-600">
+        SLA دعم بطبقات لجميع التجار، مع أولوية لحسابات Shopify Plus وenterprise.
+      </p>
+      <dl class="mt-6 grid gap-4 sm:grid-cols-2">
+        {responseTiers.map((t) => (
+          <div class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+            <dt class="text-sm font-semibold text-slate-900">{t.label}</dt>
+            <dd class="mt-1 text-sm text-slate-600">{t.sla}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  </section>
+</Base>

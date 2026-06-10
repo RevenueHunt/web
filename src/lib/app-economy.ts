@@ -116,6 +116,7 @@ export const GEOGRAPHY = {
 /** The quiz category — RevenueHunt's own lane, the tie-back to the flagship. */
 export const QUIZ_LANE = {
   shopifySearch: "149",
+  searchUrl: "https://apps.shopify.com/search?q=quiz",
   dedicatedApps: 65,
   revenueHuntReviews: 417,
   octaneReviews: 193,

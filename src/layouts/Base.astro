@@ -58,6 +58,70 @@ const isProd = import.meta.env.PROD && SITE.site_url === "https://revenuehunt.co
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {/* Language memory + auto-detect (mirrors MetricSpot). On inner pages the
+        visited URL wins and we just remember its locale in the rh_lang cookie.
+        On the apex (/) only, redirect to the saved / browser-preferred locale.
+        Runs early so the homepage redirect happens before paint. hreflang and
+        per-page canonicals are unaffected. */}
+    <script is:inline>
+      (function () {
+        var SUPPORTED = ["en", "es", "fr", "de", "pt", "it"];
+        var PREFIXES = { en: "", es: "/es", fr: "/fr", de: "/de", pt: "/pt", it: "/it" };
+        function readCookie(name) {
+          var m = document.cookie.match(new RegExp("(?:^|; )" + name + "=([^;]+)"));
+          return m ? decodeURIComponent(m[1]) : null;
+        }
+        function writeCookie(value) {
+          var attrs = "rh_lang=" + value + "; Path=/; Max-Age=31536000; SameSite=Lax";
+          if (location.protocol === "https:") attrs += "; Secure";
+          document.cookie = attrs;
+        }
+        function currentLocale(path) {
+          for (var i = 0; i < SUPPORTED.length; i++) {
+            var l = SUPPORTED[i];
+            if (l === "en") continue;
+            var p = PREFIXES[l];
+            if (path === p || path === p + "/" || path.indexOf(p + "/") === 0) return l;
+          }
+          return "en";
+        }
+        function swapLocale(path, target) {
+          var stripped = path;
+          for (var i = 0; i < SUPPORTED.length; i++) {
+            var l = SUPPORTED[i];
+            if (l === "en") continue;
+            var p = PREFIXES[l];
+            if (stripped === p) { stripped = "/"; break; }
+            if (stripped.indexOf(p + "/") === 0) { stripped = stripped.slice(p.length); break; }
+          }
+          if (target === "en") return stripped === "" ? "/" : stripped;
+          var tp = PREFIXES[target];
+          return stripped === "/" ? tp + "/" : tp + stripped;
+        }
+        function detectFromBrowser() {
+          var langs = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || "en"];
+          for (var i = 0; i < langs.length; i++) {
+            var tag = (langs[i] || "").toLowerCase().split("-")[0];
+            if (SUPPORTED.indexOf(tag) !== -1) return tag;
+          }
+          return "en";
+        }
+        var path = location.pathname;
+        var current = currentLocale(path);
+        var cookie = readCookie("rh_lang");
+        if (path !== "/" && path !== "") {
+          if (cookie !== current) writeCookie(current);
+          return;
+        }
+        var preferred = (cookie && SUPPORTED.indexOf(cookie) !== -1) ? cookie : detectFromBrowser();
+        if (preferred !== "en") {
+          writeCookie(preferred);
+          location.replace(swapLocale(path, preferred) + location.search + location.hash);
+          return;
+        }
+        if (!cookie) writeCookie("en");
+      })();
+    </script>
     <title>{title}</title>
     <meta name="description" content={description} />
     {(noindex || !isProd) && <meta name="robots" content="noindex, nofollow" />}

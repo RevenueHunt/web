@@ -97,7 +97,7 @@ export const REVENUE = {
   },
   earnAnything: "36%",
   caption:
-    "Estimated monthly revenue is brutally top-heavy. The top 1% of apps (225 of them) take an estimated 72% of it; the top 10 alone take nearly a third. Only about 36% of apps look like they earn anything at all. And it clusters by geography: the US and Canada alone take an estimated 57%.",
+    "Estimated monthly revenue is brutally top-heavy. The top 1% of apps (225 of them) take an estimated 72% of it; the top 10 alone take nearly a third. Only about 36% of apps look like they earn anything at all. And it clusters by geography: <strong>the US and Canada alone take an estimated 57%</strong> of the Shopify App Store revenue.",
 };
 
 /** Pricing model split + the permanent-free-tier figure (the pricing donut). */

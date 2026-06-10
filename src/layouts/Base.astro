@@ -206,13 +206,17 @@ const isProd = import.meta.env.PROD && SITE.site_url === "https://revenuehunt.co
 
           const autoplayMs = Number(root.dataset.autoplay) || 8000;
           const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+          // In RTL containers scrollLeft is 0 at the start (rightmost) and goes
+          // negative toward later slides, so normalize with Math.abs for paging
+          // and negate the scrollTo target so advance/dots track the visible slide.
+          const rtl = getComputedStyle(track).direction === "rtl";
           let pages = -1;
           let timer: ReturnType<typeof setInterval> | undefined;
 
           const gap = () => parseFloat(getComputedStyle(track).columnGap) || 0;
           const slideWidth = () => slides[0].offsetWidth + gap();
           const visibleCount = () => Math.max(1, Math.round(track.clientWidth / slideWidth()));
-          const activeIndex = () => Math.round(track.scrollLeft / slideWidth());
+          const activeIndex = () => Math.round(Math.abs(track.scrollLeft) / slideWidth());
 
           const sync = () => {
             if (!dots) return;
@@ -220,7 +224,7 @@ const isProd = import.meta.env.PROD && SITE.site_url === "https://revenuehunt.co
             [...dots.children].forEach((d, i) => d.classList.toggle("is-active", i === a));
           };
           const goTo = (i: number) =>
-            track.scrollTo({ left: i * slideWidth(), behavior: "smooth" });
+            track.scrollTo({ left: (rtl ? -1 : 1) * i * slideWidth(), behavior: "smooth" });
           const advance = () => {
             const last = slides.length - visibleCount();
             const i = activeIndex();

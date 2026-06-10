@@ -185,7 +185,7 @@ function rel(c: { external?: boolean }) {
           {c.compare_sub}
         </p>
         <div class="mt-8 overflow-x-auto rounded-xl border border-slate-200">
-          <table class="w-full text-left text-sm">
+          <table class="w-full text-start text-sm">
             <thead class="bg-slate-50 text-slate-900">
               <tr>
                 <th class="px-4 py-3 font-semibold">{c.compare_col_feature}</th>
@@ -238,7 +238,7 @@ function rel(c: { external?: boolean }) {
               <span class="mt-4 inline-flex items-center text-sm font-medium text-[#16161D]">
                 {fill(c.platforms_card_cta, { platform: s.platform })}
                 <svg
-                  class="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5"
+                  class="ms-1 h-4 w-4 transition-transform group-hover:translate-x-0.5 rtl:-scale-x-100"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   aria-hidden="true"
@@ -274,7 +274,7 @@ function rel(c: { external?: boolean }) {
               <h3 class="text-base font-semibold text-slate-900 group-hover:text-[#16161D]">{s.name}</h3>
               <span class="mt-3 inline-flex items-center text-sm font-medium text-[#16161D]">
                 {c.industry_view}
-                <svg class="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <svg class="ms-1 h-4 w-4 transition-transform group-hover:translate-x-0.5 rtl:-scale-x-100" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd" d="M7.21 4.29a1 1 0 011.42 0l5 5a1 1 0 010 1.42l-5 5a1 1 0 11-1.42-1.42L11.09 10 7.21 6.12a1 1 0 010-1.42z" clip-rule="evenodd" />
                 </svg>
               </span>
@@ -284,7 +284,7 @@ function rel(c: { external?: boolean }) {
       </ul>
       <a href={lp("/solutions/")} class="mt-8 inline-flex items-center text-sm font-semibold text-[#16161D]">
         {c.industry_see_all}
-        <span aria-hidden="true" class="ml-1">→</span>
+        <span aria-hidden="true" class="ms-1 inline-block rtl:-scale-x-100">→</span>
       </a>
     </div>
   </section>

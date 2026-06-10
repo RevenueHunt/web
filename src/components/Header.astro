@@ -273,3 +273,17 @@ const langOptions = LANGS.map((l) => ({
     </details>
   </div>
 </header>
+
+<script>
+  // Native <details> only toggles via its summary. Close the desktop language
+  // picker when the user clicks outside it or presses Escape.
+  const closeLangDropdowns = (except?: Node) => {
+    document.querySelectorAll<HTMLDetailsElement>("details[data-lang-dropdown][open]").forEach((d) => {
+      if (!except || !d.contains(except)) d.removeAttribute("open");
+    });
+  };
+  document.addEventListener("click", (e) => closeLangDropdowns(e.target as Node));
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeLangDropdowns();
+  });
+</script>

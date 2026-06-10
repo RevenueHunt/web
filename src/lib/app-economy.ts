@@ -44,7 +44,7 @@ export const COLORS = {
 export const SOURCE = {
   apps: "22,546",
   appsNote: "live apps in the snapshot",
-  countries: "115",
+  countries: "131",
   countriesNote: "countries building them",
   reviewless: "51%",
   reviewlessNote: "with zero reviews",
@@ -110,14 +110,40 @@ export const PRICING = {
     "Nearly half the store charges nothing up front, and fewer than 1 in 20 apps ask for money before the first install. Almost 45% offer a permanent free tier. Freemium is not a strategy here, it is the table stakes.",
 };
 
-/** Top builder countries by app count (the geography bar chart). 115 in total. */
+/**
+ * Who builds them, on complete developer-country data. The original snapshot was
+ * missing a country for ~37% of listings (absent from JSON-LD); it was recovered
+ * from each listing's HTML location line, lifting coverage to 100% and 131
+ * countries. `labels`/`values` are the legacy single-bar series still read by the
+ * locale pages; English uses `builders` (stacked by review tier) and `signal`
+ * (re-ranked by apps that cleared 10+ reviews).
+ */
 export const GEOGRAPHY = {
   labels: ["US", "India", "UK", "Canada", "Vietnam", "China", "Japan", "Germany", "Australia", "France"],
   values: [3582, 2105, 779, 766, 507, 416, 401, 389, 370, 326],
   builtForShopify: "6.7%",
   builtForShopifyCount: "1,502",
+  usIndiaShare: "39%",
+  vietnamSignal: "46%",
+  /** Top 10 builders by total apps, each split into review tiers (absolute counts). */
+  builders: {
+    labels: ["US", "India", "UK", "Canada", "Vietnam", "Germany", "Japan", "China", "Australia", "France"],
+    zero: [2463, 1882, 646, 514, 215, 338, 468, 374, 300, 251],
+    low: [1690, 1049, 421, 324, 169, 236, 125, 164, 194, 180],
+    high: [1202, 551, 242, 293, 326, 104, 49, 57, 98, 108],
+  },
+  /**
+   * The same store re-ranked by apps that cleared 10+ reviews (real traction).
+   * China and Japan fall out of the top 10; Israel and Singapore (highlight) take
+   * their place.
+   */
+  signal: {
+    labels: ["US", "India", "Vietnam", "Canada", "UK", "France", "Israel", "Germany", "Australia", "Singapore"],
+    values: [1202, 551, 326, 293, 242, 108, 107, 104, 98, 94],
+    highlight: [6, 9],
+  },
   caption:
-    "Apps come from 115 countries, but two dominate: the US (16%) and India (9%) build a quarter of the store between them. And after years of Shopify pushing the standard, only 6.7% of live apps (about 1,500) carry the Built for Shopify badge.",
+    "Two dominate: <strong>the US (24%) and India (15%) build two in five</strong> of the store between them. But <strong>volume is not traction</strong>. Rank countries only by the apps that cleared 10+ reviews and the leaderboard redraws - <strong>Vietnam</strong>, a mid-size builder, lands more apps with real traction than its size suggests, while <strong>Japan and China fall away</strong>.",
 };
 
 /** The quiz category — RevenueHunt's own lane, the tie-back to the flagship. */
@@ -196,6 +222,10 @@ export interface ChartLabels {
   pricing: [string, string, string];
   /** Top builder countries, same order as GEOGRAPHY.labels. Country names. */
   geography: string[];
+  /** Stacked geography chart: review-tier legend. Optional until locale fan-out. */
+  geoTiers?: [string, string, string];
+  /** Signal-ranked geography bar tooltip; {n} = app count. Optional until fan-out. */
+  geoSignalTip?: string;
 }
 
 export const CHART_LABELS: Record<string, ChartLabels> = {
@@ -207,6 +237,8 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     pricing: ["Free", "Free trial", "Paid up front"],
     geography: ["US", "India", "UK", "Canada", "Vietnam", "China", "Japan", "Germany", "Australia", "France"],
     reviewsTip: { title: "Apps with {x} reviews", body: "{n} apps ({p}%)" },
+    geoTiers: ["0 reviews", "1–9 reviews", "10+ reviews"],
+    geoSignalTip: "{n} apps with 10+ reviews",
   },
   es: {
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],

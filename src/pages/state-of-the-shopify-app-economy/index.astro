@@ -275,21 +275,32 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
   <section class="bg-slate-50">
     <div class="mx-auto max-w-5xl px-6 py-16">
       <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("05", "Who builds them")}</p>
-      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Built in 115 countries, dominated by two</h2>
-      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">{GEOGRAPHY.caption}</p>
-      <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
+      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Signal versus noise</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center" set:html={GEOGRAPHY.caption} />
+      <div class="mt-8 grid gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <div class="h-72 sm:h-80"><canvas id="c-geography" aria-label="Top developer countries by app count" role="img"></canvas></div>
+          <p class="text-sm font-semibold text-slate-900">All apps, by review tier</p>
+          <p class="mt-0.5 text-xs text-slate-500">Top 10 builder countries by app count. Click a tier in the legend to toggle it.</p>
+          <div class="mt-4 h-80 sm:h-96"><canvas id="c-geography" aria-label="Top developer countries by app count, split by review tier" role="img"></canvas></div>
         </div>
-        <div class="space-y-4">
-          <div class="rounded-xl border border-slate-200 p-6">
-            <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.builtForShopify}</p>
-            <p class="mt-1 text-slate-700">carry the Built for Shopify badge ({GEOGRAPHY.builtForShopifyCount} apps), years after Shopify began pushing the standard</p>
-          </div>
-          <div class="rounded-xl border border-slate-200 p-6">
-            <p class="text-3xl font-bold text-[#16161D]">25%</p>
-            <p class="mt-1 text-slate-700">of the entire store is built in just the US and India</p>
-          </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
+          <p class="text-sm font-semibold text-slate-900">Ranked by apps that earn reviews</p>
+          <p class="mt-0.5 text-xs text-slate-500">The same store, ordered by apps with 10+ reviews. China and Japan drop out of the top 10; Israel and Singapore climb in.</p>
+          <div class="mt-4 h-80 sm:h-96"><canvas id="c-geo-signal" aria-label="Top developer countries by apps with 10 or more reviews" role="img"></canvas></div>
+        </div>
+      </div>
+      <div class="mt-8 grid gap-4 sm:grid-cols-3">
+        <div class="rounded-xl border border-slate-200 p-6">
+          <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.builtForShopify}</p>
+          <p class="mt-1 text-sm text-slate-700">carry the Built for Shopify badge ({GEOGRAPHY.builtForShopifyCount} apps), years after Shopify began pushing the standard</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 p-6">
+          <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.usIndiaShare}</p>
+          <p class="mt-1 text-sm text-slate-700">of the entire store is built in just the US and India</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 p-6">
+          <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.vietnamSignal}</p>
+          <p class="mt-1 text-sm text-slate-700">of Vietnam's apps clear 10+ reviews - the best signal rate of any major builder, about double the US or India</p>
         </div>
       </div>
     </div>
@@ -510,16 +521,59 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
       options: donutOpts("%"),
     });
 
+  const geoTiers = L.geoTiers ?? CHART_LABELS.en.geoTiers!;
   const geo = el("c-geography");
   if (geo)
     new Chart(geo, {
       type: "bar",
-      data: { labels: L.geography, datasets: [{ data: GEOGRAPHY.values, backgroundColor: GEOGRAPHY.labels.map((_, i) => (i < 2 ? COLORS.primary : COLORS.secondary)), borderRadius: 4 }] },
+      data: {
+        labels: GEOGRAPHY.builders.labels,
+        datasets: [
+          { label: geoTiers[0], data: GEOGRAPHY.builders.zero, backgroundColor: "#e2e8f0", borderWidth: 0 },
+          { label: geoTiers[1], data: GEOGRAPHY.builders.low, backgroundColor: COLORS.gray, borderWidth: 0 },
+          { label: geoTiers[2], data: GEOGRAPHY.builders.high, backgroundColor: COLORS.primary, borderWidth: 0 },
+        ],
+      },
       options: {
         indexAxis: "y",
         responsive: true,
         maintainAspectRatio: false,
-        plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => Number(c.parsed.x).toLocaleString() + " apps" } } },
+        plugins: {
+          legend: { position: "bottom" as const, labels: { boxWidth: 12, boxHeight: 12, padding: 14 } },
+          tooltip: { callbacks: { label: (c) => `${c.dataset.label}: ${Number(c.parsed.x).toLocaleString()}` } },
+        },
+        scales: {
+          x: { stacked: true, beginAtZero: true, grid: { color: grid }, ticks: { callback: (v) => kfmt(Number(v)) } },
+          y: { stacked: true, grid: { display: false } },
+        },
+      },
+    });
+
+  const geoSignalTip = L.geoSignalTip ?? CHART_LABELS.en.geoSignalTip!;
+  const geoSignal = el("c-geo-signal");
+  if (geoSignal)
+    new Chart(geoSignal, {
+      type: "bar",
+      data: {
+        labels: GEOGRAPHY.signal.labels,
+        datasets: [
+          {
+            data: GEOGRAPHY.signal.values,
+            backgroundColor: GEOGRAPHY.signal.labels.map((_, i) =>
+              GEOGRAPHY.signal.highlight.includes(i) ? COLORS.secondary : COLORS.primary,
+            ),
+            borderRadius: 4,
+          },
+        ],
+      },
+      options: {
+        indexAxis: "y",
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: { callbacks: { label: (c) => geoSignalTip.replace("{n}", Number(c.parsed.x).toLocaleString()) } },
+        },
         scales: { x: { beginAtZero: true, grid: { color: grid }, ticks: { callback: (v) => kfmt(Number(v)) } }, y: { grid: { display: false } } },
       },
     });

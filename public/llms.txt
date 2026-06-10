@@ -2,6 +2,8 @@
 
 > Product recommendation quizzes for Shopify, WooCommerce, BigCommerce, Wix, Squarespace, Magento, and headless stores. Turn passive browsers into qualified buyers by guiding them to the right product through an interactive quiz funnel - and capture zero-party data for segmentation, personalization, and email follow-up.
 
+Available in Spanish, French, German, Portuguese, and Italian under /es/, /fr/, /de/, /pt/, and /it/ (same page structure; see each page's hreflang tags for the translated equivalents).
+
 ## What we do
 
 - Build product recommendation quizzes that surface the right item from a catalog of any size

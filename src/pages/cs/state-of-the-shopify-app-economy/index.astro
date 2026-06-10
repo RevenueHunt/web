@@ -315,27 +315,22 @@ const methodologyHtml = METHODOLOGY;
       <div class="mt-8 grid gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
           <p class="text-sm font-semibold text-slate-900">Všechny aplikace, podle úrovně recenzí</p>
-          <p class="mt-0.5 text-xs text-slate-500">Top 10 zemí vývojářů podle počtu aplikací. Klikni v legendě na úroveň, abys ji zobrazil nebo skryl.</p>
+          <p class="mt-0.5 text-xs text-slate-500">Top 10 vývojářů podle počtu aplikací. Klikni na úroveň, abys ji zobrazil nebo skryl - skryj úrovně 0 a 1–9 a žebříček se přeřadí podle trakce: Vietnam, Izrael a Singapur stoupají.</p>
           <div class="mt-4 h-80 sm:h-96"><canvas id="c-geography" aria-label="Hlavní země vývojářů podle počtu aplikací, rozdělené podle úrovně recenzí" role="img"></canvas></div>
         </div>
-        <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="text-sm font-semibold text-slate-900">Seřazeno podle aplikací, které získávají recenze</p>
-          <p class="mt-0.5 text-xs text-slate-500">Tentýž store, seřazený podle aplikací s 10+ recenzemi. Čína a Japonsko vypadávají z top 10; Izrael a Singapur se posouvají nahoru.</p>
-          <div class="mt-4 h-80 sm:h-96"><canvas id="c-geo-signal" aria-label="Hlavní země vývojářů podle aplikací s 10 a více recenzemi" role="img"></canvas></div>
-        </div>
-      </div>
-      <div class="mt-8 grid gap-4 sm:grid-cols-3">
-        <div class="rounded-xl border border-slate-200 p-6">
-          <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.builtForShopify}</p>
-          <p class="mt-1 text-sm text-slate-700">nese odznak Built for Shopify ({GEOGRAPHY.builtForShopifyCount} aplikací), roky poté, co Shopify začal tlačit na standard</p>
-        </div>
-        <div class="rounded-xl border border-slate-200 p-6">
-          <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.usIndiaShare}</p>
-          <p class="mt-1 text-sm text-slate-700">celého storu vzniká jen v USA a Indii</p>
-        </div>
-        <div class="rounded-xl border border-slate-200 p-6">
-          <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.vietnamSignal}</p>
-          <p class="mt-1 text-sm text-slate-700">aplikací z Vietnamu překračuje 10+ recenzí - nejlepší míra signálu ze všech velkých vývojářů, zhruba dvojnásobek USA či Indie</p>
+        <div class="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
+          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+            <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.builtForShopify}</p>
+            <p class="mt-1 text-sm text-slate-700">nese odznak Built for Shopify ({GEOGRAPHY.builtForShopifyCount} aplikací), roky poté, co Shopify začal tlačit na standard</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+            <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.usIndiaShare}</p>
+            <p class="mt-1 text-sm text-slate-700">celého storu vzniká jen v USA a Indii</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+            <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.vietnamSignal}</p>
+            <p class="mt-1 text-sm text-slate-700">aplikací z Vietnamu překračuje 10+ recenzí - nejlepší míra signálu ze všech velkých vývojářů, zhruba dvojnásobek USA či Indie</p>
+          </div>
         </div>
       </div>
     </div>
@@ -621,36 +616,6 @@ const methodologyHtml = METHODOLOGY;
           x: { stacked: true, beginAtZero: true, grid: { color: grid }, ticks: { callback: (v) => kfmt(Number(v)) } },
           y: { stacked: true, grid: { display: false } },
         },
-      },
-    });
-
-  const geoSignalTip = L.geoSignalTip ?? CHART_LABELS.en.geoSignalTip!;
-  const geoSignalLabels = GEOGRAPHY.signal.labels.map(geoCountry);
-  const geoSignal = el("c-geo-signal");
-  if (geoSignal)
-    new Chart(geoSignal, {
-      type: "bar",
-      data: {
-        labels: geoSignalLabels,
-        datasets: [
-          {
-            data: GEOGRAPHY.signal.values,
-            backgroundColor: geoSignalLabels.map((_, i) =>
-              GEOGRAPHY.signal.highlight.includes(i) ? COLORS.primary : COLORS.secondary,
-            ),
-            borderRadius: 4,
-          },
-        ],
-      },
-      options: {
-        indexAxis: "y",
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: { display: false },
-          tooltip: { callbacks: { label: (c) => geoSignalTip.replace("{n}", Number(c.parsed.x).toLocaleString()) } },
-        },
-        scales: { x: { beginAtZero: true, grid: { color: grid }, ticks: { callback: (v) => kfmt(Number(v)) } }, y: { grid: { display: false } } },
       },
     });
 </script>

@@ -315,27 +315,22 @@ const methodologyHtml = METHODOLOGY;
       <div class="mt-8 grid gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
           <p class="text-sm font-semibold text-slate-900">כל האפליקציות, לפי מדרגת ביקורות</p>
-          <p class="mt-0.5 text-xs text-slate-500">10 מדינות המפתחים המובילות לפי מספר אפליקציות. לחצו על מדרגה במקרא כדי להציג או להסתיר אותה.</p>
+          <p class="mt-0.5 text-xs text-slate-500">10 המפתחים המובילים לפי מספר אפליקציות. לחצו על מדרגה כדי להציג או להסתיר אותה - הסתירו את מדרגות 0 ו-1–9 והדירוג מתארגן מחדש לפי אחיזה בשוק: וייטנאם, ישראל וסינגפור מטפסות.</p>
           <div class="mt-4 h-80 sm:h-96"><canvas id="c-geography" aria-label="מדינות המפתחים המובילות לפי מספר אפליקציות, מפוצל לפי מדרגת ביקורות" role="img"></canvas></div>
         </div>
-        <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="text-sm font-semibold text-slate-900">ממוין לפי אפליקציות שזוכות בביקורות</p>
-          <p class="mt-0.5 text-xs text-slate-500">אותו store, מסודר לפי אפליקציות עם 10+ ביקורות. סין ויפן נושרות מעשר המובילות; ישראל וסינגפור עולות.</p>
-          <div class="mt-4 h-80 sm:h-96"><canvas id="c-geo-signal" aria-label="מדינות המפתחים המובילות לפי אפליקציות עם 10 ביקורות או יותר" role="img"></canvas></div>
-        </div>
-      </div>
-      <div class="mt-8 grid gap-4 sm:grid-cols-3">
-        <div class="rounded-xl border border-slate-200 p-6">
-          <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.builtForShopify}</p>
-          <p class="mt-1 text-sm text-slate-700">נושאות את תג Built for Shopify ({GEOGRAPHY.builtForShopifyCount} אפליקציות), שנים אחרי ש-Shopify החלה לדחוף את הסטנדרט</p>
-        </div>
-        <div class="rounded-xl border border-slate-200 p-6">
-          <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.usIndiaShare}</p>
-          <p class="mt-1 text-sm text-slate-700">מכל ה-store נבנים רק בארה"ב ובהודו</p>
-        </div>
-        <div class="rounded-xl border border-slate-200 p-6">
-          <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.vietnamSignal}</p>
-          <p class="mt-1 text-sm text-slate-700">מהאפליקציות של וייטנאם עוברות את רף 10 הביקורות - שיעור האות הטוב ביותר מבין כל המפתחות הגדולות, בערך כפול מזה של ארה"ב או הודו</p>
+        <div class="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
+          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+            <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.builtForShopify}</p>
+            <p class="mt-1 text-sm text-slate-700">נושאות את תג Built for Shopify ({GEOGRAPHY.builtForShopifyCount} אפליקציות), שנים אחרי ש-Shopify החלה לדחוף את הסטנדרט</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+            <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.usIndiaShare}</p>
+            <p class="mt-1 text-sm text-slate-700">מכל ה-store נבנים רק בארה"ב ובהודו</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+            <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.vietnamSignal}</p>
+            <p class="mt-1 text-sm text-slate-700">מהאפליקציות של וייטנאם עוברות את רף 10 הביקורות - שיעור האות הטוב ביותר מבין כל המפתחות הגדולות, בערך כפול מזה של ארה"ב או הודו</p>
+          </div>
         </div>
       </div>
     </div>
@@ -621,36 +616,6 @@ const methodologyHtml = METHODOLOGY;
           x: { stacked: true, beginAtZero: true, grid: { color: grid }, ticks: { callback: (v) => kfmt(Number(v)) } },
           y: { stacked: true, grid: { display: false } },
         },
-      },
-    });
-
-  const geoSignalTip = L.geoSignalTip ?? CHART_LABELS.en.geoSignalTip!;
-  const geoSignalLabels = GEOGRAPHY.signal.labels.map(geoCountry);
-  const geoSignal = el("c-geo-signal");
-  if (geoSignal)
-    new Chart(geoSignal, {
-      type: "bar",
-      data: {
-        labels: geoSignalLabels,
-        datasets: [
-          {
-            data: GEOGRAPHY.signal.values,
-            backgroundColor: geoSignalLabels.map((_, i) =>
-              GEOGRAPHY.signal.highlight.includes(i) ? COLORS.primary : COLORS.secondary,
-            ),
-            borderRadius: 4,
-          },
-        ],
-      },
-      options: {
-        indexAxis: "y",
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: { display: false },
-          tooltip: { callbacks: { label: (c) => geoSignalTip.replace("{n}", Number(c.parsed.x).toLocaleString()) } },
-        },
-        scales: { x: { beginAtZero: true, grid: { color: grid }, ticks: { callback: (v) => kfmt(Number(v)) } }, y: { grid: { display: false } } },
       },
     });
 </script>

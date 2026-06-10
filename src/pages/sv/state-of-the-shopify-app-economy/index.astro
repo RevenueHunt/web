@@ -316,27 +316,22 @@ const methodologyHtml = METHODOLOGY;
       <div class="mt-8 grid gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
           <p class="text-sm font-semibold text-slate-900">Alla appar, efter recensionsnivå</p>
-          <p class="mt-0.5 text-xs text-slate-500">De 10 främsta utvecklarländerna efter antal appar. Klicka på en nivå i teckenförklaringen för att slå på eller av den.</p>
+          <p class="mt-0.5 text-xs text-slate-500">De 10 främsta utvecklarna efter antal appar. Klicka på en nivå för att slå på eller av den - dölj nivåerna 0 och 1–9 så ordnas listan om efter genomslag: Vietnam, Israel och Singapore klättrar.</p>
           <div class="mt-4 h-80 sm:h-96"><canvas id="c-geography" aria-label="Ledande utvecklarländer efter antal appar, uppdelat efter recensionsnivå" role="img"></canvas></div>
         </div>
-        <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="text-sm font-semibold text-slate-900">Rangordnat efter appar som förtjänar recensioner</p>
-          <p class="mt-0.5 text-xs text-slate-500">Samma butik, ordnad efter appar med 10+ recensioner. Kina och Japan ramlar ur de 10 främsta; Israel och Singapore klättrar in.</p>
-          <div class="mt-4 h-80 sm:h-96"><canvas id="c-geo-signal" aria-label="Ledande utvecklarländer efter appar med 10 eller fler recensioner" role="img"></canvas></div>
-        </div>
-      </div>
-      <div class="mt-8 grid gap-4 sm:grid-cols-3">
-        <div class="rounded-xl border border-slate-200 p-6">
-          <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.builtForShopify}</p>
-          <p class="mt-1 text-sm text-slate-700">bär märket Built for Shopify ({GEOGRAPHY.builtForShopifyCount} appar), år efter att Shopify började driva på standarden</p>
-        </div>
-        <div class="rounded-xl border border-slate-200 p-6">
-          <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.usIndiaShare}</p>
-          <p class="mt-1 text-sm text-slate-700">av hela butiken byggs enbart i USA och Indien</p>
-        </div>
-        <div class="rounded-xl border border-slate-200 p-6">
-          <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.vietnamSignal}</p>
-          <p class="mt-1 text-sm text-slate-700">av Vietnams appar tar sig över 10+ recensioner - den bästa signalkvoten bland alla stora utvecklare, ungefär dubbelt så hög som USA:s eller Indiens</p>
+        <div class="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
+          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+            <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.builtForShopify}</p>
+            <p class="mt-1 text-sm text-slate-700">bär märket Built for Shopify ({GEOGRAPHY.builtForShopifyCount} appar), år efter att Shopify började driva på standarden</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+            <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.usIndiaShare}</p>
+            <p class="mt-1 text-sm text-slate-700">av hela butiken byggs enbart i USA och Indien</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+            <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.vietnamSignal}</p>
+            <p class="mt-1 text-sm text-slate-700">av Vietnams appar tar sig över 10+ recensioner - den bästa signalkvoten bland alla stora utvecklare, ungefär dubbelt så hög som USA:s eller Indiens</p>
+          </div>
         </div>
       </div>
     </div>
@@ -622,36 +617,6 @@ const methodologyHtml = METHODOLOGY;
           x: { stacked: true, beginAtZero: true, grid: { color: grid }, ticks: { callback: (v) => kfmt(Number(v)) } },
           y: { stacked: true, grid: { display: false } },
         },
-      },
-    });
-
-  const geoSignalTip = L.geoSignalTip ?? CHART_LABELS.en.geoSignalTip!;
-  const geoSignalLabels = GEOGRAPHY.signal.labels.map(geoCountry);
-  const geoSignal = el("c-geo-signal");
-  if (geoSignal)
-    new Chart(geoSignal, {
-      type: "bar",
-      data: {
-        labels: geoSignalLabels,
-        datasets: [
-          {
-            data: GEOGRAPHY.signal.values,
-            backgroundColor: geoSignalLabels.map((_, i) =>
-              GEOGRAPHY.signal.highlight.includes(i) ? COLORS.primary : COLORS.secondary,
-            ),
-            borderRadius: 4,
-          },
-        ],
-      },
-      options: {
-        indexAxis: "y",
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: { display: false },
-          tooltip: { callbacks: { label: (c) => geoSignalTip.replace("{n}", Number(c.parsed.x).toLocaleString()) } },
-        },
-        scales: { x: { beginAtZero: true, grid: { color: grid }, ticks: { callback: (v) => kfmt(Number(v)) } }, y: { grid: { display: false } } },
       },
     });
 </script>

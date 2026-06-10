@@ -315,27 +315,22 @@ const methodologyHtml = METHODOLOGY;
       <div class="mt-8 grid gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
           <p class="text-sm font-semibold text-slate-900">Toutes les apps, par palier d'avis</p>
-          <p class="mt-0.5 text-xs text-slate-500">Top 10 des pays de développeurs par nombre d'apps. Cliquez sur un palier dans la légende pour l'afficher ou le masquer.</p>
+          <p class="mt-0.5 text-xs text-slate-500">Top 10 des développeurs par nombre d'apps. Cliquez sur un palier pour l'afficher ou le masquer - masquez les paliers 0 et 1–9 et le classement se redessine selon la traction : le Vietnam, Israël et Singapour grimpent.</p>
           <div class="mt-4 h-80 sm:h-96"><canvas id="c-geography" aria-label="Principaux pays de développeurs par nombre d'apps, répartis par palier d'avis" role="img"></canvas></div>
         </div>
-        <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="text-sm font-semibold text-slate-900">Classé par apps qui gagnent des avis</p>
-          <p class="mt-0.5 text-xs text-slate-500">Le même store, ordonné par apps avec 10+ avis. La Chine et le Japon sortent du top 10 ; Israël et Singapour y entrent.</p>
-          <div class="mt-4 h-80 sm:h-96"><canvas id="c-geo-signal" aria-label="Principaux pays de développeurs par apps avec 10 avis ou plus" role="img"></canvas></div>
-        </div>
-      </div>
-      <div class="mt-8 grid gap-4 sm:grid-cols-3">
-        <div class="rounded-xl border border-slate-200 p-6">
-          <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.builtForShopify}</p>
-          <p class="mt-1 text-sm text-slate-700">portent le badge Built for Shopify ({GEOGRAPHY.builtForShopifyCount} apps), des années après que Shopify a commencé à promouvoir le standard</p>
-        </div>
-        <div class="rounded-xl border border-slate-200 p-6">
-          <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.usIndiaShare}</p>
-          <p class="mt-1 text-sm text-slate-700">de tout le store est créé rien qu'aux États-Unis et en Inde</p>
-        </div>
-        <div class="rounded-xl border border-slate-200 p-6">
-          <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.vietnamSignal}</p>
-          <p class="mt-1 text-sm text-slate-700">des apps du Vietnam franchissent le cap des 10+ avis - le meilleur taux de signal de tous les grands développeurs, environ le double de celui des États-Unis ou de l'Inde</p>
+        <div class="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
+          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+            <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.builtForShopify}</p>
+            <p class="mt-1 text-sm text-slate-700">portent le badge Built for Shopify ({GEOGRAPHY.builtForShopifyCount} apps), des années après que Shopify a commencé à promouvoir le standard</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+            <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.usIndiaShare}</p>
+            <p class="mt-1 text-sm text-slate-700">de tout le store est créé rien qu'aux États-Unis et en Inde</p>
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+            <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.vietnamSignal}</p>
+            <p class="mt-1 text-sm text-slate-700">des apps du Vietnam franchissent le cap des 10+ avis - le meilleur taux de signal de tous les grands développeurs, environ le double de celui des États-Unis ou de l'Inde</p>
+          </div>
         </div>
       </div>
     </div>
@@ -621,36 +616,6 @@ const methodologyHtml = METHODOLOGY;
           x: { stacked: true, beginAtZero: true, grid: { color: grid }, ticks: { callback: (v) => kfmt(Number(v)) } },
           y: { stacked: true, grid: { display: false } },
         },
-      },
-    });
-
-  const geoSignalTip = L.geoSignalTip ?? CHART_LABELS.en.geoSignalTip!;
-  const geoSignalLabels = GEOGRAPHY.signal.labels.map(geoCountry);
-  const geoSignal = el("c-geo-signal");
-  if (geoSignal)
-    new Chart(geoSignal, {
-      type: "bar",
-      data: {
-        labels: geoSignalLabels,
-        datasets: [
-          {
-            data: GEOGRAPHY.signal.values,
-            backgroundColor: geoSignalLabels.map((_, i) =>
-              GEOGRAPHY.signal.highlight.includes(i) ? COLORS.primary : COLORS.secondary,
-            ),
-            borderRadius: 4,
-          },
-        ],
-      },
-      options: {
-        indexAxis: "y",
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: { display: false },
-          tooltip: { callbacks: { label: (c) => geoSignalTip.replace("{n}", Number(c.parsed.x).toLocaleString()) } },
-        },
-        scales: { x: { beginAtZero: true, grid: { color: grid }, ticks: { callback: (v) => kfmt(Number(v)) } }, y: { grid: { display: false } } },
       },
     });
 </script>

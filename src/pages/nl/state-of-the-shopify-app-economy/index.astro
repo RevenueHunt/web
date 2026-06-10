@@ -268,8 +268,8 @@ const methodologyHtml = METHODOLOGY;
           <div class="h-64 sm:h-72"><canvas id="c-revenue-donut" aria-label="Aandeel van de geschatte omzet dat naar de top 1% van de apps gaat" role="img"></canvas></div>
         </div>
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="mb-3 text-sm font-medium text-slate-500">Cumulatief aandeel van de geschatte omzet</p>
-          <div class="h-64 sm:h-72"><canvas id="c-revenue-bars" aria-label="Cumulatief aandeel van de geschatte omzet door de toonaangevende apps" role="img"></canvas></div>
+          <p class="mb-3 text-sm font-medium text-slate-500">Geschatte omzet per land</p>
+          <div class="h-64 sm:h-72"><canvas id="c-revenue-countries" aria-label="Geschatte omzet per land" role="img"></canvas></div>
         </div>
       </div>
     </div>
@@ -505,18 +505,12 @@ const methodologyHtml = METHODOLOGY;
       options: donutOpts("%"),
     });
 
-  const revBars = el("c-revenue-bars");
-  if (revBars)
-    new Chart(revBars, {
-      type: "bar",
-      data: { labels: L.revenueBars, datasets: [{ data: REVENUE.bars.values, backgroundColor: COLORS.primary, borderRadius: 4, barThickness: 26 }] },
-      options: {
-        indexAxis: "y",
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => c.parsed.x + "% of estimated revenue" } } },
-        scales: { x: { beginAtZero: true, max: 100, grid: { color: grid }, ticks: { callback: (v) => v + "%" } }, y: { grid: { display: false } } },
-      },
+  const revCountries = el("c-revenue-countries");
+  if (revCountries)
+    new Chart(revCountries, {
+      type: "doughnut",
+      data: { labels: L.revenueCountries, datasets: [{ data: REVENUE.countries.values, backgroundColor: REVENUE.countries.colors, borderWidth: 0 }] },
+      options: donutOpts("%"),
     });
 
   const pricing = el("c-pricing");

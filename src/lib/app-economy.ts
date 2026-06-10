@@ -90,9 +90,9 @@ export const REVIEWS = {
  */
 export const REVENUE = {
   donut: { labels: ["Top 1% of apps", "The other 99%"], values: [72.2, 27.8], colors: [COLORS.primary, COLORS.gray] },
-  bars: {
-    labels: ["Top 10 apps", "Top 100 apps", "Top 1% (225 apps)"],
-    values: [28.5, 59.0, 72.2],
+  countries: {
+    values: [41.0, 16.0, 7.5, 4.8, 4.6, 4.0, 3.9, 3.0, 1.4, 13.8],
+    colors: ["#616eff", "#6a7dff", "#738bff", "#7c9aff", "#85a8ff", "#8eb7ff", "#97c5ff", "#a0d4ff", "#a9e2ff", COLORS.gray],
   },
   earnAnything: "36%",
   caption:
@@ -184,12 +184,12 @@ export const FAQ: FaqItem[] = [
  * to `en`). Numbers/values stay in the language-neutral exports above; only the
  * human-readable category labels are localized. Country names (GEOGRAPHY.labels)
  * stay as-is. Order matches REVIEWS.labels / REVENUE.donut.labels /
- * REVENUE.bars.labels / PRICING.labels.
+ * REVENUE.countries / PRICING.labels.
  */
 export interface ChartLabels {
   reviews: string[];
   revenueDonut: [string, string];
-  revenueBars: [string, string, string];
+  revenueCountries: string[];
   pricing: [string, string, string];
   /** Top builder countries, same order as GEOGRAPHY.labels. Country names. */
   geography: string[];
@@ -199,91 +199,91 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
   en: {
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["Top 1% of apps", "The other 99%"],
-    revenueBars: ["Top 10 apps", "Top 100 apps", "Top 1% (225 apps)"],
+    revenueCountries: ["US", "Canada", "Vietnam", "India", "UK", "Israel", "Singapore", "France", "Lithuania", "Rest of world"],
     pricing: ["Free", "Free trial", "Paid up front"],
     geography: ["US", "India", "UK", "Canada", "Vietnam", "China", "Japan", "Germany", "Australia", "France"],
   },
   es: {
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["1% superior de apps", "El otro 99%"],
-    revenueBars: ["Top 10 apps", "Top 100 apps", "1% superior (225 apps)"],
+    revenueCountries: ["EE. UU.", "Canadá", "Vietnam", "India", "Reino Unido", "Israel", "Singapur", "Francia", "Lituania", "Resto del mundo"],
     pricing: ["Gratis", "Prueba gratis", "De pago por adelantado"],
     geography: ["EE. UU.", "India", "Reino Unido", "Canadá", "Vietnam", "China", "Japón", "Alemania", "Australia", "Francia"],
   },
   de: {
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["Top 1% der Apps", "Die anderen 99%"],
-    revenueBars: ["Top 10 Apps", "Top 100 Apps", "Top 1% (225 Apps)"],
+    revenueCountries: ["USA", "Kanada", "Vietnam", "Indien", "UK", "Israel", "Singapur", "Frankreich", "Litauen", "Übrige Welt"],
     pricing: ["Kostenlos", "Kostenlose Testversion", "Vorab kostenpflichtig"],
     geography: ["USA", "Indien", "UK", "Kanada", "Vietnam", "China", "Japan", "Deutschland", "Australien", "Frankreich"],
   },
   fr: {
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["Top 1% des apps", "Les 99% restants"],
-    revenueBars: ["Top 10 apps", "Top 100 apps", "Top 1% (225 apps)"],
+    revenueCountries: ["États-Unis", "Canada", "Vietnam", "Inde", "Royaume-Uni", "Israël", "Singapour", "France", "Lituanie", "Reste du monde"],
     pricing: ["Gratuit", "Essai gratuit", "Payant d'avance"],
     geography: ["États-Unis", "Inde", "Royaume-Uni", "Canada", "Vietnam", "Chine", "Japon", "Allemagne", "Australie", "France"],
   },
   it: {
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["Top 1% delle app", "L'altro 99%"],
-    revenueBars: ["Top 10 app", "Top 100 app", "Top 1% (225 app)"],
+    revenueCountries: ["USA", "Canada", "Vietnam", "India", "Regno Unito", "Israele", "Singapore", "Francia", "Lituania", "Resto del mondo"],
     pricing: ["Gratis", "Prova gratuita", "A pagamento in anticipo"],
     geography: ["USA", "India", "Regno Unito", "Canada", "Vietnam", "Cina", "Giappone", "Germania", "Australia", "Francia"],
   },
   nl: {
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["Top 1% van apps", "De andere 99%"],
-    revenueBars: ["Top 10 apps", "Top 100 apps", "Top 1% (225 apps)"],
+    revenueCountries: ["VS", "Canada", "Vietnam", "India", "VK", "Israël", "Singapore", "Frankrijk", "Litouwen", "Rest van de wereld"],
     pricing: ["Gratis", "Gratis proefperiode", "Vooraf betaald"],
     geography: ["VS", "India", "VK", "Canada", "Vietnam", "China", "Japan", "Duitsland", "Australië", "Frankrijk"],
   },
   sv: {
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["Topp 1% av apparna", "De övriga 99%"],
-    revenueBars: ["Topp 10 appar", "Topp 100 appar", "Topp 1% (225 appar)"],
+    revenueCountries: ["USA", "Kanada", "Vietnam", "Indien", "Storbritannien", "Israel", "Singapore", "Frankrike", "Litauen", "Övriga världen"],
     pricing: ["Gratis", "Gratis provperiod", "Betalning i förskott"],
     geography: ["USA", "Indien", "Storbritannien", "Kanada", "Vietnam", "Kina", "Japan", "Tyskland", "Australien", "Frankrike"],
   },
   fi: {
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["Top 1% sovelluksista", "Loput 99%"],
-    revenueBars: ["Top 10 sovellusta", "Top 100 sovellusta", "Top 1% (225 sovellusta)"],
+    revenueCountries: ["USA", "Kanada", "Vietnam", "Intia", "Britannia", "Israel", "Singapore", "Ranska", "Liettua", "Muu maailma"],
     pricing: ["Ilmainen", "Ilmainen kokeilu", "Maksullinen etukäteen"],
     geography: ["USA", "Intia", "Britannia", "Kanada", "Vietnam", "Kiina", "Japani", "Saksa", "Australia", "Ranska"],
   },
   pl: {
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["1% najlepszych aplikacji", "Pozostałe 99%"],
-    revenueBars: ["Top 10 aplikacji", "Top 100 aplikacji", "Top 1% (225 aplikacji)"],
+    revenueCountries: ["USA", "Kanada", "Wietnam", "Indie", "Wielka Brytania", "Izrael", "Singapur", "Francja", "Litwa", "Reszta świata"],
     pricing: ["Za darmo", "Bezpłatny okres próbny", "Płatne z góry"],
     geography: ["USA", "Indie", "Wielka Brytania", "Kanada", "Wietnam", "Chiny", "Japonia", "Niemcy", "Australia", "Francja"],
   },
   cs: {
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["1% nejlepších aplikací", "Zbylých 99%"],
-    revenueBars: ["Top 10 aplikací", "Top 100 aplikací", "Top 1% (225 aplikací)"],
+    revenueCountries: ["USA", "Kanada", "Vietnam", "Indie", "Velká Británie", "Izrael", "Singapur", "Francie", "Litva", "Zbytek světa"],
     pricing: ["Zdarma", "Zkušební verze zdarma", "Placené předem"],
     geography: ["USA", "Indie", "Velká Británie", "Kanada", "Vietnam", "Čína", "Japonsko", "Německo", "Austrálie", "Francie"],
   },
   pt: {
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["1% no topo das apps", "Os outros 99%"],
-    revenueBars: ["Top 10 apps", "Top 100 apps", "Top 1% (225 apps)"],
+    revenueCountries: ["EUA", "Canadá", "Vietname", "Índia", "Reino Unido", "Israel", "Singapura", "França", "Lituânia", "Resto do mundo"],
     pricing: ["Grátis", "Teste grátis", "Pago antecipadamente"],
     geography: ["EUA", "Índia", "Reino Unido", "Canadá", "Vietname", "China", "Japão", "Alemanha", "Austrália", "França"],
   },
   ar: {
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["أعلى 1% من التطبيقات", "الـ99% الأخرى"],
-    revenueBars: ["أفضل 10 تطبيقات", "أفضل 100 تطبيق", "أعلى 1% (225 تطبيقًا)"],
+    revenueCountries: ["الولايات المتحدة", "كندا", "فيتنام", "الهند", "المملكة المتحدة", "إسرائيل", "سنغافورة", "فرنسا", "ليتوانيا", "بقية العالم"],
     pricing: ["مجاني", "تجربة مجانية", "مدفوع مقدمًا"],
     geography: ["الولايات المتحدة", "الهند", "المملكة المتحدة", "كندا", "فيتنام", "الصين", "اليابان", "ألمانيا", "أستراليا", "فرنسا"],
   },
   he: {
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["1% העליון של האפליקציות", "99% הנותרים"],
-    revenueBars: ["10 האפליקציות המובילות", "100 האפליקציות המובילות", "1% העליון (225 אפליקציות)"],
+    revenueCountries: ["ארצות הברית", "קנדה", "וייטנאם", "הודו", "בריטניה", "ישראל", "סינגפור", "צרפת", "ליטא", "שאר העולם"],
     pricing: ["חינם", "ניסיון חינם", "בתשלום מראש"],
     geography: ["ארצות הברית", "הודו", "בריטניה", "קנדה", "וייטנאם", "סין", "יפן", "גרמניה", "אוסטרליה", "צרפת"],
   },

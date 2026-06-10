@@ -75,6 +75,17 @@ const growthCaptionHtml = GROWTH.caption.replace(
   "<strong>The Shopify App Store has roughly 10x'd since 2020</strong>",
 );
 
+// Bold the lead phrase of each methodology note.
+const METHOD_BOLD = [
+  "Source: ",
+  "Revenue is estimated, not measured.",
+  "Growth uses each listing's published launch date. ",
+  "Reviews are a proxy for traction",
+];
+const methodologyHtml = METHODOLOGY.map((m) =>
+  METHOD_BOLD.reduce((acc, lead) => acc.replace(lead, `<strong>${lead}</strong>`), m),
+);
+
 // Quiz-lane paragraphs. Link "Shopify's quiz search" to the live search (so the
 // 149 figure is verifiable) and bold the load-bearing line. Caption text stays
 // the single source of truth.
@@ -114,7 +125,7 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
         <span class="text-slate-700">State of the Shopify app economy</span>
       </nav>
       <div class="text-center">
-        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-500">
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#1e2228]">
           {REPORT.eyebrow} · {publishedLabel}
         </p>
         <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
@@ -178,7 +189,7 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
   <!-- 01 Growth -->
   <section class="scroll-mt-20 bg-slate-50">
     <div class="mx-auto max-w-5xl px-6 py-16">
-      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-indigo-500">{E("01", "Growth")}</p>
+      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#1e2228]">{E("01", "Growth")}</p>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Up 10x since 2020</h2>
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center" set:html={growthCaptionHtml} />
       <div class="mt-8 rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
@@ -190,7 +201,7 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
   <!-- 02 Traction -->
   <section class="bg-white">
     <div class="mx-auto max-w-5xl px-6 py-16">
-      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-indigo-500">{E("02", "Traction")}</p>
+      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#1e2228]">{E("02", "Traction")}</p>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Most apps never earn a review</h2>
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">{REVIEWS.caption}</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
@@ -214,7 +225,7 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
   <!-- 03 Revenue -->
   <section class="bg-slate-50">
     <div class="mx-auto max-w-5xl px-6 py-16">
-      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-indigo-500">{E("03", "Revenue · estimated")}</p>
+      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#1e2228]">{E("03", "Revenue · estimated")}</p>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">The money pools at the very top</h2>
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">{REVENUE.caption}</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
@@ -232,7 +243,7 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
   <!-- 04 Pricing -->
   <section class="bg-white">
     <div class="mx-auto max-w-5xl px-6 py-16">
-      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-indigo-500">{E("04", "Pricing")}</p>
+      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#1e2228]">{E("04", "Pricing")}</p>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Almost nobody charges up front</h2>
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">{PRICING.caption}</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
@@ -256,7 +267,7 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
   <!-- 05 Who builds them -->
   <section class="bg-slate-50">
     <div class="mx-auto max-w-5xl px-6 py-16">
-      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-indigo-500">{E("05", "Who builds them")}</p>
+      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#1e2228]">{E("05", "Who builds them")}</p>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Built in 115 countries, dominated by two</h2>
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">{GEOGRAPHY.caption}</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
@@ -280,7 +291,7 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
   <!-- 06 The quiz lane -->
   <section class="bg-white">
     <div class="mx-auto max-w-5xl px-6 py-16">
-      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-indigo-500">{E("06", "The quiz lane")}</p>
+      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#1e2228]">{E("06", "The quiz lane")}</p>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Our own category, up close</h2>
       {quizParas.map((html) => (
         <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center" set:html={html} />
@@ -290,7 +301,7 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
           href="https://apps.shopify.com/product-recommendation-quiz-revenuehunt"
           target="_blank"
           rel="external noopener"
-          class="block rounded-xl border border-indigo-200 p-6 shadow-lg shadow-indigo-500/20 transition hover:border-indigo-300 hover:shadow-indigo-500/30"
+          class="block rounded-xl border border-[#4bd5ff]/60 p-6 shadow-[0_0_28px_-4px_rgba(75,213,255,0.55)] transition hover:border-[#4bd5ff] hover:shadow-[0_0_32px_-2px_rgba(75,213,255,0.7)]"
         >
           <p class="text-sm font-semibold text-slate-900">RevenueHunt</p>
           <p class="mt-1 font-bold text-[#16161D]"><span class="text-3xl">{QUIZ_LANE.revenueHuntReviews}</span> <span class="text-sm font-medium text-slate-500">reviews</span></p>
@@ -314,7 +325,7 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
   <!-- Takeaway -->
   <section class="bg-[#16161D]">
     <div class="mx-auto max-w-4xl px-6 py-20 text-center">
-      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-indigo-400">The takeaway</p>
+      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#4bd5ff]">The takeaway</p>
       <h2 class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
         Building the app was never the hard part.
       </h2>
@@ -335,10 +346,10 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
     <div class="mx-auto max-w-5xl px-6 py-16">
       <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Methodology</h2>
       <ul class="mt-8 space-y-5" role="list">
-        {METHODOLOGY.map((m) => (
+        {methodologyHtml.map((m) => (
           <li class="flex gap-3">
             <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" aria-hidden="true"></span>
-            <p class="text-slate-700">{m}</p>
+            <p class="text-slate-700" set:html={m} />
           </li>
         ))}
       </ul>
@@ -388,14 +399,14 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
         datasets: [
           {
             data: GROWTH.cumulative,
-            borderColor: COLORS.green,
-            backgroundColor: "rgba(91,138,58,0.12)",
+            borderColor: COLORS.primary,
+            backgroundColor: "rgba(30,34,40,0.08)",
             fill: true,
             tension: 0.35,
             borderWidth: 2.5,
             pointRadius: 3,
             pointHoverRadius: 5,
-            pointBackgroundColor: COLORS.green,
+            pointBackgroundColor: COLORS.primary,
           },
         ],
       },
@@ -443,7 +454,7 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
   if (revBars)
     new Chart(revBars, {
       type: "bar",
-      data: { labels: REVENUE.bars.labels, datasets: [{ data: REVENUE.bars.values, backgroundColor: COLORS.green, borderRadius: 4, barThickness: 26 }] },
+      data: { labels: REVENUE.bars.labels, datasets: [{ data: REVENUE.bars.values, backgroundColor: COLORS.primary, borderRadius: 4, barThickness: 26 }] },
       options: {
         indexAxis: "y",
         responsive: true,
@@ -465,7 +476,7 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
   if (geo)
     new Chart(geo, {
       type: "bar",
-      data: { labels: GEOGRAPHY.labels, datasets: [{ data: GEOGRAPHY.values, backgroundColor: COLORS.indigo, borderRadius: 4 }] },
+      data: { labels: GEOGRAPHY.labels, datasets: [{ data: GEOGRAPHY.values, backgroundColor: GEOGRAPHY.labels.map((_, i) => (i < 2 ? COLORS.primary : COLORS.secondary)), borderRadius: 4 }] },
       options: {
         indexAxis: "y",
         responsive: true,

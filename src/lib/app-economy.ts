@@ -28,13 +28,16 @@ export const REPORT = {
     "22,546 apps are live on the Shopify App Store and almost none get anywhere. A data report on growth, reviews, revenue concentration, pricing and who builds them, from a snapshot of every live app.",
 };
 
-/** Accent palette shared by the page chrome and the Chart.js datasets. */
+/**
+ * Accent palette, taken from the RevenueHunt logo.
+ *   primary   = the logo's darkest color (the wordmark)  -> main highlight
+ *   secondary = the logo's lightest blue hue            -> secondary highlight
+ *   gray      = de-emphasized / "the rest"
+ */
 export const COLORS = {
-  ink: "#16161D",
-  indigo: "#6366F1",
-  green: "#5B8A3A",
+  primary: "#1e2228",
+  secondary: "#4bd5ff",
   gray: "#CBD5E1",
-  grayMid: "#94A3B8",
 };
 
 /** Source band (dark) — what the report is built on. */
@@ -72,7 +75,7 @@ export const GROWTH = {
 export const REVIEWS = {
   labels: ["Zero reviews", "One to five", "More than five"],
   values: [51.0, 25.5, 23.5],
-  colors: [COLORS.ink, COLORS.gray, COLORS.green],
+  colors: [COLORS.gray, COLORS.secondary, COLORS.primary],
   avgRating: 4.43,
   ratedCount: "11,040",
   caption:
@@ -85,7 +88,7 @@ export const REVIEWS = {
  * review/install signals, not billing data.
  */
 export const REVENUE = {
-  donut: { labels: ["Top 1% of apps", "The other 99%"], values: [72.2, 27.8], colors: [COLORS.green, COLORS.gray] },
+  donut: { labels: ["Top 1% of apps", "The other 99%"], values: [72.2, 27.8], colors: [COLORS.primary, COLORS.gray] },
   bars: {
     labels: ["Top 10 apps", "Top 100 apps", "Top 1% (225 apps)"],
     values: [28.5, 59.0, 72.2],
@@ -99,7 +102,7 @@ export const REVENUE = {
 export const PRICING = {
   labels: ["Free", "Free trial", "Paid up front"],
   values: [46.9, 48.6, 4.5],
-  colors: [COLORS.green, COLORS.indigo, COLORS.ink],
+  colors: [COLORS.gray, COLORS.secondary, COLORS.primary],
   permanentFree: "44.8%",
   caption:
     "Nearly half the store charges nothing up front, and fewer than 1 in 20 apps ask for money before the first install. Almost 45% offer a permanent free tier. Freemium is not a strategy here, it is the table stakes.",

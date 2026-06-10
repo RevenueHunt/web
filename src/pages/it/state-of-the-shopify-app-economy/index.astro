@@ -128,7 +128,7 @@ const growthCaptionHtml =
 // Quiz-lane paragraphs (translated), with the live search link and the load-bearing
 // lines bolded inline. Caption text mirrors the English source's meaning.
 const quizParas = [
-  `La nostra stessa categoria dimostra la stessa cosa. <a href="${QUIZ_LANE.searchUrl}" target="_blank" rel="external noopener nofollow" class="font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]">la ricerca di quiz su Shopify</a> restituisce 149 app, ma qui la fiducia si accumula in cima esattamente come in tutto lo store. Le tre app che sono arrivate per prime e non se ne sono mai andate, RevenueHunt, Octane AI e Quiz Kit, concentrano il 45% di tutte le recensioni della categoria; <strong>RevenueHunt da sola ne ha circa un quarto</strong>, e la metà inferiore non ne ha nessuna.`,
+  `La nostra stessa categoria dimostra la stessa cosa. <a href="${QUIZ_LANE.searchUrl}" target="_blank" rel="external noopener nofollow" class="font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]">la ricerca di "quiz" su Shopify</a> restituisce 149 app, ma qui la fiducia si accumula in cima esattamente come in tutto lo store. Le tre app che sono arrivate per prime e non se ne sono mai andate, RevenueHunt, Octane AI e Quiz Kit, concentrano il 45% di tutte le recensioni della categoria; <strong>RevenueHunt da sola ne ha circa un quarto</strong>, e la metà inferiore non ne ha nessuna.`,
   `Non siamo arrivati in cima a forza di codice. <strong>Le recensioni sono il residuo del tessuto cicatriziale operativo</strong> che c'è dietro: sei anni a rispondere al supporto, a metterci al telefono con merchant che non avrebbero mai pagato e a guadagnarci la fiducia negozio per negozio. Octane AI e Quiz Kit hanno fatto lo stesso lavoro duro per anni, <strong>e glielo riconosciamo</strong>. Menzione d'onore per Lantern e Quizell, entrambe con poco più di 120 recensioni.`,
 ];
 
@@ -260,7 +260,8 @@ const methodologyHtml = METHODOLOGY;
     <div class="mx-auto max-w-5xl px-6 py-16">
       <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("03", "Ricavi · stimato")}</p>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Il denaro si concentra in cima</h2>
-      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">I ricavi mensili stimati sono brutalmente concentrati in cima. L'1% in cima delle app (225 di esse) si prende un 72% stimato, e solo 10 di queste app si prendono da sole quasi il 30% di tutti i ricavi delle app. (E un nome svetta su tutto l'ecosistema: un'app che ricava un 78% stimato del suo fatturato annuo di circa 1 miliardo di dollari da commercianti che usano anche Shopify. Sì, dico a te, <a href='https://www.sec.gov/Archives/edgar/data/1835830/000162828023030618/klaviyoincs-1.htm' target='_blank' rel='external noopener nofollow' class='font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]'>Klaviyo</a>.) Appena il 36% delle app sembra guadagnare qualcosa. Si concentrano anche geograficamente: <strong>USA e Canada da soli si prendono un 57% stimato</strong> dei ricavi dello Shopify App Store.</p>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">I ricavi mensili stimati sono brutalmente concentrati in cima. L'1% in cima delle app (225 di esse) si prende un 72% stimato, e solo 10 di queste app si prendono da sole quasi il 30% di tutti i ricavi delle app. Appena il 36% delle app sembra guadagnare qualcosa. Si concentrano anche geograficamente: <strong>USA e Canada da soli si prendono un 57% stimato</strong> dei ricavi dello Shopify App Store.</p>
+      <p class="mx-auto mt-3 max-w-3xl text-sm italic text-slate-500 text-center">Un nome svetta su tutto l'ecosistema: un'app che ricava un 78% stimato del suo fatturato annuo di circa 1 miliardo di dollari dai merchant di Shopify. Sì, dico a te, <a href='https://www.sec.gov/Archives/edgar/data/1835830/000162828023030618/klaviyoincs-1.htm' target='_blank' rel='external noopener nofollow' class='font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]'>Klaviyo</a>.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
           <p class="mb-3 text-sm font-medium text-slate-500">Distribuzione dei ricavi</p>
@@ -282,7 +283,9 @@ const methodologyHtml = METHODOLOGY;
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Quasi metà dello store non fa pagare nulla in anticipo, e meno di 1 app su 20 chiede soldi prima della prima installazione. Quasi il 45% offre un piano gratis permanente. Qui il freemium non è una strategia, è il minimo per entrare.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <div class="h-72 sm:h-80"><canvas id="c-pricing" aria-label="Ripartizione del modello di prezzo tra tutte le app attive" role="img"></canvas></div>
+          <p class="text-sm font-semibold text-slate-900">Prezzi d'ingresso su tutte le 22.546 app attive</p>
+          <p class="mt-0.5 text-xs text-slate-500">Quattro fasce che si escludono a vicenda, in base a ciò che l'app chiede in anticipo.</p>
+          <div class="mt-4 h-72 sm:h-80"><canvas id="c-pricing" aria-label="Ripartizione del modello di prezzo tra tutte le app attive, per fascia d'ingresso" role="img"></canvas></div>
         </div>
         <div class="space-y-4">
           <div class="rounded-xl border border-slate-200 p-6">
@@ -290,8 +293,12 @@ const methodologyHtml = METHODOLOGY;
             <p class="mt-1 text-slate-700">offrono un piano gratis permanente, non solo una prova</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
+            <p class="text-3xl font-bold text-[#16161D]">{PRICING.completelyFree}</p>
+            <p class="mt-1 text-slate-700">sono completamente gratis, senza alcun piano a pagamento</p>
+          </div>
+          <div class="rounded-xl border border-slate-200 p-6">
             <p class="text-3xl font-bold text-[#16161D]">1 su 20</p>
-            <p class="mt-1 text-slate-700">app fanno pagare soldi prima della prima installazione</p>
+            <p class="mt-1 text-slate-700">app fanno pagare soldi all'installazione</p>
           </div>
         </div>
       </div>
@@ -302,21 +309,32 @@ const methodologyHtml = METHODOLOGY;
   <section class="bg-slate-50">
     <div class="mx-auto max-w-5xl px-6 py-16">
       <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("05", "Chi le crea")}</p>
-      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Create in 115 paesi, dominate da due</h2>
-      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Le app arrivano da 115 paesi, ma due dominano: USA (16%) e India (9%) creano insieme un quarto dello store. E dopo anni in cui Shopify ha spinto lo standard, solo il 6,7% delle app attive (circa 1.500) porta il badge Built for Shopify.</p>
-      <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
+      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Segnale contro rumore</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Due dominano: <strong>USA (24%) e India (15%) creano insieme due app su cinque</strong> dello store. Ma <strong>il volume non è trazione</strong>. Se ordini i paesi solo per le app che hanno superato le 10+ recensioni, la classifica si ridisegna - il <strong>Vietnam</strong>, uno sviluppatore di medie dimensioni, piazza più app con trazione reale di quanto la sua dimensione suggerisca, mentre <strong>Giappone e Cina scivolano in basso</strong>.</p>
+      <div class="mt-8 grid gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <div class="h-72 sm:h-80"><canvas id="c-geography" aria-label="Principali paesi degli sviluppatori per numero di app" role="img"></canvas></div>
+          <p class="text-sm font-semibold text-slate-900">Tutte le app, per fascia di recensioni</p>
+          <p class="mt-0.5 text-xs text-slate-500">Top 10 paesi degli sviluppatori per numero di app. Clicca una fascia nella legenda per mostrarla o nasconderla.</p>
+          <div class="mt-4 h-80 sm:h-96"><canvas id="c-geography" aria-label="Principali paesi degli sviluppatori per numero di app, suddivisi per fascia di recensioni" role="img"></canvas></div>
         </div>
-        <div class="space-y-4">
-          <div class="rounded-xl border border-slate-200 p-6">
-            <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.builtForShopify}</p>
-            <p class="mt-1 text-slate-700">portano il badge Built for Shopify ({GEOGRAPHY.builtForShopifyCount} app), anni dopo che Shopify ha iniziato a spingere lo standard</p>
-          </div>
-          <div class="rounded-xl border border-slate-200 p-6">
-            <p class="text-3xl font-bold text-[#16161D]">25%</p>
-            <p class="mt-1 text-slate-700">di tutto lo store viene creato solo da USA e India</p>
-          </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
+          <p class="text-sm font-semibold text-slate-900">Ordinati per app che guadagnano recensioni</p>
+          <p class="mt-0.5 text-xs text-slate-500">Lo stesso store, ordinato per app con 10+ recensioni. Cina e Giappone escono dalla top 10; Israele e Singapore salgono.</p>
+          <div class="mt-4 h-80 sm:h-96"><canvas id="c-geo-signal" aria-label="Principali paesi degli sviluppatori per app con 10 o più recensioni" role="img"></canvas></div>
+        </div>
+      </div>
+      <div class="mt-8 grid gap-4 sm:grid-cols-3">
+        <div class="rounded-xl border border-slate-200 p-6">
+          <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.builtForShopify}</p>
+          <p class="mt-1 text-sm text-slate-700">portano il badge Built for Shopify ({GEOGRAPHY.builtForShopifyCount} app), anni dopo che Shopify ha iniziato a spingere lo standard</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 p-6">
+          <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.usIndiaShare}</p>
+          <p class="mt-1 text-sm text-slate-700">di tutto lo store viene creato solo da USA e India</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 p-6">
+          <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.vietnamSignal}</p>
+          <p class="mt-1 text-sm text-slate-700">delle app del Vietnam superano le 10+ recensioni - il miglior tasso di segnale tra i grandi sviluppatori, circa il doppio di USA o India</p>
         </div>
       </div>
     </div>
@@ -370,7 +388,7 @@ const methodologyHtml = METHODOLOGY;
         Distribuzione e fiducia sono l'unica mossa a prova di IA rimasta.
       </p>
       <p class="mx-auto mt-10 max-w-2xl text-lg text-white/85">
-        Stai costruendo un'app di Shopify che funziona davvero? Voglio conoscere i fondatori che fanno la parte difficile. Parliamone.
+        Stai costruendo un'app di Shopify che funziona davvero? Voglio conoscere i fondatori che ci mettono il lavoro vero. Parliamone.
       </p>
       <div class="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
         <a
@@ -537,16 +555,98 @@ const methodologyHtml = METHODOLOGY;
       options: donutOpts("%"),
     });
 
+  // The "by review tier" chart shows the top 10 builders by whatever tiers are
+  // toggled on, drawn from the full GEOGRAPHY.builders pool (13 countries). So
+  // toggling tiers can swap countries in and out: showing only "0 reviews"
+  // surfaces the biggest noise generators (Pakistan), only "10+" surfaces Israel
+  // and Singapore. geoTopTen ranks the pool for a given tier visibility
+  // [zero, low, high]; applyGeoTop pushes the result into the chart.
+  const geoCountry = (en: string) => L.geoCountries?.[en] ?? en;
+  const geoPool = GEOGRAPHY.builders.labels.map((label: string, i: number) => ({
+    label: geoCountry(label),
+    tiers: [GEOGRAPHY.builders.zero[i], GEOGRAPHY.builders.low[i], GEOGRAPHY.builders.high[i]],
+  }));
+  const geoTopTen = (vis: boolean[]) =>
+    geoPool
+      .map((c: any) => ({
+        ...c,
+        sum: c.tiers.reduce((s: number, v: number, t: number) => s + (vis[t] ? v : 0), 0),
+      }))
+      .sort((a: any, b: any) => b.sum - a.sum)
+      .slice(0, 10);
+  const applyGeoTop = (chart: any) => {
+    const top = geoTopTen([0, 1, 2].map((t) => chart.isDatasetVisible(t)));
+    chart.data.labels = top.map((c: any) => c.label);
+    [0, 1, 2].forEach((t) => {
+      chart.data.datasets[t].data = top.map((c: any) => c.tiers[t]);
+    });
+  };
+
+  const geoTiers = L.geoTiers ?? CHART_LABELS.en.geoTiers!;
+  const geoInit = geoTopTen([true, true, true]);
   const geo = el("c-geography");
   if (geo)
     new Chart(geo, {
       type: "bar",
-      data: { labels: L.geography, datasets: [{ data: GEOGRAPHY.values, backgroundColor: GEOGRAPHY.labels.map((_, i) => (i < 2 ? COLORS.primary : COLORS.secondary)), borderRadius: 4 }] },
+      data: {
+        labels: geoInit.map((c: any) => c.label),
+        datasets: [
+          { label: geoTiers[0], data: geoInit.map((c: any) => c.tiers[0]), backgroundColor: "#e2e8f0", borderWidth: 0 },
+          { label: geoTiers[1], data: geoInit.map((c: any) => c.tiers[1]), backgroundColor: COLORS.gray, borderWidth: 0 },
+          { label: geoTiers[2], data: geoInit.map((c: any) => c.tiers[2]), backgroundColor: COLORS.primary, borderWidth: 0 },
+        ],
+      },
       options: {
         indexAxis: "y",
         responsive: true,
         maintainAspectRatio: false,
-        plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => Number(c.parsed.x).toLocaleString() + " apps" } } },
+        plugins: {
+          legend: {
+            position: "bottom" as const,
+            labels: { boxWidth: 12, boxHeight: 12, padding: 14 },
+            onClick(_e, item, legend) {
+              const ch = legend.chart;
+              const i = item.datasetIndex ?? 0;
+              ch.setDatasetVisibility(i, !ch.isDatasetVisible(i));
+              applyGeoTop(ch);
+              ch.update();
+            },
+          },
+          tooltip: { callbacks: { label: (c) => `${c.dataset.label}: ${Number(c.parsed.x).toLocaleString()}` } },
+        },
+        scales: {
+          x: { stacked: true, beginAtZero: true, grid: { color: grid }, ticks: { callback: (v) => kfmt(Number(v)) } },
+          y: { stacked: true, grid: { display: false } },
+        },
+      },
+    });
+
+  const geoSignalTip = L.geoSignalTip ?? CHART_LABELS.en.geoSignalTip!;
+  const geoSignalLabels = GEOGRAPHY.signal.labels.map(geoCountry);
+  const geoSignal = el("c-geo-signal");
+  if (geoSignal)
+    new Chart(geoSignal, {
+      type: "bar",
+      data: {
+        labels: geoSignalLabels,
+        datasets: [
+          {
+            data: GEOGRAPHY.signal.values,
+            backgroundColor: geoSignalLabels.map((_, i) =>
+              GEOGRAPHY.signal.highlight.includes(i) ? COLORS.primary : COLORS.secondary,
+            ),
+            borderRadius: 4,
+          },
+        ],
+      },
+      options: {
+        indexAxis: "y",
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: { callbacks: { label: (c) => geoSignalTip.replace("{n}", Number(c.parsed.x).toLocaleString()) } },
+        },
         scales: { x: { beginAtZero: true, grid: { color: grid }, ticks: { callback: (v) => kfmt(Number(v)) } }, y: { grid: { display: false } } },
       },
     });

@@ -217,7 +217,7 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-3xl">{REVIEWS.medianReviews}</span> <span class="text-sm font-medium text-slate-500">reviews</span></p>
-            <p class="mt-1 text-slate-700">the median, across apps that have one</p>
+            <p class="mt-1 text-slate-700">the median, across apps that have at least one</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-amber-400">★</span> <span class="text-3xl">{REVIEWS.avgRating}</span> <span class="text-sm font-medium text-slate-500">stars</span></p>
@@ -361,7 +361,7 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
         Distribution and trust is the only AI-proof move left.
       </p>
       <p class="mx-auto mt-10 max-w-2xl text-lg text-white/85">
-        Building a Shopify app that's actually working? I want to meet the founders doing the hard part. Let's talk.
+        Building a Shopify app that's actually working? I want to meet the founders putting in the work. Let's talk.
       </p>
       <div class="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
         <a
@@ -441,8 +441,9 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
   // surfaces the biggest noise generators (Pakistan), only "10+" surfaces Israel
   // and Singapore. geoTopTen ranks the pool for a given tier visibility
   // [zero, low, high]; applyGeoTop pushes the result into the chart.
+  const geoCountry = (en: string) => L.geoCountries?.[en] ?? en;
   const geoPool = GEOGRAPHY.builders.labels.map((label: string, i: number) => ({
-    label,
+    label: geoCountry(label),
     tiers: [GEOGRAPHY.builders.zero[i], GEOGRAPHY.builders.low[i], GEOGRAPHY.builders.high[i]],
   }));
   const geoTopTen = (vis: boolean[]) =>
@@ -594,16 +595,17 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
     });
 
   const geoSignalTip = L.geoSignalTip ?? CHART_LABELS.en.geoSignalTip!;
+  const geoSignalLabels = GEOGRAPHY.signal.labels.map(geoCountry);
   const geoSignal = el("c-geo-signal");
   if (geoSignal)
     new Chart(geoSignal, {
       type: "bar",
       data: {
-        labels: GEOGRAPHY.signal.labels,
+        labels: geoSignalLabels,
         datasets: [
           {
             data: GEOGRAPHY.signal.values,
-            backgroundColor: GEOGRAPHY.signal.labels.map((_, i) =>
+            backgroundColor: geoSignalLabels.map((_, i) =>
               GEOGRAPHY.signal.highlight.includes(i) ? COLORS.primary : COLORS.secondary,
             ),
             borderRadius: 4,

@@ -129,7 +129,7 @@ const growthCaptionHtml =
 // Quiz-lane paragraphs (translated), with the live search link and the load-bearing
 // lines bolded inline. Caption text mirrors the English source's meaning.
 const quizParas = [
-  `Oma kategoriamme osoittaa saman asian. <a href="${QUIZ_LANE.searchUrl}" target="_blank" rel="external noopener nofollow" class="font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]">Shopifyn kyselyhaku</a> palauttaa 149 sovellusta, mutta täälläkin luottamus kasaantuu huipulle täsmälleen samalla tavalla kuin koko storessa. Kolme sovellusta, jotka tulivat ensimmäisinä eivätkä koskaan lähteneet - RevenueHunt, Octane AI ja Quiz Kit - keräävät 45 % kaikista kategorian arvosteluista; <strong>pelkästään RevenueHuntilla on niistä noin neljäsosa</strong>, ja alemmalla puoliskolla ei ole yhtäkään.`,
+  `Oma kategoriamme osoittaa saman asian. <a href="${QUIZ_LANE.searchUrl}" target="_blank" rel="external noopener nofollow" class="font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]">Shopifyn "quiz"-haku</a> palauttaa 149 sovellusta, mutta täälläkin luottamus kasaantuu huipulle täsmälleen samalla tavalla kuin koko storessa. Kolme sovellusta, jotka tulivat ensimmäisinä eivätkä koskaan lähteneet - RevenueHunt, Octane AI ja Quiz Kit - keräävät 45 % kaikista kategorian arvosteluista; <strong>pelkästään RevenueHuntilla on niistä noin neljäsosa</strong>, ja alemmalla puoliskolla ei ole yhtäkään.`,
   `Emme päässeet huipulle koodaamalla. <strong>Arvostelut ovat jäännös operatiivisesta arpikudoksesta</strong>, joka on niiden takana: kuusi vuotta tukikysymyksiin vastaamista, puhelimeen tarttumista kauppiaiden kanssa, jotka eivät koskaan maksaisi, ja luottamuksen ansaitsemista kauppa kerrallaan. Octane AI ja Quiz Kit tekivät saman kovan työn vuosien ajan, <strong>ja kunnioitamme heitä siitä</strong>. Kunniamaininta Lanternille ja Quizellille, joilla molemmilla on hieman yli 120 arvostelua.`,
 ];
 
@@ -261,7 +261,8 @@ const methodologyHtml = METHODOLOGY;
     <div class="mx-auto max-w-5xl px-6 py-16">
       <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("03", "Tulot · arvio")}</p>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Raha kasaantuu aivan huipulle</h2>
-      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Arvioidut kuukausitulot ovat raa'asti keskittyneet huipulle. Sovellusten ylin 1 % (225 niistä) vie arviolta 72 %, ja vain 10 näistä sovelluksista vie lähes 30 % kaikista sovellustuloista. (Ja yksi nimi kohoaa yli koko ekosysteemin: sovellus, joka saa arviolta 78 % noin miljardin dollarin vuosiliikevaihdostaan kauppiailta, jotka käyttävät myös Shopifya. Kyllä, sinua katsomme, <a href='https://www.sec.gov/Archives/edgar/data/1835830/000162828023030618/klaviyoincs-1.htm' target='_blank' rel='external noopener nofollow' class='font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]'>Klaviyo</a>.) Vain noin 36 % sovelluksista näyttää ansaitsevan yhtään mitään. Se on myös maantieteellisesti keskittynyt: <strong>pelkästään USA ja Kanada vievät arviolta 57 %</strong> Shopify App Storen tuloista.</p>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Arvioidut kuukausitulot ovat raa'asti keskittyneet huipulle. Sovellusten ylin 1 % (225 niistä) vie arviolta 72 %, ja vain 10 näistä sovelluksista vie lähes 30 % kaikista sovellustuloista. Vain noin 36 % sovelluksista näyttää ansaitsevan yhtään mitään. Ja se kasaantuu maantieteellisesti: <strong>pelkästään USA ja Kanada vievät arviolta 57 %</strong> Shopify App Storen tuloista.</p>
+      <p class="mx-auto mt-3 max-w-3xl text-sm italic text-slate-500 text-center">Yksi nimi kohoaa yli koko ekosysteemin: sovellus, joka saa arviolta 78 % noin miljardin dollarin vuosiliikevaihdostaan Shopify-kauppiailta. Kyllä, sinua katsomme, <a href='https://www.sec.gov/Archives/edgar/data/1835830/000162828023030618/klaviyoincs-1.htm' target='_blank' rel='external noopener nofollow' class='font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]'>Klaviyo</a>.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
           <p class="mb-3 text-sm font-medium text-slate-500">Tulojen jakauma</p>
@@ -283,7 +284,9 @@ const methodologyHtml = METHODOLOGY;
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Lähes puolet storesta ei veloita mitään etukäteen, ja alle 1 jokaisesta 20:stä sovelluksesta pyytää rahaa ennen ensimmäistä asennusta. Lähes 45 % tarjoaa pysyvästi ilmaisen paketin. Täällä freemium ei ole strategia, vaan vähimmäisvaatimus mukaan pääsemiseksi.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <div class="h-72 sm:h-80"><canvas id="c-pricing" aria-label="Hinnoittelumallin jakauma kaikkien aktiivisten sovellusten kesken" role="img"></canvas></div>
+          <p class="text-sm font-semibold text-slate-900">Sisäänpääsyhinnat kaikkien 22 546 aktiivisen sovelluksen kesken</p>
+          <p class="mt-0.5 text-xs text-slate-500">Neljä toisensa poissulkevaa tasoa sen mukaan, mitä sovellus pyytää etukäteen.</p>
+          <div class="mt-4 h-72 sm:h-80"><canvas id="c-pricing" aria-label="Hinnoittelumallin jakauma kaikkien aktiivisten sovellusten kesken, sisäänpääsytason mukaan" role="img"></canvas></div>
         </div>
         <div class="space-y-4">
           <div class="rounded-xl border border-slate-200 p-6">
@@ -291,8 +294,12 @@ const methodologyHtml = METHODOLOGY;
             <p class="mt-1 text-slate-700">tarjoaa pysyvästi ilmaisen paketin, ei pelkkää kokeilua</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
+            <p class="text-3xl font-bold text-[#16161D]">{PRICING.completelyFree}</p>
+            <p class="mt-1 text-slate-700">on täysin ilmaisia, ilman lainkaan maksullista pakettia</p>
+          </div>
+          <div class="rounded-xl border border-slate-200 p-6">
             <p class="text-3xl font-bold text-[#16161D]">1 jokaisesta 20:stä</p>
-            <p class="mt-1 text-slate-700">sovelluksesta veloittaa rahaa ennen ensimmäistä asennusta</p>
+            <p class="mt-1 text-slate-700">sovelluksesta veloittaa rahaa asennettaessa</p>
           </div>
         </div>
       </div>
@@ -303,21 +310,32 @@ const methodologyHtml = METHODOLOGY;
   <section class="bg-slate-50">
     <div class="mx-auto max-w-5xl px-6 py-16">
       <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("05", "Kuka ne tekee")}</p>
-      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Tehty 115 maassa, kahden hallitsemana</h2>
-      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Sovellukset tulevat 115 maasta, mutta kaksi hallitsee: Yhdysvallat (16 %) ja Intia (9 %) tekevät yhdessä neljäsosan storesta. Ja vuosien jälkeen, joina Shopify on tyrkyttänyt standardia, vain 6,7 % aktiivisista sovelluksista (noin 1 500) kantaa Built for Shopify -merkkiä.</p>
-      <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
+      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Signaali vastaan kohina</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Kaksi hallitsee: <strong>Yhdysvallat (24 %) ja Intia (15 %) tekevät yhdessä kaksi viidestä</strong> storen sovelluksesta. Mutta <strong>volyymi ei ole vetovoimaa</strong>. Kun maat järjestetään vain niiden sovellusten mukaan, jotka ovat ylittäneet 10+ arvostelua, sijoitus piirtyy uudelleen - <strong>Vietnam</strong>, keskikokoinen kehittäjä, tuottaa enemmän todellista vetovoimaa saaneita sovelluksia kuin sen koko antaisi olettaa, kun taas <strong>Japani ja Kiina putoavat pois</strong>.</p>
+      <div class="mt-8 grid gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <div class="h-72 sm:h-80"><canvas id="c-geography" aria-label="Tärkeimmät kehittäjämaat sovellusten määrän mukaan" role="img"></canvas></div>
+          <p class="text-sm font-semibold text-slate-900">Kaikki sovellukset, arvostelutason mukaan</p>
+          <p class="mt-0.5 text-xs text-slate-500">10 suurinta kehittäjämaata sovellusten määrän mukaan. Klikkaa selitteessä tasoa näyttääksesi tai piilottaaksesi sen.</p>
+          <div class="mt-4 h-80 sm:h-96"><canvas id="c-geography" aria-label="Tärkeimmät kehittäjämaat sovellusten määrän mukaan, jaoteltuna arvostelutason mukaan" role="img"></canvas></div>
         </div>
-        <div class="space-y-4">
-          <div class="rounded-xl border border-slate-200 p-6">
-            <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.builtForShopify}</p>
-            <p class="mt-1 text-slate-700">kantaa Built for Shopify -merkkiä ({GEOGRAPHY.builtForShopifyCount} sovellusta), vuosia sen jälkeen, kun Shopify alkoi edistää standardia</p>
-          </div>
-          <div class="rounded-xl border border-slate-200 p-6">
-            <p class="text-3xl font-bold text-[#16161D]">25%</p>
-            <p class="mt-1 text-slate-700">koko storesta tehdään pelkästään Yhdysvalloissa ja Intiassa</p>
-          </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
+          <p class="text-sm font-semibold text-slate-900">Järjestetty arvosteluja ansaitsevien sovellusten mukaan</p>
+          <p class="mt-0.5 text-xs text-slate-500">Sama store, järjestettynä sovelluksilla, joilla on 10+ arvostelua. Kiina ja Japani putoavat top 10:stä; Israel ja Singapore nousevat.</p>
+          <div class="mt-4 h-80 sm:h-96"><canvas id="c-geo-signal" aria-label="Tärkeimmät kehittäjämaat sovelluksilla, joilla on 10 tai enemmän arvostelua" role="img"></canvas></div>
+        </div>
+      </div>
+      <div class="mt-8 grid gap-4 sm:grid-cols-3">
+        <div class="rounded-xl border border-slate-200 p-6">
+          <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.builtForShopify}</p>
+          <p class="mt-1 text-sm text-slate-700">kantaa Built for Shopify -merkkiä ({GEOGRAPHY.builtForShopifyCount} sovellusta), vuosia sen jälkeen, kun Shopify alkoi edistää standardia</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 p-6">
+          <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.usIndiaShare}</p>
+          <p class="mt-1 text-sm text-slate-700">koko storesta tehdään pelkästään Yhdysvalloissa ja Intiassa</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 p-6">
+          <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.vietnamSignal}</p>
+          <p class="mt-1 text-sm text-slate-700">Vietnamista tulevista sovelluksista ylittää 10+ arvostelua - paras signaaliosuus kaikista suurista kehittäjistä, noin kaksinkertainen Yhdysvaltoihin tai Intiaan verrattuna</p>
         </div>
       </div>
     </div>
@@ -371,7 +389,7 @@ const methodologyHtml = METHODOLOGY;
         Jakelu ja luottamus on ainoa tekoälynkestävä siirto, joka on jäljellä.
       </p>
       <p class="mx-auto mt-10 max-w-2xl text-lg text-white/85">
-        Rakennatko Shopify-sovellusta, joka oikeasti toimii? Haluan tavata perustajat, jotka tekevät sen vaikean osan. Jutellaan.
+        Rakennatko Shopify-sovellusta, joka oikeasti toimii? Haluan tavata perustajat, jotka todella tekevät töitä sen eteen. Jutellaan.
       </p>
       <div class="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
         <a
@@ -538,16 +556,98 @@ const methodologyHtml = METHODOLOGY;
       options: donutOpts("%"),
     });
 
+  // The "by review tier" chart shows the top 10 builders by whatever tiers are
+  // toggled on, drawn from the full GEOGRAPHY.builders pool (13 countries). So
+  // toggling tiers can swap countries in and out: showing only "0 reviews"
+  // surfaces the biggest noise generators (Pakistan), only "10+" surfaces Israel
+  // and Singapore. geoTopTen ranks the pool for a given tier visibility
+  // [zero, low, high]; applyGeoTop pushes the result into the chart.
+  const geoCountry = (en: string) => L.geoCountries?.[en] ?? en;
+  const geoPool = GEOGRAPHY.builders.labels.map((label: string, i: number) => ({
+    label: geoCountry(label),
+    tiers: [GEOGRAPHY.builders.zero[i], GEOGRAPHY.builders.low[i], GEOGRAPHY.builders.high[i]],
+  }));
+  const geoTopTen = (vis: boolean[]) =>
+    geoPool
+      .map((c: any) => ({
+        ...c,
+        sum: c.tiers.reduce((s: number, v: number, t: number) => s + (vis[t] ? v : 0), 0),
+      }))
+      .sort((a: any, b: any) => b.sum - a.sum)
+      .slice(0, 10);
+  const applyGeoTop = (chart: any) => {
+    const top = geoTopTen([0, 1, 2].map((t) => chart.isDatasetVisible(t)));
+    chart.data.labels = top.map((c: any) => c.label);
+    [0, 1, 2].forEach((t) => {
+      chart.data.datasets[t].data = top.map((c: any) => c.tiers[t]);
+    });
+  };
+
+  const geoTiers = L.geoTiers ?? CHART_LABELS.en.geoTiers!;
+  const geoInit = geoTopTen([true, true, true]);
   const geo = el("c-geography");
   if (geo)
     new Chart(geo, {
       type: "bar",
-      data: { labels: L.geography, datasets: [{ data: GEOGRAPHY.values, backgroundColor: GEOGRAPHY.labels.map((_, i) => (i < 2 ? COLORS.primary : COLORS.secondary)), borderRadius: 4 }] },
+      data: {
+        labels: geoInit.map((c: any) => c.label),
+        datasets: [
+          { label: geoTiers[0], data: geoInit.map((c: any) => c.tiers[0]), backgroundColor: "#e2e8f0", borderWidth: 0 },
+          { label: geoTiers[1], data: geoInit.map((c: any) => c.tiers[1]), backgroundColor: COLORS.gray, borderWidth: 0 },
+          { label: geoTiers[2], data: geoInit.map((c: any) => c.tiers[2]), backgroundColor: COLORS.primary, borderWidth: 0 },
+        ],
+      },
       options: {
         indexAxis: "y",
         responsive: true,
         maintainAspectRatio: false,
-        plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => Number(c.parsed.x).toLocaleString() + " apps" } } },
+        plugins: {
+          legend: {
+            position: "bottom" as const,
+            labels: { boxWidth: 12, boxHeight: 12, padding: 14 },
+            onClick(_e, item, legend) {
+              const ch = legend.chart;
+              const i = item.datasetIndex ?? 0;
+              ch.setDatasetVisibility(i, !ch.isDatasetVisible(i));
+              applyGeoTop(ch);
+              ch.update();
+            },
+          },
+          tooltip: { callbacks: { label: (c) => `${c.dataset.label}: ${Number(c.parsed.x).toLocaleString()}` } },
+        },
+        scales: {
+          x: { stacked: true, beginAtZero: true, grid: { color: grid }, ticks: { callback: (v) => kfmt(Number(v)) } },
+          y: { stacked: true, grid: { display: false } },
+        },
+      },
+    });
+
+  const geoSignalTip = L.geoSignalTip ?? CHART_LABELS.en.geoSignalTip!;
+  const geoSignalLabels = GEOGRAPHY.signal.labels.map(geoCountry);
+  const geoSignal = el("c-geo-signal");
+  if (geoSignal)
+    new Chart(geoSignal, {
+      type: "bar",
+      data: {
+        labels: geoSignalLabels,
+        datasets: [
+          {
+            data: GEOGRAPHY.signal.values,
+            backgroundColor: geoSignalLabels.map((_, i) =>
+              GEOGRAPHY.signal.highlight.includes(i) ? COLORS.primary : COLORS.secondary,
+            ),
+            borderRadius: 4,
+          },
+        ],
+      },
+      options: {
+        indexAxis: "y",
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: { callbacks: { label: (c) => geoSignalTip.replace("{n}", Number(c.parsed.x).toLocaleString()) } },
+        },
         scales: { x: { beginAtZero: true, grid: { color: grid }, ticks: { callback: (v) => kfmt(Number(v)) } }, y: { grid: { display: false } } },
       },
     });

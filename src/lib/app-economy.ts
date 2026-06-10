@@ -99,7 +99,7 @@ export const REVENUE = {
   caption:
     "Estimated monthly revenue is brutally top-heavy. The top 1% of apps (225 of them) take an estimated 72% of it, and just 10 of those apps take nearly 30% of all app revenue on their own. Only about 36% of apps look like they earn anything at all. And it clusters by geography: <strong>the US and Canada alone take an estimated 57%</strong> of the Shopify App Store revenue.",
   klaviyoNote:
-    "One name towers over the whole ecosystem: an app which draws an estimated 78% of its roughly $1B in annual revenue from merchants who also run on Shopify. Yes, we're looking at you, <a href='https://www.sec.gov/Archives/edgar/data/1835830/000162828023030618/klaviyoincs-1.htm' target='_blank' rel='external noopener nofollow' class='font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]'>Klaviyo</a>.",
+    "One name towers over the whole ecosystem: an app which draws an estimated 78% of its roughly $1B in annual revenue from Shopify merchants. Yes, we're looking at you, <a href='https://www.sec.gov/Archives/edgar/data/1835830/000162828023030618/klaviyoincs-1.htm' target='_blank' rel='external noopener nofollow' class='font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]'>Klaviyo</a>.",
 };
 
 /**
@@ -167,7 +167,7 @@ export const QUIZ_LANE = {
   quizKitReviews: 171,
   top3Share: "45%",
   caption: [
-    "Our own category proves the same point. Shopify's quiz search returns 149 apps, but trust pools at the top here exactly like it does across the store. The three apps that got here first and never left, RevenueHunt, Octane AI and Quiz Kit, hold 45% of every review in the category; RevenueHunt alone holds about a quarter, and the bottom half have none at all.",
+    "Our own category proves the same point. Shopify's \"quiz\" search returns 149 apps, but trust pools at the top here exactly like it does across the store. The three apps that got here first and never left, RevenueHunt, Octane AI and Quiz Kit, hold 45% of every review in the category; RevenueHunt alone holds about a quarter, and the bottom half have none at all.",
     "We didn't code our way to the top. Reviews are the residue of the operational scar tissue behind them: six years of answering support, getting on calls with merchants who would never pay, and earning trust one store at a time. Octane AI and Quiz Kit put in the same hard work for years, and we respect them for it. Honorable mention to Lantern and Quizell, both just over 120 reviews.",
   ],
 };

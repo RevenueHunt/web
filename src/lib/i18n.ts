@@ -10,7 +10,7 @@
 export type Lang = "en" | "es" | "fr" | "de" | "pt" | "it" | "nl" | "sv" | "fi" | "pl" | "cs" | "ar" | "he";
 
 // Order here drives the language-picker dropdown order (Header.astro maps LANGS).
-export const LANGS: Lang[] = ["en", "de", "fr", "nl", "es", "it", "sv", "fi", "pl", "cs", "pt", "ar", "he"];
+export const LANGS: Lang[] = ["en", "de", "fr", "nl", "es", "it", "sv", "fi", "pl", "cs", "pt", "he", "ar"];
 
 // Right-to-left locales. dir(lang) drives the <html dir> attribute in Base.astro.
 export const RTL_LANGS = new Set<Lang>(["ar", "he"]);

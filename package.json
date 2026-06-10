@@ -28,6 +28,7 @@
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.3.0",
     "astro": "^6.3.3",
+    "chart.js": "^4.5.1",
     "fast-xml-parser": "^5.8.0",
     "resend": "^6.12.3",
     "satori": "^0.26.0",

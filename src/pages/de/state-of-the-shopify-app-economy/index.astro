@@ -132,7 +132,7 @@ const growthCaptionHtml =
 // lines bolded inline. Caption text mirrors the English source's meaning.
 const quizParas = [
   `Unsere eigene Kategorie zeigt dasselbe. <a href="${QUIZ_LANE.searchUrl}" target="_blank" rel="external noopener nofollow" class="font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]">die "quiz"-Suche von Shopify</a> liefert 149 Apps, aber hier sammelt sich das Vertrauen an der Spitze genau wie im gesamten Store. Die drei Apps, die zuerst da waren und nie wieder gingen, RevenueHunt, Octane AI und Quiz Kit, vereinen 45 % aller Bewertungen der Kategorie auf sich; <strong>RevenueHunt allein hält rund ein Viertel</strong>, und die untere Hälfte hat keine einzige.`,
-  `Wir kamen nicht über den Code an die Spitze. <strong>Bewertungen sind das Residuum des operativen Narbengewebes</strong> dahinter: sechs Jahre Support beantworten, mit Händlern telefonieren, die nie zahlen würden, und Vertrauen Shop für Shop verdienen. Octane AI und Quiz Kit haben dieselbe harte Arbeit über Jahre geleistet, <strong>und dafür respektieren wir sie</strong>. Ehrenvolle Erwähnung für Lantern und Quizell, beide mit etwas über 120 Bewertungen.`,
+  `Wir kamen nicht über den Code an die Spitze. <strong>Bewertungen sind das Symptom der operativen Knochenarbeit</strong> dahinter: sechs Jahre Support beantworten, mit Händlern telefonieren, die nie zahlen würden, und Vertrauen Shop für Shop verdienen. Octane AI und Quiz Kit haben dieselbe harte Arbeit über Jahre geleistet, <strong>und dafür respektieren wir sie</strong>. Ehrenvolle Erwähnung für Lantern und Quizell, beide mit etwas über 120 Bewertungen.`,
 ];
 
 // Methodology bullets carry their own inline <strong>; render as-is.
@@ -237,7 +237,7 @@ const methodologyHtml = METHODOLOGY;
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Die Hälfte des Shopify App Store hat nie eine einzige Bewertung verdient. Vier von fünf Apps haben weniger als 10. Eine Bewertung ist der klarste öffentliche Indikator für einen echten, gehaltenen Händler, und die meisten Apps bekommen nie eine.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="mb-3 text-center text-sm font-semibold text-slate-700">Apps nach Bewertungsanzahl</p>
+          <p class="mb-3 text-center text-sm font-semibold text-slate-900">Apps nach Bewertungsanzahl</p>
           <div class="h-72 sm:h-80"><canvas id="c-reviews" aria-label="Bewertungsverteilung über alle aktiven Apps" role="img"></canvas></div>
         </div>
         <div class="space-y-4">
@@ -267,11 +267,11 @@ const methodologyHtml = METHODOLOGY;
       <p class="mx-auto mt-3 max-w-3xl text-sm italic text-slate-500 text-center">Ein Name überragt das gesamte Ökosystem: eine App, die geschätzte 78 % ihres Jahresumsatzes von rund 1 Mrd. US-Dollar von Shopify-Händlern bezieht. Ja, wir meinen dich, <a href='https://www.sec.gov/Archives/edgar/data/1835830/000162828023030618/klaviyoincs-1.htm' target='_blank' rel='external noopener nofollow' class='font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]'>Klaviyo</a>.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="mb-3 text-sm font-medium text-slate-500">Umsatzverteilung</p>
+          <p class="mb-3 text-center text-sm font-semibold text-slate-900">Umsatzverteilung</p>
           <div class="h-64 sm:h-72"><canvas id="c-revenue-donut" aria-label="Aufteilung des geschätzten Umsatzes: die Top 10 Apps, der Rest der Top 1% und die anderen 99%" role="img"></canvas></div>
         </div>
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="mb-3 text-sm font-medium text-slate-500">Geschätzter Umsatz nach Land</p>
+          <p class="mb-3 text-center text-sm font-semibold text-slate-900">Geschätzter Umsatz nach Land</p>
           <div class="h-64 sm:h-72"><canvas id="c-revenue-countries" aria-label="Geschätzter Umsatz nach Land" role="img"></canvas></div>
         </div>
       </div>
@@ -286,8 +286,8 @@ const methodologyHtml = METHODOLOGY;
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Fast die Hälfte des Stores verlangt nichts im Voraus, und weniger als 1 von 20 Apps verlangt Geld vor der ersten Installation. Fast 45 % bieten einen dauerhaft kostenlosen Plan. Freemium ist hier keine Strategie, es ist das Minimum, um überhaupt mitzuspielen.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="text-sm font-semibold text-slate-900">Einstiegspreise über alle 22.546 aktiven Apps</p>
-          <p class="mt-0.5 text-xs text-slate-500">Vier sich gegenseitig ausschließende Stufen, danach, was die App im Voraus verlangt.</p>
+          <p class="text-center text-sm font-semibold text-slate-900">Einstiegspreise über alle 22.546 aktiven Apps</p>
+          <p class="mt-0.5 text-center text-xs text-slate-500">Vier sich gegenseitig ausschließende Stufen, danach, was die App im Voraus verlangt.</p>
           <div class="mt-4 h-72 sm:h-80"><canvas id="c-pricing" aria-label="Verteilung der Preismodelle über alle aktiven Apps, nach Einstiegsstufe" role="img"></canvas></div>
         </div>
         <div class="space-y-4">
@@ -316,8 +316,8 @@ const methodologyHtml = METHODOLOGY;
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Zwei dominieren: <strong>die USA (24 %) und Indien (15 %) bauen zusammen zwei von fünf</strong> Apps des Stores. Aber <strong>Volumen ist nicht Traktion</strong>. Sortiert man die Länder nur nach den Apps, die 10+ Bewertungen geknackt haben, zeichnet sich die Rangliste neu - <strong>Vietnam</strong>, ein mittelgroßer Entwickler, platziert mehr Apps mit echter Traktion, als seine Größe vermuten lässt, während <strong>Japan und China abrutschen</strong>.</p>
       <div class="mt-8 grid gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="text-sm font-semibold text-slate-900">Alle Apps, nach Bewertungsstufe</p>
-          <p class="mt-0.5 text-xs text-slate-500">Top 10 Entwickler nach App-Anzahl. Klicke auf eine Stufe, um sie ein- oder auszublenden - blende die Stufen 0 und 1–9 aus und die Rangliste ordnet sich nach Traktion neu: Vietnam, Israel und Singapur steigen auf.</p>
+          <p class="text-center text-sm font-semibold text-slate-900">Alle Apps, nach Bewertungsstufe</p>
+          <p class="mt-0.5 text-center text-xs text-slate-500">Top 10 Entwickler nach App-Anzahl. Klicke auf eine Stufe, um sie ein- oder auszublenden - blende die Stufen 0 und 1–9 aus und die Rangliste ordnet sich nach Traktion neu: Vietnam, Israel und Singapur steigen auf.</p>
           <div class="mt-4 h-80 sm:h-96"><canvas id="c-geography" aria-label="Wichtigste Entwicklerländer nach Anzahl der Apps, aufgeteilt nach Bewertungsstufe" role="img"></canvas></div>
         </div>
         <div class="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
@@ -345,10 +345,10 @@ const methodologyHtml = METHODOLOGY;
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Überfüllt heißt nicht gewinnbar</h2>
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Die meistbesetzten Bereiche des Stores sind seine schlechtesten Wetten. Entwickler stürzen sich auf Versand und Chat, Allerwelts-Tools, und fast keiner bekommt eine Bewertung: <strong>fast 6 von 10 Drittlogistik-Apps erhalten nie eine einzige</strong>. Die Apps, die durchbrechen, ballen sich dort, wo sich die Arbeit summiert - <strong>Lokalisierung, Preisgestaltung und Anpassung auf Code-Ebene</strong>, die Tools, die unverzichtbar werden, sobald ein Händler sie installiert.</p>
       <div class="mt-8 rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-        <p class="text-sm font-semibold text-slate-900">Alle Sektoren, nach Bewertungsstufe</p>
-        <p class="mt-0.5 text-xs text-slate-500">Die Apps jedes Sektors, aufgeteilt nach Bewertungsstufe und vom größten zum kleinsten sortiert.</p>
+        <p class="text-center text-sm font-semibold text-slate-900">Alle Sektoren, nach Bewertungsstufe</p>
+        <p class="mt-0.5 text-center text-xs text-slate-500">Die Apps jedes Sektors, aufgeteilt nach Bewertungsstufe und vom größten zum kleinsten sortiert.</p>
         <div class="mt-4 h-[26rem] sm:h-[30rem]"><canvas id="c-niches" aria-label="Shopify-App-Sektoren aufgeteilt nach Bewertungsstufe, sortiert nach dem Anteil, der 10 oder mehr Bewertungen erreicht" role="img"></canvas></div>
-        <p class="mt-3 text-xs text-slate-400">Sektoren bündeln selbst vergebene Funktions-Tags, pro App entdoppelt. Eine App kann in mehreren liegen, daher überschneiden sich die Sektoren und schließen sich nicht aus - lies sie als grobe Bahnen, nicht als exakte Marktgrößen.</p>
+        <p class="mt-3 text-center text-xs text-slate-400">Sektoren bündeln selbst vergebene Funktions-Tags, pro App entdoppelt. Eine App kann in mehreren liegen, daher überschneiden sich die Sektoren und schließen sich nicht aus - lies sie als grobe Bahnen, nicht als exakte Marktgrößen.</p>
       </div>
       <div class="mt-8 grid gap-4 sm:grid-cols-3">
         <div class="flex flex-col justify-center rounded-2xl border border-slate-200 bg-white p-6">

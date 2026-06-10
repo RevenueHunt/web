@@ -131,7 +131,7 @@ const growthCaptionHtml =
 // lines bolded inline. Caption text mirrors the English source's meaning.
 const quizParas = [
   `Oma kategoriamme osoittaa saman asian. <a href="${QUIZ_LANE.searchUrl}" target="_blank" rel="external noopener nofollow" class="font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]">Shopifyn "quiz"-haku</a> palauttaa 149 sovellusta, mutta täälläkin luottamus kasaantuu huipulle täsmälleen samalla tavalla kuin koko storessa. Kolme sovellusta, jotka tulivat ensimmäisinä eivätkä koskaan lähteneet - RevenueHunt, Octane AI ja Quiz Kit - keräävät 45 % kaikista kategorian arvosteluista; <strong>pelkästään RevenueHuntilla on niistä noin neljäsosa</strong>, ja alemmalla puoliskolla ei ole yhtäkään.`,
-  `Emme päässeet huipulle koodaamalla. <strong>Arvostelut ovat jäännös operatiivisesta arpikudoksesta</strong>, joka on niiden takana: kuusi vuotta tukikysymyksiin vastaamista, puhelimeen tarttumista kauppiaiden kanssa, jotka eivät koskaan maksaisi, ja luottamuksen ansaitsemista kauppa kerrallaan. Octane AI ja Quiz Kit tekivät saman kovan työn vuosien ajan, <strong>ja kunnioitamme heitä siitä</strong>. Kunniamaininta Lanternille ja Quizellille, joilla molemmilla on hieman yli 120 arvostelua.`,
+  `Emme päässeet huipulle koodaamalla. <strong>Arvostelut ovat oire operatiivisesta puurtamisesta</strong>, joka on niiden takana: kuusi vuotta tukikysymyksiin vastaamista, puhelimeen tarttumista kauppiaiden kanssa, jotka eivät koskaan maksaisi, ja luottamuksen ansaitsemista kauppa kerrallaan. Octane AI ja Quiz Kit tekivät saman kovan työn vuosien ajan, <strong>ja kunnioitamme heitä siitä</strong>. Kunniamaininta Lanternille ja Quizellille, joilla molemmilla on hieman yli 120 arvostelua.`,
 ];
 
 // Methodology bullets carry their own inline <strong>; render as-is.
@@ -236,7 +236,7 @@ const methodologyHtml = METHODOLOGY;
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Puolet Shopify App Storesta ei ole koskaan ansainnut yhtäkään arvostelua. Neljällä viidestä sovelluksesta on alle 10. Arvostelu on selkein julkinen merkki todellisesta, säilyneestä kauppiaasta, eivätkä useimmat sovellukset koskaan saa yhtäkään.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="mb-3 text-center text-sm font-semibold text-slate-700">Sovellukset arvostelujen määrän mukaan</p>
+          <p class="mb-3 text-center text-sm font-semibold text-slate-900">Sovellukset arvostelujen määrän mukaan</p>
           <div class="h-72 sm:h-80"><canvas id="c-reviews" aria-label="Arvostelujen jakauma kaikkien aktiivisten sovellusten kesken" role="img"></canvas></div>
         </div>
         <div class="space-y-4">
@@ -266,11 +266,11 @@ const methodologyHtml = METHODOLOGY;
       <p class="mx-auto mt-3 max-w-3xl text-sm italic text-slate-500 text-center">Yksi nimi kohoaa yli koko ekosysteemin: sovellus, joka saa arviolta 78 % noin miljardin dollarin vuosiliikevaihdostaan Shopify-kauppiailta. Kyllä, sinua katsomme, <a href='https://www.sec.gov/Archives/edgar/data/1835830/000162828023030618/klaviyoincs-1.htm' target='_blank' rel='external noopener nofollow' class='font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]'>Klaviyo</a>.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="mb-3 text-sm font-medium text-slate-500">Tulojen jakauma</p>
+          <p class="mb-3 text-center text-sm font-semibold text-slate-900">Tulojen jakauma</p>
           <div class="h-64 sm:h-72"><canvas id="c-revenue-donut" aria-label="Arvioitujen tulojen jakauma: 10 parasta sovellusta, loput top 1%:sta ja loput 99%" role="img"></canvas></div>
         </div>
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="mb-3 text-sm font-medium text-slate-500">Arvioitu liikevaihto maittain</p>
+          <p class="mb-3 text-center text-sm font-semibold text-slate-900">Arvioitu liikevaihto maittain</p>
           <div class="h-64 sm:h-72"><canvas id="c-revenue-countries" aria-label="Arvioitu liikevaihto maittain" role="img"></canvas></div>
         </div>
       </div>
@@ -285,8 +285,8 @@ const methodologyHtml = METHODOLOGY;
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Lähes puolet storesta ei veloita mitään etukäteen, ja alle 1 jokaisesta 20:stä sovelluksesta pyytää rahaa ennen ensimmäistä asennusta. Lähes 45 % tarjoaa pysyvästi ilmaisen paketin. Täällä freemium ei ole strategia, vaan vähimmäisvaatimus mukaan pääsemiseksi.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="text-sm font-semibold text-slate-900">Sisäänpääsyhinnat kaikkien 22 546 aktiivisen sovelluksen kesken</p>
-          <p class="mt-0.5 text-xs text-slate-500">Neljä toisensa poissulkevaa tasoa sen mukaan, mitä sovellus pyytää etukäteen.</p>
+          <p class="text-center text-sm font-semibold text-slate-900">Sisäänpääsyhinnat kaikkien 22 546 aktiivisen sovelluksen kesken</p>
+          <p class="mt-0.5 text-center text-xs text-slate-500">Neljä toisensa poissulkevaa tasoa sen mukaan, mitä sovellus pyytää etukäteen.</p>
           <div class="mt-4 h-72 sm:h-80"><canvas id="c-pricing" aria-label="Hinnoittelumallin jakauma kaikkien aktiivisten sovellusten kesken, sisäänpääsytason mukaan" role="img"></canvas></div>
         </div>
         <div class="space-y-4">
@@ -315,8 +315,8 @@ const methodologyHtml = METHODOLOGY;
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Kaksi hallitsee: <strong>Yhdysvallat (24 %) ja Intia (15 %) tekevät yhdessä kaksi viidestä</strong> storen sovelluksesta. Mutta <strong>volyymi ei ole vetovoimaa</strong>. Kun maat järjestetään vain niiden sovellusten mukaan, jotka ovat ylittäneet 10+ arvostelua, sijoitus piirtyy uudelleen - <strong>Vietnam</strong>, keskikokoinen kehittäjä, tuottaa enemmän todellista vetovoimaa saaneita sovelluksia kuin sen koko antaisi olettaa, kun taas <strong>Japani ja Kiina putoavat pois</strong>.</p>
       <div class="mt-8 grid gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="text-sm font-semibold text-slate-900">Kaikki sovellukset, arvostelutason mukaan</p>
-          <p class="mt-0.5 text-xs text-slate-500">10 suurinta kehittäjää sovellusten määrän mukaan. Klikkaa tasoa näyttääksesi tai piilottaaksesi sen - piilota tasot 0 ja 1–9, niin lista järjestyy vetovoiman mukaan: Vietnam, Israel ja Singapore nousevat.</p>
+          <p class="text-center text-sm font-semibold text-slate-900">Kaikki sovellukset, arvostelutason mukaan</p>
+          <p class="mt-0.5 text-center text-xs text-slate-500">10 suurinta kehittäjää sovellusten määrän mukaan. Klikkaa tasoa näyttääksesi tai piilottaaksesi sen - piilota tasot 0 ja 1–9, niin lista järjestyy vetovoiman mukaan: Vietnam, Israel ja Singapore nousevat.</p>
           <div class="mt-4 h-80 sm:h-96"><canvas id="c-geography" aria-label="Tärkeimmät kehittäjämaat sovellusten määrän mukaan, jaoteltuna arvostelutason mukaan" role="img"></canvas></div>
         </div>
         <div class="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
@@ -344,10 +344,10 @@ const methodologyHtml = METHODOLOGY;
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Ruuhkainen ei ole voitettavissa</h2>
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Kaupan vilkkaimmat kaistat ovat sen huonoimmat vedot. Kehittäjät ryntäävät toimituksiin ja chattiin, arkisiin apuvälineisiin, eikä juuri kukaan saa arvostelua: <strong>lähes 6 kymmenestä kolmannen osapuolen logistiikkasovelluksesta ei saa ainuttakaan</strong>. Läpimurron tekevät sovellukset keskittyvät sinne, missä työ kasautuu - <strong>lokalisointi, hinnoittelu ja kooditason räätälöinti</strong>, työkalut, joista tulee välttämättömiä heti kun kauppias asentaa ne.</p>
       <div class="mt-8 rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-        <p class="text-sm font-semibold text-slate-900">Kaikki sektorit, arvostelutason mukaan</p>
-        <p class="mt-0.5 text-xs text-slate-500">Kunkin sektorin sovellukset jaoteltuna arvostelutason mukaan ja järjestettynä suurimmasta pienimpään.</p>
+        <p class="text-center text-sm font-semibold text-slate-900">Kaikki sektorit, arvostelutason mukaan</p>
+        <p class="mt-0.5 text-center text-xs text-slate-500">Kunkin sektorin sovellukset jaoteltuna arvostelutason mukaan ja järjestettynä suurimmasta pienimpään.</p>
         <div class="mt-4 h-[26rem] sm:h-[30rem]"><canvas id="c-niches" aria-label="Shopify-sovellussektorit jaoteltuna arvostelutason mukaan, järjestettynä sen osuuden mukaan, joka ylittää 10 arvostelua" role="img"></canvas></div>
-        <p class="mt-3 text-xs text-slate-400">Sektorit niputtavat itse lisättyjä ominaisuustunnisteita, sovelluskohtaisesti deduplikoituna. Sovellus voi kuulua useaan, joten sektorit menevät päällekkäin eivätkä ole toisensa poissulkevia - lue ne laajoina kaistoina, ei tarkkoina markkinakokoina.</p>
+        <p class="mt-3 text-center text-xs text-slate-400">Sektorit niputtavat itse lisättyjä ominaisuustunnisteita, sovelluskohtaisesti deduplikoituna. Sovellus voi kuulua useaan, joten sektorit menevät päällekkäin eivätkä ole toisensa poissulkevia - lue ne laajoina kaistoina, ei tarkkoina markkinakokoina.</p>
       </div>
       <div class="mt-8 grid gap-4 sm:grid-cols-3">
         <div class="flex flex-col justify-center rounded-2xl border border-slate-200 bg-white p-6">

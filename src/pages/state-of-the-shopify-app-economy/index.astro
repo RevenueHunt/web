@@ -97,8 +97,8 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
       `<a href="${QUIZ_LANE.searchUrl}" target="_blank" rel="external noopener nofollow" class="font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]">Shopify's "quiz" search</a>`,
     )
     .replace(
-      "Reviews are the residue of the operational scar tissue",
-      "<strong>Reviews are the residue of the operational scar tissue</strong>",
+      "Reviews are the symptom of the operational grind",
+      "<strong>Reviews are the symptom of the operational grind</strong>",
     )
     .replace(
       "we respect them for it",
@@ -208,7 +208,7 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">{REVIEWS.caption}</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="mb-3 text-center text-sm font-semibold text-slate-700">Apps by review count</p>
+          <p class="mb-3 text-center text-sm font-semibold text-slate-900">Apps by review count</p>
           <div class="h-72 sm:h-80"><canvas id="c-reviews" aria-label="Review distribution across all live apps" role="img"></canvas></div>
         </div>
         <div class="space-y-4">
@@ -238,11 +238,11 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
       <p class="mx-auto mt-3 max-w-3xl text-sm italic text-slate-500 text-center" set:html={REVENUE.klaviyoNote} />
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="mb-3 text-sm font-medium text-slate-500">Revenue distribution</p>
+          <p class="mb-3 text-center text-sm font-semibold text-slate-900">Revenue distribution</p>
           <div class="h-64 sm:h-72"><canvas id="c-revenue-donut" aria-label="Estimated revenue split: the top 10 apps, the rest of the top 1%, and the other 99%" role="img"></canvas></div>
         </div>
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="mb-3 text-sm font-medium text-slate-500">Estimated revenue by country</p>
+          <p class="mb-3 text-center text-sm font-semibold text-slate-900">Estimated revenue by country</p>
           <div class="h-64 sm:h-72"><canvas id="c-revenue-countries" aria-label="Estimated revenue by country" role="img"></canvas></div>
         </div>
       </div>
@@ -257,8 +257,8 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">{PRICING.caption}</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="text-sm font-semibold text-slate-900">Entry pricing across all 22,546 live apps</p>
-          <p class="mt-0.5 text-xs text-slate-500">Four mutually exclusive tiers, by what the app asks for up front.</p>
+          <p class="text-center text-sm font-semibold text-slate-900">Entry pricing across all 22,546 live apps</p>
+          <p class="mt-0.5 text-center text-xs text-slate-500">Four mutually exclusive tiers, by what the app asks for up front.</p>
           <div class="mt-4 h-72 sm:h-80"><canvas id="c-pricing" aria-label="Pricing model split across all live apps, by entry tier" role="img"></canvas></div>
         </div>
         <div class="space-y-4">
@@ -287,8 +287,8 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center" set:html={GEOGRAPHY.caption} />
       <div class="mt-8 grid gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="text-sm font-semibold text-slate-900">All apps, by review tier</p>
-          <p class="mt-0.5 text-xs text-slate-500">Top 10 builders by app count. Click a tier to toggle it - hide the 0 and 1–9 tiers and the board re-ranks by traction: Vietnam, Israel and Singapore climb in.</p>
+          <p class="text-center text-sm font-semibold text-slate-900">All apps, by review tier</p>
+          <p class="mt-0.5 text-center text-xs text-slate-500">Top 10 builders by app count. Click a tier to toggle it - hide the 0 and 1–9 tiers and the board re-ranks by traction: Vietnam, Israel and Singapore climb in.</p>
           <div class="mt-4 h-80 sm:h-96"><canvas id="c-geography" aria-label="Top developer countries by app count, split by review tier" role="img"></canvas></div>
         </div>
         <div class="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
@@ -316,10 +316,10 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Crowded isn't winnable</h2>
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center" set:html={NICHES.caption} />
       <div class="mt-8 rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-        <p class="text-sm font-semibold text-slate-900">All sectors, by review tier</p>
-        <p class="mt-0.5 text-xs text-slate-500">Every sector's apps, split by review tier and sorted largest to smallest.</p>
+        <p class="text-center text-sm font-semibold text-slate-900">All sectors, by review tier</p>
+        <p class="mt-0.5 text-center text-xs text-slate-500">Every sector's apps, split by review tier and sorted largest to smallest.</p>
         <div class="mt-4 h-[26rem] sm:h-[30rem]"><canvas id="c-niches" aria-label="Shopify app sectors split by review tier, sorted by the share that clear 10 or more reviews" role="img"></canvas></div>
-        <p class="mt-3 text-xs text-slate-400">Sectors group self-applied feature tags, deduped per app. An app can sit in several, so sectors overlap and aren't mutually exclusive - read them as broad lanes, not precise market sizes.</p>
+        <p class="mt-3 text-center text-xs text-slate-400">Sectors group self-applied feature tags, deduped per app. An app can sit in several, so sectors overlap and aren't mutually exclusive - read them as broad lanes, not precise market sizes.</p>
       </div>
       <div class="mt-8 grid gap-4 sm:grid-cols-3">
         <div class="flex flex-col justify-center rounded-2xl border border-slate-200 bg-white p-6">

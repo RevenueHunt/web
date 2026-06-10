@@ -132,7 +132,7 @@ const growthCaptionHtml =
 // lines bolded inline. Caption text mirrors the English source's meaning.
 const quizParas = [
   `Vår egen kategori bevisar samma sak. <a href="${QUIZ_LANE.searchUrl}" target="_blank" rel="external noopener nofollow" class="font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]">sökningen efter "quiz" på Shopify</a> ger 149 appar, men här samlas förtroendet i toppen precis som i hela butiken. De tre appar som kom först och aldrig försvann, RevenueHunt, Octane AI och Quiz Kit, står för 45 % av alla recensioner i kategorin; <strong>RevenueHunt ensam har ungefär en fjärdedel</strong>, och den nedre halvan har ingen alls.`,
-  `Vi nådde toppen inte genom kod. <strong>Recensioner är resterna av den operativa ärrvävnad</strong> som ligger bakom: sex år av att svara på support, att lyfta luren med handlare som aldrig skulle betala och att förtjäna förtroende butik för butik. Octane AI och Quiz Kit gjorde samma hårda jobb i åratal, <strong>och det respekterar vi dem för</strong>. Ett hedersomnämnande till Lantern och Quizell, båda med drygt 120 recensioner.`,
+  `Vi nådde toppen inte genom kod. <strong>Recensioner är symptomet på det operativa slitet</strong> som ligger bakom: sex år av att svara på support, att lyfta luren med handlare som aldrig skulle betala och att förtjäna förtroende butik för butik. Octane AI och Quiz Kit gjorde samma hårda jobb i åratal, <strong>och det respekterar vi dem för</strong>. Ett hedersomnämnande till Lantern och Quizell, båda med drygt 120 recensioner.`,
 ];
 
 // Methodology bullets carry their own inline <strong>; render as-is.
@@ -237,7 +237,7 @@ const methodologyHtml = METHODOLOGY;
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Hälften av Shopify App Store har aldrig fått en enda recension. Fyra av fem appar har färre än 10. En recension är den tydligaste offentliga indikatorn på en riktig och kvarhållen handlare, och de flesta appar får aldrig någon.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="mb-3 text-center text-sm font-semibold text-slate-700">Appar efter antal recensioner</p>
+          <p class="mb-3 text-center text-sm font-semibold text-slate-900">Appar efter antal recensioner</p>
           <div class="h-72 sm:h-80"><canvas id="c-reviews" aria-label="Recensionsfördelning bland alla aktiva appar" role="img"></canvas></div>
         </div>
         <div class="space-y-4">
@@ -267,11 +267,11 @@ const methodologyHtml = METHODOLOGY;
       <p class="mx-auto mt-3 max-w-3xl text-sm italic text-slate-500 text-center">Ett namn reser sig över hela ekosystemet: en app som drar uppskattningsvis 78 % av sin årsomsättning på runt 1 miljard dollar från Shopify-handlare. Ja, vi tittar på dig, <a href='https://www.sec.gov/Archives/edgar/data/1835830/000162828023030618/klaviyoincs-1.htm' target='_blank' rel='external noopener nofollow' class='font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]'>Klaviyo</a>.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="mb-3 text-sm font-medium text-slate-500">Intäktsfördelning</p>
+          <p class="mb-3 text-center text-sm font-semibold text-slate-900">Intäktsfördelning</p>
           <div class="h-64 sm:h-72"><canvas id="c-revenue-donut" aria-label="Fördelning av de uppskattade intäkterna: de 10 främsta apparna, resten av topp 1% och de övriga 99%" role="img"></canvas></div>
         </div>
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="mb-3 text-sm font-medium text-slate-500">Uppskattad intäkt per land</p>
+          <p class="mb-3 text-center text-sm font-semibold text-slate-900">Uppskattad intäkt per land</p>
           <div class="h-64 sm:h-72"><canvas id="c-revenue-countries" aria-label="Uppskattad intäkt per land" role="img"></canvas></div>
         </div>
       </div>
@@ -286,8 +286,8 @@ const methodologyHtml = METHODOLOGY;
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Nästan hälften av butiken tar inget betalt i förväg, och färre än 1 av 20 appar ber om pengar innan den första installationen. Nästan 45 % erbjuder en permanent gratisplan. Här är freemium inte en strategi, det är minimikravet för att ens vara med.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="text-sm font-semibold text-slate-900">Ingångspriser bland alla 22 546 aktiva appar</p>
-          <p class="mt-0.5 text-xs text-slate-500">Fyra ömsesidigt uteslutande nivåer, efter vad appen begär i förväg.</p>
+          <p class="text-center text-sm font-semibold text-slate-900">Ingångspriser bland alla 22 546 aktiva appar</p>
+          <p class="mt-0.5 text-center text-xs text-slate-500">Fyra ömsesidigt uteslutande nivåer, efter vad appen begär i förväg.</p>
           <div class="mt-4 h-72 sm:h-80"><canvas id="c-pricing" aria-label="Fördelning av prismodeller bland alla aktiva appar, efter ingångsnivå" role="img"></canvas></div>
         </div>
         <div class="space-y-4">
@@ -316,8 +316,8 @@ const methodologyHtml = METHODOLOGY;
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Två dominerar: <strong>USA (24 %) och Indien (15 %) bygger tillsammans två av fem</strong> av butikens appar. Men <strong>volym är inte genomslag</strong>. Sorterar man länderna enbart efter de appar som tagit sig över 10+ recensioner ritas rangordningen om - <strong>Vietnam</strong>, en medelstor utvecklare, placerar fler appar med verkligt genomslag än vad storleken antyder, medan <strong>Japan och Kina faller bort</strong>.</p>
       <div class="mt-8 grid gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="text-sm font-semibold text-slate-900">Alla appar, efter recensionsnivå</p>
-          <p class="mt-0.5 text-xs text-slate-500">De 10 främsta utvecklarna efter antal appar. Klicka på en nivå för att slå på eller av den - dölj nivåerna 0 och 1–9 så ordnas listan om efter genomslag: Vietnam, Israel och Singapore klättrar.</p>
+          <p class="text-center text-sm font-semibold text-slate-900">Alla appar, efter recensionsnivå</p>
+          <p class="mt-0.5 text-center text-xs text-slate-500">De 10 främsta utvecklarna efter antal appar. Klicka på en nivå för att slå på eller av den - dölj nivåerna 0 och 1–9 så ordnas listan om efter genomslag: Vietnam, Israel och Singapore klättrar.</p>
           <div class="mt-4 h-80 sm:h-96"><canvas id="c-geography" aria-label="Ledande utvecklarländer efter antal appar, uppdelat efter recensionsnivå" role="img"></canvas></div>
         </div>
         <div class="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
@@ -345,10 +345,10 @@ const methodologyHtml = METHODOLOGY;
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Trångt är inte vinnbart</h2>
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Storens mest trafikerade filer är dess sämsta vad. Utvecklare strömmar till frakt och chatt, vardagliga verktyg, och nästan ingen får en recension: <strong>nästan 6 av 10 appar för tredjepartslogistik får aldrig en enda</strong>. Apparna som slår igenom klustrar där arbetet ackumuleras - <strong>lokalisering, prissättning och anpassning på kodnivå</strong>, verktygen som blir oumbärliga när en handlare väl installerar dem.</p>
       <div class="mt-8 rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-        <p class="text-sm font-semibold text-slate-900">Alla sektorer, efter recensionsnivå</p>
-        <p class="mt-0.5 text-xs text-slate-500">Varje sektors appar, uppdelade efter recensionsnivå och sorterade från störst till minst.</p>
+        <p class="text-center text-sm font-semibold text-slate-900">Alla sektorer, efter recensionsnivå</p>
+        <p class="mt-0.5 text-center text-xs text-slate-500">Varje sektors appar, uppdelade efter recensionsnivå och sorterade från störst till minst.</p>
         <div class="mt-4 h-[26rem] sm:h-[30rem]"><canvas id="c-niches" aria-label="Shopify-appsektorer uppdelade efter recensionsnivå, sorterade efter andelen som når 10 eller fler recensioner" role="img"></canvas></div>
-        <p class="mt-3 text-xs text-slate-400">Sektorer buntar ihop självpåsatta funktionstaggar, avdubblade per app. En app kan ligga i flera, så sektorer överlappar och utesluter inte varandra - läs dem som breda filer, inte exakta marknadsstorlekar.</p>
+        <p class="mt-3 text-center text-xs text-slate-400">Sektorer buntar ihop självpåsatta funktionstaggar, avdubblade per app. En app kan ligga i flera, så sektorer överlappar och utesluter inte varandra - läs dem som breda filer, inte exakta marknadsstorlekar.</p>
       </div>
       <div class="mt-8 grid gap-4 sm:grid-cols-3">
         <div class="flex flex-col justify-center rounded-2xl border border-slate-200 bg-white p-6">

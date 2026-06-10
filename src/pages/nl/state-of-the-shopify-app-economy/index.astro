@@ -131,7 +131,7 @@ const growthCaptionHtml =
 // lines bolded inline. Caption text mirrors the English source's meaning.
 const quizParas = [
   `Onze eigen categorie laat precies hetzelfde zien. <a href="${QUIZ_LANE.searchUrl}" target="_blank" rel="external noopener nofollow" class="font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]">de zoekopdracht op "quiz" in Shopify</a> levert 149 apps op, maar ook hier stapelt vertrouwen zich bovenaan op, precies zoals in de hele store. De drie apps die er als eerste waren en nooit weggingen, RevenueHunt, Octane AI en Quiz Kit, zijn samen goed voor 45% van alle reviews in de categorie; <strong>RevenueHunt alleen heeft er ongeveer een kwart van</strong>, en de onderste helft heeft er geen enkele.`,
-  `We zijn niet bovenaan gekomen met code. <strong>Reviews zijn het overblijfsel van het operationele littekenweefsel</strong> dat eronder zit: zes jaar lang support beantwoorden, aan de telefoon zitten met winkels die nooit zouden betalen en winkel voor winkel vertrouwen verdienen. Octane AI en Quiz Kit deden jarenlang hetzelfde zware werk, <strong>en daar hebben we respect voor</strong>. Eervolle vermelding voor Lantern en Quizell, allebei met iets meer dan 120 reviews.`,
+  `We zijn niet bovenaan gekomen met code. <strong>Reviews zijn het symptoom van het operationele zwoegen</strong> dat eronder zit: zes jaar lang support beantwoorden, aan de telefoon zitten met winkels die nooit zouden betalen en winkel voor winkel vertrouwen verdienen. Octane AI en Quiz Kit deden jarenlang hetzelfde zware werk, <strong>en daar hebben we respect voor</strong>. Eervolle vermelding voor Lantern en Quizell, allebei met iets meer dan 120 reviews.`,
 ];
 
 // Methodology bullets carry their own inline <strong>; render as-is.
@@ -236,7 +236,7 @@ const methodologyHtml = METHODOLOGY;
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">De helft van de Shopify App Store heeft nooit één review gekregen. Vier van de vijf apps hebben er minder dan 10. Een review is de duidelijkste openbare indicator van een echte, behouden winkel, en de meeste apps krijgen er nooit één.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="mb-3 text-center text-sm font-semibold text-slate-700">Apps op aantal reviews</p>
+          <p class="mb-3 text-center text-sm font-semibold text-slate-900">Apps op aantal reviews</p>
           <div class="h-72 sm:h-80"><canvas id="c-reviews" aria-label="Reviewverdeling over alle actieve apps" role="img"></canvas></div>
         </div>
         <div class="space-y-4">
@@ -266,11 +266,11 @@ const methodologyHtml = METHODOLOGY;
       <p class="mx-auto mt-3 max-w-3xl text-sm italic text-slate-500 text-center">Eén naam torent boven het hele ecosysteem uit: een app die naar schatting 78% van haar jaaromzet van ongeveer 1 miljard dollar haalt uit Shopify-merchants. Ja, we kijken naar jou, <a href='https://www.sec.gov/Archives/edgar/data/1835830/000162828023030618/klaviyoincs-1.htm' target='_blank' rel='external noopener nofollow' class='font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]'>Klaviyo</a>.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="mb-3 text-sm font-medium text-slate-500">Omzetverdeling</p>
+          <p class="mb-3 text-center text-sm font-semibold text-slate-900">Omzetverdeling</p>
           <div class="h-64 sm:h-72"><canvas id="c-revenue-donut" aria-label="Verdeling van de geschatte omzet: de top 10 apps, de rest van de top 1% en de andere 99%" role="img"></canvas></div>
         </div>
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="mb-3 text-sm font-medium text-slate-500">Geschatte omzet per land</p>
+          <p class="mb-3 text-center text-sm font-semibold text-slate-900">Geschatte omzet per land</p>
           <div class="h-64 sm:h-72"><canvas id="c-revenue-countries" aria-label="Geschatte omzet per land" role="img"></canvas></div>
         </div>
       </div>
@@ -285,8 +285,8 @@ const methodologyHtml = METHODOLOGY;
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Bijna de helft van de store vraagt niets vooraf, en minder dan 1 op de 20 apps vraagt geld vóór de eerste installatie. Bijna 45% biedt een permanent gratis plan aan. Freemium is hier geen strategie, het is het minimum om mee te mogen doen.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="text-sm font-semibold text-slate-900">Instapprijzen over alle 22.546 actieve apps</p>
-          <p class="mt-0.5 text-xs text-slate-500">Vier elkaar uitsluitende niveaus, naar wat de app vooraf vraagt.</p>
+          <p class="text-center text-sm font-semibold text-slate-900">Instapprijzen over alle 22.546 actieve apps</p>
+          <p class="mt-0.5 text-center text-xs text-slate-500">Vier elkaar uitsluitende niveaus, naar wat de app vooraf vraagt.</p>
           <div class="mt-4 h-72 sm:h-80"><canvas id="c-pricing" aria-label="Verdeling van het prijsmodel over alle actieve apps, naar instapniveau" role="img"></canvas></div>
         </div>
         <div class="space-y-4">
@@ -315,8 +315,8 @@ const methodologyHtml = METHODOLOGY;
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Twee landen domineren: <strong>de VS (24%) en India (15%) bouwen samen twee op de vijf</strong> apps in de store. Maar <strong>volume is geen tractie</strong>. Sorteer je de landen alleen op de apps die 10+ reviews hebben gehaald, dan tekent de ranglijst zich opnieuw - <strong>Vietnam</strong>, een middelgrote ontwikkelaar, plaatst meer apps met echte tractie dan zijn omvang doet vermoeden, terwijl <strong>Japan en China wegvallen</strong>.</p>
       <div class="mt-8 grid gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="text-sm font-semibold text-slate-900">Alle apps, naar reviewniveau</p>
-          <p class="mt-0.5 text-xs text-slate-500">Top 10 ontwikkelaars op aantal apps. Klik op een niveau om het in of uit te schakelen - verberg de niveaus 0 en 1–9 en de ranglijst herschikt op tractie: Vietnam, Israël en Singapore klimmen.</p>
+          <p class="text-center text-sm font-semibold text-slate-900">Alle apps, naar reviewniveau</p>
+          <p class="mt-0.5 text-center text-xs text-slate-500">Top 10 ontwikkelaars op aantal apps. Klik op een niveau om het in of uit te schakelen - verberg de niveaus 0 en 1–9 en de ranglijst herschikt op tractie: Vietnam, Israël en Singapore klimmen.</p>
           <div class="mt-4 h-80 sm:h-96"><canvas id="c-geography" aria-label="Belangrijkste ontwikkelaarslanden op basis van aantal apps, uitgesplitst naar reviewniveau" role="img"></canvas></div>
         </div>
         <div class="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
@@ -344,10 +344,10 @@ const methodologyHtml = METHODOLOGY;
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Druk is niet winbaar</h2>
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">De drukste banen van de store zijn de slechtste gokken. Ontwikkelaars storten zich op verzending en chat, alledaagse hulpprogramma's, en bijna niemand krijgt een review: <strong>bijna 6 van de 10 apps voor externe logistiek krijgen er nooit één</strong>. De apps die doorbreken clusteren waar het werk zich opstapelt - <strong>lokalisatie, prijzen en aanpassing op codeniveau</strong>, de tools die onmisbaar worden zodra een merchant ze installeert.</p>
       <div class="mt-8 rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-        <p class="text-sm font-semibold text-slate-900">Alle sectoren, naar reviewniveau</p>
-        <p class="mt-0.5 text-xs text-slate-500">De apps van elke sector, opgesplitst naar reviewniveau en gesorteerd van groot naar klein.</p>
+        <p class="text-center text-sm font-semibold text-slate-900">Alle sectoren, naar reviewniveau</p>
+        <p class="mt-0.5 text-center text-xs text-slate-500">De apps van elke sector, opgesplitst naar reviewniveau en gesorteerd van groot naar klein.</p>
         <div class="mt-4 h-[26rem] sm:h-[30rem]"><canvas id="c-niches" aria-label="Shopify-app-sectoren opgesplitst naar reviewniveau, gesorteerd op het aandeel dat 10 of meer reviews haalt" role="img"></canvas></div>
-        <p class="mt-3 text-xs text-slate-400">Sectoren bundelen zelf toegekende functie-tags, ontdubbeld per app. Een app kan in meerdere zitten, dus sectoren overlappen en sluiten elkaar niet uit - lees ze als brede banen, niet als precieze marktgroottes.</p>
+        <p class="mt-3 text-center text-xs text-slate-400">Sectoren bundelen zelf toegekende functie-tags, ontdubbeld per app. Een app kan in meerdere zitten, dus sectoren overlappen en sluiten elkaar niet uit - lees ze als brede banen, niet als precieze marktgroottes.</p>
       </div>
       <div class="mt-8 grid gap-4 sm:grid-cols-3">
         <div class="flex flex-col justify-center rounded-2xl border border-slate-200 bg-white p-6">

@@ -160,7 +160,7 @@ export const GEOGRAPHY = {
     vhigh: [50, 11, 9, 18, 33, 0, 0, 1, 3, 1, 0, 2, 8, 1, 6, 3],
   },
   caption:
-    "Two dominate: <strong>the US (24%) and India (15%) build two in five</strong> of the store between them. But <strong>volume is not traction</strong>. Rank countries only by the apps that cleared 10+ reviews and the leaderboard redraws - <strong>Vietnam</strong>, a mid-size builder, lands more apps with real traction than its size suggests, while <strong>Japan and China fall away</strong>.",
+    "Two dominate: <strong>the US (24%) and India (15%) build two in five</strong> of the store between them. But <strong>volume is not traction</strong>. Rank countries only by the apps that cleared 10+ reviews and the leaderboard redraws - <strong>Vietnam</strong>, a mid-size builder, lands more apps with real traction than its size suggests.",
 };
 
 /**

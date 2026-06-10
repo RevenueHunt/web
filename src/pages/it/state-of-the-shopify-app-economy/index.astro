@@ -47,7 +47,7 @@ const FAQ = [
   {
     question: "Perché la maggior parte delle app di Shopify fallisce?",
     answer:
-      "Creare non è più il vincolo, quindi lo store si riempie di app che non trovano mai una base merchant. Il 51% non ha nessuna recensione e il 74% ne ha meno di cinque. La cosa rara è la distribuzione e la fiducia: rispondere al supporto, guadagnarsi recensioni un merchant alla volta, esserci per anni. È la parte che l'IA non può fare per te.",
+      "Creare non è più il vincolo, quindi lo store si riempie di app che non trovano mai una base merchant. Il 51% non ha nessuna recensione e l'81% ne ha meno di 10. La cosa rara è la distribuzione e la fiducia: rispondere al supporto, guadagnarsi recensioni un merchant alla volta, esserci per anni. È la parte che l'IA non può fare per te.",
   },
   {
     question: "Quanto guadagnano le app di Shopify?",
@@ -116,7 +116,7 @@ const E = (n: string, label: string) => `${n} · ${label}`;
 // Translated headline cards. Stats stay from the shared data module (HEADLINE[i].stat).
 const headlineT = [
   { label: "app attive nello store", note: "Circa 10 volte tanto dal 2020." },
-  { label: "non hanno nessuna recensione", note: "Tre su quattro ne hanno meno di cinque." },
+  { label: "non hanno nessuna recensione", note: "Quattro su cinque ne hanno meno di 10." },
   { label: "dei ricavi se lo prende l'1% in cima", note: "225 app. Stimato." },
   { label: "fanno pagare in anticipo", note: "Solo 1 su 20. Quasi la metà sono gratis." },
 ];
@@ -231,15 +231,15 @@ const methodologyHtml = METHODOLOGY;
     <div class="mx-auto max-w-5xl px-6 py-16">
       <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("02", "Trazione")}</p>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">La maggior parte delle app non ottiene mai una recensione</h2>
-      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Metà dello Shopify App Store non ha mai guadagnato una sola recensione. Tre app su quattro ne hanno meno di cinque. Una recensione è l'indicatore pubblico più chiaro di un merchant reale e fidelizzato, e la maggior parte delle app non ne ottiene mai nessuna.</p>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Metà dello Shopify App Store non ha mai guadagnato una sola recensione. Quattro app su cinque ne hanno meno di 10. Una recensione è l'indicatore pubblico più chiaro di un merchant reale e fidelizzato, e la maggior parte delle app non ne ottiene mai nessuna.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
           <div class="h-72 sm:h-80"><canvas id="c-reviews" aria-label="Distribuzione delle recensioni tra tutte le app attive" role="img"></canvas></div>
         </div>
         <div class="space-y-4">
           <div class="rounded-xl border border-slate-200 p-6">
-            <p class="text-3xl font-bold text-[#16161D]">74%</p>
-            <p class="mt-1 text-slate-700">hanno meno di cinque recensioni</p>
+            <p class="text-3xl font-bold text-[#16161D]">81%</p>
+            <p class="mt-1 text-slate-700">hanno meno di 10 recensioni</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-3xl">{REVIEWS.avgReviews}</span> <span class="text-sm font-medium text-slate-500">recensioni</span></p>
@@ -247,7 +247,7 @@ const methodologyHtml = METHODOLOGY;
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-3xl">{REVIEWS.medianReviews}</span> <span class="text-sm font-medium text-slate-500">recensioni</span></p>
-            <p class="mt-1 text-slate-700">per l'app tipica</p>
+            <p class="mt-1 text-slate-700">la mediana, tra le app che ne hanno una</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-amber-400">★</span> <span class="text-3xl">{REVIEWS.avgRating}</span> <span class="text-sm font-medium text-slate-500">stelle</span></p>

@@ -48,7 +48,7 @@ const FAQ = [
   {
     question: "Pourquoi la plupart des apps Shopify échouent-elles ?",
     answer:
-      "Créer n'est plus la contrainte, donc le store est inondé d'apps qui ne trouvent jamais de base de commerçants. 51 % n'ont aucun avis et 74 % en ont moins de cinq. Ce qui est rare, c'est la distribution et la confiance : répondre au support, gagner des avis un commerçant à la fois, être présent pendant des années. C'est la partie que l'IA ne peut pas faire à votre place.",
+      "Créer n'est plus la contrainte, donc le store est inondé d'apps qui ne trouvent jamais de base de commerçants. 51 % n'ont aucun avis et 81 % en ont moins de 10. Ce qui est rare, c'est la distribution et la confiance : répondre au support, gagner des avis un commerçant à la fois, être présent pendant des années. C'est la partie que l'IA ne peut pas faire à votre place.",
   },
   {
     question: "Combien gagnent les apps Shopify ?",
@@ -117,7 +117,7 @@ const E = (n: string, label: string) => `${n} · ${label}`;
 // Translated headline cards. Stats stay from the shared data module (HEADLINE[i].stat).
 const headlineT = [
   { label: "apps actives sur le store", note: "Multiplié par 10 environ depuis 2020." },
-  { label: "n'ont aucun avis", note: "Trois sur quatre en ont moins de cinq." },
+  { label: "n'ont aucun avis", note: "Quatre sur cinq en ont moins de 10." },
   { label: "des revenus reviennent au 1 % du sommet", note: "225 apps. Estimé." },
   { label: "facturent d'avance", note: "Seulement 1 sur 20. Près de la moitié sont gratuites." },
 ];
@@ -232,15 +232,15 @@ const methodologyHtml = METHODOLOGY;
     <div class="mx-auto max-w-5xl px-6 py-16">
       <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("02", "Traction")}</p>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">La plupart des apps n'obtiennent jamais d'avis</h2>
-      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">La moitié du Shopify App Store n'a jamais obtenu un seul avis. Trois apps sur quatre en ont moins de cinq. Un avis est l'indicateur public le plus clair d'un commerce réel et fidélisé, et la plupart des apps n'en obtiennent jamais aucun.</p>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">La moitié du Shopify App Store n'a jamais obtenu un seul avis. Quatre apps sur cinq en ont moins de 10. Un avis est l'indicateur public le plus clair d'un commerce réel et fidélisé, et la plupart des apps n'en obtiennent jamais aucun.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
           <div class="h-72 sm:h-80"><canvas id="c-reviews" aria-label="Répartition des avis parmi toutes les apps actives" role="img"></canvas></div>
         </div>
         <div class="space-y-4">
           <div class="rounded-xl border border-slate-200 p-6">
-            <p class="text-3xl font-bold text-[#16161D]">74%</p>
-            <p class="mt-1 text-slate-700">ont moins de cinq avis</p>
+            <p class="text-3xl font-bold text-[#16161D]">81%</p>
+            <p class="mt-1 text-slate-700">ont moins de 10 avis</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-3xl">{REVIEWS.avgReviews}</span> <span class="text-sm font-medium text-slate-500">avis</span></p>
@@ -248,7 +248,7 @@ const methodologyHtml = METHODOLOGY;
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-3xl">{REVIEWS.medianReviews}</span> <span class="text-sm font-medium text-slate-500">avis</span></p>
-            <p class="mt-1 text-slate-700">pour l'app typique</p>
+            <p class="mt-1 text-slate-700">la médiane, parmi les apps qui en ont un</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-amber-400">★</span> <span class="text-3xl">{REVIEWS.avgRating}</span> <span class="text-sm font-medium text-slate-500">étoiles</span></p>

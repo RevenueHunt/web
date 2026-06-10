@@ -55,7 +55,7 @@ export const SOURCE = {
 /** Headline stat cards. */
 export const HEADLINE = [
   { stat: "22,546", label: "apps live on the store", note: "Up roughly 10x since 2020." },
-  { stat: "51%", label: "have zero reviews", note: "Three in four have fewer than five." },
+  { stat: "51%", label: "have zero reviews", note: "Four in five have fewer than 10." },
   { stat: "72%", label: "of revenue earned by the top 1%", note: "225 apps. Estimated." },
   { stat: "4.5%", label: "charge money up front", note: "Only 1 in 20. Nearly half are free." },
 ];
@@ -81,7 +81,7 @@ export const REVIEWS = {
   medianReviews: 5,
   ratedCount: "11,040",
   caption:
-    "Half the Shopify App Store has never earned a single review. Three in four apps have fewer than five. A review is the clearest public proxy for a real, retained merchant, and most apps never get one.",
+    "Half the Shopify App Store has never earned a single review. Four in five apps have fewer than 10. A review is the clearest public proxy for a real, retained merchant, and most apps never get one.",
 };
 
 /**
@@ -158,7 +158,7 @@ export const FAQ: FaqItem[] = [
   {
     question: "Why do most Shopify apps fail?",
     answer:
-      "Building is no longer the constraint, so the store floods with apps that never find a merchant base. 51% have zero reviews and 74% have fewer than five. The scarce thing is distribution and trust: answering support, earning reviews one merchant at a time, showing up for years. That is the part AI cannot do for you.",
+      "Building is no longer the constraint, so the store floods with apps that never find a merchant base. 51% have zero reviews and 81% have fewer than 10. The scarce thing is distribution and trust: answering support, earning reviews one merchant at a time, showing up for years. That is the part AI cannot do for you.",
   },
   {
     question: "How much do Shopify apps earn?",

@@ -48,7 +48,7 @@ const FAQ = [
   {
     question: "Miksi useimmat Shopify-sovellukset epäonnistuvat?",
     answer:
-      "Rakentaminen ei ole enää pullonkaula, joten store tulvii sovelluksia, jotka eivät koskaan löydä kauppiaspohjaa. 51 %:lla on nolla arvostelua ja 74 %:lla alle viisi. Harvinaista on jakelu ja luottamus: tukikysymyksiin vastaaminen, arvostelujen ansaitseminen kauppias kerrallaan, paikalla oleminen vuosikausia. Sitä osaa tekoäly ei voi tehdä puolestasi.",
+      "Rakentaminen ei ole enää pullonkaula, joten store tulvii sovelluksia, jotka eivät koskaan löydä kauppiaspohjaa. 51 %:lla on nolla arvostelua ja 81 %:lla alle 10. Harvinaista on jakelu ja luottamus: tukikysymyksiin vastaaminen, arvostelujen ansaitseminen kauppias kerrallaan, paikalla oleminen vuosikausia. Sitä osaa tekoäly ei voi tehdä puolestasi.",
   },
   {
     question: "Kuinka paljon Shopify-sovellukset ansaitsevat?",
@@ -117,7 +117,7 @@ const E = (n: string, label: string) => `${n} · ${label}`;
 // Translated headline cards. Stats stay from the shared data module (HEADLINE[i].stat).
 const headlineT = [
   { label: "aktiivista sovellusta storessa", note: "Noin 10-kertaistunut vuodesta 2020." },
-  { label: "ilman yhtäkään arvostelua", note: "Kolmella neljästä on alle viisi." },
+  { label: "ilman yhtäkään arvostelua", note: "Neljällä viidestä on alle 10." },
   { label: "tuloista menee ylimmälle 1 %:lle", note: "225 sovellusta. Arvio." },
   { label: "veloittaa etukäteen", note: "Vain 1 jokaisesta 20:stä. Lähes puolet ovat ilmaisia." },
 ];
@@ -232,15 +232,15 @@ const methodologyHtml = METHODOLOGY;
     <div class="mx-auto max-w-5xl px-6 py-16">
       <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("02", "Vetovoima")}</p>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Useimmat sovellukset eivät koskaan saa arvostelua</h2>
-      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Puolet Shopify App Storesta ei ole koskaan ansainnut yhtäkään arvostelua. Kolmella neljästä sovelluksesta on alle viisi. Arvostelu on selkein julkinen merkki todellisesta, säilyneestä kauppiaasta, eivätkä useimmat sovellukset koskaan saa yhtäkään.</p>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Puolet Shopify App Storesta ei ole koskaan ansainnut yhtäkään arvostelua. Neljällä viidestä sovelluksesta on alle 10. Arvostelu on selkein julkinen merkki todellisesta, säilyneestä kauppiaasta, eivätkä useimmat sovellukset koskaan saa yhtäkään.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
           <div class="h-72 sm:h-80"><canvas id="c-reviews" aria-label="Arvostelujen jakauma kaikkien aktiivisten sovellusten kesken" role="img"></canvas></div>
         </div>
         <div class="space-y-4">
           <div class="rounded-xl border border-slate-200 p-6">
-            <p class="text-3xl font-bold text-[#16161D]">74%</p>
-            <p class="mt-1 text-slate-700">on alle viisi arvostelua</p>
+            <p class="text-3xl font-bold text-[#16161D]">81%</p>
+            <p class="mt-1 text-slate-700">on alle 10 arvostelua</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-3xl">{REVIEWS.avgReviews}</span> <span class="text-sm font-medium text-slate-500">arvostelua</span></p>
@@ -248,7 +248,7 @@ const methodologyHtml = METHODOLOGY;
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-3xl">{REVIEWS.medianReviews}</span> <span class="text-sm font-medium text-slate-500">arvostelua</span></p>
-            <p class="mt-1 text-slate-700">tyypillisellä sovelluksella</p>
+            <p class="mt-1 text-slate-700">mediaani niissä sovelluksissa, joilla on arvosteluja</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-amber-400">★</span> <span class="text-3xl">{REVIEWS.avgRating}</span> <span class="text-sm font-medium text-slate-500">tähteä</span></p>

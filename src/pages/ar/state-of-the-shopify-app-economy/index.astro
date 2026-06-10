@@ -48,7 +48,7 @@ const FAQ = [
   {
     question: "لماذا تفشل معظم تطبيقات Shopify؟",
     answer:
-      "لم يعد البناء هو القيد، لذا يغرق المتجر بتطبيقات لا تجد قاعدة تجار قط. 51% ليس لها أي مراجعة و 74% لها أقل من خمس. النادر هو التوزيع والثقة: الرد على الدعم، وكسب المراجعات تاجراً تلو الآخر، والحضور لسنوات. هذا هو الجزء الذي لا يستطيع الذكاء الاصطناعي القيام به بدلاً عنك.",
+      "لم يعد البناء هو القيد، لذا يغرق المتجر بتطبيقات لا تجد قاعدة تجار قط. 51% ليس لها أي مراجعة و 81% لها أقل من 10. النادر هو التوزيع والثقة: الرد على الدعم، وكسب المراجعات تاجراً تلو الآخر، والحضور لسنوات. هذا هو الجزء الذي لا يستطيع الذكاء الاصطناعي القيام به بدلاً عنك.",
   },
   {
     question: "كم تكسب تطبيقات Shopify؟",
@@ -117,7 +117,7 @@ const E = (n: string, label: string) => `${n} · ${label}`;
 // Translated headline cards. Stats stay from the shared data module (HEADLINE[i].stat).
 const headlineT = [
   { label: "تطبيق نشط في المتجر", note: "تضاعف نحو 10 مرات منذ 2020." },
-  { label: "ليس لها أي مراجعة", note: "ثلاثة من كل أربعة لها أقل من خمس." },
+  { label: "ليس لها أي مراجعة", note: "أربعة من كل خمسة لها أقل من 10." },
   { label: "من الإيرادات يحصل عليها الـ 1% الأعلى", note: "225 تطبيقاً. تقديري." },
   { label: "تتقاضى المال مقدّماً", note: "1 فقط من كل 20. نحو النصف مجانية." },
 ];
@@ -232,15 +232,15 @@ const methodologyHtml = METHODOLOGY;
     <div class="mx-auto max-w-5xl px-6 py-16">
       <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("02", "الجذب")}</p>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">معظم التطبيقات لا تحصل على مراجعة أبداً</h2>
-      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">نصف Shopify App Store لم يكسب قطّ مراجعة واحدة. ثلاثة من كل أربعة تطبيقات لها أقل من خمس. المراجعة هي أوضح مؤشر علني على تاجر حقيقي ومحتفَظ به، ومعظم التطبيقات لا تحصل على أي منها أبداً.</p>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">نصف Shopify App Store لم يكسب قطّ مراجعة واحدة. أربعة من كل خمسة تطبيقات لها أقل من 10. المراجعة هي أوضح مؤشر علني على تاجر حقيقي ومحتفَظ به، ومعظم التطبيقات لا تحصل على أي منها أبداً.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
           <div class="h-72 sm:h-80"><canvas id="c-reviews" aria-label="توزيع المراجعات عبر كل التطبيقات النشطة" role="img"></canvas></div>
         </div>
         <div class="space-y-4">
           <div class="rounded-xl border border-slate-200 p-6">
-            <p class="text-3xl font-bold text-[#16161D]">74%</p>
-            <p class="mt-1 text-slate-700">لها أقل من خمس مراجعات</p>
+            <p class="text-3xl font-bold text-[#16161D]">81%</p>
+            <p class="mt-1 text-slate-700">لها أقل من 10 مراجعات</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-3xl">{REVIEWS.avgReviews}</span> <span class="text-sm font-medium text-slate-500">مراجعة</span></p>
@@ -248,7 +248,7 @@ const methodologyHtml = METHODOLOGY;
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-3xl">{REVIEWS.medianReviews}</span> <span class="text-sm font-medium text-slate-500">مراجعة</span></p>
-            <p class="mt-1 text-slate-700">للتطبيق النموذجي</p>
+            <p class="mt-1 text-slate-700">الوسيط، بين التطبيقات التي لها واحدة</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-amber-400">★</span> <span class="text-3xl">{REVIEWS.avgRating}</span> <span class="text-sm font-medium text-slate-500">نجمة</span></p>

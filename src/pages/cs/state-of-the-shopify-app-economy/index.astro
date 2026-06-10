@@ -48,7 +48,7 @@ const FAQ = [
   {
     question: "Proč většina aplikací Shopify selže?",
     answer:
-      "Vytvořit aplikaci už není to omezení, takže se store zaplavuje aplikacemi, které nikdy nenajdou základnu obchodníků. 51 % nemá jedinou recenzi a 74 % jich má méně než pět. Vzácnost je distribuce a důvěra: odpovídat na podporu, získávat recenze obchod po obchodu, být tu roky. To je ta část, kterou za tebe AI neudělá.",
+      "Vytvořit aplikaci už není to omezení, takže se store zaplavuje aplikacemi, které nikdy nenajdou základnu obchodníků. 51 % nemá jedinou recenzi a 81 % jich má méně než 10. Vzácnost je distribuce a důvěra: odpovídat na podporu, získávat recenze obchod po obchodu, být tu roky. To je ta část, kterou za tebe AI neudělá.",
   },
   {
     question: "Kolik aplikace Shopify vydělávají?",
@@ -117,7 +117,7 @@ const E = (n: string, label: string) => `${n} · ${label}`;
 // Translated headline cards. Stats stay from the shared data module (HEADLINE[i].stat).
 const headlineT = [
   { label: "aktivních aplikací ve storu", note: "Zhruba 10× více než v roce 2020." },
-  { label: "nemá jedinou recenzi", note: "Tři ze čtyř mají méně než pět." },
+  { label: "nemá jedinou recenzi", note: "Čtyři z pěti mají méně než 10." },
   { label: "příjmů si bere horní 1 %", note: "225 aplikací. Odhad." },
   { label: "si účtuje předem", note: "Jen 1 z 20. Téměř polovina je zdarma." },
 ];
@@ -232,15 +232,15 @@ const methodologyHtml = METHODOLOGY;
     <div class="mx-auto max-w-5xl px-6 py-16">
       <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("02", "Trakce")}</p>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Většina aplikací nikdy nezíská recenzi</h2>
-      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Polovina Shopify App Store nikdy nezískala jedinou recenzi. Tři ze čtyř aplikací mají méně než pět. Recenze je nejjasnější veřejný ukazatel skutečného a udrženého obchodu a většina aplikací nikdy žádnou nezíská.</p>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Polovina Shopify App Store nikdy nezískala jedinou recenzi. Čtyři z pěti aplikací mají méně než 10. Recenze je nejjasnější veřejný ukazatel skutečného a udrženého obchodu a většina aplikací nikdy žádnou nezíská.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
           <div class="h-72 sm:h-80"><canvas id="c-reviews" aria-label="Rozložení recenzí napříč všemi aktivními aplikacemi" role="img"></canvas></div>
         </div>
         <div class="space-y-4">
           <div class="rounded-xl border border-slate-200 p-6">
-            <p class="text-3xl font-bold text-[#16161D]">74%</p>
-            <p class="mt-1 text-slate-700">má méně než pět recenzí</p>
+            <p class="text-3xl font-bold text-[#16161D]">81%</p>
+            <p class="mt-1 text-slate-700">má méně než 10 recenzí</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-3xl">{REVIEWS.avgReviews}</span> <span class="text-sm font-medium text-slate-500">recenzí</span></p>
@@ -248,7 +248,7 @@ const methodologyHtml = METHODOLOGY;
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-3xl">{REVIEWS.medianReviews}</span> <span class="text-sm font-medium text-slate-500">recenzí</span></p>
-            <p class="mt-1 text-slate-700">pro typickou aplikaci</p>
+            <p class="mt-1 text-slate-700">medián mezi aplikacemi, které nějaké mají</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-amber-400">★</span> <span class="text-3xl">{REVIEWS.avgRating}</span> <span class="text-sm font-medium text-slate-500">hvězdy</span></p>

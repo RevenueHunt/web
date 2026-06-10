@@ -48,7 +48,7 @@ const FAQ = [
   {
     question: "Porque é que a maioria das apps de Shopify falha?",
     answer:
-      "Criar já não é a restrição, por isso a store inunda-se de apps que nunca encontram uma base de comerciantes. 51% não têm qualquer avaliação e 74% têm menos de cinco. O que é escasso é a distribuição e a confiança: responder a suporte, ganhar avaliações comerciante a comerciante, aparecer durante anos. Essa é a parte que a IA não pode fazer por ti.",
+      "Criar já não é a restrição, por isso a store inunda-se de apps que nunca encontram uma base de comerciantes. 51% não têm qualquer avaliação e 81% têm menos de 10. O que é escasso é a distribuição e a confiança: responder a suporte, ganhar avaliações comerciante a comerciante, aparecer durante anos. Essa é a parte que a IA não pode fazer por ti.",
   },
   {
     question: "Quanto ganham as apps de Shopify?",
@@ -117,7 +117,7 @@ const E = (n: string, label: string) => `${n} · ${label}`;
 // Translated headline cards. Stats stay from the shared data module (HEADLINE[i].stat).
 const headlineT = [
   { label: "apps ativas na store", note: "Multiplicado por 10 aproximadamente desde 2020." },
-  { label: "não têm qualquer avaliação", note: "Três em cada quatro têm menos de cinco." },
+  { label: "não têm qualquer avaliação", note: "Quatro em cada cinco têm menos de 10." },
   { label: "das receitas vão para o 1% do topo", note: "225 apps. Estimado." },
   { label: "cobram à cabeça", note: "Apenas 1 em cada 20. Quase metade são gratuitas." },
 ];
@@ -232,15 +232,15 @@ const methodologyHtml = METHODOLOGY;
     <div class="mx-auto max-w-5xl px-6 py-16">
       <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("02", "Tração")}</p>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">A maioria das apps nunca consegue uma avaliação</h2>
-      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Metade da Shopify App Store nunca ganhou uma única avaliação. Três em cada quatro apps têm menos de cinco. Uma avaliação é o indicador público mais claro de um comerciante real e retido, e a maioria das apps nunca consegue nenhuma.</p>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Metade da Shopify App Store nunca ganhou uma única avaliação. Quatro em cada cinco apps têm menos de 10. Uma avaliação é o indicador público mais claro de um comerciante real e retido, e a maioria das apps nunca consegue nenhuma.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
           <div class="h-72 sm:h-80"><canvas id="c-reviews" aria-label="Distribuição de avaliações entre todas as apps ativas" role="img"></canvas></div>
         </div>
         <div class="space-y-4">
           <div class="rounded-xl border border-slate-200 p-6">
-            <p class="text-3xl font-bold text-[#16161D]">74%</p>
-            <p class="mt-1 text-slate-700">têm menos de cinco avaliações</p>
+            <p class="text-3xl font-bold text-[#16161D]">81%</p>
+            <p class="mt-1 text-slate-700">têm menos de 10 avaliações</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-3xl">{REVIEWS.avgReviews}</span> <span class="text-sm font-medium text-slate-500">avaliações</span></p>
@@ -248,7 +248,7 @@ const methodologyHtml = METHODOLOGY;
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-3xl">{REVIEWS.medianReviews}</span> <span class="text-sm font-medium text-slate-500">avaliações</span></p>
-            <p class="mt-1 text-slate-700">para a app típica</p>
+            <p class="mt-1 text-slate-700">a mediana, entre as apps que têm uma</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-amber-400">★</span> <span class="text-3xl">{REVIEWS.avgRating}</span> <span class="text-sm font-medium text-slate-500">estrelas</span></p>

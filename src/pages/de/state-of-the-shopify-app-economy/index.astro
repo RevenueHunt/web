@@ -49,7 +49,7 @@ const FAQ = [
   {
     question: "Warum scheitern die meisten Shopify-Apps?",
     answer:
-      "Das Bauen ist nicht mehr der Engpass, also wird der Store mit Apps überschwemmt, die nie eine Händlerbasis finden. 51 % haben keine einzige Bewertung und 74 % haben weniger als fünf. Das Knappe ist Distribution und Vertrauen: Support beantworten, Bewertungen Händler für Händler verdienen, jahrelang präsent sein. Genau das ist der Teil, den KI dir nicht abnehmen kann.",
+      "Das Bauen ist nicht mehr der Engpass, also wird der Store mit Apps überschwemmt, die nie eine Händlerbasis finden. 51 % haben keine einzige Bewertung und 81 % haben weniger als 10. Das Knappe ist Distribution und Vertrauen: Support beantworten, Bewertungen Händler für Händler verdienen, jahrelang präsent sein. Genau das ist der Teil, den KI dir nicht abnehmen kann.",
   },
   {
     question: "Wie viel verdienen Shopify-Apps?",
@@ -118,7 +118,7 @@ const E = (n: string, label: string) => `${n} · ${label}`;
 // Translated headline cards. Stats stay from the shared data module (HEADLINE[i].stat).
 const headlineT = [
   { label: "aktive Apps im Store", note: "Etwa verzehnfacht seit 2020." },
-  { label: "haben keine einzige Bewertung", note: "Drei von vier haben weniger als fünf." },
+  { label: "haben keine einzige Bewertung", note: "Vier von fünf haben weniger als 10." },
   { label: "des Umsatzes geht an das oberste 1 %", note: "225 Apps. Geschätzt." },
   { label: "verlangen Geld im Voraus", note: "Nur 1 von 20. Fast die Hälfte ist kostenlos." },
 ];
@@ -233,15 +233,15 @@ const methodologyHtml = METHODOLOGY;
     <div class="mx-auto max-w-5xl px-6 py-16">
       <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("02", "Traktion")}</p>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Die meisten Apps bekommen nie eine Bewertung</h2>
-      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Die Hälfte des Shopify App Store hat nie eine einzige Bewertung verdient. Drei von vier Apps haben weniger als fünf. Eine Bewertung ist der klarste öffentliche Indikator für einen echten, gehaltenen Händler, und die meisten Apps bekommen nie eine.</p>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Die Hälfte des Shopify App Store hat nie eine einzige Bewertung verdient. Vier von fünf Apps haben weniger als 10. Eine Bewertung ist der klarste öffentliche Indikator für einen echten, gehaltenen Händler, und die meisten Apps bekommen nie eine.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
           <div class="h-72 sm:h-80"><canvas id="c-reviews" aria-label="Bewertungsverteilung über alle aktiven Apps" role="img"></canvas></div>
         </div>
         <div class="space-y-4">
           <div class="rounded-xl border border-slate-200 p-6">
-            <p class="text-3xl font-bold text-[#16161D]">74%</p>
-            <p class="mt-1 text-slate-700">haben weniger als fünf Bewertungen</p>
+            <p class="text-3xl font-bold text-[#16161D]">81%</p>
+            <p class="mt-1 text-slate-700">haben weniger als 10 Bewertungen</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-3xl">{REVIEWS.avgReviews}</span> <span class="text-sm font-medium text-slate-500">Bewertungen</span></p>
@@ -249,7 +249,7 @@ const methodologyHtml = METHODOLOGY;
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-3xl">{REVIEWS.medianReviews}</span> <span class="text-sm font-medium text-slate-500">Bewertungen</span></p>
-            <p class="mt-1 text-slate-700">für die typische App</p>
+            <p class="mt-1 text-slate-700">im Median, über die Apps, die eine haben</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-amber-400">★</span> <span class="text-3xl">{REVIEWS.avgRating}</span> <span class="text-sm font-medium text-slate-500">Sterne</span></p>

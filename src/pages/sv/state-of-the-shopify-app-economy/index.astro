@@ -49,7 +49,7 @@ const FAQ = [
   {
     question: "Varför misslyckas de flesta Shopify-appar?",
     answer:
-      "Att bygga är inte längre begränsningen, så butiken översvämmas av appar som aldrig hittar en handlarbas. 51 % har noll recensioner och 74 % har färre än fem. Det som är sällsynt är distribution och förtroende: att svara på support, att förtjäna recensioner en handlare i taget, att finnas där i åratal. Det är den delen AI inte kan göra åt dig.",
+      "Att bygga är inte längre begränsningen, så butiken översvämmas av appar som aldrig hittar en handlarbas. 51 % har noll recensioner och 81 % har färre än 10. Det som är sällsynt är distribution och förtroende: att svara på support, att förtjäna recensioner en handlare i taget, att finnas där i åratal. Det är den delen AI inte kan göra åt dig.",
   },
   {
     question: "Hur mycket tjänar Shopify-appar?",
@@ -118,7 +118,7 @@ const E = (n: string, label: string) => `${n} · ${label}`;
 // Translated headline cards. Stats stay from the shared data module (HEADLINE[i].stat).
 const headlineT = [
   { label: "aktiva appar i butiken", note: "Ungefär tiodubblat sedan 2020." },
-  { label: "har ingen enda recension", note: "Tre av fyra har färre än fem." },
+  { label: "har ingen enda recension", note: "Fyra av fem har färre än 10." },
   { label: "av intäkterna tas av den översta 1 %", note: "225 appar. Uppskattat." },
   { label: "tar betalt i förväg", note: "Bara 1 av 20. Nästan hälften är gratis." },
 ];
@@ -233,15 +233,15 @@ const methodologyHtml = METHODOLOGY;
     <div class="mx-auto max-w-5xl px-6 py-16">
       <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("02", "Genomslag")}</p>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">De flesta appar får aldrig en recension</h2>
-      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Hälften av Shopify App Store har aldrig fått en enda recension. Tre av fyra appar har färre än fem. En recension är den tydligaste offentliga indikatorn på en riktig och kvarhållen handlare, och de flesta appar får aldrig någon.</p>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Hälften av Shopify App Store har aldrig fått en enda recension. Fyra av fem appar har färre än 10. En recension är den tydligaste offentliga indikatorn på en riktig och kvarhållen handlare, och de flesta appar får aldrig någon.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
           <div class="h-72 sm:h-80"><canvas id="c-reviews" aria-label="Recensionsfördelning bland alla aktiva appar" role="img"></canvas></div>
         </div>
         <div class="space-y-4">
           <div class="rounded-xl border border-slate-200 p-6">
-            <p class="text-3xl font-bold text-[#16161D]">74%</p>
-            <p class="mt-1 text-slate-700">har färre än fem recensioner</p>
+            <p class="text-3xl font-bold text-[#16161D]">81%</p>
+            <p class="mt-1 text-slate-700">har färre än 10 recensioner</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-3xl">{REVIEWS.avgReviews}</span> <span class="text-sm font-medium text-slate-500">recensioner</span></p>
@@ -249,7 +249,7 @@ const methodologyHtml = METHODOLOGY;
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-3xl">{REVIEWS.medianReviews}</span> <span class="text-sm font-medium text-slate-500">recensioner</span></p>
-            <p class="mt-1 text-slate-700">för den typiska appen</p>
+            <p class="mt-1 text-slate-700">medianen, bland de appar som har en</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="font-bold text-[#16161D]"><span class="text-amber-400">★</span> <span class="text-3xl">{REVIEWS.avgRating}</span> <span class="text-sm font-medium text-slate-500">stjärnor</span></p>

@@ -137,18 +137,22 @@ export const GEOGRAPHY = {
   usIndiaShare: "39%",
   vietnamSignal: "46%",
   /**
-   * Builder pool, each split into review tiers (absolute counts). The chart
-   * shows the top 10 by whatever tiers are toggled on, so this is the 13-country
-   * union of every tier-combination's top 10, not just the top 10 by total.
-   * Ordered by total apps. The default view (all tiers) shows the first 10;
-   * Pakistan (zero-review "noise"), Israel and Singapore (10+ traction) only
-   * surface when the ranking changes. Mirrors apps.csv with review-tier cuts.
+   * Builder pool, each split into five review tiers (absolute counts), matching
+   * the REVIEWS donut cuts: 0, 1–9, 10–99, 100–999, 1,000+. The chart shows the
+   * top 10 by whatever tiers are toggled on, so this is the 16-country union of
+   * every tier-combination's top 10, not just the top 10 by total. Ordered by
+   * total apps. The default view (all tiers) shows the first 10; Pakistan
+   * (zero-review "noise"), Israel/Singapore (10+ traction) and Hong Kong/
+   * Lithuania/Romania (which only surface when the 100–999 or 1,000+ tier is
+   * isolated) appear when the ranking changes. Mirrors apps.csv with the cuts.
    */
   builders: {
-    labels: ["US", "India", "UK", "Canada", "Vietnam", "Germany", "Japan", "China", "Australia", "France", "Pakistan", "Israel", "Singapore"],
-    zero: [2463, 1882, 646, 514, 215, 338, 468, 374, 300, 251, 287, 157, 139],
-    low: [1690, 1049, 421, 324, 169, 236, 125, 164, 194, 180, 146, 136, 97],
-    high: [1202, 551, 242, 293, 326, 104, 49, 57, 98, 108, 44, 107, 94],
+    labels: ["US", "India", "UK", "Canada", "Vietnam", "Germany", "Japan", "China", "Australia", "France", "Pakistan", "Israel", "Singapore", "Hong Kong", "Lithuania", "Romania"],
+    zero: [2463, 1882, 646, 514, 215, 338, 468, 374, 300, 251, 287, 157, 139, 151, 65, 88],
+    low: [1690, 1049, 421, 324, 169, 236, 125, 164, 194, 180, 146, 136, 97, 85, 55, 51],
+    mid: [804, 412, 174, 191, 163, 85, 46, 44, 86, 93, 40, 66, 59, 40, 33, 24],
+    high: [348, 128, 59, 84, 130, 19, 3, 12, 9, 14, 4, 39, 27, 15, 17, 3],
+    vhigh: [50, 11, 9, 18, 33, 0, 0, 1, 3, 1, 0, 2, 8, 1, 6, 3],
   },
   /**
    * The same store re-ranked by apps that cleared 10+ reviews (real traction).
@@ -242,7 +246,7 @@ export interface ChartLabels {
   /** Top builder countries, same order as GEOGRAPHY.labels. Country names. */
   geography: string[];
   /** Stacked geography chart: review-tier legend. Optional until locale fan-out. */
-  geoTiers?: [string, string, string];
+  geoTiers?: [string, string, string, string, string];
   /** Signal-ranked geography bar tooltip; {n} = app count. Optional until fan-out. */
   geoSignalTip?: string;
   /**
@@ -263,7 +267,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     pricing: ["Completely free", "Free plan available", "Free trial", "Paid up front"],
     geography: ["US", "India", "UK", "Canada", "Vietnam", "China", "Japan", "Germany", "Australia", "France"],
     reviewsTip: { title: "Apps with {x} reviews", body: "{n} apps ({p}%)" },
-    geoTiers: ["0 reviews", "1–9 reviews", "10+ reviews"],
+    geoTiers: ["0 reviews", "1–9 reviews", "10–99 reviews", "100–999 reviews", "1,000+ reviews"],
     geoSignalTip: "{n} apps with 10+ reviews",
   },
   es: {
@@ -274,9 +278,9 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     pricing: ["Totalmente gratis", "Plan gratis disponible", "Prueba gratis", "De pago por adelantado"],
     geography: ["EE. UU.", "India", "Reino Unido", "Canadá", "Vietnam", "China", "Japón", "Alemania", "Australia", "Francia"],
     reviewsTip: { title: "Apps con {x} reseñas", body: "{n} apps ({p}%)" },
-    geoTiers: ["0 reseñas", "1–9 reseñas", "10+ reseñas"],
+    geoTiers: ["0 reseñas", "1–9 reseñas", "10–99 reseñas", "100–999 reseñas", "1,000+ reseñas"],
     geoSignalTip: "{n} apps con 10+ reseñas",
-    geoCountries: { US: "EE. UU.", India: "India", UK: "Reino Unido", Canada: "Canadá", Vietnam: "Vietnam", Germany: "Alemania", Japan: "Japón", China: "China", Australia: "Australia", France: "Francia", Pakistan: "Pakistán", Israel: "Israel", Singapore: "Singapur" },
+    geoCountries: { US: "EE. UU.", India: "India", UK: "Reino Unido", Canada: "Canadá", Vietnam: "Vietnam", Germany: "Alemania", Japan: "Japón", China: "China", Australia: "Australia", France: "Francia", Pakistan: "Pakistán", Israel: "Israel", Singapore: "Singapur", "Hong Kong": "Hong Kong", Lithuania: "Lituania", Romania: "Rumanía" },
   },
   de: {
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
@@ -286,9 +290,9 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     pricing: ["Komplett kostenlos", "Kostenloser Tarif verfügbar", "Kostenlose Testversion", "Vorab kostenpflichtig"],
     geography: ["USA", "Indien", "UK", "Kanada", "Vietnam", "China", "Japan", "Deutschland", "Australien", "Frankreich"],
     reviewsTip: { title: "Apps mit {x} Bewertungen", body: "{n} Apps ({p}%)" },
-    geoTiers: ["0 Bewertungen", "1–9 Bewertungen", "10+ Bewertungen"],
+    geoTiers: ["0 Bewertungen", "1–9 Bewertungen", "10–99 Bewertungen", "100–999 Bewertungen", "1,000+ Bewertungen"],
     geoSignalTip: "{n} Apps mit 10+ Bewertungen",
-    geoCountries: { US: "USA", India: "Indien", UK: "UK", Canada: "Kanada", Vietnam: "Vietnam", Germany: "Deutschland", Japan: "Japan", China: "China", Australia: "Australien", France: "Frankreich", Pakistan: "Pakistan", Israel: "Israel", Singapore: "Singapur" },
+    geoCountries: { US: "USA", India: "Indien", UK: "UK", Canada: "Kanada", Vietnam: "Vietnam", Germany: "Deutschland", Japan: "Japan", China: "China", Australia: "Australien", France: "Frankreich", Pakistan: "Pakistan", Israel: "Israel", Singapore: "Singapur", "Hong Kong": "Hongkong", Lithuania: "Litauen", Romania: "Rumänien" },
   },
   fr: {
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
@@ -298,9 +302,9 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     pricing: ["Entièrement gratuit", "Forfait gratuit disponible", "Essai gratuit", "Payant d'avance"],
     geography: ["États-Unis", "Inde", "Royaume-Uni", "Canada", "Vietnam", "Chine", "Japon", "Allemagne", "Australie", "France"],
     reviewsTip: { title: "Apps avec {x} avis", body: "{n} apps ({p}%)" },
-    geoTiers: ["0 avis", "1–9 avis", "10+ avis"],
+    geoTiers: ["0 avis", "1–9 avis", "10–99 avis", "100–999 avis", "1,000+ avis"],
     geoSignalTip: "{n} apps avec 10+ avis",
-    geoCountries: { US: "États-Unis", India: "Inde", UK: "Royaume-Uni", Canada: "Canada", Vietnam: "Vietnam", Germany: "Allemagne", Japan: "Japon", China: "Chine", Australia: "Australie", France: "France", Pakistan: "Pakistan", Israel: "Israël", Singapore: "Singapour" },
+    geoCountries: { US: "États-Unis", India: "Inde", UK: "Royaume-Uni", Canada: "Canada", Vietnam: "Vietnam", Germany: "Allemagne", Japan: "Japon", China: "Chine", Australia: "Australie", France: "France", Pakistan: "Pakistan", Israel: "Israël", Singapore: "Singapour", "Hong Kong": "Hong Kong", Lithuania: "Lituanie", Romania: "Roumanie" },
   },
   it: {
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
@@ -310,9 +314,9 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     pricing: ["Completamente gratis", "Piano gratuito disponibile", "Prova gratuita", "A pagamento in anticipo"],
     geography: ["USA", "India", "Regno Unito", "Canada", "Vietnam", "Cina", "Giappone", "Germania", "Australia", "Francia"],
     reviewsTip: { title: "App con {x} recensioni", body: "{n} app ({p}%)" },
-    geoTiers: ["0 recensioni", "1–9 recensioni", "10+ recensioni"],
+    geoTiers: ["0 recensioni", "1–9 recensioni", "10–99 recensioni", "100–999 recensioni", "1,000+ recensioni"],
     geoSignalTip: "{n} app con 10+ recensioni",
-    geoCountries: { US: "USA", India: "India", UK: "Regno Unito", Canada: "Canada", Vietnam: "Vietnam", Germany: "Germania", Japan: "Giappone", China: "Cina", Australia: "Australia", France: "Francia", Pakistan: "Pakistan", Israel: "Israele", Singapore: "Singapore" },
+    geoCountries: { US: "USA", India: "India", UK: "Regno Unito", Canada: "Canada", Vietnam: "Vietnam", Germany: "Germania", Japan: "Giappone", China: "Cina", Australia: "Australia", France: "Francia", Pakistan: "Pakistan", Israel: "Israele", Singapore: "Singapore", "Hong Kong": "Hong Kong", Lithuania: "Lituania", Romania: "Romania" },
   },
   nl: {
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
@@ -322,9 +326,9 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     pricing: ["Volledig gratis", "Gratis abonnement beschikbaar", "Gratis proefperiode", "Vooraf betaald"],
     geography: ["VS", "India", "VK", "Canada", "Vietnam", "China", "Japan", "Duitsland", "Australië", "Frankrijk"],
     reviewsTip: { title: "Apps met {x} reviews", body: "{n} apps ({p}%)" },
-    geoTiers: ["0 reviews", "1–9 reviews", "10+ reviews"],
+    geoTiers: ["0 reviews", "1–9 reviews", "10–99 reviews", "100–999 reviews", "1,000+ reviews"],
     geoSignalTip: "{n} apps met 10+ reviews",
-    geoCountries: { US: "VS", India: "India", UK: "VK", Canada: "Canada", Vietnam: "Vietnam", Germany: "Duitsland", Japan: "Japan", China: "China", Australia: "Australië", France: "Frankrijk", Pakistan: "Pakistan", Israel: "Israël", Singapore: "Singapore" },
+    geoCountries: { US: "VS", India: "India", UK: "VK", Canada: "Canada", Vietnam: "Vietnam", Germany: "Duitsland", Japan: "Japan", China: "China", Australia: "Australië", France: "Frankrijk", Pakistan: "Pakistan", Israel: "Israël", Singapore: "Singapore", "Hong Kong": "Hongkong", Lithuania: "Litouwen", Romania: "Roemenië" },
   },
   sv: {
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
@@ -334,9 +338,9 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     pricing: ["Helt gratis", "Gratisplan tillgänglig", "Gratis provperiod", "Betalning i förskott"],
     geography: ["USA", "Indien", "Storbritannien", "Kanada", "Vietnam", "Kina", "Japan", "Tyskland", "Australien", "Frankrike"],
     reviewsTip: { title: "Appar med {x} recensioner", body: "{n} appar ({p}%)" },
-    geoTiers: ["0 recensioner", "1–9 recensioner", "10+ recensioner"],
+    geoTiers: ["0 recensioner", "1–9 recensioner", "10–99 recensioner", "100–999 recensioner", "1,000+ recensioner"],
     geoSignalTip: "{n} appar med 10+ recensioner",
-    geoCountries: { US: "USA", India: "Indien", UK: "Storbritannien", Canada: "Kanada", Vietnam: "Vietnam", Germany: "Tyskland", Japan: "Japan", China: "Kina", Australia: "Australien", France: "Frankrike", Pakistan: "Pakistan", Israel: "Israel", Singapore: "Singapore" },
+    geoCountries: { US: "USA", India: "Indien", UK: "Storbritannien", Canada: "Kanada", Vietnam: "Vietnam", Germany: "Tyskland", Japan: "Japan", China: "Kina", Australia: "Australien", France: "Frankrike", Pakistan: "Pakistan", Israel: "Israel", Singapore: "Singapore", "Hong Kong": "Hongkong", Lithuania: "Litauen", Romania: "Rumänien" },
   },
   fi: {
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
@@ -346,9 +350,9 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     pricing: ["Täysin ilmainen", "Ilmainen taso saatavilla", "Ilmainen kokeilu", "Maksullinen etukäteen"],
     geography: ["USA", "Intia", "Britannia", "Kanada", "Vietnam", "Kiina", "Japani", "Saksa", "Australia", "Ranska"],
     reviewsTip: { title: "Sovellukset, joilla on {x} arvostelua", body: "{n} sovellusta ({p}%)" },
-    geoTiers: ["0 arvostelua", "1–9 arvostelua", "10+ arvostelua"],
+    geoTiers: ["0 arvostelua", "1–9 arvostelua", "10–99 arvostelua", "100–999 arvostelua", "1,000+ arvostelua"],
     geoSignalTip: "{n} sovellusta, joilla on 10+ arvostelua",
-    geoCountries: { US: "USA", India: "Intia", UK: "Britannia", Canada: "Kanada", Vietnam: "Vietnam", Germany: "Saksa", Japan: "Japani", China: "Kiina", Australia: "Australia", France: "Ranska", Pakistan: "Pakistan", Israel: "Israel", Singapore: "Singapore" },
+    geoCountries: { US: "USA", India: "Intia", UK: "Britannia", Canada: "Kanada", Vietnam: "Vietnam", Germany: "Saksa", Japan: "Japani", China: "Kiina", Australia: "Australia", France: "Ranska", Pakistan: "Pakistan", Israel: "Israel", Singapore: "Singapore", "Hong Kong": "Hongkong", Lithuania: "Liettua", Romania: "Romania" },
   },
   pl: {
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
@@ -358,9 +362,9 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     pricing: ["Całkowicie za darmo", "Dostępny darmowy plan", "Bezpłatny okres próbny", "Płatne z góry"],
     geography: ["USA", "Indie", "Wielka Brytania", "Kanada", "Wietnam", "Chiny", "Japonia", "Niemcy", "Australia", "Francja"],
     reviewsTip: { title: "Aplikacje z {x} recenzjami", body: "{n} aplikacji ({p}%)" },
-    geoTiers: ["0 recenzji", "1–9 recenzji", "10+ recenzji"],
+    geoTiers: ["0 recenzji", "1–9 recenzji", "10–99 recenzji", "100–999 recenzji", "1,000+ recenzji"],
     geoSignalTip: "{n} aplikacji z 10+ recenzjami",
-    geoCountries: { US: "USA", India: "Indie", UK: "Wielka Brytania", Canada: "Kanada", Vietnam: "Wietnam", Germany: "Niemcy", Japan: "Japonia", China: "Chiny", Australia: "Australia", France: "Francja", Pakistan: "Pakistan", Israel: "Izrael", Singapore: "Singapur" },
+    geoCountries: { US: "USA", India: "Indie", UK: "Wielka Brytania", Canada: "Kanada", Vietnam: "Wietnam", Germany: "Niemcy", Japan: "Japonia", China: "Chiny", Australia: "Australia", France: "Francja", Pakistan: "Pakistan", Israel: "Izrael", Singapore: "Singapur", "Hong Kong": "Hongkong", Lithuania: "Litwa", Romania: "Rumunia" },
   },
   cs: {
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
@@ -370,9 +374,9 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     pricing: ["Zcela zdarma", "Bezplatný tarif k dispozici", "Zkušební verze zdarma", "Placené předem"],
     geography: ["USA", "Indie", "Velká Británie", "Kanada", "Vietnam", "Čína", "Japonsko", "Německo", "Austrálie", "Francie"],
     reviewsTip: { title: "Aplikace s {x} recenzemi", body: "{n} aplikací ({p}%)" },
-    geoTiers: ["0 recenzí", "1–9 recenzí", "10+ recenzí"],
+    geoTiers: ["0 recenzí", "1–9 recenzí", "10–99 recenzí", "100–999 recenzí", "1,000+ recenzí"],
     geoSignalTip: "{n} aplikací s 10+ recenzemi",
-    geoCountries: { US: "USA", India: "Indie", UK: "Velká Británie", Canada: "Kanada", Vietnam: "Vietnam", Germany: "Německo", Japan: "Japonsko", China: "Čína", Australia: "Austrálie", France: "Francie", Pakistan: "Pákistán", Israel: "Izrael", Singapore: "Singapur" },
+    geoCountries: { US: "USA", India: "Indie", UK: "Velká Británie", Canada: "Kanada", Vietnam: "Vietnam", Germany: "Německo", Japan: "Japonsko", China: "Čína", Australia: "Austrálie", France: "Francie", Pakistan: "Pákistán", Israel: "Izrael", Singapore: "Singapur", "Hong Kong": "Hongkong", Lithuania: "Litva", Romania: "Rumunsko" },
   },
   pt: {
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
@@ -382,9 +386,9 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     pricing: ["Totalmente grátis", "Plano grátis disponível", "Teste grátis", "Pago antecipadamente"],
     geography: ["EUA", "Índia", "Reino Unido", "Canadá", "Vietname", "China", "Japão", "Alemanha", "Austrália", "França"],
     reviewsTip: { title: "Apps com {x} avaliações", body: "{n} apps ({p}%)" },
-    geoTiers: ["0 avaliações", "1–9 avaliações", "10+ avaliações"],
+    geoTiers: ["0 avaliações", "1–9 avaliações", "10–99 avaliações", "100–999 avaliações", "1,000+ avaliações"],
     geoSignalTip: "{n} apps com 10+ avaliações",
-    geoCountries: { US: "EUA", India: "Índia", UK: "Reino Unido", Canada: "Canadá", Vietnam: "Vietname", Germany: "Alemanha", Japan: "Japão", China: "China", Australia: "Austrália", France: "França", Pakistan: "Paquistão", Israel: "Israel", Singapore: "Singapura" },
+    geoCountries: { US: "EUA", India: "Índia", UK: "Reino Unido", Canada: "Canadá", Vietnam: "Vietname", Germany: "Alemanha", Japan: "Japão", China: "China", Australia: "Austrália", France: "França", Pakistan: "Paquistão", Israel: "Israel", Singapore: "Singapura", "Hong Kong": "Hong Kong", Lithuania: "Lituânia", Romania: "Roménia" },
   },
   ar: {
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
@@ -394,9 +398,9 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     pricing: ["مجاني تمامًا", "خطة مجانية متاحة", "تجربة مجانية", "مدفوع مقدمًا"],
     geography: ["الولايات المتحدة", "الهند", "المملكة المتحدة", "كندا", "فيتنام", "الصين", "اليابان", "ألمانيا", "أستراليا", "فرنسا"],
     reviewsTip: { title: "تطبيقات لها {x} مراجعات", body: "{n} تطبيق ({p}%)" },
-    geoTiers: ["0 مراجعة", "1–9 مراجعات", "10+ مراجعات"],
+    geoTiers: ["0 مراجعة", "1–9 مراجعات", "10–99 مراجعات", "100–999 مراجعات", "1,000+ مراجعات"],
     geoSignalTip: "{n} تطبيق بـ 10 مراجعات فأكثر",
-    geoCountries: { US: "الولايات المتحدة", India: "الهند", UK: "المملكة المتحدة", Canada: "كندا", Vietnam: "فيتنام", Germany: "ألمانيا", Japan: "اليابان", China: "الصين", Australia: "أستراليا", France: "فرنسا", Pakistan: "باكستان", Israel: "إسرائيل", Singapore: "سنغافورة" },
+    geoCountries: { US: "الولايات المتحدة", India: "الهند", UK: "المملكة المتحدة", Canada: "كندا", Vietnam: "فيتنام", Germany: "ألمانيا", Japan: "اليابان", China: "الصين", Australia: "أستراليا", France: "فرنسا", Pakistan: "باكستان", Israel: "إسرائيل", Singapore: "سنغافورة", "Hong Kong": "هونغ كونغ", Lithuania: "ليتوانيا", Romania: "رومانيا" },
   },
   he: {
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
@@ -406,8 +410,8 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     pricing: ["חינם לחלוטין", "תוכנית חינמית זמינה", "ניסיון חינם", "בתשלום מראש"],
     geography: ["ארצות הברית", "הודו", "בריטניה", "קנדה", "וייטנאם", "סין", "יפן", "גרמניה", "אוסטרליה", "צרפת"],
     reviewsTip: { title: "אפליקציות עם {x} ביקורות", body: "{n} אפליקציות ({p}%)" },
-    geoTiers: ["0 ביקורות", "1–9 ביקורות", "10+ ביקורות"],
+    geoTiers: ["0 ביקורות", "1–9 ביקורות", "10–99 ביקורות", "100–999 ביקורות", "1,000+ ביקורות"],
     geoSignalTip: "{n} אפליקציות עם 10+ ביקורות",
-    geoCountries: { US: "ארצות הברית", India: "הודו", UK: "בריטניה", Canada: "קנדה", Vietnam: "וייטנאם", Germany: "גרמניה", Japan: "יפן", China: "סין", Australia: "אוסטרליה", France: "צרפת", Pakistan: "פקיסטן", Israel: "ישראל", Singapore: "סינגפור" },
+    geoCountries: { US: "ארצות הברית", India: "הודו", UK: "בריטניה", Canada: "קנדה", Vietnam: "וייטנאם", Germany: "גרמניה", Japan: "יפן", China: "סין", Australia: "אוסטרליה", France: "צרפת", Pakistan: "פקיסטן", Israel: "ישראל", Singapore: "סינגפור", "Hong Kong": "הונג קונג", Lithuania: "ליטא", Romania: "רומניה" },
   },
 };

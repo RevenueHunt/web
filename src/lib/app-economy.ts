@@ -184,11 +184,11 @@ export const NICHES = {
     [1423, 1353, 721, 294, 50],
     [252, 174, 91, 42, 4],
   ],
-  deadNicheZero: "59%",
+  deadNicheSub10: "89%",
   bestNicheTraction: "58%",
   topSectorApps: "3,841",
   caption:
-    "The store's busiest lanes are its worst bets. Builders pour into shipping and chat, commodity utilities, and almost none earn a review: <strong>nearly 6 in 10 third-party logistics apps never get a single one</strong>. The apps that break through cluster where the work compounds - <strong>localization, pricing and dev-level customization</strong>, the tools that become load-bearing once a merchant installs them.",
+    "The store's busiest lanes are its worst bets. Builders pour into shipping and chat, commodity utilities, and almost none get traction: <strong>nearly 9 in 10 third-party logistics apps have fewer than 10 reviews</strong>. The apps that break through cluster where the work compounds - <strong>localization, pricing and dev-level customization</strong>, the tools that become load-bearing once a merchant installs them.",
 };
 
 /** The quiz category — RevenueHunt's own lane, the tie-back to the flagship. */

@@ -45,6 +45,8 @@ export const SOURCE = {
   countriesNote: "countries building them",
   reviewless: "51%",
   reviewlessNote: "with zero reviews",
+  free: "47%",
+  freeNote: "completely free, no paid plan",
 };
 
 /** Headline stat cards. */

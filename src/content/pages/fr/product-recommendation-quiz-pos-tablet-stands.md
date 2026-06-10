@@ -1,5 +1,5 @@
 ---
-title: "Product Recommendation Quiz pour supports de tablette POS"
+title: "Quiz de recommandation de produits pour supports de tablette POS"
 description: "Comment une marque de supports de tablette POS utilise un quiz de recommandation de produits pour orienter les clients vers le bon support selon leur matériel, leur fixation et leur cas d'usage. Étude de cas RevenueHunt."
 pubDate: 2022-02-08T09:43:32Z
 updatedDate: 2026-05-18T00:00:00Z

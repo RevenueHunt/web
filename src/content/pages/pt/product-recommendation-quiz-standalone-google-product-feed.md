@@ -11,7 +11,7 @@ draft: false
 lang: "pt"
 ---
 
-### Porquê escolher o Product Recommendation Quiz?
+### Porquê escolher o Quiz de recomendação de produtos?
 
 **Independente da plataforma:** Compatível com qualquer plataforma de e-commerce, incluindo lojas desenvolvidas à medida, Wix, Squarespace, Magento e muito mais.
 
@@ -52,7 +52,7 @@ Não há limites para o número de produtos ou quizzes que podes criar, mesmo no
 <details>
 <summary><strong>Posso usar isto com a minha loja desenvolvida à medida ou com plataformas de e-commerce menos comuns?</strong></summary>
 
-Com certeza! A nossa app Product Recommendation Quiz é uma solução standalone, ou seja, pode ser integrada em qualquer plataforma de e-commerce, incluindo lojas desenvolvidas à medida, configurações de e-commerce headless, Wix, SquareSpace, Magento e muito mais. Só precisas de incorporar o quiz na tua loja com um simples fragmento de código.
+Com certeza! A nossa app Quiz de recomendação de produtos é uma solução standalone, ou seja, pode ser integrada em qualquer plataforma de e-commerce, incluindo lojas desenvolvidas à medida, configurações de e-commerce headless, Wix, SquareSpace, Magento e muito mais. Só precisas de incorporar o quiz na tua loja com um simples fragmento de código.
 </details>
 
 <details>
@@ -101,16 +101,16 @@ Trabalhamos continuamente para melhorar a app e lançamos novas funcionalidades 
 
 <div class="rh-carousel">
 <div data-carousel class="rh-carousel__track">
-<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-1b.webp" alt="Captura de ecrã 1 do Product Recommendation Quiz"></figure>
-<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-2b.webp" alt="Captura de ecrã 2 do Product Recommendation Quiz"></figure>
-<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-3b.webp" alt="Captura de ecrã 3 do Product Recommendation Quiz"></figure>
-<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-4b.webp" alt="Captura de ecrã 4 do Product Recommendation Quiz"></figure>
-<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-5b.webp" alt="Captura de ecrã 5 do Product Recommendation Quiz"></figure>
-<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-6b.webp" alt="Captura de ecrã 6 do Product Recommendation Quiz"></figure>
+<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-1b.webp" alt="Captura de ecrã 1 do Quiz de recomendação de produtos"></figure>
+<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-2b.webp" alt="Captura de ecrã 2 do Quiz de recomendação de produtos"></figure>
+<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-3b.webp" alt="Captura de ecrã 3 do Quiz de recomendação de produtos"></figure>
+<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-4b.webp" alt="Captura de ecrã 4 do Quiz de recomendação de produtos"></figure>
+<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-5b.webp" alt="Captura de ecrã 5 do Quiz de recomendação de produtos"></figure>
+<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-6b.webp" alt="Captura de ecrã 6 do Quiz de recomendação de produtos"></figure>
 </div>
 <div data-carousel-dots class="rh-carousel__dots"></div>
 </div>
 
 ### Precisas de ajuda?
 
-Consulta o nosso [site de documentação](https://docs.revenuehunt.com/) para mais informações sobre como criar e publicar o teu primeiro Product Recommendation Quiz.
+Consulta o nosso [site de documentação](https://docs.revenuehunt.com/) para mais informações sobre como criar e publicar o teu primeiro Quiz de recomendação de produtos.

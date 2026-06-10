@@ -1,5 +1,5 @@
 ---
-title: "Product Recommendation Quiz per Wix Stores"
+title: "Quiz di raccomandazione dei prodotti per Wix Stores"
 description: "Un personal shopper digitale per Wix Stores. Crea quiz di raccomandazione prodotti che guidano ogni shopper verso il prodotto giusto. Senza codice, piano gratuito disponibile."
 pubDate: 2020-11-26T11:06:42Z
 updatedDate: 2026-05-18T00:00:00Z

@@ -20,6 +20,13 @@
  *  product-compendium.md (root); no invented conversion-lift percentages.
  */
 
+import type { Lang } from "./i18n";
+import { GLOSSARY_ES, GLOSSARY_RELATED_GUIDES_ES } from "./content/glossary.es";
+import { GLOSSARY_FR, GLOSSARY_RELATED_GUIDES_FR } from "./content/glossary.fr";
+import { GLOSSARY_DE, GLOSSARY_RELATED_GUIDES_DE } from "./content/glossary.de";
+import { GLOSSARY_PT, GLOSSARY_RELATED_GUIDES_PT } from "./content/glossary.pt";
+import { GLOSSARY_IT, GLOSSARY_RELATED_GUIDES_IT } from "./content/glossary.it";
+
 export interface GlossaryFaq {
   question: string;
   answer: string;
@@ -924,3 +931,22 @@ export const GLOSSARY_RELATED_GUIDES: GlossaryLink[] = [
     blurb: "Estimate the extra revenue a product recommendation quiz could add to your store.",
   },
 ];
+
+/** English source + per-locale translations of the glossary. */
+export const GLOSSARY_BY_LANG: Record<Lang, Record<string, GlossaryTerm>> = {
+  en: GLOSSARY,
+  es: GLOSSARY_ES,
+  fr: GLOSSARY_FR,
+  de: GLOSSARY_DE,
+  pt: GLOSSARY_PT,
+  it: GLOSSARY_IT,
+};
+
+export const GLOSSARY_RELATED_GUIDES_BY_LANG: Record<Lang, GlossaryLink[]> = {
+  en: GLOSSARY_RELATED_GUIDES,
+  es: GLOSSARY_RELATED_GUIDES_ES,
+  fr: GLOSSARY_RELATED_GUIDES_FR,
+  de: GLOSSARY_RELATED_GUIDES_DE,
+  pt: GLOSSARY_RELATED_GUIDES_PT,
+  it: GLOSSARY_RELATED_GUIDES_IT,
+};

@@ -1,6 +1,6 @@
 ---
-title: "Product Recommendation Quiz para Shopify"
-description: "Um assistente de compras pessoal digital para a Shopify. Obtém mais conversões ao envolver os teus clientes com um Product Recommendation Quiz na tua loja."
+title: "Quiz de recomendação de produtos para Shopify"
+description: "Um assistente de compras pessoal digital para a Shopify. Obtém mais conversões ao envolver os teus clientes com um Quiz de recomendação de produtos na tua loja."
 pubDate: 2020-05-18T09:49:15Z
 updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "product-recommendation-quiz-shopify"
@@ -11,7 +11,7 @@ draft: false
 lang: "pt"
 ---
 
-### Transforma visitantes ocasionais em compradores confiantes com um product recommendation quiz.
+### Transforma visitantes ocasionais em compradores confiantes com um quiz de recomendação de produtos.
 
 Cria quizzes de recomendação de produtos bonitos e com elevada taxa de conversão – sem precisares de programar. A RevenueHunt ajuda-te a orientar cada comprador até ao seu produto perfeito, a recolher dados valiosos e a gerar resultados mensuráveis em toda a tua loja e nos teus canais de marketing.
 
@@ -50,7 +50,7 @@ Faz um quiz antes de criares o teu. Cada quiz na nossa loja de demonstração é
 
 ### Precisas de ajuda?
 
-Consulta o nosso [site de documentação](https://docs.revenuehunt.com/) para mais informações sobre como criar e publicar o teu primeiro Product Recommendation Quiz.
+Consulta o nosso [site de documentação](https://docs.revenuehunt.com/) para mais informações sobre como criar e publicar o teu primeiro Quiz de recomendação de produtos.
 
 ### Perguntas frequentes
 

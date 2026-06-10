@@ -2,15 +2,21 @@
 import Base from "../../layouts/Base.astro";
 import { organization, breadcrumb, softwareApplication, faqPage } from "../../lib/schema";
 import { SITE } from "../../lib/site";
-import { COMPETITORS, COMPETITOR_ORDER, type Competitor } from "../../lib/competitors";
+import { COMPETITORS_BY_LANG, COMPETITOR_ORDER, type Competitor } from "../../lib/competitors";
+import { t, type Lang, localizedHref } from "../../lib/i18n";
+import { LT, fillLT } from "../../lib/content/longtail";
 
 interface Props {
   competitor: Competitor;
+  lang?: Lang;
+  translated?: boolean;
 }
 
-const { competitor } = Astro.props;
+const { competitor, lang = "en", translated = false } = Astro.props;
 const c = competitor;
-const url = `/compare/${c.slug}/`;
+const lt = LT[lang];
+const lp = (path: string) => localizedHref(path, lang);
+const url = lp(`/compare/${c.slug}/`);
 
 const SHOPIFY_INSTALL =
   "https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=compare_hero";
@@ -19,16 +25,17 @@ const DEMO_STORE = "https://productrecommendationquiz.com";
 const WOO_PLUGIN = "https://downloads.wordpress.org/plugin/product-recommendation-quiz-for-ecommerce.latest-stable.zip";
 
 // Sibling comparisons - every compare page links to the others.
+const localeCompetitors = COMPETITORS_BY_LANG[lang];
 const siblings = COMPETITOR_ORDER.filter((slug) => slug !== c.slug).map(
-  (slug) => COMPETITORS[slug]!,
+  (slug) => localeCompetitors[slug]!,
 );
 
 const jsonLd = [
   organization(),
   softwareApplication(),
   breadcrumb([
-    { name: "Home", url: "/" },
-    { name: "Compare", url: "/compare/" },
+    { name: t[lang].breadcrumb_home, url: lp("/") },
+    { name: lt.cmp_breadcrumb, url: lp("/compare/") },
     { name: `RevenueHunt vs ${c.name}`, url },
   ]),
   faqPage(c.faqs),
@@ -36,8 +43,8 @@ const jsonLd = [
 
 // Cell renderer: "yes" -> check, "no" -> dash, else literal text.
 function cell(value: string): { kind: "yes" | "no" | "text"; text: string } {
-  if (value === "yes") return { kind: "yes", text: "Yes" };
-  if (value === "no") return { kind: "no", text: "No" };
+  if (value === "yes") return { kind: "yes", text: lt.cmp_yes };
+  if (value === "no") return { kind: "no", text: lt.cmp_no };
   return { kind: "text", text: value };
 }
 ---
@@ -47,20 +54,22 @@ function cell(value: string): { kind: "yes" | "no" | "text"; text: string } {
   description={c.description}
   ogImage={`/og/compare-${c.slug}.png`}
   jsonLd={jsonLd}
+  lang={lang}
+  translated={translated}
 >
   <!-- Hero -->
   <section class="bg-gradient-to-b from-slate-50 to-white">
     <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
       <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
-        <a href="/" class="hover:text-slate-700">Home</a>
+        <a href={lp("/")} class="hover:text-slate-700">{t[lang].breadcrumb_home}</a>
         <span class="mx-2 text-slate-300">/</span>
-        <a href="/compare/" class="hover:text-slate-700">Compare</a>
+        <a href={lp("/compare/")} class="hover:text-slate-700">{lt.cmp_breadcrumb}</a>
         <span class="mx-2 text-slate-300">/</span>
         <span class="text-slate-700">RevenueHunt vs {c.name}</span>
       </nav>
       <div class="text-center">
         <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">
-          Comparison · RevenueHunt vs {c.category}
+          {lt.cmp_eyebrow_prefix} {c.category}
         </p>
         <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">{c.h1}</h1>
         <p class="mx-auto mt-6 max-w-3xl text-xl text-slate-600">{c.heroSubtitle}</p>
@@ -72,7 +81,7 @@ function cell(value: string): { kind: "yes" | "no" | "text"; text: string } {
             onclick={`window.gtag&&gtag('event','shopify_app_install',{event_label:'compare_${c.slug}'})`}
             class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
           >
-            install on Shopify
+            {lt.cmp_cta_install}
           </a>
           <a
             href={DEMO_STORE}
@@ -80,11 +89,11 @@ function cell(value: string): { kind: "yes" | "no" | "text"; text: string } {
             rel="external noopener"
             class="inline-flex items-center justify-center rounded-md border border-[#16161D] bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-50"
           >
-            see a live demo
+            {lt.cmp_cta_demo}
           </a>
         </div>
         <p class="mt-4 text-sm text-slate-500">
-          Free plan available · 15-day free trial · 30-day money-back guarantee
+          {lt.trial_note}
         </p>
       </div>
     </div>
@@ -103,14 +112,14 @@ function cell(value: string): { kind: "yes" | "no" | "text"; text: string } {
   <section class="bg-slate-50">
     <div class="mx-auto max-w-5xl px-6 py-16">
       <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-        RevenueHunt vs {c.name} at a glance
+        {fillLT(lt.cmp_table_h2, { name: c.name })}
       </h2>
-      <p class="mt-4 text-slate-700">The features that matter most for a Shopify product quiz.</p>
+      <p class="mt-4 text-slate-700">{lt.cmp_table_sub}</p>
       <div class="mt-8 overflow-x-auto rounded-xl border border-slate-200 bg-white">
         <table class="w-full text-left text-sm">
           <thead class="bg-slate-50 text-slate-900">
             <tr>
-              <th scope="col" class="px-4 py-3 font-semibold">Feature</th>
+              <th scope="col" class="px-4 py-3 font-semibold">{lt.cmp_col_feature}</th>
               <th scope="col" class="px-4 py-3 text-center font-semibold text-[#16161D]">RevenueHunt</th>
               <th scope="col" class="px-4 py-3 text-center font-semibold">{c.name}</th>
             </tr>
@@ -147,7 +156,7 @@ function cell(value: string): { kind: "yes" | "no" | "text"; text: string } {
         </table>
       </div>
       <p class="mt-4 text-xs text-slate-500">
-        Comparison based on publicly available information from each vendor as of {c.verifiedAsOf}. {c.name} pricing and features may have changed since, so check their site for the latest.
+        {fillLT(lt.cmp_note, { date: c.verifiedAsOf, name: c.name })}
       </p>
     </div>
   </section>
@@ -156,7 +165,7 @@ function cell(value: string): { kind: "yes" | "no" | "text"; text: string } {
   <section class="bg-white">
     <div class="mx-auto max-w-5xl px-6 py-16">
       <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-        Why merchants choose RevenueHunt over {c.name}
+        {fillLT(lt.cmp_why_h2, { name: c.name })}
       </h2>
       <div class="mt-10 grid gap-8 md:grid-cols-2">
         {c.whySwitch.map((card) => (
@@ -172,7 +181,7 @@ function cell(value: string): { kind: "yes" | "no" | "text"; text: string } {
   <!-- When the competitor is the better fit (fairness/credibility) -->
   <section class="bg-slate-50">
     <div class="mx-auto max-w-3xl px-6 py-14">
-      <h2 class="text-2xl font-bold tracking-tight text-slate-900">When {c.name} might be the better fit</h2>
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900">{fillLT(lt.cmp_bestfor_h2, { name: c.name })}</h2>
       <p class="mt-4 text-lg text-slate-700">{c.bestFor}</p>
     </div>
   </section>
@@ -180,7 +189,7 @@ function cell(value: string): { kind: "yes" | "no" | "text"; text: string } {
   <!-- Migration -->
   <section class="bg-white">
     <div class="mx-auto max-w-3xl px-6 py-14">
-      <h2 class="text-2xl font-bold tracking-tight text-slate-900">Switching from {c.name}</h2>
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900">{fillLT(lt.cmp_switch_h2, { name: c.name })}</h2>
       <p class="mt-4 text-lg text-slate-700">{c.migration}</p>
       <div class="mt-8 flex flex-wrap gap-3">
         <a
@@ -190,13 +199,13 @@ function cell(value: string): { kind: "yes" | "no" | "text"; text: string } {
           onclick={`window.gtag&&gtag('event','shopify_app_install',{event_label:'compare_${c.slug}_mid'})`}
           class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
         >
-          start free on Shopify
+          {lt.cmp_cta_start}
         </a>
         <a
-          href="/demo/"
+          href={lp("/demo/")}
           class="inline-flex items-center justify-center rounded-md border border-[#16161D] bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-50"
         >
-          book a demo
+          {lt.cmp_cta_book}
         </a>
       </div>
     </div>
@@ -205,7 +214,7 @@ function cell(value: string): { kind: "yes" | "no" | "text"; text: string } {
   <!-- FAQ -->
   <section class="bg-slate-50">
     <div class="mx-auto max-w-3xl px-6 py-16">
-      <h2 class="text-3xl font-bold tracking-tight text-slate-900">Frequently asked questions</h2>
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900">{lt.faq_h2}</h2>
       <div class="mt-10 divide-y divide-slate-200 border-y border-slate-200">
         {c.faqs.map((faq) => (
           <details class="group">
@@ -230,12 +239,12 @@ function cell(value: string): { kind: "yes" | "no" | "text"; text: string } {
   <!-- Other comparisons (sibling links) -->
   <section class="bg-white">
     <div class="mx-auto max-w-5xl px-6 py-16">
-      <h2 class="text-2xl font-bold tracking-tight text-slate-900">Compare other quiz tools</h2>
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900">{lt.cmp_other_h2}</h2>
       <ul class="mt-8 grid gap-4 sm:grid-cols-2" role="list">
         {siblings.map((s) => (
           <li>
             <a
-              href={`/compare/${s.slug}/`}
+              href={lp(`/compare/${s.slug}/`)}
               class="group block h-full rounded-xl border border-slate-200 p-6 transition hover:border-[#16161D] hover:shadow-md"
             >
               <h3 class="text-lg font-semibold text-slate-900 group-hover:text-[#16161D]">
@@ -243,7 +252,7 @@ function cell(value: string): { kind: "yes" | "no" | "text"; text: string } {
               </h3>
               <p class="mt-2 text-sm text-slate-600">{s.heroSubtitle}</p>
               <span class="mt-4 inline-flex items-center text-sm font-medium text-[#16161D]">
-                See comparison
+                {lt.cmp_see}
                 <svg class="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd" d="M7.21 4.29a1 1 0 011.42 0l5 5a1 1 0 010 1.42l-5 5a1 1 0 11-1.42-1.42L11.09 10 7.21 6.12a1 1 0 010-1.42z" clip-rule="evenodd" />
                 </svg>
@@ -259,10 +268,10 @@ function cell(value: string): { kind: "yes" | "no" | "text"; text: string } {
   <section class="bg-[#16161D]">
     <div class="mx-auto max-w-4xl px-6 py-20 text-center">
       <p class="mb-3 text-sm font-semibold uppercase tracking-wider text-white/70">
-        Most shoppers leave because they can't find the right product
+        {lt.cta_kicker}
       </p>
       <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-        Turn shoppers into confident buyers with a Product Recommendation Quiz that drives sales.
+        {lt.cta_h2}
       </h2>
       <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
         <a
@@ -272,7 +281,7 @@ function cell(value: string): { kind: "yes" | "no" | "text"; text: string } {
           onclick={`window.gtag&&gtag('event','shopify_app_install',{event_label:'compare_${c.slug}_bottom'})`}
           class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
         >
-          install on Shopify
+          {lt.cta_start_shopify}
         </a>
         <a
           href={WOO_PLUGIN}
@@ -281,7 +290,7 @@ function cell(value: string): { kind: "yes" | "no" | "text"; text: string } {
           onclick={`window.gtag&&gtag('event','woocommerce_plugin_click',{event_label:'compare_${c.slug}_bottom'})`}
           class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
         >
-          start free on WooCommerce
+          {lt.cta_start_woo}
         </a>
       </div>
     </div>

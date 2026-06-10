@@ -1,5 +1,5 @@
 ---
-title: "Product Recommendation Quiz pour Squarespace Commerce"
+title: "Quiz de recommandation de produits pour Squarespace Commerce"
 description: "Un personal shopper digital pour Squarespace Commerce. Créez des quizzes de recommandation de produits qui guident vos clients vers le bon produit. Sans code, offre gratuite disponible."
 pubDate: 2020-11-26T11:31:43Z
 updatedDate: 2026-05-18T00:00:00Z

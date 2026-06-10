@@ -121,6 +121,19 @@ reuse it for DE/PT/IT, then delete before the final commit.
 All 6 languages live: English (root) + Español, Français, Deutsch, Português, Italiano.
 Pre-existing e2e failures (`/call-scheduled/`, content-fidelity ≥95) remain — unrelated to i18n.
 
+### Phase 3 — long-tail SEO pages + polish (follow-up)
+- [x] MetricSpot-style language auto-detect + cookie memory (apex redirect, `rh_lang`)
+- [x] `solutions/[slug]` (15) + `compare`/`compare/[slug]` (6) + `glossary`/`glossary/[slug]` (12)
+      translated to all 5 languages: per-locale data modules (`*_BY_LANG`), lang-aware
+      `SolutionPage`/`ComparePage`/`GlossaryPage` + `CompareHub`/`GlossaryHub` via the `LT` chrome
+      dict, locale `[slug]` routes + hub wrappers; locale solutions-hub data fixed
+- [x] Correction: the generic phrase "product recommendation quiz" is now TRANSLATED natively
+      everywhere in locale copy (ES/FR/DE/PT/IT), not kept English (only "RevenueHunt" stays).
+      Swept all locale markdown, data modules, hand-built pages, and the locale objects in
+      chrome.ts. (The JSON-LD product entity name stays English by design.)
+- [x] typecheck 0 errors + build green (509 pages) + e2e (595 passed)
+- [x] **Commit** → merge to main → push → Cloudflare auto-deploy
+
 ## Notes / decisions
 - OG images: translated pages reuse existing English `/og/<slug>.png` (no localized OG art).
 - Existing English URLs unchanged; redirects untouched.

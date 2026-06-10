@@ -13,18 +13,18 @@ lang: "pt"
 
 ### Um product finder quiz é uma ferramenta interativa curta que faz 5 a 8 perguntas e devolve uma recomendação de produto personalizada – feita para lojas onde os clientes não sabem exatamente o que querem.
 
-O termo *product finder quiz* é muitas vezes usado como sinónimo de *product recommendation quiz*, *guided selling quiz* ou *shopping quiz*. Todos descrevem o mesmo princípio: uma experiência curta e estruturada que substitui o padrão de "explorar e desistir" das páginas de categoria por uma conversa guiada que termina numa correspondência de produto específica.
+O termo *product finder quiz* é muitas vezes usado como sinónimo de *quiz de recomendação de produtos*, *guided selling quiz* ou *shopping quiz*. Todos descrevem o mesmo princípio: uma experiência curta e estruturada que substitui o padrão de "explorar e desistir" das páginas de categoria por uma conversa guiada que termina numa correspondência de produto específica.
 
 Esta página é o guia prático: o que é um product finder quiz, em que é especialmente bom, em que difere de um recommendation quiz ou de um chatbot de AI, e como construir um em menos de 30 minutos.
 
-### Um product finder quiz é diferente de um product recommendation quiz?
+### Um product finder quiz é diferente de um quiz de recomendação de produtos?
 
 Na prática, não – são a mesma ferramenta. A designação reflete normalmente a intenção:
 
 -   **"Product finder"** realça o trabalho do *cliente*: ajudá-lo a encontrar o que quer.
 -   **"Product recommendation"** realça o trabalho da *loja*: fazer uma recomendação curada com base nas respostas do cliente.
 
-Ambos correm a mesma mecânica: perguntas → lógica condicional → pontuação contra o catálogo → resultado personalizado. Usamos "product recommendation quiz" como o nosso termo canónico, mas se pesquisaste por "product finder quiz", estás no sítio certo – lê o nosso [guia completo do product recommendation quiz](/product-recommendation-quiz/) para a análise aprofundada.
+Ambos correm a mesma mecânica: perguntas → lógica condicional → pontuação contra o catálogo → resultado personalizado. Usamos "quiz de recomendação de produtos" como o nosso termo canónico, mas se pesquisaste por "product finder quiz", estás no sítio certo – lê o nosso [guia completo do quiz de recomendação de produtos](/product-recommendation-quiz/) para a análise aprofundada.
 
 ### Para que é especialmente bom um product finder quiz
 
@@ -102,7 +102,7 @@ O product finder quiz da RevenueHunt começa em gratuito para até 100 respostas
 ### Perguntas frequentes
 
 <details>
-<summary><strong>Um product finder quiz é o mesmo que um product recommendation quiz?</strong></summary>
+<summary><strong>Um product finder quiz é o mesmo que um quiz de recomendação de produtos?</strong></summary>
 
 Sim – o mesmo princípio, nome diferente. "Finder" realça o trabalho do cliente; "recommendation" realça o trabalho da loja. Ambos correm um quiz curto e estruturado que devolve 2 a 5 correspondências de produto personalizadas.
 </details>
@@ -142,7 +142,7 @@ As marcas que usam a RevenueHunt veem normalmente taxas de conversão 2 a 4× ma
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Um product finder quiz é o mesmo que um product recommendation quiz?", "acceptedAnswer": {"@type": "Answer", "text": "Sim – o mesmo princípio, nome diferente. Finder realça o trabalho do cliente; recommendation realça o trabalho da loja. Ambos correm um quiz curto e estruturado que devolve 2 a 5 correspondências de produto personalizadas."}},
+    {"@type": "Question", "name": "Um product finder quiz é o mesmo que um quiz de recomendação de produtos?", "acceptedAnswer": {"@type": "Answer", "text": "Sim – o mesmo princípio, nome diferente. Finder realça o trabalho do cliente; recommendation realça o trabalho da loja. Ambos correm um quiz curto e estruturado que devolve 2 a 5 correspondências de produto personalizadas."}},
     {"@type": "Question", "name": "Em que difere um product finder quiz de um chatbot?", "acceptedAnswer": {"@type": "Answer", "text": "Um finder quiz é estruturado (escolha múltipla, sem escrever), curto (menos de 90 segundos) e adaptado a mobile. Um chatbot é de forma livre e exige que o cliente articule o que quer pelas próprias palavras."}},
     {"@type": "Question", "name": "Quantas perguntas deve ter um product finder quiz?", "acceptedAnswer": {"@type": "Answer", "text": "5 a 7 perguntas visíveis para a maioria dos setores. O conjunto completo de perguntas pode ser maior se usares lógica condicional para saltar perguntas irrelevantes para cada cliente."}},
     {"@type": "Question", "name": "Posso construir um gift finder quiz?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. O gift finder é um dos tipos de finder quiz com maior conversão. Faz 3 a 5 perguntas sobre o destinatário e depois devolve uma seleção de presentes curada."}},
@@ -154,4 +154,4 @@ As marcas que usam a RevenueHunt veem normalmente taxas de conversão 2 a 4× ma
 
 ### Saber mais
 
-[Guia completo do product recommendation quiz →](/product-recommendation-quiz/) | [Soluções de quiz por setor →](/solutions/) | [Preços →](/pricing/) | [Vê 12 finder quizzes ao vivo →](https://productrecommendationquiz.com/?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-finder-quiz-readmore)
+[Guia completo do quiz de recomendação de produtos →](/product-recommendation-quiz/) | [Soluções de quiz por setor →](/solutions/) | [Preços →](/pricing/) | [Vê 12 finder quizzes ao vivo →](https://productrecommendationquiz.com/?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-finder-quiz-readmore)

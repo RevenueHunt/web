@@ -1,6 +1,6 @@
 ---
-title: "Product Recommendation Quiz - le guide complet pour l'eCommerce"
-description: "Ce qu'est un product recommendation quiz, quand l'utiliser, comment le créer et 12 exemples en direct : skincare, compléments, alimentation pour chien, café et plus."
+title: "Quiz de recommandation de produits - le guide complet pour l'eCommerce"
+description: "Ce qu'est un quiz de recommandation de produits, quand l'utiliser, comment le créer et 12 exemples en direct : skincare, compléments, alimentation pour chien, café et plus."
 pubDate: 2020-05-18T12:21:47Z
 updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "product-recommendation-quiz"
@@ -11,15 +11,15 @@ draft: false
 lang: "fr"
 ---
 
-### Un product recommendation quiz est l'équivalent numérique d'un personal shopper : il guide chaque visiteur vers le bon produit grâce à une courte série de questions personnalisées.
+### Un quiz de recommandation de produits est l'équivalent numérique d'un personal shopper : il guide chaque visiteur vers le bon produit grâce à une courte série de questions personnalisées.
 
-Il fonctionne comme un vendeur dans une boutique physique. Un client entre, le vendeur lui pose 3 à 5 questions pour comprendre ce qu'il cherche, puis le conduit directement au bon rayon. En ligne, cette conversation est absente, et c'est pourquoi la plupart des sites eCommerce convertissent en dessous de 3 % même lorsqu'ils reçoivent un trafic à forte intention. Un product recommendation quiz fait revenir cette conversation. Les marques qui en utilisent un constatent généralement des taux de conversion 2 à 4× plus élevés sur le trafic du quiz comparé au trafic qui arrive sur une page de catégorie générique.
+Il fonctionne comme un vendeur dans une boutique physique. Un client entre, le vendeur lui pose 3 à 5 questions pour comprendre ce qu'il cherche, puis le conduit directement au bon rayon. En ligne, cette conversation est absente, et c'est pourquoi la plupart des sites eCommerce convertissent en dessous de 3 % même lorsqu'ils reçoivent un trafic à forte intention. Un quiz de recommandation de produits fait revenir cette conversation. Les marques qui en utilisent un constatent généralement des taux de conversion 2 à 4× plus élevés sur le trafic du quiz comparé au trafic qui arrive sur une page de catégorie générique.
 
-Cette page est le guide détaillé : ce qu'est un product recommendation quiz, comment il fonctionne réellement, quand l'utiliser, ce qui distingue un excellent quiz d'un quiz médiocre, et où voir 12 exemples en direct que vous pouvez essayer vous-même.
+Cette page est le guide détaillé : ce qu'est un quiz de recommandation de produits, comment il fonctionne réellement, quand l'utiliser, ce qui distingue un excellent quiz d'un quiz médiocre, et où voir 12 exemples en direct que vous pouvez essayer vous-même.
 
-### Qu'est-ce qu'un product recommendation quiz ?
+### Qu'est-ce qu'un quiz de recommandation de produits ?
 
-Un product recommendation quiz est une expérience interactive sur votre site qui :
+Un quiz de recommandation de produits est une expérience interactive sur votre site qui :
 
 1.  Pose au client 4 à 8 questions courtes sur ce qu'il veut, ce dont il a besoin ou ce qui compte pour lui
 2.  Utilise une logique conditionnelle pour ignorer les questions non pertinentes selon les réponses précédentes
@@ -29,18 +29,18 @@ Un product recommendation quiz est une expérience interactive sur votre site qu
 
 On l'appelle parfois *product finder quiz*, *personalized shopping quiz*, *guided selling quiz*, *solution finder* ou simplement *shopping quiz*. Ce sont tous la même base : un court contenu interactif sur le chemin vers le paiement, conçu pour supprimer la paralysie du choix.
 
-### En quoi un product recommendation quiz diffère des outils similaires
+### En quoi un quiz de recommandation de produits diffère des outils similaires
 
 | Outil | Ce qu'il fait | Quand il convient |
 |---|---|---|
 | **Barre de recherche** | Fait remonter les produits par correspondance de mot-clé | Le client sait ce qu'il veut |
 | **Page de catégorie filtrée** | Affine par attribut (taille, couleur, prix) | Le client sait quels attributs comptent pour lui |
 | **Chatbot AI** | Conversation libre, plus lente, friction plus élevée | Consultation complexe, recherche B2B |
-| **Product recommendation quiz** | Court formulaire structuré, rapide, sans saisie | Le client *ne sait pas* ce qu'il veut |
+| **Quiz de recommandation de produits** | Court formulaire structuré, rapide, sans saisie | Le client *ne sait pas* ce qu'il veut |
 
 Une page de catégorie suppose que le client sait sur quoi filtrer. Une barre de recherche suppose qu'il sait quoi chercher. Un quiz ne suppose rien, et c'est pourquoi il fonctionne pour les nouveaux visiteurs et pour ceux qui achètent un cadeau, là où tous les autres outils échouent.
 
-### Comment fonctionne un product recommendation quiz en coulisses
+### Comment fonctionne un quiz de recommandation de produits en coulisses
 
 Le mécanisme est assez simple pour s'expliquer en trois étapes, mais l'effet de levier se cumule :
 
@@ -52,7 +52,7 @@ Le mécanisme est assez simple pour s'expliquer en trois étapes, mais l'effet d
 
 La page de résultats est l'endroit où la conversion se produit. Boutons d'ajout au panier, badges (bestseller, nouveauté, dernières pièces), packs, ventes croisées et un opt-in email pour envoyer les résultats dans la boîte de réception du client afin qu'il puisse revenir plus tard.
 
-### Quand un product recommendation quiz est-il utile ?
+### Quand un quiz de recommandation de produits est-il utile ?
 
 Le quiz justifie sa place lorsque les clients font face à une *fatigue décisionnelle*. Trois scénarios où c'est la norme :
 
@@ -71,7 +71,7 @@ Les secteurs qui obtiennent systématiquement les meilleurs résultats :
 -   Articles pour la maison et décoration
 -   Catalogues techniques B2B (matériel POS, fournitures de laboratoire, industriel)
 
-### Ce qui distingue un excellent product recommendation quiz d'un quiz médiocre
+### Ce qui distingue un excellent quiz de recommandation de produits d'un quiz médiocre
 
 Après plus de 20 000 boutiques utilisant RevenueHunt, quelques constantes distinguent les quiz qui cartonnent de ceux qui sont ignorés :
 
@@ -82,7 +82,7 @@ Après plus de 20 000 boutiques utilisant RevenueHunt, quelques constantes disti
 -   **Ajout au panier sur la page de résultats, pas seulement des liens produit.** La friction tue la conversion.
 -   **Conception mobile-first.** 60 à 80 % du trafic du quiz est mobile. Si le quiz ne fonctionne pas sur un téléphone, rien d'autre ne compte.
 
-### Types courants de product recommendation quizzes
+### Types courants de quiz de recommandation de produits
 
 La même base, des formes différentes :
 
@@ -95,7 +95,7 @@ La même base, des formes différentes :
 
 ### Voir 12 exemples en direct
 
-Le moyen le plus rapide de comprendre un product recommendation quiz est d'en faire un. Notre boutique de démonstration propose 12 exemples fonctionnels : chaque quiz est un véritable quiz RevenueHunt que vous pouvez compléter de bout en bout :
+Le moyen le plus rapide de comprendre un quiz de recommandation de produits est d'en faire un. Notre boutique de démonstration propose 12 exemples fonctionnels : chaque quiz est un véritable quiz RevenueHunt que vous pouvez compléter de bout en bout :
 
 -   [Quiz skincare](https://productrecommendationquiz.com/pages/skin-analysis?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-recommendation-quiz-pillar)
 -   [Quiz haircare](https://productrecommendationquiz.com/pages/haircare-quiz?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-recommendation-quiz-pillar)
@@ -112,7 +112,7 @@ Le moyen le plus rapide de comprendre un product recommendation quiz est d'en fa
 
 Chacun prend 60 à 90 secondes. Le comportement sur votre boutique sera identique.
 
-### Comment créer un product recommendation quiz
+### Comment créer un quiz de recommandation de produits
 
 Le déroulement à haut niveau :
 
@@ -140,13 +140,13 @@ Choisissez la plateforme que vous utilisez :
 ### Questions fréquentes
 
 <details>
-<summary><strong>Quelle est la différence entre un product recommendation quiz et un chatbot ?</strong></summary>
+<summary><strong>Quelle est la différence entre un quiz de recommandation de produits et un chatbot ?</strong></summary>
 
 Un quiz est structuré (choix multiple, questions fixes), court (moins de 90 secondes) et fonctionne bien sur mobile. Un chatbot est libre, plus lent et dépend de la saisie du client, ce que la plupart ne feront pas sur mobile. Les quiz convertissent mieux pour le cas de la découverte ; les chatbots conviennent mieux au support après-vente.
 </details>
 
 <details>
-<summary><strong>Combien de questions un product recommendation quiz doit-il comporter ?</strong></summary>
+<summary><strong>Combien de questions un quiz de recommandation de produits doit-il comporter ?</strong></summary>
 
 5 à 8 questions pour la plupart des cas. En dessous de 4, vous ne pouvez pas différencier assez de produits. Au-delà de 10, les taux de complétion chutent fortement. Utilisez la logique conditionnelle pour ignorer les questions non pertinentes : cela permet de maintenir bas le nombre de questions *visibles* même si votre bibliothèque complète de questions est plus grande.
 </details>
@@ -158,25 +158,25 @@ Facultatif, jamais obligatoire. Le demander *avant* les résultats ouvre la voie
 </details>
 
 <details>
-<summary><strong>Combien coûte un product recommendation quiz ?</strong></summary>
+<summary><strong>Combien coûte un quiz de recommandation de produits ?</strong></summary>
 
 RevenueHunt commence gratuitement jusqu'à 100 réponses de quiz par mois. Les offres payantes démarrent à $39/mois pour 500 réponses et montent jusqu'à $299/mois en illimité. Toutes les offres incluent l'éditeur complet, la logique conditionnelle et les intégrations avec GA4, Meta Pixel, Klaviyo et d'autres.
 </details>
 
 <details>
-<summary><strong>Quel est le gain de conversion typique d'un product recommendation quiz ?</strong></summary>
+<summary><strong>Quel est le gain de conversion typique d'un quiz de recommandation de produits ?</strong></summary>
 
 Les marques qui utilisent RevenueHunt constatent généralement des taux de conversion 2 à 4× plus élevés sur le trafic du quiz par rapport au trafic qui arrive sur une page de catégorie générique. La croissance de la liste email bondit généralement de 30 à 60 % au premier trimestre, car les quiz surpassent les popups de newsletter génériques sur les taux d'opt-in.
 </details>
 
 <details>
-<summary><strong>Un product recommendation quiz nuit-il au SEO ou à la vitesse du site ?</strong></summary>
+<summary><strong>Un quiz de recommandation de produits nuit-il au SEO ou à la vitesse du site ?</strong></summary>
 
 Non. L'embed pèse moins de 50 Ko de JavaScript et est chargé en différé (lazy-load) par défaut. Les pages de quiz elles-mêmes peuvent se positionner sur des requêtes de longue traîne (par ex. « haircare quiz online ») et gagner des backlinks parce qu'il s'agit d'un contenu interactif réellement utile, ce qui devient de plus en plus rare sur le web.
 </details>
 
 <details>
-<summary><strong>Puis-je faire tourner un product recommendation quiz sur une boutique B2B ?</strong></summary>
+<summary><strong>Puis-je faire tourner un quiz de recommandation de produits sur une boutique B2B ?</strong></summary>
 
 Oui : les quiz de compatibilité B2B (matériel POS, fournitures de laboratoire, équipement industriel) figurent parmi les secteurs à plus forte conversion. Le quiz peut aussi pré-remplir des formulaires de demande de devis, orienter vers un commercial ou déclencher un webhook CRM interne avec les besoins de l'acheteur déjà capturés.
 </details>
@@ -186,13 +186,13 @@ Oui : les quiz de compatibilité B2B (matériel POS, fournitures de laboratoire,
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Quelle est la différence entre un product recommendation quiz et un chatbot ?", "acceptedAnswer": {"@type": "Answer", "text": "Un quiz est structuré (choix multiple, questions fixes), court (moins de 90 secondes) et fonctionne bien sur mobile. Un chatbot est libre, plus lent et dépend de la saisie du client. Les quiz convertissent mieux pour le cas de la découverte ; les chatbots conviennent mieux au support après-vente."}},
-    {"@type": "Question", "name": "Combien de questions un product recommendation quiz doit-il comporter ?", "acceptedAnswer": {"@type": "Answer", "text": "5 à 8 questions pour la plupart des cas. En dessous de 4, vous ne pouvez pas différencier assez de produits. Au-delà de 10, les taux de complétion chutent fortement. Utilisez la logique conditionnelle pour ignorer les questions non pertinentes."}},
+    {"@type": "Question", "name": "Quelle est la différence entre un quiz de recommandation de produits et un chatbot ?", "acceptedAnswer": {"@type": "Answer", "text": "Un quiz est structuré (choix multiple, questions fixes), court (moins de 90 secondes) et fonctionne bien sur mobile. Un chatbot est libre, plus lent et dépend de la saisie du client. Les quiz convertissent mieux pour le cas de la découverte ; les chatbots conviennent mieux au support après-vente."}},
+    {"@type": "Question", "name": "Combien de questions un quiz de recommandation de produits doit-il comporter ?", "acceptedAnswer": {"@type": "Answer", "text": "5 à 8 questions pour la plupart des cas. En dessous de 4, vous ne pouvez pas différencier assez de produits. Au-delà de 10, les taux de complétion chutent fortement. Utilisez la logique conditionnelle pour ignorer les questions non pertinentes."}},
     {"@type": "Question", "name": "Faut-il demander l'email avant ou après l'affichage des résultats ?", "acceptedAnswer": {"@type": "Answer", "text": "Facultatif, jamais obligatoire. Le demander avant les résultats ouvre la voie au réengagement par email pour les 60 à 70 % de clients qui n'achètent pas lors de la première visite, mais le rendre obligatoire fait baisser la complétion d'environ 30 %. Bonne pratique : demandez, rendez-le ignorable, ajoutez une incitation douce."}},
-    {"@type": "Question", "name": "Combien coûte un product recommendation quiz ?", "acceptedAnswer": {"@type": "Answer", "text": "RevenueHunt commence gratuitement jusqu'à 100 réponses de quiz par mois. Les offres payantes démarrent à $39/mois pour 500 réponses et montent jusqu'à $299/mois en illimité."}},
-    {"@type": "Question", "name": "Quel est le gain de conversion typique d'un product recommendation quiz ?", "acceptedAnswer": {"@type": "Answer", "text": "Les marques qui utilisent RevenueHunt constatent généralement des taux de conversion 2 à 4× plus élevés sur le trafic du quiz par rapport au trafic qui arrive sur une page de catégorie générique. La croissance de la liste email bondit généralement de 30 à 60 % au premier trimestre."}},
-    {"@type": "Question", "name": "Un product recommendation quiz nuit-il au SEO ou à la vitesse du site ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. L'embed pèse moins de 50 Ko de JavaScript et est chargé en différé (lazy-load) par défaut. Les pages de quiz elles-mêmes peuvent se positionner sur des requêtes de longue traîne et gagner des backlinks parce qu'il s'agit d'un contenu interactif réellement utile."}},
-    {"@type": "Question", "name": "Puis-je faire tourner un product recommendation quiz sur une boutique B2B ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui : les quiz de compatibilité B2B figurent parmi les secteurs à plus forte conversion. Le quiz peut aussi pré-remplir des formulaires de demande de devis, orienter vers un commercial ou déclencher un webhook CRM interne avec les besoins de l'acheteur déjà capturés."}}
+    {"@type": "Question", "name": "Combien coûte un quiz de recommandation de produits ?", "acceptedAnswer": {"@type": "Answer", "text": "RevenueHunt commence gratuitement jusqu'à 100 réponses de quiz par mois. Les offres payantes démarrent à $39/mois pour 500 réponses et montent jusqu'à $299/mois en illimité."}},
+    {"@type": "Question", "name": "Quel est le gain de conversion typique d'un quiz de recommandation de produits ?", "acceptedAnswer": {"@type": "Answer", "text": "Les marques qui utilisent RevenueHunt constatent généralement des taux de conversion 2 à 4× plus élevés sur le trafic du quiz par rapport au trafic qui arrive sur une page de catégorie générique. La croissance de la liste email bondit généralement de 30 à 60 % au premier trimestre."}},
+    {"@type": "Question", "name": "Un quiz de recommandation de produits nuit-il au SEO ou à la vitesse du site ?", "acceptedAnswer": {"@type": "Answer", "text": "Non. L'embed pèse moins de 50 Ko de JavaScript et est chargé en différé (lazy-load) par défaut. Les pages de quiz elles-mêmes peuvent se positionner sur des requêtes de longue traîne et gagner des backlinks parce qu'il s'agit d'un contenu interactif réellement utile."}},
+    {"@type": "Question", "name": "Puis-je faire tourner un quiz de recommandation de produits sur une boutique B2B ?", "acceptedAnswer": {"@type": "Answer", "text": "Oui : les quiz de compatibilité B2B figurent parmi les secteurs à plus forte conversion. Le quiz peut aussi pré-remplir des formulaires de demande de devis, orienter vers un commercial ou déclencher un webhook CRM interne avec les besoins de l'acheteur déjà capturés."}}
   ]
 }
 </script>

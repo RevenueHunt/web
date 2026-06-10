@@ -13,6 +13,13 @@
  *  specific, lead with RevenueHunt's real advantages, stay factual.
  */
 
+import type { Lang } from "./i18n";
+import { COMPETITORS_ES } from "./content/competitors.es";
+import { COMPETITORS_FR } from "./content/competitors.fr";
+import { COMPETITORS_DE } from "./content/competitors.de";
+import { COMPETITORS_PT } from "./content/competitors.pt";
+import { COMPETITORS_IT } from "./content/competitors.it";
+
 export interface CompareRow {
   feature: string;
   rh: string;
@@ -531,3 +538,13 @@ export const COMPETITORS: Record<string, Competitor> = {
 
 /** Stable order for sibling "other comparisons" links. */
 export const COMPETITOR_ORDER = ["octane-ai", "tolstoy", "typeform", "zoovu", "nosto", "jebbit"] as const;
+
+/** English source + per-locale translations of the competitor comparisons. */
+export const COMPETITORS_BY_LANG: Record<Lang, Record<string, Competitor>> = {
+  en: COMPETITORS,
+  es: COMPETITORS_ES,
+  fr: COMPETITORS_FR,
+  de: COMPETITORS_DE,
+  pt: COMPETITORS_PT,
+  it: COMPETITORS_IT,
+};

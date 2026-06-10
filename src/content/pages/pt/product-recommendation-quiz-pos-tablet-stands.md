@@ -1,6 +1,6 @@
 ---
-title: "Product Recommendation Quiz para suportes de tablet POS"
-description: "Como uma marca de suportes de tablet POS usa um product recommendation quiz para associar cada comprador ao suporte certo para o seu hardware, fixação e caso de uso. Estudo de caso RevenueHunt."
+title: "Quiz de recomendação de produtos para suportes de tablet POS"
+description: "Como uma marca de suportes de tablet POS usa um quiz de recomendação de produtos para associar cada comprador ao suporte certo para o seu hardware, fixação e caso de uso. Estudo de caso RevenueHunt."
 pubDate: 2022-02-08T09:43:32Z
 updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "product-recommendation-quiz-pos-tablet-stands"
@@ -11,11 +11,11 @@ draft: false
 lang: "pt"
 ---
 
-### Como as marcas de suportes de tablet POS usam um product recommendation quiz para associar cada comprador ao suporte certo.
+### Como as marcas de suportes de tablet POS usam um quiz de recomendação de produtos para associar cada comprador ao suporte certo.
 
 Os suportes de tablet para ponto de venda (POS) parecem simples por fora, mas a decisão de compra é tudo menos isso. Os compradores têm de combinar um suporte com a marca e o modelo do seu tablet, com a sua montagem de balcão ou parede, com o seu leitor de cartões e com o seu caso de uso - balcão de cafetaria, passagem de food truck, caixa de cabeleireiro, vendas móveis em eventos. Com dezenas de variantes de suporte na maioria dos catálogos, os clientes ou passam 20 minutos a comparar especificações ou abandonam.
 
-Um product recommendation quiz resolve isto em menos de 60 segundos: 5 a 7 perguntas, uma recomendação clara, com uma explicação «porquê este suporte» para cada correspondência.
+Um quiz de recomendação de produtos resolve isto em menos de 60 segundos: 5 a 7 perguntas, uma recomendação clara, com uma explicação «porquê este suporte» para cada correspondência.
 
 ### Porque é que o hardware POS é um ótimo segmento para um quiz
 

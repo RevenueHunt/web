@@ -1,6 +1,6 @@
 ---
-title: "Product Recommendation Quiz pour Shopify"
-description: "Un personal shopper digital pour Shopify. Obtenez plus de conversions en captant vos clients avec un Product Recommendation Quiz sur votre boutique."
+title: "Quiz de recommandation de produits pour Shopify"
+description: "Un personal shopper digital pour Shopify. Obtenez plus de conversions en captant vos clients avec un Quiz de recommandation de produits sur votre boutique."
 pubDate: 2020-05-18T09:49:15Z
 updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "product-recommendation-quiz-shopify"
@@ -50,7 +50,7 @@ Faites un quiz avant de créer le vôtre. Chaque quiz de notre boutique de démo
 
 ### Besoin d'aide ?
 
-Consultez notre [site de documentation](https://docs.revenuehunt.com/) pour plus d'informations sur la façon de créer et de publier votre premier Product Recommendation Quiz.
+Consultez notre [site de documentation](https://docs.revenuehunt.com/) pour plus d'informations sur la façon de créer et de publier votre premier Quiz de recommandation de produits.
 
 ### Questions fréquentes
 

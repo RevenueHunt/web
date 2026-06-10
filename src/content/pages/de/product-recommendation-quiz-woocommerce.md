@@ -1,6 +1,6 @@
 ---
-title: "Product Recommendation Quiz für WooCommerce"
-description: "Ein digitaler Personal Shopper für WooCommerce. Erziele mehr Conversions, indem du deine Kunden mit einem Product Recommendation Quiz in deinem Shop einbindest."
+title: "Produktempfehlungs-Quiz für WooCommerce"
+description: "Ein digitaler Personal Shopper für WooCommerce. Erziele mehr Conversions, indem du deine Kunden mit einem Produktempfehlungs-Quiz in deinem Shop einbindest."
 pubDate: 2020-05-18T10:03:27Z
 updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "product-recommendation-quiz-woocommerce"
@@ -11,7 +11,7 @@ draft: false
 lang: "de"
 ---
 
-### Über Product Recommendation Quiz für WooCommerce
+### Über Produktempfehlungs-Quiz für WooCommerce
 
 #### Conversational Marketing: erstelle einen automatisierten Verkaufstrichter für deinen WooCommerce-Shop
 
@@ -27,7 +27,7 @@ Von einem Verkäufer betreut zu werden, ist der Schlüssel zu einem gelungenen E
 
 Online-Shopper brauchen Orientierung, um zu finden, was sie suchen – genau wie in echten Geschäften.
 
-#### So funktioniert unser Product Recommendation Quiz
+#### So funktioniert unser Produktempfehlungs-Quiz
 
 Unser Personal Shopper bindet deine Kunden genau so ein, wie es ein Verkäufer tun würde, begleitet sie vom Start bis zum Warenkorb und sorgt dafür, dass sie genau das finden, wonach sie suchen.
 
@@ -48,7 +48,7 @@ Wir glauben, dass jede Marke ihre eigene Persönlichkeit hat. Unser Plugin erlau
 -   Conditional Logic. Deine Kunden sehen nie irrelevante Fragen. Das verbessert die Abschlussraten durch eine persönlichere, menschlichere Interaktion.
 -   Lead-Erfassung. Ermutige deine Kunden, ihre Kontaktdaten für Follow-ups oder Retargeting zu hinterlassen.
 
-#### Wann ist ein Product Recommendation Quiz für WooCommerce sinnvoll?
+#### Wann ist ein Produktempfehlungs-Quiz für WooCommerce sinnvoll?
 
 Shops, in denen Kunden mit Auswahlmöglichkeiten überfordert sind, eignen sich hervorragend. Beispiele sind:
 
@@ -86,7 +86,7 @@ Shops, in denen Kunden mit Auswahlmöglichkeiten überfordert sind, eignen sich 
 
 **MANUELLE INSTALLATION**
 
-Lade zunächst die neueste Version des [Product Recommendation Quiz für WooCommerce-Plugins](https://wordpress.org/plugins/product-recommendation-quiz-for-ecommerce/) herunter.
+Lade zunächst die neueste Version des [Produktempfehlungs-Quiz für WooCommerce-Plugins](https://wordpress.org/plugins/product-recommendation-quiz-for-ecommerce/) herunter.
 
 Melde dich in deinem WordPress-Dashboard an, navigiere zum Menü Plugins und klicke auf „Add New", dann auf „Upload Plugin". Wähle die heruntergeladene ZIP-Datei und klicke auf „Install Now".
 

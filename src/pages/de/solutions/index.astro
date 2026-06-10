@@ -3,15 +3,15 @@ import Base from "../../../layouts/Base.astro";
 import { organization, breadcrumb, softwareApplication } from "../../../lib/schema";
 import { SITE } from "../../../lib/site";
 import {
-  SOLUTIONS,
+  SOLUTIONS_BY_LANG,
   VERTICAL_ORDER,
   USECASE_ORDER,
   RELATED_GUIDES,
 } from "../../../lib/solutions";
 import { localizedHref } from "../../../lib/i18n";
 
-const verticals = VERTICAL_ORDER.map((slug) => SOLUTIONS[slug]!);
-const useCases = USECASE_ORDER.map((slug) => SOLUTIONS[slug]!);
+const verticals = VERTICAL_ORDER.map((slug) => SOLUTIONS_BY_LANG["de"][slug]!);
+const useCases = USECASE_ORDER.map((slug) => SOLUTIONS_BY_LANG["de"][slug]!);
 const all = [...verticals, ...useCases];
 
 const SHOPIFY_INSTALL =

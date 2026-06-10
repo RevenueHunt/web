@@ -1,6 +1,6 @@
 ---
-title: "Product Recommendation Quiz para BigCommerce"
-description: "Um personal shopper digital para BigCommerce. Consegue mais conversões envolvendo os teus clientes com um Product Recommendation Quiz na tua loja."
+title: "Quiz de recomendação de produtos para BigCommerce"
+description: "Um personal shopper digital para BigCommerce. Consegue mais conversões envolvendo os teus clientes com um Quiz de recomendação de produtos na tua loja."
 pubDate: 2020-09-21T10:18:26Z
 updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "product-recommendation-quiz-bigcommerce"
@@ -11,9 +11,9 @@ draft: false
 lang: "pt"
 ---
 
-### Converte visitantes casuais em compradores confiantes com um product recommendation quiz feito para BigCommerce.
+### Converte visitantes casuais em compradores confiantes com um quiz de recomendação de produtos feito para BigCommerce.
 
-A RevenueHunt é a app de product recommendation quiz mais bem avaliada no BigCommerce Marketplace. Cria quizzes bonitos e com elevada conversão que guiam cada cliente até ao produto certo, recolhe zero-party data que a tua equipa de marketing consegue realmente usar e sincroniza tudo de volta com o teu catálogo BigCommerce em tempo real - sem programação.
+A RevenueHunt é a app de quiz de recomendação de produtos mais bem avaliada no BigCommerce Marketplace. Cria quizzes bonitos e com elevada conversão que guiam cada cliente até ao produto certo, recolhe zero-party data que a tua equipa de marketing consegue realmente usar e sincroniza tudo de volta com o teu catálogo BigCommerce em tempo real - sem programação.
 
 A maioria dos merchants publica o seu primeiro quiz BigCommerce em menos de 15 minutos. A partir daí, funciona como o teu personal shopper digital sempre disponível: faz as perguntas certas, devolve um conjunto selecionado de 2 a 5 produtos e explica por que cada um se adequa.
 
@@ -23,7 +23,7 @@ A maioria dos merchants publica o seu primeiro quiz BigCommerce em menos de 15 m
 -   **Combina com a tua marca** – Personaliza tipos de letra, cores, layout e CSS para que o quiz pareça nativo, não acrescentado.
 -   **Suporte premium** – Trabalha com um dos nossos account managers para criar e lançar o teu primeiro quiz.
 
-### Como funcionam os product recommendation quizzes no BigCommerce
+### Como funcionam os quizzes de recomendação de produtos no BigCommerce
 
 O fluxo é simples, mas a alavancagem é significativa. Um cliente chega à tua loja, abre o quiz (inline, como popup ou como página de destino dedicada) e responde a 4 a 8 perguntas curtas sobre as suas necessidades, preferências ou restrições. Nos bastidores, a conditional logic salta perguntas irrelevantes, por isso um cliente que compra para si próprio nunca vê perguntas escritas para quem compra presentes, e um principiante nunca é questionado sobre especificações avançadas.
 
@@ -35,7 +35,7 @@ Toda a experiência é renderizada através das storefront APIs do BigCommerce, 
 
 O BigCommerce oferece-te algumas coisas que o Shopify e o WooCommerce não têm, e o quiz tira partido delas. O suporte multi-storefront significa que um quiz pode servir várias storefronts regionais com catálogos e moedas diferentes. A framework headless Stencil facilita a incorporação do quiz num front end personalizado sem perder o fluxo nativo de carrinho e checkout. E o esquema de produtos mais rigoroso do BigCommerce significa que as recomendações se mantêm precisas mesmo quando tens centenas de SKUs com regras de variantes complexas.
 
-Se já usaste um product recommendation quiz no Shopify ou no WooCommerce, a experiência BigCommerce vai parecer familiar - o mesmo builder, o mesmo motor de lógica, a mesma analítica - mas tudo passa pelas storefront e Catalog APIs do BigCommerce em vez do GraphQL do Shopify ou dos endpoints REST do WooCommerce.
+Se já usaste um quiz de recomendação de produtos no Shopify ou no WooCommerce, a experiência BigCommerce vai parecer familiar - o mesmo builder, o mesmo motor de lógica, a mesma analítica - mas tudo passa pelas storefront e Catalog APIs do BigCommerce em vez do GraphQL do Shopify ou dos endpoints REST do WooCommerce.
 
 ### Vê em ação
 
@@ -65,7 +65,7 @@ Ou [explora os 12 exemplos ao vivo](https://productrecommendationquiz.com/?utm_s
 -   Zapier
 -   Custom Webhooks
 
-### Quando é útil um product recommendation quiz para BigCommerce?
+### Quando é útil um quiz de recomendação de produtos para BigCommerce?
 
 As lojas onde os clientes enfrentam fadiga de decisão são as que melhor se adequam. Se as tuas páginas de categoria têm mais de 50 SKUs, os teus produtos têm muitas variantes ou os teus clientes tendem a sair depois de navegar por algumas páginas, um quiz transforma essa confusão num caminho guiado. Casos de uso comuns:
 
@@ -100,7 +100,7 @@ Instala a app, escolhe um modelo que se adeque ao teu segmento, escreve as tuas 
 </details>
 
 <details>
-<summary><strong>Existe um product recommendation quiz gratuito para BigCommerce?</strong></summary>
+<summary><strong>Existe um quiz de recomendação de produtos gratuito para BigCommerce?</strong></summary>
 
 Sim - começa com o nosso plano gratuito, com 100 respostas de quiz por mês e o builder totalmente desbloqueado. Quando ultrapassares o limite de respostas, faz upgrade sem perder dados, estrutura do quiz ou histórico de clientes.
 </details>
@@ -135,7 +135,7 @@ Sim. Cada storefront pode ter o seu próprio quiz (ou partilhar um único quiz c
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Como crio um quiz de produtos no BigCommerce?", "acceptedAnswer": {"@type": "Answer", "text": "Instala a app, escolhe um modelo que se adeque ao teu segmento, escreve as tuas perguntas e liga as respostas a produtos ou categorias BigCommerce. Publica como página inline, popup ou embed em ecrã inteiro. Não é preciso código - a maioria dos merchants lança o seu primeiro quiz em menos de 15 minutos."}},
-    {"@type": "Question", "name": "Existe um product recommendation quiz gratuito para BigCommerce?", "acceptedAnswer": {"@type": "Answer", "text": "Sim - começa com o nosso plano gratuito, com 100 respostas de quiz por mês e o builder totalmente desbloqueado. Quando ultrapassares o limite de respostas, faz upgrade sem perder dados, estrutura do quiz ou histórico de clientes."}},
+    {"@type": "Question", "name": "Existe um quiz de recomendação de produtos gratuito para BigCommerce?", "acceptedAnswer": {"@type": "Answer", "text": "Sim - começa com o nosso plano gratuito, com 100 respostas de quiz por mês e o builder totalmente desbloqueado. Quando ultrapassares o limite de respostas, faz upgrade sem perder dados, estrutura do quiz ou histórico de clientes."}},
     {"@type": "Question", "name": "Qual é o melhor funil de quiz para aumentar o AOV no BigCommerce?", "acceptedAnswer": {"@type": "Answer", "text": "Mantém o quiz entre 5 a 8 perguntas de elevada intenção, recolhe opcionalmente o email antes de mostrar os resultados e depois devolve 3 a 5 produtos personalizados com badges, sugestões de bundle e seletores de variante. Adiciona cross-sells na página de resultados e passa parâmetros UTM para que o GA4 atribua a receita de volta ao quiz."}},
     {"@type": "Question", "name": "Integra-se com o Klaviyo, GA4 e Meta Pixel no BigCommerce?", "acceptedAnswer": {"@type": "Answer", "text": "Sim - as respostas do quiz e os produtos recomendados são enviados para perfis ou listas do Klaviyo para fluxos segmentados. O GA4 e o Meta Pixel recebem ambos eventos nomeados, para que possas atribuir receita, construir lookalike audiences e otimizar campanhas especificamente para quem completa o quiz."}},
     {"@type": "Question", "name": "Posso criar um quiz de tamanho ou de fit para BigCommerce?", "acceptedAnswer": {"@type": "Answer", "text": "Sem dúvida. Faz 3 a 5 perguntas sobre fit e preferências, faz corresponder as respostas a variantes de produto ou tabelas de tamanhos BigCommerce e apresenta um tamanho recomendado por artigo com uma explicação por que este tamanho. As marcas que usam quizzes de fit costumam ver 20 a 40% menos devoluções relacionadas com tamanho."}},

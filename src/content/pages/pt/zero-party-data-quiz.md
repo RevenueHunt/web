@@ -15,7 +15,7 @@ lang: "pt"
 
 Os cookies de terceiros estão a desaparecer. As definições de privacidade do iOS já destruíram o rastreamento entre sites da Meta e da Google. A Mail Privacy Protection da Apple arruína o sinal das taxas de abertura. A resposta da indústria do marketing foi uma correria – rastreamento do lado do servidor, APIs de conversões, fingerprinting, modelos de lookalike. Tudo isto são pensos rápidos sobre a mesma ferida: não conheces realmente o teu cliente.
 
-Os zero-party data são a saída. São dados que o cliente te *dá*, em troca de um benefício (uma recomendação personalizada, uma experiência curada, um desconto). São exatos, consentidos, duradouros e funcionam independentemente do navegador, plataforma de anúncios ou sistema operativo que o cliente utilize. E um Product Recommendation Quiz é a forma mais eficiente de os recolher em escala.
+Os zero-party data são a saída. São dados que o cliente te *dá*, em troca de um benefício (uma recomendação personalizada, uma experiência curada, um desconto). São exatos, consentidos, duradouros e funcionam independentemente do navegador, plataforma de anúncios ou sistema operativo que o cliente utilize. E um Quiz de recomendação de produtos é a forma mais eficiente de os recolher em escala.
 
 ### O que são realmente os zero-party data – e porque importam em 2026
 
@@ -163,4 +163,4 @@ As marcas que segmentam os envios de e-mail pelos atributos captados no quiz cos
 
 ### Lê mais
 
-[Guia completo do Product Recommendation Quiz →](/product-recommendation-quiz/) | [Preços →](/pricing/) | [Vê 12 quizzes ao vivo →](https://productrecommendationquiz.com/?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=zero-party-data-quiz-readmore)
+[Guia completo do Quiz de recomendação de produtos →](/product-recommendation-quiz/) | [Preços →](/pricing/) | [Vê 12 quizzes ao vivo →](https://productrecommendationquiz.com/?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=zero-party-data-quiz-readmore)

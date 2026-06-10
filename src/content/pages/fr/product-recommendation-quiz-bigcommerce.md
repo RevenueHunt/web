@@ -1,6 +1,6 @@
 ---
-title: "Product Recommendation Quiz pour BigCommerce"
-description: "Un personal shopper digital pour BigCommerce. Obtenez plus de conversions en engageant vos clients avec un Product Recommendation Quiz sur votre boutique."
+title: "Quiz de recommandation de produits pour BigCommerce"
+description: "Un personal shopper digital pour BigCommerce. Obtenez plus de conversions en engageant vos clients avec un Quiz de recommandation de produits sur votre boutique."
 pubDate: 2020-09-21T10:18:26Z
 updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "product-recommendation-quiz-bigcommerce"

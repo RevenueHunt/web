@@ -11,7 +11,7 @@ draft: false
 lang: "de"
 ---
 
-### Warum Product Recommendation Quiz wählen?
+### Warum Produktempfehlungs-Quiz wählen?
 
 **Plattformunabhängig:** Kompatibel mit jeder E-Commerce-Plattform, einschließlich individuell entwickelter Shops, Wix, Squarespace, Magento und mehr.
 
@@ -52,7 +52,7 @@ Es gibt keine Begrenzung für die Anzahl der Produkte oder Quizze, die du erstel
 <details>
 <summary><strong>Kann ich das mit meinem individuell entwickelten Shop oder weniger verbreiteten E-Commerce-Plattformen nutzen?</strong></summary>
 
-Auf jeden Fall! Unsere Product Recommendation Quiz App ist eine Standalone-Lösung, das heißt, sie lässt sich in jede E-Commerce-Plattform integrieren, einschließlich individuell entwickelter Shops, Headless-E-Commerce-Setups, Wix, SquareSpace, Magento und mehr. Du musst das Quiz nur mit einem einfachen Code-Snippet in deinen Shop einbetten.
+Auf jeden Fall! Unsere Produktempfehlungs-Quiz App ist eine Standalone-Lösung, das heißt, sie lässt sich in jede E-Commerce-Plattform integrieren, einschließlich individuell entwickelter Shops, Headless-E-Commerce-Setups, Wix, SquareSpace, Magento und mehr. Du musst das Quiz nur mit einem einfachen Code-Snippet in deinen Shop einbetten.
 </details>
 
 <details>
@@ -101,16 +101,16 @@ Wir arbeiten kontinuierlich daran, die App zu verbessern, und veröffentlichen r
 
 <div class="rh-carousel">
 <div data-carousel class="rh-carousel__track">
-<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-1b.webp" alt="Product Recommendation Quiz Screenshot 1"></figure>
-<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-2b.webp" alt="Product Recommendation Quiz Screenshot 2"></figure>
-<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-3b.webp" alt="Product Recommendation Quiz Screenshot 3"></figure>
-<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-4b.webp" alt="Product Recommendation Quiz Screenshot 4"></figure>
-<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-5b.webp" alt="Product Recommendation Quiz Screenshot 5"></figure>
-<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-6b.webp" alt="Product Recommendation Quiz Screenshot 6"></figure>
+<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-1b.webp" alt="Produktempfehlungs-Quiz Screenshot 1"></figure>
+<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-2b.webp" alt="Produktempfehlungs-Quiz Screenshot 2"></figure>
+<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-3b.webp" alt="Produktempfehlungs-Quiz Screenshot 3"></figure>
+<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-4b.webp" alt="Produktempfehlungs-Quiz Screenshot 4"></figure>
+<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-5b.webp" alt="Produktempfehlungs-Quiz Screenshot 5"></figure>
+<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-6b.webp" alt="Produktempfehlungs-Quiz Screenshot 6"></figure>
 </div>
 <div data-carousel-dots class="rh-carousel__dots"></div>
 </div>
 
 ### Brauchst du Hilfe?
 
-Besuche unsere [Dokumentationsseite](https://docs.revenuehunt.com/) für weitere Informationen dazu, wie du dein erstes Product Recommendation Quiz erstellst und veröffentlichst.
+Besuche unsere [Dokumentationsseite](https://docs.revenuehunt.com/) für weitere Informationen dazu, wie du dein erstes Produktempfehlungs-Quiz erstellst und veröffentlichst.

@@ -103,7 +103,7 @@ RevenueHunts Guided Selling Quiz beginnt kostenlos für bis zu 100 Antworten pro
 ### Häufig gestellte Fragen
 
 <details>
-<summary><strong>Was ist der Unterschied zwischen einem Guided Selling Quiz und einem Product Recommendation Quiz?</strong></summary>
+<summary><strong>Was ist der Unterschied zwischen einem Guided Selling Quiz und einem Produktempfehlungs-Quiz?</strong></summary>
 
 Dasselbe Grundprinzip, andere Rahmung. „Guided Selling" betont, dass du den Käufer zu einer Entscheidung führst; „Product Recommendation" betont, dass du einen personalisierten Match zurückgibst. Beide sind kurze, strukturierte Quizze, die Antworten gegen deinen Katalog bewerten.
 </details>
@@ -143,7 +143,7 @@ Besonders gut. Je höher der AOV, desto mehr Entscheidungslähmung spürt ein Sh
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Was ist der Unterschied zwischen einem Guided Selling Quiz und einem Product Recommendation Quiz?", "acceptedAnswer": {"@type": "Answer", "text": "Dasselbe Grundprinzip, andere Rahmung. Guided Selling betont, dass du den Käufer zu einer Entscheidung führst; Product Recommendation betont, dass du einen personalisierten Match zurückgibst. Beide sind kurze, strukturierte Quizze, die Antworten gegen deinen Katalog bewerten."}},
+    {"@type": "Question", "name": "Was ist der Unterschied zwischen einem Guided Selling Quiz und einem Produktempfehlungs-Quiz?", "acceptedAnswer": {"@type": "Answer", "text": "Dasselbe Grundprinzip, andere Rahmung. Guided Selling betont, dass du den Käufer zu einer Entscheidung führst; Product Recommendation betont, dass du einen personalisierten Match zurückgibst. Beide sind kurze, strukturierte Quizze, die Antworten gegen deinen Katalog bewerten."}},
     {"@type": "Question", "name": "Ist Guided Selling nur für B2B?", "acceptedAnswer": {"@type": "Answer", "text": "Nein – es begann im B2B, ist aber inzwischen auch im Consumer-eCommerce Standard. Skincare, Nahrungsergänzungsmittel, Tierfutter, Bekleidungspassform, Geschenkempfehlungen – alles sind Consumer-Guided-Selling-Einsätze."}},
     {"@type": "Question", "name": "Welchen Conversion-Anstieg sollte ich von einem Guided Selling Quiz erwarten?", "acceptedAnswer": {"@type": "Answer", "text": "Marken sehen typischerweise eine 2 bis 4× höhere Conversion aus Quiz-Traffic im Vergleich zu Traffic von Kategorieseiten. Der Anstieg ist am größten bei Erstbesuchern, Geschenkkäufern und Shoppern mit erklärungsbedürftigen Käufen."}},
     {"@type": "Question", "name": "Wie funktioniert Guided Selling für Subscription-Produkte?", "acceptedAnswer": {"@type": "Answer", "text": "Füge eine Frage hinzu, die auf Plan-Eigenschaften abbildet. Die Ergebnisseite empfiehlt einen bestimmten Plan mit einem kostenlose Testphase starten-CTA, der für diesen Plan vorkonfiguriert ist. Manche Merchants nutzen das Quiz, um Käufer mit höherem Volumen für einen vertriebsgeführten Anmeldeablauf zu qualifizieren."}},
@@ -155,4 +155,4 @@ Besonders gut. Je höher der AOV, desto mehr Entscheidungslähmung spürt ein Sh
 
 ### Mehr lesen
 
-[Vollständiger Leitfaden zum Product Recommendation Quiz →](/product-recommendation-quiz/) | [Quiz-Lösungen nach Branche →](/solutions/) | [Preise →](/pricing/) | [12 Live-Quizze ansehen →](https://productrecommendationquiz.com/?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=guided-selling-quiz-readmore)
+[Vollständiger Leitfaden zum Produktempfehlungs-Quiz →](/product-recommendation-quiz/) | [Quiz-Lösungen nach Branche →](/solutions/) | [Preise →](/pricing/) | [12 Live-Quizze ansehen →](https://productrecommendationquiz.com/?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=guided-selling-quiz-readmore)

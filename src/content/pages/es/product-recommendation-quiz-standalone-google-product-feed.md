@@ -11,7 +11,7 @@ featuredImage: "/img/pages/product-recommendation-quiz-standalone-google-product
 draft: false
 ---
 
-### ¿Por qué elegir Product Recommendation Quiz?
+### ¿Por qué elegir Quiz de recomendación de productos?
 
 **Independiente de la plataforma:** compatible con cualquier plataforma de eCommerce, incluidas tiendas a medida, Wix, Squarespace, Magento y más.
 
@@ -52,7 +52,7 @@ No hay límites en el número de productos o quizzes que puedes crear, ni siquie
 <details>
 <summary><strong>¿Puedo usarlo con mi tienda a medida o con plataformas de eCommerce poco habituales?</strong></summary>
 
-¡Por supuesto! Nuestra app Product Recommendation Quiz es una solución standalone, lo que significa que puede integrarse en cualquier plataforma de eCommerce, incluidas tiendas a medida, configuraciones de eCommerce headless, Wix, SquareSpace, Magento y más. Solo tienes que insertar el quiz en tu tienda con un sencillo fragmento de código.
+¡Por supuesto! Nuestra app Quiz de recomendación de productos es una solución standalone, lo que significa que puede integrarse en cualquier plataforma de eCommerce, incluidas tiendas a medida, configuraciones de eCommerce headless, Wix, SquareSpace, Magento y más. Solo tienes que insertar el quiz en tu tienda con un sencillo fragmento de código.
 </details>
 
 <details>
@@ -101,16 +101,16 @@ Trabajamos continuamente para mejorar la app y publicamos nuevas funciones de fo
 
 <div class="rh-carousel">
 <div data-carousel class="rh-carousel__track">
-<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-1b.webp" alt="Captura de pantalla 1 de Product Recommendation Quiz"></figure>
-<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-2b.webp" alt="Captura de pantalla 2 de Product Recommendation Quiz"></figure>
-<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-3b.webp" alt="Captura de pantalla 3 de Product Recommendation Quiz"></figure>
-<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-4b.webp" alt="Captura de pantalla 4 de Product Recommendation Quiz"></figure>
-<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-5b.webp" alt="Captura de pantalla 5 de Product Recommendation Quiz"></figure>
-<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-6b.webp" alt="Captura de pantalla 6 de Product Recommendation Quiz"></figure>
+<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-1b.webp" alt="Captura de pantalla 1 de Quiz de recomendación de productos"></figure>
+<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-2b.webp" alt="Captura de pantalla 2 de Quiz de recomendación de productos"></figure>
+<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-3b.webp" alt="Captura de pantalla 3 de Quiz de recomendación de productos"></figure>
+<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-4b.webp" alt="Captura de pantalla 4 de Quiz de recomendación de productos"></figure>
+<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-5b.webp" alt="Captura de pantalla 5 de Quiz de recomendación de productos"></figure>
+<figure><img src="/img/pages/product-recommendation-quiz-standalone-google-product-feed/screenshot-6b.webp" alt="Captura de pantalla 6 de Quiz de recomendación de productos"></figure>
 </div>
 <div data-carousel-dots class="rh-carousel__dots"></div>
 </div>
 
 ### ¿Necesitas ayuda?
 
-Visita nuestro [sitio de documentación](https://docs.revenuehunt.com/) para obtener más información sobre cómo crear y publicar tu primer Product Recommendation Quiz.
+Visita nuestro [sitio de documentación](https://docs.revenuehunt.com/) para obtener más información sobre cómo crear y publicar tu primer Quiz de recomendación de productos.

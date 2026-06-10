@@ -1,6 +1,6 @@
 ---
-title: "Product Recommendation Quiz para Magento"
-description: "Product Recommendation Quiz para Magento – o módulo já não é suportado. Aqui ficam as tuas alternativas: o quiz autónomo ou migrar para Shopify ou WooCommerce."
+title: "Quiz de recomendação de produtos para Magento"
+description: "Quiz de recomendação de produtos para Magento – o módulo já não é suportado. Aqui ficam as tuas alternativas: o quiz autónomo ou migrar para Shopify ou WooCommerce."
 pubDate: 2020-11-27T15:51:27Z
 updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "product-recommendation-quiz-for-magento"
@@ -11,9 +11,9 @@ draft: false
 lang: "pt"
 ---
 
-### Product Recommendation Quiz para Magento – estado atual
+### Quiz de recomendação de produtos para Magento – estado atual
 
-A extensão nativa de Magento para o RevenueHunt Product Recommendation Quiz **já não tem suporte ativo.** Se tens hoje uma loja Magento e queres um quiz personalizado que recomende produtos e capte leads, tens três caminhos viáveis – e vamos percorrê-los todos abaixo.
+A extensão nativa de Magento para o RevenueHunt Quiz de recomendação de produtos **já não tem suporte ativo.** Se tens hoje uma loja Magento e queres um quiz personalizado que recomende produtos e capte leads, tens três caminhos viáveis – e vamos percorrê-los todos abaixo.
 
 Esta página existe para que possas chegar aqui a partir de uma pesquisa no Google, perceber a situação com honestidade e escolher o caminho que se adequa à tua loja sem perderes tempo numa instalação sem saída.
 
@@ -21,7 +21,7 @@ Esta página existe para que possas chegar aqui a partir de uma pesquisa no Goog
 
 #### Opção 1 – Usar o quiz autónomo (recomendado para a maioria das lojas Magento)
 
-O nosso [product recommendation quiz autónomo](/product-recommendation-quiz-standalone-google-product-feed/) liga-se ao teu catálogo Magento através de um Google Product Feed ou de uma exportação CSV. Os clientes fazem o quiz numa página alojada pelo construtor de quizzes (ou num iframe incorporado na tua montra Magento), e as recomendações ligam diretamente de volta às tuas páginas de detalhe de produto. O carrinho e o checkout permanecem nativos no Magento – o quiz só trata da camada de descoberta.
+O nosso [quiz de recomendação de produtos autónomo](/product-recommendation-quiz-standalone-google-product-feed/) liga-se ao teu catálogo Magento através de um Google Product Feed ou de uma exportação CSV. Os clientes fazem o quiz numa página alojada pelo construtor de quizzes (ou num iframe incorporado na tua montra Magento), e as recomendações ligam diretamente de volta às tuas páginas de detalhe de produto. O carrinho e o checkout permanecem nativos no Magento – o quiz só trata da camada de descoberta.
 
 É a escolha certa se queres manter o teu backend, a infraestrutura e as extensões existentes do Magento intactos. A configuração demora normalmente menos de uma hora, ficas com todas as integrações de analítica (GA4, Meta Pixel, Klaviyo) e não há nenhum módulo Magento para manter.
 
@@ -43,7 +43,7 @@ Se és atualmente cliente do módulo Magento descontinuado, ele continua a funci
 
 ### Vê um quiz ao vivo antes de decidir
 
-A forma mais rápida de perceber o que um product recommendation quiz faz pelas conversões é fazer um. A nossa loja de demonstração tem 12 exemplos a funcionar em diferentes setores:
+A forma mais rápida de perceber o que um quiz de recomendação de produtos faz pelas conversões é fazer um. A nossa loja de demonstração tem 12 exemplos a funcionar em diferentes setores:
 
 -   [Quiz de skincare](https://productrecommendationquiz.com/pages/skin-analysis?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-recommendation-quiz-for-magento) – branching visual, resultados com vários produtos
 -   [Quiz de suplementos](https://productrecommendationquiz.com/pages/supplements-quiz?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-recommendation-quiz-for-magento) – setor de saúde e bem-estar
@@ -64,7 +64,7 @@ Cada um é um quiz RevenueHunt a funcionar que podes completar de ponta a ponta.
 ### Perguntas frequentes
 
 <details>
-<summary><strong>Ainda existe um Product Recommendation Quiz a funcionar para Magento?</strong></summary>
+<summary><strong>Ainda existe um Quiz de recomendação de produtos a funcionar para Magento?</strong></summary>
 
 O módulo nativo de Magento já não é mantido, mas podes usar o nosso quiz autónomo com uma exportação de Google Product Feed a partir do Magento, ou migrar a tua montra para uma plataforma suportada. As instalações existentes do módulo nativo continuam a funcionar, mas não recebem atualizações.
 </details>
@@ -104,7 +104,7 @@ De momento não temos planos para reativar o módulo nativo. A nossa roadmap de 
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Ainda existe um Product Recommendation Quiz a funcionar para Magento?", "acceptedAnswer": {"@type": "Answer", "text": "O módulo nativo de Magento já não é mantido, mas podes usar o nosso quiz autónomo com uma exportação de Google Product Feed a partir do Magento, ou migrar a tua montra para uma plataforma suportada. As instalações existentes do módulo nativo continuam a funcionar, mas não recebem atualizações."}},
+    {"@type": "Question", "name": "Ainda existe um Quiz de recomendação de produtos a funcionar para Magento?", "acceptedAnswer": {"@type": "Answer", "text": "O módulo nativo de Magento já não é mantido, mas podes usar o nosso quiz autónomo com uma exportação de Google Product Feed a partir do Magento, ou migrar a tua montra para uma plataforma suportada. As instalações existentes do módulo nativo continuam a funcionar, mas não recebem atualizações."}},
     {"@type": "Question", "name": "Ainda posso instalar o antigo módulo Magento?", "acceptedAnswer": {"@type": "Answer", "text": "Se tiveres o pacote do módulo, ele instala e funciona em lojas Magento 2 existentes, mas não fornecemos suporte de instalação nem atualizações de compatibilidade. Não recomendamos novas instalações."}},
     {"@type": "Question", "name": "Qual é o caminho de migração de Magento para Shopify ou WooCommerce?", "acceptedAnswer": {"@type": "Answer", "text": "A maioria das agências trata das migrações de Magento para Shopify em 4 a 12 semanas, consoante o tamanho do catálogo, as personalizações e as integrações. Assim que estiveres migrado, a instalação do quiz na nova plataforma fica feita em menos de 15 minutos."}},
     {"@type": "Question", "name": "O quiz autónomo funciona com os dados de catálogo do Magento?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Exporta o teu catálogo Magento como Google Product Feed ou como um CSV simples, aponta o nosso construtor de quizzes para o URL do feed, e as correspondências de produtos mantêm-se sincronizadas automaticamente."}},

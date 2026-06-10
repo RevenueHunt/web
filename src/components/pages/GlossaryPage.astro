@@ -1,16 +1,22 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { organization, breadcrumb, softwareApplication, faqPage, definedTerm } from "../../lib/schema";
-import { GLOSSARY, GLOSSARY_ORDER, type GlossaryTerm } from "../../lib/glossary";
+import { GLOSSARY_BY_LANG, GLOSSARY_ORDER, type GlossaryTerm } from "../../lib/glossary";
+import { t, type Lang, localizedHref, OG_LOCALE } from "../../lib/i18n";
+import { LT, fillLT } from "../../lib/content/longtail";
 
 interface Props {
   entry: GlossaryTerm;
+  lang?: Lang;
+  translated?: boolean;
 }
 
-const { entry } = Astro.props;
+const { entry, lang = "en", translated = false } = Astro.props;
 const e = entry;
-const url = `/glossary/${e.slug}/`;
-const reviewed = new Date(e.verifiedAsOf).toLocaleDateString("en-US", {
+const lt = LT[lang];
+const lp = (path: string) => localizedHref(path, lang);
+const url = lp(`/glossary/${e.slug}/`);
+const reviewed = new Date(e.verifiedAsOf).toLocaleDateString(OG_LOCALE[lang].replace("_", "-"), {
   year: "numeric",
   month: "long",
   day: "numeric",
@@ -21,15 +27,15 @@ const SHOPIFY_INSTALL = `https://apps.shopify.com/product-recommendation-quiz-re
 const WOO_PLUGIN = "https://downloads.wordpress.org/plugin/product-recommendation-quiz-for-ecommerce.latest-stable.zip";
 
 // Other glossary terms, for the "more terms" grid.
-const siblings = GLOSSARY_ORDER.filter((slug) => slug !== e.slug).map((slug) => GLOSSARY[slug]!);
+const siblings = GLOSSARY_ORDER.filter((slug) => slug !== e.slug).map((slug) => GLOSSARY_BY_LANG[lang][slug]!);
 
 const jsonLd = [
   organization(),
   softwareApplication(),
   definedTerm({ name: e.term, description: e.shortAnswer, url }),
   breadcrumb([
-    { name: "Home", url: "/" },
-    { name: "Glossary", url: "/glossary/" },
+    { name: t[lang].breadcrumb_home, url: lp("/") },
+    { name: lt.gl_breadcrumb, url: lp("/glossary/") },
     { name: e.term, url },
   ]),
   faqPage(e.faqs),
@@ -41,26 +47,28 @@ const jsonLd = [
   description={e.description}
   ogImage={`/og/glossary-${e.slug}.png`}
   jsonLd={jsonLd}
+  lang={lang}
+  translated={translated}
 >
   <!-- Hero + answer-first definition -->
   <section class="bg-gradient-to-b from-slate-50 to-white">
     <div class="mx-auto max-w-3xl px-6 py-16 sm:py-20">
       <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
-        <a href="/" class="hover:text-slate-700">Home</a>
+        <a href={lp("/")} class="hover:text-slate-700">{t[lang].breadcrumb_home}</a>
         <span class="mx-2 text-slate-300">/</span>
-        <a href="/glossary/" class="hover:text-slate-700">Glossary</a>
+        <a href={lp("/glossary/")} class="hover:text-slate-700">{lt.gl_breadcrumb}</a>
         <span class="mx-2 text-slate-300">/</span>
         <span class="text-slate-700">{e.term}</span>
       </nav>
       <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">
-        Glossary · {e.chip}
+        {lt.gl_eyebrow} · {e.chip}
       </p>
       <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">{e.h1}</h1>
       <!-- The featured-snippet hook: a 1-2 sentence answer directly under H1. -->
       <p class="mt-6 border-l-4 border-[#16161D] bg-white py-3 pl-5 pr-4 text-xl text-slate-800">
         {e.shortAnswer}
       </p>
-      <p class="mt-3 text-sm text-slate-500">Last reviewed {reviewed}</p>
+      <p class="mt-3 text-sm text-slate-500">{fillLT(lt.gl_reviewed, { date: reviewed })}</p>
       {e.intro.length > 0 && (
         <div class="mt-6 space-y-4 text-lg text-slate-700">
           {e.intro.map((p) => <p>{p}</p>)}
@@ -90,7 +98,7 @@ const jsonLd = [
     <div class="mx-auto max-w-3xl px-6 py-14">
       <div class="rounded-2xl border border-slate-200 bg-white p-8">
         <h2 class="text-2xl font-bold tracking-tight text-slate-900">
-          {e.term} with RevenueHunt
+          {fillLT(lt.gl_with_rh_h2, { term: e.term })}
         </h2>
         <div class="mt-5 space-y-4 text-lg text-slate-700">
           {e.withRevenueHunt.map((p) => <p>{p}</p>)}
@@ -103,13 +111,13 @@ const jsonLd = [
             onclick={`window.gtag&&gtag('event','shopify_app_install',{event_label:'glossary_${e.slug}'})`}
             class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
           >
-            start free on Shopify
+            {lt.gl_cta_start}
           </a>
           <a
             href="/how-it-works/"
             class="inline-flex items-center justify-center rounded-md border border-[#16161D] bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-50"
           >
-            see how it works
+            {lt.gl_cta_how}
           </a>
         </div>
       </div>
@@ -119,7 +127,7 @@ const jsonLd = [
   <!-- FAQ -->
   <section class="bg-white">
     <div class="mx-auto max-w-3xl px-6 py-16">
-      <h2 class="text-3xl font-bold tracking-tight text-slate-900">Frequently asked questions</h2>
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900">{lt.faq_h2}</h2>
       <div class="mt-10 divide-y divide-slate-200 border-y border-slate-200">
         {e.faqs.map((faq) => (
           <details class="group">
@@ -144,7 +152,7 @@ const jsonLd = [
   <!-- Related + more terms -->
   <section class="bg-slate-50">
     <div class="mx-auto max-w-5xl px-6 py-16">
-      <h2 class="text-2xl font-bold tracking-tight text-slate-900">Related reading</h2>
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900">{lt.gl_related_h2}</h2>
       <ul class="mt-8 flex flex-wrap gap-3" role="list">
         {e.related.map((r) => (
           <li>
@@ -159,12 +167,12 @@ const jsonLd = [
         ))}
       </ul>
 
-      <h2 class="mt-14 text-2xl font-bold tracking-tight text-slate-900">More glossary terms</h2>
+      <h2 class="mt-14 text-2xl font-bold tracking-tight text-slate-900">{lt.gl_more_h2}</h2>
       <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" role="list">
         {siblings.map((sib) => (
           <li>
             <a
-              href={`/glossary/${sib.slug}/`}
+              href={lp(`/glossary/${sib.slug}/`)}
               class="group block h-full rounded-xl border border-slate-200 bg-white p-6 transition hover:border-[#16161D] hover:shadow-md"
             >
               <h3 class="text-base font-semibold text-slate-900 group-hover:text-[#16161D]">{sib.term}</h3>
@@ -180,7 +188,7 @@ const jsonLd = [
   <section class="bg-[#16161D]">
     <div class="mx-auto max-w-4xl px-6 py-20 text-center">
       <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-        Put it into practice with a product recommendation quiz.
+        {lt.gl_cta_h2}
       </h2>
       <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
         <a
@@ -190,7 +198,7 @@ const jsonLd = [
           onclick={`window.gtag&&gtag('event','shopify_app_install',{event_label:'glossary_${e.slug}_bottom'})`}
           class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
         >
-          start free on Shopify
+          {lt.cta_start_shopify}
         </a>
         <a
           href={WOO_PLUGIN}
@@ -199,7 +207,7 @@ const jsonLd = [
           onclick={`window.gtag&&gtag('event','woocommerce_plugin_click',{event_label:'glossary_${e.slug}_bottom'})`}
           class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
         >
-          start free on WooCommerce
+          {lt.cta_start_woo}
         </a>
       </div>
     </div>

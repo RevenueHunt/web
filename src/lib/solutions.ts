@@ -18,6 +18,13 @@
  *  them from `related` instead.
  */
 
+import type { Lang } from "./i18n";
+import { SOLUTIONS_ES } from "./content/solutions.es";
+import { SOLUTIONS_FR } from "./content/solutions.fr";
+import { SOLUTIONS_DE } from "./content/solutions.de";
+import { SOLUTIONS_PT } from "./content/solutions.pt";
+import { SOLUTIONS_IT } from "./content/solutions.it";
+
 export interface SolutionQuizType {
   title: string;
   body: string;
@@ -1205,3 +1212,13 @@ export const RELATED_GUIDES: SolutionLink[] = [
     blurb: "Plain-English definitions of the quiz and personalization terms that matter in ecommerce.",
   },
 ];
+
+/** English source + per-locale translations of the solutions catalog. */
+export const SOLUTIONS_BY_LANG: Record<Lang, Record<string, Solution>> = {
+  en: SOLUTIONS,
+  es: SOLUTIONS_ES,
+  fr: SOLUTIONS_FR,
+  de: SOLUTIONS_DE,
+  pt: SOLUTIONS_PT,
+  it: SOLUTIONS_IT,
+};

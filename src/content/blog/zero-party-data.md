@@ -113,7 +113,7 @@ There are six methods that consistently work. We've ordered them by leverage per
 
 ### 1. Product recommendation quizzes
 
-A product recommendation quiz is the highest-yield zero-party collection mechanism available to an eCommerce store. Three to seven diagnostic questions, a personalised result page, and the customer walks away with a recommendation while you walk away with a structured profile.
+A [product recommendation quiz](/product-recommendation-quiz/) is the highest-yield zero-party collection mechanism available to an eCommerce store. Three to seven diagnostic questions, a personalised result page, and the customer walks away with a recommendation while you walk away with a structured profile.
 
 Why it dominates: the quiz wraps the data ask inside an obvious value exchange. The customer isn't filling out a form; they're being helped to choose. Completion rates regularly exceed 40% on well-designed quizzes, and every completion produces multiple preference attributes (skin type, primary concern, age range, budget, shopping-for, lifestyle) that map directly to email and ad platforms.
 

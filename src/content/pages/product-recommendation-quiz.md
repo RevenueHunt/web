@@ -198,4 +198,4 @@ Yes - B2B compatibility quizzes (POS hardware, lab supplies, industrial equipmen
 
 ### Read more
 
-[How it works →](/how-it-works/) | [Pricing →](/pricing/) | [Browse all integrations →](/integrations/) | [See 12 live quiz examples →](https://productrecommendationquiz.com/?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-recommendation-quiz-pillar-readmore)
+[How it works →](/how-it-works/) | [Pricing →](/pricing/) | [Browse all integrations →](/integrations/) | [Zero-party data guide →](/zero-party-data/) | [Ecommerce sales funnel guide →](/build-sales-funnel-shopify-store/) | [See 12 live quiz examples →](https://productrecommendationquiz.com/?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=product-recommendation-quiz-pillar-readmore)

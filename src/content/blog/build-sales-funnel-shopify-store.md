@@ -238,7 +238,7 @@ The same five-step build sequence works for skincare, supplements, apparel, eyew
 
 ### Step 1: Capture intent with a quiz at the top of the funnel
 
-The quiz is the single highest-leverage funnel component because it converts a passing shopper into an actively engaged participant by offering a clear value exchange: "answer five questions, get a recommendation tailored to you." A well-designed quiz produces a 40-60% completion rate, captures email and SMS consent inside the natural flow rather than as a friction-inducing popup, and generates structured preference data that every downstream channel will use.
+The [product recommendation quiz](/product-recommendation-quiz/) is the single highest-leverage funnel component because it converts a passing shopper into an actively engaged participant by offering a clear value exchange: "answer five questions, get a recommendation tailored to you." A well-designed quiz produces a 40-60% completion rate, captures email and SMS consent inside the natural flow rather than as a friction-inducing popup, and generates structured preference data that every downstream channel will use.
 
 The mechanics matter:
 

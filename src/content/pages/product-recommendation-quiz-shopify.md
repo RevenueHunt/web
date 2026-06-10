@@ -14,7 +14,7 @@ draft: false
 
 Build beautiful, high-converting product recommendation quizzes - no coding needed. RevenueHunt helps you guide every shopper to their perfect product, collect valuable data, and drive measurable results across your store and marketing channels.
 
-Create quizzes with our AI-powered quiz builder, gain valuable insights, and sync with your mailing list or CRM to create high-ROI marketing campaigns. Start creating personalized shopping experiences that boost engagement, conversions, and loyalty.
+Create quizzes with our AI-powered quiz builder, gain valuable insights, and sync with your mailing list or CRM to create high-ROI marketing campaigns. Start creating personalized shopping experiences that boost engagement, conversions, and loyalty. See how the quiz anchors a complete [Shopify sales funnel](/build-sales-funnel-shopify-store/), from first touch to repeat purchase.
 
 -   **Boost sales** – Guide customers to the right products with quizzes that convert.
 -   **Collect actionable data** – Segment and tag your shoppers based on their responses.

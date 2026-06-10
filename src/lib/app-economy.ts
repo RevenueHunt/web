@@ -136,22 +136,30 @@ export const GEOGRAPHY = {
   builtForShopifyCount: "1,502",
   usIndiaShare: "39%",
   vietnamSignal: "46%",
-  /** Top 10 builders by total apps, each split into review tiers (absolute counts). */
+  /**
+   * Builder pool, each split into review tiers (absolute counts). The chart
+   * shows the top 10 by whatever tiers are toggled on, so this is the 13-country
+   * union of every tier-combination's top 10, not just the top 10 by total.
+   * Ordered by total apps. The default view (all tiers) shows the first 10;
+   * Pakistan (zero-review "noise"), Israel and Singapore (10+ traction) only
+   * surface when the ranking changes. Mirrors apps.csv with review-tier cuts.
+   */
   builders: {
-    labels: ["US", "India", "UK", "Canada", "Vietnam", "Germany", "Japan", "China", "Australia", "France"],
-    zero: [2463, 1882, 646, 514, 215, 338, 468, 374, 300, 251],
-    low: [1690, 1049, 421, 324, 169, 236, 125, 164, 194, 180],
-    high: [1202, 551, 242, 293, 326, 104, 49, 57, 98, 108],
+    labels: ["US", "India", "UK", "Canada", "Vietnam", "Germany", "Japan", "China", "Australia", "France", "Pakistan", "Israel", "Singapore"],
+    zero: [2463, 1882, 646, 514, 215, 338, 468, 374, 300, 251, 287, 157, 139],
+    low: [1690, 1049, 421, 324, 169, 236, 125, 164, 194, 180, 146, 136, 97],
+    high: [1202, 551, 242, 293, 326, 104, 49, 57, 98, 108, 44, 107, 94],
   },
   /**
    * The same store re-ranked by apps that cleared 10+ reviews (real traction).
-   * China and Japan fall out of the top 10; Israel and Singapore (highlight) take
-   * their place.
+   * China and Japan fall out of the top 10; Israel and Singapore climb in.
+   * `highlight` = the standouts drawn in the primary colour: Vietnam (punches
+   * above its size), Israel and Singapore (the newcomers).
    */
   signal: {
     labels: ["US", "India", "Vietnam", "Canada", "UK", "France", "Israel", "Germany", "Australia", "Singapore"],
     values: [1202, 551, 326, 293, 242, 108, 107, 104, 98, 94],
-    highlight: [6, 9],
+    highlight: [2, 6, 9],
   },
   caption:
     "Two dominate: <strong>the US (24%) and India (15%) build two in five</strong> of the store between them. But <strong>volume is not traction</strong>. Rank countries only by the apps that cleared 10+ reviews and the leaderboard redraws - <strong>Vietnam</strong>, a mid-size builder, lands more apps with real traction than its size suggests, while <strong>Japan and China fall away</strong>.",

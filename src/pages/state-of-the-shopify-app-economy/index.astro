@@ -435,23 +435,29 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
   const kfmt = (v: number) => (v >= 1000 ? v / 1000 + "K" : "" + v);
   const L = CHART_LABELS[document.documentElement.lang] ?? CHART_LABELS.en;
 
-  // Reorder a horizontal stacked bar by each row's visible-tier sum (descending),
-  // keeping labels and every dataset row aligned. Run after a legend toggle so the
-  // bars always rank by what's actually shown, not by the full total.
-  const reorderStacked = (chart: any) => {
-    const datasets = chart.data.datasets;
-    const rows = chart.data.labels.map((label: string, r: number) => ({
-      label,
-      vals: datasets.map((d: any) => d.data[r]),
-      vis: datasets.reduce(
-        (s: number, d: any, di: number) => s + (chart.isDatasetVisible(di) ? d.data[r] : 0),
-        0,
-      ),
-    }));
-    rows.sort((a: any, b: any) => b.vis - a.vis);
-    chart.data.labels = rows.map((x: any) => x.label);
-    datasets.forEach((d: any, di: number) => {
-      d.data = rows.map((x: any) => x.vals[di]);
+  // The "by review tier" chart shows the top 10 builders by whatever tiers are
+  // toggled on, drawn from the full GEOGRAPHY.builders pool (13 countries). So
+  // toggling tiers can swap countries in and out: showing only "0 reviews"
+  // surfaces the biggest noise generators (Pakistan), only "10+" surfaces Israel
+  // and Singapore. geoTopTen ranks the pool for a given tier visibility
+  // [zero, low, high]; applyGeoTop pushes the result into the chart.
+  const geoPool = GEOGRAPHY.builders.labels.map((label: string, i: number) => ({
+    label,
+    tiers: [GEOGRAPHY.builders.zero[i], GEOGRAPHY.builders.low[i], GEOGRAPHY.builders.high[i]],
+  }));
+  const geoTopTen = (vis: boolean[]) =>
+    geoPool
+      .map((c: any) => ({
+        ...c,
+        sum: c.tiers.reduce((s: number, v: number, t: number) => s + (vis[t] ? v : 0), 0),
+      }))
+      .sort((a: any, b: any) => b.sum - a.sum)
+      .slice(0, 10);
+  const applyGeoTop = (chart: any) => {
+    const top = geoTopTen([0, 1, 2].map((t) => chart.isDatasetVisible(t)));
+    chart.data.labels = top.map((c: any) => c.label);
+    [0, 1, 2].forEach((t) => {
+      chart.data.datasets[t].data = top.map((c: any) => c.tiers[t]);
     });
   };
 
@@ -549,16 +555,17 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
     });
 
   const geoTiers = L.geoTiers ?? CHART_LABELS.en.geoTiers!;
+  const geoInit = geoTopTen([true, true, true]);
   const geo = el("c-geography");
   if (geo)
     new Chart(geo, {
       type: "bar",
       data: {
-        labels: GEOGRAPHY.builders.labels,
+        labels: geoInit.map((c: any) => c.label),
         datasets: [
-          { label: geoTiers[0], data: GEOGRAPHY.builders.zero, backgroundColor: "#e2e8f0", borderWidth: 0 },
-          { label: geoTiers[1], data: GEOGRAPHY.builders.low, backgroundColor: COLORS.gray, borderWidth: 0 },
-          { label: geoTiers[2], data: GEOGRAPHY.builders.high, backgroundColor: COLORS.primary, borderWidth: 0 },
+          { label: geoTiers[0], data: geoInit.map((c: any) => c.tiers[0]), backgroundColor: "#e2e8f0", borderWidth: 0 },
+          { label: geoTiers[1], data: geoInit.map((c: any) => c.tiers[1]), backgroundColor: COLORS.gray, borderWidth: 0 },
+          { label: geoTiers[2], data: geoInit.map((c: any) => c.tiers[2]), backgroundColor: COLORS.primary, borderWidth: 0 },
         ],
       },
       options: {
@@ -573,7 +580,7 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
               const ch = legend.chart;
               const i = item.datasetIndex ?? 0;
               ch.setDatasetVisibility(i, !ch.isDatasetVisible(i));
-              reorderStacked(ch);
+              applyGeoTop(ch);
               ch.update();
             },
           },
@@ -597,7 +604,7 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
           {
             data: GEOGRAPHY.signal.values,
             backgroundColor: GEOGRAPHY.signal.labels.map((_, i) =>
-              GEOGRAPHY.signal.highlight.includes(i) ? COLORS.secondary : COLORS.primary,
+              GEOGRAPHY.signal.highlight.includes(i) ? COLORS.primary : COLORS.secondary,
             ),
             borderRadius: 4,
           },

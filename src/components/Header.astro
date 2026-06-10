@@ -56,7 +56,7 @@ const langOptions = LANGS.map((l) => ({
 ---
 
 <header class="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur">
-  <div class="mx-auto flex max-w-6xl items-center gap-6 px-6 py-4">
+  <div class="mx-auto flex max-w-6xl items-center gap-3 px-6 py-4">
     <a href={lp("/")} class="flex items-center" aria-label={`${SITE.name} home`}>
       <img
         src="/img/logos/revenuehunt-logo-horizontal.svg"
@@ -70,13 +70,13 @@ const langOptions = LANGS.map((l) => ({
 
     <!-- Desktop nav (floats to the right, sits next to CTAs) -->
     <nav class="ml-auto hidden items-center gap-1 lg:flex" aria-label="Primary">
-      <a href={lp("/")} class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-slate-900">{tr.nav_home}</a>
+      <a href={lp("/")} class="rounded-md px-2.5 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-slate-900">{tr.nav_home}</a>
 
       <!-- Platforms dropdown -->
       <div class="group relative">
         <button
           type="button"
-          class="flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium text-slate-700 transition hover:text-slate-900 group-hover:bg-slate-50 group-focus-within:bg-slate-50"
+          class="flex items-center gap-1 rounded-md px-2.5 py-2 text-sm font-medium text-slate-700 transition hover:text-slate-900 group-hover:bg-slate-50 group-focus-within:bg-slate-50"
           aria-haspopup="true"
         >
           {tr.nav_platforms}
@@ -97,13 +97,13 @@ const langOptions = LANGS.map((l) => ({
         </div>
       </div>
 
-      <a href={lp("/pricing/")} class="rounded-md px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-slate-900">{tr.nav_pricing}</a>
+      <a href={lp("/pricing/")} class="rounded-md px-2.5 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-slate-900">{tr.nav_pricing}</a>
 
       <!-- Resources dropdown -->
       <div class="group relative">
         <button
           type="button"
-          class="flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium text-slate-700 transition hover:text-slate-900 group-hover:bg-slate-50 group-focus-within:bg-slate-50"
+          class="flex items-center gap-1 rounded-md px-2.5 py-2 text-sm font-medium text-slate-700 transition hover:text-slate-900 group-hover:bg-slate-50 group-focus-within:bg-slate-50"
           aria-haspopup="true"
         >
           {tr.nav_resources}
@@ -134,7 +134,7 @@ const langOptions = LANGS.map((l) => ({
       <!-- Language picker -->
       <details class="relative" data-lang-dropdown>
         <summary
-          class="flex cursor-pointer list-none items-center gap-1.5 rounded-md px-2.5 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-slate-900 [&::-webkit-details-marker]:hidden"
+          class="flex cursor-pointer list-none items-center gap-1.5 rounded-md border border-slate-200 bg-white px-2.5 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-slate-900 [&::-webkit-details-marker]:hidden"
           aria-label={tr.language_picker}
         >
           <svg class="h-4 w-4 text-slate-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">

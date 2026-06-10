@@ -116,12 +116,13 @@ export const GEOGRAPHY = {
 /** The quiz category — RevenueHunt's own lane, the tie-back to the flagship. */
 export const QUIZ_LANE = {
   shopifySearch: "149",
+  dedicatedApps: 65,
   revenueHuntReviews: 417,
   octaneReviews: 193,
   quizKitReviews: 171,
-  multiple: "2x to 3x",
+  top3Share: "45%",
   caption:
-    "Our own category tells the same story in miniature. Shopify's quiz search returns 149 apps. The two serious players, Octane AI and Quiz Kit, have been grinding this category out for years, and the credit is theirs to keep. We just have the reviews: RevenueHunt has 417, roughly 2x to 3x our main competitors (Octane AI 193, Quiz Kit 171). Not a head start on code. Six years of earning reviews one merchant at a time.",
+    "Our own category proves the same point. Shopify's quiz search returns 149 apps, but trust pools at the top here exactly like it does across the store. The three apps that got here first and never left, RevenueHunt, Octane AI and Quiz Kit, hold 45% of every review in the category; RevenueHunt alone holds about a quarter, and half the rest have none at all. That lead is not code. Reviews are the residue of the operational scar tissue behind them: six years of answering support, getting on calls with merchants who would never pay, and earning trust one store at a time. Octane AI and Quiz Kit put in those years too, and the respect is real. Everyone else is new.",
 };
 
 export const METHODOLOGY = [

@@ -97,7 +97,7 @@ export const REVENUE = {
   },
   earnAnything: "36%",
   caption:
-    "Estimated monthly revenue is brutally top-heavy. The top 1% of apps (225 of them) take an estimated 72% of it, and just 10 of those apps take nearly 30% of all app revenue on their own. Only about 36% of apps look like they earn anything at all. And it clusters by geography: <strong>the US and Canada alone take an estimated 57%</strong> of the Shopify App Store revenue.",
+    "Estimated monthly revenue is brutally top-heavy. The top 1% of apps (225 of them) take an estimated 72% of it, and just 10 of those apps take nearly 30% of all app revenue on their own. (And one name towers over the whole ecosystem: an app which draws an estimated 78% of its roughly $1B in annual revenue from merchants who also run on Shopify. Yes, we're looking at you, <a href='https://www.sec.gov/Archives/edgar/data/1835830/000162828023030618/klaviyoincs-1.htm' target='_blank' rel='external noopener nofollow' class='font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]'>Klaviyo</a>.) Only about 36% of apps look like they earn anything at all. And it clusters by geography: <strong>the US and Canada alone take an estimated 57%</strong> of the Shopify App Store revenue.",
 };
 
 /** Pricing model split + the permanent-free-tier figure (the pricing donut). */

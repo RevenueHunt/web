@@ -3,7 +3,7 @@ import "../styles/global.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE, ogImageForPath } from "../lib/site";
-import { type Lang, LANGS, OG_LOCALE, altLangUrl, dir } from "../lib/i18n";
+import { type Lang, LANGS, OG_LOCALE, altLangUrl, dir, langPrefix } from "../lib/i18n";
 
 interface Props {
   title: string;
@@ -45,6 +45,11 @@ const xDefault = translated
   ? new URL(altLangUrl(Astro.url.pathname, "en"), SITE.site_url).href
   : null;
 
+// Locale → URL-prefix map for the inline apex auto-detect script below. Derived
+// from LANGS so new locales are picked up automatically and the redirect never
+// goes stale (injected via define:vars).
+const localePrefixes = Object.fromEntries(LANGS.map((l) => [l, langPrefix(l)]));
+
 // Index + analytics are ON by default - site_url defaults to the production
 // domain (lib/site.ts), so a live build is indexable without any env var.
 // A staging build opts OUT by setting PUBLIC_SITE_URL to its own host
@@ -63,10 +68,8 @@ const isProd = import.meta.env.PROD && SITE.site_url === "https://revenuehunt.co
         On the apex (/) only, redirect to the saved / browser-preferred locale.
         Runs early so the homepage redirect happens before paint. hreflang and
         per-page canonicals are unaffected. */}
-    <script is:inline>
+    <script is:inline define:vars={{ SUPPORTED: LANGS, PREFIXES: localePrefixes }}>
       (function () {
-        var SUPPORTED = ["en", "es", "fr", "de", "pt", "it"];
-        var PREFIXES = { en: "", es: "/es", fr: "/fr", de: "/de", pt: "/pt", it: "/it" };
         function readCookie(name) {
           var m = document.cookie.match(new RegExp("(?:^|; )" + name + "=([^;]+)"));
           return m ? decodeURIComponent(m[1]) : null;

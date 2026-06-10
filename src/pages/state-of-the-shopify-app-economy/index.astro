@@ -70,11 +70,23 @@ const jsonLd = [
 // Section eyebrows for the editorial "field notes" feel.
 const E = (n: string, label: string) => `${n} · ${label}`;
 
-// Link "Shopify's quiz search" in the quiz-lane copy to the live search, so the
-// 149 figure is verifiable. Caption stays the single source of truth.
-const quizCaptionHtml = QUIZ_LANE.caption.replace(
-  "Shopify's quiz search",
-  `<a href="${QUIZ_LANE.searchUrl}" target="_blank" rel="external noopener nofollow" class="font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]">Shopify's quiz search</a>`,
+// Quiz-lane paragraphs. Link "Shopify's quiz search" to the live search (so the
+// 149 figure is verifiable) and bold the load-bearing line. Caption text stays
+// the single source of truth.
+const quizParas = QUIZ_LANE.caption.map((p) =>
+  p
+    .replace(
+      "Shopify's quiz search",
+      `<a href="${QUIZ_LANE.searchUrl}" target="_blank" rel="external noopener nofollow" class="font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]">Shopify's quiz search</a>`,
+    )
+    .replace(
+      "Reviews are the residue of the operational scar tissue",
+      "<strong>Reviews are the residue of the operational scar tissue</strong>",
+    )
+    .replace(
+      "we respect them for it",
+      "<strong>we respect them for it</strong>",
+    ),
 );
 ---
 
@@ -257,19 +269,24 @@ const quizCaptionHtml = QUIZ_LANE.caption.replace(
     <div class="mx-auto max-w-5xl px-6 py-16">
       <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-indigo-500">{E("06", "The quiz lane")}</p>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Our own category, up close</h2>
-      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center" set:html={quizCaptionHtml} />
+      {quizParas.map((html) => (
+        <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center" set:html={html} />
+      ))}
       <div class="mx-auto mt-8 grid max-w-3xl grid-cols-3 gap-4 text-center">
         <div class="rounded-xl border border-slate-200 p-6">
-          <p class="text-3xl font-bold text-[#16161D]">{QUIZ_LANE.revenueHuntReviews}</p>
-          <p class="mt-1 text-sm text-slate-600">RevenueHunt</p>
+          <p class="font-bold text-[#16161D]"><span class="text-3xl">{QUIZ_LANE.revenueHuntReviews}</span> <span class="text-sm font-medium text-slate-400">reviews</span></p>
+          <p class="mt-1 text-sm font-medium text-slate-700">RevenueHunt</p>
+          <p class="mt-1 text-xs font-semibold text-slate-600"><span class="text-amber-400">★</span> 4.9 stars</p>
         </div>
         <div class="rounded-xl border border-slate-200 p-6">
-          <p class="text-3xl font-bold text-slate-500">{QUIZ_LANE.octaneReviews}</p>
-          <p class="mt-1 text-sm text-slate-600">Octane AI</p>
+          <p class="font-bold text-slate-500"><span class="text-3xl">{QUIZ_LANE.octaneReviews}</span> <span class="text-sm font-medium text-slate-400">reviews</span></p>
+          <p class="mt-1 text-sm font-medium text-slate-700">Octane AI</p>
+          <p class="mt-1 text-xs font-semibold text-slate-600"><span class="text-amber-400">★</span> 4.8 stars</p>
         </div>
         <div class="rounded-xl border border-slate-200 p-6">
-          <p class="text-3xl font-bold text-slate-500">{QUIZ_LANE.quizKitReviews}</p>
-          <p class="mt-1 text-sm text-slate-600">Quiz Kit</p>
+          <p class="font-bold text-slate-500"><span class="text-3xl">{QUIZ_LANE.quizKitReviews}</span> <span class="text-sm font-medium text-slate-400">reviews</span></p>
+          <p class="mt-1 text-sm font-medium text-slate-700">Quiz Kit</p>
+          <p class="mt-1 text-xs font-semibold text-slate-600"><span class="text-amber-400">★</span> 4.8 stars</p>
         </div>
       </div>
       <p class="mx-auto mt-4 max-w-3xl text-center text-sm text-slate-500">Reviews on the Shopify App Store, June 2026. Octane AI and Quiz Kit are the real competitors RevenueHunt has in this category; respect to both.</p>

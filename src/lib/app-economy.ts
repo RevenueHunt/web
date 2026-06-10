@@ -65,7 +65,7 @@ export const GROWTH = {
   labels: ["2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"],
   cumulative: [2080, 3151, 4482, 6146, 8574, 11808, 17053, 22546],
   caption:
-    "Cumulative live apps by launch year. The store has roughly 10x'd since 2020 and added more than 6,000 apps in the last 12 months alone, about 1 in 4 of everything live today.",
+    "Cumulative live apps by launch year. The Shopify App Store has roughly 10x'd since 2020 and added more than 6,000 apps in the last 12 months alone, about 1 in 4 of everything live today.",
 };
 
 /** Review distribution across all 22,546 apps (the "traction" donut). */

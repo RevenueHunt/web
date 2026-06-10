@@ -35,8 +35,8 @@ export const REPORT = {
  *   gray      = de-emphasized / "the rest"
  */
 export const COLORS = {
-  primary: "#1e2228",
-  secondary: "#4bd5ff",
+  primary: "#616eff",
+  secondary: "#4dcaff",
   gray: "#CBD5E1",
 };
 

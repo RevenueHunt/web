@@ -281,19 +281,24 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
         <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center" set:html={html} />
       ))}
       <div class="mx-auto mt-8 grid max-w-3xl grid-cols-3 gap-4 text-center">
-        <div class="rounded-xl border border-slate-200 p-6">
-          <p class="font-bold text-[#16161D]"><span class="text-3xl">{QUIZ_LANE.revenueHuntReviews}</span> <span class="text-sm font-medium text-slate-400">reviews</span></p>
-          <p class="mt-1 text-sm font-medium text-slate-700">RevenueHunt</p>
+        <a
+          href="https://apps.shopify.com/product-recommendation-quiz-revenuehunt"
+          target="_blank"
+          rel="external noopener"
+          class="block rounded-xl border border-indigo-200 p-6 shadow-lg shadow-indigo-500/20 transition hover:border-indigo-300 hover:shadow-indigo-500/30"
+        >
+          <p class="text-sm font-semibold text-slate-900">RevenueHunt</p>
+          <p class="mt-1 font-bold text-[#16161D]"><span class="text-3xl">{QUIZ_LANE.revenueHuntReviews}</span> <span class="text-sm font-medium text-slate-500">reviews</span></p>
           <p class="mt-1 text-xs font-semibold text-slate-600"><span class="text-amber-400">★</span> 4.9 stars</p>
-        </div>
+        </a>
         <div class="rounded-xl border border-slate-200 p-6">
-          <p class="font-bold text-slate-500"><span class="text-3xl">{QUIZ_LANE.octaneReviews}</span> <span class="text-sm font-medium text-slate-400">reviews</span></p>
-          <p class="mt-1 text-sm font-medium text-slate-700">Octane AI</p>
+          <p class="text-sm font-medium text-slate-700">Octane AI</p>
+          <p class="mt-1 font-bold text-slate-500"><span class="text-3xl">{QUIZ_LANE.octaneReviews}</span> <span class="text-sm font-medium text-slate-500">reviews</span></p>
           <p class="mt-1 text-xs font-semibold text-slate-600"><span class="text-amber-400">★</span> 4.8 stars</p>
         </div>
         <div class="rounded-xl border border-slate-200 p-6">
-          <p class="font-bold text-slate-500"><span class="text-3xl">{QUIZ_LANE.quizKitReviews}</span> <span class="text-sm font-medium text-slate-400">reviews</span></p>
-          <p class="mt-1 text-sm font-medium text-slate-700">Quiz Kit</p>
+          <p class="text-sm font-medium text-slate-700">Quiz Kit</p>
+          <p class="mt-1 font-bold text-slate-500"><span class="text-3xl">{QUIZ_LANE.quizKitReviews}</span> <span class="text-sm font-medium text-slate-500">reviews</span></p>
           <p class="mt-1 text-xs font-semibold text-slate-600"><span class="text-amber-400">★</span> 4.8 stars</p>
         </div>
       </div>

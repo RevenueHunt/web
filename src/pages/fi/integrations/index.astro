@@ -1,0 +1,226 @@
+---
+import Base from "../../../layouts/Base.astro";
+import { organization, breadcrumb, softwareApplication } from "../../../lib/schema";
+import { localizedHref } from "../../../lib/i18n";
+
+interface Integration {
+  name: string;
+  category: string;
+  logo: string;
+  href: string;
+}
+
+const groups: { heading: string; emoji: string; intro: string; items: Integration[] }[] = [
+  {
+    heading: "Analytiikka ja seuranta",
+    emoji: "📊",
+    intro:
+      "Mittaa kyselyn suorituskykyä, seuraa konversioita ja optimoi suppilosi. Selvitä tarkalleen, mitkä kysymykset tuottavat myyntiä ja missä asiakkaat keskeyttävät.",
+    items: [
+      { name: "Google Analytics", category: "Data", logo: "/img/pages/integrations/ganalytics.webp", href: "https://docs.revenuehunt.com/how-to-guides/integrate-google-analytics/" },
+      { name: "Meta Pixel", category: "Data", logo: "/img/pages/integrations/metapixel.webp", href: "https://docs.revenuehunt.com/how-to-guides/integrate-meta-pixel/" },
+      { name: "TikTok Pixel", category: "Data", logo: "/img/pages/integrations/tiktoklog.webp", href: "https://docs.revenuehunt.com/how-to-guides/integrate-tiktok-pixel/" },
+      { name: "Webhooks", category: "Data", logo: "/img/pages/integrations/webhooklog.webp", href: "https://docs.revenuehunt.com/how-to-guides/send-leads-to-webhooks/" },
+      { name: "Google Product Feed", category: "Tuotteet", logo: "/img/pages/integrations/googleproductfeed.webp", href: "/product-recommendation-quiz-standalone-google-product-feed/" },
+    ],
+  },
+  {
+    heading: "Markkinointi ja automaatio",
+    emoji: "✉️",
+    intro:
+      "Synkronoi kyselyn liidit sähköpostialustaasi tai CRM:ään. Lähetä henkilökohtaisia jatkoviestejä, segmentoi asiakkaat vastaustensa perusteella ja muuta liidit uskollisiksi ostajiksi automaattisesti.",
+    items: [
+      { name: "Klaviyo", category: "Sähköpostimarkkinointi", logo: "/img/pages/integrations/klaviyolog.webp", href: "https://docs.revenuehunt.com/how-to-guides/send-leads-to-klaviyo/" },
+      { name: "ActiveCampaign", category: "Automaatio", logo: "/img/pages/integrations/activecampaignlog.webp", href: "https://docs.revenuehunt.com/how-to-guides/send-leads-to-activecampaign/" },
+      { name: "Mailchimp", category: "Sähköpostimarkkinointi", logo: "/img/pages/integrations/mailchimplog.webp", href: "https://docs.revenuehunt.com/how-to-guides/send-leads-to-mailchimp/" },
+      { name: "Omnisend", category: "Sähköpostimarkkinointi", logo: "/img/pages/integrations/omnisendlog.webp", href: "https://docs.revenuehunt.com/how-to-guides/send-leads-to-omnisend/" },
+      { name: "Zapier", category: "Automaatio", logo: "/img/pages/integrations/zapierlog.webp", href: "https://docs.revenuehunt.com/how-to-guides/send-leads-to-zapier/" },
+      { name: "HubSpot", category: "CRM", logo: "/img/pages/integrations/hubspotlog.webp", href: "https://docs.revenuehunt.com/how-to-guides/send-leads-to-hubspot/" },
+      { name: "Shopify Customers", category: "CRM", logo: "/img/pages/integrations/shopifylog.webp", href: "https://docs.revenuehunt.com/how-to-guides/send-leads-to-shopify-customers/" },
+    ],
+  },
+  {
+    heading: "Myynti ja sosiaalinen todiste",
+    emoji: "⭐",
+    intro:
+      "Merkitse asiakkaat Shopifyssa, suosittele tilauksia ja näytä arvosteluja - kaikki kyselyn vastausten perusteella, jotta jokainen ostaja näkee juuri häntä kiinnostavan todisteen ja tarjouksen.",
+    items: [
+      { name: "ReCharge", category: "Tilaukset", logo: "/img/pages/integrations/rechargelog.webp", href: "https://docs.revenuehunt.com/how-to-guides/recommend-subscriptions/" },
+      { name: "Shopify Reviews", category: "Sosiaalinen todiste", logo: "/img/pages/integrations/shopifyreviews.webp", href: "https://docs.revenuehunt.com/how-to-guides/show-product-reviews/" },
+      { name: "Stamped", category: "Sosiaalinen todiste", logo: "/img/pages/integrations/stampedlog.webp", href: "https://docs.revenuehunt.com/how-to-guides/show-product-reviews/" },
+      { name: "Judge.me", category: "Sosiaalinen todiste", logo: "/img/pages/integrations/judgemelog.webp", href: "https://docs.revenuehunt.com/how-to-guides/show-product-reviews/" },
+      { name: "Rivyo Reviews", category: "Sosiaalinen todiste", logo: "/img/pages/integrations/rivyolog.webp", href: "https://docs.revenuehunt.com/how-to-guides/show-product-reviews/" },
+      { name: "POS Tablet Stands", category: "Myymälämyynti", logo: "/img/pages/integrations/poslog.webp", href: "/product-recommendation-quiz-pos-tablet-stands/" },
+      { name: "Shop App", category: "Mobiilimyynti", logo: "/img/pages/integrations/shopapplog.webp", href: "https://docs.revenuehunt.com/how-to-guides/show-quiz-in-shop-app/" },
+    ],
+  },
+];
+
+const pillars = [
+  {
+    emoji: "📊",
+    title: "Mittaa kaikki",
+    body: "Yhdistä Google Analyticsiin, Meta Pixeliin ja TikTokiin mitataksesi kyselyn suorituskykyä ja optimoidaksesi kampanjasi.",
+  },
+  {
+    emoji: "✉️",
+    title: "Automatisoi jatkoviestit",
+    body: "Synkronoi kyselyn liidit Klaviyoon, Mailchimpiin tai ActiveCampaigniin lähettääksesi henkilökohtaisia tuotesuosituksia automaattisesti.",
+  },
+  {
+    emoji: "💰",
+    title: "Kasvata liikevaihtoasi",
+    body: "Merkitse asiakkaat Shopifyssa, suosittele tilauksia ReChargella ja näytä sosiaalista todistetta arvostelusovelluksilla.",
+  },
+];
+
+const stats = [
+  { value: "20+", label: "Natiivia integraatiota" },
+  { value: "5 min", label: "Keskimääräinen asennusaika" },
+  { value: "Nolla", label: "Koodia tarvitaan" },
+];
+
+const SHOPIFY_INSTALL =
+  "https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=integrations";
+const WOOCOMMERCE_DOWNLOAD =
+  "https://downloads.wordpress.org/plugin/product-recommendation-quiz-for-ecommerce.latest-stable.zip";
+
+const jsonLd = [
+  organization(),
+  softwareApplication(),
+  breadcrumb([
+    { name: "Etusivu", url: "/" },
+    { name: "Integraatiot", url: "/integrations/" },
+  ]),
+];
+
+function isExternal(href: string) {
+  return /^https?:\/\//.test(href);
+}
+---
+
+<Base
+  title="Integraatiot - RevenueHunt"
+  description="Yhdistä RevenueHunt-kyselysi Klaviyoon, Meta Pixeliin, Mailchimpiin, Omnisendiin, GA4:ään ja muihin. Synkronoi liidit ja vastaukset 5 minuutissa, ilman koodia."
+  jsonLd={jsonLd}
+  lang="fi"
+  translated={true}
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-5xl px-6 py-20 sm:py-24">
+      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
+        <a href={localizedHref("/", "fi")} class="hover:text-slate-700">Etusivu</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <span class="text-slate-700">Integraatiot</span>
+      </nav>
+      <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+        Saumattomat integraatiot, jotka tehostavat kyselysi tuloksia
+      </h1>
+      <p class="mt-6 max-w-3xl text-xl text-slate-600">
+        Muuta kyselyn vastaukset liikevaihdoksi tehokkailla integraatioilla. Yhdistä RevenueHunt nykyiseen markkinointipinoosi automatisoidaksesi jatkoviestit, personoidaksesi kampanjat, mitataksesi suorituskykyä ja muuttaaksesi enemmän uteliaita ostajiksi. <strong class="text-slate-900">Ohjelmointia ei tarvita.</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- 3-up pillars -->
+  <section class="border-y border-slate-200 bg-white">
+    <div class="mx-auto max-w-6xl px-6 py-16">
+      <div class="grid gap-10 md:grid-cols-3">
+        {pillars.map((p) => (
+          <div>
+            <div class="text-4xl" aria-hidden="true">{p.emoji}</div>
+            <h2 class="mt-4 text-xl font-semibold text-slate-900">{p.title}</h2>
+            <p class="mt-3 text-slate-600">{p.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats bar -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-5xl px-6 py-14">
+      <dl class="grid grid-cols-3 gap-x-8 gap-y-8">
+        {stats.map((s) => (
+          <div class="text-center">
+            <dt class="text-3xl font-bold tracking-tight text-white sm:text-4xl">{s.value}</dt>
+            <dd class="mt-2 text-sm text-white/70">{s.label}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  </section>
+
+  <!-- Integration library -->
+  <section class="mx-auto max-w-6xl px-6 py-20">
+    <div class="text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Tutustu integraatiokirjastoomme</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-slate-600">
+        Klikkaa mitä tahansa integraatiota nähdäksesi sen asennusoppaan ohjekeskuksestamme.
+      </p>
+    </div>
+
+    {groups.map((g) => (
+      <div class="mt-16">
+        <div class="mb-6 flex items-baseline gap-3">
+          <span class="text-2xl" aria-hidden="true">{g.emoji}</span>
+          <h3 class="text-2xl font-semibold tracking-tight text-slate-900">{g.heading}</h3>
+        </div>
+        <p class="max-w-3xl text-slate-600">{g.intro}</p>
+
+        <ul class="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+          {g.items.map((it) => (
+            <li>
+              <a
+                href={it.href}
+                {...(isExternal(it.href) ? { target: "_blank", rel: "external noopener" } : {})}
+                class="flex h-full flex-col items-center gap-3 rounded-xl border border-slate-200 bg-white p-5 text-center transition hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md"
+              >
+                <img
+                  src={it.logo}
+                  alt={`${it.name} logo`}
+                  width="80"
+                  height="80"
+                  loading="lazy"
+                  class="h-14 w-14 object-contain"
+                />
+                <div>
+                  <p class="text-base font-semibold text-slate-900">{it.name}</p>
+                  <p class="mt-1 text-xs uppercase tracking-wider text-slate-500">{it.category}</p>
+                </div>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Valmis yhdistämään kyselysi markkinointipinoosi?
+      </h2>
+      <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
+        <a
+          href={SHOPIFY_INSTALL}
+          target="_blank"
+          rel="external noopener nofollow"
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          asenna Shopifyyn
+        </a>
+        <a
+          href={WOOCOMMERCE_DOWNLOAD}
+          target="_blank"
+          rel="external noopener nofollow"
+          class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
+        >
+          lataa WooCommerceen
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

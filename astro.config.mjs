@@ -189,11 +189,10 @@ export default defineConfig({
   // English is the default locale at the root (no prefix); other languages live
   // under /<lang>/ via physical folders in src/pages/. hreflang alternates are
   // emitted per-page in Base.astro (not via sitemap i18n) so English-only pages
-  // like the blog don't advertise non-existent localized URLs. Phase 2 adds
-  // de, pt, it here.
+  // like the blog don't advertise non-existent localized URLs.
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "es", "fr"],
+    locales: ["en", "es", "fr", "de", "pt", "it", "nl", "sv", "fi", "pl", "cs"],
     routing: { prefixDefaultLocale: false },
   },
   redirects: {

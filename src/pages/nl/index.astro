@@ -1,0 +1,514 @@
+---
+import Base from "../../layouts/Base.astro";
+import PlanCards from "../../components/pages/PlanCards.astro";
+import YouTubeFacade from "../../components/YouTubeFacade.astro";
+import { organization, website, softwareApplication } from "../../lib/schema";
+import { SITE } from "../../lib/site";
+import { localizedHref } from "../../lib/i18n";
+
+const SHOPIFY_INSTALL =
+  "https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=bfs_badge_hero";
+const WOOCOMMERCE_DOWNLOAD =
+  "https://downloads.wordpress.org/plugin/product-recommendation-quiz-for-ecommerce.latest-stable.zip";
+const YOUTUBE_ID = "fJqpGJUzZNE";
+
+const stats = [
+  { value: "+20,000", label: "Merken die RevenueHunt gebruiken" },
+  { value: "+45M", label: "Voltooide quizzen" },
+  { value: "+370M USD", label: "Omzet voor merchants" },
+  { value: "4.9 ★", label: "Meer dan 450 vijfsterrenreviews" },
+];
+
+const pillars = [
+  {
+    image: "/img/pages/home/recommend-right-products.svg",
+    title: "Beveel de juiste producten aan",
+    body:
+      "Quizzen met geïntegreerde producten stimuleren de verkoop, adviseren klanten om de juiste producten voor hen te vinden en helpen hen met vertrouwen aankoopbeslissingen te nemen.",
+  },
+  {
+    image: "/img/pages/home/know-your-customers.svg",
+    title: "Leer je klanten kennen",
+    body:
+      "Met quizzen verzamel je bruikbare data door je klanten gerichte vragen te stellen. Segmenteer en tag je shoppers op basis van hun antwoorden.",
+  },
+  {
+    image: "/img/pages/home/grow-your-audience.svg",
+    title: "Laat je publiek groeien",
+    body:
+      "Stuur de vastgelegde leads naar je mailinglijst of CRM. Benut de klantprofielgegevens om persoonlijkere marketingcampagnes met een hogere ROI te maken.",
+  },
+];
+
+const features = [
+  {
+    kicker: "AI-quizcopilot",
+    title: "Maak een quiz in 60 seconden met AI",
+    body:
+      "Beschrijf je winkel en onze AI-copilot genereert een volledig ingestelde quiz - vragen, logica en producttoewijzing - klaar om te publiceren.",
+  },
+  {
+    kicker: "Voorwaardelijke logica",
+    title: "Vertakkende logica met slepen en neerzetten",
+    body:
+      "Toon of verberg vragen op basis van eerdere antwoorden. Begeleid elke shopper langs het pad dat eindigt in een aankoop - geen code nodig.",
+  },
+  {
+    kicker: "Quizdesign",
+    title: "Maak hem helemaal van jou - geen code nodig",
+    body:
+      "Pas kleuren, lettertypes, afbeeldingen en design aan zodat ze bij je merk passen. Je quiz lijkt onderdeel van je winkel, geen widget van derden.",
+  },
+  {
+    kicker: "Resultatenpagina",
+    title: "Een checkout-klare resultatenpagina die converteert",
+    body:
+      "Toon gepersonaliseerde productaanbevelingen gegroepeerd per routinestap - met afbeeldingen, prijzen en toevoegen-aan-winkelwagenknoppen. Shoppers kopen rechtstreeks vanaf de resultatenpagina.",
+  },
+  {
+    kicker: "Drop-off-analytics",
+    title: "Weet precies waar shoppers afhaken",
+    body:
+      "Bekijk de drop-off-percentages per vraag, de bestemmingen en de resultaten. Verhelp wrijvingspunten, verbeter voltooiingen en herstel verloren omzet.",
+  },
+  {
+    kicker: "Integraties van derden",
+    title: "Verbind je hele marketingstack",
+    body:
+      "Stuur quizdata naar Google Analytics, trigger Meta Pixel-events voor retargeting en synchroniseer leads met Klaviyo - allemaal vanuit één instellingenpagina. Geen code, geen middleware.",
+  },
+];
+
+const steps = [
+  {
+    title: "Installeer de app",
+    body: "Installatie met één klik vanuit de Shopify App Store of de WordPress-pluginmap.",
+  },
+  {
+    title: "Maak je quiz",
+    body: "Gebruik de AI-copilot of de drag-and-drop-editor. Voeg je vragen toe, bepaal je logica.",
+  },
+  {
+    title: "Wijs je producten toe",
+    body: "Koppel de quizantwoorden aan je productcatalogus. Beveel de beste match aan voor elk resultaat.",
+  },
+  {
+    title: "Publiceer en promoot",
+    body: "Embed hem op elke pagina, toon hem als pop-up bij exit-intentie of link ernaar vanuit je advertenties.",
+  },
+];
+
+const testimonials = [
+  {
+    quote:
+      "Ik ben overgestapt vanaf Octane. Het ontwerpproces was veel intuïtiever en visueel aantrekkelijker. Toen ik een probleem had met Klaviyo, reageerde de support bliksemsnel en met een supertoegankelijke, open houding.",
+    author: "Kae Paché",
+  },
+  {
+    quote:
+      "Eric was buitengewoon geduldig, deskundig en grondig - hij begeleidde me stap voor stap door de quizinstellingen. Zulke support is zeldzaam.",
+    author: "Marcelle",
+  },
+  {
+    quote:
+      "De app zelf is uitstekend: krachtige functies, intuïtieve bruikbaarheid. Het team maakte een gepersonaliseerde, begeleide tutorial voor ons. We gebruiken hem al meer dan 3 jaar.",
+    author: "Didymos",
+  },
+  {
+    quote:
+      "Verreweg de beste quiz- en productaanbevelingsapp die ik op Shopify heb geprobeerd. Het team nam de tijd om uit te zoeken, elke stap helder uit te leggen en me te begeleiden tot het probleem volledig was opgelost.",
+    author: "REYNA",
+  },
+  {
+    quote:
+      "Het was de 5e quiz-app die ik probeerde en de enige die volledig ondersteunde wat ik nodig had. Ik kon mijn eerste quiz heel snel maken.",
+    author: "CCA Printing",
+  },
+  {
+    quote:
+      "De klantenservice springt eruit - een medewerker nam een video op en legde de oplossing stap voor stap uit. Heel responsief en superbehulpzaam.",
+    author: "The Love U Collective",
+  },
+];
+
+const verticals = [
+  { icon: "💄", title: "Beauty en huidverzorging", body: "Huidtypezoekers, tintkeuze, routinebouwers." },
+  { icon: "💊", title: "Supplementen", body: "Gezondheidsdoelquizzen die de juiste stack aanbevelen." },
+  { icon: "👗", title: "Mode", body: "Stijlquizzen die de juiste maat, kleur en pasvorm onthullen." },
+  { icon: "🐾", title: "Huisdieren", body: "Rasspecifieke productaanbevelingen voor elke eigenaar." },
+  { icon: "🍵", title: "Eten en drinken", body: "Smaakprofielquizzen die kijkers omzetten in abonnees." },
+  { icon: "🏋️", title: "Fitness", body: "Doelgerichte funnels voor uitrusting, kleding en programma's." },
+  { icon: "🏠", title: "Wonen en decoratie", body: "Stijlquizzen die meubels combineren met elke ruimte in huis." },
+  { icon: "🌿", title: "Eco en duurzaam", body: "Quizzen die waarden verbinden voor de bewuste consument." },
+];
+
+const brands = [
+  "Olaplex", "Madluvv", "Mattel", "Alt", "Baia", "Bare", "Biktrix",
+  "Dermocracy", "Diego", "Gisou", "Laura", "Nuxe", "Olcay",
+  "Salad Code", "Salugea", "Sunday", "Tushy", "Tiege",
+];
+
+const SHOPIFY_REVIEWS =
+  "https://apps.shopify.com/product-recommendation-quiz-revenuehunt/reviews?ratings%5B%5D=5&sort_by=relevance";
+const WOOCOMMERCE_REVIEWS =
+  "https://wordpress.org/support/plugin/product-recommendation-quiz-for-ecommerce/reviews/?filter=5";
+---
+
+<Base
+  lang="nl"
+  translated={true}
+  title={`${SITE.name} - de productaanbevelingsquiz die converteert`}
+  description="Maak van kijkers kopers met een begeleide productaanbevelingsquiz. Leg zero-party data vast, beveel het juiste product aan en verhoog de conversie. Geen code."
+  jsonLd={[organization(), website(), softwareApplication()]}
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-7xl px-6 py-16 lg:py-24">
+      <div class="grid items-center gap-12 lg:grid-cols-2 lg:items-start lg:gap-16">
+        <div>
+          <a
+            href={SHOPIFY_INSTALL}
+            rel="external nofollow"
+            onclick="window.gtag&&gtag('event','shopify_app_install',{event_label:'home_hero_badge'})"
+            class="mb-6 inline-block"
+          >
+            <img
+              src="/img/home/bfs-badge.webp"
+              alt="Built for Shopify"
+              width="120"
+              height="38"
+              class="h-8 w-auto"
+              loading="eager"
+            />
+          </a>
+          <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+            De productaanbevelingsquiz die kijkers omzet in kopers
+          </h1>
+          <p class="mt-6 max-w-xl text-lg text-slate-700">
+            Betaalde advertenties leveren klikken op - onze quizzen zetten ze om in verkopen. RevenueHunt begeleidt shoppers naar de juiste producten,
+            verzamelt data en stimuleert conversies. Eenvoudig te installeren, geen code.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a
+              href={SHOPIFY_INSTALL}
+              rel="external nofollow"
+              onclick="window.gtag&&gtag('event','shopify_app_install',{event_label:'home_hero'})"
+              class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
+            >
+              installeren op Shopify
+            </a>
+            <a
+              href={WOOCOMMERCE_DOWNLOAD}
+              rel="external nofollow"
+              onclick="window.gtag&&gtag('event','download_woocommerce_plugin',{event_label:'home_hero'})"
+              class="inline-flex items-center justify-center rounded-md border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-900 transition hover:border-slate-400 hover:bg-slate-50"
+            >
+              voor WooCommerce halen
+            </a>
+          </div>
+          <p class="mt-4 text-sm text-slate-500">
+            Gratis plan beschikbaar · Gratis proefperiode van 15 dagen · 30 dagen niet-goed-geld-terug-garantie
+          </p>
+        </div>
+
+        <div class="relative lg:mt-14">
+          <div class="aspect-video overflow-hidden rounded-xl bg-slate-900 shadow-2xl">
+            <YouTubeFacade
+              id={YOUTUBE_ID}
+              title="RevenueHunt - Productaanbevelingsquiz"
+              poster="/img/home/video-poster.webp"
+              alt="Demo van de productaanbevelingsquiz van RevenueHunt voor Shopify- en WooCommerce-winkels"
+              eager
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats / proof bar -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-7xl px-6 py-16">
+      <p class="text-center text-sm font-semibold uppercase tracking-wider text-white/70">
+        Waarom kiezen voor RevenueHunt? Onze impact spreekt voor zich
+      </p>
+      <dl class="mt-8 grid grid-cols-2 gap-x-8 gap-y-10 sm:grid-cols-4">
+        {stats.map((s) => (
+          <div class="text-center">
+            <dt class="text-3xl font-bold tracking-tight text-white sm:text-4xl">{s.value}</dt>
+            <dd class="mt-2 text-sm text-white/70">{s.label}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  </section>
+
+  <!-- Problem framing -->
+  <section class="mx-auto max-w-4xl px-6 py-20 text-center">
+    <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+      Shoppers weten niet altijd wat ze moeten kopen - en dat betekent gemiste verkopen.
+    </h2>
+    <p class="mx-auto mt-6 max-w-2xl text-lg text-slate-700">
+      Onze <a href={localizedHref("/product-recommendation-quiz/", "nl")} class="font-semibold text-slate-900 underline underline-offset-4 hover:text-slate-700">productaanbevelingsquiz</a> begeleidt elke klant tijdens zijn reis en helpt hem de juiste producten voor hem te ontdekken en te kopen.
+    </p>
+  </section>
+
+  <!-- 3-up pillars -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <div class="grid gap-10 md:grid-cols-3">
+        {pillars.map((p) => (
+          <div class="text-center">
+            <img src={p.image} alt={p.title} width="120" height="120" class="mx-auto h-24 w-24" loading="lazy" />
+            <h3 class="mt-6 text-xl font-semibold text-slate-900">{p.title}</h3>
+            <p class="mt-3 text-slate-600">{p.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Features grid -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Alles wat je nodig hebt om slimmer te verkopen</h2>
+      </div>
+      <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {features.map((f) => (
+          <div class="rounded-xl border border-slate-200 bg-white p-6">
+            <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">{f.kicker}</p>
+            <h3 class="mt-2 text-xl font-semibold text-slate-900">{f.title}</h3>
+            <p class="mt-3 text-slate-600">{f.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 4-step setup -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Live in 4 stappen. In minder dan 15 minuten.</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-slate-700">
+          Geen ontwikkelaars. Geen code. Gewoon een quiz waar je klanten dol op zullen zijn.
+        </p>
+      </div>
+      <ol class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        {steps.map((s, i) => (
+          <li class="rounded-xl border border-slate-200 bg-white p-6">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#16161D] text-sm font-bold text-white">{i + 1}</span>
+            <h3 class="mt-4 text-lg font-semibold text-slate-900">{s.title}</h3>
+            <p class="mt-2 text-slate-600">{s.body}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+          Ontdek waarom merchants dol zijn op de productaanbevelingsquiz
+        </h2>
+        <p class="mx-auto mt-4 max-w-3xl text-lg text-slate-700">
+          Vertrouwd door meer dan 20.000 merken en gesteund door meer dan 450 vijfsterrenreviews op Shopify, WooCommerce en meer -
+          RevenueHunt is dé quiz-app om verkoop te stimuleren via personalisatie. Maar geloof ons niet zomaar op ons woord.
+        </p>
+        <div class="mt-6 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap text-sm">
+          <a href={SHOPIFY_REVIEWS} rel="external nofollow" class="font-semibold text-[#16161D] underline-offset-4 hover:underline">
+            Reviews op Shopify →
+          </a>
+          <a href={WOOCOMMERCE_REVIEWS} rel="external nofollow" class="font-semibold text-[#16161D] underline-offset-4 hover:underline">
+            Reviews op WooCommerce →
+          </a>
+        </div>
+      </div>
+
+      <h3 class="mt-16 text-center text-xl font-semibold text-slate-900">Wat merchants zeggen</h3>
+      <div class="rh-carousel mt-8">
+        <ul data-carousel class="rh-carousel__track" aria-label="Testimonials van merchants">
+          {testimonials.map((t) => (
+            <li class="rounded-xl border border-slate-200 bg-white p-6">
+              <p class="text-amber-500" aria-label="5 van 5 sterren">★★★★★</p>
+              <blockquote class="mt-3 text-slate-700">"{t.quote}"</blockquote>
+              <p class="mt-4 text-sm font-semibold text-slate-900"> - {t.author}</p>
+            </li>
+          ))}
+        </ul>
+        <div data-carousel-dots class="rh-carousel__dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Verticals -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Gemaakt voor elke ecommerce-vertical</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-slate-700">
+          Of je nu skincare, supplementen of banken verkoopt - een quiz die shoppers helpt het juiste product te vinden converteert beter dan welke collectiepagina dan ook.
+        </p>
+      </div>
+      <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {verticals.map((v) => (
+          <div class="rounded-xl border border-slate-200 bg-white p-6">
+            <span class="block text-3xl" aria-hidden="true">{v.icon}</span>
+            <h3 class="mt-3 text-base font-semibold text-slate-900">{v.title}</h3>
+            <p class="mt-2 text-sm text-slate-600">{v.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand logos -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-7xl px-6 py-16">
+      <h2 class="text-center text-2xl font-bold tracking-tight text-white sm:text-3xl">De motor achter de beste ecommerce-merken</h2>
+      <div class="brands-marquee mt-10">
+        <ul class="brands-marquee__track" aria-label="Logo's van klantmerken">
+          {brands.map((b) => (
+            <li class="brands-marquee__item">
+              <img
+                src={`/img/brands/${b.toLowerCase().replace(/ /g, "-")}.svg`}
+                alt={b}
+                loading="lazy"
+                width="160"
+                height="40"
+              />
+            </li>
+          ))}
+          {brands.map((b) => (
+            <li class="brands-marquee__item" aria-hidden="true">
+              <img
+                src={`/img/brands/${b.toLowerCase().replace(/ /g, "-")}.svg`}
+                alt={`${b} logo`}
+                loading="lazy"
+                width="160"
+                height="40"
+              />
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .brands-marquee {
+      overflow: hidden;
+      -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+      mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    }
+    .brands-marquee__track {
+      display: flex;
+      align-items: center;
+      width: max-content;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      animation: brands-marquee 40s linear infinite;
+    }
+    .brands-marquee:hover .brands-marquee__track {
+      animation-play-state: paused;
+    }
+    .brands-marquee__item {
+      flex-shrink: 0;
+      padding: 10px 24px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+    }
+    .brands-marquee__item img {
+      height: 100%;
+      width: auto;
+      max-width: 160px;
+      object-fit: contain;
+      /* Normalize mixed-fill SVGs to white on the dark strip. */
+      filter: brightness(0) invert(1);
+      opacity: 0.85;
+    }
+    @keyframes brands-marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .brands-marquee__track { animation: none; }
+    }
+  </style>
+
+  <!-- Plans summary -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-6 py-20">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Kies het beste plan voor jouw ecommerce</h2>
+        <p class="mt-4 text-base text-slate-700 sm:text-lg">
+          Gratis plan beschikbaar. Gratis proefperiode van 15 dagen met onbeperkte quizantwoorden en alle functies. 30 dagen niet-goed-geld-terug-garantie.
+        </p>
+      </div>
+
+      <div class="mt-12">
+        <PlanCards lang="nl" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Multi-platform strip -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-7xl px-6 py-16 text-center">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Werkt op meerdere ecommerceplatformen</h2>
+      <!-- Logos are white SVGs (built for a dark bg); brightness-0 inverts them to dark for this white section. -->
+      <ul class="mt-10 flex flex-wrap items-center justify-center gap-x-14 gap-y-8">
+        <li>
+          <a href={localizedHref("/product-recommendation-quiz-shopify/", "nl")} aria-label="Productaanbevelingsquiz voor Shopify">
+            <img src="/img/logos/shopify_monotone_white.svg" alt="Shopify" class="h-8 w-auto opacity-60 brightness-0 transition hover:opacity-100" />
+          </a>
+        </li>
+        <li>
+          <a href={localizedHref("/product-recommendation-quiz-woocommerce/", "nl")} aria-label="Productaanbevelingsquiz voor WooCommerce">
+            <img src="/img/logos/woo_logo_white.svg" alt="WooCommerce" class="h-8 w-auto opacity-60 brightness-0 transition hover:opacity-100" />
+          </a>
+        </li>
+        <li>
+          <a href={localizedHref("/product-recommendation-quiz-bigcommerce/", "nl")} aria-label="Productaanbevelingsquiz voor BigCommerce">
+            <img src="/img/logos/bigcommerce_logo_white.svg" alt="BigCommerce" class="h-7 w-auto opacity-60 brightness-0 transition hover:opacity-100" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <p class="mb-3 text-sm font-semibold uppercase tracking-wider text-white/70">
+        De meeste shoppers haken af omdat ze niet het juiste product vinden
+      </p>
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Maak van shoppers zelfverzekerde kopers met een productaanbevelingsquiz die de verkoop stimuleert.
+      </h2>
+      <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
+        <a
+          href={SHOPIFY_INSTALL}
+          rel="external nofollow"
+          onclick="window.gtag&&gtag('event','shopify_app_install',{event_label:'home_bottom'})"
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          installeren op Shopify
+        </a>
+        <a
+          href={WOOCOMMERCE_DOWNLOAD}
+          rel="external nofollow"
+          onclick="window.gtag&&gtag('event','download_woocommerce_plugin',{event_label:'home_bottom'})"
+          class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
+        >
+          voor WooCommerce halen
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

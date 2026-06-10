@@ -1,0 +1,421 @@
+---
+import Base from "../../../layouts/Base.astro";
+import { organization, breadcrumb, article, faqPage } from "../../../lib/schema";
+import { SITE } from "../../../lib/site";
+import { localizedHref } from "../../../lib/i18n";
+import {
+  REPORT,
+  DATASET,
+  HEADLINE,
+  VERTICAL_CONVERSION,
+  AOV_UPLIFT,
+  ATTRIBUTION,
+  BASELINES,
+  METHODOLOGY,
+  FAQ,
+} from "../../../lib/quiz-benchmarks";
+
+const pageUrl = new URL(`/${REPORT.slug}/`, SITE.site_url).href;
+const ogImage = `/og/${REPORT.slug}.png`;
+
+const SHOPIFY_INSTALL =
+  "https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=state_of_product_quizzes";
+// Free WordPress.org plugin (not the WooCommerce.com extension).
+const WOO_PLUGIN =
+  "https://downloads.wordpress.org/plugin/product-recommendation-quiz-for-ecommerce.latest-stable.zip";
+
+const formatN = (n: number | null) =>
+  n === null ? "" : n.toLocaleString("en-US");
+
+// Conversion expressed against a typical 2% store: 6.9% / 2% = 345%.
+const boost = (rate: number) => Math.round((rate / HEADLINE.baselinePct) * 100);
+
+const jsonLd = [
+  organization(),
+  breadcrumb([
+    { name: "Home", url: localizedHref("/", "nl") },
+    { name: "De staat van de productaanbevelingsquiz", url: localizedHref(`/${REPORT.slug}/`, "nl") },
+  ]),
+  article({
+    title: `${REPORT.title}: ${REPORT.subtitle}`,
+    description: REPORT.description,
+    url: pageUrl,
+    image: ogImage,
+    datePublished: REPORT.datePublished,
+    dateModified: REPORT.dateModified,
+    author: "RevenueHunt",
+    tags: [
+      "productaanbevelingsquiz benchmark",
+      "quiz conversion rate",
+      "ecommerce personalization",
+      "average order value",
+    ],
+  }),
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    name: "RevenueHunt productaanbevelingsquiz benchmarks 2026",
+    description: REPORT.description,
+    url: pageUrl,
+    creator: organization(),
+    license: "https://creativecommons.org/licenses/by/4.0/",
+    isAccessibleForFree: true,
+    datePublished: REPORT.datePublished,
+    keywords: [
+      "productaanbevelingsquiz",
+      "conversion rate",
+      "average order value",
+      "ecommerce",
+      "Shopify",
+    ],
+    distribution: {
+      "@type": "DataDownload",
+      encodingFormat: "application/pdf",
+      contentUrl: new URL(REPORT.pdfPath, SITE.site_url).href,
+    },
+  },
+  faqPage(FAQ),
+];
+
+const publishedLabel = new Date(REPORT.datePublished).toLocaleDateString("nl-NL", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+
+const consumable = VERTICAL_CONVERSION.filter((r) => r.kind === "consumable");
+const considered = VERTICAL_CONVERSION.filter((r) => r.kind === "considered");
+const grouped = VERTICAL_CONVERSION.find((r) => r.kind === "grouped")!;
+const pooled = VERTICAL_CONVERSION.find((r) => r.kind === "total")!;
+---
+
+<Base
+  title={`${REPORT.title}: ${REPORT.subtitle}`}
+  description={REPORT.description}
+  ogImage={ogImage}
+  jsonLd={jsonLd}
+  lang="nl"
+  translated={true}
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
+        <a href={localizedHref("/", "nl")} class="hover:text-slate-700">Home</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <span class="text-slate-700">De staat van de productaanbevelingsquiz</span>
+      </nav>
+      <div class="text-center">
+        <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">
+          Benchmarkrapport · {publishedLabel}
+        </p>
+        <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+          De staat van de productaanbevelingsquiz
+        </h1>
+        <p class="mx-auto mt-6 max-w-3xl text-xl text-slate-600">
+          1 op de 18 shoppers die een productaanbevelingsquiz afmaken plaatst een bestelling, <strong>2,75 keer meer dan een typische online winkel</strong>. Dit rapport splitst uit welke categorieën het meest converteren, hoeveel meer quizshoppers uitgeven en hoe lang één quiz blijft renderen. Gebaseerd op echte data van <strong>{DATASET.responses} quizantwoorden</strong> in {DATASET.brands} winkels.
+        </p>
+        {/* TODO: restore hero CTAs ("Download the PDF" + "Read the findings")
+            once a peer reviews the PDF design. Removed 2026-06-08 to hold the
+            PDF download until that review. The PDF is still generated and the
+            "Cite this report" section's download link is also held (see below). */}
+      </div>
+    </div>
+  </section>
+
+  <!-- Dataset band -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6">
+      <div class="rounded-2xl bg-[#16161D] px-6 py-10 sm:px-10">
+        <p class="text-center text-sm font-semibold uppercase tracking-wider text-white/50">
+          De dataset
+        </p>
+        <dl class="mt-6 grid grid-cols-1 gap-8 text-center sm:grid-cols-3">
+          <div>
+            <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.responses}</dt>
+            <dd class="mt-1 text-sm text-white/70">{DATASET.responsesNote}</dd>
+          </div>
+          <div>
+            <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.revenue}</dt>
+            <dd class="mt-1 text-sm text-white/70">{DATASET.revenueNote}</dd>
+          </div>
+          <div>
+            <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.brands}</dt>
+            <dd class="mt-1 text-sm text-white/70">{DATASET.brandsNote}</dd>
+          </div>
+        </dl>
+        <p class="mx-auto mt-6 max-w-3xl text-center text-sm text-white/60">
+          Geaggregeerd en geanonimiseerd, over {DATASET.platforms}. Geen enkele individuele winkel is herleidbaar. Elk cijfer hieronder is een ondergrens: de attributie loopt nog op, dus de echte cijfers liggen hoger.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key findings (stat cards) -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">De belangrijkste cijfers</h2>
+      <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
+        <div class="rounded-xl border border-slate-200 p-7">
+          <p class="text-4xl font-bold tracking-tight text-[#16161D]">{HEADLINE.completedConv}%</p>
+          <p class="mt-2 font-medium text-slate-900">van de shoppers die een quiz afmaken plaatst een bestelling</p>
+          <p class="mt-2 text-sm text-slate-600">Ongeveer 1 op de {HEADLINE.completedOneIn}, ongeveer {HEADLINE.multiple} keer een typische winkel van {HEADLINE.baselinePct}%.</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 p-7">
+          <p class="text-4xl font-bold tracking-tight text-[#16161D]">+{AOV_UPLIFT.headlineLow}-{AOV_UPLIFT.headlineHigh}%</p>
+          <p class="mt-2 font-medium text-slate-900">meer average order value, binnen dezelfde winkel</p>
+          <p class="mt-2 text-sm text-slate-600">Vergelijkbaar gemeten, aanwezig in ongeveer 7 van de 10 winkels.</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 p-7">
+          <p class="text-4xl font-bold tracking-tight text-[#16161D]">{HEADLINE.completionRate}%</p>
+          <p class="mt-2 font-medium text-slate-900">van de shoppers die aan een quiz beginnen maakt hem af</p>
+          <p class="mt-2 text-sm text-slate-600">Ongeveer 7 van de 10 bereiken de resultatenpagina. {HEADLINE.abandonRate}% haakt eerder af.</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 p-7">
+          <p class="text-4xl font-bold tracking-tight text-[#16161D]">1 op de 5</p>
+          <p class="mt-2 font-medium text-slate-900">aan de quiz toegeschreven bestellingen komt meer dan 30 dagen later binnen</p>
+          <p class="mt-2 text-sm text-slate-600">De quiz blijft nog maanden na het maken omzet genereren.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conversion by category -->
+  <section id="conversion" class="scroll-mt-20 bg-slate-50">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Conversie per categorie</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">
+        Het platformgemiddelde verbergt een grote spreiding. <strong>Verbruiks- en navulbare categorieën converteren twee tot drie keer meer</strong> dan de gemiddelde online winkel. Dure aankopen met veel afweging converteren een orde van grootte lager: daar stimuleert de quiz de ontdekking, maar de verkoop komt later, buiten de sessie.
+      </p>
+      <div class="mt-8 overflow-x-auto">
+        <table class="w-full min-w-[34rem] border-collapse text-left">
+          <thead>
+            <tr class="border-b border-slate-300 text-sm text-slate-500">
+              <th class="py-3 pr-4 font-semibold">Categorie</th>
+              <th class="py-3 pr-4 text-right font-semibold">Conversie</th>
+              <th class="py-3 pr-4 text-right font-semibold">Conversiestijging van de quiz</th>
+              <th class="py-3 text-right font-semibold">Antwoorden</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-900">
+            {consumable.map((r) => (
+              <tr class="border-b border-slate-200">
+                <td class="py-3 pr-4 font-medium">{r.vertical}</td>
+                <td class="py-3 pr-4 text-right font-semibold tabular-nums">{r.rate}%</td>
+                <td class="py-3 pr-4 text-right tabular-nums text-slate-600">{boost(r.rate)}%</td>
+                <td class="py-3 text-right tabular-nums text-slate-500">{formatN(r.n)}</td>
+              </tr>
+            ))}
+            {considered.map((r) => (
+              <tr class="border-b border-slate-200">
+                <td class="py-3 pr-4 font-medium">{r.vertical}</td>
+                <td class="py-3 pr-4 text-right font-semibold tabular-nums">{r.rate}%</td>
+                <td class="py-3 pr-4 text-right tabular-nums text-slate-600">{boost(r.rate)}%</td>
+                <td class="py-3 text-right tabular-nums text-slate-500">{formatN(r.n)}</td>
+              </tr>
+            ))}
+            <tr class="border-b border-slate-200">
+              <td class="py-3 pr-4 font-medium">{grouped.vertical}</td>
+              <td class="py-3 pr-4 text-right font-semibold tabular-nums">~{grouped.rate}%</td>
+              <td class="py-3 pr-4 text-right tabular-nums text-slate-600">~{boost(grouped.rate)}%</td>
+              <td class="py-3 text-right tabular-nums text-slate-500">{formatN(grouped.n)}</td>
+            </tr>
+            <tr class="border-t-2 border-slate-300">
+              <td class="py-3 pr-4 font-semibold">{pooled.vertical}</td>
+              <td class="py-3 pr-4 text-right font-bold tabular-nums">{pooled.rate}%</td>
+              <td class="py-3 pr-4 text-right font-bold tabular-nums text-slate-600">{boost(pooled.rate)}%</td>
+              <td class="py-3 text-right tabular-nums text-slate-500">alle</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mx-auto mt-4 max-w-3xl text-sm text-slate-500 text-center">
+        {grouped.note}
+      </p>
+      <p class="mx-auto mt-2 max-w-3xl text-sm text-slate-500 text-center">
+        {pooled.note}
+      </p>
+    </div>
+  </section>
+
+  <!-- AOV uplift -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Geven quizshoppers meer uit?</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">
+        <strong>Gemeten binnen dezelfde winkel</strong> zijn quizbestellingen <strong>{AOV_UPLIFT.headlineLow}% tot {AOV_UPLIFT.headlineHigh}% groter</strong> dan bestellingen zonder quiz, en dat geldt voor {AOV_UPLIFT.storesUpLow}% tot {AOV_UPLIFT.storesUpHigh}% van de winkels. Het is niet universeel: sterker waar de quiz een set of routine kan samenstellen, bijna vlak waar de aankoop één artikel is.
+      </p>
+      <div class="mt-8 overflow-x-auto">
+        <table class="w-full min-w-[34rem] border-collapse text-left">
+          <thead>
+            <tr class="border-b border-slate-300 text-sm text-slate-500">
+              <th class="py-3 pr-4 font-semibold">Categorie</th>
+              <th class="py-3 pr-4 text-right font-semibold">AOV-stijging binnen de winkel</th>
+              <th class="py-3 text-right font-semibold">Winkels met een stijging</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-900">
+            {AOV_UPLIFT.perVertical.map((r) => (
+              <tr class="border-b border-slate-200">
+                <td class="py-3 pr-4 font-medium">{r.vertical}</td>
+                <td class="py-3 pr-4 text-right font-semibold tabular-nums">
+                  {r.uplift === null ? "Vlak" : `+${r.uplift}%`}
+                </td>
+                <td class="py-3 text-right tabular-nums text-slate-500">
+                  {r.storesUp === null ? "n.v.t." : `${r.storesUp}%`}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="mx-auto mt-4 max-w-3xl text-sm text-slate-500 text-center">
+        Gemeten binnen de winkel (zelfde winkel, quizbestellingen versus bestellingen zonder quiz), dus robuust tegen valuta en gecorrigeerd voor de winkelmix. Getrianguleerd over drie onafhankelijke steekproeven met een mediaan van +11%, +15% en +14%. Categorieën met kleine steekproeven worden weggelaten in plaats van overdreven.
+      </p>
+    </div>
+  </section>
+
+  <!-- Attribution / LTV -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Een quiz blijft renderen na de sessie</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">
+        De meeste attributiedashboards beoordelen een quiz op de bestellingen van dezelfde dag en stoppen daar. Daarmee mis je het grootste deel van de waarde. <strong>{ATTRIBUTION.sameDay}% van de eerste aan de quiz toegeschreven bestellingen gebeurt op dezelfde dag</strong>, maar de staart is lang.
+      </p>
+      <div class="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-4">
+        <div class="rounded-xl border border-slate-200 bg-white p-6 text-center">
+          <p class="text-3xl font-bold text-[#16161D]">{ATTRIBUTION.sameDay}%</p>
+          <p class="mt-1 text-sm text-slate-600">op dezelfde dag</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-white p-6 text-center">
+          <p class="text-3xl font-bold text-[#16161D]">{ATTRIBUTION.within7}%</p>
+          <p class="mt-1 text-sm text-slate-600">binnen 7 dagen</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-white p-6 text-center">
+          <p class="text-3xl font-bold text-[#16161D]">{ATTRIBUTION.within30}%</p>
+          <p class="mt-1 text-sm text-slate-600">binnen 30 dagen</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-white p-6 text-center">
+          <p class="text-3xl font-bold text-[#16161D]">1 op de 5</p>
+          <p class="mt-1 text-sm text-slate-600">komt meer dan 30 dagen later binnen</p>
+        </div>
+      </div>
+      <p class="mx-auto mt-6 max-w-3xl text-slate-700 text-center">
+        Ongeveer <strong>1 op de 5 van alle aan de quiz toegeschreven bestellingen komt meer dan 30 dagen na de quiz binnen</strong>. De quiz is niet alleen een duwtje richting checkout: elk antwoord is zero-party data die de shopper tagt en gesegmenteerde follow-up- en retargetingflows voedt. <a href="https://www.klaviyo.com/marketing-resources/segmentation-benchmark-report" target="_blank" rel="external noopener nofollow" class="font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]">Gesegmenteerde campagnes genereren meer dan 3 keer de omzet per ontvanger</a> dan generieke verzendingen, dus één quiz blijft maandenlang converteren via e-mail en gepersonaliseerde advertenties.
+      </p>
+    </div>
+  </section>
+
+  <!-- Baseline context -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Wat geldt als "de gemiddelde winkel"</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">
+        Er is geen enkel waar getal voor ecommerce-conversie: het schommelt met de methodologie en de steekproef. De eerlijke bandbreedte is ongeveer 1,6% tot 2,9%. We benchmarken tegen een ronde <strong>{HEADLINE.baselinePct}%</strong>, de conservatieve ondergrens, wat wie de quiz maken op ongeveer <strong>{HEADLINE.multiple} keer</strong> de gemiddelde winkel plaatst.
+      </p>
+      <div class="mt-8 overflow-x-auto">
+        <table class="w-full min-w-[34rem] border-collapse text-left">
+          <thead>
+            <tr class="border-b border-slate-300 text-sm text-slate-500">
+              <th class="py-3 pr-4 font-semibold">Bron</th>
+              <th class="py-3 pr-4 text-right font-semibold">Gemiddelde conversie</th>
+              <th class="py-3 font-semibold">Reikwijdte</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-900">
+            {BASELINES.map((b) => (
+              <tr class="border-b border-slate-200">
+                <td class="py-3 pr-4 font-medium">
+                  <a href={b.href} target="_blank" rel="external noopener nofollow" class="text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-slate-500">{b.source}</a>
+                </td>
+                <td class="py-3 pr-4 text-right font-semibold tabular-nums">{b.rate}</td>
+                <td class="py-3 text-sm text-slate-600">{b.scope}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="mx-auto mt-4 max-w-3xl text-sm text-slate-500 text-center">
+        Belangrijk: onze 5,5% is een percentage per persoon die de quiz maakt (bestellingen per voltooide quiz), terwijl elk cijfer hierboven een percentage voor de hele site is (bestellingen per bezoeker). Wie de quiz maken selecteren zichzelf, dus een deel van het verschil is de funnel, niet alleen de quiz. We presenteren de vergelijking rechtstreeks in plaats van hem mooier te maken.
+      </p>
+    </div>
+  </section>
+
+  <!-- Methodology -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Methodologie</h2>
+      <ul class="mt-8 space-y-5" role="list">
+        {METHODOLOGY.map((m) => (
+          <li class="flex gap-3">
+            <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" aria-hidden="true"></span>
+            <p class="text-slate-700">{m}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-3xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Veelgestelde vragen</h2>
+      <div class="mt-10 divide-y divide-slate-200 border-y border-slate-200">
+        {FAQ.map((f) => (
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 text-lg font-semibold text-slate-900 [&::-webkit-details-marker]:hidden">
+              <span>{f.question}</span>
+              <svg
+                class="h-5 w-5 flex-shrink-0 text-slate-400 transition-transform duration-200 group-open:rotate-180"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+              </svg>
+            </summary>
+            <p class="pb-5 text-slate-700" set:html={f.answerHtml ?? f.answer} />
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* TODO: restore the entire "Cite this report" section (PDF download +
+      shareable stat-card links) once a designer reviews the report + PDF + card
+      designs. Removed 2026-06-08 to hold the downloadable assets until review.
+      The PDF and card PNGs are still generated by `bun run report`. */}
+
+  <!-- Bottom CTA -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Meet de stijging in je eigen winkel.
+      </h2>
+      <p class="mx-auto mt-4 max-w-2xl text-lg text-white/70">
+        RevenueHunt is gratis om mee te beginnen, met 100 quizantwoorden per maand. Maak een quiz, stuur er verkeer doorheen en lees je eigen cijfers.
+      </p>
+      <p class="mx-auto mt-4 max-w-2xl text-white/60">
+        Bekijk wat deze benchmarks aan je winkel zouden kunnen toevoegen met onze <a href={localizedHref("/quiz-roi-calculator/", "nl")} class="font-medium text-white underline decoration-white/40 underline-offset-2 hover:decoration-white">quiz-ROI-calculator</a>.
+      </p>
+      <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
+        <a
+          href={SHOPIFY_INSTALL}
+          target="_blank"
+          rel="external noopener nofollow"
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          begin gratis op Shopify
+        </a>
+        <a
+          href={WOO_PLUGIN}
+          target="_blank"
+          rel="external noopener nofollow"
+          class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
+        >
+          begin gratis op WooCommerce
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

@@ -19,6 +19,11 @@ import { COMPETITORS_FR } from "./content/competitors.fr";
 import { COMPETITORS_DE } from "./content/competitors.de";
 import { COMPETITORS_PT } from "./content/competitors.pt";
 import { COMPETITORS_IT } from "./content/competitors.it";
+import { COMPETITORS_NL } from "./content/competitors.nl";
+import { COMPETITORS_SV } from "./content/competitors.sv";
+import { COMPETITORS_FI } from "./content/competitors.fi";
+import { COMPETITORS_PL } from "./content/competitors.pl";
+import { COMPETITORS_CS } from "./content/competitors.cs";
 
 export interface CompareRow {
   feature: string;
@@ -547,4 +552,9 @@ export const COMPETITORS_BY_LANG: Record<Lang, Record<string, Competitor>> = {
   de: COMPETITORS_DE,
   pt: COMPETITORS_PT,
   it: COMPETITORS_IT,
+  nl: COMPETITORS_NL,
+  sv: COMPETITORS_SV,
+  fi: COMPETITORS_FI,
+  pl: COMPETITORS_PL,
+  cs: COMPETITORS_CS,
 };

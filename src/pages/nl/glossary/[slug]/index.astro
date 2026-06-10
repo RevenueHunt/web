@@ -1,0 +1,14 @@
+---
+import GlossaryPage from "../../../../components/pages/GlossaryPage.astro";
+import { GLOSSARY_BY_LANG } from "../../../../lib/glossary";
+
+export function getStaticPaths() {
+  return Object.values(GLOSSARY_BY_LANG["nl"]).map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+const { entry } = Astro.props;
+---
+
+<GlossaryPage entry={entry} lang="nl" translated={true} />

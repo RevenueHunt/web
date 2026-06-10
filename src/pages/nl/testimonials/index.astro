@@ -1,0 +1,176 @@
+---
+import Base from "../../../layouts/Base.astro";
+import { organization, breadcrumb, softwareApplication } from "../../../lib/schema";
+import { SITE } from "../../../lib/site";
+import { localizedHref } from "../../../lib/i18n";
+
+interface Testimonial {
+  store: string;
+  url: string;
+  logo: string;
+  date: string;
+  quote: string;
+  category: "Skincare" | "Beauty" | "More";
+}
+
+const testimonials: Testimonial[] = [
+  // Skincare
+  { category: "Skincare", store: "Earth Tonics Skincare", url: "https://earthtonicsskincare.com/", logo: "/img/pages/testimonials/tonic.webp", date: "Jan 12, 2022", quote: "This app was exactly what I was looking for... you can keep it simple or make it super functional and intelligent. I used it for our skincare line to help match clients with their perfect regimen of products. I have definitely seen an increase average..." },
+  { category: "Skincare", store: "MDO Skin", url: "https://mdo-skin.com/", logo: "/img/pages/testimonials/mdo.webp", date: "Jan 6, 2022", quote: "Absolutely brilliant app. When we were evaluating apps, there was no other app that gave us the flexibility and functionality needed, it is really good. Also support is fantastic and very responsive. Highly recommended." },
+  { category: "Skincare", store: "Revoderm", url: "https://www.revoderm.com/", logo: "/img/pages/testimonials/derm.webp", date: "Dec 29, 2021", quote: "I used this app to set up a skincare quiz on my customer's Shopify store. The app is powerful and beautifully designed. Tech support was excellent. They sent clear responses within minutes every time. Great job!" },
+  { category: "Skincare", store: "Proverb Skin", url: "https://proverbskin.com/", logo: "/img/pages/testimonials/proverb.webp", date: "Jan 6, 2022", quote: "A fantastic app, just what we were looking for. Very intuitive and fun to use. Endless options built-in and ability to customise as required. Awesome." },
+  { category: "Skincare", store: "Brown Rose Essentials", url: "https://brownroseessentials.com/", logo: "/img/pages/testimonials/brown.webp", date: "Jan 5, 2022", quote: "This app is great! I am not the most tech savvy person and had some trouble setting up my quiz. However, the customer support team has been more than helpful in assisting me, and promptly at that! I would highly recommend using this app to set up your product quizzes!" },
+  { category: "Skincare", store: "Glow Therapy", url: "https://glowtherapy.ca/", logo: "/img/pages/testimonials/glow.webp", date: "Jul 18, 2021", quote: "It just kept getting better! I thought it was as capable of some of the other apps, then I realized it had more. Then some things I thought wouldn't be possible WERE, AND THEN they allowed me to make it look just as branded as the rest of my site. Oh yeah, and the support team is awesome too!" },
+  { category: "Skincare", store: "Yu-Be", url: "https://yu-be.com/", logo: "/img/pages/testimonials/yube.webp", date: "Jun 28, 2022", quote: "Great customer service. I had so many questions and the support staff was very friendly and went the extra mile to help me set everything up just as I wanted it to be. Now just waiting for results!" },
+  { category: "Skincare", store: "Naya Glow", url: "https://nayaglow.com/", logo: "/img/pages/testimonials/naya.webp", date: "Jun 17, 2022", quote: "Love the support and love the app. Been well thought through! Keep up the good work and look forward to new features." },
+  { category: "Skincare", store: "Smood Skin", url: "https://www.smoodskin.com/", logo: "/img/pages/testimonials/smood.webp", date: "Jun 20, 2021", quote: "I got help very fast - and without hesitation. Good customer service staff, that I know now already in the beginning of using the app." },
+  // Beauty
+  { category: "Beauty", store: "Cahaba Derm", url: "https://cahabaderm.com/", logo: "/img/pages/testimonials/cahaba.webp", date: "Oct 15, 2021", quote: "Very easy to use compared to other review apps. I tested a few quiz apps and I chose this one due to the simplicity, but it's still complex enough to do the customizations I want. Very fast customer service too! Definitely recommend." },
+  { category: "Beauty", store: "K-Beauty", url: "https://www.k-beauty.co.uk/", logo: "/img/pages/testimonials/K_Beauty_Logo_200x.webp", date: "Nov 2, 2021", quote: "Excellent! Very impressed, lots of templates to choose from. Easy to use and very flexible in how you design your quizzes. Plus first class customer service." },
+  { category: "Beauty", store: "Antibeauty", url: "https://www.antibeauty.com.au/", logo: "/img/pages/testimonials/antibeauty.webp", date: "Nov 11, 2021", quote: "Absolutely amazing customer service! I had an issue with my theme that literally EVERYONE said essentially couldn't be fixed... And the developers of this app made sure that my quiz was working despite it! Highly recommended, I love how customisable the app is too, I get great feedback about it!" },
+  { category: "Beauty", store: "House of Beauty India", url: "https://houseofbeautyindia.com/", logo: "/img/pages/testimonials/hob.webp", date: "Oct 15, 2021", quote: "Lovely app, even better customer-care support. Fabulous - asked them for a simple issue and it was resolved within minutes." },
+  { category: "Beauty", store: "GK Hair", url: "https://www.gkhair.com/", logo: "/img/pages/testimonials/gkhair.webp", date: "Sep 1, 2021", quote: "This is the best app ever. We stuck with Typeform and could never finish our quiz, someone recommended this app and we are amazed at the flexibility and results. It was very easy, we did not need any developer's help. The best thing we liked about this app is its smooth integration with Klaviyo. All is set up and as soon as the user fills the quiz our flows are triggered to perform the magic. And most importantly the support and help from the team was awesome!" },
+  { category: "Beauty", store: "Colorescience UK", url: "https://colorescienceuk.com/", logo: "/img/pages/testimonials/color.webp", date: "Sep 16, 2021", quote: "Great app, I highly recommend it! Easy to set up, helps with conversion a lot and engages customers to interact with your shop. If you need assistance, customer service is super-fast and very helpful!" },
+  { category: "Beauty", store: "Aklasu", url: "https://aklasu.co/", logo: "/img/pages/testimonials/aklasu.webp", date: "Jul 4, 2021", quote: "I tested every Product Quiz on the Shopify App Store. This one, hands down, is the best when you consider price, customizability and function. After I got knee deep and saw that this was the app to use, I was pleasantly surprised with the responsiveness of the support team. They were quick and seemed invested in my success with the app. Also, they have very good documentation. Great job! Highly recommended." },
+  { category: "Beauty", store: "Madluvv", url: "https://madluvv.com/", logo: "/img/pages/testimonials/madluvv.webp", date: "Jun 11, 2021", quote: "App developer was very helpful and we love the quiz function. It's helped our conversion a lot and we plan on keeping it for a long time!" },
+  { category: "Beauty", store: "Zeyl Beauty", url: "https://zeylbeauty.com/", logo: "/img/pages/testimonials/zeylb.webp", date: "Jun 9, 2021", quote: "Such an incredible quiz app, super easy to use and customize. Their service is amazing, they always respond promptly and do whatever they can to help me out. I would recommend this over any other quiz app I have tried!" },
+  // More
+  { category: "More", store: "Balance Wine Co.", url: "https://balancewineco.com.au/", logo: "/img/pages/testimonials/balance.webp", date: "Feb 4, 2022", quote: "The app is very well built, integrates seamlessly with Klaviyo (feeds the answers) and the team has been really helpful and prompt in answering any questions. Not kidding - day 1 of making the quiz live, I got a sale!" },
+  { category: "More", store: "Creatively Intentional", url: "https://creativelyintentional.com/", logo: "/img/pages/testimonials/creative.webp", date: "Feb 1, 2022", quote: "As a candlemaker, I know that some of my potential or current customers need help figuring out which scents to choose online. Productaanbevelingsquiz gave me an easy way to provide help through a simple quiz, as well as a way to build my subscriber list. If you ever have questions, the customer support is amazing! Highly recommend this app." },
+  { category: "More", store: "Dio Candle Company", url: "https://diocandlecompany.com/", logo: "/img/pages/testimonials/dio.webp", date: "Feb 11, 2022", quote: "Really love this productaanbevelingsquiz. My customers love it! I especially love the customization options and the applicable view options. Highly recommend!" },
+  { category: "More", store: "Jump", url: "https://www.jump.ca/", logo: "/img/pages/testimonials/jump.webp", date: "Mar 4, 2022", quote: "Great app with all the customization you need to match your brand. They send instructional emails properly without over-spamming your inbox. Also, AMAZING customer service - not sure if I've seen a response time as fast as RevenueHunt!" },
+  { category: "More", store: "Maison Kkot", url: "https://www.maisonkkot.com/", logo: "/img/pages/testimonials/kkot.webp", date: "Mar 4, 2022", quote: "This app is great. The use is intuitive and the customer service is attentive and efficient. I recommend it." },
+  { category: "More", store: "Outdoor Master", url: "https://outdoormaster.com/", logo: "/img/pages/testimonials/logo_black.svg", date: "Feb 25, 2022", quote: "Amazing team, great support. We use this app to customize recommendations to our customers. It is super easy to build a quiz and get started. The integration with our email marketing platform went smoothly as well. Kudos to the helpful support team who respond to my questions so quickly and patiently, and have my issues sorted out within a couple of hours. Definitely recommend." },
+  { category: "More", store: "Cascadian Water", url: "https://cascadianwater.com/", logo: "/img/pages/testimonials/water.webp", date: "Feb 23, 2022", quote: "I used this app to help customers dial in the best solution for their specific needs. Very powerful yet simple to use. Whenever I had a question I got an answer within a short time." },
+  { category: "More", store: "Salt Wrap", url: "https://saltwrap.com/", logo: "/img/pages/testimonials/wrap.webp", date: "Feb 21, 2022", quote: "I tried a few other review apps before landing here. Easiest to set up, great design, responsive support, and best value for money. Highly recommend." },
+  { category: "More", store: "Her Scents", url: "https://herscents.co/", logo: "/img/pages/testimonials/scents.webp", date: "Feb 20, 2022", quote: "Helpful team! They helped me with the setting up process of my quiz and they respond very quickly! App works well too!" },
+];
+
+const groups: { id: string; label: string; cat: Testimonial["category"] }[] = [
+  { id: "skincare", label: "Skincare", cat: "Skincare" },
+  { id: "beauty", label: "Beauty", cat: "Beauty" },
+  { id: "more", label: "Meer reviews", cat: "More" },
+];
+
+const jsonLd = [
+  organization(),
+  softwareApplication(),
+  breadcrumb([
+    { name: "Home", url: "/" },
+    { name: "Testimonials", url: "/testimonials/" },
+  ]),
+];
+---
+
+<Base
+  title="Testimonials - RevenueHunt"
+  description="Echte reviews van skincare-, beauty- en ecommercemerken die de quizzen van RevenueHunt gebruiken op Shopify, WooCommerce, BigCommerce en meer."
+  jsonLd={jsonLd}
+  lang="nl"
+  translated={true}
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20 text-center">
+      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
+        <a href={localizedHref("/", "nl")} class="hover:text-slate-700">Home</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <span class="text-slate-700">Testimonials</span>
+      </nav>
+      <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">Ontdek waarom onze klanten dol zijn op onze</p>
+      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+        Productaanbevelingsquiz
+      </h1>
+      <p class="mx-auto mt-8 max-w-3xl text-lg text-slate-700">
+        <span class="font-semibold text-slate-900">Iedereen is dol op gepersonaliseerde aanbevelingen.</span>
+        Nu kun je ze maken en omzetten in gesegmenteerde leads die converteren.
+      </p>
+      <p class="mx-auto mt-6 max-w-3xl text-slate-600">
+        Online verkopen staan op recordhoogte, maar wat shoppers tot kopen aanzet is hen helpen het juiste product te kiezen.
+        Of je nu tien producten verkoopt of duizend, RevenueHunt maakt die keuze heel eenvoudig.
+      </p>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-600">
+        Lanceer een productaanbevelingsquiz die elke bezoeker naar zijn perfecte keuze leidt, zijn antwoorden vastlegt
+        en gesegmenteerde leads rechtstreeks naar Klaviyo, Meta of GA4 stuurt. Geen code. Geen wrijving. Alleen conversies.
+      </p>
+      <p class="mt-6 font-semibold text-slate-900">Maar geloof ons niet zomaar op ons woord.</p>
+    </div>
+  </section>
+
+  <!-- Category tabs (anchor links - no JS) -->
+  <nav class="border-b border-slate-200 bg-white" aria-label="Testimonial categories">
+    <ul class="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-8 gap-y-2 px-6 py-4 text-sm font-semibold">
+      {groups.map((g) => (
+        <li>
+          <a href={`#${g.id}`} class="text-slate-700 underline-offset-4 hover:text-[#16161D] hover:underline">
+            {g.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+
+  <!-- Testimonial card grid, grouped by category -->
+  <section class="mx-auto max-w-7xl px-6 py-12 sm:py-16">
+    {groups.map((g) => (
+      <div id={g.id} class="mb-16 scroll-mt-24 last:mb-0">
+        <h2 class="mb-8 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">{g.label}</h2>
+        <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {testimonials.filter((t) => t.category === g.cat).map((t) => (
+            <li>
+              <a
+                href={t.url}
+                target="_blank"
+                rel="external noopener nofollow"
+                class="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 transition hover:border-slate-300 hover:shadow-md"
+              >
+                <div class="flex h-16 items-center">
+                  <img
+                    src={t.logo}
+                    alt={`${t.store} logo`}
+                    loading="lazy"
+                    class="max-h-14 max-w-[180px] object-contain"
+                  />
+                </div>
+                <div class="mt-4 flex items-center gap-3 text-xs text-slate-500">
+                  <span aria-label="5 stars">⭐⭐⭐⭐⭐</span>
+                  <span>{t.date}</span>
+                </div>
+                <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-700">{t.quote}</p>
+                <span class="mt-4 inline-flex items-center gap-1 text-xs font-semibold uppercase tracking-wider text-slate-500 group-hover:text-[#16161D]">
+                  Bezoek {t.store} <span aria-hidden="true">↗</span>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <p class="mb-3 text-sm font-semibold uppercase tracking-wider text-white/70">
+        De meeste shoppers haken af omdat ze niet het juiste product vinden
+      </p>
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Maak van shoppers zelfverzekerde kopers met een productaanbevelingsquiz die de verkoop stimuleert.
+      </h2>
+      <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
+        <a
+          href={SITE.signup_url}
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          Registreer gratis
+        </a>
+        <a
+          href={localizedHref("/demo/", "nl")}
+          class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
+        >
+          Een demo boeken
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

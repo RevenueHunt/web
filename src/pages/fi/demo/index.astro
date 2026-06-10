@@ -1,0 +1,93 @@
+---
+import Base from "../../../layouts/Base.astro";
+import { organization, breadcrumb } from "../../../lib/schema";
+import { SITE } from "../../../lib/site";
+import { localizedHref } from "../../../lib/i18n";
+
+const QUIZ_URL = "https://admin.revenuehunt.com/public/quiz/8qHyAD6";
+
+const jsonLd = [
+  organization(),
+  breadcrumb([
+    { name: "Etusivu", url: "/" },
+    { name: "Varaa demo", url: "/demo/" },
+  ]),
+];
+---
+
+<Base
+  title="Varaa demo - RevenueHunt"
+  description="Katso RevenueHunt toiminnassa. Varaa 30 minuutin puhelu tiimimme kanssa, jotta voimme käydä tuotteen läpi, vastata kysymyksiisi ja suunnitella kyselysuppilosi."
+  jsonLd={jsonLd}
+  lang="fi"
+  translated={true}
+>
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
+        <a href={localizedHref("/", "fi")} class="hover:text-slate-700">Etusivu</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <span class="text-slate-700">Varaa demo</span>
+      </nav>
+      <div class="grid gap-12 lg:grid-cols-2 lg:gap-16">
+        <div>
+          <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+            Varaa demo tiimimme kanssa
+          </h1>
+          <p class="mt-6 text-lg text-slate-700">
+            Useimmat ostajat lähtevät, koska eivät löydä oikeaa tuotetta. Näytämme sinulle, miten tuotesuosittelukysely ratkaisee sen - livenä oikealla Shopify-kaupalla, kysymyksesi etusijalla.
+          </p>
+          <ul class="mt-8 space-y-3 text-slate-700">
+            <li class="flex gap-3">
+              <svg class="mt-1 h-5 w-5 flex-shrink-0 text-emerald-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.7 5.3a1 1 0 010 1.4l-7 7a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.3 6.3-6.3a1 1 0 011.4 0z" clip-rule="evenodd"/></svg>
+              30 minuutin läpikäynti kyselynrakentajasta, tulossivusta ja integraatioista
+            </li>
+            <li class="flex gap-3">
+              <svg class="mt-1 h-5 w-5 flex-shrink-0 text-emerald-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.7 5.3a1 1 0 010 1.4l-7 7a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.3 6.3-6.3a1 1 0 011.4 0z" clip-rule="evenodd"/></svg>
+              Sovitettu katalogisi kokoon, liikenteen lähteeseen ja segmentointitavoitteisiisi
+            </li>
+            <li class="flex gap-3">
+              <svg class="mt-1 h-5 w-5 flex-shrink-0 text-emerald-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.7 5.3a1 1 0 010 1.4l-7 7a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.3 6.3-6.3a1 1 0 011.4 0z" clip-rule="evenodd"/></svg>
+              Ei painetta sitoutua - näytämme mikä on mahdollista, ja sitten päätös on sinun
+            </li>
+          </ul>
+          <div class="mt-10 flex flex-wrap gap-3">
+            <a
+              href="https://docs.revenuehunt.com/"
+              target="_blank"
+              rel="external noopener"
+              class="inline-flex items-center justify-center rounded-md border border-[#16161D] bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-50"
+            >
+              Tutustu ohjekeskukseen ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border border-slate-200 bg-white p-1 shadow-lg">
+          <iframe
+            src={QUIZ_URL}
+            title="Varaa demo RevenueHuntin kanssa"
+            loading="lazy"
+            class="h-[600px] w-full rounded-xl"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Tutkitko mieluummin itse? Aloita ilmaiseksi.
+      </h2>
+      <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
+        <a
+          href={SITE.signup_url}
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          Rekisteröidy
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

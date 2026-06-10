@@ -1,0 +1,203 @@
+---
+import Base from "../../../layouts/Base.astro";
+import { organization, breadcrumb } from "../../../lib/schema";
+import { localizedHref } from "../../../lib/i18n";
+
+interface Partner {
+  name: string;
+  url: string;
+  logo: string;
+  description: string;
+}
+
+const partners: Partner[] = [
+  { name: "Taranker", url: "https://taranker.com/", logo: "/img/pages/partners/Icon512.webp", description: "Taranker je inovativní platforma, která pomáhá ecommerce podnikům najít nejlepší nástroje pro optimalizaci jejich provozu. Specializuje se na doporučení aplikací, expertní recenze a kurátorské výběry aplikací." },
+  { name: "SalesHunterThemes", url: "https://saleshunterthemes.com/?utm_source=app-providers&utm_medium=revenuehunt&utm_campaign=partnership-app&utm_content=website", logo: "/img/pages/partners/saleshunterthemes-logo.webp", description: "Posuň svůj obchod kupředu s prémiovými Shopify themes od SalesHunterThemes. Moderní a responzivní designy, které optimalizují výkon i uživatelský zážitek, s širokými možnostmi přizpůsobení." },
+  { name: "Fulfillman", url: "https://www.fulfillman.com/", logo: "/img/pages/partners/fulfillmanlogo.webp", description: "Fulfillman je globální lídr v oblasti sourcingu, fulfillmentu a logistiky pro ecommerce, nabízí rychlé a spolehlivé doručení prostřednictvím dedikovaných služeb privátní linky." },
+  { name: "WC Wishlist Club", url: "https://apps.shopify.com/wishlist-club?utm_source=revenuehunt&utm_medium=website&utm_campaign=partnership", logo: "/img/pages/partners/wishlist-club-150-150-px-logo.webp", description: "WC Wishlist Club umožní tvým zákazníkům ukládat oblíbené produkty, sdílet seznamy přání a nakoupit později, čímž zvyšuje zapojení i prodeje. Snadné nastavení, optimalizováno pro mobil a ideální pro proměnu pouhých prohlížečů ve věrné kupující." },
+  { name: "Langwill: Language Translate", url: "https://partner.channelwill.com/ceq5ql", logo: "/img/pages/partners/1.webp", description: "Rozšiř svůj globální dosah s Langwill: přelož svůj obchod Shopify do 138 jazyků a automaticky převáděj měny pro plynulý a lokalizovaný nákupní zážitek." },
+  { name: "Orbe Shopify Geolocation", url: "https://orbe.app/", logo: "/img/pages/partners/orbe-removebg-preview.webp", description: "Maximalizuj globální prodeje s pokročilou geolokací Shopify. Přizpůsob produkty, ceny, měnu i obsah pro každou zemi a naveď zákazníky ke správnému nákupnímu zážitku s Orbe." },
+  { name: "Checkout Extensions Pro", url: "https://apps.shopify.com/checkout-extensions-pro?utm_source=drip", logo: "/img/pages/partners/CHECKOUT-Extension-Pro-logo_0101.webp", description: "Posílí tvůj checkout na Shopify Plus díky personalizovaným upsell slevám, upsellům s AI, liště dopravy zdarma, nabídkám po nákupu, pečetím důvěry, recenzím a mnohem více." },
+  { name: "Customer Dashboard Pro", url: "https://apps.shopify.com/customer-dashboard-pro?utm_source=revenuehunt", logo: "/img/pages/partners/CustomerDashboard.webp", description: "Customer Dashboard Pro je jediná aplikace, která nabízí bezproblémovou podporu jak pro nové Customer Accounts od Shopify, tak pro Classic Customer Accounts." },
+  { name: "WISS Bundle", url: "https://apps.shopify.com/wiss-bundle", logo: "/img/pages/partners/Logo-9.webp", description: "Zvyš tržby i AOV svého obchodu Shopify pomocí jednoduché a přizpůsobitelné aplikace pro balíčky produktů. Nabízí flexibilní slevové možnosti: slevy podle hodnoty, dopravu zdarma na balíčky produktů nebo koupíš X a dostaneš Y." },
+  { name: "ToastiBar – Sales Popup", url: "https://makeprosimp.com/partnership/revenuehunt", logo: "/img/pages/partners/toastibarlogo_fgaiv9.webp", description: "Zvyš důvěru zákazníků a posuň prodeje díky zobrazování sociálního důkazu v reálném čase: prodeje, košík, návštěvníci, recenze produktů a upozornění na zásoby." },
+  { name: "UpPromote: Affiliate & Referral", url: "https://partners.secomapp.com/apps/affiliate/SHOPQUIZ_APP", logo: "/img/pages/partners/NEW_logo-1.webp", description: "UpPromote je nejdoporučovanější afiliační/referral aplikace na Shopify App Store. Komplexní řešení pro tvorbu a správu tvých marketingových kampaní, vhodné pro podniky jakékoli velikosti." },
+  { name: "Essential Free Shipping Bar", url: "https://essential-apps.com/essential-shopify-free-shipping-bar-application/", logo: "/img/pages/partners/freeshippingbarlogo.webp", description: "Zvyš prodeje i AOV nastavením neomezených lišt dopravy zdarma s více cíli hodnoty košíku, abys motivoval kupující přidat víc produktů." },
+  { name: "iCart Cart Drawer Cart Upsell", url: "https://apps.shopify.com/icart/?campaign=promotion&medium=in-app-banner&source=revenuehunt", logo: "/img/pages/partners/iCart-Cart-Drawer-Cart-Upsell-logo.webp", description: "Komplexní aplikace Shopify pro přizpůsobení cart draweru a celé stránky košíku s upsellem, doporučeními produktů, lištou postupu, balíčky produktů a slevami." },
+  { name: "Kaching Bundle Quantity Deals", url: "https://apps.shopify.com/bundle-deals?utm_source=partnership&utm_medium=web&utm_campaign=REVENUEH", logo: "/img/pages/partners/Kaching-Logo-1024x1024.webp", description: "Posuň prodeje s Kaching Bundle Quantity Deals: vytvoř nabídky balíčků přímo na stránce svého produktu. Použij kód REVENUEH20 pro exkluzivní slevu 20 %." },
+  { name: "PDF Invoice Generator", url: "https://apps.shopify.com/fordeer-invoice-order-printer?utm_source=ShopQuizProductRecommender&utm_medium=comarketing&utm_campaign=partner", logo: "/img/pages/partners/fordeer-data-export-1024x1024.webp", description: "Generátor faktur Shopify od Fordeer je flexibilní, splňuje globální legislativu a obsluhuje B2C, B2B i velkoobchod. Přizpůsobitelné PDF šablony, dávkový tisk a podpora přes živý chat 24/7." },
+  { name: "HyperSKU", url: "https://www.hypersku.com/", logo: "/img/pages/partners/150150-logo.webp", description: "HyperSKU nabízí komplexní řešení dodavatelského řetězce. Více než 1M produktů, prodej balíčků, vzorkování, kontrola kvality, brandové přizpůsobení a automatizovaný fulfillment objednávek." },
+  { name: "Service Points", url: "https://www.servicepoints.eu/en/w2/smart-dropshipping-1?utm_source=revenuehunt&utm_medium=app&utm_id=31", logo: "/img/pages/partners/Logo-Black-background.webp", description: "Service Points představuje SMART Dropshipping: automatizovaný dropshipping a rozhodnutí o dodavatelském řetězci založená na datech pro nekonečné škálování." },
+  { name: "AI SEO Optimizer", url: "https://share.seoant.com/app/1165b75b7ce1524D5J", logo: "/img/pages/partners/SEOAnt-_-AI-SEO-Optimizer_Channelwill-.webp", description: "Nejlepší SEO aplikace pro Shopify: optimalizuje klíčová slova, vylepšuje meta tagy a zdokonaluje strukturu webu. Analýza výkonu a rychlosti SEO poháněná AI." },
+  { name: "BSS: B2B/Wholesale Solution", url: "https://apps.shopify.com/b2b-solution-custom-pricing?utm_source=RevenueHunt&utm_medium=partner-listing&utm_campaign=partnership-2024", logo: "/img/pages/partners/BSS-Commerce_logo_150.webp", description: "Komplexní velkoobchodní řešení. Plynulý B2B nákupní zážitek, který obchodníkům navíc pomáhá spravovat své velkoobchodní zákazníky a získávat o nich poznatky." },
+  { name: "PreOrder Now WOD", url: "https://apps.shopify.com/preorder-now?utm_source=+revenuehunt&utm_medium=web&utm_campaign=partner&utm_id=crosspromo", logo: "/img/pages/partners/PreOrder-Now-Logo.webp", description: "Proměň situace nedostatku zásob v příležitosti k předobjednávce. Ideální pro print-on-demand podniky: zachyť zájem zákazníka i bez počátečních zásob." },
+];
+
+const perks = [
+  { title: "Provize za doporučení", body: "Získej pro RevenueHunt nové zákazníky a inkasuj doživotní provizi 20 % ze všech tržeb, které vygenerují." },
+  { title: "Affiliate odkazy", body: "Přidej své affiliate odkazy do svých článků, newsletterů a příspěvků na sociálních sítích. Odkazuj přímo na naše aplikace pro Shopify, WooCommerce, BigCommerce, Magento i standalone." },
+  { title: "Tvůj vlastní partner manager", body: "Získej tipy, jak vytvářet automatizované prodejní trychtýře s naším nástrojem, a triky, jak naše řešení prodat svým zákazníkům." },
+  { title: "Exkluzivní obsah", body: "Kontaktuj nás a získej tipy, jak vytvářet automatizované prodejní trychtýře pro své zákazníky pomocí RevenueHunt a dalších nástrojů." },
+  { title: "Místo v našem Partner Directory", body: "Naši uživatelé tě najdou v našem Partner Directory a spojí se s tebou, aby si najali tvé služby." },
+];
+
+const faqs = [
+  { q: "Kolik stojí stát se partnerem?", a: "Registrace je úplně zdarma. Nula. Nic." },
+  { q: "Musím být zákazníkem RevenueHunt?", a: "Ne, abys se stal partnerem, nemusíš být zákazníkem RevenueHunt." },
+  { q: "Jak mi zaplatíte?", a: "Výdělky vyplácíme měsíčně. Platby posíláme přes PayPal." },
+  { q: "Jak můžu sledovat svá doporučení?", a: "Své statistiky vidíš ve svém Partner Dashboardu." },
+];
+
+const jsonLd = [
+  organization(),
+  breadcrumb([
+    { name: "Domů", url: "/" },
+    { name: "Partneři a affiliate", url: "/partners/" },
+  ]),
+];
+---
+
+<Base
+  title="Partnerský program - RevenueHunt"
+  description="Doporuč své klienty. Vydělávej. Získej doživotní provizi 20 % ze zákazníků, které doporučíš RevenueHunt. Zaregistruj se zdarma do našeho Partnerského programu."
+  jsonLd={jsonLd}
+  lang="cs"
+  translated={true}
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20 text-center">
+      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
+        <a href={localizedHref("/", "cs")} class="hover:text-slate-700">Domů</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <span class="text-slate-700">Partneři a affiliate</span>
+      </nav>
+      <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">Partnerský program</p>
+      <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+        Doporuč své klienty. Vydělávej.
+      </h1>
+      <p class="mx-auto mt-6 max-w-2xl text-xl text-slate-600">
+        Vydělej doživotní provizi 20 % ze zákazníků, které nám doporučíš. Zaregistruj se dnes zdarma do našeho Partnerského programu.
+      </p>
+      <p class="mx-auto mt-6 max-w-3xl text-slate-600">
+        Pokud jsi <strong class="font-semibold text-slate-900">agentura digitálního marketingu</strong> nebo
+        <strong class="font-semibold text-slate-900">specialista na ecommerce</strong> a chceš rozvíjet své podnikání,
+        náš Partnerský program je právě pro tebe. Vytvářej se svými klienty s RevenueHunt úžasné zážitky.
+      </p>
+      <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
+        <a
+          href="mailto:partners@revenuehunt.com?subject=RevenueHunt%20Partner%20Program"
+          class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
+        >
+          Začni hned
+        </a>
+        <a
+          href="#partners"
+          class="inline-flex items-center justify-center rounded-md border border-[#16161D] bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-50"
+        >
+          Zobrazit naše partnery
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who you are + perks -->
+  <section class="mx-auto max-w-7xl px-6 py-16">
+    <div class="grid gap-12 lg:grid-cols-3">
+      <div class="lg:col-span-1">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Kdo jsi</h2>
+        <p class="mt-4 text-slate-600">
+          Jsi agentura digitálního marketingu nebo ecommerce konzultant, který má vášeň pro design a je posedlý tím,
+          <strong class="font-semibold text-slate-900">dosáhnout nejlepších výsledků</strong> pro své klienty. Rozvíjíš
+          své podnikání tím, že posouváš to jejich.
+        </p>
+      </div>
+      <div class="lg:col-span-2">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Co od nás získáš</h2>
+        <ul class="mt-6 grid gap-4 sm:grid-cols-2">
+          {perks.map((p) => (
+            <li class="rounded-xl border border-slate-200 bg-white p-5">
+              <h3 class="text-base font-semibold text-slate-900">{p.title}</h3>
+              <p class="mt-2 text-sm text-slate-600">{p.body}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-4xl px-6 py-16">
+      <h2 class="text-center text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Časté dotazy</h2>
+      <div class="mx-auto mt-8 max-w-2xl">
+        {faqs.map((f) => (
+          <details class="border-b border-slate-200">
+            <summary class="py-4 text-base font-semibold text-slate-900">{f.q}</summary>
+            <p class="pb-4 text-slate-600">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner directory -->
+  <section id="partners" class="mx-auto max-w-7xl px-6 py-16 scroll-mt-24">
+    <h2 class="text-center text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Naši partneři</h2>
+    <p class="mx-auto mt-3 max-w-2xl text-center text-slate-600">
+      Důvěryhodné aplikace a agentury, které se s RevenueHunt dokonale snoubí pro tvé klienty.
+    </p>
+    <ul class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {partners.map((p) => (
+        <li>
+          <a
+            href={p.url}
+            target="_blank"
+            rel="external noopener nofollow"
+            class="group flex h-full flex-col items-center rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm transition hover:border-slate-300 hover:shadow-md"
+          >
+            <img
+              src={p.logo}
+              alt={`Logo ${p.name}`}
+              loading="lazy"
+              width="120"
+              height="120"
+              class="h-24 w-24 rounded-full object-cover"
+            />
+            <h3 class="mt-5 text-lg font-semibold text-slate-900 group-hover:text-[#16161D]">{p.name}</h3>
+            <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-600">{p.description}</p>
+            <span class="mt-5 inline-flex items-center gap-1 text-xs font-semibold uppercase tracking-wider text-slate-500 group-hover:text-[#16161D]">
+              Navštívit web <span aria-hidden="true">↗</span>
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Staň se partnerem RevenueHunt
+      </h2>
+      <p class="mx-auto mt-4 max-w-2xl text-white/80">
+        Doporuč své klienty, vytvářej automatizované prodejní trychtýře a vydělej doživotní provizi 20 % ze všeho, co utratí.
+      </p>
+      <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
+        <a
+          href="mailto:partners@revenuehunt.com?subject=RevenueHunt%20Partner%20Program"
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          Začni hned
+        </a>
+        <a
+          href={localizedHref("/demo/", "cs")}
+          class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
+        >
+          Rezervuj si demo
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,14 @@
+---
+import ComparePage from "../../../../components/pages/ComparePage.astro";
+import { COMPETITORS_BY_LANG } from "../../../../lib/competitors";
+
+export function getStaticPaths() {
+  return Object.values(COMPETITORS_BY_LANG["sv"]).map((competitor) => ({
+    params: { slug: competitor.slug },
+    props: { competitor },
+  }));
+}
+const { competitor } = Astro.props;
+---
+
+<ComparePage competitor={competitor} lang="sv" translated={true} />

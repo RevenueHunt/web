@@ -24,6 +24,11 @@ import { SOLUTIONS_FR } from "./content/solutions.fr";
 import { SOLUTIONS_DE } from "./content/solutions.de";
 import { SOLUTIONS_PT } from "./content/solutions.pt";
 import { SOLUTIONS_IT } from "./content/solutions.it";
+import { SOLUTIONS_NL } from "./content/solutions.nl";
+import { SOLUTIONS_SV } from "./content/solutions.sv";
+import { SOLUTIONS_FI } from "./content/solutions.fi";
+import { SOLUTIONS_PL } from "./content/solutions.pl";
+import { SOLUTIONS_CS } from "./content/solutions.cs";
 
 export interface SolutionQuizType {
   title: string;
@@ -1221,4 +1226,9 @@ export const SOLUTIONS_BY_LANG: Record<Lang, Record<string, Solution>> = {
   de: SOLUTIONS_DE,
   pt: SOLUTIONS_PT,
   it: SOLUTIONS_IT,
+  nl: SOLUTIONS_NL,
+  sv: SOLUTIONS_SV,
+  fi: SOLUTIONS_FI,
+  pl: SOLUTIONS_PL,
+  cs: SOLUTIONS_CS,
 };

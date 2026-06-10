@@ -1,0 +1,421 @@
+---
+import Base from "../../../layouts/Base.astro";
+import { organization, breadcrumb, article, faqPage } from "../../../lib/schema";
+import { SITE } from "../../../lib/site";
+import { localizedHref } from "../../../lib/i18n";
+import {
+  REPORT,
+  DATASET,
+  HEADLINE,
+  VERTICAL_CONVERSION,
+  AOV_UPLIFT,
+  ATTRIBUTION,
+  BASELINES,
+  METHODOLOGY,
+  FAQ,
+} from "../../../lib/quiz-benchmarks";
+
+const pageUrl = new URL(`/${REPORT.slug}/`, SITE.site_url).href;
+const ogImage = `/og/${REPORT.slug}.png`;
+
+const SHOPIFY_INSTALL =
+  "https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=state_of_product_quizzes";
+// Free WordPress.org plugin (not the WooCommerce.com extension).
+const WOO_PLUGIN =
+  "https://downloads.wordpress.org/plugin/product-recommendation-quiz-for-ecommerce.latest-stable.zip";
+
+const formatN = (n: number | null) =>
+  n === null ? "" : n.toLocaleString("en-US");
+
+// Conversion expressed against a typical 2% store: 6.9% / 2% = 345%.
+const boost = (rate: number) => Math.round((rate / HEADLINE.baselinePct) * 100);
+
+const jsonLd = [
+  organization(),
+  breadcrumb([
+    { name: "Domů", url: localizedHref("/", "cs") },
+    { name: "Stav kvízů s doporučením produktů", url: localizedHref(`/${REPORT.slug}/`, "cs") },
+  ]),
+  article({
+    title: `${REPORT.title}: ${REPORT.subtitle}`,
+    description: REPORT.description,
+    url: pageUrl,
+    image: ogImage,
+    datePublished: REPORT.datePublished,
+    dateModified: REPORT.dateModified,
+    author: "RevenueHunt",
+    tags: [
+      "kvíz s doporučením produktů benchmark",
+      "quiz conversion rate",
+      "ecommerce personalization",
+      "average order value",
+    ],
+  }),
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    name: "RevenueHunt benchmarky kvízu s doporučením produktů 2026",
+    description: REPORT.description,
+    url: pageUrl,
+    creator: organization(),
+    license: "https://creativecommons.org/licenses/by/4.0/",
+    isAccessibleForFree: true,
+    datePublished: REPORT.datePublished,
+    keywords: [
+      "kvíz s doporučením produktů",
+      "conversion rate",
+      "average order value",
+      "ecommerce",
+      "Shopify",
+    ],
+    distribution: {
+      "@type": "DataDownload",
+      encodingFormat: "application/pdf",
+      contentUrl: new URL(REPORT.pdfPath, SITE.site_url).href,
+    },
+  },
+  faqPage(FAQ),
+];
+
+const publishedLabel = new Date(REPORT.datePublished).toLocaleDateString("cs-CZ", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+
+const consumable = VERTICAL_CONVERSION.filter((r) => r.kind === "consumable");
+const considered = VERTICAL_CONVERSION.filter((r) => r.kind === "considered");
+const grouped = VERTICAL_CONVERSION.find((r) => r.kind === "grouped")!;
+const pooled = VERTICAL_CONVERSION.find((r) => r.kind === "total")!;
+---
+
+<Base
+  title={`${REPORT.title}: ${REPORT.subtitle}`}
+  description={REPORT.description}
+  ogImage={ogImage}
+  jsonLd={jsonLd}
+  lang="cs"
+  translated={true}
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
+        <a href={localizedHref("/", "cs")} class="hover:text-slate-700">Domů</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <span class="text-slate-700">Stav kvízů s doporučením produktů</span>
+      </nav>
+      <div class="text-center">
+        <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">
+          Benchmarková zpráva · {publishedLabel}
+        </p>
+        <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+          Stav kvízů s doporučením produktů
+        </h1>
+        <p class="mx-auto mt-6 max-w-3xl text-xl text-slate-600">
+          1 z 18 kupujících, kteří dokončí kvíz s doporučením produktů, provede objednávku, <strong>2,75krát víc než typický online obchod</strong>. Tato zpráva rozebírá, které kategorie konvertují nejvíc, o kolik víc utrácejí kupující z kvízu a jak dlouho jediný kvíz dál přináší výsledky. Založeno na skutečných datech z <strong>{DATASET.responses} odpovědí v kvízu</strong> v {DATASET.brands} obchodech.
+        </p>
+        {/* TODO: restore hero CTAs ("Download the PDF" + "Read the findings")
+            once a peer reviews the PDF design. Removed 2026-06-08 to hold the
+            PDF download until that review. The PDF is still generated and the
+            "Cite this report" section's download link is also held (see below). */}
+      </div>
+    </div>
+  </section>
+
+  <!-- Dataset band -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6">
+      <div class="rounded-2xl bg-[#16161D] px-6 py-10 sm:px-10">
+        <p class="text-center text-sm font-semibold uppercase tracking-wider text-white/50">
+          Datový soubor
+        </p>
+        <dl class="mt-6 grid grid-cols-1 gap-8 text-center sm:grid-cols-3">
+          <div>
+            <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.responses}</dt>
+            <dd class="mt-1 text-sm text-white/70">{DATASET.responsesNote}</dd>
+          </div>
+          <div>
+            <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.revenue}</dt>
+            <dd class="mt-1 text-sm text-white/70">{DATASET.revenueNote}</dd>
+          </div>
+          <div>
+            <dt class="text-4xl font-bold tracking-tight text-white">{DATASET.brands}</dt>
+            <dd class="mt-1 text-sm text-white/70">{DATASET.brandsNote}</dd>
+          </div>
+        </dl>
+        <p class="mx-auto mt-6 max-w-3xl text-center text-sm text-white/60">
+          Agregováno a anonymizováno, napříč {DATASET.platforms}. Žádný jednotlivý obchod není identifikovatelný. Každé číslo níže je minimum: atribuce se stále hromadí, takže skutečná čísla jsou vyšší.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key findings (stat cards) -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Klíčová čísla</h2>
+      <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
+        <div class="rounded-xl border border-slate-200 p-7">
+          <p class="text-4xl font-bold tracking-tight text-[#16161D]">{HEADLINE.completedConv}%</p>
+          <p class="mt-2 font-medium text-slate-900">kupujících, kteří dokončí kvíz, provede objednávku</p>
+          <p class="mt-2 text-sm text-slate-600">Zhruba 1 z {HEADLINE.completedOneIn}, přibližně {HEADLINE.multiple}krát víc než typický obchod s {HEADLINE.baselinePct} %.</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 p-7">
+          <p class="text-4xl font-bold tracking-tight text-[#16161D]">+{AOV_UPLIFT.headlineLow}-{AOV_UPLIFT.headlineHigh}%</p>
+          <p class="mt-2 font-medium text-slate-900">vyšší average order value, v rámci jednoho obchodu</p>
+          <p class="mt-2 text-sm text-slate-600">Měřeno srovnatelně, přítomné zhruba v 7 z 10 obchodů.</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 p-7">
+          <p class="text-4xl font-bold tracking-tight text-[#16161D]">{HEADLINE.completionRate}%</p>
+          <p class="mt-2 font-medium text-slate-900">kupujících, kteří kvíz začnou, ho dokončí</p>
+          <p class="mt-2 text-sm text-slate-600">Zhruba 7 z 10 se dostane na stránku s výsledky. {HEADLINE.abandonRate} % odejde dříve.</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 p-7">
+          <p class="text-4xl font-bold tracking-tight text-[#16161D]">1 z 5</p>
+          <p class="mt-2 font-medium text-slate-900">objednávek přiřazených kvízu přichází více než 30 dní poté</p>
+          <p class="mt-2 text-sm text-slate-600">Kvíz dál generuje tržby měsíce po jeho vyplnění.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conversion by category -->
+  <section id="conversion" class="scroll-mt-20 bg-slate-50">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Konverze podle kategorie</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">
+        Průměr platformy skrývá velký rozptyl. <strong>Spotřební a doplňovatelné kategorie konvertují dvakrát až třikrát víc</strong> než průměrný online obchod. Nákupy s vysokou cenou a vysokou mírou zvažování konvertují o řád níže: tam kvíz pohání objevování, ale prodej přichází později, mimo relaci.
+      </p>
+      <div class="mt-8 overflow-x-auto">
+        <table class="w-full min-w-[34rem] border-collapse text-left">
+          <thead>
+            <tr class="border-b border-slate-300 text-sm text-slate-500">
+              <th class="py-3 pr-4 font-semibold">Kategorie</th>
+              <th class="py-3 pr-4 text-right font-semibold">Konverze</th>
+              <th class="py-3 pr-4 text-right font-semibold">Nárůst konverze kvízu</th>
+              <th class="py-3 text-right font-semibold">Odpovědi</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-900">
+            {consumable.map((r) => (
+              <tr class="border-b border-slate-200">
+                <td class="py-3 pr-4 font-medium">{r.vertical}</td>
+                <td class="py-3 pr-4 text-right font-semibold tabular-nums">{r.rate}%</td>
+                <td class="py-3 pr-4 text-right tabular-nums text-slate-600">{boost(r.rate)}%</td>
+                <td class="py-3 text-right tabular-nums text-slate-500">{formatN(r.n)}</td>
+              </tr>
+            ))}
+            {considered.map((r) => (
+              <tr class="border-b border-slate-200">
+                <td class="py-3 pr-4 font-medium">{r.vertical}</td>
+                <td class="py-3 pr-4 text-right font-semibold tabular-nums">{r.rate}%</td>
+                <td class="py-3 pr-4 text-right tabular-nums text-slate-600">{boost(r.rate)}%</td>
+                <td class="py-3 text-right tabular-nums text-slate-500">{formatN(r.n)}</td>
+              </tr>
+            ))}
+            <tr class="border-b border-slate-200">
+              <td class="py-3 pr-4 font-medium">{grouped.vertical}</td>
+              <td class="py-3 pr-4 text-right font-semibold tabular-nums">~{grouped.rate}%</td>
+              <td class="py-3 pr-4 text-right tabular-nums text-slate-600">~{boost(grouped.rate)}%</td>
+              <td class="py-3 text-right tabular-nums text-slate-500">{formatN(grouped.n)}</td>
+            </tr>
+            <tr class="border-t-2 border-slate-300">
+              <td class="py-3 pr-4 font-semibold">{pooled.vertical}</td>
+              <td class="py-3 pr-4 text-right font-bold tabular-nums">{pooled.rate}%</td>
+              <td class="py-3 pr-4 text-right font-bold tabular-nums text-slate-600">{boost(pooled.rate)}%</td>
+              <td class="py-3 text-right tabular-nums text-slate-500">všechny</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mx-auto mt-4 max-w-3xl text-sm text-slate-500 text-center">
+        {grouped.note}
+      </p>
+      <p class="mx-auto mt-2 max-w-3xl text-sm text-slate-500 text-center">
+        {pooled.note}
+      </p>
+    </div>
+  </section>
+
+  <!-- AOV uplift -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Utrácejí kupující z kvízu víc?</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">
+        <strong>Měřeno v rámci jednoho obchodu</strong> jsou objednávky z kvízu <strong>o {AOV_UPLIFT.headlineLow} % až {AOV_UPLIFT.headlineHigh} % větší</strong> než objednávky bez kvízu, a to platí v {AOV_UPLIFT.storesUpLow} % až {AOV_UPLIFT.storesUpHigh} % obchodů. Není to univerzální: silnější tam, kde kvíz dokáže sestavit set nebo rutinu, téměř ploché tam, kde je nákup jediná položka.
+      </p>
+      <div class="mt-8 overflow-x-auto">
+        <table class="w-full min-w-[34rem] border-collapse text-left">
+          <thead>
+            <tr class="border-b border-slate-300 text-sm text-slate-500">
+              <th class="py-3 pr-4 font-semibold">Kategorie</th>
+              <th class="py-3 pr-4 text-right font-semibold">Nárůst AOV v rámci obchodu</th>
+              <th class="py-3 text-right font-semibold">Obchody s nárůstem</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-900">
+            {AOV_UPLIFT.perVertical.map((r) => (
+              <tr class="border-b border-slate-200">
+                <td class="py-3 pr-4 font-medium">{r.vertical}</td>
+                <td class="py-3 pr-4 text-right font-semibold tabular-nums">
+                  {r.uplift === null ? "Ploché" : `+${r.uplift}%`}
+                </td>
+                <td class="py-3 text-right tabular-nums text-slate-500">
+                  {r.storesUp === null ? "n/d" : `${r.storesUp}%`}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="mx-auto mt-4 max-w-3xl text-sm text-slate-500 text-center">
+        Měřeno v rámci obchodu (stejný obchod, objednávky z kvízu oproti objednávkám bez kvízu), takže je to robustní vůči měně a kontroluje mix obchodu. Triangulováno mezi třemi nezávislými vzorky s mediánem +11 %, +15 % a +14 %. Kategorie s malými vzorky se vynechávají, místo aby se přeháněly.
+      </p>
+    </div>
+  </section>
+
+  <!-- Attribution / LTV -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Kvíz přináší výsledky i po skončení relace</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">
+        Většina atribučních dashboardů posuzuje kvíz podle objednávek ve stejný den a tím to končí. To přehlíží většinu hodnoty. <strong>{ATTRIBUTION.sameDay} % prvních objednávek přiřazených kvízu nastane ve stejný den</strong>, ale ocas je dlouhý.
+      </p>
+      <div class="mt-8 grid grid-cols-2 gap-6 sm:grid-cols-4">
+        <div class="rounded-xl border border-slate-200 bg-white p-6 text-center">
+          <p class="text-3xl font-bold text-[#16161D]">{ATTRIBUTION.sameDay}%</p>
+          <p class="mt-1 text-sm text-slate-600">ve stejný den</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-white p-6 text-center">
+          <p class="text-3xl font-bold text-[#16161D]">{ATTRIBUTION.within7}%</p>
+          <p class="mt-1 text-sm text-slate-600">do 7 dní</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-white p-6 text-center">
+          <p class="text-3xl font-bold text-[#16161D]">{ATTRIBUTION.within30}%</p>
+          <p class="mt-1 text-sm text-slate-600">do 30 dní</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-white p-6 text-center">
+          <p class="text-3xl font-bold text-[#16161D]">1 z 5</p>
+          <p class="mt-1 text-sm text-slate-600">přichází více než 30 dní poté</p>
+        </div>
+      </div>
+      <p class="mx-auto mt-6 max-w-3xl text-slate-700 text-center">
+        Zhruba <strong>1 z 5 všech objednávek přiřazených kvízu přichází více než 30 dní po vyplnění kvízu</strong>. Kvíz není jen popostrčení k checkoutu: každá odpověď je zero-party data, která označí kupujícího a živí segmentované follow-up toky a retargeting. <a href="https://www.klaviyo.com/marketing-resources/segmentation-benchmark-report" target="_blank" rel="external noopener nofollow" class="font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]">Segmentované kampaně generují více než 3krát vyšší tržby na příjemce</a> než plošná rozesílání, takže jediný kvíz dál konvertuje prostřednictvím e-mailu a personalizovaných reklam celé měsíce.
+      </p>
+    </div>
+  </section>
+
+  <!-- Baseline context -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Co se počítá jako "průměrný obchod"</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">
+        Pro konverzi v ecommerce neexistuje jediné pravdivé číslo: kolísá podle metodiky a vzorku. Poctivý rozsah je zhruba 1,6 % až 2,9 %. Benchmarkujeme oproti zaokrouhleným <strong>{HEADLINE.baselinePct} %</strong>, konzervativnímu spodnímu okraji, což staví ty, kdo vyplní kvíz, na zhruba <strong>{HEADLINE.multiple}krát</strong> víc než průměrný obchod.
+      </p>
+      <div class="mt-8 overflow-x-auto">
+        <table class="w-full min-w-[34rem] border-collapse text-left">
+          <thead>
+            <tr class="border-b border-slate-300 text-sm text-slate-500">
+              <th class="py-3 pr-4 font-semibold">Zdroj</th>
+              <th class="py-3 pr-4 text-right font-semibold">Průměrná konverze</th>
+              <th class="py-3 font-semibold">Rozsah</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-900">
+            {BASELINES.map((b) => (
+              <tr class="border-b border-slate-200">
+                <td class="py-3 pr-4 font-medium">
+                  <a href={b.href} target="_blank" rel="external noopener nofollow" class="text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-slate-500">{b.source}</a>
+                </td>
+                <td class="py-3 pr-4 text-right font-semibold tabular-nums">{b.rate}</td>
+                <td class="py-3 text-sm text-slate-600">{b.scope}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="mx-auto mt-4 max-w-3xl text-sm text-slate-500 text-center">
+        Důležité: naše 5,5 % je míra na osobu, která vyplní kvíz (objednávky na dokončený kvíz), zatímco každé číslo výše je míra za celý web (objednávky na návštěvníka). Ti, kdo vyplní kvíz, se sami vybírají, takže část rozdílu tvoří trychtýř, ne jen kvíz. Srovnání prezentujeme přímočaře, místo abychom ho přikrášlovali.
+      </p>
+    </div>
+  </section>
+
+  <!-- Methodology -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Metodika</h2>
+      <ul class="mt-8 space-y-5" role="list">
+        {METHODOLOGY.map((m) => (
+          <li class="flex gap-3">
+            <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" aria-hidden="true"></span>
+            <p class="text-slate-700">{m}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-3xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Časté dotazy</h2>
+      <div class="mt-10 divide-y divide-slate-200 border-y border-slate-200">
+        {FAQ.map((f) => (
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 text-lg font-semibold text-slate-900 [&::-webkit-details-marker]:hidden">
+              <span>{f.question}</span>
+              <svg
+                class="h-5 w-5 flex-shrink-0 text-slate-400 transition-transform duration-200 group-open:rotate-180"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+              </svg>
+            </summary>
+            <p class="pb-5 text-slate-700" set:html={f.answerHtml ?? f.answer} />
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* TODO: restore the entire "Cite this report" section (PDF download +
+      shareable stat-card links) once a designer reviews the report + PDF + card
+      designs. Removed 2026-06-08 to hold the downloadable assets until review.
+      The PDF and card PNGs are still generated by `bun run report`. */}
+
+  <!-- Bottom CTA -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Změř ten nárůst ve svém vlastním obchodě.
+      </h2>
+      <p class="mx-auto mt-4 max-w-2xl text-lg text-white/70">
+        RevenueHunt je zdarma na začátek, se 100 odpověďmi v kvízu měsíčně. Vytvoř kvíz, pošli skrz něj návštěvnost a přečti si svá vlastní čísla.
+      </p>
+      <p class="mx-auto mt-4 max-w-2xl text-white/60">
+        Podívej se, co by tyto benchmarky mohly tvému obchodu přidat, pomocí naší <a href={localizedHref("/quiz-roi-calculator/", "cs")} class="font-medium text-white underline decoration-white/40 underline-offset-2 hover:decoration-white">kalkulačky ROI kvízu</a>.
+      </p>
+      <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
+        <a
+          href={SHOPIFY_INSTALL}
+          target="_blank"
+          rel="external noopener nofollow"
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          začni zdarma na Shopify
+        </a>
+        <a
+          href={WOO_PLUGIN}
+          target="_blank"
+          rel="external noopener nofollow"
+          class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
+        >
+          začni zdarma na WooCommerce
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

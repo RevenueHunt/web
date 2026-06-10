@@ -1,0 +1,317 @@
+---
+import Base from "../../../layouts/Base.astro";
+import { organization, breadcrumb, softwareApplication } from "../../../lib/schema";
+import { SITE } from "../../../lib/site";
+import { SOLUTIONS, FEATURED_SOLUTIONS } from "../../../lib/solutions";
+import { localizedHref } from "../../../lib/i18n";
+
+const lang = "sv";
+const lp = (path: string) => localizedHref(path, lang);
+
+const featuredSolutions = FEATURED_SOLUTIONS.map((slug) => SOLUTIONS[slug]!);
+
+interface Template {
+  title: string;
+  description: string;
+  image: string;
+  demo: string;
+}
+
+interface TemplateGroup {
+  id: string;
+  label: string;
+  items: Template[];
+}
+
+const groups: TemplateGroup[] = [
+  {
+    id: "skincare",
+    label: "Hudvård, hårvård och kosmetik",
+    items: [
+      { title: "Hudtyp + rutin-quiz", description: "Identifiera hudtypen och rekommendera en komplett rutin.", image: "/img/pages/templates/skinquiz1.webp", demo: "https://productrecommendationquiz.com/pages/skin-analysis" },
+      { title: "Hitta din foundation", description: "Att välja rätt foundation borde inte vara en gissningslek.", image: "/img/pages/templates/foundation5.webp", demo: "https://productrecommendationquiz.com/pages/foundation-match" },
+      { title: "Läppstiftsnyansfinnare", description: "Hitta den perfekta läppstiftsnyansen för varje kund utifrån hudton och stil.", image: "/img/pages/templates/lips1-e1768405685573.webp", demo: "https://productrecommendationquiz.com/pages/lipstick-shade-finder" },
+      { title: "Hårvårdsquiz", description: "Rekommendera schampon, balsam och behandlingar utifrån varje persons hårmål.", image: "/img/pages/templates/hairquiz4.webp", demo: "https://productrecommendationquiz.com/pages/haircare-quiz" },
+    ],
+  },
+  {
+    id: "food",
+    label: "Kost och hälsa",
+    items: [
+      { title: "Kaffequiz", description: "Vägled dina kunder till den perfekta kaffeblandningen utifrån deras smak och livsstil.", image: "/img/pages/templates/coffee2.webp", demo: "https://productrecommendationquiz.com/pages/coffee-quiz" },
+      { title: "Kosttillskottsquiz", description: "Rekommendera vitaminer och kosttillskott som matchar deras hälsomål.", image: "/img/pages/templates/supplements3.webp", demo: "https://productrecommendationquiz.com/pages/supplements-quiz" },
+      { title: "CBD-produktfinnare", description: "Föreslå rätt CBD-produkter för avslappning, sömn eller fokus.", image: "/img/pages/templates/cbd1.webp", demo: "https://productrecommendationquiz.com/pages/cbd-product-finder" },
+      { title: "Hundmatsquiz", description: "Hitta den perfekta maten för din hund utifrån dess specifika behov och preferenser.", image: "/img/pages/templates/dogquiz3.webp", demo: "https://productrecommendationquiz.com/pages/dog-food" },
+    ],
+  },
+  {
+    id: "clothes",
+    label: "Sport, kläder och mode",
+    items: [
+      { title: "Smyckesquiz", description: "Hjälp dina köpare att hitta det perfekta smycket för sin stil.", image: "/img/pages/templates/jewellery1-e1768405517428.webp", demo: "https://productrecommendationquiz.com/pages/jewellery-quiz" },
+      { title: "Klädstilsquiz", description: "Upptäck din modepersonlighet och få personliga rekommendationer.", image: "/img/pages/templates/style1.webp", demo: "https://productrecommendationquiz.com/pages/clothing-style-quiz" },
+      { title: "Cykelquiz", description: "Hitta rätt cykel för varje kund utifrån körstil och behov.", image: "/img/pages/templates/bike2.webp", demo: "https://productrecommendationquiz.com/pages/bicycle-quiz" },
+    ],
+  },
+];
+
+const gallery = [
+  "Screenshot-2020-09-29-at-20.20.43.webp",
+  "Screenshot-2020-09-29-at-20.33.39.webp",
+  "Screenshot-2020-09-29-at-20.34.03.webp",
+  "Screenshot-2020-09-29-at-20.34.16.webp",
+  "Screenshot-2020-10-20-at-11.31.49.webp",
+  "Screenshot-2020-10-20-at-11.32.06.webp",
+  "Screenshot-2020-10-20-at-11.33.20.webp",
+  "Screenshot-2020-10-20-at-11.33.57.webp",
+  "Screenshot-2020-10-20-at-11.39.39.webp",
+  "Screenshot-2020-10-20-at-11.41.15.webp",
+  "Screenshot-2020-10-20-at-11.41.36.webp",
+  "Screenshot-2020-10-20-at-11.41.51.webp",
+  "Screenshot-2020-10-20-at-11.44.30.webp",
+  "Screenshot-2020-10-20-at-11.45.11.webp",
+  "Screenshot-2020-10-20-at-11.45.42.webp",
+  "Screenshot-2020-11-16-at-14.34.09.webp",
+  "Screenshot-2020-11-16-at-14.34.22.webp",
+  "Screenshot-2020-11-16-at-14.34.34.webp",
+  "Screenshot-2020-11-16-at-14.36.54.webp",
+  "Screenshot-2020-12-04-at-08.38.54.webp",
+  "Screenshot-2020-12-04-at-08.39.14.webp",
+  "Screenshot-2020-12-04-at-08.39.25.webp",
+  "Screenshot-2020-12-04-at-08.39.35.webp",
+  "Screenshot-2021-04-14-at-04.13.10.webp",
+  "Screenshot-2021-04-14-at-04.13.50.webp",
+  "Screenshot-2021-04-14-at-04.14.16.webp",
+  "Screenshot-2021-05-13-at-22.49.10.webp",
+];
+
+const reasons = [
+  { emoji: "🚀", title: "Snabb installation för Shopify och WooCommerce", body: "Mallarna integreras smidigt med Shopify, WooCommerce, BigCommerce och fristående webbplatser. Ingen programmering: installera appen, välj en mall och anpassa den så att den passar ditt varumärke." },
+  { emoji: "💡", title: "Färdiga quizfrågor och quizlogik", body: "Varje mall innehåller expertutformade frågor, villkorslogik och algoritmer för produktrekommendation. Byggda på beprövade ramverk som driver konverteringar inom skönhet, hälsa, husdjursvård och livsstil." },
+  { emoji: "📊", title: "Öka konverteringar och AOV", body: "Personliga rekommendationer förvandlar de som bläddrar till köpare. Mallarna är optimerade för högre konverteringsgrad, större varukorgar och bättre kvalificerade leads." },
+  { emoji: "🎨", title: "Helt anpassningsbar HTML", body: "Redigera texter, design, varumärke och logik utan att röra koden. För avancerad utveckling är varje mall också fullt åtkomlig via anpassad HTML, CSS och JS." },
+  { emoji: "📧", title: "Samla in zero-party data", body: "Fånga preferenser, intention och segmenteringsdata direkt från köparen, och synka dem sedan med Klaviyo, Omnisend, Meta eller GA4 för att förstärka din efterföljande marknadsföring." },
+  { emoji: "⚡", title: "Responsiva och mobiloptimerade", body: "Varje mall levereras med ett mobile-first-fokus. Snabba, tillgängliga och utformade för att kännas nativa på mobiler, surfplattor och datorer." },
+];
+
+const jsonLd = [
+  organization(),
+  softwareApplication(),
+  breadcrumb([
+    { name: "Hem", url: "/" },
+    { name: "Quizmallar", url: "/templates/" },
+  ]),
+];
+---
+
+<Base
+  title="Quizmallar - RevenueHunt"
+  description="Produktquizmallar för Shopify, WooCommerce, BigCommerce och fristående butiker. Hudvård, skönhet, kosttillskott, husdjursmat, kläder, sport och mer: färdiga frågor, villkorslogik och algoritmer för produktrekommendation."
+  jsonLd={jsonLd}
+  lang="sv"
+  translated={true}
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20 text-center">
+      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
+        <a href={lp("/")} class="hover:text-slate-700">Hem</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <span class="text-slate-700">Quizmallar</span>
+      </nav>
+      <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+        Produktquizmallar för Shopify och WooCommerce
+      </h1>
+      <p class="mt-4 text-xl font-semibold text-slate-700">
+        Interaktiva mallar för produktrekommendationsquiz: redo att användas
+      </p>
+      <p class="mx-auto mt-6 max-w-3xl text-slate-600">
+        Upptäck vår samling av <strong class="font-semibold text-slate-900">gratis quizmallar</strong> utformade för ehandelsbutiker.
+        Från hudvårds- och skönhetsquiz till kosttillskott, husdjursmat och livsstilsprodukter: varje mall är skapad för att hjälpa dig erbjuda
+        en personlig köpupplevelse som konverterar. Perfekta för <strong class="font-semibold text-slate-900">Shopify</strong>,
+        <strong class="font-semibold text-slate-900">WooCommerce</strong>, <strong class="font-semibold text-slate-900">BigCommerce</strong>,
+        och <strong class="font-semibold text-slate-900">fristående</strong> butiker.
+      </p>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-600">
+        Dessa quizmallar i anpassningsbar HTML innehåller färdigskrivna frågor, villkorslogik och algoritmer för produktrekommendation.
+        Välj en mall, koppla dina produkter, anpassa designen och publicera. Klicka på vilken mall som helst nedan för att se en livedemo.
+      </p>
+    </div>
+  </section>
+
+  <!-- Top CTA banner -->
+  <section class="mx-auto max-w-7xl px-6 pb-8">
+    <div class="overflow-hidden rounded-2xl bg-[#16161D] px-8 py-12 text-center text-white">
+      <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">Testa våra produktquizmallar live</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-white/80">
+        Upplev fullt fungerande produktrekommendationsquiz i vår live demobutik på Shopify. Testa olika quiztyper,
+        utforska villkorslogik, förgrenade frågor och personliga produktrekommendationer i aktion.
+      </p>
+      <a
+        href="https://productrecommendationquiz.com/"
+        target="_blank"
+        rel="external noopener nofollow"
+        class="mt-8 inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+      >
+        Utforska livedemos av quiz
+      </a>
+    </div>
+  </section>
+
+  <!-- Category nav -->
+  <nav class="sticky top-[60px] z-30 border-y border-slate-200 bg-white/95 backdrop-blur" aria-label="Template categories">
+    <ul class="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-2 px-6 py-3">
+      {groups.map((g) => (
+        <li>
+          <a
+            href={`#${g.id}`}
+            class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-[#16161D] hover:text-[#16161D]"
+          >
+            {g.label}
+          </a>
+        </li>
+      ))}
+      <li>
+        <a
+          href="#gallery"
+          class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-[#16161D] hover:text-[#16161D]"
+        >
+          Galleri med quizexempel
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Template grids -->
+  <section class="mx-auto max-w-7xl px-6 py-12">
+    {groups.map((g) => (
+      <div id={g.id} class="mb-16 scroll-mt-32 last:mb-0">
+        <h2 class="mb-8 text-center text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">{g.label}</h2>
+        <ul class="grid gap-6 md:grid-cols-2">
+          {g.items.map((t) => (
+            <li class="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md">
+              <a
+                href={t.demo}
+                target="_blank"
+                rel="external noopener nofollow"
+                class="block aspect-[321/217] overflow-hidden bg-slate-50"
+              >
+                <img src={t.image} alt={t.title} loading="lazy" class="h-full w-full object-cover" />
+              </a>
+              <div class="flex flex-1 flex-col p-5">
+                <h3 class="text-lg font-semibold text-slate-900">{t.title}</h3>
+                <p class="mt-2 text-sm text-slate-600">{t.description}</p>
+                <div class="mt-5 flex flex-wrap gap-2">
+                  <a
+                    href={t.demo}
+                    target="_blank"
+                    rel="external noopener nofollow"
+                    class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#26262e]"
+                  >
+                    Demo
+                  </a>
+                  <a
+                    href={lp("/product-recommendation-quiz/")}
+                    class="inline-flex items-center justify-center rounded-md border border-[#16161D] bg-white px-4 py-2 text-sm font-semibold text-[#16161D] transition hover:bg-slate-50"
+                  >
+                    Hämta den här mallen
+                  </a>
+                </div>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+
+    <!-- Examples gallery -->
+    <div id="gallery" class="scroll-mt-32">
+      <h2 class="mb-8 text-center text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Galleri med quizexempel</h2>
+      <ul class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {gallery.map((file) => (
+          <li class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
+            <a href={`/img/pages/templates/${file}`} target="_blank" rel="noopener" class="block aspect-video overflow-hidden bg-slate-50">
+              <img src={`/img/pages/templates/${file}`} alt="Quizexempel" loading="lazy" class="h-full w-full object-cover" />
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Solutions cross-link -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6 pb-4">
+      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-8">
+        <h2 class="text-2xl font-bold tracking-tight text-slate-900">Vet du inte vilket quiz du ska skapa?</h2>
+        <p class="mt-3 text-slate-700">
+          Våra quizlösningar förklarar den bästa typen av quiz för din bransch, från hudvårdsrutiner till presentguider, med exempel och vanliga frågor.
+        </p>
+        <ul class="mt-6 flex flex-wrap gap-3" role="list">
+          {featuredSolutions.map((s) => (
+            <li>
+              <a
+                href={`/solutions/${s.slug}/`}
+                class="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-[#16161D] hover:text-[#16161D]"
+              >
+                {s.name}
+              </a>
+            </li>
+          ))}
+          <li>
+            <a
+              href={lp("/solutions/")}
+              class="inline-flex items-center rounded-full bg-[#16161D] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#26262e]"
+            >
+              Alla lösningar →
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why use templates -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-7xl px-6 py-16">
+      <h2 class="text-center text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+        Varför använda produktquizmallar i din ehandelsbutik?
+      </h2>
+      <ul class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {reasons.map((r) => (
+          <li class="rounded-xl border border-slate-200 bg-white p-6">
+            <div class="text-2xl">{r.emoji}</div>
+            <h3 class="mt-3 text-lg font-semibold text-slate-900">{r.title}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-600">{r.body}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Börja skapa ditt produktquiz idag
+      </h2>
+      <p class="mx-auto mt-4 max-w-2xl text-white/80">
+        Skapa engagerande produktrekommendationsquiz för din Shopify- eller WooCommerce-butik på minuter. Ingen programmering.
+      </p>
+      <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
+        <a
+          href={SITE.signup_url}
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          Testa quizmallarna gratis
+        </a>
+        <a
+          href={lp("/demo/")}
+          class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
+        >
+          Boka en demo
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

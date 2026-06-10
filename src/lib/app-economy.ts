@@ -123,8 +123,8 @@ export const QUIZ_LANE = {
   quizKitReviews: 171,
   top3Share: "45%",
   caption: [
-    "Our own category proves the same point. Shopify's quiz search returns 149 apps, but trust pools at the top here exactly like it does across the store. The three apps that got here first and never left, RevenueHunt, Octane AI and Quiz Kit, hold 45% of every review in the category; RevenueHunt alone holds about a quarter, and half the rest have none at all.",
-    "That lead is not code. Reviews are the residue of the operational scar tissue behind them: six years of answering support, getting on calls with merchants who would never pay, and earning trust one store at a time. Octane AI and Quiz Kit put in the same hard work for years, and we respect them for it. Honorable mention to Lantern and Quizell, each just over 120 reviews.",
+    "Our own category proves the same point. Shopify's quiz search returns 149 apps, but trust pools at the top here exactly like it does across the store. The three apps that got here first and never left, RevenueHunt, Octane AI and Quiz Kit, hold 45% of every review in the category; RevenueHunt alone holds about a quarter, and the bottom half have none at all.",
+    "That lead is not code. Reviews are the residue of the operational scar tissue behind them: six years of answering support, getting on calls with merchants who would never pay, and earning trust one store at a time. Octane AI and Quiz Kit put in the same hard work for years, and we respect them for it. Honorable mention to Lantern and Quizell, both just over 120 reviews.",
   ],
 };
 

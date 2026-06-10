@@ -1,0 +1,506 @@
+---
+import Base from "../../../layouts/Base.astro";
+import { organization, breadcrumb, article, faqPage } from "../../../lib/schema";
+import { SITE } from "../../../lib/site";
+import { localizedHref } from "../../../lib/i18n";
+import {
+  REPORT,
+  SOURCE,
+  HEADLINE,
+  GROWTH,
+  REVIEWS,
+  REVENUE,
+  PRICING,
+  GEOGRAPHY,
+  QUIZ_LANE,
+  METHODOLOGY,
+  FAQ,
+} from "../../../lib/app-economy";
+
+const pageUrl = new URL(`/he/${REPORT.slug}/`, SITE.site_url).href;
+const ogImage = `/og/${REPORT.slug}.png`;
+
+const publishedLabel = new Date(REPORT.datePublished).toLocaleDateString("he-IL", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+
+const title = "מצב כלכלת האפליקציות של Shopify";
+const description =
+  "יש 22,546 אפליקציות פעילות ב-Shopify App Store וכמעט אף אחת מהן לא מגיעה לשום מקום. דוח נתונים על צמיחה, ביקורות, ריכוז הכנסות, תמחור ומי בונה אותן, מתוך תמונת מצב של כל אפליקציה פעילה.";
+
+const jsonLd = [
+  organization(),
+  breadcrumb([
+    { name: "דף הבית", url: localizedHref("/", "he") },
+    { name: title, url: localizedHref(`/${REPORT.slug}/`, "he") },
+  ]),
+  article({
+    title,
+    description,
+    url: pageUrl,
+    image: ogImage,
+    datePublished: REPORT.datePublished,
+    dateModified: REPORT.dateModified,
+    author: "RevenueHunt",
+    tags: [
+      "Shopify app store",
+      "מפתחי אפליקציות של Shopify",
+      "סטטיסטיקות של ה-app store",
+      "כלכלת אפליקציות",
+    ],
+  }),
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    name: "מצב כלכלת האפליקציות של Shopify 2026",
+    description,
+    url: pageUrl,
+    creator: organization(),
+    license: "https://creativecommons.org/licenses/by/4.0/",
+    isAccessibleForFree: true,
+    datePublished: REPORT.datePublished,
+    keywords: [
+      "Shopify app store",
+      "מפתחי אפליקציות",
+      "הכנסות אפליקציות",
+      "ביקורות אפליקציות",
+      "ecommerce",
+    ],
+  },
+  faqPage(FAQ),
+];
+
+// Section eyebrows for the editorial "field notes" feel.
+const E = (n: string, label: string) => `${n} · ${label}`;
+
+// Translated headline cards. Stats stay from the shared data module (HEADLINE[i].stat).
+const headlineT = [
+  { label: "אפליקציות פעילות ב-store", note: "פי 10 בערך מאז 2020." },
+  { label: "בלי אף ביקורת", note: "שלוש מתוך ארבע עם פחות מחמש." },
+  { label: "מההכנסות הולכות ל-1% העליון", note: "225 אפליקציות. הערכה." },
+  { label: "גובות מראש", note: "רק 1 מתוך 20. כמעט חצי בחינם." },
+];
+
+// Growth caption with the lead phrase bolded.
+const growthCaptionHtml =
+  "אפליקציות פעילות מצטברות לפי שנת השקה. <strong>ה-Shopify App Store גדל פי 10 בערך מאז 2020</strong> והוסיף יותר מ-6,000 אפליקציות רק ב-12 החודשים האחרונים, בערך 1 מתוך 4 מכל מה שפעיל היום.";
+
+// Quiz-lane paragraphs (translated), with the live search link and the load-bearing
+// lines bolded inline. Caption text mirrors the English source's meaning.
+const quizParas = [
+  `הקטגוריה שלנו עצמה מוכיחה את אותו הדבר. <a href="${QUIZ_LANE.searchUrl}" target="_blank" rel="external noopener nofollow" class="font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]">חיפוש החידונים ב-Shopify</a> מחזיר 149 אפליקציות, אבל גם כאן האמון מצטבר בפסגה בדיוק כמו בכל ה-store. שלוש האפליקציות שהגיעו ראשונות ומעולם לא עזבו, RevenueHunt, Octane AI ו-Quiz Kit, מרכזות 45% מכל הביקורות בקטגוריה; <strong>ל-RevenueHunt לבדה יש בערך רבע</strong>, ולמחצית התחתונה אין אף אחת.`,
+  `לא הגענו לפסגה בזכות הקוד. <strong>הביקורות הן השארית של רקמת הצלקת התפעולית</strong> שמאחוריהן: שש שנים של מענה לתמיכה, של שיחות טלפון עם חנויות שלעולם לא ישלמו ושל בניית אמון חנות אחר חנות. Octane AI ו-Quiz Kit עשו את אותה עבודה קשה במשך שנים, <strong>ואנחנו מכבדים אותם על כך</strong>. ציון לשבח ל-Lantern ול-Quizell, שתיהן עם קצת יותר מ-120 ביקורות.`,
+];
+
+// Methodology stays in English (shared data module), with the lead phrase of each note bolded.
+const METHOD_BOLD = [
+  "Source: ",
+  "Revenue is estimated, not measured.",
+  "Growth uses each listing's published launch date. ",
+  "Reviews are a proxy for traction",
+];
+const methodologyHtml = METHODOLOGY.map((m) =>
+  METHOD_BOLD.reduce((acc, lead) => acc.replace(lead, `<strong>${lead}</strong>`), m),
+);
+---
+
+<Base
+  title={`${title} - דוח נתונים 2026`}
+  description={description}
+  ogImage={ogImage}
+  jsonLd={jsonLd}
+  lang="he"
+  translated={true}
+>
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
+        <a href={localizedHref("/", "he")} class="hover:text-slate-700">דף הבית</a>
+        <span class="mx-2 text-slate-300">/</span>
+        <span class="text-slate-700">מצב כלכלת האפליקציות של Shopify</span>
+      </nav>
+      <div class="text-center">
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">
+          הערות שטח · {publishedLabel}
+        </p>
+        <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+          מצב כלכלת האפליקציות של Shopify
+        </h1>
+        <p class="mx-auto mt-6 max-w-3xl text-xl text-slate-600">
+          <strong>יש 22,546 אפליקציות פעילות ב-Shopify App Store, וכמעט אף אחת מהן לא מגיעה לשום מקום.</strong> לקחנו תמונת מצב של כל אפליקציה פעילה וקראנו את הנתונים על צמיחה, ביקורות, הכנסות, תמחור ומי בונה אותן. הם מספרים סיפור אחד: בניית האפליקציה מעולם לא הייתה החלק הקשה.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Source band -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6">
+      <div class="rounded-2xl bg-[#16161D] px-6 py-10 sm:px-10">
+        <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-white/50">
+          תמונת המצב
+        </p>
+        <dl class="mt-6 grid grid-cols-2 gap-8 text-center sm:grid-cols-4">
+          <div>
+            <dt class="text-4xl font-bold tracking-tight text-white">{SOURCE.apps}</dt>
+            <dd class="mt-1 text-sm text-white/70">אפליקציות פעילות בתמונת המצב</dd>
+          </div>
+          <div>
+            <dt class="text-4xl font-bold tracking-tight text-white">{SOURCE.countries}</dt>
+            <dd class="mt-1 text-sm text-white/70">מדינות שבונות אותן</dd>
+          </div>
+          <div>
+            <dt class="text-4xl font-bold tracking-tight text-white">{SOURCE.reviewless}</dt>
+            <dd class="mt-1 text-sm text-white/70">בלי אף ביקורת</dd>
+          </div>
+          <div>
+            <dt class="text-4xl font-bold tracking-tight text-white">{SOURCE.free}</dt>
+            <dd class="mt-1 text-sm text-white/70">לגמרי בחינם, בלי תוכנית בתשלום</dd>
+          </div>
+        </dl>
+        <p class="mx-auto mt-6 max-w-3xl text-center text-sm text-white/60">
+          כל מספר למטה מגיע מהדף הציבורי ב-App Store של כל 22,546 האפליקציות הפעילות, יוני 2026. ההכנסות מוערכות לפי התמחור המפורסם וסיגנלים של שימוש, לא לפי נתוני חיוב, ומסומנות ככאלה לאורך כל הדוח.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Headline cards -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">המספרים הבולטים</h2>
+      <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
+        {HEADLINE.map((c, i) => (
+          <div class="rounded-xl border border-slate-200 p-7">
+            <p class="text-4xl font-bold tracking-tight text-[#16161D]">{c.stat}</p>
+            <p class="mt-2 font-medium text-slate-900">{headlineT[i].label}</p>
+            <p class="mt-2 text-sm text-slate-600">{headlineT[i].note}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 Growth -->
+  <section class="scroll-mt-20 bg-slate-50">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("01", "צמיחה")}</p>
+      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">פי 10 מאז 2020</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center" set:html={growthCaptionHtml} />
+      <div class="mt-8 rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
+        <div class="h-72 sm:h-80"><canvas id="c-growth" aria-label="אפליקציות Shopify פעילות מצטברות לפי שנה" role="img"></canvas></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 Traction -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("02", "אחיזה")}</p>
+      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">רוב האפליקציות לעולם לא מקבלות ביקורת</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">מחצית מה-Shopify App Store מעולם לא זכתה באף ביקורת אחת. שלוש מתוך ארבע אפליקציות עם פחות מחמש. ביקורת היא הסימן הציבורי הברור ביותר לחנות אמיתית ושנשמרת, ורוב האפליקציות לעולם לא מקבלות אף אחת.</p>
+      <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
+        <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
+          <div class="h-72 sm:h-80"><canvas id="c-reviews" aria-label="התפלגות הביקורות בכל האפליקציות הפעילות" role="img"></canvas></div>
+        </div>
+        <div class="space-y-4">
+          <div class="rounded-xl border border-slate-200 p-6">
+            <p class="text-3xl font-bold text-[#16161D]">74%</p>
+            <p class="mt-1 text-slate-700">עם פחות מחמש ביקורות</p>
+          </div>
+          <div class="rounded-xl border border-slate-200 p-6">
+            <p class="text-3xl font-bold text-[#16161D]">{REVIEWS.avgRating}</p>
+            <p class="mt-1 text-slate-700">דירוג ממוצע, בקרב {REVIEWS.ratedCount} האפליקציות שיש להן אחד</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 Revenue -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("03", "הכנסות · הערכה")}</p>
+      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">הכסף מתרכז בפסגה</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">ההכנסות החודשיות המוערכות מרוכזות באכזריות בפסגה. 1% העליון של האפליקציות (225 מהן) לוקח 72% מוערכים; רק 10 הראשונות לוקחות כמעט שליש. רק 36% מהאפליקציות בכלל נראות מרוויחות משהו.</p>
+      <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
+        <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
+          <p class="mb-3 text-sm font-medium text-slate-500">התפלגות ההכנסות</p>
+          <div class="h-64 sm:h-72"><canvas id="c-revenue-donut" aria-label="חלק ההכנסות המוערכות שלוקח 1% העליון של האפליקציות" role="img"></canvas></div>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
+          <p class="mb-3 text-sm font-medium text-slate-500">חלק מצטבר מההכנסות המוערכות</p>
+          <div class="h-64 sm:h-72"><canvas id="c-revenue-bars" aria-label="חלק מצטבר מההכנסות המוערכות לפי האפליקציות המובילות" role="img"></canvas></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 Pricing -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("04", "תמחור")}</p>
+      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">כמעט אף אחד לא גובה מראש</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">כמעט מחצית מה-store לא גובה כלום מראש, ופחות מ-1 מתוך 20 אפליקציות מבקשות כסף לפני ההתקנה הראשונה. כמעט 45% מציעות תוכנית חינם קבועה. כאן freemium הוא לא אסטרטגיה, הוא המינימום כדי להיכנס.</p>
+      <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
+        <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
+          <div class="h-72 sm:h-80"><canvas id="c-pricing" aria-label="התפלגות מודל התמחור בכל האפליקציות הפעילות" role="img"></canvas></div>
+        </div>
+        <div class="space-y-4">
+          <div class="rounded-xl border border-slate-200 p-6">
+            <p class="text-3xl font-bold text-[#16161D]">{PRICING.permanentFree}</p>
+            <p class="mt-1 text-slate-700">מציעות תוכנית חינם קבועה, לא רק תקופת ניסיון</p>
+          </div>
+          <div class="rounded-xl border border-slate-200 p-6">
+            <p class="text-3xl font-bold text-[#16161D]">1 מתוך 20</p>
+            <p class="mt-1 text-slate-700">אפליקציות גובות כסף לפני ההתקנה הראשונה</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 Who builds them -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("05", "מי בונה אותן")}</p>
+      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">נבנות ב-115 מדינות, נשלטות בידי שתיים</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">האפליקציות מגיעות מ-115 מדינות, אבל שתיים שולטות: ארה"ב (16%) והודו (9%) בונות יחד רבע מה-store. ואחרי שנים שבהן Shopify דחפה את הסטנדרט, רק 6.7% מהאפליקציות הפעילות (בערך 1,500) נושאות את תג Built for Shopify.</p>
+      <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
+        <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
+          <div class="h-72 sm:h-80"><canvas id="c-geography" aria-label="מדינות המפתחים המובילות לפי מספר אפליקציות" role="img"></canvas></div>
+        </div>
+        <div class="space-y-4">
+          <div class="rounded-xl border border-slate-200 p-6">
+            <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.builtForShopify}</p>
+            <p class="mt-1 text-slate-700">נושאות את תג Built for Shopify ({GEOGRAPHY.builtForShopifyCount} אפליקציות), שנים אחרי ש-Shopify החלה לדחוף את הסטנדרט</p>
+          </div>
+          <div class="rounded-xl border border-slate-200 p-6">
+            <p class="text-3xl font-bold text-[#16161D]">25%</p>
+            <p class="mt-1 text-slate-700">מכל ה-store נבנים רק בארה"ב ובהודו</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 The quiz lane -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("06", "מסלול החידונים")}</p>
+      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">הקטגוריה שלנו, מקרוב</h2>
+      {quizParas.map((html) => (
+        <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center" set:html={html} />
+      ))}
+      <div class="mx-auto mt-8 grid max-w-3xl grid-cols-3 gap-4 text-center">
+        <a
+          href="https://apps.shopify.com/product-recommendation-quiz-revenuehunt"
+          target="_blank"
+          rel="external noopener"
+          class="block rounded-xl border border-[#616eff]/60 p-6 shadow-[0_0_28px_-4px_rgba(97,110,255,0.55)] transition hover:border-[#616eff] hover:shadow-[0_0_32px_-2px_rgba(97,110,255,0.7)]"
+        >
+          <p class="text-sm font-semibold text-slate-900">RevenueHunt</p>
+          <p class="mt-1 font-bold text-[#16161D]"><span class="text-3xl">{QUIZ_LANE.revenueHuntReviews}</span> <span class="text-sm font-medium text-slate-500">ביקורות</span></p>
+          <p class="mt-1 text-xs font-semibold text-slate-600"><span class="text-amber-400">★</span> 4.9 כוכבים</p>
+        </a>
+        <div class="rounded-xl border border-slate-200 p-6">
+          <p class="text-sm font-medium text-slate-700">Octane AI</p>
+          <p class="mt-1 font-bold text-slate-500"><span class="text-3xl">{QUIZ_LANE.octaneReviews}</span> <span class="text-sm font-medium text-slate-500">ביקורות</span></p>
+          <p class="mt-1 text-xs font-semibold text-slate-600"><span class="text-amber-400">★</span> 4.8 כוכבים</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 p-6">
+          <p class="text-sm font-medium text-slate-700">Quiz Kit</p>
+          <p class="mt-1 font-bold text-slate-500"><span class="text-3xl">{QUIZ_LANE.quizKitReviews}</span> <span class="text-sm font-medium text-slate-500">ביקורות</span></p>
+          <p class="mt-1 text-xs font-semibold text-slate-600"><span class="text-amber-400">★</span> 4.8 כוכבים</p>
+        </div>
+      </div>
+      <p class="mx-auto mt-4 max-w-3xl text-center text-sm text-slate-500">ביקורות ב-Shopify App Store, יוני 2026. Octane AI ו-Quiz Kit הם המתחרים האמיתיים של RevenueHunt בקטגוריה הזו; כבוד לשתיהן.</p>
+    </div>
+  </section>
+
+  <!-- Takeaway -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#4dcaff]">השורה התחתונה</p>
+      <h2 class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        בניית האפליקציה מעולם לא הייתה החלק הקשה.
+      </h2>
+      <p class="mx-auto mt-5 max-w-2xl text-lg text-white/75">
+        ה-AI לא שינה את זה. הוא רק עשה את זה לבלתי אפשרי להסתרה. כשהקוד הופך למצרך, מבול האפליקציות החדשות אינו התחרות. התחרות היא קומץ אלה שהגיעו מוקדם ומעולם לא הפסיקו לעבוד קשה: מענה לתמיכה, זכייה בביקורות חנות אחר חנות, בניית אמון.
+      </p>
+      <p class="mx-auto mt-5 max-w-2xl text-lg font-semibold text-white">
+        הפצה ואמון הם המהלך היחיד שנשאר עמיד ל-AI.
+      </p>
+      <p class="mx-auto mt-10 max-w-2xl text-lg text-white/85">
+        בונים אפליקציית Shopify שבאמת עובדת? אני רוצה להכיר את המייסדים שעושים את החלק הקשה. בואו נדבר.
+      </p>
+      <div class="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <a
+          href={localizedHref("/contact/", "he")}
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          צרו קשר
+        </a>
+        <a
+          href="https://www.linkedin.com/in/revenuehunt/"
+          target="_blank"
+          rel="external noopener"
+          class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
+        >
+          התחברו ב-LinkedIn
+        </a>
+      </div>
+      <p class="mx-auto mt-10 max-w-2xl text-white/60">
+        מצאתם את זה מעניין? עשינו את אותו הפירוק בקטגוריה שלנו ב<a href={localizedHref("/state-of-product-recommendation-quizzes/", "he")} class="font-medium text-white underline decoration-white/40 underline-offset-2 hover:decoration-white">מצב חידוני המלצת המוצרים</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Methodology -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">מתודולוגיה</h2>
+      <ul class="mt-8 space-y-5" role="list">
+        {methodologyHtml.map((m) => (
+          <li class="flex gap-3">
+            <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" aria-hidden="true"></span>
+            <p class="text-slate-700" set:html={m} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-3xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">שאלות נפוצות</h2>
+      <div class="mt-10 divide-y divide-slate-200 border-y border-slate-200">
+        {FAQ.map((f) => (
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 text-lg font-semibold text-slate-900 [&::-webkit-details-marker]:hidden">
+              <span>{f.question}</span>
+              <svg class="h-5 w-5 flex-shrink-0 text-slate-400 transition-transform duration-200 group-open:rotate-180" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+              </svg>
+            </summary>
+            <p class="pb-5 text-slate-700" set:html={f.answerHtml ?? f.answer} />
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>
+
+<script>
+  import Chart from "chart.js/auto";
+  import { GROWTH, REVIEWS, REVENUE, PRICING, GEOGRAPHY, COLORS } from "../../../lib/app-economy";
+
+  Chart.defaults.font.family =
+    "Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif";
+  Chart.defaults.color = "#475569";
+  Chart.defaults.font.size = 13;
+
+  const el = (id: string) => document.getElementById(id) as HTMLCanvasElement | null;
+  const grid = "#eef0f2";
+  const kfmt = (v: number) => (v >= 1000 ? v / 1000 + "K" : "" + v);
+
+  const growth = el("c-growth");
+  if (growth)
+    new Chart(growth, {
+      type: "line",
+      data: {
+        labels: GROWTH.labels,
+        datasets: [
+          {
+            data: GROWTH.cumulative,
+            borderColor: COLORS.primary,
+            backgroundColor: "rgba(97,110,255,0.10)",
+            fill: true,
+            tension: 0.35,
+            borderWidth: 2.5,
+            pointRadius: 3,
+            pointHoverRadius: 5,
+            pointBackgroundColor: COLORS.primary,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: { callbacks: { label: (c) => Number(c.parsed.y).toLocaleString() + " apps live" } },
+        },
+        scales: {
+          y: { beginAtZero: true, grid: { color: grid }, ticks: { callback: (v) => kfmt(Number(v)) } },
+          x: { grid: { display: false } },
+        },
+      },
+    });
+
+  const donutOpts = (suffix: string) => ({
+    responsive: true,
+    maintainAspectRatio: false,
+    cutout: "62%",
+    plugins: {
+      legend: { position: "bottom" as const, labels: { boxWidth: 12, boxHeight: 12, padding: 16 } },
+      tooltip: { callbacks: { label: (c: any) => `${c.label}: ${c.parsed}${suffix}` } },
+    },
+  });
+
+  const reviews = el("c-reviews");
+  if (reviews)
+    new Chart(reviews, {
+      type: "doughnut",
+      data: { labels: REVIEWS.labels, datasets: [{ data: REVIEWS.values, backgroundColor: REVIEWS.colors, borderWidth: 0 }] },
+      options: donutOpts("%"),
+    });
+
+  const revDonut = el("c-revenue-donut");
+  if (revDonut)
+    new Chart(revDonut, {
+      type: "doughnut",
+      data: { labels: REVENUE.donut.labels, datasets: [{ data: REVENUE.donut.values, backgroundColor: REVENUE.donut.colors, borderWidth: 0 }] },
+      options: donutOpts("%"),
+    });
+
+  const revBars = el("c-revenue-bars");
+  if (revBars)
+    new Chart(revBars, {
+      type: "bar",
+      data: { labels: REVENUE.bars.labels, datasets: [{ data: REVENUE.bars.values, backgroundColor: COLORS.primary, borderRadius: 4, barThickness: 26 }] },
+      options: {
+        indexAxis: "y",
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => c.parsed.x + "% of estimated revenue" } } },
+        scales: { x: { beginAtZero: true, max: 100, grid: { color: grid }, ticks: { callback: (v) => v + "%" } }, y: { grid: { display: false } } },
+      },
+    });
+
+  const pricing = el("c-pricing");
+  if (pricing)
+    new Chart(pricing, {
+      type: "doughnut",
+      data: { labels: PRICING.labels, datasets: [{ data: PRICING.values, backgroundColor: PRICING.colors, borderWidth: 0 }] },
+      options: donutOpts("%"),
+    });
+
+  const geo = el("c-geography");
+  if (geo)
+    new Chart(geo, {
+      type: "bar",
+      data: { labels: GEOGRAPHY.labels, datasets: [{ data: GEOGRAPHY.values, backgroundColor: GEOGRAPHY.labels.map((_, i) => (i < 2 ? COLORS.primary : COLORS.secondary)), borderRadius: 4 }] },
+      options: {
+        indexAxis: "y",
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: { callbacks: { label: (c) => Number(c.parsed.x).toLocaleString() + " apps" } } },
+        scales: { x: { beginAtZero: true, grid: { color: grid }, ticks: { callback: (v) => kfmt(Number(v)) } }, y: { grid: { display: false } } },
+      },
+    });
+</script>

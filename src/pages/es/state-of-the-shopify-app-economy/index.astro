@@ -1,7 +1,8 @@
 ---
-import Base from "../../layouts/Base.astro";
-import { organization, breadcrumb, article, faqPage } from "../../lib/schema";
-import { SITE } from "../../lib/site";
+import Base from "../../../layouts/Base.astro";
+import { organization, breadcrumb, article, faqPage } from "../../../lib/schema";
+import { SITE } from "../../../lib/site";
+import { localizedHref } from "../../../lib/i18n";
 import {
   REPORT,
   SOURCE,
@@ -14,26 +15,30 @@ import {
   QUIZ_LANE,
   METHODOLOGY,
   FAQ,
-} from "../../lib/app-economy";
+} from "../../../lib/app-economy";
 
-const pageUrl = new URL(`/${REPORT.slug}/`, SITE.site_url).href;
+const pageUrl = new URL(`/es/${REPORT.slug}/`, SITE.site_url).href;
 const ogImage = `/og/${REPORT.slug}.png`;
 
-const publishedLabel = new Date(REPORT.datePublished).toLocaleDateString("en-US", {
+const publishedLabel = new Date(REPORT.datePublished).toLocaleDateString("es-ES", {
   year: "numeric",
   month: "long",
   day: "numeric",
 });
 
+const title = "El estado de la economía de apps de Shopify";
+const description =
+  "Hay 22.546 apps activas en la Shopify App Store y casi ninguna llega a ningún sitio. Un informe de datos sobre crecimiento, reseñas, concentración de ingresos, precios y quién las crea, a partir de una instantánea de cada app activa.";
+
 const jsonLd = [
   organization(),
   breadcrumb([
-    { name: "Home", url: "/" },
-    { name: "State of the Shopify app economy", url: `/${REPORT.slug}/` },
+    { name: "Inicio", url: localizedHref("/", "es") },
+    { name: title, url: localizedHref(`/${REPORT.slug}/`, "es") },
   ]),
   article({
-    title: REPORT.title,
-    description: REPORT.description,
+    title,
+    description,
     url: pageUrl,
     image: ogImage,
     datePublished: REPORT.datePublished,
@@ -41,16 +46,16 @@ const jsonLd = [
     author: "RevenueHunt",
     tags: [
       "Shopify app store",
-      "Shopify app developers",
-      "app store statistics",
-      "app economy",
+      "desarrolladores de apps de Shopify",
+      "estadísticas de la app store",
+      "economía de apps",
     ],
   }),
   {
     "@context": "https://schema.org",
     "@type": "Dataset",
-    name: "The state of the Shopify app economy 2026",
-    description: REPORT.description,
+    name: "El estado de la economía de apps de Shopify 2026",
+    description,
     url: pageUrl,
     creator: organization(),
     license: "https://creativecommons.org/licenses/by/4.0/",
@@ -58,9 +63,9 @@ const jsonLd = [
     datePublished: REPORT.datePublished,
     keywords: [
       "Shopify app store",
-      "app developers",
-      "app revenue",
-      "app reviews",
+      "desarrolladores de apps",
+      "ingresos de apps",
+      "reseñas de apps",
       "ecommerce",
     ],
   },
@@ -70,12 +75,26 @@ const jsonLd = [
 // Section eyebrows for the editorial "field notes" feel.
 const E = (n: string, label: string) => `${n} · ${label}`;
 
-const growthCaptionHtml = GROWTH.caption.replace(
-  "The Shopify App Store has roughly 10x'd since 2020",
-  "<strong>The Shopify App Store has roughly 10x'd since 2020</strong>",
-);
+// Translated headline cards. Stats stay from the shared data module (HEADLINE[i].stat).
+const headlineT = [
+  { label: "apps activas en la store", note: "Multiplicado por 10 aproximadamente desde 2020." },
+  { label: "no tienen ninguna reseña", note: "Tres de cada cuatro tienen menos de cinco." },
+  { label: "de los ingresos se los lleva el 1% superior", note: "225 apps. Estimado." },
+  { label: "cobran por adelantado", note: "Solo 1 de cada 20. Casi la mitad son gratis." },
+];
 
-// Bold the lead phrase of each methodology note.
+// Growth caption with the lead phrase bolded.
+const growthCaptionHtml =
+  "Apps activas acumuladas por año de lanzamiento. <strong>La Shopify App Store se ha multiplicado por 10 aproximadamente desde 2020</strong> y ha sumado más de 6.000 apps solo en los últimos 12 meses, alrededor de 1 de cada 4 de todo lo que hoy está activo.";
+
+// Quiz-lane paragraphs (translated), with the live search link and the load-bearing
+// lines bolded inline. Caption text mirrors the English source's meaning.
+const quizParas = [
+  `Nuestra propia categoría demuestra lo mismo. <a href="${QUIZ_LANE.searchUrl}" target="_blank" rel="external noopener nofollow" class="font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]">la búsqueda de quizzes de Shopify</a> devuelve 149 apps, pero aquí la confianza se acumula en la cima exactamente igual que en toda la store. Las tres apps que llegaron primero y nunca se fueron, RevenueHunt, Octane AI y Quiz Kit, concentran el 45% de todas las reseñas de la categoría; <strong>RevenueHunt por sí sola tiene alrededor de una cuarta parte</strong>, y la mitad inferior no tiene ninguna.`,
+  `No llegamos arriba a base de código. <strong>Las reseñas son el residuo del tejido cicatricial operativo</strong> que hay detrás: seis años respondiendo soporte, poniéndonos al teléfono con comercios que nunca pagarían y ganándonos la confianza tienda a tienda. Octane AI y Quiz Kit hicieron el mismo trabajo duro durante años, <strong>y se lo respetamos</strong>. Mención de honor para Lantern y Quizell, ambas con algo más de 120 reseñas.`,
+];
+
+// Methodology stays in English (shared data module), with the lead phrase of each note bolded.
 const METHOD_BOLD = [
   "Source: ",
   "Revenue is estimated, not measured.",
@@ -85,55 +104,33 @@ const METHOD_BOLD = [
 const methodologyHtml = METHODOLOGY.map((m) =>
   METHOD_BOLD.reduce((acc, lead) => acc.replace(lead, `<strong>${lead}</strong>`), m),
 );
-
-// Quiz-lane paragraphs. Link "Shopify's quiz search" to the live search (so the
-// 149 figure is verifiable) and bold the load-bearing line. Caption text stays
-// the single source of truth.
-const quizParas = QUIZ_LANE.caption.map((p) =>
-  p
-    .replace(
-      "Shopify's quiz search",
-      `<a href="${QUIZ_LANE.searchUrl}" target="_blank" rel="external noopener nofollow" class="font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]">Shopify's quiz search</a>`,
-    )
-    .replace(
-      "Reviews are the residue of the operational scar tissue",
-      "<strong>Reviews are the residue of the operational scar tissue</strong>",
-    )
-    .replace(
-      "we respect them for it",
-      "<strong>we respect them for it</strong>",
-    )
-    .replace(
-      "RevenueHunt alone holds about a quarter",
-      "<strong>RevenueHunt alone holds about a quarter</strong>",
-    ),
-);
 ---
 
 <Base
-  title={`${REPORT.title} — 2026 data report`}
-  description={REPORT.description}
+  title={`${title} - informe de datos 2026`}
+  description={description}
   ogImage={ogImage}
   jsonLd={jsonLd}
+  lang="es"
   translated={true}
 >
   <!-- Hero -->
   <section class="bg-gradient-to-b from-slate-50 to-white">
     <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
       <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
-        <a href="/" class="hover:text-slate-700">Home</a>
+        <a href={localizedHref("/", "es")} class="hover:text-slate-700">Inicio</a>
         <span class="mx-2 text-slate-300">/</span>
-        <span class="text-slate-700">State of the Shopify app economy</span>
+        <span class="text-slate-700">El estado de la economía de apps de Shopify</span>
       </nav>
       <div class="text-center">
         <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">
-          {REPORT.eyebrow} · {publishedLabel}
+          Notas de campo · {publishedLabel}
         </p>
         <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
-          The state of the Shopify app economy
+          El estado de la economía de apps de Shopify
         </h1>
         <p class="mx-auto mt-6 max-w-3xl text-xl text-slate-600">
-          <strong>22,546 apps are live on the Shopify App Store, and almost none of them get anywhere.</strong> We took a snapshot of every live app, then read the data on growth, reviews, revenue, pricing and who builds them. It tells one story: building the app was never the hard part.
+          <strong>Hay 22.546 apps activas en la Shopify App Store, y casi ninguna llega a ningún sitio.</strong> Tomamos una instantánea de cada app activa y leímos los datos sobre crecimiento, reseñas, ingresos, precios y quién las crea. Cuentan una sola historia: crear la app nunca fue la parte difícil.
         </p>
       </div>
     </div>
@@ -144,28 +141,28 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
     <div class="mx-auto max-w-5xl px-6">
       <div class="rounded-2xl bg-[#16161D] px-6 py-10 sm:px-10">
         <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-white/50">
-          The snapshot
+          La instantánea
         </p>
         <dl class="mt-6 grid grid-cols-2 gap-8 text-center sm:grid-cols-4">
           <div>
             <dt class="text-4xl font-bold tracking-tight text-white">{SOURCE.apps}</dt>
-            <dd class="mt-1 text-sm text-white/70">{SOURCE.appsNote}</dd>
+            <dd class="mt-1 text-sm text-white/70">apps activas en la instantánea</dd>
           </div>
           <div>
             <dt class="text-4xl font-bold tracking-tight text-white">{SOURCE.countries}</dt>
-            <dd class="mt-1 text-sm text-white/70">{SOURCE.countriesNote}</dd>
+            <dd class="mt-1 text-sm text-white/70">países que las crean</dd>
           </div>
           <div>
             <dt class="text-4xl font-bold tracking-tight text-white">{SOURCE.reviewless}</dt>
-            <dd class="mt-1 text-sm text-white/70">{SOURCE.reviewlessNote}</dd>
+            <dd class="mt-1 text-sm text-white/70">sin ninguna reseña</dd>
           </div>
           <div>
             <dt class="text-4xl font-bold tracking-tight text-white">{SOURCE.free}</dt>
-            <dd class="mt-1 text-sm text-white/70">{SOURCE.freeNote}</dd>
+            <dd class="mt-1 text-sm text-white/70">completamente gratis, sin plan de pago</dd>
           </div>
         </dl>
         <p class="mx-auto mt-6 max-w-3xl text-center text-sm text-white/60">
-          Every figure below comes from the public App Store listing of all 22,546 live apps, June 2026. Revenue is estimated from published pricing and usage signals, not billing data, and is labelled as such throughout.
+          Cada cifra de abajo procede de la ficha pública en la App Store de las 22.546 apps activas, junio de 2026. Los ingresos se estiman a partir de los precios publicados y señales de uso, no de datos de facturación, y se etiquetan como tales en todo el informe.
         </p>
       </div>
     </div>
@@ -174,13 +171,13 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
   <!-- Headline cards -->
   <section class="bg-white">
     <div class="mx-auto max-w-5xl px-6 py-16">
-      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">The headline numbers</h2>
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Las cifras destacadas</h2>
       <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
-        {HEADLINE.map((c) => (
+        {HEADLINE.map((c, i) => (
           <div class="rounded-xl border border-slate-200 p-7">
             <p class="text-4xl font-bold tracking-tight text-[#16161D]">{c.stat}</p>
-            <p class="mt-2 font-medium text-slate-900">{c.label}</p>
-            <p class="mt-2 text-sm text-slate-600">{c.note}</p>
+            <p class="mt-2 font-medium text-slate-900">{headlineT[i].label}</p>
+            <p class="mt-2 text-sm text-slate-600">{headlineT[i].note}</p>
           </div>
         ))}
       </div>
@@ -190,11 +187,11 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
   <!-- 01 Growth -->
   <section class="scroll-mt-20 bg-slate-50">
     <div class="mx-auto max-w-5xl px-6 py-16">
-      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("01", "Growth")}</p>
-      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Up 10x since 2020</h2>
+      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("01", "Crecimiento")}</p>
+      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Multiplicado por 10 desde 2020</h2>
       <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center" set:html={growthCaptionHtml} />
       <div class="mt-8 rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-        <div class="h-72 sm:h-80"><canvas id="c-growth" aria-label="Cumulative live Shopify apps by year" role="img"></canvas></div>
+        <div class="h-72 sm:h-80"><canvas id="c-growth" aria-label="Apps de Shopify activas acumuladas por año" role="img"></canvas></div>
       </div>
     </div>
   </section>
@@ -202,21 +199,21 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
   <!-- 02 Traction -->
   <section class="bg-white">
     <div class="mx-auto max-w-5xl px-6 py-16">
-      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("02", "Traction")}</p>
-      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Most apps never earn a review</h2>
-      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">{REVIEWS.caption}</p>
+      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("02", "Tracción")}</p>
+      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">La mayoría de las apps nunca consiguen una reseña</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">La mitad de la Shopify App Store nunca ha ganado una sola reseña. Tres de cada cuatro apps tienen menos de cinco. Una reseña es el indicador público más claro de un comercio real y retenido, y la mayoría de las apps nunca consiguen ninguna.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <div class="h-72 sm:h-80"><canvas id="c-reviews" aria-label="Review distribution across all live apps" role="img"></canvas></div>
+          <div class="h-72 sm:h-80"><canvas id="c-reviews" aria-label="Distribución de reseñas entre todas las apps activas" role="img"></canvas></div>
         </div>
         <div class="space-y-4">
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="text-3xl font-bold text-[#16161D]">74%</p>
-            <p class="mt-1 text-slate-700">have fewer than five reviews</p>
+            <p class="mt-1 text-slate-700">tienen menos de cinco reseñas</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="text-3xl font-bold text-[#16161D]">{REVIEWS.avgRating}</p>
-            <p class="mt-1 text-slate-700">average rating, across the {REVIEWS.ratedCount} apps that have one</p>
+            <p class="mt-1 text-slate-700">valoración media, entre las {REVIEWS.ratedCount} apps que tienen una</p>
           </div>
         </div>
       </div>
@@ -226,17 +223,17 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
   <!-- 03 Revenue -->
   <section class="bg-slate-50">
     <div class="mx-auto max-w-5xl px-6 py-16">
-      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("03", "Revenue · estimated")}</p>
-      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">The money pools at the very top</h2>
-      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">{REVENUE.caption}</p>
+      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("03", "Ingresos · estimado")}</p>
+      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">El dinero se concentra en la cúspide</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Los ingresos mensuales estimados están brutalmente concentrados arriba. El 1% superior de las apps (225 de ellas) se lleva un 72% estimado; solo las 10 primeras se llevan casi un tercio. Apenas un 36% de las apps parece ganar algo en absoluto.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="mb-3 text-sm font-medium text-slate-500">Revenue distribution</p>
-          <div class="h-64 sm:h-72"><canvas id="c-revenue-donut" aria-label="Share of estimated revenue earned by the top 1% of apps" role="img"></canvas></div>
+          <p class="mb-3 text-sm font-medium text-slate-500">Distribución de ingresos</p>
+          <div class="h-64 sm:h-72"><canvas id="c-revenue-donut" aria-label="Parte de los ingresos estimados que se lleva el 1% superior de las apps" role="img"></canvas></div>
         </div>
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <p class="mb-3 text-sm font-medium text-slate-500">Cumulative share of estimated revenue</p>
-          <div class="h-64 sm:h-72"><canvas id="c-revenue-bars" aria-label="Cumulative share of estimated revenue by top apps" role="img"></canvas></div>
+          <p class="mb-3 text-sm font-medium text-slate-500">Parte acumulada de los ingresos estimados</p>
+          <div class="h-64 sm:h-72"><canvas id="c-revenue-bars" aria-label="Parte acumulada de los ingresos estimados por las apps líderes" role="img"></canvas></div>
         </div>
       </div>
     </div>
@@ -245,21 +242,21 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
   <!-- 04 Pricing -->
   <section class="bg-white">
     <div class="mx-auto max-w-5xl px-6 py-16">
-      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("04", "Pricing")}</p>
-      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Almost nobody charges up front</h2>
-      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">{PRICING.caption}</p>
+      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("04", "Precios")}</p>
+      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Casi nadie cobra por adelantado</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Casi la mitad de la store no cobra nada por adelantado, y menos de 1 de cada 20 apps pide dinero antes de la primera instalación. Casi un 45% ofrece un plan gratis permanente. Aquí el freemium no es una estrategia, es lo mínimo para entrar.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <div class="h-72 sm:h-80"><canvas id="c-pricing" aria-label="Pricing model split across all live apps" role="img"></canvas></div>
+          <div class="h-72 sm:h-80"><canvas id="c-pricing" aria-label="Reparto del modelo de precios entre todas las apps activas" role="img"></canvas></div>
         </div>
         <div class="space-y-4">
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="text-3xl font-bold text-[#16161D]">{PRICING.permanentFree}</p>
-            <p class="mt-1 text-slate-700">offer a permanent free tier, not just a trial</p>
+            <p class="mt-1 text-slate-700">ofrecen un plan gratis permanente, no solo una prueba</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
-            <p class="text-3xl font-bold text-[#16161D]">1 in 20</p>
-            <p class="mt-1 text-slate-700">apps charge money before the first install</p>
+            <p class="text-3xl font-bold text-[#16161D]">1 de cada 20</p>
+            <p class="mt-1 text-slate-700">apps cobran dinero antes de la primera instalación</p>
           </div>
         </div>
       </div>
@@ -269,21 +266,21 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
   <!-- 05 Who builds them -->
   <section class="bg-slate-50">
     <div class="mx-auto max-w-5xl px-6 py-16">
-      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("05", "Who builds them")}</p>
-      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Built in 115 countries, dominated by two</h2>
-      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">{GEOGRAPHY.caption}</p>
+      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("05", "Quién las crea")}</p>
+      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Creadas en 115 países, dominadas por dos</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Las apps vienen de 115 países, pero dos dominan: EE. UU. (16%) e India (9%) crean entre los dos una cuarta parte de la store. Y tras años de Shopify empujando el estándar, solo un 6,7% de las apps activas (alrededor de 1.500) llevan la insignia Built for Shopify.</p>
       <div class="mt-8 grid items-center gap-8 lg:grid-cols-2">
         <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
-          <div class="h-72 sm:h-80"><canvas id="c-geography" aria-label="Top developer countries by app count" role="img"></canvas></div>
+          <div class="h-72 sm:h-80"><canvas id="c-geography" aria-label="Principales países de desarrolladores por número de apps" role="img"></canvas></div>
         </div>
         <div class="space-y-4">
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.builtForShopify}</p>
-            <p class="mt-1 text-slate-700">carry the Built for Shopify badge ({GEOGRAPHY.builtForShopifyCount} apps), years after Shopify began pushing the standard</p>
+            <p class="mt-1 text-slate-700">llevan la insignia Built for Shopify ({GEOGRAPHY.builtForShopifyCount} apps), años después de que Shopify empezara a impulsar el estándar</p>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="text-3xl font-bold text-[#16161D]">25%</p>
-            <p class="mt-1 text-slate-700">of the entire store is built in just the US and India</p>
+            <p class="mt-1 text-slate-700">de toda la store se crea solo en EE. UU. e India</p>
           </div>
         </div>
       </div>
@@ -293,8 +290,8 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
   <!-- 06 The quiz lane -->
   <section class="bg-white">
     <div class="mx-auto max-w-5xl px-6 py-16">
-      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("06", "The quiz lane")}</p>
-      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Our own category, up close</h2>
+      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("06", "El carril de los quizzes")}</p>
+      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Nuestra propia categoría, de cerca</h2>
       {quizParas.map((html) => (
         <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center" set:html={html} />
       ))}
@@ -306,46 +303,46 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
           class="block rounded-xl border border-[#616eff]/60 p-6 shadow-[0_0_28px_-4px_rgba(97,110,255,0.55)] transition hover:border-[#616eff] hover:shadow-[0_0_32px_-2px_rgba(97,110,255,0.7)]"
         >
           <p class="text-sm font-semibold text-slate-900">RevenueHunt</p>
-          <p class="mt-1 font-bold text-[#16161D]"><span class="text-3xl">{QUIZ_LANE.revenueHuntReviews}</span> <span class="text-sm font-medium text-slate-500">reviews</span></p>
-          <p class="mt-1 text-xs font-semibold text-slate-600"><span class="text-amber-400">★</span> 4.9 stars</p>
+          <p class="mt-1 font-bold text-[#16161D]"><span class="text-3xl">{QUIZ_LANE.revenueHuntReviews}</span> <span class="text-sm font-medium text-slate-500">reseñas</span></p>
+          <p class="mt-1 text-xs font-semibold text-slate-600"><span class="text-amber-400">★</span> 4,9 estrellas</p>
         </a>
         <div class="rounded-xl border border-slate-200 p-6">
           <p class="text-sm font-medium text-slate-700">Octane AI</p>
-          <p class="mt-1 font-bold text-slate-500"><span class="text-3xl">{QUIZ_LANE.octaneReviews}</span> <span class="text-sm font-medium text-slate-500">reviews</span></p>
-          <p class="mt-1 text-xs font-semibold text-slate-600"><span class="text-amber-400">★</span> 4.8 stars</p>
+          <p class="mt-1 font-bold text-slate-500"><span class="text-3xl">{QUIZ_LANE.octaneReviews}</span> <span class="text-sm font-medium text-slate-500">reseñas</span></p>
+          <p class="mt-1 text-xs font-semibold text-slate-600"><span class="text-amber-400">★</span> 4,8 estrellas</p>
         </div>
         <div class="rounded-xl border border-slate-200 p-6">
           <p class="text-sm font-medium text-slate-700">Quiz Kit</p>
-          <p class="mt-1 font-bold text-slate-500"><span class="text-3xl">{QUIZ_LANE.quizKitReviews}</span> <span class="text-sm font-medium text-slate-500">reviews</span></p>
-          <p class="mt-1 text-xs font-semibold text-slate-600"><span class="text-amber-400">★</span> 4.8 stars</p>
+          <p class="mt-1 font-bold text-slate-500"><span class="text-3xl">{QUIZ_LANE.quizKitReviews}</span> <span class="text-sm font-medium text-slate-500">reseñas</span></p>
+          <p class="mt-1 text-xs font-semibold text-slate-600"><span class="text-amber-400">★</span> 4,8 estrellas</p>
         </div>
       </div>
-      <p class="mx-auto mt-4 max-w-3xl text-center text-sm text-slate-500">Reviews on the Shopify App Store, June 2026. Octane AI and Quiz Kit are the real competitors RevenueHunt has in this category; respect to both.</p>
+      <p class="mx-auto mt-4 max-w-3xl text-center text-sm text-slate-500">Reseñas en la Shopify App Store, junio de 2026. Octane AI y Quiz Kit son los competidores reales que RevenueHunt tiene en esta categoría; respeto para ambos.</p>
     </div>
   </section>
 
   <!-- Takeaway -->
   <section class="bg-[#16161D]">
     <div class="mx-auto max-w-4xl px-6 py-20 text-center">
-      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#4dcaff]">The takeaway</p>
+      <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#4dcaff]">La conclusión</p>
       <h2 class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-        Building the app was never the hard part.
+        Crear la app nunca fue la parte difícil.
       </h2>
       <p class="mx-auto mt-5 max-w-2xl text-lg text-white/75">
-        AI didn't change that. It just made it impossible to hide. When code becomes a commodity, the flood of new apps is not the competition. The competition is the handful who showed up early and never stopped grinding: answering support, earning reviews one merchant at a time, building trust.
+        La IA no cambió eso. Solo hizo imposible esconderlo. Cuando el código se convierte en un bien básico, la avalancha de apps nuevas no es la competencia. La competencia es el puñado que apareció pronto y nunca dejó de currar: respondiendo soporte, ganándose reseñas comercio a comercio, construyendo confianza.
       </p>
       <p class="mx-auto mt-5 max-w-2xl text-lg font-semibold text-white">
-        Distribution and trust is the only AI-proof move left.
+        Distribución y confianza es la única jugada a prueba de IA que queda.
       </p>
       <p class="mx-auto mt-10 max-w-2xl text-lg text-white/85">
-        Building a Shopify app that's actually working? I want to meet the founders doing the hard part. Let's talk.
+        ¿Estás construyendo una app de Shopify que de verdad funciona? Quiero conocer a los fundadores que hacen la parte difícil. Hablemos.
       </p>
       <div class="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
         <a
-          href="/contact/"
+          href={localizedHref("/contact/", "es")}
           class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
         >
-          Get in touch
+          Ponte en contacto
         </a>
         <a
           href="https://www.linkedin.com/in/revenuehunt/"
@@ -353,11 +350,11 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
           rel="external noopener"
           class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
         >
-          Connect on LinkedIn
+          Conecta en LinkedIn
         </a>
       </div>
       <p class="mx-auto mt-10 max-w-2xl text-white/60">
-        Found this interesting? We ran the same teardown on our own category in the <a href="/state-of-product-recommendation-quizzes/" class="font-medium text-white underline decoration-white/40 underline-offset-2 hover:decoration-white">state of product recommendation quizzes</a>.
+        ¿Te ha parecido interesante? Hicimos el mismo análisis en nuestra propia categoría en <a href={localizedHref("/state-of-product-recommendation-quizzes/", "es")} class="font-medium text-white underline decoration-white/40 underline-offset-2 hover:decoration-white">el estado de los quizzes de recomendación de productos</a>.
       </p>
     </div>
   </section>
@@ -365,7 +362,7 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
   <!-- Methodology -->
   <section class="bg-slate-50">
     <div class="mx-auto max-w-5xl px-6 py-16">
-      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Methodology</h2>
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Metodología</h2>
       <ul class="mt-8 space-y-5" role="list">
         {methodologyHtml.map((m) => (
           <li class="flex gap-3">
@@ -380,7 +377,7 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
   <!-- FAQ -->
   <section class="bg-white">
     <div class="mx-auto max-w-3xl px-6 py-16">
-      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Frequently asked questions</h2>
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Preguntas frecuentes</h2>
       <div class="mt-10 divide-y divide-slate-200 border-y border-slate-200">
         {FAQ.map((f) => (
           <details class="group">
@@ -400,7 +397,7 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
 
 <script>
   import Chart from "chart.js/auto";
-  import { GROWTH, REVIEWS, REVENUE, PRICING, GEOGRAPHY, COLORS } from "../../lib/app-economy";
+  import { GROWTH, REVIEWS, REVENUE, PRICING, GEOGRAPHY, COLORS } from "../../../lib/app-economy";
 
   Chart.defaults.font.family =
     "Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif";

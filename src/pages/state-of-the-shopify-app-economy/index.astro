@@ -271,7 +271,7 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
           </div>
           <div class="rounded-xl border border-slate-200 p-6">
             <p class="text-3xl font-bold text-[#16161D]">1 in 20</p>
-            <p class="mt-1 text-slate-700">apps charge money before the first install</p>
+            <p class="mt-1 text-slate-700">apps charge money on install</p>
           </div>
         </div>
       </div>
@@ -435,6 +435,26 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
   const kfmt = (v: number) => (v >= 1000 ? v / 1000 + "K" : "" + v);
   const L = CHART_LABELS[document.documentElement.lang] ?? CHART_LABELS.en;
 
+  // Reorder a horizontal stacked bar by each row's visible-tier sum (descending),
+  // keeping labels and every dataset row aligned. Run after a legend toggle so the
+  // bars always rank by what's actually shown, not by the full total.
+  const reorderStacked = (chart: any) => {
+    const datasets = chart.data.datasets;
+    const rows = chart.data.labels.map((label: string, r: number) => ({
+      label,
+      vals: datasets.map((d: any) => d.data[r]),
+      vis: datasets.reduce(
+        (s: number, d: any, di: number) => s + (chart.isDatasetVisible(di) ? d.data[r] : 0),
+        0,
+      ),
+    }));
+    rows.sort((a: any, b: any) => b.vis - a.vis);
+    chart.data.labels = rows.map((x: any) => x.label);
+    datasets.forEach((d: any, di: number) => {
+      d.data = rows.map((x: any) => x.vals[di]);
+    });
+  };
+
   const growth = el("c-growth");
   if (growth)
     new Chart(growth, {
@@ -546,7 +566,17 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
-          legend: { position: "bottom" as const, labels: { boxWidth: 12, boxHeight: 12, padding: 14 } },
+          legend: {
+            position: "bottom" as const,
+            labels: { boxWidth: 12, boxHeight: 12, padding: 14 },
+            onClick(_e, item, legend) {
+              const ch = legend.chart;
+              const i = item.datasetIndex ?? 0;
+              ch.setDatasetVisibility(i, !ch.isDatasetVisible(i));
+              reorderStacked(ch);
+              ch.update();
+            },
+          },
           tooltip: { callbacks: { label: (c) => `${c.dataset.label}: ${Number(c.parsed.x).toLocaleString()}` } },
         },
         scales: {

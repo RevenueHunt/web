@@ -163,7 +163,7 @@ export const FAQ: FaqItem[] = [
   {
     question: "How much do Shopify apps earn?",
     answer:
-      "Earnings are extremely concentrated. By our estimate, the top 1% of apps (225 of them) take about 72% of all app revenue, and the top 10 alone take nearly a third. Only around 36% of apps look like they earn anything. Revenue here is estimated from public pricing and usage signals, not billing data.",
+      "Earnings are extremely concentrated. By our estimate, the top 1% of apps (225 of them) take about 72% of all app revenue, and the top 10 alone take nearly 30%. Only around 36% of apps look like they earn anything. Revenue here is estimated from public pricing and usage signals, not billing data.",
   },
   {
     question: "Are most Shopify apps free?",

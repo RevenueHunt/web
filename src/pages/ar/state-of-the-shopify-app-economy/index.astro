@@ -12,6 +12,7 @@ import {
   REVENUE,
   PRICING,
   GEOGRAPHY,
+  NICHES,
   QUIZ_LANE,
 } from "../../../lib/app-economy";
 
@@ -36,7 +37,7 @@ const METHODOLOGY = [
   "<strong>الإيرادات مقدّرة، لا مقيسة.</strong> هي مُنمذجة من مستويات الأسعار المنشورة لكل تطبيق مع إشارات المراجعات والتثبيتات. تعامل مع أرقام الإيرادات كنموذج اتجاهي لمدى تركّز الأرباح، لا كبيانات فوترة. وهي موسومة بـ\"مقدّرة\" أينما ظهرت.",
   "<strong>يعتمد النمو على تاريخ الإطلاق المنشور لكل بطاقة.</strong> جمّع المصدر نحو 2,800 تاريخ إطلاق في مايو 2026، لذا تُقرأ المنحنى كتطبيقات نشطة متراكمة حسب السنة (نقطة النهاية هي الإجمالي الحالي الحقيقي)، ورقم \"أكثر من 6,000 في آخر 12 شهراً\" يزيل تشوّه ذلك الشهر الوحيد.",
   "<strong>المراجعات وكيل عن الجذب</strong>، لا وكيل مثالي: قد يكون التطبيق الرائع جديداً، وأعداد المراجعات تتأخر عن الاستخدام الحقيقي. نستخدمها لأنها أوضح إشارة علنية وقابلة للمقارنة عن قاعدة تجار حقيقية عبر 22,546 تطبيقاً.",
-  "الفئات في App Store هي وسوم ميزات يستطيع التطبيق أن يطبّقها على نفسه، وكثير من التطبيقات تحمل عدة وسوم أو لا تحمل أياً منها، لذا نُبلّغ عن الشرائح غير الملتبسة (المراجعات، الأسعار، تاريخ الإطلاق، دولة المطوّر) ونتجنّب المبالغة في قراءة تصنيف الوسوم.",
+  "الفئات في App Store هي وسوم ميزات يمكن للتطبيق أن يضعها لنفسه، وكثير من التطبيقات تحمل عدة وسوم أو لا تحمل أيًّا. لعرض القطاعات نجمع الوسوم المتقاربة في مسارات عريضة ونزيل تكرار التطبيقات داخل كل منها؛ قد ينتمي التطبيق إلى أكثر من واحد، لذا تتداخل القطاعات وليست حصرية، ونقرأها كمؤشّر اتجاه. وفي كل ما عدا ذلك نعتمد على التقسيمات الواضحة (المراجعات، الأسعار، تاريخ الإطلاق، بلد المطوّر).",
 ];
 
 const FAQ = [
@@ -63,9 +64,9 @@ const FAQ = [
   {
     question: "أين يمكنني رؤية البيانات الأساسية؟",
     answer:
-      "هذا التقرير هو الرفيق الكامل بالبيانات لملاحظتنا الميدانية على LinkedIn عن اقتصاد التطبيقات. الأرقام مأخوذة من لقطة نحتفظ بها لكل تطبيق Shopify نشط: تواريخ الإطلاق، والمراجعات، والأسعار، وشارة Built for Shopify، ودولة المطوّر. إذا كنت تبني على Shopify وتريد شريحة معينة، تواصل معنا.",
+      "الأرقام مأخوذة من لقطة نحتفظ بها لكل تطبيق Shopify نشط: تواريخ الإطلاق، والمراجعات، والأسعار، وشارة Built for Shopify، ودولة المطوّر. إذا كنت تبني على Shopify وتريد شريحة معينة، تواصل معنا.",
     answerHtml:
-      "هذا التقرير هو الرفيق الكامل بالبيانات لملاحظتنا الميدانية على LinkedIn عن اقتصاد التطبيقات. الأرقام مأخوذة من لقطة نحتفظ بها لكل تطبيق Shopify نشط: تواريخ الإطلاق، والمراجعات، والأسعار، وشارة Built for Shopify، ودولة المطوّر. إذا كنت تبني على Shopify وتريد شريحة معينة، <a href=\"/ar/contact/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">تواصل معنا</a>.",
+      "الأرقام مأخوذة من لقطة نحتفظ بها لكل تطبيق Shopify نشط: تواريخ الإطلاق، والمراجعات، والأسعار، وشارة Built for Shopify، ودولة المطوّر. إذا كنت تبني على Shopify وتريد شريحة معينة، <a href=\"/ar/contact/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">تواصل معنا</a>.",
   },
 ];
 
@@ -319,15 +320,15 @@ const methodologyHtml = METHODOLOGY;
           <div class="mt-4 h-80 sm:h-96"><canvas id="c-geography" aria-label="أبرز دول المطورين حسب عدد التطبيقات، مقسّمة حسب شريحة المراجعات" role="img"></canvas></div>
         </div>
         <div class="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
-          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+          <div class="flex flex-col justify-center rounded-2xl border border-slate-200 bg-white p-6">
             <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.builtForShopify}</p>
             <p class="mt-1 text-sm text-slate-700">تحمل شارة Built for Shopify ({GEOGRAPHY.builtForShopifyCount} تطبيق)، بعد سنوات من بدء Shopify في دفع المعيار</p>
           </div>
-          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+          <div class="flex flex-col justify-center rounded-2xl border border-slate-200 bg-white p-6">
             <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.usIndiaShare}</p>
             <p class="mt-1 text-sm text-slate-700">من المتجر بأكمله يُبنى في الولايات المتحدة والهند وحدهما</p>
           </div>
-          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+          <div class="flex flex-col justify-center rounded-2xl border border-slate-200 bg-white p-6">
             <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.vietnamSignal}</p>
             <p class="mt-1 text-sm text-slate-700">من تطبيقات فيتنام تتجاوز 10 مراجعات - أفضل معدّل إشارة بين كل المطوّرين الكبار، نحو ضعف معدّل الولايات المتحدة أو الهند</p>
           </div>
@@ -336,10 +337,39 @@ const methodologyHtml = METHODOLOGY;
     </div>
   </section>
 
-  <!-- 06 The quiz lane -->
+  <!-- 06 Sectors -->
   <section class="bg-white">
     <div class="mx-auto max-w-5xl px-6 py-16">
-      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("06", "مسار الاختبارات")}</p>
+      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("06", "القطاعات")}</p>
+      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">الازدحام لا يعني الفوز</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">أكثر مسارات المتجر ازدحامًا هي أسوأ رهاناته. يندفع المطوّرون إلى الشحن والدردشة، أدوات شائعة، ولا يكاد أحد يحصل على مراجعة: <strong>قرابة 6 من كل 10 تطبيقات لوجستيات الطرف الثالث لا تحصل على أي مراجعة إطلاقًا</strong>. التطبيقات التي تنجح تتجمّع حيث يتراكم العمل - <strong>التعريب والتسعير والتخصيص على مستوى الكود</strong>، الأدوات التي تصبح أساسية بمجرد أن يثبّتها التاجر.</p>
+      <div class="mt-8 rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
+        <p class="text-sm font-semibold text-slate-900">كل القطاعات، حسب شريحة المراجعات</p>
+        <p class="mt-0.5 text-xs text-slate-500">تطبيقات كل قطاع، مقسّمة حسب شريحة المراجعات ومرتّبة من الأكبر إلى الأصغر.</p>
+        <div class="mt-4 h-[26rem] sm:h-[30rem]"><canvas id="c-niches" aria-label="قطاعات تطبيقات Shopify مقسّمة حسب شريحة المراجعات، مرتّبة حسب النسبة التي تتجاوز 10 مراجعات" role="img"></canvas></div>
+        <p class="mt-3 text-xs text-slate-400">تجمع القطاعات وسوم الميزات التي تضعها التطبيقات لنفسها، دون تكرار لكل تطبيق. قد يقع التطبيق في عدة قطاعات، لذا تتداخل القطاعات وليست حصرية - اقرأها كمسارات عريضة، لا كأحجام سوق دقيقة.</p>
+      </div>
+      <div class="mt-8 grid gap-4 sm:grid-cols-3">
+        <div class="flex flex-col justify-center rounded-2xl border border-slate-200 bg-white p-6">
+          <p class="text-3xl font-bold text-[#16161D]">{NICHES.deadNicheZero}</p>
+          <p class="mt-1 text-sm text-slate-700">من تطبيقات لوجستيات الطرف الثالث لا تحصل على أي مراجعة إطلاقًا - أكثر الأسواق المزدحمة موتًا في المتجر</p>
+        </div>
+        <div class="flex flex-col justify-center rounded-2xl border border-slate-200 bg-white p-6">
+          <p class="text-3xl font-bold text-[#16161D]">{NICHES.bestNicheTraction}</p>
+          <p class="mt-1 text-sm text-slate-700">من تطبيقات التعريب تتجاوز 10 مراجعات - أفضل الفرص بين كل القطاعات الكبرى</p>
+        </div>
+        <div class="flex flex-col justify-center rounded-2xl border border-slate-200 bg-white p-6">
+          <p class="text-3xl font-bold text-[#16161D]">{NICHES.topSectorApps}</p>
+          <p class="mt-1 text-sm text-slate-700">تطبيق تتكدّس في الشحن والتنفيذ، القطاع الأكثر بناءً - ومع ذلك 28% فقط تحقق جذبًا</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 The quiz lane -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("07", "مسار الاختبارات")}</p>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">فئتنا نفسها، عن قرب</h2>
       {quizParas.map((html) => (
         <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center" set:html={html} />
@@ -446,7 +476,7 @@ const methodologyHtml = METHODOLOGY;
 
 <script>
   import Chart from "chart.js/auto";
-  import { GROWTH, REVIEWS, REVENUE, PRICING, GEOGRAPHY, COLORS, CHART_LABELS } from "../../../lib/app-economy";
+  import { GROWTH, REVIEWS, REVENUE, PRICING, GEOGRAPHY, NICHES, COLORS, CHART_LABELS } from "../../../lib/app-economy";
 
   Chart.defaults.font.family =
     "Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif";
@@ -618,4 +648,71 @@ const methodologyHtml = METHODOLOGY;
         },
       },
     });
+
+  // Sectors: every sector's apps stacked by the 5 review tiers, bar length = the
+  // sector's total app count. Same absolute view as the geography chart, and like
+  // it the bars re-sort (largest first) by the visible total whenever a tier is
+  // toggled in the legend. nicheSorted ranks the pool for a tier-visibility mask;
+  // applyNicheSort pushes the result (labels + per-tier data) into the chart.
+  const nicheLabels = L.niches ?? CHART_LABELS.en.niches!;
+  const nichePool = NICHES.tiers.map((tiers: number[], i: number) => ({ label: nicheLabels[i], tiers }));
+  const nicheSorted = (vis: boolean[]) =>
+    nichePool
+      .map((r: any) => ({ ...r, sum: r.tiers.reduce((s: number, v: number, t: number) => s + (vis[t] ? v : 0), 0) }))
+      .sort((a: any, b: any) => b.sum - a.sum);
+  const nicheRowLabel = (r: any) => r.label;
+  const applyNicheSort = (chart: any) => {
+    const rows = nicheSorted([0, 1, 2, 3, 4].map((t) => chart.isDatasetVisible(t)));
+    chart.data.labels = rows.map(nicheRowLabel);
+    [0, 1, 2, 3, 4].forEach((t) => {
+      chart.data.datasets[t].data = rows.map((r: any) => r.tiers[t]);
+    });
+  };
+  const niches = el("c-niches");
+  if (niches) {
+    const nicheInit = nicheSorted([true, true, true, true, true]);
+    new Chart(niches, {
+      type: "bar",
+      data: {
+        labels: nicheInit.map(nicheRowLabel),
+        datasets: [0, 1, 2, 3, 4].map((t) => ({
+          label: geoTiers[t],
+          data: nicheInit.map((r: any) => r.tiers[t]),
+          backgroundColor: REVIEWS.colors[t],
+          borderWidth: 0,
+        })),
+      },
+      options: {
+        indexAxis: "y",
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            position: "bottom" as const,
+            labels: { boxWidth: 12, boxHeight: 12, padding: 14 },
+            onClick(_e, item, legend) {
+              const ch = legend.chart;
+              const i = item.datasetIndex ?? 0;
+              ch.setDatasetVisibility(i, !ch.isDatasetVisible(i));
+              applyNicheSort(ch);
+              ch.update();
+            },
+          },
+          tooltip: {
+            callbacks: {
+              label: (c) => {
+                const v = Number(c.parsed.x);
+                const tot = c.chart.data.datasets.reduce((s: number, d: any, t: number) => s + (c.chart.isDatasetVisible(t) ? Number(d.data[c.dataIndex]) : 0), 0);
+                return `${c.dataset.label}: ${v.toLocaleString()} (${tot ? Math.round((100 * v) / tot) : 0}%)`;
+              },
+            },
+          },
+        },
+        scales: {
+          x: { stacked: true, beginAtZero: true, grid: { color: grid }, ticks: { callback: (v) => kfmt(Number(v)) } },
+          y: { stacked: true, grid: { display: false } },
+        },
+      },
+    });
+  }
 </script>

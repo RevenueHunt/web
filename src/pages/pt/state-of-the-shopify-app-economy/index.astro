@@ -12,6 +12,7 @@ import {
   REVENUE,
   PRICING,
   GEOGRAPHY,
+  NICHES,
   QUIZ_LANE,
 } from "../../../lib/app-economy";
 
@@ -36,7 +37,7 @@ const METHODOLOGY = [
   "<strong>As receitas são estimadas, não medidas.</strong> São modeladas a partir dos escalões de preços publicados de cada app em conjunto com sinais de avaliações e instalações. Encara os valores de receita como um modelo direcional de quão concentrados estão os ganhos, não como dados de faturação. Estão assinalados como \"estimados\" sempre que aparecem.",
   "<strong>O crescimento usa a data de lançamento publicada de cada ficha.</strong> A fonte concentrou cerca de 2.800 datas de lançamento em maio de 2026, por isso a curva lê-se como apps ativas acumuladas por ano (o ponto final é o total atual real), e o valor de \"6.000+ nos últimos 12 meses\" remove esse artefacto de um único mês.",
   "<strong>As avaliações são um indicador indireto de tração</strong>, não perfeito: uma ótima app pode ser nova, e a contagem de avaliações fica atrás do uso real. Usamo-las porque são o sinal público e comparável mais claro de uma base de comerciantes real ao longo de 22.546 apps.",
-  "As categorias na App Store são etiquetas de funcionalidades que uma app pode atribuir-se a si própria, e muitas apps têm várias ou nenhuma, por isso reportamos os cortes que são inequívocos (avaliações, preços, data de lançamento, país do programador) e evitamos sobreinterpretar a taxonomia de etiquetas.",
+  "As categorias na App Store são etiquetas de funções que uma app pode autoatribuir-se, e muitas apps levam várias ou nenhuma. Para a vista por setores agrupamos etiquetas afins em grandes corredores e não duplicamos apps dentro de cada um; uma app pode pertencer a mais do que um, por isso os setores sobrepõem-se e não são exclusivos, e lemo-los como indicativos. Em todo o resto apoiamo-nos nos cortes inequívocos (avaliações, preços, data de lançamento, país do programador).",
 ];
 
 const FAQ = [
@@ -63,9 +64,9 @@ const FAQ = [
   {
     question: "Onde posso ver os dados subjacentes?",
     answer:
-      "Este relatório é o complemento com todos os dados da nossa nota de campo no LinkedIn sobre a economia de apps. Os números provêm de uma imagem instantânea que mantemos de cada app de Shopify ativa: datas de lançamento, avaliações, preços, o emblema Built for Shopify e o país do programador. Se constróis sobre Shopify e queres um corte específico, entra em contacto.",
+      "Os números provêm de uma imagem instantânea que mantemos de cada app de Shopify ativa: datas de lançamento, avaliações, preços, o emblema Built for Shopify e o país do programador. Se constróis sobre Shopify e queres um corte específico, entra em contacto.",
     answerHtml:
-      "Este relatório é o complemento com todos os dados da nossa nota de campo no LinkedIn sobre a economia de apps. Os números provêm de uma imagem instantânea que mantemos de cada app de Shopify ativa: datas de lançamento, avaliações, preços, o emblema Built for Shopify e o país do programador. Se constróis sobre Shopify e queres um corte específico, <a href=\"/pt/contact/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">entra em contacto</a>.",
+      "Os números provêm de uma imagem instantânea que mantemos de cada app de Shopify ativa: datas de lançamento, avaliações, preços, o emblema Built for Shopify e o país do programador. Se constróis sobre Shopify e queres um corte específico, <a href=\"/pt/contact/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">entra em contacto</a>.",
   },
 ];
 
@@ -319,15 +320,15 @@ const methodologyHtml = METHODOLOGY;
           <div class="mt-4 h-80 sm:h-96"><canvas id="c-geography" aria-label="Principais países de programadores por número de apps, repartido por escalão de avaliações" role="img"></canvas></div>
         </div>
         <div class="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
-          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+          <div class="flex flex-col justify-center rounded-2xl border border-slate-200 bg-white p-6">
             <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.builtForShopify}</p>
             <p class="mt-1 text-sm text-slate-700">ostentam o emblema Built for Shopify ({GEOGRAPHY.builtForShopifyCount} apps), anos depois de a Shopify começar a impulsionar o padrão</p>
           </div>
-          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+          <div class="flex flex-col justify-center rounded-2xl border border-slate-200 bg-white p-6">
             <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.usIndiaShare}</p>
             <p class="mt-1 text-sm text-slate-700">de toda a store é criada apenas nos EUA e na Índia</p>
           </div>
-          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+          <div class="flex flex-col justify-center rounded-2xl border border-slate-200 bg-white p-6">
             <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.vietnamSignal}</p>
             <p class="mt-1 text-sm text-slate-700">das apps do Vietname ultrapassam as 10+ avaliações - a melhor taxa de sinal de qualquer grande programador, cerca do dobro da dos EUA ou da Índia</p>
           </div>
@@ -336,10 +337,39 @@ const methodologyHtml = METHODOLOGY;
     </div>
   </section>
 
-  <!-- 06 The quiz lane -->
+  <!-- 06 Sectors -->
   <section class="bg-white">
     <div class="mx-auto max-w-5xl px-6 py-16">
-      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("06", "O carril dos quizzes")}</p>
+      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("06", "Setores")}</p>
+      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Cheio não é ganhável</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">Os corredores mais movimentados da loja são as suas piores apostas. Os programadores atiram-se a envios e chat, utilitários banais, e quase nenhum consegue uma avaliação: <strong>quase 6 em cada 10 apps de logística de terceiros nunca recebem uma única</strong>. As apps que vingam concentram-se onde o trabalho se acumula - <strong>localização, preços e personalização ao nível do código</strong>, as ferramentas que se tornam imprescindíveis assim que um comerciante as instala.</p>
+      <div class="mt-8 rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
+        <p class="text-sm font-semibold text-slate-900">Todos os setores, por escalão de avaliações</p>
+        <p class="mt-0.5 text-xs text-slate-500">As apps de cada setor, divididas por escalão de avaliações e ordenadas da maior para a menor.</p>
+        <div class="mt-4 h-[26rem] sm:h-[30rem]"><canvas id="c-niches" aria-label="Setores de apps Shopify divididos por escalão de avaliações, ordenados pela percentagem que ultrapassa 10 avaliações" role="img"></canvas></div>
+        <p class="mt-3 text-xs text-slate-400">Os setores agrupam etiquetas de funções autoatribuídas, sem duplicar apps. Uma app pode estar em vários, por isso os setores sobrepõem-se e não são exclusivos - lê-os como grandes corredores, não como tamanhos de mercado exatos.</p>
+      </div>
+      <div class="mt-8 grid gap-4 sm:grid-cols-3">
+        <div class="flex flex-col justify-center rounded-2xl border border-slate-200 bg-white p-6">
+          <p class="text-3xl font-bold text-[#16161D]">{NICHES.deadNicheZero}</p>
+          <p class="mt-1 text-sm text-slate-700">das apps de logística de terceiros nunca recebem uma única avaliação - o nicho cheio mais morto da loja</p>
+        </div>
+        <div class="flex flex-col justify-center rounded-2xl border border-slate-200 bg-white p-6">
+          <p class="text-3xl font-bold text-[#16161D]">{NICHES.bestNicheTraction}</p>
+          <p class="mt-1 text-sm text-slate-700">das apps de localização ultrapassam 10+ avaliações - as melhores hipóteses de qualquer setor importante</p>
+        </div>
+        <div class="flex flex-col justify-center rounded-2xl border border-slate-200 bg-white p-6">
+          <p class="text-3xl font-bold text-[#16161D]">{NICHES.topSectorApps}</p>
+          <p class="mt-1 text-sm text-slate-700">apps amontoam-se em envios e logística, o setor mais povoado - e ainda assim só 28% conseguem tração</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 The quiz lane -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("07", "O carril dos quizzes")}</p>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">A nossa própria categoria, de perto</h2>
       {quizParas.map((html) => (
         <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center" set:html={html} />
@@ -446,7 +476,7 @@ const methodologyHtml = METHODOLOGY;
 
 <script>
   import Chart from "chart.js/auto";
-  import { GROWTH, REVIEWS, REVENUE, PRICING, GEOGRAPHY, COLORS, CHART_LABELS } from "../../../lib/app-economy";
+  import { GROWTH, REVIEWS, REVENUE, PRICING, GEOGRAPHY, NICHES, COLORS, CHART_LABELS } from "../../../lib/app-economy";
 
   Chart.defaults.font.family =
     "Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif";
@@ -618,4 +648,71 @@ const methodologyHtml = METHODOLOGY;
         },
       },
     });
+
+  // Sectors: every sector's apps stacked by the 5 review tiers, bar length = the
+  // sector's total app count. Same absolute view as the geography chart, and like
+  // it the bars re-sort (largest first) by the visible total whenever a tier is
+  // toggled in the legend. nicheSorted ranks the pool for a tier-visibility mask;
+  // applyNicheSort pushes the result (labels + per-tier data) into the chart.
+  const nicheLabels = L.niches ?? CHART_LABELS.en.niches!;
+  const nichePool = NICHES.tiers.map((tiers: number[], i: number) => ({ label: nicheLabels[i], tiers }));
+  const nicheSorted = (vis: boolean[]) =>
+    nichePool
+      .map((r: any) => ({ ...r, sum: r.tiers.reduce((s: number, v: number, t: number) => s + (vis[t] ? v : 0), 0) }))
+      .sort((a: any, b: any) => b.sum - a.sum);
+  const nicheRowLabel = (r: any) => r.label;
+  const applyNicheSort = (chart: any) => {
+    const rows = nicheSorted([0, 1, 2, 3, 4].map((t) => chart.isDatasetVisible(t)));
+    chart.data.labels = rows.map(nicheRowLabel);
+    [0, 1, 2, 3, 4].forEach((t) => {
+      chart.data.datasets[t].data = rows.map((r: any) => r.tiers[t]);
+    });
+  };
+  const niches = el("c-niches");
+  if (niches) {
+    const nicheInit = nicheSorted([true, true, true, true, true]);
+    new Chart(niches, {
+      type: "bar",
+      data: {
+        labels: nicheInit.map(nicheRowLabel),
+        datasets: [0, 1, 2, 3, 4].map((t) => ({
+          label: geoTiers[t],
+          data: nicheInit.map((r: any) => r.tiers[t]),
+          backgroundColor: REVIEWS.colors[t],
+          borderWidth: 0,
+        })),
+      },
+      options: {
+        indexAxis: "y",
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            position: "bottom" as const,
+            labels: { boxWidth: 12, boxHeight: 12, padding: 14 },
+            onClick(_e, item, legend) {
+              const ch = legend.chart;
+              const i = item.datasetIndex ?? 0;
+              ch.setDatasetVisibility(i, !ch.isDatasetVisible(i));
+              applyNicheSort(ch);
+              ch.update();
+            },
+          },
+          tooltip: {
+            callbacks: {
+              label: (c) => {
+                const v = Number(c.parsed.x);
+                const tot = c.chart.data.datasets.reduce((s: number, d: any, t: number) => s + (c.chart.isDatasetVisible(t) ? Number(d.data[c.dataIndex]) : 0), 0);
+                return `${c.dataset.label}: ${v.toLocaleString()} (${tot ? Math.round((100 * v) / tot) : 0}%)`;
+              },
+            },
+          },
+        },
+        scales: {
+          x: { stacked: true, beginAtZero: true, grid: { color: grid }, ticks: { callback: (v) => kfmt(Number(v)) } },
+          y: { stacked: true, grid: { display: false } },
+        },
+      },
+    });
+  }
 </script>

@@ -169,6 +169,34 @@ export const GEOGRAPHY = {
     "Two dominate: <strong>the US (24%) and India (15%) build two in five</strong> of the store between them. But <strong>volume is not traction</strong>. Rank countries only by the apps that cleared 10+ reviews and the leaderboard redraws - <strong>Vietnam</strong>, a mid-size builder, lands more apps with real traction than its size suggests, while <strong>Japan and China fall away</strong>.",
 };
 
+/**
+ * Niche-level signal vs noise. Eight broad sectors (an app is counted in a
+ * sector if it carries any of the sector's self-applied feature tags, deduped
+ * per app), each split into the five REVIEWS tiers. `tiers` rows are [0, 1-9,
+ * 10-99, 100-999, 1,000+]; the row sum is the sector's app count. The chart
+ * draws bars at absolute length and sorts largest-first, re-sorting by the
+ * visible total whenever a tier is toggled, so stored order here is arbitrary.
+ * Mirrors apps.csv.
+ */
+export const NICHES = {
+  labels: ["Localization", "Pricing & discounts", "Marketing & pop-ups", "Store design & theme", "Analytics & reporting", "Upsell & recommendations", "Shipping & fulfillment", "Chat & support"],
+  tiers: [
+    [279, 484, 571, 398, 78],
+    [455, 563, 520, 285, 69],
+    [523, 680, 625, 340, 68],
+    [777, 1003, 785, 409, 73],
+    [566, 735, 558, 294, 61],
+    [286, 333, 239, 145, 31],
+    [1423, 1353, 721, 294, 50],
+    [252, 174, 91, 42, 4],
+  ],
+  deadNicheZero: "59%",
+  bestNicheTraction: "58%",
+  topSectorApps: "3,841",
+  caption:
+    "The store's busiest lanes are its worst bets. Builders pour into shipping and chat, commodity utilities, and almost none earn a review: <strong>nearly 6 in 10 third-party logistics apps never get a single one</strong>. The apps that break through cluster where the work compounds - <strong>localization, pricing and dev-level customization</strong>, the tools that become load-bearing once a merchant installs them.",
+};
+
 /** The quiz category — RevenueHunt's own lane, the tie-back to the flagship. */
 export const QUIZ_LANE = {
   shopifySearch: "149",
@@ -189,7 +217,7 @@ export const METHODOLOGY = [
   "Revenue is estimated, not measured. It is modelled from each app's published pricing tiers together with review and install signals. Treat the revenue figures as a directional model of how concentrated earnings are, not as billing data. They are labelled \"estimated\" wherever they appear.",
   "Growth uses each listing's published launch date. The source clustered roughly 2,800 launch dates in May 2026, so the curve is read as cumulative live apps by year (the endpoint is the true current total), and the \"6,000+ in the last 12 months\" figure strips that single-month artifact.",
   "Reviews are a proxy for traction, not a perfect one: a great app can be new, and review counts lag real usage. We use them because they are the clearest public, comparable signal of a real merchant base across 22,546 apps.",
-  "Categories on the App Store are feature tags an app can self-apply, and many apps carry several or none, so we report the cuts that are unambiguous (reviews, pricing, launch date, developer country) and avoid over-reading the tag taxonomy.",
+  "Categories on the App Store are feature tags an app can self-apply, and many apps carry several or none. For the sector view we group related tags into broad lanes and dedupe apps within each; an app can belong to more than one, so sectors overlap and are not mutually exclusive, and we read them as directional. Everywhere else we lean on the unambiguous cuts (reviews, pricing, launch date, developer country).",
 ];
 
 export interface FaqItem {
@@ -222,9 +250,9 @@ export const FAQ: FaqItem[] = [
   {
     question: "Where can I see the underlying data?",
     answer:
-      "This report is the full-data companion to our LinkedIn field note on the app economy. The figures come from a snapshot we keep of every live Shopify app: launch dates, reviews, pricing, the Built for Shopify badge, and developer country. If you build on Shopify and want a specific cut, get in touch.",
+      "The figures come from a snapshot we keep of every live Shopify app: launch dates, reviews, pricing, the Built for Shopify badge, and developer country. If you build on Shopify and want a specific cut, get in touch.",
     answerHtml:
-      "This report is the full-data companion to our LinkedIn field note on the app economy. The figures come from a snapshot we keep of every live Shopify app: launch dates, reviews, pricing, the Built for Shopify badge, and developer country. If you build on Shopify and want a specific cut, <a href=\"/contact/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">get in touch</a>.",
+      "The figures come from a snapshot we keep of every live Shopify app: launch dates, reviews, pricing, the Built for Shopify badge, and developer country. If you build on Shopify and want a specific cut, <a href=\"/contact/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">get in touch</a>.",
   },
 ];
 
@@ -245,6 +273,8 @@ export interface ChartLabels {
   pricing: [string, string, string, string];
   /** Top builder countries, same order as GEOGRAPHY.labels. Country names. */
   geography: string[];
+  /** Niche/sector names, same order as NICHES.labels. Optional until locale fan-out. */
+  niches?: string[];
   /** Stacked geography chart: review-tier legend. Optional until locale fan-out. */
   geoTiers?: [string, string, string, string, string];
   /** Signal-ranked geography bar tooltip; {n} = app count. Optional until fan-out. */
@@ -260,6 +290,7 @@ export interface ChartLabels {
 
 export const CHART_LABELS: Record<string, ChartLabels> = {
   en: {
+    niches: ["Localization", "Pricing & discounts", "Marketing & pop-ups", "Store design & theme", "Analytics & reporting", "Upsell & recommendations", "Shipping & fulfillment", "Chat & support"],
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["Top 10 apps", "Rest of the top 1%", "The other 99%"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "Rest of world"],
@@ -271,6 +302,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     geoSignalTip: "{n} apps with 10+ reviews",
   },
   es: {
+    niches: ["Localización", "Precios y descuentos", "Marketing y pop-ups", "Diseño de tienda", "Analítica e informes", "Upsell y recomendaciones", "Envío y logística", "Chat y soporte"],
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["Las 10 primeras apps", "Resto del 1% superior", "El otro 99%"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "Resto del mundo"],
@@ -283,6 +315,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     geoCountries: { US: "EE. UU.", India: "India", UK: "Reino Unido", Canada: "Canadá", Vietnam: "Vietnam", Germany: "Alemania", Japan: "Japón", China: "China", Australia: "Australia", France: "Francia", Pakistan: "Pakistán", Israel: "Israel", Singapore: "Singapur", "Hong Kong": "Hong Kong", Lithuania: "Lituania", Romania: "Rumanía" },
   },
   de: {
+    niches: ["Lokalisierung", "Preise & Rabatte", "Marketing & Pop-ups", "Shop-Design", "Analytics & Reporting", "Upsell & Empfehlungen", "Versand & Fulfillment", "Chat & Support"],
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["Die Top 10 Apps", "Rest der Top 1%", "Die anderen 99%"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "Übrige Welt"],
@@ -295,6 +328,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     geoCountries: { US: "USA", India: "Indien", UK: "UK", Canada: "Kanada", Vietnam: "Vietnam", Germany: "Deutschland", Japan: "Japan", China: "China", Australia: "Australien", France: "Frankreich", Pakistan: "Pakistan", Israel: "Israel", Singapore: "Singapur", "Hong Kong": "Hongkong", Lithuania: "Litauen", Romania: "Rumänien" },
   },
   fr: {
+    niches: ["Localisation", "Prix & remises", "Marketing & pop-ups", "Design de boutique", "Analytics & reporting", "Upsell & recommandations", "Expédition & logistique", "Chat & support"],
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["Le top 10 des apps", "Reste du top 1%", "Les 99% restants"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "Reste du monde"],
@@ -307,6 +341,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     geoCountries: { US: "États-Unis", India: "Inde", UK: "Royaume-Uni", Canada: "Canada", Vietnam: "Vietnam", Germany: "Allemagne", Japan: "Japon", China: "Chine", Australia: "Australie", France: "France", Pakistan: "Pakistan", Israel: "Israël", Singapore: "Singapour", "Hong Kong": "Hong Kong", Lithuania: "Lituanie", Romania: "Roumanie" },
   },
   it: {
+    niches: ["Localizzazione", "Prezzi & sconti", "Marketing & pop-up", "Design del negozio", "Analisi & report", "Upsell & raccomandazioni", "Spedizione & logistica", "Chat & assistenza"],
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["Le prime 10 app", "Resto del top 1%", "L'altro 99%"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "Resto del mondo"],
@@ -319,6 +354,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     geoCountries: { US: "USA", India: "India", UK: "Regno Unito", Canada: "Canada", Vietnam: "Vietnam", Germany: "Germania", Japan: "Giappone", China: "Cina", Australia: "Australia", France: "Francia", Pakistan: "Pakistan", Israel: "Israele", Singapore: "Singapore", "Hong Kong": "Hong Kong", Lithuania: "Lituania", Romania: "Romania" },
   },
   nl: {
+    niches: ["Lokalisatie", "Prijzen & kortingen", "Marketing & pop-ups", "Winkelontwerp", "Analytics & rapportage", "Upsell & aanbevelingen", "Verzending & fulfilment", "Chat & support"],
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["De top 10 apps", "Rest van de top 1%", "De andere 99%"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "Rest van de wereld"],
@@ -331,6 +367,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     geoCountries: { US: "VS", India: "India", UK: "VK", Canada: "Canada", Vietnam: "Vietnam", Germany: "Duitsland", Japan: "Japan", China: "China", Australia: "Australië", France: "Frankrijk", Pakistan: "Pakistan", Israel: "Israël", Singapore: "Singapore", "Hong Kong": "Hongkong", Lithuania: "Litouwen", Romania: "Roemenië" },
   },
   sv: {
+    niches: ["Lokalisering", "Priser & rabatter", "Marknadsföring & pop-ups", "Butiksdesign", "Analys & rapportering", "Merförsäljning & rekommendationer", "Frakt & logistik", "Chatt & support"],
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["De 10 främsta apparna", "Resten av topp 1%", "De övriga 99%"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "Övriga världen"],
@@ -343,6 +380,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     geoCountries: { US: "USA", India: "Indien", UK: "Storbritannien", Canada: "Kanada", Vietnam: "Vietnam", Germany: "Tyskland", Japan: "Japan", China: "Kina", Australia: "Australien", France: "Frankrike", Pakistan: "Pakistan", Israel: "Israel", Singapore: "Singapore", "Hong Kong": "Hongkong", Lithuania: "Litauen", Romania: "Rumänien" },
   },
   fi: {
+    niches: ["Lokalisointi", "Hinnat & alennukset", "Markkinointi & ponnahdusikkunat", "Kaupan ulkoasu", "Analytiikka & raportointi", "Lisämyynti & suositukset", "Toimitus & logistiikka", "Chat & tuki"],
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["10 parasta sovellusta", "Loput top 1%:sta", "Loput 99%"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "Muu maailma"],
@@ -355,6 +393,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     geoCountries: { US: "USA", India: "Intia", UK: "Britannia", Canada: "Kanada", Vietnam: "Vietnam", Germany: "Saksa", Japan: "Japani", China: "Kiina", Australia: "Australia", France: "Ranska", Pakistan: "Pakistan", Israel: "Israel", Singapore: "Singapore", "Hong Kong": "Hongkong", Lithuania: "Liettua", Romania: "Romania" },
   },
   pl: {
+    niches: ["Lokalizacja", "Ceny i rabaty", "Marketing i pop-upy", "Projekt sklepu", "Analityka i raporty", "Upsell i rekomendacje", "Wysyłka i logistyka", "Czat i wsparcie"],
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["10 najlepszych aplikacji", "Reszta z 1% najlepszych", "Pozostałe 99%"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "Reszta świata"],
@@ -367,6 +406,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     geoCountries: { US: "USA", India: "Indie", UK: "Wielka Brytania", Canada: "Kanada", Vietnam: "Wietnam", Germany: "Niemcy", Japan: "Japonia", China: "Chiny", Australia: "Australia", France: "Francja", Pakistan: "Pakistan", Israel: "Izrael", Singapore: "Singapur", "Hong Kong": "Hongkong", Lithuania: "Litwa", Romania: "Rumunia" },
   },
   cs: {
+    niches: ["Lokalizace", "Ceny a slevy", "Marketing a pop-upy", "Design obchodu", "Analytika a reporty", "Upsell a doporučení", "Doprava a logistika", "Chat a podpora"],
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["Prvních 10 aplikací", "Zbytek z 1% nejlepších", "Zbylých 99%"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "Zbytek světa"],
@@ -379,6 +419,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     geoCountries: { US: "USA", India: "Indie", UK: "Velká Británie", Canada: "Kanada", Vietnam: "Vietnam", Germany: "Německo", Japan: "Japonsko", China: "Čína", Australia: "Austrálie", France: "Francie", Pakistan: "Pákistán", Israel: "Izrael", Singapore: "Singapur", "Hong Kong": "Hongkong", Lithuania: "Litva", Romania: "Rumunsko" },
   },
   pt: {
+    niches: ["Localização", "Preços e descontos", "Marketing e pop-ups", "Design da loja", "Análises e relatórios", "Upsell e recomendações", "Envio e logística", "Chat e suporte"],
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["As 10 primeiras apps", "Resto do 1% do topo", "Os outros 99%"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "Resto do mundo"],
@@ -391,6 +432,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     geoCountries: { US: "EUA", India: "Índia", UK: "Reino Unido", Canada: "Canadá", Vietnam: "Vietname", Germany: "Alemanha", Japan: "Japão", China: "China", Australia: "Austrália", France: "França", Pakistan: "Paquistão", Israel: "Israel", Singapore: "Singapura", "Hong Kong": "Hong Kong", Lithuania: "Lituânia", Romania: "Roménia" },
   },
   ar: {
+    niches: ["التعريب", "التسعير والخصومات", "التسويق والنوافذ المنبثقة", "تصميم المتجر", "التحليلات والتقارير", "البيع الإضافي والتوصيات", "الشحن والتنفيذ", "الدردشة والدعم"],
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["أفضل 10 تطبيقات", "بقية أعلى 1%", "الـ99% الأخرى"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "بقية العالم"],
@@ -403,6 +445,7 @@ export const CHART_LABELS: Record<string, ChartLabels> = {
     geoCountries: { US: "الولايات المتحدة", India: "الهند", UK: "المملكة المتحدة", Canada: "كندا", Vietnam: "فيتنام", Germany: "ألمانيا", Japan: "اليابان", China: "الصين", Australia: "أستراليا", France: "فرنسا", Pakistan: "باكستان", Israel: "إسرائيل", Singapore: "سنغافورة", "Hong Kong": "هونغ كونغ", Lithuania: "ليتوانيا", Romania: "رومانيا" },
   },
   he: {
+    niches: ["לוקליזציה", "תמחור והנחות", "שיווק וחלונות קופצים", "עיצוב חנות", "אנליטיקה ודוחות", "מכירה נוספת והמלצות", "משלוח ומילוי", "צ'אט ותמיכה"],
     reviews: ["0", "1–9", "10–99", "100–999", "1,000+"],
     revenueDonut: ["10 האפליקציות המובילות", "שאר 1% העליון", "99% הנותרים"],
     revenueCountries: ["🇺🇸 US", "🇨🇦 CA", "🇻🇳 VN", "🇮🇳 IN", "🇬🇧 UK", "🇮🇱 IL", "🇸🇬 SG", "🇫🇷 FR", "🇱🇹 LT", "שאר העולם"],

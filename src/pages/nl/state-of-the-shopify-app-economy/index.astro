@@ -12,6 +12,7 @@ import {
   REVENUE,
   PRICING,
   GEOGRAPHY,
+  NICHES,
   QUIZ_LANE,
 } from "../../../lib/app-economy";
 
@@ -36,7 +37,7 @@ const METHODOLOGY = [
   "<strong>De omzet is geschat, niet gemeten.</strong> Hij wordt gemodelleerd op basis van de gepubliceerde prijsniveaus van elke app, samen met review- en installatiesignalen. Behandel de omzetcijfers als een richtinggevend model van hoe geconcentreerd de inkomsten zijn, niet als facturatiedata. Ze worden overal waar ze voorkomen aangeduid als \"geschat\".",
   "<strong>De groei is gebaseerd op de gepubliceerde lanceerdatum van elke listing.</strong> De bron clusterde ongeveer 2.800 lanceerdata in mei 2026, dus de curve wordt gelezen als cumulatief aantal actieve apps per jaar (het eindpunt is het echte huidige totaal), en het cijfer \"6.000+ in de afgelopen 12 maanden\" haalt dat artefact van die ene maand eruit.",
   "<strong>Reviews zijn een indicator voor tractie</strong>, geen perfecte: een geweldige app kan nieuw zijn, en reviewaantallen lopen achter op het werkelijke gebruik. We gebruiken ze omdat ze het duidelijkste openbare, vergelijkbare signaal zijn van een echte merchant-basis over 22.546 apps.",
-  "Categorieën in de App Store zijn feature-tags die een app op zichzelf kan toepassen, en veel apps dragen er meerdere of geen, dus we rapporteren de doorsneden die ondubbelzinnig zijn (reviews, prijzen, lanceerdatum, land van de ontwikkelaar) en vermijden het over-interpreteren van de tag-taxonomie.",
+  "Categorieën in de App Store zijn functie-tags die een app zichzelf kan toekennen, en veel apps dragen er meerdere of geen. Voor het sectoroverzicht groeperen we verwante tags tot brede banen en ontdubbelen we apps binnen elk; een app kan tot meer dan één behoren, dus sectoren overlappen en sluiten elkaar niet uit, en we lezen ze als richtinggevend. Overal elders steunen we op de ondubbelzinnige sneden (reviews, prijzen, lanceerdatum, ontwikkelaarsland).",
 ];
 
 const FAQ = [
@@ -63,9 +64,9 @@ const FAQ = [
   {
     question: "Waar kan ik de onderliggende data zien?",
     answer:
-      "Dit rapport is de volledige-data-bijlage bij onze LinkedIn-veldnotitie over de app-economie. De cijfers komen uit een momentopname die we bijhouden van elke actieve Shopify-app: lanceerdata, reviews, prijzen, het Built for Shopify-keurmerk en het land van de ontwikkelaar. Bouw je op Shopify en wil je een specifieke doorsnede? Neem contact op.",
+      "De cijfers komen uit een momentopname die we bijhouden van elke actieve Shopify-app: lanceerdata, reviews, prijzen, het Built for Shopify-keurmerk en het land van de ontwikkelaar. Bouw je op Shopify en wil je een specifieke doorsnede? Neem contact op.",
     answerHtml:
-      "Dit rapport is de volledige-data-bijlage bij onze LinkedIn-veldnotitie over de app-economie. De cijfers komen uit een momentopname die we bijhouden van elke actieve Shopify-app: lanceerdata, reviews, prijzen, het Built for Shopify-keurmerk en het land van de ontwikkelaar. Bouw je op Shopify en wil je een specifieke doorsnede? <a href=\"/nl/contact/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">Neem contact op</a>.",
+      "De cijfers komen uit een momentopname die we bijhouden van elke actieve Shopify-app: lanceerdata, reviews, prijzen, het Built for Shopify-keurmerk en het land van de ontwikkelaar. Bouw je op Shopify en wil je een specifieke doorsnede? <a href=\"/nl/contact/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">Neem contact op</a>.",
   },
 ];
 
@@ -319,15 +320,15 @@ const methodologyHtml = METHODOLOGY;
           <div class="mt-4 h-80 sm:h-96"><canvas id="c-geography" aria-label="Belangrijkste ontwikkelaarslanden op basis van aantal apps, uitgesplitst naar reviewniveau" role="img"></canvas></div>
         </div>
         <div class="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
-          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+          <div class="flex flex-col justify-center rounded-2xl border border-slate-200 bg-white p-6">
             <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.builtForShopify}</p>
             <p class="mt-1 text-sm text-slate-700">dragen het Built for Shopify-keurmerk ({GEOGRAPHY.builtForShopifyCount} apps), jaren nadat Shopify de standaard begon te pushen</p>
           </div>
-          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+          <div class="flex flex-col justify-center rounded-2xl border border-slate-200 bg-white p-6">
             <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.usIndiaShare}</p>
             <p class="mt-1 text-sm text-slate-700">van de hele store wordt alleen in de VS en India gebouwd</p>
           </div>
-          <div class="rounded-2xl border border-slate-200 bg-white p-6">
+          <div class="flex flex-col justify-center rounded-2xl border border-slate-200 bg-white p-6">
             <p class="text-3xl font-bold text-[#16161D]">{GEOGRAPHY.vietnamSignal}</p>
             <p class="mt-1 text-sm text-slate-700">van de apps uit Vietnam halen 10+ reviews - de beste signaalratio van alle grote ontwikkelaars, ongeveer het dubbele van de VS of India</p>
           </div>
@@ -336,10 +337,39 @@ const methodologyHtml = METHODOLOGY;
     </div>
   </section>
 
-  <!-- 06 The quiz lane -->
+  <!-- 06 Sectors -->
   <section class="bg-white">
     <div class="mx-auto max-w-5xl px-6 py-16">
-      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("06", "Het quiz-segment")}</p>
+      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("06", "Sectoren")}</p>
+      <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Druk is niet winbaar</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">De drukste banen van de store zijn de slechtste gokken. Ontwikkelaars storten zich op verzending en chat, alledaagse hulpprogramma's, en bijna niemand krijgt een review: <strong>bijna 6 van de 10 apps voor externe logistiek krijgen er nooit één</strong>. De apps die doorbreken clusteren waar het werk zich opstapelt - <strong>lokalisatie, prijzen en aanpassing op codeniveau</strong>, de tools die onmisbaar worden zodra een merchant ze installeert.</p>
+      <div class="mt-8 rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
+        <p class="text-sm font-semibold text-slate-900">Alle sectoren, naar reviewniveau</p>
+        <p class="mt-0.5 text-xs text-slate-500">De apps van elke sector, opgesplitst naar reviewniveau en gesorteerd van groot naar klein.</p>
+        <div class="mt-4 h-[26rem] sm:h-[30rem]"><canvas id="c-niches" aria-label="Shopify-app-sectoren opgesplitst naar reviewniveau, gesorteerd op het aandeel dat 10 of meer reviews haalt" role="img"></canvas></div>
+        <p class="mt-3 text-xs text-slate-400">Sectoren bundelen zelf toegekende functie-tags, ontdubbeld per app. Een app kan in meerdere zitten, dus sectoren overlappen en sluiten elkaar niet uit - lees ze als brede banen, niet als precieze marktgroottes.</p>
+      </div>
+      <div class="mt-8 grid gap-4 sm:grid-cols-3">
+        <div class="flex flex-col justify-center rounded-2xl border border-slate-200 bg-white p-6">
+          <p class="text-3xl font-bold text-[#16161D]">{NICHES.deadNicheZero}</p>
+          <p class="mt-1 text-sm text-slate-700">van de apps voor externe logistiek krijgen nooit één review - de meest dode drukke niche in de store</p>
+        </div>
+        <div class="flex flex-col justify-center rounded-2xl border border-slate-200 bg-white p-6">
+          <p class="text-3xl font-bold text-[#16161D]">{NICHES.bestNicheTraction}</p>
+          <p class="mt-1 text-sm text-slate-700">van de lokalisatie-apps halen 10+ reviews - de beste kansen van elke grote sector</p>
+        </div>
+        <div class="flex flex-col justify-center rounded-2xl border border-slate-200 bg-white p-6">
+          <p class="text-3xl font-bold text-[#16161D]">{NICHES.topSectorApps}</p>
+          <p class="mt-1 text-sm text-slate-700">apps verdringen zich in verzending en fulfilment, de grootste sector - en toch haalt maar 28% tractie</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 The quiz lane -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <p class="text-center text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">{E("07", "Het quiz-segment")}</p>
       <h2 class="mt-2 text-2xl font-bold tracking-tight text-slate-900 text-center">Onze eigen categorie, van dichtbij</h2>
       {quizParas.map((html) => (
         <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center" set:html={html} />
@@ -446,7 +476,7 @@ const methodologyHtml = METHODOLOGY;
 
 <script>
   import Chart from "chart.js/auto";
-  import { GROWTH, REVIEWS, REVENUE, PRICING, GEOGRAPHY, COLORS, CHART_LABELS } from "../../../lib/app-economy";
+  import { GROWTH, REVIEWS, REVENUE, PRICING, GEOGRAPHY, NICHES, COLORS, CHART_LABELS } from "../../../lib/app-economy";
 
   Chart.defaults.font.family =
     "Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif";
@@ -618,4 +648,71 @@ const methodologyHtml = METHODOLOGY;
         },
       },
     });
+
+  // Sectors: every sector's apps stacked by the 5 review tiers, bar length = the
+  // sector's total app count. Same absolute view as the geography chart, and like
+  // it the bars re-sort (largest first) by the visible total whenever a tier is
+  // toggled in the legend. nicheSorted ranks the pool for a tier-visibility mask;
+  // applyNicheSort pushes the result (labels + per-tier data) into the chart.
+  const nicheLabels = L.niches ?? CHART_LABELS.en.niches!;
+  const nichePool = NICHES.tiers.map((tiers: number[], i: number) => ({ label: nicheLabels[i], tiers }));
+  const nicheSorted = (vis: boolean[]) =>
+    nichePool
+      .map((r: any) => ({ ...r, sum: r.tiers.reduce((s: number, v: number, t: number) => s + (vis[t] ? v : 0), 0) }))
+      .sort((a: any, b: any) => b.sum - a.sum);
+  const nicheRowLabel = (r: any) => r.label;
+  const applyNicheSort = (chart: any) => {
+    const rows = nicheSorted([0, 1, 2, 3, 4].map((t) => chart.isDatasetVisible(t)));
+    chart.data.labels = rows.map(nicheRowLabel);
+    [0, 1, 2, 3, 4].forEach((t) => {
+      chart.data.datasets[t].data = rows.map((r: any) => r.tiers[t]);
+    });
+  };
+  const niches = el("c-niches");
+  if (niches) {
+    const nicheInit = nicheSorted([true, true, true, true, true]);
+    new Chart(niches, {
+      type: "bar",
+      data: {
+        labels: nicheInit.map(nicheRowLabel),
+        datasets: [0, 1, 2, 3, 4].map((t) => ({
+          label: geoTiers[t],
+          data: nicheInit.map((r: any) => r.tiers[t]),
+          backgroundColor: REVIEWS.colors[t],
+          borderWidth: 0,
+        })),
+      },
+      options: {
+        indexAxis: "y",
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            position: "bottom" as const,
+            labels: { boxWidth: 12, boxHeight: 12, padding: 14 },
+            onClick(_e, item, legend) {
+              const ch = legend.chart;
+              const i = item.datasetIndex ?? 0;
+              ch.setDatasetVisibility(i, !ch.isDatasetVisible(i));
+              applyNicheSort(ch);
+              ch.update();
+            },
+          },
+          tooltip: {
+            callbacks: {
+              label: (c) => {
+                const v = Number(c.parsed.x);
+                const tot = c.chart.data.datasets.reduce((s: number, d: any, t: number) => s + (c.chart.isDatasetVisible(t) ? Number(d.data[c.dataIndex]) : 0), 0);
+                return `${c.dataset.label}: ${v.toLocaleString()} (${tot ? Math.round((100 * v) / tot) : 0}%)`;
+              },
+            },
+          },
+        },
+        scales: {
+          x: { stacked: true, beginAtZero: true, grid: { color: grid }, ticks: { callback: (v) => kfmt(Number(v)) } },
+          y: { stacked: true, grid: { display: false } },
+        },
+      },
+    });
+  }
 </script>

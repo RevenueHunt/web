@@ -10,27 +10,55 @@ interface Partner {
   description: string;
 }
 
-const partners: Partner[] = [
-  { name: "Taranker", url: "https://taranker.com/", logo: "/img/pages/partners/Icon512.webp", description: "Taranker es una plataforma innovadora dedicada a ayudar a los negocios de ecommerce a encontrar las mejores herramientas para optimizar sus operaciones. Especializada en recomendaciones de apps, reseñas de expertos y selecciones de apps curadas." },
-  { name: "SalesHunterThemes", url: "https://saleshunterthemes.com/?utm_source=app-providers&utm_medium=revenuehunt&utm_campaign=partnership-app&utm_content=website", logo: "/img/pages/partners/saleshunterthemes-logo.webp", description: "Impulsa tu tienda con los themes premium de Shopify de SalesHunterThemes. Diseños modernos y responsive que optimizan el rendimiento y la experiencia de usuario, con amplias opciones de personalización." },
-  { name: "Fulfillman", url: "https://www.fulfillman.com/", logo: "/img/pages/partners/fulfillmanlogo.webp", description: "Fulfillman es un líder global en sourcing, fulfillment y logística para ecommerce, que ofrece envíos rápidos y fiables a través de servicios dedicados de línea privada." },
-  { name: "WC Wishlist Club", url: "https://apps.shopify.com/wishlist-club?utm_source=revenuehunt&utm_medium=website&utm_campaign=partnership", logo: "/img/pages/partners/wishlist-club-150-150-px-logo.webp", description: "WC Wishlist Club permite a tus clientes guardar sus productos favoritos, compartir listas de deseos y comprar más tarde, aumentando la interacción y las ventas. Fácil de configurar, optimizado para móvil y perfecto para convertir a los que solo miran en compradores fieles." },
-  { name: "Langwill: Language Translate", url: "https://partner.channelwill.com/ceq5ql", logo: "/img/pages/partners/1.webp", description: "Amplía tu alcance global con Langwill: traduce tu tienda de Shopify a 138 idiomas y convierte divisas automáticamente para una experiencia de compra fluida y localizada." },
-  { name: "Orbe Shopify Geolocation", url: "https://orbe.app/", logo: "/img/pages/partners/orbe-removebg-preview.webp", description: "Maximiza las ventas globales con geolocalización avanzada de Shopify. Personaliza productos, precios, divisa y contenido para cada país y guía a los clientes hacia la experiencia de compra adecuada con Orbe." },
-  { name: "Checkout Extensions Pro", url: "https://apps.shopify.com/checkout-extensions-pro?utm_source=drip", logo: "/img/pages/partners/CHECKOUT-Extension-Pro-logo_0101.webp", description: "Potencia tu checkout de Shopify Plus con descuentos de upsell personalizados, upsells con AI, una barra de envío gratis, ofertas post-compra, sellos de confianza, reseñas y mucho más." },
-  { name: "Customer Dashboard Pro", url: "https://apps.shopify.com/customer-dashboard-pro?utm_source=revenuehunt", logo: "/img/pages/partners/CustomerDashboard.webp", description: "Customer Dashboard Pro es la única app que ofrece soporte fluido tanto para las nuevas Customer Accounts de Shopify como para las Classic Customer Accounts." },
-  { name: "WISS Bundle", url: "https://apps.shopify.com/wiss-bundle", logo: "/img/pages/partners/Logo-9.webp", description: "Aumenta los ingresos y el AOV de tu tienda de Shopify con una app de bundles de productos sencilla y personalizable. Ofrece opciones de descuento flexibles: descuentos por valor, envío gratis en productos agrupados o compra X y llévate Y." },
-  { name: "ToastiBar – Sales Popup", url: "https://makeprosimp.com/partnership/revenuehunt", logo: "/img/pages/partners/toastibarlogo_fgaiv9.webp", description: "Aumenta la confianza de los clientes e impulsa las ventas mostrando prueba social en tiempo real: ventas, carrito, visitantes, reseñas de productos y alertas de inventario." },
-  { name: "UpPromote: Affiliate & Referral", url: "https://partners.secomapp.com/apps/affiliate/SHOPQUIZ_APP", logo: "/img/pages/partners/NEW_logo-1.webp", description: "UpPromote es la app de afiliación/referidos más recomendada de la Shopify App Store. Solución integral para crear y gestionar tus campañas de marketing, adecuada para negocios de cualquier tamaño." },
-  { name: "Essential Free Shipping Bar", url: "https://essential-apps.com/essential-shopify-free-shipping-bar-application/", logo: "/img/pages/partners/freeshippingbarlogo.webp", description: "Aumenta las ventas y el AOV configurando barras de envío gratis ilimitadas con múltiples objetivos de valor de carrito para motivar a los compradores a añadir más productos." },
-  { name: "iCart Cart Drawer Cart Upsell", url: "https://apps.shopify.com/icart/?campaign=promotion&medium=in-app-banner&source=revenuehunt", logo: "/img/pages/partners/iCart-Cart-Drawer-Cart-Upsell-logo.webp", description: "App integral de Shopify para personalizar un cart drawer y la página completa del carrito con upsell, recomendaciones de productos, barra de progreso, bundles de productos y descuentos." },
-  { name: "Kaching Bundle Quantity Deals", url: "https://apps.shopify.com/bundle-deals?utm_source=partnership&utm_medium=web&utm_campaign=REVENUEH", logo: "/img/pages/partners/Kaching-Logo-1024x1024.webp", description: "Impulsa las ventas con Kaching Bundle Quantity Deals: crea ofertas de bundles directamente en la página de tu producto. Usa el código REVENUEH20 para un descuento exclusivo del 20%." },
-  { name: "PDF Invoice Generator", url: "https://apps.shopify.com/fordeer-invoice-order-printer?utm_source=ShopQuizProductRecommender&utm_medium=comarketing&utm_campaign=partner", logo: "/img/pages/partners/fordeer-data-export-1024x1024.webp", description: "El generador de facturas de Shopify de Fordeer es flexible, cumple con la normativa global y atiende a B2C, B2B y mayoristas. Plantillas PDF personalizables, impresión por lotes y soporte por chat en vivo 24/7." },
-  { name: "HyperSKU", url: "https://www.hypersku.com/", logo: "/img/pages/partners/150150-logo.webp", description: "HyperSKU ofrece una solución integral de cadena de suministro. Más de 1M de productos, venta de bundles, muestreo, inspección de calidad, personalización de marca y fulfillment automatizado de pedidos." },
-  { name: "Service Points", url: "https://www.servicepoints.eu/en/w2/smart-dropshipping-1?utm_source=revenuehunt&utm_medium=app&utm_id=31", logo: "/img/pages/partners/Logo-Black-background.webp", description: "Service Points presenta SMART Dropshipping: dropshipping automatizado y decisiones de cadena de suministro basadas en datos para escalar de forma infinita." },
-  { name: "AI SEO Optimizer", url: "https://share.seoant.com/app/1165b75b7ce1524D5J", logo: "/img/pages/partners/SEOAnt-_-AI-SEO-Optimizer_Channelwill-.webp", description: "La mejor app de SEO para Shopify: optimiza keywords, mejora las meta tags y perfecciona la estructura del sitio. Análisis de rendimiento y velocidad de SEO impulsados por AI." },
-  { name: "BSS: B2B/Wholesale Solution", url: "https://apps.shopify.com/b2b-solution-custom-pricing?utm_source=RevenueHunt&utm_medium=partner-listing&utm_campaign=partnership-2024", logo: "/img/pages/partners/BSS-Commerce_logo_150.webp", description: "Solución mayorista integral. Una experiencia de compra B2B fluida que además ayuda a los comerciantes a gestionar a sus clientes mayoristas y obtener insights sobre ellos." },
-  { name: "PreOrder Now WOD", url: "https://apps.shopify.com/preorder-now?utm_source=+revenuehunt&utm_medium=web&utm_campaign=partner&utm_id=crosspromo", logo: "/img/pages/partners/PreOrder-Now-Logo.webp", description: "Convierte las situaciones de falta de stock en oportunidades de pre-pedido. Perfecto para negocios de print-on-demand: capta el interés del cliente sin stock inicial." },
+const groups: { heading: string; emoji: string; intro: string; items: Partner[] }[] = [
+  {
+    heading: "Apps de Shopify",
+    emoji: "🧩",
+    intro: "Apps de Shopify que combinan a la perfección con RevenueHunt para hacer crecer tu tienda.",
+    items: [
+      { name: "Orbe Shopify Geolocation", url: "https://orbe.app/", logo: "/img/pages/partners/orbe-removebg-preview.webp", description: "Maximiza las ventas globales con geolocalización avanzada de Shopify. Personaliza productos, precios, divisa y contenido para cada país y guía a los clientes hacia la experiencia de compra adecuada con Orbe." },
+      { name: "WC Wishlist Club", url: "https://apps.shopify.com/wishlist-club?utm_source=revenuehunt&utm_medium=website&utm_campaign=partnership", logo: "/img/pages/partners/wishlist-club-150-150-px-logo.webp", description: "WC Wishlist Club permite a tus clientes guardar sus productos favoritos, compartir listas de deseos y comprar más tarde, aumentando la interacción y las ventas. Fácil de configurar, optimizado para móvil y perfecto para convertir a los que solo miran en compradores fieles." },
+      { name: "Langwill: Language Translate", url: "https://partner.channelwill.com/ceq5ql", logo: "/img/pages/partners/1.webp", description: "Amplía tu alcance global con Langwill: traduce tu tienda de Shopify a 138 idiomas y convierte divisas automáticamente para una experiencia de compra fluida y localizada." },
+      { name: "Checkout Extensions Pro", url: "https://apps.shopify.com/checkout-extensions-pro?utm_source=drip", logo: "/img/pages/partners/CHECKOUT-Extension-Pro-logo_0101.webp", description: "Potencia tu checkout de Shopify Plus con descuentos de upsell personalizados, upsells con AI, una barra de envío gratis, ofertas post-compra, sellos de confianza, reseñas y mucho más." },
+      { name: "Customer Dashboard Pro", url: "https://apps.shopify.com/customer-dashboard-pro?utm_source=revenuehunt", logo: "/img/pages/partners/CustomerDashboard.webp", description: "Customer Dashboard Pro es la única app que ofrece soporte fluido tanto para las nuevas Customer Accounts de Shopify como para las Classic Customer Accounts." },
+      { name: "WISS Bundle", url: "https://apps.shopify.com/wiss-bundle", logo: "/img/pages/partners/Logo-9.webp", description: "Aumenta los ingresos y el AOV de tu tienda de Shopify con una app de bundles de productos sencilla y personalizable. Ofrece opciones de descuento flexibles: descuentos por valor, envío gratis en productos agrupados o compra X y llévate Y." },
+      { name: "ToastiBar – Sales Popup", url: "https://makeprosimp.com/partnership/revenuehunt", logo: "/img/pages/partners/toastibarlogo_fgaiv9.webp", description: "Aumenta la confianza de los clientes e impulsa las ventas mostrando prueba social en tiempo real: ventas, carrito, visitantes, reseñas de productos y alertas de inventario." },
+      { name: "UpPromote: Affiliate & Referral", url: "https://partners.secomapp.com/apps/affiliate/SHOPQUIZ_APP", logo: "/img/pages/partners/NEW_logo-1.webp", description: "UpPromote es la app de afiliación/referidos más recomendada de la Shopify App Store. Solución integral para crear y gestionar tus campañas de marketing, adecuada para negocios de cualquier tamaño." },
+      { name: "Essential Free Shipping Bar", url: "https://essential-apps.com/essential-shopify-free-shipping-bar-application/", logo: "/img/pages/partners/freeshippingbarlogo.webp", description: "Aumenta las ventas y el AOV configurando barras de envío gratis ilimitadas con múltiples objetivos de valor de carrito para motivar a los compradores a añadir más productos." },
+      { name: "iCart Cart Drawer Cart Upsell", url: "https://apps.shopify.com/icart/?campaign=promotion&medium=in-app-banner&source=revenuehunt", logo: "/img/pages/partners/iCart-Cart-Drawer-Cart-Upsell-logo.webp", description: "App integral de Shopify para personalizar un cart drawer y la página completa del carrito con upsell, recomendaciones de productos, barra de progreso, bundles de productos y descuentos." },
+      { name: "Kaching Bundle Quantity Deals", url: "https://apps.shopify.com/bundle-deals?utm_source=partnership&utm_medium=web&utm_campaign=REVENUEH", logo: "/img/pages/partners/Kaching-Logo-1024x1024.webp", description: "Impulsa las ventas con Kaching Bundle Quantity Deals: crea ofertas de bundles directamente en la página de tu producto. Usa el código REVENUEH20 para un descuento exclusivo del 20%." },
+      { name: "PDF Invoice Generator", url: "https://apps.shopify.com/fordeer-invoice-order-printer?utm_source=ShopQuizProductRecommender&utm_medium=comarketing&utm_campaign=partner", logo: "/img/pages/partners/fordeer-data-export-1024x1024.webp", description: "El generador de facturas de Shopify de Fordeer es flexible, cumple con la normativa global y atiende a B2C, B2B y mayoristas. Plantillas PDF personalizables, impresión por lotes y soporte por chat en vivo 24/7." },
+      { name: "AI SEO Optimizer", url: "https://share.seoant.com/app/1165b75b7ce1524D5J", logo: "/img/pages/partners/SEOAnt-_-AI-SEO-Optimizer_Channelwill-.webp", description: "La mejor app de SEO para Shopify: optimiza keywords, mejora las meta tags y perfecciona la estructura del sitio. Análisis de rendimiento y velocidad de SEO impulsados por AI." },
+      { name: "BSS: B2B/Wholesale Solution", url: "https://apps.shopify.com/b2b-solution-custom-pricing?utm_source=RevenueHunt&utm_medium=partner-listing&utm_campaign=partnership-2024", logo: "/img/pages/partners/BSS-Commerce_logo_150.webp", description: "Solución mayorista integral. Una experiencia de compra B2B fluida que además ayuda a los comerciantes a gestionar a sus clientes mayoristas y obtener insights sobre ellos." },
+      { name: "PreOrder Now WOD", url: "https://apps.shopify.com/preorder-now?utm_source=+revenuehunt&utm_medium=web&utm_campaign=partner&utm_id=crosspromo", logo: "/img/pages/partners/PreOrder-Now-Logo.webp", description: "Convierte las situaciones de falta de stock en oportunidades de pre-pedido. Perfecto para negocios de print-on-demand: capta el interés del cliente sin stock inicial." },
+    ],
+  },
+  {
+    heading: "Logística y aprovisionamiento",
+    emoji: "📦",
+    intro: "Socios de aprovisionamiento, fulfillment y logística para enviar más rápido y escalar globalmente.",
+    items: [
+      { name: "Fulfillman", url: "https://www.fulfillman.com/", logo: "/img/pages/partners/fulfillmanlogo.webp", description: "Fulfillman es un líder global en sourcing, fulfillment y logística para ecommerce, que ofrece envíos rápidos y fiables a través de servicios dedicados de línea privada." },
+      { name: "HyperSKU", url: "https://www.hypersku.com/", logo: "/img/pages/partners/150150-logo.webp", description: "HyperSKU ofrece una solución integral de cadena de suministro. Más de 1M de productos, venta de bundles, muestreo, inspección de calidad, personalización de marca y fulfillment automatizado de pedidos." },
+      { name: "Service Points", url: "https://www.servicepoints.eu/en/w2/smart-dropshipping-1?utm_source=revenuehunt&utm_medium=app&utm_id=31", logo: "/img/pages/partners/Logo-Black-background.webp", description: "Service Points presenta SMART Dropshipping: dropshipping automatizado y decisiones de cadena de suministro basadas en datos para escalar de forma infinita." },
+    ],
+  },
+  {
+    heading: "Temas y diseño",
+    emoji: "🎨",
+    intro: "Temas premium y diseño para que tu tienda luzca espectacular.",
+    items: [
+      { name: "SalesHunterThemes", url: "https://saleshunterthemes.com/?utm_source=app-providers&utm_medium=revenuehunt&utm_campaign=partnership-app&utm_content=website", logo: "/img/pages/partners/saleshunterthemes-logo.webp", description: "Impulsa tu tienda con los themes premium de Shopify de SalesHunterThemes. Diseños modernos y responsive que optimizan el rendimiento y la experiencia de usuario, con amplias opciones de personalización." },
+    ],
+  },
+  {
+    heading: "Plataformas y directorios",
+    emoji: "🧭",
+    intro: "Plataformas y directorios que ayudan a los comerciantes a descubrir las herramientas adecuadas.",
+    items: [
+      { name: "Taranker", url: "https://taranker.com/", logo: "/img/pages/partners/Icon512.webp", description: "Taranker es una plataforma innovadora dedicada a ayudar a los negocios de ecommerce a encontrar las mejores herramientas para optimizar sus operaciones. Especializada en recomendaciones de apps, reseñas de expertos y selecciones de apps curadas." },
+    ],
+  },
 ];
 
 const perks = [
@@ -126,29 +154,22 @@ const jsonLd = [
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section class="bg-slate-50">
-    <div class="mx-auto max-w-4xl px-6 py-16">
-      <h2 class="text-center text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Preguntas frecuentes</h2>
-      <div class="mx-auto mt-8 max-w-2xl">
-        {faqs.map((f) => (
-          <details class="border-b border-slate-200">
-            <summary class="py-4 text-base font-semibold text-slate-900">{f.q}</summary>
-            <p class="pb-4 text-slate-600">{f.a}</p>
-          </details>
-        ))}
-      </div>
-    </div>
-  </section>
-
   <!-- Partner directory -->
   <section id="partners" class="mx-auto max-w-7xl px-6 py-16 scroll-mt-24">
     <h2 class="text-center text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Nuestros partners</h2>
     <p class="mx-auto mt-3 max-w-2xl text-center text-slate-600">
       Apps y agencias de confianza que combinan a la perfección con RevenueHunt para tus clientes.
     </p>
-    <ul class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      {partners.map((p) => (
+    <div class="mt-12 space-y-16">
+      {groups.map((g) => (
+        <div>
+          <div class="mb-2 flex items-baseline gap-3">
+            <span class="text-2xl" aria-hidden="true">{g.emoji}</span>
+            <h3 class="text-2xl font-semibold tracking-tight text-slate-900">{g.heading}</h3>
+          </div>
+          <p class="max-w-3xl text-slate-600">{g.intro}</p>
+          <ul class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {g.items.map((p) => (
         <li>
           <a
             href={p.url}
@@ -171,8 +192,26 @@ const jsonLd = [
             </span>
           </a>
         </li>
+            ))}
+          </ul>
+        </div>
       ))}
-    </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-4xl px-6 py-16">
+      <h2 class="text-center text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Preguntas frecuentes</h2>
+      <div class="mx-auto mt-8 max-w-2xl">
+        {faqs.map((f) => (
+          <details class="border-b border-slate-200">
+            <summary class="py-4 text-base font-semibold text-slate-900">{f.q}</summary>
+            <p class="pb-4 text-slate-600">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
   </section>
 
   <!-- Bottom CTA -->

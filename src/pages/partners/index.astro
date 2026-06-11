@@ -9,27 +9,55 @@ interface Partner {
   description: string;
 }
 
-const partners: Partner[] = [
-  { name: "Taranker", url: "https://taranker.com/", logo: "/img/pages/partners/Icon512.webp", description: "Taranker is an innovative platform dedicated to helping ecommerce businesses find the best tools to optimize their operations. Specializing in app recommendations, expert reviews, and curated app selections." },
-  { name: "SalesHunterThemes", url: "https://saleshunterthemes.com/?utm_source=app-providers&utm_medium=revenuehunt&utm_campaign=partnership-app&utm_content=website", logo: "/img/pages/partners/saleshunterthemes-logo.webp", description: "Boost your store with SalesHunterThemes' premium Shopify themes. Modern, responsive designs that optimize performance and user experience, with extensive customization options." },
-  { name: "Fulfillman", url: "https://www.fulfillman.com/", logo: "/img/pages/partners/fulfillmanlogo.webp", description: "Fulfillman is a global leader in ecommerce sourcing, fulfillment, and logistics, offering fast and reliable shipping through dedicated private line services." },
-  { name: "WC Wishlist Club", url: "https://apps.shopify.com/wishlist-club?utm_source=revenuehunt&utm_medium=website&utm_campaign=partnership", logo: "/img/pages/partners/wishlist-club-150-150-px-logo.webp", description: "WC Wishlist Club lets your customers save their favorite products, share wishlists, and shop later - boosting engagement and sales. Easy to set up, mobile-friendly, and perfect for turning browsers into loyal buyers." },
-  { name: "Langwill: Language Translate", url: "https://partner.channelwill.com/ceq5ql", logo: "/img/pages/partners/1.webp", description: "Expand your global reach with Langwill - translate your Shopify store into 138 languages and auto-convert currencies for a seamless, localized shopping experience." },
-  { name: "Orbe Shopify Geolocation", url: "https://orbe.app/", logo: "/img/pages/partners/orbe-removebg-preview.webp", description: "Maximize global sales with advanced Shopify geolocation. Customize products, prices, currency, and content for every country and guide customers to the right shopping experience with Orbe." },
-  { name: "Checkout Extensions Pro", url: "https://apps.shopify.com/checkout-extensions-pro?utm_source=drip", logo: "/img/pages/partners/CHECKOUT-Extension-Pro-logo_0101.webp", description: "Boost your Shopify Plus checkout with personalized upsell discounts, AI upsells, a free shipping bar, post-purchase offers, trust badges, reviews, and more." },
-  { name: "Customer Dashboard Pro", url: "https://apps.shopify.com/customer-dashboard-pro?utm_source=revenuehunt", logo: "/img/pages/partners/CustomerDashboard.webp", description: "Customer Dashboard Pro is the only app offering seamless support for both Shopify New Customer Accounts and Classic Customer Accounts." },
-  { name: "WISS Bundle", url: "https://apps.shopify.com/wiss-bundle", logo: "/img/pages/partners/Logo-9.webp", description: "Boost your Shopify store's revenue and AOV with a simple, customizable product bundle app. Offer flexible discount options: value-based discounts, free shipping on bundled products, or buy X get Y." },
-  { name: "ToastiBar – Sales Popup", url: "https://makeprosimp.com/partnership/revenuehunt", logo: "/img/pages/partners/toastibarlogo_fgaiv9.webp", description: "Increase customer trust and boost sales by showcasing real-time social proof: sales, cart, visitors, product reviews, and inventory alerts." },
-  { name: "UpPromote: Affiliate & Referral", url: "https://partners.secomapp.com/apps/affiliate/SHOPQUIZ_APP", logo: "/img/pages/partners/NEW_logo-1.webp", description: "UpPromote is the top recommended affiliate/referral app on the Shopify App Store. All-in-one solution to build and manage your marketing campaigns, suitable for any business size." },
-  { name: "Essential Free Shipping Bar", url: "https://essential-apps.com/essential-shopify-free-shipping-bar-application/", logo: "/img/pages/partners/freeshippingbarlogo.webp", description: "Boost sales and AOV by setting up unlimited free shipping bars with multiple cart-value goals to motivate buyers to add more products." },
-  { name: "iCart Cart Drawer Cart Upsell", url: "https://apps.shopify.com/icart/?campaign=promotion&medium=in-app-banner&source=revenuehunt", logo: "/img/pages/partners/iCart-Cart-Drawer-Cart-Upsell-logo.webp", description: "All-in-one Shopify app to customize a cart drawer and full cart page with upsell, product recommendations, progress bar, product bundle, and discounts." },
-  { name: "Kaching Bundle Quantity Deals", url: "https://apps.shopify.com/bundle-deals?utm_source=partnership&utm_medium=web&utm_campaign=REVENUEH", logo: "/img/pages/partners/Kaching-Logo-1024x1024.webp", description: "Boost sales with Kaching Bundle Quantity Deals - create bundle offers right on your product page. Use code REVENUEH20 for an exclusive 20% discount." },
-  { name: "PDF Invoice Generator", url: "https://apps.shopify.com/fordeer-invoice-order-printer?utm_source=ShopQuizProductRecommender&utm_medium=comarketing&utm_campaign=partner", logo: "/img/pages/partners/fordeer-data-export-1024x1024.webp", description: "Fordeer's Shopify invoice generator is flexible, globally compliant, and caters to B2C, B2B, and Wholesale. Customizable PDF templates, batch print, 24/7 live chat support." },
-  { name: "HyperSKU", url: "https://www.hypersku.com/", logo: "/img/pages/partners/150150-logo.webp", description: "HyperSKU offers an All-In-One supply chain solution. 1M+ products, bundle sales, sampling, quality inspection, brand customization, and automated order fulfillment." },
-  { name: "Service Points", url: "https://www.servicepoints.eu/en/w2/smart-dropshipping-1?utm_source=revenuehunt&utm_medium=app&utm_id=31", logo: "/img/pages/partners/Logo-Black-background.webp", description: "Service Points introduces SMART Dropshipping: automated dropshipping and data-based supply chain decisions to scale infinitely." },
-  { name: "AI SEO Optimizer", url: "https://share.seoant.com/app/1165b75b7ce1524D5J", logo: "/img/pages/partners/SEOAnt-_-AI-SEO-Optimizer_Channelwill-.webp", description: "Best SEO app for Shopify - optimize keywords, enhance meta tags, and improve site structure. AI-powered SEO performance and speed checks." },
-  { name: "BSS: B2B/Wholesale Solution", url: "https://apps.shopify.com/b2b-solution-custom-pricing?utm_source=RevenueHunt&utm_medium=partner-listing&utm_campaign=partnership-2024", logo: "/img/pages/partners/BSS-Commerce_logo_150.webp", description: "All-in-one wholesale solution. Seamless B2B shopping experience while helping merchants manage and gain insights from their wholesale customers." },
-  { name: "PreOrder Now WOD", url: "https://apps.shopify.com/preorder-now?utm_source=+revenuehunt&utm_medium=web&utm_campaign=partner&utm_id=crosspromo", logo: "/img/pages/partners/PreOrder-Now-Logo.webp", description: "Transform out-of-stock scenarios into pre-order opportunities. Perfect for print-on-demand businesses - capture customer interest without initial stock." },
+const groups: { heading: string; emoji: string; intro: string; items: Partner[] }[] = [
+  {
+    heading: "Shopify apps",
+    emoji: "🧩",
+    intro: "Shopify apps that pair beautifully with RevenueHunt to grow your store.",
+    items: [
+      { name: "Orbe Shopify Geolocation", url: "https://orbe.app/", logo: "/img/pages/partners/orbe-removebg-preview.webp", description: "Maximize global sales with advanced Shopify geolocation. Customize products, prices, currency, and content for every country and guide customers to the right shopping experience with Orbe." },
+      { name: "WC Wishlist Club", url: "https://apps.shopify.com/wishlist-club?utm_source=revenuehunt&utm_medium=website&utm_campaign=partnership", logo: "/img/pages/partners/wishlist-club-150-150-px-logo.webp", description: "WC Wishlist Club lets your customers save their favorite products, share wishlists, and shop later - boosting engagement and sales. Easy to set up, mobile-friendly, and perfect for turning browsers into loyal buyers." },
+      { name: "Langwill: Language Translate", url: "https://partner.channelwill.com/ceq5ql", logo: "/img/pages/partners/1.webp", description: "Expand your global reach with Langwill - translate your Shopify store into 138 languages and auto-convert currencies for a seamless, localized shopping experience." },
+      { name: "Checkout Extensions Pro", url: "https://apps.shopify.com/checkout-extensions-pro?utm_source=drip", logo: "/img/pages/partners/CHECKOUT-Extension-Pro-logo_0101.webp", description: "Boost your Shopify Plus checkout with personalized upsell discounts, AI upsells, a free shipping bar, post-purchase offers, trust badges, reviews, and more." },
+      { name: "Customer Dashboard Pro", url: "https://apps.shopify.com/customer-dashboard-pro?utm_source=revenuehunt", logo: "/img/pages/partners/CustomerDashboard.webp", description: "Customer Dashboard Pro is the only app offering seamless support for both Shopify New Customer Accounts and Classic Customer Accounts." },
+      { name: "WISS Bundle", url: "https://apps.shopify.com/wiss-bundle", logo: "/img/pages/partners/Logo-9.webp", description: "Boost your Shopify store's revenue and AOV with a simple, customizable product bundle app. Offer flexible discount options: value-based discounts, free shipping on bundled products, or buy X get Y." },
+      { name: "ToastiBar – Sales Popup", url: "https://makeprosimp.com/partnership/revenuehunt", logo: "/img/pages/partners/toastibarlogo_fgaiv9.webp", description: "Increase customer trust and boost sales by showcasing real-time social proof: sales, cart, visitors, product reviews, and inventory alerts." },
+      { name: "UpPromote: Affiliate & Referral", url: "https://partners.secomapp.com/apps/affiliate/SHOPQUIZ_APP", logo: "/img/pages/partners/NEW_logo-1.webp", description: "UpPromote is the top recommended affiliate/referral app on the Shopify App Store. All-in-one solution to build and manage your marketing campaigns, suitable for any business size." },
+      { name: "Essential Free Shipping Bar", url: "https://essential-apps.com/essential-shopify-free-shipping-bar-application/", logo: "/img/pages/partners/freeshippingbarlogo.webp", description: "Boost sales and AOV by setting up unlimited free shipping bars with multiple cart-value goals to motivate buyers to add more products." },
+      { name: "iCart Cart Drawer Cart Upsell", url: "https://apps.shopify.com/icart/?campaign=promotion&medium=in-app-banner&source=revenuehunt", logo: "/img/pages/partners/iCart-Cart-Drawer-Cart-Upsell-logo.webp", description: "All-in-one Shopify app to customize a cart drawer and full cart page with upsell, product recommendations, progress bar, product bundle, and discounts." },
+      { name: "Kaching Bundle Quantity Deals", url: "https://apps.shopify.com/bundle-deals?utm_source=partnership&utm_medium=web&utm_campaign=REVENUEH", logo: "/img/pages/partners/Kaching-Logo-1024x1024.webp", description: "Boost sales with Kaching Bundle Quantity Deals - create bundle offers right on your product page. Use code REVENUEH20 for an exclusive 20% discount." },
+      { name: "PDF Invoice Generator", url: "https://apps.shopify.com/fordeer-invoice-order-printer?utm_source=ShopQuizProductRecommender&utm_medium=comarketing&utm_campaign=partner", logo: "/img/pages/partners/fordeer-data-export-1024x1024.webp", description: "Fordeer's Shopify invoice generator is flexible, globally compliant, and caters to B2C, B2B, and Wholesale. Customizable PDF templates, batch print, 24/7 live chat support." },
+      { name: "AI SEO Optimizer", url: "https://share.seoant.com/app/1165b75b7ce1524D5J", logo: "/img/pages/partners/SEOAnt-_-AI-SEO-Optimizer_Channelwill-.webp", description: "Best SEO app for Shopify - optimize keywords, enhance meta tags, and improve site structure. AI-powered SEO performance and speed checks." },
+      { name: "BSS: B2B/Wholesale Solution", url: "https://apps.shopify.com/b2b-solution-custom-pricing?utm_source=RevenueHunt&utm_medium=partner-listing&utm_campaign=partnership-2024", logo: "/img/pages/partners/BSS-Commerce_logo_150.webp", description: "All-in-one wholesale solution. Seamless B2B shopping experience while helping merchants manage and gain insights from their wholesale customers." },
+      { name: "PreOrder Now WOD", url: "https://apps.shopify.com/preorder-now?utm_source=+revenuehunt&utm_medium=web&utm_campaign=partner&utm_id=crosspromo", logo: "/img/pages/partners/PreOrder-Now-Logo.webp", description: "Transform out-of-stock scenarios into pre-order opportunities. Perfect for print-on-demand businesses - capture customer interest without initial stock." },
+    ],
+  },
+  {
+    heading: "Fulfillment & sourcing",
+    emoji: "📦",
+    intro: "Sourcing, fulfillment, and logistics partners to ship faster and scale globally.",
+    items: [
+      { name: "Fulfillman", url: "https://www.fulfillman.com/", logo: "/img/pages/partners/fulfillmanlogo.webp", description: "Fulfillman is a global leader in ecommerce sourcing, fulfillment, and logistics, offering fast and reliable shipping through dedicated private line services." },
+      { name: "HyperSKU", url: "https://www.hypersku.com/", logo: "/img/pages/partners/150150-logo.webp", description: "HyperSKU offers an All-In-One supply chain solution. 1M+ products, bundle sales, sampling, quality inspection, brand customization, and automated order fulfillment." },
+      { name: "Service Points", url: "https://www.servicepoints.eu/en/w2/smart-dropshipping-1?utm_source=revenuehunt&utm_medium=app&utm_id=31", logo: "/img/pages/partners/Logo-Black-background.webp", description: "Service Points introduces SMART Dropshipping: automated dropshipping and data-based supply chain decisions to scale infinitely." },
+    ],
+  },
+  {
+    heading: "Themes & design",
+    emoji: "🎨",
+    intro: "Premium themes and design to make your storefront shine.",
+    items: [
+      { name: "SalesHunterThemes", url: "https://saleshunterthemes.com/?utm_source=app-providers&utm_medium=revenuehunt&utm_campaign=partnership-app&utm_content=website", logo: "/img/pages/partners/saleshunterthemes-logo.webp", description: "Boost your store with SalesHunterThemes' premium Shopify themes. Modern, responsive designs that optimize performance and user experience, with extensive customization options." },
+    ],
+  },
+  {
+    heading: "Platforms & directories",
+    emoji: "🧭",
+    intro: "Platforms and directories that help merchants discover the right tools.",
+    items: [
+      { name: "Taranker", url: "https://taranker.com/", logo: "/img/pages/partners/Icon512.webp", description: "Taranker is an innovative platform dedicated to helping ecommerce businesses find the best tools to optimize their operations. Specializing in app recommendations, expert reviews, and curated app selections." },
+    ],
+  },
 ];
 
 const perks = [
@@ -123,29 +151,22 @@ const jsonLd = [
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section class="bg-slate-50">
-    <div class="mx-auto max-w-4xl px-6 py-16">
-      <h2 class="text-center text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Frequently asked questions</h2>
-      <div class="mx-auto mt-8 max-w-2xl">
-        {faqs.map((f) => (
-          <details class="border-b border-slate-200">
-            <summary class="py-4 text-base font-semibold text-slate-900">{f.q}</summary>
-            <p class="pb-4 text-slate-600">{f.a}</p>
-          </details>
-        ))}
-      </div>
-    </div>
-  </section>
-
   <!-- Partner directory -->
   <section id="partners" class="mx-auto max-w-7xl px-6 py-16 scroll-mt-24">
     <h2 class="text-center text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Our partners</h2>
     <p class="mx-auto mt-3 max-w-2xl text-center text-slate-600">
       Trusted apps and agencies that pair beautifully with RevenueHunt for your clients.
     </p>
-    <ul class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      {partners.map((p) => (
+    <div class="mt-12 space-y-16">
+      {groups.map((g) => (
+        <div>
+          <div class="mb-2 flex items-baseline gap-3">
+            <span class="text-2xl" aria-hidden="true">{g.emoji}</span>
+            <h3 class="text-2xl font-semibold tracking-tight text-slate-900">{g.heading}</h3>
+          </div>
+          <p class="max-w-3xl text-slate-600">{g.intro}</p>
+          <ul class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {g.items.map((p) => (
         <li>
           <a
             href={p.url}
@@ -168,8 +189,26 @@ const jsonLd = [
             </span>
           </a>
         </li>
+            ))}
+          </ul>
+        </div>
       ))}
-    </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-4xl px-6 py-16">
+      <h2 class="text-center text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Frequently asked questions</h2>
+      <div class="mx-auto mt-8 max-w-2xl">
+        {faqs.map((f) => (
+          <details class="border-b border-slate-200">
+            <summary class="py-4 text-base font-semibold text-slate-900">{f.q}</summary>
+            <p class="pb-4 text-slate-600">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
   </section>
 
   <!-- Bottom CTA -->

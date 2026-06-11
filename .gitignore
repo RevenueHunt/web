@@ -1,5 +1,7 @@
 node_modules/
 dist/
+.tracking-build-prod/
+.tracking-build-staging/
 .astro/
 .wrangler/
 .env

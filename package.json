@@ -15,6 +15,7 @@
     "astro": "astro",
     "typecheck": "astro check",
     "test": "bun test src/",
+    "test:tracking": "bun test tests/tracking.test.ts --timeout 240000",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
     "scrape": "bun scripts/scrape-wp.ts",

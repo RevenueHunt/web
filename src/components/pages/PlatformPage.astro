@@ -112,7 +112,8 @@ function rel(c: { external?: boolean }) {
             <a
               href={cfgHref(config.primary)}
               {...rel(config.primary)}
-              onclick={config.primary.gtagEvent
+              data-install={config.primary.gtagEvent === "shopify_app_install" ? `${config.platform}_hero` : undefined}
+              onclick={config.primary.gtagEvent && config.primary.gtagEvent !== "shopify_app_install"
                 ? `window.gtag&&gtag('event','${config.primary.gtagEvent}',{event_label:'${config.platform}_hero'})`
                 : undefined}
               class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
@@ -311,7 +312,7 @@ function rel(c: { external?: boolean }) {
           href={SHOPIFY_INSTALL}
           target="_blank"
           rel="external noopener nofollow"
-          onclick={`window.gtag&&gtag('event','shopify_app_install',{event_label:'${config.platform}_bottom'})`}
+          data-install={`${config.platform}_bottom`}
           class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
         >
           {c.cta_install_shopify}

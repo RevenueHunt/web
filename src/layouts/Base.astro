@@ -180,18 +180,19 @@ const isProd = import.meta.env.PROD && SITE.site_url === "https://revenuehunt.co
           fbq("init", "433027517883243");
           fbq("track", "PageView");
         </script>
-        {ADS.installLabel && (
-          <!-- Google Ads: Shopify app install conversion (direct tag, not GA4-import) -->
-          <script is:inline define:vars={{ SEND_TO: `${ADS.conversionId}/${ADS.installLabel}` }}>
-            // Delegated, site-wide: any click on a Shopify App Store install CTA
-            // fires the Ads conversion. One place, catches current + future CTAs,
-            // and does not depend on the GA4 -> Ads import that broke at migration.
-            document.addEventListener("click", function (e) {
-              var a = e.target.closest && e.target.closest('a[href*="apps.shopify.com/product-recommendation-quiz-revenuehunt/install"]');
-              if (a && window.gtag) gtag("event", "conversion", { send_to: SEND_TO });
-            }, true);
-          </script>
-        )}
+        <!-- Shopify App Store install CTAs: one delegated listener fires the GA4
+             event (label from the link's data-install) and, when a conversion
+             label is configured, the Google Ads conversion - for every install
+             link site-wide, current and future. Replaces the per-CTA onclick
+             handlers that were duplicated across ~30 files. -->
+        <script is:inline define:vars={{ SEND_TO: ADS.installLabel ? `${ADS.conversionId}/${ADS.installLabel}` : "" }}>
+          document.addEventListener("click", function (e) {
+            var a = e.target.closest && e.target.closest('a[href*="apps.shopify.com/product-recommendation-quiz-revenuehunt/install"]');
+            if (!a || !window.gtag) return;
+            gtag("event", "shopify_app_install", { event_label: a.getAttribute("data-install") || "install" });
+            if (SEND_TO) gtag("event", "conversion", { send_to: SEND_TO });
+          }, true);
+        </script>
       </>
     )}
   </head>

@@ -240,6 +240,8 @@ export default defineConfig({
       "/product-quiz-subscriptions/",
     "/guide-to-building-a-personality-type-quiz-with-revenuehunt/":
       "/scoring-quiz-setup/",
+    "/make-your-facebook-ads-smarter-with-revenuehunts-quiz-integration/":
+      "/meta-pixel-quiz-integration/",
     "/shop/": "/product-recommendation-quiz-shopify/",
   },
   integrations: [

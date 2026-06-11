@@ -1,5 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
+import Breadcrumb from "../Breadcrumb.astro";
 import { organization, breadcrumb, softwareApplication, faqPage } from "../../lib/schema";
 import { SITE } from "../../lib/site";
 import { COMPETITORS_BY_LANG, COMPETITOR_ORDER, type Competitor } from "../../lib/competitors";
@@ -59,14 +60,8 @@ function cell(value: string): { kind: "yes" | "no" | "text"; text: string } {
 >
   <!-- Hero -->
   <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
-      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
-        <a href={lp("/")} class="hover:text-slate-700">{t[lang].breadcrumb_home}</a>
-        <span class="mx-2 text-slate-300">/</span>
-        <a href={lp("/compare/")} class="hover:text-slate-700">{lt.cmp_breadcrumb}</a>
-        <span class="mx-2 text-slate-300">/</span>
-        <span class="text-slate-700">RevenueHunt vs {c.name}</span>
-      </nav>
+    <div class="mx-auto max-w-5xl px-6 py-14 sm:py-16">
+      <Breadcrumb items={[{ label: t[lang].breadcrumb_home, href: lp("/") }, { label: lt.cmp_breadcrumb, href: lp("/compare/") }, { label: `RevenueHunt vs ${c.name}` }]} />
       <div class="text-center">
         <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">
           {lt.cmp_eyebrow_prefix} {c.category}

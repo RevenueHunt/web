@@ -1,18 +1,19 @@
 ---
-// Left-aligned breadcrumb trail. Single source of truth for breadcrumb markup
-// and alignment across the site.
+// Breadcrumb trail. Single source of truth for breadcrumb markup, spacing,
+// and alignment across the site. Logical alignment (text-start) so it follows
+// the document direction in RTL locales.
 interface Crumb {
   label: string;
   href?: string;
 }
 const { items } = Astro.props as { items: Crumb[] };
 ---
-<nav class="mb-6 text-left text-sm text-slate-500" aria-label="Breadcrumb">
+<nav class="mb-6 text-start text-sm text-slate-500" aria-label="Breadcrumb">
   {items.map((c, i) => (
     <Fragment>
       {i > 0 && <span class="mx-2 text-slate-300">/</span>}
       {c.href ? (
-        <a href={c.href} class="hover:text-slate-700">{c.label}</a>
+        <a href={c.href} class="underline hover:text-slate-700">{c.label}</a>
       ) : (
         <span class="text-slate-700">{c.label}</span>
       )}

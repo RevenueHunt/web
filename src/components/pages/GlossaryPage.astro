@@ -1,5 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
+import Breadcrumb from "../Breadcrumb.astro";
 import { organization, breadcrumb, softwareApplication, faqPage, definedTerm } from "../../lib/schema";
 import { GLOSSARY_BY_LANG, GLOSSARY_ORDER, type GlossaryTerm } from "../../lib/glossary";
 import { t, type Lang, localizedHref, OG_LOCALE } from "../../lib/i18n";
@@ -52,14 +53,8 @@ const jsonLd = [
 >
   <!-- Hero + answer-first definition -->
   <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-3xl px-6 py-16 sm:py-20">
-      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
-        <a href={lp("/")} class="hover:text-slate-700">{t[lang].breadcrumb_home}</a>
-        <span class="mx-2 text-slate-300">/</span>
-        <a href={lp("/glossary/")} class="hover:text-slate-700">{lt.gl_breadcrumb}</a>
-        <span class="mx-2 text-slate-300">/</span>
-        <span class="text-slate-700">{e.term}</span>
-      </nav>
+    <div class="mx-auto max-w-3xl px-6 py-14 sm:py-16">
+      <Breadcrumb items={[{ label: t[lang].breadcrumb_home, href: lp("/") }, { label: lt.gl_breadcrumb, href: lp("/glossary/") }, { label: e.term }]} />
       <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">
         {lt.gl_eyebrow} · {e.chip}
       </p>

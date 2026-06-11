@@ -2,6 +2,7 @@
 import type { CollectionEntry } from "astro:content";
 import { render } from "astro:content";
 import Base from "../../layouts/Base.astro";
+import Breadcrumb from "../Breadcrumb.astro";
 import { organization, breadcrumb, productWithReviews } from "../../lib/schema";
 import { SITE } from "../../lib/site";
 import { PLATFORM_CONFIGS, type PlatformConfig } from "../../lib/platforms";
@@ -93,12 +94,8 @@ function rel(c: { external?: boolean }) {
 >
   <!-- Hero -->
   <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-7xl px-6 py-16 lg:py-20">
-      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
-        <a href={lp("/")} class="hover:text-slate-700">{t[lang].breadcrumb_home}</a>
-        <span class="mx-2 text-slate-300">/</span>
-        <span class="text-slate-700">{config.platform}</span>
-      </nav>
+    <div class="mx-auto max-w-5xl px-6 py-14 sm:py-16">
+      <Breadcrumb items={[{ label: t[lang].breadcrumb_home, href: lp("/") }, { label: config.platform }]} />
 
       <div class={`grid items-center gap-12 ${config.youtubeId ? "lg:grid-cols-2 lg:gap-16" : ""}`}>
         <div>
@@ -148,7 +145,7 @@ function rel(c: { external?: boolean }) {
 
   <!-- 3-up pillars -->
   <section class="bg-slate-50">
-    <div class="mx-auto max-w-7xl px-6 py-16 sm:py-20">
+    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
       <div class="grid gap-10 md:grid-cols-3">
         {pillars.map((p) => (
           <div class="text-center">
@@ -214,7 +211,7 @@ function rel(c: { external?: boolean }) {
 
   <!-- Available for every platform - sibling links -->
   <section class="bg-slate-50">
-    <div class="mx-auto max-w-7xl px-6 py-16 sm:py-20">
+    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
       <div class="max-w-3xl">
         <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
           {c.platforms_h2}
@@ -256,7 +253,7 @@ function rel(c: { external?: boolean }) {
 
   <!-- Quiz solutions by industry & quiz type -->
   <section class="bg-white">
-    <div class="mx-auto max-w-7xl px-6 py-16 sm:py-20">
+    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
       <div class="max-w-3xl">
         <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
           {c.industry_h2}

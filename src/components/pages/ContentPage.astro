@@ -7,6 +7,7 @@
 import { render } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 import Base from "../../layouts/Base.astro";
+import Breadcrumb from "../Breadcrumb.astro";
 import PlatformPage from "./PlatformPage.astro";
 import ResourceCards from "../ResourceCards.astro";
 import { organization, breadcrumb, softwareApplication } from "../../lib/schema";
@@ -67,12 +68,8 @@ const { Content } = await render(entry);
     translated={translated}
   >
     <section class="bg-gradient-to-b from-slate-50 to-white">
-      <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
-        <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
-          <a href={lp("/")} class="hover:text-slate-700">{t[lang].breadcrumb_home}</a>
-          <span class="mx-2 text-slate-300">/</span>
-          <span class="text-slate-700">{entry.data.title}</span>
-        </nav>
+      <div class="mx-auto max-w-5xl px-6 py-14 sm:py-16">
+        <Breadcrumb items={[{ label: t[lang].breadcrumb_home, href: lp("/") }, { label: entry.data.title }]} />
         <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">{entry.data.title}</h1>
         {entry.data.description && (
           <p class="mt-6 max-w-3xl text-xl text-slate-600">{entry.data.description}</p>

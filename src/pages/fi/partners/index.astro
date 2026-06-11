@@ -10,27 +10,55 @@ interface Partner {
   description: string;
 }
 
-const partners: Partner[] = [
-  { name: "Taranker", url: "https://taranker.com/", logo: "/img/pages/partners/Icon512.webp", description: "Taranker on innovatiivinen alusta, joka auttaa verkkokauppoja löytämään parhaat työkalut toimintojensa optimointiin. Erikoistunut sovellussuosituksiin, asiantuntija-arvioihin ja kuratoituihin sovellusvalintoihin." },
-  { name: "SalesHunterThemes", url: "https://saleshunterthemes.com/?utm_source=app-providers&utm_medium=revenuehunt&utm_campaign=partnership-app&utm_content=website", logo: "/img/pages/partners/saleshunterthemes-logo.webp", description: "Tehosta kauppaasi SalesHunterThemesin premium Shopify -teemoilla. Modernit ja responsiiviset ulkoasut, jotka optimoivat suorituskyvyn ja käyttäjäkokemuksen laajoilla mukautusvaihtoehdoilla." },
-  { name: "Fulfillman", url: "https://www.fulfillman.com/", logo: "/img/pages/partners/fulfillmanlogo.webp", description: "Fulfillman on maailmanlaajuinen johtaja verkkokaupan hankinnassa, toimituksessa ja logistiikassa, tarjoten nopeita ja luotettavia toimituksia omistautuneiden private line -palveluiden kautta." },
-  { name: "WC Wishlist Club", url: "https://apps.shopify.com/wishlist-club?utm_source=revenuehunt&utm_medium=website&utm_campaign=partnership", logo: "/img/pages/partners/wishlist-club-150-150-px-logo.webp", description: "WC Wishlist Club antaa asiakkaidesi tallentaa suosikkituotteensa, jakaa toivelistoja ja ostaa myöhemmin, lisäten sitoutumista ja myyntiä. Helppo asentaa, mobiiliystävällinen ja täydellinen pelkkien katselijoiden muuttamiseen uskollisiksi ostajiksi." },
-  { name: "Langwill: Language Translate", url: "https://partner.channelwill.com/ceq5ql", logo: "/img/pages/partners/1.webp", description: "Laajenna globaalia tavoittavuuttasi Langwillilla: käännä Shopify-kauppasi 138 kielelle ja muunna valuutat automaattisesti saumatonta, lokalisoitua ostokokemusta varten." },
-  { name: "Orbe Shopify Geolocation", url: "https://orbe.app/", logo: "/img/pages/partners/orbe-removebg-preview.webp", description: "Maksimoi globaali myynti edistyneellä Shopify-geopaikannuksella. Mukauta tuotteet, hinnat, valuutta ja sisältö jokaiselle maalle ja ohjaa asiakkaat oikeaan ostokokemukseen Orbella." },
-  { name: "Checkout Extensions Pro", url: "https://apps.shopify.com/checkout-extensions-pro?utm_source=drip", logo: "/img/pages/partners/CHECKOUT-Extension-Pro-logo_0101.webp", description: "Tehosta Shopify Plus -kassaasi räätälöidyillä upsell-alennuksilla, AI-upselleilla, ilmaisen toimituksen palkilla, oston jälkeisillä tarjouksilla, luottamusmerkeillä, arvosteluilla ja paljon muulla." },
-  { name: "Customer Dashboard Pro", url: "https://apps.shopify.com/customer-dashboard-pro?utm_source=revenuehunt", logo: "/img/pages/partners/CustomerDashboard.webp", description: "Customer Dashboard Pro on ainoa sovellus, joka tarjoaa saumattoman tuen sekä Shopifyn uusille Customer Accountseille että Classic Customer Accountseille." },
-  { name: "WISS Bundle", url: "https://apps.shopify.com/wiss-bundle", logo: "/img/pages/partners/Logo-9.webp", description: "Kasvata Shopify-kauppasi liikevaihtoa ja AOV:ta yksinkertaisella ja mukautettavalla tuotepakettisovelluksella. Tarjoa joustavia alennusvaihtoehtoja: arvopohjaiset alennukset, ilmainen toimitus paketoiduille tuotteille tai osta X ja saa Y." },
-  { name: "ToastiBar – Sales Popup", url: "https://makeprosimp.com/partnership/revenuehunt", logo: "/img/pages/partners/toastibarlogo_fgaiv9.webp", description: "Lisää asiakkaiden luottamusta ja vauhdita myyntiä näyttämällä reaaliaikaista sosiaalista todistetta: myynnit, ostoskori, kävijät, tuotearvostelut ja varastohälytykset." },
-  { name: "UpPromote: Affiliate & Referral", url: "https://partners.secomapp.com/apps/affiliate/SHOPQUIZ_APP", logo: "/img/pages/partners/NEW_logo-1.webp", description: "UpPromote on Shopify App Storen suositelluin affiliate-/suosittelusovellus. Kattava ratkaisu markkinointikampanjoidesi luomiseen ja hallintaan, sopii kaiken kokoisille yrityksille." },
-  { name: "Essential Free Shipping Bar", url: "https://essential-apps.com/essential-shopify-free-shipping-bar-application/", logo: "/img/pages/partners/freeshippingbarlogo.webp", description: "Kasvata myyntiä ja AOV:ta luomalla rajattomasti ilmaisen toimituksen palkkeja useilla ostoskorin arvotavoitteilla kannustaaksesi ostajia lisäämään tuotteita." },
-  { name: "iCart Cart Drawer Cart Upsell", url: "https://apps.shopify.com/icart/?campaign=promotion&medium=in-app-banner&source=revenuehunt", logo: "/img/pages/partners/iCart-Cart-Drawer-Cart-Upsell-logo.webp", description: "Kattava Shopify-sovellus ostoskorilaatikon ja koko ostoskorisivun mukauttamiseen upsellillä, tuotesuosituksilla, edistymispalkilla, tuotepaketeilla ja alennuksilla." },
-  { name: "Kaching Bundle Quantity Deals", url: "https://apps.shopify.com/bundle-deals?utm_source=partnership&utm_medium=web&utm_campaign=REVENUEH", logo: "/img/pages/partners/Kaching-Logo-1024x1024.webp", description: "Vauhdita myyntiä Kaching Bundle Quantity Dealsilla: luo pakettitarjouksia suoraan tuotesivullasi. Käytä koodia REVENUEH20 saadaksesi eksklusiivisen 20 %:n alennuksen." },
-  { name: "PDF Invoice Generator", url: "https://apps.shopify.com/fordeer-invoice-order-printer?utm_source=ShopQuizProductRecommender&utm_medium=comarketing&utm_campaign=partner", logo: "/img/pages/partners/fordeer-data-export-1024x1024.webp", description: "Fordeerin Shopify-laskugeneraattori on joustava, noudattaa globaalia sääntelyä ja palvelee B2C-, B2B- ja tukkuasiakkaita. Mukautettavat PDF-mallit, erätulostus ja 24/7 live-chat-tuki." },
-  { name: "HyperSKU", url: "https://www.hypersku.com/", logo: "/img/pages/partners/150150-logo.webp", description: "HyperSKU tarjoaa kattavan toimitusketjuratkaisun. Yli 1M tuotetta, pakettimyynti, näytteenotto, laaduntarkastus, brändin räätälöinti ja automatisoitu tilausten toimitus." },
-  { name: "Service Points", url: "https://www.servicepoints.eu/en/w2/smart-dropshipping-1?utm_source=revenuehunt&utm_medium=app&utm_id=31", logo: "/img/pages/partners/Logo-Black-background.webp", description: "Service Points esittelee SMART Dropshippingin: automatisoitu dropshipping ja dataan perustuvat toimitusketjupäätökset rajattomaan skaalaukseen." },
-  { name: "AI SEO Optimizer", url: "https://share.seoant.com/app/1165b75b7ce1524D5J", logo: "/img/pages/partners/SEOAnt-_-AI-SEO-Optimizer_Channelwill-.webp", description: "Paras SEO-sovellus Shopifylle: optimoi avainsanat, paranna meta-tageja ja viimeistele sivuston rakenne. AI-pohjainen SEO-suorituskyvyn ja -nopeuden analyysi." },
-  { name: "BSS: B2B/Wholesale Solution", url: "https://apps.shopify.com/b2b-solution-custom-pricing?utm_source=RevenueHunt&utm_medium=partner-listing&utm_campaign=partnership-2024", logo: "/img/pages/partners/BSS-Commerce_logo_150.webp", description: "Kattava tukkuratkaisu. Saumaton B2B-ostokokemus, joka auttaa kauppiaita myös hallitsemaan tukkuasiakkaitaan ja saamaan heistä oivalluksia." },
-  { name: "PreOrder Now WOD", url: "https://apps.shopify.com/preorder-now?utm_source=+revenuehunt&utm_medium=web&utm_campaign=partner&utm_id=crosspromo", logo: "/img/pages/partners/PreOrder-Now-Logo.webp", description: "Muuta loppuunmyydyt tilanteet ennakkotilausmahdollisuuksiksi. Täydellinen print-on-demand-yrityksille: kerää asiakkaan kiinnostus ilman alkuvarastoa." },
+const groups: { heading: string; emoji: string; intro: string; items: Partner[] }[] = [
+  {
+    heading: "Shopify-sovellukset",
+    emoji: "🧩",
+    intro: "Shopify-sovelluksia, jotka toimivat saumattomasti RevenueHuntin kanssa kasvattaaksesi kauppaasi.",
+    items: [
+      { name: "Orbe Shopify Geolocation", url: "https://orbe.app/", logo: "/img/pages/partners/orbe-removebg-preview.webp", description: "Maksimoi globaali myynti edistyneellä Shopify-geopaikannuksella. Mukauta tuotteet, hinnat, valuutta ja sisältö jokaiselle maalle ja ohjaa asiakkaat oikeaan ostokokemukseen Orbella." },
+      { name: "WC Wishlist Club", url: "https://apps.shopify.com/wishlist-club?utm_source=revenuehunt&utm_medium=website&utm_campaign=partnership", logo: "/img/pages/partners/wishlist-club-150-150-px-logo.webp", description: "WC Wishlist Club antaa asiakkaidesi tallentaa suosikkituotteensa, jakaa toivelistoja ja ostaa myöhemmin, lisäten sitoutumista ja myyntiä. Helppo asentaa, mobiiliystävällinen ja täydellinen pelkkien katselijoiden muuttamiseen uskollisiksi ostajiksi." },
+      { name: "Langwill: Language Translate", url: "https://partner.channelwill.com/ceq5ql", logo: "/img/pages/partners/1.webp", description: "Laajenna globaalia tavoittavuuttasi Langwillilla: käännä Shopify-kauppasi 138 kielelle ja muunna valuutat automaattisesti saumatonta, lokalisoitua ostokokemusta varten." },
+      { name: "Checkout Extensions Pro", url: "https://apps.shopify.com/checkout-extensions-pro?utm_source=drip", logo: "/img/pages/partners/CHECKOUT-Extension-Pro-logo_0101.webp", description: "Tehosta Shopify Plus -kassaasi räätälöidyillä upsell-alennuksilla, AI-upselleilla, ilmaisen toimituksen palkilla, oston jälkeisillä tarjouksilla, luottamusmerkeillä, arvosteluilla ja paljon muulla." },
+      { name: "Customer Dashboard Pro", url: "https://apps.shopify.com/customer-dashboard-pro?utm_source=revenuehunt", logo: "/img/pages/partners/CustomerDashboard.webp", description: "Customer Dashboard Pro on ainoa sovellus, joka tarjoaa saumattoman tuen sekä Shopifyn uusille Customer Accountseille että Classic Customer Accountseille." },
+      { name: "WISS Bundle", url: "https://apps.shopify.com/wiss-bundle", logo: "/img/pages/partners/Logo-9.webp", description: "Kasvata Shopify-kauppasi liikevaihtoa ja AOV:ta yksinkertaisella ja mukautettavalla tuotepakettisovelluksella. Tarjoa joustavia alennusvaihtoehtoja: arvopohjaiset alennukset, ilmainen toimitus paketoiduille tuotteille tai osta X ja saa Y." },
+      { name: "ToastiBar – Sales Popup", url: "https://makeprosimp.com/partnership/revenuehunt", logo: "/img/pages/partners/toastibarlogo_fgaiv9.webp", description: "Lisää asiakkaiden luottamusta ja vauhdita myyntiä näyttämällä reaaliaikaista sosiaalista todistetta: myynnit, ostoskori, kävijät, tuotearvostelut ja varastohälytykset." },
+      { name: "UpPromote: Affiliate & Referral", url: "https://partners.secomapp.com/apps/affiliate/SHOPQUIZ_APP", logo: "/img/pages/partners/NEW_logo-1.webp", description: "UpPromote on Shopify App Storen suositelluin affiliate-/suosittelusovellus. Kattava ratkaisu markkinointikampanjoidesi luomiseen ja hallintaan, sopii kaiken kokoisille yrityksille." },
+      { name: "Essential Free Shipping Bar", url: "https://essential-apps.com/essential-shopify-free-shipping-bar-application/", logo: "/img/pages/partners/freeshippingbarlogo.webp", description: "Kasvata myyntiä ja AOV:ta luomalla rajattomasti ilmaisen toimituksen palkkeja useilla ostoskorin arvotavoitteilla kannustaaksesi ostajia lisäämään tuotteita." },
+      { name: "iCart Cart Drawer Cart Upsell", url: "https://apps.shopify.com/icart/?campaign=promotion&medium=in-app-banner&source=revenuehunt", logo: "/img/pages/partners/iCart-Cart-Drawer-Cart-Upsell-logo.webp", description: "Kattava Shopify-sovellus ostoskorilaatikon ja koko ostoskorisivun mukauttamiseen upsellillä, tuotesuosituksilla, edistymispalkilla, tuotepaketeilla ja alennuksilla." },
+      { name: "Kaching Bundle Quantity Deals", url: "https://apps.shopify.com/bundle-deals?utm_source=partnership&utm_medium=web&utm_campaign=REVENUEH", logo: "/img/pages/partners/Kaching-Logo-1024x1024.webp", description: "Vauhdita myyntiä Kaching Bundle Quantity Dealsilla: luo pakettitarjouksia suoraan tuotesivullasi. Käytä koodia REVENUEH20 saadaksesi eksklusiivisen 20 %:n alennuksen." },
+      { name: "PDF Invoice Generator", url: "https://apps.shopify.com/fordeer-invoice-order-printer?utm_source=ShopQuizProductRecommender&utm_medium=comarketing&utm_campaign=partner", logo: "/img/pages/partners/fordeer-data-export-1024x1024.webp", description: "Fordeerin Shopify-laskugeneraattori on joustava, noudattaa globaalia sääntelyä ja palvelee B2C-, B2B- ja tukkuasiakkaita. Mukautettavat PDF-mallit, erätulostus ja 24/7 live-chat-tuki." },
+      { name: "AI SEO Optimizer", url: "https://share.seoant.com/app/1165b75b7ce1524D5J", logo: "/img/pages/partners/SEOAnt-_-AI-SEO-Optimizer_Channelwill-.webp", description: "Paras SEO-sovellus Shopifylle: optimoi avainsanat, paranna meta-tageja ja viimeistele sivuston rakenne. AI-pohjainen SEO-suorituskyvyn ja -nopeuden analyysi." },
+      { name: "BSS: B2B/Wholesale Solution", url: "https://apps.shopify.com/b2b-solution-custom-pricing?utm_source=RevenueHunt&utm_medium=partner-listing&utm_campaign=partnership-2024", logo: "/img/pages/partners/BSS-Commerce_logo_150.webp", description: "Kattava tukkuratkaisu. Saumaton B2B-ostokokemus, joka auttaa kauppiaita myös hallitsemaan tukkuasiakkaitaan ja saamaan heistä oivalluksia." },
+      { name: "PreOrder Now WOD", url: "https://apps.shopify.com/preorder-now?utm_source=+revenuehunt&utm_medium=web&utm_campaign=partner&utm_id=crosspromo", logo: "/img/pages/partners/PreOrder-Now-Logo.webp", description: "Muuta loppuunmyydyt tilanteet ennakkotilausmahdollisuuksiksi. Täydellinen print-on-demand-yrityksille: kerää asiakkaan kiinnostus ilman alkuvarastoa." },
+    ],
+  },
+  {
+    heading: "Toimitus ja hankinta",
+    emoji: "📦",
+    intro: "Hankinnan, toimituksen ja logistiikan kumppaneita nopeampaan toimitukseen ja globaaliin skaalaukseen.",
+    items: [
+      { name: "Fulfillman", url: "https://www.fulfillman.com/", logo: "/img/pages/partners/fulfillmanlogo.webp", description: "Fulfillman on maailmanlaajuinen johtaja verkkokaupan hankinnassa, toimituksessa ja logistiikassa, tarjoten nopeita ja luotettavia toimituksia omistautuneiden private line -palveluiden kautta." },
+      { name: "HyperSKU", url: "https://www.hypersku.com/", logo: "/img/pages/partners/150150-logo.webp", description: "HyperSKU tarjoaa kattavan toimitusketjuratkaisun. Yli 1M tuotetta, pakettimyynti, näytteenotto, laaduntarkastus, brändin räätälöinti ja automatisoitu tilausten toimitus." },
+      { name: "Service Points", url: "https://www.servicepoints.eu/en/w2/smart-dropshipping-1?utm_source=revenuehunt&utm_medium=app&utm_id=31", logo: "/img/pages/partners/Logo-Black-background.webp", description: "Service Points esittelee SMART Dropshippingin: automatisoitu dropshipping ja dataan perustuvat toimitusketjupäätökset rajattomaan skaalaukseen." },
+    ],
+  },
+  {
+    heading: "Teemat ja design",
+    emoji: "🎨",
+    intro: "Premium-teemoja ja designia, jotka saavat kauppasi loistamaan.",
+    items: [
+      { name: "SalesHunterThemes", url: "https://saleshunterthemes.com/?utm_source=app-providers&utm_medium=revenuehunt&utm_campaign=partnership-app&utm_content=website", logo: "/img/pages/partners/saleshunterthemes-logo.webp", description: "Tehosta kauppaasi SalesHunterThemesin premium Shopify -teemoilla. Modernit ja responsiiviset ulkoasut, jotka optimoivat suorituskyvyn ja käyttäjäkokemuksen laajoilla mukautusvaihtoehdoilla." },
+    ],
+  },
+  {
+    heading: "Alustat ja hakemistot",
+    emoji: "🧭",
+    intro: "Alustoja ja hakemistoja, jotka auttavat kauppiaita löytämään oikeat työkalut.",
+    items: [
+      { name: "Taranker", url: "https://taranker.com/", logo: "/img/pages/partners/Icon512.webp", description: "Taranker on innovatiivinen alusta, joka auttaa verkkokauppoja löytämään parhaat työkalut toimintojensa optimointiin. Erikoistunut sovellussuosituksiin, asiantuntija-arvioihin ja kuratoituihin sovellusvalintoihin." },
+    ],
+  },
 ];
 
 const perks = [
@@ -126,29 +154,22 @@ const jsonLd = [
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section class="bg-slate-50">
-    <div class="mx-auto max-w-4xl px-6 py-16">
-      <h2 class="text-center text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Usein kysytyt kysymykset</h2>
-      <div class="mx-auto mt-8 max-w-2xl">
-        {faqs.map((f) => (
-          <details class="border-b border-slate-200">
-            <summary class="py-4 text-base font-semibold text-slate-900">{f.q}</summary>
-            <p class="pb-4 text-slate-600">{f.a}</p>
-          </details>
-        ))}
-      </div>
-    </div>
-  </section>
-
   <!-- Partner directory -->
   <section id="partners" class="mx-auto max-w-7xl px-6 py-16 scroll-mt-24">
     <h2 class="text-center text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Partnerimme</h2>
     <p class="mx-auto mt-3 max-w-2xl text-center text-slate-600">
       Luotettavia sovelluksia ja toimistoja, jotka sopivat täydellisesti yhteen RevenueHuntin kanssa asiakkaillesi.
     </p>
-    <ul class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      {partners.map((p) => (
+    <div class="mt-12 space-y-16">
+      {groups.map((g) => (
+        <div>
+          <div class="mb-2 flex items-baseline gap-3">
+            <span class="text-2xl" aria-hidden="true">{g.emoji}</span>
+            <h3 class="text-2xl font-semibold tracking-tight text-slate-900">{g.heading}</h3>
+          </div>
+          <p class="max-w-3xl text-slate-600">{g.intro}</p>
+          <ul class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {g.items.map((p) => (
         <li>
           <a
             href={p.url}
@@ -171,8 +192,26 @@ const jsonLd = [
             </span>
           </a>
         </li>
+            ))}
+          </ul>
+        </div>
       ))}
-    </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-4xl px-6 py-16">
+      <h2 class="text-center text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Usein kysytyt kysymykset</h2>
+      <div class="mx-auto mt-8 max-w-2xl">
+        {faqs.map((f) => (
+          <details class="border-b border-slate-200">
+            <summary class="py-4 text-base font-semibold text-slate-900">{f.q}</summary>
+            <p class="pb-4 text-slate-600">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
   </section>
 
   <!-- Bottom CTA -->

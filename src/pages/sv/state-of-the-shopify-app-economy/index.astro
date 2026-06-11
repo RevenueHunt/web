@@ -1,5 +1,7 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import Eyebrow from "../../../components/Eyebrow.astro";
+import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, article, faqPage } from "../../../lib/schema";
 import { SITE } from "../../../lib/site";
 import { localizedHref } from "../../../lib/i18n";
@@ -150,15 +152,12 @@ const methodologyHtml = METHODOLOGY;
   <!-- Hero -->
   <section class="bg-gradient-to-b from-slate-50 to-white">
     <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
-      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
-        <a href={localizedHref("/", "sv")} class="hover:text-slate-700">Hem</a>
-        <span class="mx-2 text-slate-300">/</span>
-        <span class="text-slate-700">Läget för Shopifys app-ekonomi</span>
-      </nav>
+      <Breadcrumb items={[{ label: "Hem", href: localizedHref("/", "sv") }, { label: "Läget för Shopifys app-ekonomi" }]} />
       <div class="text-center">
         <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">
           Fältanteckningar · {publishedLabel}
         </p>
+        <Eyebrow>Läget för Shopifys app-ekonomi</Eyebrow>
         <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
           Läget för Shopifys app-ekonomi
         </h1>

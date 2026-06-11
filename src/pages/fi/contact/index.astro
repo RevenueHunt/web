@@ -1,5 +1,7 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import Eyebrow from "../../../components/Eyebrow.astro";
+import Breadcrumb from "../../../components/Breadcrumb.astro";
 import YouTubeFacade from "../../../components/YouTubeFacade.astro";
 import { organization, breadcrumb } from "../../../lib/schema";
 import { localizedHref } from "../../../lib/i18n";
@@ -62,11 +64,8 @@ const responseTiers = [
   <!-- Hero -->
   <section class="bg-gradient-to-b from-slate-50 to-white">
     <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20 text-center">
-      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
-        <a href={localizedHref("/", "fi")} class="hover:text-slate-700">Etusivu</a>
-        <span class="mx-2 text-slate-300">/</span>
-        <span class="text-slate-700">Yhteystiedot</span>
-      </nav>
+      <Breadcrumb items={[{ label: "Etusivu", href: localizedHref("/", "fi") }, { label: "Yhteystiedot" }]} />
+      <Eyebrow>Yhteystiedot</Eyebrow>
       <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
         Ota yhteyttä
       </h1>

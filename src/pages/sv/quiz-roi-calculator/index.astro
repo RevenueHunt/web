@@ -1,5 +1,7 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import Eyebrow from "../../../components/Eyebrow.astro";
+import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, softwareApplication, faqPage } from "../../../lib/schema";
 import { localizedHref } from "../../../lib/i18n";
 
@@ -119,13 +121,9 @@ const jsonLd = [
   <!-- Hero -->
   <section class="bg-gradient-to-b from-slate-50 to-white">
     <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
-      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
-        <a href={localizedHref("/", "sv")} class="hover:text-slate-700">Hem</a>
-        <span class="mx-2 text-slate-300">/</span>
-        <span class="text-slate-700">ROI-kalkylator för quiz</span>
-      </nav>
+      <Breadcrumb items={[{ label: "Hem", href: localizedHref("/", "sv") }, { label: "ROI-kalkylator för quiz" }]} />
       <div class="text-center">
-        <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">Gratisverktyg</p>
+        <Eyebrow>Gratisverktyg</Eyebrow>
         <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">ROI-kalkylator för quiz</h1>
         <p class="mx-auto mt-6 max-w-3xl text-xl text-slate-600">
           Upptäck de extra intäkter som ett produktrekommendationsquiz kan ge din butik. Konverteringsbenchmarken på 275 % är verklig, <a href={localizedHref("/state-of-product-recommendation-quizzes/", "sv")} class="font-semibold text-[#16161D] underline decoration-2 decoration-[#16161D]/40 underline-offset-2 hover:decoration-[#16161D]">uppmätt över fler än 45M quizsvar</a>, inte en påhittad multiplikator. Justera siffrorna så att de matchar dina egna.

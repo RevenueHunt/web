@@ -1,0 +1,8 @@
+---
+// Hero eyebrow / kicker — the small uppercase label above a page title.
+// Single source of truth for its styling (size, weight, tracking, color).
+const { class: cls = "" } = Astro.props;
+---
+<p class:list={["text-sm font-semibold uppercase tracking-wider text-[#616eff]", cls]}>
+  <slot />
+</p>

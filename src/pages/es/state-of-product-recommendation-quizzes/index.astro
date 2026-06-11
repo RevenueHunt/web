@@ -1,5 +1,7 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import Eyebrow from "../../../components/Eyebrow.astro";
+import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, article, faqPage } from "../../../lib/schema";
 import { SITE } from "../../../lib/site";
 import { localizedHref } from "../../../lib/i18n";
@@ -173,15 +175,9 @@ const baselines = BASELINES.map((b) => ({ ...b, scope: SCOPE[b.source] ?? b.scop
   <!-- Hero -->
   <section class="bg-gradient-to-b from-slate-50 to-white">
     <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
-      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
-        <a href={localizedHref("/", "es")} class="hover:text-slate-700">Inicio</a>
-        <span class="mx-2 text-slate-300">/</span>
-        <span class="text-slate-700">El estado de los quizzes de recomendación de productos</span>
-      </nav>
+      <Breadcrumb items={[{ label: "Inicio", href: localizedHref("/", "es") }, { label: "El estado de los quizzes de recomendación de productos" }]} />
       <div class="text-center">
-        <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">
-          Informe benchmark · {publishedLabel}
-        </p>
+        <Eyebrow>Informe benchmark · {publishedLabel}</Eyebrow>
         <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
           El estado de los quizzes de recomendación de productos
         </h1>

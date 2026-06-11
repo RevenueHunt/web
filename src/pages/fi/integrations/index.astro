@@ -1,5 +1,7 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import Eyebrow from "../../../components/Eyebrow.astro";
+import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, softwareApplication } from "../../../lib/schema";
 import { localizedHref } from "../../../lib/i18n";
 
@@ -109,11 +111,8 @@ function isExternal(href: string) {
   <!-- Hero -->
   <section class="bg-gradient-to-b from-slate-50 to-white">
     <div class="mx-auto max-w-5xl px-6 py-20 sm:py-24">
-      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
-        <a href={localizedHref("/", "fi")} class="hover:text-slate-700">Etusivu</a>
-        <span class="mx-2 text-slate-300">/</span>
-        <span class="text-slate-700">Integraatiot</span>
-      </nav>
+      <Breadcrumb items={[{ label: "Etusivu", href: localizedHref("/", "fi") }, { label: "Integraatiot" }]} />
+      <Eyebrow>Integraatiot</Eyebrow>
       <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
         Saumattomat integraatiot, jotka tehostavat kyselysi tuloksia
       </h1>
@@ -129,8 +128,10 @@ function isExternal(href: string) {
       <div class="grid gap-10 md:grid-cols-3">
         {pillars.map((p) => (
           <div>
-            <div class="text-4xl" aria-hidden="true">{p.emoji}</div>
-            <h2 class="mt-4 text-xl font-semibold text-slate-900">{p.title}</h2>
+            <div class="flex items-center gap-3">
+              <span class="text-3xl" aria-hidden="true">{p.emoji}</span>
+              <h2 class="text-xl font-semibold text-slate-900">{p.title}</h2>
+            </div>
             <p class="mt-3 text-slate-600">{p.body}</p>
           </div>
         ))}

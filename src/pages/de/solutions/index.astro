@@ -1,5 +1,7 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import Eyebrow from "../../../components/Eyebrow.astro";
+import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, softwareApplication } from "../../../lib/schema";
 import { SITE } from "../../../lib/site";
 import {
@@ -50,13 +52,9 @@ const jsonLd = [
   <!-- Hero -->
   <section class="bg-gradient-to-b from-slate-50 to-white">
     <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
-      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
-        <a href={localizedHref("/", "de")} class="hover:text-slate-700">Start</a>
-        <span class="mx-2 text-slate-300">/</span>
-        <span class="text-slate-700">Lösungen</span>
-      </nav>
+      <Breadcrumb items={[{ label: "Start", href: localizedHref("/", "de") }, { label: "Lösungen" }]} />
       <div class="text-center">
-        <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">Lösungen</p>
+        <Eyebrow>Lösungen</Eyebrow>
         <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
           Ein Produktempfehlungs-Quiz für deine Branche
         </h1>

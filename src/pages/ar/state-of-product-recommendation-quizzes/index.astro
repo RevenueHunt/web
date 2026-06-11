@@ -1,5 +1,7 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import Eyebrow from "../../../components/Eyebrow.astro";
+import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, article, faqPage } from "../../../lib/schema";
 import { SITE } from "../../../lib/site";
 import { localizedHref } from "../../../lib/i18n";
@@ -173,15 +175,9 @@ const baselines = BASELINES.map((b) => ({ ...b, scope: SCOPE[b.source] ?? b.scop
   <!-- Hero -->
   <section class="bg-gradient-to-b from-slate-50 to-white">
     <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
-      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
-        <a href={localizedHref("/", "ar")} class="hover:text-slate-700">الرئيسية</a>
-        <span class="mx-2 text-slate-300">/</span>
-        <span class="text-slate-700">حالة اختبارات التوصية بالمنتجات</span>
-      </nav>
+      <Breadcrumb items={[{ label: "الرئيسية", href: localizedHref("/", "ar") }, { label: "حالة اختبارات التوصية بالمنتجات" }]} />
       <div class="text-center">
-        <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">
-          تقرير معايير · {publishedLabel}
-        </p>
+        <Eyebrow>تقرير معايير · {publishedLabel}</Eyebrow>
         <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
           حالة اختبارات التوصية بالمنتجات
         </h1>

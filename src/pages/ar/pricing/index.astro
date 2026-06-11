@@ -1,5 +1,7 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import Eyebrow from "../../../components/Eyebrow.astro";
+import Breadcrumb from "../../../components/Breadcrumb.astro";
 import PlanCards from "../../../components/pages/PlanCards.astro";
 import Reviews from "../../../components/Reviews.astro";
 import { organization, breadcrumb, productWithReviews } from "../../../lib/schema";
@@ -42,13 +44,10 @@ const jsonLd = [
 >
   <section class="bg-slate-50">
     <div class="mx-auto max-w-7xl px-6 py-16 sm:py-20">
-      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
-        <a href={localizedHref("/", "ar")} class="hover:text-slate-700">الرئيسية</a>
-        <span class="mx-2 text-slate-300">/</span>
-        <span class="text-slate-700">الأسعار</span>
-      </nav>
+      <Breadcrumb items={[{ label: "الرئيسية", href: localizedHref("/", "ar") }, { label: "الأسعار" }]} />
 
       <div class="text-center">
+        <Eyebrow>الأسعار</Eyebrow>
         <h1 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
           اختر أفضل خطة لمتجرك الإلكتروني
         </h1>

@@ -1,5 +1,7 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import Eyebrow from "../../../components/Eyebrow.astro";
+import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, softwareApplication, faqPage } from "../../../lib/schema";
 import { localizedHref } from "../../../lib/i18n";
 
@@ -119,13 +121,9 @@ const jsonLd = [
   <!-- Hero -->
   <section class="bg-gradient-to-b from-slate-50 to-white">
     <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
-      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
-        <a href={localizedHref("/", "cs")} class="hover:text-slate-700">Domů</a>
-        <span class="mx-2 text-slate-300">/</span>
-        <span class="text-slate-700">Kalkulačka ROI kvízu</span>
-      </nav>
+      <Breadcrumb items={[{ label: "Domů", href: localizedHref("/", "cs") }, { label: "Kalkulačka ROI kvízu" }]} />
       <div class="text-center">
-        <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">Nástroj zdarma</p>
+        <Eyebrow>Nástroj zdarma</Eyebrow>
         <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">Kalkulačka ROI kvízu</h1>
         <p class="mx-auto mt-6 max-w-3xl text-xl text-slate-600">
           Zjisti, kolik tržeb navíc by tvému obchodu mohl přinést kvíz s doporučením produktů. Konverzní benchmark 275 % je skutečný, <a href={localizedHref("/state-of-product-recommendation-quizzes/", "cs")} class="font-semibold text-[#16161D] underline decoration-2 decoration-[#16161D]/40 underline-offset-2 hover:decoration-[#16161D]">naměřený na více než 45M odpovědích z kvízů</a>, ne vymyšlený násobek. Uprav data tak, aby odpovídala tvým číslům.

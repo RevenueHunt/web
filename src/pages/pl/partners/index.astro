@@ -1,5 +1,7 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import Eyebrow from "../../../components/Eyebrow.astro";
+import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb } from "../../../lib/schema";
 import { localizedHref } from "../../../lib/i18n";
 
@@ -119,17 +121,13 @@ const jsonLd = [
   <!-- Hero -->
   <section class="bg-gradient-to-b from-slate-50 to-white">
     <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20 text-center">
-      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
-        <a href={localizedHref("/", "pl")} class="hover:text-slate-700">Strona główna</a>
-        <span class="mx-2 text-slate-300">/</span>
-        <span class="text-slate-700">Partnerzy i afilianci</span>
-      </nav>
-      <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">Program partnerski</p>
+      <Breadcrumb items={[{ label: "Strona główna", href: localizedHref("/", "pl") }, { label: "Partnerzy i afilianci" }]} />
+      <Eyebrow>Program partnerski</Eyebrow>
       <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
         Polecaj swoich klientów. Zarabiaj pieniądze.
       </h1>
       <p class="mx-auto mt-6 max-w-2xl text-xl text-slate-600">
-        Zarabiaj dożywotnią prowizję 20% od klientów, których nam polecisz. Zarejestruj się dziś za darmo w naszym Programie Partnerskim.
+        Zarabiaj <strong class="font-semibold text-slate-900">dożywotnią prowizję 20%</strong> od klientów, których nam polecisz. Zarejestruj się dziś za darmo w naszym Programie Partnerskim.
       </p>
       <p class="mx-auto mt-6 max-w-3xl text-slate-600">
         Jeśli jesteś <strong class="font-semibold text-slate-900">agencją marketingu cyfrowego</strong> lub

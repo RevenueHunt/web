@@ -1,5 +1,7 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import Eyebrow from "../../../components/Eyebrow.astro";
+import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, softwareApplication } from "../../../lib/schema";
 import { SITE } from "../../../lib/site";
 import { SOLUTIONS, FEATURED_SOLUTIONS } from "../../../lib/solutions";
@@ -114,11 +116,8 @@ const jsonLd = [
   <!-- Hero -->
   <section class="bg-gradient-to-b from-slate-50 to-white">
     <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20 text-center">
-      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
-        <a href={lp("/")} class="hover:text-slate-700">Domů</a>
-        <span class="mx-2 text-slate-300">/</span>
-        <span class="text-slate-700">Šablony kvízů</span>
-      </nav>
+      <Breadcrumb items={[{ label: "Domů", href: lp("/") }, { label: "Šablony kvízů" }]} />
+      <Eyebrow>Šablony kvízů</Eyebrow>
       <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
         Šablony produktových kvízů pro Shopify a WooCommerce
       </h1>

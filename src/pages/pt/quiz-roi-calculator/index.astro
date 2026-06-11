@@ -1,5 +1,7 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import Eyebrow from "../../../components/Eyebrow.astro";
+import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, softwareApplication, faqPage } from "../../../lib/schema";
 import { localizedHref } from "../../../lib/i18n";
 
@@ -119,13 +121,9 @@ const jsonLd = [
   <!-- Hero -->
   <section class="bg-gradient-to-b from-slate-50 to-white">
     <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
-      <nav class="mb-6 text-sm text-slate-500" aria-label="Breadcrumb">
-        <a href={localizedHref("/", "pt")} class="hover:text-slate-700">Início</a>
-        <span class="mx-2 text-slate-300">/</span>
-        <span class="text-slate-700">Calculadora de ROI do quiz</span>
-      </nav>
+      <Breadcrumb items={[{ label: "Início", href: localizedHref("/", "pt") }, { label: "Calculadora de ROI do quiz" }]} />
       <div class="text-center">
-        <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">Ferramenta gratuita</p>
+        <Eyebrow>Ferramenta gratuita</Eyebrow>
         <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">Calculadora de ROI do quiz</h1>
         <p class="mx-auto mt-6 max-w-3xl text-xl text-slate-600">
           Vê a receita extra que um Quiz de recomendação de produtos poderia trazer à tua loja. O benchmark de conversão de 275% é real, <a href={localizedHref("/state-of-product-recommendation-quizzes/", "pt")} class="font-semibold text-[#16161D] underline decoration-2 decoration-[#16161D]/40 underline-offset-2 hover:decoration-[#16161D]">medido em mais de 45M de respostas de quiz</a>, não um multiplicador inventado. Ajusta os dados para corresponderem aos teus números.

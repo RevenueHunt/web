@@ -26,7 +26,7 @@ This page collects the five ways you can give us feedback, so you can pick which
 
 ## Why your feedback matters
 
-The best product changes we've shipped came from merchant feedback. The shift to single-results-page recommendations (now the configuration 79% of top-converting quizzes use), the Klaviyo integration that lifted conversion 24% across the installed base, the Built for Shopify native-block embedding that removed the iframe latency: every one of those started with a merchant telling us what wasn't working.
+The best product changes we've shipped came from merchant feedback. The shift to single-results-page recommendations (now the configuration 79% of top-converting quizzes use), the deeper Klaviyo integration that lets segmented campaigns earn over 3x the revenue per recipient of generic sends, the Built for Shopify native-block embedding that removed the iframe latency: every one of those started with a merchant telling us what wasn't working.
 
 Concretely, your feedback helps us:
 

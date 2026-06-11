@@ -1,6 +1,6 @@
 ---
 title: "How to build a successful product recommendation quiz"
-description: "11 evidence-based rules from 900+ quizzes and $63.8M in tracked revenue. The data-driven checklist for high-converting product recommendation quizzes."
+description: "11 evidence-based rules from 20,000+ stores and $370M+ in merchant revenue. The data-driven checklist for high-converting product recommendation quizzes."
 pubDate: 2021-09-16T07:24:42Z
 updatedDate: 2026-05-28T14:00:00Z
 tags:
@@ -19,7 +19,7 @@ featuredImage: "/img/blog/how-to-build-a-successful-ecommerce-quiz/blog_successf
 draft: false
 ---
 
-The 11 rules below are derived from platform data across 900+ product recommendation quizzes built on RevenueHunt, covering 1.29 million quiz responses and $63.8 million in tracked revenue. Every recommendation is grounded in real performance data, and several contradict the conventional wisdom in older guides (including ours from 2021).
+The 11 rules below are derived from platform data across 20,000+ stores running RevenueHunt, covering 45M+ quiz responses and $370M+ in merchant revenue ([2026 benchmark report](/state-of-product-recommendation-quizzes/)). Every recommendation is grounded in real performance data, and several contradict the conventional wisdom in older guides (including ours from 2021).
 
 <div class="aspect-video overflow-hidden rounded-xl bg-slate-900 not-prose my-6"><button type="button" class="yt-facade group relative block h-full w-full cursor-pointer overflow-hidden" data-yt-id="eJaiwjhyNgI" aria-label="Play video"><picture><source srcset="https://i.ytimg.com/vi_webp/eJaiwjhyNgI/maxresdefault.webp" type="image/webp" /><img src="https://i.ytimg.com/vi/eJaiwjhyNgI/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async" class="h-full w-full object-cover" /></picture><span class="absolute inset-0 flex items-center justify-center bg-black/10 transition group-hover:bg-black/20"><span class="flex h-20 w-20 items-center justify-center rounded-full bg-black/70 shadow-lg transition group-hover:scale-105 group-hover:bg-[#FF0000]"><svg class="ml-0.5 h-9 w-9 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg></span></span></button></div>
 
@@ -77,7 +77,7 @@ The best names follow a simple formula: **[Desired outcome] + [Specific category
 
 ## 4. Keep your quiz simple and linear
 
-Data from 900+ quizzes shows that most top converters are completely linear. Start simple, branch only when you must.
+Data from 20,000+ stores shows that most top converters are completely linear. Start simple, branch only when you must.
 
 This is the biggest change from our 2021 guide, and it's worth being direct: **the conventional wisdom about branching logic has been overstated.** When we analysed our top-converting quizzes, the majority were built with completely linear question flows: every respondent sees every question in the same order. No conditional branches, no jump logic, no decision trees.
 
@@ -111,7 +111,7 @@ Focus on relevance, not aesthetics. Every question should either (a) improve the
 
 The old "max 5-6 questions" rule is wrong. Platform data shows 6 to 12 questions is the sweet spot, and longer quizzes actually convert better.
 
-The 2021 version of this guide, like most older quiz resources, advised keeping quizzes to a maximum of 5 to 6 questions. The data from our platform tells a different story. Here is the actual conversion rate breakdown by question count across 900+ quizzes:
+The 2021 version of this guide, like most older quiz resources, advised keeping quizzes to a maximum of 5 to 6 questions. The data from our platform tells a different story. Here is the actual conversion rate breakdown by question count across 20,000+ stores:
 
 <table style="width:100%;border-collapse:collapse;font-size:14px;margin:24px 0;">
   <thead>
@@ -168,14 +168,14 @@ These features work together to replicate the experience of speaking to a knowle
 
 ## 9. Collect email and connect to Klaviyo
 
-71% of top-converting quizzes collect email, and those connected to Klaviyo convert 24% better and generate 66% more orders.
+71% of top-converting quizzes collect email, and segmented Klaviyo campaigns earn over 3x the revenue per recipient of generic sends.
 
 If there's one section of this guide that will have the most direct impact on your revenue, this is it. The email and Klaviyo integration is not a nice-to-have feature of your quiz. Based on our platform data, it is a defining characteristic of every high-performing setup. The numbers:
 
 - **71%** of top-converting quizzes collect email as part of the quiz flow.
 - Of those, **75% make email collection required,** not optional.
-- Quizzes connected to Klaviyo convert **24% better** than quizzes without the integration.
-- Klaviyo-integrated quizzes generate **66% more orders,** not just more clicks, more completed purchases.
+- Segmented Klaviyo campaigns earn **over 3x the revenue per recipient** of generic sends (Klaviyo segmentation benchmark).
+- Across the platform, **1 in 5 quiz-attributed orders lands more than 30 days after the quiz**, so the segmentation layer keeps converting for months.
 
 The reason making email required outperforms optional is straightforward: when the email field is optional, customers who are on the fence about sharing their address simply skip it. You lose the most valuable leads: the ones who were interested enough to complete 9 questions but not yet committed enough to buy immediately. These are exactly the customers your Klaviyo follow-up sequence is designed to close.
 

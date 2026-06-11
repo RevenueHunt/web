@@ -57,7 +57,7 @@ The Mailchimp integration is available with one important caveat: **direct conne
 
 Three options, in order of recommendation:
 
-1. **Use Klaviyo instead.** Klaviyo is the strongest ecommerce email platform for tag-driven segmentation and works natively on every RevenueHunt version including BFS. Platform data: Klaviyo-integrated quizzes convert **24% better** and generate **66% more orders** than unintegrated equivalents. See [how Klaviyo segmentation unlocks once zero-party data lands in profiles](https://revenuehunt.com/klaviyo-zero-party-data/) for the full playbook.
+1. **Use Klaviyo instead.** Klaviyo is the strongest ecommerce email platform for tag-driven segmentation and works natively on every RevenueHunt version including BFS. **Segmented Klaviyo campaigns earn over 3x the revenue per recipient of generic sends** (Klaviyo segmentation benchmark), and across the platform 1 in 5 quiz-attributed orders lands more than 30 days after the quiz ([benchmark report](/state-of-product-recommendation-quizzes/)). See [how Klaviyo segmentation unlocks once zero-party data lands in profiles](/klaviyo-zero-party-data/) for the full playbook.
 2. **Use Shopify Flow for the immediate post-quiz follow-up.** Shopify Flow is free, built into Shopify, and triggers on every new customer-tag combination from the quiz. See [how to automate post-quiz emails using Shopify Flows](https://revenuehunt.com/how-to-automate-post-quiz-emails-using-shopify-flows/).
 3. **Use a Mailchimp workaround.** Export quiz responses as CSV from Metrics → Responses and import into Mailchimp, or use a webhook to push selected fields into Mailchimp manually. Less elegant but it works.
 
@@ -71,7 +71,7 @@ The flow is a 3-step pipeline:
 2. **Tags become segments.** Inside Mailchimp, you filter the audience by tag combinations to define each segment (e.g. customers tagged with `oily_skin` and `acne_concern`).
 3. **Segments trigger automations.** Mailchimp's Automations engine fires an email sequence for each segment, with templates that reference the customer's stated preferences directly.
 
-Industry context for the value here: Klaviyo-integrated equivalents (which our platform data benchmarks) convert **24% better** and generate **66% more orders** than quizzes without an integrated email follow-up. The same compounding logic applies to a well-segmented Mailchimp setup; the integration depth and ecommerce-specific tooling are different, but the segmentation-driven personalisation lift is the same shape.
+Industry context for the value here: segmented Klaviyo campaigns earn over **3x the revenue per recipient** of generic sends (Klaviyo segmentation benchmark). The same compounding logic applies to a well-segmented Mailchimp setup; the integration depth and ecommerce-specific tooling are different, but the segmentation-driven personalisation lift is the same shape.
 
 ## Setting up the Mailchimp connection
 

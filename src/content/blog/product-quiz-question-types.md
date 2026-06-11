@@ -246,7 +246,7 @@ A few principles that apply across every question type:
 
 **Tag every choice.** Every quiz answer that should influence the recommendation or trigger downstream segmentation needs a [customer tag](https://revenuehunt.com/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/) attached to it. The tags become the structured filter logic that powers Klaviyo segmentation and Shopify Flow automations.
 
-**Stay in the 6-12 question sweet spot.** Platform data across 900+ quizzes shows the 9-12 band converts highest at 11.0%, with 6-8 at 10.4% and 1-5 underperforming at 9.8%. Shorter is not better; relevant is better.
+**Stay in the 6-12 question sweet spot.** Platform data across 20,000+ stores shows the 9-12 band converts highest at 11.0%, with 6-8 at 10.4% and 1-5 underperforming at 9.8%. Shorter is not better; relevant is better.
 
 ## Frequently asked questions
 

@@ -143,7 +143,7 @@ Skin type, skin tone and undertone, primary skin concerns (acne, sensitivity, ag
 
 ### How does this approach work alongside email marketing?
 
-The quiz captures the customer's profile, Klaviyo receives the tags as profile properties, and per-segment email flows reference the customer's stated profile explicitly ("for your dry, sensitivity-prone skin"). Platform data: Klaviyo-integrated quizzes convert 24% better and generate 66% more orders than quizzes without the integration. See [how Klaviyo segmentation unlocks once zero-party data lands in profiles](https://revenuehunt.com/klaviyo-zero-party-data/) for the full activation chain.
+The quiz captures the customer's profile, Klaviyo receives the tags as profile properties, and per-segment email flows reference the customer's stated profile explicitly ("for your dry, sensitivity-prone skin"). Segmented Klaviyo campaigns earn over 3x the revenue per recipient of generic sends ([Klaviyo segmentation benchmark](https://www.klaviyo.com/marketing-resources/segmentation-benchmark-report)), and across the platform 1 in 5 quiz-attributed orders lands more than 30 days after the quiz ([benchmark report](/state-of-product-recommendation-quizzes/)). See [how Klaviyo segmentation unlocks once zero-party data lands in profiles](/klaviyo-zero-party-data/) for the full activation chain.
 
 ### What does the install look like on Shopify?
 
@@ -183,7 +183,7 @@ The RevenueHunt: Recommender Quiz for Shopify installs as a Built for Shopify na
       "name": "How does this approach work alongside email marketing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The quiz captures the customer's profile, Klaviyo receives the tags as profile properties, and per-segment email flows reference the customer's stated profile explicitly. Platform data: Klaviyo-integrated quizzes convert 24% better and generate 66% more orders than quizzes without the integration."
+        "text": "The quiz captures the customer's profile, Klaviyo receives the tags as profile properties, and per-segment email flows reference the customer's stated profile explicitly. Segmented Klaviyo campaigns earn over 3x the revenue per recipient of generic sends (Klaviyo segmentation benchmark)."
       }
     },
     {

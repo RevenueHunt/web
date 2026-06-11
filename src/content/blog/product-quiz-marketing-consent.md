@@ -65,7 +65,7 @@ Whether the email or phone field is mandatory or optional has the largest single
 
 ### Mandatory
 
-Making consent mandatory ensures every quiz-completer leaves contact information. Counter-intuitively, this is also the **higher-converting** configuration overall: platform data across 900+ quizzes shows **71% of top-converting quizzes collect email** as part of the flow, and **75% of those make the email field required**, not optional.
+Making consent mandatory ensures every quiz-completer leaves contact information. Counter-intuitively, this is also the **higher-converting** configuration overall: platform data across 20,000+ stores shows **71% of top-converting quizzes collect email** as part of the flow, and **75% of those make the email field required**, not optional ([benchmark report](/state-of-product-recommendation-quizzes/)).
 
 The reason: customers who would skip an optional email field are usually the same customers who wouldn't have bought either. Making the field required filters those signal-low responses out at capture time, leaving you with a list of leads who actively wanted the recommendation enough to give an email for it. Klaviyo-integrated required-email quizzes consistently outperform optional-email quizzes on revenue per recipient downstream.
 
@@ -206,7 +206,7 @@ Be explicit about what the data will be used for. A one-line explanation of "why
 
 ## How customer tags compound on the consent decision
 
-Whichever placement and mandatory/optional choice you make, the email captured at the consent moment isn't a flat address: it arrives in Klaviyo attached to the quiz answers and customer tags. Every Yes-consented profile carries 5 to 10 [zero-party data points](https://revenuehunt.com/zero-party-data/) (skin type, concerns, goals, preferences, budget tier) and a structured set of [customer tags](https://revenuehunt.com/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/) that drive segmented downstream flows. Klaviyo-integrated quizzes convert **24% better** and generate **66% more orders** than unintegrated equivalents, and that lift is driven by the segmentation precision the consent moment unlocks.
+Whichever placement and mandatory/optional choice you make, the email captured at the consent moment isn't a flat address: it arrives in Klaviyo attached to the quiz answers and customer tags. Every Yes-consented profile carries 5 to 10 [zero-party data points](/zero-party-data/) (skin type, concerns, goals, preferences, budget tier) and a structured set of [customer tags](/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/) that drive segmented downstream flows. **Segmented Klaviyo campaigns earn over 3x the revenue per recipient of generic sends** (Klaviyo segmentation benchmark), and across the platform 1 in 5 quiz-attributed orders lands more than 30 days after the quiz ([benchmark report](/state-of-product-recommendation-quizzes/)). That long tail is driven by the segmentation precision the consent moment unlocks.
 
 For the broader funnel mechanics that compound on top of consent and segmentation, see [how Klaviyo segmentation unlocks once zero-party data lands in profiles](https://revenuehunt.com/klaviyo-zero-party-data/). For the conversion-leaks to avoid elsewhere in the quiz, see [quiz creation mistakes that hurt your ecommerce sales](https://revenuehunt.com/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/).
 

@@ -111,7 +111,7 @@ Before tools, the data categories themselves, in roughly the order most stores s
 
 Quizzes are the cleanest way to collect **zero-party data**: stated preferences a customer hands you in exchange for a relevant recommendation. Skin type, goals, gift recipient, budget band, ingredient sensitivities. The same answers then power personalised results, segmented email flows, retargeting audiences, and merchandising.
 
-The data backs this up. Across 900+ live quizzes and 1.29M responses on the platform: 71% of high-performing quizzes collect email (75% make it required), the sweet spot of 9-12 questions converts at 11.0%, and merchants who pipe quiz answers into Klaviyo as custom properties see a 24% lift in email-driven revenue versus untagged sends. The platform has tracked over $63.8M in attributable revenue.
+The data backs this up. Across 20,000+ stores and 45M+ quiz responses on the platform: 5.5% of shoppers who finish a quiz place an order (about 1 in 18, 2.75x a typical 2% store), 69% of starters reach the results page, and within-store AOV runs 11-15% higher on quiz orders than non-quiz orders ([2026 benchmark report](/state-of-product-recommendation-quizzes/)). Segmented Klaviyo campaigns earn over 3x the revenue per recipient of generic sends, and quiz answers are the data that makes that segmentation possible. The platform has tracked over $370M in merchant revenue.
 
 <div class="app-card app-card--featured">
   <img class="app-card__logo" src="/img/blog/shopify-data-collection-tools/revenuehunt-logo.webp" alt="RevenueHunt app logo" loading="lazy" />

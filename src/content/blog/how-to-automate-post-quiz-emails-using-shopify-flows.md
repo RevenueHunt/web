@@ -45,7 +45,7 @@ Two products, working together. The **[RevenueHunt: Recommender Quiz](https://ap
 
 The integration syncs every quiz completion to Shopify Customers, and Shopify Flow watches that list for new customers matching your tag conditions. When the conditions match, Flow fires the action you configured (typically a personalised marketing email, but it can also add segments, route to teams, or stack multiple actions).
 
-Why this matters for revenue: a customer who completed the quiz has just told you (via tags) what they care about. Platform data on Klaviyo-integrated quizzes shows a **24% better conversion rate** and **66% more orders** than quizzes without an integrated follow-up flow; the Shopify Flow path captures the same lift on Shopify-native stacks.
+Why this matters for revenue: a customer who completed the quiz has just told you (via tags) what they care about. Segmented post-quiz email campaigns earn **over 3x the revenue per recipient** of generic sends (Klaviyo segmentation benchmark), and across the platform **1 in 5 quiz-attributed orders lands more than 30 days after the quiz** ([benchmark report](/state-of-product-recommendation-quizzes/)). The Shopify Flow path captures the same lift on Shopify-native stacks.
 
 **Why set up post-quiz email automation:**
 

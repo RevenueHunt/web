@@ -80,7 +80,7 @@ For the full data-backed playbook this checklist references, see [how to build a
 
 ## Quiz building
 
-✓ **Aim for 6 to 12 questions, with 9-12 the sweet spot.** Platform data across 900+ quizzes shows this band converts at **11.0%**, with 6-8 questions at 10.4% and quizzes shorter than 6 questions actually underperforming at 9.8%. Customers don't drop off because there are too many questions; they drop off when the questions feel irrelevant or repetitive. The "keep it under 5-6 questions" advice from older guides was wrong; relevance matters more than brevity.
+✓ **Aim for 6 to 12 questions, with 9-12 the sweet spot.** Platform data across 20,000+ stores shows this band converts at **11.0%**, with 6-8 questions at 10.4% and quizzes shorter than 6 questions actually underperforming at 9.8%. Customers don't drop off because there are too many questions; they drop off when the questions feel irrelevant or repetitive. The "keep it under 5-6 questions" advice from older guides was wrong; relevance matters more than brevity.
 
 ✓ **Arrange questions in a logical order**, starting with general preferences and moving toward specific needs. This creates a natural rhythm and a sense of progressive disclosure.
 
@@ -136,7 +136,7 @@ For the full data-backed playbook this checklist references, see [how to build a
 
 ## After the quiz
 
-✓ **Send a personalised post-quiz email** with the customer's quiz answers, the recommended products, and a reminder of the discount. **Klaviyo-integrated quizzes convert 24% better and generate 66% more orders** than quizzes without integrated email follow-up. See [how Klaviyo segmentation unlocks once zero-party data lands in profiles](https://revenuehunt.com/klaviyo-zero-party-data/) for the activation chain.
+✓ **Send a personalised post-quiz email** with the customer's quiz answers, the recommended products, and a reminder of the discount. **Segmented Klaviyo campaigns earn over 3x the revenue per recipient of generic sends** (Klaviyo segmentation benchmark), and across the platform 1 in 5 quiz-attributed orders lands more than 30 days after the quiz ([benchmark report](/state-of-product-recommendation-quizzes/)). See [how Klaviyo segmentation unlocks once zero-party data lands in profiles](/klaviyo-zero-party-data/) for the activation chain.
 
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
@@ -150,7 +150,7 @@ For the full data-backed playbook this checklist references, see [how to build a
 
 ### How long should my first product recommendation quiz be?
 
-6 to 12 questions, with the 9-12 band typically performing best. Platform data across 900+ quizzes shows 9-12 questions converting at 11.0%, 6-8 at 10.4%, and 1-5 underperforming at 9.8%. The "keep it short" advice from older guides was wrong — relevance is what matters, not brevity.
+6 to 12 questions, with the 9-12 band typically performing best. Platform data across 20,000+ stores shows 9-12 questions converting at 11.0%, 6-8 at 10.4%, and 1-5 underperforming at 9.8%. The "keep it short" advice from older guides was wrong — relevance is what matters, not brevity.
 
 ### Should I obsess over the quiz design before launching?
 
@@ -166,7 +166,7 @@ Just before the results page is the highest-converting placement. The customer h
 
 ### What should I do after the customer completes the quiz?
 
-Send a personalised follow-up email referencing their quiz answers and the recommended products, ideally connected to Klaviyo for segmented downstream flows. Klaviyo-integrated quizzes convert 24% better and generate 66% more orders than quizzes without integrated email follow-up.
+Send a personalised follow-up email referencing their quiz answers and the recommended products, ideally connected to Klaviyo for segmented downstream flows. Segmented Klaviyo campaigns earn over 3x the revenue per recipient of generic sends.
 
 <script type="application/ld+json">
 {
@@ -178,7 +178,7 @@ Send a personalised follow-up email referencing their quiz answers and the recom
       "name": "How long should my first product recommendation quiz be?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "6 to 12 questions, with the 9-12 band typically performing best. Platform data across 900+ quizzes shows 9-12 questions converting at 11.0%, 6-8 at 10.4%, and 1-5 underperforming at 9.8%. The keep-it-short advice from older guides was wrong: relevance is what matters, not brevity."
+        "text": "6 to 12 questions, with the 9-12 band typically performing best. Platform data across 20,000+ stores shows 9-12 questions converting at 11.0%, 6-8 at 10.4%, and 1-5 underperforming at 9.8%. The keep-it-short advice from older guides was wrong: relevance is what matters, not brevity."
       }
     },
     {
@@ -210,7 +210,7 @@ Send a personalised follow-up email referencing their quiz answers and the recom
       "name": "What should I do after the customer completes the quiz?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Send a personalised follow-up email referencing their quiz answers and the recommended products, ideally connected to Klaviyo for segmented downstream flows. Klaviyo-integrated quizzes convert 24% better and generate 66% more orders than quizzes without integrated email follow-up."
+        "text": "Send a personalised follow-up email referencing their quiz answers and the recommended products, ideally connected to Klaviyo for segmented downstream flows. Segmented Klaviyo campaigns earn over 3x the revenue per recipient of generic sends."
       }
     }
   ]

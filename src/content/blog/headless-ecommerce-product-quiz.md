@@ -84,7 +84,7 @@ The Standalone version of the [RevenueHunt: Recommender Quiz](https://revenuehun
 
 ![Standalone Google Product Feed import showing products synced from a Google Merchant Center feed](/img/blog/headless-ecommerce-product-quiz/googlefeedsatndalone.webp)
 
-**Same zero-party data flow.** Every quiz response captures the same structured data the Shopify and WooCommerce versions capture, syncs to Klaviyo via the native integration, and feeds the same segmented email flows. See [how Klaviyo segmentation unlocks once zero-party data lands in profiles](https://revenuehunt.com/klaviyo-zero-party-data/) for the activation chain. Platform data: Klaviyo-integrated quizzes convert **24% better** and generate **66% more orders** than quizzes without the integration.
+**Same zero-party data flow.** Every quiz response captures the same structured data the Shopify and WooCommerce versions capture, syncs to Klaviyo via the native integration, and feeds the same segmented email flows. See [how Klaviyo segmentation unlocks once zero-party data lands in profiles](/klaviyo-zero-party-data/) for the activation chain. **Segmented Klaviyo campaigns earn over 3x the revenue per recipient of generic sends** (Klaviyo segmentation benchmark).
 
 **Same Quiz Builder.** Same question types, same recommendation algorithm, same customer-tag system, same results-page editor as the platform-native versions. If you've used RevenueHunt on Shopify before, the Standalone version is the same product with a different integration path.
 
@@ -134,7 +134,7 @@ Products are synced from a Google Product Feed (the same feed you'd use for Goog
 
 ### Will the quiz still capture zero-party data on Standalone?
 
-Yes, identically to the Shopify and WooCommerce versions. Every response captures the customer's stated preferences as structured data, syncs to Klaviyo via the native integration, and feeds the same segmented email flows. Klaviyo-integrated Standalone quizzes show the same 24% conversion lift and 66% order lift as integrated quizzes on the platform-native versions.
+Yes, identically to the Shopify and WooCommerce versions. Every response captures the customer's stated preferences as structured data, syncs to Klaviyo via the native integration, and feeds the same segmented email flows. Segmented Klaviyo campaigns earn over 3x the revenue per recipient of generic sends, regardless of whether the quiz runs on Shopify, WooCommerce, or Standalone.
 
 ### Can I use customer tags on Standalone?
 
@@ -170,7 +170,7 @@ Yes. The Free plan covers up to 100 quiz responses per month with every feature 
       "name": "Will the quiz still capture zero-party data on Standalone?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, identically to the Shopify and WooCommerce versions. Every response captures the customer's stated preferences as structured data, syncs to Klaviyo via the native integration, and feeds the same segmented email flows. Klaviyo-integrated Standalone quizzes show the same 24% conversion lift and 66% order lift as integrated quizzes on the platform-native versions."
+        "text": "Yes, identically to the Shopify and WooCommerce versions. Every response captures the customer's stated preferences as structured data, syncs to Klaviyo via the native integration, and feeds the same segmented email flows. Segmented Klaviyo campaigns earn over 3x the revenue per recipient of generic sends, regardless of whether the quiz runs on Shopify, WooCommerce, or Standalone."
       }
     },
     {

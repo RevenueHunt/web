@@ -83,10 +83,10 @@ For detailed installation steps, see the [Magento setup documentation](https://r
 
 The same evidence-based rules that work for Shopify and WooCommerce quizzes apply to Magento. The shortlist:
 
-- **Aim for 6 to 12 questions.** Platform data across 900+ quizzes shows the 9 to 12 range produces the highest conversion rates. Anything below 6 questions feels superficial; anything beyond 12 begins to drop off. The full breakdown is in [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/).
+- **Aim for 6 to 12 questions.** Platform data across 20,000+ stores ([benchmark report](/state-of-product-recommendation-quizzes/)) shows the 9 to 12 range produces the highest conversion rates. Anything below 6 questions feels superficial; anything beyond 12 begins to drop off. The full breakdown is in [how to build a successful product recommendation quiz](/how-to-build-a-successful-ecommerce-quiz/).
 - **Map every answer choice to specific products.** Unmapped answers produce generic recommendations that erode trust. Audit the answer-to-product mappings before publishing.
 - **Limit the results page to 1-3 products.** Single-results-page quizzes convert at 10.6% on average versus 7.1% for multi-page results.
-- **Collect email inside the quiz flow.** Quizzes that capture email convert 24% better and produce 66% more orders. Make the email field required, not optional.
+- **Collect email inside the quiz flow.** Segmented Klaviyo campaigns earn over 3x the revenue per recipient of generic sends (Klaviyo segmentation benchmark); making the email field required is how you build those segments. 75% of top-converting quizzes do this.
 - **Offer a discount on the results page.** A 10-15% discount at the moment of recommendation removes the last barrier between the customer and their first order.
 
 ![Magento product recommendation quiz results page with a discount offer](/img/blog/try-magento-2-product-recommendation-quiz-app-to-boost-your-conversions/Magento-Img2.webp)

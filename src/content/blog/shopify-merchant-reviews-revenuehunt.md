@@ -100,7 +100,7 @@ The Built for Shopify certification is the structural answer for "does it match 
 
 ## 4. Zero-party data capture for Klaviyo, Meta and HubSpot
 
-The data the quiz captures isn't just an email; it's a structured profile (skin type, concerns, goals, preferences) that flows into Klaviyo as profile properties, into Meta as custom audiences via the Facebook Pixel integration, and into HubSpot as contact attributes. Klaviyo-integrated quizzes convert **24% better** and generate **66% more orders** than unintegrated equivalents.
+The data the quiz captures isn't just an email; it's a structured profile (skin type, concerns, goals, preferences) that flows into Klaviyo as profile properties, into Meta as custom audiences via the Facebook Pixel integration, and into HubSpot as contact attributes. **Segmented Klaviyo campaigns earn over 3x the revenue per recipient of generic sends** (Klaviyo segmentation benchmark).
 
 ![Mighty + Bright merchant review on increased lead capture via the quiz](/img/blog/shopify-merchant-reviews-revenuehunt/mightybrightreview.webp)
 

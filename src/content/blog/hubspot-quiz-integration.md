@@ -45,7 +45,7 @@ Quizzes capture interest at its peak: the moment someone is actively choosing. H
   <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
     <div>
       <p class="text-4xl font-bold text-emerald-400">71%</p>
-      <p class="text-sm text-slate-300 mt-2">of high-performing quizzes collect email; 75% make it required (RevenueHunt platform data, 1.29M responses)</p>
+      <p class="text-sm text-slate-300 mt-2">of high-performing quizzes collect email; 75% make it required (<a href="/state-of-product-recommendation-quizzes/" class="underline decoration-emerald-400/40 hover:decoration-emerald-400">RevenueHunt platform data, 45M+ responses</a>)</p>
     </div>
     <div>
       <p class="text-4xl font-bold text-emerald-400">10.6%</p>

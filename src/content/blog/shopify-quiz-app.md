@@ -74,7 +74,7 @@ Inside the **Quiz Builder**, click the **Add Question** button to insert a quest
 
 Drag and drop questions to reorder them.
 
-A few patterns that consistently work from platform data across 900+ quizzes:
+A few patterns that consistently work from platform data across 20,000+ stores ([benchmark report](/state-of-product-recommendation-quizzes/)):
 
 - **6 to 12 questions is the sweet spot.** Quizzes with 9 to 12 questions convert at 11.0%, 6 to 8 at 10.4%, and 1 to 5 actually underperform at 9.8%. Shorter is not always better, a 3-question quiz feels superficial; the diagnostic depth is what builds confidence in the recommendation.
 - **3 to 6 answer choices per question.** Fewer feels too binary; more recreates the choice paralysis the quiz is meant to solve.

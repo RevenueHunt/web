@@ -234,6 +234,8 @@ export default defineConfig({
       "/shopify-data-collection-tools/",
     "/extreme-kids-world-leading-e-commerce-with-interactive-personalization/":
       "/extreme-kids-world-case-study/",
+    "/automating-quiz-follow-ups-with-omnisend-to-drive-sales/":
+      "/omnisend-quiz-integration/",
     "/shop/": "/product-recommendation-quiz-shopify/",
   },
   integrations: [

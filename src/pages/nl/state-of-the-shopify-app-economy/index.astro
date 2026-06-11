@@ -1,6 +1,5 @@
 ---
 import Base from "../../../layouts/Base.astro";
-import Eyebrow from "../../../components/Eyebrow.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, article, faqPage } from "../../../lib/schema";
 import { SITE } from "../../../lib/site";
@@ -24,7 +23,6 @@ const ogImage = `/og/${REPORT.slug}.png`;
 const publishedLabel = new Date(REPORT.datePublished).toLocaleDateString("nl-NL", {
   year: "numeric",
   month: "long",
-  day: "numeric",
 });
 
 const title = "De staat van de Shopify-app-economie";
@@ -156,7 +154,6 @@ const methodologyHtml = METHODOLOGY;
         <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">
           Veldnotities · {publishedLabel}
         </p>
-        <Eyebrow>De staat van de Shopify-app-economie</Eyebrow>
         <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
           De staat van de Shopify-app-economie
         </h1>

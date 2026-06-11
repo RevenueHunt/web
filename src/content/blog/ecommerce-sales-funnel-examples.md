@@ -142,7 +142,7 @@ The diagram above maps the end-to-end mechanic. The cold Meta ad clicks into the
 
 **The funnel mechanic.** Configurator quiz (age range, yard space, terrain, durability needs, budget); each answer narrows the recommended product set; the results page shows a compact set of three to four matches with clear rationale; post-quiz email captures the lead and routes high-intent traffic to a follow-up consultation.
 
-**Reported result.** Extreme Kids World reports a significantly higher conversion rate from quiz traffic versus catalogue traffic, and shorter sales cycles on high-ticket items. Full case study: [Extreme Kids World leading interactive personalisation](https://revenuehunt.com/extreme-kids-world-leading-e-commerce-with-interactive-personalization/).
+**Reported result.** Extreme Kids World reports a significantly higher conversion rate from quiz traffic versus catalogue traffic, and shorter sales cycles on high-ticket items. Full case study: [Extreme Kids World leading interactive personalisation](/extreme-kids-world-case-study/).
 
 ## Funnel stages that drove these results
 

@@ -140,7 +140,7 @@ Explore our [customer stories](https://revenuehunt.com/blog/) and [testimonials]
 A few stories worth reading first:
 
 - [How a US anti-aging device brand achieved 42.64% AOV lift and $691K in 90 days](https://revenuehunt.com/anti-aging-beauty-brand-quiz-funnel-case-study/)
-- [Extreme Kids World case study: quiz-driven discovery for high-energy families](https://revenuehunt.com/extreme-kids-world-leading-e-commerce-with-interactive-personalization/)
+- [Extreme Kids World case study: quiz-driven discovery for high-energy families](/extreme-kids-world-case-study/)
 - [Daughterela case study: quiz-driven personalisation for natural beauty](https://revenuehunt.com/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/)
 
 For 11 funnel examples across the broader DTC market, see our [11 ecommerce sales funnel examples](https://revenuehunt.com/ecommerce-sales-funnel-examples/) roundup.

@@ -1,3 +1,18 @@
+/**
+ * Google Ads conversion wiring. The retargeting Display campaign optimizes
+ * toward "Shopify app install". We fire that conversion DIRECTLY to Google Ads
+ * (not only as a GA4 event) so it never again depends on the GA4 -> Ads import
+ * link, which silently broke during the site migration and starved the campaign
+ * to $0 spend. To activate: create a "Website" conversion action in Google Ads
+ * (account AW-391009741), paste its conversion label below, and every Shopify
+ * App Store install CTA starts reporting. Empty label = direct tag disabled
+ * (the GA4 `shopify_app_install` event still fires for reporting).
+ */
+export const ADS = {
+  conversionId: "AW-391009741",
+  installLabel: "", // e.g. "AbC-dEfGhIjKlMnOpQr" -> send_to AW-391009741/AbC-dEfGhIjKlMnOpQr
+};
+
 export const SITE = {
   name: "RevenueHunt",
   description:

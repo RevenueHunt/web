@@ -2,7 +2,7 @@
 import "../styles/global.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { SITE, ogImageForPath } from "../lib/site";
+import { SITE, ADS, ogImageForPath } from "../lib/site";
 import { type Lang, LANGS, OG_LOCALE, altLangUrl, dir, langPrefix } from "../lib/i18n";
 
 interface Props {
@@ -174,6 +174,24 @@ const isProd = import.meta.env.PROD && SITE.site_url === "https://revenuehunt.co
         <script is:inline>
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src="https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);})(window,document,"script","dataLayer","GTM-TDNVZDJ");
         </script>
+        <!-- Meta Pixel -->
+        <script is:inline>
+          !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");
+          fbq("init", "433027517883243");
+          fbq("track", "PageView");
+        </script>
+        {ADS.installLabel && (
+          <!-- Google Ads: Shopify app install conversion (direct tag, not GA4-import) -->
+          <script is:inline define:vars={{ SEND_TO: `${ADS.conversionId}/${ADS.installLabel}` }}>
+            // Delegated, site-wide: any click on a Shopify App Store install CTA
+            // fires the Ads conversion. One place, catches current + future CTAs,
+            // and does not depend on the GA4 -> Ads import that broke at migration.
+            document.addEventListener("click", function (e) {
+              var a = e.target.closest && e.target.closest('a[href*="apps.shopify.com/product-recommendation-quiz-revenuehunt/install"]');
+              if (a && window.gtag) gtag("event", "conversion", { send_to: SEND_TO });
+            }, true);
+          </script>
+        )}
       </>
     )}
   </head>
@@ -181,6 +199,7 @@ const isProd = import.meta.env.PROD && SITE.site_url === "https://revenuehunt.co
     {isProd && (
       <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDNVZDJ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=433027517883243&ev=PageView&noscript=1" alt="" />
       </noscript>
     )}
     {showChrome && <Header lang={lang} translated={translated} />}

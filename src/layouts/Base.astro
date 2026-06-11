@@ -161,24 +161,18 @@ const isProd = import.meta.env.PROD && SITE.site_url === "https://revenuehunt.co
 
     {isProd && (
       <>
-        <!-- Google tag (gtag.js) - GA4 -->
-        <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-62LE891EM2"></script>
+        <!-- GA4 (G-62LE891EM2), Google Ads (AW-391009741) and the Meta Pixel are all
+             managed centrally in the GTM-TDNVZDJ container, not configured here. We keep the gtag/dataLayer
+             stub so the inline gtag("event", ...) calls across the site (install CTA,
+             lp views, ROI calculator, Woo clicks) still queue into the dataLayer for
+             GTM's GA4 tag to pick up. -->
         <script is:inline>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
-          gtag("js", new Date());
-          gtag("config", "G-62LE891EM2");
-          gtag("config", "AW-391009741");
         </script>
         <!-- Google Tag Manager -->
         <script is:inline>
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src="https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);})(window,document,"script","dataLayer","GTM-TDNVZDJ");
-        </script>
-        <!-- Meta Pixel -->
-        <script is:inline>
-          !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");
-          fbq("init", "433027517883243");
-          fbq("track", "PageView");
         </script>
         <!-- Shopify App Store install CTAs: one delegated listener fires the GA4
              event (label from the link's data-install) and, when a conversion
@@ -200,7 +194,6 @@ const isProd = import.meta.env.PROD && SITE.site_url === "https://revenuehunt.co
     {isProd && (
       <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDNVZDJ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=433027517883243&ev=PageView&noscript=1" alt="" />
       </noscript>
     )}
     {showChrome && <Header lang={lang} translated={translated} />}

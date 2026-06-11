@@ -22,18 +22,16 @@ const PROD_OUT = join(ROOT, ".tracking-build-prod");
 const STAGING_OUT = join(ROOT, ".tracking-build-staging");
 
 // Must mirror src/layouts/Base.astro.
-const GA4_ID = "G-62LE891EM2"; // GA4 measurement ID
-const ADS_ID = "AW-391009741"; // Google Ads conversion/remarketing account
-const GTM_ID = "GTM-TDNVZDJ"; // Google Tag Manager container
-const META_PIXEL_ID = "433027517883243"; // Meta (Facebook) Pixel
+// GA4 (G-62LE891EM2), Google Ads (AW-391009741) and the Meta Pixel (433027517883243)
+// are NOT in the page anymore — they are all managed centrally in the GTM-TDNVZDJ
+// container. The page only carries the GTM loader and the install-CTA listener (whose
+// shopify_app_install event reaches GA4 via GTM). So we assert GTM (the thing that
+// pulls in GA4/Ads/Meta), not those IDs directly.
+const GTM_ID = "GTM-TDNVZDJ"; // Google Tag Manager container (manages GA4 + Google Ads + Meta Pixel)
 
 // Each signature must appear in a tracked page's HTML.
 const SIGNATURES: { name: string; needle: string }[] = [
-  { name: "GA4 gtag.js loader", needle: `gtag/js?id=${GA4_ID}` },
-  { name: "GA4 measurement ID", needle: GA4_ID },
-  { name: "Google Ads tag (AW account)", needle: ADS_ID },
   { name: "Google Tag Manager container", needle: GTM_ID },
-  { name: "Meta Pixel", needle: META_PIXEL_ID },
   { name: "Shopify install conversion event", needle: "shopify_app_install" },
 ];
 
@@ -113,7 +111,7 @@ describe("tracking is present on a production build", () => {
         continue;
       }
       scanned++;
-      if (!html.includes(GA4_ID)) offenders.push(rel);
+      if (!html.includes(GTM_ID)) offenders.push(rel);
     }
     // Guardrails: make sure we actually scanned the site and didn't just skip it all.
     expect(scanned).toBeGreaterThan(500);
@@ -127,7 +125,7 @@ describe("tracking is gated off outside production", () => {
 
   test("a staging build (non-prod domain) ships NO tracking tags", () => {
     const home = read(STAGING_OUT, "index.html");
-    const leaked = [GA4_ID, ADS_ID, GTM_ID, META_PIXEL_ID].filter((id) => home.includes(id));
+    const leaked = [GTM_ID].filter((id) => home.includes(id));
     expect(leaked).toEqual([]);
   });
 });
@@ -135,7 +133,7 @@ describe("tracking is gated off outside production", () => {
 describe("test IDs match the source of truth", () => {
   test("Base.astro still references the IDs these tests assert", () => {
     const base = readFileSync(join(ROOT, "src/layouts/Base.astro"), "utf8");
-    const drifted = [GA4_ID, ADS_ID, GTM_ID, META_PIXEL_ID].filter((id) => !base.includes(id));
+    const drifted = [GTM_ID].filter((id) => !base.includes(id));
     expect(drifted).toEqual([]);
   });
 });

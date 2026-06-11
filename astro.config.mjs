@@ -236,6 +236,8 @@ export default defineConfig({
       "/extreme-kids-world-case-study/",
     "/automating-quiz-follow-ups-with-omnisend-to-drive-sales/":
       "/omnisend-quiz-integration/",
+    "/quiz-driven-subscriptions-transforming-casual-browsers-into-loyal-subscribers/":
+      "/product-quiz-subscriptions/",
     "/shop/": "/product-recommendation-quiz-shopify/",
   },
   integrations: [

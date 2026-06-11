@@ -12,38 +12,72 @@ interface Partner {
 
 const groups: { heading: string; emoji: string; intro: string; items: Partner[] }[] = [
   {
-    heading: "Shopify-sovellukset",
-    emoji: "🧩",
-    intro: "Shopify-sovelluksia, jotka toimivat saumattomasti RevenueHuntin kanssa kasvattaaksesi kauppaasi.",
+    heading: "Lokalisointi",
+    emoji: "🌍",
+    intro: "Myy rajojen yli sisäänrakennetulla paikannuksella, käännöksillä ja monivaluuttatuella.",
     items: [
       { name: "Orbe Shopify Geolocation", url: "https://orbe.app/", logo: "/img/pages/partners/orbe-removebg-preview.webp", description: "Maksimoi globaali myynti edistyneellä Shopify-geopaikannuksella. Mukauta tuotteet, hinnat, valuutta ja sisältö jokaiselle maalle ja ohjaa asiakkaat oikeaan ostokokemukseen Orbella." },
-      { name: "WC Wishlist Club", url: "https://apps.shopify.com/wishlist-club?utm_source=revenuehunt&utm_medium=website&utm_campaign=partnership", logo: "/img/pages/partners/wishlist-club-150-150-px-logo.webp", description: "WC Wishlist Club antaa asiakkaidesi tallentaa suosikkituotteensa, jakaa toivelistoja ja ostaa myöhemmin, lisäten sitoutumista ja myyntiä. Helppo asentaa, mobiiliystävällinen ja täydellinen pelkkien katselijoiden muuttamiseen uskollisiksi ostajiksi." },
       { name: "Langwill: Language Translate", url: "https://apps.shopify.com/localiser", logo: "/img/pages/partners/1.webp", description: "Laajenna globaalia tavoittavuuttasi Langwillilla: käännä Shopify-kauppasi 138 kielelle ja muunna valuutat automaattisesti saumatonta, lokalisoitua ostokokemusta varten." },
+    ],
+  },
+  {
+    heading: "Chat ja tuki",
+    emoji: "💬",
+    intro: "Asiakastilityökaluja, jotka tekevät itsepalvelusta ja tuesta vaivatonta.",
+    items: [
       { name: "Customer Dashboard Pro", url: "https://apps.shopify.com/customer-dashboard-pro?utm_source=revenuehunt", logo: "/img/pages/partners/CustomerDashboard.webp", description: "Customer Dashboard Pro on ainoa sovellus, joka tarjoaa saumattoman tuen sekä Shopifyn uusille Customer Accountseille että Classic Customer Accountseille." },
-      { name: "ToastiBar – Sales Popup", url: "https://makeprosimp.com/partnership/revenuehunt", logo: "/img/pages/partners/toastibarlogo_fgaiv9.webp", description: "Lisää asiakkaiden luottamusta ja vauhdita myyntiä näyttämällä reaaliaikaista sosiaalista todistetta: myynnit, ostoskori, kävijät, tuotearvostelut ja varastohälytykset." },
-      { name: "UpPromote: Affiliate & Referral", url: "https://partners.secomapp.com/apps/affiliate/SHOPQUIZ_APP", logo: "/img/pages/partners/NEW_logo-1.webp", description: "UpPromote on Shopify App Storen suositelluin affiliate-/suosittelusovellus. Kattava ratkaisu markkinointikampanjoidesi luomiseen ja hallintaan, sopii kaiken kokoisille yrityksille." },
-      { name: "Essential Free Shipping Bar", url: "https://apps.shopify.com/essential-order-value-booster", logo: "/img/pages/partners/freeshippingbarlogo.webp", description: "Kasvata myyntiä ja AOV:ta luomalla rajattomasti ilmaisen toimituksen palkkeja useilla ostoskorin arvotavoitteilla kannustaaksesi ostajia lisäämään tuotteita." },
+    ],
+  },
+  {
+    heading: "Lisämyynti ja suositukset",
+    emoji: "🎯",
+    intro: "Kasvata keskiostosta ostoskorin lisämyynnillä, toivelistoilla ja ennakkotilauksilla.",
+    items: [
+      { name: "WC Wishlist Club", url: "https://apps.shopify.com/wishlist-club?utm_source=revenuehunt&utm_medium=website&utm_campaign=partnership", logo: "/img/pages/partners/wishlist-club-150-150-px-logo.webp", description: "WC Wishlist Club antaa asiakkaidesi tallentaa suosikkituotteensa, jakaa toivelistoja ja ostaa myöhemmin, lisäten sitoutumista ja myyntiä. Helppo asentaa, mobiiliystävällinen ja täydellinen pelkkien katselijoiden muuttamiseen uskollisiksi ostajiksi." },
       { name: "iCart Cart Drawer Cart Upsell", url: "https://apps.shopify.com/icart/?campaign=promotion&medium=in-app-banner&source=revenuehunt", logo: "/img/pages/partners/iCart-Cart-Drawer-Cart-Upsell-logo.webp", description: "Kattava Shopify-sovellus ostoskorilaatikon ja koko ostoskorisivun mukauttamiseen upsellillä, tuotesuosituksilla, edistymispalkilla, tuotepaketeilla ja alennuksilla." },
-      { name: "Kaching Bundle Quantity Deals", url: "https://apps.shopify.com/bundle-deals?utm_source=partnership&utm_medium=web&utm_campaign=REVENUEH", logo: "/img/pages/partners/Kaching-Logo-1024x1024.webp", description: "Vauhdita myyntiä Kaching Bundle Quantity Dealsilla: luo pakettitarjouksia suoraan tuotesivullasi. Käytä koodia REVENUEH20 saadaksesi eksklusiivisen 20 %:n alennuksen." },
-      { name: "PDF Invoice Generator", url: "https://apps.shopify.com/fordeer-invoice-order-printer?utm_source=ShopQuizProductRecommender&utm_medium=comarketing&utm_campaign=partner", logo: "/img/pages/partners/fordeer-data-export-1024x1024.webp", description: "Fordeerin Shopify-laskugeneraattori on joustava, noudattaa globaalia sääntelyä ja palvelee B2C-, B2B- ja tukkuasiakkaita. Mukautettavat PDF-mallit, erätulostus ja 24/7 live-chat-tuki." },
-      { name: "AI SEO Optimizer", url: "https://share.seoant.com/app/1165b75b7ce1524D5J", logo: "/img/pages/partners/SEOAnt-_-AI-SEO-Optimizer_Channelwill-.webp", description: "Paras SEO-sovellus Shopifylle: optimoi avainsanat, paranna meta-tageja ja viimeistele sivuston rakenne. AI-pohjainen SEO-suorituskyvyn ja -nopeuden analyysi." },
-      { name: "BSS: B2B/Wholesale Solution", url: "https://apps.shopify.com/b2b-solution-custom-pricing?utm_source=RevenueHunt&utm_medium=partner-listing&utm_campaign=partnership-2024", logo: "/img/pages/partners/BSS-Commerce_logo_150.webp", description: "Kattava tukkuratkaisu. Saumaton B2B-ostokokemus, joka auttaa kauppiaita myös hallitsemaan tukkuasiakkaitaan ja saamaan heistä oivalluksia." },
       { name: "PreOrder Now WOD", url: "https://apps.shopify.com/preorder-now?utm_source=+revenuehunt&utm_medium=web&utm_campaign=partner&utm_id=crosspromo", logo: "/img/pages/partners/PreOrder-Now-Logo.webp", description: "Muuta loppuunmyydyt tilanteet ennakkotilausmahdollisuuksiksi. Täydellinen print-on-demand-yrityksille: kerää asiakkaan kiinnostus ilman alkuvarastoa." },
     ],
   },
   {
-    heading: "Toimitus ja hankinta",
-    emoji: "📦",
-    intro: "Hankinnan, toimituksen ja logistiikan kumppaneita nopeampaan toimitukseen ja globaaliin skaalaukseen.",
+    heading: "Hinnoittelu ja alennukset",
+    emoji: "🏷️",
+    intro: "Paketit, määräalennukset ja B2B-hinnat, jotka palkitsevat suuremmista ostoskoreista.",
     items: [
-      { name: "HyperSKU", url: "https://apps.shopify.com/hypersku", logo: "/img/pages/partners/150150-logo.webp", description: "HyperSKU tarjoaa kattavan toimitusketjuratkaisun. Yli 1M tuotetta, pakettimyynti, näytteenotto, laaduntarkastus, brändin räätälöinti ja automatisoitu tilausten toimitus." },
-      { name: "Service Points", url: "https://www.servicepoints.eu/en/w2/smart-dropshipping-1?utm_source=revenuehunt&utm_medium=app&utm_id=31", logo: "/img/pages/partners/Logo-Black-background.webp", description: "Service Points esittelee SMART Dropshippingin: automatisoitu dropshipping ja dataan perustuvat toimitusketjupäätökset rajattomaan skaalaukseen." },
+      { name: "Kaching Bundle Quantity Deals", url: "https://apps.shopify.com/bundle-deals?utm_source=partnership&utm_medium=web&utm_campaign=REVENUEH", logo: "/img/pages/partners/Kaching-Logo-1024x1024.webp", description: "Vauhdita myyntiä Kaching Bundle Quantity Dealsilla: luo pakettitarjouksia suoraan tuotesivullasi. Käytä koodia REVENUEH20 saadaksesi eksklusiivisen 20 %:n alennuksen." },
+      { name: "BSS: B2B/Wholesale Solution", url: "https://apps.shopify.com/b2b-solution-custom-pricing?utm_source=RevenueHunt&utm_medium=partner-listing&utm_campaign=partnership-2024", logo: "/img/pages/partners/BSS-Commerce_logo_150.webp", description: "Kattava tukkuratkaisu. Saumaton B2B-ostokokemus, joka auttaa kauppiaita myös hallitsemaan tukkuasiakkaitaan ja saamaan heistä oivalluksia." },
     ],
   },
   {
-    heading: "Teemat ja design",
+    heading: "Markkinointi ja ponnahdusikkunat",
+    emoji: "📣",
+    intro: "Sosiaalinen todiste, kumppanuusohjelmat ja sivuston kampanjat, jotka kasvattavat myyntiä.",
+    items: [
+      { name: "ToastiBar – Sales Popup", url: "https://makeprosimp.com/partnership/revenuehunt", logo: "/img/pages/partners/toastibarlogo_fgaiv9.webp", description: "Lisää asiakkaiden luottamusta ja vauhdita myyntiä näyttämällä reaaliaikaista sosiaalista todistetta: myynnit, ostoskori, kävijät, tuotearvostelut ja varastohälytykset." },
+      { name: "UpPromote: Affiliate & Referral", url: "https://partners.secomapp.com/apps/affiliate/SHOPQUIZ_APP", logo: "/img/pages/partners/NEW_logo-1.webp", description: "UpPromote on Shopify App Storen suositelluin affiliate-/suosittelusovellus. Kattava ratkaisu markkinointikampanjoidesi luomiseen ja hallintaan, sopii kaiken kokoisille yrityksille." },
+    ],
+  },
+  {
+    heading: "Toimitus ja logistiikka",
+    emoji: "📦",
+    intro: "Hankinta, logistiikka ja ilmaisen toimituksen kannustimet nopeampaan toimitukseen ja skaalaukseen.",
+    items: [
+      { name: "Essential Free Shipping Bar", url: "https://apps.shopify.com/essential-order-value-booster", logo: "/img/pages/partners/freeshippingbarlogo.webp", description: "Kasvata myyntiä ja AOV:ta luomalla rajattomasti ilmaisen toimituksen palkkeja useilla ostoskorin arvotavoitteilla kannustaaksesi ostajia lisäämään tuotteita." },
+      { name: "HyperSKU", url: "https://apps.shopify.com/hypersku", logo: "/img/pages/partners/150150-logo.webp", description: "HyperSKU tarjoaa kattavan toimitusketjuratkaisun. Yli 1M tuotetta, pakettimyynti, näytteenotto, laaduntarkastus, brändin räätälöinti ja automatisoitu tilausten toimitus." },
+    ],
+  },
+  {
+    heading: "Analytiikka ja raportointi",
+    emoji: "📊",
+    intro: "SEO-tietoja ja tilausdataa, joilla mittaat mikä toimii ja raportoit siitä.",
+    items: [
+      { name: "PDF Invoice Generator", url: "https://apps.shopify.com/fordeer-invoice-order-printer?utm_source=ShopQuizProductRecommender&utm_medium=comarketing&utm_campaign=partner", logo: "/img/pages/partners/fordeer-data-export-1024x1024.webp", description: "Fordeerin Shopify-laskugeneraattori on joustava, noudattaa globaalia sääntelyä ja palvelee B2C-, B2B- ja tukkuasiakkaita. Mukautettavat PDF-mallit, erätulostus ja 24/7 live-chat-tuki." },
+      { name: "AI SEO Optimizer", url: "https://share.seoant.com/app/1165b75b7ce1524D5J", logo: "/img/pages/partners/SEOAnt-_-AI-SEO-Optimizer_Channelwill-.webp", description: "Paras SEO-sovellus Shopifylle: optimoi avainsanat, paranna meta-tageja ja viimeistele sivuston rakenne. AI-pohjainen SEO-suorituskyvyn ja -nopeuden analyysi." },
+    ],
+  },
+  {
+    heading: "Kaupan ulkoasu ja teemat",
     emoji: "🎨",
-    intro: "Premium-teemoja ja designia, jotka saavat kauppasi loistamaan.",
+    intro: "Premium Shopify-teemoja, jotka on rakennettu konvertoimaan ja saamaan kauppasi loistamaan.",
     items: [
       { name: "eComX", url: "https://ecomx.co/", logo: "/img/pages/partners/ecomx-logo.webp", description: "eComX rakentaa premium Shopify-teemoja, jotka on suunniteltu konvertoimaan. Valitse yli 16 markkinarakokohtaisesta designista, jotka on optimoitu todellisella konversiodatalla ja rakennettu nopeiksi, jotta muutat useammat kävijät ostajiksi." },
     ],
@@ -62,7 +96,7 @@ const faqs = [
   { q: "Paljonko partneriksi ryhtyminen maksaa?", a: "Rekisteröityminen on täysin ilmaista. Nolla. Ei mitään." },
   { q: "Pitääkö minun olla RevenueHuntin asiakas?", a: "Ei, sinun ei tarvitse olla RevenueHuntin asiakas tullaksesi partneriksi." },
   { q: "Miten minulle maksetaan?", a: "Maksamme ansiot kuukausittain. Maksut lähetetään PayPalin kautta." },
-  { q: "Miten voin seurata suositteluitani?", a: "Voit nähdä tilastosi Partner Dashboardissasi." },
+  { q: "Miten voin seurata suositteluitani?", a: "Voit nähdä tilastosi <a href='https://admin.revenuehunt.com/' target='_blank' rel='external noopener' class='font-semibold text-[#16161D] underline'>Partner Dashboardissasi</a>." },
 ];
 
 const jsonLd = [
@@ -172,7 +206,7 @@ const jsonLd = [
               loading="lazy"
               width="120"
               height="120"
-              class="h-24 w-24 rounded-full object-cover"
+              class="h-24 w-24 rounded-lg object-cover"
             />
             <h3 class="mt-5 text-lg font-semibold text-slate-900 group-hover:text-[#16161D]">{p.name}</h3>
             <p class="mt-3 flex-1 text-sm leading-relaxed text-slate-600">{p.description}</p>
@@ -196,7 +230,7 @@ const jsonLd = [
         {faqs.map((f) => (
           <details class="border-b border-slate-200">
             <summary class="py-4 text-base font-semibold text-slate-900">{f.q}</summary>
-            <p class="pb-4 text-slate-600">{f.a}</p>
+            <p class="pb-4 text-slate-600" set:html={f.a}></p>
           </details>
         ))}
       </div>

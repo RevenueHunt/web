@@ -124,7 +124,7 @@ export const PRICING = {
   entryPrice: "$9.99",
   entryPriceCount: "1,447",
   caption:
-    "Nearly half the store charges nothing up front, and fewer than 1 in 20 apps ask for money before the first install. Almost 45% offer a permanent free tier. Freemium is not a strategy here, it is the table stakes.",
+    "Nearly half the store charges nothing up front, and fewer than 1 in 20 apps ask for money before the first install. 57% of paid apps offer a free plan. Freemium is not a strategy here, it is the table stakes.",
 };
 
 /**
@@ -239,7 +239,7 @@ export const FAQ: FaqItem[] = [
   {
     question: "Are most Shopify apps free?",
     answer:
-      "Effectively, yes. 46.9% are free and another 48.6% lead with a free trial; only 4.5% charge money up front. Almost 45% offer a permanent free tier. On the Shopify App Store a free entry point is not a growth tactic, it is the baseline expectation.",
+      "Effectively, yes. 46.9% are free and another 48.6% lead with a free trial; only 4.5% charge money up front. 57% of paid apps offer a free plan. On the Shopify App Store a free entry point is not a growth tactic, it is the baseline expectation.",
   },
   {
     question: "Where can I see the underlying data?",

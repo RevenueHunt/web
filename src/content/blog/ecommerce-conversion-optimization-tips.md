@@ -19,7 +19,7 @@ featuredImage: "/img/blog/ecommerce-conversion-optimization-tips/blogtile_fieldt
 draft: false
 ---
 
-Ten field-tested techniques to lift your store's conversion rate without spending another dollar on traffic acquisition. Each tip is paired with the data and the tooling that actually moves the needle, and the only one that should be number one is the last.
+Ten field-tested [conversion rate optimisation](/glossary/conversion-rate-optimization/) techniques to lift your store's conversion rate without spending another dollar on traffic acquisition. Each tip is paired with the data and the tooling that actually moves the needle, and the only one that should be number one is the last. To estimate the revenue lift a quiz could add, use our [quiz ROI calculator](/quiz-roi-calculator/).
 
 <div style="margin:28px 0;padding:18px 22px;background:#f1f5f9;border-radius:8px;display:flex;align-items:flex-start;gap:16px;font-size:14px;color:#475569;line-height:1.6;">
   <span style="display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#16161D;color:#fff;font-weight:700;font-size:15px;flex-shrink:0;letter-spacing:0.02em;">A</span>

@@ -20,11 +20,11 @@ featuredImage: "/img/blog/product-quiz-discounts/blogtile_discounts.webp"
 draft: false
 ---
 
-A discount delivered at the end of a product recommendation quiz consistently outperforms the same discount banner-advertised on the homepage. The customer has already invested 90 seconds answering questions, the recommendation has built purchase confidence, and the discount removes the final friction. The result is a single coherent decision moment instead of the cold "should I trust this brand enough to spend?" question shoppers face on a generic landing page.
+A discount delivered at the end of a product recommendation quiz consistently outperforms the same discount banner-advertised on the homepage. The customer has already invested 90 seconds answering questions, the recommendation has built purchase confidence, and the discount removes the final friction. It's a lever on both [conversion rate optimisation](/glossary/conversion-rate-optimization/) and [average order value](/glossary/average-order-value/) at the same moment. The result is a single coherent decision moment instead of the cold "should I trust this brand enough to spend?" question shoppers face on a generic landing page.
 
 This article covers the psychology behind why quiz discounts convert, the four placements that consistently move the needle (one of them at the start of the quiz, not the end), and the exact configuration steps for every platform RevenueHunt runs on.
 
-For the broader quiz design principles, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/) — the discount-on-results-page rule is one of eleven.
+For the broader quiz design principles, see [how to build a successful product recommendation quiz](/how-to-build-a-successful-ecommerce-quiz/): the discount-on-results-page rule is one of eleven. To estimate the lift on your own store, use our [quiz ROI calculator](/quiz-roi-calculator/).
 
 ## Why a quiz discount converts better than a banner discount
 

@@ -19,7 +19,7 @@ featuredImage: "/img/blog/shopify-quiz-app/blogtile_addshopifyquiz.webp"
 draft: false
 ---
 
-To add a quiz app to your Shopify store, install **RevenueHunt: Recommender Quiz for Shopify** from the Shopify App Store, build a quiz from a category template, link products to answer choices, and publish via a native theme block. The Built for Shopify-certified version covered in this guide loads inside your theme rather than inside an iframe, inherits your typography and colours automatically, supports Shopify Markets for multi-region stores, and syncs natively to Klaviyo, Omnisend, GA4 and Meta Pixel. Full setup takes under 30 minutes, no developer required.
+To add a [shoppable quiz](/glossary/shoppable-quiz/) app to your Shopify store, install **RevenueHunt: Recommender Quiz for Shopify** from the Shopify App Store, build a quiz from a category template, link products to answer choices, and publish via a native theme block. The Built for Shopify-certified version covered in this guide loads inside your theme rather than inside an iframe, inherits your typography and colours automatically, supports Shopify Markets for multi-region stores, and syncs natively to Klaviyo, Omnisend, GA4 and Meta Pixel. Full setup takes under 30 minutes, no developer required.
 
 This guide walks through every step: install, build, link, design, publish and traffic. Where the docs go deeper, links are provided so you can dive in at the right level.
 

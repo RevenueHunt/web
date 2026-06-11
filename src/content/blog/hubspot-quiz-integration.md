@@ -15,7 +15,7 @@ featuredImage: "/img/blog/hubspot-quiz-integration/blogtile_hubspot.webp"
 draft: false
 ---
 
-A product recommendation quiz captures zero-party data while shoppers are actively engaged: stated preferences, skin types, goals, gift recipients, budget bands. HubSpot turns that into segmented lists, scored leads, and automated nurture flows. Wired together, the two run as one personalisation pipeline.
+A product recommendation quiz captures zero-party data while shoppers are actively engaged: stated preferences, skin types, goals, gift recipients, budget bands. HubSpot turns that into segmented lists, scored leads, and automated nurture flows. Wired together, the two run as one [customer segmentation](/glossary/customer-segmentation/) and [lead generation quiz](/glossary/lead-generation-quiz/) pipeline.
 
 This guide covers the **exact setup paths**, the **data fields** that land on the contact record, and the **platform differences** you need to know before you wire it up.
 

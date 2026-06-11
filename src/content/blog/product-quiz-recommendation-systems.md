@@ -18,7 +18,7 @@ draft: false
 
 The single biggest decision when you build a product recommendation quiz is which recommendation **logic** to use. It controls how customer answers translate into the products on the results page, and it dictates how the quiz scales when you add more questions, more products, or more exceptions later.
 
-RevenueHunt supports **six distinct recommendation systems**: fixed lists, voting, slot routines, two scoring systems, and display logic. They're not interchangeable. Some are right for a 12-SKU candle store; others are designed for dosha quizzes or matrix-driven skincare routines.
+RevenueHunt's [product recommendation engine](/glossary/product-recommendation-engine/) supports **six distinct recommendation systems**: fixed lists, voting, slot routines, two scoring systems, and display logic. They're not interchangeable. Some are right for a 12-SKU candle store; others are designed for dosha quizzes or matrix-driven [skincare routines](/solutions/skincare/).
 
 This guide walks the decision tree, explains each system, and gives you the platform-by-platform setup path.
 
@@ -307,7 +307,7 @@ Three rules-of-thumb after building hundreds of quizzes:
 2. **Use slots only when the result is a bundle.** If you're not actually recommending a kit or routine, a single Product Block is cleaner and converts better.
 3. **Reach for scoring when answers are weighted, not just counted.** "Three picks of A makes you a Vata" is Most Voted Variable. "How bold do you like your wine, on a 0-40 scale" is Score + Variable.
 
-The wrong system isn't a hard failure; most quizzes can be made to work with any of them. But the right system collapses days of rule-maintenance into a single configuration.
+The wrong system isn't a hard failure; most quizzes can be made to work with any of them. But the right system collapses days of rule-maintenance into a single configuration. To estimate the lift on your own store, use our [quiz ROI calculator](/quiz-roi-calculator/).
 
 ## FAQ
 

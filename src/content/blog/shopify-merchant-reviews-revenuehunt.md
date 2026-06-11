@@ -20,7 +20,7 @@ featuredImage: "/img/blog/shopify-merchant-reviews-revenuehunt/blogtile_reviews.
 draft: false
 ---
 
-The [RevenueHunt: Recommender Quiz for Shopify](https://apps.shopify.com/product-recommendation-quiz-revenuehunt) sits at **4.9 stars across 415+ Shopify app store reviews**, with 97% of those rating it five stars. The merchants behind those reviews are running real stores in skincare, supplements, fashion, home, food and pet supplies, and the pattern in what they say is remarkably consistent: easy setup, exceptional support, deep customisation, and measurable revenue lift. This article pulls direct quotes from those reviews so you can hear it from the merchants rather than from us.
+The [RevenueHunt: Recommender Quiz for Shopify](https://apps.shopify.com/product-recommendation-quiz-revenuehunt) sits at **4.9 stars across 415+ Shopify app store reviews**, with 97% of those rating it five stars. The merchants behind those reviews are running real stores in [skincare](/solutions/skincare/), [supplements](/solutions/supplements/), [fashion](/solutions/fashion/), home, food and pet supplies, and the pattern in what they say about the [personalised product recommendations](/glossary/personalized-product-recommendations/) it produces is remarkably consistent: easy setup, exceptional support, deep customisation, and measurable revenue lift. This article pulls direct quotes from those reviews so you can hear it from the merchants rather than from us.
 
 <div style="margin:24px 0;padding:28px 32px;background:#16161D;border-radius:8px;color:#fff;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#94a3b8;">Shopify app store, today</p>

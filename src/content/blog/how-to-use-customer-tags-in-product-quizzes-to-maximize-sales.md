@@ -23,7 +23,7 @@ featuredImage: "/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximiz
 draft: false
 ---
 
-Customer tags are how a product recommendation quiz becomes a segmentation engine instead of a one-off lead capture. Every quiz choice gets tagged with a structured label (Curly Hair, Dry Skin, Vegan, Budget Tier 2), the tags flow into Klaviyo as profile properties on the customer record, and the Klaviyo flows you build against those properties turn into personalised email sequences that consistently outperform generic blast campaigns. **Segmented Klaviyo campaigns earn over 3x the revenue per recipient of generic sends** (Klaviyo segmentation benchmark), and across the platform 1 in 5 quiz-attributed orders lands more than 30 days after the quiz ([benchmark report](/state-of-product-recommendation-quizzes/)).
+Customer tags are how a product recommendation quiz becomes a [customer segmentation](/glossary/customer-segmentation/) engine instead of a one-off lead capture. Every quiz choice gets tagged with a structured label (Curly Hair, Dry Skin, Vegan, Budget Tier 2), the tags flow into Klaviyo as profile properties on the customer record, and the Klaviyo flows you build against those properties turn into personalised email sequences that consistently outperform generic blast campaigns. **Segmented Klaviyo campaigns earn over 3x the revenue per recipient of generic sends** (Klaviyo segmentation benchmark), and across the platform 1 in 5 quiz-attributed orders lands more than 30 days after the quiz ([benchmark report](/state-of-product-recommendation-quizzes/)).
 
 This guide walks through the full implementation end to end, using a haircare store as the worked example.
 

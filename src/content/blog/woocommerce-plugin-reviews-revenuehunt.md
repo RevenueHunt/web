@@ -20,7 +20,7 @@ featuredImage: "/img/blog/woocommerce-plugin-reviews-revenuehunt/blogtile_woo-re
 draft: false
 ---
 
-The RevenueHunt WooCommerce plugin (**[Quiz Builder for WooCommerce – Product Recommendations](https://wordpress.org/plugins/product-recommendation-quiz-for-ecommerce/)** on WordPress.org) carries a perfect **5.0 stars across 100 reviews**, with every single one rating it five stars. The plugin is installed on 2,000+ active WooCommerce stores and ships with an actually-usable free plan. This article pulls direct quotes from those reviews so you can hear from the merchants rather than from us.
+The RevenueHunt WooCommerce plugin (**[Quiz Builder for WooCommerce – Product Recommendations](https://wordpress.org/plugins/product-recommendation-quiz-for-ecommerce/)** on WordPress.org) is what merchants use to stand up a [quiz funnel](/glossary/quiz-funnel/) on a Woo store. It carries a perfect **5.0 stars across 100 reviews**, with every single one rating it five stars. The plugin is installed on 2,000+ active WooCommerce stores and ships with an actually-usable free plan. This article pulls direct quotes from those reviews so you can hear from the merchants rather than from us.
 
 <div style="margin:24px 0;padding:28px 32px;background:#16161D;border-radius:8px;color:#fff;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#94a3b8;">WordPress.org plugin directory, today</p>

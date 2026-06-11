@@ -16,7 +16,7 @@ featuredImage: "/img/blog/shopify-data-collection-tools/blogtile_shopify-data-to
 draft: false
 ---
 
-Customer data is the difference between a Shopify store that broadcasts and a Shopify store that converts. The merchants who win in competitive niches treat data as a stack: declared preferences feed segmentation, behaviour feeds UX fixes, transactions feed retention, reviews feed trust, support tickets feed roadmap. No single tool covers all of that. This guide picks the eight apps we think every serious Shopify store should stand up, and shows how the data they collect connects.
+Customer data is the difference between a Shopify store that broadcasts and a Shopify store that converts. The merchants who win in competitive niches treat data as a stack: declared preferences feed [customer segmentation](/glossary/customer-segmentation/), behaviour feeds UX fixes, transactions feed retention, reviews feed trust, support tickets feed roadmap. No single tool covers all of that. This guide picks the eight apps we think every serious Shopify store should stand up, and shows how the data they collect connects.
 
 ![Customer data collection on Shopify](/img/blog/shopify-data-collection-tools/intro-data-collection.webp)
 

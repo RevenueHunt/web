@@ -27,7 +27,7 @@ Now open your ecommerce store and look at it honestly. You've built a catalogue.
 
 That gap is the problem **guided selling** solves.
 
-**Guided selling** is the practice of using structured, diagnostic interactions  (typically a product recommendation quiz) to guide a customer from uncertainty to a confident purchase. Instead of presenting a catalogue and expecting self-service, guided selling asks questions, listens to answers, and recommends the best-fit product or routine. It replaces passive browsing with active consultation.
+**Guided selling** is the practice of using structured, diagnostic interactions  (typically a product recommendation quiz) to guide a customer from uncertainty to a confident purchase. Instead of presenting a catalogue and expecting self-service, guided selling asks questions, listens to answers, and recommends the best-fit product or routine. It replaces passive browsing with active consultation, and it's the operating mode of [conversational commerce](/glossary/conversational-commerce/) and the cleanest way to solve the [product discovery](/glossary/product-discovery/) problem on a long catalogue.
 
 This practice was useful in 2022 when the original version of this article was published. In 2026, it is essential. Three structural forces have made guided selling the defining ecommerce strategy of the current era, and the brands that haven't adopted it are operating at a measurable, recoverable disadvantage.
 

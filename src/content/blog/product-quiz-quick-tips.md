@@ -42,7 +42,7 @@ Jump to:
 - [Results page](#results-page)
 - [After the quiz](#after-the-quiz)
 
-For the full data-backed playbook this checklist references, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/). For the conversion-leak mistakes to avoid, see [quiz creation mistakes that hurt your ecommerce sales](https://revenuehunt.com/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/).
+For the full data-backed playbook this checklist references, see [how to build a successful product recommendation quiz](/how-to-build-a-successful-ecommerce-quiz/). For the conversion-leak mistakes to avoid, see [quiz creation mistakes that hurt your ecommerce sales](/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/). To estimate the lift on your own store, use our [quiz ROI calculator](/quiz-roi-calculator/).
 
 ## Content
 

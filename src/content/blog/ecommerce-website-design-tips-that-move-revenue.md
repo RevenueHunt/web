@@ -22,7 +22,7 @@ draft: false
 
 _Most ecommerce design advice is about the wrong things._ It tells you to pick clean fonts, compress images, add trust badges, and make sure your store looks good on mobile. That advice is not wrong: it's just irrelevant at the scale and sophistication level you're operating at.
 
-The brands that are winning in 2026 are not winning because of better fonts. They're winning because of better architecture. They've stopped designing passive catalogues and started designing active consultations. They've replaced the "browse and hope" model with a guided selling model that captures intelligence, simplifies decisions, and personalises every downstream touchpoint.
+The brands that are winning in 2026 are not winning because of better fonts. They're winning because of better architecture. They've stopped designing passive catalogues and started designing active consultations. They've replaced the "browse and hope" model with a [conversational commerce](/glossary/conversational-commerce/) model that captures intelligence, simplifies decisions, and personalises every downstream touchpoint.
 
 This article is about the ten design decisions that actually move revenue. Not aesthetics but **architecture**. Each one connects a structural choice about how your store works to a measurable outcome in your business.
 

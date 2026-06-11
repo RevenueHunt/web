@@ -17,7 +17,7 @@ draft: false
   
   
 
-A 12-step qualifying quiz replaced the product page entirely. 9.8% quiz-to-purchase conversion on cold Meta traffic. $691,128 in 90 days. Full breakdown of the funnel architecture, the persuasion checkpoint strategy, and the AOV lift that changed the brand's economics.
+A 12-step qualifying [quiz funnel](/glossary/quiz-funnel/) replaced the [beauty](/solutions/beauty/) brand's product page entirely. 9.8% quiz-to-purchase conversion on cold Meta traffic. $691,128 in 90 days. Full breakdown of the funnel architecture, the persuasion checkpoint strategy, and the [AOV](/glossary/average-order-value/) lift that changed the brand's economics.
 
   
   

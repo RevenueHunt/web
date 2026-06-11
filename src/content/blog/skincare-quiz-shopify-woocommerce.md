@@ -22,7 +22,7 @@ featuredImage: "/img/blog/skincare-quiz-shopify-woocommerce/46.webp"
 draft: false
 ---
 
-A skincare quiz is the highest-leverage funnel mechanic for beauty brands: it converts hesitant browsers into confident buyers by playing the role of an in-store beauty advisor, collects zero-party data that powers segmented email and ad flows, and consistently lifts conversion rates from category-page averages of 2-3% to quiz-driven averages of 10-25%. This guide covers the six skincare quiz types that work, how to build them on Shopify and WooCommerce, and the data-backed rules that separate top performers from quizzes that never get used. For the broader data category, see our [zero-party data guide](https://revenuehunt.com/zero-party-data/).
+A [skincare](/solutions/skincare/) quiz is the highest-leverage funnel mechanic for beauty brands: it converts hesitant browsers into confident buyers by playing the role of an in-store beauty advisor, collects zero-party data that powers segmented email and ad flows, and consistently lifts conversion rates from category-page averages of 2-3% to quiz-driven averages of 10-25%. This guide covers the six skincare quiz types that work, how to build them on Shopify and WooCommerce, and the data-backed rules that separate top performers from quizzes that never get used. For the broader data category, see our [zero-party data guide](https://revenuehunt.com/zero-party-data/).
 
 ![A skincare beauty advisor consulting with a customer](/img/blog/skincare-quiz-shopify-woocommerce/blog_skincarequiz_image1.webp)
 

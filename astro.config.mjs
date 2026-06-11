@@ -238,6 +238,8 @@ export default defineConfig({
       "/omnisend-quiz-integration/",
     "/quiz-driven-subscriptions-transforming-casual-browsers-into-loyal-subscribers/":
       "/product-quiz-subscriptions/",
+    "/guide-to-building-a-personality-type-quiz-with-revenuehunt/":
+      "/scoring-quiz-setup/",
     "/shop/": "/product-recommendation-quiz-shopify/",
   },
   integrations: [

@@ -196,7 +196,7 @@ export const QUIZ_LANE = {
   shopifySearch: "149",
   searchUrl: "https://apps.shopify.com/search?q=quiz",
   dedicatedApps: 65,
-  revenueHuntReviews: 417,
+  revenueHuntReviews: 422,
   octaneReviews: 193,
   quizKitReviews: 171,
   top3Share: "45%",

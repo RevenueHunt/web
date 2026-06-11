@@ -1,0 +1,21 @@
+---
+// Standard page hero shell — owns the background, max-width, and vertical
+// rhythm so every page's header sits at the same distance. Put the breadcrumb,
+// eyebrow, title, and subtitle inside via the default slot.
+interface Props {
+  width?: "3xl" | "5xl" | "7xl";
+  center?: boolean;
+  bg?: string;
+}
+const {
+  width = "5xl",
+  center = false,
+  bg = "bg-gradient-to-b from-slate-50 to-white",
+} = Astro.props;
+const widthClass = { "3xl": "max-w-3xl", "5xl": "max-w-5xl", "7xl": "max-w-7xl" }[width];
+---
+<section class={bg}>
+  <div class:list={["mx-auto px-6 py-16 sm:py-20", widthClass, center && "text-center"]}>
+    <slot />
+  </div>
+</section>

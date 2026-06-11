@@ -1,5 +1,6 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import PageHero from "../../../components/PageHero.astro";
 import Eyebrow from "../../../components/Eyebrow.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, softwareApplication } from "../../../lib/schema";
@@ -110,8 +111,7 @@ const jsonLd = [
   jsonLd={jsonLd}
 >
   <!-- Hero -->
-  <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20 text-center">
+  <PageHero center>
       <Breadcrumb items={[{ label: "Início", href: localizedHref("/", "pt") }, { label: "Modelos de quiz" }]} />
       <Eyebrow>Modelos de quiz</Eyebrow>
       <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
@@ -131,8 +131,7 @@ const jsonLd = [
         Estes modelos de quiz em HTML personalizáveis vêm com perguntas pré-escritas, lógica condicional e algoritmos de recomendação de produtos.
         Escolhe um modelo, liga os teus produtos, personaliza o design e publica. Clica em qualquer modelo abaixo para ver uma demo ao vivo.
       </p>
-    </div>
-  </section>
+  </PageHero>
 
   <!-- Top CTA banner -->
   <section class="mx-auto max-w-7xl px-6 pb-8">

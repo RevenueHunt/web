@@ -1,5 +1,6 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import PageHero from "../../../components/PageHero.astro";
 import Eyebrow from "../../../components/Eyebrow.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, softwareApplication } from "../../../lib/schema";
@@ -110,8 +111,7 @@ const jsonLd = [
   jsonLd={jsonLd}
 >
   <!-- Hero -->
-  <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20 text-center">
+  <PageHero center>
       <Breadcrumb items={[{ label: "Start", href: localizedHref("/", "de") }, { label: "Quiz-Vorlagen" }]} />
       <Eyebrow>Quiz-Vorlagen</Eyebrow>
       <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
@@ -131,8 +131,7 @@ const jsonLd = [
         Diese anpassbaren HTML-Quiz-Vorlagen kommen mit vorformulierten Fragen, konditionaler Logik und Produktempfehlungs-Algorithmen.
         Wähle eine Vorlage, verbinde deine Produkte, passe das Design an und veröffentliche. Klicke unten auf eine beliebige Vorlage, um eine Live-Demo zu sehen.
       </p>
-    </div>
-  </section>
+  </PageHero>
 
   <!-- Top CTA banner -->
   <section class="mx-auto max-w-7xl px-6 pb-8">

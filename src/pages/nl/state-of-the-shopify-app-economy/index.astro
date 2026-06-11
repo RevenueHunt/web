@@ -1,5 +1,6 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import PageHero from "../../../components/PageHero.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, article, faqPage } from "../../../lib/schema";
 import { SITE } from "../../../lib/site";
@@ -147,8 +148,7 @@ const methodologyHtml = METHODOLOGY;
   translated={true}
 >
   <!-- Hero -->
-  <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+  <PageHero>
       <Breadcrumb items={[{ label: "Home", href: localizedHref("/", "nl") }, { label: "De staat van de Shopify-app-economie" }]} />
       <div class="text-center">
         <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">
@@ -161,8 +161,7 @@ const methodologyHtml = METHODOLOGY;
           <strong>Er zijn 22.546 actieve apps in de Shopify App Store, en bijna geen enkele komt ergens.</strong> We maakten een momentopname van elke actieve app en lazen de data over groei, reviews, omzet, prijzen en wie ze bouwt. Ze vertellen één verhaal: de app bouwen was nooit het moeilijke deel.
         </p>
       </div>
-    </div>
-  </section>
+  </PageHero>
 
   <!-- Source band -->
   <section class="bg-white">

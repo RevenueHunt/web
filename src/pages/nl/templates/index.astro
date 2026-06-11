@@ -1,5 +1,6 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import PageHero from "../../../components/PageHero.astro";
 import Eyebrow from "../../../components/Eyebrow.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, softwareApplication } from "../../../lib/schema";
@@ -114,8 +115,7 @@ const jsonLd = [
   translated={true}
 >
   <!-- Hero -->
-  <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20 text-center">
+  <PageHero center>
       <Breadcrumb items={[{ label: "Home", href: lp("/") }, { label: "Quiztemplates" }]} />
       <Eyebrow>Quiztemplates</Eyebrow>
       <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
@@ -135,8 +135,7 @@ const jsonLd = [
         Deze quiztemplates in aanpasbare HTML bevatten kant-en-klare vragen, voorwaardelijke logica en algoritmes voor productaanbevelingen.
         Kies een template, koppel je producten, pas het design aan en publiceer. Klik op een template hieronder om een live demo te bekijken.
       </p>
-    </div>
-  </section>
+  </PageHero>
 
   <!-- Top CTA banner -->
   <section class="mx-auto max-w-7xl px-6 pb-8">

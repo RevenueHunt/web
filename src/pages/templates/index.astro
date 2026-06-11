@@ -1,5 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
+import PageHero from "../../components/PageHero.astro";
 import Eyebrow from "../../components/Eyebrow.astro";
 import Breadcrumb from "../../components/Breadcrumb.astro";
 import { organization, breadcrumb, softwareApplication } from "../../lib/schema";
@@ -108,8 +109,7 @@ const jsonLd = [
   jsonLd={jsonLd}
 >
   <!-- Hero -->
-  <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20 text-center">
+  <PageHero center>
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Quiz templates" }]} />
       <Eyebrow>Quiz templates</Eyebrow>
       <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
@@ -129,8 +129,7 @@ const jsonLd = [
         These customizable HTML quiz templates come with pre-written questions, conditional logic, and product recommendation algorithms.
         Choose a template, connect your products, customize the design, and publish. Click any template below to see a live demo.
       </p>
-    </div>
-  </section>
+  </PageHero>
 
   <!-- Top CTA banner -->
   <section class="mx-auto max-w-7xl px-6 pb-8">

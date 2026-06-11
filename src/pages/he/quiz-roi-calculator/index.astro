@@ -1,5 +1,6 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import PageHero from "../../../components/PageHero.astro";
 import Eyebrow from "../../../components/Eyebrow.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, softwareApplication, faqPage } from "../../../lib/schema";
@@ -119,8 +120,7 @@ const jsonLd = [
   translated={true}
 >
   <!-- Hero -->
-  <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+  <PageHero>
       <Breadcrumb items={[{ label: "דף הבית", href: localizedHref("/", "he") }, { label: "מחשבון ROI של החידון" }]} />
       <div class="text-center">
         <Eyebrow>כלי חינמי</Eyebrow>
@@ -129,8 +129,7 @@ const jsonLd = [
           גלו את ההכנסות הנוספות שחידון המלצת מוצרים יכול להביא לחנות שלכם. ה-benchmark של המרה ב-275% הוא אמיתי, <a href={localizedHref("/state-of-product-recommendation-quizzes/", "he")} class="font-semibold text-[#16161D] underline decoration-2 decoration-[#16161D]/40 underline-offset-2 hover:decoration-[#16161D]">מדוד על יותר מ-45M תשובות חידון</a>, לא מכפיל מומצא. התאימו את הנתונים כך שיתאימו למספרים שלכם.
         </p>
       </div>
-    </div>
-  </section>
+  </PageHero>
 
   <!-- Real-data proof band -->
   <section class="bg-white">

@@ -1,5 +1,6 @@
 ---
 import { getCollection, getEntry, render } from "astro:content";
+import PageHero from "../../components/PageHero.astro";
 import Breadcrumb from "../../components/Breadcrumb.astro";
 import Base from "../../layouts/Base.astro";
 import { breadcrumb, organization } from "../../lib/schema";
@@ -30,15 +31,13 @@ function fmt(d: Date) {
 ---
 
 <Base title={`${intro!.data.title} - ${SITE.name}`} description={intro!.data.description} jsonLd={jsonLd}>
-  <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+  <PageHero>
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: intro!.data.title }]} />
       <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">{intro!.data.title}</h1>
       {intro!.data.description && (
         <p class="mt-6 max-w-3xl text-xl text-slate-600">{intro!.data.description}</p>
       )}
-    </div>
-  </section>
+  </PageHero>
 
   <div class="mx-auto max-w-4xl px-6 py-12 sm:py-16">
     <article class="prose prose-slate prose-lg max-w-none

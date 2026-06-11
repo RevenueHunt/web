@@ -1,5 +1,6 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import PageHero from "../../../components/PageHero.astro";
 import Eyebrow from "../../../components/Eyebrow.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
 import YouTubeFacade from "../../../components/YouTubeFacade.astro";
@@ -62,8 +63,7 @@ const responseTiers = [
   translated={true}
 >
   <!-- Hero -->
-  <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20 text-center">
+  <PageHero center>
       <Breadcrumb items={[{ label: "Início", href: localizedHref("/", "pt") }, { label: "Contacto" }]} />
       <Eyebrow>Fala connosco</Eyebrow>
       <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
@@ -73,8 +73,7 @@ const responseTiers = [
         Lê os guias de ajuda, vê o tutorial ou faz o nosso quiz de suporte aqui em baixo - a equipa de suporte mais
         perspicaz e simpática do e-commerce vai responder-te.
       </p>
-    </div>
-  </section>
+  </PageHero>
 
   <!-- Two-column: video + channels -->
   <section class="mx-auto max-w-7xl px-6 py-12">

@@ -1,5 +1,6 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import PageHero from "../../../components/PageHero.astro";
 import Eyebrow from "../../../components/Eyebrow.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, softwareApplication } from "../../../lib/schema";
@@ -109,8 +110,7 @@ function isExternal(href: string) {
   translated={true}
 >
   <!-- Hero -->
-  <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+  <PageHero>
       <Breadcrumb items={[{ label: "Etusivu", href: localizedHref("/", "fi") }, { label: "Integraatiot" }]} />
       <Eyebrow>Integraatiot</Eyebrow>
       <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
@@ -119,8 +119,7 @@ function isExternal(href: string) {
       <p class="mt-6 max-w-3xl text-xl text-slate-600">
         Muuta kyselyn vastaukset liikevaihdoksi tehokkailla integraatioilla. Yhdistä RevenueHunt nykyiseen markkinointipinoosi automatisoidaksesi jatkoviestit, personoidaksesi kampanjat, mitataksesi suorituskykyä ja muuttaaksesi enemmän uteliaita ostajiksi. <strong class="text-slate-900">Ohjelmointia ei tarvita.</strong>
       </p>
-    </div>
-  </section>
+  </PageHero>
 
   <!-- 3-up pillars -->
   <section class="border-y border-slate-200 bg-white">

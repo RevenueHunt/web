@@ -1,5 +1,6 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import PageHero from "../../../components/PageHero.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, article, faqPage } from "../../../lib/schema";
 import { SITE } from "../../../lib/site";
@@ -148,8 +149,7 @@ const methodologyHtml = METHODOLOGY;
   translated={true}
 >
   <!-- Hero -->
-  <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+  <PageHero>
       <Breadcrumb items={[{ label: "Startseite", href: localizedHref("/", "de") }, { label: "Der Stand der Shopify-App-Ökonomie" }]} />
       <div class="text-center">
         <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">
@@ -162,8 +162,7 @@ const methodologyHtml = METHODOLOGY;
           <strong>Es gibt 22.546 aktive Apps im Shopify App Store, und fast keine davon kommt irgendwohin.</strong> Wir haben eine Momentaufnahme jeder aktiven App gemacht und dann die Daten zu Wachstum, Bewertungen, Umsatz, Preisen und dazu, wer sie baut, gelesen. Sie erzählen eine einzige Geschichte: Die App zu bauen war nie der schwierige Teil.
         </p>
       </div>
-    </div>
-  </section>
+  </PageHero>
 
   <!-- Source band -->
   <section class="bg-white">

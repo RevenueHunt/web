@@ -1,5 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
+import PageHero from "../../components/PageHero.astro";
 import Breadcrumb from "../../components/Breadcrumb.astro";
 import { organization, breadcrumb, article, faqPage } from "../../lib/schema";
 import { SITE } from "../../lib/site";
@@ -119,8 +120,7 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
   translated={true}
 >
   <!-- Hero -->
-  <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+  <PageHero>
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "State of the Shopify app economy" }]} />
       <div class="text-center">
         <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">
@@ -133,8 +133,7 @@ const quizParas = QUIZ_LANE.caption.map((p) =>
           <strong>22,546 apps are live on the Shopify App Store, and almost none of them get anywhere.</strong> We took a snapshot of every live app, then read the data on growth, reviews, revenue, pricing and who builds them. It tells one story: building the app was never the hard part.
         </p>
       </div>
-    </div>
-  </section>
+  </PageHero>
 
   <!-- Source band -->
   <section class="bg-white">

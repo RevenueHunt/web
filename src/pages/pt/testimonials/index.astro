@@ -1,5 +1,6 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import PageHero from "../../../components/PageHero.astro";
 import Eyebrow from "../../../components/Eyebrow.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, softwareApplication } from "../../../lib/schema";
@@ -72,8 +73,7 @@ const jsonLd = [
   translated={true}
 >
   <!-- Hero -->
-  <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20 text-center">
+  <PageHero center>
       <Breadcrumb items={[{ label: "Início", href: localizedHref("/", "pt") }, { label: "Testemunhos" }]} />
       <Eyebrow>Descobre porque os nossos clientes adoram o nosso</Eyebrow>
       <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
@@ -92,8 +92,7 @@ const jsonLd = [
         e envia leads segmentados diretamente para o Klaviyo, o Meta ou o GA4. Sem programação. Sem fricção. Apenas conversões.
       </p>
       <p class="mt-6 font-semibold text-slate-900">Mas não acredites apenas na nossa palavra.</p>
-    </div>
-  </section>
+  </PageHero>
 
   <!-- Category tabs (anchor links - no JS) -->
   <nav class="border-b border-slate-200 bg-white" aria-label="Testimonial categories">

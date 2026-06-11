@@ -1,5 +1,6 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import PageHero from "../../../components/PageHero.astro";
 import Eyebrow from "../../../components/Eyebrow.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb } from "../../../lib/schema";
@@ -119,8 +120,7 @@ const jsonLd = [
   translated={true}
 >
   <!-- Hero -->
-  <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20 text-center">
+  <PageHero center>
       <Breadcrumb items={[{ label: "Etusivu", href: localizedHref("/", "fi") }, { label: "Partnerit ja affiliatet" }]} />
       <Eyebrow>Partneriohjelma</Eyebrow>
       <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
@@ -148,8 +148,7 @@ const jsonLd = [
           Katso partnerimme
         </a>
       </div>
-    </div>
-  </section>
+  </PageHero>
 
   <!-- Who you are + perks -->
   <section class="mx-auto max-w-7xl px-6 py-16">

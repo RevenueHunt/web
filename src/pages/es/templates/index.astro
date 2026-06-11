@@ -1,5 +1,6 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import PageHero from "../../../components/PageHero.astro";
 import Eyebrow from "../../../components/Eyebrow.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, softwareApplication } from "../../../lib/schema";
@@ -114,8 +115,7 @@ const jsonLd = [
   translated={true}
 >
   <!-- Hero -->
-  <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20 text-center">
+  <PageHero center>
       <Breadcrumb items={[{ label: "Inicio", href: lp("/") }, { label: "Plantillas de quiz" }]} />
       <Eyebrow>Plantillas de quiz</Eyebrow>
       <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
@@ -135,8 +135,7 @@ const jsonLd = [
         Estas plantillas de quiz en HTML personalizable incluyen preguntas ya redactadas, lógica condicional y algoritmos de recomendación de productos.
         Elige una plantilla, conecta tus productos, personaliza el diseño y publica. Haz clic en cualquier plantilla de abajo para ver una demo en vivo.
       </p>
-    </div>
-  </section>
+  </PageHero>
 
   <!-- Top CTA banner -->
   <section class="mx-auto max-w-7xl px-6 pb-8">

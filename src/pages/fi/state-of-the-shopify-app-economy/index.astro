@@ -1,5 +1,6 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import PageHero from "../../../components/PageHero.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, article, faqPage } from "../../../lib/schema";
 import { SITE } from "../../../lib/site";
@@ -147,8 +148,7 @@ const methodologyHtml = METHODOLOGY;
   translated={true}
 >
   <!-- Hero -->
-  <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+  <PageHero>
       <Breadcrumb items={[{ label: "Etusivu", href: localizedHref("/", "fi") }, { label: "Shopifyn sovellustalouden tila" }]} />
       <div class="text-center">
         <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">
@@ -161,8 +161,7 @@ const methodologyHtml = METHODOLOGY;
           <strong>Shopify App Storessa on 22 546 aktiivista sovellusta, eivätkä lähes mitkään niistä pääse mihinkään.</strong> Otimme tilannekuvan jokaisesta aktiivisesta sovelluksesta ja luimme datan kasvusta, arvosteluista, tuloista, hinnoittelusta ja siitä, kuka ne tekee. Ne kertovat yhtä ainoaa tarinaa: sovelluksen tekeminen ei koskaan ollut se vaikea osa.
         </p>
       </div>
-    </div>
-  </section>
+  </PageHero>
 
   <!-- Source band -->
   <section class="bg-white">

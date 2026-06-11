@@ -1,5 +1,6 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import PageHero from "../../../components/PageHero.astro";
 import Eyebrow from "../../../components/Eyebrow.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, softwareApplication, faqPage } from "../../../lib/schema";
@@ -119,8 +120,7 @@ const jsonLd = [
   translated={true}
 >
   <!-- Hero -->
-  <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+  <PageHero>
       <Breadcrumb items={[{ label: "Hem", href: localizedHref("/", "sv") }, { label: "ROI-kalkylator för quiz" }]} />
       <div class="text-center">
         <Eyebrow>Gratisverktyg</Eyebrow>
@@ -129,8 +129,7 @@ const jsonLd = [
           Upptäck de extra intäkter som ett produktrekommendationsquiz kan ge din butik. Konverteringsbenchmarken på 275 % är verklig, <a href={localizedHref("/state-of-product-recommendation-quizzes/", "sv")} class="font-semibold text-[#16161D] underline decoration-2 decoration-[#16161D]/40 underline-offset-2 hover:decoration-[#16161D]">uppmätt över fler än 45M quizsvar</a>, inte en påhittad multiplikator. Justera siffrorna så att de matchar dina egna.
         </p>
       </div>
-    </div>
-  </section>
+  </PageHero>
 
   <!-- Real-data proof band -->
   <section class="bg-white">

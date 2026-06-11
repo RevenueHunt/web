@@ -1,5 +1,6 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import PageHero from "../../../components/PageHero.astro";
 import Eyebrow from "../../../components/Eyebrow.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, softwareApplication, faqPage } from "../../../lib/schema";
@@ -119,8 +120,7 @@ const jsonLd = [
   translated={true}
 >
   <!-- Hero -->
-  <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+  <PageHero>
       <Breadcrumb items={[{ label: "Domů", href: localizedHref("/", "cs") }, { label: "Kalkulačka ROI kvízu" }]} />
       <div class="text-center">
         <Eyebrow>Nástroj zdarma</Eyebrow>
@@ -129,8 +129,7 @@ const jsonLd = [
           Zjisti, kolik tržeb navíc by tvému obchodu mohl přinést kvíz s doporučením produktů. Konverzní benchmark 275 % je skutečný, <a href={localizedHref("/state-of-product-recommendation-quizzes/", "cs")} class="font-semibold text-[#16161D] underline decoration-2 decoration-[#16161D]/40 underline-offset-2 hover:decoration-[#16161D]">naměřený na více než 45M odpovědích z kvízů</a>, ne vymyšlený násobek. Uprav data tak, aby odpovídala tvým číslům.
         </p>
       </div>
-    </div>
-  </section>
+  </PageHero>
 
   <!-- Real-data proof band -->
   <section class="bg-white">

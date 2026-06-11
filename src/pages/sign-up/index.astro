@@ -1,5 +1,6 @@
 ---
 import Base from "../../layouts/Base.astro";
+import PageHero from "../../components/PageHero.astro";
 import Eyebrow from "../../components/Eyebrow.astro";
 import Breadcrumb from "../../components/Breadcrumb.astro";
 import { organization, breadcrumb } from "../../lib/schema";
@@ -19,8 +20,7 @@ const jsonLd = [
   description="Create your free RevenueHunt account. Build a product recommendation quiz in minutes - no credit card required."
   jsonLd={jsonLd}
 >
-  <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-3xl px-6 py-20 text-center sm:py-24">
+  <PageHero width="3xl" center>
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Sign up" }]} />
       <Eyebrow>Welcome</Eyebrow>
       <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
@@ -44,8 +44,7 @@ const jsonLd = [
         </a>
       </div>
       <p class="mt-6 text-sm text-slate-500">No credit card required · Free plan available · 30-day money-back guarantee on paid plans</p>
-    </div>
-  </section>
+  </PageHero>
 
   <section class="mx-auto max-w-4xl px-6 pb-20">
     <div class="grid gap-8 md:grid-cols-2">

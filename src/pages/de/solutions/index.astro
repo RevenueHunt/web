@@ -1,5 +1,6 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import PageHero from "../../../components/PageHero.astro";
 import Eyebrow from "../../../components/Eyebrow.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, softwareApplication } from "../../../lib/schema";
@@ -50,8 +51,7 @@ const jsonLd = [
   translated={true}
 >
   <!-- Hero -->
-  <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+  <PageHero>
       <Breadcrumb items={[{ label: "Start", href: localizedHref("/", "de") }, { label: "Lösungen" }]} />
       <div class="text-center">
         <Eyebrow>Lösungen</Eyebrow>
@@ -62,8 +62,7 @@ const jsonLd = [
           Ob du Hautpflege, Nahrungsergänzung oder Sofas verkaufst - ein Quiz, das Käufern hilft, das richtige Produkt zu finden, konvertiert besser als eine Kategorieseite. Wähle deine Branche oder deinen Quiz-Typ, um zu sehen, wie.
         </p>
       </div>
-    </div>
-  </section>
+  </PageHero>
 
   <!-- By industry -->
   <section class="bg-white">

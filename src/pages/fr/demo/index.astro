@@ -1,5 +1,6 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import PageHero from "../../../components/PageHero.astro";
 import Eyebrow from "../../../components/Eyebrow.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb } from "../../../lib/schema";
@@ -24,8 +25,7 @@ const jsonLd = [
   lang="fr"
   translated={true}
 >
-  <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+  <PageHero>
       <Breadcrumb items={[{ label: "Accueil", href: localizedHref("/", "fr") }, { label: "Réserver une démo" }]} />
       <div class="grid gap-12 lg:grid-cols-2 lg:gap-16">
         <div>
@@ -71,8 +71,7 @@ const jsonLd = [
           ></iframe>
         </div>
       </div>
-    </div>
-  </section>
+  </PageHero>
 
   <section class="bg-[#16161D]">
     <div class="mx-auto max-w-4xl px-6 py-20 text-center">

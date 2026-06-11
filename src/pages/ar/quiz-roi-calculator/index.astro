@@ -1,5 +1,6 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import PageHero from "../../../components/PageHero.astro";
 import Eyebrow from "../../../components/Eyebrow.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, softwareApplication, faqPage } from "../../../lib/schema";
@@ -119,8 +120,7 @@ const jsonLd = [
   translated={true}
 >
   <!-- Hero -->
-  <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+  <PageHero>
       <Breadcrumb items={[{ label: "الرئيسية", href: localizedHref("/", "ar") }, { label: "حاسبة ROI الاختبار" }]} />
       <div class="text-center">
         <Eyebrow>أداة مجانية</Eyebrow>
@@ -129,8 +129,7 @@ const jsonLd = [
           اكتشف الإيرادات الإضافية التي يمكن أن يحققها اختبار التوصية بالمنتجات لمتجرك. معيار التحويل البالغ 275% حقيقي، <a href={localizedHref("/state-of-product-recommendation-quizzes/", "ar")} class="font-semibold text-[#16161D] underline decoration-2 decoration-[#16161D]/40 underline-offset-2 hover:decoration-[#16161D]">مقاس على أكثر من 45M إجابة اختبار</a>، وليس مضاعفاً مختلقاً. عدّل البيانات لتتطابق مع أرقامك.
         </p>
       </div>
-    </div>
-  </section>
+  </PageHero>
 
   <!-- Real-data proof band -->
   <section class="bg-white">

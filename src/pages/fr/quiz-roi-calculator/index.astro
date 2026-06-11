@@ -1,5 +1,6 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import PageHero from "../../../components/PageHero.astro";
 import Eyebrow from "../../../components/Eyebrow.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, softwareApplication, faqPage } from "../../../lib/schema";
@@ -119,8 +120,7 @@ const jsonLd = [
   translated={true}
 >
   <!-- Hero -->
-  <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+  <PageHero>
       <Breadcrumb items={[{ label: "Accueil", href: localizedHref("/", "fr") }, { label: "Calculateur de ROI du quiz" }]} />
       <div class="text-center">
         <Eyebrow>Outil gratuit</Eyebrow>
@@ -129,8 +129,7 @@ const jsonLd = [
           Découvrez les revenus supplémentaires qu'un quiz de recommandation de produits pourrait apporter à votre boutique. Le benchmark de conversion de 275% est réel, <a href={localizedHref("/state-of-product-recommendation-quizzes/", "fr")} class="font-semibold text-[#16161D] underline decoration-2 decoration-[#16161D]/40 underline-offset-2 hover:decoration-[#16161D]">mesuré sur plus de 45M de réponses de quiz</a>, pas un multiplicateur inventé. Ajustez les données pour qu'elles correspondent à vos chiffres.
         </p>
       </div>
-    </div>
-  </section>
+  </PageHero>
 
   <!-- Real-data proof band -->
   <section class="bg-white">

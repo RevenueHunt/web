@@ -1,5 +1,6 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import PageHero from "../../../components/PageHero.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, article, faqPage } from "../../../lib/schema";
 import { SITE } from "../../../lib/site";
@@ -147,8 +148,7 @@ const methodologyHtml = METHODOLOGY;
   translated={true}
 >
   <!-- Hero -->
-  <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+  <PageHero>
       <Breadcrumb items={[{ label: "דף הבית", href: localizedHref("/", "he") }, { label: "מצב כלכלת האפליקציות של Shopify" }]} />
       <div class="text-center">
         <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">
@@ -161,8 +161,7 @@ const methodologyHtml = METHODOLOGY;
           <strong>יש 22,546 אפליקציות פעילות ב-Shopify App Store, וכמעט אף אחת מהן לא מגיעה לשום מקום.</strong> לקחנו תמונת מצב של כל אפליקציה פעילה וקראנו את הנתונים על צמיחה, ביקורות, הכנסות, תמחור ומי בונה אותן. הם מספרים סיפור אחד: בניית האפליקציה מעולם לא הייתה החלק הקשה.
         </p>
       </div>
-    </div>
-  </section>
+  </PageHero>
 
   <!-- Source band -->
   <section class="bg-white">

@@ -1,5 +1,6 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import PageHero from "../../../components/PageHero.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
 import { organization, breadcrumb, article, faqPage } from "../../../lib/schema";
 import { SITE } from "../../../lib/site";
@@ -148,8 +149,7 @@ const methodologyHtml = METHODOLOGY;
   translated={true}
 >
   <!-- Hero -->
-  <section class="bg-gradient-to-b from-slate-50 to-white">
-    <div class="mx-auto max-w-5xl px-6 py-16 sm:py-20">
+  <PageHero>
       <Breadcrumb items={[{ label: "Hem", href: localizedHref("/", "sv") }, { label: "Läget för Shopifys app-ekonomi" }]} />
       <div class="text-center">
         <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[#616eff]">
@@ -162,8 +162,7 @@ const methodologyHtml = METHODOLOGY;
           <strong>Det finns 22 546 aktiva appar i Shopify App Store, och nästan ingen av dem kommer någonstans.</strong> Vi tog en ögonblicksbild av varenda aktiv app och läste sedan av datan om tillväxt, recensioner, intäkter, priser och vilka som bygger dem. De berättar en enda historia: att bygga appen var aldrig den svåra delen.
         </p>
       </div>
-    </div>
-  </section>
+  </PageHero>
 
   <!-- Source band -->
   <section class="bg-white">

@@ -1,5 +1,6 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import PageHero from "../../../components/PageHero.astro";
 import Eyebrow from "../../../components/Eyebrow.astro";
 import Breadcrumb from "../../../components/Breadcrumb.astro";
 import PlanCards from "../../../components/pages/PlanCards.astro";
@@ -42,8 +43,7 @@ const jsonLd = [
   lang="cs"
   translated={true}
 >
-  <section class="bg-slate-50">
-    <div class="mx-auto max-w-7xl px-6 py-16 sm:py-20">
+  <PageHero width="7xl" bg="bg-slate-50">
       <Breadcrumb items={[{ label: "Domů", href: localizedHref("/", "cs") }, { label: "Ceník" }]} />
 
       <div class="text-center">
@@ -78,8 +78,7 @@ const jsonLd = [
         <h2 class="sr-only">Plány</h2>
         <PlanCards lang="cs" />
       </div>
-    </div>
-  </section>
+  </PageHero>
 
   <script is:inline>
     (function () {

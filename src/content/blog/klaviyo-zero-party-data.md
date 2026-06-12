@@ -60,7 +60,7 @@ You've built a list. You haven't built an asset.
 
 ![Head of retention staring at an empty Klaviyo dashboard](/img/blog/klaviyo-zero-party-data/blog_klaviyo_graveyard_img1.webp)
 
-Your email platform is not the problem. The data feeding it is.
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;Your email platform is not the problem. The data feeding it is.</p>
 
 This is the graveyard problem, but not a Klaviyo problem. Klaviyo is operating exactly as designed; it segments on the data it has. The real crisis is upstream: the data pipeline feeding your account was broken at the source, on the day those 75,000 subscribers opted in through a generic "10% off your first order" popup that captured an email address and nothing else.
 
@@ -141,7 +141,7 @@ If you're evaluating a quiz on on-site conversion lift alone, you're measuring t
 
 ![Before and after Klaviyo profile card - empty vs enriched with zero-party data](/img/blog/klaviyo-zero-party-data/blog_klaviyo_graveyard_img3.webp)
 
-Five questions. Five properties. Five segments you couldn't build yesterday.
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;Same subscriber, before and after a five-question quiz. Five properties, five segments you couldn't build yesterday.</p>
 
 ## Solution architecture: quiz to Klaviyo, end to end
 
@@ -183,7 +183,7 @@ With these properties in place, the flows you've wanted to build become buildabl
 
 ![RPR before and after quiz enrichment - same Klaviyo account, different data](/img/blog/klaviyo-zero-party-data/blog_klaviyo_graveyard_img2.webp)
 
-13% of the list. 40%+ of email revenue. The only difference was the data inside the profiles.
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;13% of the list, 40%+ of email revenue. The only difference was the data inside the profiles.</p>
 
 ### The set-and-forget data pipeline
 

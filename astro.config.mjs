@@ -248,6 +248,15 @@ export default defineConfig({
       "/activecampaign-quiz-integration/",
     "/new-built-for-shopify-revenuehunt-app-is-out-now/":
       "/revenuehunt-built-for-shopify/",
+    // Off-brand sponsored post: 2,604 imp / 0 clicks, doesn't convert,
+    // not aligned with the brand. PRD W6: redirect into the W2b funnel pillar.
+    "/shopify-shipping-apps/":
+      "/build-sales-funnel-shopify-store/",
+    // Sponsored PR backlink post for a Fulfillman YouTube mention.
+    // Carried stale stats (15K stores / 40M / $1.3B) that conflict with
+    // canonical 20K+ / 45M+ / $370M+; no SEO value of its own.
+    "/fulfillman-features-revenuehunt-best-product-quiz-app-for-shopify/":
+      "/shopify-quiz-app/",
     "/shop/": "/product-recommendation-quiz-shopify/",
   },
   integrations: [

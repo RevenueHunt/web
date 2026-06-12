@@ -27,20 +27,23 @@ A 12-step qualifying [quiz funnel](/glossary/quiz-funnel/) replaced the [beauty]
   </ul>
 </div>
 
-<div class="not-prose my-10 rounded-3xl bg-[#16161D] p-8 text-white shadow-xl">
-  <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400 mb-6">90-day disclosed results vs platform benchmark</p>
-  <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-    <div>
-      <p class="text-4xl font-bold text-emerald-400">9.8%</p>
-      <p class="text-sm text-slate-300 mt-2">quiz-to-purchase conversion on cold Meta traffic; the <a href="/state-of-product-recommendation-quizzes/" class="underline decoration-emerald-400/40 hover:decoration-emerald-400">RevenueHunt platform benchmark</a> is 5.5% pooled, 6.1% in beauty/skincare</p>
+<div class="not-prose my-12 rounded-3xl bg-gradient-to-br from-[#0f1419] to-[#16161D] p-8 sm:p-10 text-white shadow-2xl ring-1 ring-white/10">
+  <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-emerald-400 mb-8">90-day disclosed results vs platform benchmark</p>
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-6 sm:divide-x sm:divide-white/10">
+    <div class="sm:pr-6">
+      <p class="text-5xl sm:text-6xl font-bold text-emerald-400 tracking-tight leading-none">9.8<span class="text-3xl sm:text-4xl">%</span></p>
+      <p class="text-[11px] font-semibold uppercase tracking-widest text-slate-400 mt-3">quiz-to-purchase CVR</p>
+      <p class="text-sm text-slate-300 mt-3 leading-relaxed">Cold Meta traffic. The <a href="/state-of-product-recommendation-quizzes/" class="underline decoration-emerald-400/40 hover:decoration-emerald-400">RevenueHunt platform benchmark</a> is 5.5% pooled, 6.1% in beauty/skincare.</p>
     </div>
-    <div>
-      <p class="text-4xl font-bold text-emerald-400">+42.64%</p>
-      <p class="text-sm text-slate-300 mt-2">average order value lift vs the prior quarter ($107.16 vs ~$75.13)</p>
+    <div class="sm:px-6">
+      <p class="text-5xl sm:text-6xl font-bold text-emerald-400 tracking-tight leading-none">+42.64<span class="text-3xl sm:text-4xl">%</span></p>
+      <p class="text-[11px] font-semibold uppercase tracking-widest text-slate-400 mt-3">AOV lift</p>
+      <p class="text-sm text-slate-300 mt-3 leading-relaxed">Average order value vs the prior quarter ($107.16 vs ~$75.13).</p>
     </div>
-    <div>
-      <p class="text-4xl font-bold text-emerald-400">$691K</p>
-      <p class="text-sm text-slate-300 mt-2">quiz-attributed revenue in 90 days, with 7,100 orders from 72,200 quiz completions and a 75.2% completion rate</p>
+    <div class="sm:pl-6">
+      <p class="text-5xl sm:text-6xl font-bold text-emerald-400 tracking-tight leading-none">$691<span class="text-3xl sm:text-4xl">K</span></p>
+      <p class="text-[11px] font-semibold uppercase tracking-widest text-slate-400 mt-3">attributed revenue</p>
+      <p class="text-sm text-slate-300 mt-3 leading-relaxed">90 days, 7,100 orders from 72,200 quiz completions, 75.2% completion rate.</p>
     </div>
   </div>
 </div>
@@ -72,7 +75,7 @@ The brand operates in the premium at-home [beauty](/solutions/beauty/) device ve
 
 ![Flagship facial sculpting device paired with a hydrating serum (illustrative)](/img/blog/anti-aging-beauty-brand-quiz-funnel-case-study/blog_casestudy_aov42_img2.webp)
 
-_Fig. 01: the brand's flagship product, an at-home facial sculpting device paired with a hydrating serum (illustrative, not the actual product)._
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;The brand's flagship product, an at-home facial sculpting device paired with a hydrating serum (illustrative, not the actual product).</p>
 
 Their customer base is explicitly concentrated in the 55+ demographic. This is a high-intent, purchase-ready segment that is highly motivated by anti-ageing outcomes (wrinkle reduction, skin firmness) but is also sceptical of topical products that have not delivered visible results. The brand's core proposition (_a non-invasive, at-home alternative to Botox and fillers_) speaks directly to that scepticism.
 
@@ -104,7 +107,7 @@ The [RevenueHunt: Recommender Quiz app](/revenuehunt-built-for-shopify/) was sel
 
 ![How the qualifying quiz funnel works: 12 steps alternating between questions and persuasion checkpoints](/img/blog/anti-aging-beauty-brand-quiz-funnel-case-study/blog_casestudy_aov42_img3v3.webp)
 
-_Fig. 02: how the qualifying quiz funnel works. Cold ad traffic enters a 12-step experience that alternates between data-collection questions and persuasion checkpoints before routing every completer to a single purchase-ready results page. Quiz answers sync automatically to [Klaviyo](/klaviyo-zero-party-data/) for post-purchase segmentation._
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;How the qualifying quiz funnel works. Cold ad traffic enters a 12-step experience that alternates between data-collection questions and persuasion checkpoints before routing every completer to a single purchase-ready results page. Quiz answers sync automatically to <a href="/klaviyo-zero-party-data/" class="underline decoration-slate-300 hover:decoration-slate-500">Klaviyo</a> for post-purchase segmentation.</p>
 
 ## 05 · The implementation
 
@@ -114,7 +117,7 @@ The quiz is hosted at a dedicated page URL and runs as the full-screen brand exp
 
 ![Quiz opening with a value hook and the first qualifying question on age](/img/blog/anti-aging-beauty-brand-quiz-funnel-case-study/blog_casestudy_aov42_img1.webp)
 
-_Fig. 03: the quiz opens immediately with a value hook and the first qualifying question, age._
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;The quiz opens immediately with a value hook and the first qualifying question, age.</p>
 
 ### 5.1 Quiz structure overview
 
@@ -143,7 +146,7 @@ The most distinctive element of this implementation is not the data-collection l
 
 ![The "Don't worry if other solutions haven't worked..." validation screen mid-quiz](/img/blog/anti-aging-beauty-brand-quiz-funnel-case-study/blog_casestudy_aov42_img4-e1776413992514.webp)
 
-_Fig. 04: "Don't worry if other solutions haven't worked..." is the highest-impact persuasion checkpoint, addressing the prior-product-failure objection in the same breath the user surfaces it._
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;"Don't worry if other solutions haven't worked..." is the highest-impact persuasion checkpoint, addressing the prior-product-failure objection in the same breath the user surfaces it.</p>
 
 ### 5.3 Drop-off performance
 
@@ -168,7 +171,7 @@ The quiz achieves a 75.2% overall completion rate (72,200 completions from 96,10
 
 ![AOV trend: ~$75 baseline rising to $107 average, peaking near $170 in mid-April](/img/blog/anti-aging-beauty-brand-quiz-funnel-case-study/blog_casestudy_aov42_data_AOVchangegraph2.webp)
 
-_Fig. 05: AOV jumped from a flat ~$75 baseline to $107 current, peaking near $170 by mid-April, a 42.64% lift._
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 05</span> &nbsp;AOV jumped from a flat ~$75 baseline to $107 current, peaking near $170 by mid-April, a 42.64% lift.</p>
 
 > Note on volume comparison: the prior 90-day period (Oct-Jan) includes Black Friday, Cyber Monday, and the holiday shopping season, a structurally higher-traffic, higher-order period for all DTC brands. Volume declines in the Jan-Apr period are consistent with normal seasonal patterns. The **AOV lift of 42.64% is therefore the more meaningful** year-on-year signal: the quiz is extracting significantly higher per-transaction revenue during the lower-volume post-holiday period, suggesting improved funnel targeting or reduced promotional discounting depth.
 
@@ -178,13 +181,13 @@ The quiz achieves a 9.8% conversion rate from quiz responses to completed orders
 
 ![Conversion rate trend averaging 9.8% across 72.5K quiz responses](/img/blog/anti-aging-beauty-brand-quiz-funnel-case-study/blog_casestudy_aov42_data_conversionrategraph2.webp)
 
-_Fig. 06: conversion rate averaged 9.8% across 72.5K responses, trending upward into April._
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 06</span> &nbsp;Conversion rate averaged 9.8% across 72.5K responses, trending upward into April.</p>
 
 At 96,100 quiz starts and 72,200 completions, the funnel retains 75.2% of traffic through the full experience, a high completion rate attributable primarily to the strong hook (value-anchored opening question) and the high mid-funnel continuation rates driven by the persuasion checkpoints (all mid-funnel steps at 94-99.9% continuation). The single-results-page architecture eliminates post-quiz decision fatigue: every completer sees one focused recommendation.
 
 ![Completion rate trend holding around 75% across both 90-day periods](/img/blog/anti-aging-beauty-brand-quiz-funnel-case-study/blog_casestudy_aov42_data_completionrate2.webp)
 
-_Fig. 07: completion rate held at ~75% across both periods, tracking stability even as volume fell._
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 07</span> &nbsp;Completion rate held at ~75% across both periods, tracking stability even as volume fell.</p>
 
 ### 6.3 Demand intelligence from quiz data
 
@@ -194,7 +197,7 @@ Beyond conversion, the quiz has generated a rich demand-signal dataset across 74
 
   ![Quiz response distribution showing 85.1% of 74.5K respondents are 65 or older](/img/blog/anti-aging-beauty-brand-quiz-funnel-case-study/blog_casestudy_aov42_data_questionanswers2.webp)
 
-  _Fig. 08: 85.1% of the 74,500 respondents are 65 or older._
+  <p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 08</span> &nbsp;85.1% of the 74,500 respondents are 65 or older.</p>
 
 - **Primary concern dominance.** Creates a multi-concern audience that can be segmented for targeted email flows.
 - **Treatment history as purchase-intent signal.** Indicates a significant clinical-treatment-aware segment that is likely to respond to cost-comparison and at-home convenience messaging.

@@ -1,11 +1,15 @@
 ---
-title: "First-party data for eCommerce: what it is, how to collect it, and why it matters in 2026"
-description: "First-party data is the customer data you collect on your own infrastructure. Here's how it differs from third-party, how to collect it on Shopify, and how to activate it."
+title: "First-party data: what it is and how to collect it in 2026"
+description: "First-party data is the customer data you collect and own. How it differs from zero- and third-party, the 7 collection channels, and how to activate it."
 pubDate: 2026-05-27T10:00:00Z
-updatedDate: 2026-05-27T10:00:00Z
+updatedDate: 2026-06-12T10:00:00Z
 tags:
-  - "ecommerce"
   - "first-party data"
+  - "zero-party data"
+  - "customer data"
+  - "Shopify"
+  - "privacy"
+  - "GDPR"
 categories:
   - "eCommerce"
 author: "Alex Diaz"
@@ -47,7 +51,7 @@ In practical terms, first-party data on a Shopify store covers:
 - **Transactional data**: orders, basket composition, AOV, lifetime value, return history, payment method, shipping address.
 - **Engagement data**: email opens, clicks, SMS replies, push-notification interactions, app session frequency.
 - **Account and profile data**: email address, name, account creation date, login history.
-- **Stated-preference data**: what the customer told you through a quiz, survey, preference centre or loyalty profile. This subset is also known as zero-party data; for a deeper look at zero-party data specifically, see our [zero-party data guide](https://revenuehunt.com/zero-party-data/).
+- **Stated-preference data**: what the customer told you through a quiz, survey, preference centre or loyalty profile. This subset is also known as [zero-party data](/glossary/zero-party-data/); for the activation playbook (turning quiz answers into Klaviyo segments and email-revenue lift), see [your Klaviyo list is a graveyard](/klaviyo-zero-party-data/).
 - **Customer-service data**: tickets, chat transcripts, NPS scores, post-purchase survey responses.
 
 The unifying thread is that none of it is rented. You don't lose access when an ad platform changes its policy, when a browser ships a privacy update, or when a data broker shuts down. That permanence is the reason first-party data has gone from "useful" to "strategic" in under five years.
@@ -122,57 +126,57 @@ Seven channels consistently produce useful first-party data on a Shopify or Shop
 <svg viewBox="0 0 1600 740" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;" role="img" aria-labelledby="v1t v1d" preserveAspectRatio="xMidYMid meet">
   <title id="v1t">Seven channels for collecting first-party data</title>
   <desc id="v1d">A grid of seven channels Shopify stores use to collect first-party data: customer accounts, email and SMS sign-ups, product recommendation quiz, post-purchase surveys, loyalty programs, customer service, and on-site analytics.</desc>
-  <text x="60" y="52" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="700" fill="#0f172a">Seven channels for collecting first-party data</text>
+  <text x="60" y="52" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="38" font-weight="700" fill="#0f172a">Seven channels for collecting first-party data</text>
   <g transform="translate(60 110)">
     <rect width="340" height="260" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="20" y="34" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#64748b" letter-spacing="2">01</text>
+    <text x="20" y="34" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#64748b" letter-spacing="2">01</text>
     <g transform="translate(20 54) scale(1.4)" stroke="#16161D" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <circle cx="13" cy="12" r="5"/>
       <path d="M3 28c0-5 4.5-9 10-9c2.5 0 4.8 0.8 6.6 2.2"/>
       <path d="M22 24h8M26 20v8"/>
     </g>
-    <text x="20" y="175" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#0f172a">Customer accounts</text>
-    <text x="20" y="207" font-family="system-ui, sans-serif" font-size="14" fill="#475569">Email, address, order history</text>
-    <text x="20" y="227" font-family="system-ui, sans-serif" font-size="14" fill="#475569">from Shopify checkout.</text>
+    <text x="20" y="175" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#0f172a">Customer accounts</text>
+    <text x="20" y="207" font-family="system-ui, sans-serif" font-size="20" fill="#475569">Email, address, order history</text>
+    <text x="20" y="232" font-family="system-ui, sans-serif" font-size="20" fill="#475569">from Shopify checkout.</text>
   </g>
   <g transform="translate(440 110)">
     <rect width="340" height="260" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="20" y="34" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#64748b" letter-spacing="2">02</text>
+    <text x="20" y="34" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#64748b" letter-spacing="2">02</text>
     <g transform="translate(20 54) scale(1.4)" stroke="#16161D" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <rect x="3" y="7" width="26" height="18" rx="2"/>
       <path d="M3 9l13 9 13-9"/>
     </g>
-    <text x="20" y="175" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#0f172a">Email &amp; SMS sign-ups</text>
-    <text x="20" y="207" font-family="system-ui, sans-serif" font-size="14" fill="#475569">Discount-on-signup popups</text>
-    <text x="20" y="227" font-family="system-ui, sans-serif" font-size="14" fill="#475569">and consent capture.</text>
+    <text x="20" y="175" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#0f172a">Email &amp; SMS sign-ups</text>
+    <text x="20" y="207" font-family="system-ui, sans-serif" font-size="20" fill="#475569">Discount-on-signup popups</text>
+    <text x="20" y="232" font-family="system-ui, sans-serif" font-size="20" fill="#475569">and consent capture.</text>
   </g>
   <g transform="translate(820 110)">
     <rect width="340" height="260" rx="10" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
-    <text x="20" y="34" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#1d4ed8" letter-spacing="2">03  ·  HIGHEST YIELD</text>
+    <text x="20" y="34" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#1d4ed8" letter-spacing="2">03  ·  HIGHEST YIELD</text>
     <g transform="translate(20 54) scale(1.4)" stroke="#1d4ed8" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <rect x="6" y="6" width="20" height="22" rx="2"/>
       <rect x="11" y="3" width="10" height="5" rx="1" fill="#1d4ed8" stroke="#1d4ed8"/>
       <path d="M11 18l3 3 6-7"/>
     </g>
-    <text x="20" y="175" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#0f172a">Product recommendation quiz</text>
-    <text x="20" y="207" font-family="system-ui, sans-serif" font-size="14" fill="#475569">Structured preferences,</text>
-    <text x="20" y="227" font-family="system-ui, sans-serif" font-size="14" fill="#475569">consent and contact in one flow.</text>
+    <text x="20" y="175" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#0f172a">Product recommendation quiz</text>
+    <text x="20" y="207" font-family="system-ui, sans-serif" font-size="20" fill="#475569">Structured preferences,</text>
+    <text x="20" y="232" font-family="system-ui, sans-serif" font-size="20" fill="#475569">consent and contact in one flow.</text>
   </g>
   <g transform="translate(1200 110)">
     <rect width="340" height="260" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="20" y="34" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#64748b" letter-spacing="2">04</text>
+    <text x="20" y="34" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#64748b" letter-spacing="2">04</text>
     <g transform="translate(20 54) scale(1.4)" stroke="#16161D" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <path d="M5 6h22a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H14l-7 6V8a2 2 0 0 1 2-2z"/>
       <path d="M13 11c0-2 2-3 3-3s3 1 3 3-3 2-3 4"/>
       <circle cx="16" cy="19" r="0.8" fill="#16161D"/>
     </g>
-    <text x="20" y="175" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#0f172a">Post-purchase surveys</text>
-    <text x="20" y="207" font-family="system-ui, sans-serif" font-size="14" fill="#475569">Attribution and intent in a</text>
-    <text x="20" y="227" font-family="system-ui, sans-serif" font-size="14" fill="#475569">high-goodwill window.</text>
+    <text x="20" y="175" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#0f172a">Post-purchase surveys</text>
+    <text x="20" y="207" font-family="system-ui, sans-serif" font-size="20" fill="#475569">Attribution and intent in a</text>
+    <text x="20" y="232" font-family="system-ui, sans-serif" font-size="20" fill="#475569">high-goodwill window.</text>
   </g>
   <g transform="translate(250 410)">
     <rect width="340" height="260" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="20" y="34" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#64748b" letter-spacing="2">05</text>
+    <text x="20" y="34" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#64748b" letter-spacing="2">05</text>
     <g transform="translate(20 54) scale(1.4)" stroke="#16161D" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <rect x="4" y="11" width="24" height="6" rx="1"/>
       <rect x="6" y="17" width="20" height="11" rx="1"/>
@@ -180,34 +184,34 @@ Seven channels consistently produce useful first-party data on a Shopify or Shop
       <path d="M11 11c-2-2 0-5 2-5s3 2 3 5"/>
       <path d="M21 11c2-2 0-5-2-5s-3 2-3 5"/>
     </g>
-    <text x="20" y="175" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#0f172a">Loyalty programs</text>
-    <text x="20" y="207" font-family="system-ui, sans-serif" font-size="14" fill="#475569">Points-for-data exchange,</text>
-    <text x="20" y="227" font-family="system-ui, sans-serif" font-size="14" fill="#475569">continuously enriching profiles.</text>
+    <text x="20" y="175" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#0f172a">Loyalty programs</text>
+    <text x="20" y="207" font-family="system-ui, sans-serif" font-size="20" fill="#475569">Points-for-data exchange,</text>
+    <text x="20" y="232" font-family="system-ui, sans-serif" font-size="20" fill="#475569">continuously enriching profiles.</text>
   </g>
   <g transform="translate(630 410)">
     <rect width="340" height="260" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="20" y="34" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#64748b" letter-spacing="2">06</text>
+    <text x="20" y="34" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#64748b" letter-spacing="2">06</text>
     <g transform="translate(20 54) scale(1.4)" stroke="#16161D" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <path d="M5 18v-2a11 11 0 0 1 22 0v2"/>
       <rect x="3" y="17" width="6" height="9" rx="2"/>
       <rect x="23" y="17" width="6" height="9" rx="2"/>
     </g>
-    <text x="20" y="175" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#0f172a">Customer service</text>
-    <text x="20" y="207" font-family="system-ui, sans-serif" font-size="14" fill="#475569">Tickets and chat transcripts</text>
-    <text x="20" y="227" font-family="system-ui, sans-serif" font-size="14" fill="#475569">tagged by resolution category.</text>
+    <text x="20" y="175" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#0f172a">Customer service</text>
+    <text x="20" y="207" font-family="system-ui, sans-serif" font-size="20" fill="#475569">Tickets and chat transcripts</text>
+    <text x="20" y="232" font-family="system-ui, sans-serif" font-size="20" fill="#475569">tagged by resolution category.</text>
   </g>
   <g transform="translate(1010 410)">
     <rect width="340" height="260" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-    <text x="20" y="34" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#64748b" letter-spacing="2">07</text>
+    <text x="20" y="34" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#64748b" letter-spacing="2">07</text>
     <g transform="translate(20 54) scale(1.4)" stroke="#16161D" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <path d="M4 28h24"/>
       <rect x="7" y="18" width="4" height="10"/>
       <rect x="14" y="12" width="4" height="16"/>
       <rect x="21" y="6" width="4" height="22"/>
     </g>
-    <text x="20" y="175" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#0f172a">On-site analytics</text>
-    <text x="20" y="207" font-family="system-ui, sans-serif" font-size="14" fill="#475569">GA4, Shopify Analytics,</text>
-    <text x="20" y="227" font-family="system-ui, sans-serif" font-size="14" fill="#475569">session replay, search queries.</text>
+    <text x="20" y="175" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#0f172a">On-site analytics</text>
+    <text x="20" y="207" font-family="system-ui, sans-serif" font-size="20" fill="#475569">GA4, Shopify Analytics,</text>
+    <text x="20" y="232" font-family="system-ui, sans-serif" font-size="20" fill="#475569">session replay, search queries.</text>
   </g>
 </svg>
 </div>
@@ -222,7 +226,7 @@ The classic top-of-funnel collection mechanism. Discount-on-signup popups produc
 
 ### 3. Product recommendation quizzes
 
-A product recommendation quiz is the highest-yield channel per minute of customer attention because it captures three categories of data at once: the contact (email/SMS), the consent (explicit opt-in inside the flow), and the structured preferences (skin type, goal, budget, shopping-for). Each answer maps to a custom property in Klaviyo, Omnisend or Mailchimp via native integration, which is what makes the data actionable downstream. For the full mechanics, see our [zero-party data guide](https://revenuehunt.com/zero-party-data/).
+A [product recommendation quiz](/product-quiz-recommendation-systems/) is the highest-yield channel per minute of customer attention because it captures three categories of data at once: the contact (email/SMS), the consent (explicit opt-in inside the flow), and the structured preferences (skin type, goal, budget, shopping-for). Each answer maps to a custom property in Klaviyo, Omnisend or Mailchimp via native integration, which is what makes the data actionable downstream. The platform benchmark across 20,000+ Shopify stores ([state of product recommendation quizzes](/state-of-product-recommendation-quizzes/)) puts the median quiz at 69% completion and 5.5% pooled CVR; the [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) shows the upper end of what this channel produces (9.8% CVR, $691K in 90 days).
 
 ### 4. Post-purchase surveys
 
@@ -238,7 +242,7 @@ Tickets, chat transcripts and post-purchase NPS responses are first-party data t
 
 ### 7. On-site behavioural analytics
 
-GA4, Shopify Analytics and a handful of session-replay tools (Hotjar, Lucky Orange, Mouseflow) provide the behavioural layer: pages visited, product views, search queries, scroll depth, click paths. Behavioural data is excellent for retargeting and propensity modelling but is *observed*, not declared. It pairs well with the stated-preference data from quizzes and surveys, which is why the strongest stacks have both. If you want to understand the boundary between these systems, our breakdown of [how quiz analytics compares to GA4 and the Meta pixel](https://revenuehunt.com/shopify-quiz-analytics-vs-ga4-meta-pixel/) covers what each one sees and where the gaps are.
+GA4, Shopify Analytics and a handful of session-replay tools (Hotjar, Lucky Orange, Mouseflow) provide the behavioural layer: pages visited, product views, search queries, scroll depth, click paths. Behavioural data is excellent for retargeting and propensity modelling but is *observed*, not declared. It pairs well with the stated-preference data from quizzes and surveys, which is why the strongest stacks have both. If you want to understand the boundary between these systems, our breakdown of [first-party Shopify quiz analytics](/first-party-shopify-quiz-analytics/) covers what each one sees and where the gaps are.
 
 The pattern across all seven: you are creating structured records that live in profiles you own, so that downstream activation can be conditional, personalised and auditable.
 
@@ -255,10 +259,10 @@ Collection without activation is just storage. Four channels reliably produce me
       <path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/>
     </marker>
   </defs>
-  <text x="60" y="50" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#0f172a">From collection to activation: the first-party data pipeline</text>
-  <text x="240" y="100" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#64748b" letter-spacing="2" text-anchor="middle">COLLECTION</text>
-  <text x="780" y="100" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#64748b" letter-spacing="2" text-anchor="middle">UNIFIED CUSTOMER PROFILE</text>
-  <text x="1320" y="100" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#64748b" letter-spacing="2" text-anchor="middle">ACTIVATION</text>
+  <text x="60" y="50" font-family="system-ui, sans-serif" font-size="38" font-weight="700" fill="#0f172a">From collection to activation: the first-party data pipeline</text>
+  <text x="240" y="100" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#64748b" letter-spacing="2" text-anchor="middle">COLLECTION</text>
+  <text x="780" y="100" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#64748b" letter-spacing="2" text-anchor="middle">UNIFIED CUSTOMER PROFILE</text>
+  <text x="1320" y="100" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#64748b" letter-spacing="2" text-anchor="middle">ACTIVATION</text>
   <line x1="420" y1="156" x2="580" y2="316" stroke="#cbd5e1" stroke-width="1.5" marker-end="url(#fpd-arrow)"/>
   <line x1="420" y1="220" x2="580" y2="316" stroke="#cbd5e1" stroke-width="1.5" marker-end="url(#fpd-arrow)"/>
   <line x1="420" y1="284" x2="580" y2="316" stroke="#cbd5e1" stroke-width="1.5" marker-end="url(#fpd-arrow)"/>
@@ -270,44 +274,44 @@ Collection without activation is just storage. Four channels reliably produce me
   <line x1="980" y1="316" x2="1140" y2="365" stroke="#cbd5e1" stroke-width="1.5" marker-end="url(#fpd-arrow)"/>
   <line x1="980" y1="316" x2="1140" y2="461" stroke="#cbd5e1" stroke-width="1.5" marker-end="url(#fpd-arrow)"/>
   <g font-family="system-ui, sans-serif">
-    <g transform="translate(60 130)"><rect width="360" height="52" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/><circle cx="26" cy="26" r="5" fill="#16161D"/><text x="48" y="32" font-size="15" font-weight="600" fill="#0f172a">Quiz answers</text></g>
-    <g transform="translate(60 194)"><rect width="360" height="52" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/><circle cx="26" cy="26" r="5" fill="#16161D"/><text x="48" y="32" font-size="15" font-weight="600" fill="#0f172a">Purchase history</text></g>
-    <g transform="translate(60 258)"><rect width="360" height="52" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/><circle cx="26" cy="26" r="5" fill="#16161D"/><text x="48" y="32" font-size="15" font-weight="600" fill="#0f172a">Email &amp; SMS engagement</text></g>
-    <g transform="translate(60 322)"><rect width="360" height="52" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/><circle cx="26" cy="26" r="5" fill="#16161D"/><text x="48" y="32" font-size="15" font-weight="600" fill="#0f172a">Post-purchase surveys</text></g>
-    <g transform="translate(60 386)"><rect width="360" height="52" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/><circle cx="26" cy="26" r="5" fill="#16161D"/><text x="48" y="32" font-size="15" font-weight="600" fill="#0f172a">Loyalty profile data</text></g>
-    <g transform="translate(60 450)"><rect width="360" height="52" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/><circle cx="26" cy="26" r="5" fill="#16161D"/><text x="48" y="32" font-size="15" font-weight="600" fill="#0f172a">Customer service signals</text></g>
+    <g transform="translate(60 130)"><rect width="360" height="52" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/><circle cx="26" cy="26" r="5" fill="#16161D"/><text x="48" y="32" font-size="22" font-weight="600" fill="#0f172a">Quiz answers</text></g>
+    <g transform="translate(60 194)"><rect width="360" height="52" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/><circle cx="26" cy="26" r="5" fill="#16161D"/><text x="48" y="32" font-size="22" font-weight="600" fill="#0f172a">Purchase history</text></g>
+    <g transform="translate(60 258)"><rect width="360" height="52" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/><circle cx="26" cy="26" r="5" fill="#16161D"/><text x="48" y="32" font-size="22" font-weight="600" fill="#0f172a">Email &amp; SMS engagement</text></g>
+    <g transform="translate(60 322)"><rect width="360" height="52" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/><circle cx="26" cy="26" r="5" fill="#16161D"/><text x="48" y="32" font-size="22" font-weight="600" fill="#0f172a">Post-purchase surveys</text></g>
+    <g transform="translate(60 386)"><rect width="360" height="52" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/><circle cx="26" cy="26" r="5" fill="#16161D"/><text x="48" y="32" font-size="22" font-weight="600" fill="#0f172a">Loyalty profile data</text></g>
+    <g transform="translate(60 450)"><rect width="360" height="52" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/><circle cx="26" cy="26" r="5" fill="#16161D"/><text x="48" y="32" font-size="22" font-weight="600" fill="#0f172a">Customer service signals</text></g>
   </g>
   <g transform="translate(580 130)" font-family="system-ui, sans-serif">
     <rect width="400" height="372" rx="14" fill="#ffffff" stroke="#16161D" stroke-width="2"/>
-    <text x="200" y="44" font-size="18" font-weight="700" fill="#0f172a" text-anchor="middle">One canonical profile</text>
-    <text x="200" y="68" font-size="13" fill="#475569" text-anchor="middle">Every channel reads from the same record.</text>
-    <text x="30" y="108" font-size="11" font-weight="700" fill="#64748b" letter-spacing="1.5">EXAMPLE CUSTOM PROPERTIES</text>
+    <text x="200" y="44" font-size="26" font-weight="700" fill="#0f172a" text-anchor="middle">One canonical profile</text>
+    <text x="200" y="68" font-size="19" fill="#475569" text-anchor="middle">Every channel reads from the same record.</text>
+    <text x="30" y="108" font-size="26" font-weight="700" fill="#64748b" letter-spacing="1.5">EXAMPLE CUSTOM PROPERTIES</text>
     <rect x="30" y="124" width="340" height="34" rx="6" fill="#eff6ff"/>
-    <text x="42" y="146" fill="#1d4ed8" font-weight="600" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">quiz_skin_type</text>
-    <text x="358" y="146" fill="#475569" text-anchor="end" font-family="system-ui, sans-serif" font-size="13">"sensitive"</text>
+    <text x="42" y="146" fill="#1d4ed8" font-weight="600" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="19">quiz_skin_type</text>
+    <text x="358" y="146" fill="#475569" text-anchor="end" font-family="system-ui, sans-serif" font-size="19">"sensitive"</text>
     <rect x="30" y="168" width="340" height="34" rx="6" fill="#eff6ff"/>
-    <text x="42" y="190" fill="#1d4ed8" font-weight="600" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">predicted_ltv</text>
-    <text x="358" y="190" fill="#475569" text-anchor="end" font-family="system-ui, sans-serif" font-size="13">$284.00</text>
+    <text x="42" y="190" fill="#1d4ed8" font-weight="600" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="19">predicted_ltv</text>
+    <text x="358" y="190" fill="#475569" text-anchor="end" font-family="system-ui, sans-serif" font-size="19">$284.00</text>
     <rect x="30" y="212" width="340" height="34" rx="6" fill="#eff6ff"/>
-    <text x="42" y="234" fill="#1d4ed8" font-weight="600" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">last_purchase</text>
-    <text x="358" y="234" fill="#475569" text-anchor="end" font-family="system-ui, sans-serif" font-size="13">14 days ago</text>
+    <text x="42" y="234" fill="#1d4ed8" font-weight="600" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="19">last_purchase</text>
+    <text x="358" y="234" fill="#475569" text-anchor="end" font-family="system-ui, sans-serif" font-size="19">14 days ago</text>
     <rect x="30" y="256" width="340" height="34" rx="6" fill="#eff6ff"/>
-    <text x="42" y="278" fill="#1d4ed8" font-weight="600" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">consent_email</text>
-    <text x="358" y="278" fill="#475569" text-anchor="end" font-family="system-ui, sans-serif" font-size="13">opted in</text>
+    <text x="42" y="278" fill="#1d4ed8" font-weight="600" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="19">consent_email</text>
+    <text x="358" y="278" fill="#475569" text-anchor="end" font-family="system-ui, sans-serif" font-size="19">opted in</text>
     <rect x="30" y="300" width="340" height="34" rx="6" fill="#eff6ff"/>
-    <text x="42" y="322" fill="#1d4ed8" font-weight="600" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">primary_concern</text>
-    <text x="358" y="322" fill="#475569" text-anchor="end" font-family="system-ui, sans-serif" font-size="13">"anti-aging"</text>
+    <text x="42" y="322" fill="#1d4ed8" font-weight="600" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="19">primary_concern</text>
+    <text x="358" y="322" fill="#475569" text-anchor="end" font-family="system-ui, sans-serif" font-size="19">"anti-aging"</text>
   </g>
   <g font-family="system-ui, sans-serif">
-    <g transform="translate(1140 130)"><rect width="360" height="86" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/><text x="24" y="34" font-size="16" font-weight="700" fill="#0f172a">Email &amp; SMS flows</text><text x="24" y="60" font-size="13" fill="#475569">Welcome series, replenishment,</text><text x="24" y="78" font-size="13" fill="#475569">win-back, dynamic content blocks.</text></g>
-    <g transform="translate(1140 226)"><rect width="360" height="86" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/><text x="24" y="34" font-size="16" font-weight="700" fill="#0f172a">Paid ads</text><text x="24" y="60" font-size="13" fill="#475569">Meta Custom Audiences,</text><text x="24" y="78" font-size="13" fill="#475569">Google Customer Match, look-alikes.</text></g>
-    <g transform="translate(1140 322)"><rect width="360" height="86" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/><text x="24" y="34" font-size="16" font-weight="700" fill="#0f172a">On-site personalisation</text><text x="24" y="60" font-size="13" fill="#475569">Collection ordering, hero swaps,</text><text x="24" y="78" font-size="13" fill="#475569">PDP logic, recommendation feeds.</text></g>
-    <g transform="translate(1140 418)"><rect width="360" height="86" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/><text x="24" y="34" font-size="16" font-weight="700" fill="#0f172a">Customer service</text><text x="24" y="60" font-size="13" fill="#475569">Prior preferences surfaced in</text><text x="24" y="78" font-size="13" fill="#475569">Gorgias, Shopify Orders, post-purchase.</text></g>
+    <g transform="translate(1140 130)"><rect width="360" height="86" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/><text x="24" y="34" font-size="23" font-weight="700" fill="#0f172a">Email &amp; SMS flows</text><text x="24" y="60" font-size="19" fill="#475569">Welcome series, replenishment,</text><text x="24" y="78" font-size="19" fill="#475569">win-back, dynamic content blocks.</text></g>
+    <g transform="translate(1140 226)"><rect width="360" height="86" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/><text x="24" y="34" font-size="23" font-weight="700" fill="#0f172a">Paid ads</text><text x="24" y="60" font-size="19" fill="#475569">Meta Custom Audiences,</text><text x="24" y="78" font-size="19" fill="#475569">Google Customer Match, look-alikes.</text></g>
+    <g transform="translate(1140 322)"><rect width="360" height="86" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/><text x="24" y="34" font-size="23" font-weight="700" fill="#0f172a">On-site personalisation</text><text x="24" y="60" font-size="19" fill="#475569">Collection ordering, hero swaps,</text><text x="24" y="78" font-size="19" fill="#475569">PDP logic, recommendation feeds.</text></g>
+    <g transform="translate(1140 418)"><rect width="360" height="86" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/><text x="24" y="34" font-size="23" font-weight="700" fill="#0f172a">Customer service</text><text x="24" y="60" font-size="19" fill="#475569">Prior preferences surfaced in</text><text x="24" y="78" font-size="19" fill="#475569">Gorgias, Shopify Orders, post-purchase.</text></g>
   </g>
 </svg>
 </div>
 
-**Email and SMS.** Custom properties mapped from first-party signals power conditional welcome series, replenishment reminders, win-back flows, and dynamic content blocks inside otherwise generic campaigns. This is where most Shopify stores see the fastest payback because the platform infrastructure already exists and the marginal cost of personalisation is near zero.
+**Email and SMS.** Custom properties mapped from first-party signals power conditional welcome series, replenishment reminders, win-back flows, and dynamic content blocks inside otherwise generic campaigns. This is where most Shopify stores see the fastest payback because the platform infrastructure already exists and the marginal cost of personalisation is near zero. For the worked example on Klaviyo specifically (empty profiles to +267% campaign RPR on the enriched cohort), see [your Klaviyo list is a graveyard](/klaviyo-zero-party-data/).
 
 **Paid ads.** Push enriched segments to Meta Custom Audiences and Google Customer Match. A list of customers segmented by stated preference and verified purchase behaviour is a dramatically better remarketing audience and look-alike seed than an undifferentiated subscriber list. Campaign-level performance compounds through the ad platform's optimisation model. We've walked through the Meta side step-by-step in [how to make your Facebook ads smarter with quiz audiences](https://revenuehunt.com/make-your-facebook-ads-smarter-with-revenuehunts-quiz-integration/).
 
@@ -458,6 +462,10 @@ First-party data is data you collected yourself on your own infrastructure. Seco
 
 A Shopify store with no structured preference data can launch a quiz, a post-purchase survey and an enriched email program in under a week using no-code tools and native integrations. Meaningful segment-level revenue lift typically appears within 60 to 90 days of consistent collection. A complete first-party stack is a 6 to 12 month build for most teams.
 
-## Start collecting first-party data
+## Next steps
 
-You can install [RevenueHunt: Recommender Quiz for Shopify](https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=platform_hero) in under five minutes, pick a template, and have the first quiz answers flowing into Klaviyo, Shopify Orders and your ad platforms the same day. The free plan covers most stores up to their first thousand quiz completions, which is enough to validate the lift before you commit to anything.
+- See the activation playbook on Klaviyo specifically: [your Klaviyo list is a graveyard](/klaviyo-zero-party-data/) (empty profiles to +267% campaign RPR on the enriched cohort).
+- Read the worked Shopify example: [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) (9.8% quiz CVR on cold Meta traffic, $691K in 90 days).
+- See the platform benchmark to anchor your targets: [state of product recommendation quizzes](/state-of-product-recommendation-quizzes/) (45M+ responses, $370M+ attributed revenue across 20,000+ stores).
+- Estimate the impact on your own list with the [quiz ROI calculator](/quiz-roi-calculator/).
+- [Launch a quiz on Shopify](/shopify-quiz-app/) (no code, native Klaviyo sync, free trial — first quiz answers flow into Klaviyo, Shopify Orders and your ad platforms the same day).

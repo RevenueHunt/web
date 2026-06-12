@@ -246,6 +246,8 @@ export default defineConfig({
       "/shopify-quiz-revenue-tracking/",
     "/revenuehunt-activecampaign-integration/":
       "/activecampaign-quiz-integration/",
+    "/new-built-for-shopify-revenuehunt-app-is-out-now/":
+      "/revenuehunt-built-for-shopify/",
     "/shop/": "/product-recommendation-quiz-shopify/",
   },
   integrations: [

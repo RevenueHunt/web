@@ -1,8 +1,8 @@
 ---
 title: "Meta Pixel quiz integration: retarget quiz takers, build better lookalikes"
-description: "How to connect a RevenueHunt quiz to Meta (Facebook) Pixel: setup by platform, the full tracked-events table, custom audiences, and reviewing custom events."
+description: "Connect a RevenueHunt quiz to Meta (Facebook) Pixel: setup by platform, the full tracked-events table, custom audiences, and reviewing custom events."
 pubDate: 2025-02-06T07:59:08Z
-updatedDate: 2026-06-02T10:00:00Z
+updatedDate: 2026-06-12T10:00:00Z
 tags: ["Meta Pixel", "Facebook Pixel", "integrations", "advertising", "retargeting"]
 categories:
   - "eCommerce"
@@ -37,6 +37,8 @@ This guide covers how to connect a RevenueHunt quiz to Meta Pixel on every platf
 
 The standard Shopify Pixel setup fires `PageView` and `AddToCart` for everyone who lands on the store. Useful, but the shopper is anonymous: you don't know whether they're a serious match for your products or a bounce who clicked the wrong ad. A quiz changes that. By the time someone has answered three questions and reached the results page, you know their skin type, their concern, their budget band, and what you recommended. The Pixel attaches all of that to the customer record. You can now retarget by **specific concern**, not "people who saw a product page."
 
+For a worked example of this in production (a US anti-ageing device brand sending cold Meta ad traffic directly into a quiz instead of a collection page), see the [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) (9.8% quiz-to-purchase CVR on cold Meta traffic, +42.64% AOV lift, $691,128 in 90 days). The strategic argument behind the architecture is [quiz funnels vs collection pages](/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/); the popup-vs-quiz lead-capture pillar is [why popups are walls and quizzes are doors](/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/).
+
 <div class="not-prose my-10 rounded-3xl bg-[#16161D] p-8 text-white shadow-xl">
   <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400 mb-6">Why quiz-driven ad audiences convert</p>
   <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -59,7 +61,7 @@ The standard Shopify Pixel setup fires `PageView` and `AddToCart` for everyone w
 
 The setup is **multi-step on Shopify** (because the Pixel itself lives in Shopify's Customer Events, not in the RevenueHunt app), and **single-step on the multi-platform versions** (paste the Pixel ID and you're done).
 
-### Built for Shopify
+### [Built for Shopify](/revenuehunt-built-for-shopify/)
 
 1. **Connect the Pixel to Shopify.** In Shopify admin, **Settings > Customer events**. If Meta Pixel isn't already integrated, install the [Facebook and Instagram Meta app](https://apps.shopify.com/facebook-and-instagram-meta-app).
 2. **Configure the Facebook and Instagram app.** Open it in Shopify, go to **Settings**, set **Shared data** to **Maximum** so custom events come through. Choose or create a **data set** for tracking.
@@ -227,7 +229,7 @@ See the [callback function reference](https://docs.revenuehunt.com/how-to-guides
 
 ## Where Meta Pixel fits in the stack
 
-Pixel handles **ad-side tracking and audiences**. It doesn't replace the email and CRM integrations that turn quiz answers into segmented follow-up flows. The clean separation:
+Pixel handles **ad-side tracking and audiences**. It doesn't replace the email and CRM integrations that turn quiz answers into segmented follow-up flows, and it's **not the right tool for revenue attribution post-iOS 14.5** (the [first-party Shopify quiz analytics](/first-party-shopify-quiz-analytics/) pillar covers why Pixel under-reports 20-40% of attributed orders and what to do about it). The clean operating rule: **Pixel for audiences, first-party analytics for revenue.** With that out of the way, the clean separation:
 
 - **Meta Pixel** for retargeting and lookalike audiences (this article).
 - **[Klaviyo](/klaviyo-zero-party-data/)** or **[HubSpot](/hubspot-quiz-integration/)** for email + flow personalisation built on quiz answers.
@@ -265,6 +267,7 @@ The built-in integration fires client-side via the Pixel script. For server-side
 - For tag-driven Shopify automations: [Shopify Flow](/how-to-automate-post-quiz-emails-using-shopify-flows/).
 - For the data layer the audiences are built on: [customer tags in product quizzes](/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/) and [zero-party data](/zero-party-data/).
 - For consent at quiz time so the Pixel can legally fire: [marketing consent in your quiz](/product-quiz-marketing-consent/).
+- For the full strategy this audience layer fits into: [build a sales funnel on a Shopify store](/build-sales-funnel-shopify-store/).
 - Estimate the lift on your own store: [quiz ROI calculator](/quiz-roi-calculator/).
 
 <script type="application/ld+json">
@@ -311,6 +314,61 @@ The built-in integration fires client-side via the Pixel script. For server-side
         "@type": "Answer",
         "text": "The built-in integration fires client-side via the Pixel script. For server-side Conversions API events, use the Custom Pixel callback approach to fire your own CAPI calls server-side. Most stores don't need this; Shopify's Customer Events handles purchase-side CAPI by default on Built for Shopify."
       }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to connect Meta Pixel to a RevenueHunt quiz on Built for Shopify",
+  "description": "Connect a RevenueHunt product recommendation quiz to Meta (Facebook) Pixel on the Built for Shopify version of the app. The Pixel must already be configured in Shopify Customer Events via the Facebook and Instagram Meta app; the quiz integration then binds to it and fires 10 quiz-specific events including ViewContent, Lead, EmailLead and RetakeQuiz.",
+  "totalTime": "PT10M",
+  "tool": [
+    {"@type": "HowToTool", "name": "RevenueHunt: Recommender Quiz app (Built for Shopify)"},
+    {"@type": "HowToTool", "name": "Shopify admin"},
+    {"@type": "HowToTool", "name": "Facebook and Instagram Meta app for Shopify"},
+    {"@type": "HowToTool", "name": "Meta Business Manager"},
+    {"@type": "HowToTool", "name": "Meta Events Manager"}
+  ],
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Connect the Pixel to Shopify",
+      "text": "In Shopify admin, open Settings > Customer events. If Meta Pixel isn't already integrated, install the Facebook and Instagram Meta app from the Shopify App Store."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Configure the Facebook and Instagram app",
+      "text": "Open the Facebook and Instagram Meta app in Shopify, go to Settings, set Shared data to Maximum so custom events come through. Choose or create a data set for tracking."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Publish the quiz on a dedicated page",
+      "text": "Pixel tracking is most reliable when the quiz lives on its own landing page rather than embedded as a widget on the homepage."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Activate the integration in the quiz",
+      "text": "In RevenueHunt, open Quiz Settings > Integrations, find the Meta Pixel section and click Activate. Save. The quiz now binds to whichever Pixel is already firing on your store."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 5,
+      "name": "Test in Meta Events Manager",
+      "text": "Open Shopify admin > Facebook and Instagram app > Settings > open your data set in Meta Events Manager > Test events. Enter your quiz page URL, take the quiz, and confirm events appear (ViewContent, Lead, custom events)."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 6,
+      "name": "Review Custom Events",
+      "text": "The custom events (RetakeQuiz, EmailLead) are not usable in ads or audiences until you review them. In Events Manager open your data source, click Review on the 'Custom events can't be used with ads features' notification, acknowledge the terms, select both RetakeQuiz and EmailLead, and confirm. One-time step per data source."
     }
   ]
 }

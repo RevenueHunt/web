@@ -468,4 +468,4 @@ A Shopify store with no structured preference data can launch a quiz, a post-pur
 - Read the worked Shopify example: [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) (9.8% quiz CVR on cold Meta traffic, $691K in 90 days).
 - See the platform benchmark to anchor your targets: [state of product recommendation quizzes](/state-of-product-recommendation-quizzes/) (45M+ responses, $370M+ attributed revenue across 20,000+ stores).
 - Estimate the impact on your own list with the [quiz ROI calculator](/quiz-roi-calculator/).
-- [Launch a quiz on Shopify](/shopify-quiz-app/) (no code, native Klaviyo sync, free trial — first quiz answers flow into Klaviyo, Shopify Orders and your ad platforms the same day).
+- [Launch a quiz on Shopify](/shopify-quiz-app/) (no code, native Klaviyo sync, free trial). First quiz answers flow into Klaviyo, Shopify Orders and your ad platforms the same day.

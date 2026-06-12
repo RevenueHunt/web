@@ -1,8 +1,8 @@
 ---
 title: "Scoring and personality-type quiz setup on RevenueHunt"
-description: "How to build a scoring or personality-type quiz: native variables and display logic on Built for Shopify, plus the custom-JavaScript path for other platforms."
+description: "Build a scoring or personality-type quiz: native variables and display logic on Built for Shopify, plus the custom-JavaScript path for other platforms."
 pubDate: 2025-01-16T08:44:00Z
-updatedDate: 2026-06-02T10:00:00Z
+updatedDate: 2026-06-12T10:00:00Z
 tags: ["scoring quiz", "personality quiz", "quiz design", "variables", "display logic"]
 categories:
   - "Tips & Tricks"
@@ -16,7 +16,7 @@ draft: false
 
 A scoring quiz routes shoppers to a result based on the **pattern of answers**, not on which products got voted up the most. A dosha test, a personality type quiz, a "what's your skin type" quiz, a wine-pairing quiz that returns a single style based on a 0-40 boldness score: these all share the same underlying mechanic. Variables and numeric scores attach to choices, and either Display Logic or Jump Logic uses the tally to decide what the customer sees on the Results Page.
 
-The RevenueHunt platform supports this natively on **Built for Shopify**. On Shopify Legacy, WooCommerce, Magento, BigCommerce and Standalone, the same outcome is achievable with a small custom-JavaScript layer that watches choices and writes to the Results Page. This guide walks the three scoring patterns, their per-platform setup, and the simpler alternatives if your quiz doesn't actually need scoring.
+The RevenueHunt platform supports this natively on the [Built for Shopify](/revenuehunt-built-for-shopify/) (BFS) version. On Shopify Legacy, WooCommerce, Magento, BigCommerce and Standalone, the same outcome is achievable with a small custom-JavaScript layer that watches choices and writes to the Results Page. This guide walks the three scoring patterns, their per-platform setup, and the simpler alternatives if your quiz doesn't actually need scoring.
 
 For context on how scoring fits alongside the platform's other recommendation systems (Voting, Fixed, Slots, Display Logic), see the [product quiz recommendation systems](/product-quiz-recommendation-systems/) decision tree.
 
@@ -29,6 +29,24 @@ For context on how scoring fits alongside the platform's other recommendation sy
     <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>A clean <code>prq.getSlideValue</code> code template for the platforms without native scoring.</span></li>
     <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>When a simpler approach (Information Recalls, one pivotal question, fewer outcomes) beats a full scoring setup.</span></li>
   </ul>
+</div>
+
+<div class="not-prose my-10 rounded-3xl bg-[#16161D] p-8 text-white shadow-xl">
+  <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400 mb-6">Why the routing layer pays back</p>
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+    <div>
+      <p class="text-4xl font-bold text-emerald-400">5.5%</p>
+      <p class="text-sm text-slate-300 mt-2">of shoppers who finish a quiz place an order, about 1 in 18, 2.75x a typical 2% store (<a href="/state-of-product-recommendation-quizzes/" class="underline decoration-emerald-400/40 hover:decoration-emerald-400">RevenueHunt benchmark, 45M+ responses</a>)</p>
+    </div>
+    <div>
+      <p class="text-4xl font-bold text-emerald-400">+11-15%</p>
+      <p class="text-sm text-slate-300 mt-2">within-store AOV uplift on quiz orders vs non-quiz orders. A correctly-tuned scoring layer routes higher-intent shoppers to the right bundle.</p>
+    </div>
+    <div>
+      <p class="text-4xl font-bold text-emerald-400">1 in 5</p>
+      <p class="text-sm text-slate-300 mt-2">quiz-attributed orders land more than 30 days later, so the outcome a scoring quiz writes to each profile keeps converting through email for months</p>
+    </div>
+  </div>
 </div>
 
 ## Platform support at a glance
@@ -66,6 +84,8 @@ Pick the pattern that matches the shape of the outcome you want, then jump to th
 ## Built for Shopify: the native setup
 
 All three patterns work natively in the **Built for Shopify** version. There's also a pre-built **Scoring Quiz template** under Quiz Templates on the Dashboard, which is the fastest start.
+
+For a worked example of these mechanics in a real qualifying funnel, see the [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) (the 7-question / 5-persuasion-screen architecture routes shoppers into a single qualified outcome and produces 9.8% CVR on cold Meta traffic). Whichever pattern you choose, the outcome variable can sync as a Klaviyo custom property: see [your Klaviyo list is a graveyard](/klaviyo-zero-party-data/) for how the outcome becomes a segmented welcome flow downstream.
 
 ### Step 1: design the questions and map the outcomes
 
@@ -203,7 +223,10 @@ Three usual causes. First, a choice has no score on a variable: every choice nee
 
 - For the broader decision of which recommendation system fits your quiz: [product quiz recommendation systems](/product-quiz-recommendation-systems/).
 - For custom-JS reference and the rest of the `prq.*` API: [custom CSS and JavaScript guide](/custom-css-and-javascript-for-product-recommendation-quizzes/).
-- For the data layer behind segmenting by outcome: [customer tags in product quizzes](/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/).
+- For the data layer behind segmenting by outcome: [customer tags in product quizzes](/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/) and [zero-party data](/zero-party-data/).
+- For 11 funnels in production that use scoring or scoring-adjacent patterns (HUM Nutrition, Stitch Fix, Casper, the anti-ageing brand): [ecommerce sales funnel examples](/ecommerce-sales-funnel-examples/).
+- For the strategic context (why personalised post-click routing beats catalogue browsing on paid traffic): [quiz funnels vs collection pages](/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/) and [why popups are walls and quizzes are doors](/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/).
+- For the full strategy this fits into: [build a sales funnel on a Shopify store](/build-sales-funnel-shopify-store/).
 - For the operating mode this fits into: [how to build a successful ecommerce quiz](/how-to-build-a-successful-ecommerce-quiz/).
 - Estimate the lift on your own store: [quiz ROI calculator](/quiz-roi-calculator/).
 
@@ -251,6 +274,47 @@ Three usual causes. First, a choice has no score on a variable: every choice nee
         "@type": "Answer",
         "text": "Three usual causes. First, a choice has no score on a variable: every choice needs at least one score assignment for the variable it should influence. Second, the score ranges in Display Logic overlap. Third, the Default visibility on the section was left as Visible instead of Hidden."
       }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to build a scoring or personality-type quiz on Built for Shopify",
+  "description": "Build a scoring or personality-type quiz natively on the Built for Shopify version of RevenueHunt. Variables and numeric scores attach to choices, and either Display Logic or Jump Logic uses the tally to route the shopper to the matching outcome. Supports three patterns: Winning Variable, Scoring with one results page, and Scoring with multiple results pages.",
+  "totalTime": "PT30M",
+  "tool": [
+    {"@type": "HowToTool", "name": "RevenueHunt: Recommender Quiz app (Built for Shopify)"},
+    {"@type": "HowToTool", "name": "Shopify admin"},
+    {"@type": "HowToTool", "name": "Outcome mapping matrix (Google Sheet or Miro)"}
+  ],
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Design the questions and map the outcomes",
+      "text": "Decide the outcomes first, then build the quiz around them. For a skin-type quiz, the outcomes are typically Dry / Normal / Oily / Combination / Sensitive. Map every choice in every question to either a variable (Winning Variable pattern) or a numeric score (Scoring patterns) for each outcome. A Google Sheet handles simple mappings; Miro handles larger matrices."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Add scores or variables to choices in the Quiz Builder",
+      "text": "Open the Quiz Builder and add your multiple-choice questions. On any choice, open Choice Settings and find Scores and calculations. Adjust the default score variable with the up/down arrows (negative values allowed), or click 'Search or create variable' and create a new named variable (e.g. dry skin). Assign numeric scores per choice. Repeat for every choice in every question."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Build the Results Page by pattern",
+      "text": "Pattern 1 (Winning Variable): add one Section per outcome, set the Product Block recommendation system to Fixed Recommendations, attach Display Logic 'If the variable with the highest score is X, this section is visible'. Pattern 2 (One results page with score ranges): same Sections + Display Logic structure but the condition uses 'The score of the variable...' with a numeric range. Pattern 3 (Multiple results pages): create multiple Results Pages, then open Conditional Logic > Jump Logic on the last question to route to the right Results Page based on score ranges."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Save, publish, and test",
+      "text": "Click Save in the top-right. Publish the quiz on a real page (preview mode handles scoring but not subscription components, so use a real page for full QA) and run through enough answer paths to confirm every outcome fires."
     }
   ]
 }

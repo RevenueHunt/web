@@ -248,6 +248,8 @@ export default defineConfig({
       "/activecampaign-quiz-integration/",
     "/new-built-for-shopify-revenuehunt-app-is-out-now/":
       "/revenuehunt-built-for-shopify/",
+    "/shopify-quiz-analytics-vs-ga4-meta-pixel/":
+      "/first-party-shopify-quiz-analytics/",
     // Off-brand sponsored post: 2,604 imp / 0 clicks, doesn't convert,
     // not aligned with the brand. PRD W6: redirect into the W2b funnel pillar.
     "/shopify-shipping-apps/":

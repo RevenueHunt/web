@@ -33,7 +33,7 @@ It's a [quiz funnel](/glossary/quiz-funnel/). And the performance gap between qu
     <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>The signal-loss spiral: how low CVR degrades pixel targeting and compounds CPM inflation week over week.</span></li>
     <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>Why landing-page builders, popup tools, and over-engineered enterprise stacks don't fix the root cause.</span></li>
     <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>The three mechanisms a quiz funnel uses: guidance, zero-party data capture, and signal reinforcement.</span></li>
-    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>A real worked example: how a US anti-aging device brand hit 9.8% quiz-to-purchase conversion on cold Meta traffic.</span></li>
+    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>A real worked example: how a US anti-ageing device brand hit 9.8% quiz-to-purchase conversion on cold Meta traffic.</span></li>
   </ul>
 </div>
 
@@ -55,7 +55,7 @@ It's a [quiz funnel](/glossary/quiz-funnel/). And the performance gap between qu
   </div>
 </div>
 
-## The Collection Page Was Never Built for Paid Traffic
+## The collection page was never built for paid traffic
 
 Collection pages were designed for organic browsing: a customer who already knows your brand, has time to explore, and is comfortable self-selecting. They're optimised for SEO crawling and catalogue discovery. That's fine for direct traffic and branded search.
 
@@ -125,7 +125,7 @@ The decision tree of which logic to use (voting, fixed, slots, scoring) is cover
 
 Here's where the quiz funnel diverges most sharply from every other post-click solution: even when the customer doesn't buy immediately, you've captured something far more valuable than an email address.
 
-Every quiz response, skin type, primary concern, age range, product preference, is captured as [zero-party data](/zero-party-data/). This is information the customer _intentionally and proactively shares_ with your brand. And with a [native Klaviyo integration](/klaviyo-zero-party-data/), those responses sync directly as customer tags and properties. No Zapier. No CSV exports. No middleware.
+Every quiz response, skin type, primary concern, age range, product preference, is captured as [zero-party data](/glossary/zero-party-data/). This is information the customer _intentionally and proactively shares_ with your brand. And with a [native Klaviyo integration](/klaviyo-zero-party-data/), those responses sync directly as customer tags and properties. No Zapier. No CSV exports. No middleware.
 
 This transforms your Klaviyo account from a list of anonymous email addresses into a segmented database of rich [customer segmentation](/glossary/customer-segmentation/) profiles. You can now trigger a "Your Perfect Routine" flow for someone who told you they have dry skin and are concerned about fine lines, not a generic welcome series that treats every subscriber identically.
 
@@ -155,16 +155,16 @@ This is the modern alternative to the "Ad → Collection Page → Hope" funnel a
 
 ## What this looks like in practice
 
-### A US anti-aging device brand: 9.8% quiz CVR, $691K in 90 days
+### A US anti-ageing device brand: 9.8% quiz CVR, $691K in 90 days
 
-This is the cleanest worked example in the cluster: a real US anti-aging device brand replaced their collection-page ad destination with a 12-step qualifying quiz funnel. Cold Meta traffic now lands directly on the quiz, not on a "shop all" page. The numbers are real and disclosed:
+This is the cleanest worked example in the cluster: a real US anti-ageing device brand replaced their collection-page ad destination with a 12-step qualifying quiz funnel. Cold Meta traffic now lands directly on the quiz, not on a "shop all" page. The numbers are real and disclosed:
 
 - **9.8% quiz-to-purchase conversion** on cold Meta traffic (against a baseline of ~2% on the previous collection-page funnel)
 - **42.64% AOV lift** vs the brand's non-quiz orders
 - **$691,128 in 90 days** of attributable revenue
 - The qualifying questions also screen out tyre-kickers, so the customers who reach the results page are highly self-selected and the bundle-add rate is higher than a typical browser
 
-Full breakdown of the funnel architecture, the persuasion checkpoint strategy and the AOV lift mechanic: [anti-aging beauty brand case study](/anti-aging-beauty-brand-quiz-funnel-case-study/).
+Full breakdown of the funnel architecture, the persuasion checkpoint strategy and the AOV lift mechanic: [anti-ageing beauty brand case study](/anti-aging-beauty-brand-quiz-funnel-case-study/).
 
 ### A supplement brand that turned email into a revenue channel
 
@@ -214,7 +214,7 @@ The mechanism does, but the specific integration depths and revenue tracking var
 
 ## Next steps
 
-- The real worked example with disclosed numbers: [anti-aging beauty brand case study](/anti-aging-beauty-brand-quiz-funnel-case-study/).
+- The real worked example with disclosed numbers: [anti-ageing beauty brand case study](/anti-aging-beauty-brand-quiz-funnel-case-study/).
 - The argument on popups specifically: [why popups are walls and quizzes are doors](/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/).
 - The data layer behind the segmented Klaviyo flows: [Klaviyo zero-party data activation](/klaviyo-zero-party-data/) and [customer tags in product quizzes](/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/).
 - The ad-audiences side of the signal loop: [Meta Pixel quiz integration](/meta-pixel-quiz-integration/).

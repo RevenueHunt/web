@@ -244,6 +244,8 @@ export default defineConfig({
       "/meta-pixel-quiz-integration/",
     "/how-to-track-and-maximize-quiz-driven-revenue-in-shopify/":
       "/shopify-quiz-revenue-tracking/",
+    "/revenuehunt-activecampaign-integration/":
+      "/activecampaign-quiz-integration/",
     "/shop/": "/product-recommendation-quiz-shopify/",
   },
   integrations: [

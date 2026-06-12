@@ -1,6 +1,6 @@
 ---
 title: "First-party Shopify quiz analytics: why third-party tracking misses revenue"
-description: "Pixel and GA4 miss 20-40% of attributed orders to ATT, ITP and consent loss. How the Built for Shopify Analytics dashboard tracks every order at the source."
+description: "Pixel and GA4 miss 20-40% of attributed orders to ATT, ITP and consent loss. How Built for Shopify Analytics tracks every order at the source."
 pubDate: 2025-11-07T11:01:17Z
 updatedDate: 2026-06-02T10:00:00Z
 tags: ["analytics", "first-party data", "Shopify", "Built for Shopify", "Quiz Copilot"]
@@ -69,7 +69,9 @@ Stacked, these four forces typically mean Pixel and GA4 see **60-80% of the conv
 
 A first-party quiz response isn't subject to any of the above. The customer signs in (consent given), takes the quiz (data declared willingly), and the response gets stored on your Shopify infrastructure with their consent. That same response is then attached to whatever Shopify order the customer places, by Shopify's own customer ID, not by a probabilistic cookie match.
 
-The structural change matters for marketing, not just analytics. Zero-party data (what the customer explicitly told you) and first-party data (what they did on your store) are the only categories of customer data that survive the privacy transition intact. For the broader strategy this connects to, see our [zero-party data guide](/zero-party-data/) and [first-party data guide](/first-party-data/).
+The structural change matters for marketing, not just analytics. Zero-party data (what the customer explicitly told you) and first-party data (what they did on your store) are the only categories of customer data that survive the privacy transition intact. For the broader strategy this connects to, see our [zero-party data guide](/glossary/zero-party-data/) and [first-party data guide](/first-party-data/); for the activation playbook on the data this dashboard exposes, see [your Klaviyo list is a graveyard](/klaviyo-zero-party-data/); for the lead-capture pillar this whole architecture rests on, see [why popups are walls and quizzes are doors](/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/).
+
+The [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) is the cleanest worked example in the cluster: 9.8% quiz-to-purchase conversion on cold Meta traffic, +42.64% AOV lift, $691,128 in attributed revenue across 90 days, all verified against Shopify Orders through this dashboard rather than Pixel or GA4.
 
 ## What's in the Built for Shopify Analytics dashboard
 
@@ -165,7 +167,7 @@ The argument here is **not** "delete your Pixel." It's "stop using it for revenu
   </table>
 </div>
 
-The clean operating rule: **first-party data is the source of truth for revenue. Pixel and GA4 are the source of truth for audiences and traffic.** If your dashboards mix the two, you'll spend half your week reconciling numbers that were never meant to match.
+The clean operating rule: **first-party data is the source of truth for revenue. Pixel and GA4 are the source of truth for audiences and traffic.** If your dashboards mix the two, you'll spend half your week reconciling numbers that were never meant to match. For the paid-traffic version of this argument (how the same signal-loss spiral compounds CPM inflation when a collection page is the ad destination), see [quiz funnels vs collection pages](/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/).
 
 ## Quick playbook: access and use your quiz data
 
@@ -209,7 +211,7 @@ Yes. Cards and layouts are customisable, and saved layouts persist. A growth man
 
 ## Next steps
 
-- For the data category this all rests on: [zero-party data guide](/zero-party-data/) and [first-party data guide](/first-party-data/).
+- For the data category this all rests on: [zero-party data guide](/glossary/zero-party-data/) and [first-party data guide](/first-party-data/).
 - For the cross-platform attribution playbook including Legacy and GA4: [Shopify quiz revenue tracking](/shopify-quiz-revenue-tracking/).
 - For the ad-side audiences Pixel is genuinely good at: [Meta Pixel quiz integration](/meta-pixel-quiz-integration/).
 - For the metric thresholds to compare your dashboard against: [product quiz metrics](/product-quiz-metrics-what-to-track-to-convert-better/).

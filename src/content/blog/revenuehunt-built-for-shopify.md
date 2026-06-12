@@ -1,6 +1,6 @@
 ---
 title: "RevenueHunt is Built for Shopify: what's different vs Legacy"
-description: "What's different in the Built for Shopify version of RevenueHunt: native embed, collections, Shopify Markets, drag-and-drop builder, and which integrations work today."
+description: "What the Built for Shopify version of RevenueHunt adds vs Legacy: native embed, collections, Shopify Markets, drag-and-drop builder, integrations."
 pubDate: 2025-03-13T08:14:13Z
 updatedDate: 2026-06-02T10:00:00Z
 tags: ["Built for Shopify", "BFS", "Shopify", "product updates", "app comparison"]
@@ -31,9 +31,9 @@ The Built for Shopify (BFS) version of the RevenueHunt app is the modern, recomm
 
 ## What "Built for Shopify" means
 
-Built for Shopify is Shopify's highest performance and quality designation for apps. To earn the badge, an app has to meet specific bars on load speed, native theme integration, accessibility, and security. Most apps are standard installs that load inside an iframe and have limited access to Shopify primitives. **BFS apps render directly as Shopify blocks**, integrate seamlessly with the theme editor, and behave like first-party Shopify features.
+[Built for Shopify](https://shopify.dev/docs/apps/launch/built-for-shopify) is Shopify's highest performance and quality designation for apps. To earn the badge, an app has to meet specific bars on load speed, native theme integration, accessibility, and security. Most apps are standard installs that load inside an iframe and have limited access to Shopify primitives. **BFS apps render directly as Shopify blocks**, integrate seamlessly with the theme editor, and behave like first-party Shopify features.
 
-For a quiz app, the practical effect is large: the quiz inherits your theme's typography and colour tokens, fires Shopify-native events that all your existing tracking already understands, plays correctly with Shopify Markets and Shop Pay, and gets indexed properly by search engines because the content isn't behind an iframe.
+For a quiz app, the practical effect is large: the quiz inherits your theme's typography and colour tokens, fires Shopify-native events that all your existing tracking already understands, plays correctly with Shopify Markets and Shop Pay, and gets indexed properly by search engines because the content isn't behind an iframe. For the strategy this all enables — quiz-as-ad-landing-page rather than collection-page-as-ad-landing-page — see [why popups are walls and quizzes are doors](/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/) and [quiz funnels vs collection pages](/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/).
 
 ![Built for Shopify quiz running natively inside a Shopify theme](/img/blog/revenuehunt-built-for-shopify/bfs-overview.gif)
 
@@ -181,6 +181,8 @@ The ones still listed as "coming soon" (Mailchimp, ActiveCampaign) have workarou
 
 The native embed, automatic Shopify revenue tracking, and Shopify Markets support are the three biggest reasons BFS converts higher than Legacy in practice. Tracking that fires on the iframe Legacy used to lose events; the BFS native block doesn't.
 
+For a worked example of these mechanics on a real BFS-app store, see the [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) (9.8% quiz-to-purchase CVR on cold Meta traffic, +42.64% AOV lift, $691,128 in 90 days, every order verified through the native BFS Analytics dashboard). For ten more funnel patterns running in production, see [ecommerce sales funnel examples](/ecommerce-sales-funnel-examples/).
+
 ## How to switch from Legacy to BFS
 
 If you already have the RevenueHunt app installed:
@@ -191,7 +193,7 @@ If you already have the RevenueHunt app installed:
 
 <div class="not-prose my-6"><img src="/img/blog/revenuehunt-built-for-shopify/switch-to-bfs.webp" alt="Switch to Built for Shopify option in the RevenueHunt app menu" style="max-width:380px;width:100%;height:auto;display:block;" loading="lazy" /></div>
 
-If you don't have the app installed yet, [install RevenueHunt: Recommender Quiz for Shopify](https://apps.shopify.com/product-recommendation-quiz-revenuehunt) from the Shopify App Store; new installs land on the BFS version by default.
+If you don't have the app installed yet, [launch a quiz on Shopify](/shopify-quiz-app/) (no code, free trial). New installs land on the BFS version by default.
 
 > **Quizzes don't migrate automatically.** BFS is a fresh start. You'll need to rebuild any existing quizzes in the new builder. The new interface is faster to build in than the Legacy editor, so the rebuild is usually quicker than expected, but plan for it.
 
@@ -273,6 +275,71 @@ You can have both apps installed but only run quizzes on one at a time. The app 
         "@type": "Answer",
         "text": "You can have both apps installed but only run quizzes on one at a time. The app menu toggle swaps which version is live. Switching is reversible at any time."
       }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "RevenueHunt: Recommender Quiz (Built for Shopify)",
+  "applicationCategory": "BusinessApplication",
+  "applicationSubCategory": "Product Recommendation Quiz",
+  "operatingSystem": "Shopify",
+  "url": "https://revenuehunt.com/revenuehunt-built-for-shopify/",
+  "downloadUrl": "https://apps.shopify.com/product-recommendation-quiz-revenuehunt",
+  "description": "RevenueHunt's Built for Shopify quiz app: native Shopify embed (no iframe), Shopify Markets support, collection recommendations, fixed and dynamic recommendations, drag-and-drop logic builder, and automatic Shopify Orders revenue tracking.",
+  "featureList": [
+    "Native Shopify block embed (no iframe)",
+    "Shopify Markets multi-language and multi-currency support",
+    "Recommend entire collections, not just products",
+    "Fixed and dynamic recommendation slots",
+    "Unlimited catalogue size",
+    "Drag-and-drop block builder",
+    "Drag-and-drop conditional logic editor",
+    "Automatic Shopify Orders revenue attribution",
+    "Native Klaviyo, HubSpot, Omnisend, Meta Pixel, GA4 integrations"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Free plan available; paid plans scale with quiz completions."
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to switch from RevenueHunt Legacy to Built for Shopify",
+  "description": "Switch an existing RevenueHunt Legacy install to the Built for Shopify version from your Shopify admin in three steps.",
+  "totalTime": "PT2M",
+  "tool": [
+    {"@type": "HowToTool", "name": "Shopify admin"},
+    {"@type": "HowToTool", "name": "RevenueHunt: Recommender Quiz app"}
+  ],
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Open the RevenueHunt app in Shopify admin",
+      "text": "In your Shopify admin, open Apps and click RevenueHunt: Recommender Quiz."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Select 'Switch to Built for Shopify'",
+      "text": "From the right-hand menu, select 'Switch to Built for Shopify'."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Confirm app access and permissions",
+      "text": "Confirm app access and permissions to complete the switch. The switch is reversible at any time from the same menu."
     }
   ]
 }

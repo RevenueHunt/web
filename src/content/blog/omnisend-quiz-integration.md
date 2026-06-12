@@ -2,7 +2,7 @@
 title: "Omnisend quiz integration: segment leads by quiz answers"
 description: "Connect a product recommendation quiz to Omnisend: setup, what data lands in customer profiles, segmenting by quiz answers, and templated follow-ups."
 pubDate: 2024-12-05T09:27:30Z
-updatedDate: 2026-06-02T10:00:00Z
+updatedDate: 2026-06-12T10:00:00Z
 tags: ["Omnisend", "integrations", "email marketing", "lead capture", "marketing automation"]
 categories:
   - "eCommerce"
@@ -17,7 +17,7 @@ featuredImage: "/img/blog/omnisend-quiz-integration/blogtile_omnisend.webp"
 draft: false
 ---
 
-A product recommendation quiz captures zero-party data while shoppers are actively engaged: stated preferences, skin types, goals, gift recipients, budget bands. Omnisend turns that into segmented email and SMS flows. Wired together, the two run as one [customer segmentation](/glossary/customer-segmentation/) and [lead generation quiz](/glossary/lead-generation-quiz/) pipeline.
+A product recommendation quiz captures [zero-party data](/zero-party-data/) while shoppers are actively engaged: stated preferences, skin types, goals, gift recipients, budget bands. Omnisend turns that into segmented email and SMS flows. Wired together, the two run as one [customer segmentation](/glossary/customer-segmentation/) and [lead generation quiz](/glossary/lead-generation-quiz/) pipeline.
 
 This guide covers the **exact setup paths** by platform, the **data fields** that land on the Omnisend contact, how to segment shoppers by quiz answer, and how the existing template library plugs into the workflow.
 
@@ -44,12 +44,14 @@ Quizzes capture interest at its peak: the moment a shopper is actively choosing.
 
 **Templates from the docs library plug in directly.** RevenueHunt publishes three Google-Doc HTML templates (Basic Slots, Advanced Slots, Products List) you can drop into Omnisend as custom HTML blocks once the property names match your quiz.
 
+For the strategy this fits into (why an interrupt-style popup doesn't produce segmentable lists, why a quiz funnel does), see [why popups are walls and quizzes are doors](/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/). For a worked example of the full pipeline running in production, see the [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) (9.8% quiz-to-purchase CVR on cold Meta traffic, +42.64% AOV lift, $691,128 in 90 days, every answer synced to the brand's ESP).
+
 <div class="not-prose my-10 rounded-3xl bg-[#16161D] p-8 text-white shadow-xl">
   <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400 mb-6">Why personalised follow-up converts</p>
   <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
     <div>
       <p class="text-4xl font-bold text-emerald-400">5.5%</p>
-      <p class="text-sm text-slate-300 mt-2">of shoppers who finish a quiz place an order — about 1 in 18, roughly 2.75x a typical 2% store (<a href="/state-of-product-recommendation-quizzes/" class="underline decoration-emerald-400/40 hover:decoration-emerald-400">RevenueHunt benchmark, 45M+ responses</a>)</p>
+      <p class="text-sm text-slate-300 mt-2">of shoppers who finish a quiz place an order, about 1 in 18, roughly 2.75x a typical 2% store (<a href="/state-of-product-recommendation-quizzes/" class="underline decoration-emerald-400/40 hover:decoration-emerald-400">RevenueHunt benchmark, 45M+ responses</a>)</p>
     </div>
     <div>
       <p class="text-4xl font-bold text-emerald-400">3x</p>
@@ -66,7 +68,7 @@ Quizzes capture interest at its peak: the moment a shopper is actively choosing.
 
 The Omnisend connection is **API-key based on every platform**. The fields the integration sends are identical. The only difference is where the connection UI lives.
 
-### Built for Shopify
+### [Built for Shopify](/revenuehunt-built-for-shopify/)
 
 1. In Omnisend, open **Store Settings > API** and create a new API key with all permissions.
 2. In the RevenueHunt app, open the quiz, then **Settings > Integrations** and select the **Omnisend** tab.
@@ -79,6 +81,8 @@ The Omnisend connection is **API-key based on every platform**. The fields the i
 3. Click **Connect**, paste the API key, click **Save**, then **Publish** the quiz from the top-right button.
 
 > **Heads-up:** the integration only fires when a quiz completion includes an email address. Without an email there's no Omnisend contact to attach the answers to. Make the email question **required** if Omnisend follow-up is the goal of the quiz.
+
+To verify the integration is firing correctly against your store's actual order data (rather than against the Omnisend side alone), cross-reference the quiz response count and revenue against the [first-party Shopify quiz analytics](/first-party-shopify-quiz-analytics/) dashboard.
 
 ## What lands on the Omnisend contact
 
@@ -95,16 +99,16 @@ Each completed response sends:
 **Quiz-specific custom properties** (naming convention `quiz_{id}_{field}`)
 
 - `quiz_{id}_quiz_name`
-- `quiz_{id}_response_id` — the unique response identifier, useful for building a deep-link back to the personalised results page
-- Per-question answers, recommended products (with names, links and images), assigned tags, variable scores
-- `permalink_quiz_id` — the property segments are typically built on
+- `quiz_{id}_response_id`, the unique response identifier, useful for building a deep-link back to the personalised results page
+- Per-question answers, recommended products (with names, links and images), assigned tags, [variable scores](/scoring-quiz-setup/) if the quiz uses scoring
+- `permalink_quiz_id`, the property segments are typically built on
 
 You don't need to pre-create these in Omnisend. They **auto-create** the first time a response is posted.
 
 ## Segmenting by quiz answer
 
 1. In Omnisend, open **Audience > Segments** and click **Create segment**.
-2. Add a filter on the custom property the quiz creates — for example `quiz_12345_tag_oily_skin is true` AND `quiz_12345_variable_scores contains "budget:under_40"`.
+2. Add a filter on the custom property the quiz creates, for example `quiz_12345_tag_oily_skin is true` AND `quiz_12345_variable_scores contains "budget:under_40"`.
 3. Name the segment (e.g. **Oily skin · under £40**) and save.
 
 ![Omnisend segment builder filtering on a quiz custom property](/img/blog/omnisend-quiz-integration/omnisend-segment-builder.png)
@@ -145,7 +149,7 @@ Omnisend is the right call when:
 - You're on **WooCommerce, Magento, BigCommerce or Standalone** and Klaviyo's pricing is overkill for the list size.
 - You want a quick segment-and-send setup without the depth of Klaviyo's flow logic.
 
-**Klaviyo** generally wins on Shopify when segmentation depth matters: deeper conditional splits, larger template library, native Shopify event triggers (browse abandonment, replenishment, win-back). For most Shopify DTC stores, Klaviyo is the default choice — see [Klaviyo zero-party data](/klaviyo-zero-party-data/) for the activation chain.
+**Klaviyo** generally wins on Shopify when segmentation depth matters: deeper conditional splits, larger template library, native Shopify event triggers (browse abandonment, replenishment, win-back). For most Shopify DTC stores, Klaviyo is the default choice. See [Klaviyo zero-party data](/klaviyo-zero-party-data/) for the activation chain.
 
 **[Shopify Flow](/how-to-automate-post-quiz-emails-using-shopify-flows/)** is the right tool when the trigger is tag-driven and the action lives entirely inside Shopify: add to customer segments, route to teams, fire transactional email.
 
@@ -165,7 +169,7 @@ Standard contact fields (email, first name, last name, phone) plus quiz-specific
 
 ### Why aren't my quiz contacts showing up in Omnisend?
 
-Three usual causes. First, the quiz isn't capturing an email — the sync only fires when one is captured. Second, the API key permissions are too narrow — recreate the key with all permissions granted in Omnisend's API settings. Third, the quiz hasn't been published since the connection was saved (on Legacy / multi-platform you have to hit **Publish** explicitly).
+Three usual causes. First, the quiz isn't capturing an email; the sync only fires when one is captured. Second, the API key permissions are too narrow; recreate the key with all permissions granted in Omnisend's API settings. Third, the quiz hasn't been published since the connection was saved (on Legacy / multi-platform you have to hit **Publish** explicitly).
 
 ### How do I send the personalised recommendation in the follow-up email?
 
@@ -182,6 +186,7 @@ If you're already paying for Omnisend's SMS or web-push, keep Omnisend and skip 
 - Compare with [Klaviyo zero-party data](/klaviyo-zero-party-data/), [Shopify Flow automations](/how-to-automate-post-quiz-emails-using-shopify-flows/), [Mailchimp](/how-to-use-mailchimp-for-post-quiz-email-marketing/) and [HubSpot](/hubspot-quiz-integration/) before you commit to one stack.
 - Avoid the design traps that nullify the data: [quiz creation mistakes that hurt your ecommerce sales](/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/).
 - Track the right numbers post-launch: [product quiz metrics](/product-quiz-metrics-what-to-track-to-convert-better/).
+- For the full strategy this fits into: [build a sales funnel on a Shopify store](/build-sales-funnel-shopify-store/) and [11 ecommerce sales funnel examples](/ecommerce-sales-funnel-examples/).
 - Estimate the lift on your own store: [quiz ROI calculator](/quiz-roi-calculator/).
 
 <script type="application/ld+json">
@@ -228,6 +233,40 @@ If you're already paying for Omnisend's SMS or web-push, keep Omnisend and skip 
         "@type": "Answer",
         "text": "If you're already paying for Omnisend's SMS or web-push, keep Omnisend and skip the migration. If you're starting from scratch on Shopify DTC, Klaviyo is the default: deeper segmentation, larger template library, native Shopify event triggers. The migration from Omnisend to Klaviyo is well-trodden if you outgrow it later."
       }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to connect a RevenueHunt quiz to Omnisend on Built for Shopify",
+  "description": "Connect a RevenueHunt product recommendation quiz to Omnisend on the Built for Shopify version using an API key. Once connected, quiz responses sync to Omnisend contact records with standard fields plus auto-created custom properties (quiz_{id}_{field}) covering per-question answers, recommended products, assigned tags and variable scores. The sync only fires when the quiz captures an email address.",
+  "totalTime": "PT3M",
+  "tool": [
+    {"@type": "HowToTool", "name": "RevenueHunt: Recommender Quiz app (Built for Shopify)"},
+    {"@type": "HowToTool", "name": "Omnisend account"}
+  ],
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Create an Omnisend API key",
+      "text": "In Omnisend, open Store Settings > API and create a new API key with all permissions enabled."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Open the Omnisend integration in the quiz",
+      "text": "In the RevenueHunt app, open the quiz, then Settings > Integrations and select the Omnisend tab."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Paste the API key and save",
+      "text": "Paste the Omnisend API key into the input field and click Save. The integration is now live; the next quiz completion that captures an email will sync to Omnisend, auto-creating the quiz_{id}_{field} custom properties on the contact."
     }
   ]
 }

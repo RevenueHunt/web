@@ -56,16 +56,22 @@ A US-based direct-to-consumer anti-ageing beauty device brand (specialising in a
 
 This case study examines how they built that funnel, why the structure worked, and what other brands in the beauty-device and skincare space can replicate from this approach. The strategic premise (quiz as the landing page, not a popup on top of a product page) is the same argument the polished pillar piece [quiz funnels vs collection pages](/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/) makes in the abstract. This article is the worked example.
 
-**Key results, 90-day period (January-April 2026)**
+### Case at a glance
 
-| Metric | Result |
+| | |
 |---|---|
-| Average order value | $107.16, +42.64% |
-| Conversion rate | 9.8% quiz response to purchase |
-| Quiz-attributed revenue | $691,128 |
-| Quiz completion rate | 75.2% (72,200 from 96,100 starts) |
-
-_Verified via the [Built for Shopify RevenueHunt Analytics dashboard](/first-party-shopify-quiz-analytics/) on Shopify Orders data._
+| **Vertical** | At-home anti-ageing skincare devices |
+| **Platform** | Shopify |
+| **Traffic source** | Meta paid social (cold) |
+| **Price point** | $130 USD (device + optional serum bundle) |
+| **Target demographic** | Women 55+; 85.1% of respondents 65+ |
+| **Reporting window** | 90 days (January-April 2026) |
+| **Quiz-to-purchase CVR** | 9.8% on cold Meta traffic |
+| **AOV lift** | +42.64% ($75.13 → $107.16) |
+| **Attributed revenue** | $691,128 |
+| **Quiz completion rate** | 75.2% across a 12-step funnel (72,200 of 96,100 starts) |
+| **Data source** | [Built for Shopify RevenueHunt Analytics dashboard](/first-party-shopify-quiz-analytics/), Shopify Orders ledger (first-party) |
+| **Vs platform benchmark** | 9.8% CVR vs 5.5% pooled, 6.1% beauty/skincare ([state of product recommendation quizzes](/state-of-product-recommendation-quizzes/)) |
 
 ## 02 · The brand
 

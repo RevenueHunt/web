@@ -109,7 +109,7 @@ The difference is structural, not cosmetic. A popup _extracts_ value from the cu
 
 And the downstream data difference is massive. A popup gives you one data point: an email. A quiz gives you five to ten: email, skin type, primary concern, age bracket, product preference, budget range, gifting intent. The first list is large and useless. The second list is smaller and immediately actionable: every lead enters Klaviyo with enough [customer segmentation](/glossary/customer-segmentation/) context to route them into a specific, relevant flow on day one.
 
-The metric that matters isn't list size. It's list intelligence. A list of 10,000 with rich [zero-party data](/glossary/zero-party-data/) profiles will outperform a list of 100,000 with only email addresses, every time, in every vertical, at every scale.
+The metric that matters isn't list size. It's list intelligence. A list of 10,000 with rich [zero-party data](/zero-party-data/) profiles will outperform a list of 100,000 with only email addresses, every time, in every vertical, at every scale.
 
 <div class="not-prose my-6 overflow-x-auto">
   <table class="w-full border-collapse text-sm">

@@ -197,7 +197,7 @@ At 96,100 quiz starts and 72,200 completions, the funnel retains 75.2% of traffi
 
 ### 6.3 Demand intelligence from quiz data
 
-Beyond conversion, the quiz has generated a rich demand-signal dataset across 74,300+ complete responses. Each response is [zero-party data](/glossary/zero-party-data/): self-declared, consented, attached to the customer record. Key audience insights captured:
+Beyond conversion, the quiz has generated a rich demand-signal dataset across 74,300+ complete responses. Each response is [zero-party data](/zero-party-data/): self-declared, consented, attached to the customer record. Key audience insights captured:
 
 - **Age concentration.** Validates the brand's targeting precision and allows Klaviyo segmentation by age cohort for follow-up messaging. ([Klaviyo segments built from quiz answers earn meaningfully more per recipient](/klaviyo-zero-party-data/) than non-segmented flows.)
 

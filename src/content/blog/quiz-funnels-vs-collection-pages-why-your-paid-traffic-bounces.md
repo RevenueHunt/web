@@ -125,7 +125,7 @@ The decision tree of which logic to use (voting, fixed, slots, scoring) is cover
 
 Here's where the quiz funnel diverges most sharply from every other post-click solution: even when the customer doesn't buy immediately, you've captured something far more valuable than an email address.
 
-Every quiz response, skin type, primary concern, age range, product preference, is captured as [zero-party data](/glossary/zero-party-data/). This is information the customer _intentionally and proactively shares_ with your brand. And with a [native Klaviyo integration](/klaviyo-zero-party-data/), those responses sync directly as customer tags and properties. No Zapier. No CSV exports. No middleware.
+Every quiz response, skin type, primary concern, age range, product preference, is captured as [zero-party data](/zero-party-data/). This is information the customer _intentionally and proactively shares_ with your brand. And with a [native Klaviyo integration](/klaviyo-zero-party-data/), those responses sync directly as customer tags and properties. No Zapier. No CSV exports. No middleware.
 
 This transforms your Klaviyo account from a list of anonymous email addresses into a segmented database of rich [customer segmentation](/glossary/customer-segmentation/) profiles. You can now trigger a "Your Perfect Routine" flow for someone who told you they have dry skin and are concerned about fine lines, not a generic welcome series that treats every subscriber identically.
 

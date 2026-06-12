@@ -51,7 +51,7 @@ In practical terms, first-party data on a Shopify store covers:
 - **Transactional data**: orders, basket composition, AOV, lifetime value, return history, payment method, shipping address.
 - **Engagement data**: email opens, clicks, SMS replies, push-notification interactions, app session frequency.
 - **Account and profile data**: email address, name, account creation date, login history.
-- **Stated-preference data**: what the customer told you through a quiz, survey, preference centre or loyalty profile. This subset is also known as [zero-party data](/glossary/zero-party-data/); for the activation playbook (turning quiz answers into Klaviyo segments and email-revenue lift), see [your Klaviyo list is a graveyard](/klaviyo-zero-party-data/).
+- **Stated-preference data**: what the customer told you through a quiz, survey, preference centre or loyalty profile. This subset is also known as [zero-party data](/zero-party-data/); for the activation playbook (turning quiz answers into Klaviyo segments and email-revenue lift), see [your Klaviyo list is a graveyard](/klaviyo-zero-party-data/).
 - **Customer-service data**: tickets, chat transcripts, NPS scores, post-purchase survey responses.
 
 The unifying thread is that none of it is rented. You don't lose access when an ad platform changes its policy, when a browser ships a privacy update, or when a data broker shuts down. That permanence is the reason first-party data has gone from "useful" to "strategic" in under five years.

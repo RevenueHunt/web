@@ -9,6 +9,8 @@ interface Props {
   title: string;
   description?: string;
   ogImage?: string;
+  /** Open Graph type. Use "article" for blog posts; "website" everywhere else. */
+  ogType?: "website" | "article";
   noindex?: boolean;
   jsonLd?: unknown;
   /** Set false on landing pages that have their own chrome. */
@@ -25,6 +27,7 @@ const {
   title,
   description = SITE.description,
   ogImage = ogImageForPath(Astro.url.pathname) ?? "/og-default.png",
+  ogType = "website",
   noindex = false,
   jsonLd,
   showChrome = true,
@@ -138,7 +141,7 @@ const isProd = import.meta.env.PROD && SITE.site_url === "https://revenuehunt.co
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:image" content={new URL(ogImage, SITE.site_url).href} />
     <meta property="og:locale" content={OG_LOCALE[lang]} />
     <meta property="og:site_name" content={SITE.name} />

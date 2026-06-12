@@ -1,5 +1,5 @@
 ---
-title: "Anti-ageing device brand case study: 9.8% quiz CVR, $691K in 90 days"
+title: "9.8% quiz CVR, $691K in 90 days: anti-ageing case study"
 description: "How a US anti-ageing device brand hit 9.8% quiz-to-purchase conversion on cold Meta traffic and $691K in 90 days using a 12-step qualifying funnel quiz."
 pubDate: 2026-04-16T14:17:38Z
 updatedDate: 2026-06-02T10:00:00Z

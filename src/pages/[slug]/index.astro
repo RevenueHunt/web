@@ -147,6 +147,7 @@ const linkedinShare = `https://www.linkedin.com/sharing/share-offsite/?url=${enc
     title={`${entry.data.title} - ${SITE.name}`}
     description={entry.data.description}
     ogImage={entry.data.featuredImage ?? undefined}
+    ogType="article"
     jsonLd={jsonLd}
   >
       <article

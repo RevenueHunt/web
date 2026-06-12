@@ -152,7 +152,7 @@ Seven channels consistently produce useful first-party data on a Shopify or Shop
   </g>
   <g transform="translate(820 110)">
     <rect width="340" height="260" rx="10" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
-    <text x="20" y="34" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#1d4ed8" letter-spacing="2">03  ·  HIGHEST YIELD</text>
+    <text x="20" y="34" font-family="system-ui, sans-serif" font-size="17" font-weight="700" fill="#1d4ed8" letter-spacing="1.5">03  ·  HIGHEST YIELD</text>
     <g transform="translate(20 54) scale(1.4)" stroke="#1d4ed8" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <rect x="6" y="6" width="20" height="22" rx="2"/>
       <rect x="11" y="3" width="10" height="5" rx="1" fill="#1d4ed8" stroke="#1d4ed8"/>
@@ -285,7 +285,7 @@ Collection without activation is just storage. Four channels reliably produce me
     <rect width="400" height="372" rx="14" fill="#ffffff" stroke="#16161D" stroke-width="2"/>
     <text x="200" y="44" font-size="26" font-weight="700" fill="#0f172a" text-anchor="middle">One canonical profile</text>
     <text x="200" y="68" font-size="19" fill="#475569" text-anchor="middle">Every channel reads from the same record.</text>
-    <text x="30" y="108" font-size="26" font-weight="700" fill="#64748b" letter-spacing="1.5">EXAMPLE CUSTOM PROPERTIES</text>
+    <text x="30" y="108" font-size="17" font-weight="700" fill="#64748b" letter-spacing="1">EXAMPLE CUSTOM PROPERTIES</text>
     <rect x="30" y="124" width="340" height="34" rx="6" fill="#eff6ff"/>
     <text x="42" y="146" fill="#1d4ed8" font-weight="600" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="19">quiz_skin_type</text>
     <text x="358" y="146" fill="#475569" text-anchor="end" font-family="system-ui, sans-serif" font-size="19">"sensitive"</text>

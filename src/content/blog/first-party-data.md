@@ -158,7 +158,7 @@ Seven channels consistently produce useful first-party data on a Shopify or Shop
       <rect x="11" y="3" width="10" height="5" rx="1" fill="#1d4ed8" stroke="#1d4ed8"/>
       <path d="M11 18l3 3 6-7"/>
     </g>
-    <text x="20" y="175" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#0f172a">Product recommendation quiz</text>
+    <text x="20" y="175" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#0f172a">Recommendation quiz</text>
     <text x="20" y="207" font-family="system-ui, sans-serif" font-size="20" fill="#475569">Structured preferences,</text>
     <text x="20" y="232" font-family="system-ui, sans-serif" font-size="20" fill="#475569">consent and contact in one flow.</text>
   </g>

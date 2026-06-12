@@ -1,9 +1,9 @@
 ---
-title: "Shopify quiz revenue tracking: automatic on BFS, manual on Legacy"
+title: "Shopify quiz revenue tracking: native on Built for Shopify, manual on Legacy"
 description: "How to track quiz-driven revenue on Shopify: native on Built for Shopify, the manual setup and same-session caveat on Legacy, GA4 for everywhere else."
 pubDate: 2025-02-20T07:20:43Z
-updatedDate: 2026-06-02T10:00:00Z
-tags: ["Shopify", "revenue attribution", "analytics", "GA4", "BFS"]
+updatedDate: 2026-06-12T10:00:00Z
+tags: ["Shopify", "revenue attribution", "analytics", "GA4", "Built for Shopify"]
 categories:
   - "eCommerce"
   - "Sales Funnels"
@@ -17,7 +17,7 @@ featuredImage: "/img/blog/shopify-quiz-revenue-tracking/blogtile_revenue-trackin
 draft: false
 ---
 
-The biggest difference between the **Built for Shopify** version of RevenueHunt and the **Shopify Legacy** version is how they handle revenue attribution. On Built for Shopify, the app connects to Shopify Orders automatically the moment it's installed; quiz-attributed orders, total order value and average order value land in the Analytics tab with zero configuration. On Shopify Legacy, the same data requires a multi-step setup **and** a same-session attribution caveat that's easy to miss until your numbers come up flat. On WooCommerce, Magento, BigCommerce and Standalone, the revenue layer is GA4-only.
+The biggest difference between the [Built for Shopify](/revenuehunt-built-for-shopify/) (BFS) version of RevenueHunt and the **Shopify Legacy** version is how they handle revenue attribution. On Built for Shopify, the app connects to Shopify Orders automatically the moment it's installed; quiz-attributed orders, total order value and average order value land in the Analytics tab with zero configuration. On Shopify Legacy, the same data requires a multi-step setup **and** a same-session attribution caveat that's easy to miss until your numbers come up flat. On WooCommerce, Magento, BigCommerce and Standalone, the revenue layer is GA4-only.
 
 This guide covers what's automatic on BFS, what to configure on Legacy (including the caveat), and where GA4 fits for everyone else.
 
@@ -26,7 +26,7 @@ This guide covers what's automatic on BFS, what to configure on Legacy (includin
 <div style="margin:32px 0;padding:24px 28px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 14px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">What you'll learn</p>
   <ul style="list-style:none;padding:0;margin:0;">
-    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>Why BFS gives you quiz revenue out of the box and Legacy requires explicit setup.</span></li>
+    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>Why Built for Shopify gives you quiz revenue out of the box and Legacy requires explicit setup.</span></li>
     <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>The same-session attribution caveat on Shopify Legacy and how to configure around it.</span></li>
     <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>Where quiz answers appear inside the Shopify Orders tab, and how to use the tags for segmented marketing.</span></li>
     <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>How the GA4 integration covers the platforms without native Shopify tracking.</span></li>
@@ -58,7 +58,7 @@ Every order that came through a quiz is automatically marked in your Shopify **O
 
 <div class="not-prose my-6"><img src="/img/blog/shopify-quiz-revenue-tracking/shopify-orders-with-quiz-tags.png" alt="Shopify order detail showing the quiz answers attached to the order" style="max-width:560px;width:100%;height:auto;display:block;" loading="lazy" /></div>
 
-This is the data that powers downstream segmentation. Pipe the same answers to [Klaviyo](/klaviyo-zero-party-data/), [HubSpot](/hubspot-quiz-integration/) or [Omnisend](/omnisend-quiz-integration/) and your post-purchase flows can address the actual stated concern, not just "thanks for your order."
+This is the data that powers downstream segmentation. Pipe the same answers to [Klaviyo](/klaviyo-zero-party-data/), [HubSpot](/hubspot-quiz-integration/) or [Omnisend](/omnisend-quiz-integration/) and your post-purchase flows can address the actual stated concern, not just "thanks for your order." For a worked example of this exact setup driving $691K in 90 days on cold Meta traffic (verified through this revenue-tracking layer), see the [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/). For the broader strategy on [zero-party data](/zero-party-data/) as a category, and why interrupt-style popups don't produce segmentable lists, see [why popups are walls and quizzes are doors](/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/).
 
 ## Shopify Legacy: manual setup, plus the same-session caveat
 
@@ -173,6 +173,7 @@ On Built for Shopify, often yes. The native Shopify integration is the daily "di
 - For the ad-side audiences this data unlocks: [Meta Pixel quiz integration](/meta-pixel-quiz-integration/).
 - For the segmentation layer downstream: [customer tags in product quizzes](/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/) and [Klaviyo zero-party data](/klaviyo-zero-party-data/).
 - For the recommendation logic that determines what shoppers see: [product quiz recommendation systems](/product-quiz-recommendation-systems/).
+- For the full strategy this attribution layer fits into: [build a sales funnel on a Shopify store](/build-sales-funnel-shopify-store/).
 - Estimate the revenue lift on your own store: [quiz ROI calculator](/quiz-roi-calculator/).
 - The benchmark report behind every stat: [the state of product recommendation quizzes](/state-of-product-recommendation-quizzes/).
 
@@ -220,6 +221,46 @@ On Built for Shopify, often yes. The native Shopify integration is the daily "di
         "@type": "Answer",
         "text": "On Built for Shopify, often yes. The native Shopify integration is the daily check; GA4 handles delayed attribution, traffic-source attribution, and cohort analysis. On Legacy with the same-session caveat, treating GA4 as the source-of-truth is usually safer."
       }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to connect Google Analytics 4 to a RevenueHunt quiz",
+  "description": "Connect a RevenueHunt product recommendation quiz to Google Analytics 4 to track quiz starts, completions, recommendations, add-to-cart actions and quiz-driven revenue. Works on every RevenueHunt platform version (Built for Shopify, Shopify Legacy, WooCommerce, Magento, BigCommerce, Standalone).",
+  "totalTime": "PT3M",
+  "tool": [
+    {"@type": "HowToTool", "name": "RevenueHunt: Recommender Quiz app"},
+    {"@type": "HowToTool", "name": "Google Analytics 4 property"}
+  ],
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Open the Connect tab in the RevenueHunt app",
+      "text": "In the RevenueHunt app, open the quiz, then the Connect tab, and find Google Analytics."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Copy your GA4 Measurement ID",
+      "text": "In GA4, open Admin > Data Streams and copy your Measurement ID (format G-XXXXXXX)."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Paste the Measurement ID into RevenueHunt",
+      "text": "Paste the GA4 Measurement ID into RevenueHunt and save."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Publish the quiz to activate tracking",
+      "text": "Publish the quiz. Quiz events will now appear in GA4 under Engagement > Conversions > Purchase, filtered by source = revenuehunt."
     }
   ]
 }

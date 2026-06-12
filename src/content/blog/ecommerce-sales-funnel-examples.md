@@ -2,7 +2,7 @@
 title: "11 ecommerce sales funnel examples that convert in 2026"
 description: "11 ecommerce sales funnel examples from real Shopify stores and DTC brands, plus the funnel stages that drove the results and how to build your own."
 pubDate: 2026-05-27T11:00:00Z
-updatedDate: 2026-05-27T11:00:00Z
+updatedDate: 2026-06-12T10:00:00Z
 tags:
   - "ecommerce"
   - "sales funnels"
@@ -20,13 +20,40 @@ An ecommerce sales funnel isn't a generic marketing flowchart with "TOFU/MOFU/BO
 
 This guide walks through 11 ecommerce sales funnel examples (seven well-known DTC brands and four real RevenueHunt customers), the specific mechanics that make each one convert, the funnel stages that drove the results, and how to assemble your own [quiz funnel](/glossary/quiz-funnel/) using a free template. To estimate the lift on your own store, use our [quiz ROI calculator](/quiz-roi-calculator/).
 
+<div style="margin:32px 0;padding:24px 28px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 14px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">What you'll learn</p>
+  <ul style="list-style:none;padding:0;margin:0;">
+    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>How seven landmark DTC brands (Function of Beauty, HUM, Stitch Fix, Trade Coffee, Warby Parker, Casper, Birchbox) actually structure their funnels.</span></li>
+    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>Four real RevenueHunt customer funnels with disclosed metrics (including +42.64% AOV / $691K in 90 days on cold Meta).</span></li>
+    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>The five-stage funnel model (AIDA plus retention) that all 11 examples share, and where most stores leak.</span></li>
+    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>How to replicate any of these patterns on Shopify in under an hour with a no-code quiz template.</span></li>
+    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>Which five funnel-performance metrics to track instead of vanity traffic numbers.</span></li>
+  </ul>
+</div>
+
 ## How we picked these examples
 
 Every funnel below meets three criteria: (1) the brand is currently operating it in production (no archived case studies); (2) the funnel mechanic is documented either through public observation or, for our own customers, with specific disclosed metrics; (3) the design pattern is replicable on Shopify or Shopify Plus by a team without a dedicated growth engineer. We left out funnels that depend on proprietary tech, undisclosed paid-media spend or contractual exclusivities, because those examples don't help anyone build.
 
 Where the result is disclosed publicly (case studies, podcast interviews, investor decks) we cite the figure. Where it isn't, we say so. We've also flagged the four RevenueHunt customer examples explicitly so you can distinguish documented case studies from public-observation reviews.
 
-## 1. Function of Beauty: the prototypical quiz funnel
+## The 11 funnels worth studying
+
+| # | Brand | Category | Funnel mechanic | Disclosed result |
+|---|---|---|---|---|
+| 1 | Function of Beauty | Hair care | Quiz-as-storefront, 6-8 questions to a custom-formula bottle | Reached unicorn valuation in 2020 (quiz cited as primary driver) |
+| 2 | HUM Nutrition | Supplements | 3-minute diagnostic to personalised nutrition report + subscription | Quiz cited as primary acquisition channel; specific CVR not disclosed |
+| 3 | Stitch Fix | Apparel | 15-question style profile feeding algorithm + human stylist box | IPO 2017 at $1.6B valuation, personalisation flywheel as core thesis |
+| 4 | Trade Coffee | Specialty coffee | Taste-profile quiz matching 50+ roasters into flexible subscription | Quiz cited as primary acquisition and retention lever |
+| 5 | Warby Parker | Eyewear | Originally home try-on, now AR virtual try-on | IPO 2021 at $6B+ market cap; original try-on cited as highest-converting flow |
+| 6 | Casper | Mattresses | Sleep-education quiz + single mattress rec + 100-night trial | $1.1B valuation pre-IPO; specific CVR not disclosed |
+| 7 | Birchbox | Beauty samples | Beauty profile to monthly curated box, full-size reorder loop | 2.5M+ subscribers at peak; churn dropped after per-sample feedback step |
+| 8 | Skinology (RevenueHunt) | Luxury skincare | Multi-step diagnostic to 3-5 product routine, native Klaviyo sync | Significantly higher AOV from quiz traffic ([case study](/skinology-case-study/)) |
+| 9 | Daughterela (RevenueHunt) | Multi-category beauty | Branching quiz into 3 sub-catalogues; quiz-tagged Shopify orders | Substantial AOV and email engagement uplift ([case study](/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/)) |
+| 10 | Anti-ageing device brand (RevenueHunt) | Beauty devices | Qualifying funnel: 7 questions + 5 persuasion screens, cold Meta to results | **+42.64% AOV, $691K in 90 days, 9.8% CVR on cold traffic** ([case study](/anti-aging-beauty-brand-quiz-funnel-case-study/)) |
+| 11 | Extreme Kids World (RevenueHunt) | Outdoor play | Configurator quiz on yard / age / budget to 3-4 matched products | Significantly higher conversion vs catalogue traffic ([case study](/extreme-kids-world-case-study/)) |
+
+### 1. Function of Beauty: the prototypical quiz funnel
 
 ![Function of Beauty quiz funnel](/img/blog/ecommerce-sales-funnel-examples/blog_11examples_functionofbeauty.webp)
 
@@ -36,7 +63,7 @@ Where the result is disclosed publicly (case studies, podcast interviews, invest
 
 **Reported result.** Function of Beauty's quiz-driven model contributed to the company reaching unicorn-status valuation in 2020, with reporting that the quiz was the primary conversion driver. The brand has not disclosed quiz-completion-to-purchase rates publicly.
 
-## 2. HUM Nutrition: the 3-minute supplement diagnostic
+### 2. HUM Nutrition: the 3-minute supplement diagnostic
 
 ![HUM Nutrition quiz funnel](/img/blog/ecommerce-sales-funnel-examples/blog_11examples_humnutrition.webp)
 
@@ -46,7 +73,7 @@ Where the result is disclosed publicly (case studies, podcast interviews, invest
 
 **Reported result.** HUM has cited the quiz-driven funnel as a primary acquisition channel and is consistently named among the top-rated supplement brands in DTC coverage. Quiz-completion-to-purchase rates have not been disclosed publicly.
 
-## 3. Stitch Fix: the style-profile funnel for high-AOV apparel
+### 3. Stitch Fix: the style-profile funnel for high-AOV apparel
 
 ![Stitch Fix style profile funnel](/img/blog/ecommerce-sales-funnel-examples/blog_11examples_stitchfixexample.webp)
 
@@ -56,7 +83,7 @@ Where the result is disclosed publicly (case studies, podcast interviews, invest
 
 **Reported result.** Stitch Fix went public in 2017 at a $1.6B valuation. The compounding-personalisation flywheel was the central thesis of the IPO prospectus.
 
-## 4. Trade Coffee: the taste-profile match funnel
+### 4. Trade Coffee: the taste-profile match funnel
 
 ![Trade Coffee taste-profile quiz funnel](/img/blog/ecommerce-sales-funnel-examples/blog_11examples_tradecofeeexample.webp)
 
@@ -66,7 +93,7 @@ Where the result is disclosed publicly (case studies, podcast interviews, invest
 
 **Reported result.** Trade Coffee has cited the quiz as the primary acquisition funnel and the subscription's main retention lever. The brand is currently operating across the US (Seed Leaf Inc., 2026).
 
-## 5. Warby Parker: from home try-on to virtual try-on
+### 5. Warby Parker: from home try-on to virtual try-on
 
 ![Warby Parker funnel](/img/blog/ecommerce-sales-funnel-examples/blog_11examples_warbyparker.webp)
 
@@ -80,7 +107,7 @@ Where the result is disclosed publicly (case studies, podcast interviews, invest
 
 ![Warby Parker virtual try-on AR experience](/img/blog/ecommerce-sales-funnel-examples/blog_11examples_warbyparker_virtualtryon.webp)
 
-## 6. Casper: the sleep-education funnel
+### 6. Casper: the sleep-education funnel
 
 ![Casper sleep quiz funnel](/img/blog/ecommerce-sales-funnel-examples/blog_11examples_casperexample.webp)
 
@@ -90,7 +117,7 @@ Where the result is disclosed publicly (case studies, podcast interviews, invest
 
 **Reported result.** Casper reached a $1.1B valuation pre-IPO. The brand has not publicly disclosed quiz-completion-to-purchase rates.
 
-## 7. Birchbox: the beauty-profile subscription funnel
+### 7. Birchbox: the beauty-profile subscription funnel
 
 ![Birchbox beauty-profile subscription funnel](/img/blog/ecommerce-sales-funnel-examples/blog_11examples_birchboxsubscriptions.webp)
 
@@ -100,7 +127,7 @@ Where the result is disclosed publicly (case studies, podcast interviews, invest
 
 **Reported result.** Birchbox reached 2.5M+ subscribers at peak and was acquired by FemTec Health in 2021. Subscription churn dropped meaningfully after the brand added the "feedback per sample" step to the funnel.
 
-## 8. Skinology (former RevenueHunt customer): luxury skincare via personalisation
+### 8. Skinology (former RevenueHunt customer): luxury skincare via personalisation
 
 ![Skinology product recommendation quiz](/img/blog/skinology-case-study/quiz-screenshot.webp)
 
@@ -110,21 +137,21 @@ Where the result is disclosed publicly (case studies, podcast interviews, invest
 
 **Reported result.** Skinology reported significantly higher AOV from quiz-driven traffic than from category-page traffic during the period covered by the case study, with sustained conversion from the personalised email sequence. The full case study is here: [Skinology and the personalised skincare journey](/skinology-case-study/).
 
-## 9. Daughterela (RevenueHunt customer): natural-beauty discovery
+### 9. Daughterela (RevenueHunt customer): natural-beauty discovery
 
 ![Daughterela quiz funnel](/img/blog/ecommerce-sales-funnel-examples/blog_11examples_daughtrellaexample.webp)
 
 **What makes it work.** Daughterela's catalogue spans skincare, makeup and wellness, which produces classic discovery friction: shoppers don't know where to start. The brand built a "personal beauty consultant" funnel that uses a quiz at the top of the funnel to route shoppers into one of three sub-catalogues (skincare, makeup, supplements), then layers preference data on top to recommend specific products within each sub-catalogue.
 
-**The funnel mechanic.** Quiz with branching logic (skincare path vs makeup path vs wellness path) collects zero-party data (skin type, undertone, treatment goal, sustainability priority); results page shows a tailored routine; email follow-up uses the routine as the personalised reference. Shopify Orders are tagged with quiz answers so the post-purchase experience continues the personalisation. For the underlying mechanics, see our [zero-party data guide](https://revenuehunt.com/zero-party-data/).
+**The funnel mechanic.** Quiz with branching logic (skincare path vs makeup path vs wellness path) collects zero-party data (skin type, undertone, treatment goal, sustainability priority); results page shows a tailored routine; email follow-up uses the routine as the personalised reference. Shopify Orders are tagged with quiz answers so the post-purchase experience continues the personalisation. For the underlying mechanics, see our [zero-party data guide](/glossary/zero-party-data/).
 
-**Reported result.** Daughterela has reported substantial uplift in average order value and email engagement from the quiz funnel relative to baseline traffic. The full case study is here: [Daughterela redefining natural beauty](https://revenuehunt.com/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/).
+**Reported result.** Daughterela has reported substantial uplift in average order value and email engagement from the quiz funnel relative to baseline traffic. The full case study is here: [Daughterela redefining natural beauty](/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/).
 
-## 10. Anti-aging device brand (RevenueHunt customer): the qualifying funnel
+### 10. Anti-ageing device brand (RevenueHunt customer): the qualifying funnel
 
 ![Anti-aging device and serum product photography](/img/blog/anti-aging-beauty-brand-quiz-funnel-case-study/blog_casestudy_aov42_img2.webp)
 
-**What makes it work.** This US anti-aging device brand sells high-ticket items (a microcurrent facial device plus a complementary serum) where unqualified traffic produces a low conversion rate and high refund risk. The team built a *qualifying* funnel: instead of trying to convert every visitor, the quiz screens shoppers by skin concern, age range, treatment history and willingness-to-invest, then surfaces the right product (and the right messaging) only to qualified shoppers.
+**What makes it work.** This US anti-ageing device brand sells high-ticket items (a microcurrent facial device plus a complementary serum) where unqualified traffic produces a low conversion rate and high refund risk. The team built a *qualifying* funnel: instead of trying to convert every visitor, the quiz screens shoppers by skin concern, age range, treatment history and willingness-to-invest, then surfaces the right product (and the right messaging) only to qualified shoppers.
 
 **The funnel mechanic.** Qualification quiz with treatment-history branching; results page customised to each qualified segment; native sync to Klaviyo with quiz answers as custom properties powering segment-specific welcome, replenishment and consultation-booking flows. The disqualified traffic gets nurture content instead of the hard sell, preserving brand goodwill.
 
@@ -132,9 +159,9 @@ Where the result is disclosed publicly (case studies, podcast interviews, invest
 
 The diagram above maps the end-to-end mechanic. The cold Meta ad clicks into the quiz, seven questions cover concerns and history, and inside those questions sit five micro-screens that do the persuasion work: *right spot* (46.2% pass through), *validation* (94.8%), *cost reframe* (99.5%), *lifestyle* (97.5%) and *you qualify* (99.3%). The hard filter is the first screen; the four that follow assume the shopper is qualified and shift the work from screening to converting. The shopper hits a results page with a single CTA, lands on the $107 AOV purchase, and the zero-party data from every quiz answer syncs to Klaviyo where segmented flows drive the repeat-purchase loop.
 
-**Reported result.** **42.64% AOV lift and $691K in attributed revenue in 90 days.** Full breakdown: [How a US anti-aging device brand achieved 42.64% AOV lift](https://revenuehunt.com/anti-aging-beauty-brand-quiz-funnel-case-study/).
+**Reported result.** **+42.64% AOV lift, $691K in attributed revenue, and 9.8% quiz-to-purchase CVR on cold Meta traffic in 90 days.** Full breakdown: [the anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/).
 
-## 11. Extreme Kids World (RevenueHunt customer): the configurator funnel
+### 11. Extreme Kids World (RevenueHunt customer): the configurator funnel
 
 ![Extreme Kids World configurator funnel](/img/blog/ecommerce-sales-funnel-examples/blog_11examples_extremekidsworldexample.webp)
 
@@ -148,9 +175,9 @@ The diagram above maps the end-to-end mechanic. The cold Meta ad clicks into the
 
 Across all 11 examples, the same five-stage structure shows up. It's a deliberate evolution of the classic AIDA model (Attention → Interest → Desire → Action) with a fifth stage that's become the difference between a one-time-purchase business and a brand:
 
-**Stage 1: Attention.** Top-of-funnel acquisition that doesn't waste signal. The strongest funnels above (Function of Beauty, Care/of, the anti-aging brand) use paid ads, content and landing pages that point directly at the quiz, not at the catalogue. The cost-per-quiz-start is the real top-of-funnel metric; cost-per-visit is a vanity number that hides funnel-quality differences.
+**Stage 1: Attention.** Top-of-funnel acquisition that doesn't waste signal. The strongest funnels above (Function of Beauty, HUM Nutrition, the anti-ageing device brand) use paid ads, content and landing pages that point directly at the quiz, not at the catalogue. The cost-per-quiz-start is the real top-of-funnel metric; cost-per-visit is a vanity number that hides funnel-quality differences.
 
-**Stage 2: Interest.** This is where the quiz lives. The job here is to convert a passing shopper into an actively engaged participant by offering a clear value exchange: "answer five questions, get a recommendation tailored to you." Completion rates of 40 to 60% on well-designed quizzes are normal in 2026; that's the rate that compounds downstream. Every quiz answer is structured first-party data that powers Stage 4 and Stage 5. For a deeper look at the data category, see our [first-party data guide](https://revenuehunt.com/first-party-data/).
+**Stage 2: Interest.** This is where the quiz lives. The job here is to convert a passing shopper into an actively engaged participant by offering a clear value exchange: "answer five questions, get a recommendation tailored to you." Completion rates of 40 to 60% on well-designed quizzes are normal in 2026; that's the rate that compounds downstream. Every quiz answer is structured first-party data that powers Stage 4 and Stage 5. For a deeper look at the data category, see our [first-party data guide](/first-party-data/).
 
 **Stage 3: Desire.** The results page. This is the most under-engineered stage in most funnels: brands invest in the quiz then dump the customer on a generic product page. The funnels above treat the results page as a bespoke product detail page: the customer's name or stated preference is referenced, the rationale per recommendation is visible, social proof is anchored to the shopper's segment (not generic store-wide reviews), and the cart includes intelligent cross-sells based on the quiz answers.
 
@@ -160,9 +187,9 @@ Across all 11 examples, the same five-stage structure shows up. It's a deliberat
 
 ## How to build your own (free template)
 
-Every quiz-driven funnel above can be replicated on Shopify in under an hour using an industry-specific template. Install [RevenueHunt: Recommender Quiz for Shopify](https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=platform_hero), browse our [library of ready-made quiz templates](https://revenuehunt.com/templates/) (skin type finder, routine builder, wellness goal matcher, supplement diagnostic, eyewear fit, sleep quiz and more), wire up the native Klaviyo, Omnisend or Mailchimp connection, and the funnel is live the same day. The free plan covers most stores up to their first thousand quiz completions, which is enough to validate the model before committing to anything.
+Every quiz-driven funnel above can be replicated on Shopify in under an hour using an industry-specific template. [Launch a quiz on Shopify](/shopify-quiz-app/) (no code, free trial), browse the [library of ready-made quiz templates](/templates/) (skin type finder, routine builder, wellness goal matcher, supplement diagnostic, eyewear fit, sleep quiz and more), wire up the native Klaviyo, Omnisend or Mailchimp connection, and the funnel is live the same day. The free plan covers most stores up to their first thousand quiz completions, which is enough to validate the model before committing to anything.
 
-For the strategy behind the build (the five funnel stages, the design choices that determine whether a funnel compounds or stalls, and the apps that fit each stage), see our [step-by-step funnel build guide](https://revenuehunt.com/build-sales-funnel-shopify-store/).
+For the strategy behind the build (the five funnel stages, the design choices that determine whether a funnel compounds or stalls, and the apps that fit each stage), see our [step-by-step funnel build guide](/build-sales-funnel-shopify-store/).
 
 ## Frequently asked questions
 
@@ -180,7 +207,7 @@ Across the 11 examples above, quiz-driven funnels consistently outperform catalo
 
 ### How long should an ecommerce funnel quiz be?
 
-Three to seven diagnostic questions is the sweet spot for most categories. Fewer than three rarely produces enough structured data to differentiate recommendations; more than seven produces diminishing returns on completion rate. Function of Beauty (6 to 8) and Care/of (10 to 15) are on the longer end because the perceived value of the recommendation is high enough to justify the time.
+Three to seven diagnostic questions is the sweet spot for most categories. Fewer than three rarely produces enough structured data to differentiate recommendations; more than seven produces diminishing returns on completion rate. Function of Beauty (6 to 8) and Stitch Fix (15) sit on the longer end because the perceived value of the recommendation is high enough to justify the time.
 
 ### Can I build a quiz funnel on Shopify without code?
 
@@ -196,4 +223,92 @@ Track quiz-start rate, quiz-completion rate, completion-to-add-to-cart rate, AOV
 
 ### Where can I find more case studies?
 
-Our [case study collection](https://revenuehunt.com/cat/case-studies/) covers RevenueHunt customers across skincare, supplements, apparel, beauty and outdoor categories. Each case study includes the funnel mechanic, the metrics, and the implementation timeline.
+Our [case study collection](/cat/case-studies/) covers RevenueHunt customers across skincare, supplements, apparel, beauty and outdoor categories. Each case study includes the funnel mechanic, the metrics, and the implementation timeline.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "11 ecommerce sales funnel examples",
+  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+  "numberOfItems": 11,
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Function of Beauty: the prototypical quiz funnel"},
+    {"@type": "ListItem", "position": 2, "name": "HUM Nutrition: the 3-minute supplement diagnostic"},
+    {"@type": "ListItem", "position": 3, "name": "Stitch Fix: the style-profile funnel for high-AOV apparel"},
+    {"@type": "ListItem", "position": 4, "name": "Trade Coffee: the taste-profile match funnel"},
+    {"@type": "ListItem", "position": 5, "name": "Warby Parker: from home try-on to virtual try-on"},
+    {"@type": "ListItem", "position": 6, "name": "Casper: the sleep-education funnel"},
+    {"@type": "ListItem", "position": 7, "name": "Birchbox: the beauty-profile subscription funnel"},
+    {"@type": "ListItem", "position": 8, "name": "Skinology: luxury skincare via personalisation", "url": "https://revenuehunt.com/skinology-case-study/"},
+    {"@type": "ListItem", "position": 9, "name": "Daughterela: natural-beauty discovery", "url": "https://revenuehunt.com/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/"},
+    {"@type": "ListItem", "position": 10, "name": "Anti-ageing device brand: the qualifying funnel (+42.64% AOV, $691K in 90 days)", "url": "https://revenuehunt.com/anti-aging-beauty-brand-quiz-funnel-case-study/"},
+    {"@type": "ListItem", "position": 11, "name": "Extreme Kids World: the configurator funnel", "url": "https://revenuehunt.com/extreme-kids-world-case-study/"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is an ecommerce sales funnel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An ecommerce sales funnel is the specific sequence of pages, prompts and personalisation a shopper moves through between landing on your store and re-ordering. Unlike a generic marketing funnel, an ecommerce funnel is anchored in product pages, checkout, post-purchase emails and lifecycle flows, and is typically measured on attached metrics like AOV, repeat-purchase rate and customer LTV rather than awareness metrics."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What stages does an ecommerce sales funnel have?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The classic four-stage AIDA model (Attention, Interest, Desire, Action) covers acquisition through conversion. In 2026, the strongest ecommerce funnels add a fifth retention stage that powers post-purchase emails, replenishment and lifetime-value mechanics with the data collected during Stages 2 and 3."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the highest-converting type of ecommerce funnel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Across the 11 examples in this guide, quiz-driven funnels consistently outperform catalogue-only funnels on conversion rate, AOV and email RPR. The reason is structural: the quiz collects explicit preference data that powers personalised recommendations and personalised retention flows, which compound across the customer lifetime."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long should an ecommerce funnel quiz be?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Three to seven diagnostic questions is the sweet spot for most categories. Fewer than three rarely produces enough structured data to differentiate recommendations; more than seven produces diminishing returns on completion rate. Function of Beauty (6 to 8) and Stitch Fix (15) sit on the longer end because the perceived value of the recommendation is high enough to justify the time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I build a quiz funnel on Shopify without code?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. RevenueHunt's quiz builder is no-code, with industry-specific templates and native integrations with Klaviyo, Omnisend, Mailchimp, Meta Custom Audiences, Google Customer Match and Shopify Orders. Most stores launch in under an hour."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are these examples Shopify-only?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not all of them. Most of the DTC brands above run on a mix of Shopify (Shopify Plus for the larger ones) and headless commerce stacks. The RevenueHunt customer examples are all Shopify stores. The funnel patterns are replicable on any platform that supports custom checkout and a connected ESP."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I track ecommerce funnel performance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Track quiz-start rate, quiz-completion rate, completion-to-add-to-cart rate, AOV on quiz-attributed orders versus baseline orders, email RPR on quiz-enriched profiles versus unenriched, and 90-day repeat-purchase rate. These five metrics will tell you which funnel stage is leaking and where the next investment should go."
+      }
+    }
+  ]
+}
+</script>

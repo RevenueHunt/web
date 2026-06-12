@@ -1,6 +1,6 @@
 ---
 title: "ActiveCampaign quiz integration: send leads and segment by quiz answers"
-description: "Connect a RevenueHunt quiz to ActiveCampaign on Shopify Legacy, WooCommerce, Magento, BigCommerce and Standalone, plus the workaround for Built for Shopify."
+description: "Connect a RevenueHunt quiz to ActiveCampaign on Shopify Legacy, WooCommerce, Magento, BigCommerce, Standalone, plus the Built for Shopify workaround."
 pubDate: 2025-03-06T09:30:20Z
 updatedDate: 2026-06-02T10:00:00Z
 tags: ["ActiveCampaign", "integrations", "email marketing", "CRM", "lead capture"]
@@ -43,7 +43,7 @@ This guide walks the **exact setup paths** by platform, the **10 data fields** t
 
 Quizzes capture interest at its peak: the moment a shopper is actively choosing. ActiveCampaign handles what happens next: contacts, segments, CXA flows, predictive sending. Three things change when you connect them:
 
-**Zero-party data lands on the contact record automatically** (on every supported platform). Email, name, every tag the quiz logic assigned, and the recommended product IDs all flow into ActiveCampaign as custom fields on the contact.
+**[Zero-party data](/zero-party-data/) lands on the contact record automatically** (on every supported platform). Email, name, every tag the quiz logic assigned, and the recommended product IDs all flow into ActiveCampaign as custom fields on the contact. This is the same data layer the [first-party data guide](/first-party-data/) covers in depth, and the same data that powers the [popups-vs-quizzes argument](/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/) on why interrupt-style popups don't produce segmentable lists.
 
 **Segments stay accurate by themselves.** Filter on a custom field (e.g. `quiz_tags contains "oily_skin"`) and the segment updates as new quiz responses arrive.
 
@@ -112,7 +112,7 @@ All five platforms use the same flow. There are two starting points: from the Re
 
 <div class="not-prose my-6"><img src="/img/blog/activecampaign-quiz-integration/ac-field-mapping.png" alt="Field mapping screen between quiz and ActiveCampaign" style="max-width:540px;width:100%;height:auto;display:block;" loading="lazy" /></div>
 
-Save the configuration. The quiz is connected. New responses will land in ActiveCampaign with the mapped fields populated.
+Save the configuration. The quiz is connected. New responses will land in ActiveCampaign with the mapped fields populated. To verify the integration is firing correctly against your own order data (rather than against the ActiveCampaign side alone), cross-reference the quiz response count and revenue against the [first-party Shopify quiz analytics](/first-party-shopify-quiz-analytics/) dashboard.
 
 ### Starting from the ActiveCampaign Apps menu
 
@@ -204,6 +204,7 @@ If you're on Shopify and your tooling is transactional email plus on-store autom
 - For tag-driven Shopify-native automations: [Shopify Flow](/how-to-automate-post-quiz-emails-using-shopify-flows/).
 - For the data layer downstream: [customer tags in product quizzes](/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/).
 - For consent collection at quiz time: [marketing consent in your quiz](/product-quiz-marketing-consent/).
+- For the full strategy this integration fits into: [build a sales funnel on a Shopify store](/build-sales-funnel-shopify-store/).
 - Estimate the lift on your own store: [quiz ROI calculator](/quiz-roi-calculator/).
 
 <script type="application/ld+json">
@@ -250,6 +251,64 @@ If you're on Shopify and your tooling is transactional email plus on-store autom
         "@type": "Answer",
         "text": "If you're on Shopify and your tooling is transactional email plus on-store automation, Klaviyo is usually the better pick: deeper Shopify-native triggers and a larger ecommerce-focused template library. If you need CRM and sales hand-off as part of the same platform, or you're on WooCommerce / Magento / BigCommerce / Standalone and want the CXA toolkit, ActiveCampaign is the cleaner fit."
       }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to connect a RevenueHunt quiz to ActiveCampaign",
+  "description": "Connect a RevenueHunt product recommendation quiz to ActiveCampaign on Shopify Legacy, WooCommerce, Magento, BigCommerce or Standalone using the Connect tab. Quiz responses sync to ActiveCampaign contact records with 10 custom fields including Tags and Recommended Product IDs.",
+  "totalTime": "PT5M",
+  "tool": [
+    {"@type": "HowToTool", "name": "RevenueHunt: Recommender Quiz app"},
+    {"@type": "HowToTool", "name": "ActiveCampaign account"}
+  ],
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Open the Connect tab in the Quiz Builder",
+      "text": "In RevenueHunt, open the quiz in the Quiz Builder and click the Connect tab."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Copy the ActiveCampaign API Token",
+      "text": "Find the ActiveCampaign section in the Connect tab and copy the API Token shown there."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Click Connect to redirect to ActiveCampaign",
+      "text": "Click Connect. You will be redirected to ActiveCampaign."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Add an account in ActiveCampaign",
+      "text": "In ActiveCampaign, click Add an account."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 5,
+      "name": "Paste the API Token",
+      "text": "Paste the API Token you copied from the RevenueHunt Connect tab."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 6,
+      "name": "Select the quiz and continue",
+      "text": "Select the quiz you want to sync and click Continue."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 7,
+      "name": "Map quiz response fields to ActiveCampaign contact fields",
+      "text": "Pair each quiz field on the left with the corresponding ActiveCampaign field on the right, then save. New responses will land in ActiveCampaign with the mapped fields populated."
     }
   ]
 }

@@ -242,6 +242,8 @@ export default defineConfig({
       "/scoring-quiz-setup/",
     "/make-your-facebook-ads-smarter-with-revenuehunts-quiz-integration/":
       "/meta-pixel-quiz-integration/",
+    "/how-to-track-and-maximize-quiz-driven-revenue-in-shopify/":
+      "/shopify-quiz-revenue-tracking/",
     "/shop/": "/product-recommendation-quiz-shopify/",
   },
   integrations: [

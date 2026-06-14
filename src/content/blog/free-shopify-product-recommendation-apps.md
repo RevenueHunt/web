@@ -20,7 +20,7 @@ draft: false
 
 The best free Shopify product recommendation apps in 2026 fall into five categories: quiz builders for top-of-funnel personalisation, upsell and cross-sell apps, post-purchase recommenders, affiliate and referral tools, and bundle builders. Each one below is reviewed with its free-plan limit and the type of recommendation it powers.
 
-Product recommendation is one of the highest-ROI tactics on Shopify because the marginal cost of personalisation is near zero once the data is collected. The hard part is choosing the right app for your category, traffic volume and AOV. The list below is curated by the type of recommendation each app does best, with the honest free-plan boundaries called out.
+Product recommendation is one of the highest-ROI tactics on Shopify because the marginal cost of personalisation is near zero once the data is collected. The hard part is choosing the right app for your category, traffic volume and AOV. The list below is curated by the type of recommendation each app does best, with the honest free-plan boundaries called out. The quiz category is led by the [product recommendation quiz for Shopify](/product-recommendation-quiz-shopify/), reviewed first below.
 
 For the broader strategy of how product recommendation fits into a complete funnel, see our [step-by-step funnel build guide](https://revenuehunt.com/build-sales-funnel-shopify-store/). For 11 funnels that actually convert in 2026, see our [real funnel examples](https://revenuehunt.com/ecommerce-sales-funnel-examples/).
 

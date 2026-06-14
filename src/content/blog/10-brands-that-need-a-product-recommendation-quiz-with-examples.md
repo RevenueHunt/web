@@ -19,7 +19,7 @@ featuredImage: "/img/blog/10-brands-that-need-a-product-recommendation-quiz-with
 draft: false
 ---
 
-A product recommendation quiz works best for brands selling in categories where shoppers struggle to choose between similar SKUs without expert guidance. The 10 categories below all share that profile: skincare, haircare, supplements, coffee, jewellery, sports gear, pet food, home decor, perfume and cosmetics. Each section includes a live quiz example you can try.
+A product recommendation quiz works best for brands selling in categories where shoppers struggle to choose between similar SKUs without expert guidance. The 10 categories below all share that profile: skincare, haircare, supplements, coffee, jewellery, sports gear, pet food, home decor, perfume and cosmetics. Each section includes a live quiz example you can try. Every one is built with the [product recommendation quiz for Shopify](/product-recommendation-quiz-shopify/), which also runs on WooCommerce, BigCommerce and Magento.
 
 The overwhelming choice of products in your store can drive customers away or put a strain on your customer support. While there are specialist stores that require in-person expertise (think engineering solutions), most brands can significantly reduce their support load and lift conversion by adding a quiz that does the consultation for them. For the broader strategy of how a quiz fits into a complete funnel, see our [step-by-step funnel build guide](https://revenuehunt.com/build-sales-funnel-shopify-store/). For 11 real funnels using this pattern, see our [real funnel examples](https://revenuehunt.com/ecommerce-sales-funnel-examples/).
 

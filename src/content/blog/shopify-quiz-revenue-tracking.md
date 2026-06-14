@@ -19,7 +19,7 @@ draft: false
 
 The biggest difference between the [Built for Shopify](/revenuehunt-built-for-shopify/) (BFS) version of RevenueHunt and the **Shopify Legacy** version is how they handle revenue attribution. On Built for Shopify, the app connects to Shopify Orders automatically the moment it's installed; quiz-attributed orders, total order value and average order value land in the Analytics tab with zero configuration. On Shopify Legacy, the same data requires a multi-step setup **and** a same-session attribution caveat that's easy to miss until your numbers come up flat. On WooCommerce, Magento, BigCommerce and Standalone, the revenue layer is GA4-only.
 
-This guide covers what's automatic on BFS, what to configure on Legacy (including the caveat), and where GA4 fits for everyone else.
+This guide covers what's automatic on BFS, what to configure on Legacy (including the caveat), and where GA4 fits for everyone else. New to the app? Start with the [product recommendation quiz for Shopify](/product-recommendation-quiz-shopify/) overview, then come back to wire up attribution.
 
 ![Shopify quiz revenue tracking](/img/blog/shopify-quiz-revenue-tracking/revenue-tracking-hero.webp)
 

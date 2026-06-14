@@ -66,6 +66,11 @@
 /new-feature-filter-product-recommendations-by-number-of-votes/  /whats-new/  301
 /product-recommendation-quiz-statistics/  /store-metrics/  301
 
+# --- Pruned off-topic content (was diluting topical focus / pulling wrong-intent
+# search traffic; see growth strategy PRD). "Best Shopify shipping apps" ranked for
+# shipping terms only (~33k imp, 0% CTR) — removed; send residual to the blog index.
+/shopify-shipping-apps/  /blog/  301
+
 # --- Author archives — /author/alex/ and /author/pochodura/ are real routes
 # (src/pages/author/[slug]/). Only the retired "angel" slug redirects; it was
 # the same person as "alex".

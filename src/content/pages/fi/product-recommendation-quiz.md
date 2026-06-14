@@ -1,5 +1,5 @@
 ---
-title: "Tuotesuosittelukysely - täydellinen opas verkkokaupalle"
+title: "Mikä on tuotesuosittelukysely?"
 description: "Mikä tuotesuosittelukysely on, milloin sitä käytetään, miten se luodaan ja 12 livenä toimivaa esimerkkiä ihonhoidosta, lisäravinteista, koiranruoasta, kahvista ja muusta."
 pubDate: 2020-05-18T12:21:47Z
 updatedDate: 2026-05-18T00:00:00Z
@@ -13,7 +13,7 @@ lang: "fi"
 
 ### Tuotesuosittelukysely on personal shopperin digitaalinen vastine: se ohjaa jokaisen kävijän oikeaan tuotteeseen lyhyellä sarjalla henkilökohtaisia kysymyksiä.
 
-Se toimii kuin myyjä kivijalkamyymälässä. Ostaja astuu sisään, myyjä kysyy häneltä 3-5 kysymystä ymmärtääkseen mitä hän etsii ja vie hänet suoraan oikealle hyllylle. Verkossa tuota keskustelua ei ole, ja siksi useimmat verkkokaupat konvertoivat alle 3 % vaikka ne saisivat korkean aikomuksen liikennettä. Tuotesuosittelukysely palauttaa tuon keskustelun. Sellaista käyttävät brändit näkevät yleensä 2-4× korkeammat konversioasteet kyselyliikenteellä verrattuna liikenteeseen, joka laskeutuu geneeriselle kategoriasivulle.
+Se toimii kuin myyjä kivijalkamyymälässä. Ostaja astuu sisään, myyjä kysyy häneltä 3-5 kysymystä ymmärtääkseen mitä hän etsii ja vie hänet suoraan oikealle hyllylle. Verkossa tuota keskustelua ei ole, ja siksi useimmat verkkokaupat konvertoivat alle 3 % vaikka ne saisivat korkean aikomuksen liikennettä. [Tuotesuosittelukysely](/fi/) palauttaa tuon keskustelun. Sellaista käyttävät brändit näkevät yleensä 2-4× korkeammat konversioasteet kyselyliikenteellä verrattuna liikenteeseen, joka laskeutuu geneeriselle kategoriasivulle.
 
 Tämä sivu on täydellinen opas: mikä tuotesuosittelukysely on, miten se todella toimii, milloin sitä käytetään, mikä erottaa loistavan kyselyn keskinkertaisesta ja mistä näet 12 livenä toimivaa esimerkkiä, jotka voit kokeilla itse.
 

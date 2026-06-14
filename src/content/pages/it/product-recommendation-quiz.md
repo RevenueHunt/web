@@ -1,5 +1,5 @@
 ---
-title: "Quiz di raccomandazione dei prodotti – la guida completa per l'eCommerce"
+title: "Che cos'è un quiz di raccomandazione dei prodotti?"
 description: "Cos'è un quiz di raccomandazione dei prodotti, quando usarne uno, come costruirlo, e 12 esempi dal vivo di skincare, integratori, cibo per cani, caffè e altro."
 pubDate: 2020-05-18T12:21:47Z
 updatedDate: 2026-05-18T00:00:00Z
@@ -13,7 +13,7 @@ lang: "it"
 
 ### Un quiz di raccomandazione dei prodotti è l'equivalente digitale di un personal shopper – guida ogni visitatore al prodotto giusto attraverso una breve serie di domande personalizzate.
 
-Funziona come un venditore in un negozio fisico. Un cliente entra, il venditore fa 3-5 domande per capire cosa sta cercando, poi lo accompagna direttamente allo scaffale giusto. Online quella conversazione manca – ed è per questo che la maggior parte dei siti eCommerce converte sotto il 3%, anche quando riceve traffico ad alta intenzione. Un quiz di raccomandazione dei prodotti riporta quella conversazione. I brand che ne usano uno vedono di solito tassi di conversione 2-4 volte più alti dal traffico del quiz rispetto al traffico che atterra su una pagina categoria generica.
+Funziona come un venditore in un negozio fisico. Un cliente entra, il venditore fa 3-5 domande per capire cosa sta cercando, poi lo accompagna direttamente allo scaffale giusto. Online quella conversazione manca – ed è per questo che la maggior parte dei siti eCommerce converte sotto il 3%, anche quando riceve traffico ad alta intenzione. Un [quiz di raccomandazione dei prodotti](/it/) riporta quella conversazione. I brand che ne usano uno vedono di solito tassi di conversione 2-4 volte più alti dal traffico del quiz rispetto al traffico che atterra su una pagina categoria generica.
 
 Questa pagina è la guida approfondita: cos'è un quiz di raccomandazione dei prodotti, come funziona davvero, quando usarne uno, cosa distingue un quiz eccellente da uno mediocre, e dove vedere 12 esempi dal vivo che puoi provare tu stesso.
 

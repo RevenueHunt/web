@@ -1,5 +1,5 @@
 ---
-title: "Produktrekommendationsquiz - den kompletta guiden för eCommerce"
+title: "Vad är en produktrekommendationsquiz?"
 description: "Vad en produktrekommendationsquiz är, när du ska använda den, hur du skapar den och 12 live-exempel från hudvård, kosttillskott, hundmat, kaffe och mer."
 pubDate: 2020-05-18T12:21:47Z
 updatedDate: 2026-05-18T00:00:00Z
@@ -13,7 +13,7 @@ lang: "sv"
 
 ### En produktrekommendationsquiz är den digitala motsvarigheten till en personal shopper: den guidar varje besökare till rätt produkt genom en kort serie personliga frågor.
 
-Den fungerar som en säljare i en fysisk butik. En köpare kommer in, säljaren ställer 3 till 5 frågor för att förstå vad hen letar efter och tar hen direkt till rätt hylla. Online finns inte det samtalet, och därför konverterar de flesta eCommerce-webbplatser under 3 % även när de får trafik med hög avsikt. En produktrekommendationsquiz återskapar det samtalet. Varumärken som använder en sådan ser vanligtvis 2 till 4× högre konverteringsgrader med quiz-trafik jämfört med trafik som landar på en generisk kategorisida.
+Den fungerar som en säljare i en fysisk butik. En köpare kommer in, säljaren ställer 3 till 5 frågor för att förstå vad hen letar efter och tar hen direkt till rätt hylla. Online finns inte det samtalet, och därför konverterar de flesta eCommerce-webbplatser under 3 % även när de får trafik med hög avsikt. En [produktrekommendationsquiz](/sv/) återskapar det samtalet. Varumärken som använder en sådan ser vanligtvis 2 till 4× högre konverteringsgrader med quiz-trafik jämfört med trafik som landar på en generisk kategorisida.
 
 Den här sidan är den kompletta guiden: vad en produktrekommendationsquiz är, hur den verkligen fungerar, när du ska använda den, vad som skiljer en bra quiz från en medelmåttig och var du kan se 12 live-exempel som du själv kan prova.
 

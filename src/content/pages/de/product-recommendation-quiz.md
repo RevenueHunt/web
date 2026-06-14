@@ -1,5 +1,5 @@
 ---
-title: "Produktempfehlungs-Quiz – der komplette Leitfaden für E-Commerce"
+title: "Was ist ein Produktempfehlungs-Quiz?"
 description: "Was ein Produktempfehlungs-Quiz ist, wann du eines einsetzt, wie du es aufbaust, und 12 Live-Beispiele aus Hautpflege, Supplements, Hundefutter, Kaffee und mehr."
 pubDate: 2020-05-18T12:21:47Z
 updatedDate: 2026-05-18T00:00:00Z
@@ -13,7 +13,7 @@ lang: "de"
 
 ### Ein Produktempfehlungs-Quiz ist das digitale Pendant zum Personal Shopper – es führt jeden Besucher über eine kurze Reihe personalisierter Fragen zum richtigen Produkt.
 
-Es funktioniert wie ein Verkäufer im stationären Geschäft. Ein Kunde kommt herein, der Verkäufer stellt 3 bis 5 Fragen, um zu verstehen, wonach er sucht, und führt ihn dann direkt zum richtigen Regal. Online fehlt dieses Gespräch – deshalb konvertieren die meisten E-Commerce-Seiten unter 3 %, selbst wenn sie Traffic mit hoher Kaufabsicht bekommen. Ein Produktempfehlungs-Quiz bringt dieses Gespräch zurück. Marken, die eines einsetzen, sehen beim Quiz-Traffic typischerweise 2- bis 4-mal höhere Conversion-Raten als beim Traffic, der auf einer generischen Kategorieseite landet.
+Es funktioniert wie ein Verkäufer im stationären Geschäft. Ein Kunde kommt herein, der Verkäufer stellt 3 bis 5 Fragen, um zu verstehen, wonach er sucht, und führt ihn dann direkt zum richtigen Regal. Online fehlt dieses Gespräch – deshalb konvertieren die meisten E-Commerce-Seiten unter 3 %, selbst wenn sie Traffic mit hoher Kaufabsicht bekommen. Ein [Produktempfehlungs-Quiz](/de/) bringt dieses Gespräch zurück. Marken, die eines einsetzen, sehen beim Quiz-Traffic typischerweise 2- bis 4-mal höhere Conversion-Raten als beim Traffic, der auf einer generischen Kategorieseite landet.
 
 Diese Seite ist der ausführliche Leitfaden: Was ein Produktempfehlungs-Quiz ist, wie es tatsächlich funktioniert, wann du eines einsetzt, was ein großartiges von einem mittelmäßigen Quiz unterscheidet, und wo du 12 Live-Beispiele findest, die du selbst durchspielen kannst.
 

@@ -1,5 +1,5 @@
 ---
-title: "Product Recommendation Quiz - the complete guide for eCommerce"
+title: "What is a product recommendation quiz?"
 description: "What a product recommendation quiz is, when to use one, how to build it, and 12 live examples from skincare, supplements, dog food, coffee, and more."
 pubDate: 2020-05-18T12:21:47Z
 updatedDate: 2026-05-18T00:00:00Z
@@ -12,7 +12,7 @@ draft: false
 
 ### A product recommendation quiz is the digital equivalent of a personal shopper - guiding every visitor to the right product through a short series of personalized questions.
 
-It works like a salesperson in a physical store. A shopper walks in, the salesperson asks 3 to 5 questions to understand what they're looking for, then walks them directly to the right shelf. Online, that conversation is missing - which is why most eCommerce sites convert below 3% even when they get high-intent traffic. A product recommendation quiz brings that conversation back. Brands using one typically see 2 to 4× higher conversion rates from quiz traffic compared to traffic that lands on a generic category page.
+It works like a salesperson in a physical store. A shopper walks in, the salesperson asks 3 to 5 questions to understand what they're looking for, then walks them directly to the right shelf. Online, that conversation is missing - which is why most eCommerce sites convert below 3% even when they get high-intent traffic. A [product recommendation quiz](/) brings that conversation back. Brands using one typically see 2 to 4× higher conversion rates from quiz traffic compared to traffic that lands on a generic category page.
 
 This page is the long-form guide: what a product recommendation quiz is, how it actually works, when to use one, what separates a great quiz from a mediocre one, and where to see 12 live examples you can take yourself.
 

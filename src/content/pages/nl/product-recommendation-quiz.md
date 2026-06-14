@@ -1,5 +1,5 @@
 ---
-title: "Productaanbevelingsquiz - de complete gids voor e-commerce"
+title: "Wat is een productaanbevelingsquiz?"
 description: "Wat een productaanbevelingsquiz is, wanneer je hem gebruikt, hoe je hem maakt en 12 live voorbeelden van skincare, supplementen, hondenvoer, koffie en meer."
 pubDate: 2020-05-18T12:21:47Z
 updatedDate: 2026-05-18T00:00:00Z
@@ -13,7 +13,7 @@ lang: "nl"
 
 ### Een productaanbevelingsquiz is het digitale equivalent van een personal shopper: hij leidt elke bezoeker naar het juiste product via een korte reeks gepersonaliseerde vragen.
 
-Hij werkt als een verkoper in een fysieke winkel. Een shopper komt binnen, de verkoper stelt hem 3 tot 5 vragen om te begrijpen wat hij zoekt en brengt hem rechtstreeks naar het juiste schap. Online bestaat dat gesprek niet, en daarom converteren de meeste e-commercewebsites onder de 3%, zelfs wanneer ze verkeer met hoge intentie ontvangen. Een productaanbevelingsquiz herstelt dat gesprek. Merken die er een gebruiken zien doorgaans 2 tot 4× hogere conversiepercentages met het quizverkeer in vergelijking met het verkeer dat op een generieke categoriepagina belandt.
+Hij werkt als een verkoper in een fysieke winkel. Een shopper komt binnen, de verkoper stelt hem 3 tot 5 vragen om te begrijpen wat hij zoekt en brengt hem rechtstreeks naar het juiste schap. Online bestaat dat gesprek niet, en daarom converteren de meeste e-commercewebsites onder de 3%, zelfs wanneer ze verkeer met hoge intentie ontvangen. Een [productaanbevelingsquiz](/nl/) herstelt dat gesprek. Merken die er een gebruiken zien doorgaans 2 tot 4× hogere conversiepercentages met het quizverkeer in vergelijking met het verkeer dat op een generieke categoriepagina belandt.
 
 Deze pagina is de complete gids: wat een productaanbevelingsquiz is, hoe hij echt werkt, wanneer je hem gebruikt, wat een geweldige quiz onderscheidt van een middelmatige en waar je 12 live voorbeelden kunt zien die je zelf kunt uitproberen.
 

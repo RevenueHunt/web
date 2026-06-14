@@ -1,5 +1,5 @@
 ---
-title: "Quiz de recommandation de produits - le guide complet pour l'eCommerce"
+title: "Qu'est-ce qu'un quiz de recommandation de produits ?"
 description: "Ce qu'est un quiz de recommandation de produits, quand l'utiliser, comment le créer et 12 exemples en direct : skincare, compléments, alimentation pour chien, café et plus."
 pubDate: 2020-05-18T12:21:47Z
 updatedDate: 2026-05-18T00:00:00Z
@@ -13,7 +13,7 @@ lang: "fr"
 
 ### Un quiz de recommandation de produits est l'équivalent numérique d'un personal shopper : il guide chaque visiteur vers le bon produit grâce à une courte série de questions personnalisées.
 
-Il fonctionne comme un vendeur dans une boutique physique. Un client entre, le vendeur lui pose 3 à 5 questions pour comprendre ce qu'il cherche, puis le conduit directement au bon rayon. En ligne, cette conversation est absente, et c'est pourquoi la plupart des sites eCommerce convertissent en dessous de 3 % même lorsqu'ils reçoivent un trafic à forte intention. Un quiz de recommandation de produits fait revenir cette conversation. Les marques qui en utilisent un constatent généralement des taux de conversion 2 à 4× plus élevés sur le trafic du quiz comparé au trafic qui arrive sur une page de catégorie générique.
+Il fonctionne comme un vendeur dans une boutique physique. Un client entre, le vendeur lui pose 3 à 5 questions pour comprendre ce qu'il cherche, puis le conduit directement au bon rayon. En ligne, cette conversation est absente, et c'est pourquoi la plupart des sites eCommerce convertissent en dessous de 3 % même lorsqu'ils reçoivent un trafic à forte intention. Un [quiz de recommandation de produits](/fr/) fait revenir cette conversation. Les marques qui en utilisent un constatent généralement des taux de conversion 2 à 4× plus élevés sur le trafic du quiz comparé au trafic qui arrive sur une page de catégorie générique.
 
 Cette page est le guide détaillé : ce qu'est un quiz de recommandation de produits, comment il fonctionne réellement, quand l'utiliser, ce qui distingue un excellent quiz d'un quiz médiocre, et où voir 12 exemples en direct que vous pouvez essayer vous-même.
 

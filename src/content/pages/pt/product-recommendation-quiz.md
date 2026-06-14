@@ -1,5 +1,5 @@
 ---
-title: "Quiz de recomendação de produtos – o guia completo para eCommerce"
+title: "O que é um quiz de recomendação de produtos?"
 description: "O que é um quiz de recomendação de produtos, quando usar um, como construí-lo, e 12 exemplos ao vivo de cuidados de pele, suplementos, comida para cães, café e mais."
 pubDate: 2020-05-18T12:21:47Z
 updatedDate: 2026-05-18T00:00:00Z
@@ -13,7 +13,7 @@ lang: "pt"
 
 ### Um quiz de recomendação de produtos é o equivalente digital de um personal shopper – guia cada visitante até ao produto certo através de uma curta série de perguntas personalizadas.
 
-Funciona como um vendedor numa loja física. Um cliente entra, o vendedor faz 3 a 5 perguntas para perceber o que ele procura e leva-o diretamente à prateleira certa. Online, essa conversa não existe – e é por isso que a maioria dos sites de eCommerce converte abaixo de 3%, mesmo quando recebem tráfego com alta intenção. Um quiz de recomendação de produtos traz essa conversa de volta. As marcas que usam um costumam ver taxas de conversão 2 a 4× mais altas no tráfego do quiz em comparação com o tráfego que aterra numa página de categoria genérica.
+Funciona como um vendedor numa loja física. Um cliente entra, o vendedor faz 3 a 5 perguntas para perceber o que ele procura e leva-o diretamente à prateleira certa. Online, essa conversa não existe – e é por isso que a maioria dos sites de eCommerce converte abaixo de 3%, mesmo quando recebem tráfego com alta intenção. Um [quiz de recomendação de produtos](/pt/) traz essa conversa de volta. As marcas que usam um costumam ver taxas de conversão 2 a 4× mais altas no tráfego do quiz em comparação com o tráfego que aterra numa página de categoria genérica.
 
 Esta página é o guia detalhado: o que é um quiz de recomendação de produtos, como funciona na prática, quando usar um, o que separa um ótimo quiz de um medíocre, e onde ver 12 exemplos ao vivo que podes experimentar tu mesmo.
 

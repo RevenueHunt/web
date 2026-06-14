@@ -1,5 +1,5 @@
 ---
-title: "Kvíz s doporučením produktů - kompletní průvodce pro eCommerce"
+title: "Co je kvíz s doporučením produktů?"
 description: "Co je kvíz s doporučením produktů, kdy ho použít, jak ho vytvořit a 12 živých příkladů z péče o pleť, doplňků stravy, krmiva pro psy, kávy a dalších."
 pubDate: 2020-05-18T12:21:47Z
 updatedDate: 2026-05-18T00:00:00Z
@@ -13,7 +13,7 @@ lang: "cs"
 
 ### Kvíz s doporučením produktů je digitální obdobou osobního nákupního asistenta: vede každého návštěvníka ke správnému produktu prostřednictvím krátké série personalizovaných otázek.
 
-Funguje jako prodejce v kamenné prodejně. Kupující vejde, prodejce mu položí 3 až 5 otázek, aby pochopil, co hledá, a zavede ho přímo ke správné polici. Online tento rozhovor neexistuje, a proto většina eCommerce webů konvertuje pod 3 %, i když dostávají návštěvnost s vysokým záměrem. Kvíz s doporučením produktů tento rozhovor obnovuje. Značky, které ho používají, obvykle vidí konverzní poměry 2 až 4× vyšší u návštěvnosti z kvízu ve srovnání s návštěvností, která přistává na obecné stránce kategorie.
+Funguje jako prodejce v kamenné prodejně. Kupující vejde, prodejce mu položí 3 až 5 otázek, aby pochopil, co hledá, a zavede ho přímo ke správné polici. Online tento rozhovor neexistuje, a proto většina eCommerce webů konvertuje pod 3 %, i když dostávají návštěvnost s vysokým záměrem. [Kvíz s doporučením produktů](/cs/) tento rozhovor obnovuje. Značky, které ho používají, obvykle vidí konverzní poměry 2 až 4× vyšší u návštěvnosti z kvízu ve srovnání s návštěvností, která přistává na obecné stránce kategorie.
 
 Tato stránka je kompletní průvodce: co je kvíz s doporučením produktů, jak skutečně funguje, kdy ho použít, co odlišuje skvělý kvíz od průměrného a kde vidět 12 živých příkladů, které si můžeš sám vyzkoušet.
 

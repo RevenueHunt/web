@@ -1,6 +1,6 @@
 ---
-title: "Standalone – autres plateformes eCommerce"
-description: "Votre boutique n'est pas sur Shopify ni WooCommerce ? Aucun problème ! RevenueHunt propose un personal shopper digital pour n'importe quelle plateforme eCommerce. Intégrez sans effort des quiz de produits à votre boutique et augmentez vos ventes grâce à des recommandations d'achat personnalisées, sans aucune programmation. commencez gratuitement Recomm"
+title: "Quiz de recommandation de produits standalone"
+description: "Ajoutez un quiz de recommandation de produits à n'importe quelle boutique — Magento, Wix, Squarespace, headless ou sur mesure — en synchronisant votre Google Product Feed. Sans code, offre gratuite."
 lang: "fr"
 pubDate: 2021-12-13T09:54:05Z
 updatedDate: 2025-10-14T10:30:34Z
@@ -11,7 +11,7 @@ featuredImage: "/img/pages/product-recommendation-quiz-standalone-google-product
 draft: false
 ---
 
-### Pourquoi choisir Quiz de recommandation de produits ?
+### Pourquoi choisir un quiz de recommandation de produits standalone ?
 
 **Indépendant de la plateforme :** compatible avec n'importe quelle plateforme eCommerce, y compris les boutiques sur mesure, Wix, Squarespace, Magento et bien d'autres.
 

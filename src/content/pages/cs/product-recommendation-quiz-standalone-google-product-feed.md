@@ -1,6 +1,6 @@
 ---
-title: "Samostatný - ostatní eCommerce platformy"
-description: "Nepoužíváš Shopify ani WooCommerce? Žádný problém! RevenueHunt nabízí digitálního osobního nákupního asistenta pro jakoukoli eCommerce platformu. Integruj produktové kvízy do svého obchodu bez námahy a zvyš prodeje personalizovanými nákupními doporučeními, bez nutnosti programování. začni zdarma Doporuč"
+title: "Samostatný kvíz s doporučením produktů"
+description: "Přidej kvíz s doporučením produktů do jakéhokoli obchodu — Magento, Wix, Squarespace, headless nebo na míru — synchronizací svého Google product feedu. Bez programování, plán zdarma."
 lang: "cs"
 pubDate: 2021-12-13T09:54:05Z
 updatedDate: 2025-10-14T10:30:34Z
@@ -11,7 +11,7 @@ featuredImage: "/img/pages/product-recommendation-quiz-standalone-google-product
 draft: false
 ---
 
-### Proč si vybrat Kvíz s doporučením produktů?
+### Proč si vybrat samostatný kvíz s doporučením produktů?
 
 **Nezávislý na platformě:** kompatibilní s jakoukoli eCommerce platformou, včetně obchodů na míru, Wix, Squarespace, Magento a dalších.
 

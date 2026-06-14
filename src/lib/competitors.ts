@@ -104,7 +104,7 @@ export const COMPETITORS: Record<string, Competitor> = {
       "Both build product recommendation quizzes for Shopify. RevenueHunt adds a free plan, unlimited quizzes, and no watermark, at a fraction of the price.",
     intro: [
       "Octane AI is a product quiz and personalization app built for Shopify. Pricing is credit-based, starts at $50/month, and there is no free plan. It's a capable tool, especially for larger beauty brands. But the entry plan caps you at two quizzes and keeps the Octane AI logo on your quiz until you reach the $200/month Plus plan.",
-      "RevenueHunt is the product recommendation quiz used by 20,000+ brands (4.9★, 450+ reviews). It starts free, never adds a watermark to your Shopify quiz on any plan, lets you build unlimited quizzes from day one, and works beyond Shopify on WooCommerce, BigCommerce, Magento, Wix, and more.",
+      "RevenueHunt is the product recommendation quiz used by 20,000+ brands (4.9★, 550+ reviews). It starts free, never adds a watermark to your Shopify quiz on any plan, lets you build unlimited quizzes from day one, and works beyond Shopify on WooCommerce, BigCommerce, Magento, Wix, and more.",
     ],
     rows: [
       { feature: "Free plan", rh: RH.freePlan, them: "no" },
@@ -179,7 +179,7 @@ export const COMPETITORS: Record<string, Competitor> = {
       "Typeform builds beautiful forms and surveys. RevenueHunt builds product recommendation quizzes that connect to your Shopify catalog and turn answers into sales.",
     intro: [
       "Typeform is a general-purpose online form and survey builder. It's great for surveys, lead forms, and research, with conversational, one-question-at-a-time design. But it has no native Shopify integration, no product catalog sync, and no recommendation engine. It collects answers; it doesn't recommend products.",
-      "RevenueHunt is a Built-for-Shopify product recommendation quiz used by 20,000+ brands (4.9★, 450+ reviews). It maps each shopper's answers to the right products from your live catalog, shows a personalized results page with direct add-to-cart, and captures leads to Klaviyo. A sales funnel, not just a form.",
+      "RevenueHunt is a Built-for-Shopify product recommendation quiz used by 20,000+ brands (4.9★, 550+ reviews). It maps each shopper's answers to the right products from your live catalog, shows a personalized results page with direct add-to-cart, and captures leads to Klaviyo. A sales funnel, not just a form.",
     ],
     rows: [
       { feature: "Free plan", rh: RH.freePlan, them: "yes (limited)" },
@@ -254,7 +254,7 @@ export const COMPETITORS: Record<string, Competitor> = {
       "Zoovu is an enterprise product-discovery and guided-selling platform sold by demo. RevenueHunt is a focused product quiz you can install today: free to start, transparent pricing, live the same day.",
     intro: [
       "Zoovu is an enterprise product-discovery platform that bundles AI search, guided selling, product recommendations, and visual configurators (CPQ) for large B2C and B2B brands with huge, complex catalogs. It's platform-agnostic, sold through demos with custom enterprise pricing, and has no free plan or self-serve signup.",
-      "RevenueHunt is a focused product recommendation quiz used by 20,000+ brands (4.9★, 450+ reviews). Instead of an enterprise discovery suite, it does one thing exceptionally well, guide Shopify shoppers to the right product, with transparent pricing, a free plan, and same-day setup, no sales call required.",
+      "RevenueHunt is a focused product recommendation quiz used by 20,000+ brands (4.9★, 550+ reviews). Instead of an enterprise discovery suite, it does one thing exceptionally well, guide Shopify shoppers to the right product, with transparent pricing, a free plan, and same-day setup, no sales call required.",
     ],
     rows: [
       { feature: "Free plan", rh: RH.freePlan, them: "no" },
@@ -285,7 +285,7 @@ export const COMPETITORS: Record<string, Competitor> = {
       },
       {
         title: "Built-for-Shopify simplicity",
-        body: "RevenueHunt is a Built-for-Shopify app with real-time catalog sync and Shopify Markets localization, rated 4.9★ by 450+ merchants. The depth you need for product discovery without enterprise overhead.",
+        body: "RevenueHunt is a Built-for-Shopify app with real-time catalog sync and Shopify Markets localization, rated 4.9★ by 550+ merchants. The depth you need for product discovery without enterprise overhead.",
       },
     ],
     bestFor:
@@ -329,7 +329,7 @@ export const COMPETITORS: Record<string, Competitor> = {
       "Jebbit is now part of BlueConic's enterprise customer-data platform, sold by demo. RevenueHunt is a standalone, self-serve product quiz: free to start, Shopify-native, live the same day.",
     intro: [
       "Jebbit builds interactive quizzes, product finders, and preference flows to collect declared (zero-party) data. It was acquired and is now “Experiences by Jebbit,” part of BlueConic's customer-data platform, aimed at enterprise and mid-market B2C brands (L'Oréal, Express, Heineken), platform-agnostic, and sold through demos with no public pricing or free plan.",
-      "RevenueHunt is a standalone product recommendation quiz used by 20,000+ brands (4.9★, 450+ reviews). You don't have to buy a CDP to use it: it's a focused, Built-for-Shopify quiz with transparent pricing, a free plan, and same-day setup, self-serve, no sales call.",
+      "RevenueHunt is a standalone product recommendation quiz used by 20,000+ brands (4.9★, 550+ reviews). You don't have to buy a CDP to use it: it's a focused, Built-for-Shopify quiz with transparent pricing, a free plan, and same-day setup, self-serve, no sales call.",
     ],
     rows: [
       { feature: "Free plan", rh: RH.freePlan, them: "no" },
@@ -404,7 +404,7 @@ export const COMPETITORS: Record<string, Competitor> = {
       "Nosto is an enterprise personalization, search, and merchandising suite sold by demo. RevenueHunt is a focused, zero-party product quiz you can install today: free to start, live the same day.",
     intro: [
       "Nosto is a Commerce Experience Platform that bundles AI product recommendations, personalized site search, merchandising, and content personalization for enterprise and mid-market brands. It's platform-agnostic, sold through demos with custom enterprise pricing, and has no free plan or self-serve signup. Its personalization is driven mainly by behavioral data rather than quizzes.",
-      "RevenueHunt is a focused product recommendation quiz used by 20,000+ brands (4.9★, 450+ reviews). Instead of an enterprise suite, it guides shoppers to the right product by asking them directly, capturing zero-party data you own, with transparent pricing, a free plan, and same-day setup, no sales call required.",
+      "RevenueHunt is a focused product recommendation quiz used by 20,000+ brands (4.9★, 550+ reviews). Instead of an enterprise suite, it guides shoppers to the right product by asking them directly, capturing zero-party data you own, with transparent pricing, a free plan, and same-day setup, no sales call required.",
     ],
     rows: [
       { feature: "Free plan", rh: RH.freePlan, them: "no" },
@@ -479,7 +479,7 @@ export const COMPETITORS: Record<string, Competitor> = {
       "Tolstoy is a shoppable-video platform with a quiz feature. RevenueHunt is a purpose-built product recommendation quiz, with a real recommendation engine and zero-party data.",
     intro: [
       "Tolstoy is an AI commerce platform built around shoppable video, AI-generated media, and an AI shopping agent, with impression-based pricing from $19/month. It's a strong video-first tool. But the product quiz is a secondary feature alongside the video experience.",
-      "RevenueHunt is a product recommendation quiz used by 20,000+ brands (4.9★, 450+ reviews). It's quiz-first: a dedicated recommendation engine maps each shopper's answers to the right products from your catalog, captures zero-party data, and converts on a personalized results page, across Shopify, WooCommerce, BigCommerce, Magento, Wix, and more.",
+      "RevenueHunt is a product recommendation quiz used by 20,000+ brands (4.9★, 550+ reviews). It's quiz-first: a dedicated recommendation engine maps each shopper's answers to the right products from your catalog, captures zero-party data, and converts on a personalized results page, across Shopify, WooCommerce, BigCommerce, Magento, Wix, and more.",
     ],
     rows: [
       { feature: "Free plan", rh: RH.freePlan, them: "yes (limited)" },
@@ -510,7 +510,7 @@ export const COMPETITORS: Record<string, Competitor> = {
       },
       {
         title: "Sell anywhere, proven at scale",
-        body: "RevenueHunt runs natively on Shopify and also on WooCommerce, BigCommerce, Magento, Wix, Squarespace, and standalone, trusted by 20,000+ brands with 4.9★ from 450+ reviews.",
+        body: "RevenueHunt runs natively on Shopify and also on WooCommerce, BigCommerce, Magento, Wix, Squarespace, and standalone, trusted by 20,000+ brands with 4.9★ from 550+ reviews.",
       },
     ],
     bestFor:

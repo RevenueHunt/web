@@ -52,7 +52,7 @@ See exactly where to plug your product quiz for maximum results.
 
 ## Trusted by over 20,000 brands worldwide
 
-...and backed by 450+ five-star reviews across Shopify, WooCommerce, and more - RevenueHunt is the go-to quiz app for driving sales through personalization... **but just don't take our word for it.**
+...and backed by 550+ five-star reviews across Shopify, WooCommerce, and more - RevenueHunt is the go-to quiz app for driving sales through personalization... **but just don't take our word for it.**
 
 ![Olaplex](/img/pages/quiz-readiness-assessment/olaplex.svg)
 

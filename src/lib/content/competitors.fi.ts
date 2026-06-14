@@ -32,7 +32,7 @@ export const COMPETITORS_FI: Record<string, Competitor> = {
       "Molemmat luovat tuotesuosittelukyselyjä Shopifylle. RevenueHunt lisää ilmaisen tason, rajattomat kyselyt ja vesileimattomuuden murto-osalla hinnasta.",
     intro: [
       "Octane AI on tuotekysely- ja personointisovellus, joka on tarkoitettu Shopifylle. Sen hinnoittelu perustuu krediitteihin, alkaa $50/kk eikä ilmaista tasoa ole. Se on kyvykäs työkalu, etenkin isoille kauneusbrändeille. Mutta aloitustaso rajaa sinut kahteen kyselyyn ja pitää Octane AI:n logon kyselyssäsi, kunnes pääset $200/kk Plus-tasolle.",
-      "RevenueHunt on tuotesuosittelukysely, jota käyttää yli 20 000 brändiä (4,9★, yli 450 arvostelua). Aloita ilmaiseksi, se ei koskaan lisää vesileimaa Shopify-kyselyysi millään tasolla, antaa sinun luoda rajattomasti kyselyjä ensimmäisestä päivästä lähtien ja toimii Shopifyn lisäksi WooCommercessa, BigCommercessa, Magentossa, Wixissä ja muissa.",
+      "RevenueHunt on tuotesuosittelukysely, jota käyttää yli 20 000 brändiä (4,9★, yli 550 arvostelua). Aloita ilmaiseksi, se ei koskaan lisää vesileimaa Shopify-kyselyysi millään tasolla, antaa sinun luoda rajattomasti kyselyjä ensimmäisestä päivästä lähtien ja toimii Shopifyn lisäksi WooCommercessa, BigCommercessa, Magentossa, Wixissä ja muissa.",
     ],
     rows: [
       { feature: "Ilmainen taso", rh: RH.freePlan, them: "no" },
@@ -107,7 +107,7 @@ export const COMPETITORS_FI: Record<string, Competitor> = {
       "Typeform luo kauniita lomakkeita ja kyselyitä. RevenueHunt luo tuotesuosittelukyselyjä, jotka yhdistyvät Shopify-katalogiisi ja muuttavat vastaukset myynniksi.",
     intro: [
       "Typeform on yleiskäyttöinen verkkolomake- ja kyselyrakentaja. Se on loistava kyselyihin, liidienkeruulomakkeisiin ja tutkimukseen keskustelevalla, yksi kysymys kerrallaan -suunnittelulla. Mutta sillä ei ole natiivia Shopify-integraatiota, tuotekatalogin synkronointia eikä suositusmoottoria. Se kerää vastauksia; se ei suosittele tuotteita.",
-      "RevenueHunt on Built-for-Shopify-tuotesuosittelukysely, jota käyttää yli 20 000 brändiä (4,9★, yli 450 arvostelua). Se kohdentaa jokaisen ostajan vastaukset oikeisiin tuotteisiin elävästä katalogistasi, näyttää personoidun tulossivun suoralla lisää ostoskoriin -toiminnolla ja kerää liidit Klaviyoon. Myyntisuppilo, ei vain lomake.",
+      "RevenueHunt on Built-for-Shopify-tuotesuosittelukysely, jota käyttää yli 20 000 brändiä (4,9★, yli 550 arvostelua). Se kohdentaa jokaisen ostajan vastaukset oikeisiin tuotteisiin elävästä katalogistasi, näyttää personoidun tulossivun suoralla lisää ostoskoriin -toiminnolla ja kerää liidit Klaviyoon. Myyntisuppilo, ei vain lomake.",
     ],
     rows: [
       { feature: "Ilmainen taso", rh: RH.freePlan, them: "yes (rajoitettu)" },
@@ -182,7 +182,7 @@ export const COMPETITORS_FI: Record<string, Competitor> = {
       "Zoovu on yritystason tuotteiden löytämis- ja ohjatun myynnin alusta, joka myydään demon kautta. RevenueHunt on keskittynyt tuotekysely, jonka voit asentaa tänään: ilmainen aloittaa, läpinäkyvä hinnoittelu, aktiivinen samana päivänä.",
     intro: [
       "Zoovu on yritystason tuotteiden löytämisalusta, joka yhdistää AI-haun, ohjatun myynnin, tuotesuositukset ja visuaaliset konfiguraattorit (CPQ) suurille B2C- ja B2B-brändeille, joilla on valtavat ja monimutkaiset katalogit. Se on alustariippumaton, myydään demojen kautta räätälöidyllä yritystason hinnoittelulla eikä siinä ole ilmaista tasoa tai itsepalvelurekisteröitymistä.",
-      "RevenueHunt on keskittynyt tuotesuosittelukysely, jota käyttää yli 20 000 brändiä (4,9★, yli 450 arvostelua). Yritystason löytämissviitin sijaan se tekee yhden asian poikkeuksellisen hyvin, ohjaa Shopify-ostajat oikeaan tuotteeseen, läpinäkyvällä hinnoittelulla, ilmaisella tasolla ja saman päivän asennuksella, ilman myyntipuhelua.",
+      "RevenueHunt on keskittynyt tuotesuosittelukysely, jota käyttää yli 20 000 brändiä (4,9★, yli 550 arvostelua). Yritystason löytämissviitin sijaan se tekee yhden asian poikkeuksellisen hyvin, ohjaa Shopify-ostajat oikeaan tuotteeseen, läpinäkyvällä hinnoittelulla, ilmaisella tasolla ja saman päivän asennuksella, ilman myyntipuhelua.",
     ],
     rows: [
       { feature: "Ilmainen taso", rh: RH.freePlan, them: "no" },
@@ -213,7 +213,7 @@ export const COMPETITORS_FI: Record<string, Competitor> = {
       },
       {
         title: "Built-for-Shopify-yksinkertaisuus",
-        body: "RevenueHunt on Built-for-Shopify-sovellus reaaliaikaisella katalogin synkronoinnilla ja Shopify Markets -lokalisoinnilla, arvostettu 4,9★:lla yli 450 kauppiaan toimesta. Tuotteiden löytämiseen tarvittava syvyys ilman yritystason taakkaa.",
+        body: "RevenueHunt on Built-for-Shopify-sovellus reaaliaikaisella katalogin synkronoinnilla ja Shopify Markets -lokalisoinnilla, arvostettu 4,9★:lla yli 550 kauppiaan toimesta. Tuotteiden löytämiseen tarvittava syvyys ilman yritystason taakkaa.",
       },
     ],
     bestFor:
@@ -257,7 +257,7 @@ export const COMPETITORS_FI: Record<string, Competitor> = {
       "Jebbit on nyt osa BlueConicin yritystason asiakasdata-alustaa, joka myydään demon kautta. RevenueHunt on itsenäinen ja itsepalveluinen tuotekysely: ilmainen aloittaa, natiivi Shopifylle, aktiivinen samana päivänä.",
     intro: [
       "Jebbit luo interaktiivisia kyselyitä, tuote-etsijöitä ja mieltymysflowja ilmoitetun (zero-party) datan keräämiseen. Se hankittiin ja on nyt “Experiences by Jebbit”, osa BlueConicin asiakasdata-alustaa, suunnattu yritystason ja keskisuuren markkinan B2C-brändeille (L'Oréal, Express, Heineken), alustariippumaton ja myydään demojen kautta ilman julkisia hintoja tai ilmaista tasoa.",
-      "RevenueHunt on itsenäinen tuotesuosittelukysely, jota käyttää yli 20 000 brändiä (4,9★, yli 450 arvostelua). Sinun ei tarvitse ostaa CDP:tä käyttääksesi sitä: se on keskittynyt, Built-for-Shopify-kysely läpinäkyvällä hinnoittelulla, ilmaisella tasolla ja saman päivän asennuksella, itsepalveluna, ilman myyntipuhelua.",
+      "RevenueHunt on itsenäinen tuotesuosittelukysely, jota käyttää yli 20 000 brändiä (4,9★, yli 550 arvostelua). Sinun ei tarvitse ostaa CDP:tä käyttääksesi sitä: se on keskittynyt, Built-for-Shopify-kysely läpinäkyvällä hinnoittelulla, ilmaisella tasolla ja saman päivän asennuksella, itsepalveluna, ilman myyntipuhelua.",
     ],
     rows: [
       { feature: "Ilmainen taso", rh: RH.freePlan, them: "no" },
@@ -332,7 +332,7 @@ export const COMPETITORS_FI: Record<string, Competitor> = {
       "Nosto on yritystason personointi-, haku- ja myynninedistämissviitti, joka myydään demon kautta. RevenueHunt on keskittynyt zero-party-tuotekysely, jonka voit asentaa tänään: ilmainen aloittaa, aktiivinen samana päivänä.",
     intro: [
       "Nosto on Commerce Experience Platform, joka yhdistää AI-tuotesuositukset, personoidun sivustohaun, myynninedistämisen ja sisällön personoinnin yritystason ja keskisuuren markkinan brändeille. Se on alustariippumaton, myydään demojen kautta räätälöidyllä yritystason hinnoittelulla eikä siinä ole ilmaista tasoa tai itsepalvelurekisteröitymistä. Sen personointi perustuu pääosin käyttäytymisdataan ennemmin kuin kyselyihin.",
-      "RevenueHunt on keskittynyt tuotesuosittelukysely, jota käyttää yli 20 000 brändiä (4,9★, yli 450 arvostelua). Yritystason sviitin sijaan se ohjaa ostajat oikeaan tuotteeseen kysymällä heiltä suoraan, keräten zero-party-dataa, jonka omistat, läpinäkyvällä hinnoittelulla, ilmaisella tasolla ja saman päivän asennuksella, ilman myyntipuhelua.",
+      "RevenueHunt on keskittynyt tuotesuosittelukysely, jota käyttää yli 20 000 brändiä (4,9★, yli 550 arvostelua). Yritystason sviitin sijaan se ohjaa ostajat oikeaan tuotteeseen kysymällä heiltä suoraan, keräten zero-party-dataa, jonka omistat, läpinäkyvällä hinnoittelulla, ilmaisella tasolla ja saman päivän asennuksella, ilman myyntipuhelua.",
     ],
     rows: [
       { feature: "Ilmainen taso", rh: RH.freePlan, them: "no" },
@@ -407,7 +407,7 @@ export const COMPETITORS_FI: Record<string, Competitor> = {
       "Tolstoy on ostettavan videon alusta, jossa on kyselyominaisuus. RevenueHunt on räätälöity tuotesuosittelukysely, jossa on oikea suositusmoottori ja zero-party-data.",
     intro: [
       "Tolstoy on AI-pohjainen commerce-alusta, joka rakentuu ostettavan videon, AI-tuotettujen mediasisältöjen ja AI-ostosagentin ympärille, näyttökertoihin perustuvalla hinnoittelulla alkaen $19/kk. Se on vankka videoon keskittyvä työkalu. Mutta tuotekysely on toissijainen ominaisuus videokokemuksen rinnalla.",
-      "RevenueHunt on tuotesuosittelukysely, jota käyttää yli 20 000 brändiä (4,9★, yli 450 arvostelua). Se on kyselykeskeinen: omistettu suositusmoottori kohdentaa jokaisen ostajan vastaukset oikeisiin tuotteisiin katalogistasi, kerää zero-party-dataa ja konvertoi personoidulla tulossivulla Shopifyssä, WooCommercessa, BigCommercessa, Magentossa, Wixissä ja muissa.",
+      "RevenueHunt on tuotesuosittelukysely, jota käyttää yli 20 000 brändiä (4,9★, yli 550 arvostelua). Se on kyselykeskeinen: omistettu suositusmoottori kohdentaa jokaisen ostajan vastaukset oikeisiin tuotteisiin katalogistasi, kerää zero-party-dataa ja konvertoi personoidulla tulossivulla Shopifyssä, WooCommercessa, BigCommercessa, Magentossa, Wixissä ja muissa.",
     ],
     rows: [
       { feature: "Ilmainen taso", rh: RH.freePlan, them: "yes (rajoitettu)" },
@@ -438,7 +438,7 @@ export const COMPETITORS_FI: Record<string, Competitor> = {
       },
       {
         title: "Myy missä tahansa, testattu mittakaavassa",
-        body: "RevenueHunt toimii natiivisti Shopifyssä ja myös WooCommercessa, BigCommercessa, Magentossa, Wixissä, Squarespacessa ja itsenäisesti, yli 20 000 brändin luottamuksella ja 4,9★:lla yli 450 arvostelusta.",
+        body: "RevenueHunt toimii natiivisti Shopifyssä ja myös WooCommercessa, BigCommercessa, Magentossa, Wixissä, Squarespacessa ja itsenäisesti, yli 20 000 brändin luottamuksella ja 4,9★:lla yli 550 arvostelusta.",
       },
     ],
     bestFor:

@@ -32,7 +32,7 @@ export const COMPETITORS_PT: Record<string, Competitor> = {
       "Ambos criam quizzes de recomendação de produtos para a Shopify. A RevenueHunt acrescenta um plano gratuito, quizzes ilimitados e nenhuma marca de água, por uma fração do preço.",
     intro: [
       "O Octane AI é uma app de quiz de produtos e personalização criada para a Shopify. O preço é baseado em créditos, começa nos $50/mês e não há plano gratuito. É uma ferramenta capaz, sobretudo para marcas de beleza maiores. Mas o plano de entrada limita-te a dois quizzes e mantém o logótipo do Octane AI no teu quiz até chegares ao plano Plus de $200/mês.",
-      "A RevenueHunt é o quiz de recomendação de produtos usado por mais de 20.000 marcas (4,9★, mais de 450 avaliações). Começa grátis, nunca acrescenta uma marca de água ao teu quiz na Shopify em nenhum plano, deixa-te criar quizzes ilimitados desde o primeiro dia e funciona para além da Shopify em WooCommerce, BigCommerce, Magento, Wix e mais.",
+      "A RevenueHunt é o quiz de recomendação de produtos usado por mais de 20.000 marcas (4,9★, mais de 550 avaliações). Começa grátis, nunca acrescenta uma marca de água ao teu quiz na Shopify em nenhum plano, deixa-te criar quizzes ilimitados desde o primeiro dia e funciona para além da Shopify em WooCommerce, BigCommerce, Magento, Wix e mais.",
     ],
     rows: [
       { feature: "Plano gratuito", rh: RH.freePlan, them: "no" },
@@ -107,7 +107,7 @@ export const COMPETITORS_PT: Record<string, Competitor> = {
       "O Typeform cria formulários e inquéritos bonitos. A RevenueHunt cria quizzes de recomendação de produtos que se ligam ao teu catálogo da Shopify e transformam respostas em vendas.",
     intro: [
       "O Typeform é um construtor genérico de formulários e inquéritos online. É ótimo para inquéritos, formulários de leads e investigação, com um design conversacional, uma pergunta de cada vez. Mas não tem integração nativa com a Shopify, nem sincronização de catálogo de produtos, nem motor de recomendações. Recolhe respostas; não recomenda produtos.",
-      "A RevenueHunt é um quiz de recomendação de produtos Built-for-Shopify usado por mais de 20.000 marcas (4,9★, mais de 450 avaliações). Associa as respostas de cada comprador aos produtos certos do teu catálogo em tempo real, mostra uma página de resultados personalizada com adicionar ao carrinho direto e capta leads para o Klaviyo. Um funil de vendas, não apenas um formulário.",
+      "A RevenueHunt é um quiz de recomendação de produtos Built-for-Shopify usado por mais de 20.000 marcas (4,9★, mais de 550 avaliações). Associa as respostas de cada comprador aos produtos certos do teu catálogo em tempo real, mostra uma página de resultados personalizada com adicionar ao carrinho direto e capta leads para o Klaviyo. Um funil de vendas, não apenas um formulário.",
     ],
     rows: [
       { feature: "Plano gratuito", rh: RH.freePlan, them: "yes (limitado)" },
@@ -182,7 +182,7 @@ export const COMPETITORS_PT: Record<string, Competitor> = {
       "O Zoovu é uma plataforma enterprise de descoberta de produtos e venda guiada vendida por demo. A RevenueHunt é um quiz de produtos focado que podes instalar hoje: grátis para começar, preços transparentes, online no mesmo dia.",
     intro: [
       "O Zoovu é uma plataforma enterprise de descoberta de produtos que junta pesquisa com AI, venda guiada, recomendações de produtos e configuradores visuais (CPQ) para grandes marcas B2C e B2B com catálogos enormes e complexos. É independente de plataforma, vendido através de demos com preços enterprise personalizados, e não tem plano gratuito nem registo self-serve.",
-      "A RevenueHunt é um quiz de recomendação de produtos focado usado por mais de 20.000 marcas (4,9★, mais de 450 avaliações). Em vez de uma suite de descoberta enterprise, faz uma coisa excecionalmente bem, guiar os compradores da Shopify até ao produto certo, com preços transparentes, um plano gratuito e configuração no mesmo dia, sem chamada de vendas necessária.",
+      "A RevenueHunt é um quiz de recomendação de produtos focado usado por mais de 20.000 marcas (4,9★, mais de 550 avaliações). Em vez de uma suite de descoberta enterprise, faz uma coisa excecionalmente bem, guiar os compradores da Shopify até ao produto certo, com preços transparentes, um plano gratuito e configuração no mesmo dia, sem chamada de vendas necessária.",
     ],
     rows: [
       { feature: "Plano gratuito", rh: RH.freePlan, them: "no" },
@@ -213,7 +213,7 @@ export const COMPETITORS_PT: Record<string, Competitor> = {
       },
       {
         title: "Simplicidade Built-for-Shopify",
-        body: "A RevenueHunt é uma app Built-for-Shopify com sincronização de catálogo em tempo real e localização via Shopify Markets, avaliada com 4,9★ por mais de 450 comerciantes. A profundidade de que precisas para a descoberta de produtos sem o peso enterprise.",
+        body: "A RevenueHunt é uma app Built-for-Shopify com sincronização de catálogo em tempo real e localização via Shopify Markets, avaliada com 4,9★ por mais de 550 comerciantes. A profundidade de que precisas para a descoberta de produtos sem o peso enterprise.",
       },
     ],
     bestFor:
@@ -257,7 +257,7 @@ export const COMPETITORS_PT: Record<string, Competitor> = {
       "O Jebbit é agora parte da plataforma enterprise de dados de clientes da BlueConic, vendida por demo. A RevenueHunt é um quiz de produtos autónomo e self-serve: grátis para começar, nativo da Shopify, online no mesmo dia.",
     intro: [
       "O Jebbit cria quizzes interativos, localizadores de produtos e fluxos de preferências para recolher declared data (zero-party data). Foi adquirido e é agora o “Experiences by Jebbit”, parte da plataforma de dados de clientes da BlueConic, dirigido a marcas B2C enterprise e mid-market (L'Oréal, Express, Heineken), independente de plataforma, e vendido através de demos sem preços públicos nem plano gratuito.",
-      "A RevenueHunt é um quiz de recomendação de produtos autónomo usado por mais de 20.000 marcas (4,9★, mais de 450 avaliações). Não tens de comprar um CDP para o usar: é um quiz focado, Built-for-Shopify, com preços transparentes, um plano gratuito e configuração no mesmo dia, self-serve, sem chamada de vendas.",
+      "A RevenueHunt é um quiz de recomendação de produtos autónomo usado por mais de 20.000 marcas (4,9★, mais de 550 avaliações). Não tens de comprar um CDP para o usar: é um quiz focado, Built-for-Shopify, com preços transparentes, um plano gratuito e configuração no mesmo dia, self-serve, sem chamada de vendas.",
     ],
     rows: [
       { feature: "Plano gratuito", rh: RH.freePlan, them: "no" },
@@ -332,7 +332,7 @@ export const COMPETITORS_PT: Record<string, Competitor> = {
       "O Nosto é uma suite enterprise de personalização, pesquisa e merchandising vendida por demo. A RevenueHunt é um quiz de produtos focado, com zero-party data, que podes instalar hoje: grátis para começar, online no mesmo dia.",
     intro: [
       "O Nosto é uma Commerce Experience Platform que junta recomendações de produtos com AI, pesquisa personalizada no site, merchandising e personalização de conteúdo para marcas enterprise e mid-market. É independente de plataforma, vendido através de demos com preços enterprise personalizados, e não tem plano gratuito nem registo self-serve. A sua personalização é impulsionada sobretudo por dados comportamentais, não por quizzes.",
-      "A RevenueHunt é um quiz de recomendação de produtos focado usado por mais de 20.000 marcas (4,9★, mais de 450 avaliações). Em vez de uma suite enterprise, guia os compradores até ao produto certo perguntando-lhes diretamente, captando zero-party data que te pertence, com preços transparentes, um plano gratuito e configuração no mesmo dia, sem chamada de vendas necessária.",
+      "A RevenueHunt é um quiz de recomendação de produtos focado usado por mais de 20.000 marcas (4,9★, mais de 550 avaliações). Em vez de uma suite enterprise, guia os compradores até ao produto certo perguntando-lhes diretamente, captando zero-party data que te pertence, com preços transparentes, um plano gratuito e configuração no mesmo dia, sem chamada de vendas necessária.",
     ],
     rows: [
       { feature: "Plano gratuito", rh: RH.freePlan, them: "no" },
@@ -407,7 +407,7 @@ export const COMPETITORS_PT: Record<string, Competitor> = {
       "O Tolstoy é uma plataforma de vídeo shoppable com uma funcionalidade de quiz. A RevenueHunt é um quiz de recomendação de produtos feito de raiz, com um motor de recomendações real e zero-party data.",
     intro: [
       "O Tolstoy é uma plataforma de comércio com AI construída em torno de vídeo shoppable, media gerada por AI e um agente de compras com AI, com preços baseados em impressões a partir de $19/mês. É uma ferramenta forte e focada em vídeo. Mas o quiz de produtos é uma funcionalidade secundária a par da experiência de vídeo.",
-      "A RevenueHunt é um quiz de recomendação de produtos usado por mais de 20.000 marcas (4,9★, mais de 450 avaliações). É quiz-first: um motor de recomendações dedicado associa as respostas de cada comprador aos produtos certos do teu catálogo, capta zero-party data e converte numa página de resultados personalizada, em Shopify, WooCommerce, BigCommerce, Magento, Wix e mais.",
+      "A RevenueHunt é um quiz de recomendação de produtos usado por mais de 20.000 marcas (4,9★, mais de 550 avaliações). É quiz-first: um motor de recomendações dedicado associa as respostas de cada comprador aos produtos certos do teu catálogo, capta zero-party data e converte numa página de resultados personalizada, em Shopify, WooCommerce, BigCommerce, Magento, Wix e mais.",
     ],
     rows: [
       { feature: "Plano gratuito", rh: RH.freePlan, them: "yes (limitado)" },
@@ -438,7 +438,7 @@ export const COMPETITORS_PT: Record<string, Competitor> = {
       },
       {
         title: "Vende em qualquer lado, comprovado em escala",
-        body: "A RevenueHunt corre nativamente na Shopify e também no WooCommerce, BigCommerce, Magento, Wix, Squarespace e de forma autónoma, com a confiança de mais de 20.000 marcas e 4,9★ de mais de 450 avaliações.",
+        body: "A RevenueHunt corre nativamente na Shopify e também no WooCommerce, BigCommerce, Magento, Wix, Squarespace e de forma autónoma, com a confiança de mais de 20.000 marcas e 4,9★ de mais de 550 avaliações.",
       },
     ],
     bestFor:

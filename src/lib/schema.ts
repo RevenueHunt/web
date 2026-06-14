@@ -11,8 +11,13 @@ export function organization() {
   };
 }
 
-export function softwareApplication() {
-  return {
+// aggregateRating is the sum across every store we're listed on (Shopify 423 @4.9,
+// WordPress.org 100 @5.0, WooCommerce.com 25 @4.64, BigCommerce 6 @5.0) → 554
+// ratings, review-weighted average 4.9. Refresh when the listings move.
+export function softwareApplication(
+  reviews?: { author: string; quote: string }[],
+) {
+  const app: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: "RevenueHunt Product Recommendation Quiz",
@@ -29,9 +34,18 @@ export function softwareApplication() {
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.9",
-      ratingCount: "450",
+      ratingCount: "554",
     },
   };
+  if (reviews?.length) {
+    app.review = reviews.map((r) => ({
+      "@type": "Review",
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      author: { "@type": "Person", name: r.author },
+      reviewBody: r.quote,
+    }));
+  }
+  return app;
 }
 
 export function productWithReviews(opts: {

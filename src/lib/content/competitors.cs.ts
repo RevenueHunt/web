@@ -32,7 +32,7 @@ export const COMPETITORS_CS: Record<string, Competitor> = {
       "Oba vytvářejí kvízy s doporučením produktů pro Shopify. RevenueHunt navíc přidává bezplatný plán, neomezené kvízy a žádný vodoznak, a to za zlomek ceny.",
     intro: [
       "Octane AI je aplikace pro produktové kvízy a personalizaci určená pro Shopify. Ceny vycházejí z kreditů, začínají na $50/měsíc a bezplatný plán neexistuje. Je to schopný nástroj, hlavně pro velké kosmetické značky. Vstupní plán tě ale omezuje na dva kvízy a ponechává logo Octane AI ve tvém kvízu, dokud nepřejdeš na plán Plus za $200/měsíc.",
-      "RevenueHunt je kvíz s doporučením produktů, který používá více než 20 000 značek (4,9★, více než 450 recenzí). Začni zdarma, RevenueHunt nikdy nepřidává vodoznak do tvého kvízu na Shopify v žádném plánu, umožní ti vytvářet neomezené kvízy od prvního dne a funguje i mimo Shopify na WooCommerce, BigCommerce, Magento, Wix a dalších.",
+      "RevenueHunt je kvíz s doporučením produktů, který používá více než 20 000 značek (4,9★, více než 550 recenzí). Začni zdarma, RevenueHunt nikdy nepřidává vodoznak do tvého kvízu na Shopify v žádném plánu, umožní ti vytvářet neomezené kvízy od prvního dne a funguje i mimo Shopify na WooCommerce, BigCommerce, Magento, Wix a dalších.",
     ],
     rows: [
       { feature: "Bezplatný plán", rh: RH.freePlan, them: "no" },
@@ -107,7 +107,7 @@ export const COMPETITORS_CS: Record<string, Competitor> = {
       "Typeform vytváří krásné formuláře a dotazníky. RevenueHunt vytváří kvízy s doporučením produktů, které se napojí na tvůj katalog Shopify a mění odpovědi v prodeje.",
     intro: [
       "Typeform je univerzální online nástroj na tvorbu formulářů a dotazníků. Je skvělý pro dotazníky, formuláře na sběr leadů a výzkum, s konverzačním designem, jedna otázka po druhé. Nemá ale nativní integraci se Shopify, ani synchronizaci produktového katalogu, ani doporučovací engine. Sbírá odpovědi; nedoporučuje produkty.",
-      "RevenueHunt je kvíz s doporučením produktů Built-for-Shopify, který používá více než 20 000 značek (4,9★, více než 450 recenzí). Přiřazuje odpovědi každého nakupujícího ke správným produktům z tvého živého katalogu, zobrazí personalizovanou stránku s výsledky s přímým přidáním do košíku a zachytí leady do Klaviyo. Prodejní trychtýř, ne jen formulář.",
+      "RevenueHunt je kvíz s doporučením produktů Built-for-Shopify, který používá více než 20 000 značek (4,9★, více než 550 recenzí). Přiřazuje odpovědi každého nakupujícího ke správným produktům z tvého živého katalogu, zobrazí personalizovanou stránku s výsledky s přímým přidáním do košíku a zachytí leady do Klaviyo. Prodejní trychtýř, ne jen formulář.",
     ],
     rows: [
       { feature: "Bezplatný plán", rh: RH.freePlan, them: "yes (omezený)" },
@@ -182,7 +182,7 @@ export const COMPETITORS_CS: Record<string, Competitor> = {
       "Zoovu je enterprise platforma pro objevování produktů a řízený prodej, která se prodává přes demo. RevenueHunt je zaměřený produktový kvíz, který si můžeš nainstalovat ještě dnes: zdarma na začátek, transparentní ceny, aktivní týž den.",
     intro: [
       "Zoovu je enterprise platforma pro objevování produktů, která spojuje vyhledávání s AI, řízený prodej, doporučení produktů a vizuální konfigurátory (CPQ) pro velké B2C a B2B značky s obrovskými a komplexními katalogy. Je nezávislá na platformě, prodává se přes dema s individuálními enterprise cenami a nemá bezplatný plán ani samoobslužnou registraci.",
-      "RevenueHunt je zaměřený kvíz s doporučením produktů, který používá více než 20 000 značek (4,9★, více než 450 recenzí). Místo enterprise sady pro objevování dělá jednu věc výjimečně dobře, vede nakupující na Shopify ke správnému produktu, s transparentními cenami, bezplatným plánem a nastavením týž den, bez nutnosti prodejního hovoru.",
+      "RevenueHunt je zaměřený kvíz s doporučením produktů, který používá více než 20 000 značek (4,9★, více než 550 recenzí). Místo enterprise sady pro objevování dělá jednu věc výjimečně dobře, vede nakupující na Shopify ke správnému produktu, s transparentními cenami, bezplatným plánem a nastavením týž den, bez nutnosti prodejního hovoru.",
     ],
     rows: [
       { feature: "Bezplatný plán", rh: RH.freePlan, them: "no" },
@@ -213,7 +213,7 @@ export const COMPETITORS_CS: Record<string, Competitor> = {
       },
       {
         title: "Jednoduchost Built-for-Shopify",
-        body: "RevenueHunt je aplikace Built-for-Shopify se synchronizací katalogu v reálném čase a lokalizací Shopify Markets, hodnocená 4,9★ od více než 450 obchodníků. Hloubka, kterou potřebuješ pro objevování produktů, bez enterprise zátěže.",
+        body: "RevenueHunt je aplikace Built-for-Shopify se synchronizací katalogu v reálném čase a lokalizací Shopify Markets, hodnocená 4,9★ od více než 550 obchodníků. Hloubka, kterou potřebuješ pro objevování produktů, bez enterprise zátěže.",
       },
     ],
     bestFor:
@@ -257,7 +257,7 @@ export const COMPETITORS_CS: Record<string, Competitor> = {
       "Jebbit je nyní součástí enterprise platformy zákaznických dat BlueConic, která se prodává přes demo. RevenueHunt je samostatný a samoobslužný produktový kvíz: zdarma na začátek, nativní pro Shopify, aktivní týž den.",
     intro: [
       "Jebbit vytváří interaktivní kvízy, vyhledávače produktů a toky preferencí pro sběr deklarovaných (zero-party) dat. Byl akvírován a nyní je „Experiences by Jebbit“, součást platformy zákaznických dat BlueConic, zaměřená na enterprise a střední B2C značky (L'Oréal, Express, Heineken), nezávislá na platformě a prodávaná přes dema bez veřejných cen a bez bezplatného plánu.",
-      "RevenueHunt je samostatný kvíz s doporučením produktů, který používá více než 20 000 značek (4,9★, více než 450 recenzí). Nemusíš kupovat CDP, abys ho mohl používat: je to zaměřený kvíz, Built-for-Shopify, s transparentními cenami, bezplatným plánem a nastavením týž den, samoobslužně, bez prodejního hovoru.",
+      "RevenueHunt je samostatný kvíz s doporučením produktů, který používá více než 20 000 značek (4,9★, více než 550 recenzí). Nemusíš kupovat CDP, abys ho mohl používat: je to zaměřený kvíz, Built-for-Shopify, s transparentními cenami, bezplatným plánem a nastavením týž den, samoobslužně, bez prodejního hovoru.",
     ],
     rows: [
       { feature: "Bezplatný plán", rh: RH.freePlan, them: "no" },
@@ -332,7 +332,7 @@ export const COMPETITORS_CS: Record<string, Competitor> = {
       "Nosto je enterprise sada pro personalizaci, vyhledávání a merchandising, která se prodává přes demo. RevenueHunt je zaměřený zero-party produktový kvíz, který si můžeš nainstalovat ještě dnes: zdarma na začátek, aktivní týž den.",
     intro: [
       "Nosto je Commerce Experience Platform, která spojuje doporučení produktů s AI, personalizované vyhledávání na webu, merchandising a personalizaci obsahu pro enterprise a střední značky. Je nezávislá na platformě, prodává se přes dema s individuálními enterprise cenami a nemá bezplatný plán ani samoobslužnou registraci. Její personalizace vychází především z behaviorálních dat, ne z kvízů.",
-      "RevenueHunt je zaměřený kvíz s doporučením produktů, který používá více než 20 000 značek (4,9★, více než 450 recenzí). Místo enterprise sady vede nakupující ke správnému produktu tak, že se jich přímo ptá, a zachytává zero-party data, která vlastníš, s transparentními cenami, bezplatným plánem a nastavením týž den, bez nutnosti prodejního hovoru.",
+      "RevenueHunt je zaměřený kvíz s doporučením produktů, který používá více než 20 000 značek (4,9★, více než 550 recenzí). Místo enterprise sady vede nakupující ke správnému produktu tak, že se jich přímo ptá, a zachytává zero-party data, která vlastníš, s transparentními cenami, bezplatným plánem a nastavením týž den, bez nutnosti prodejního hovoru.",
     ],
     rows: [
       { feature: "Bezplatný plán", rh: RH.freePlan, them: "no" },
@@ -407,7 +407,7 @@ export const COMPETITORS_CS: Record<string, Competitor> = {
       "Tolstoy je platforma nakupovatelného videa s funkcí kvízu. RevenueHunt je kvíz s doporučením produktů ušitý na míru, se skutečným doporučovacím enginem a zero-party daty.",
     intro: [
       "Tolstoy je komerční platforma s AI postavená kolem nakupovatelného videa, médií generovaných AI a nákupního agenta s AI, s cenami podle zobrazení od $19/měsíc. Je to solidní nástroj zaměřený na video. Produktový kvíz je ale vedlejší funkce vedle video zážitku.",
-      "RevenueHunt je kvíz s doporučením produktů, který používá více než 20 000 značek (4,9★, více než 450 recenzí). Je zaměřený na kvíz: dedikovaný doporučovací engine přiřazuje odpovědi každého nakupujícího ke správným produktům z tvého katalogu, zachytává zero-party data a převádí je na personalizovanou stránku s výsledky, na Shopify, WooCommerce, BigCommerce, Magento, Wix a dalších.",
+      "RevenueHunt je kvíz s doporučením produktů, který používá více než 20 000 značek (4,9★, více než 550 recenzí). Je zaměřený na kvíz: dedikovaný doporučovací engine přiřazuje odpovědi každého nakupujícího ke správným produktům z tvého katalogu, zachytává zero-party data a převádí je na personalizovanou stránku s výsledky, na Shopify, WooCommerce, BigCommerce, Magento, Wix a dalších.",
     ],
     rows: [
       { feature: "Bezplatný plán", rh: RH.freePlan, them: "yes (omezený)" },
@@ -438,7 +438,7 @@ export const COMPETITORS_CS: Record<string, Competitor> = {
       },
       {
         title: "Prodávej kdekoliv, ověřeno ve velkém měřítku",
-        body: "RevenueHunt funguje nativně na Shopify a také na WooCommerce, BigCommerce, Magento, Wix, Squarespace a samostatně, s důvěrou více než 20 000 značek a 4,9★ z více než 450 recenzí.",
+        body: "RevenueHunt funguje nativně na Shopify a také na WooCommerce, BigCommerce, Magento, Wix, Squarespace a samostatně, s důvěrou více než 20 000 značek a 4,9★ z více než 550 recenzí.",
       },
     ],
     bestFor:

@@ -1,6 +1,6 @@
 ---
 title: "Czym jest quiz rekomendacji produktów?"
-description: "Czym jest quiz rekomendacji produktów, kiedy go używać, jak go stworzyć i 12 przykładów na żywo z pielęgnacji skóry, suplementów, karmy dla psów, kawy i więcej."
+description: "Quiz rekomendacji produktów prowadzi klienta do właściwego produktu przez kilka pytań. Czym jest, kiedy go używać, jak go stworzyć i 12 przykładów na żywo."
 pubDate: 2020-05-18T12:21:47Z
 updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "product-recommendation-quiz"

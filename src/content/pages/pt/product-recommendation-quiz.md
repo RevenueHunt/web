@@ -1,6 +1,6 @@
 ---
 title: "O que é um quiz de recomendação de produtos?"
-description: "O que é um quiz de recomendação de produtos, quando usar um, como construí-lo, e 12 exemplos ao vivo de cuidados de pele, suplementos, comida para cães, café e mais."
+description: "Um quiz de recomendação de produtos guia cada visitante até ao produto certo com algumas perguntas. O que é, quando usar, como construí-lo, e 12 exemplos ao vivo."
 pubDate: 2020-05-18T12:21:47Z
 updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "product-recommendation-quiz"

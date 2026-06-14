@@ -1,6 +1,6 @@
 ---
 title: "Che cos'è un quiz di raccomandazione dei prodotti?"
-description: "Cos'è un quiz di raccomandazione dei prodotti, quando usarne uno, come costruirlo, e 12 esempi dal vivo di skincare, integratori, cibo per cani, caffè e altro."
+description: "Un quiz di raccomandazione dei prodotti guida ogni cliente al prodotto giusto attraverso poche domande. Cos'è, quando usarne uno, come costruirlo, più 12 esempi dal vivo."
 pubDate: 2020-05-18T12:21:47Z
 updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "product-recommendation-quiz"

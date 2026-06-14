@@ -1,6 +1,6 @@
 ---
 title: "Vad är en produktrekommendationsquiz?"
-description: "Vad en produktrekommendationsquiz är, när du ska använda den, hur du skapar den och 12 live-exempel från hudvård, kosttillskott, hundmat, kaffe och mer."
+description: "En produktrekommendationsquiz guidar varje besökare till rätt produkt med några frågor. Vad den är, när du använder den, hur du skapar den, plus 12 live-exempel."
 pubDate: 2020-05-18T12:21:47Z
 updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "product-recommendation-quiz"

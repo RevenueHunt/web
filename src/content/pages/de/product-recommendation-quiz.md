@@ -1,6 +1,6 @@
 ---
 title: "Was ist ein Produktempfehlungs-Quiz?"
-description: "Was ein Produktempfehlungs-Quiz ist, wann du eines einsetzt, wie du es aufbaust, und 12 Live-Beispiele aus Hautpflege, Supplements, Hundefutter, Kaffee und mehr."
+description: "Ein Produktempfehlungs-Quiz führt jeden Käufer mit wenigen Fragen zum richtigen Produkt. Was es ist, wann man es nutzt, wie man es baut, plus 12 Live-Beispiele."
 pubDate: 2020-05-18T12:21:47Z
 updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "product-recommendation-quiz"

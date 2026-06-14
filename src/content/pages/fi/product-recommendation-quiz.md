@@ -1,6 +1,6 @@
 ---
 title: "Mikä on tuotesuosittelukysely?"
-description: "Mikä tuotesuosittelukysely on, milloin sitä käytetään, miten se luodaan ja 12 livenä toimivaa esimerkkiä ihonhoidosta, lisäravinteista, koiranruoasta, kahvista ja muusta."
+description: "Tuotesuosittelukysely ohjaa ostajan oikeaan tuotteeseen muutamalla kysymyksellä. Mikä se on, milloin käyttää, miten se luodaan ja 12 livenä toimivaa esimerkkiä."
 pubDate: 2020-05-18T12:21:47Z
 updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "product-recommendation-quiz"

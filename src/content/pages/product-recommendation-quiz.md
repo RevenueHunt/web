@@ -1,6 +1,6 @@
 ---
 title: "What is a product recommendation quiz?"
-description: "What a product recommendation quiz is, when to use one, how to build it, and 12 live examples from skincare, supplements, dog food, coffee, and more."
+description: "A product recommendation quiz guides each shopper to the right product through a few questions. What it is, when to use one, how to build it, plus 12 live examples."
 pubDate: 2020-05-18T12:21:47Z
 updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "product-recommendation-quiz"

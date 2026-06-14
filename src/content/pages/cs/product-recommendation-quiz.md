@@ -1,6 +1,6 @@
 ---
 title: "Co je kvíz s doporučením produktů?"
-description: "Co je kvíz s doporučením produktů, kdy ho použít, jak ho vytvořit a 12 živých příkladů z péče o pleť, doplňků stravy, krmiva pro psy, kávy a dalších."
+description: "Kvíz s doporučením produktů vede každého zákazníka ke správnému produktu pomocí několika otázek. Co to je, kdy ho použít, jak ho vytvořit a 12 živých příkladů."
 pubDate: 2020-05-18T12:21:47Z
 updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "product-recommendation-quiz"

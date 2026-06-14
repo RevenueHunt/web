@@ -1,6 +1,6 @@
 ---
 title: "Wat is een productaanbevelingsquiz?"
-description: "Wat een productaanbevelingsquiz is, wanneer je hem gebruikt, hoe je hem maakt en 12 live voorbeelden van skincare, supplementen, hondenvoer, koffie en meer."
+description: "Een productaanbevelingsquiz leidt elke shopper via een paar vragen naar het juiste product. Wat het is, wanneer en hoe je hem maakt, plus 12 live voorbeelden."
 pubDate: 2020-05-18T12:21:47Z
 updatedDate: 2026-05-18T00:00:00Z
 legacySlug: "product-recommendation-quiz"

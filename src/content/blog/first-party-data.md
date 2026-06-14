@@ -432,7 +432,7 @@ Zero-party data is a *subset* of first-party data. Both are collected and owned 
 
 ### How do you collect first-party data?
 
-Seven channels consistently work on a Shopify store: customer accounts and accelerated checkout, email and SMS sign-ups, product recommendation quizzes, post-purchase surveys, loyalty and rewards programs, customer-service touchpoints, and on-site behavioural analytics. The strongest stacks use a combination, with quizzes producing the highest yield of structured preference data per minute of customer attention.
+Seven channels consistently work on a Shopify store: customer accounts and accelerated checkout, email and SMS sign-ups, [product recommendation quiz](/)zes, post-purchase surveys, loyalty and rewards programs, customer-service touchpoints, and on-site behavioural analytics. The strongest stacks use a combination, with quizzes producing the highest yield of structured preference data per minute of customer attention.
 
 ### What are examples of first-party data?
 

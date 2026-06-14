@@ -201,7 +201,7 @@ Run through these twelve questions against your own quiz. Each "no" is a mistake
 
 ## Where the fixes compound
 
-Creating an effective quiz isn't a single design decision. It's a stack of small choices that each contribute to (or detract from) the conversion rate, the AOV and the email RPR downstream. The fixes above are ordered roughly by leverage: content mistakes hurt the most because they break the consultation contract before the quiz even gets to a results page; technical mistakes are easier to catch but easy to miss; marketing mistakes leave a working quiz invisible.
+Creating an effective [product recommendation quiz](/) isn't a single design decision. It's a stack of small choices that each contribute to (or detract from) the conversion rate, the AOV and the email RPR downstream. The fixes above are ordered roughly by leverage: content mistakes hurt the most because they break the consultation contract before the quiz even gets to a results page; technical mistakes are easier to catch but easy to miss; marketing mistakes leave a working quiz invisible.
 
 If you only have time to fix one thing this week: open the quiz on mobile, take it as a customer, and write down every moment of friction or confusion. Most quiz problems are visible inside that 60-second exercise.
 

@@ -38,7 +38,7 @@ The [RevenueHunt: Recommender Quiz for Shopify](https://apps.shopify.com/product
 
 ## What is the RevenueHunt: Recommender Quiz for Shopify?
 
-A product recommendation quiz app that guides Shopify customers to the right products through a personalised question flow, then captures the answers as [zero-party data](https://revenuehunt.com/zero-party-data/) that flows into Klaviyo, Shopify Customers and your follow-up email sequences. Built natively for Shopify (no iframes, no theme bolt-ons), with a free plan that covers 100 quiz responses per month and every feature unlocked.
+A [Shopify product recommendation quiz](/product-recommendation-quiz-shopify/) app that guides Shopify customers to the right products through a personalised question flow, then captures the answers as [zero-party data](https://revenuehunt.com/zero-party-data/) that flows into Klaviyo, Shopify Customers and your follow-up email sequences. Built natively for Shopify (no iframes, no theme bolt-ons), with a free plan that covers 100 quiz responses per month and every feature unlocked.
 
 ![RevenueHunt Quiz Builder interface inside the Shopify admin showing the question flow and design panel](/img/blog/shopify-merchant-reviews-revenuehunt/Screenshot-2024-07-04-083149.webp)
 

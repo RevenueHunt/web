@@ -38,7 +38,7 @@ For the foundations that produce a high-converting quiz, see [how to build a suc
 
 ## Message slides (3 types)
 
-Message slides don't ask a question; they set context. Use them at the start, in the middle, and at the end of the quiz to frame the experience.
+Message slides don't ask a question; they set context. Use them at the start, in the middle, and at the end of the quiz to frame the experience. Every [product recommendation quiz](/) benefits from at least one message slide to orient the customer before the questions begin.
 
 ### 1. Welcome Message
 

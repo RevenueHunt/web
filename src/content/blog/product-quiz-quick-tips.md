@@ -20,7 +20,7 @@ featuredImage: "/img/blog/product-quiz-quick-tips/blogtile_quick-tips.webp"
 draft: false
 ---
 
-Building your first product recommendation quiz is mostly mechanics: write the questions, tag the answers, map them to products, publish. The mistakes that quietly hurt conversion are almost always made before any of that happens, in the decisions about the quiz's content, length, results-page structure and follow-up flow. This guide is a 5-section checklist of the most-asked-about decisions our support team handles, with the platform data behind each recommendation where it exists.
+Building your first [product recommendation quiz](/) is mostly mechanics: write the questions, tag the answers, map them to products, publish. The mistakes that quietly hurt conversion are almost always made before any of that happens, in the decisions about the quiz's content, length, results-page structure and follow-up flow. This guide is a 5-section checklist of the most-asked-about decisions our support team handles, with the platform data behind each recommendation where it exists.
 
 ![Building your first product quiz: a visual overview of the 5 sections covered in the guide](/img/blog/product-quiz-quick-tips/Building-your-first-Porduct-Quiz.webp)
 

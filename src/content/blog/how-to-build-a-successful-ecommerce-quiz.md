@@ -27,7 +27,7 @@ What separates a quiz that consistently drives 15-25% conversion rates from one 
 
 For the broader data category that makes quizzes work, see our [zero-party data guide](https://revenuehunt.com/zero-party-data/). For the funnel mechanics around the quiz, see our [step-by-step funnel build guide](https://revenuehunt.com/build-sales-funnel-shopify-store/).
 
-Here are the 11 things every high-converting product recommendation quiz must have.
+Here are the 11 things every high-converting [product recommendation quiz](/) must have.
 
 * * *
 

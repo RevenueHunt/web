@@ -43,7 +43,7 @@ So why do we assume our customers know exactly what they need when they're looki
 
 ### A personal shopper for your eCommerce store
 
-What if you could advise your customers by engaging them with a personal shopper experience on your website? That's exactly what the RevenueHunt app does. It engages your customers with a **product recommendation quiz**, improving their product discovery experience and guiding them from start to cart.
+What if you could advise your customers by engaging them with a personal shopper experience on your website? That's exactly what the RevenueHunt app does. It engages your customers with a **[product recommendation quiz](/)**, improving their product discovery experience and guiding them from start to cart.
 
 ### How the product recommendation quiz works
 

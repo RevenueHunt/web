@@ -297,7 +297,7 @@ Both are collected and owned by the brand. The difference is **intent**: first-p
 
 ### How do you collect zero-party data?
 
-Six methods consistently work: product recommendation quizzes, preference centres, loyalty and account programs, post-purchase surveys, smart forms with progressive profiling, and interactive content. Quizzes typically produce the highest yield per minute of customer attention because the data ask is wrapped inside an obvious value exchange.
+Six methods consistently work: [product recommendation quiz](/)zes, preference centres, loyalty and account programs, post-purchase surveys, smart forms with progressive profiling, and interactive content. Quizzes typically produce the highest yield per minute of customer attention because the data ask is wrapped inside an obvious value exchange.
 
 ### What are examples of zero-party data?
 

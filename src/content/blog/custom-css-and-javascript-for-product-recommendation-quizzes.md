@@ -41,7 +41,7 @@ For the foundations of a high-converting quiz, see [how to build a successful pr
 
 **Why customise with CSS and JavaScript:**
 
-- **Brand consistency.** Match the quiz to your store's typography, colour palette and motion language so it feels like part of the storefront rather than a third-party widget.
+- **Brand consistency.** Match the quiz to your store's typography, colour palette and motion language so it feels like part of the storefront rather than a third-party widget. A well-styled [product recommendation quiz](/) reads as a native part of the shopping experience, not a bolt-on.
 - **User experience refinement.** Tighten layouts, adjust touch targets for mobile, or rework specific question slides to fit your category's expectations.
 - **Custom functionality.** Computed fields (BMI, dosage, fit), conditional content, third-party analytics events, and callback-driven integrations that don't ship with the Quiz Builder by default.
 

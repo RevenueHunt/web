@@ -48,7 +48,7 @@ The five strategies below are ordered by leverage for a typical Shopify store. T
 
 ### 1. Quiz-driven recommendations (zero-party data)
 
-A product recommendation quiz turns the home page into a diagnostic. Three to seven questions, a personalised results page, and the customer walks away with a recommendation while you walk away with a structured profile.
+A [product recommendation quiz](/) turns the home page into a diagnostic. Three to seven questions, a personalised results page, and the customer walks away with a recommendation while you walk away with a structured profile.
 
 Why it sits at the top: the quiz captures three categories of data in one interaction — the contact (email/SMS), the consent (opt-in inside the flow), and the structured preferences (skin type, goal, budget, shopping-for). Each answer maps to a custom property in your ESP via native integration, which is what makes the data actionable downstream.
 

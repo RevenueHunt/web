@@ -113,6 +113,6 @@ For 11 placements that drive traffic to the quiz, see our guide on [how to promo
 
 ## Where this fits
 
-Marking Shopify orders with quiz answers is one piece of the full data infrastructure that quiz-driven funnels build. The orders are the visible artefact; the structural value is the segmentation logic the tagged data enables across email, ads, on-site personalisation and customer service. For 11 real funnels that route quiz data this way, see our [real funnel examples](https://revenuehunt.com/ecommerce-sales-funnel-examples/). For the strategic framing, see our [step-by-step funnel build guide](https://revenuehunt.com/build-sales-funnel-shopify-store/).
+Marking Shopify orders with quiz answers is one piece of the full data infrastructure a [Shopify product recommendation quiz](/product-recommendation-quiz-shopify/) builds. The orders are the visible artefact; the structural value is the segmentation logic the tagged data enables across email, ads, on-site personalisation and customer service. For 11 real funnels that route quiz data this way, see our [real funnel examples](https://revenuehunt.com/ecommerce-sales-funnel-examples/). For the strategic framing, see our [step-by-step funnel build guide](https://revenuehunt.com/build-sales-funnel-shopify-store/).
 
 [Install RevenueHunt: Recommender Quiz for Shopify](https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=platform_hero) and start tagging your first quiz-attributed order the same day. Free plan available.

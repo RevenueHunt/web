@@ -45,7 +45,7 @@ The standalone video quiz category (VideoAsk, Tolstoy, Mindstamp and similar too
 
 **Zero-party data stranded.** When the customer answers a video question inside a standalone tool, that answer lives in the tool's own database. Getting it into Klaviyo profiles for segmented flows requires Zapier glue or custom integration work. When the same answer is captured by your product recommendation quiz, it lands directly in Klaviyo as a profile property via the native integration. For the activation chain, see [how Klaviyo segmentation unlocks once zero-party data lands in profiles](https://revenuehunt.com/klaviyo-zero-party-data/).
 
-The fix isn't to drop video. The fix is to add video to the same product recommendation quiz that's already doing the heavier work.
+The fix isn't to drop video. The fix is to add video to the same [product recommendation quiz](/) that's already doing the heavier work.
 
 ## Where video can appear in the quiz
 

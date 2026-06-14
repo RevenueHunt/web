@@ -213,7 +213,7 @@ Both work; the choice depends on your existing stack. Shopify Flow is free and b
 
 ## Where this fits
 
-Shopify Flow is the cheapest path to post-quiz email automation for Shopify-native stores: free, built in, and integrated end to end with the customer record. The pattern works because the quiz already does the heavy lifting (capturing structured intent), and Flow just fires the right message at the right person. The Klaviyo path produces the same outcome with more flexibility for multi-step nurture sequences and works on every platform RevenueHunt supports.
+Shopify Flow is the cheapest path to post-quiz email automation for Shopify-native stores: free, built in, and integrated end to end with the customer record. The pattern works because the quiz already does the heavy lifting (capturing structured intent), and Flow just fires the right message at the right person. It all starts with a [product recommendation quiz for Shopify](/product-recommendation-quiz-shopify/) that captures those quiz-derived tags in the first place. The Klaviyo path produces the same outcome with more flexibility for multi-step nurture sequences and works on every platform RevenueHunt supports.
 
 For the foundation that makes both paths work, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/). For the metrics worth tracking after launch, see [product quiz metrics: what to track to convert better](https://revenuehunt.com/product-quiz-metrics-what-to-track-to-convert-better/). For the discount layer that compounds on top of the post-quiz email, see [product quiz discounts: the conversion playbook](https://revenuehunt.com/product-quiz-discounts/).
 

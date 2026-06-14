@@ -67,7 +67,7 @@ Stacked, these four forces typically mean Pixel and GA4 see **60-80% of the conv
 
 ## First-party data is structurally different
 
-A first-party quiz response isn't subject to any of the above. The customer signs in (consent given), takes the quiz (data declared willingly), and the response gets stored on your Shopify infrastructure with their consent. That same response is then attached to whatever Shopify order the customer places, by Shopify's own customer ID, not by a probabilistic cookie match.
+A first-party quiz response isn't subject to any of the above. When a shopper completes a [product recommendation quiz for Shopify](/product-recommendation-quiz-shopify/), the customer signs in (consent given), takes the quiz (data declared willingly), and the response gets stored on your Shopify infrastructure with their consent. That same response is then attached to whatever Shopify order the customer places, by Shopify's own customer ID, not by a probabilistic cookie match.
 
 The structural change matters for marketing, not just analytics. Zero-party data (what the customer explicitly told you) and first-party data (what they did on your store) are the only categories of customer data that survive the privacy transition intact. For the broader strategy this connects to, see our [zero-party data guide](/zero-party-data/) and [first-party data guide](/first-party-data/); for the activation playbook on the data this dashboard exposes, see [your Klaviyo list is a graveyard](/klaviyo-zero-party-data/); for the lead-capture pillar this whole architecture rests on, see [why popups are walls and quizzes are doors](/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/).
 

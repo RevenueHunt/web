@@ -152,6 +152,43 @@ function promoteFirstHeadingRehype() {
   };
 }
 
+/** Open external links in a new browser tab. Any <a> whose href points to a
+ *  host other than revenuehunt.com (or a subdomain) gets target=_blank +
+ *  rel="noopener". Internal, relative, anchor and mailto links are untouched.
+ *  rel keeps "noopener" only (NOT noreferrer) so the Referer + UTMs still reach
+ *  the destination for attribution. Site-wide across all markdown content
+ *  (demo-store quiz links, external citations, in-content install links). */
+function externalLinksNewTabRehype() {
+  /** @param {string} href */
+  const isExternal = (href) =>
+    /^https?:\/\//i.test(href) &&
+    !/^https?:\/\/([a-z0-9-]+\.)*revenuehunt\.com([/:?#]|$)/i.test(href);
+  return (/** @type {{ children: Array<any> }} */ tree) => {
+    /** @param {any} node */
+    function walk(node) {
+      if (!node || !Array.isArray(node.children)) return;
+      for (const child of node.children) {
+        if (
+          child.type === "element" &&
+          child.tagName === "a" &&
+          child.properties &&
+          typeof child.properties.href === "string" &&
+          isExternal(child.properties.href)
+        ) {
+          child.properties.target = "_blank";
+          const rel = Array.isArray(child.properties.rel)
+            ? child.properties.rel.slice()
+            : String(child.properties.rel ?? "").split(/\s+/).filter(Boolean);
+          if (!rel.includes("noopener")) rel.push("noopener");
+          child.properties.rel = rel;
+        }
+        walk(child);
+      }
+    }
+    walk(tree);
+  };
+}
+
 /** Generate the Pagefind search index as part of every `astro build`, so
  *  /pagefind/ always ships — regardless of which npm script or host build
  *  command triggered the build. Uses Pagefind's Node API, so there is no
@@ -294,7 +331,7 @@ export default defineConfig({
   ],
   markdown: {
     remarkPlugins: [stripLeadingH1Remark],
-    rehypePlugins: [stripLeadingH1Rehype, promoteFirstHeadingRehype],
+    rehypePlugins: [stripLeadingH1Rehype, promoteFirstHeadingRehype, externalLinksNewTabRehype],
   },
   vite: {
     plugins: [tailwindcss()],

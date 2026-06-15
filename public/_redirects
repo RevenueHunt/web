@@ -43,9 +43,11 @@
 # WordPress admin/login/XML-RPC paths intentionally have no static routes here,
 # so Cloudflare Pages will return its normal 404 for them.
 
-# --- Careers: /jobs/<slug>/ postings moved to top-level routes on the new site.
-/jobs/technical-customer-support/  /technical-customer-support/  301
-/jobs/marketing-sales-funnel-architect/  /marketing-sales-funnel-architect/  301
+# --- Careers: job postings live under their original /jobs/<slug>/ URL (the
+# path Google indexed and the /jobs/ index + breadcrumb point at). The flat
+# slugs the migration briefly used redirect back in, keeping one canonical.
+/technical-customer-support/  /jobs/technical-customer-support/  301
+/marketing-sales-funnel-architect/  /jobs/marketing-sales-funnel-architect/  301
 
 # --- /shop/ — Shop-app page retired; send to the Shopify platform page.
 /shop/  /product-recommendation-quiz-shopify/  301

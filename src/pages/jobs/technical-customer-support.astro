@@ -1,0 +1,14 @@
+---
+// Job postings live under their /jobs/<slug>/ legacy URL (excluded from the
+// [slug] catch-all). ContentPage renders the same `pages` collection entry;
+// the canonical follows the served path automatically (Base.astro).
+import { getCollection } from "astro:content";
+import ContentPage from "../../components/pages/ContentPage.astro";
+
+const entry = (await getCollection("pages")).find(
+  (p) => p.data.legacySlug === "technical-customer-support" && p.data.lang === "en",
+);
+if (!entry) throw new Error("technical-customer-support page entry not found");
+---
+
+<ContentPage entry={entry} lang="en" translated={false} />

@@ -128,6 +128,78 @@ const isProd = import.meta.env.PROD && SITE.site_url === "https://revenuehunt.co
         if (!cookie) writeCookie("en");
       })();
     </script>
+    <!-- Marketing attribution: capture utm / ad-click-ids / referrer (+ GA4 client_id)
+         into the `revenuehunt_attribution` cookie that the Shopify app (frontend_v2
+         attribution.server.ts) reads on first dashboard load and writes to the shop.
+         Ported from the legacy site's attribution.js, dropped in the WP→Astro move —
+         which is why installs had been defaulting to source=shopify. Two upgrades vs.
+         the original: SameSite=None (so it can survive the embedded-admin iframe that
+         Lax can't), and it carries the raw gclid + GA4 client_id for downstream
+         GA4/Google Ads reporting. First-touch: never overwrites an existing cookie. -->
+    <script is:inline>
+      (function () {
+        try {
+          if (document.cookie.indexOf("revenuehunt_attribution=") !== -1) return;
+          var qs = new URLSearchParams(window.location.search);
+          var g = function (k) { return qs.get(k) || ""; };
+          var gclid = g("gclid"), wbraid = g("wbraid"), gbraid = g("gbraid"),
+              fbclid = g("fbclid"), msclkid = g("msclkid");
+          var hasUtm = g("utm_source") || g("utm_medium") || g("utm_campaign") || g("utm_term") || g("utm_content");
+          var hasAd = gclid || gbraid || wbraid || fbclid || msclkid || g("dclid") || g("twclid");
+          var referrer = document.referrer || "", refHost = "";
+          try { refHost = referrer ? new URL(referrer).hostname : ""; } catch (e) {}
+          var engine = function (h) {
+            h = h || "";
+            if (h.indexOf("google.") !== -1) return "google";
+            if (h.indexOf("bing.") !== -1) return "bing";
+            if (h.indexOf("yahoo.") !== -1) return "yahoo";
+            if (h.indexOf("duckduckgo.") !== -1) return "duckduckgo";
+            if (h.indexOf("baidu.") !== -1) return "baidu";
+            if (h.indexOf("yandex.") !== -1) return "yandex";
+            return null;
+          };
+          var source = "", medium = "", campaign = g("utm_campaign"), term = g("utm_term"), content = g("utm_content");
+          if (hasUtm) {
+            source = g("utm_source");
+            medium = g("utm_medium") || (hasAd ? "cpc" : "");
+          } else if (hasAd) {
+            if (gclid || gbraid || wbraid) { source = "google"; medium = "cpc"; }
+            else if (msclkid) { source = "microsoft"; medium = "cpc"; }
+            else if (fbclid) { source = "facebook"; medium = "paid_social"; }
+            else { source = "paid"; medium = "cpc"; }
+            if (!campaign) campaign = "(not set)";
+          } else if (referrer) {
+            var se = engine(refHost);
+            if (se) { source = se; medium = "organic"; }
+            else { source = refHost || "referral"; medium = "referral"; }
+          } else { source = "direct"; medium = "direct"; }
+          var clientId = "", m = document.cookie.match(/(?:^|;\s*)_ga=GA\d\.\d\.(\d+\.\d+)/);
+          if (m) clientId = m[1];
+          var data = {
+            source: source || "(not set)",
+            medium: medium || "(not set)",
+            campaign: campaign || "(not set)",
+            term: term || "", content: content || "",
+            referrer: referrer,
+            landing: window.location.pathname + window.location.search,
+            timestamp: new Date().toISOString()
+          };
+          if (gclid) data.gclid = gclid;
+          if (wbraid) data.wbraid = wbraid;
+          if (gbraid) data.gbraid = gbraid;
+          if (fbclid) data.fbclid = fbclid;
+          if (msclkid) data.msclkid = msclkid;
+          if (clientId) data.client_id = clientId;
+          var host = window.location.hostname || "";
+          var domainAttr = (host === "revenuehunt.com" || host.endsWith(".revenuehunt.com")) ? "; Domain=.revenuehunt.com" : "";
+          var secure = window.location.protocol === "https:";
+          var c = "revenuehunt_attribution=" + encodeURIComponent(JSON.stringify(data)) +
+            "; Path=/; Max-Age=15552000" + domainAttr +
+            (secure ? "; SameSite=None; Secure" : "; SameSite=Lax");
+          document.cookie = c;
+        } catch (e) {}
+      })();
+    </script>
     <title>{title}</title>
     <meta name="description" content={description} />
     {(noindex || !isProd) && <meta name="robots" content="noindex, nofollow" />}

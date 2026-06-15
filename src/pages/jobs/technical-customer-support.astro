@@ -11,4 +11,4 @@ const entry = (await getCollection("pages")).find(
 if (!entry) throw new Error("technical-customer-support page entry not found");
 ---
 
-<ContentPage entry={entry} lang="en" translated={false} />
+<ContentPage entry={entry} lang="en" translated={false} parentCrumb={{ label: "Jobs", href: "/jobs/" }} />

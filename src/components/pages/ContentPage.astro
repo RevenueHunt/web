@@ -21,9 +21,11 @@ interface Props {
   lang?: Lang;
   /** True when this page exists in every locale (emits hreflang). */
   translated?: boolean;
+  /** Optional crumb inserted between Home and the page title (e.g. Jobs). */
+  parentCrumb?: { label: string; href: string };
 }
 
-const { entry, lang = "en", translated = false } = Astro.props;
+const { entry, lang = "en", translated = false, parentCrumb } = Astro.props;
 const c = CHROME[lang];
 const lp = (path: string) => localizedHref(path, lang);
 
@@ -47,6 +49,7 @@ const jsonLd = [
   ...(LEGAL_SLUGS.has(slug) ? [] : [softwareApplication()]),
   breadcrumb([
     { name: t[lang].breadcrumb_home, url: lp("/") },
+    ...(parentCrumb ? [{ name: parentCrumb.label, url: lp(parentCrumb.href) }] : []),
     { name: entry.data.title, url: pageUrl },
   ]),
 ];
@@ -69,7 +72,11 @@ const { Content } = await render(entry);
   >
     <section class="bg-gradient-to-b from-slate-50 to-white">
       <div class="mx-auto max-w-5xl px-6 py-14 sm:py-16">
-        <Breadcrumb items={[{ label: t[lang].breadcrumb_home, href: lp("/") }, { label: entry.data.title }]} />
+        <Breadcrumb items={[
+          { label: t[lang].breadcrumb_home, href: lp("/") },
+          ...(parentCrumb ? [{ label: parentCrumb.label, href: lp(parentCrumb.href) }] : []),
+          { label: entry.data.title },
+        ]} />
         <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">{entry.data.title}</h1>
         {entry.data.description && (
           <p class="mt-6 max-w-3xl text-xl text-slate-600">{entry.data.description}</p>

@@ -5,12 +5,20 @@ import Eyebrow from "../../components/Eyebrow.astro";
 import Breadcrumb from "../../components/Breadcrumb.astro";
 import { organization, breadcrumb } from "../../lib/schema";
 
-const openings = [
+const openings: { title: string; location: string; posted: string; href: string }[] = [];
+
+const pastOpenings = [
   {
     title: "Technical Customer Support",
     location: "100% remote",
     posted: "June 2025",
     href: "/jobs/technical-customer-support/",
+  },
+  {
+    title: "Marketing & Sales Funnel Architect",
+    location: "100% remote",
+    posted: "March 2021",
+    href: "/jobs/marketing-sales-funnel-architect/",
   },
 ];
 
@@ -60,6 +68,28 @@ const jsonLd = [
           </li>
         ))}
       </ul>
+    )}
+
+    {pastOpenings.length > 0 && (
+      <>
+        <h2 class="mt-16 text-sm font-semibold uppercase tracking-wider text-slate-500">Past openings</h2>
+        <ul class="mt-6 space-y-3">
+          {pastOpenings.map((o) => (
+            <li>
+              <a
+                href={o.href}
+                class="group flex items-center justify-between gap-4 rounded-2xl border border-slate-200 bg-slate-50 p-6 transition hover:border-slate-300 hover:bg-white"
+              >
+                <div>
+                  <h3 class="text-xl font-semibold text-slate-700 group-hover:text-slate-900">{o.title}</h3>
+                  <p class="mt-1 text-sm text-slate-500">{o.posted} · {o.location} · <span class="text-rose-600">Closed</span></p>
+                </div>
+                <span class="text-2xl text-slate-300 group-hover:text-slate-500" aria-hidden="true">→</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </>
     )}
 
     <p class="mt-12 text-sm text-slate-500">

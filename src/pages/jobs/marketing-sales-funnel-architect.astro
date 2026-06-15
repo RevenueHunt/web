@@ -11,4 +11,4 @@ const entry = (await getCollection("pages")).find(
 if (!entry) throw new Error("marketing-sales-funnel-architect page entry not found");
 ---
 
-<ContentPage entry={entry} lang="en" translated={false} parentCrumb={{ label: "Jobs", href: "/jobs/" }} />
+<ContentPage entry={entry} lang="en" translated={false} parentCrumb={{ label: "Jobs", href: "/jobs/" }} badge="Applications closed" />

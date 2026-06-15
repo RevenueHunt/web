@@ -23,9 +23,11 @@ interface Props {
   translated?: boolean;
   /** Optional crumb inserted between Home and the page title (e.g. Jobs). */
   parentCrumb?: { label: string; href: string };
+  /** Optional red status badge shown below the title (e.g. Applications closed). */
+  badge?: string;
 }
 
-const { entry, lang = "en", translated = false, parentCrumb } = Astro.props;
+const { entry, lang = "en", translated = false, parentCrumb, badge } = Astro.props;
 const c = CHROME[lang];
 const lp = (path: string) => localizedHref(path, lang);
 
@@ -78,6 +80,11 @@ const { Content } = await render(entry);
           { label: entry.data.title },
         ]} />
         <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">{entry.data.title}</h1>
+        {badge && (
+          <p class="mt-5">
+            <span class="inline-flex items-center rounded-full bg-red-50 px-3 py-1 text-sm font-semibold text-red-700 ring-1 ring-inset ring-red-600/20">{badge}</span>
+          </p>
+        )}
         {entry.data.description && (
           <p class="mt-6 max-w-3xl text-xl text-slate-600">{entry.data.description}</p>
         )}

@@ -125,7 +125,7 @@ Klaviyo's segmentation engine is among the most powerful in the industry, but it
 
 ### Reframing the data hierarchy
 
-**First-party data** is behavioural: pages visited, products purchased, emails opened. It tells you what someone _did_.
+**[First-party data](/first-party-data/)** is behavioural: pages visited, products purchased, emails opened. It tells you what someone _did_. (Strictly, it's the broader umbrella that contains everything you collected and own; observed behaviour is the most common kind.)
 
 **[Zero-party data](/zero-party-data/)** is intentional: preference information the customer explicitly provides. It tells you what someone _wants_.
 

@@ -1,0 +1,726 @@
+---
+import Base from "../../layouts/Base.astro";
+import PageHero from "../../components/PageHero.astro";
+import Eyebrow from "../../components/Eyebrow.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
+import { organization, breadcrumb, softwareApplication, article, faqPage } from "../../lib/schema";
+import { SITE } from "../../lib/site";
+
+const SHOPIFY_INSTALL =
+  "https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=first_party_data_landing";
+const WOO_PLUGIN =
+  "https://downloads.wordpress.org/plugin/product-recommendation-quiz-for-ecommerce.latest-stable.zip";
+
+const PAGE_URL = new URL("/first-party-data/", SITE.site_url).href;
+
+const DATA_TYPES = [
+  {
+    name: "First-party",
+    who: "You",
+    how: "Observed and declared interactions on your own infrastructure",
+    example: "Customer X bought product Y, opened email Z, completed quiz W",
+    durability: "Highest",
+    durabilityColor: "text-emerald-600",
+    rowBg: "bg-white",
+  },
+  {
+    name: "Zero-party (subset of first-party)",
+    who: "You",
+    how: "Customer volunteers preference information in exchange for value",
+    example: '"My skin is sensitive. I\'m shopping for a gift."',
+    durability: "Highest",
+    durabilityColor: "text-emerald-600",
+    rowBg: "bg-slate-50",
+  },
+  {
+    name: "Second-party",
+    who: "A partner brand",
+    how: "Shared from a partner's first-party set via a direct agreement",
+    example: "A co-marketing partner shares its newsletter list with you",
+    durability: "Variable",
+    durabilityColor: "text-amber-600",
+    rowBg: "bg-white",
+  },
+  {
+    name: "Third-party",
+    who: "An intermediary you don't own",
+    how: "Aggregated, inferred or purchased from brokers, ad networks, look-alike models",
+    example: '"Females 25-34 likely interested in skincare"',
+    durability: "Lowest, falling",
+    durabilityColor: "text-red-600",
+    rowBg: "bg-slate-50",
+  },
+];
+
+const WHY_NOW = [
+  {
+    n: "01",
+    title: "Third-party cookies are functionally dead",
+    body:
+      "Safari and Firefox blocked cookies years ago. Chrome's deprecation means cookie-based cross-site tracking now reaches a fraction of audiences it used to. Anything you used to do with a pixel and a look-alike audience produces a fraction of the signal at the same media cost. The replacement is durable identity built on data you own.",
+  },
+  {
+    n: "02",
+    title: "AI Overviews reward first-party signal",
+    body:
+      "When Google's AI Overviews quote a page, they prefer sources that demonstrate first-hand expertise, structured data, and customer-level depth. Brands that publish content informed by their own customer signals (real survey results, real bought-together patterns, real preference distributions) outrank brands recycling generic third-party reports.",
+  },
+  {
+    n: "03",
+    title: "Privacy regulation has hardened",
+    body:
+      "GDPR, CCPA, CPRA, Quebec's Law 25, the EU AI Act, and a growing list of US state laws share a common pattern: consent must be specific, withdrawable, and demonstrable, and the data lifecycle must be auditable. First-party data is the easiest category to govern because you control collection, storage, retention, and deletion.",
+  },
+  {
+    n: "04",
+    title: "Acquisition costs keep rising",
+    body:
+      "Meta and Google CPMs trend up year over year while attribution windows shrink. Personalisation is the durable lever for offsetting that pressure. Lift email RPR or post-purchase repeat rate by even 10% through better targeting, and you can outbid competitors for the same impression while keeping margin intact.",
+  },
+];
+
+const CHANNELS = [
+  {
+    n: "1",
+    title: "Customer accounts and accelerated checkout",
+    line: "The foundation of every first-party set.",
+    body:
+      "Shopify's accelerated checkout produces an account record on every order, even when the shopper doesn't explicitly register. Email, shipping address, and order history all flow into the customer profile. Make sure your theme has customer accounts enabled and that order data is syncing to your ESP and CRM.",
+    highlighted: false,
+  },
+  {
+    n: "2",
+    title: "Email and SMS sign-ups",
+    line: "Classic top-of-funnel volume play.",
+    body:
+      "Discount-on-signup popups produce volume; quiz-driven captures produce volume and structured preference data. The choice depends on whether you optimise for list size or list quality. For most brands in 2026 the answer is quality.",
+    href: "/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/",
+    hrefLabel: "Why popups underperform quizzes for lead capture",
+    highlighted: false,
+  },
+  {
+    n: "3",
+    title: "Product recommendation quizzes",
+    line: "Highest yield per minute of customer attention.",
+    body:
+      "A quiz captures three categories of data at once: the contact (email/SMS), the consent (explicit opt-in inside the flow), and the structured preferences (skin type, goal, budget, shopping-for). Each answer maps to a custom property in Klaviyo, Omnisend, or Mailchimp via native integration. The platform benchmark across 20,000+ Shopify stores puts the median quiz at 69% completion and 5.5% pooled CVR.",
+    href: "/product-quiz-recommendation-systems/",
+    hrefLabel: "Six recommendation systems compared",
+    highlighted: true,
+  },
+  {
+    n: "4",
+    title: "Post-purchase surveys",
+    line: "Attribution and intent in a high-goodwill window.",
+    body:
+      'A two-question survey attached to the order confirmation page or the post-purchase email captures attribution ("how did you hear about us?") and intent ("what problem are you solving?"). Completion rates of 30 to 50% are normal. Answers attach directly to the order record, so they flow into both your attribution model and post-purchase flow.',
+    highlighted: false,
+  },
+  {
+    n: "5",
+    title: "Loyalty and rewards programs",
+    line: "Continuous first-party data engine when designed well.",
+    body:
+      "Every points-earning interaction (review a product, share your birthday, complete your profile, refer a friend) produces a structured data point in exchange for redeemable value. The trade-off is operational: loyalty programs require sustained content and reward design, which is why they tend to be the right second or third channel rather than the first.",
+    highlighted: false,
+  },
+  {
+    n: "6",
+    title: "Customer-service touchpoints",
+    line: "Under-used signal hiding in tickets.",
+    body:
+      "Tickets, chat transcripts, and post-purchase NPS responses are first-party data that most stores under-use. Integrating Gorgias, Re:amaze, or Zendesk with your CRM means service interactions enrich the same profile the ESP and ad platform read from. Tag tickets by resolution category and you have a structured signal of what your customers struggle with at scale.",
+    highlighted: false,
+  },
+  {
+    n: "7",
+    title: "On-site behavioural analytics",
+    line: "The observed layer; pairs with declared preferences.",
+    body:
+      "GA4, Shopify Analytics, and a handful of session-replay tools (Hotjar, Lucky Orange, Mouseflow) provide the behavioural layer: pages visited, product views, search queries, scroll depth, click paths. Excellent for retargeting and propensity modelling, but observed, not declared. Pairs well with the stated-preference data from quizzes and surveys.",
+    href: "/first-party-shopify-quiz-analytics/",
+    hrefLabel: "First-party Shopify quiz analytics",
+    highlighted: false,
+  },
+];
+
+const ACTIVATE = [
+  {
+    title: "Email and SMS",
+    line: "Fastest payback.",
+    body:
+      "Custom properties mapped from first-party signals power conditional welcome series, replenishment reminders, win-back flows, and dynamic content blocks. The platform infrastructure already exists; the marginal cost of personalisation is near zero.",
+    href: "/klaviyo-zero-party-data/",
+    hrefLabel: "Klaviyo activation playbook (+267% RPR on enriched cohort)",
+  },
+  {
+    title: "Paid ads",
+    line: "Enriched custom audiences and look-alikes.",
+    body:
+      "Push enriched segments to Meta Custom Audiences and Google Customer Match. A list of customers segmented by stated preference and verified purchase behaviour is a dramatically better remarketing audience and look-alike seed than an undifferentiated subscriber list.",
+    href: "/make-your-facebook-ads-smarter-with-revenuehunts-quiz-integration/",
+    hrefLabel: "Meta ads smarter with quiz audiences",
+  },
+  {
+    title: "On-site personalisation",
+    line: "Drive collection ordering, hero swaps, PDP logic.",
+    body:
+      "First-party signals can drive collection ordering, hero swaps, product recommendation feeds, and conditional logic on PDPs. The simplest implementation stores a profile attribute in a cookie or local-storage key and lets a personalisation app or your theme read it on subsequent visits.",
+  },
+  {
+    title: "Customer service",
+    line: "Surface preferences inside tickets and post-purchase.",
+    body:
+      "Surface preference data inside Shopify Orders, Gorgias tickets, and post-purchase emails so the human or automated message references what the customer already told you. Where personalisation is most visible to the customer and most likely to generate goodwill.",
+  },
+];
+
+const PRIVACY = [
+  {
+    title: "Consent",
+    body:
+      "Every collection point must have a clear, specific consent mechanism. For marketing channels (email, SMS), opt-in language must name the channel and the type of content. For preference data collected inside a quiz, an explicit consent question with a defined value exchange. GDPR and CCPA both require consent to be specific, withdrawable, and demonstrable; \"by using this site you agree\" is not consent.",
+    href: "/product-quiz-marketing-consent/",
+    hrefLabel: "Asking for marketing consent inside a quiz",
+  },
+  {
+    title: "Purpose limitation and retention",
+    body:
+      "You must define why you collect each piece of data and how long you keep it. Most ESPs and CDPs now expose retention settings at the property level, but many stores leave them on default values. Set them deliberately, document the decision in your privacy notice, and apply the same retention rule to backups.",
+  },
+  {
+    title: "Right to access and delete",
+    body:
+      "Customers can ask what you have on them and ask you to delete it. Shopify exposes both endpoints natively; your job is to make sure the request also flows to your ESP, your ad-platform custom audiences, your CDP, and any other system that stores a copy. A delete request that only deletes from Shopify and not from Klaviyo is a compliance failure.",
+  },
+];
+
+const FAQ = [
+  {
+    question: "What is first-party data?",
+    answer:
+      "First-party data is customer information a brand collects directly on its own infrastructure: site behaviour, purchase history, email engagement, CRM records, customer-service interactions, and stated preferences. The defining property is ownership: the brand collected it, stores it, and can use it without depending on an intermediary.",
+  },
+  {
+    question: "What is the difference between first-party and zero-party data?",
+    answer:
+      "Zero-party data is a subset of first-party data. Both are collected and owned by the brand. The distinction is intent: first-party data is typically observed (pages visited, products bought, emails opened), while zero-party data is declared (the customer explicitly tells you their skin type, budget, or primary concern). Many marketers treat them as separate categories because they behave differently in activation, but governance-wise they live under the same umbrella.",
+    answerHtml:
+      "Zero-party data is a subset of first-party data. Both are collected and owned by the brand. The distinction is intent: first-party data is typically observed (pages visited, products bought, emails opened), while zero-party data is declared (the customer explicitly tells you their skin type, budget, or primary concern). For a deeper look at zero-party data specifically, see our <a href=\"/zero-party-data/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">zero-party data guide</a>.",
+  },
+  {
+    question: "How do you collect first-party data?",
+    answer:
+      "Seven channels consistently work on a Shopify store: customer accounts and accelerated checkout, email and SMS sign-ups, product recommendation quizzes, post-purchase surveys, loyalty and rewards programs, customer-service touchpoints, and on-site behavioural analytics. The strongest stacks use a combination, with quizzes producing the highest yield of structured preference data per minute of customer attention.",
+  },
+  {
+    question: "What are examples of first-party data?",
+    answer:
+      "Pages visited, products viewed, search queries, add-to-cart events, orders, basket composition, AOV, lifetime value, return history, shipping address, email opens, SMS replies, app session frequency, customer-service tickets, NPS scores, post-purchase survey answers, quiz responses, and any preference stored in a loyalty or account profile.",
+  },
+  {
+    question: "Is first-party data the same as third-party data?",
+    answer:
+      "No. First-party data is collected by your brand on your own infrastructure. Third-party data is aggregated or inferred by an intermediary you don't own (data brokers, ad networks, look-alike models) and licensed back to you. Third-party data is degrading rapidly as cookies are deprecated and privacy regulation tightens; first-party data is the durable replacement.",
+  },
+  {
+    question: "Why does first-party data matter in 2026?",
+    answer:
+      "Four shifts have made it strategic: third-party cookies are functionally dead, AI Overviews reward content informed by real customer signals, privacy regulation requires demonstrable consent and auditable data lifecycles, and rising acquisition costs have made personalisation the only durable lever for margin. Brands with working first-party data programs compound advantages that brands relying on inferred third-party signals cannot access.",
+  },
+  {
+    question: "Is collecting first-party data GDPR-compliant?",
+    answer:
+      "First-party data is the easiest category to keep GDPR-compliant because the brand controls every step of collection, storage, retention, and deletion. Compliance still requires a specific, withdrawable consent mechanism at every collection point, a documented purpose for processing, defined retention periods, and an end-to-end deletion workflow that propagates to every downstream system.",
+  },
+  {
+    question: "How do I activate first-party data in Klaviyo or another ESP?",
+    answer:
+      "Map your structured first-party signals (purchase history, quiz answers, survey responses, loyalty attributes) to custom properties in your ESP via native integrations rather than middleware. Use those properties to build segments, conditional flow splits, and dynamic content blocks. The goal is one canonical profile per customer that every channel reads from.",
+  },
+  {
+    question: "What is the difference between first-party and second-party data?",
+    answer:
+      "First-party data is data you collected yourself on your own infrastructure. Second-party data is another brand's first-party data, shared with you through a direct partnership or co-marketing agreement. Quality varies by partner and by the consent chain that produced the data; second-party data is useful for audience expansion but inferior to your own first-party data for personalisation.",
+  },
+  {
+    question: "How long does it take to build a useful first-party data program?",
+    answer:
+      "A Shopify store with no structured preference data can launch a quiz, a post-purchase survey, and an enriched email program in under a week using no-code tools and native integrations. Meaningful segment-level revenue lift typically appears within 60 to 90 days of consistent collection. A complete first-party stack (quiz, surveys, loyalty, CDP, on-site personalisation) is a 6 to 12 month build for most teams.",
+  },
+];
+
+const PAGE_TITLE = "First-party data: what it is and how to collect it (2026)";
+const PAGE_DESCRIPTION =
+  "First-party data is customer data you collect and own. How it differs from zero- and third-party, 7 Shopify collection channels, and where to activate it.";
+
+const jsonLd = [
+  organization(),
+  softwareApplication(),
+  breadcrumb([
+    { name: "Home", url: "/" },
+    { name: "First-party data", url: "/first-party-data/" },
+  ]),
+  article({
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
+    url: PAGE_URL,
+    image: "/og/first-party-data.png",
+    datePublished: "2026-05-27",
+    dateModified: "2026-06-16",
+    author: "Paulina Chodura",
+    authorUrl: new URL("/author/pochodura/", SITE.site_url).href,
+    tags: [
+      "first-party data",
+      "zero-party data",
+      "customer data",
+      "Shopify",
+      "ecommerce personalization",
+      "GDPR",
+      "Klaviyo",
+    ],
+  }),
+  faqPage(FAQ),
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTermSet",
+    name: "Customer data types",
+    hasDefinedTerm: [
+      {
+        "@type": "DefinedTerm",
+        name: "First-party data",
+        description:
+          "Customer information a brand collects directly on its own infrastructure: site behaviour, purchase history, email engagement, CRM records, and stated preferences. The broadest category of data the brand actually owns, and the foundation every other marketing capability rests on in 2026.",
+        inDefinedTermSet: PAGE_URL,
+      },
+      {
+        "@type": "DefinedTerm",
+        name: "Zero-party data",
+        description:
+          "A subset of first-party data: information a customer intentionally and proactively shares with a brand (preferences, intents, goals) in exchange for value. Distinguished from broader first-party data by being declared rather than observed.",
+        inDefinedTermSet: PAGE_URL,
+      },
+      {
+        "@type": "DefinedTerm",
+        name: "Second-party data",
+        description:
+          "Another brand's first-party data, shared via direct agreement (co-marketing, partnership). Quality varies by partner; trust depends on the partner's collection practices.",
+        inDefinedTermSet: PAGE_URL,
+      },
+      {
+        "@type": "DefinedTerm",
+        name: "Third-party data",
+        description:
+          "Aggregated, inferred, or purchased from data brokers, ad networks, or look-alike audiences. The brand neither collected nor owns the underlying records. Degrades as cookies are deprecated and privacy regulation tightens.",
+        inDefinedTermSet: PAGE_URL,
+      },
+    ],
+  },
+];
+---
+
+<Base
+  title={PAGE_TITLE}
+  description={PAGE_DESCRIPTION}
+  ogImage="/og/first-party-data.png"
+  jsonLd={jsonLd}
+>
+  <!-- Hero -->
+  <PageHero>
+    <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "First-party data" }]} />
+    <div class="text-center">
+      <Eyebrow>The complete guide for eCommerce</Eyebrow>
+      <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+        First-party data: what it is and how to collect it (2026)
+      </h1>
+      <p class="mx-auto mt-6 max-w-3xl text-xl text-slate-600">
+        Customer data your brand <strong>collects and owns</strong>. The structural moat now that third-party cookies are dead, AI Overviews reward customer-level depth, and privacy regulation demands demonstrable consent.
+      </p>
+      <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <a
+          href={SHOPIFY_INSTALL}
+          target="_blank"
+          rel="external noopener nofollow"
+          class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
+        >
+          Start collecting on Shopify
+        </a>
+        <a
+          href="#collect"
+          class="inline-flex items-center justify-center rounded-md border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-900 transition hover:border-slate-400 hover:bg-slate-50"
+        >
+          Jump to the 7 collection channels
+        </a>
+      </div>
+      <p class="mt-6 text-sm text-slate-500">
+        Used by <strong class="text-slate-700">20,000+</strong> ecommerce brands · <strong class="text-slate-700">4.9 ★</strong> on Shopify · <a href="/revenuehunt-built-for-shopify/" class="font-semibold text-slate-700 underline decoration-slate-300 underline-offset-2 hover:decoration-slate-700">Built for Shopify</a> certified
+      </p>
+    </div>
+  </PageHero>
+
+  <!-- Definition band -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6">
+      <div class="rounded-2xl bg-[#16161D] px-6 py-10 sm:px-10">
+        <p class="text-center text-sm font-semibold uppercase tracking-wider text-[#5AB2FF]">
+          Definition
+        </p>
+        <p class="mx-auto mt-6 max-w-3xl text-center text-xl text-white leading-relaxed">
+          <strong>First-party data</strong> is customer information a brand collects directly on its <strong>own infrastructure</strong>: site behaviour, purchase history, email engagement, CRM records, and stated preferences. It is the broadest category of data you actually own, and in 2026 it is the foundation every other marketing capability rests on.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- What is + intro -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-3xl px-6 py-16">
+      <p class="text-lg text-slate-700">
+        If you sell online, the difference between a marketing program that compounds and one that stalls is increasingly determined by a single question: how much customer data do you actually own? Third-party cookies are gone in two of the three major browsers and degrading in the third. Pixels are losing signal to consent banners, App Tracking Transparency, and privacy proxies. Look-alike audiences built on broker data fail audits. The structural advantage now belongs to brands that own the relationship and the data that comes with it.
+      </p>
+      <p class="mt-4 text-lg text-slate-700">
+        This guide covers what first-party data is, how it compares to the other categories, why it matters more in 2026 than at any point before, the seven channels Shopify stores use to collect it, where to activate it, and what privacy obligations come attached.
+      </p>
+
+      <h2 class="mt-12 text-2xl font-bold tracking-tight text-slate-900">What counts as first-party data</h2>
+      <p class="mt-4 text-lg text-slate-700">
+        First-party data is everything a customer's interaction with your business produces, stored on infrastructure you control. The defining property is <em>ownership</em>: you collected it, you own it, you can use it without paying anyone for access and without negotiating renewal terms with an intermediary. In practical terms, first-party data on a Shopify store covers:
+      </p>
+      <ul class="mt-6 space-y-3 text-lg text-slate-700">
+        <li><strong>Behavioural data:</strong> pages visited, products viewed, time on site, search queries, add-to-cart events, abandoned carts.</li>
+        <li><strong>Transactional data:</strong> orders, basket composition, AOV, lifetime value, return history, payment method, shipping address.</li>
+        <li><strong>Engagement data:</strong> email opens, clicks, SMS replies, push-notification interactions, app session frequency.</li>
+        <li><strong>Account and profile data:</strong> email address, name, account creation date, login history.</li>
+        <li><strong>Stated-preference data:</strong> what the customer told you through a quiz, survey, preference centre, or loyalty profile. For <a href="/zero-party-data/" class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">a deeper look at the declared subset specifically</a>, see the companion guide; for the activation playbook (turning quiz answers into Klaviyo segments and email revenue lift), see <a href="/klaviyo-zero-party-data/" class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">your Klaviyo list is a graveyard</a>.</li>
+        <li><strong>Customer-service data:</strong> tickets, chat transcripts, NPS scores, post-purchase survey responses.</li>
+      </ul>
+      <p class="mt-6 text-lg text-slate-700">
+        The unifying thread is that none of it is rented. You don't lose access when an ad platform changes its policy, when a browser ships a privacy update, or when a data broker shuts down. That permanence is the reason first-party data has gone from "useful" to "strategic" in under five years.
+      </p>
+    </div>
+  </section>
+
+  <!-- vs other types -->
+  <section id="compare" class="scroll-mt-20 bg-slate-50">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">First-party data vs zero-party, second-party, and third-party data</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">
+        Marketers often treat these four labels as a sliding scale of accuracy, but the differences also matter for <strong>governance</strong>, <strong>durability</strong>, and what you can legally do with the data.
+      </p>
+
+      <div class="mt-10">
+        <svg viewBox="0 0 1200 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="data-tiers-title" style="width:100%;height:auto;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#16161D;border-radius:16px;padding:28px 16px;box-sizing:border-box;">
+          <title id="data-tiers-title">Customer data types from highest durability (first-party) to lowest (third-party)</title>
+          <defs><linearGradient id="rh-grad-fpd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6464ff"/><stop offset="1" stop-color="#4bd5ff"/></linearGradient></defs>
+          <text x="600" y="58" text-anchor="middle" fill="#F5F7FA" font-size="30" font-weight="800" letter-spacing="-0.5">Customer data types, ranked by durability</text>
+          <g><rect x="60" y="110" width="270" height="400" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><path d="M 60 178 L 60 124 Q 60 110 74 110 L 316 110 Q 330 110 330 124 L 330 178 Z" fill="url(#rh-grad-fpd)"/><text x="195" y="148" text-anchor="middle" fill="#F5F7FA" font-size="22" font-weight="800">First-party</text><text x="195" y="220" text-anchor="middle" fill="#F5F7FA" font-size="16" font-weight="700">You own it all</text><text x="195" y="280" text-anchor="middle" fill="#A7AFBF" font-size="15"><tspan x="195" dy="0">Site behaviour, orders,</tspan><tspan x="195" dy="24">email engagement, CRM,</tspan><tspan x="195" dy="24">stated preferences,</tspan><tspan x="195" dy="24">customer-service signals.</tspan></text><rect x="80" y="420" width="230" height="60" rx="10" fill="rgba(90,178,255,0.18)" stroke="rgba(90,178,255,0.55)" stroke-width="1.5"/><text x="195" y="450" text-anchor="middle" fill="#5AB2FF" font-size="13" font-weight="800" letter-spacing="2">DURABILITY</text><text x="195" y="470" text-anchor="middle" fill="#F5F7FA" font-size="15" font-weight="800">HIGHEST</text></g>
+          <g><rect x="350" y="110" width="270" height="400" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><path d="M 350 178 L 350 124 Q 350 110 364 110 L 606 110 Q 620 110 620 124 L 620 178 Z" fill="#5AB2FF"/><text x="485" y="148" text-anchor="middle" fill="#F5F7FA" font-size="22" font-weight="800">Zero-party</text><text x="485" y="220" text-anchor="middle" fill="#F5F7FA" font-size="16" font-weight="700">Subset of first-party</text><text x="485" y="280" text-anchor="middle" fill="#A7AFBF" font-size="15"><tspan x="485" dy="0">Customer volunteers it.</tspan><tspan x="485" dy="24">"My skin is sensitive."</tspan><tspan x="485" dy="24">"I'm shopping for a gift."</tspan><tspan x="485" dy="24">Declared, not observed.</tspan></text><rect x="370" y="420" width="230" height="60" rx="10" fill="rgba(90,178,255,0.12)" stroke="rgba(90,178,255,0.35)" stroke-width="1.5"/><text x="485" y="450" text-anchor="middle" fill="#A7AFBF" font-size="13" font-weight="800" letter-spacing="2">DURABILITY</text><text x="485" y="470" text-anchor="middle" fill="#F5F7FA" font-size="15" font-weight="800">HIGHEST</text></g>
+          <g><rect x="640" y="110" width="270" height="400" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><path d="M 640 178 L 640 124 Q 640 110 654 110 L 896 110 Q 910 110 910 124 L 910 178 Z" fill="#475569"/><text x="775" y="148" text-anchor="middle" fill="#F5F7FA" font-size="22" font-weight="800">Second-party</text><text x="775" y="220" text-anchor="middle" fill="#F5F7FA" font-size="16" font-weight="700">A partner shared it</text><text x="775" y="280" text-anchor="middle" fill="#A7AFBF" font-size="15"><tspan x="775" dy="0">A co-marketing partner</tspan><tspan x="775" dy="24">shares its first-party</tspan><tspan x="775" dy="24">via direct agreement.</tspan></text><rect x="660" y="420" width="230" height="60" rx="10" fill="rgba(255,179,71,0.12)" stroke="rgba(255,179,71,0.4)" stroke-width="1.5"/><text x="775" y="450" text-anchor="middle" fill="#A7AFBF" font-size="13" font-weight="800" letter-spacing="2">DURABILITY</text><text x="775" y="470" text-anchor="middle" fill="#FFB347" font-size="15" font-weight="800">VARIABLE</text></g>
+          <g><rect x="930" y="110" width="210" height="400" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><path d="M 930 178 L 930 124 Q 930 110 944 110 L 1126 110 Q 1140 110 1140 124 L 1140 178 Z" fill="#71717A"/><text x="1035" y="148" text-anchor="middle" fill="#F5F7FA" font-size="22" font-weight="800">Third-party</text><text x="1035" y="220" text-anchor="middle" fill="#F5F7FA" font-size="16" font-weight="700">Aggregated elsewhere</text><text x="1035" y="280" text-anchor="middle" fill="#A7AFBF" font-size="15"><tspan x="1035" dy="0">Brokers, ad networks,</tspan><tspan x="1035" dy="24">look-alikes, inferred.</tspan><tspan x="1035" dy="24">Degrading rapidly</tspan><tspan x="1035" dy="24">with cookie deprecation.</tspan></text><rect x="950" y="420" width="170" height="60" rx="10" fill="rgba(248,113,113,0.12)" stroke="rgba(248,113,113,0.4)" stroke-width="1.5"/><text x="1035" y="450" text-anchor="middle" fill="#A7AFBF" font-size="13" font-weight="800" letter-spacing="2">DURABILITY</text><text x="1035" y="470" text-anchor="middle" fill="#F87171" font-size="15" font-weight="800">LOWEST</text></g>
+        </svg>
+        <p class="mx-auto mt-3 max-w-3xl text-center text-xs text-slate-500 leading-snug">
+          <span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;First-party is everything you collected on your own infrastructure; zero-party is the part of that data the customer explicitly told you; second-party is a partner's first-party that you license; third-party is everything you didn't collect and don't own. Two of these are durable; two are degrading.
+        </p>
+      </div>
+
+      <div class="mt-12 overflow-x-auto">
+        <table class="w-full min-w-[40rem] border-collapse text-left">
+          <thead>
+            <tr class="bg-[#16161D] text-xs uppercase tracking-wider text-white">
+              <th class="px-4 py-3 font-semibold">Data type</th>
+              <th class="px-4 py-3 font-semibold">Ownership</th>
+              <th class="px-4 py-3 font-semibold">Source</th>
+              <th class="px-4 py-3 font-semibold">Example</th>
+              <th class="px-4 py-3 font-semibold">Durability</th>
+            </tr>
+          </thead>
+          <tbody>
+            {DATA_TYPES.map((d) => (
+              <tr class={`${d.rowBg} border-b border-slate-200 text-sm text-slate-700`}>
+                <td class="px-4 py-3 font-semibold text-slate-900">{d.name}</td>
+                <td class="px-4 py-3">{d.who}</td>
+                <td class="px-4 py-3">{d.how}</td>
+                <td class="px-4 py-3 italic">{d.example}</td>
+                <td class={`px-4 py-3 font-semibold ${d.durabilityColor}`}>{d.durability}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why now -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Why first-party data wins in 2026</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">
+        Four shifts have moved first-party data from "important" to <strong>strategic</strong>. They are independent and compounding.
+      </p>
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {WHY_NOW.map((w) => (
+          <div class="rounded-xl border border-slate-200 p-7">
+            <p class="text-xs font-bold uppercase tracking-widest text-[#616eff]">{w.n}</p>
+            <h3 class="mt-2 text-lg font-bold text-slate-900">{w.title}</h3>
+            <p class="mt-3 text-sm text-slate-700">{w.body}</p>
+          </div>
+        ))}
+      </div>
+      <p class="mx-auto mt-10 max-w-3xl text-center text-slate-700">
+        The combined effect: brands that have a working first-party data program by mid-2026 will compound an advantage that brands still relying on inferred third-party signals can no longer access.
+      </p>
+    </div>
+  </section>
+
+  <!-- How to collect -->
+  <section id="collect" class="scroll-mt-20 bg-slate-50">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">How to collect first-party data on a Shopify store</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">
+        Seven channels consistently produce useful first-party data on a Shopify or Shopify Plus store. Most stores already have three or four running; the gap is usually in the <strong>structured-preference</strong> and <strong>post-purchase</strong> channels.
+      </p>
+
+      <div class="mt-10">
+        <svg viewBox="0 0 1200 740" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="channels-grid-title" style="width:100%;height:auto;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#16161D;border-radius:16px;padding:28px 16px;box-sizing:border-box;">
+          <title id="channels-grid-title">Seven channels for collecting first-party data on a Shopify store</title>
+          <defs><linearGradient id="rh-grad-channels" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6464ff"/><stop offset="1" stop-color="#4bd5ff"/></linearGradient></defs>
+          <text x="600" y="58" text-anchor="middle" fill="#F5F7FA" font-size="30" font-weight="800" letter-spacing="-0.5">Seven channels for collecting first-party data</text>
+          <g><rect x="40" y="110" width="270" height="270" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="60" y="148" fill="#6B7384" font-size="20" font-weight="800" letter-spacing="2">01</text><text x="175" y="220" text-anchor="middle" fill="#F5F7FA" font-size="18" font-weight="800">Customer accounts</text><text x="175" y="280" text-anchor="middle" fill="#A7AFBF" font-size="15"><tspan x="175" dy="0">Email, address, order</tspan><tspan x="175" dy="22">history from Shopify</tspan><tspan x="175" dy="22">accelerated checkout.</tspan></text></g>
+          <g><rect x="330" y="110" width="270" height="270" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="350" y="148" fill="#6B7384" font-size="20" font-weight="800" letter-spacing="2">02</text><text x="465" y="220" text-anchor="middle" fill="#F5F7FA" font-size="18" font-weight="800">Email &amp; SMS sign-ups</text><text x="465" y="280" text-anchor="middle" fill="#A7AFBF" font-size="15"><tspan x="465" dy="0">Discount-on-signup popups</tspan><tspan x="465" dy="22">and consent capture.</tspan></text></g>
+          <g><rect x="620" y="110" width="270" height="270" rx="14" fill="rgba(90,178,255,0.14)" stroke="rgba(90,178,255,0.55)" stroke-width="2"/><text x="640" y="148" fill="#5AB2FF" font-size="14" font-weight="800" letter-spacing="2">03 · HIGHEST YIELD</text><text x="755" y="220" text-anchor="middle" fill="#F5F7FA" font-size="18" font-weight="800">Recommendation quiz</text><text x="755" y="280" text-anchor="middle" fill="#A7AFBF" font-size="15"><tspan x="755" dy="0">Structured preferences,</tspan><tspan x="755" dy="22">consent, and contact</tspan><tspan x="755" dy="22">in one flow.</tspan></text></g>
+          <g><rect x="910" y="110" width="250" height="270" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="930" y="148" fill="#6B7384" font-size="20" font-weight="800" letter-spacing="2">04</text><text x="1035" y="220" text-anchor="middle" fill="#F5F7FA" font-size="18" font-weight="800">Post-purchase surveys</text><text x="1035" y="280" text-anchor="middle" fill="#A7AFBF" font-size="15"><tspan x="1035" dy="0">Attribution and intent</tspan><tspan x="1035" dy="22">in a high-goodwill</tspan><tspan x="1035" dy="22">window.</tspan></text></g>
+          <g><rect x="180" y="410" width="270" height="270" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="200" y="448" fill="#6B7384" font-size="20" font-weight="800" letter-spacing="2">05</text><text x="315" y="520" text-anchor="middle" fill="#F5F7FA" font-size="18" font-weight="800">Loyalty programs</text><text x="315" y="580" text-anchor="middle" fill="#A7AFBF" font-size="15"><tspan x="315" dy="0">Points-for-data exchange,</tspan><tspan x="315" dy="22">continuously enriching</tspan><tspan x="315" dy="22">profiles.</tspan></text></g>
+          <g><rect x="470" y="410" width="270" height="270" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="490" y="448" fill="#6B7384" font-size="20" font-weight="800" letter-spacing="2">06</text><text x="605" y="520" text-anchor="middle" fill="#F5F7FA" font-size="18" font-weight="800">Customer service</text><text x="605" y="580" text-anchor="middle" fill="#A7AFBF" font-size="15"><tspan x="605" dy="0">Tickets and chat tagged</tspan><tspan x="605" dy="22">by resolution category</tspan><tspan x="605" dy="22">enrich the profile.</tspan></text></g>
+          <g><rect x="760" y="410" width="270" height="270" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="780" y="448" fill="#6B7384" font-size="20" font-weight="800" letter-spacing="2">07</text><text x="895" y="520" text-anchor="middle" fill="#F5F7FA" font-size="18" font-weight="800">On-site analytics</text><text x="895" y="580" text-anchor="middle" fill="#A7AFBF" font-size="15"><tspan x="895" dy="0">GA4, Shopify Analytics,</tspan><tspan x="895" dy="22">session replay,</tspan><tspan x="895" dy="22">search queries.</tspan></text></g>
+        </svg>
+        <p class="mx-auto mt-3 max-w-3xl text-center text-xs text-slate-500 leading-snug">
+          <span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;Seven channels at a glance. Customer accounts, email/SMS sign-ups, and on-site analytics are usually already running. The structured-preference channel (quizzes), post-purchase surveys, loyalty, and tagged customer-service interactions are the gaps that produce the highest marginal lift.
+        </p>
+      </div>
+
+      <div class="mt-12 space-y-5">
+        {CHANNELS.map((c) => (
+          <div class={`rounded-xl border p-6 sm:p-7 ${c.highlighted ? "border-[#5AB2FF] bg-[#eff8ff] shadow-md" : "border-slate-200 bg-white"}`}>
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-start">
+              <div class="sm:w-16 sm:flex-none">
+                <span class={`inline-flex h-12 w-12 items-center justify-center rounded-full text-lg font-bold text-white ${c.highlighted ? "bg-[#5AB2FF]" : "bg-[#16161D]"}`}>{c.n}</span>
+              </div>
+              <div class="flex-1">
+                {c.highlighted && (
+                  <p class="text-xs font-bold uppercase tracking-widest text-[#1d4ed8]">Highest yield</p>
+                )}
+                <h3 class="text-lg font-bold text-slate-900">{c.title}</h3>
+                <p class="mt-1 text-sm font-semibold text-[#616eff]">{c.line}</p>
+                <p class="mt-3 text-slate-700">{c.body}</p>
+                {c.href && (
+                  <p class="mt-3 text-sm">
+                    <a href={c.href} class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">{c.hrefLabel} →</a>
+                  </p>
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <p class="mx-auto mt-10 max-w-3xl text-center text-slate-700">
+        The pattern across all seven: you are creating <strong>structured records that live in profiles you own</strong>, so downstream activation can be conditional, personalised, and auditable.
+      </p>
+    </div>
+  </section>
+
+  <!-- Activation -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">First-party data activation</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">
+        Collection without activation is just storage. Four channels reliably produce measurable lift.
+      </p>
+
+      <div class="mt-10">
+        <svg viewBox="0 0 1200 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pipeline-title" style="width:100%;height:auto;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#16161D;border-radius:16px;padding:28px 16px;box-sizing:border-box;">
+          <title id="pipeline-title">From collection to activation: the first-party data pipeline through a unified customer profile</title>
+          <defs>
+            <linearGradient id="rh-grad-pipe" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6464ff"/><stop offset="1" stop-color="#4bd5ff"/></linearGradient>
+            <marker id="pipe-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#5AB2FF"/>
+            </marker>
+          </defs>
+          <text x="600" y="50" text-anchor="middle" fill="#F5F7FA" font-size="28" font-weight="800" letter-spacing="-0.5">Collection → unified profile → activation</text>
+          <text x="180" y="100" font-size="14" font-weight="700" fill="#6B7384" letter-spacing="2" text-anchor="middle">COLLECTION</text>
+          <text x="600" y="100" font-size="14" font-weight="700" fill="#5AB2FF" letter-spacing="2" text-anchor="middle">UNIFIED PROFILE</text>
+          <text x="1020" y="100" font-size="14" font-weight="700" fill="#6B7384" letter-spacing="2" text-anchor="middle">ACTIVATION</text>
+
+          <g stroke="#5AB2FF" stroke-width="1.5" stroke-opacity="0.5">
+            <line x1="320" y1="155" x2="450" y2="280" marker-end="url(#pipe-arrow)"/>
+            <line x1="320" y1="205" x2="450" y2="280" marker-end="url(#pipe-arrow)"/>
+            <line x1="320" y1="255" x2="450" y2="280" marker-end="url(#pipe-arrow)"/>
+            <line x1="320" y1="305" x2="450" y2="280" marker-end="url(#pipe-arrow)"/>
+            <line x1="320" y1="355" x2="450" y2="280" marker-end="url(#pipe-arrow)"/>
+            <line x1="320" y1="405" x2="450" y2="280" marker-end="url(#pipe-arrow)"/>
+            <line x1="750" y1="280" x2="880" y2="155" marker-end="url(#pipe-arrow)"/>
+            <line x1="750" y1="280" x2="880" y2="237" marker-end="url(#pipe-arrow)"/>
+            <line x1="750" y1="280" x2="880" y2="319" marker-end="url(#pipe-arrow)"/>
+            <line x1="750" y1="280" x2="880" y2="401" marker-end="url(#pipe-arrow)"/>
+          </g>
+
+          <g>
+            <rect x="40" y="135" width="280" height="38" rx="8" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+            <circle cx="62" cy="154" r="5" fill="#5AB2FF"/><text x="78" y="160" fill="#F5F7FA" font-size="15" font-weight="600">Quiz answers</text>
+            <rect x="40" y="185" width="280" height="38" rx="8" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+            <circle cx="62" cy="204" r="5" fill="#5AB2FF"/><text x="78" y="210" fill="#F5F7FA" font-size="15" font-weight="600">Purchase history</text>
+            <rect x="40" y="235" width="280" height="38" rx="8" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+            <circle cx="62" cy="254" r="5" fill="#5AB2FF"/><text x="78" y="260" fill="#F5F7FA" font-size="15" font-weight="600">Email &amp; SMS engagement</text>
+            <rect x="40" y="285" width="280" height="38" rx="8" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+            <circle cx="62" cy="304" r="5" fill="#5AB2FF"/><text x="78" y="310" fill="#F5F7FA" font-size="15" font-weight="600">Post-purchase surveys</text>
+            <rect x="40" y="335" width="280" height="38" rx="8" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+            <circle cx="62" cy="354" r="5" fill="#5AB2FF"/><text x="78" y="360" fill="#F5F7FA" font-size="15" font-weight="600">Loyalty profile data</text>
+            <rect x="40" y="385" width="280" height="38" rx="8" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+            <circle cx="62" cy="404" r="5" fill="#5AB2FF"/><text x="78" y="410" fill="#F5F7FA" font-size="15" font-weight="600">Customer service signals</text>
+          </g>
+
+          <g>
+            <rect x="450" y="135" width="300" height="290" rx="14" fill="rgba(90,178,255,0.10)" stroke="rgba(90,178,255,0.55)" stroke-width="1.5"/>
+            <text x="600" y="170" text-anchor="middle" fill="#F5F7FA" font-size="18" font-weight="800">One canonical profile</text>
+            <text x="600" y="195" text-anchor="middle" fill="#A7AFBF" font-size="13">Every channel reads from</text>
+            <text x="600" y="213" text-anchor="middle" fill="#A7AFBF" font-size="13">the same record.</text>
+            <text x="468" y="248" fill="#5AB2FF" font-size="11" font-weight="800" letter-spacing="1.5">EXAMPLE CUSTOM PROPERTIES</text>
+            <rect x="468" y="260" width="264" height="26" rx="6" fill="rgba(90,178,255,0.18)"/>
+            <text x="478" y="278" fill="#5AB2FF" font-family="ui-monospace,monospace" font-size="13" font-weight="600">quiz_skin_type</text>
+            <text x="722" y="278" text-anchor="end" fill="#A7AFBF" font-size="13">"sensitive"</text>
+            <rect x="468" y="294" width="264" height="26" rx="6" fill="rgba(90,178,255,0.18)"/>
+            <text x="478" y="312" fill="#5AB2FF" font-family="ui-monospace,monospace" font-size="13" font-weight="600">predicted_ltv</text>
+            <text x="722" y="312" text-anchor="end" fill="#A7AFBF" font-size="13">$284.00</text>
+            <rect x="468" y="328" width="264" height="26" rx="6" fill="rgba(90,178,255,0.18)"/>
+            <text x="478" y="346" fill="#5AB2FF" font-family="ui-monospace,monospace" font-size="13" font-weight="600">last_purchase</text>
+            <text x="722" y="346" text-anchor="end" fill="#A7AFBF" font-size="13">14 days ago</text>
+            <rect x="468" y="362" width="264" height="26" rx="6" fill="rgba(90,178,255,0.18)"/>
+            <text x="478" y="380" fill="#5AB2FF" font-family="ui-monospace,monospace" font-size="13" font-weight="600">consent_email</text>
+            <text x="722" y="380" text-anchor="end" fill="#A7AFBF" font-size="13">opted in</text>
+            <rect x="468" y="396" width="264" height="26" rx="6" fill="rgba(90,178,255,0.18)"/>
+            <text x="478" y="414" fill="#5AB2FF" font-family="ui-monospace,monospace" font-size="13" font-weight="600">primary_concern</text>
+            <text x="722" y="414" text-anchor="end" fill="#A7AFBF" font-size="13">"anti-aging"</text>
+          </g>
+
+          <g>
+            <rect x="880" y="135" width="280" height="60" rx="10" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+            <text x="900" y="158" fill="#F5F7FA" font-size="16" font-weight="800">Email &amp; SMS flows</text>
+            <text x="900" y="180" fill="#A7AFBF" font-size="13">Welcome, replenishment, win-back.</text>
+            <rect x="880" y="217" width="280" height="60" rx="10" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+            <text x="900" y="240" fill="#F5F7FA" font-size="16" font-weight="800">Paid ads</text>
+            <text x="900" y="262" fill="#A7AFBF" font-size="13">Meta Custom Audiences, look-alikes.</text>
+            <rect x="880" y="299" width="280" height="60" rx="10" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+            <text x="900" y="322" fill="#F5F7FA" font-size="16" font-weight="800">On-site personalisation</text>
+            <text x="900" y="344" fill="#A7AFBF" font-size="13">Hero swaps, PDP logic, feeds.</text>
+            <rect x="880" y="381" width="280" height="60" rx="10" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+            <text x="900" y="404" fill="#F5F7FA" font-size="16" font-weight="800">Customer service</text>
+            <text x="900" y="426" fill="#A7AFBF" font-size="13">Preferences surfaced in Gorgias, Orders.</text>
+          </g>
+        </svg>
+        <p class="mx-auto mt-3 max-w-3xl text-center text-xs text-slate-500 leading-snug">
+          <span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;Six collection sources feed into one canonical profile; four downstream channels read from that same record. The mechanism is mundane; the leverage is enormous.
+        </p>
+      </div>
+
+      <div class="mt-12 grid gap-6 sm:grid-cols-2">
+        {ACTIVATE.map((a) => (
+          <div class="rounded-xl border border-slate-200 p-7">
+            <h3 class="text-lg font-bold text-slate-900">{a.title}</h3>
+            <p class="mt-1 text-sm font-semibold text-[#616eff]">{a.line}</p>
+            <p class="mt-3 text-slate-700">{a.body}</p>
+            {a.href && (
+              <p class="mt-4 text-sm">
+                <a href={a.href} class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">{a.hrefLabel} →</a>
+              </p>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy and compliance -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Privacy and compliance</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">
+        First-party data is the easiest category to keep compliant, but easier is not automatic. The biggest regulations in scope: <a href="https://gdpr-info.eu/" target="_blank" rel="external noopener" class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">GDPR</a> (EU/UK), <a href="https://oag.ca.gov/privacy/ccpa" target="_blank" rel="external noopener" class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">CCPA / CPRA</a> (California), Quebec's Law 25, the <a href="https://artificialintelligenceact.eu/" target="_blank" rel="external noopener" class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">EU AI Act</a>, and an expanding patchwork of US state laws. <strong>Three obligations</strong> apply almost universally.
+      </p>
+      <div class="mt-10 grid gap-6 sm:grid-cols-3">
+        {PRIVACY.map((p, i) => (
+          <div class="rounded-xl border border-slate-200 bg-white p-7">
+            <p class="text-xs font-bold uppercase tracking-widest text-[#616eff]">Obligation {String(i + 1).padStart(2, "0")}</p>
+            <h3 class="mt-2 text-lg font-bold text-slate-900">{p.title}</h3>
+            <p class="mt-3 text-sm text-slate-700">{p.body}</p>
+            {p.href && (
+              <p class="mt-4 text-sm">
+                <a href={p.href} class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">{p.hrefLabel} →</a>
+              </p>
+            )}
+          </div>
+        ))}
+      </div>
+      <p class="mx-auto mt-10 max-w-3xl text-center text-slate-700">
+        The good news: when first-party collection is <strong>consent-led from the start</strong>, all three obligations become straightforward audits rather than emergency remediations.
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-3xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Frequently asked questions</h2>
+      <div class="mt-10 divide-y divide-slate-200 border-y border-slate-200">
+        {FAQ.map((f) => (
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 text-lg font-semibold text-slate-900 [&::-webkit-details-marker]:hidden">
+              <span>{f.question}</span>
+              <svg
+                class="h-5 w-5 flex-shrink-0 text-slate-400 transition-transform duration-200 group-open:rotate-180"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+              </svg>
+            </summary>
+            <p class="pb-5 text-slate-700" set:html={f.answerHtml ?? f.answer} />
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Start owning your customer data this week.
+      </h2>
+      <p class="mx-auto mt-4 max-w-2xl text-lg text-white/70">
+        Install RevenueHunt in under five minutes, pick a template, and have the first quiz answers flowing into Klaviyo, Shopify Orders, and your ad platforms the same day. Free plan covers the first thousand completions.
+      </p>
+      <p class="mx-auto mt-4 max-w-2xl text-white/60">
+        For a deeper look at <a href="/zero-party-data/" class="font-medium text-white underline decoration-white/40 underline-offset-2 hover:decoration-white">zero-party data specifically</a> (the declared subset of first-party), or the <a href="/ecommerce-quiz/" class="font-medium text-white underline decoration-white/40 underline-offset-2 hover:decoration-white">ecommerce quiz guide</a> for the format that produces the highest yield.
+      </p>
+      <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
+        <a
+          href={SHOPIFY_INSTALL}
+          target="_blank"
+          rel="external noopener nofollow"
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          start free on Shopify
+        </a>
+        <a
+          href={WOO_PLUGIN}
+          target="_blank"
+          rel="external noopener nofollow"
+          class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
+        >
+          start free on WooCommerce
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

@@ -1,5 +1,5 @@
 ---
-title: "HubSpot quiz integration: send leads and segment by answers"
+title: "HubSpot quiz integration: send & segment leads"
 description: "How to connect a product recommendation quiz to HubSpot: setup paths for Shopify and other platforms, the data sent, list segmentation, and workflows."
 pubDate: 2024-10-03T06:12:07Z
 updatedDate: 2026-06-02T10:00:00Z
@@ -14,6 +14,11 @@ legacyUrl: "https://revenuehunt.com/hubspot-shop-quiz-a-proven-strategy-to-incre
 featuredImage: "/img/blog/hubspot-quiz-integration/blogtile_hubspot.webp"
 draft: false
 ---
+
+<div style="margin:0 0 28px;padding:20px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 10px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Quick answer</p>
+  <p style="margin:0;font-size:16px;color:#0f172a;line-height:1.6;">To send quiz leads to HubSpot, connect RevenueHunt to your HubSpot account and each completed quiz response syncs automatically: the shopper's email, the answers they chose, the tags the quiz assigned, and the products it recommended all land on the HubSpot contact as custom properties. No Zapier, no CSV exports. From there you build active lists and list-based workflows that segment and email people based on those properties.</p>
+</div>
 
 A product recommendation quiz captures zero-party data while shoppers are actively engaged: stated preferences, skin types, goals, gift recipients, budget bands. HubSpot turns that into segmented lists, scored leads, and automated nurture flows. Wired together, the two run as one [customer segmentation](/glossary/customer-segmentation/) and [lead generation quiz](/glossary/lead-generation-quiz/) pipeline.
 
@@ -61,6 +66,40 @@ Quizzes capture interest at its peak: the moment someone is actively choosing. H
 ## Setup paths by platform
 
 The connection lives in **different places** depending on which version of the app you run. The trigger and the data sent are the same; the UI is not.
+
+<div class="not-prose my-6 overflow-x-auto">
+  <table class="w-full border-collapse text-sm">
+    <thead>
+      <tr class="bg-[#16161D] text-white">
+        <th class="border border-slate-300 p-3 text-left font-semibold"></th>
+        <th class="border border-slate-300 p-3 text-left font-semibold">Built for Shopify and Shopify Legacy</th>
+        <th class="border border-slate-300 p-3 text-left font-semibold">WooCommerce, Magento, BigCommerce, Standalone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="bg-white">
+        <td class="border border-slate-300 p-3 text-slate-900"><strong>Where you connect</strong></td>
+        <td class="border border-slate-300 p-3 text-slate-900">Quiz Settings &gt; Integrations</td>
+        <td class="border border-slate-300 p-3 text-slate-900">Quiz Builder &gt; Connect tab</td>
+      </tr>
+      <tr class="bg-slate-50">
+        <td class="border border-slate-300 p-3 text-slate-900"><strong>Connection scope</strong></td>
+        <td class="border border-slate-300 p-3 text-slate-900">Store-level (authorise once)</td>
+        <td class="border border-slate-300 p-3 text-slate-900">Per-quiz</td>
+      </tr>
+      <tr class="bg-white">
+        <td class="border border-slate-300 p-3 text-slate-900"><strong>Per-quiz opt-in</strong></td>
+        <td class="border border-slate-300 p-3 text-slate-900">Required (disabled by default)</td>
+        <td class="border border-slate-300 p-3 text-slate-900">Automatic on authorise</td>
+      </tr>
+      <tr class="bg-slate-50">
+        <td class="border border-slate-300 p-3 text-slate-900"><strong>In-app "Select a list" dropdown</strong></td>
+        <td class="border border-slate-300 p-3 text-slate-900">Available</td>
+        <td class="border border-slate-300 p-3 text-slate-900">Not available (segment in HubSpot)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ### Built for Shopify (and Shopify Legacy)
 

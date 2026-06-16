@@ -1,0 +1,644 @@
+---
+import Base from "../../layouts/Base.astro";
+import PageHero from "../../components/PageHero.astro";
+import Eyebrow from "../../components/Eyebrow.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
+import { organization, breadcrumb, softwareApplication, article, faqPage } from "../../lib/schema";
+import { SITE } from "../../lib/site";
+
+const SHOPIFY_INSTALL =
+  "https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=ecommerce_quiz_landing";
+const WOO_PLUGIN =
+  "https://downloads.wordpress.org/plugin/product-recommendation-quiz-for-ecommerce.latest-stable.zip";
+
+const PAGE_URL = new URL("/ecommerce-quiz/", SITE.site_url).href;
+
+const PROOF = [
+  { stat: "5.5%", label: "of shoppers who finish a quiz place an order" },
+  { stat: "+11-15%", label: "within-store AOV uplift on quiz orders" },
+  { stat: "1 in 5", label: "quiz orders land 30+ days later" },
+];
+
+const TYPES = [
+  {
+    n: "01",
+    title: "Product recommendation quiz",
+    line: "Match SKUs to needs.",
+    body:
+      "Five to seven questions feed voting, scoring, or fixed-list logic. The results page shows three to five matched products. The default format for most stores.",
+    bestFor: "20-500 SKU catalogues, where the buyer can't decide on their own.",
+    metric: "5.5%",
+    metricSub: "conversion benchmark",
+    href: "/",
+    hrefLabel: "RevenueHunt's product recommendation quiz",
+  },
+  {
+    n: "02",
+    title: "Personality or archetype quiz",
+    line: "Result is a label.",
+    body:
+      "Four to ten questions tally votes for variables (A, B, C). The variable with the most hits decides the outcome: a dosha, a hair archetype, a style identity.",
+    bestFor: "Dosha quizzes, hair archetypes, style quizzes, brand archetype tests.",
+    metric: "Shareable",
+    metricSub: "organic reach lift",
+    href: "/scoring-quiz-setup/",
+    hrefLabel: "scoring and personality-type quiz setup",
+  },
+  {
+    n: "03",
+    title: "Skin, hair, or style diagnostic",
+    line: "Result is a routine.",
+    body:
+      "Vertical-specific recommendation logic with clinical question framing. The result is a routine of three to five products organised into steps, with education layered on top.",
+    bestFor: "Skincare, haircare, supplements, and any beauty vertical.",
+    metric: "Higher AOV",
+    metricSub: "routine bundles",
+    href: "/solutions/skincare/",
+    hrefLabel: "skincare quiz solutions",
+  },
+  {
+    n: "04",
+    title: "Gift finder",
+    line: "Recipient-first match.",
+    body:
+      "Three to six questions about the recipient (relationship, occasion, budget) produce a curated shortlist. Conversion is lower than recommendation quizzes but AOV is higher because gift carts include wrap-and-card add-ons.",
+    bestFor: "Q4 and gifting-calendar peaks (Valentine's, Mother's Day, Father's Day).",
+    metric: "Higher AOV",
+    metricSub: "wrap, card add-ons",
+    href: null,
+    hrefLabel: null,
+  },
+  {
+    n: "05",
+    title: "Knowledge or assessment quiz",
+    line: "Report for email.",
+    body:
+      "Lead-magnet format. The shopper takes a \"what's your X score\" quiz and trades email for a personalised report. The sale happens through the post-quiz email sequence.",
+    bestFor: "Top-of-funnel lead capture; assessments that route into a product later.",
+    metric: "30-50%",
+    metricSub: "email capture rate",
+    href: "/guided-selling-quiz/",
+    hrefLabel: "guided selling quiz",
+  },
+];
+
+const EXAMPLES = [
+  {
+    brand: "Function of Beauty",
+    line: "Custom-formulated bottle in 6-8 questions.",
+    body:
+      "Hair type, goals, scent, and colour generate a named, custom bottle. The quiz isn't an add-on; it is the storefront. Carried the brand to unicorn-status valuation in 2020.",
+    profileHref: "/ecommerce-sales-funnel-examples/",
+    profileLabel: "See full profile",
+  },
+  {
+    brand: "HUM Nutrition",
+    line: "45-minute consultation in 3 minutes.",
+    body:
+      "Multi-step diagnostic produces a personalised nutrition report. \"Build Routine + $10 OFF\" closes the funnel, with a registered dietitian included as the trust-builder.",
+    profileHref: "/ecommerce-sales-funnel-examples/",
+    profileLabel: "See full profile",
+  },
+  {
+    brand: "Trade Coffee",
+    line: "Match across 50+ roasters.",
+    body:
+      "Brew method, roast preference, flavour direction, milk or black, frequency. Routes to a specific coffee with a flexible subscription; the match algorithm re-runs on every reorder.",
+    profileHref: "/ecommerce-sales-funnel-examples/",
+    profileLabel: "See full profile",
+  },
+  {
+    brand: "RevenueHunt customer stories",
+    line: "9.8% completion-to-purchase, 76.9% completion, two-quiz architecture.",
+    body:
+      "The anti-ageing case study, the Extreme Kids World case study, and the Skinology case study show the format running on real Shopify stores.",
+    links: [
+      { href: "/anti-aging-beauty-brand-quiz-funnel-case-study/", label: "anti-ageing beauty" },
+      { href: "/extreme-kids-world-case-study/", label: "Extreme Kids World" },
+      { href: "/skinology-case-study/", label: "Skinology" },
+    ],
+  },
+];
+
+const BUILD_STEPS = [
+  {
+    n: "1",
+    title: "Pick the recommendation logic",
+    body:
+      "Voting, scoring, fixed list, slots, or display logic. The decision tree in our recommendation systems guide walks the choice in under a minute. Default to Voting unless the catalogue is tiny or the answer pattern is a personality archetype.",
+    accent: "Decision tree, 1 minute",
+    href: "/product-quiz-recommendation-systems/",
+    hrefLabel: "six product quiz recommendation systems compared",
+  },
+  {
+    n: "2",
+    title: "Write the questions and link the catalogue",
+    body:
+      "Three to seven multiple-choice or picture-choice questions, each mapped to upvoted products or scoring variables. On Built for Shopify, Quiz Copilot AI can draft both the questions and the product linking on a first pass. On Shopify Legacy, WooCommerce, Magento, BigCommerce, and Standalone, the setup is manual via the Link Products tab.",
+    accent: "Quiz Copilot AI assists",
+    href: "/revenuehunt-built-for-shopify/",
+    hrefLabel: "Built for Shopify",
+  },
+  {
+    n: "3",
+    title: "Hand answers to the post-quiz stack",
+    body:
+      "Connect the email platform (Klaviyo, HubSpot, Omnisend, ActiveCampaign, Mailchimp), Shopify Flows, and analytics so the recommendation, the answers, and the order flow downstream. This is the first-party data layer that keeps converting after the quiz session ends.",
+    accent: "First-party data layer",
+    href: "/first-party-data/",
+    hrefLabel: "first-party data",
+  },
+];
+
+const WHY_NOW = [
+  {
+    title: "Third-party cookies degraded",
+    body:
+      "Retargeting yields fell across nearly every paid channel, putting first-party data at a structural premium. A quiz captures it consciously, not by tracking.",
+  },
+  {
+    title: "Mobile shoppers won't filter",
+    body:
+      "Filter-heavy category pages stall on mobile. A five-button picture-choice converts at a fraction of the friction.",
+  },
+  {
+    title: "AI-assisted setup is here",
+    body:
+      "Quiz Copilot AI on Built for Shopify collapses the build effort that used to gate non-technical merchants out of the format.",
+  },
+];
+
+const FAQ = [
+  {
+    question: "Is an ecommerce quiz the same as a Shopify quiz?",
+    answer:
+      "A Shopify quiz is an ecommerce quiz that runs on Shopify. The mechanic is the same; the install path differs by platform. RevenueHunt's app runs on Shopify (Built for Shopify and Legacy), WooCommerce, BigCommerce, Magento, Wix, and Standalone. The recommendation logic is identical across versions; the setup affordances (native scoring, Quiz Copilot AI) are richest on Built for Shopify.",
+  },
+  {
+    question: "How long should an ecommerce quiz be?",
+    answer:
+      "Five to seven questions is the modal length and the sweet spot for completion. Three is sometimes enough for a simple finder; ten starts costing meaningful completion rate. Aim for the shortest quiz that produces a confidently matched result, not the longest one your catalogue could justify.",
+  },
+  {
+    question: "How much does an ecommerce quiz cost to build?",
+    answer:
+      "RevenueHunt has a free tier (up to 100 responses per month) and paid plans from $39/mo. Build time on Built for Shopify with Quiz Copilot AI is typically under an hour for a first version. On Shopify Legacy or non-Shopify platforms, expect two to four hours for the same scope because question writing, choice linking, and scoring logic are manual.",
+  },
+  {
+    question: "Do ecommerce quizzes work for B2B?",
+    answer:
+      "Yes. B2B is where guided selling started, and a quiz-led configurator is often the highest-converting flow in a B2B catalogue. RevenueHunt has a dedicated guided selling quiz format for the patterns specific to B2B.",
+    answerHtml:
+      "Yes. B2B is where guided selling started, and a quiz-led configurator is often the highest-converting flow in a B2B catalogue. RevenueHunt has a dedicated <a href=\"/guided-selling-quiz/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">guided selling quiz</a> format for the patterns specific to B2B.",
+  },
+  {
+    question: "How do I measure if an ecommerce quiz is working?",
+    answer:
+      "Five metrics matter: start rate, completion rate (target above 70%), quiz-to-purchase conversion (the RevenueHunt benchmark across 45M+ responses is 5.5%), AOV uplift vs non-quiz orders, and email capture rate.",
+    answerHtml:
+      "Five metrics matter: start rate, completion rate (target above 70%), quiz-to-purchase conversion (the <a href=\"/state-of-product-recommendation-quizzes/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">RevenueHunt benchmark</a> across 45M+ responses is 5.5%), AOV uplift vs non-quiz orders, and email capture rate. The full metric stack is covered in <a href=\"/product-quiz-metrics-what-to-track-to-convert-better/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">product quiz metrics</a>.",
+  },
+];
+
+const PAGE_TITLE = "Ecommerce quiz: what it is, types, and how it grows your store";
+const PAGE_DESCRIPTION =
+  "An ecommerce quiz turns browse-and-bounce into a matched recommendation. The 5 quiz types, real examples, and a 3-step build in one session.";
+
+const jsonLd = [
+  organization(),
+  softwareApplication(),
+  breadcrumb([
+    { name: "Home", url: "/" },
+    { name: "Ecommerce quiz", url: "/ecommerce-quiz/" },
+  ]),
+  article({
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
+    url: PAGE_URL,
+    image: "/og/ecommerce-quiz.png",
+    datePublished: "2026-06-16",
+    dateModified: "2026-06-16",
+    author: "RevenueHunt",
+    tags: ["ecommerce quiz", "product recommendation quiz", "quiz funnel", "Shopify quiz", "guided selling"],
+  }),
+  faqPage(FAQ),
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTermSet",
+    name: "Ecommerce quiz terminology",
+    hasDefinedTerm: [
+      {
+        "@type": "DefinedTerm",
+        name: "Ecommerce quiz",
+        description:
+          "An interactive multi-step form embedded on a Shopify, WooCommerce, BigCommerce, Magento, or Wix store that asks the shopper a sequence of guided questions and then recommends products, content, or a routine that matches the answers. The goal is to convert a browser into a buyer by removing the cognitive load of searching a large catalogue, while capturing structured zero-party data for follow-up personalisation. Across the RevenueHunt benchmark of 45M+ responses, shoppers who finish a quiz convert at 5.5%, roughly 2.75x a typical 2% store-wide rate.",
+      },
+      {
+        "@type": "DefinedTerm",
+        name: "Product recommendation quiz",
+        description:
+          "A specific type of ecommerce quiz built to recommend SKUs. Five to seven questions about needs feed voting, scoring, or fixed-list logic that produces a results page of three to five matched products. The hierarchical relationship: a product recommendation quiz is one of five ecommerce-quiz formats, but the most common one. The other four are personality quizzes, vertical diagnostics (skin / hair / style), gift finders, and knowledge or assessment quizzes.",
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "The five types of ecommerce quizzes",
+    itemListOrder: "https://schema.org/ItemListOrderAscending",
+    numberOfItems: 5,
+    itemListElement: TYPES.map((t, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: t.title,
+      description: `${t.line} ${t.body}`,
+    })),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "How to build an ecommerce quiz",
+    description:
+      "Three-step build path for a RevenueHunt ecommerce quiz, sized to a typical 5-to-7-question quiz with 50-SKU recommendation logic.",
+    totalTime: "PT1H",
+    tool: [
+      { "@type": "HowToTool", name: "RevenueHunt: Recommender Quiz app" },
+      { "@type": "HowToTool", name: "Shopify, WooCommerce, Magento, BigCommerce, Wix, or Standalone catalogue" },
+      { "@type": "HowToTool", name: "Email platform (Klaviyo, HubSpot, Omnisend, ActiveCampaign, or Mailchimp)" },
+    ],
+    step: BUILD_STEPS.map((s, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: s.title,
+      text: s.body,
+    })),
+  },
+];
+---
+
+<Base
+  title={PAGE_TITLE}
+  description={PAGE_DESCRIPTION}
+  ogImage="/og/ecommerce-quiz.png"
+  jsonLd={jsonLd}
+>
+  <!-- Hero -->
+  <PageHero>
+    <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Ecommerce quiz" }]} />
+    <div class="text-center">
+      <Eyebrow>The complete guide</Eyebrow>
+      <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+        Ecommerce quiz: what it is, types, and how it grows your store
+      </h1>
+      <p class="mx-auto mt-6 max-w-3xl text-xl text-slate-600">
+        An ecommerce quiz turns browse-and-bounce into a structured conversation that recommends the right product. Definition, the <strong>5 quiz types</strong>, real brand examples, and a <strong>3-step build path</strong> that fits in a single working session.
+      </p>
+      <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <a
+          href={SHOPIFY_INSTALL}
+          target="_blank"
+          rel="external noopener nofollow"
+          class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
+        >
+          Start free on Shopify
+        </a>
+        <a
+          href="#types"
+          class="inline-flex items-center justify-center rounded-md border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-900 transition hover:border-slate-400 hover:bg-slate-50"
+        >
+          Jump to the 5 quiz types
+        </a>
+      </div>
+      <p class="mt-6 text-sm text-slate-500">
+        Used by <strong class="text-slate-700">20,000+</strong> ecommerce brands · <strong class="text-slate-700">4.9 ★</strong> on Shopify · <a href="/revenuehunt-built-for-shopify/" class="font-semibold text-slate-700 underline decoration-slate-300 underline-offset-2 hover:decoration-slate-700">Built for Shopify</a> certified
+      </p>
+    </div>
+  </PageHero>
+
+  <!-- Benchmark band -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6">
+      <div class="rounded-2xl bg-[#16161D] px-6 py-10 sm:px-10">
+        <p class="text-center text-sm font-semibold uppercase tracking-wider text-[#4dcaff]">
+          Ecommerce quiz benchmark, 45M+ responses
+        </p>
+        <dl class="mt-6 grid grid-cols-1 gap-8 text-center sm:grid-cols-3">
+          {PROOF.map((p) => (
+            <div>
+              <dt class="text-4xl font-bold tracking-tight text-white">{p.stat}</dt>
+              <dd class="mt-1 text-sm text-white/70">{p.label}</dd>
+            </div>
+          ))}
+        </dl>
+        <p class="mx-auto mt-6 max-w-3xl text-center text-sm text-white/60">
+          Across the <a href="/state-of-product-recommendation-quizzes/" class="underline decoration-white/40 hover:decoration-white">RevenueHunt benchmark</a>: roughly 2.75x a typical 2% store-wide rate, with AOV uplift holding in 7 in 10 stores. One in five quiz orders lands more than 30 days later.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- What is an ecommerce quiz -->
+  <section id="what" class="scroll-mt-20 bg-white">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">What is an ecommerce quiz</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">
+        An ecommerce quiz is an <strong>interactive multi-step form</strong> embedded on a Shopify, WooCommerce, BigCommerce, Magento, or Wix store that asks the shopper a sequence of guided questions and then recommends products, content, or a routine that matches the answers. Unlike a survey, the goal is not market research. The goal is to <strong>convert a browser into a buyer</strong> by removing the cognitive load of searching a 200-SKU catalogue.
+      </p>
+
+      <div class="mt-10">
+        <svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ecommerce-quiz-flow-title" style="width:100%;height:auto;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#16161D;border-radius:16px;padding:28px 16px;box-sizing:border-box;">
+          <title id="ecommerce-quiz-flow-title">How an ecommerce quiz flows from question to matched recommendation</title>
+          <defs><linearGradient id="rh-grad-flow" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6464ff"/><stop offset="1" stop-color="#4bd5ff"/></linearGradient></defs>
+          <text x="600" y="60" text-anchor="middle" fill="#F5F7FA" font-size="30" font-weight="800" letter-spacing="-0.5">From three questions to a matched cart</text>
+          <g stroke="#5AB2FF" stroke-width="3" fill="none"><line x1="210" y1="240" x2="320" y2="240"/><line x1="510" y1="240" x2="620" y2="240"/><line x1="810" y1="240" x2="900" y2="240"/></g>
+          <g fill="#5AB2FF"><polygon points="320,240 304,228 304,252"/><polygon points="620,240 604,228 604,252"/><polygon points="900,240 884,228 884,252"/></g>
+          <circle cx="120" cy="240" r="90" fill="url(#rh-grad-flow)"/>
+          <text x="120" y="232" text-anchor="middle" fill="#F5F7FA" font-size="24" font-weight="800">Q1</text>
+          <text x="120" y="265" text-anchor="middle" fill="#F5F7FA" font-size="18" font-weight="600">Need</text>
+          <circle cx="420" cy="240" r="90" fill="url(#rh-grad-flow)"/>
+          <text x="420" y="232" text-anchor="middle" fill="#F5F7FA" font-size="24" font-weight="800">Q2</text>
+          <text x="420" y="265" text-anchor="middle" fill="#F5F7FA" font-size="18" font-weight="600">Preference</text>
+          <circle cx="720" cy="240" r="90" fill="url(#rh-grad-flow)"/>
+          <text x="720" y="232" text-anchor="middle" fill="#F5F7FA" font-size="24" font-weight="800">Q3</text>
+          <text x="720" y="265" text-anchor="middle" fill="#F5F7FA" font-size="18" font-weight="600">Constraint</text>
+          <rect x="920" y="150" width="200" height="180" rx="18" fill="rgba(90,178,255,0.12)" stroke="rgba(90,178,255,0.5)" stroke-width="1.5"/>
+          <text x="1020" y="222" text-anchor="middle" fill="#F5F7FA" font-size="22" font-weight="800">Matched</text>
+          <text x="1020" y="252" text-anchor="middle" fill="#F5F7FA" font-size="22" font-weight="800">products</text>
+          <text x="1020" y="290" text-anchor="middle" fill="#5AB2FF" font-size="17" font-weight="600">3-5 SKUs</text>
+          <text x="120" y="380" text-anchor="middle" fill="#A7AFBF" font-size="17">"Skin type?"</text>
+          <text x="420" y="380" text-anchor="middle" fill="#A7AFBF" font-size="17">"Texture you like?"</text>
+          <text x="720" y="380" text-anchor="middle" fill="#A7AFBF" font-size="17">"Budget?"</text>
+          <text x="1020" y="380" text-anchor="middle" fill="#5AB2FF" font-size="17" font-weight="700">5.5% buy rate</text>
+          <text x="600" y="440" text-anchor="middle" fill="#A7AFBF" font-size="19" font-style="italic">Five to seven questions. Three to five matched SKUs. Sixty to ninety seconds.</text>
+        </svg>
+        <p class="mx-auto mt-3 max-w-3xl text-center text-xs text-slate-500 leading-snug">
+          <span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;An ecommerce quiz converts a few guided questions into a matched product set. Five to seven questions is the modal length; 60 to 90 seconds is the modal duration.
+        </p>
+      </div>
+
+      <p class="mx-auto mt-10 max-w-3xl text-center text-sm font-semibold uppercase tracking-wider text-[#616eff]">A typical ecommerce quiz has three jobs</p>
+      <div class="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-3">
+        <div class="rounded-xl border border-slate-200 p-7">
+          <p class="text-xs font-semibold uppercase tracking-widest text-slate-500">01</p>
+          <p class="mt-2 text-lg font-bold text-slate-900">Recommend</p>
+          <p class="mt-2 text-sm text-slate-600">
+            Map answers to one or more products on the results page using voting, scoring, or fixed logic. See <a href="/product-quiz-recommendation-systems/" class="font-medium text-[#16161D] underline decoration-slate-300 hover:decoration-[#16161D]">six recommendation systems compared</a>.
+          </p>
+        </div>
+        <div class="rounded-xl border border-slate-200 p-7">
+          <p class="text-xs font-semibold uppercase tracking-widest text-slate-500">02</p>
+          <p class="mt-2 text-lg font-bold text-slate-900">Capture data</p>
+          <p class="mt-2 text-sm text-slate-600">
+            Every answer is structured <a href="/zero-party-data/" class="font-medium text-[#16161D] underline decoration-slate-300 hover:decoration-[#16161D]">zero-party data</a> that the shopper volunteers consciously. More durable than session cookies.
+          </p>
+        </div>
+        <div class="rounded-xl border border-slate-200 p-7">
+          <p class="text-xs font-semibold uppercase tracking-widest text-slate-500">03</p>
+          <p class="mt-2 text-lg font-bold text-slate-900">Personalise</p>
+          <p class="mt-2 text-sm text-slate-600">
+            Hand the answers to Klaviyo, HubSpot, or Shopify Flows so the post-quiz email sequence references what the shopper told you.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 types -->
+  <section id="types" class="scroll-mt-20 bg-slate-50">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">5 types of ecommerce quizzes</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">
+        Most quizzes you'll see fall into five buckets. The choice depends on whether the goal is <strong>matching</strong>, <strong>segmenting</strong>, or <strong>educating</strong>.
+      </p>
+
+      <div class="mt-10">
+        <svg viewBox="0 0 1200 680" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="quiz-types-grid-title" style="width:100%;height:auto;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#16161D;border-radius:16px;padding:28px 16px;box-sizing:border-box;">
+          <title id="quiz-types-grid-title">The five types of ecommerce quizzes side by side</title>
+          <defs><linearGradient id="rh-grad-types" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6464ff"/><stop offset="1" stop-color="#4bd5ff"/></linearGradient></defs>
+          <text x="600" y="56" text-anchor="middle" fill="#F5F7FA" font-size="30" font-weight="800" letter-spacing="-0.5">5 ecommerce quiz types side by side</text>
+          <g><rect x="20" y="150" width="220" height="490" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><path d="M 20 160 L 20 104 Q 20 90 34 90 L 226 90 Q 240 90 240 104 L 240 160 Z" fill="url(#rh-grad-types)"/><text x="130" y="120" text-anchor="middle" fill="#F5F7FA" font-size="17" font-weight="800">1. Product</text><text x="130" y="146" text-anchor="middle" fill="#F5F7FA" font-size="17" font-weight="800">recommendation</text><text x="130" y="210" text-anchor="middle" fill="#F5F7FA" font-size="16" font-weight="700">Match SKUs to needs</text><text x="130" y="270" text-anchor="middle" fill="#A7AFBF" font-size="15"><tspan x="130" dy="0">5-7 questions feed</tspan><tspan x="130" dy="22">voting or scoring logic.</tspan><tspan x="130" dy="22">Results page shows</tspan><tspan x="130" dy="22">3-5 matched products.</tspan></text><line x1="40" y1="395" x2="220" y2="395" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="130" y="425" text-anchor="middle" fill="#6B7384" font-size="13" font-weight="700" letter-spacing="2">BEST FOR</text><text x="130" y="460" text-anchor="middle" fill="#A7AFBF" font-size="15"><tspan x="130" dy="0">20-500 SKU</tspan><tspan x="130" dy="20">catalogues</tspan></text><text x="130" y="560" text-anchor="middle" fill="#5AB2FF" font-size="26" font-weight="800">5.5%</text><text x="130" y="595" text-anchor="middle" fill="#6B7384" font-size="14">conversion benchmark</text></g>
+          <g><rect x="255" y="150" width="220" height="490" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><path d="M 255 160 L 255 104 Q 255 90 269 90 L 461 90 Q 475 90 475 104 L 475 160 Z" fill="url(#rh-grad-types)"/><text x="365" y="133" text-anchor="middle" fill="#F5F7FA" font-size="17" font-weight="800">2. Personality</text><text x="365" y="210" text-anchor="middle" fill="#F5F7FA" font-size="16" font-weight="700">Archetype out</text><text x="365" y="270" text-anchor="middle" fill="#A7AFBF" font-size="15"><tspan x="365" dy="0">Answers tally votes</tspan><tspan x="365" dy="22">for A/B/C variables.</tspan><tspan x="365" dy="22">Winning variable picks</tspan><tspan x="365" dy="22">a dosha or archetype.</tspan></text><line x1="275" y1="395" x2="455" y2="395" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="365" y="425" text-anchor="middle" fill="#6B7384" font-size="13" font-weight="700" letter-spacing="2">BEST FOR</text><text x="365" y="460" text-anchor="middle" fill="#A7AFBF" font-size="15"><tspan x="365" dy="0">Dosha, hair, style,</tspan><tspan x="365" dy="20">archetype quizzes</tspan></text><text x="365" y="560" text-anchor="middle" fill="#5AB2FF" font-size="20" font-weight="800">Shareable result</text><text x="365" y="595" text-anchor="middle" fill="#6B7384" font-size="14">organic reach lift</text></g>
+          <g><rect x="490" y="150" width="220" height="490" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><path d="M 490 160 L 490 104 Q 490 90 504 90 L 696 90 Q 710 90 710 104 L 710 160 Z" fill="url(#rh-grad-types)"/><text x="600" y="133" text-anchor="middle" fill="#F5F7FA" font-size="17" font-weight="800">3. Diagnostic</text><text x="600" y="210" text-anchor="middle" fill="#F5F7FA" font-size="16" font-weight="700">Routine out</text><text x="600" y="270" text-anchor="middle" fill="#A7AFBF" font-size="15"><tspan x="600" dy="0">Clinical questions, a</tspan><tspan x="600" dy="22">multi-step routine, and</tspan><tspan x="600" dy="22">education layered on</tspan><tspan x="600" dy="22">recommendations.</tspan></text><line x1="510" y1="395" x2="690" y2="395" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="600" y="425" text-anchor="middle" fill="#6B7384" font-size="13" font-weight="700" letter-spacing="2">BEST FOR</text><text x="600" y="460" text-anchor="middle" fill="#A7AFBF" font-size="15"><tspan x="600" dy="0">Skincare, haircare,</tspan><tspan x="600" dy="20">supplements</tspan></text><text x="600" y="560" text-anchor="middle" fill="#5AB2FF" font-size="22" font-weight="800">Higher AOV</text><text x="600" y="595" text-anchor="middle" fill="#6B7384" font-size="14">routine bundles</text></g>
+          <g><rect x="725" y="150" width="220" height="490" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><path d="M 725 160 L 725 104 Q 725 90 739 90 L 931 90 Q 945 90 945 104 L 945 160 Z" fill="url(#rh-grad-types)"/><text x="835" y="133" text-anchor="middle" fill="#F5F7FA" font-size="17" font-weight="800">4. Gift finder</text><text x="835" y="210" text-anchor="middle" fill="#F5F7FA" font-size="16" font-weight="700">Recipient-first match</text><text x="835" y="270" text-anchor="middle" fill="#A7AFBF" font-size="15"><tspan x="835" dy="0">3-6 questions about</tspan><tspan x="835" dy="22">relationship, occasion,</tspan><tspan x="835" dy="22">and budget produce a</tspan><tspan x="835" dy="22">curated shortlist.</tspan></text><line x1="745" y1="395" x2="925" y2="395" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="835" y="425" text-anchor="middle" fill="#6B7384" font-size="13" font-weight="700" letter-spacing="2">BEST FOR</text><text x="835" y="460" text-anchor="middle" fill="#A7AFBF" font-size="15"><tspan x="835" dy="0">Q4 + gifting</tspan><tspan x="835" dy="20">calendar peaks</tspan></text><text x="835" y="560" text-anchor="middle" fill="#5AB2FF" font-size="22" font-weight="800">Higher AOV</text><text x="835" y="595" text-anchor="middle" fill="#6B7384" font-size="14">wrap, card add-ons</text></g>
+          <g><rect x="960" y="150" width="220" height="490" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><path d="M 960 160 L 960 104 Q 960 90 974 90 L 1166 90 Q 1180 90 1180 104 L 1180 160 Z" fill="url(#rh-grad-types)"/><text x="1070" y="133" text-anchor="middle" fill="#F5F7FA" font-size="17" font-weight="800">5. Knowledge</text><text x="1070" y="210" text-anchor="middle" fill="#F5F7FA" font-size="16" font-weight="700">Report + email gate</text><text x="1070" y="270" text-anchor="middle" fill="#A7AFBF" font-size="15"><tspan x="1070" dy="0">"What's your X score"</tspan><tspan x="1070" dy="22">format. Email captured</tspan><tspan x="1070" dy="22">in exchange for a</tspan><tspan x="1070" dy="22">personalised report.</tspan></text><line x1="980" y1="395" x2="1160" y2="395" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="1070" y="425" text-anchor="middle" fill="#6B7384" font-size="13" font-weight="700" letter-spacing="2">BEST FOR</text><text x="1070" y="460" text-anchor="middle" fill="#A7AFBF" font-size="15"><tspan x="1070" dy="0">Lead-magnet</tspan><tspan x="1070" dy="20">funnels</tspan></text><text x="1070" y="560" text-anchor="middle" fill="#5AB2FF" font-size="20" font-weight="800">30-50% capture</text><text x="1070" y="595" text-anchor="middle" fill="#6B7384" font-size="14">email lead rate</text></g>
+        </svg>
+        <p class="mx-auto mt-3 max-w-3xl text-center text-xs text-slate-500 leading-snug">
+          <span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;The five formats compared. Type 1 is what most merchants need; types 2 and 3 are vertical variants of the same recommendation logic; types 4 and 5 sit on top of different jobs (gifting and lead capture).
+        </p>
+      </div>
+
+      <div class="mt-12 space-y-5">
+        {TYPES.map((t) => (
+          <div class="rounded-xl border border-slate-200 bg-white p-6 sm:p-7">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-start">
+              <div class="sm:w-24 sm:flex-none">
+                <p class="text-xs font-bold uppercase tracking-widest text-[#616eff]">Type {t.n}</p>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-lg font-bold text-slate-900">{t.title}</h3>
+                <p class="mt-1 text-sm font-semibold text-slate-600">{t.line}</p>
+                <p class="mt-3 text-slate-700">{t.body}</p>
+                <p class="mt-3 text-sm text-slate-600"><span class="font-semibold text-slate-900">Best for:</span> {t.bestFor}</p>
+                {t.href && (
+                  <p class="mt-3 text-sm">
+                    <a href={t.href} class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">Learn more in {t.hrefLabel}</a>
+                  </p>
+                )}
+              </div>
+              <div class="sm:w-32 sm:flex-none sm:text-right">
+                <p class="text-2xl font-bold text-[#16161D]">{t.metric}</p>
+                <p class="text-xs text-slate-500">{t.metricSub}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Real examples -->
+  <section id="examples" class="scroll-mt-20 bg-white">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Real ecommerce quiz examples</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">
+        The clearest way to see what works is to watch the brands that built their growth on it. Four worth studying, with deeper coverage in our <a href="/ecommerce-sales-funnel-examples/" class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">ecommerce sales funnel examples</a> listicle (11 brands in full).
+      </p>
+      <div class="mt-10 grid gap-6 sm:grid-cols-2">
+        {EXAMPLES.map((e) => (
+          <div class="rounded-xl border border-slate-200 p-7">
+            <p class="text-lg font-bold text-slate-900">{e.brand}</p>
+            <p class="mt-2 text-sm font-semibold text-[#616eff]">{e.line}</p>
+            <p class="mt-3 text-slate-700">{e.body}</p>
+            {e.profileHref && (
+              <p class="mt-4 text-sm">
+                <a href={e.profileHref} class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">{e.profileLabel} →</a>
+              </p>
+            )}
+            {e.links && (
+              <p class="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+                {e.links.map((l) => (
+                  <a href={l.href} class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">{l.label} →</a>
+                ))}
+              </p>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- How to build -->
+  <section id="build" class="scroll-mt-20 bg-slate-50">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">How to build an ecommerce quiz</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">
+        Three steps. The whole build, for a typical 5-to-7-question quiz with 50-SKU recommendation logic, fits in a <strong>single working session</strong>.
+      </p>
+
+      <div class="mt-10">
+        <svg viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="build-quiz-steps-title" style="width:100%;height:auto;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#16161D;border-radius:16px;padding:28px 16px;box-sizing:border-box;">
+          <title id="build-quiz-steps-title">Three-step path to build an ecommerce quiz</title>
+          <defs><linearGradient id="rh-grad-build" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6464ff"/><stop offset="1" stop-color="#4bd5ff"/></linearGradient></defs>
+          <text x="600" y="58" text-anchor="middle" fill="#F5F7FA" font-size="30" font-weight="800" letter-spacing="-0.5">Build an ecommerce quiz in three steps</text>
+          <g stroke="#5AB2FF" stroke-width="3" fill="none"><line x1="370" y1="270" x2="430" y2="270"/><line x1="770" y1="270" x2="830" y2="270"/></g>
+          <g fill="#5AB2FF"><polygon points="430,270 414,258 414,282"/><polygon points="830,270 814,258 814,282"/></g>
+          <g><rect x="40" y="120" width="320" height="300" rx="18" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><circle cx="200" cy="180" r="34" fill="url(#rh-grad-build)"/><text x="200" y="193" text-anchor="middle" fill="#F5F7FA" font-size="28" font-weight="800">1</text><text x="200" y="265" text-anchor="middle" fill="#F5F7FA" font-size="22" font-weight="800">Pick the logic</text><text x="200" y="310" text-anchor="middle" fill="#A7AFBF" font-size="16"><tspan x="200" dy="0">Voting, scoring, fixed,</tspan><tspan x="200" dy="22">slots, or display logic.</tspan></text><text x="200" y="392" text-anchor="middle" fill="#5AB2FF" font-size="16" font-weight="700">Decision tree, 1 minute</text></g>
+          <g><rect x="440" y="120" width="320" height="300" rx="18" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><circle cx="600" cy="180" r="34" fill="url(#rh-grad-build)"/><text x="600" y="193" text-anchor="middle" fill="#F5F7FA" font-size="28" font-weight="800">2</text><text x="600" y="265" text-anchor="middle" fill="#F5F7FA" font-size="22" font-weight="800">Write &amp; link</text><text x="600" y="310" text-anchor="middle" fill="#A7AFBF" font-size="16"><tspan x="600" dy="0">3-7 questions; link</tspan><tspan x="600" dy="22">products to choices.</tspan></text><text x="600" y="392" text-anchor="middle" fill="#5AB2FF" font-size="16" font-weight="700">Quiz Copilot AI assists</text></g>
+          <g><rect x="840" y="120" width="320" height="300" rx="18" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><circle cx="1000" cy="180" r="34" fill="url(#rh-grad-build)"/><text x="1000" y="193" text-anchor="middle" fill="#F5F7FA" font-size="28" font-weight="800">3</text><text x="1000" y="265" text-anchor="middle" fill="#F5F7FA" font-size="22" font-weight="800">Hand off data</text><text x="1000" y="310" text-anchor="middle" fill="#A7AFBF" font-size="16"><tspan x="1000" dy="0">Email, Shopify Flows,</tspan><tspan x="1000" dy="22">analytics, retargeting.</tspan></text><text x="1000" y="392" text-anchor="middle" fill="#5AB2FF" font-size="16" font-weight="700">First-party data layer</text></g>
+        </svg>
+        <p class="mx-auto mt-3 max-w-3xl text-center text-xs text-slate-500 leading-snug">
+          <span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;Three steps from blank Quiz Builder to running quiz. Step 1 sets the logic; step 2 produces the customer-facing experience; step 3 connects answers to the rest of the marketing stack.
+        </p>
+      </div>
+
+      <div class="mt-12 grid gap-6 lg:grid-cols-3">
+        {BUILD_STEPS.map((s) => (
+          <div class="rounded-xl border border-slate-200 bg-white p-7">
+            <div class="flex items-center gap-3">
+              <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#16161D] text-base font-bold text-white">{s.n}</span>
+              <p class="text-xs font-bold uppercase tracking-widest text-[#616eff]">{s.accent}</p>
+            </div>
+            <h3 class="mt-4 text-lg font-bold text-slate-900">{s.title}</h3>
+            <p class="mt-3 text-sm text-slate-700">{s.body}</p>
+            <p class="mt-4 text-sm">
+              <a href={s.href} class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">{s.hrefLabel} →</a>
+            </p>
+          </div>
+        ))}
+      </div>
+
+      <p class="mx-auto mt-10 max-w-3xl text-center text-slate-700">
+        To estimate what an ecommerce quiz could do on your specific store, use our <a href="/quiz-roi-calculator/" class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">quiz ROI calculator</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Vs PRQ -->
+  <section id="vs-prq" class="scroll-mt-20 bg-white">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Ecommerce quiz vs product recommendation quiz</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">
+        These two terms get used interchangeably and they shouldn't be. The relationship is <strong>hierarchical</strong>: a product recommendation quiz is one <strong>type</strong> of ecommerce quiz, but the category includes other formats that aren't built to recommend a SKU.
+      </p>
+
+      <div class="mt-10">
+        <svg viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="hierarchy-title" style="width:100%;height:auto;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#16161D;border-radius:16px;padding:28px 16px;box-sizing:border-box;">
+          <title id="hierarchy-title">Product recommendation quiz is one type of ecommerce quiz</title>
+          <defs><linearGradient id="rh-grad-hier" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6464ff"/><stop offset="1" stop-color="#4bd5ff"/></linearGradient></defs>
+          <text x="600" y="58" text-anchor="middle" fill="#F5F7FA" font-size="30" font-weight="800" letter-spacing="-0.5">Where a product recommendation quiz sits inside the category</text>
+          <rect x="30" y="100" width="1140" height="600" rx="20" fill="rgba(90,178,255,0.05)" stroke="rgba(90,178,255,0.45)" stroke-width="2" stroke-dasharray="6 6"/>
+          <text x="60" y="142" fill="#5AB2FF" font-size="17" font-weight="800" letter-spacing="2">ECOMMERCE QUIZ (CATEGORY)</text>
+          <g><rect x="60" y="180" width="210" height="500" rx="14" fill="rgba(90,178,255,0.14)" stroke="rgba(90,178,255,0.55)" stroke-width="1.5"/><text x="165" y="235" text-anchor="middle" fill="#F5F7FA" font-size="20" font-weight="800"><tspan x="165" dy="0">1. Product</tspan><tspan x="165" dy="28">recommendation</tspan></text><line x1="80" y1="305" x2="250" y2="305" stroke="rgba(90,178,255,0.35)" stroke-width="1"/><text x="165" y="360" text-anchor="middle" fill="#A7AFBF" font-size="17"><tspan x="165" dy="0">Match SKUs to needs.</tspan><tspan x="165" dy="24">Voting, scoring,</tspan><tspan x="165" dy="24">or fixed lists.</tspan></text><rect x="75" y="570" width="180" height="90" rx="10" fill="url(#rh-grad-hier)"/><text x="165" y="600" text-anchor="middle" fill="#F5F7FA" font-size="14" font-weight="800" letter-spacing="1">= PRODUCT</text><text x="165" y="624" text-anchor="middle" fill="#F5F7FA" font-size="14" font-weight="800" letter-spacing="1">RECOMMENDATION</text><text x="165" y="648" text-anchor="middle" fill="#F5F7FA" font-size="14" font-weight="800" letter-spacing="1">QUIZ</text></g>
+          <g><rect x="285" y="180" width="210" height="500" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="390" y="235" text-anchor="middle" fill="#F5F7FA" font-size="20" font-weight="800"><tspan x="390" dy="0">2. Personality /</tspan><tspan x="390" dy="28">archetype</tspan></text><line x1="305" y1="305" x2="475" y2="305" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="390" y="360" text-anchor="middle" fill="#A7AFBF" font-size="17"><tspan x="390" dy="0">Dosha, hair, style.</tspan><tspan x="390" dy="24">Result is a label.</tspan></text><text x="390" y="540" text-anchor="middle" fill="#9CA3AF" font-size="15" font-style="italic"><tspan x="390" dy="0">recommends a SKU</tspan><tspan x="390" dy="22">only if you route</tspan><tspan x="390" dy="22">to a product set</tspan></text></g>
+          <g><rect x="510" y="180" width="210" height="500" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="615" y="235" text-anchor="middle" fill="#F5F7FA" font-size="20" font-weight="800"><tspan x="615" dy="0">3. Diagnostic</tspan><tspan x="615" dy="28">(routine)</tspan></text><line x1="530" y1="305" x2="700" y2="305" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="615" y="360" text-anchor="middle" fill="#A7AFBF" font-size="17"><tspan x="615" dy="0">Skincare, haircare.</tspan><tspan x="615" dy="24">Result is a routine.</tspan></text><text x="615" y="540" text-anchor="middle" fill="#9CA3AF" font-size="15" font-style="italic"><tspan x="615" dy="0">overlaps with PRQ</tspan><tspan x="615" dy="22">when the routine is</tspan><tspan x="615" dy="22">a bundle of SKUs</tspan></text></g>
+          <g><rect x="735" y="180" width="210" height="500" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="840" y="253" text-anchor="middle" fill="#F5F7FA" font-size="20" font-weight="800">4. Gift finder</text><line x1="755" y1="305" x2="925" y2="305" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="840" y="360" text-anchor="middle" fill="#A7AFBF" font-size="17"><tspan x="840" dy="0">Recipient-first.</tspan><tspan x="840" dy="24">Curated shortlist.</tspan></text><text x="840" y="540" text-anchor="middle" fill="#9CA3AF" font-size="15" font-style="italic"><tspan x="840" dy="0">PRQ logic applied</tspan><tspan x="840" dy="22">but the customer</tspan><tspan x="840" dy="22">isn't the recipient</tspan></text></g>
+          <g><rect x="960" y="180" width="210" height="500" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="1065" y="235" text-anchor="middle" fill="#F5F7FA" font-size="20" font-weight="800"><tspan x="1065" dy="0">5. Knowledge /</tspan><tspan x="1065" dy="28">assessment</tspan></text><line x1="980" y1="305" x2="1150" y2="305" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="1065" y="360" text-anchor="middle" fill="#A7AFBF" font-size="17"><tspan x="1065" dy="0">Lead magnet.</tspan><tspan x="1065" dy="24">Report for email.</tspan></text><text x="1065" y="540" text-anchor="middle" fill="#9CA3AF" font-size="15" font-style="italic"><tspan x="1065" dy="0">no SKU on the</tspan><tspan x="1065" dy="22">result page; sale</tspan><tspan x="1065" dy="22">happens via email</tspan></text></g>
+        </svg>
+        <p class="mx-auto mt-3 max-w-3xl text-center text-xs text-slate-500 leading-snug">
+          <span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;Set diagram: the umbrella term "ecommerce quiz" contains all five types; "product recommendation quiz" is type 1 (and the SKU-recommending halves of types 2 and 3).
+        </p>
+      </div>
+
+      <p class="mx-auto mt-10 max-w-3xl text-center text-slate-700">
+        If your goal is to lift conversion rate and AOV with matched products, you want a product recommendation quiz: the format covered in detail on <a href="/" class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">RevenueHunt's product recommendation quiz</a> home page. If your goal is broader (gating a lead magnet, running a brand archetype, building a content quiz), an ecommerce quiz is the right umbrella term and recommendation logic is one piece of it.
+      </p>
+    </div>
+  </section>
+
+  <!-- Why now -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Why ecommerce quizzes work now</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">
+        Three things changed in the last 24 months. The combination means a quiz now <strong>pays back faster</strong> and <strong>depreciates slower</strong> than the same effort spent on a static landing page.
+      </p>
+      <div class="mt-10 grid gap-6 sm:grid-cols-3">
+        {WHY_NOW.map((w, i) => (
+          <div class="rounded-xl border border-slate-200 bg-white p-7">
+            <p class="text-xs font-bold uppercase tracking-widest text-[#616eff]">{String(i + 1).padStart(2, "0")}</p>
+            <h3 class="mt-2 text-lg font-bold text-slate-900">{w.title}</h3>
+            <p class="mt-3 text-sm text-slate-700">{w.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-3xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Frequently asked questions</h2>
+      <div class="mt-10 divide-y divide-slate-200 border-y border-slate-200">
+        {FAQ.map((f) => (
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 text-lg font-semibold text-slate-900 [&::-webkit-details-marker]:hidden">
+              <span>{f.question}</span>
+              <svg
+                class="h-5 w-5 flex-shrink-0 text-slate-400 transition-transform duration-200 group-open:rotate-180"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+              </svg>
+            </summary>
+            <p class="pb-5 text-slate-700" set:html={f.answerHtml ?? f.answer} />
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Build your first ecommerce quiz this week.
+      </h2>
+      <p class="mx-auto mt-4 max-w-2xl text-lg text-white/70">
+        RevenueHunt is free to start, with 100 quiz responses a month. Pick a logic, write five questions, link the catalogue, and ship.
+      </p>
+      <p class="mx-auto mt-4 max-w-2xl text-white/60">
+        See what a quiz could add to your store with our <a href="/quiz-roi-calculator/" class="font-medium text-white underline decoration-white/40 underline-offset-2 hover:decoration-white">quiz ROI calculator</a> or read the full <a href="/state-of-product-recommendation-quizzes/" class="font-medium text-white underline decoration-white/40 underline-offset-2 hover:decoration-white">benchmark report on 45M+ responses</a>.
+      </p>
+      <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
+        <a
+          href={SHOPIFY_INSTALL}
+          target="_blank"
+          rel="external noopener nofollow"
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          start free on Shopify
+        </a>
+        <a
+          href={WOO_PLUGIN}
+          target="_blank"
+          rel="external noopener nofollow"
+          class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
+        >
+          start free on WooCommerce
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

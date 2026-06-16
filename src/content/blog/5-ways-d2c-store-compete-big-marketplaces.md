@@ -184,7 +184,7 @@ You are not going to compete on those vectors. You were never supposed to.
 
 Your advantage is **intelligence.** Knowing who your customers are, not as email addresses, but as individuals with specific skin types, health goals, aesthetic preferences and budget ranges. Knowing what they need before they know they need it. Having the Klaviyo infrastructure to act on that knowledge across every touchpoint, every campaign, every retention moment.
 
-Amazon will never ask your customer about their skin type, sync the answer to a retention platform, and trigger a personalised routine recommendation at exactly the right moment. That's your advantage. The only question is whether you're capturing the data to use it.
+Amazon will never ask your customer about their skin type, sync the answer to a retention platform, and trigger a personalised routine recommendation at exactly the right moment. That's your advantage. The only question is whether you're capturing the data to use it. (For the full playbook on the LTV-vs-CAC math underlying this argument, see [the 10 strategies that compound retention](/customer-retention-ecommerce-guide/).)
 
 ### Start building your intelligence advantage today
 

@@ -306,6 +306,7 @@ Yes. The mechanics are identical: quiz answers map to platform-native custom pro
 ## Next steps
 
 - See the underlying mechanics in a real Shopify funnel: the [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) (9.8% CVR, $691K in 90 days, every answer synced to Klaviyo).
+- Place this in strategic context: [where Klaviyo activation fits in the retention pillar](/customer-retention-ecommerce-guide/) (the 10 strategies that compound LTV).
 - Read the pillar argument on capture format: [why popups are walls and quizzes are doors](/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/).
 - Check the platform benchmark for what your segment should be doing: [state of product recommendation quizzes](/state-of-product-recommendation-quizzes/).
 - Estimate the impact on your own list with the [quiz ROI calculator](/quiz-roi-calculator/).

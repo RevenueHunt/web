@@ -174,6 +174,7 @@ When the catalogue has both one-time SKUs and recurring versions of the same pro
 - For the data layer behind subscription-segment retention: [customer tags in product quizzes](/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/) and [Klaviyo zero-party data](/klaviyo-zero-party-data/).
 - For a real worked example of evolving-formula subscriptions: [Skinology case study](/skinology-case-study/).
 - For the full strategy this fits into: [build a sales funnel on a Shopify store](/build-sales-funnel-shopify-store/).
+- For the broader retention picture (subscription is strategy #4 of 10): [the retention pillar](/customer-retention-ecommerce-guide/).
 - Estimate the lift on your own store: [quiz ROI calculator](/quiz-roi-calculator/).
 - The benchmark report behind every stat in this article: [the state of product recommendation quizzes](/state-of-product-recommendation-quizzes/).
 

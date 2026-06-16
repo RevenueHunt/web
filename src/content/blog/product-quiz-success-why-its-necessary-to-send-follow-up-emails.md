@@ -103,6 +103,6 @@ Personalised post-quiz flows outperform generic email sequences because the cust
 
 If your quiz is live but your Klaviyo flows aren't segmented by quiz result, you're leaving the most valuable data asset in your account completely idle. The brands that dominate their category are the ones who treat quiz completion not as a conversion event, but as the beginning of a personalised revenue relationship.
 
-For 11 real funnels that follow this pattern, see our [real funnel examples](https://revenuehunt.com/ecommerce-sales-funnel-examples/). For the strategy of how the email sequence fits into a complete funnel, see our [step-by-step funnel build guide](https://revenuehunt.com/build-sales-funnel-shopify-store/).
+For 11 real funnels that follow this pattern, see our [real funnel examples](https://revenuehunt.com/ecommerce-sales-funnel-examples/). For the strategy of how the email sequence fits into a complete funnel, see our [step-by-step funnel build guide](https://revenuehunt.com/build-sales-funnel-shopify-store/). For where lifecycle email sits among the durable levers in 2026, see [our 10-strategy retention pillar](/customer-retention-ecommerce-guide/).
 
 Ready to set it up? [Explore RevenueHunt's integrations](https://revenuehunt.com/integrations/) and start building your first quiz flow today.

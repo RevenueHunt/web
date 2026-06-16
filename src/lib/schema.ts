@@ -121,6 +121,7 @@ export function article(opts: {
   datePublished: Date | string;
   dateModified?: Date | string;
   author?: string;
+  authorUrl?: string;
   tags?: string[];
 }) {
   return {
@@ -132,7 +133,11 @@ export function article(opts: {
     image: opts.image ? new URL(opts.image, SITE.site_url).href : undefined,
     datePublished: new Date(opts.datePublished).toISOString(),
     dateModified: new Date(opts.dateModified ?? opts.datePublished).toISOString(),
-    author: { "@type": "Person", name: opts.author ?? "RevenueHunt" },
+    author: {
+      "@type": "Person",
+      name: opts.author ?? "RevenueHunt",
+      ...(opts.authorUrl ? { url: opts.authorUrl } : {}),
+    },
     publisher: organization(),
     keywords: opts.tags?.join(", "),
   };

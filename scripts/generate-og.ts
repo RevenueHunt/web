@@ -82,6 +82,7 @@ const BESPOKE: OgPage[] = [
   { slug: "compare-tolstoy", title: "RevenueHunt vs Tolstoy", subtitle: "A quiz-first product recommendation tool, not a video platform with a quiz add-on." },
   { slug: "quiz-roi-calculator", title: "Quiz ROI calculator", subtitle: "Estimate the extra revenue a product recommendation quiz could add." },
   { slug: "ecommerce-quiz", title: "Ecommerce quiz: the complete guide", subtitle: "What it is, the 5 quiz types, real examples, and a 3-step build path that fits in one session." },
+  { slug: "customer-retention-ecommerce-guide", title: "Customer retention for ecommerce", subtitle: "Why retention is the durable lever in 2026. 10 strategies, the LTV math, how to measure cohort retention, and an honest tool list." },
   { slug: "zero-party-data", title: "Zero-party data: the complete guide", subtitle: "The 4 data types compared, 6 ways to collect zero-party data, and where to activate it across email, ads, and on-site." },
   { slug: "state-of-product-recommendation-quizzes", title: "The state of product recommendation quizzes", subtitle: "2026 benchmark report: conversion, completion, and AOV from 45M+ real quiz responses." },
   { slug: "state-of-the-shopify-app-economy", title: "The state of the Shopify app economy", subtitle: "22,546 apps live, and almost none get anywhere. A 2026 data report on growth, reviews, revenue and pricing." },

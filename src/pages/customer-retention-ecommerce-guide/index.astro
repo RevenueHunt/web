@@ -1,0 +1,527 @@
+---
+import Base from "../../layouts/Base.astro";
+import PageHero from "../../components/PageHero.astro";
+import Eyebrow from "../../components/Eyebrow.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
+import { organization, breadcrumb, softwareApplication, article, faqPage } from "../../lib/schema";
+import { SITE } from "../../lib/site";
+
+const SHOPIFY_INSTALL =
+  "https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=retention_landing";
+const WOO_PLUGIN =
+  "https://downloads.wordpress.org/plugin/product-recommendation-quiz-for-ecommerce.latest-stable.zip";
+
+const PAGE_URL = new URL("/customer-retention-ecommerce-guide/", SITE.site_url).href;
+
+const STATS = [
+  { stat: "5-7x", label: "the cost to acquire a new customer versus retain an existing one (widely-cited industry estimate)" },
+  { stat: "25-95%", label: "profit lift from a 5% increase in retention rate (Bain & Company, Frederick Reichheld)" },
+  { stat: "67%", label: "more spend per repeat order than first-time orders in the median DTC store (industry studies)" },
+];
+
+const STRATEGIES = [
+  {
+    n: "1",
+    title: "Email and SMS lifecycle automation",
+    line: "The fastest payback. Maps almost every other retention lever.",
+    body:
+      "Welcome series, post-purchase education, replenishment reminders, win-back, and lapsed-customer re-engagement run on properties stored in your ESP (Klaviyo, Omnisend, Mailchimp, ActiveCampaign, HubSpot). The lift compounds because every shipped order becomes a new flow trigger that runs at near-zero marginal cost.",
+    highlighted: false,
+  },
+  {
+    n: "2",
+    title: "Loyalty and rewards programs",
+    line: "Structured value exchange, not a discount tax.",
+    body:
+      "Points-for-actions (review a product, share a birthday, refer a friend, complete a profile) trade redeemable value for structured zero-party signals you can activate downstream. The trade-off is operational: loyalty programs need sustained content and reward design to keep producing margin-positive redemptions.",
+    highlighted: false,
+  },
+  {
+    n: "3",
+    title: "Personalisation from stated preferences",
+    line: "The highest-yield retention layer most stores skip.",
+    body:
+      "A short on-store quiz captures three things in one flow: the contact (email/SMS), the consent (explicit opt-in), and the structured preferences (skin type, primary concern, budget, shopping-for). Those answers map to custom properties in your ESP and drive conditional flow splits, dynamic content blocks, and segments that observed behaviour alone can't produce. The retention angle: the second campaign performs better than the first because the data layer is richer.",
+    href: "/ecommerce-quiz/",
+    hrefLabel: "How an ecommerce quiz captures the data",
+    secondaryHref: "/zero-party-data/",
+    secondaryLabel: "Zero-party data deep dive",
+    highlighted: true,
+  },
+  {
+    n: "4",
+    title: "Subscription and replenishment",
+    line: "Highest LTV per acquired customer.",
+    body:
+      "Subscription transforms a single-purchase customer into a recurring-revenue annuity, and replenishment reminders extend that logic to consumable purchases (skincare, supplements, coffee, pet food). Conversion to subscription is the highest-leverage retention move available to a consumable-vertical store.",
+    highlighted: false,
+  },
+  {
+    n: "5",
+    title: "Onboarding and product education",
+    line: "First 30 days decide repeat rate.",
+    body:
+      "How-to videos, dosage guides, ingredient explainers, and routine builders all reduce the probability the first purchase ends in a refund or a silent churn. The data point: customers who engage with onboarding content within the first two weeks of purchase repeat at meaningfully higher rates than those who don't.",
+    highlighted: false,
+  },
+  {
+    n: "6",
+    title: "Post-purchase experience",
+    line: "Packaging, follow-up, and delight moments.",
+    body:
+      "The unboxing experience, the order confirmation email's content (not just the receipt), shipping updates with personality, and small delight gestures (a handwritten note, a sample, a surprise upgrade) generate goodwill that converts to social proof and repeat orders. The marginal cost is low; the brand-equity payback is durable.",
+    highlighted: false,
+  },
+  {
+    n: "7",
+    title: "Customer service as a retention lever",
+    line: "A great resolution is a repeat order in disguise.",
+    body:
+      "Tag every ticket by resolution category in Gorgias, Re:amaze, or Zendesk. Customers whose first contact ended in a resolution they rated positively repeat at multiples of the rate of customers whose ticket went badly. Service is the highest-leverage retention input for stores with quality or fit-uncertainty risk.",
+    highlighted: false,
+  },
+  {
+    n: "8",
+    title: "Community and UGC",
+    line: "Customer-as-channel.",
+    body:
+      "Branded hashtag programs, customer-only Discord or Slack, exclusive product previews, and visible customer photos on product pages all turn satisfied customers into a free acquisition channel for the next cohort and a retention anchor for the current one. Strong communities measurably reduce churn through identity reinforcement.",
+    highlighted: false,
+  },
+  {
+    n: "9",
+    title: "Referral programs",
+    line: "Lowest-CAC acquisition + highest-LTV retention in one mechanism.",
+    body:
+      "A two-sided referral (giver gets a credit, receiver gets a discount) converts existing customers into a paid acquisition channel that performs at a fraction of Meta or Google CAC, and the referrer's stake in the recipient's success bumps both parties' retention rate. The classic pattern that built Dropbox, Airbnb, and most DTC supplement brands.",
+    highlighted: false,
+  },
+  {
+    n: "10",
+    title: "Win-back and lapsed-customer flows",
+    line: "Cheaper to re-activate than to acquire.",
+    body:
+      "A lapsed customer (no order in 90, 180, 365 days, depending on the category) is one of the cheapest re-acquisition targets on your list because their address is already valid, their preferences are known, and the inbox is already opted-in. A four-touch win-back sequence with progressive incentive structure recovers a meaningful share of revenue that would otherwise be lost to churn.",
+    highlighted: false,
+  },
+];
+
+const METRICS = [
+  {
+    title: "Cohort retention curve",
+    line: "The ground truth.",
+    body:
+      "Group customers by acquisition month and track the percentage of each cohort that places a second order within 30, 60, 90, 180, and 365 days. The shape of the curve, not the headline rate, is the real signal: is the 30-day rate climbing month over month? Is the 180-day rate flat? Decisions about acquisition channel mix should follow that curve, not last-click reports.",
+  },
+  {
+    title: "Repeat purchase rate (RPR)",
+    line: "The simplest top-line metric.",
+    body:
+      "RPR = customers with 2+ orders / total customers, measured over a defined window. Useful as a North Star and a benchmark across stores, but conceals the cohort-level dynamics that drive it. Pair with the cohort curve to interpret it correctly. A typical DTC RPR sits between 20-35%; supplements, coffee, and skincare tend to sit higher.",
+  },
+  {
+    title: "Net Promoter Score and CSAT",
+    line: "Leading indicators.",
+    body:
+      "NPS and CSAT both predict next-quarter retention better than current-quarter revenue does. The promoters (NPS 9-10) and the detractors (0-6) are both diagnostic: promoters are referral-program-ready; detractors are churn-flight risks who often respond to a single CS intervention. Track the slope of the trend, not the absolute number.",
+  },
+];
+
+const TOOLS = [
+  {
+    category: "Email and SMS",
+    bestFor: "Lifecycle automation, conditional flows, dynamic content",
+    options: "Klaviyo, Omnisend, Mailchimp, ActiveCampaign, HubSpot, Postscript (SMS)",
+  },
+  {
+    category: "Loyalty and rewards",
+    bestFor: "Points programs, VIP tiers, referrals integrated with loyalty",
+    options: "Smile.io, Yotpo Loyalty, LoyaltyLion, Stamped",
+  },
+  {
+    category: "Subscription and replenishment",
+    bestFor: "Recurring revenue and replenishment reminders",
+    options: "ReCharge, Skio, Loop Subscriptions, Bold Subscriptions",
+  },
+  {
+    category: "Reviews and UGC",
+    bestFor: "Post-purchase review collection, photo / video UGC, social proof",
+    options: "Yotpo, Junip, Okendo, Stamped, Loox",
+  },
+  {
+    category: "Personalisation (stated preferences)",
+    bestFor: "Capture skin type, primary concern, budget, shopping-for as structured properties",
+    options:
+      "**RevenueHunt: Recommender Quiz for Shopify** (native Klaviyo, Omnisend, Mailchimp sync), Octane AI, Typeform (generic)",
+  },
+  {
+    category: "Personalisation (behavioural)",
+    bestFor: "On-site product recommendations, collection re-ordering, search personalisation",
+    options: "Nosto, Klevu, Rebuy, Algolia",
+  },
+  {
+    category: "Customer service",
+    bestFor: "Helpdesk, chat, ticket tagging, post-purchase support",
+    options: "Gorgias, Re:amaze, Zendesk, Front",
+  },
+  {
+    category: "Analytics and cohort tracking",
+    bestFor: "Cohort retention, LTV, blended CAC, attribution",
+    options: "Triple Whale, Lifetimely, Polar, Northbeam",
+  },
+];
+
+const FAQ = [
+  {
+    question: "Why is customer retention more important than acquisition?",
+    answer:
+      "The economics: acquiring a new customer typically costs five to seven times more than retaining an existing one (widely-cited industry estimate). A 5% increase in retention rate has historically produced a 25-95% profit lift (Bain & Company). And repeat customers spend roughly 67% more per order than first-time customers in the median DTC store. With Meta and Google CPMs rising while attribution windows shrink, retention is the durable lever; acquisition alone can no longer outrun rising costs.",
+  },
+  {
+    question: "What is a good customer retention rate for ecommerce?",
+    answer:
+      "Repeat purchase rate (RPR) in DTC typically falls between 20-35% measured over a 12-month window. Consumable categories (supplements, coffee, skincare) tend to run higher (35-50%); high-consideration single-purchase categories (furniture, mattresses, fine jewellery) run lower (10-20%). Compare against your category, not the cross-category average; cohort-level dynamics matter more than the headline rate.",
+  },
+  {
+    question: "What are the most effective customer retention strategies?",
+    answer:
+      "Ten strategies consistently work: lifecycle email and SMS, loyalty and rewards, personalisation from stated preferences (highest-yield layer most stores skip), subscription and replenishment, onboarding and product education, post-purchase experience, customer service as a retention lever, community and UGC, referral programs, and win-back / lapsed-customer flows. Most successful retention stacks combine four or five of these rather than relying on one.",
+  },
+  {
+    question: "How do I measure customer retention?",
+    answer:
+      "Three metrics: cohort retention curve (the ground truth, grouped by acquisition month), repeat purchase rate as a simple top-line North Star, and NPS or CSAT as a leading indicator of next-quarter churn. The cohort curve is the most actionable; RPR alone hides whether the trend is improving or degrading.",
+  },
+  {
+    question: "How does a product recommendation quiz help with retention?",
+    answer:
+      "A quiz captures stated preferences (skin type, primary concern, budget, shopping-for) as structured properties in the customer's ESP profile. Those properties drive segmented email campaigns, conditional flow splits, dynamic content blocks, and re-engagement flows that observed behavioural data alone can't produce. The retention angle is compounding: the second email cycle performs better than the first because the data layer is richer.",
+    answerHtml:
+      "A quiz captures stated preferences (skin type, primary concern, budget, shopping-for) as structured properties in the customer's ESP profile. Those properties drive segmented email campaigns, conditional flow splits, dynamic content blocks, and re-engagement flows that observed behavioural data alone can't produce. The retention angle is compounding: the second email cycle performs better than the first because the data layer is richer. For the activation walkthrough, see <a href=\"/klaviyo-zero-party-data/\" class=\"font-medium text-[#16161D] underline decoration-slate-500 underline-offset-2 hover:decoration-[#16161D]\">our Klaviyo zero-party data guide</a>.",
+  },
+  {
+    question: "How long does it take to see retention improvements?",
+    answer:
+      "Lifecycle email and SMS flows show measurable lift within 4-8 weeks of launch. Loyalty programs take 60-90 days to produce meaningful repeat-order data because the redemption cycle is longer. Quiz-driven personalisation produces a same-week lift in email RPR on the first campaign that uses the captured properties. The cohort curve shifts visibly within 60-90 days of any consistently-applied retention initiative.",
+  },
+  {
+    question: "What is the difference between customer retention and customer loyalty?",
+    answer:
+      "Retention measures behaviour (did the customer come back?). Loyalty measures attitude (will the customer choose you over a competitor when both are available?). The two are correlated but not identical: high retention with low loyalty is fragile (you're convenient, not loved); high loyalty with low retention usually means a product-market fit gap (customers love you but don't need to buy often). Both matter; measure them separately.",
+  },
+  {
+    question: "Do retention strategies work for high-ticket / low-frequency purchases?",
+    answer:
+      "Yes, but the levers shift. For high-ticket single-purchase categories (mattresses, furniture, premium beauty devices), retention focuses on referral programs, brand-community building, complementary product attach, and warranty / service revenue. The cohort timeline is longer (months to years) and the headline RPR is lower, but lifetime value per retained customer is often higher than in consumable categories.",
+  },
+  {
+    question: "Is there a tool that does all of this?",
+    answer:
+      "No. The retention stack is intentionally modular because each layer (email, loyalty, subscriptions, reviews, personalisation, helpdesk, analytics) is a deep specialisation. The most successful stores pick a best-of-breed tool per layer and invest in the integrations between them. The tools table below names the categories and the leading options in each.",
+  },
+];
+
+const PAGE_TITLE = "Customer retention for ecommerce: strategies, metrics, and tools (2026)";
+const PAGE_DESCRIPTION =
+  "Why retention is the durable lever in 2026. 10 strategies with the LTV math, how to measure cohort retention / RPR / NPS, and an honest tool list.";
+
+const jsonLd = [
+  organization(),
+  softwareApplication(),
+  breadcrumb([
+    { name: "Home", url: "/" },
+    { name: "Customer retention guide", url: "/customer-retention-ecommerce-guide/" },
+  ]),
+  article({
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
+    url: PAGE_URL,
+    image: "/og/customer-retention-ecommerce-guide.png",
+    datePublished: "2026-06-16",
+    dateModified: "2026-06-16",
+    author: "Paulina Chodura",
+    authorUrl: new URL("/author/pochodura/", SITE.site_url).href,
+    tags: [
+      "customer retention",
+      "ecommerce retention",
+      "LTV",
+      "repeat purchase rate",
+      "cohort analysis",
+      "Shopify",
+      "Klaviyo",
+    ],
+  }),
+  faqPage(FAQ),
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Ten customer retention strategies for ecommerce",
+    itemListOrder: "https://schema.org/ItemListOrderAscending",
+    numberOfItems: STRATEGIES.length,
+    itemListElement: STRATEGIES.map((s, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: s.title,
+      description: `${s.line} ${s.body}`,
+    })),
+  },
+];
+---
+
+<Base
+  title={PAGE_TITLE}
+  description={PAGE_DESCRIPTION}
+  ogImage="/og/customer-retention-ecommerce-guide.png"
+  jsonLd={jsonLd}
+>
+  <!-- Hero -->
+  <PageHero>
+    <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Customer retention guide" }]} />
+    <div class="text-center">
+      <Eyebrow>The complete guide for eCommerce</Eyebrow>
+      <h1 class="mt-3 text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+        Customer retention for ecommerce: strategies, metrics, and tools (2026)
+      </h1>
+      <p class="mx-auto mt-6 max-w-3xl text-xl text-slate-600">
+        Acquisition costs keep climbing. Retention is the <strong>only durable lever for margin</strong> in 2026. The LTV math, ten strategies that compound, how to measure cohort retention without lying to yourself, and an honest tool list.
+      </p>
+      <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <a
+          href={SHOPIFY_INSTALL}
+          target="_blank"
+          rel="external noopener nofollow"
+          class="inline-flex items-center justify-center rounded-md bg-[#16161D] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#26262e]"
+        >
+          Start free on Shopify
+        </a>
+        <a
+          href="#strategies"
+          class="inline-flex items-center justify-center rounded-md border border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-900 transition hover:border-slate-400 hover:bg-slate-50"
+        >
+          Jump to the 10 strategies
+        </a>
+      </div>
+      <p class="mt-6 text-sm text-slate-500">
+        Used by <strong class="text-slate-700">20,000+</strong> ecommerce brands · <strong class="text-slate-700">4.9 ★</strong> on Shopify · <a href="/revenuehunt-built-for-shopify/" class="font-semibold text-slate-700 underline decoration-slate-300 underline-offset-2 hover:decoration-slate-700">Built for Shopify</a> certified
+      </p>
+    </div>
+  </PageHero>
+
+  <!-- Stat band -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6">
+      <div class="rounded-2xl bg-[#16161D] px-6 py-10 sm:px-10">
+        <p class="text-center text-sm font-semibold uppercase tracking-wider text-[#5AB2FF]">
+          The math of retention
+        </p>
+        <dl class="mt-6 grid grid-cols-1 gap-8 text-center sm:grid-cols-3">
+          {STATS.map((s) => (
+            <div>
+              <dt class="text-4xl font-bold tracking-tight text-white">{s.stat}</dt>
+              <dd class="mt-1 text-sm text-white/70">{s.label}</dd>
+            </div>
+          ))}
+        </dl>
+        <p class="mx-auto mt-6 max-w-3xl text-center text-sm text-white/60">
+          The combined effect: every dollar that flows into retention compounds, while every dollar spent on acquisition fights rising CPMs and shrinking attribution windows.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why retention matters -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-3xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900">Why retention matters more than acquisition in 2026</h2>
+
+      <p class="mt-4 text-lg text-slate-700">
+        The unit economics of a DTC store decay in two directions if you ignore retention. Customer acquisition costs (CAC) rise as Meta and Google CPMs trend up and attribution windows shrink, so the cost of replacing each lost customer climbs every quarter. Lifetime value (LTV) stays flat or falls if you never get customers past their first order, so the LTV / CAC ratio that determines whether your store is sustainable keeps compressing.
+      </p>
+
+      <p class="mt-4 text-lg text-slate-700">
+        The opposite is also true. If you lift retention by ten percentage points without changing acquisition spend, LTV climbs, the LTV / CAC ratio expands, and you can outbid competitors for the same impression while keeping margin. Frederick Reichheld at Bain &amp; Company showed in the 1990s that a 5% increase in retention rate produces a 25-95% profit lift depending on the category. The effect has not weakened in the 30 years since.
+      </p>
+
+      <p class="mt-4 text-lg text-slate-700">
+        In 2026 the case is more urgent for three structural reasons. Third-party cookie deprecation makes look-alike acquisition harder. Privacy regulation makes inferred targeting riskier. AI-driven personalisation rewards stores with deep first-party signal. All three pressures push toward retention as the durable competitive lever, and away from acquisition as the headline KPI.
+      </p>
+
+      <p class="mt-4 text-lg text-slate-700">
+        The rest of this guide covers the ten strategies that compound retention, the three metrics that tell you whether they're working, and the tool categories the strongest retention stacks combine. For the data layer that powers most of the personalisation strategies below, see <a href="/first-party-data/" class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">first-party data</a>; for the declared subset that produces the highest segmentation lift, see <a href="/zero-party-data/" class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">zero-party data</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- 10 strategies -->
+  <section id="strategies" class="scroll-mt-20 bg-slate-50">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">10 customer retention strategies</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">
+        Most successful retention stacks combine four or five of these. The order below is roughly by ease of implementation rather than impact; the highest-yield layer most stores skip is <strong>#3, stated-preference personalisation</strong>.
+      </p>
+
+      <div class="mt-10">
+        <svg viewBox="0 0 1200 740" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="strategies-grid-title" style="width:100%;height:auto;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#16161D;border-radius:16px;padding:28px 16px;box-sizing:border-box;">
+          <title id="strategies-grid-title">Ten customer retention strategies for ecommerce, with stated-preference personalisation highlighted</title>
+          <defs><linearGradient id="rh-grad-retention" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6464ff"/><stop offset="1" stop-color="#4bd5ff"/></linearGradient></defs>
+          <text x="600" y="58" text-anchor="middle" fill="#F5F7FA" font-size="30" font-weight="800" letter-spacing="-0.5">10 retention strategies at a glance</text>
+          <g><rect x="40" y="110" width="270" height="170" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="60" y="148" fill="#6B7384" font-size="20" font-weight="800" letter-spacing="2">01</text><text x="175" y="195" text-anchor="middle" fill="#F5F7FA" font-size="17" font-weight="800">Email &amp; SMS</text><text x="175" y="220" text-anchor="middle" fill="#F5F7FA" font-size="17" font-weight="800">lifecycle</text><text x="175" y="255" text-anchor="middle" fill="#A7AFBF" font-size="14">Fastest payback</text></g>
+          <g><rect x="330" y="110" width="270" height="170" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="350" y="148" fill="#6B7384" font-size="20" font-weight="800" letter-spacing="2">02</text><text x="465" y="195" text-anchor="middle" fill="#F5F7FA" font-size="17" font-weight="800">Loyalty &amp;</text><text x="465" y="220" text-anchor="middle" fill="#F5F7FA" font-size="17" font-weight="800">rewards</text><text x="465" y="255" text-anchor="middle" fill="#A7AFBF" font-size="14">Structured value exchange</text></g>
+          <g><rect x="620" y="110" width="270" height="170" rx="14" fill="rgba(90,178,255,0.14)" stroke="rgba(90,178,255,0.55)" stroke-width="2"/><text x="640" y="148" fill="#5AB2FF" font-size="14" font-weight="800" letter-spacing="2">03 · HIGHEST YIELD</text><text x="755" y="195" text-anchor="middle" fill="#F5F7FA" font-size="17" font-weight="800">Stated-preference</text><text x="755" y="220" text-anchor="middle" fill="#F5F7FA" font-size="17" font-weight="800">personalisation</text><text x="755" y="255" text-anchor="middle" fill="#A7AFBF" font-size="14">Quiz answers as ESP properties</text></g>
+          <g><rect x="910" y="110" width="250" height="170" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="930" y="148" fill="#6B7384" font-size="20" font-weight="800" letter-spacing="2">04</text><text x="1035" y="195" text-anchor="middle" fill="#F5F7FA" font-size="17" font-weight="800">Subscription</text><text x="1035" y="220" text-anchor="middle" fill="#F5F7FA" font-size="17" font-weight="800">&amp; replenishment</text><text x="1035" y="255" text-anchor="middle" fill="#A7AFBF" font-size="14">Highest LTV per customer</text></g>
+          <g><rect x="40" y="310" width="220" height="170" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="60" y="348" fill="#6B7384" font-size="20" font-weight="800" letter-spacing="2">05</text><text x="150" y="395" text-anchor="middle" fill="#F5F7FA" font-size="17" font-weight="800">Onboarding &amp;</text><text x="150" y="420" text-anchor="middle" fill="#F5F7FA" font-size="17" font-weight="800">education</text><text x="150" y="455" text-anchor="middle" fill="#A7AFBF" font-size="14">First 30 days</text></g>
+          <g><rect x="280" y="310" width="220" height="170" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="300" y="348" fill="#6B7384" font-size="20" font-weight="800" letter-spacing="2">06</text><text x="390" y="395" text-anchor="middle" fill="#F5F7FA" font-size="17" font-weight="800">Post-purchase</text><text x="390" y="420" text-anchor="middle" fill="#F5F7FA" font-size="17" font-weight="800">experience</text><text x="390" y="455" text-anchor="middle" fill="#A7AFBF" font-size="14">Packaging + delight</text></g>
+          <g><rect x="520" y="310" width="220" height="170" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="540" y="348" fill="#6B7384" font-size="20" font-weight="800" letter-spacing="2">07</text><text x="630" y="395" text-anchor="middle" fill="#F5F7FA" font-size="17" font-weight="800">Customer</text><text x="630" y="420" text-anchor="middle" fill="#F5F7FA" font-size="17" font-weight="800">service</text><text x="630" y="455" text-anchor="middle" fill="#A7AFBF" font-size="14">Resolution = repeat order</text></g>
+          <g><rect x="760" y="310" width="220" height="170" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="780" y="348" fill="#6B7384" font-size="20" font-weight="800" letter-spacing="2">08</text><text x="870" y="395" text-anchor="middle" fill="#F5F7FA" font-size="17" font-weight="800">Community</text><text x="870" y="420" text-anchor="middle" fill="#F5F7FA" font-size="17" font-weight="800">&amp; UGC</text><text x="870" y="455" text-anchor="middle" fill="#A7AFBF" font-size="14">Customer-as-channel</text></g>
+          <g><rect x="220" y="510" width="350" height="170" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="240" y="548" fill="#6B7384" font-size="20" font-weight="800" letter-spacing="2">09</text><text x="395" y="595" text-anchor="middle" fill="#F5F7FA" font-size="17" font-weight="800">Referral programs</text><text x="395" y="640" text-anchor="middle" fill="#A7AFBF" font-size="14">Lowest CAC + highest LTV at once</text></g>
+          <g><rect x="610" y="510" width="350" height="170" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="630" y="548" fill="#6B7384" font-size="20" font-weight="800" letter-spacing="2">10</text><text x="785" y="595" text-anchor="middle" fill="#F5F7FA" font-size="17" font-weight="800">Win-back &amp; lapsed flows</text><text x="785" y="640" text-anchor="middle" fill="#A7AFBF" font-size="14">Cheaper to re-activate than acquire</text></g>
+        </svg>
+        <p class="mx-auto mt-3 max-w-3xl text-center text-xs text-slate-500 leading-snug">
+          <span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;Ten strategies at a glance. Strategies 1 and 2 are infrastructure; strategy 3 is the highest-yield personalisation layer most stores skip; 4 is the highest-LTV per-customer move where the vertical supports it; 5-10 are durable retention multipliers.
+        </p>
+      </div>
+
+      <div class="mt-12 space-y-5">
+        {STRATEGIES.map((s) => (
+          <div class={`rounded-xl border p-6 sm:p-7 ${s.highlighted ? "border-[#5AB2FF] bg-[#eff8ff] shadow-md" : "border-slate-200 bg-white"}`}>
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-start">
+              <div class="sm:w-16 sm:flex-none">
+                <span class={`inline-flex h-12 w-12 items-center justify-center rounded-full text-lg font-bold text-white ${s.highlighted ? "bg-[#5AB2FF]" : "bg-[#16161D]"}`}>{s.n}</span>
+              </div>
+              <div class="flex-1">
+                {s.highlighted && (
+                  <p class="text-xs font-bold uppercase tracking-widest text-[#1d4ed8]">Highest yield, most skipped</p>
+                )}
+                <h3 class="text-lg font-bold text-slate-900">{s.title}</h3>
+                <p class="mt-1 text-sm font-semibold text-[#616eff]">{s.line}</p>
+                <p class="mt-3 text-slate-700">{s.body}</p>
+                {s.href && (
+                  <p class="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+                    <a href={s.href} class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">{s.hrefLabel} →</a>
+                    {s.secondaryHref && (
+                      <a href={s.secondaryHref} class="font-medium text-[#16161D] underline decoration-slate-300 underline-offset-2 hover:decoration-[#16161D]">{s.secondaryLabel} →</a>
+                    )}
+                  </p>
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Measuring -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Measuring retention: cohort analysis, repeat purchase rate, NPS</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">
+        Three measurements, each answering a different question. Use them together; any one alone misleads.
+      </p>
+      <div class="mt-10 grid gap-6 sm:grid-cols-3">
+        {METRICS.map((m, i) => (
+          <div class="rounded-xl border border-slate-200 p-7">
+            <p class="text-xs font-bold uppercase tracking-widest text-[#616eff]">Metric {String(i + 1).padStart(2, "0")}</p>
+            <h3 class="mt-2 text-lg font-bold text-slate-900">{m.title}</h3>
+            <p class="mt-1 text-sm font-semibold text-slate-600">{m.line}</p>
+            <p class="mt-3 text-sm text-slate-700">{m.body}</p>
+          </div>
+        ))}
+      </div>
+      <p class="mx-auto mt-10 max-w-3xl text-center text-slate-700">
+        Operating cadence: review cohort curves monthly, RPR weekly as a North Star check, NPS / CSAT on a rolling 90-day window so trend shifts surface within the same quarter they begin.
+      </p>
+    </div>
+  </section>
+
+  <!-- Tools -->
+  <section class="bg-slate-50">
+    <div class="mx-auto max-w-5xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Tools for building a retention stack</h2>
+      <p class="mx-auto mt-4 max-w-3xl text-slate-700 text-center">
+        Retention is intentionally modular. Each layer is a deep specialisation, so the strongest stacks pick best-of-breed per category and invest in the integrations between them.
+      </p>
+      <div class="mt-10 overflow-x-auto">
+        <table class="w-full min-w-[40rem] border-collapse text-left">
+          <thead>
+            <tr class="bg-[#16161D] text-xs uppercase tracking-wider text-white">
+              <th class="px-4 py-3 font-semibold">Category</th>
+              <th class="px-4 py-3 font-semibold">Best for</th>
+              <th class="px-4 py-3 font-semibold">Notable options</th>
+            </tr>
+          </thead>
+          <tbody>
+            {TOOLS.map((t, i) => (
+              <tr class={`${i % 2 === 0 ? "bg-white" : "bg-slate-50"} border-b border-slate-200 text-sm text-slate-700`}>
+                <td class="px-4 py-3 font-semibold text-slate-900">{t.category}</td>
+                <td class="px-4 py-3">{t.bestFor}</td>
+                <td class="px-4 py-3" set:html={t.options.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")} />
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="mx-auto mt-6 max-w-3xl text-center text-xs italic text-slate-500">
+        Disclosure: RevenueHunt is our own product. We've listed it under "Personalisation (stated preferences)" because that's the layer we own. The other categories above are areas we don't compete in; we've named the tools we see in client stacks most often.
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-white">
+    <div class="mx-auto max-w-3xl px-6 py-16">
+      <h2 class="text-2xl font-bold tracking-tight text-slate-900 text-center">Frequently asked questions</h2>
+      <div class="mt-10 divide-y divide-slate-200 border-y border-slate-200">
+        {FAQ.map((f) => (
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 text-lg font-semibold text-slate-900 [&::-webkit-details-marker]:hidden">
+              <span>{f.question}</span>
+              <svg
+                class="h-5 w-5 flex-shrink-0 text-slate-400 transition-transform duration-200 group-open:rotate-180"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+              </svg>
+            </summary>
+            <p class="pb-5 text-slate-700" set:html={f.answerHtml ?? f.answer} />
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="bg-[#16161D]">
+    <div class="mx-auto max-w-4xl px-6 py-20 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        Make stated-preference personalisation the highest-yield layer in your retention stack.
+      </h2>
+      <p class="mx-auto mt-4 max-w-2xl text-lg text-white/70">
+        Install RevenueHunt in under five minutes, pick a template, and have the first quiz answers flowing into Klaviyo, Shopify Orders, and your ad platforms the same day. Free plan covers the first thousand completions.
+      </p>
+      <p class="mx-auto mt-4 max-w-2xl text-white/60">
+        For the data layer behind every personalisation strategy on this page, see <a href="/first-party-data/" class="font-medium text-white underline decoration-white/40 underline-offset-2 hover:decoration-white">first-party data</a> and <a href="/zero-party-data/" class="font-medium text-white underline decoration-white/40 underline-offset-2 hover:decoration-white">zero-party data</a>. For the activation playbook on Klaviyo specifically, see <a href="/klaviyo-zero-party-data/" class="font-medium text-white underline decoration-white/40 underline-offset-2 hover:decoration-white">your Klaviyo list is a graveyard</a>.
+      </p>
+      <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap">
+        <a
+          href={SHOPIFY_INSTALL}
+          target="_blank"
+          rel="external noopener nofollow"
+          class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-base font-semibold text-[#16161D] transition hover:bg-slate-100"
+        >
+          start free on Shopify
+        </a>
+        <a
+          href={WOO_PLUGIN}
+          target="_blank"
+          rel="external noopener nofollow"
+          class="inline-flex items-center justify-center rounded-md border border-white/30 bg-transparent px-6 py-3 text-base font-semibold text-white transition hover:border-white hover:bg-white/5"
+        >
+          start free on WooCommerce
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

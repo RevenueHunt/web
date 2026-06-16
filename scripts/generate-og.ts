@@ -61,6 +61,7 @@ const BESPOKE: OgPage[] = [
   { slug: "zero-party-data", title: "Zero-party data", subtitle: "Why and how to collect data your customers volunteer." },
   { slug: "first-party-data", title: "First-party data: the complete guide", subtitle: "The 4 data types compared, 7 collection channels on Shopify, and where to activate it across email, ads, and on-site." },
   { slug: "ecommerce-sales-funnel-examples", title: "11 ecommerce funnel examples", subtitle: "Real DTC funnels that convert — Function of Beauty, Stitch Fix, Casper, and more." },
+  { slug: "zero-party-data-examples", title: "12 zero-party data examples", subtitle: "Quizzes, preference centres, loyalty profiles, surveys, and configurators that work on Shopify in 2026." },
   { slug: "faqs", title: "FAQs", subtitle: "Answers to common questions about RevenueHunt." },
   {
     slug: "how-it-works",

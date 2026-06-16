@@ -133,7 +133,7 @@ The metric that matters isn't list size. It's list intelligence. A list of 10,00
 
 ## The quiz-to-Klaviyo pipeline: how it actually works
 
-Understanding the philosophical shift is step one. Step two is understanding the mechanics: how a [product recommendation quiz](/how-to-build-a-successful-ecommerce-quiz/) replaces the popup as the primary lead capture mechanism and feeds your retention engine with actionable data.
+Understanding the philosophical shift is step one. Step two is understanding the mechanics: how a [product recommendation quiz](/how-to-build-a-successful-ecommerce-quiz/) replaces the popup as the primary lead capture mechanism and feeds your retention engine with actionable data. (Recommendation is just one of [five quiz formats a store can ship](/ecommerce-quiz/); it's the one most likely to lift conversion + AOV directly.)
 
 ### Step 1: the invitation, not the interruption
 

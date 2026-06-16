@@ -402,7 +402,7 @@ For voting-based systems, link the new product to every relevant choice and run 
 
 ## Next steps
 
-- New to product quizzes? Start with [how to build a successful ecommerce quiz](/how-to-build-a-successful-ecommerce-quiz/).
+- New to product quizzes? Start with [how to build a successful ecommerce quiz](/how-to-build-a-successful-ecommerce-quiz/), or step up to [the broader category and the 5 quiz types](/ecommerce-quiz/) for the umbrella view.
 - For the strategy pillars behind this whole approach: [why popups are walls and quizzes are doors](/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/) and [quiz funnels vs collection pages](/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/).
 - For the scoring-specific technical reference: [scoring and personality-type quiz setup](/scoring-quiz-setup/).
 - For the subscription-specific reference: [product quiz subscriptions](/product-quiz-subscriptions/).

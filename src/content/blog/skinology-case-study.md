@@ -182,6 +182,7 @@ Quiz answers and recommendations attach to the customer record, which lets Skino
 - For why Pixel and GA4 miss revenue and how to reconcile against Shopify Orders: [first-party Shopify quiz analytics](/first-party-shopify-quiz-analytics/).
 - For 11 funnel patterns in production: [ecommerce sales funnel examples](/ecommerce-sales-funnel-examples/).
 - For the underlying recommendation logic options Skinology and brands like it pick from: [product quiz recommendation systems](/product-quiz-recommendation-systems/).
+- For the category context (the 5 quiz formats Skinology's pair fits inside): [the umbrella guide](/ecommerce-quiz/).
 - For the data layer behind segmented marketing: [customer tags in product quizzes](/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/) and [Klaviyo zero-party data](/klaviyo-zero-party-data/).
 - For consent collection at quiz time: [marketing consent in your quiz](/product-quiz-marketing-consent/).
 - For the strategy this fits into: [build a sales funnel on a Shopify store](/build-sales-funnel-shopify-store/).

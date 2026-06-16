@@ -254,6 +254,7 @@ The Wall Bars Quiz syncs to both Klaviyo and HubSpot. The brand uses HubSpot for
 ## Next steps
 
 - For the disclosed-numbers companion in a different vertical: [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) (9.8% CVR, +42.64% AOV, $691K in 90 days).
+- For the category context (the 5 quiz formats this case study fits inside): [the umbrella guide](/ecommerce-quiz/).
 - Read the strategic pillar behind this case study: [quiz funnels vs collection pages, why your paid traffic bounces](/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/).
 - Read the lead-capture pillar: [why popups are walls and quizzes are doors](/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/).
 - See 10 more funnel patterns in production: [11 ecommerce sales funnel examples](/ecommerce-sales-funnel-examples/).

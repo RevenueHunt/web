@@ -18,7 +18,7 @@ draft: false
 
 An ecommerce sales funnel isn't a generic marketing flowchart with "TOFU/MOFU/BOFU" labels. It's the specific sequence of pages, prompts and personalisation a shopper actually moves through between landing on your store and re-ordering for the third time. The brands that win in 2026 design that sequence as a single coherent product, not a stack of disconnected popups and email blasts. The fastest way to absorb the principle is to look at 11 funnels that already do it well, then steal the mechanics you don't yet have.
 
-This guide walks through 11 ecommerce sales funnel examples (seven well-known DTC brands and four real RevenueHunt customers), the specific mechanics that make each one convert, the funnel stages that drove the results, and how to assemble your own [quiz funnel](/glossary/quiz-funnel/) using a free template. To estimate the lift on your own store, use our [quiz ROI calculator](/quiz-roi-calculator/).
+This guide walks through 11 ecommerce sales funnel examples (seven well-known DTC brands and four real RevenueHunt customers), the specific mechanics that make each one convert, the funnel stages that drove the results, and how to assemble your own [quiz funnel](/glossary/quiz-funnel/) using a free template. Most of the funnels below are quiz-led; for the category overview (the five quiz formats and how they differ) see [the umbrella guide](/ecommerce-quiz/). To estimate the lift on your own store, use our [quiz ROI calculator](/quiz-roi-calculator/).
 
 <div style="margin:32px 0;padding:24px 28px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 14px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">What you'll learn</p>

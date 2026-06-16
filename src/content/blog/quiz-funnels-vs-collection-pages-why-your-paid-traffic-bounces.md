@@ -111,7 +111,7 @@ None of these tools create a _guided path_ from uncertainty to purchase. They al
 
 A quiz funnel replaces the collection page as your ad destination. Instead of "browse 30 serums," the customer answers 3-5 diagnostic questions: _What's your skin type? What's your primary concern? What's your budget?_
 
-This isn't a gimmick. It's a structural redesign of the post-click experience that solves three problems simultaneously.
+This isn't a gimmick. It's a structural redesign of the post-click experience that solves three problems simultaneously. (For the category overview, including the five formats a store can ship and how they compare, see [the umbrella guide](/ecommerce-quiz/); the rest of this piece focuses on the recommendation-quiz variant used as a paid-traffic landing page.)
 
 ### Mechanism 1: guided selling eliminates decision fatigue
 

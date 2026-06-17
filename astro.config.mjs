@@ -263,6 +263,8 @@ export default defineConfig({
       "/how-to-build-a-successful-ecommerce-quiz/",
     "/product-quiz-quick-tips/":
       "/how-to-build-a-successful-ecommerce-quiz/",
+    "/help-us-shape-the-future-of-our-product-recommendation-quiz-app/":
+      "/contact/",
     "/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/":
       "/hubspot-quiz-integration/",
     "/how-to-recommend-products-on-shopify-with-shop-quiz-a-step-by-step-guide-for-merchants/":

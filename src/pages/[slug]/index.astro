@@ -385,6 +385,52 @@ const linkedinShare = `https://www.linkedin.com/sharing/share-offsite/?url=${enc
             });
           });
         </script>
+
+        {/* Collapse long code blocks (12+ lines) behind a "Show all code" toggle.
+            Native, no extra network; code stays in the DOM so crawlers/LLMs read it. */}
+        <style is:global>
+          .code-collapse { position: relative; }
+          .code-collapse > pre { max-height: 10rem !important; overflow: hidden !important; }
+          .code-collapse.is-open > pre { max-height: none !important; overflow: auto !important; }
+          .code-collapse-toggle {
+            display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.5rem;
+            padding: 0.4rem 0.85rem; font-size: 0.8rem; font-weight: 600; color: #0f172a;
+            background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 0.375rem; cursor: pointer;
+          }
+          .code-collapse-toggle:hover { background: #e2e8f0; }
+        </style>
+        <script is:inline>
+          (function () {
+            function init() {
+              try {
+                var blocks = document.querySelectorAll("article .prose pre");
+                blocks.forEach(function (pre) {
+                  if (pre.closest(".code-collapse")) return;
+                  var lines = pre.querySelectorAll(".line").length;
+                  if (!lines) lines = (pre.textContent || "").replace(/\n+$/, "").split("\n").length;
+                  if (lines < 10) return;
+                  var wrap = document.createElement("div");
+                  wrap.className = "code-collapse";
+                  pre.parentNode.insertBefore(wrap, pre);
+                  wrap.appendChild(pre);
+                  var btn = document.createElement("button");
+                  btn.type = "button";
+                  btn.className = "code-collapse-toggle";
+                  btn.textContent = "Show all code (" + lines + " lines)";
+                  btn.setAttribute("aria-expanded", "false");
+                  wrap.appendChild(btn);
+                  btn.addEventListener("click", function () {
+                    var open = wrap.classList.toggle("is-open");
+                    btn.textContent = open ? "Hide code" : "Show all code (" + lines + " lines)";
+                    btn.setAttribute("aria-expanded", open ? "true" : "false");
+                  });
+                });
+              } catch (e) {}
+            }
+            if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
+            else init();
+          })();
+        </script>
       </article>
   </Base>
 ) : (

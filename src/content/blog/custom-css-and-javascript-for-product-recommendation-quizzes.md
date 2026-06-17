@@ -1,5 +1,5 @@
 ---
-title: "Custom CSS and JavaScript for product recommendation quizzes"
+title: "Custom CSS and JavaScript for product quizzes"
 description: "Customise the RevenueHunt quiz with CSS and JavaScript: selectors, sample code, and the BFS vs Legacy API split that catches most developers off-guard."
 pubDate: 2024-09-12T06:17:01Z
 updatedDate: 2026-05-29T22:30:00Z
@@ -35,7 +35,7 @@ Two layers of customisation extend the RevenueHunt quiz beyond its built-in desi
   </ul>
 </div>
 
-![Animated demo showing a quiz styled with custom CSS to match a brand visual identity](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/featuredimageCSS1.gif)
+<img src="/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/featuredimageCSS1.gif" alt="Animated demo showing a quiz styled with custom CSS to match a brand visual identity" width="1080" height="1080" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 
 For the foundations of a high-converting quiz, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/). For the question types you can style, see [product quiz question types: the complete reference](https://revenuehunt.com/product-quiz-question-types/).
 
@@ -45,7 +45,7 @@ For the foundations of a high-converting quiz, see [how to build a successful pr
 - **User experience refinement.** Tighten layouts, adjust touch targets for mobile, or rework specific question slides to fit your category's expectations.
 - **Custom functionality.** Computed fields (BMI, dosage, fit), conditional content, third-party analytics events, and callback-driven integrations that don't ship with the Quiz Builder by default.
 
-![Quiz interface showing how custom CSS can reshape the design to match a brand identity](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2020-09-29-at-20.34.03-1024x594.webp)
+<img src="/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2020-09-29-at-20.34.03-1024x594.webp" alt="Quiz interface showing how custom CSS can reshape the design to match a brand identity" width="1024" height="594" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 
 **Jump to:**
 
@@ -62,7 +62,7 @@ Custom CSS lets you override any default styling on the quiz. The setup path is 
 2. Navigate to the [**Quiz Design**](https://docs.revenuehunt.com/reference/quiz-builder/#quiz-design) tab.
 3. Scroll to the **Custom CSS** section and click **Add** to open the CSS console.
 
-![Quiz Builder Quiz Design tab showing the Custom CSS section with the Add button](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2024-08-19-105145.webp)
+<img src="/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2024-08-19-105145.webp" alt="Quiz Builder Quiz Design tab showing the Custom CSS section with the Add button" width="1494" height="1036" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 
 ### Step 2: basic customisations
 
@@ -72,9 +72,9 @@ In the CSS editor, you can insert any custom styling rules to adjust the quiz ap
 
 To find the correct CSS selector for any quiz element, simply right-click the element on your browser and select **Inspect**. This will open the browser's Developer Tools, where you can view the HTML and locate the exact selector to target.
 
-![Browser DevTools showing how to inspect a quiz element to find its CSS selector](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2024-08-30-091646.webp)
+<img src="/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2024-08-30-091646.webp" alt="Browser DevTools showing how to inspect a quiz element to find its CSS selector" width="1526" height="866" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 
-![Browser DevTools elements panel highlighting the selector for a specific quiz element](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2024-08-30-091731.webp)
+<img src="/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2024-08-30-091731.webp" alt="Browser DevTools elements panel highlighting the selector for a specific quiz element" width="724" height="869" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 
 Here are some sample CSS codes you can use in your quiz:
 
@@ -204,11 +204,11 @@ Here are some examples of advanced CSS customizations you can apply to your quiz
 
 To enhance the appearance of your quiz, here are a few real creative customization ideas:
 
-![Creative CSS customisation example: quiz styled with a brand-specific colour palette and typography](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2021-04-14-at-04.14.16.webp)
+<img src="/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2021-04-14-at-04.14.16.webp" alt="Creative CSS customisation example: quiz styled with a brand-specific colour palette and typography" width="1343" height="744" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 
-![Creative CSS customisation example: quiz with a custom layout and visual treatment](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2020-10-20-at-11.41.36.webp)
+<img src="/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2020-10-20-at-11.41.36.webp" alt="Creative CSS customisation example: quiz with a custom layout and visual treatment" width="1678" height="973" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 
-![Creative CSS customisation example: results page styled to match a brand's full visual identity](/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2020-10-20-at-11.33.57.webp)
+<img src="/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2020-10-20-at-11.33.57.webp" alt="Creative CSS customisation example: results page styled to match a brand's full visual identity" width="1700" height="933" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 
 ## Adding custom features with JavaScript
 
@@ -263,8 +263,8 @@ For accelerated authoring, click **✨ Get help with custom JavaScript** to open
 
 The Built for Shopify version exposes two globals:
 
-- `quiz` — read-only context (answers, variables, progress, current result, recommended products).
-- `actions` — methods that mutate state (navigation, answer updates, cart operations).
+- `quiz`: read-only context (answers, variables, progress, current result, recommended products).
+- `actions`: methods that mutate state (navigation, answer updates, cart operations).
 
 ### Reading quiz state
 
@@ -468,7 +468,7 @@ On **Built for Shopify**: use the native Shopify Cart AJAX API (`fetch('/cart/ad
 
 ### How do I debug if my custom code isn't running?
 
-Three quick checks: (1) confirm the script is enabled via the ▷ / ❚❚ toggle in the editor; (2) confirm you published / saved the change (Save on BFS, Publish on others); (3) open browser DevTools Console — `prq is not defined` means you're using the wrong API for your platform; `quiz is not defined` means the same in the opposite direction. The third common cause is querying the DOM with `document.querySelector()` on Built for Shopify, where the quiz lives inside a shadow DOM and needs `window.quiz.querySelector()` instead.
+Three quick checks: (1) confirm the script is enabled via the ▷ / ❚❚ toggle in the editor; (2) confirm you published / saved the change (Save on BFS, Publish on others); (3) open browser DevTools Console, where `prq is not defined` means you're using the wrong API for your platform and `quiz is not defined` means the same in the opposite direction. The third common cause is querying the DOM with `document.querySelector()` on Built for Shopify, where the quiz lives inside a shadow DOM and needs `window.quiz.querySelector()` instead.
 
 <script type="application/ld+json">
 {
@@ -519,13 +519,40 @@ Three quick checks: (1) confirm the script is enabled via the ▷ / ❚❚ toggl
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to customise a RevenueHunt product quiz with CSS",
+  "description": "Style a RevenueHunt product recommendation quiz with custom CSS, from opening the editor to advanced selectors and animations.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Open the custom CSS editor",
+      "text": "In the Quiz Builder, go to the Quiz Design tab, scroll to the Custom CSS section, and click Add to open the CSS console.",
+      "url": "https://revenuehunt.com/custom-css-and-javascript-for-product-recommendation-quizzes/#styling-with-css"
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Add basic customisations",
+      "text": "Insert CSS rules to change fonts, colours, backgrounds, and buttons. Find any element's selector by right-clicking it and choosing Inspect in your browser's Developer Tools."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Apply advanced selectors and animations",
+      "text": "Scope rules to the whole quiz or a single question using the question ID (for example #question-AbC7Zde), and use pseudo-classes and animations for effects like converting picture choices to icons or hiding product variants."
+    }
+  ]
+}
+</script>
+
 ## Where this fits
 
 Custom CSS and JavaScript are the safety valve when the Quiz Builder's built-in design and logic panels don't cover an edge case. Most stores never need to write a line of custom code; the ones that do are usually agencies running multi-brand setups, developers integrating with a bespoke storefront, or teams chasing the last few percentage points of conversion through fine-grained behavioural tweaks.
 
-If you write something interesting and want to share it, or want help getting a specific customisation working, [reach out to our team](https://revenuehunt.com/contact/) — we love seeing how merchants extend the quiz, and we'll happily review code or suggest the cleanest pattern for what you're trying to do.
+If you write something interesting and want to share it, or want help getting a specific customisation working, [reach out to our team](https://revenuehunt.com/contact/). We love seeing how merchants extend the quiz, and we'll happily review code or suggest the cleanest pattern for what you're trying to do.
 
-For the foundations, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/). For the question types you can target with custom selectors, see [product quiz question types: the complete reference](https://revenuehunt.com/product-quiz-question-types/). For deeper docs:
+For the foundations, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/). For the question types you can target with custom selectors, see [product quiz question types: the complete reference](https://revenuehunt.com/product-quiz-question-types/). For the recommendation logic your custom code reads from, see [the six recommendation systems compared](/product-quiz-recommendation-systems/), and for the platform split behind the two JavaScript APIs, see [RevenueHunt is Built for Shopify: what's different vs Legacy](/revenuehunt-built-for-shopify/). For deeper docs:
 
 - [Customise quiz design](https://docs.revenuehunt.com/how-to-guides/customize-quiz-design/)
 - [Add JavaScript to the quiz](https://docs.revenuehunt.com/how-to-guides/add-javascript/)

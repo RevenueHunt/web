@@ -73,6 +73,27 @@ Avoid generic names like "Quiz" or "Product quiz." They signal nothing about the
 
 The best names follow a simple formula: **[Desired outcome] + [Specific category].** "Perfect foundation finder." "Hair type routine builder." "Protein supplement selector." Keep it short, specific, and benefit-forward.
 
+The same outcome-focused framing applies to the opening question, the other big lever on quiz start rate. Here are category-specific examples that consistently work, pairing a title with a natural first question:
+
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin:24px 0;">
+  <thead>
+    <tr>
+      <th style="background:#16161D;color:#fff;padding:12px 14px;text-align:left;font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;">Quiz type</th>
+      <th style="background:#16161D;color:#fff;padding:12px 14px;text-align:left;font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;">Title</th>
+      <th style="background:#16161D;color:#fff;padding:12px 14px;text-align:left;font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;">First question</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;">Fitness equipment</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;">Find the perfect workout gear for your fitness goals</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;">What's your primary fitness objective?</td></tr>
+    <tr><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;">Haircare</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;">Get your ideal haircare routine in minutes</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;">What's your main hair concern?</td></tr>
+    <tr><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;">Supplements</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;">Discover the best supplements for your health goals</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;">What's your primary health goal?</td></tr>
+    <tr><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;">Pet care</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;">Find the best products for your pet's needs</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;">What type of pet do you have?</td></tr>
+    <tr><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;">Makeup</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;">Find your perfect makeup match</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;">What's your go-to makeup look?</td></tr>
+    <tr><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;">Outdoor gear</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;">Gear up for your next adventure</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;">What's your favourite outdoor activity?</td></tr>
+    <tr><td style="padding:12px 14px;background:#fff;color:#334155;vertical-align:top;">Skincare</td><td style="padding:12px 14px;background:#fff;color:#334155;vertical-align:top;">Discover your perfect skincare routine</td><td style="padding:12px 14px;background:#fff;color:#334155;vertical-align:top;">What's your primary skincare goal?</td></tr>
+  </tbody>
+</table>
+
 * * *
 
 ## 4. Keep your quiz simple and linear
@@ -179,7 +200,7 @@ If there's one section of this guide that will have the most direct impact on yo
 
 The reason making email required outperforms optional is straightforward: when the email field is optional, customers who are on the fence about sharing their address simply skip it. You lose the most valuable leads: the ones who were interested enough to complete 9 questions but not yet committed enough to buy immediately. These are exactly the customers your Klaviyo follow-up sequence is designed to close.
 
-Think about the full funnel: the quiz builds trust and captures intent signals. The email field converts that intent into a marketing-qualified lead. The Klaviyo sync transforms that lead into a rich customer profile, tagged with every answer they gave: skin type, concerns, goals, preferences. That profile then triggers targeted automated flows: an "Acne solutions" flow for acne-prone respondents, an "Anti-aging routine" flow for others. Generic blast emails become a thing of the past. For the full mapping chain, see [how Klaviyo segmentation unlocks once zero-party data lands in profiles](https://revenuehunt.com/klaviyo-zero-party-data/).
+Think about the full funnel: the quiz builds trust and captures intent signals. The email field converts that intent into a marketing-qualified lead. The Klaviyo sync transforms that lead into a rich customer profile, tagged with every answer they gave: skin type, concerns, goals, preferences. That profile then triggers targeted automated flows: an "Acne solutions" flow for acne-prone respondents, an "Anti-aging routine" flow for others. Generic blast emails become a thing of the past. The same tagged answers also export as Meta, Google, and TikTok custom audiences, so the zero-party data sharpens your paid retargeting, not just your email. For the full mapping chain, see [how Klaviyo segmentation unlocks once zero-party data lands in profiles](https://revenuehunt.com/klaviyo-zero-party-data/).
 
 To set up the Klaviyo connection, navigate to the Integrations section of your RevenueHunt dashboard and follow the OAuth flow. Once connected, configure your question mappings to sync as Klaviyo profile properties or custom properties, then build your flows using those properties as filters. For a step-by-step walkthrough, see our [Klaviyo integration guide](https://docs.revenuehunt.com/how-to-guides/send-leads-to-klaviyo/).
 

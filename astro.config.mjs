@@ -260,7 +260,9 @@ export default defineConfig({
     "/why-product-recommendation-quiz-app-maintains-a-50-review-score-in-woocommerce-find-out-here/":
       "/woocommerce-plugin-reviews-revenuehunt/",
     "/quick-tips-before-you-build-your-first-product-recommendation-quiz-from-revenuehunt-team/":
-      "/product-quiz-quick-tips/",
+      "/how-to-build-a-successful-ecommerce-quiz/",
+    "/product-quiz-quick-tips/":
+      "/how-to-build-a-successful-ecommerce-quiz/",
     "/hubspot-shop-quiz-a-proven-strategy-to-increase-conversions/":
       "/hubspot-quiz-integration/",
     "/how-to-recommend-products-on-shopify-with-shop-quiz-a-step-by-step-guide-for-merchants/":

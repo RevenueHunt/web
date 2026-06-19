@@ -45,7 +45,7 @@ function fmt(iso: string) {
             target="_blank"
             rel="external noopener nofollow"
             class="font-semibold text-slate-900 underline underline-offset-4 hover:text-slate-700"
-          >{data.reviewCount} {noun}</a>{connector}{" "}{data.sourceLabel}{fromSuffix}
+          >{data.reviewCountDisplay ?? data.reviewCount} {noun}</a>{connector}{" "}{data.sourceLabel}{fromSuffix}
       </div>
     </div>
 

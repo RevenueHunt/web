@@ -3,10 +3,12 @@
  *  Keep ratingValue/reviewCount in sync with the live marketplace listings -
  *  the structured data must reflect genuine, on-page reviews (Google policy).
  *
- *  Last verified: 2026-06-08
- *  - Shopify App Store:  4.9 / 421  (apps.shopify.com)
- *  - WordPress.org:      5.0 / 100  (wordpress.org plugin reviews)
+ *  Last verified: 2026-06-19
+ *  - Shopify App Store:  4.9 / 426  (apps.shopify.com)
+ *  - WordPress.org:      5.0 / 101  (wordpress.org plugin reviews)
+ *  - WooCommerce.com:    4.64 / 25  (woocommerce.com marketplace listing)
  *  - BigCommerce:        5.0 / 6    (bigcommerce.com app listing)
+ *  Combined: 558 across all four listings → displayed as "550+".
  */
 
 export interface Review {
@@ -22,7 +24,10 @@ export interface PlatformReviews {
   /** Display name of the marketplace. */
   platform: string;
   ratingValue: string;
+  /** Exact integer count — used for JSON-LD reviewCount (must be numeric). */
   reviewCount: string;
+  /** Optional display override for the visible "from X reviews" text (e.g. "550+"). */
+  reviewCountDisplay?: string;
   /** Where the reviews live, e.g. "Shopify App Store". */
   sourceLabel: string;
   /** Link to the full review list on the marketplace. */
@@ -34,7 +39,7 @@ export interface PlatformReviews {
 const SHOPIFY: PlatformReviews = {
   platform: "Shopify",
   ratingValue: "4.9",
-  reviewCount: "421",
+  reviewCount: "426",
   sourceLabel: "Shopify App Store",
   sourceUrl:
     "https://apps.shopify.com/product-recommendation-quiz-revenuehunt/reviews",
@@ -116,7 +121,8 @@ export const PLATFORM_REVIEWS: Record<string, PlatformReviews> = {
 export const COMBINED_REVIEWS: PlatformReviews = {
   platform: "all platforms",
   ratingValue: "4.9",
-  reviewCount: "523",
+  reviewCount: "558",
+  reviewCountDisplay: "550+",
   sourceLabel: "Shopify, WooCommerce & BigCommerce",
   sourceUrl: "/testimonials/",
   reviews: [SHOPIFY.reviews[0]!, WOOCOMMERCE.reviews[0]!, SHOPIFY.reviews[2]!],

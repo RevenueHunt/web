@@ -11,8 +11,8 @@ export function organization() {
   };
 }
 
-// aggregateRating is the sum across every store we're listed on (Shopify 423 @4.9,
-// WordPress.org 100 @5.0, WooCommerce.com 25 @4.64, BigCommerce 6 @5.0) → 554
+// aggregateRating is the sum across every store we're listed on (Shopify 426 @4.9,
+// WordPress.org 101 @5.0, WooCommerce.com 25 @4.64, BigCommerce 6 @5.0) → 558
 // ratings, review-weighted average 4.9. Refresh when the listings move.
 export function softwareApplication(
   reviews?: { author: string; quote: string }[],
@@ -34,7 +34,7 @@ export function softwareApplication(
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.9",
-      ratingCount: "554",
+      ratingCount: "558",
     },
   };
   if (reviews?.length) {

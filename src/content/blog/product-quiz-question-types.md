@@ -1,8 +1,8 @@
 ---
-title: "Product quiz question types: the complete reference"
+title: "Product quiz question types: 19 explained"
 description: "All 19 question types in the RevenueHunt Quiz Builder, grouped by purpose: messages, choices, scales, text, numeric, personal info, legal and file upload."
 pubDate: 2024-08-08T06:36:50Z
-updatedDate: 2026-05-29T20:00:00Z
+updatedDate: 2026-06-19T13:00:00Z
 tags:
   - "ecommerce"
   - "product recommendation quiz"
@@ -20,27 +20,41 @@ featuredImage: "/img/blog/product-quiz-question-types/blogtile_quiz-questions.we
 draft: false
 ---
 
-The RevenueHunt Quiz Builder ships with **19 question types** organised into seven functional groups: message slides, choice questions, scale and rating questions, open text inputs, numeric and date inputs, personal info collection, legal/GDPR, and file upload. Together they're how a [shoppable quiz](/glossary/shoppable-quiz/) collects the right signal for the recommendation. This reference walks through each one with what it does, when to use it, and an example. All 19 types are available with identical capability on every platform (Built for Shopify, Shopify Legacy, WooCommerce, Magento, BigCommerce and Standalone).
+The RevenueHunt Quiz Builder ships with **19 question types** organised into seven functional groups: message slides, choice questions, scale and rating questions, open text inputs, numeric and date inputs, personal info collection, legal/GDPR, and file upload. Together they're how a [shoppable quiz](/glossary/shoppable-quiz/) collects the right signal for the recommendation. This reference walks through each one with what it does, when to use it, and an example. All 19 types are available with identical capability on every platform ([Built for Shopify](/revenuehunt-built-for-shopify/), Shopify Legacy, WooCommerce, Magento, BigCommerce and Standalone).
 
 <div class="aspect-video overflow-hidden rounded-xl bg-slate-900 not-prose my-6"><button type="button" class="yt-facade group relative block h-full w-full cursor-pointer overflow-hidden" data-yt-id="pizAes15vWg" aria-label="Play video"><picture><source srcset="https://i.ytimg.com/vi_webp/pizAes15vWg/maxresdefault.webp" type="image/webp" /><img src="https://i.ytimg.com/vi/pizAes15vWg/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async" class="h-full w-full object-cover" /></picture><span class="absolute inset-0 flex items-center justify-center bg-black/10 transition group-hover:bg-black/20"><span class="flex h-20 w-20 items-center justify-center rounded-full bg-black/70 shadow-lg transition group-hover:scale-105 group-hover:bg-[#FF0000]"><svg class="ml-0.5 h-9 w-9 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg></span></span></button></div>
 
 <div style="margin:32px 0;padding:24px 28px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 14px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">What you'll learn</p>
   <ul style="list-style:none;padding:0;margin:0;">
-    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>All 19 question types in the Quiz Builder, with a use case and example for each.</span></li>
-    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>Which question types are best for which goal: routing logic, data capture, segmentation, social proof, compliance.</span></li>
-    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>When to combine question types (joined slides for personal info, picture choice for visual decisions, scales for quantifiable preferences).</span></li>
-    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>Best practices for clear, visual, personalised question design that compounds completion rate and downstream segmentation.</span></li>
+    <li style="display:flex;gap:14px;padding:8px 0;font-size:15px;color:#0f172a;line-height:1.55;border-top:1px solid #e2e8f0;"><span style="flex-shrink:0;font-variant-numeric:tabular-nums;font-weight:700;color:#16161D;min-width:24px;">01</span><span>All 19 question types in the Quiz Builder, with a use case and example for each.</span></li>
+    <li style="display:flex;gap:14px;padding:8px 0;font-size:15px;color:#0f172a;line-height:1.55;border-top:1px solid #e2e8f0;"><span style="flex-shrink:0;font-variant-numeric:tabular-nums;font-weight:700;color:#16161D;min-width:24px;">02</span><span>Which question types are best for which goal: routing logic, data capture, segmentation, social proof, compliance.</span></li>
+    <li style="display:flex;gap:14px;padding:8px 0;font-size:15px;color:#0f172a;line-height:1.55;border-top:1px solid #e2e8f0;"><span style="flex-shrink:0;font-variant-numeric:tabular-nums;font-weight:700;color:#16161D;min-width:24px;">03</span><span>When to combine question types (joined slides for personal info, picture choice for visual decisions, scales for quantifiable preferences).</span></li>
+    <li style="display:flex;gap:14px;padding:8px 0;font-size:15px;color:#0f172a;line-height:1.55;border-top:1px solid #e2e8f0;"><span style="flex-shrink:0;font-variant-numeric:tabular-nums;font-weight:700;color:#16161D;min-width:24px;">04</span><span>Best practices for clear, visual, personalised question design that compounds completion rate and downstream segmentation.</span></li>
   </ul>
 </div>
 
 For the foundations that produce a high-converting quiz, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/). For the platform data on optimal question count (6-12, with 9-12 the sweet spot at 11.0% conversion), see the same guide.
 
+**Table of contents:**
+
+- [Message slides (3 types)](#message-slides-3-types)
+- [Choice questions (4 types)](#choice-questions-4-types)
+- [Scale and rating questions (3 types)](#scale-and-rating-questions-3-types)
+- [Open text questions (2 types)](#open-text-questions-2-types)
+- [Numeric and date inputs (2 types)](#numeric-and-date-inputs-2-types)
+- [Personal information collection (3 types)](#personal-information-collection-3-types)
+- [Legal and compliance (1 type)](#legal-and-compliance-1-type)
+- [File upload (1 type)](#file-upload-1-type)
+- [Best practices for designing questions](#best-practices-for-designing-questions)
+- [Frequently asked questions](#frequently-asked-questions)
+- [Where this fits](#where-this-fits)
+
 ## Message slides (3 types)
 
 Message slides don't ask a question; they set context. Use them at the start, in the middle, and at the end of the quiz to frame the experience. Every [product recommendation quiz](/) benefits from at least one message slide to orient the customer before the questions begin.
 
-### 1. Welcome Message
+### Welcome Message
 
 The first slide. Explains the quiz's purpose, sets a positive tone, and encourages the customer to start. The "Start Quiz" button is built in.
 
@@ -53,7 +67,7 @@ The first slide. Explains the quiz's purpose, sets a positive tone, and encourag
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;"><a href="https://docs.revenuehunt.com/how-to-guides/customize-quiz-design/#adding-images-and-videos" style="color:#16161D;text-decoration:underline;">Upload an introduction video</a> to the welcome slide to grab attention and reduce drop-off. See <a href="https://revenuehunt.com/video-quizzes/" style="color:#16161D;text-decoration:underline;">video quizzes: a revenue-led alternative to video tools</a> for the per-slide video playbook.</p>
 </div>
 
-### 2. Statement
+### Statement
 
 A text-and-button slide that delivers context or instructions mid-quiz. Use it between question groups as a soft transition, or before a personal-info ask to explain why you're asking.
 
@@ -61,7 +75,7 @@ A text-and-button slide that delivers context or instructions mid-quiz. Use it b
 
 **Example:** "Great, now let's get into some details about your skin."
 
-### 3. Thank You Message
+### Thank You Message
 
 The last slide before the results page. Closes the quiz on a positive note, optionally lets the customer revise answers, and routes them to the recommendation.
 
@@ -73,7 +87,7 @@ The last slide before the results page. Closes the quiz on a positive note, opti
 
 The workhorse questions of the quiz. Use these for routing logic and tag-based segmentation.
 
-### 4. Multiple Choice
+### Multiple Choice
 
 Several clickable options; the customer picks one or many. Configurable as single-select or multi-select in question settings. The most-used question type across the platform.
 
@@ -86,7 +100,7 @@ Several clickable options; the customer picks one or many. Configurable as singl
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Toggle multi-select on any choice slide via <a href="https://docs.revenuehunt.com/reference/quiz-builder/#question-settings" style="color:#16161D;text-decoration:underline;">question settings</a>. 3-6 answer choices is the sweet spot per platform data.</p>
 </div>
 
-### 5. Picture Choice
+### Picture Choice
 
 Multiple choice rendered with images as the clickable answer tiles. Best for decisions that are easier to make visually than to describe in words: style preference, foundation undertone, hair texture, product packaging.
 
@@ -94,7 +108,7 @@ Multiple choice rendered with images as the clickable answer tiles. Best for dec
 
 **Example:** "Which of these styles appeals to you the most?" with 4 styled-room photos.
 
-### 6. Dropdown
+### Dropdown
 
 Multiple choice rendered as a compact dropdown menu. Best when you have many options (10+) that don't fit comfortably as clickable tiles: country list, specific health concerns, skin tones, ingredient sensitivities.
 
@@ -102,7 +116,7 @@ Multiple choice rendered as a compact dropdown menu. Best when you have many opt
 
 **Example:** "What is your primary skin concern?" with options Acne / Aging / Dryness / Sensitivity / Brightness / etc.
 
-### 7. Yes/No
+### Yes/No
 
 Binary choice with two clickable options. Best for qualifying questions ("Do you use sunscreen daily?") and for marketing-consent questions where the choice should feel low-stakes.
 
@@ -114,19 +128,19 @@ Binary choice with two clickable options. Best for qualifying questions ("Do you
 
 Use these when the customer's answer is on a continuum rather than a discrete option. Particularly useful for capturing intensity preferences (mild vs strong) or satisfaction levels.
 
-### 8. Slider bar
+### Slider bar
 
 A horizontal slider that lets the customer pick a value between two extremes. Good for "How much…" type questions where any integer in the range is a valid answer.
 
 **Example:** "How important is it for the products to be unscented?" on a 1-to-10 slider.
 
-### 9. Buttons scale
+### Buttons scale
 
 A row of value buttons (typically 1-5 or 1-10) that the customer clicks to indicate intensity or frequency. Faster to answer than a slider on mobile because the tap target is bigger.
 
 **Example:** "How often do you wear makeup?" on a 1-5 scale (Never to Daily).
 
-### 10. Rating scale
+### Rating scale
 
 A star-rating scale (typically 1-5 stars) for satisfaction or quality questions. Best for asking customers to rate their current experience (with a product, with their skin, with their routine) before recommending an improvement.
 
@@ -136,7 +150,7 @@ A star-rating scale (typically 1-5 stars) for satisfaction or quality questions.
 
 Use these sparingly. Open text is harder to segment on than structured choices, but it's the right tool when you need the customer's specific phrasing (a goal, a concern, a product they tried).
 
-### 11. Short-text
+### Short-text
 
 A single-line text input for brief answers (a goal, a product name, a city).
 
@@ -144,7 +158,7 @@ A single-line text input for brief answers (a goal, a product name, a city).
 
 **Example:** "What is your main skincare goal?"
 
-### 12. Multi-line Text
+### Multi-line Text
 
 A multi-line text area for longer answers (a routine description, detailed feedback, a custom requirement).
 
@@ -154,7 +168,7 @@ A multi-line text area for longer answers (a routine description, detailed feedb
 
 ## Numeric and date inputs (2 types)
 
-### 13. Number
+### Number
 
 A numeric input for quantifiable answers (count, age, frequency, income tier).
 
@@ -162,7 +176,7 @@ A numeric input for quantifiable answers (count, age, frequency, income tier).
 
 **Example:** "How many skincare products do you use daily?"
 
-### 14. Date
+### Date
 
 A date picker for time-specific answers (birthday, subscription start date, event date, last refresh of a routine).
 
@@ -180,7 +194,7 @@ These are the conversion-critical fields. Email capture in particular is the sin
   <img src="/img/blog/product-quiz-question-types/joinedslides.webp" alt="Quiz Builder showing Name, Email and Phone questions joined into a single slide" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
 </div>
 
-### 15. Name
+### Name
 
 Captures the customer's first name (or full name) for personalisation in subsequent slides and downstream email flows.
 
@@ -188,7 +202,7 @@ Captures the customer's first name (or full name) for personalisation in subsequ
 
 **Example:** "What is your name?"
 
-### 16. Email Address
+### Email Address
 
 Captures the customer's email. Almost always the most important field on the quiz. Make it required unless you have a specific reason not to. See [smart ways to ask for marketing consent in a product quiz](https://revenuehunt.com/product-quiz-marketing-consent/) for the consent-design playbook.
 
@@ -196,7 +210,7 @@ Captures the customer's email. Almost always the most important field on the qui
 
 **Example:** "What is your email address?" or "Get the most out of our recommendations. Sign up to receive expert advice and your personalised results."
 
-### 17. Phone Number
+### Phone Number
 
 Captures the customer's phone number for SMS marketing or customer-support callbacks. Only request this if you have an SMS flow set up that justifies the higher friction; mandatory phone fields measurably drop completion rate on most stores.
 
@@ -206,7 +220,7 @@ Captures the customer's phone number for SMS marketing or customer-support callb
 
 ## Legal and compliance (1 type)
 
-### 18. Legal Terms/GDPR
+### Legal Terms/GDPR
 
 A slide presenting legal terms or GDPR-related information with options to accept or decline. Use it to capture explicit marketing-data-processing consent for EU customers. For the full consent-design playbook including placement (before vs after the quiz), see [smart ways to ask for marketing consent in a product quiz](https://revenuehunt.com/product-quiz-marketing-consent/).
 
@@ -221,7 +235,7 @@ A slide presenting legal terms or GDPR-related information with options to accep
 
 ## File upload (1 type)
 
-### 19. File Upload
+### File Upload
 
 Lets the customer upload a file as their response. Useful for before/after photos (skincare consultations), document submission (custom orders, professional service intake), or visual context (room photos for furniture, hair photos for haircare).
 
@@ -319,10 +333,41 @@ Yes, for personal information collection. The Quiz Builder's "join questions" fe
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "RevenueHunt Quiz Builder question types",
+  "description": "All 19 question types available in the RevenueHunt Quiz Builder, grouped into seven functional categories.",
+  "numberOfItems": 19,
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Welcome Message", "description": "Opening message slide with a Start Quiz button; sets context and tone."},
+    {"@type": "ListItem", "position": 2, "name": "Statement", "description": "Mid-quiz text-and-button slide that delivers context or instructions between question groups."},
+    {"@type": "ListItem", "position": 3, "name": "Thank You Message", "description": "Closing message slide before the results page; routes the customer to the recommendation."},
+    {"@type": "ListItem", "position": 4, "name": "Multiple Choice", "description": "Single- or multi-select clickable answer options; the workhorse question type for routing logic and tagging."},
+    {"@type": "ListItem", "position": 5, "name": "Picture Choice", "description": "Multiple choice rendered with images as the clickable tiles; best for visual decisions."},
+    {"@type": "ListItem", "position": 6, "name": "Dropdown", "description": "Multiple choice rendered as a compact dropdown menu; best when there are many options (10+)."},
+    {"@type": "ListItem", "position": 7, "name": "Yes/No", "description": "Binary choice with two clickable options; best for qualifying questions and low-stakes consent."},
+    {"@type": "ListItem", "position": 8, "name": "Slider bar", "description": "Horizontal slider for picking a value between two extremes; good for any-integer-in-range answers."},
+    {"@type": "ListItem", "position": 9, "name": "Buttons scale", "description": "Row of value buttons (1-5 or 1-10) for intensity or frequency; faster on mobile than a slider."},
+    {"@type": "ListItem", "position": 10, "name": "Rating scale", "description": "Star-rating scale (typically 1-5 stars) for satisfaction or quality questions."},
+    {"@type": "ListItem", "position": 11, "name": "Short-text", "description": "Single-line text input for brief open-ended answers (a goal, a product name, a city)."},
+    {"@type": "ListItem", "position": 12, "name": "Multi-line Text", "description": "Multi-line text area for longer open-ended answers (a routine description, custom requirement)."},
+    {"@type": "ListItem", "position": 13, "name": "Number", "description": "Numeric input for quantifiable answers (count, age, frequency, income tier)."},
+    {"@type": "ListItem", "position": 14, "name": "Date", "description": "Date picker for time-specific answers (birthday, subscription start, event date)."},
+    {"@type": "ListItem", "position": 15, "name": "Name", "description": "Captures first or full name for personalisation in later slides and email flows."},
+    {"@type": "ListItem", "position": 16, "name": "Email Address", "description": "Captures the email; the single highest-leverage capture field on the quiz."},
+    {"@type": "ListItem", "position": 17, "name": "Phone Number", "description": "Captures phone number for SMS marketing or callbacks; make optional unless SMS is configured."},
+    {"@type": "ListItem", "position": 18, "name": "Legal Terms/GDPR", "description": "Slide presenting legal terms with Accept/Decline buttons for explicit consent capture."},
+    {"@type": "ListItem", "position": 19, "name": "File Upload", "description": "Lets the customer upload a file as a response (photos for consultations, documents, visual context)."}
+  ]
+}
+</script>
+
 ## Where this fits
 
 Question type selection is upstream of every downstream quiz mechanic. The right question types make tag-based segmentation precise, the recommendations confident, and the email follow-up personalised. The wrong question types (or too many of any one type) compound friction at every step.
 
-For the foundations of a high-converting quiz, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/). For the mistakes that erode quiz conversion, see [quiz creation mistakes that hurt your ecommerce sales](https://revenuehunt.com/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/). For the customer-tag layer that makes question answers into Klaviyo segments, see [how to use customer tags in product quizzes](https://revenuehunt.com/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/). For the discount, video and consent layers, see [product quiz discounts](https://revenuehunt.com/product-quiz-discounts/), [video quizzes](https://revenuehunt.com/video-quizzes/) and [product quiz marketing consent](https://revenuehunt.com/product-quiz-marketing-consent/).
+For the foundations of a high-converting quiz, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/). For the mistakes that erode quiz conversion, see [quiz creation mistakes that hurt your ecommerce sales](https://revenuehunt.com/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/). For the customer-tag layer that makes question answers into Klaviyo segments, see [how to use customer tags in product quizzes](https://revenuehunt.com/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/). For the discount, video and consent layers, see [product quiz discounts](https://revenuehunt.com/product-quiz-discounts/), [video quizzes](https://revenuehunt.com/video-quizzes/) and [product quiz marketing consent](https://revenuehunt.com/product-quiz-marketing-consent/). For the underlying recommendation engine choices that match question types to outcomes, see [voting, scoring or fixed: 6 product quiz recommendation systems compared](https://revenuehunt.com/product-quiz-recommendation-systems/). For the specifics of scoring and personality-type quizzes, see [scoring and personality-type quiz setup on RevenueHunt](https://revenuehunt.com/scoring-quiz-setup/).
 
 [Install RevenueHunt: Recommender Quiz for Shopify](https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=question_types) and start building your first quiz today. Free plan available.

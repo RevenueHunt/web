@@ -1,8 +1,8 @@
 ---
-title: "How to adapt product quizzes for different markets and languages"
-description: "Localise your product quiz for multiple markets, languages and currencies. Built for Shopify gets Shopify Markets natively; other platforms use JavaScript routing."
+title: "Adapt product quizzes for markets and languages"
+description: "Localise a product quiz across markets, languages and currencies. Built for Shopify uses Shopify Markets natively; other platforms need JS routing."
 pubDate: 2024-08-29T06:26:08Z
-updatedDate: 2026-05-29T21:30:00Z
+updatedDate: 2026-06-19T10:00:00Z
 tags:
   - "ecommerce"
   - "product recommendation quiz"
@@ -22,47 +22,46 @@ featuredImage: "/img/blog/how-to-adapt-product-quizzes-for-different-markets-and
 draft: false
 ---
 
-Adapting a product recommendation quiz to a multi-market store involves three layers: **cultural content** (questions, copy, imagery), **language and currency** (questions translated, prices in the local currency), and **technical routing** (showing the right quiz version to each visitor). The setup is dramatically simpler on **Built for Shopify**, which integrates natively with Shopify Markets to detect the visitor's market and serve the right quiz, language and currency automatically. On Shopify Legacy, WooCommerce, Magento, BigCommerce and Standalone, you build the same outcome via JavaScript routing and duplicate-quiz workarounds.
+Adapting a product recommendation quiz to a multi-market store involves three layers: **cultural content** (questions, copy, imagery), **language and currency** (questions translated, prices in the local currency), and **technical routing** (showing the right quiz version to each visitor). The setup is dramatically simpler on **[Built for Shopify](/revenuehunt-built-for-shopify/)**, which integrates natively with Shopify Markets to detect the visitor's market and serve the right quiz, language and currency automatically. On Shopify Legacy, WooCommerce, Magento, BigCommerce and Standalone, you build the same outcome via JavaScript routing and duplicate-quiz workarounds.
 
 ![Diagram showing a product quiz adapting questions, language and currency to different markets across regions](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Quizzes-for-markets.webp)
 
 <div style="margin:32px 0;padding:24px 28px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 14px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">What you'll learn</p>
   <ul style="list-style:none;padding:0;margin:0;">
-    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>Cultural and content adaptation: what changes per market beyond translation (visuals, imagery, regulatory disclosures).</span></li>
-    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>Built for Shopify path: native Shopify Markets integration handles language, currency and market detection automatically.</span></li>
-    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>Other platforms (Legacy / WooCommerce / Magento / BigCommerce / Standalone): three JavaScript-based workarounds for multi-language and multi-currency routing.</span></li>
-    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>Regulatory and compliance specifics (GDPR consent, German PAngV per-100ml pricing, Canadian CASL).</span></li>
+    <li style="display:flex;gap:14px;padding:8px 0;font-size:15px;color:#0f172a;line-height:1.55;border-top:1px solid #e2e8f0;"><span style="flex-shrink:0;font-variant-numeric:tabular-nums;font-weight:700;color:#16161D;min-width:24px;">01</span><span>Cultural and content adaptation: what changes per market beyond translation (visuals, imagery, regulatory disclosures).</span></li>
+    <li style="display:flex;gap:14px;padding:8px 0;font-size:15px;color:#0f172a;line-height:1.55;border-top:1px solid #e2e8f0;"><span style="flex-shrink:0;font-variant-numeric:tabular-nums;font-weight:700;color:#16161D;min-width:24px;">02</span><span>Built for Shopify path: native Shopify Markets integration handles language, currency and market detection automatically.</span></li>
+    <li style="display:flex;gap:14px;padding:8px 0;font-size:15px;color:#0f172a;line-height:1.55;border-top:1px solid #e2e8f0;"><span style="flex-shrink:0;font-variant-numeric:tabular-nums;font-weight:700;color:#16161D;min-width:24px;">03</span><span>Other platforms (Legacy, WooCommerce, Magento, BigCommerce, Standalone): three JavaScript-based workarounds for multi-language and multi-currency routing.</span></li>
+    <li style="display:flex;gap:14px;padding:8px 0;font-size:15px;color:#0f172a;line-height:1.55;border-top:1px solid #e2e8f0;"><span style="flex-shrink:0;font-variant-numeric:tabular-nums;font-weight:700;color:#16161D;min-width:24px;">04</span><span>Regulatory and compliance specifics (GDPR consent, German PAngV per-100ml pricing, Canadian CASL).</span></li>
   </ul>
 </div>
 
-Navigate to:
+**Table of contents:**
 
 - [Content and design](#content-and-design)
-- [On Built for Shopify](#on-built-for-shopify-native-shopify-markets-integration)
-- [On other platforms](#on-shopify-legacy-woocommerce-magento-bigcommerce-and-standalone)
+- [Technical setup, by platform](#technical-setup-by-platform)
+- [Built for Shopify: native Shopify Markets integration](#on-built-for-shopify-native-shopify-markets-integration)
+- [Shopify Legacy, WooCommerce, Magento, BigCommerce and Standalone](#on-shopify-legacy-woocommerce-magento-bigcommerce-and-standalone)
+- [Frequently asked questions](#frequently-asked-questions)
+- [Where this fits](#where-this-fits)
 
 ## Content and design
 
-### ✦ Understanding Cultural Nuances
+### Understanding cultural nuances
 
-Localisation begins with understanding the cultural context of your target market. **What resonates with customers in one country may not work in another**. For instance, color symbolism can vary widely - red might signify good fortune in China, while it can symbolize danger in Western cultures. It's essential to research and adapt your quiz design and content accordingly.
+Localisation begins with understanding the cultural context of your target market. **What resonates with customers in one country may not work in another**. For instance, color symbolism can vary widely; red might signify good fortune in China, while it can symbolize danger in Western cultures. It's essential to research and adapt your quiz design and content accordingly.
 
 Emerging markets present unique opportunities but also come with distinct challenges. When entering these markets, it's crucial to **take a culturally sensitive approach** and be patient with the process of gaining consumer trust.
 
 As you adapt your quizzes to different cultural contexts, it's also important to ensure the content remains appropriate for diverse audiences. Review every translated question and answer choice with a native speaker (not just a translation tool) before publishing.
 
-Key Points:
+**Key points:**
 
-✓ **Start with a basic version of your quiz** and gradually introduce more localised elements as you learn more about the market.
-
-✓ Building a presence in an emerging market takes time. **Be prepared for a long-term commitment** to fully capitalize on the potential.
-
-✓ Tailor quiz questions and outcomes to **reflect local customs and values**. For example, avoid questions that may be considered intrusive or inappropriate in certain cultures.
-
-✓ Recognise that **preferences for certain products can differ** by region. Customise your recommendations based on local trends and consumer behaviour.
-
-✓ **Adapt visuals**, such as images and color schemes, to reflect local tastes.
+- **Start with a basic version of your quiz** and gradually introduce more localised elements as you learn more about the market.
+- Building a presence in an emerging market takes time. **Be prepared for a long-term commitment** to fully capitalize on the potential.
+- Tailor quiz questions and outcomes to **reflect local customs and values**. For example, avoid questions that may be considered intrusive or inappropriate in certain cultures.
+- Recognise that **preferences for certain products can differ** by region. Customise your recommendations based on local trends and consumer behaviour.
+- **Adapt visuals**, such as images and color schemes, to reflect local tastes.
 
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
@@ -75,17 +74,15 @@ Key Points:
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">All the quizzes created with <a href="https://revenuehunt.com/product-recommendation-quiz/" style="color:#16161D;text-decoration:underline;">RevenueHunt: Recommender Quiz for Shopify</a> can be changed easily any time and the app keeps a <a href="https://docs.revenuehunt.com/how-to-guides/restore-quiz-progress/#accessing-version-history" style="color:#16161D;text-decoration:underline;">version history</a> of every published change. This way you can always roll-back to the most successful version of your quiz easily.</p>
 </div>
 
-### ✦ Language Translation Best Practices
+### Language translation best practices
 
 Effective localisation requires more than a direct translation of text. It's crucial to maintain the integrity of your brand's voice while ensuring the language feels natural to native speakers.
 
-Key Points:
+**Key points:**
 
-✓ Invest in **professional translation** services rather than relying solely on machine translation. This helps to avoid awkward phrasing and errors that can detract from the user experience.
-
-✓ **Be mindful of idiomatic expressions** that may not translate well. Replace or rephrase them to convey the intended meaning in the local language.
-
-✓ Ensure that the **tone of the quiz aligns with your brand's voice**, whether it's formal, casual, or playful, across all languages.
+- Invest in **professional translation** services rather than relying solely on machine translation. This helps to avoid awkward phrasing and errors that can detract from the user experience.
+- **Be mindful of idiomatic expressions** that may not translate well. Replace or rephrase them to convey the intended meaning in the local language.
+- Ensure that the **tone of the quiz aligns with your brand's voice**, whether it's formal, casual, or playful, across all languages.
 
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
@@ -94,26 +91,38 @@ Key Points:
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Note that questions and choices need manual translation, which allows for full flexibility when creating your localised quiz.</p>
 </div>
 
-### ✦ Legal and Regulatory Compliance
+### Legal and regulatory compliance
 
 Each market has its own set of regulations that you must adhere to, especially regarding data privacy and advertising standards. For example, in Germany, it's required to show the "grundpreis" or \`per 100ml\` price for cosmetic products.
 
-**Key Points:**
+**Key points:**
 
-✓ Comply with local **data protection laws**, such as GDPR in Europe, which dictate how you collect and use customer data.
-
-✓ Be aware of **regional advertising standards** and ensure that your quiz content does not violate any local laws or guidelines.
+- Comply with local **data protection laws**, such as GDPR in Europe, which dictate how you collect and use customer data.
+- Be aware of **regional advertising standards** and ensure that your quiz content does not violate any local laws or guidelines.
 
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">To show the "grundpreis" or \<code style="background:#f1f5f9;padding:1px 6px;border-radius:4px;font-size:0.92em;">per 100ml\</code> price for cosmetic products <a href="https://revenuehunt.com/product-recommendation-quiz/" style="color:#16161D;text-decoration:underline;">RevenueHunt: Recommender Quiz for Shopify</a> allows you to show these values by automatically <a href="https://docs.revenuehunt.com/how-to-guides/add-product-metafields/" style="color:#16161D;text-decoration:underline;">syncing the metafields/attributes of products</a> from your store.</p>
   <img src="/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-091730.webp" alt="Product metafields configuration in the Quiz Builder for displaying German PAngV per-100ml unit prices" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
-  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;"><strong>💡Tip:</strong> <a href="https://revenuehunt.com/product-quiz-marketing-consent/" style="color:#16161D;text-decoration:underline;">This article</a> explains in depth all the different ways you can ask for marketing and data processing consent in your RevenueHunt: Recommender Quiz for Shopify.</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;"><strong>Tip:</strong> <a href="https://revenuehunt.com/product-quiz-marketing-consent/" style="color:#16161D;text-decoration:underline;">This article</a> explains in depth all the different ways you can ask for marketing and data processing consent in your RevenueHunt: Recommender Quiz for Shopify.</p>
 </div>
 
 ## Technical setup, by platform
 
 The technical setup for routing customers to the right quiz, language and currency depends heavily on which version of the RevenueHunt app you're running. Built for Shopify integrates natively with Shopify Markets; the legacy and multi-platform versions need JavaScript workarounds.
+
+### Platform capability matrix
+
+| Capability | Built for Shopify | Shopify Legacy | WooCommerce | Magento | BigCommerce | Standalone |
+|---|---|---|---|---|---|---|
+| Native Shopify Markets detection | Yes | No | No | No | No | No |
+| Auto currency by market | Yes | Manual | Manual | Manual | Manual | Manual |
+| Auto language by market | Yes | JS routing | JS routing | JS routing | JS routing | JS routing |
+| Quiz Copilot translation | Yes | No | No | No | No | No |
+| Product translations via Storefront API | Yes | No | No | No | No | No |
+| EEA compare-at-price compliance | Inherits Shopify Markets | Manual | Manual | Manual | Manual | Manual |
+| Setup time (typical) | 30–60 min | 2–4 h | 2–4 h | 2–4 h | 2–4 h | 2–4 h |
+| Requires JS workarounds | No | Yes | Yes | Yes | Yes | Yes |
 
 ## On Built for Shopify: native Shopify Markets integration
 
@@ -146,7 +155,7 @@ Note for EEA markets: Shopify Markets may hide compare-at prices in certain regi
 
 These versions don't have native market detection. You build the same outcome via a duplicate-quiz-per-language pattern plus JavaScript or subdomain routing.
 
-> **📝 Important limitations on non-BFS platforms:**
+> **Important limitations on Shopify Legacy and non-Shopify platforms:**
 >
 > - The quiz can only sync **base products** from your store (main language and main currency).
 > - Translation plugins like Weglot or Langify don't assign unique product IDs to translated versions, so the quiz can't sync the translated catalogue automatically.
@@ -159,7 +168,7 @@ These versions don't have native market detection. You build the same outcome vi
 3. **Publish each translated quiz** on a language-specific page or subdomain: `yourstore.com/en/quiz`, `yourstore.com/fr/quiz`, `yourstore.com/de/quiz`.
 4. **Route visitors** to the correct quiz via one of the three workarounds below.
 
-![Quiz duplication and language settings panel in the Quiz Builder for non-BFS platforms](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-092134.webp)
+![Quiz duplication and language settings panel in the Quiz Builder for Shopify Legacy and non-Shopify platforms](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-092134.webp)
 
 ### Workaround 1: display the correct quiz based on browser language
 
@@ -198,22 +207,20 @@ If you operate one storefront per market (e.g. `yourstore.com`, `yourstore.fr`, 
 
 ### Summary of the workarounds
 
-- **Separate domains per market** — no JavaScript needed. Each store has its own quiz install.
-- **Single domain, multi-language** — use Workaround 1 (browser-language detection routing).
-- **Single domain, multi-currency** — use Workaround 2 (hide price + link to product page).
-- **Single domain, both** — combine Workaround 1 + Workaround 3 (browser-detect routing + translated product URL rewrites).
+- **Separate domains per market:** no JavaScript needed. Each store has its own quiz install.
+- **Single domain, multi-language:** use Workaround 1 (browser-language detection routing).
+- **Single domain, multi-currency:** use Workaround 2 (hide price + link to product page).
+- **Single domain, both:** combine Workaround 1 + Workaround 3 (browser-detect routing + translated product URL rewrites).
 
-### ✦ Testing and optimisation
+### Testing and optimisation
 
 Localisation doesn't end with the launch of your quiz. Continuous testing and optimisation are necessary to ensure that it performs well in different markets.
 
-Key Points:
+**Key points:**
 
-✓ Conduct **A/B tests for different versions** **of the quiz** in various markets to determine what works best.
-
-✓ Collect and **analyse feedback from users** in different regions to identify areas for improvement.
-
-✓ Regularly **review [quiz performance metrics](https://revenuehunt.com/product-quiz-metrics-what-to-track-to-convert-better/),** such as completion rates and conversion rates, by market to make data-driven adjustments.
+- Conduct **A/B tests for different versions of the quiz** in various markets to determine what works best.
+- Collect and **analyse feedback from users** in different regions to identify areas for improvement.
+- Regularly **review [quiz performance metrics](https://revenuehunt.com/product-quiz-metrics-what-to-track-to-convert-better/),** such as completion rates and conversion rates, by market to make data-driven adjustments.
 
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
@@ -229,7 +236,7 @@ Only the **Built for Shopify** version. It detects the visitor's market via Shop
 
 ### Do questions and answer choices translate automatically?
 
-No on every platform. The Quiz Builder UI elements (button labels, system messages) translate automatically and can be adjusted per language; questions, answer choices and results-page copy require manual translation. On Built for Shopify, Quiz Copilot can machine-translate the entire quiz in one prompt to accelerate the first pass — human review is recommended for brand voice and idiomatic accuracy.
+No on every platform. The Quiz Builder UI elements (button labels, system messages) translate automatically and can be adjusted per language; questions, answer choices and results-page copy require manual translation. On Built for Shopify, Quiz Copilot can machine-translate the entire quiz in one prompt to accelerate the first pass. Human review is recommended for brand voice and idiomatic accuracy.
 
 ### How does multi-currency work?
 
@@ -261,7 +268,7 @@ Not directly. These plugins translate the storefront but don't assign unique pro
       "name": "Do questions and answer choices translate automatically?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No on every platform. The Quiz Builder UI elements translate automatically and can be adjusted per language; questions, answer choices and results-page copy require manual translation. On Built for Shopify, Quiz Copilot can machine-translate the entire quiz in one prompt to accelerate the first pass, with human review recommended for brand voice."
+        "text": "No on every platform. The Quiz Builder UI elements translate automatically and can be adjusted per language; questions, answer choices and results-page copy require manual translation. On Built for Shopify, Quiz Copilot can machine-translate the entire quiz in one prompt to accelerate the first pass. Human review is recommended for brand voice."
       }
     },
     {
@@ -292,10 +299,29 @@ Not directly. These plugins translate the storefront but don't assign unique pro
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Adapt a product quiz for different markets and languages",
+  "description": "Localise a RevenueHunt product recommendation quiz across markets, languages and currencies on Built for Shopify or other platforms.",
+  "totalTime": "PT45M",
+  "step": [
+    {"@type": "HowToStep", "name": "Enable Shopify Markets", "text": "In Shopify Admin, enable Markets for each region you sell to."},
+    {"@type": "HowToStep", "name": "Add languages", "text": "Under Shopify Settings, Languages, add and publish each target language via Translate & Adapt."},
+    {"@type": "HowToStep", "name": "Duplicate the quiz per market", "text": "From the RevenueHunt Dashboard, duplicate the quiz once per target market."},
+    {"@type": "HowToStep", "name": "Translate with Quiz Copilot", "text": "Open Quiz Copilot and run a translate-all prompt for each duplicated quiz, then human-review for brand voice."},
+    {"@type": "HowToStep", "name": "Assign quizzes to markets", "text": "In App Settings, Shopify Markets, assign each translated quiz to its corresponding market."},
+    {"@type": "HowToStep", "name": "Verify currency display", "text": "Confirm prices display in the visitor's market currency on the results page."},
+    {"@type": "HowToStep", "name": "Publish", "text": "Publish each quiz; Shopify Markets routes visitors to the right version automatically."}
+  ]
+}
+</script>
+
 ## Where this fits
 
 Localisation is not one-size-fits-all. Each market deserves a tailored approach reflecting its cultural context, language, currency and regulatory environment. Built for Shopify makes this dramatically easier via the native Shopify Markets integration; on other platforms the same outcome takes manual setup and JavaScript glue, but the same outcome is achievable.
 
-For the foundations of the quiz itself, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/). For per-market consent design (GDPR / CASL / regional opt-in patterns), see [smart ways to ask for marketing consent in a product quiz](https://revenuehunt.com/product-quiz-marketing-consent/). For per-market quiz performance tracking, see [product quiz metrics: what to track to convert better](https://revenuehunt.com/product-quiz-metrics-what-to-track-to-convert-better/).
+For the foundations of the quiz itself, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/). For per-market consent design (GDPR / CASL / regional opt-in patterns), see [smart ways to ask for marketing consent in a product quiz](https://revenuehunt.com/product-quiz-marketing-consent/). For per-market quiz performance tracking, see [product quiz metrics: what to track to convert better](https://revenuehunt.com/product-quiz-metrics-what-to-track-to-convert-better/). For the broader category and use cases, see [the ecommerce quiz guide](https://revenuehunt.com/ecommerce-quiz/), and for clever per-market data-capture patterns see [zero-party data examples](https://revenuehunt.com/zero-party-data-examples/).
 
 [Install RevenueHunt: Recommender Quiz for Shopify](https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=markets_languages) and start building your first multi-market quiz today. Free plan available. Full setup reference: [adapt quizzes to markets](https://docs.revenuehunt.com/customer-success/adapt-quizzes-to-markets/).

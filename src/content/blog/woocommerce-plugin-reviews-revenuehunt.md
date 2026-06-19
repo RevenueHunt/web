@@ -1,8 +1,8 @@
 ---
-title: "What 100+ WooCommerce merchants say about the RevenueHunt plugin"
-description: "100 verified WordPress.org reviews, 5.0 stars, 100% five-star. Real merchant feedback on support, customisation, ease of use and ROI for the WooCommerce quiz."
+title: "WooCommerce quiz: 100 verified 5-star reviews"
+description: "100 verified WordPress.org reviews, 5.0 stars, 100% five-star. Real merchant feedback on support, customisation and ROI for the WooCommerce quiz."
 pubDate: 2024-08-22T07:18:37Z
-updatedDate: 2026-05-29T21:00:00Z
+updatedDate: 2026-06-19T11:00:00Z
 tags:
   - "ecommerce"
   - "product recommendation quiz"
@@ -38,9 +38,18 @@ The RevenueHunt WooCommerce plugin (**[Quiz Builder for WooCommerce – Product 
 
 For the foundations that produce a high-converting quiz, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/). For the broader funnel mechanics, see our [step-by-step funnel build guide](https://revenuehunt.com/build-sales-funnel-shopify-store/).
 
+**Table of contents:**
+
+- [Two install paths, same engine](#two-install-paths-same-engine)
+- [Why WooCommerce merchants love the plugin](#why-woocommerce-merchants-love-the-plugin)
+- [Who installs the plugin](#who-installs-the-plugin)
+- [What's behind the 5.0 rating](#whats-behind-the-50-rating)
+- [Frequently asked questions](#frequently-asked-questions)
+- [Where this fits](#where-this-fits)
+
 ## Two install paths, same engine
 
-You can install the RevenueHunt quiz on WooCommerce two ways — from the **[WordPress.org plugin directory](https://wordpress.org/plugins/product-recommendation-quiz-for-ecommerce/)** or from the **[WooCommerce.com extension marketplace](https://woocommerce.com/products/product-recommendation-quiz-for-woocommerce/)**. Both are free, both run the same underlying engine, and both put you on the Free plan (100 quiz responses per month with full feature access). Pick whichever store you're more comfortable installing from.
+You can install the RevenueHunt quiz on WooCommerce two ways: from the **[WordPress.org plugin directory](https://wordpress.org/plugins/product-recommendation-quiz-for-ecommerce/)** or from the **[WooCommerce.com extension marketplace](https://woocommerce.com/products/product-recommendation-quiz-for-woocommerce/)**. Both are free, both run the same underlying engine, and both put you on the Free plan (100 quiz responses per month with full feature access). Pick whichever store you're more comfortable installing from.
 
 ![Quiz Builder interface inside the WordPress admin showing the question flow and configuration panel](/img/blog/woocommerce-plugin-reviews-revenuehunt/Screenshot-2024-07-04-083149.webp)
 
@@ -50,23 +59,33 @@ Six themes recur across the 100 reviews. Each is illustrated below with direct m
 
 ### 1. Support that responds in minutes
 
-Customer support is mentioned in almost every review. Merchants describe the response time in **minutes**, and three named team members (Alex, Paulina, Erik) get specific thanks across multiple reviews — unusual for a SaaS plugin and a consistent signal that the support team operates above baseline.
+Customer support is mentioned in almost every review. Merchants describe the response time in **minutes**, and three named team members (Alex, Paulina, Erik) get specific thanks across multiple reviews. That's unusual for a SaaS plugin and a consistent signal that the support team operates above baseline.
 
 ![WooCommerce merchant review by kgotsosiworks praising the support team's minutes-fast response](/img/blog/woocommerce-plugin-reviews-revenuehunt/woo-review15.webp)
 
-> _"Had a slight problem and the amazing support team resolved within minutes."_ — **@kgotsosiworks**, July 21, 2021
+> _"Had a slight problem and the amazing support team resolved within minutes."_
+>
+> **@kgotsosiworks**, July 21, 2021
 
 ![WooCommerce merchant review by tomasnguyen from a skincare ecommerce store](/img/blog/woocommerce-plugin-reviews-revenuehunt/woo-review1.webp)
 
-> _"We love the product and the service it provides us at our skincare e-commerce. The support is always helpful and effective."_ — **@tomasnguyen**, July 1, 2024
+> _"We love the product and the service it provides us at our skincare e-commerce. The support is always helpful and effective."_
+>
+> **@tomasnguyen**, July 1, 2024
 
 ![WooCommerce merchant review by gonz74 highlighting unusually fast support response](/img/blog/woocommerce-plugin-reviews-revenuehunt/woo-review2.webp)
 
-> _"The fastest response I got from any support, the plugin is high level."_ — **@gonz74**, May 24, 2024
+> _"The fastest response I got from any support, the plugin is high level."_
+>
+> **@gonz74**, May 24, 2024
 
-> _"The support team was very responsive, clear and helpful. They understood the issue quickly and helped me with the catalogue synchronisation and attribute visibility."_ — **@segun2**, May 2026
+> _"The support team was very responsive, clear and helpful. They understood the issue quickly and helped me with the catalogue synchronisation and attribute visibility."_
+>
+> **@segun2**, May 2026
 
-> _"I've been using their plugin for a while and I'm very satisfied. It's easy to use and understand, and whenever something isn't clear or doesn't work, you can reach out to support, they're simply wonderful."_ — **@mayabenhrzel**, March 2026
+> _"I've been using their plugin for a while and I'm very satisfied. It's easy to use and understand, and whenever something isn't clear or doesn't work, you can reach out to support, they're simply wonderful."_
+>
+> **@mayabenhrzel**, March 2026
 
 ### 2. Powerful, versatile, every option you'd want
 
@@ -74,27 +93,37 @@ Merchants consistently call out the depth of customisation alongside the intuiti
 
 ![WooCommerce merchant review by robblumsafe with an unusually thorough endorsement of the plugin and support](/img/blog/woocommerce-plugin-reviews-revenuehunt/woo-review3.webp)
 
-> _"I can't say enough about this plugin and support, and I never write reviews. The support was the best I have ever had, the thing works LOGICALLY WITHOUT GLITCHES, this plugin provides every option conceivable, etc. Tremendous and well-linked library of tutorial videos to help you along, and customer service emails were replied to clearly in no time (sometimes minutes — but never more than a couple of hours, same day during their business hours)."_ — **@robblumsafe**, April 2024
+> _"I can't say enough about this plugin and support, and I never write reviews. The support was the best I have ever had, the thing works LOGICALLY WITHOUT GLITCHES, this plugin provides every option conceivable, etc. Tremendous and well-linked library of tutorial videos to help you along, and customer service emails were replied to clearly in no time (sometimes minutes, but never more than a couple of hours, same day during their business hours)."_
+>
+> **@robblumsafe**, April 2024
 
 ![WooCommerce merchant review by oonie praising the multi-results-page and tag features for lead generation](/img/blog/woocommerce-plugin-reviews-revenuehunt/woo-review14.webp)
 
-> _"I've been so frustrated trying to find a quiz plugin that then suggests products for WooCommerce. Not only does this do exactly that but you can style each question page, you can add more than one results page, you can tag your products individually to show on the results pages. The customer can add all suggested products to your cart all in one go. Their support is PHENOMENAL. Amazing way to gain potential leads for your clients."_ — **@oonie**, February 2022
+> _"I've been so frustrated trying to find a quiz plugin that then suggests products for WooCommerce. Not only does this do exactly that but you can style each question page, you can add more than one results page, you can tag your products individually to show on the results pages. The customer can add all suggested products to your cart all in one go. Their support is PHENOMENAL. Amazing way to gain potential leads for your clients."_
+>
+> **@oonie**, February 2022
 
 ![WooCommerce merchant review by cintiats with a one-line strong recommendation](/img/blog/woocommerce-plugin-reviews-revenuehunt/woo-review9.webp)
 
-> _"Highly recommend this plugin if you need a nice quiz."_ — **@cintiats**, November 2022
+> _"Highly recommend this plugin if you need a nice quiz."_
+>
+> **@cintiats**, November 2022
 
 ### 3. Fast setup, intuitive builder
 
-Time matters. Merchants consistently describe the setup as fast and the builder as intuitive — the kind of thing you can have configured the same afternoon you install.
+Time matters. Merchants consistently describe the setup as fast and the builder as intuitive: the kind of thing you can have configured the same afternoon you install.
 
 ![WooCommerce merchant review by eoinbespoke calling it the most intuitive quiz builder](/img/blog/woocommerce-plugin-reviews-revenuehunt/woo-review6.webp)
 
-> _"RevenueHunt has really knocked it out of the park with this quiz builder. It's by far the most intuitive and easy to use quiz with great functionality."_ — **@eoinbespoke**, January 2024
+> _"RevenueHunt has really knocked it out of the park with this quiz builder. It's by far the most intuitive and easy to use quiz with great functionality."_
+>
+> **@eoinbespoke**, January 2024
 
 ![WooCommerce merchant review by leonmege confirming ease of use](/img/blog/woocommerce-plugin-reviews-revenuehunt/woo-review13.webp)
 
-> _"We enjoy using it; the plugin works fine and is very easy to use."_ — **@leonmege**, November 2022
+> _"We enjoy using it; the plugin works fine and is very easy to use."_
+>
+> **@leonmege**, November 2022
 
 ### 4. Genuinely effective at lead capture and conversions
 
@@ -102,11 +131,15 @@ The reviews don't just praise the tool's ergonomics; they reference real outcome
 
 ![WooCommerce merchant review by jlgonzalezdiaz comparing the plugin favourably against other quiz tools](/img/blog/woocommerce-plugin-reviews-revenuehunt/woo-review7.webp)
 
-> _"There are other tools to make quizzes but none like this one."_ — **@jlgonzalezdiaz**, May 2024
+> _"There are other tools to make quizzes but none like this one."_
+>
+> **@jlgonzalezdiaz**, May 2024
 
 ![WooCommerce merchant review by petrepan citing 400+ leads captured](/img/blog/woocommerce-plugin-reviews-revenuehunt/woo-review8.webp)
 
-> _"I've used RevenueHunt to get 400+ leads. The product-selection features are great."_ — **@petrepan**, December 2022
+> _"I've used RevenueHunt to get 400+ leads. The product-selection features are great."_
+>
+> **@petrepan**, December 2022
 
 ### 5. Great value (especially the free plan)
 
@@ -114,11 +147,15 @@ The reviews don't just praise the tool's ergonomics; they reference real outcome
 
 ![WooCommerce merchant review by madhamster calling it hard to find a better free plugin](/img/blog/woocommerce-plugin-reviews-revenuehunt/woo-review12.webp)
 
-> _"You can hardly find a better plugin for free."_ — **@madhamster**, December 2022
+> _"You can hardly find a better plugin for free."_
+>
+> **@madhamster**, December 2022
 
 ![WooCommerce merchant review by yvo3797 praising the value and customisation flexibility](/img/blog/woocommerce-plugin-reviews-revenuehunt/woo-review5.webp)
 
-> _"Great value for money. Lots of features and flexibility in layout and custom interface. Easy to set up."_ — **@yvo3797**, October 2023
+> _"Great value for money. Lots of features and flexibility in layout and custom interface. Easy to set up."_
+>
+> **@yvo3797**, October 2023
 
 ### 6. Customisation depth across questions, design, and outcomes
 
@@ -126,15 +163,21 @@ You can customise the question flow, the visual design per question, the answer-
 
 ![WooCommerce merchant review by nicolr praising the configuration depth](/img/blog/woocommerce-plugin-reviews-revenuehunt/woo-review4.webp)
 
-> _"I've just started using this plugin and it's everything I was looking for. It let me create custom quizzes with a huge amount of configurations."_ — **@nicolr**, December 2023
+> _"I've just started using this plugin and it's everything I was looking for. It let me create custom quizzes with a huge amount of configurations."_
+>
+> **@nicolr**, December 2023
 
 ![WooCommerce merchant review by arisztal recommending the plugin for any ecommerce site](/img/blog/woocommerce-plugin-reviews-revenuehunt/woo-review10.webp)
 
-> _"Exactly what we needed. Super customisable, with a support team that responds quickly with real solutions. Highly recommend for any ecommerce site as a great way to recommend products to new customers and re-engage current customers."_ — **@arisztal**, January 2023
+> _"Exactly what we needed. Super customisable, with a support team that responds quickly with real solutions. Highly recommend for any ecommerce site as a great way to recommend products to new customers and re-engage current customers."_
+>
+> **@arisztal**, January 2023
 
 ![WooCommerce merchant review by tischo on the breadth of plugin options](/img/blog/woocommerce-plugin-reviews-revenuehunt/woo-review11.webp)
 
-> _"The plugin offers so many different options, which is awesome."_ — **@tischo**, December 2022
+> _"The plugin offers so many different options, which is awesome."_
+>
+> **@tischo**, December 2022
 
 ## Who installs the plugin
 
@@ -225,12 +268,97 @@ Three things merchants consistently name: response time in minutes (not days), r
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Quiz Builder for WooCommerce – Product Recommendations",
+  "description": "Product recommendation quiz plugin for WooCommerce by RevenueHunt. Build guided-selling quizzes, capture zero-party data, and recommend the right products.",
+  "url": "https://wordpress.org/plugins/product-recommendation-quiz-for-ecommerce/",
+  "brand": {"@type": "Brand", "name": "RevenueHunt"},
+  "image": "https://revenuehunt.com/img/blog/woocommerce-plugin-reviews-revenuehunt/blogtile_woo-reviews.webp",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "1",
+    "ratingCount": "100",
+    "reviewCount": "100"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {"@type": "Person", "name": "kgotsosiworks"},
+      "datePublished": "2021-07-21",
+      "reviewBody": "Had a slight problem and the amazing support team resolved within minutes.",
+      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+    },
+    {
+      "@type": "Review",
+      "author": {"@type": "Person", "name": "tomasnguyen"},
+      "datePublished": "2024-07-01",
+      "reviewBody": "We love the product and the service it provides us at our skincare e-commerce. The support is always helpful and effective.",
+      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+    },
+    {
+      "@type": "Review",
+      "author": {"@type": "Person", "name": "gonz74"},
+      "datePublished": "2024-05-24",
+      "reviewBody": "The fastest response I got from any support, the plugin is high level.",
+      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+    },
+    {
+      "@type": "Review",
+      "author": {"@type": "Person", "name": "robblumsafe"},
+      "datePublished": "2024-04-01",
+      "reviewBody": "I can't say enough about this plugin and support, and I never write reviews. The support was the best I have ever had, the thing works LOGICALLY WITHOUT GLITCHES, this plugin provides every option conceivable. Tremendous and well-linked library of tutorial videos to help you along, and customer service emails were replied to clearly in no time.",
+      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+    },
+    {
+      "@type": "Review",
+      "author": {"@type": "Person", "name": "oonie"},
+      "datePublished": "2022-02-01",
+      "reviewBody": "I've been so frustrated trying to find a quiz plugin that then suggests products for WooCommerce. Not only does this do exactly that but you can style each question page, you can add more than one results page, you can tag your products individually to show on the results pages. Their support is PHENOMENAL.",
+      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+    },
+    {
+      "@type": "Review",
+      "author": {"@type": "Person", "name": "eoinbespoke"},
+      "datePublished": "2024-01-01",
+      "reviewBody": "RevenueHunt has really knocked it out of the park with this quiz builder. It's by far the most intuitive and easy to use quiz with great functionality.",
+      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+    },
+    {
+      "@type": "Review",
+      "author": {"@type": "Person", "name": "petrepan"},
+      "datePublished": "2022-12-01",
+      "reviewBody": "I've used RevenueHunt to get 400+ leads. The product-selection features are great.",
+      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+    },
+    {
+      "@type": "Review",
+      "author": {"@type": "Person", "name": "arisztal"},
+      "datePublished": "2023-01-01",
+      "reviewBody": "Exactly what we needed. Super customisable, with a support team that responds quickly with real solutions. Highly recommend for any ecommerce site as a great way to recommend products to new customers and re-engage current customers.",
+      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}
+    }
+  ],
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Free plan with 100 quiz responses per month and full feature access.",
+    "url": "https://wordpress.org/plugins/product-recommendation-quiz-for-ecommerce/"
+  }
+}
+</script>
+
 ## Where this fits
 
 A 5.0-star, 100% five-star rating across 100 reviews is the structural consequence of years of iterating with WooCommerce merchants. The recurring themes across those reviews (named-by-name support, deep customisation, intuitive builder, free plan that's actually usable) are what you'd expect from a plugin built around real merchant feedback rather than every new feature trend.
 
-For the foundations of a high-converting quiz, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/). For the customer-tag layer that powers downstream segmentation, see [how to use customer tags in product quizzes](https://revenuehunt.com/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/). For the Klaviyo integration that drives the post-quiz email sequences, see [how Klaviyo segmentation unlocks once zero-party data lands in profiles](https://revenuehunt.com/klaviyo-zero-party-data/).
+For the foundations of a high-converting quiz, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/). For the customer-tag layer that powers downstream segmentation, see [how to use customer tags in product quizzes](https://revenuehunt.com/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/). For the Klaviyo integration that drives the post-quiz email sequences, see [how Klaviyo segmentation unlocks once zero-party data lands in profiles](https://revenuehunt.com/klaviyo-zero-party-data/). For deciding which questions to ask, see [the complete product quiz question types reference](https://revenuehunt.com/product-quiz-question-types/). For measuring quiz performance after launch, see [product quiz metrics: what to track to convert better](https://revenuehunt.com/product-quiz-metrics-what-to-track-to-convert-better/). For Woo stores running headless, see [product recommendation quiz for headless ecommerce](https://revenuehunt.com/headless-ecommerce-product-quiz/).
 
-[Install from WordPress.org](https://wordpress.org/plugins/product-recommendation-quiz-for-ecommerce/) or [from WooCommerce.com](https://woocommerce.com/products/product-recommendation-quiz-for-woocommerce/) — both are free, both run the same engine.
+[Install from WordPress.org](https://wordpress.org/plugins/product-recommendation-quiz-for-ecommerce/) or [from WooCommerce.com](https://woocommerce.com/products/product-recommendation-quiz-for-woocommerce/). Both are free, both run the same engine.
 
 ![Closing testimonial screenshot summarising the 5-star sentiment across the WooCommerce review feed](/img/blog/woocommerce-plugin-reviews-revenuehunt/woo-review16.webp)

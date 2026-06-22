@@ -16,6 +16,8 @@ draft: false
 
 ![Quiz funnels vs collection pages: from product grids to guided recommendations](/img/blog/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/collectionvsquiz.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;Two routes from paid traffic to purchase. The collection-page route drops shoppers into a product grid and asks them to filter themselves to the right SKU. The quiz route asks 5-9 questions and serves a confident recommendation, capturing the data needed for follow-up along the way.</p>
+
 _From endless product grids to guided recommendations._
 
 Your CTR looks fine. Your CPMs are ugly but manageable. The creative is performing. And yet you're staring at a 1.2% conversion rate on Shopify, watching paid traffic land on your "Shop All Serums" collection page and vanish within eight seconds. The traffic isn't the problem. What happens after the click is the problem.
@@ -62,6 +64,8 @@ Collection pages were designed for organic browsing: a customer who already know
 But paid traffic is a different animal. You're buying attention from someone who saw a 15-second creative, felt a spark of interest, and clicked. They arrive with intent but zero context. They don't know your product line. They don't know what's right for them. And you're greeting them with a wall of 30+ options.
 
 ![Current architecture vs quiz funnel: turn anonymous traffic into actionable customer data](/img/blog/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/currentarchitecturevsquizfunnel.webp)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;The current ecommerce architecture treats every visitor as anonymous traffic until checkout. A quiz funnel converts anonymous traffic into actionable customer data at first touch, regardless of whether the visitor buys today.</p>
 
 _Turn anonymous traffic into actionable customer data._
 
@@ -132,6 +136,8 @@ This transforms your Klaviyo account from a list of anonymous email addresses in
 **The data shift.** A standard popup captures _who_ visited. A quiz captures _what they need_. That distinction is the difference between a Klaviyo account that's a graveyard and one that's a revenue engine: segmented Klaviyo campaigns earn **over 3x the revenue per recipient** of generic sends ([Klaviyo segmentation benchmark](https://www.klaviyo.com/marketing-resources/segmentation-benchmark-report)).
 
 ![Generic email blasts vs personalised campaigns powered by quiz data](/img/blog/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/with_without_quiz_data.webp)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;Without quiz data: every email is generic, every campaign reads the same. With quiz data: each campaign reads the customer's actual preferences. Same platform, same send volume, dramatically different revenue per recipient.</p>
 
 _Generic email blasts vs personalised campaigns powered by quiz data._
 

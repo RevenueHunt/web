@@ -57,6 +57,8 @@ Start with a friendly welcome message that explains the benefits of taking the q
 
 ![Quiz welcome slide asking for marketing consent before the customer starts the quiz](/img/blog/product-quiz-marketing-consent/consent-start-quiz-1024x732.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;Consent asked before the quiz begins. Lower completion overall, but filters out shoppers who aren't ready to share their email. Better fit for luxury or unique-product stores where lead quality matters more than volume.</p>
+
 > Asking for consent before the quiz starts leads to **lower quiz completions** and higher drop-off at the beginning, but produces **higher-quality leads** and filters out shoppers who aren't genuinely interested. This approach is better for merchants selling unique or luxury items where lead quality matters more than lead volume.
 
 ### At the end
@@ -64,6 +66,8 @@ Start with a friendly welcome message that explains the benefits of taking the q
 At a strategic point (typically just before the results page) include the consent request. Frame it as a question about communication preferences. This creates a sunk-cost effect: the customer has invested time in the quiz, so they're more likely to provide their email to see the recommendation.
 
 ![Quiz end slide asking for marketing consent just before showing the results page](/img/blog/product-quiz-marketing-consent/consent-end-quiz-e1718952561212-1024x702.webp)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;Consent asked at the end of the quiz, just before the results page. Higher completion (customer is already invested) and a sunk-cost effect that lifts opt-in. Better fit for routine-based or lower-AOV catalogues.</p>
 
 > Asking for consent at the end of the quiz leads to **lower drop-off** at this point since the customer is already invested in the experience. This produces higher completion rates and, downstream, **higher conversions** and upselling success. This approach is better for merchants selling lower-AOV products or routine-based catalogues.
 
@@ -140,6 +144,8 @@ Simplify your message and avoid legal jargon. Highlight the value the customer r
 
 ![Marketing consent question with friendly, plain-language wording and a clear yes/no choice](/img/blog/product-quiz-marketing-consent/consent-simple-language1.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;Strategy 1: friendly, plain-language wording with a clear yes/no choice. No legal jargon, value stated upfront, single decision the customer can make in two seconds.</p>
+
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Use a <a href="https://docs.revenuehunt.com/how-to-guides/ask-for-marketing-consent/#option-3-gdpr-question" style="color:#16161D;text-decoration:underline;">GDPR/Yes-No Question</a> type to easily ask for consent in the RevenueHunt: Recommender Quiz for Shopify.</p>
@@ -156,6 +162,8 @@ Make the privacy policy easily accessible to add transparency and reassure users
 
 ![Consent question showing a link to the brand's privacy policy below the yes/no choice](/img/blog/product-quiz-marketing-consent/Screenshot-2024-06-14-122634.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 05</span> &nbsp;Strategy 2: a linked privacy policy directly under the consent question. Satisfies the GDPR "informed" pillar and tends to reduce hesitation in EU markets.</p>
+
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Link to your privacy policy in any text element via <a href="https://docs.revenuehunt.com/how-to-guides/use-markdown/" style="color:#16161D;text-decoration:underline;">Markdown</a>, or add a <a href="https://docs.revenuehunt.com/how-to-guides/ask-for-marketing-consent/#option-2-marketing-checkmark" style="color:#16161D;text-decoration:underline;">marketing checkmark</a> to any slide.</p>
@@ -168,6 +176,8 @@ Make the privacy policy easily accessible to add transparency and reassure users
 The visual design of the consent question affects opt-in rate more than the wording does. Use visual cues like checkboxes, toggle switches, clickable icons or buttons that change colour on click. Ensure tap targets are mobile-friendly (most quiz traffic is mobile).
 
 ![Animated consent question using clickable heart icons for the yes/no choice instead of a standard checkbox](/img/blog/product-quiz-marketing-consent/consent1.gif)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;Visual design choices (clickable heart icons here) move the opt-in rate more than wording does. Mobile-friendly tap targets are essential; most quiz traffic is mobile.</p>
 
 Position the consent question at an engaging moment rather than as a bolted-on interruption.
 
@@ -186,6 +196,8 @@ Respecting user choice is essential, and it's also a hard GDPR requirement. Alwa
 
 ![Consent question with both yes and no options visually equivalent, neither pre-selected](/img/blog/product-quiz-marketing-consent/consent-opt-out-hearts.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 06</span> &nbsp;Strategy 4: visually equivalent yes and no buttons with nothing pre-selected. A hard GDPR requirement (Article 7(3)) and a trust signal regardless of jurisdiction.</p>
+
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Add explanatory text under any consent question via a <a href="https://docs.revenuehunt.com/how-to-guides/ask-for-marketing-consent/#option-1-question-description" style="color:#16161D;text-decoration:underline;">question description</a> in the RevenueHunt: Recommender Quiz for Shopify.</p>
@@ -199,6 +211,8 @@ Offering a discount code, free sample or exclusive content in exchange for conse
 
 ![Consent question offering a discount code as an incentive for opting in](/img/blog/product-quiz-marketing-consent/consent-discount3.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 07</span> &nbsp;Strategy 5: an immediate incentive paired with the consent ask. The exchange feels reciprocal rather than extractive; the opt-in rate consistently moves up when an incentive is on-screen.</p>
+
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">For the full discount playbook (placement, percentage vs fixed amount, platform-specific setup), see our <a href="https://revenuehunt.com/product-quiz-discounts/" style="color:#16161D;text-decoration:underline;">product quiz discounts guide</a>.</p>
@@ -211,6 +225,8 @@ Offering a discount code, free sample or exclusive content in exchange for conse
 Be explicit about what the data will be used for. A one-line explanation of "why we're asking" measurably reduces hesitation at the consent moment, particularly in privacy-conscious EU markets.
 
 ![Consent question with a transparency-focused message explaining what the data will be used for](/img/blog/product-quiz-marketing-consent/consent-discount.webp)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 08</span> &nbsp;Strategy 6: a one-line explanation of why the data is being asked for. Reduces hesitation, particularly in privacy-conscious EU markets.</p>
 
 **Example wording:** "We use your data to provide personalised recommendations and the occasional product update. We respect your privacy and will never share your data with third parties."
 

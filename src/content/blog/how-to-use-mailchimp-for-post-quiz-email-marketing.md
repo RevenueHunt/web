@@ -123,9 +123,13 @@ With tags flowing into Mailchimp:
 
 ![Mailchimp Automations dashboard with tag-triggered email sequences configured](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-automations.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;Mailchimp Automations dashboard with tag-triggered sequences. Each Audience tag from the quiz can drive its own segmented automation flow.</p>
+
 Design email templates that reference the customer's tag-implied preferences directly in the subject line and body ("Your routine for oily, acne-prone skin"). Generic newsletter templates underperform tag-referenced ones on every metric.
 
 ![Mailchimp email template editor showing a tag-targeted product recommendation email](/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/Screenshot-2024-07-29-093944.webp)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;Mailchimp template editor showing a tag-targeted product recommendation email. Subject line and body reference the customer's stated quiz preferences directly.</p>
 
 ## Worked example: a skincare follow-up sequence
 
@@ -137,13 +141,19 @@ In Mailchimp, you build a 3-email automation targeting the `oily_skin` segment:
 
 <img src="/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-newsletter1.webp" alt="Sample Mailchimp email template introducing oily-skin product recommendations" style="max-width:480px;width:100%;height:auto;display:block;margin:16px auto;border-radius:6px;" loading="lazy" />
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;Day 1 email: introduces the oily-skin product picks. The subject and copy reference the segment directly so the customer recognises the recommendation matches their stated profile.</p>
+
 **Day 3: Customer testimonials and reviews for oily-skin products.**
 
 <img src="/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-newsletter-2.webp" alt="Sample Mailchimp email template featuring customer testimonials for the oily-skin segment" style="max-width:480px;width:100%;height:auto;display:block;margin:16px auto;border-radius:6px;" loading="lazy" />
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;Day 3 email: social proof. Testimonials from customers with the same oily-skin tag close the trust gap between the recommendation and the purchase.</p>
+
 **Day 7: Special discount on recommended products for oily skin.**
 
 <img src="/img/blog/how-to-use-mailchimp-for-post-quiz-email-marketing/mailchimp-newsletter-3.webp" alt="Sample Mailchimp email template offering a discount on recommended oily-skin products" style="max-width:480px;width:100%;height:auto;display:block;margin:16px auto;border-radius:6px;" loading="lazy" />
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 05</span> &nbsp;Day 7 email: a discount on the recommended products. Stays inside the segment, so the discount lands as a closing nudge rather than a generic blast.</p>
 
 You replicate this pattern for each major skin-type and concern combination. The same three-template structure (intro, social proof, then discount) works across every segment; only the product references and ingredient explainers change. For the discount layer specifically, see [product quiz discounts: the conversion playbook](https://revenuehunt.com/product-quiz-discounts/).
 

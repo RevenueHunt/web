@@ -60,6 +60,8 @@ The first slide. Explains the quiz's purpose, sets a positive tone, and encourag
 
 ![Quiz Builder Welcome Message slide with introductory text and the Start Quiz button](/img/blog/product-quiz-question-types/welcomeslide.gif)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;The Welcome Message slide. The opening frame of every quiz: sets the tone, states the value exchange, and primes the customer with the Start Quiz button.</p>
+
 **Example:** "Welcome to our personalised skincare quiz. Answer a few questions to find the perfect products for your skin type."
 
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
@@ -73,6 +75,8 @@ A text-and-button slide that delivers context or instructions mid-quiz. Use it b
 
 ![Quiz Builder Statement slide with explanatory text and a Continue button](/img/blog/product-quiz-question-types/statmentslide.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;A Statement slide used mid-quiz. No question, just context: a soft transition between question groups or a short explainer before an unusual ask.</p>
+
 **Example:** "Great, now let's get into some details about your skin."
 
 ### Thank You Message
@@ -80,6 +84,8 @@ A text-and-button slide that delivers context or instructions mid-quiz. Use it b
 The last slide before the results page. Closes the quiz on a positive note, optionally lets the customer revise answers, and routes them to the recommendation.
 
 ![Quiz Builder Thank You Message slide with closing text and the See Results button](/img/blog/product-quiz-question-types/thankyouslide.gif)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;The Thank You Message slide. The closing frame before the recommendation lands: a moment to reinforce the brand voice and to offer a final revise-answers option.</p>
 
 **Example:** "Thank you for completing the quiz. Click below to see your personalised product recommendations."
 
@@ -92,6 +98,8 @@ The workhorse questions of the quiz. Use these for routing logic and tag-based s
 Several clickable options; the customer picks one or many. Configurable as single-select or multi-select in question settings. The most-used question type across the platform.
 
 ![Quiz Builder Multiple Choice slide with single-select clickable options](/img/blog/product-quiz-question-types/multiplechoiceslide2.gif)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;The Multiple Choice question type. The workhorse for routing logic and tag-driven segmentation; configurable as single- or multi-select.</p>
 
 **Example:** "Which skincare products do you currently use?" with options Cleanser / Toner / Serum / Moisturiser.
 
@@ -106,6 +114,8 @@ Multiple choice rendered with images as the clickable answer tiles. Best for dec
 
 ![Quiz Builder Picture Choice slide with image-based clickable answer options](/img/blog/product-quiz-question-types/picturechoiceslide.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 05</span> &nbsp;A Picture Choice question. Best for decisions easier made visually than verbally: style preferences, undertone, room aesthetic, packaging.</p>
+
 **Example:** "Which of these styles appeals to you the most?" with 4 styled-room photos.
 
 ### Dropdown
@@ -114,6 +124,8 @@ Multiple choice rendered as a compact dropdown menu. Best when you have many opt
 
 ![Quiz Builder Dropdown slide with a collapsed dropdown showing many options on click](/img/blog/product-quiz-question-types/dropdownslide.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 06</span> &nbsp;The Dropdown question. Compact list for large option sets (10+), where clickable tiles would overwhelm the slide.</p>
+
 **Example:** "What is your primary skin concern?" with options Acne / Aging / Dryness / Sensitivity / Brightness / etc.
 
 ### Yes/No
@@ -121,6 +133,8 @@ Multiple choice rendered as a compact dropdown menu. Best when you have many opt
 Binary choice with two clickable options. Best for qualifying questions ("Do you use sunscreen daily?") and for marketing-consent questions where the choice should feel low-stakes.
 
 ![Quiz Builder Yes/No slide with two clickable options](/img/blog/product-quiz-question-types/Screenshot-2024-07-02-092209.webp)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 07</span> &nbsp;The Yes/No question. Binary choice for qualifying gates and low-stakes consent moments.</p>
 
 **Example:** "Do you use sunscreen daily?"
 
@@ -156,6 +170,8 @@ A single-line text input for brief answers (a goal, a product name, a city).
 
 ![Quiz Builder Short-text slide with a single-line text input field](/img/blog/product-quiz-question-types/shorttextslide2.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 08</span> &nbsp;A Short-text input. For brief open-ended answers: a goal, a product name, a city. Use sparingly; open text is harder to segment on than structured choices.</p>
+
 **Example:** "What is your main skincare goal?"
 
 ### Multi-line Text
@@ -163,6 +179,8 @@ A single-line text input for brief answers (a goal, a product name, a city).
 A multi-line text area for longer answers (a routine description, detailed feedback, a custom requirement).
 
 ![Quiz Builder Multi-line Text slide with a multi-line text area for longer responses](/img/blog/product-quiz-question-types/openlongquestion.gif)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 09</span> &nbsp;The Multi-line Text area. For longer-form open input: a routine description, a custom requirement, detailed feedback.</p>
 
 **Example:** "Describe your current skincare routine."
 
@@ -174,6 +192,8 @@ A numeric input for quantifiable answers (count, age, frequency, income tier).
 
 ![Quiz Builder Number slide with a numeric input field](/img/blog/product-quiz-question-types/numberslide.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 10</span> &nbsp;The Number input. Quantifiable answers: count, age, frequency, income tier.</p>
+
 **Example:** "How many skincare products do you use daily?"
 
 ### Date
@@ -181,6 +201,8 @@ A numeric input for quantifiable answers (count, age, frequency, income tier).
 A date picker for time-specific answers (birthday, subscription start date, event date, last refresh of a routine).
 
 ![Quiz Builder Date slide with a date picker showing calendar selection](/img/blog/product-quiz-question-types/dateslide.gif)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 11</span> &nbsp;The Date picker. Time-specific answers like birthday, subscription start, or last routine refresh.</p>
 
 **Example:** "When is your birthday?"
 
@@ -191,14 +213,19 @@ These are the conversion-critical fields. Email capture in particular is the sin
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;"><a href="https://docs.revenuehunt.com/how-to-guides/join-questions/" style="color:#16161D;text-decoration:underline;">Join Name + Email + Phone into a single slide</a> for smoother personal-data collection rather than three separate steps.</p>
-  <img src="/img/blog/product-quiz-question-types/joinedslides.webp" alt="Quiz Builder showing Name, Email and Phone questions joined into a single slide" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
 </div>
+
+![Quiz Builder showing Name, Email and Phone questions joined into a single slide](/img/blog/product-quiz-question-types/joinedslides.webp)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 12</span> &nbsp;Name, Email and Phone joined into a single slide via the Quiz Builder's join-questions feature. Reduces the perceived friction of the personal-info ask and consistently improves completion rate vs three separate steps.</p>
 
 ### Name
 
 Captures the customer's first name (or full name) for personalisation in subsequent slides and downstream email flows.
 
 ![Quiz Builder Name slide with a single-line input field](/img/blog/product-quiz-question-types/nameslide.webp)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 13</span> &nbsp;The Name question. Captures the customer's first or full name for downstream personalisation in later slides and email flows.</p>
 
 **Example:** "What is your name?"
 
@@ -208,6 +235,8 @@ Captures the customer's email. Almost always the most important field on the qui
 
 ![Quiz Builder Email Address slide with an email input field and consent options](/img/blog/product-quiz-question-types/emailslide.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 14</span> &nbsp;The Email Address question. The single highest-leverage capture on the quiz; platform data shows 71% of top-converting quizzes collect email and 75% of those make it required.</p>
+
 **Example:** "What is your email address?" or "Get the most out of our recommendations. Sign up to receive expert advice and your personalised results."
 
 ### Phone Number
@@ -215,6 +244,8 @@ Captures the customer's email. Almost always the most important field on the qui
 Captures the customer's phone number for SMS marketing or customer-support callbacks. Only request this if you have an SMS flow set up that justifies the higher friction; mandatory phone fields measurably drop completion rate on most stores.
 
 ![Quiz Builder Phone Number slide with a phone-format input field](/img/blog/product-quiz-question-types/phoneslide.webp)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 15</span> &nbsp;The Phone Number question. Raises friction; only request when an SMS flow is configured to use it.</p>
 
 **Example:** "What is your phone number?" or "Get the recommendations on your phone. Leave your number below."
 
@@ -225,6 +256,8 @@ Captures the customer's phone number for SMS marketing or customer-support callb
 A slide presenting legal terms or GDPR-related information with options to accept or decline. Use it to capture explicit marketing-data-processing consent for EU customers. For the full consent-design playbook including placement (before vs after the quiz), see [smart ways to ask for marketing consent in a product quiz](https://revenuehunt.com/product-quiz-marketing-consent/).
 
 ![Quiz Builder Legal/GDPR slide with terms text and Accept/Decline buttons](/img/blog/product-quiz-question-types/legalslide.webp)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 16</span> &nbsp;The Legal Terms / GDPR question. Captures explicit consent with Accept and Decline options and a privacy-policy link, satisfying the four GDPR consent pillars at the quiz layer.</p>
 
 **Example:** "Do you agree to receive our personalised recommendations and updates?" with Accept / Decline buttons and a link to the privacy policy.
 
@@ -240,6 +273,8 @@ A slide presenting legal terms or GDPR-related information with options to accep
 Lets the customer upload a file as their response. Useful for before/after photos (skincare consultations), document submission (custom orders, professional service intake), or visual context (room photos for furniture, hair photos for haircare).
 
 ![Quiz Builder File Upload slide with a file selector for image and document uploads](/img/blog/product-quiz-question-types/fileuploadslide.webp)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 17</span> &nbsp;The File Upload question. For photos, documents or visual context: skincare consultation snapshots, room photos for furniture, hair photos for haircare.</p>
 
 **Example:** "Upload a photo of your skin for a more accurate recommendation."
 

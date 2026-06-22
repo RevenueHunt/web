@@ -80,6 +80,8 @@ Using [RevenueHunt: Recommender Quiz for Shopify](https://apps.shopify.com/produ
 
 ![Quiz Builder showing a product recommendation quiz that has been created on Built for Shopify](/img/blog/how-to-automate-post-quiz-emails-using-shopify-flows/bfs_customertags_quizcreated.png)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;The Quiz Builder on Built for Shopify after creating a product recommendation quiz. The question flow drives every downstream tag, segment and Shopify Flow trigger.</p>
+
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Check out <a href="https://docs.revenuehunt.com/tutorials/" style="color:#16161D;text-decoration:underline;">this video guide</a> on how to create your first Product Recommendation Quiz using the <a href="https://apps.shopify.com/product-recommendation-quiz-revenuehunt" style="color:#16161D;text-decoration:underline;">RevenueHunt: Recommender Quiz for Shopify</a> app.</p>
@@ -90,6 +92,8 @@ Using [RevenueHunt: Recommender Quiz for Shopify](https://apps.shopify.com/produ
 Assign [customer tags](https://revenuehunt.com/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/) to each quiz answer choice. Tags are the structured filter logic Shopify Flow will use later: a customer who selects "oily skin" gets the `oily_skin` tag, a customer who selects "dry skin" gets `dry_skin`, and so on. Each customer typically ends up with 5 to 10 tags by the end of the quiz, which gives Flow plenty of precision to target each segment.
 
 ![Quiz Builder Choice Settings panel on Built for Shopify with customer tags attached to a quiz answer](/img/blog/how-to-automate-post-quiz-emails-using-shopify-flows/bfs_customertags_added.png)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;The Choice Settings panel on Built for Shopify with customer tags attached to a quiz answer. Tags flow to the Shopify Customers list without the `prq_` prefix that Shopify Legacy applies.</p>
 
 > **Note:** There's no cap on the number of tags per choice or choices per tag. The setup flow for adding tags differs between Built for Shopify (Choice Settings panel) and the legacy / multi-platform versions (dedicated Customer Tags section); see the [customer tags walkthrough](https://revenuehunt.com/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/) for the full per-platform steps.
 

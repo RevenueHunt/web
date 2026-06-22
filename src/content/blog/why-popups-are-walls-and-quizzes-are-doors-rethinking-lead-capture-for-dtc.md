@@ -16,6 +16,8 @@ draft: false
 
 ![A popup as a wall blocking a storefront versus a quiz as an open door inviting customers in](/img/blog/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/wallsvsdoors.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;A popup blocks the storefront like a wall, asking for an email before the shopper has any reason to give one. A quiz opens a door, offering value (a recommendation) in exchange for structured preferences.</p>
+
 The lead-capture paradigm shift: one model interrupts and extracts, the other invites and exchanges. Same storefront. Different architecture. Different results.
 
 You're staring at your Klaviyo dashboard at 9:14 AM on a Tuesday. The welcome-flow revenue chart is doing something it shouldn't be doing: declining, month over month, for the fourth consecutive period. Your list has 53,000 subscribers. On paper, that looks like an asset. In practice, you know what it really is: a graveyard. Rows and rows of email addresses with no context, no skin type, no primary concern, no preference data of any kind. You send a campaign, 60% don't open it, 3% click, and the unsubscribe count ticks up like a taxi meter.
@@ -83,6 +85,8 @@ This is where the structural failure becomes a system failure.
 
 ![Diagram of the blast doom loop: no preference data leads to generic blasts, low engagement, degraded sender reputation, spam, and more unsubscribes](/img/blog/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/More_emails_in_spam_optimized_1000-e1772532253755.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;The blast doom loop: no preference data leads to generic sends, engagement collapses, sender reputation degrades, inboxes mark blasts as spam, unsubscribes accelerate. Each cycle makes the next one worse.</p>
+
 Every generic blast accelerates the cycle. The popup is the entry point, and without preference data, there's no exit.
 
 The popup captures no preference data, so you're forced to send generic campaigns to your entire list. Generic blasts produce low engagement metrics. Low engagement degrades your sender reputation with ISPs. Degraded reputation pushes more of your emails into spam. More emails in spam means lower revenue per send. Lower revenue per send means you increase send frequency to compensate. More sends mean more unsubscribes and more spam complaints. Which degrades your reputation further.
@@ -102,6 +106,8 @@ Here's the reframe.
 **A door** invites. It offers help, asks diagnostic questions, and delivers personalised value (a tailored product recommendation) in exchange for preference data. The customer experience builds: curiosity → engagement → personalised result → trust → purchase → loyalty.
 
 ![Customer-journey comparison: popup path declining toward unsubscribe versus quiz path building toward repeat purchase](/img/blog/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/twoarchitectures_optimized_1000-e1772532854735.webp)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;Two customer-journey paths from the same first touch. The popup path declines toward unsubscribe (no relevance, no reason to stay). The quiz path builds toward repeat purchase (each email knows more than the last).</p>
 
 Two journeys, same traffic source. The divergence starts at capture, and compounds at every stage downstream.
 
@@ -158,6 +164,8 @@ This is the wall-to-door shift in action: instead of extracting an email with a 
 Every quiz response [syncs directly to Klaviyo](/klaviyo-zero-party-data/) as customer properties, tags, or metafields. Natively. No Zapier. No CSV exports. No manual mapping. No developer ticket sitting in the backlog for three sprints.
 
 ![Klaviyo profile comparison: popup lead with only an email address versus quiz lead with skin type, concern, age, preference, and budget filled in](/img/blog/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/samesubscriber_optimized_1000.webp)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;Same subscriber, two Klaviyo profiles. The popup captures just an email. The quiz captures skin type, concern, age band, format preference and budget tier: five segments you couldn't build yesterday from the popup version.</p>
 
 The popup gives you an address. The quiz gives you a profile. Your Klaviyo flows can only be as smart as the data behind them.
 

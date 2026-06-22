@@ -26,6 +26,8 @@ Adapting a product recommendation quiz to a multi-market store involves three la
 
 ![Diagram showing a product quiz adapting questions, language and currency to different markets across regions](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Quizzes-for-markets.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;A single quiz adapts questions, language and currency per market. Built for Shopify handles the detection-and-routing automatically via Shopify Markets; the other platforms achieve the same outcome with duplicate quizzes plus JavaScript routing.</p>
+
 <div style="margin:32px 0;padding:24px 28px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 14px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">What you'll learn</p>
   <ul style="list-style:none;padding:0;margin:0;">
@@ -66,8 +68,11 @@ As you adapt your quizzes to different cultural contexts, it's also important to
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">With <a href="https://revenuehunt.com/product-recommendation-quiz/" style="color:#16161D;text-decoration:underline;">RevenueHunt: Recommender Quiz for Shopify</a> you can create multiple duplicates of your quiz and style them differently for different markets. You can easily add images and videos, change colors of questions and buttons based on your target market. You can even add custom CSS or JavaScript code to make the quiz pop. Check <a href="https://docs.revenuehunt.com/how-to-guides/customize-quiz-design/" style="color:#16161D;text-decoration:underline;">here</a> for more details about styling your multi-language quiz.</p>
-  <img src="/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-091327.webp" alt="Quiz Builder design panel showing per-market visual customisation options" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
 </div>
+
+![Quiz Builder design panel showing per-market visual customisation options](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-091327.webp)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;The Quiz Builder design panel: colours, typography and per-question visuals all customise per quiz duplicate. Each market gets its own visual identity without rebuilding the question flow.</p>
 
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
@@ -87,9 +92,12 @@ Effective localisation requires more than a direct translation of text. It's cru
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Navigate to <code style="background:#f1f5f9;padding:1px 6px;border-radius:4px;font-size:0.92em;">Quiz Settings &gt; Messages</code> in the <a href="https://revenuehunt.com/product-recommendation-quiz/" style="color:#16161D;text-decoration:underline;">RevenueHunt: Recommender Quiz</a> app to modify the language of interactive elements like buttons and popups. The translation of these elements can be done automatically and then adjusted manually where necessary for each button or popup message.</p>
-  <img src="/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-091452.webp" alt="Quiz Builder Messages settings panel where UI button labels and system messages can be translated" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">Note that questions and choices need manual translation, which allows for full flexibility when creating your localised quiz.</p>
 </div>
+
+![Quiz Builder Messages settings panel where UI button labels and system messages can be translated](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-091452.webp)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;The Messages panel in Quiz Settings: button labels and system messages translate automatically per language. Question and answer text still need manual translation, which is what gives the quiz its localised voice.</p>
 
 ### Legal and regulatory compliance
 
@@ -103,9 +111,12 @@ Each market has its own set of regulations that you must adhere to, especially r
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">To show the "grundpreis" or \<code style="background:#f1f5f9;padding:1px 6px;border-radius:4px;font-size:0.92em;">per 100ml\</code> price for cosmetic products <a href="https://revenuehunt.com/product-recommendation-quiz/" style="color:#16161D;text-decoration:underline;">RevenueHunt: Recommender Quiz for Shopify</a> allows you to show these values by automatically <a href="https://docs.revenuehunt.com/how-to-guides/add-product-metafields/" style="color:#16161D;text-decoration:underline;">syncing the metafields/attributes of products</a> from your store.</p>
-  <img src="/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-091730.webp" alt="Product metafields configuration in the Quiz Builder for displaying German PAngV per-100ml unit prices" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;"><strong>Tip:</strong> <a href="https://revenuehunt.com/product-quiz-marketing-consent/" style="color:#16161D;text-decoration:underline;">This article</a> explains in depth all the different ways you can ask for marketing and data processing consent in your RevenueHunt: Recommender Quiz for Shopify.</p>
 </div>
+
+![Product metafields configuration in the Quiz Builder for displaying German PAngV per-100ml unit prices](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-091730.webp)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 05</span> &nbsp;Product metafields configuration for displaying German PAngV per-100ml unit prices. The quiz pulls these synced metafields automatically so the legally-required reference price renders on every product card in EEA markets.</p>
 
 ## Technical setup, by platform
 
@@ -170,6 +181,8 @@ These versions don't have native market detection. You build the same outcome vi
 
 ![Quiz duplication and language settings panel in the Quiz Builder for Shopify Legacy and non-Shopify platforms](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-092134.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;Quiz duplication and language settings on Shopify Legacy and the multi-platform versions. Each language gets its own quiz duplicate with its own quiz ID; the storefront routes to the right one via JavaScript.</p>
+
 ### Workaround 1: display the correct quiz based on browser language
 
 Use JavaScript on your storefront to detect the browser's language and load the matching quiz ID. The script should:
@@ -225,8 +238,11 @@ Localisation doesn't end with the launch of your quiz. Continuous testing and op
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;"><a href="https://revenuehunt.com/product-recommendation-quiz/" style="color:#16161D;text-decoration:underline;">RevenueHunt: Recommender Quiz for Shopify</a> app provides detailed analytics of your quiz engagement and responses.</p>
-  <img src="/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/manual_quizbuilder_metrics_analytics.webp" alt="Quiz Builder Analytics panel for tracking per-market quiz performance" style="display:block;max-width:100%;height:auto;border-radius:6px;margin:12px 0 4px;" loading="lazy" />
 </div>
+
+![Quiz Builder Analytics panel for tracking per-market quiz performance](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/manual_quizbuilder_metrics_analytics.webp)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 06</span> &nbsp;The Quiz Builder analytics panel: per-market completion, drop-off and conversion metrics in one view. The per-market breakdown is what tells you which localisation choices are working and which need another iteration.</p>
 
 ## Frequently asked questions
 

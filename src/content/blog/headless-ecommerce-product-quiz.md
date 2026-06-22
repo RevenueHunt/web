@@ -1,8 +1,8 @@
 ---
-title: "Product recommendation quiz for headless ecommerce"
+title: "Product quiz for headless ecommerce"
 description: "Headless or custom-frontend ecommerce store? The RevenueHunt Standalone quiz embeds anywhere, captures zero-party data and recommends products."
 pubDate: 2024-06-20T06:04:51Z
-updatedDate: 2026-05-29T17:30:00Z
+updatedDate: 2026-06-22T19:00:00Z
 tags:
   - "ecommerce"
   - "product recommendation quiz"
@@ -20,21 +20,30 @@ featuredImage: "/img/blog/headless-ecommerce-product-quiz/blogtile_headless.webp
 draft: false
 ---
 
-If you're running a headless ecommerce store (Shopify Hydrogen, Next.js Commerce, a custom React frontend over a Shopify or BigCommerce API, or a fully bespoke build), most product recommendation quiz apps don't work out of the box: they assume they're embedding into a templated theme, not a custom frontend. That breaks [ecommerce personalisation](/glossary/ecommerce-personalization/) at the moment shoppers are most engaged. The **RevenueHunt Standalone** version of the Recommender Quiz solves this. It's the same quiz engine that powers our Built for Shopify, WooCommerce, Magento and BigCommerce versions, with one key difference: it integrates into any frontend via a single JavaScript snippet, syncs products via Google Product Feed, and runs entirely independently of any storefront platform. On a standard WooCommerce store, the [WooCommerce product recommendation quiz](/product-recommendation-quiz-woocommerce/) plugin is the better fit.
+If you're running a headless ecommerce store (Shopify Hydrogen, Next.js Commerce, a custom React frontend over a Shopify or BigCommerce API, or a fully bespoke build), most product recommendation quiz apps don't work out of the box: they assume they're embedding into a templated theme, not a custom frontend. That breaks [ecommerce personalisation](/glossary/ecommerce-personalization/) at the moment shoppers are most engaged. The **RevenueHunt Standalone** version of the Recommender Quiz solves this. It's the same quiz engine that powers our [Built for Shopify](/revenuehunt-built-for-shopify/), WooCommerce, Magento and BigCommerce versions, with one key difference: it integrates into any frontend via a single JavaScript snippet, syncs products via Google Product Feed, and runs entirely independently of any storefront platform. On a standard WooCommerce store, the [WooCommerce product recommendation quiz](/product-recommendation-quiz-woocommerce/) plugin is the better fit.
 
 <div class="aspect-video overflow-hidden rounded-xl bg-slate-900 not-prose my-6"><button type="button" class="yt-facade group relative block h-full w-full cursor-pointer overflow-hidden" data-yt-id="fifkJo07Zgc" aria-label="Play video"><picture><source srcset="https://i.ytimg.com/vi_webp/fifkJo07Zgc/maxresdefault.webp" type="image/webp" /><img src="https://i.ytimg.com/vi/fifkJo07Zgc/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async" class="h-full w-full object-cover" /></picture><span class="absolute inset-0 flex items-center justify-center bg-black/10 transition group-hover:bg-black/20"><span class="flex h-20 w-20 items-center justify-center rounded-full bg-black/70 shadow-lg transition group-hover:scale-105 group-hover:bg-[#FF0000]"><svg class="ml-0.5 h-9 w-9 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg></span></span></button></div>
 
 <div style="margin:32px 0;padding:24px 28px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 14px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">What you'll learn</p>
   <ul style="list-style:none;padding:0;margin:0;">
-    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>Why headless ecommerce setups break most quiz apps, and what the RevenueHunt Standalone version does differently.</span></li>
-    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>Nine use cases beyond traditional Shopify stores (affiliate sites, course platforms, brick-and-mortar, subscription boxes).</span></li>
-    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>The four-step install process for Standalone, including Google Product Feed product sync.</span></li>
-    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>How zero-party data and Klaviyo segmentation work on Standalone vs the Shopify-native versions.</span></li>
+    <li style="display:flex;gap:14px;padding:8px 0;font-size:15px;color:#0f172a;line-height:1.55;border-top:1px solid #e2e8f0;"><span style="flex-shrink:0;font-variant-numeric:tabular-nums;font-weight:700;color:#16161D;min-width:24px;">01</span><span>Why headless ecommerce setups break most quiz apps, and what the RevenueHunt Standalone version does differently.</span></li>
+    <li style="display:flex;gap:14px;padding:8px 0;font-size:15px;color:#0f172a;line-height:1.55;border-top:1px solid #e2e8f0;"><span style="flex-shrink:0;font-variant-numeric:tabular-nums;font-weight:700;color:#16161D;min-width:24px;">02</span><span>Nine use cases beyond traditional Shopify stores (affiliate sites, course platforms, brick-and-mortar, subscription boxes).</span></li>
+    <li style="display:flex;gap:14px;padding:8px 0;font-size:15px;color:#0f172a;line-height:1.55;border-top:1px solid #e2e8f0;"><span style="flex-shrink:0;font-variant-numeric:tabular-nums;font-weight:700;color:#16161D;min-width:24px;">03</span><span>The four-step install process for Standalone, including Google Product Feed product sync.</span></li>
+    <li style="display:flex;gap:14px;padding:8px 0;font-size:15px;color:#0f172a;line-height:1.55;border-top:1px solid #e2e8f0;"><span style="flex-shrink:0;font-variant-numeric:tabular-nums;font-weight:700;color:#16161D;min-width:24px;">04</span><span>How zero-party data and Klaviyo segmentation work on Standalone vs the Shopify-native versions.</span></li>
   </ul>
 </div>
 
 ![RevenueHunt Standalone Quiz banner](/img/blog/headless-ecommerce-product-quiz/Standalone-Quiz-banner-1.webp)
+
+**Table of contents:**
+
+- [What headless ecommerce changes](#what-headless-ecommerce-changes)
+- [The Standalone Recommender Quiz: how it differs](#the-standalone-recommender-quiz-how-it-differs)
+- [Use cases beyond Shopify](#use-cases-beyond-shopify)
+- [How to install the Standalone quiz](#how-to-install-the-standalone-quiz)
+- [Frequently asked questions](#frequently-asked-questions)
+- [Where this fits](#where-this-fits)
 
 ## What headless ecommerce changes
 
@@ -43,6 +52,8 @@ Headless ecommerce decouples the **frontend** (what customers see) from the **ba
 Adoption sits somewhere in the high-teens of the ecommerce market depending on which research you read. Large brands like Nike, Lululemon and LEGO run headless setups, and a steady stream of mid-market stores are migrating because the performance, flexibility and time-to-market wins compound. The flip side is that every app that used to "just drop in" via a theme block now needs an integration path that doesn't depend on the theme layer.
 
 ![Headless ecommerce platforms and the gap traditional quiz apps leave open for them](/img/blog/headless-ecommerce-product-quiz/ecommerce-platforms-1024x1024.webp)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;Templated quiz apps assume a Shopify or WooCommerce theme exists to hook into. Headless storefronts have no theme; the Standalone version embeds via a single JS snippet anywhere on the frontend.</p>
 
 ### Why operators choose headless
 
@@ -76,6 +87,8 @@ The Standalone version of the [RevenueHunt: Recommender Quiz](https://revenuehun
 
 ![Standalone Quiz Builder with the question flow on the left and choice settings on the right](/img/blog/headless-ecommerce-product-quiz/buiderstandalone.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;The Standalone Quiz Builder. Same question flow editor and choice settings as the Shopify and WooCommerce versions, accessed via a web dashboard instead of an admin app.</p>
+
 > **Free plan** covers up to 100 quiz responses per month with every feature unlocked.
 
 **Embeds via a single JavaScript snippet.** Drop a script tag anywhere in your headless frontend (Next.js page, Astro layout, custom React route, plain HTML) and the quiz renders inline. No theme block, no iframe wrapper, no platform-specific install path.
@@ -84,13 +97,15 @@ The Standalone version of the [RevenueHunt: Recommender Quiz](https://revenuehun
 
 ![Standalone Google Product Feed import showing products synced from a Google Merchant Center feed](/img/blog/headless-ecommerce-product-quiz/googlefeedsatndalone.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;Standalone syncs the catalogue via a Google Merchant Center feed. Same product data Google Shopping already has; no platform-specific admin required.</p>
+
 **Same zero-party data flow.** Every quiz response captures the same structured data the Shopify and WooCommerce versions capture, syncs to Klaviyo via the native integration, and feeds the same segmented email flows. See [how Klaviyo segmentation unlocks once zero-party data lands in profiles](/klaviyo-zero-party-data/) for the activation chain. **Segmented Klaviyo campaigns earn over 3x the revenue per recipient of generic sends** (Klaviyo segmentation benchmark).
 
 **Same Quiz Builder.** Same question types, same recommendation algorithm, same customer-tag system, same results-page editor as the platform-native versions. If you've used RevenueHunt on Shopify before, the Standalone version is the same product with a different integration path.
 
 ## Use cases beyond Shopify
 
-Standalone exists because the customer base for a product recommendation quiz is much wider than just "stores on Shopify". Nine use cases we see regularly:
+Standalone exists because the customer base for a product recommendation quiz is much wider than just "stores on Shopify". Ten use cases we see regularly:
 
 **Affiliate stores.** Display custom product images and affiliate links from anywhere on the web. The quiz routes the customer to the right partner-merchant link based on their answers, capturing email and zero-party data in the process.
 
@@ -117,6 +132,8 @@ Standalone exists because the customer base for a product recommendation quiz is
 1.  **Sign up.** Visit the [RevenueHunt sign-up page](https://admin.revenuehunt.com/register) and create an account.
 
     ![RevenueHunt dashboard sign-up page for creating a Standalone account](/img/blog/headless-ecommerce-product-quiz/image-5.webp)
+
+    <p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;The RevenueHunt dashboard sign-up page. Creates a Standalone account in under a minute; the Free plan covers 100 quiz responses per month with every feature unlocked.</p>
 
 2.  **Set up your quiz.** Log in to the [RevenueHunt dashboard](https://admin.revenuehunt.com/login), create a new quiz, design it to match your brand, write the questions and define the answer choices. For the design principles that produce a high-converting quiz, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/).
 3.  **Add products.** Either upload products manually for smaller catalogues, or connect a Google Product Feed from Google Merchant Center for catalogues that already sync to Google Shopping. Map each quiz answer to specific products or collections.
@@ -193,10 +210,53 @@ Yes. The Free plan covers up to 100 quiz responses per month with every feature 
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Install the RevenueHunt Standalone Recommender Quiz on a headless ecommerce store",
+  "description": "Sign up, build the quiz in the dashboard, sync products via a Google Product Feed, and embed the quiz on any headless frontend via a single JavaScript snippet.",
+  "totalTime": "PT45M",
+  "supply": [
+    {"@type": "HowToSupply", "name": "A RevenueHunt account (free to create)"},
+    {"@type": "HowToSupply", "name": "A Google Product Feed from Google Merchant Center (or a small catalogue to upload manually)"},
+    {"@type": "HowToSupply", "name": "Access to your headless frontend to paste a single JavaScript snippet"}
+  ],
+  "step": [
+    {"@type": "HowToStep", "name": "Sign up", "text": "Visit admin.revenuehunt.com/register and create a Standalone account. The Free plan covers up to 100 quiz responses per month with every feature unlocked."},
+    {"@type": "HowToStep", "name": "Set up your quiz", "text": "Log in to the RevenueHunt dashboard, create a new quiz, design it to match your brand, write the questions and define the answer choices."},
+    {"@type": "HowToStep", "name": "Add products", "text": "Upload products manually for smaller catalogues, or connect a Google Product Feed from Google Merchant Center for catalogues already synced to Google Shopping. Map each quiz answer to specific products or collections."},
+    {"@type": "HowToStep", "name": "Embed and launch", "text": "Copy the JavaScript snippet from the dashboard and paste it into the page on your headless frontend where the quiz should appear. Publish the quiz and start collecting responses."}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Ten use cases for the Standalone product recommendation quiz beyond Shopify",
+  "description": "Use cases where the RevenueHunt Standalone version of the Recommender Quiz fits stores and sites without a templated storefront platform.",
+  "numberOfItems": 10,
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Affiliate stores", "description": "Display custom product images and affiliate links from anywhere on the web. The quiz routes the customer to the right partner-merchant link based on their answers."},
+    {"@type": "ListItem", "position": 2, "name": "Sites without ecommerce capability", "description": "Course platforms, coaching sites, agencies, SaaS landing pages. The quiz recommends which programme, package or content matches the visitor."},
+    {"@type": "ListItem", "position": 3, "name": "Custom-built storefronts", "description": "Anything running on a non-Shopify, non-Woo, non-Magento stack: a Next.js site over a bespoke commerce API, a static Astro site with Stripe checkout, a WordPress site without WooCommerce."},
+    {"@type": "ListItem", "position": 4, "name": "WordPress sites avoiding WooCommerce", "description": "WordPress installations that prefer not to run the full WooCommerce stack can still surface a recommendation quiz that routes to external purchase pages."},
+    {"@type": "ListItem", "position": 5, "name": "Brick-and-mortar stores", "description": "Tablet kiosks running the quiz in-store. The customer takes a 60-second consultation on the kiosk and the recommendation prints to a slip the sales associate uses to gather products."},
+    {"@type": "ListItem", "position": 6, "name": "Membership-based sites", "description": "Recommend tiers, content modules or services to members based on stated preferences, refreshed quarterly as the customer needs change."},
+    {"@type": "ListItem", "position": 7, "name": "Niche retailers", "description": "Specialty stores in narrow verticals (fermentation supplies, vintage watches, specialty teas) where category browsing produces choice paralysis and a guided consultation routes the customer to the right SKU."},
+    {"@type": "ListItem", "position": 8, "name": "Educational platforms", "description": "Recommend courses based on the student stated goals, current skill level and learning style. Often runs as an onboarding step for new account holders."},
+    {"@type": "ListItem", "position": 9, "name": "Subscription box services", "description": "Personalise the contents of each subscription box based on the customer answers, with periodic re-quiz prompts to keep the recommendations current."},
+    {"@type": "ListItem", "position": 10, "name": "Healthcare and wellness", "description": "Recommend personalised plans, supplements or services based on health profile and goals. Requires careful consent and data-protection design, which Standalone supports natively."}
+  ]
+}
+</script>
+
 ## Where this fits
 
 Headless ecommerce adoption is steady and growing because the performance, flexibility and time-to-market wins compound across every customer-facing surface. The trade-off is that everything that used to be a one-click theme install now needs an integration path. For product recommendation quizzes specifically, the Standalone version of the RevenueHunt: Recommender Quiz is the path: same engine, same Klaviyo integration, same zero-party data flow, embedded via a single JavaScript snippet anywhere.
 
-For the foundations of the quiz itself, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/). For the data category the quiz captures, see our [zero-party data guide](https://revenuehunt.com/zero-party-data/). For the activation chain into segmented flows, see [how Klaviyo segmentation unlocks once zero-party data lands in profiles](https://revenuehunt.com/klaviyo-zero-party-data/).
+For the foundations of the quiz itself, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/). For the data category the quiz captures, see our [zero-party data guide](https://revenuehunt.com/zero-party-data/). For concrete examples of zero-party data mechanisms across real brands, see [12 zero-party data examples](https://revenuehunt.com/zero-party-data-examples/). For the activation chain into segmented flows, see [how Klaviyo segmentation unlocks once zero-party data lands in profiles](https://revenuehunt.com/klaviyo-zero-party-data/). For the consent-design playbook for any quiz including Standalone, see [marketing consent in a product quiz](https://revenuehunt.com/product-quiz-marketing-consent/).
 
 [Get the Standalone Recommender Quiz](https://revenuehunt.com/product-recommendation-quiz-standalone-google-product-feed/) and start your first headless quiz funnel today. Free plan available.

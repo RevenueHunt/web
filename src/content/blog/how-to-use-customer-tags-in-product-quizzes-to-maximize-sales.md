@@ -1,8 +1,8 @@
 ---
-title: "How to use customer tags in product quizzes to maximise sales"
+title: "Customer tags in product quizzes"
 description: "Tag every quiz answer, sync the tags to Klaviyo, build segments, ship tailored campaigns. The full walkthrough with a haircare example, end to end."
 pubDate: 2024-06-13T06:00:17Z
-updatedDate: 2026-05-29T17:00:00Z
+updatedDate: 2026-06-22T20:00:00Z
 tags:
   - "ecommerce"
   - "product recommendation quiz"
@@ -32,10 +32,10 @@ This guide walks through the full implementation end to end, using a haircare st
 <div style="margin:32px 0;padding:24px 28px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 14px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">What you'll learn</p>
   <ul style="list-style:none;padding:0;margin:0;">
-    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>What customer tags are, what they're used for, and why segmented marketing built on them outperforms blast campaigns.</span></li>
-    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>How to create and link tags in the RevenueHunt Quiz Builder (3-minute setup).</span></li>
-    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>The 6-step end-to-end haircare worked example: quiz → tags → Klaviyo → segments → tailored campaigns → measurement.</span></li>
-    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>A quarterly review workflow to keep tags accurate and segments performing over time.</span></li>
+    <li style="display:flex;gap:14px;padding:8px 0;font-size:15px;color:#0f172a;line-height:1.55;border-top:1px solid #e2e8f0;"><span style="flex-shrink:0;font-variant-numeric:tabular-nums;font-weight:700;color:#16161D;min-width:24px;">01</span><span>What customer tags are, what they're used for, and why segmented marketing built on them outperforms blast campaigns.</span></li>
+    <li style="display:flex;gap:14px;padding:8px 0;font-size:15px;color:#0f172a;line-height:1.55;border-top:1px solid #e2e8f0;"><span style="flex-shrink:0;font-variant-numeric:tabular-nums;font-weight:700;color:#16161D;min-width:24px;">02</span><span>How to create and link tags in the RevenueHunt Quiz Builder (3-minute setup).</span></li>
+    <li style="display:flex;gap:14px;padding:8px 0;font-size:15px;color:#0f172a;line-height:1.55;border-top:1px solid #e2e8f0;"><span style="flex-shrink:0;font-variant-numeric:tabular-nums;font-weight:700;color:#16161D;min-width:24px;">03</span><span>The 6-step end-to-end haircare worked example: quiz, tags, Klaviyo, segments, tailored campaigns, measurement.</span></li>
+    <li style="display:flex;gap:14px;padding:8px 0;font-size:15px;color:#0f172a;line-height:1.55;border-top:1px solid #e2e8f0;"><span style="flex-shrink:0;font-variant-numeric:tabular-nums;font-weight:700;color:#16161D;min-width:24px;">04</span><span>A quarterly review workflow to keep tags accurate and segments performing over time.</span></li>
   </ul>
 </div>
 
@@ -44,6 +44,14 @@ This article focuses on the haircare worked example. For the broader strategy of
 ![Customer tags illustration: quiz answers becoming tags, tags becoming Klaviyo segment filters](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/blogtile_customertags.webp)
 
 <p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;How customer tags compound: every quiz answer becomes a tag, every tag becomes a Klaviyo segment filter. Five answers in the quiz produce a profile a generic email-marketing list cannot build.</p>
+
+**Table of contents:**
+
+- [Customer tags 101](#customer-tags-101)
+- [The haircare worked example: end to end](#the-haircare-worked-example-end-to-end)
+- [A quarterly review process for tags and segments](#a-quarterly-review-process-for-tags-and-segments)
+- [Frequently asked questions](#frequently-asked-questions)
+- [Where this fits](#where-this-fits)
 
 ## Customer tags 101
 
@@ -63,7 +71,7 @@ The bigger framing is the same one as the [zero-party data guide](https://revenu
 
 ### Why segmented marketing matters
 
-Segmented campaigns consistently outperform blast campaigns on every measurable axis: open rate, click-through, revenue per recipient, unsubscribe rate. The reason is structural rather than incidental — when the message references something the customer told you, the open-decision is "is this for me?" rather than "is this spam?", and the answer is more often yes.
+Segmented campaigns consistently outperform blast campaigns on every measurable axis: open rate, click-through, revenue per recipient, unsubscribe rate. The reason is structural rather than incidental: when the message references something the customer told you, the open-decision is "is this for me?" rather than "is this spam?", and the answer is more often yes.
 
 Our own platform data, drawn from 45M+ responses across 20,000+ stores running RevenueHunt quizzes ([2026 benchmark report](/state-of-product-recommendation-quizzes/)), is the cleanest first-party signal:
 
@@ -80,7 +88,7 @@ The structural difference between an integrated and unintegrated quiz isn't the 
 
 ### Creating and adding customer tags
 
-The setup flow differs between the Built for Shopify version and the legacy / multi-platform versions: Built for Shopify exposes tags inside each choice's Settings panel, while the older versions use a dedicated Customer Tags section in the Quiz Builder with a per-choice input bar.
+The setup flow differs between the [Built for Shopify](/revenuehunt-built-for-shopify/) version and the legacy / multi-platform versions: Built for Shopify exposes tags inside each choice's Settings panel, while the older versions use a dedicated Customer Tags section in the Quiz Builder with a per-choice input bar.
 
 #### On Built for Shopify
 
@@ -102,25 +110,25 @@ The older versions use a dedicated Customer Tags section in the Quiz Builder rat
 
     ![Quiz Builder Customer Tags section showing how to add a new tag against a quiz choice](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/manual_quizbuilder_customertags_addtag.webp)
 
-    <p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;The Customer Tags section on Shopify Legacy and the multi-platform versions. Tags are added via the input bar next to each quiz choice; once created, a tag becomes selectable for any other choice across the quiz.</p>
+    <p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;The Customer Tags section on Shopify Legacy and the multi-platform versions. Tags are added via the input bar next to each quiz choice; once created, a tag becomes selectable for any other choice across the quiz.</p>
 
 4.  Once a tag exists, it becomes available as a selectable option for any other choice across the quiz. There's no limit on tags per choice or choices per tag.
 
     ![Quiz Builder showing a customer tag linked to a quiz choice with the green confirmation state](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/manual_quizbuilder_customertags_tagadded.webp)
 
-    <p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 05</span> &nbsp;Tag confirmation state once a customer tag is linked to a quiz choice. The green confirmation is the signal that the tag will flow into Klaviyo on every completion that touches this choice.</p>
+    <p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;Tag confirmation state once a customer tag is linked to a quiz choice. The green confirmation is the signal that the tag will flow into Klaviyo on every completion that touches this choice.</p>
 
 ## The haircare worked example: end to end
 
 Imagine a haircare store selling shampoos, conditioners, hair treatments and styling products. The store runs a RevenueHunt: Recommender Quiz for Shopify quiz to help customers find the right products based on hair type, concerns and goals. Here's the full setup, end to end, for a tag-driven Klaviyo campaign.
 
-### 1. Build the quiz
+### Build the quiz
 
 Create a quiz with questions about hair type (e.g. curly, straight, wavy), hair concerns (e.g. dandruff, dryness, frizz) and hair goals (e.g. volume, shine, repair). Make sure to add an email-capture question as the final slide or just before the results page, and make it required: platform data shows 71% of top-converting quizzes collect email this way and 75% of those make it mandatory.
 
 For the foundations of a well-built quiz, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/). For the mistakes that quietly leak conversion, see [quiz creation mistakes that hurt your ecommerce sales](https://revenuehunt.com/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/).
 
-### 2. Create and link customer tags to choices
+### Create and link customer tags to choices
 
 As you set up each question, attach a relevant tag to each answer choice. For the haircare example, you'd typically tag:
 
@@ -132,13 +140,13 @@ A single customer might end up tagged with three or four of these (e.g. `Curly H
 
 ![Quiz Builder Customer Tags view showing the haircare quiz with tags linked to each choice](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/Screenshot-2024-06-06-153844.webp)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;The Quiz Builder Customer Tags view on a haircare quiz: each answer choice has a descriptive tag attached. These tags flow into Klaviyo as profile properties on every quiz completion.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;The Quiz Builder Customer Tags view on a haircare quiz: each answer choice has a descriptive tag attached. These tags flow into Klaviyo as profile properties on every quiz completion.</p>
 
-### 3. Connect the quiz to Klaviyo
+### Connect the quiz to Klaviyo
 
 Follow the [Klaviyo integration instructions](https://docs.revenuehunt.com/how-to-guides/send-leads-to-klaviyo/) in the docs. Once connected, every completed quiz response automatically sends the customer's email, quiz answers and applied customer tags to Klaviyo, where they're stored as profile properties on the customer record. No Zapier glue, no manual export, no custom integration code.
 
-### 4. Create segments in Klaviyo
+### Create segments in Klaviyo
 
 In Klaviyo, create segments by filtering on the tag properties you just synced. For the haircare example:
 
@@ -152,11 +160,11 @@ You can also compound segments (e.g. `Curly Hair` + `Dry Hair`) to target specif
 
 ![Klaviyo segment editor showing the filter condition based on the Curly Hair customer tag from the quiz](/img/blog/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/kalviyo-segement.webp)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;Klaviyo's segment editor reading the Curly Hair customer tag from the quiz. The segment auto-populates as new quiz responses come in; no manual list curation required.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 05</span> &nbsp;Klaviyo's segment editor reading the Curly Hair customer tag from the quiz. The segment auto-populates as new quiz responses come in; no manual list curation required.</p>
 
 > **🧐 Tip:** The [follow-up emails Klaviyo tutorial](https://docs.revenuehunt.com/tutorials/follow-up-emails-klaviyo/) walks through segment creation step by step with screenshots.
 
-### 5. Design tailored email campaigns
+### Design tailored email campaigns
 
 Build [email flows or campaigns](https://help.klaviyo.com/hc/en-us/articles/115002774932) specifically tailored to each segment. The principle is the same one that makes the quiz work in the first place: the message references something the customer actively told you, not something the brand assumed.
 
@@ -185,7 +193,7 @@ Two sample campaign templates that illustrate the per-segment treatment:
 
 For the discount layer that compounds on top of these segmented sequences, see [product quiz discounts: the conversion playbook](https://revenuehunt.com/product-quiz-discounts/).
 
-### 6. Monitor and analyse campaign performance
+### Monitor and analyse campaign performance
 
 Track the performance of each segmented campaign in Klaviyo. Watch open rates, click-through rates and conversion rates per segment, not just the aggregate, because the whole point of segmentation is that the numbers vary meaningfully between groups. If one segment converts at 12% and another at 3%, that's the signal to either retire the low-performing campaign or restructure it around what the high-performing one is doing.
 
@@ -282,11 +290,34 @@ The Klaviyo flow itself starts converting from the first email the customer rece
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Use customer tags in a product recommendation quiz to drive Klaviyo segmentation",
+  "description": "Build a quiz with descriptive customer tags on every relevant answer choice, sync the tags to Klaviyo, build segments on the tag combinations, and run tailored email campaigns. The end-to-end haircare worked example.",
+  "totalTime": "PT2H",
+  "supply": [
+    {"@type": "HowToSupply", "name": "A RevenueHunt: Recommender Quiz account (free plan covers 100 responses per month)"},
+    {"@type": "HowToSupply", "name": "A connected Klaviyo account with API permissions"},
+    {"@type": "HowToSupply", "name": "A product catalogue in your store admin (Shopify, WooCommerce, Magento, BigCommerce, or via Google Product Feed for Standalone)"}
+  ],
+  "step": [
+    {"@type": "HowToStep", "name": "Build the quiz", "text": "Create the question flow with relevant choices for your category (hair type, hair concern, hair goal for haircare). Add an email-capture question as the final slide or just before the results page and make it required."},
+    {"@type": "HowToStep", "name": "Create and link customer tags to choices", "text": "On Built for Shopify, attach tags via each choice's Settings panel. On Shopify Legacy / WooCommerce / Magento / BigCommerce / Standalone, use the dedicated Customer Tags section with the per-choice input bar. A typical quiz produces 5-10 tags per completion."},
+    {"@type": "HowToStep", "name": "Connect the quiz to Klaviyo", "text": "In the Quiz Builder Connect tab, authorise the Klaviyo integration. Tags flow into Klaviyo as profile properties on every quiz completion that captures email."},
+    {"@type": "HowToStep", "name": "Create segments in Klaviyo", "text": "Build Klaviyo segments by filtering the audience on tag combinations: customers tagged with curly_hair AND dry_hair for one segment, customers tagged with damage_concern for another. Segments auto-populate as new responses come in."},
+    {"@type": "HowToStep", "name": "Design tailored email campaigns", "text": "For each segment, design email templates that reference the customer's stated quiz preferences directly in the subject line and body. Generic newsletter templates underperform tag-referenced ones on every metric."},
+    {"@type": "HowToStep", "name": "Monitor and analyse campaign performance", "text": "Track per-segment open rate, click-through rate, revenue per email and unsubscribe rate. Refine low-performing segments or consolidate ones that are too small to justify their own treatment."}
+  ]
+}
+</script>
+
 ## Where this fits
 
 Customer tags are the activation layer for everything zero-party data makes possible. The quiz captures the data; the tags structure it; Klaviyo segments operationalise it; the campaigns convert it. Each layer compounds the value of the one underneath, which is why the lift on a Klaviyo-integrated quiz funnel is so consistently larger than any single tactic in isolation.
 
-For the data category underneath this whole architecture, see our [zero-party data guide](https://revenuehunt.com/zero-party-data/). For the full segmentation chain end to end, see [how Klaviyo segmentation unlocks once zero-party data lands in profiles](https://revenuehunt.com/klaviyo-zero-party-data/). For the discount layer that compounds on top, see [product quiz discounts](https://revenuehunt.com/product-quiz-discounts/). For the broader funnel mechanics, see [11 ecommerce sales funnel examples that convert in 2026](https://revenuehunt.com/ecommerce-sales-funnel-examples/). For where this entire stack fits strategically, see [the 10 strategies that compound retention](/customer-retention-ecommerce-guide/).
+For the data category underneath this whole architecture, see our [zero-party data guide](https://revenuehunt.com/zero-party-data/). For concrete examples of zero-party data mechanisms across real brands, see [12 zero-party data examples](https://revenuehunt.com/zero-party-data-examples/). For the underlying privacy-data taxonomy, see [first-party vs third-party data: what is the difference](https://revenuehunt.com/first-party-data-vs-third-party-data/). For the full segmentation chain end to end, see [how Klaviyo segmentation unlocks once zero-party data lands in profiles](https://revenuehunt.com/klaviyo-zero-party-data/). For the consent moment that gates the whole system, see [marketing consent in a product quiz](https://revenuehunt.com/product-quiz-marketing-consent/). For the discount layer that compounds on top, see [product quiz discounts](https://revenuehunt.com/product-quiz-discounts/). For the broader funnel mechanics, see [11 ecommerce sales funnel examples that convert in 2026](https://revenuehunt.com/ecommerce-sales-funnel-examples/). For where this entire stack fits strategically, see [the 10 strategies that compound retention](/customer-retention-ecommerce-guide/).
 
 For more on our integrations, visit [our integrations page](https://revenuehunt.com/integrations/).
 

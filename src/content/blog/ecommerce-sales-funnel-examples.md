@@ -69,7 +69,7 @@ Where the result is disclosed publicly (case studies, podcast interviews, invest
 
 ![HUM Nutrition quiz funnel](/img/blog/ecommerce-sales-funnel-examples/blog_11examples_humnutrition.webp)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 06</span> &nbsp;HUM Nutrition's nutrition quiz: a clinical-style intake that asks about lifestyle, sleep, energy and skin concerns. The quiz routes to a personalised supplement protocol that feels prescribed rather than picked.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;HUM Nutrition's nutrition quiz: a clinical-style intake that asks about lifestyle, sleep, energy and skin concerns. The quiz routes to a personalised supplement protocol that feels prescribed rather than picked.</p>
 
 **What makes it work.** HUM Nutrition compresses what would otherwise be a 45-minute supplement consultation into a 3-minute on-site quiz that produces a personalised nutrition report. The quiz output is positioned as a clinical-style diagnostic rather than a marketing funnel, which converts the sceptical buyer the supplements category has traditionally struggled to win.
 
@@ -81,7 +81,7 @@ Where the result is disclosed publicly (case studies, podcast interviews, invest
 
 ![Stitch Fix style profile funnel](/img/blog/ecommerce-sales-funnel-examples/blog_11examples_stitchfixexample.webp)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;Stitch Fix's style profile: a long-form quiz that captures size, fit, style preferences and budget. The quiz is the entire funnel — the recommendation is delivered by a human stylist reading the profile.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;Stitch Fix's style profile: a long-form quiz that captures size, fit, style preferences and budget. The quiz is the entire funnel — the recommendation is delivered by a human stylist reading the profile.</p>
 
 **What makes it work.** Apparel has the worst returns problem in DTC. Stitch Fix solved it by collecting structured style preferences and physical sizing inside a 15-question profile, then routing the data to a hybrid algorithm-plus-human-stylist that selects the shipped items. Customers receive five hand-picked items in a box, try them at home, and pay only for what they keep.
 
@@ -93,7 +93,7 @@ Where the result is disclosed publicly (case studies, podcast interviews, invest
 
 ![Trade Coffee taste-profile quiz funnel](/img/blog/ecommerce-sales-funnel-examples/blog_11examples_tradecofeeexample.webp)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;Trade Coffee's taste-profile quiz: 7 questions on brewing method, roast preference, flavour profile and frequency. The quiz drives both the first match and per-bag re-recommendations across the subscription lifecycle.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;Trade Coffee's taste-profile quiz: 7 questions on brewing method, roast preference, flavour profile and frequency. The quiz drives both the first match and per-bag re-recommendations across the subscription lifecycle.</p>
 
 **What makes it work.** Trade Coffee operates a marketplace of 50+ independent roasters and uses a taste-profile quiz to solve the classic specialty-coffee discovery problem: shoppers can't tell from a product page whether they'll like a particular roast. The quiz collapses days of trial-and-error into a single match, and the value layer (a roaster sourcing curation the shopper couldn't replicate themselves) keeps the subscription sticky.
 
@@ -105,7 +105,7 @@ Where the result is disclosed publicly (case studies, podcast interviews, invest
 
 ![Warby Parker funnel](/img/blog/ecommerce-sales-funnel-examples/blog_11examples_warbyparker.webp)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;Warby Parker's funnel: face shape and style preferences route to a curated 5-pairs home-try-on set. The free try-on removes the friction of guessing; the quiz makes the curation feel personal, not random.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 05</span> &nbsp;Warby Parker's funnel: face shape and style preferences route to a curated 5-pairs home-try-on set. The free try-on removes the friction of guessing; the quiz makes the curation feel personal, not random.</p>
 
 **What makes it work.** Eyewear has even higher return friction than apparel: fit is hyper-personal and customers cannot judge it from a photo. Warby Parker turned the "try-before-you-buy" mechanic into the funnel itself, and the model defined the category for more than a decade. The brand has since retired the mail-out Home Try-On program in favour of a virtual approach (covered below), but the results the original funnel produced are what built the company, and the mechanic is still worth studying because it remains directly replicable for any category with high fit anxiety.
 
@@ -117,13 +117,13 @@ Where the result is disclosed publicly (case studies, podcast interviews, invest
 
 ![Warby Parker virtual try-on AR experience](/img/blog/ecommerce-sales-funnel-examples/blog_11examples_warbyparker_virtualtryon.webp)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 07</span> &nbsp;Warby Parker's AR virtual try-on: once the quiz narrows the frame set, the try-on closes the visual uncertainty. The combination of curation + try-on removes the two biggest objections to buying eyewear online.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 06</span> &nbsp;Warby Parker's AR virtual try-on: once the quiz narrows the frame set, the try-on closes the visual uncertainty. The combination of curation + try-on removes the two biggest objections to buying eyewear online.</p>
 
 ### 6. Casper: the sleep-education funnel
 
 ![Casper sleep quiz funnel](/img/blog/ecommerce-sales-funnel-examples/blog_11examples_casperexample.webp)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 08</span> &nbsp;Casper's sleep quiz: sleep position, partner habits, body temperature and mattress age route to a specific bed-in-a-box recommendation. The quiz turns a high-consideration purchase into a 3-minute consultation.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 07</span> &nbsp;Casper's sleep quiz: sleep position, partner habits, body temperature and mattress age route to a specific bed-in-a-box recommendation. The quiz turns a high-consideration purchase into a 3-minute consultation.</p>
 
 **What makes it work.** Mattresses are a once-every-eight-years purchase. The funnel needs to compress what would normally be hours of research into a decision a shopper can make on a single visit. Casper built an education-led funnel: the quiz is framed as "find your perfect mattress" but actually walks the customer through the trade-offs (firmness, sleep position, materials) so they reach the result with confidence.
 
@@ -135,7 +135,7 @@ Where the result is disclosed publicly (case studies, podcast interviews, invest
 
 ![Birchbox beauty-profile subscription funnel](/img/blog/ecommerce-sales-funnel-examples/blog_11examples_birchboxsubscriptions.webp)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 09</span> &nbsp;Birchbox's beauty profile: a long-form quiz that personalises the contents of each monthly box. The profile is the product; the box is just delivery.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 08</span> &nbsp;Birchbox's beauty profile: a long-form quiz that personalises the contents of each monthly box. The profile is the product; the box is just delivery.</p>
 
 **What makes it work.** Birchbox pioneered the beauty subscription category by inverting the discovery funnel. Instead of asking the customer to find products they like, the customer fills in a beauty profile and Birchbox sends a curated monthly box of samples. Customers buy full-sized versions of the samples they liked at checkout, which closes the loop on a $15/month subscription that produces 5x to 10x AOV in attached sales.
 
@@ -147,7 +147,7 @@ Where the result is disclosed publicly (case studies, podcast interviews, invest
 
 ![Skinology product recommendation quiz](/img/blog/skinology-case-study/quiz-screenshot.webp)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 10</span> &nbsp;Skinology's consultation quiz: AI plus dermatologist review produces a personalised skincare regimen. Combines algorithmic routing with human expertise as the closing signal.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 09</span> &nbsp;Skinology's consultation quiz: AI plus dermatologist review produces a personalised skincare regimen. Combines algorithmic routing with human expertise as the closing signal.</p>
 
 **What makes it work.** Skinology sells high-ticket skincare in a category where shoppers are extremely cautious about choosing the wrong product. The brand uses a multi-step diagnostic quiz to play the role a clinic dermatologist would play, walking the customer through skin type, concerns, sensitivities and treatment goals before recommending a personalised routine. *Note: Skinology was on RevenueHunt during the period that produced the case-study results below; they have since moved to a custom-built quiz on the same mechanical pattern.*
 
@@ -159,7 +159,7 @@ Where the result is disclosed publicly (case studies, podcast interviews, invest
 
 ![Daughterela quiz funnel](/img/blog/ecommerce-sales-funnel-examples/blog_11examples_daughtrellaexample.webp)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 11</span> &nbsp;Daughterela's beauty finder: a short quiz on routine, skin goals and ingredient preferences routes to a personalised natural-beauty kit. The product set rotates seasonally; the profile carries forward.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 10</span> &nbsp;Daughterela's beauty finder: a short quiz on routine, skin goals and ingredient preferences routes to a personalised natural-beauty kit. The product set rotates seasonally; the profile carries forward.</p>
 
 **What makes it work.** Daughterela's catalogue spans skincare, makeup and wellness, which produces classic discovery friction: shoppers don't know where to start. The brand built a "personal beauty consultant" funnel that uses a quiz at the top of the funnel to route shoppers into one of three sub-catalogues (skincare, makeup, supplements), then layers preference data on top to recommend specific products within each sub-catalogue.
 
@@ -171,7 +171,7 @@ Where the result is disclosed publicly (case studies, podcast interviews, invest
 
 ![Anti-aging device and serum product photography](/img/blog/anti-aging-beauty-brand-quiz-funnel-case-study/blog_casestudy_aov42_img2.webp)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 12</span> &nbsp;The hero product photography from the anti-ageing brand case study: a device + serum kit at $107 AOV. The quiz routes to this kit as the canonical first purchase.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 11</span> &nbsp;The hero product photography from the anti-ageing brand case study: a device + serum kit at $107 AOV. The quiz routes to this kit as the canonical first purchase.</p>
 
 **What makes it work.** This US anti-ageing device brand sells high-ticket items (a microcurrent facial device plus a complementary serum) where unqualified traffic produces a low conversion rate and high refund risk. The team built a *qualifying* funnel: instead of trying to convert every visitor, the quiz screens shoppers by skin concern, age range, treatment history and willingness-to-invest, then surfaces the right product (and the right messaging) only to qualified shoppers.
 
@@ -179,7 +179,7 @@ Where the result is disclosed publicly (case studies, podcast interviews, invest
 
 ![Anti-aging brand funnel diagram: cold Meta ad to quiz start to seven questions with five embedded persuasion screens, results page, $107 AOV purchase, then Klaviyo sync of zero-party data driving repeat purchases](/img/blog/anti-aging-beauty-brand-quiz-funnel-case-study/blog_casestudy_aov42_img3v3.webp)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 05</span> &nbsp;The anti-ageing brand's seven-question funnel: cold Meta ad → quiz entry → five embedded persuasion screens between questions → results-page purchase at $107 AOV → Klaviyo segmentation driving repeat purchases. The persuasion-screen pattern is what produces the 9.8% CVR.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 12</span> &nbsp;The anti-ageing brand's seven-question funnel: cold Meta ad → quiz entry → five embedded persuasion screens between questions → results-page purchase at $107 AOV → Klaviyo segmentation driving repeat purchases. The persuasion-screen pattern is what produces the 9.8% CVR.</p>
 
 The diagram above maps the end-to-end mechanic. The cold Meta ad clicks into the quiz, seven questions cover concerns and history, and inside those questions sit five micro-screens that do the persuasion work: *right spot* (46.2% pass through), *validation* (94.8%), *cost reframe* (99.5%), *lifestyle* (97.5%) and *you qualify* (99.3%). The hard filter is the first screen; the four that follow assume the shopper is qualified and shift the work from screening to converting. The shopper hits a results page with a single CTA, lands on the $107 AOV purchase, and the zero-party data from every quiz answer syncs to Klaviyo where segmented flows drive the repeat-purchase loop.
 

@@ -72,7 +72,7 @@ As you adapt your quizzes to different cultural contexts, it's also important to
 
 ![Quiz Builder design panel showing per-market visual customisation options](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-091327.webp)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;The Quiz Builder design panel: colours, typography and per-question visuals all customise per quiz duplicate. Each market gets its own visual identity without rebuilding the question flow.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;The Quiz Builder design panel: colours, typography and per-question visuals all customise per quiz duplicate. Each market gets its own visual identity without rebuilding the question flow.</p>
 
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
@@ -97,7 +97,7 @@ Effective localisation requires more than a direct translation of text. It's cru
 
 ![Quiz Builder Messages settings panel where UI button labels and system messages can be translated](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-091452.webp)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;The Messages panel in Quiz Settings: button labels and system messages translate automatically per language. Question and answer text still need manual translation, which is what gives the quiz its localised voice.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;The Messages panel in Quiz Settings: button labels and system messages translate automatically per language. Question and answer text still need manual translation, which is what gives the quiz its localised voice.</p>
 
 ### Legal and regulatory compliance
 
@@ -116,7 +116,7 @@ Each market has its own set of regulations that you must adhere to, especially r
 
 ![Product metafields configuration in the Quiz Builder for displaying German PAngV per-100ml unit prices](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-091730.webp)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 05</span> &nbsp;Product metafields configuration for displaying German PAngV per-100ml unit prices. The quiz pulls these synced metafields automatically so the legally-required reference price renders on every product card in EEA markets.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;Product metafields configuration for displaying German PAngV per-100ml unit prices. The quiz pulls these synced metafields automatically so the legally-required reference price renders on every product card in EEA markets.</p>
 
 ## Technical setup, by platform
 
@@ -181,7 +181,7 @@ These versions don't have native market detection. You build the same outcome vi
 
 ![Quiz duplication and language settings panel in the Quiz Builder for Shopify Legacy and non-Shopify platforms](/img/blog/how-to-adapt-product-quizzes-for-different-markets-and-languages/Screenshot-2024-08-26-092134.webp)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;Quiz duplication and language settings on Shopify Legacy and the multi-platform versions. Each language gets its own quiz duplicate with its own quiz ID; the storefront routes to the right one via JavaScript.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 05</span> &nbsp;Quiz duplication and language settings on Shopify Legacy and the multi-platform versions. Each language gets its own quiz duplicate with its own quiz ID; the storefront routes to the right one via JavaScript.</p>
 
 ### Workaround 1: display the correct quiz based on browser language
 

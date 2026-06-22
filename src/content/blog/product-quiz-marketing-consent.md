@@ -67,7 +67,7 @@ At a strategic point (typically just before the results page) include the consen
 
 ![Quiz end slide asking for marketing consent just before showing the results page](/img/blog/product-quiz-marketing-consent/consent-end-quiz-e1718952561212-1024x702.webp)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;Consent asked at the end of the quiz, just before the results page. Higher completion (customer is already invested) and a sunk-cost effect that lifts opt-in. Better fit for routine-based or lower-AOV catalogues.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;Consent asked at the end of the quiz, just before the results page. Higher completion (customer is already invested) and a sunk-cost effect that lifts opt-in. Better fit for routine-based or lower-AOV catalogues.</p>
 
 > Asking for consent at the end of the quiz leads to **lower drop-off** at this point since the customer is already invested in the experience. This produces higher completion rates and, downstream, **higher conversions** and upselling success. This approach is better for merchants selling lower-AOV products or routine-based catalogues.
 
@@ -144,7 +144,7 @@ Simplify your message and avoid legal jargon. Highlight the value the customer r
 
 ![Marketing consent question with friendly, plain-language wording and a clear yes/no choice](/img/blog/product-quiz-marketing-consent/consent-simple-language1.webp)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;Strategy 1: friendly, plain-language wording with a clear yes/no choice. No legal jargon, value stated upfront, single decision the customer can make in two seconds.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;Strategy 1: friendly, plain-language wording with a clear yes/no choice. No legal jargon, value stated upfront, single decision the customer can make in two seconds.</p>
 
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
@@ -162,7 +162,7 @@ Make the privacy policy easily accessible to add transparency and reassure users
 
 ![Consent question showing a link to the brand's privacy policy below the yes/no choice](/img/blog/product-quiz-marketing-consent/Screenshot-2024-06-14-122634.webp)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 05</span> &nbsp;Strategy 2: a linked privacy policy directly under the consent question. Satisfies the GDPR "informed" pillar and tends to reduce hesitation in EU markets.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;Strategy 2: a linked privacy policy directly under the consent question. Satisfies the GDPR "informed" pillar and tends to reduce hesitation in EU markets.</p>
 
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
@@ -177,7 +177,7 @@ The visual design of the consent question affects opt-in rate more than the word
 
 ![Animated consent question using clickable heart icons for the yes/no choice instead of a standard checkbox](/img/blog/product-quiz-marketing-consent/consent1.gif)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;Visual design choices (clickable heart icons here) move the opt-in rate more than wording does. Mobile-friendly tap targets are essential; most quiz traffic is mobile.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 05</span> &nbsp;Visual design choices (clickable heart icons here) move the opt-in rate more than wording does. Mobile-friendly tap targets are essential; most quiz traffic is mobile.</p>
 
 Position the consent question at an engaging moment rather than as a bolted-on interruption.
 

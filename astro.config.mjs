@@ -295,6 +295,10 @@ export default defineConfig({
       "/build-sales-funnel-shopify-store/",
     "/shopify-quiz-analytics-vs-ga4-meta-pixel/":
       "/first-party-shopify-quiz-analytics/",
+    // mark-orders article merged into customer-tags as the canonical home for
+    // the Legacy Connect-tab order-tagging and customers-sync walkthroughs.
+    "/mark-orders-and-collect-zero-party-data-for-your-shopify-store/":
+      "/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/",
     // Off-brand sponsored post: 2,604 imp / 0 clicks, doesn't convert,
     // not aligned with the brand. PRD W6: redirect into the W2b funnel pillar.
     "/shopify-shipping-apps/":

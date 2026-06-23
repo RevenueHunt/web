@@ -125,7 +125,7 @@ The data backs this up. Across 20,000+ stores and 45M+ quiz responses on the pla
       <dt>Pricing</dt><dd>Free plan available. 14-day free trial on paid plans.</dd>
       <dt>Free limit</dt><dd>Unlimited engagements, 100 quiz completions per month.</dd>
     </dl>
-    <a class="app-card__cta" href="/shopify-quiz-app/">Launch a quiz on Shopify →</a>
+    <a class="app-card__cta" href="/product-recommendation-quiz-shopify/">Launch a quiz on Shopify →</a>
   </div>
 </div>
 

@@ -147,7 +147,7 @@ If you're evaluating a quiz on on-site conversion lift alone, you're measuring t
 
 ### The data-capture instrument
 
-A product recommendation quiz built with [RevenueHunt](/shopify-quiz-app/) asks 3-7 diagnostic questions. Each question captures a specific data point that maps directly to a Klaviyo custom property. The mapping is defined by you: you control the property names, value structures, and schema alignment.
+A product recommendation quiz built with [RevenueHunt](/product-recommendation-quiz-shopify/) asks 3-7 diagnostic questions. Each question captures a specific data point that maps directly to a Klaviyo custom property. The mapping is defined by you: you control the property names, value structures, and schema alignment.
 
 | Quiz question | Klaviyo property | Example value |
 |---|---|---|
@@ -310,7 +310,7 @@ Yes. The mechanics are identical: quiz answers map to platform-native custom pro
 - Read the pillar argument on capture format: [why popups are walls and quizzes are doors](/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/).
 - Check the platform benchmark for what your segment should be doing: [state of product recommendation quizzes](/state-of-product-recommendation-quizzes/).
 - Estimate the impact on your own list with the [quiz ROI calculator](/quiz-roi-calculator/).
-- [Launch a quiz on Shopify](/shopify-quiz-app/) (no code, native Klaviyo sync, free trial).
+- [Launch a quiz on Shopify](/product-recommendation-quiz-shopify/) (no code, native Klaviyo sync, free trial).
 
 <script type="application/ld+json">
 {

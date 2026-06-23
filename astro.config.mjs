@@ -238,7 +238,20 @@ export default defineConfig({
     "/video-10-golden-rules-of-a-successful-product-recommendation-quiz/":
       "/how-to-build-a-successful-ecommerce-quiz/",
     "/conversational-marketing-ecommerce/":
-      "/how-to-use-guided-selling-via-product-recommendation-quiz-to-increase-your-revenue/",
+      "/guided-selling-quiz/",
+    // Long-form blog post merged into the /guided-selling-quiz/ landing page,
+    // which is the canonical authority page for this topic (40+ inbound vs 1).
+    "/how-to-use-guided-selling-via-product-recommendation-quiz-to-increase-your-revenue/":
+      "/guided-selling-quiz/",
+    // Blog "how to add a Shopify quiz" synthesis page redirected to the
+    // product landing page (canonical for "Shopify quiz app" head term).
+    // Setup walkthroughs live on docs.revenuehunt.com.
+    "/shopify-quiz-app/":
+      "/product-recommendation-quiz-shopify/",
+    // Magento 2 setup blog redirected to the Standalone / Google Product Feed
+    // landing page, which covers RH's Magento support via the feed mechanism.
+    "/try-magento-2-product-recommendation-quiz-app-to-boost-your-conversions/":
+      "/product-recommendation-quiz-standalone-google-product-feed/",
     "/interesting-examples-of-product-recommendation-quizzes-in-ecommerce/":
       "/10-brands-that-need-a-product-recommendation-quiz-with-examples/",
     "/introducing-dynamic-discount-codes-enhance-your-shop-quiz-app-for-shopify/":

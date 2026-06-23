@@ -213,7 +213,7 @@ Across all 11 examples, the same five-stage structure shows up. It's a deliberat
 
 ## How to build your own (free template)
 
-Every quiz-driven funnel above can be replicated on Shopify in under an hour using an industry-specific template. [Launch a quiz on Shopify](/shopify-quiz-app/) (no code, free trial), browse the [library of ready-made quiz templates](/templates/) (skin type finder, routine builder, wellness goal matcher, supplement diagnostic, eyewear fit, sleep quiz and more), wire up the native Klaviyo, Omnisend or Mailchimp connection, and the funnel is live the same day. The free plan covers most stores up to their first thousand quiz completions, which is enough to validate the model before committing to anything.
+Every quiz-driven funnel above can be replicated on Shopify in under an hour using an industry-specific template. [Launch a quiz on Shopify](/product-recommendation-quiz-shopify/) (no code, free trial), browse the [library of ready-made quiz templates](/templates/) (skin type finder, routine builder, wellness goal matcher, supplement diagnostic, eyewear fit, sleep quiz and more), wire up the native Klaviyo, Omnisend or Mailchimp connection, and the funnel is live the same day. The free plan covers most stores up to their first thousand quiz completions, which is enough to validate the model before committing to anything.
 
 For the strategy behind the build (the five funnel stages, the design choices that determine whether a funnel compounds or stalls, and the apps that fit each stage), see our [step-by-step funnel build guide](/build-sales-funnel-shopify-store/).
 

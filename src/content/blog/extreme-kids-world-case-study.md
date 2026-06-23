@@ -260,7 +260,7 @@ The Wall Bars Quiz syncs to both Klaviyo and HubSpot. The brand uses HubSpot for
 - See 10 more funnel patterns in production: [11 ecommerce sales funnel examples](/ecommerce-sales-funnel-examples/).
 - For the platform benchmark that anchors every number on this page: [the state of product recommendation quizzes](/state-of-product-recommendation-quizzes/).
 - Estimate the impact on your own store: [quiz ROI calculator](/quiz-roi-calculator/).
-- [Launch a quiz on Shopify](/shopify-quiz-app/) (no code, native Klaviyo and HubSpot sync, free trial).
+- [Launch a quiz on Shopify](/product-recommendation-quiz-shopify/) (no code, native Klaviyo and HubSpot sync, free trial).
 
 <script type="application/ld+json">
 {

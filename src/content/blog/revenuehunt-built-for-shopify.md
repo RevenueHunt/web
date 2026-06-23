@@ -211,7 +211,7 @@ If you already have the RevenueHunt app installed:
 
 <p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 09</span> &nbsp;The Switch to Built for Shopify option in the RevenueHunt app menu. Confirms app access and permissions, then provisions the new app with the existing quiz data carried forward.</p>
 
-If you don't have the app installed yet, [launch a quiz on Shopify](/shopify-quiz-app/) (no code, free trial). New installs land on the BFS version by default.
+If you don't have the app installed yet, [launch a quiz on Shopify](/product-recommendation-quiz-shopify/) (no code, free trial). New installs land on the BFS version by default.
 
 > **Quizzes don't migrate automatically.** BFS is a fresh start. You'll need to rebuild any existing quizzes in the new builder. The new interface is faster to build in than the Legacy editor, so the rebuild is usually quicker than expected, but plan for it.
 

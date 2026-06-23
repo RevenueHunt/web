@@ -264,7 +264,7 @@ Headline figures (9.8% CVR, $691K revenue, 7,100 orders, 72,200 completions, 75.
 - See if the model fits your category in the [beauty solutions overview](/solutions/beauty/).
 - Read the pillar argument behind this case study: [quiz funnels vs collection pages, why your paid traffic bounces](/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/).
 - Estimate the impact on your own AOV with the [quiz ROI calculator](/quiz-roi-calculator/).
-- [Launch a quiz on Shopify](/shopify-quiz-app/) (no code, free trial).
+- [Launch a quiz on Shopify](/product-recommendation-quiz-shopify/) (no code, free trial).
 
 <script type="application/ld+json">
 {

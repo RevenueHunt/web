@@ -192,7 +192,7 @@ If you're already paying for Omnisend's SMS or web-push, keep Omnisend and skip 
 - Decide upstream what data the quiz must capture: [marketing consent in your quiz](/product-quiz-marketing-consent/) before Omnisend starts emailing.
 - Use the answers and tags to drive segments: [customer tags in product quizzes](/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/).
 - Compare with [Klaviyo zero-party data](/klaviyo-zero-party-data/), [Shopify Flow automations](/how-to-automate-post-quiz-emails-using-shopify-flows/), [Mailchimp](/how-to-use-mailchimp-for-post-quiz-email-marketing/) and [HubSpot](/hubspot-quiz-integration/) before you commit to one stack.
-- Avoid the design traps that nullify the data: [quiz creation mistakes that hurt your ecommerce sales](/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/).
+- Avoid the design traps that nullify the data: [product quiz mistakes ranked by industry data](/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/).
 - Track the right numbers post-launch: [product quiz metrics](/product-quiz-metrics-what-to-track-to-convert-better/).
 - For the full strategy this fits into: [build a sales funnel on a Shopify store](/build-sales-funnel-shopify-store/) and [11 ecommerce sales funnel examples](/ecommerce-sales-funnel-examples/).
 - Estimate the lift on your own store: [quiz ROI calculator](/quiz-roi-calculator/).

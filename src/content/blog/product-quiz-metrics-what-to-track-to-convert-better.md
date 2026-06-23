@@ -1,5 +1,5 @@
 ---
-title: "Product quiz metrics: 4 numbers to track"
+title: "Product quiz metrics: track what converts"
 description: "The 4 quiz metrics that predict conversion, the benchmarks they should hit, and the platform data showing which numbers actually move revenue."
 pubDate: 2024-06-06T06:37:05Z
 updatedDate: 2026-06-22T21:00:00Z
@@ -34,7 +34,7 @@ Four metrics predict whether a [product recommendation quiz](/) will move revenu
   </ul>
 </div>
 
-For the foundations that produce these metrics, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/). For the mistakes that quietly drag the numbers down, see [quiz creation mistakes that hurt your ecommerce sales](https://revenuehunt.com/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/).
+For the foundations that produce these metrics, see [how to build a successful product recommendation quiz](/how-to-build-a-successful-ecommerce-quiz/). For the mistakes that quietly drag the numbers down, see [product quiz mistakes ranked by industry data](/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/).
 
 **Table of contents:**
 
@@ -318,6 +318,6 @@ Conversion rate is the most actionable single number. Completion rate diagnoses 
 
 By focusing on these four metrics, you can transform your product recommendation quiz into a measurable conversion engine. The platform benchmarks (5.5% quiz-taker conversion, 10.6% at single results page, 11.0% at 9-12 questions, +11-15% AOV uplift, 3-5x lift over baseline browsing) give you targets to compare against; the Issue/Solution tables above give you the structural fixes when a number lands below target. To estimate the lift on your own store, use our [quiz ROI calculator](/quiz-roi-calculator/).
 
-For the foundation, see [how to build a successful product recommendation quiz](/how-to-build-a-successful-ecommerce-quiz/). For the mistakes that erode each metric, see [quiz creation mistakes that hurt your ecommerce sales](/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/). For the email and discount layers that compound the wins, see [the post-quiz follow-up sequence](https://revenuehunt.com/product-quiz-success-why-its-necessary-to-send-follow-up-emails/) and [product quiz discounts](/product-quiz-discounts/). For how repeat purchase rate, cohort retention, and NPS sit alongside these quiz metrics, see [the measurement framework in our retention pillar](/customer-retention-ecommerce-guide/). For the customer-tag layer that turns Recommendations and Customer Answers metrics into revenue, see [customer tags in product quizzes](/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/). For concrete zero-party data mechanisms across real brands, see [12 zero-party data examples](/zero-party-data-examples/). For the consent moment that gates the whole stack, see [marketing consent in a product quiz](/product-quiz-marketing-consent/). For where these metrics sit inside the funnel narrative, see [sales funnel stages: AIDA plus the post-purchase stage](/sales-funnel-stages/).
+For the foundation, see [how to build a successful product recommendation quiz](/how-to-build-a-successful-ecommerce-quiz/). For the mistakes that erode each metric, see [product quiz mistakes ranked by industry data](/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/). For the email and discount layers that compound the wins, see [the post-quiz follow-up sequence](/product-quiz-success-why-its-necessary-to-send-follow-up-emails/) and [product quiz discounts](/product-quiz-discounts/). For how repeat purchase rate, cohort retention, and NPS sit alongside these quiz metrics, see [the measurement framework in our retention pillar](/customer-retention-ecommerce-guide/). For the customer-tag layer that turns Recommendations and Customer Answers metrics into revenue, see [customer tags in product quizzes](/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/). For concrete zero-party data mechanisms across real brands, see [12 zero-party data examples](/zero-party-data-examples/). For the consent moment that gates the whole stack, see [marketing consent in a product quiz](/product-quiz-marketing-consent/). For where these metrics sit inside the funnel narrative, see [sales funnel stages: AIDA plus the post-purchase stage](/sales-funnel-stages/).
 
 [Install RevenueHunt: Recommender Quiz for Shopify](https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=quiz_metrics) and start tracking your first quiz response today. Free plan available.

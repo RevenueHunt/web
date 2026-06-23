@@ -186,7 +186,7 @@ Quiz answers and recommendations attach to the customer record, which lets Skino
 - For the data layer behind segmented marketing: [customer tags in product quizzes](/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/) and [Klaviyo zero-party data](/klaviyo-zero-party-data/).
 - For consent collection at quiz time: [marketing consent in your quiz](/product-quiz-marketing-consent/).
 - For the strategy this fits into: [build a sales funnel on a Shopify store](/build-sales-funnel-shopify-store/).
-- For the broader playbook: [how to build a successful ecommerce quiz](/how-to-build-a-successful-ecommerce-quiz/) and [quiz creation mistakes that hurt your ecommerce sales](/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/).
+- For the broader playbook: [how to build a successful ecommerce quiz](/how-to-build-a-successful-ecommerce-quiz/) and [product quiz mistakes ranked by industry data](/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/).
 - Estimate the lift on your own store with the [quiz ROI calculator](/quiz-roi-calculator/).
 
 _To learn more, visit Skinology on [Facebook](https://www.facebook.com/people/Skinology/61556855081603/), [Instagram](http://instagram.com/skinology.cl), [TikTok](https://www.tiktok.com/@skinologychile), [YouTube](https://www.youtube.com/watch?v=IMEzFLHMJdI) or their [website](https://skinology.cl)._

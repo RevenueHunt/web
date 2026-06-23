@@ -333,7 +333,7 @@ For early-stage stores under $100k revenue, yes. Shopify Analytics tells you wha
 - To pick the right recommendation logic when you stand the quiz up: [product quiz recommendation systems](/product-quiz-recommendation-systems/).
 - For consent collection inside the quiz: [marketing consent in your quiz](/product-quiz-marketing-consent/).
 - To choose the right metrics for the funnel: [product quiz metrics](/product-quiz-metrics-what-to-track-to-convert-better/).
-- Avoid the design traps that nullify the data: [quiz creation mistakes that hurt your ecommerce sales](/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/).
+- Avoid the design traps that nullify the data: [product quiz mistakes ranked by industry data](/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/).
 - For the strategy this stack fits into: [build a sales funnel on a Shopify store](/build-sales-funnel-shopify-store/) and [11 ecommerce sales funnel examples](/ecommerce-sales-funnel-examples/).
 - For a worked stack-in-production example with disclosed quiz metrics: [Extreme Kids World case study](/extreme-kids-world-case-study/).
 - New to the playbook? Start with [how to build a successful ecommerce quiz](/how-to-build-a-successful-ecommerce-quiz/).

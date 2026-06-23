@@ -287,7 +287,7 @@ Two common causes. First, the lists were created after the integration was autho
 - Decide upstream what data the quiz must capture: [marketing consent in your quiz](/product-quiz-marketing-consent/) before HubSpot starts emailing.
 - Use the answers and tags to drive segments: [customer tags in product quizzes](/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/).
 - Compare with [Klaviyo zero-party data](/klaviyo-zero-party-data/) and [Shopify Flow automations](/how-to-automate-post-quiz-emails-using-shopify-flows/) before you commit to one stack.
-- Avoid the design traps that kill quiz conversion: [quiz creation mistakes](/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/).
+- Avoid the design traps that kill quiz conversion: [product quiz mistakes](/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/).
 - Track the right numbers post-launch: [product quiz metrics](/product-quiz-metrics-what-to-track-to-convert-better/).
 - New to quizzes? Start with [how to build a successful ecommerce quiz](/how-to-build-a-successful-ecommerce-quiz/).
 

@@ -24,6 +24,8 @@ This guide walks the **exact setup paths** by platform, the **10 data fields** t
 
 ![ActiveCampaign quiz integration](/img/blog/activecampaign-quiz-integration/activecampaign-hero.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;The ActiveCampaign quiz integration: ten fields from each quiz response land on the contact record as both standard fields and custom-field tags. The whole sequence becomes available to ActiveCampaign automations as the contact is created.</p>
+
 <div style="margin:32px 0;padding:24px 28px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 14px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">What you'll learn</p>
   <ul style="list-style:none;padding:0;margin:0;">
@@ -99,18 +101,26 @@ All five platforms use the same flow. There are two starting points: from the Re
 
 <div class="not-prose my-6"><img src="/img/blog/activecampaign-quiz-integration/connect-tab-activecampaign.png" alt="ActiveCampaign section in the RevenueHunt Connect tab" style="max-width:540px;width:100%;height:auto;display:block;" loading="lazy" /></div>
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;The ActiveCampaign section inside the RevenueHunt Connect tab. Copy the API Token shown here, click Connect, and complete the authorisation in ActiveCampaign.</p>
+
 4. In ActiveCampaign, click **Add an account**.
 
 <div class="not-prose my-6"><img src="/img/blog/activecampaign-quiz-integration/ac-add-account.png" alt="Add an account screen in ActiveCampaign" style="max-width:540px;width:100%;height:auto;display:block;" loading="lazy" /></div>
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;The Add an account screen in ActiveCampaign. Click Add an account, then paste in the API Token copied from the Connect tab.</p>
 
 5. Paste the **API Token**.
 
 <div class="not-prose my-6"><img src="/img/blog/activecampaign-quiz-integration/ac-api-token.png" alt="API Token entry in ActiveCampaign" style="max-width:540px;width:100%;height:auto;display:block;" loading="lazy" /></div>
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;Pasting the API Token in ActiveCampaign authorises the connection. The next screen lets you pick the specific quiz to sync.</p>
+
 6. Select the quiz you want to sync and click **Continue**.
 7. **Map the quiz response fields** to ActiveCampaign contact fields. Each quiz field on the left pairs to the corresponding ActiveCampaign field on the right.
 
 <div class="not-prose my-6"><img src="/img/blog/activecampaign-quiz-integration/ac-field-mapping.png" alt="Field mapping screen between quiz and ActiveCampaign" style="max-width:540px;width:100%;height:auto;display:block;" loading="lazy" /></div>
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 05</span> &nbsp;The field mapping screen. Each quiz response field on the left pairs to the matching ActiveCampaign contact field on the right. Map the ten standard fields first, then add custom fields for the quiz-specific signals you want to drive automations on.</p>
 
 Save the configuration. The quiz is connected. New responses will land in ActiveCampaign with the mapped fields populated. To verify the integration is firing correctly against your own order data (rather than against the ActiveCampaign side alone), cross-reference the quiz response count and revenue against the [first-party Shopify quiz analytics](/first-party-shopify-quiz-analytics/) dashboard.
 
@@ -141,6 +151,8 @@ When a quiz completes, the integration posts the following fields to ActiveCampa
 All ten fields auto-populate on the contact record after mapping. To add a new custom field that doesn't exist yet in ActiveCampaign, navigate to **Lists > Manage fields > Add Field** in ActiveCampaign first, then revisit the mapping screen in the quiz integration to point to it.
 
 <div class="not-prose my-6"><img src="/img/blog/activecampaign-quiz-integration/ac-new-field.png" alt="Adding a new custom field in ActiveCampaign" style="max-width:540px;width:100%;height:auto;display:block;" loading="lazy" /></div>
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 06</span> &nbsp;Adding a new custom field in ActiveCampaign (Lists, Manage fields, Add Field). Create the field in ActiveCampaign first, then revisit the mapping screen so the quiz integration can point to it.</p>
 
 ## Triggering a follow-up automation
 

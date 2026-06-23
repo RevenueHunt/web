@@ -233,7 +233,7 @@ At the end, as an optional step with explicit consent language, after the shoppe
 
 ### Does this work on Shopify Legacy or only the newer version?
 
-Both. Daughterela runs on the Legacy version of RevenueHunt, and everything in this teardown (flat and branching logic, variant/collection/tag mapping, consent email, discounts, Recharge) is available there. The newer [Built for Shopify](/revenuehunt-built-for-shopify/) version adds native revenue tracking and a no-iframe block; see [Shopify quiz revenue tracking](/shopify-quiz-revenue-tracking/) for the difference.
+Both. Daughterela runs on the Legacy version of RevenueHunt, and everything in this teardown (flat and branching logic, variant/collection/tag mapping, consent email, discounts, Recharge) is available there. The newer [Built for Shopify](/revenuehunt-built-for-shopify/) version adds native revenue tracking and a no-iframe block; see [first-party Shopify quiz analytics](/first-party-shopify-quiz-analytics/) for the difference.
 
 <script type="application/ld+json">
 {

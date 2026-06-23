@@ -284,11 +284,13 @@ export default defineConfig({
     "/make-your-facebook-ads-smarter-with-revenuehunts-quiz-integration/":
       "/meta-pixel-quiz-integration/",
     "/how-to-track-and-maximize-quiz-driven-revenue-in-shopify/":
-      "/shopify-quiz-revenue-tracking/",
+      "/first-party-shopify-quiz-analytics/",
     "/revenuehunt-activecampaign-integration/":
       "/activecampaign-quiz-integration/",
     "/new-built-for-shopify-revenuehunt-app-is-out-now/":
       "/revenuehunt-built-for-shopify/",
+    "/shopify-quiz-revenue-tracking/":
+      "/first-party-shopify-quiz-analytics/",
     "/shopify-quiz-analytics-vs-ga4-meta-pixel/":
       "/first-party-shopify-quiz-analytics/",
     // Off-brand sponsored post: 2,604 imp / 0 clicks, doesn't convert,

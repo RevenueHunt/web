@@ -16,7 +16,7 @@ featuredImage: "/img/blog/skinology-case-study/blogtiles_skinology.png"
 draft: false
 ---
 
-[Skincare](/solutions/skincare/) is a category where the questions a customer needs answered before buying are particularly hard to solve on a generic product page. [Skinology](https://skinology.cl/), a Chilean brand founded in Santiago by Antonia Schlesinger, built a personalised quiz to bridge that gap: a dermatologist-designed assessment that feeds an in-house AI model and produces a bespoke formula for every customer. The brand currently runs a **two-quiz architecture**: a custom in-house quiz handles initial discovery and formulation, and a follow-up [repurchase quiz on RevenueHunt's Shopify Legacy app](/shopify-quiz-revenue-tracking/) captures evolving needs at every reorder. Both quizzes were originally built on RevenueHunt; the discovery quiz has since migrated to a bespoke build, and the repurchase flow has stayed on RevenueHunt because the cadence-aware reorder loop is exactly what the platform was designed for. In this case study Antonia walks us through how the quiz, the AI, and the dermatologist sign-off work together.
+[Skincare](/solutions/skincare/) is a category where the questions a customer needs answered before buying are particularly hard to solve on a generic product page. [Skinology](https://skinology.cl/), a Chilean brand founded in Santiago by Antonia Schlesinger, built a personalised quiz to bridge that gap: a dermatologist-designed assessment that feeds an in-house AI model and produces a bespoke formula for every customer. The brand currently runs a **two-quiz architecture**: a custom in-house quiz handles initial discovery and formulation, and a follow-up [repurchase quiz on RevenueHunt's Shopify Legacy app](/first-party-shopify-quiz-analytics/) captures evolving needs at every reorder. Both quizzes were originally built on RevenueHunt; the discovery quiz has since migrated to a bespoke build, and the repurchase flow has stayed on RevenueHunt because the cadence-aware reorder loop is exactly what the platform was designed for. In this case study Antonia walks us through how the quiz, the AI, and the dermatologist sign-off work together.
 
 <div class="aspect-video overflow-hidden rounded-xl bg-slate-900 not-prose my-6"><button type="button" class="yt-facade group relative block h-full w-full cursor-pointer overflow-hidden" data-yt-id="YwXyjQouBxA" aria-label="Play video"><picture><source srcset="https://i.ytimg.com/vi_webp/YwXyjQouBxA/maxresdefault.webp" type="image/webp" /><img src="https://i.ytimg.com/vi/YwXyjQouBxA/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async" class="h-full w-full object-cover" /></picture><span class="absolute inset-0 flex items-center justify-center bg-black/10 transition group-hover:bg-black/20"><span class="flex h-20 w-20 items-center justify-center rounded-full bg-black/70 shadow-lg transition group-hover:scale-105 group-hover:bg-[#FF0000]"><svg class="ml-0.5 h-9 w-9 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg></span></span></button></div>
 
@@ -57,14 +57,14 @@ draft: false
 |---|---|
 | **Brand** | [Skinology](https://skinology.cl/), founded by Antonia Schlesinger in Santiago, Chile |
 | **Vertical** | Personalised compounded skincare, dermatologist-led |
-| **Platform** | Shopify (RevenueHunt running on the [Legacy app version](/shopify-quiz-revenue-tracking/) for the repurchase flow) |
+| **Platform** | Shopify (RevenueHunt running on the [Legacy app version](/first-party-shopify-quiz-analytics/) for the repurchase flow) |
 | **Quiz architecture** | Two-stage: custom in-house quiz for discovery, RevenueHunt quiz for repurchase |
 | **AI + human layer** | Liam (in-house AI) drafts every formulation; Lia (dermatologist) reviews and signs off before the lab produces it |
 | **Disclosed repeat-buyer rate** | ~50% of customers are repeat buyers |
 | **Disclosed repurchase-quiz completion** | ~47% in a recent 90-day window, with thousands of lifetime responses captured |
 | **ESP / CRM connected** | Klaviyo on the repurchase quiz; email also captured |
 | **Geographic scope** | Chile, with Latin American expansion planned |
-| **Data source** | RevenueHunt Analytics on the repurchase quiz (Shopify Legacy attribution model, see [Shopify quiz revenue tracking](/shopify-quiz-revenue-tracking/) for the same-session caveat) |
+| **Data source** | RevenueHunt Analytics on the repurchase quiz (Shopify Legacy attribution model, see [first-party Shopify quiz analytics](/first-party-shopify-quiz-analytics/) for the same-session caveat) |
 
 ## The vision behind Skinology
 
@@ -117,7 +117,7 @@ Every product Skinology delivers is freshly formulated and designed to last just
 
 ## Data-driven skincare, powered by the quiz and Liam
 
-Skinology originally built both the discovery and the repurchase quizzes on [RevenueHunt: Recommender Quiz for Shopify](/product-recommendation-quiz/) (the [Legacy](/shopify-quiz-revenue-tracking/) version, before [Built for Shopify](/revenuehunt-built-for-shopify/) shipped). Over time the brand moved the discovery quiz to a custom in-house build, where it could control the formulation logic end-to-end. The **repurchase quiz still runs on RevenueHunt**: the cadence-aware reorder loop, the [Klaviyo zero-party data sync](/klaviyo-zero-party-data/), and the lifecycle segmentation are exactly what the platform was designed for, and rebuilding that in-house didn't pencil.
+Skinology originally built both the discovery and the repurchase quizzes on [RevenueHunt: Recommender Quiz for Shopify](/product-recommendation-quiz/) (the [Legacy](/first-party-shopify-quiz-analytics/) version, before [Built for Shopify](/revenuehunt-built-for-shopify/) shipped). Over time the brand moved the discovery quiz to a custom in-house build, where it could control the formulation logic end-to-end. The **repurchase quiz still runs on RevenueHunt**: the cadence-aware reorder loop, the [Klaviyo zero-party data sync](/klaviyo-zero-party-data/), and the lifecycle segmentation are exactly what the platform was designed for, and rebuilding that in-house didn't pencil.
 
 The two systems work hand-in-hand: the quiz (whichever stage) captures the inputs, Liam translates them into a draft formulation, Lia signs off. Each customer ends up with something the brand could not have produced from browsing behaviour alone.
 

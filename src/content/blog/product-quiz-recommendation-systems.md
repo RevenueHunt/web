@@ -406,7 +406,7 @@ For voting-based systems, link the new product to every relevant choice and run 
 - For the strategy pillars behind this whole approach: [why popups are walls and quizzes are doors](/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/) and [quiz funnels vs collection pages](/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/).
 - For the scoring-specific technical reference: [scoring and personality-type quiz setup](/scoring-quiz-setup/).
 - For the subscription-specific reference: [product quiz subscriptions](/product-quiz-subscriptions/).
-- For first-party revenue attribution across Built for Shopify and Legacy: [Shopify quiz revenue tracking](/shopify-quiz-revenue-tracking/) and [first-party Shopify quiz analytics](/first-party-shopify-quiz-analytics/).
+- For first-party revenue attribution across Built for Shopify and Legacy: [Shopify quiz revenue tracking](/first-party-shopify-quiz-analytics/) and [first-party Shopify quiz analytics](/first-party-shopify-quiz-analytics/).
 - For 11 funnel patterns in production: [ecommerce sales funnel examples](/ecommerce-sales-funnel-examples/).
 - Use customer answers to drive personalisation post-quiz: [customer tags in product quizzes](/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/).
 - Avoid the design traps that kill conversion: [quiz creation mistakes that hurt your ecommerce sales](/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/).

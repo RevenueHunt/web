@@ -1,6 +1,6 @@
 ---
 title: "Custom CSS and JavaScript for product quizzes"
-description: "Customise the RevenueHunt quiz with CSS and JavaScript: selectors, sample code, and the BFS vs Legacy API split that catches most developers off-guard."
+description: "Customise the RevenueHunt quiz with CSS and JavaScript: selectors, sample code, and the Built for Shopify vs Legacy API split that catches most developers off-guard."
 pubDate: 2024-09-12T06:17:01Z
 updatedDate: 2026-05-29T22:30:00Z
 tags:
@@ -21,7 +21,7 @@ featuredImage: "/img/blog/custom-css-and-javascript-for-product-recommendation-q
 draft: false
 ---
 
-Two layers of customisation extend the RevenueHunt quiz beyond its built-in design panel: **custom CSS** for visual styling (selectors, fonts, animations, layout tweaks), and **custom JavaScript** for behavioural logic (computed fields, integrations, callback functions). The CSS layer works almost identically on every platform. The JavaScript layer **differs significantly between Built for Shopify and the legacy / multi-platform versions**: they use entirely different global objects (`quiz` + `actions` on BFS, `prq` on Legacy / Woo / Magento / BC / Standalone). Knowing which API you're targeting before you write the first line of code is the difference between five minutes and five hours of debugging.
+Two layers of customisation extend the RevenueHunt quiz beyond its built-in design panel: **custom CSS** for visual styling (selectors, fonts, animations, layout tweaks), and **custom JavaScript** for behavioural logic (computed fields, integrations, callback functions). The CSS layer works almost identically on every platform. The JavaScript layer **differs significantly between [Built for Shopify](/revenuehunt-built-for-shopify/) and the legacy / multi-platform versions**: they use entirely different global objects (`quiz` + `actions` on Built for Shopify, `prq` on Legacy / Woo / Magento / BC / Standalone). Knowing which API you're targeting before you write the first line of code is the difference between five minutes and five hours of debugging.
 
 <div class="aspect-video overflow-hidden rounded-xl bg-slate-900 not-prose my-6"><button type="button" class="yt-facade group relative block h-full w-full cursor-pointer overflow-hidden" data-yt-id="RpwgLOL4Uy8" aria-label="Play video"><picture><source srcset="https://i.ytimg.com/vi_webp/RpwgLOL4Uy8/maxresdefault.webp" type="image/webp" /><img src="https://i.ytimg.com/vi/RpwgLOL4Uy8/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async" class="h-full w-full object-cover" /></picture><span class="absolute inset-0 flex items-center justify-center bg-black/10 transition group-hover:bg-black/20"><span class="flex h-20 w-20 items-center justify-center rounded-full bg-black/70 shadow-lg transition group-hover:scale-105 group-hover:bg-[#FF0000]"><svg class="ml-0.5 h-9 w-9 text-white" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg></span></span></button></div>
 
@@ -37,6 +37,8 @@ Two layers of customisation extend the RevenueHunt quiz beyond its built-in desi
 
 <img src="/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/featuredimageCSS1.gif" alt="Animated demo showing a quiz styled with custom CSS to match a brand visual identity" width="1080" height="1080" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;A quiz styled with custom CSS to match a brand identity. Same Quiz Builder engine, completely bespoke surface: typography, palette, spacing, motion all customised beyond what the theme-inherited defaults provide.</p>
+
 For the foundations of a high-converting quiz, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/). For the question types you can style, see [product quiz question types: the complete reference](https://revenuehunt.com/product-quiz-question-types/).
 
 **Why customise with CSS and JavaScript:**
@@ -46,6 +48,8 @@ For the foundations of a high-converting quiz, see [how to build a successful pr
 - **Custom functionality.** Computed fields (BMI, dosage, fit), conditional content, third-party analytics events, and callback-driven integrations that don't ship with the Quiz Builder by default.
 
 <img src="/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2020-09-29-at-20.34.03-1024x594.webp" alt="Quiz interface showing how custom CSS can reshape the design to match a brand identity" width="1024" height="594" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;Custom CSS reshapes the default quiz layout to match a brand identity that the design panel alone cannot reach. Useful when the brand has strong visual rules that require pixel-level control.</p>
 
 **Jump to:**
 
@@ -64,6 +68,8 @@ Custom CSS lets you override any default styling on the quiz. The setup path is 
 
 <img src="/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2024-08-19-105145.webp" alt="Quiz Builder Quiz Design tab showing the Custom CSS section with the Add button" width="1494" height="1036" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;The Custom CSS console inside the Quiz Builder Quiz Design tab. Click Add to open the editor; styles publish on the next quiz save and apply instantly across every embed.</p>
+
 ### Step 2: basic customisations
 
 In the CSS editor, you can insert any custom styling rules to adjust the quiz appearance. You can modify elements of the quiz or the results page such as fonts, colors, and layouts.
@@ -74,7 +80,11 @@ To find the correct CSS selector for any quiz element, simply right-click the el
 
 <img src="/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2024-08-30-091646.webp" alt="Browser DevTools showing how to inspect a quiz element to find its CSS selector" width="1526" height="866" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;Browser DevTools inspecting a quiz element. Right-click any quiz element and Inspect to surface the exact selector you need for a custom rule.</p>
+
 <img src="/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2024-08-30-091731.webp" alt="Browser DevTools elements panel highlighting the selector for a specific quiz element" width="724" height="869" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 05</span> &nbsp;The DevTools elements panel highlighting the specific selector for a quiz element. Copy the selector into the Custom CSS console; the rule applies to every instance of that element across the quiz.</p>
 
 Here are some sample CSS codes you can use in your quiz:
 
@@ -106,7 +116,7 @@ h1, h2, h3, h4, h5, h6, p, button, div{
 
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
-  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;"><strong>💡 Tip: Use Markdown for Text Styling</strong></p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;"><strong>Use Markdown for Text Styling</strong></p>
   <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;">You don't always need custom CSS to style your quiz. You can use <a href="https://docs.revenuehunt.com/how-to-guides/use-markdown/" style="color:#16161D;text-decoration:underline;">Markdown language</a> to format text within the quiz for basic styling such as headings, bold, italics, links, images, and videos.</p>
 </div>
 
@@ -206,9 +216,15 @@ To enhance the appearance of your quiz, here are a few real creative customizati
 
 <img src="/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2021-04-14-at-04.14.16.webp" alt="Creative CSS customisation example: quiz styled with a brand-specific colour palette and typography" width="1343" height="744" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 06</span> &nbsp;Creative example: a quiz styled with a brand-specific palette and typography. The colour and type system carries through every slide so the quiz reads as native to the brand, not a third-party embed.</p>
+
 <img src="/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2020-10-20-at-11.41.36.webp" alt="Creative CSS customisation example: quiz with a custom layout and visual treatment" width="1678" height="973" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 07</span> &nbsp;Creative example: a quiz with a custom layout and visual treatment that goes beyond the default slide structure. CSS positions, spacing and decorative elements rebuild the slide to fit the brand world.</p>
+
 <img src="/img/blog/custom-css-and-javascript-for-product-recommendation-quizzes/Screenshot-2020-10-20-at-11.33.57.webp" alt="Creative CSS customisation example: results page styled to match a brand's full visual identity" width="1700" height="933" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 08</span> &nbsp;Creative example: the results page styled to match the brand's full visual identity. The recommendation lands inside a frame that feels designed-for not assembled-from; the page reads as part of the brand, not a third-party widget.</p>
 
 ## Adding custom features with JavaScript
 
@@ -328,7 +344,7 @@ window.quiz.onChange = (event) => {
 };
 ```
 
-### BMI calculator example (BFS)
+### BMI calculator example (Built for Shopify)
 
 ```javascript
 const weight = quiz.answers.byBlock['weight'].value;
@@ -452,9 +468,9 @@ A few principles that apply across both APIs and both layers:
 
 ### Which JavaScript API do I use on my platform?
 
-If you're on **Built for Shopify**, use the `quiz` (data) and `actions` (methods) globals. If you're on **Shopify Legacy, WooCommerce, Magento, BigCommerce, or Standalone**, use the `prq` global. The two are not interchangeable: `prq` won't exist on BFS, and `quiz` / `actions` won't exist on the legacy platforms. Confirm which one is available by typing `console.log(quiz)` or `console.log(prq)` in your browser console with the quiz open.
+If you're on **Built for Shopify**, use the `quiz` (data) and `actions` (methods) globals. If you're on **Shopify Legacy, WooCommerce, Magento, BigCommerce, or Standalone**, use the `prq` global. The two are not interchangeable: `prq` won't exist on Built for Shopify, and `quiz` / `actions` won't exist on the legacy platforms. Confirm which one is available by typing `console.log(quiz)` or `console.log(prq)` in your browser console with the quiz open.
 
-### Where do I find a block reference (BFS) or slide ID (Legacy)?
+### Where do I find a block reference (Built for Shopify) or slide ID (Legacy)?
 
 On **Built for Shopify**: Block IDs are visible directly in the Quiz Builder settings panel for each question, with a copy icon next to them. On **Legacy / multi-platform**: open the quiz in preview or live, open browser DevTools (F12), go to Console, type `prq.quizSlides()` and expand the results to find each slide's `id` property.
 
@@ -468,7 +484,7 @@ On **Built for Shopify**: use the native Shopify Cart AJAX API (`fetch('/cart/ad
 
 ### How do I debug if my custom code isn't running?
 
-Three quick checks: (1) confirm the script is enabled via the ▷ / ❚❚ toggle in the editor; (2) confirm you published / saved the change (Save on BFS, Publish on others); (3) open browser DevTools Console, where `prq is not defined` means you're using the wrong API for your platform and `quiz is not defined` means the same in the opposite direction. The third common cause is querying the DOM with `document.querySelector()` on Built for Shopify, where the quiz lives inside a shadow DOM and needs `window.quiz.querySelector()` instead.
+Three quick checks: (1) confirm the script is enabled via the ▷ / ❚❚ toggle in the editor; (2) confirm you published / saved the change (Save on Built for Shopify, Publish on others); (3) open browser DevTools Console, where `prq is not defined` means you're using the wrong API for your platform and `quiz is not defined` means the same in the opposite direction. The third common cause is querying the DOM with `document.querySelector()` on Built for Shopify, where the quiz lives inside a shadow DOM and needs `window.quiz.querySelector()` instead.
 
 <script type="application/ld+json">
 {
@@ -480,12 +496,12 @@ Three quick checks: (1) confirm the script is enabled via the ▷ / ❚❚ toggl
       "name": "Which JavaScript API do I use on my platform?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "If you're on Built for Shopify, use the quiz (data) and actions (methods) globals. If you're on Shopify Legacy, WooCommerce, Magento, BigCommerce, or Standalone, use the prq global. The two are not interchangeable: prq won't exist on BFS, and quiz / actions won't exist on the legacy platforms. Confirm which one is available by typing console.log(quiz) or console.log(prq) in your browser console with the quiz open."
+        "text": "If you're on Built for Shopify, use the quiz (data) and actions (methods) globals. If you're on Shopify Legacy, WooCommerce, Magento, BigCommerce, or Standalone, use the prq global. The two are not interchangeable: prq won't exist on Built for Shopify, and quiz / actions won't exist on the legacy platforms. Confirm which one is available by typing console.log(quiz) or console.log(prq) in your browser console with the quiz open."
       }
     },
     {
       "@type": "Question",
-      "name": "Where do I find a block reference (BFS) or slide ID (Legacy)?",
+      "name": "Where do I find a block reference (Built for Shopify) or slide ID (Legacy)?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "On Built for Shopify: Block IDs are visible directly in the Quiz Builder settings panel for each question, with a copy icon. On Legacy / multi-platform: open the quiz in preview or live, open browser DevTools, go to Console, type prq.quizSlides() and expand the results to find each slide's id property."

@@ -79,7 +79,7 @@ Extreme Kids World runs a catalogue of high-consideration, high-AOV outdoor and 
 | **Completion rate gap** | 76.9% on the narrowest niche quiz vs 46.6% on the broadest |
 | **Average cart value range** | Roughly an order of magnitude apart between the highest-AOV outdoor quiz and the lower-AOV indoor quiz |
 | **Drop-off rate on the cleanest funnel** | ~4.5% end-to-end |
-| **Data source** | [Built for Shopify RevenueHunt Analytics dashboard](/first-party-shopify-quiz-analytics/) for the Built for Shopify quiz; Shopify Orders integration on the Legacy quizzes (see [Shopify quiz revenue tracking](/shopify-quiz-revenue-tracking/) for the Legacy attribution model) |
+| **Data source** | [Built for Shopify RevenueHunt Analytics dashboard](/first-party-shopify-quiz-analytics/) for the Built for Shopify quiz; Shopify Orders integration on the Legacy quizzes (see [first-party Shopify quiz analytics](/first-party-shopify-quiz-analytics/) for the Legacy attribution model) |
 
 **Key results, 90-day period**
 
@@ -92,7 +92,7 @@ Extreme Kids World runs a catalogue of high-consideration, high-AOV outdoor and 
 | Cart value YoY | +82% | +109% |
 | ESP / CRM connected | Klaviyo | Klaviyo + HubSpot |
 
-_Verified via the [Built for Shopify RevenueHunt Analytics dashboard](/first-party-shopify-quiz-analytics/) on the Built for Shopify quiz, and via the [Shopify Orders integration](/shopify-quiz-revenue-tracking/) on the Legacy quizzes._
+_Verified via the [Built for Shopify RevenueHunt Analytics dashboard](/first-party-shopify-quiz-analytics/) on the Built for Shopify quiz, and via the [Shopify Orders integration](/first-party-shopify-quiz-analytics/) on the Legacy quizzes._
 
 ## 02 · The brand
 
@@ -130,7 +130,7 @@ Rather than build one generalist quiz that routes shoppers across the entire cat
 
 Each quiz lives at its own URL and is promoted contextually (a customer searching for "wall bars" never sees the playset quiz, and vice versa). All three sync answers to Klaviyo as zero-party data; the wall bars quiz additionally syncs to HubSpot for sales hand-off on the highest-AOV configurations.
 
-The platform split is mixed: the vinyl playhouse quiz runs on the [Built for Shopify](/revenuehunt-built-for-shopify/) version of RevenueHunt (which connects to Shopify Orders automatically for revenue attribution). The outdoor playset and wall bars quizzes still run on Shopify Legacy and use the Legacy [Shopify Orders integration](/shopify-quiz-revenue-tracking/) for revenue attribution, with the Legacy same-session attribution caveat in play. No developer involvement was needed for any of the builds or for ongoing maintenance.
+The platform split is mixed: the vinyl playhouse quiz runs on the [Built for Shopify](/revenuehunt-built-for-shopify/) version of RevenueHunt (which connects to Shopify Orders automatically for revenue attribution). The outdoor playset and wall bars quizzes still run on Shopify Legacy and use the Legacy [Shopify Orders integration](/first-party-shopify-quiz-analytics/) for revenue attribution, with the Legacy same-session attribution caveat in play. No developer involvement was needed for any of the builds or for ongoing maintenance.
 
 For the broader case for why this beats a paid-traffic-into-catalogue-page funnel, see [quiz funnels vs collection pages](/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/). For the popup-vs-quiz lead-capture pillar, see [why popups are walls and quizzes are doors](/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/).
 
@@ -219,7 +219,7 @@ Every quiz answer flows to Klaviyo as a custom property without Zapier, without 
 
 ### 7.4 First-party revenue attribution across two platform versions
 
-The brand verifies the disclosed metrics through first-party sources rather than Pixel or GA4. The vinyl playhouse quiz runs on the [Built for Shopify](/revenuehunt-built-for-shopify/) version and reports through the [Built for Shopify RevenueHunt Analytics dashboard](/first-party-shopify-quiz-analytics/), which connects to Shopify Orders automatically with no configuration. The outdoor playset and wall bars quizzes still run on Shopify Legacy, where revenue is reported through the [Legacy Shopify Orders integration](/shopify-quiz-revenue-tracking/) with the same-session attribution caveat in play (the customer has to complete checkout in the same session for the order to attribute to the quiz). Both flows produce numbers the brand can read off the Shopify ledger directly rather than waiting for Pixel reconciliation.
+The brand verifies the disclosed metrics through first-party sources rather than Pixel or GA4. The vinyl playhouse quiz runs on the [Built for Shopify](/revenuehunt-built-for-shopify/) version and reports through the [Built for Shopify RevenueHunt Analytics dashboard](/first-party-shopify-quiz-analytics/), which connects to Shopify Orders automatically with no configuration. The outdoor playset and wall bars quizzes still run on Shopify Legacy, where revenue is reported through the [Legacy Shopify Orders integration](/first-party-shopify-quiz-analytics/) with the same-session attribution caveat in play (the customer has to complete checkout in the same session for the order to attribute to the quiz). Both flows produce numbers the brand can read off the Shopify ledger directly rather than waiting for Pixel reconciliation.
 
 > **Operating rule:** first-party data is the source of truth for revenue. Pixel and GA4 are the source of truth for audiences and traffic. Mixing the two means reconciling numbers that were never meant to match.
 
@@ -243,7 +243,7 @@ Because narrow scope produces meaningfully higher completion. The Wall Bars Quiz
 The shape across all three quizzes is consistent: a brief introduction, a handful of constraint questions, a preference signal, a budget filter, an optional email step, and a single confident recommendation on the results page. Around 7 steps total. Past 8-9 questions, drop-off accumulates faster than the additional signal is worth; under 5-6, the constraints aren't fully captured. The cleanest of the three quizzes drops only ~4.5% of shoppers across the entire funnel, which is the tight scope doing the work.
 
 **How were the disclosed numbers verified?**
-The quiz response counts, completion rates, drop-off rates and growth figures come from RevenueHunt's first-party Analytics: the [Built for Shopify dashboard](/first-party-shopify-quiz-analytics/) on the Built for Shopify quiz, and the [Legacy Shopify Orders integration](/shopify-quiz-revenue-tracking/) on the two quizzes that still run on Shopify Legacy. Both flows read from the Shopify ledger rather than through the Meta Pixel or GA4. Exact revenue figures are not disclosed in this case study; the percentage growth metrics and completion rates are reported instead.
+The quiz response counts, completion rates, drop-off rates and growth figures come from RevenueHunt's first-party Analytics: the [Built for Shopify dashboard](/first-party-shopify-quiz-analytics/) on the Built for Shopify quiz, and the [Legacy Shopify Orders integration](/first-party-shopify-quiz-analytics/) on the two quizzes that still run on Shopify Legacy. Both flows read from the Shopify ledger rather than through the Meta Pixel or GA4. Exact revenue figures are not disclosed in this case study; the percentage growth metrics and completion rates are reported instead.
 
 **Can other DTC brands replicate this pattern below the $3K AOV?**
 The structural lessons (niche quizzes, ~7-step funnel, native Klaviyo sync, multi-year retention framing) transfer directly. The 76.9% completion-rate finding is independent of AOV; it's a function of scope. The lessons compound the most for high-consideration categories where the shopper genuinely can't self-diagnose, but they apply across price points. For a worked example at a different price point and category, see the [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) (9.8% CVR on cold Meta traffic, +42.64% AOV lift, $691,128 in 90 days).

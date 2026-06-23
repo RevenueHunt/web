@@ -89,7 +89,7 @@ The most common placement and the one most operators reach for first. A discount
 
 The highest ROI placement when the quiz is connected to Klaviyo. The post-quiz email arrives with the recommendation, the customer's stated preferences referenced explicitly ("for your dry, sensitivity-prone skin"), and the discount as the call to action. Customers who didn't convert on the results page often convert here, days later, because the email reaches them when they have time to actually buy.
 
-For the full segmentation chain, see [how Klaviyo segmentation unlocks once zero-party data lands in profiles](/klaviyo-zero-party-data/). For why follow-up emails are non-negotiable, see [the post-quiz follow-up sequence](/product-quiz-success-why-its-necessary-to-send-follow-up-emails/). And before you send any of these emails, make sure [marketing consent is captured cleanly inside the quiz flow](/product-quiz-marketing-consent/) so the discount campaign is actually compliant.
+For the full segmentation chain, see [how Klaviyo segmentation unlocks once zero-party data lands in profiles](/klaviyo-zero-party-data/). For why follow-up emails are non-negotiable, see [the post-quiz follow-up sequence](/quiz-follow-up-emails/). And before you send any of these emails, make sure [marketing consent is captured cleanly inside the quiz flow](/product-quiz-marketing-consent/) so the discount campaign is actually compliant.
 
 ### Tiered / dynamic discounts (Shopify Legacy only)
 

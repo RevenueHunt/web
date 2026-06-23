@@ -236,7 +236,7 @@ Once the email lands, the post-quiz email sequence is where the quiz's value com
 ![Built for Shopify Notifications panel with the To Respondent post-quiz email configured, subject line and body referencing the customer's stated quiz answers](/img/blog/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/quizbuilder_notification_torespondent_bfs.png)
 <p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;The Built for Shopify Notifications panel ("To Respondent" tab). Reference the customer's stated answer in the subject line and body, then drop the discount code as the call to action.</p>
 
-For the full follow-up sequence that consistently outperforms generic blasts, see [quiz follow-up emails: the revenue lever you're missing](/product-quiz-success-why-its-necessary-to-send-follow-up-emails/). For the Klaviyo mapping chain, see [how Klaviyo segmentation unlocks once zero-party data lands in profiles](/klaviyo-zero-party-data/). For Shopify Flow as the automation layer, see [how to automate post-quiz emails using Shopify Flows](/how-to-automate-post-quiz-emails-using-shopify-flows/).
+For the full follow-up sequence that consistently outperforms generic blasts, see [quiz follow-up emails: the revenue lever you're missing](/quiz-follow-up-emails/). For the Klaviyo mapping chain, see [how Klaviyo segmentation unlocks once zero-party data lands in profiles](/klaviyo-zero-party-data/). For Shopify Flow as the automation layer, see [how to automate post-quiz emails using Shopify Flows](/how-to-automate-post-quiz-emails-using-shopify-flows/).
 
 ### Being afraid of discounts
 

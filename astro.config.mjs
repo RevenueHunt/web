@@ -252,6 +252,16 @@ export default defineConfig({
     // landing page, which covers RH's Magento support via the feed mechanism.
     "/try-magento-2-product-recommendation-quiz-app-to-boost-your-conversions/":
       "/product-recommendation-quiz-standalone-google-product-feed/",
+    // In-app results-email setup article merged into the follow-up emails
+    // hub article (now at /quiz-follow-up-emails/). Repointed directly to
+    // the new slug so the redirect does not chain.
+    "/new-features-create-customized-results-emails/":
+      "/quiz-follow-up-emails/",
+    // Hub article renamed to a shorter, keyword-focused slug. Old slug carried
+    // SEO authority worth preserving via 301; new slug matches the cluster
+    // naming convention (quiz-X / product-quiz-X).
+    "/product-quiz-success-why-its-necessary-to-send-follow-up-emails/":
+      "/quiz-follow-up-emails/",
     "/interesting-examples-of-product-recommendation-quizzes-in-ecommerce/":
       "/10-brands-that-need-a-product-recommendation-quiz-with-examples/",
     "/introducing-dynamic-discount-codes-enhance-your-shop-quiz-app-for-shopify/":

@@ -63,4 +63,4 @@ Starting a beauty business is challenging, and most first-time business owners w
 
 Almost every ecommerce company uses product recommendation quizzes to increase sales. However, not many companies send the follow up emails necessary to make sure that customers actually buy the products they are recommended
 
-[Keep Reading](https://revenuehunt.com/product-quiz-success-why-its-necessary-to-send-follow-up-emails/)
+[Keep Reading](https://revenuehunt.com/quiz-follow-up-emails/)

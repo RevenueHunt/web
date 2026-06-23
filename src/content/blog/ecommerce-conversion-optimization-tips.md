@@ -1,6 +1,6 @@
 ---
-title: "10 ecommerce conversion optimisation tips that move revenue"
-description: "10 field-tested ecommerce conversion tips: UX, reviews, UGC, geolocation, quiz-led email capture, cart recovery, autofill checkout and page speed."
+title: "10 ecommerce CRO tips that lift Shopify sales 11-15%"
+description: "Field-tested CRO tips that compound to 11-15% conversion uplift in 90 days across 20,000+ Shopify stores: UX, reviews, UGC, quiz-led email capture, Shop Pay and page speed."
 pubDate: 2023-06-01T08:06:18Z
 updatedDate: 2026-06-23T10:00:00Z
 tags:
@@ -158,8 +158,8 @@ For the strategic frame that ties these tactics together, see our [step-by-step 
 {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "10 ecommerce conversion optimisation tips that move revenue",
-  "description": "Ten field-tested conversion rate optimisation techniques for Shopify and other ecommerce stores, from UX simplification through page-speed work.",
+  "name": "10 ecommerce CRO tips that lift Shopify sales 11-15%",
+  "description": "Ten field-tested conversion rate optimisation techniques that compound to an 11-15% conversion uplift band within 90 days across 20,000+ Shopify stores, from UX simplification through page-speed work.",
   "numberOfItems": 10,
   "itemListElement": [
     {

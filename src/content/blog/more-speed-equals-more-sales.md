@@ -35,7 +35,7 @@ This article covers where Shopify stores actually lose those seconds, how to mea
   <span><strong style="color:#0f172a;">Written by Alex, co-founder of RevenueHunt.</strong> Tactics drawn from years of speed-auditing Shopify stores at every scale: where the seconds actually go, which ones are recoverable without a re-platform, and which ones aren't worth the engineering hours.</span>
 </div>
 
-For the broader CRO playbook this sits inside, see [10 ecommerce conversion optimisation tips that move revenue](https://revenuehunt.com/ecommerce-conversion-optimization-tips/). For the funnel architecture, see our [step-by-step funnel build guide](https://revenuehunt.com/build-sales-funnel-shopify-store/).
+For the broader CRO playbook this sits inside, see [10 ecommerce CRO tips that lift Shopify sales 11-15%](/ecommerce-conversion-optimization-tips/). For the funnel architecture, see our [step-by-step funnel build guide](/build-sales-funnel-shopify-store/).
 
 **Table of contents:**
 

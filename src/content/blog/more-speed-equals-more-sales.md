@@ -1,8 +1,8 @@
 ---
 title: "More speed equals more sales: an ecommerce playbook"
-description: "Why page speed is the foundation of ecommerce conversion, where Shopify stores actually lose seconds, and the three audits that win them back."
+description: "Page speed sets the conversion ceiling on Shopify. The Core Web Vitals to hit (LCP, INP, CLS), where stores lose seconds, and three audits that recover them."
 pubDate: 2023-12-15T10:23:30Z
-updatedDate: 2026-05-29T16:00:00Z
+updatedDate: 2026-06-23T11:00:00Z
 tags:
   - "ecommerce"
   - "shopify"
@@ -20,6 +20,12 @@ featuredImage: "/img/blog/more-speed-equals-more-sales/blogtile_speedsales.webp"
 draft: false
 ---
 
+<div style="margin:24px 0;padding:24px 28px;background:#16161D;color:#fff;border-radius:8px;">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#94a3b8;">Quick answer</p>
+  <p style="margin:0 0 8px;font-size:16px;font-weight:600;line-height:1.55;">Shopify page speed comes down to three Core Web Vitals: <strong>LCP under 2.5s, INP under 200ms, CLS under 0.1</strong>.</p>
+  <p style="margin:0;font-size:15px;line-height:1.6;color:#cbd5e1;">Images and third-party scripts cause most of the loss. PageSpeed Insights gives you the diagnosis; the three audits below (image lazy-load, third-party script audit, font-loading strategy) give you the fixes. INP replaced FID as a Core Web Vital in March 2024, and is the metric most Shopify stores miss in 2026.</p>
+</div>
+
 Page speed is the foundation everything else sits on. If a customer clicks your ad and never sees the landing page because it's loading for eternity, they leave before any of your design decisions, copywriting, quiz placements or discount offers have a chance to do their work. Over half of online purchases now come from mobile, where connection quality is unpredictable, which makes the speed of those first few seconds the highest-leverage thing you can fix this week.
 
 This article covers where Shopify stores actually lose those seconds, how to measure it, and the three deeper audits that recover them: image lazy-loading and asset optimisation, third-party script auditing, and font-loading strategy.
@@ -31,11 +37,22 @@ This article covers where Shopify stores actually lose those seconds, how to mea
 
 For the broader CRO playbook this sits inside, see [10 ecommerce conversion optimisation tips that move revenue](https://revenuehunt.com/ecommerce-conversion-optimization-tips/). For the funnel architecture, see our [step-by-step funnel build guide](https://revenuehunt.com/build-sales-funnel-shopify-store/).
 
+**Table of contents:**
+
+- [Why speed is the priority](#why-speed-is-the-priority-that-comes-before-everything-else)
+- [How to measure: three tools, three angles](#how-to-measure-three-tools-three-angles)
+- [Where Shopify stores actually lose speed](#where-shopify-stores-actually-lose-speed)
+- [Audit 1: image lazy-loading and asset optimisation](#audit-1-image-lazy-loading-and-asset-optimisation)
+- [Audit 2: third-party script audit](#audit-2-third-party-script-audit)
+- [Audit 3: font loading strategy](#audit-3-font-loading-strategy)
+- [Where the quiz fits in the speed conversation](#where-the-quiz-fits-in-the-speed-conversation)
+- [Frequently asked questions](#frequently-asked-questions)
+
 ## Why speed is the priority that comes before everything else
 
 The single most overlooked truth about ecommerce CRO is that the rest of the funnel doesn't matter if the page doesn't load. A 4-second page that converts at 5% beats a 1-second page that converts at 10% only on paper: the 4-second page never gets the chance, because half the traffic has already bounced.
 
-Mobile makes this worse. Mobile shoppers are on flaky networks (commuting, low-coverage areas, congested wifi), and they have substantially less patience for a slow page than desktop users. Industry studies consistently show conversion drops sharply as load time increases past two seconds. Every speed gain compounds because it's a multiplier on every downstream funnel mechanic you've spent time perfecting.
+Mobile makes this worse. Mobile shoppers are on flaky networks (commuting, low-coverage areas, congested wifi), and they have substantially less patience for a slow page than desktop users. Industry studies consistently show conversion drops sharply as load time increases past two seconds: mobile bounce rate jumps to **53% past three seconds**, and conversion typically drops around **7% for every additional second** of load time. Every speed gain compounds because it's a multiplier on every downstream funnel mechanic you've spent time perfecting.
 
 ## How to measure: three tools, three angles
 
@@ -47,15 +64,56 @@ Each tool measures something slightly different. Use all three, not just one.
 
 ![Shopify admin Reports section showing the Online store speed entry](/img/blog/more-speed-equals-more-sales/1e416992-b406-4f06-b109-a06708698749_1260x728.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;The Shopify admin Reports section: the Online store speed report runs a Lighthouse test weighted across home, top product and top collection pages. Useful as a single number to track over time; the per-page diagnosis happens in PageSpeed Insights.</p>
+
 **Shopify Partners dashboard performance.** If you have Partner access (yours or your developer's), open Stores, find the store, click "More actions" → "View store performance". Same underlying Lighthouse engine, but cleaner historical tracking and a comparison view across multiple stores you manage.
 
 ![Shopify Partners dashboard with the View store performance option in the More actions dropdown](/img/blog/more-speed-equals-more-sales/a0aa04cd-4649-4ebf-8b17-5abea5fb6d43_1606x934.webp)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;The Shopify Partners dashboard view: cleaner historical tracking and a comparison view across multiple stores. Useful when you (or your developer) manage several stores at once and want trend lines side-by-side.</p>
 
 The score itself is a weighted average across three pages: the home page, the top-visited product page and the top-visited collection page. It's a useful trend line, but the diagnosis happens elsewhere.
 
 ![Shopify speed score breakdown showing the weighted average across home, product and collection pages](/img/blog/more-speed-equals-more-sales/a09a91cf-0aad-40f8-acc1-e2dd46c17e50_1266x750.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;The speed-score breakdown: a weighted average across three pages, not a single-page snapshot. Useful trend line, but the actual diagnosis lives in PageSpeed Insights and the per-page Core Web Vitals data above.</p>
+
 What actually matters is the Core Web Vitals underneath: **Largest Contentful Paint (LCP) under 2.5s**, **Cumulative Layout Shift (CLS) under 0.1**, **Interaction to Next Paint (INP) under 200ms**. Optimise for those targets, not for the headline score.
+
+<div class="not-prose my-6 overflow-x-auto">
+  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#64748b;">Core Web Vitals thresholds (Google, 2026)</p>
+  <table style="width:100%;border-collapse:collapse;font-size:14px;">
+    <thead>
+      <tr style="background:#16161D;color:#fff;">
+        <th style="border:1px solid #cbd5e1;padding:10px 14px;text-align:left;font-weight:600;">Metric</th>
+        <th style="border:1px solid #cbd5e1;padding:10px 14px;text-align:left;font-weight:600;">Good</th>
+        <th style="border:1px solid #cbd5e1;padding:10px 14px;text-align:left;font-weight:600;">Needs improvement</th>
+        <th style="border:1px solid #cbd5e1;padding:10px 14px;text-align:left;font-weight:600;">Poor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background:#fff;color:#0f172a;">
+        <td style="border:1px solid #cbd5e1;padding:10px 14px;"><strong>LCP</strong>, Largest Contentful Paint</td>
+        <td style="border:1px solid #cbd5e1;padding:10px 14px;">≤ 2.5s</td>
+        <td style="border:1px solid #cbd5e1;padding:10px 14px;">2.5 – 4.0s</td>
+        <td style="border:1px solid #cbd5e1;padding:10px 14px;">&gt; 4.0s</td>
+      </tr>
+      <tr style="background:#f8fafc;color:#0f172a;">
+        <td style="border:1px solid #cbd5e1;padding:10px 14px;"><strong>INP</strong>, Interaction to Next Paint <em>(replaced FID, March 2024)</em></td>
+        <td style="border:1px solid #cbd5e1;padding:10px 14px;">≤ 200ms</td>
+        <td style="border:1px solid #cbd5e1;padding:10px 14px;">200 – 500ms</td>
+        <td style="border:1px solid #cbd5e1;padding:10px 14px;">&gt; 500ms</td>
+      </tr>
+      <tr style="background:#fff;color:#0f172a;">
+        <td style="border:1px solid #cbd5e1;padding:10px 14px;"><strong>CLS</strong>, Cumulative Layout Shift</td>
+        <td style="border:1px solid #cbd5e1;padding:10px 14px;">≤ 0.1</td>
+        <td style="border:1px solid #cbd5e1;padding:10px 14px;">0.1 – 0.25</td>
+        <td style="border:1px solid #cbd5e1;padding:10px 14px;">≥ 0.25</td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="margin:8px 0 0;font-size:13px;color:#64748b;line-height:1.5;">INP is the bottleneck in 2026: only ~65% of Shopify origins pass it (vs ~89% for CLS, ~72% for LCP). Long JavaScript tasks from apps and tracking scripts are the usual culprit.</p>
+</div>
 
 ## Where Shopify stores actually lose speed
 
@@ -63,7 +121,7 @@ Shopify's hosting infrastructure is excellent: CDN-served images, fast theme ren
 
 1. **Too many tracking pixels.** GA4, Meta, TikTok, Pinterest, Klaviyo, every retargeting platform's own snippet. Each one loads JavaScript. Stack five of them and your first contentful paint slips half a second.
 2. **Poorly coded or bloated themes.** Every additional theme section, animation, and decorative carousel adds CSS and JS that loads on every page. The same look can usually be achieved with half the code.
-3. **Too many apps, even good ones.** Most Shopify apps inject their JavaScript globally rather than only where it's needed. An app that powers a single feature on one product page often loads on your homepage too.
+3. **Too many apps, even good ones.** Most Shopify apps inject their JavaScript globally rather than only where it's needed. An app that powers a single feature on one product page often loads on your homepage too. Industry estimates put the LCP cost at **150-300ms per installed app**; a store running 15-20 apps can carry hundreds of kilobytes of JS that does nothing on the page it's loading on.
 4. **Large media files.** A 4 MB hero image at 2000px width when the device is rendering it at 400px. A 30-second product GIF when a 4-second video would do.
 5. **Poorly coded apps that inject globally.** The worst case of #3: an app whose JS bundle is itself bloated and runs on every page, every time.
 
@@ -77,7 +135,7 @@ Shopify lazy-loads images below the fold automatically via the `loading="lazy"` 
 
 **Use Shopify's image URL filters.** Liquid's `image_url` filter (and the older `img_url`) can automatically serve WebP and AVIF formats when supported, and resize images to whatever width you actually need. A hero image embedded at 1200px wide should be served at 1200px wide, not at 4000px and then scaled down by CSS. Audit your theme for raw `<img src="…">` tags and convert them to use the filter.
 
-**Stop hotlinking from external sources.** Substack-hotlinked images, Imgur images, hotlinked stock photos — they bypass Shopify's CDN and image optimisation entirely. Re-upload to the Shopify CDN or the theme's asset folder.
+**Stop hotlinking from external sources.** Substack-hotlinked images, Imgur images, hotlinked stock photos: they bypass Shopify's CDN and image optimisation entirely. Re-upload to the Shopify CDN or the theme's asset folder.
 
 **One overlooked file**: video. A 15-second product video is often 8-10 MB. If you're showing video on the homepage, either compress it aggressively (H.264 at 1500 kbps for 720p is usually fine) or use the YouTube embed pattern instead of self-hosting, which lets YouTube's CDN handle delivery. The [video quizzes piece](https://revenuehunt.com/video-quizzes/) covers the upload-vs-embed decision in more depth.
 
@@ -122,9 +180,9 @@ This starts the DNS lookup and TLS handshake early so the font request lands fas
 
 ## Where the quiz fits in the speed conversation
 
-Speed matters disproportionately at the moments of highest conversion leverage: homepage hero, quiz load, results page, checkout. A quiz that takes three seconds to render (because it's iframe-embedded and adds an extra HTTP request, plus the visual "flash" as the external frame loads) materially reduces completion rates. This is the structural weakness of many iframe-based quiz tools.
+Speed matters disproportionately at the moments of highest conversion leverage: homepage hero, quiz load, results page, checkout. A quiz that takes three seconds to render (because it's iframe-embedded and adds an extra HTTP request, plus the visual "flash" as the external frame loads) materially reduces completion rates. Iframe-based quiz tools typically add **200–500ms to LCP** via the extra HTTP request and frame paint. This is the structural weakness of many quiz tools and the reason an embed approach matters as much as the engine behind it.
 
-RevenueHunt's **Built for Shopify** version embeds the quiz natively into the Shopify theme as a block: no iframes, no extra HTTP request, no visual flash. The quiz loads at theme speed and inherits the brand's typography and colours automatically, which means it doesn't even need its own CSS payload. For the full quiz foundations, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/).
+RevenueHunt's **[Built for Shopify](/revenuehunt-built-for-shopify/)** version embeds the quiz natively into the Shopify theme as a block: no iframes, no extra HTTP request, no visual flash. The quiz loads at theme speed and inherits the brand's typography and colours automatically, which means it doesn't even need its own CSS payload. For the full quiz foundations, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/).
 
 ## Quick tools and resources
 
@@ -207,6 +265,43 @@ Real-user metrics (the "field data" Google shows in PageSpeed Insights and in Se
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "The three audits in the Shopify speed playbook",
+  "description": "Three audits that recover most of the lost speed on a typical Shopify store: image lazy-loading and asset optimisation, third-party script audit, and font-loading strategy.",
+  "numberOfItems": 3,
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Image lazy-loading and asset optimisation", "description": "Eager-load the hero image, use Liquid image_url filters for WebP/AVIF and correct sizing, stop hotlinking from external sources, and compress or YouTube-embed any product video over a few MB."},
+    {"@type": "ListItem", "position": 2, "name": "Third-party script audit", "description": "Open Chrome DevTools Network panel, sort by Transfer size, defend every script over 100 KB. Most stores find duplicate review apps, popup scripts loading on every page, abandoned A/B tools and overlapping tracking pixels."},
+    {"@type": "ListItem", "position": 3, "name": "Font loading strategy", "description": "Always set font-display: swap, preconnect to the font CDN, subset to the character set you actually use, and cap at two body weights plus one heading weight."}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Run a Shopify speed audit to recover lost seconds",
+  "description": "The three-audit playbook for diagnosing and fixing page speed on a Shopify store: image optimisation, third-party scripts, and font loading. Target Core Web Vitals thresholds (LCP under 2.5s, INP under 200ms, CLS under 0.1).",
+  "totalTime": "PT2H",
+  "tool": [
+    {"@type": "HowToTool", "name": "Google PageSpeed Insights"},
+    {"@type": "HowToTool", "name": "Chrome DevTools Network panel"},
+    {"@type": "HowToTool", "name": "Shopify Online Store Speed report"}
+  ],
+  "step": [
+    {"@type": "HowToStep", "position": 1, "name": "Measure baseline Core Web Vitals", "text": "Run PageSpeed Insights on your homepage, top product and top collection. Note LCP, INP and CLS field-data values. Cross-reference with the Shopify Online Store Speed report and (if you have access) the Shopify Partners performance view."},
+    {"@type": "HowToStep", "position": 2, "name": "Audit images and assets", "text": "Eager-load the LCP candidate (typically the homepage hero). Convert raw img tags to Liquid image_url filters for automatic WebP/AVIF + correct sizing. Re-upload any hotlinked external images to the Shopify CDN. Compress or YouTube-embed any self-hosted video."},
+    {"@type": "HowToStep", "position": 3, "name": "Audit third-party scripts", "text": "Open Chrome DevTools, Network panel, reload the page, sort by Transfer size. Defend every script over 100 KB. Uninstall (not just disable) any unused apps. Consolidate analytics pixels behind a single tag manager and defer non-critical scripts to Window Loaded."},
+    {"@type": "HowToStep", "position": 4, "name": "Audit font loading", "text": "Add font-display: swap to every custom font. Preconnect to the font CDN. Subset to the character set you actually use (most stores only need Latin). Cap at two body weights plus one heading weight."},
+    {"@type": "HowToStep", "position": 5, "name": "Re-measure and ship", "text": "Re-run PageSpeed Insights. Field data updates over 28 days; lab data updates immediately. Use the lab number to verify each fix landed; use the field number to decide what to fix next."}
+  ]
+}
+</script>
+
 ## A founder's note on the skill stack this requires
 
 Image optimisation, JavaScript auditing and font-loading discipline are three different technical specialties. As a founder running a small team, you can't realistically be a 100% specialist in any of them, and you don't have to be. What you do need is reasonable proficiency across all three: an 80% generalist's grasp of each beats a 100% expert in only one when the problem is store-wide rather than function-specific.
@@ -225,6 +320,6 @@ Till Musshoff articulates a related idea: digital literacy as a meta-skill that 
 
 Speed is the discipline that makes everything else possible. It can't replace a strong product-page hierarchy, a well-built quiz, or a discount strategy that earns its margin sacrifice. But every other tactic in the funnel compounds its return when the foundation underneath is fast.
 
-For the broader CRO playbook, see [10 ecommerce conversion optimisation tips](https://revenuehunt.com/ecommerce-conversion-optimization-tips/). For the funnel-design architecture this sits inside, see [10 ecommerce design decisions that actually move revenue](https://revenuehunt.com/ecommerce-website-design-tips-that-move-revenue/). For the data the quiz captures at speed, see our [zero-party data guide](https://revenuehunt.com/zero-party-data/).
+For the broader CRO playbook, see [10 ecommerce conversion optimisation tips](https://revenuehunt.com/ecommerce-conversion-optimization-tips/). For the funnel-design architecture this sits inside, see [10 ecommerce design decisions that actually move revenue](https://revenuehunt.com/ecommerce-website-design-tips-that-move-revenue/). For the data the quiz captures at speed, see our [zero-party data guide](https://revenuehunt.com/zero-party-data/). For the Built for Shopify version that loads as a native theme block (not an iframe), see [RevenueHunt is Built for Shopify](/revenuehunt-built-for-shopify/). For headless stores hitting Core Web Vitals targets that templated themes struggle with, see [the headless ecommerce product quiz](/headless-ecommerce-product-quiz/). For why a quiz funnel beats a collection page on speed and conversion, see [quiz funnels vs collection pages](/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/).
 
 [Install RevenueHunt: Recommender Quiz for Shopify](https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=more_speed) and add the only quiz that loads at native theme speed. Free plan available.

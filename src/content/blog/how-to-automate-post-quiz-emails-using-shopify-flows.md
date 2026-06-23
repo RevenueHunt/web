@@ -149,7 +149,7 @@ Get this wrong and the Flow trigger silently never fires. If you're debugging a 
 
 Once the Flow is live, watch the metrics that matter: open rate, click-through rate and revenue per email per segment. The per-segment view is what tells you whether the segmentation is doing real work or just adding complexity. If one segment converts at 12% and another at 3%, the gap is a signal: refine the low-performing template, or consider whether the segment is too small to justify its own treatment.
 
-For the broader set of quiz metrics worth tracking, see [product quiz metrics: track what converts](/product-quiz-metrics-what-to-track-to-convert-better/). For the mistakes that quietly leak conversion in the quiz itself before the Flow even fires, see [product quiz mistakes ranked by industry data](/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/).
+For the broader set of quiz metrics worth tracking, see [product quiz metrics: track what converts](https://revenuehunt.com/product-quiz-metrics-what-to-track-to-convert-better/). For the mistakes that quietly leak conversion in the quiz itself before the Flow even fires, see [product quiz mistakes ranked by industry data](https://revenuehunt.com/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/).
 
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>

@@ -126,7 +126,7 @@ Imagine a haircare store selling shampoos, conditioners, hair treatments and sty
 
 Create a quiz with questions about hair type (e.g. curly, straight, wavy), hair concerns (e.g. dandruff, dryness, frizz) and hair goals (e.g. volume, shine, repair). Make sure to add an email-capture question as the final slide or just before the results page, and make it required: platform data shows 71% of top-converting quizzes collect email this way and 75% of those make it mandatory.
 
-For the foundations of a well-built quiz, see [how to build a successful product recommendation quiz](/how-to-build-a-successful-ecommerce-quiz/). For the mistakes that quietly leak conversion, see [product quiz mistakes ranked by industry data](/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/).
+For the foundations of a well-built quiz, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/). For the mistakes that quietly leak conversion, see [product quiz mistakes ranked by industry data](https://revenuehunt.com/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/).
 
 ### Create and link customer tags to choices
 
@@ -197,7 +197,7 @@ For the discount layer that compounds on top of these segmented sequences, see [
 
 Track the performance of each segmented campaign in Klaviyo. Watch open rates, click-through rates and conversion rates per segment, not just the aggregate, because the whole point of segmentation is that the numbers vary meaningfully between groups. If one segment converts at 12% and another at 3%, that's the signal to either retire the low-performing campaign or restructure it around what the high-performing one is doing.
 
-For the broader set of quiz metrics worth tracking across all your campaigns, see [product quiz metrics: track what converts](/product-quiz-metrics-what-to-track-to-convert-better/).
+For the broader set of quiz metrics worth tracking across all your campaigns, see [product quiz metrics: track what converts](https://revenuehunt.com/product-quiz-metrics-what-to-track-to-convert-better/).
 
 ## A quarterly review process for tags and segments
 

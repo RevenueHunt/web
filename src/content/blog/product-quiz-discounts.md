@@ -2,7 +2,7 @@
 title: "Discounts in product quizzes: the conversion playbook"
 description: "Why quiz-end discounts outperform banner discounts, the four placements that lift conversion, and how to set them up on Shopify, WooCommerce and more."
 pubDate: 2023-06-08T06:46:04Z
-updatedDate: 2026-05-29T14:00:00Z
+updatedDate: 2026-06-23T10:00:00Z
 tags:
   - "ecommerce"
   - "product recommendation quiz"
@@ -22,9 +22,29 @@ draft: false
 
 A discount delivered at the end of a product recommendation quiz consistently outperforms the same discount banner-advertised on the homepage. The customer has already invested 90 seconds answering questions, the recommendation has built purchase confidence, and the discount removes the final friction. It's a lever on both [conversion rate optimisation](/glossary/conversion-rate-optimization/) and [average order value](/glossary/average-order-value/) at the same moment. The result is a single coherent decision moment instead of the cold "should I trust this brand enough to spend?" question shoppers face on a generic landing page.
 
+<div style="margin:24px 0;padding:24px 28px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 10px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Quick answer</p>
+  <p style="margin:0 0 12px;font-size:16px;font-weight:600;line-height:1.55;color:#0f172a;">Quiz discounts outperform banner discounts because they land <strong>after</strong> the customer has validated fit, not before. The four placements that move the needle: <strong>teased at the start</strong> (lifts quiz start rate), <strong>on the results page</strong> (the conversion-moment hook), <strong>in the post-quiz follow-up email</strong> (catches delayed conversion), and <strong>tiered / dynamic on Shopify Legacy</strong> (lifts average order value).</p>
+  <p style="margin:0;font-size:15px;line-height:1.65;color:#334155;">Four psychological mechanisms compound: effort justification (the quiz feels earned), reciprocity (recommendation + discount feels like two gifts), anchoring after fit (price is evaluated once need is validated), and a single decision moment (no "is this brand right?" + "is the price right?" stacked at the same time).</p>
+</div>
+
 This article covers the psychology behind why quiz discounts convert, the four placements that consistently move the needle (one of them at the start of the quiz, not the end), and the exact configuration steps for every platform RevenueHunt runs on.
 
 For the broader quiz design principles, see [how to build a successful product recommendation quiz](/how-to-build-a-successful-ecommerce-quiz/): the discount-on-results-page rule is one of eleven. To estimate the lift on your own store, use our [quiz ROI calculator](/quiz-roi-calculator/).
+
+<div style="margin:28px 0;padding:20px 24px;background:#f8fafc;border-left:3px solid #16161D;border-radius:4px;font-size:14px;color:#475569;line-height:1.65;">
+  <p style="margin:0 0 10px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">In this guide</p>
+  <ol style="margin:0;padding-left:20px;">
+    <li><a href="#why-a-quiz-discount-converts-better-than-a-banner-discount" style="color:#16161D;">Why a quiz discount converts better than a banner discount</a></li>
+    <li><a href="#the-four-placements-that-work" style="color:#16161D;">The four placements that work</a></li>
+    <li><a href="#discount-strategy-percentage-vs-fixed-amount" style="color:#16161D;">Discount strategy: percentage vs fixed amount</a></li>
+    <li><a href="#how-to-add-a-discount-to-your-quiz-by-platform" style="color:#16161D;">How to add a discount to your quiz, by platform</a></li>
+    <li><a href="#setting-up-the-email-based-discount-every-platform" style="color:#16161D;">Setting up the email-based discount (every platform)</a></li>
+    <li><a href="#running-discounts-as-a-habit-not-a-default" style="color:#16161D;">Running discounts as a habit, not a default</a></li>
+    <li><a href="#frequently-asked-questions" style="color:#16161D;">Frequently asked questions</a></li>
+    <li><a href="#where-this-fits" style="color:#16161D;">Where this fits</a></li>
+  </ol>
+</div>
 
 ## Why a quiz discount converts better than a banner discount
 
@@ -40,9 +60,10 @@ Four psychological mechanisms compound when the discount lands inside a quiz fun
 
 ## The four placements that work
 
-### 1. Discount teased at the start of the quiz
+### Discount teased at the start of the quiz
 
 ![Homepage with a quiz CTA and a 10% off badge teasing the reward before the customer enters the quiz](/img/blog/product-quiz-discounts/placement-1-prequiz.svg)
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;Homepage with a quiz CTA and a 10% off badge teasing the reward at the awareness stage, before the customer commits to taking the quiz. The most underused placement and the one that lifts quiz start rate hardest.</p>
 
 The most overlooked placement and the one with the strongest impact on **quiz start rate**. Industry data backs the principle: in Popupsmart's analysis of 10,000+ ecommerce popup campaigns, popups offering discounts converted **62% better** than those without (7.45% vs 4.60%), and ecommerce-specific discount popups land in the **8-15% range** when offering 10-20% off. A pre-quiz teaser is the same mechanic with a stronger value exchange attached (the personalised recommendation, not just the discount).
 
@@ -54,27 +75,30 @@ A simple line under the quiz CTA on your homepage ("Take our 60-second quiz to f
 
 This is the placement we see underused most often. Operators tend to think of discounts as a results-page mechanic only, which leaves traffic on the table at the awareness stage. The fix is one line of copy on the homepage and the same code reaffirmed at the end.
 
-### 2. Discount on the results page
+### Discount on the results page
 
 ![Quiz results page showing a recommended product card next to a prominent 10% off discount code](/img/blog/product-quiz-discounts/placement-2-results.svg)
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;Quiz results page pairing the recommended product card with a prominent discount code. The conversion-moment hook: fit has been validated by the quiz, and the discount removes the final friction.</p>
 
 The most common placement and the one most operators reach for first. A discount block alongside the recommended products closes the loop: "Based on your answers, here's your routine, and here's 10% off to start it today." Single-results-page quizzes (which already convert 3.5 percentage points better than multi-page configurations) are particularly well-suited to this placement because the entire offer lands in one decision moment.
 
-### 3. Discount in the follow-up email
+### Discount in the follow-up email
 
 ![Follow-up email containing a personalised discount code DRY10 sent after the customer completes the quiz](/img/blog/product-quiz-discounts/placement-3-email.svg)
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;Personalised post-quiz email referencing the customer's stated preferences ("for your dry, sensitivity-prone skin") with the discount as the call to action. Catches the customers who did not convert on the results page.</p>
 
 The highest ROI placement when the quiz is connected to Klaviyo. The post-quiz email arrives with the recommendation, the customer's stated preferences referenced explicitly ("for your dry, sensitivity-prone skin"), and the discount as the call to action. Customers who didn't convert on the results page often convert here, days later, because the email reaches them when they have time to actually buy.
 
-For the full segmentation chain, see [how Klaviyo segmentation unlocks once zero-party data lands in profiles](https://revenuehunt.com/klaviyo-zero-party-data/). For why follow-up emails are non-negotiable, see [the post-quiz follow-up sequence](https://revenuehunt.com/product-quiz-success-why-its-necessary-to-send-follow-up-emails/).
+For the full segmentation chain, see [how Klaviyo segmentation unlocks once zero-party data lands in profiles](/klaviyo-zero-party-data/). For why follow-up emails are non-negotiable, see [the post-quiz follow-up sequence](/product-quiz-success-why-its-necessary-to-send-follow-up-emails/). And before you send any of these emails, make sure [marketing consent is captured cleanly inside the quiz flow](/product-quiz-marketing-consent/) so the discount campaign is actually compliant.
 
-### 4. Tiered / dynamic discounts (Shopify Legacy only)
+### Tiered / dynamic discounts (Shopify Legacy only)
 
 ![Three tiered discount thresholds at 10%, 15% and 20% off with a progress indicator and toast notification prompting the customer to add more to unlock the next tier](/img/blog/product-quiz-discounts/placement-4-tiered.svg)
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;Three discount tiers (10% over £40, 15% over £80, 20% over £120) with a toast notification nudging the customer toward the next tier. A gamification layer that lifts average order value, currently Shopify Legacy only.</p>
 
 A gamification layer: "10% off orders over £40, 15% off orders over £80, 20% off orders over £120." The customer sees how close they are to the next tier via a toast notification on the results page, which incentivises larger basket sizes. This works particularly well for routine-based categories (skincare, haircare, supplements) where adding one step naturally lifts AOV without feeling like upselling.
 
-This dynamic-tier mechanic is currently available only on the **Shopify Legacy** version of the RevenueHunt app. The Built for Shopify version and the multi-platform versions support the other three placements but not the dynamic tiered notification system.
+This dynamic-tier mechanic is currently available only on the **Shopify Legacy** version of the RevenueHunt app. The [Built for Shopify](/revenuehunt-built-for-shopify/) version and the multi-platform versions support the other three placements but not the dynamic tiered notification system.
 
 ## Discount strategy: percentage vs fixed amount
 
@@ -138,7 +162,7 @@ For all three platforms, the **follow-up email path is unaffected**: a discount 
 
 Edit the Notifications → "To Respondent" tab in the RevenueHunt app and insert the discount code into the email body. For a personalised touch, reference the quiz answer that triggered the recommendation: "For your dry skin routine, here's 10% off your first order with code DRY10."
 
-This works on every platform RevenueHunt supports because the email is dispatched from RevenueHunt's infrastructure, not the storefront. Combine it with the [Klaviyo zero-party data integration](https://revenuehunt.com/klaviyo-zero-party-data/) to drop the same code into segmented Klaviyo flows triggered by quiz completion. The customer's quiz answers become Klaviyo profile properties, which means the email subject line, body and discount can all reference their stated preferences explicitly.
+This works on every platform RevenueHunt supports because the email is dispatched from RevenueHunt's infrastructure, not the storefront. Combine it with the [Klaviyo zero-party data integration](/klaviyo-zero-party-data/) to drop the same code into segmented Klaviyo flows triggered by quiz completion. The customer's quiz answers become Klaviyo profile properties, which means the email subject line, body and discount can all reference their stated preferences explicitly.
 
 ## Running discounts as a habit, not a default
 
@@ -217,10 +241,82 @@ On Built for Shopify and Shopify Legacy, yes. The code is applied to the cart au
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Four quiz-discount placements that lift conversion",
+  "description": "The four discount placements inside a product recommendation quiz funnel that consistently move conversion rate, quiz start rate or average order value.",
+  "numberOfItems": 4,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Discount teased at the start of the quiz",
+      "description": "A one-line teaser under the quiz CTA on the homepage that adds a tangible reward to the value exchange. Lifts quiz start rate by tying the discount to quiz completion."
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Discount on the results page",
+      "description": "A discount block alongside the recommended products that closes the loop at the conversion moment. The most common placement and the one most operators reach for first."
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Discount in the follow-up email",
+      "description": "The post-quiz email arrives with the recommendation, the customer's stated preferences referenced explicitly, and the discount as the call to action. Catches customers who did not convert on the results page."
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Tiered or dynamic discounts (Shopify Legacy only)",
+      "description": "A gamification layer using basket-value thresholds with a toast notification on the results page nudging the customer toward the next tier. Lifts average order value."
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Add a discount to your product recommendation quiz",
+  "description": "Configure an auto-applied discount on the quiz results page and in the post-quiz follow-up email across the platforms RevenueHunt supports.",
+  "totalTime": "PT20M",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Create the discount code in your storefront platform",
+      "text": "In Shopify go to Discounts and create a new discount. In WooCommerce create a coupon and enable URL Coupons via the Advanced Coupons plugin. In Magento, BigCommerce or Standalone, create the discount code in the store admin first, since the coupon must pre-exist before the quiz can reference it."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Wire the code into the RevenueHunt results page",
+      "text": "Open Results Page Settings, then Discount Code, in the RevenueHunt app and paste the code. On Built for Shopify and Shopify Legacy the code applies automatically at checkout. On WooCommerce, paste the URI portion of the URL coupon into Results Page Settings, Checkout Settings, Cart URL. On Magento, BigCommerce and Standalone, use a Text block to display the code or call prq.setDiscountCode via custom JavaScript."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Add the same code to the follow-up email",
+      "text": "Edit Notifications, To Respondent, in the RevenueHunt app and insert the discount code into the email body. Reference the quiz answer that triggered the recommendation for a personalised feel. This works on every platform RevenueHunt supports because the email is dispatched by RevenueHunt directly, not via the storefront."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Tease the discount on the homepage CTA",
+      "text": "Add a one-line teaser under the quiz CTA on the homepage referencing the discount, for example: take our 60-second quiz and get 10% off your first order. This sets the value exchange before the quiz starts and lifts quiz start rate."
+    }
+  ]
+}
+</script>
+
 ## Where this fits
 
 Discounts are one of eleven elements that make a product recommendation quiz convert, and they sit downstream of the more foundational decisions. If your quiz is too long, the discount can't rescue it. If your results page recommends 12 products instead of 1-3, the discount won't compensate for the choice paralysis. Get the foundations right first, then layer the discount on top.
 
-For the full foundation, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/). For the mistakes that erode quiz conversion, see [quiz creation mistakes that hurt your ecommerce sales](https://revenuehunt.com/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/). For real DTC funnels using discounts as part of an integrated flow, see [11 ecommerce sales funnel examples that convert in 2026](https://revenuehunt.com/ecommerce-sales-funnel-examples/).
+For the full foundation, see [how to build a successful product recommendation quiz](/how-to-build-a-successful-ecommerce-quiz/). For the mistakes that erode quiz conversion, see [quiz creation mistakes that hurt your ecommerce sales](/quiz-creation-mistakes-that-hurt-your-ecommerce-sales/). For real DTC funnels using discounts as part of an integrated flow, see [11 ecommerce sales funnel examples that convert in 2026](/ecommerce-sales-funnel-examples/).
 
 [Install RevenueHunt: Recommender Quiz for Shopify](https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=quiz_discounts) and start testing your first quiz-driven discount today. Free plan available.

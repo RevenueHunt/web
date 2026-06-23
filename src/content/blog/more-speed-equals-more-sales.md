@@ -20,10 +20,10 @@ featuredImage: "/img/blog/more-speed-equals-more-sales/blogtile_speedsales.webp"
 draft: false
 ---
 
-<div style="margin:24px 0;padding:24px 28px;background:#16161D;color:#fff;border-radius:8px;">
-  <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#94a3b8;">Quick answer</p>
-  <p style="margin:0 0 8px;font-size:16px;font-weight:600;line-height:1.55;">Shopify page speed comes down to three Core Web Vitals: <strong>LCP under 2.5s, INP under 200ms, CLS under 0.1</strong>.</p>
-  <p style="margin:0;font-size:15px;line-height:1.6;color:#cbd5e1;">Images and third-party scripts cause most of the loss. PageSpeed Insights gives you the diagnosis; the three audits below (image lazy-load, third-party script audit, font-loading strategy) give you the fixes. INP replaced FID as a Core Web Vital in March 2024, and is the metric most Shopify stores miss in 2026.</p>
+<div style="margin:24px 0;padding:24px 28px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
+  <p style="margin:0 0 10px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Quick answer</p>
+  <p style="margin:0 0 12px;font-size:16px;font-weight:600;line-height:1.55;color:#0f172a;">Shopify page speed comes down to three Core Web Vitals: <strong>LCP under 2.5s, INP under 200ms, CLS under 0.1</strong>.</p>
+  <p style="margin:0;font-size:15px;line-height:1.65;color:#334155;">Images and third-party scripts cause most of the loss. PageSpeed Insights gives you the diagnosis; the three audits below (image lazy-load, third-party script audit, font-loading strategy) give you the fixes. INP replaced FID as a Core Web Vital in March 2024, and is the metric most Shopify stores miss in 2026.</p>
 </div>
 
 Page speed is the foundation everything else sits on. If a customer clicks your ad and never sees the landing page because it's loading for eternity, they leave before any of your design decisions, copywriting, quiz placements or discount offers have a chance to do their work. Over half of online purchases now come from mobile, where connection quality is unpredictable, which makes the speed of those first few seconds the highest-leverage thing you can fix this week.

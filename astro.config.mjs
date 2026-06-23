@@ -291,6 +291,8 @@ export default defineConfig({
       "/revenuehunt-built-for-shopify/",
     "/shopify-quiz-revenue-tracking/":
       "/first-party-shopify-quiz-analytics/",
+    "/ecommerce-website-design-tips-that-move-revenue/":
+      "/build-sales-funnel-shopify-store/",
     "/shopify-quiz-analytics-vs-ga4-meta-pixel/":
       "/first-party-shopify-quiz-analytics/",
     // Off-brand sponsored post: 2,604 imp / 0 clicks, doesn't convert,

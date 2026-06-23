@@ -22,6 +22,8 @@ This guide covers how to connect a RevenueHunt quiz to Meta Pixel on every platf
 
 ![Meta Pixel quiz integration](/img/blog/meta-pixel-quiz-integration/meta-pixel-quiz-hero.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;The Meta Pixel quiz integration: every quiz step fires a Pixel event so the Lead and Add-to-Cart events Meta's algorithm optimises against include the quiz funnel's actual signal, not just the storefront's last touch.</p>
+
 <div style="margin:32px 0;padding:24px 28px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 14px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">What you'll learn</p>
   <ul style="list-style:none;padding:0;margin:0;">
@@ -68,10 +70,14 @@ The setup is **multi-step on Shopify** (because the Pixel itself lives in Shopif
 
    <div class="not-prose my-6 ml-0 sm:ml-8"><img src="/img/blog/meta-pixel-quiz-integration/facebook-app-settings.png" alt="Facebook and Instagram app settings in Shopify with Shared data set to Maximum" style="max-width:520px;width:100%;height:auto;display:block;" loading="lazy" /></div>
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;Facebook and Instagram app settings in Shopify with Shared data set to Maximum. Required for custom events from the quiz to reach Meta; the default Standard level strips the `content_category` and `content_name` tags the quiz fires.</p>
+
 3. **Publish the quiz on a dedicated page.** Pixel tracking is most reliable when the quiz lives on its own landing page rather than embedded as a widget on the homepage. See [publish quiz inline](https://docs.revenuehunt.com/how-to-guides/publish-quiz-inline/) for the embed.
 4. **Activate the integration in the quiz.** Open **Quiz Settings > Integrations**, find the **Meta Pixel** section and click **Activate**. Save. The quiz now binds to whichever Pixel is already firing on your store.
 
    <div class="not-prose my-6 ml-0 sm:ml-8"><img src="/img/blog/meta-pixel-quiz-integration/integrations-meta-pixel.png" alt="Meta Pixel section in the Integrations tab" style="max-width:520px;width:100%;height:auto;display:block;" loading="lazy" /></div>
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;The Meta Pixel section inside Quiz Settings, Integrations. Activate the toggle to bind the quiz to whichever Pixel is already firing on the store; the integration then fires PageView, ViewContent, Lead and AddToCart per slide automatically.</p>
 
 5. **Test.** In Shopify admin > Facebook and Instagram app > Settings > open your data set in Meta Events Manager > **Test events**. Enter your quiz page URL, take the quiz, and confirm events appear (`ViewContent`, `Lead`, custom events).
 6. **Review Custom Events.** The custom events (`RetakeQuiz`, `EmailLead`) are **not usable in ads or audiences until you review them**. See the section below.
@@ -177,6 +183,8 @@ The `content_category` tag on every `ViewContent` event is what lets you build p
 
 <div class="not-prose my-6"><img src="/img/blog/meta-pixel-quiz-integration/events-manager-dashboard.png" alt="Meta Events Manager dashboard showing quiz events" style="max-width:520px;width:100%;height:auto;display:block;" loading="lazy" /></div>
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;Meta Events Manager showing quiz events arriving live. The `content_category` tag (results / choice / question) is what makes precise audiences possible: filter on category = results for completers, or category = choice with a specific content_name for answer-level retargeting.</p>
+
 ## Review Custom Events (the step everyone misses)
 
 The two custom events the integration fires, `RetakeQuiz` and `EmailLead`, **don't show up in Meta's ad audience builder until you've reviewed them**. New setups often end up with empty custom audiences and no obvious reason why.
@@ -190,6 +198,8 @@ The fix:
 5. Refresh Events Manager. The notification should be gone and the events become available in **Audiences > Create Audience**.
 
    <div class="not-prose my-6 ml-0 sm:ml-8"><img src="/img/blog/meta-pixel-quiz-integration/review-custom-events.png" alt="Review Custom Events notification in Meta Events Manager" style="max-width:520px;width:100%;height:auto;display:block;" loading="lazy" /></div>
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 05</span> &nbsp;The Review Custom Events notification in Meta Events Manager. Easy to miss; until it's actioned, the quiz events stay in pending status and don't become available for audience building. Click through, Confirm, and the events unlock in Audiences > Create Audience.</p>
 
 This is a one-time step per data source.
 

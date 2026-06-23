@@ -156,7 +156,11 @@ You don't have to create any of these in HubSpot in advance. **The app creates t
 
 ![Custom quiz properties on a HubSpot contact](/img/blog/hubspot-quiz-integration/properties-on-contact.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;Custom quiz properties on a HubSpot contact record. The integration creates these properties automatically on the first synced response; no manual schema setup in HubSpot required.</p>
+
 ![Product Recommendation Quiz section under custom properties](/img/blog/hubspot-quiz-integration/custom-properties-section.webp)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;The Product Recommendation Quiz section under custom properties on the contact card. Every quiz answer, tag, variable score and recommended product surfaces here for the sales and CS teams to reference.</p>
 
 ## List segmentation: in-app versus HubSpot-side
 
@@ -200,7 +204,11 @@ This is the universal path: it works on every platform and gives you finer contr
 
 ![Segmented list builder](/img/blog/hubspot-quiz-integration/segmented-list-builder.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;The HubSpot segmented-list builder. Filter contacts on the quiz custom properties to define a list once; HubSpot then keeps the membership live as new quiz completions arrive.</p>
+
 ![List criteria with quiz properties](/img/blog/hubspot-quiz-integration/list-criteria.webp)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;List criteria composed from quiz properties. Combine tag, variable-score and answer-choice conditions (skin type AND budget tier AND chosen concern) for precise segmentation.</p>
 
 ## Build a list-based workflow
 
@@ -216,6 +224,8 @@ Once the list exists, the workflow does the actual sending.
 
 ![HubSpot workflow builder](/img/blog/hubspot-quiz-integration/workflow-builder.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 05</span> &nbsp;The HubSpot Workflow builder triggered on list entry. Each list maps to a sequence of personalised actions: emails, deal creation, sales-rep assignment, internal notifications.</p>
+
 ## Personalise emails with quiz-answer tokens
 
 Quiz custom properties behave like any other HubSpot contact property: they're available as personalisation tokens in any email template.
@@ -226,9 +236,13 @@ Quiz custom properties behave like any other HubSpot contact property: they're a
 
 ![Personalization Token picker](/img/blog/hubspot-quiz-integration/personalization-token.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 06</span> &nbsp;The Personalization Token picker inside the email editor. Drop quiz properties (recommended products, result-page name, specific tags) into subject lines and body copy so the email reads as a continuation of the quiz, not a blast.</p>
+
 Use **Preview as a specific contact** to confirm the token renders for a real quiz respondent before you turn the workflow on.
 
 ![Email preview with rendered tokens](/img/blog/hubspot-quiz-integration/email-preview.webp)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 07</span> &nbsp;Email preview with the personalisation tokens resolved to a real respondent's answers. Use Preview as a specific contact to confirm the token renders before turning the workflow on.</p>
 
 > **Note on images:** HubSpot personalisation tokens render text, not images. If you want the email to show the recommended product image, you typically need to attach that data through HubSpot's product catalog or use programmable email; you can't drop a product image straight from a quiz token.
 

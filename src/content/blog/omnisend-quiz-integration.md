@@ -23,6 +23,8 @@ This guide covers the **exact setup paths** by platform, the **data fields** tha
 
 ![Omnisend quiz integration](/img/blog/omnisend-quiz-integration/omnisend-quiz-hero.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;The Omnisend quiz integration: every completion creates an Omnisend contact with the quiz answers, tags and variable scores attached as custom properties. The contact lands in Omnisend already segmentable on the quiz signal.</p>
+
 <div style="margin:32px 0;padding:24px 28px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 14px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">What you'll learn</p>
   <ul style="list-style:none;padding:0;margin:0;">
@@ -113,6 +115,8 @@ You don't need to pre-create these in Omnisend. They **auto-create** the first t
 
 ![Omnisend segment builder filtering on a quiz custom property](/img/blog/omnisend-quiz-integration/omnisend-segment-builder.png)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;The Omnisend segment builder filtering on quiz custom properties. Layer multiple conditions (skin type AND budget tier AND chosen concern) to create precise segments without leaving Omnisend.</p>
+
 To target only people who completed a specific quiz, filter on `permalink_quiz_id` for that quiz's ID. To target shoppers across all quizzes, filter on `quiz_{id}_response_id is known`.
 
 ## Building the workflow + email template
@@ -129,7 +133,11 @@ Once the segment exists, the workflow does the actual sending.
 
 ![Omnisend automation workflow triggered by a segment of quiz takers](/img/blog/omnisend-quiz-integration/omnisend-automation-workflow.png)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;An Omnisend Automations workflow triggered by quiz-segment entry. The flow fires the moment a new contact matches the segment, so the follow-up email arrives while the recommendation is still fresh.</p>
+
 <div class="not-prose my-6"><img src="/img/blog/omnisend-quiz-integration/omnisend-template-example.webp" alt="Omnisend email built from the quiz-result HTML template" style="max-width:480px;width:100%;height:auto;display:block;margin:0 auto;border-radius:8px;" loading="lazy" /></div>
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;An Omnisend email rendered from the quiz-result HTML template. The template substitutes the customer's recommended products into the layout via the custom property tokens populated when the quiz completion synced.</p>
 
 ### Template starting points
 

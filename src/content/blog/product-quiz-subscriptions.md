@@ -23,6 +23,8 @@ This guide covers how to wire subscription products into a [RevenueHunt](/produc
 
 ![Product quiz subscriptions](/img/blog/product-quiz-subscriptions/subscriptions-hero.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;Subscription-eligible recommendations inside the quiz funnel: the quiz captures the use case (cadence, dosage, taste, fit), maps it to a subscription SKU, and presents the recurring purchase as the default checkout option on the results page.</p>
+
 <div style="margin:32px 0;padding:24px 28px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 14px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">What you'll learn</p>
   <ul style="list-style:none;padding:0;margin:0;">
@@ -85,6 +87,8 @@ On the [Built for Shopify](/revenuehunt-built-for-shopify/) version of the app, 
 
 ![Quiz results page showing subscription option](/img/blog/product-quiz-subscriptions/results-with-subscription.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;The results page rendering the subscription option alongside one-time purchase. The shopper picks the cadence on this page; the choice carries through to cart and checkout without a second decision step.</p>
+
 ## Shopify Legacy: ReCharge via the Connect tab
 
 1. In RevenueHunt, open the **Connect** tab and scroll to the **ReCharge** section. Click **Connect**.
@@ -107,6 +111,8 @@ If you don't see your subscription SKUs, trigger a **catalogue sync** from the d
 
 ![ReCharge integration with WooCommerce](/img/blog/product-quiz-subscriptions/recharge-woocommerce-setup.webp)
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;ReCharge connected to WooCommerce, with the catalogue sync surface visible. If quiz-recommended subscription SKUs don't appear in the results, trigger a manual catalogue sync from this dashboard before debugging anything else.</p>
+
 ## The multi-platform workaround
 
 For **Magento, BigCommerce, Standalone**, and for any subscription app that isn't natively integrated yet, the same workaround applies. The quiz routes the shopper to the **product page** where the subscription option lives, instead of dropping the SKU directly into cart.
@@ -121,6 +127,8 @@ In **Link Products**, attach the one-time placeholders to the quiz choices (or s
 Open the **Results Page** > **Product Block settings** > **Product Components Layout**, remove the **Add to Cart** button, and add **Link to Product** instead. Shoppers now land on the product page, where the subscription option (managed by whichever app you use) handles the cadence pick.
 
 ![Subscription option on the product page after the link redirect](/img/blog/product-quiz-subscriptions/subscription-on-product-page.webp)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;The Link-to-Product workaround: instead of an Add-to-Cart on the results page, the quiz routes the shopper to the actual product page where the subscription widget already lives. Used on platforms where direct subscription integration isn't natively supported yet.</p>
 
 The trade-off is real: one extra page between recommendation and conversion. It's still significantly better than expecting shoppers to discover subscription products through a catalogue grid.
 

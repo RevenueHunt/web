@@ -76,21 +76,21 @@ Open the Metrics panel from the Dashboard with the same three sub-sections (Resp
 
 - **Responses.** Individual quiz submissions organised by date and timestamp. Click any response to see what choices the customer made, which products were upvoted or excluded, which products were recommended, and which customer tags were applied through to the results page.
 
-  ![Quiz Builder Responses panel showing individual quiz submissions with choice and recommendation detail](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/manual_quizbuilder_metrics_responses.webp)
+  ![Built for Shopify Quiz Builder Responses panel showing individual quiz submissions with choice and recommendation detail](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/manual_shopifyV2_quizbuilder_responses.png)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;The Responses panel: row-level quiz submissions with each customer's choices, recommendation and downstream actions. The raw signal feeds every other metric on this page.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;The Responses panel on Built for Shopify: row-level quiz submissions with each customer's choices, recommendation and downstream actions. The raw signal feeds every other metric on this page; click any row to open the Analyze Response panel with the Quiz Copilot explanation.</p>
 
 - **Analytics.** Graphs and KPIs covering quiz engagement, conversion rate, and (on Built for Shopify) revenue. Compare any date range against a previous period or another quiz on the same store.
 
-  ![Quiz Builder Analytics panel with engagement, conversion rate and revenue cards](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/manual_quizbuilder_metrics_analytics.webp)
+  ![Built for Shopify Quiz Builder Analytics dashboard with engagement, conversion rate and revenue cards](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/manual_shopifyV2_quizbuilder_metrics_analytics.png)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;The Analytics panel: customisable cards for Quiz Responses, Completion Rate, Number of Orders, Total Orders Value and Drop-off Rate. The default dashboard most operators check daily.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;The Built for Shopify Analytics dashboard. Customisable cards for Quiz Responses, Quiz Starts, Number of Orders, Total Orders Value, Average Order Value, Conversion Rate, Drop-off Rate and Recommended Items. The default surface most operators check daily; cards rearrange via the Customize button.</p>
 
 - **Drop-off.** Percentage of users leaving the quiz at each question, shown as both a table and a funnel graph. The single most useful diagnostic when completion rate is below benchmark.
 
-  ![Quiz Builder Drop-off panel showing per-question exit percentages in table and graph format](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/manual_quizbuilder_metrics_dropoff.webp)
+  ![Built for Shopify Quiz Builder Drop-off table showing per-funnel-step exit percentages](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/manual_shopifyV2_quizbuilder_metrics_analytics_dropoff.png)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;The Drop-off panel: per-question exit rate as both a table and a funnel graph. The single most useful diagnostic when completion rate is below benchmark.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;The Drop-off table on Built for Shopify: per-funnel-step exit rate from intro through every question to the results page. The single most useful diagnostic when completion rate is below benchmark; a spike on a specific step is a precise instruction to rewrite or reorder it.</p>
 
 ### Download raw response data
 
@@ -114,9 +114,9 @@ Completion Rate is the percentage of quiz-starters who reach the results page. I
 
 Platform data shows the 9-12 question sweet spot achieves **11.0% conversion** on average; quizzes with only 1-5 questions actually underperform at **9.8%** because the recommendation feels superficial and the customer doesn't trust it.
 
-![Quiz Builder Analytics panel showing completion rate trend over time](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/manual_quizbuilder_metrics_analytics_comprate.webp)
+![Built for Shopify Analytics card showing Quiz Responses with growth percentage](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/manual_shopifyV2_quizbuilder_metrics_analytics_quizresponses.png)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 05</span> &nbsp;Completion rate trend over time on the Analytics dashboard. Watch for step changes that correlate with quiz edits; a sudden drop usually traces back to a new question or a structural change in the flow.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 05</span> &nbsp;The Quiz Responses card on the Built for Shopify Analytics dashboard, with a growth percentage vs the previous period. Pair this with the Drop-off table to see whether changes to the quiz flow are lifting completions or quietly leaking them.</p>
 
 **Drop-off Points / Drop-off Rate**  
 Identifying where users drop off in your quiz can provide insights into potential friction points. Are users abandoning the quiz at a specific question or step? Use this data to adjust those points, making them more intuitive or engaging.
@@ -133,9 +133,9 @@ Tracking how many users proceed to cart after completing the quiz can help you g
 **Average Cart Value**  
 Understanding the average value of products in the carts can help you assess the monetary impact of your quiz. This metric is crucial for evaluating the overall financial performance and can guide you in setting appropriate pricing strategies.
 
-![Quiz Builder Analytics panel showing average cart value alongside number of carts and total cart value](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/manual_quizbuilder_metrics_analytics_avgcarts.webp)
+![Built for Shopify Analytics card showing Average Cart Value](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/manual_shopifyV2_quizbuilder_metrics_analytics_averagecartsvalue.png)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 06</span> &nbsp;Cart-side metrics: number of carts created, total cart value and average cart value. Quiz-driven carts typically run 11-15% larger than non-quiz carts because the quiz recommends complete routines rather than single SKUs.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 06</span> &nbsp;The Average Cart Value card on Built for Shopify. Quiz-driven carts typically run 11-15% larger than non-quiz carts because the quiz recommends complete routines (cleanser + serum + moisturiser) rather than single SKUs. Pair with Number of Carts and Total Carts Value cards for the full revenue picture.</p>
 
 **Number of Orders and Total Orders Value**   
 For a more direct measure of conversion, track the number of orders placed and their total value. This data is especially powerful when integrated with Shopify Revenue Reports, allowing you to directly correlate quiz engagement with sales performance.
@@ -149,7 +149,11 @@ Monitoring the average order value post-quiz completion provides insights into t
 Conversion rate = (Number of purchases after quiz completion ÷ Total number of quiz completions) × 100
 ```
 
-To measure the conversion rate of your quiz, track the number of users who complete the quiz and proceed to make a purchase, then calculate the percentage of these users relative to the total number of quiz completions. This metric is essential because it reveals how effectively the quiz drives sales, aiding in optimising the quiz design and marketing strategies to maximise revenue.  
+To measure the conversion rate of your quiz, track the number of users who complete the quiz and proceed to make a purchase, then calculate the percentage of these users relative to the total number of quiz completions. This metric is essential because it reveals how effectively the quiz drives sales, aiding in optimising the quiz design and marketing strategies to maximise revenue.
+
+![Built for Shopify Analytics card showing the Conversion Rate metric](/img/blog/product-quiz-metrics-what-to-track-to-convert-better/manual_shopifyV2_quizbuilder_metrics_analytics_conversionrate.png)
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 07</span> &nbsp;The Conversion Rate card on Built for Shopify, computed natively from Shopify Orders. The single most actionable card on the dashboard once the quiz is live; this is the number every other metric on the page is ultimately diagnosing.</p>
 
 <div style="margin:24px 0;padding:28px 32px;background:#16161D;border-radius:8px;color:#fff;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#94a3b8;">Platform benchmarks: 20,000+ stores, 45M+ responses, $370M+ merchant revenue (<a href="/state-of-product-recommendation-quizzes/" style="color:#94a3b8;text-decoration:underline;">2026 report</a>)</p>
@@ -164,7 +168,7 @@ These are the benchmarks to compare your own quiz against. If your conversion ra
 
 <table style="width: 100%; border-collapse: collapse;"><tbody><tr><th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2; text-align: left;">Issue</th><th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2; text-align: left;">Solution</th></tr><tr><td style="border: 1px solid #ddd; padding: 8px;">Customers don't add products to cart</td><td style="border: 1px solid #ddd; padding: 8px;"><ul><li>Check if the quiz returns recommendations.</li><li>Check your quiz <a href="https://docs.revenuehunt.com/how-to-guides/change-checkout-settings/">checkout settings</a>.</li><li>Limit the number of recommended products. A good product selector should recommend only one product that matches all the customer criteria or one product per routine step (in case of beauty shops).</li><li>Make the call-to-action buttons more visible by styling them.</li><li>Offer a discount or a coupon code.</li></ul></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px;">Low Conversion Rate</td><td style="border: 1px solid #ddd; padding: 8px;"><ul><li>Limit the number of recommended products. A good product selector should recommend only one product that matches all the customer criteria or one product per routine step (in case of beauty shops).</li><li>Offer a discount or a coupon code.</li><li>Set up a <a href="https://docs.revenuehunt.com/tutorials/follow-up-emails-klaviyo/">post-quiz email flow</a> to recapture the lost revenue.</li></ul></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px;">Customers add to the cart but don't buy</td><td style="border: 1px solid #ddd; padding: 8px;"><ul><li>Offer a discount or a coupon code.</li><li>Set up a <a href="https://docs.revenuehunt.com/tutorials/follow-up-emails-klaviyo/">post-quiz email flow</a> to recapture the lost revenue.</li></ul></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px;">Customers purchase only once</td><td style="border: 1px solid #ddd; padding: 8px;"><ul><li>Customer preferences change. Make new versions of the quiz and improve upon it by, for example, giving personalised advice along the recommendations.</li><li>Segment your customers and follow up with more targeted marketing campaigns post-quiz.</li></ul></td></tr></tbody></table>
 
-> **🤔 Tip:** Not sure how to measure quiz revenue? Check our step-by-step guide [here](https://docs.revenuehunt.com/how-to-guides/track-quiz-revenue/).
+> **Tip:** Not sure how to measure quiz revenue? Check our step-by-step guide [here](https://docs.revenuehunt.com/how-to-guides/track-quiz-revenue/).
 
 ### Recommendations
 

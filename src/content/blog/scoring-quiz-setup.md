@@ -65,6 +65,8 @@ Pick the pattern that matches the shape of the outcome you want, then jump to th
 
 <div class="not-prose my-6"><img src="/img/blog/scoring-quiz-setup/diagram-winning-variable.png" alt="Winning variable scoring diagram" style="max-width:460px;width:100%;height:auto;display:block;" loading="lazy" /></div>
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;The winning-variable scoring model: every answer adds a count to one of N variables (skin type, hair type, body type) and the variable with the highest count at the end picks the recommendation. Best for personality-type quizzes where each shopper has one dominant answer.</p>
+
 ### 2. Scoring quiz with one results page
 
 **For:** quizzes where the outcome is a single result that varies by a numeric score range (a wine-pairing quiz that returns one of five styles, a skin-type quiz where the band 13-17 means "oily").
@@ -73,6 +75,8 @@ Pick the pattern that matches the shape of the outcome you want, then jump to th
 
 <div class="not-prose my-6"><img src="/img/blog/scoring-quiz-setup/diagram-scoring-one-page.png" alt="Scoring quiz with one results page diagram" style="max-width:460px;width:100%;height:auto;display:block;" loading="lazy" /></div>
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;Numeric scoring with a single results page: each answer adds points to one or more variables, and Display Logic on the results page reveals different sections depending on the score range. Same page, different visible content.</p>
+
 ### 3. Scoring quiz with multiple results pages
 
 **For:** when the result is substantial enough to deserve its own dedicated page (a full routine, a multi-product stack, a long-form personality description with hero imagery).
@@ -80,6 +84,8 @@ Pick the pattern that matches the shape of the outcome you want, then jump to th
 **How it works:** numeric scores accumulate the same way, but instead of toggling sections on one page, **Jump Logic** on the last question routes the shopper to one of several full results pages.
 
 <div class="not-prose my-6"><img src="/img/blog/scoring-quiz-setup/diagram-scoring-multi-page.png" alt="Scoring quiz with multiple results pages diagram" style="max-width:460px;width:100%;height:auto;display:block;" loading="lazy" /></div>
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;Numeric scoring with multiple results pages: Jump Logic on the last question routes the shopper to one of several full results pages. Useful when each outcome deserves its own visual identity or product set.</p>
 
 ## Built for Shopify: the native setup
 
@@ -94,6 +100,8 @@ Decide the outcomes first, then build the quiz around them. For a skin-type quiz
 A Google Sheet works for simple mappings; [Miro](https://miro.com/) handles the larger matrices.
 
 <div class="not-prose my-6"><img src="/img/blog/scoring-quiz-setup/mapping-matrix.webp" alt="Outcome mapping matrix in a spreadsheet" style="max-width:520px;width:100%;height:auto;display:block;" loading="lazy" /></div>
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;The outcome mapping matrix: choices on one axis, variables on the other, point values in the cells. Build this in a spreadsheet before touching the Quiz Builder. The matrix is what makes the scoring logic reviewable, debuggable and easy to tune later.</p>
 
 ### Step 2: add scores or variables to choices
 
@@ -170,6 +178,8 @@ The script goes in **Results Page Settings > Advanced > Custom JavaScript**.
 
 <div class="not-prose my-6"><img src="/img/blog/scoring-quiz-setup/results-page-custom-js.webp" alt="Custom JavaScript field on the Results Page" style="max-width:520px;width:100%;height:auto;display:block;" loading="lazy" /></div>
 
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 05</span> &nbsp;The Custom JavaScript field on the Results Page settings. Drop the headline-personalisation script here so each variant of the winning variable produces its own headline copy, without duplicating the entire page per outcome.</p>
+
 For the full custom-JS reference, see our [custom CSS and JavaScript guide](/custom-css-and-javascript-for-product-recommendation-quizzes/). For multi-outcome quizzes, extend the script to accumulate per-variable counts (one total per outcome) and write the winning category into the Results Page DOM.
 
 > **Tip:** ChatGPT or a similar assistant can adapt this template to your specific outcomes if you describe the variables and the per-choice point values. Paste the snippet, list the slide IDs, list the choice → score mapping per slide, and ask for the extended version.
@@ -192,6 +202,8 @@ Insert the customer's actual answer into the Results Page copy: "Based on your a
 If the recommendation copy lives on the product itself ("This moisturiser is perfect for dry skin, providing deep hydration"), you don't need the Results Page to repeat it; the product card on the results carries the message. Set **Results Page Settings > Individual Product Settings > Show description** to surface them.
 
 <div class="not-prose my-6"><img src="/img/blog/scoring-quiz-setup/individual-product-settings.webp" alt="Show description toggle in Individual Product Settings" style="max-width:520px;width:100%;height:auto;display:block;" loading="lazy" /></div>
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 06</span> &nbsp;The Show description toggle inside Individual Product Settings on the Results Page. If the recommendation copy already lives on the product, enabling this surfaces it on the result card instead of duplicating it as a separate section.</p>
 
 ### Base results on a single pivotal question
 

@@ -29,17 +29,33 @@ For the broader data category that makes quizzes work, see our [zero-party data 
 
 Here are the 11 things every high-converting [product recommendation quiz](/) must have.
 
+**Jump to a rule:**
+
+1. [Make the quiz visible](#1-make-the-quiz-visible)
+2. [Match your store's design](#2-match-your-stores-design)
+3. [Choose a professional name](#3-choose-a-professional-name)
+4. [Keep your quiz simple and linear](#4-keep-your-quiz-simple-and-linear)
+5. [Ask questions customers can actually answer](#5-ask-questions-customers-can-actually-answer)
+6. [Find the right length](#6-find-the-right-length)
+7. [Limit the recommended products](#7-limit-the-recommended-products)
+8. [Make it personalised](#8-make-it-personalised)
+9. [Collect email and connect to Klaviyo](#9-collect-email-and-connect-to-klaviyo)
+10. [Offer a discount after completing](#10-offer-a-discount-after-completing)
+11. [Go global with Shopify Markets](#11-go-global-with-shopify-markets)
+
 * * *
 
 ## 1. Make the quiz visible
 
 A quiz no one finds is a quiz that doesn't exist. Use every available placement.
 
-The single most common mistake we see from new quiz builders is publishing a quiz and burying it on a hidden page. The RevenueHunt app, now rebuilt as a **💎 Built for Shopify** native app, gives you multiple placement options: embed it as a **native Shopify block** directly in your theme, display it as a **floating button** that follows the user across the page, trigger it as a **popup**, embed it **inline** anywhere in your store, or link to it directly from your navigation menu.
+The single most common mistake we see from new quiz builders is publishing a quiz and burying it on a hidden page. The RevenueHunt app, now rebuilt as a **Built for Shopify** native app, gives you multiple placement options: embed it as a **native Shopify block** directly in your theme, display it as a **floating button** that follows the user across the page, trigger it as a **popup**, embed it **inline** anywhere in your store, or link to it directly from your navigation menu.
 
 The old approach required iframe embedding with manual code injections. The new native block integration means your quiz loads as part of your theme: no iframe lag, no broken layouts, no developer required. You drag a block into your homepage, product page, or collection page directly from the Shopify editor.
 
-![Function of Beauty homepage with a quiz CTA above the fold](/img/blog/how-to-build-a-successful-ecommerce-quiz/blog_successfulquiz_visible.webp)
+<img src="/img/blog/how-to-build-a-successful-ecommerce-quiz/blog_successfulquiz_visible.webp" alt="Function of Beauty homepage with a quiz CTA above the fold" width="1600" height="723" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;Function of Beauty places its quiz as a primary CTA above the fold. Visibility is the multiplier on every other rule in this guide.</p>
 
 High-performing stores treat the quiz as a primary CTA, not a secondary feature. Place it above the fold on your homepage with a compelling invitation ("Find your perfect routine," "Take the skin type quiz") and link to it from your main navigation. The more visible your quiz, the more data it collects, and the more data it collects, the smarter your Klaviyo segmentation becomes. Visibility is the multiplier on everything else in this guide.
 
@@ -53,9 +69,11 @@ Your quiz should feel like part of your brand, not a third-party widget bolted o
 
 Nothing erodes trust faster than a quiz that looks like it belongs to a different company. When a customer sees a jarring colour scheme or mismatched font the moment they click "Start quiz," you've already broken the immersive experience that makes consultative selling work. Design consistency is not a vanity metric: it directly affects completion rates and purchase confidence.
 
-![Casper sleep quiz styled to match the store's brand colours and typography](/img/blog/how-to-build-a-successful-ecommerce-quiz/blog_successfulquiz_design.webp)
+<img src="/img/blog/how-to-build-a-successful-ecommerce-quiz/blog_successfulquiz_design.webp" alt="Casper sleep quiz styled to match the store's brand colours and typography" width="1600" height="679" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 
-The new **💎 Built for Shopify** version of RevenueHunt addresses this at the infrastructure level. When you add a quiz as a native Shopify block, it **automatically inherits your theme's typography, colours, and button styles**. For brands that want deeper customisation, the block editor gives you full control over fonts, colours, background images, and layout, and for developers or design-forward teams, **custom CSS and JavaScript** are available on higher-tier plans.
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;Casper's sleep quiz inherits the store's brand colours and typography, so it reads as a native part of the storefront, not a bolted-on widget.</p>
+
+The new **Built for Shopify** version of RevenueHunt addresses this at the infrastructure level. When you add a quiz as a native Shopify block, it **automatically inherits your theme's typography, colours, and button styles**. For brands that want deeper customisation, the block editor gives you full control over fonts, colours, background images, and layout, and for developers or design-forward teams, **custom CSS and JavaScript** are available on higher-tier plans.
 
 Start with the auto-inherited theme styles, then adjust. Don't spend days perfecting the design before you've published a single question. A well-matched but imperfect quiz that's live will always outperform a beautifully designed quiz that never launches.
 
@@ -65,7 +83,9 @@ Start with the auto-inherited theme styles, then adjust. Don't spend days perfec
 
 The name of your quiz is the first copy your customer reads. Make it outcome-focused.
 
-![A quiz named "Regimen builder" framed as a tangible outcome](/img/blog/how-to-build-a-successful-ecommerce-quiz/blog_successfulquiz_name.webp)
+<img src="/img/blog/how-to-build-a-successful-ecommerce-quiz/blog_successfulquiz_name.webp" alt="A quiz named Regimen builder framed as a tangible outcome" width="1375" height="985" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;An outcome-focused name ("Regimen builder") tells the shopper exactly what they get. Product-finder framing consistently beats "personality quiz" framing.</p>
 
 What you call your quiz has a measurable impact on click-through and completion rates. Quizzes framed as **"product finders"** consistently outperform those labelled as "personality quizzes" because the customer's primary motivation is finding the right product, not learning something abstract about themselves. Names like "Skin type finder," "Shade matcher," "Routine builder," or "Your personalised supplement plan" communicate a direct, tangible outcome.
 
@@ -102,7 +122,9 @@ Data from 20,000+ stores shows that most top converters are completely linear. S
 
 This is the biggest change from our 2021 guide, and it's worth being direct: **the conventional wisdom about branching logic has been overstated.** When we analysed our top-converting quizzes, the majority were built with completely linear question flows: every respondent sees every question in the same order. No conditional branches, no jump logic, no decision trees.
 
-![Quiz builder conditional logic rules panel](/img/blog/how-it-works/how_it_works_example6.webp)
+<img src="/img/blog/how-it-works/how_it_works_example6.webp" alt="Quiz builder conditional logic rules panel" width="1333" height="800" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;The conditional-logic panel. Powerful, but most top converters stay linear; add branching only when a question is genuinely irrelevant to some shoppers.</p>
 
 Why? Because linear quizzes are faster to build, easier to test, simpler to maintain, and *critically* they tend to have **higher completion rates** because there are fewer technical failure points and the user experience is more predictable. Complexity in the quiz builder does not translate to complexity in the customer's experience if the extra logic isn't doing meaningful work.
 
@@ -118,7 +140,9 @@ Relevance drives conversion, not image complexity. Use 3 to 6 answer choices and
 
 The quality of your answer choices determines how useful your recommendation engine can be. Questions should be phrased in plain, customer-friendly language: the way your best sales associate would phrase them, not the way a product manager would write a spec. "What's your main skin concern?" is answerable. "Which of the following dermatological presentations most affects your purchase decisions?" is not.
 
-![HUM Nutrition quiz with plain-language answer choices in the 3-to-6 range](/img/blog/how-to-build-a-successful-ecommerce-quiz/blog_successfulquiz_questions.webp)
+<img src="/img/blog/how-to-build-a-successful-ecommerce-quiz/blog_successfulquiz_questions.webp" alt="HUM Nutrition quiz with plain-language answer choices in the 3-to-6 range" width="1600" height="698" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 05</span> &nbsp;HUM Nutrition keeps answer choices in the plain-language 3-to-6 range. Relevance drives conversion, not image complexity.</p>
 
 Our platform data shows that **3 to 6 answer choices per question** is the optimal range. Fewer than 3 often feels too binary; more than 6 creates the same paradox of choice you're trying to solve for the customer. Keep each answer choice distinct and mutually exclusive where possible.
 
@@ -151,7 +175,7 @@ The 2021 version of this guide, like most older quiz resources, advised keeping 
 
 The highest-converting quizzes in our dataset contain **9 to 12 questions.** Very short quizzes (1 to 5 questions) actually underperform: they don't collect enough signal to make a confident recommendation, and customers often don't feel the result is personalised enough to trust. The sweet spot is **6 to 12 questions,** with the upper range of that band performing best.
 
-What explains this? A longer quiz builds perceived value and investment. By the time a customer reaches the results page after answering 9 thoughtful questions, they feel they've received a personalised consultation, not a generic filter. That psychological commitment translates directly to purchase confidence. Beyond 12-13 questions, drop-off begins to outweigh the benefit of additional data, so the 6-12 range is where to aim.
+What explains this? A longer quiz builds perceived value and investment. By the time a customer reaches the results page after answering 9 thoughtful questions, they feel they've received a personalised consultation, not a generic filter. That psychological commitment translates directly to purchase confidence. Beyond 12-13 questions, drop-off begins to outweigh the benefit of additional data, so the 6-12 range is where to aim. The deeper signal in the data is that **finishing matters more than length**: converters and non-converters answer about the same number of questions, and even very long quizzes (20+) still convert near 10% because the shoppers who finish them are highly qualified. Optimise for completion, not brevity.
 
 If your current quiz has fewer than 6 questions and conversion feels flat, consider adding 2 to 4 questions that capture actionable data points you can use in follow-up flows: concerns, goals, lifestyle factors, or budget. Every question you add should earn its place by either improving the recommendation or enriching the Klaviyo profile.
 
@@ -163,7 +187,9 @@ One focused results page with mapped answer choices outperforms a multi-page cat
 
 Our platform data contains one of the most actionable statistics in this entire guide: **79% of top-converting quizzes use exactly ONE results page,** and that single-results-page configuration achieves an average conversion rate of **10.6%.** Quizzes with 11 or more results pages drop to just **7.1%.**
 
-![A screenshot of a quiz results page recommending one product](/img/blog/how-to-build-a-successful-ecommerce-quiz/PIC7-UNDID_Blurred-300x298.webp)
+<img src="/img/blog/how-to-build-a-successful-ecommerce-quiz/PIC7-UNDID_Blurred-300x298.webp" alt="A quiz results page recommending one product" width="300" height="298" loading="lazy" decoding="async" style="max-width:300px;width:100%;height:auto;border-radius:8px;" />
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 06</span> &nbsp;A single results page with one confident recommendation. 79% of top-converting quizzes use exactly one results page (10.6% vs 7.1% conversion).</p>
 
 The implication is clear: your recommendation engine should do the work of narrowing down, not present the customer with another overwhelming list of options. Show them **1 to 3 products** with strong, confident framing ("Based on your answers, this is exactly what your skin needs") rather than 10 products with hedging language. The quiz has already built trust and investment. The results page needs to convert that trust into a purchase, not restart the decision-making process.
 
@@ -179,7 +205,9 @@ Use information recalls and dynamic content to make the customer feel genuinely 
 
 Personalisation within the quiz itself (beyond just the final recommendation) dramatically increases the sense of a tailored experience. RevenueHunt supports **information recalls,** which allow you to pull a respondent's earlier answers into subsequent questions or the results page. If you asked for the customer's name in question one, you can address them by name throughout the rest of the quiz and on the results page.
 
-![Quiz slides recalling the respondent's name in subsequent questions](/img/blog/how-to-build-a-successful-ecommerce-quiz/PIC8-Recalls.gif)
+<img src="/img/blog/how-to-build-a-successful-ecommerce-quiz/PIC8-Recalls.gif" alt="Quiz slides recalling the respondent's name in subsequent questions" width="1024" height="768" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 07</span> &nbsp;Information recalls pull the customer's earlier answers into later questions and the results page, replicating a sales associate who remembers what you said.</p>
 
 Beyond name recalls, the **Content Dynamic Source** feature allows you to pull quiz answers into the results page copy. Instead of a generic "You have oily skin" statement, the results page can say "Since your main concern is shine control and you mentioned you have combination skin, here's your personalised routine." This level of copy-level personalisation requires no coding; it's configured in the results page editor using dynamic tags that reference earlier question responses.
 
@@ -196,6 +224,7 @@ If there's one section of this guide that will have the most direct impact on yo
 - **71%** of top-converting quizzes collect email as part of the quiz flow.
 - Of those, **75% make email collection required,** not optional.
 - Segmented Klaviyo campaigns earn **over 3x the revenue per recipient** of generic sends (Klaviyo segmentation benchmark).
+- Quizzes with Klaviyo connected convert at **12.0% versus 9.7%** without it (a 24% lift) and average **66% more orders per quiz** (242 vs 146).
 - Across the platform, **1 in 5 quiz-attributed orders lands more than 30 days after the quiz**, so the segmentation layer keeps converting for months.
 
 The reason making email required outperforms optional is straightforward: when the email field is optional, customers who are on the fence about sharing their address simply skip it. You lose the most valuable leads: the ones who were interested enough to complete 9 questions but not yet committed enough to buy immediately. These are exactly the customers your Klaviyo follow-up sequence is designed to close.
@@ -210,11 +239,13 @@ To set up the Klaviyo connection, navigate to the Integrations section of your R
 
 A post-quiz discount rewards completion and removes the last barrier to purchase.
 
-![A discount block added to the results page of the quiz](/img/blog/how-to-build-a-successful-ecommerce-quiz/PIC9-discount.gif)
+<img src="/img/blog/how-to-build-a-successful-ecommerce-quiz/PIC9-discount.gif" alt="A discount block added to the results page of the quiz" width="1024" height="768" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 08</span> &nbsp;A discount block on the results page rewards completion and removes the last barrier to purchase.</p>
 
 The quiz has done the hard work. It has identified the right product, built purchase confidence, and created a moment of genuine personalisation. The final friction point is often hesitation at checkout. A discount code displayed on the results page or included in the follow-up email removes that final barrier and rewards the customer for the time they invested in completing the quiz.
 
-In RevenueHunt's new **💎 Built for Shopify** version, you can add a discount block directly to your results page using the drag-and-drop block editor. You can display either a static code (the same for all respondents) or connect to Shopify's discount API to generate unique codes per respondent, which reduces sharing and gives you better attribution data. The discount block can be shown immediately on the results page or withheld until the follow-up email, creating a reason for the customer to open that email.
+In RevenueHunt's new **Built for Shopify** version, you can add a discount block directly to your results page using the drag-and-drop block editor. You can display either a static code (the same for all respondents) or connect to Shopify's discount API to generate unique codes per respondent, which reduces sharing and gives you better attribution data. The discount block can be shown immediately on the results page or withheld until the follow-up email, creating a reason for the customer to open that email.
 
 If conversion rate optimisation is a priority, A/B test the discount value and placement. For premium or luxury brands, a dollar-amount discount ("$15 off your first order") often converts better than a percentage ("10% off"), because it feels like a more concrete gift. For lower-AOV products, percentage discounts tend to perform better. Test both with a meaningful sample size before locking in your approach.
 
@@ -233,6 +264,111 @@ Multi-language support means you can translate your quiz questions, answer choic
 To configure Shopify Markets integration within RevenueHunt, visit the [Shopify Markets localisation guide](https://docs.revenuehunt.com/tutorials/shopify-markets/) in our documentation. If you're currently scaling into the EU and haven't enabled GDPR consent flows yet, this should be your first priority.
 
 * * *
+
+## Frequently asked questions
+
+### How many questions should a product recommendation quiz have?
+
+Aim for 6 to 12, with 9 to 12 converting highest. Platform data across 20,000+ stores shows 9-12 questions convert at 11.0%, 6-8 at 10.4%, and 1-5 underperform at 9.8%. The old "keep it under 5-6 questions" advice is wrong: a longer quiz builds perceived value, so long as every question earns its place.
+
+### Should a product quiz be linear or use branching logic?
+
+Build it linear first. The majority of top-converting quizzes are completely linear, because they are faster to build, easier to maintain, and have fewer failure points. Add conditional logic only in two cases: a large catalogue where some products are truly irrelevant to certain shoppers, or a question that only makes sense after a prior answer.
+
+### Do I need to collect email in the quiz?
+
+Yes, and make it required. 71% of top-converting quizzes collect email as part of the flow, and 75% of those require it. The captured email syncs to Klaviyo with every quiz answer as a profile property, and segmented Klaviyo campaigns earn over 3x the revenue per recipient of generic sends.
+
+### How many products should the results page recommend?
+
+One to three, on a single results page. 79% of top-converting quizzes use exactly one results page, which converts at 10.6% versus 7.1% for quizzes with 11 or more results pages. Map every answer choice to products so the recommendation is tight and explains itself.
+
+### Do quiz questions need images?
+
+No. Text-based answer choices convert as well as image-heavy ones, sometimes better, because they load faster and feel less cluttered. Use images only where they aid visual identification, such as shade matching, hair texture, or skin-condition recognition.
+
+### How long until a product quiz starts converting?
+
+The on-site conversion lift is immediate, but the compounding value builds over time: across the platform, 1 in 5 quiz-attributed orders lands more than 30 days after the quiz, because the Klaviyo segmentation layer keeps converting for months.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many questions should a product recommendation quiz have?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aim for 6 to 12, with 9 to 12 converting highest. Platform data across 20,000+ stores shows 9-12 questions convert at 11.0%, 6-8 at 10.4%, and 1-5 underperform at 9.8%. The old keep-it-under-5-6 advice is wrong: a longer quiz builds perceived value, so long as every question earns its place."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should a product quiz be linear or use branching logic?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Build it linear first. The majority of top-converting quizzes are completely linear, because they are faster to build, easier to maintain, and have fewer failure points. Add conditional logic only when a large catalogue makes some products truly irrelevant to certain shoppers, or when a question only makes sense after a prior answer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to collect email in the quiz?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, and make it required. 71% of top-converting quizzes collect email as part of the flow, and 75% of those require it. The captured email syncs to Klaviyo with every quiz answer as a profile property, and segmented Klaviyo campaigns earn over 3x the revenue per recipient of generic sends."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many products should the results page recommend?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "One to three, on a single results page. 79% of top-converting quizzes use exactly one results page, which converts at 10.6% versus 7.1% for quizzes with 11 or more results pages. Map every answer choice to products so the recommendation is tight and explains itself."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do quiz questions need images?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Text-based answer choices convert as well as image-heavy ones, sometimes better, because they load faster and feel less cluttered. Use images only where they aid visual identification, such as shade matching, hair texture, or skin-condition recognition."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long until a product quiz starts converting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The on-site conversion lift is immediate, but the compounding value builds over time: across the platform, 1 in 5 quiz-attributed orders lands more than 30 days after the quiz, because the Klaviyo segmentation layer keeps converting for months."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to build a successful product recommendation quiz",
+  "description": "11 evidence-based rules for a high-converting product recommendation quiz, derived from platform data across 20,000+ stores and 45M+ quiz responses.",
+  "step": [
+    {"@type": "HowToStep", "position": 1, "name": "Make the quiz visible", "text": "Use every placement: native Shopify block, floating button, popup, inline embed, and the main navigation. A quiz no one finds does not exist.", "url": "https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/#1-make-the-quiz-visible"},
+    {"@type": "HowToStep", "position": 2, "name": "Match your store's design", "text": "Make the quiz inherit your theme's typography, colours and buttons so it feels native, not a third-party widget bolted on."},
+    {"@type": "HowToStep", "position": 3, "name": "Choose a professional name", "text": "Use an outcome-focused, product-finder name like Skin type finder or Routine builder, not a generic personality-quiz label."},
+    {"@type": "HowToStep", "position": 4, "name": "Keep your quiz simple and linear", "text": "Build a linear flow first; most top converters are completely linear. Add branching only when a question is genuinely irrelevant to some shoppers."},
+    {"@type": "HowToStep", "position": 5, "name": "Ask questions customers can actually answer", "text": "Use plain language and 3 to 6 answer choices per question. Add images only where they aid visual identification."},
+    {"@type": "HowToStep", "position": 6, "name": "Find the right length", "text": "Aim for 6 to 12 questions; 9 to 12 converts highest at 11.0%. Very short quizzes underperform."},
+    {"@type": "HowToStep", "position": 7, "name": "Limit the recommended products", "text": "Show 1 to 3 products on a single results page, and map every answer choice to products. 79% of top converters use one results page."},
+    {"@type": "HowToStep", "position": 8, "name": "Make it personalised", "text": "Use information recalls and dynamic content to reference the customer's earlier answers throughout the quiz and on the results page."},
+    {"@type": "HowToStep", "position": 9, "name": "Collect email and connect to Klaviyo", "text": "Collect email as part of the flow and make it required, then sync answers to Klaviyo as profile properties to power segmented flows."},
+    {"@type": "HowToStep", "position": 10, "name": "Offer a discount after completing", "text": "Add a discount block to the results page or follow-up email to reward completion and remove the last barrier to purchase."},
+    {"@type": "HowToStep", "position": 11, "name": "Go global with Shopify Markets", "text": "Localise language, currency and product availability per market via Shopify Markets, with built-in GDPR consent flows."}
+  ]
+}
+</script>
 
 ## Ready to build your quiz?
 

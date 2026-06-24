@@ -20,23 +20,25 @@ draft: false
 
 D2C brands cannot beat marketplaces on price, shipping speed or algorithmic reach. They can beat them on something marketplaces structurally cannot offer: a direct relationship with the customer and the owned data that comes with it. The five strategies below cover the specific moves Shopify Plus stores use to turn that relationship into a compounding advantage in 2026.
 
-![Marketplace overload versus a guided quiz funnel](/img/blog/5-ways-d2c-store-compete-big-marketplaces/blog_d2c_image1v2.webp)
+<img src="/img/blog/5-ways-d2c-store-compete-big-marketplaces/blog_d2c_image1v2.webp" alt="Marketplace overload versus a guided quiz funnel" width="768" height="512" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 
-_A marketplace shows you everything and helps you with nothing. A quiz asks one question and knows exactly what you need. That gap is where D2C brands win._
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;A marketplace shows you everything and helps you with nothing. A quiz asks one question and knows exactly what you need. That gap is where D2C brands win.</p>
 
 The old D2C vs marketplace debate has been reframed. A few years ago the conversation was about competing with Amazon on shipping speed and product selection. That framing was always wrong, and today it is obsolete.
 
 Amazon isn't your only threat anymore. TikTok Shop can launch a competitor product overnight and serve it to your exact audience via algorithm. Temu and Shein have conditioned an entire generation of shoppers to expect rock-bottom prices. If your D2C strategy is still "match the marketplace on convenience," you've already lost.
 
-But here's what the marketplace pessimists get wrong: the privacy revolution of the past three years has quietly handed D2C brands a structural advantage that no marketplace can replicate. iOS14+, cookie deprecation, GDPR and CCPA — all of it has done one thing: made **owned customer data the only defensible moat in digital commerce.**
+But here's what the marketplace pessimists get wrong: the privacy revolution of the past three years has quietly handed D2C brands a structural advantage that no marketplace can replicate. iOS14+, cookie deprecation, GDPR and CCPA. All of it has done one thing: made **owned customer data the only defensible moat in digital commerce.**
 
 **Amazon owns the transaction. TikTok owns the algorithm. You own the relationship. Capture the data.**
 
 This article is not about how to survive against marketplaces. It's about why your Shopify Plus store, played correctly, is the *structurally stronger* position. Here are the five strategies that make it true. Every single one of them is something a marketplace literally cannot do for your brand.
 
-![Marketplaces compete on data, algorithm and price — D2C brands compete on relationship and intelligence](/img/blog/5-ways-d2c-store-compete-big-marketplaces/blog_d2c_image2.webp)
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin:24px 0;"><thead><tr><th style="background:#16161D;color:#fff;padding:12px 14px;text-align:left;font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;">Dimension</th><th style="background:#16161D;color:#fff;padding:12px 14px;text-align:left;font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;">Marketplace (Amazon, TikTok Shop, Temu)</th><th style="background:#16161D;color:#fff;padding:12px 14px;text-align:left;font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;">Your D2C store</th></tr></thead><tbody><tr><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;"><strong>Shopping experience</strong></td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;">Catalogue: browse alone among millions of SKUs</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;">Consultation: a quiz guides each shopper</td></tr><tr><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;"><strong>Customer data</strong></td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;">Owned by the platform; you get no contact</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;">Owned by you: zero-party + first-party profiles</td></tr><tr><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;"><strong>Personalisation</strong></td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;">Algorithmic "also bought" on the search</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;">Every touchpoint: segmented email, SMS, ads</td></tr><tr><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;"><strong>Trust</strong></td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;">Outsourced to the platform; seller anonymous</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;">Direct relationship, compliant data, localisation</td></tr><tr><td style="padding:12px 14px;background:#fff;color:#334155;vertical-align:top;"><strong>Customer value</strong></td><td style="padding:12px 14px;background:#fff;color:#334155;vertical-align:top;">One transaction, then nothing</td><td style="padding:12px 14px;background:#fff;color:#334155;vertical-align:top;">A compounding profile that improves every campaign</td></tr></tbody></table>
 
-_Amazon, TikTok Shop, and Temu compete on data, algorithm and price. None of those are winnable for a D2C brand. Stop playing their game._
+<img src="/img/blog/5-ways-d2c-store-compete-big-marketplaces/blog_d2c_image2.webp" alt="Marketplaces compete on data, algorithm and price; D2C brands compete on relationship and intelligence" width="768" height="512" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;Amazon, TikTok Shop, and Temu compete on data, algorithm and price. None of those are winnable for a D2C brand. Stop playing their game.</p>
 
 * * *
 
@@ -50,11 +52,11 @@ It works at scale precisely because it does not require knowing anything about t
 
 ### The D2C advantage
 
-A [product recommendation quiz](https://revenuehunt.com/product-recommendation-quiz/) transforms your Shopify store from a catalogue into a consultation. When a visitor lands on your store and a quiz asks "What's your primary skin concern?" or "Do you prefer a lightweight or rich moisturiser?" or "What's your current routine?" — that visitor is no longer browsing. They're being guided. They feel seen.
+A [product recommendation quiz](https://revenuehunt.com/product-recommendation-quiz/) transforms your Shopify store from a catalogue into a consultation. When a visitor lands on your store and a quiz asks "What's your primary skin concern?" or "Do you prefer a lightweight or rich moisturiser?" or "What's your current routine?", that visitor is no longer browsing. They're being guided. They feel seen.
 
 This is the in-store consultant experience that made premium retail work for decades. A quiz replicates it digitally, runs 24/7, speaks multiple languages, and never has a bad day. A marketplace seller will never offer a bespoke consultation experience for *your* products, *your* catalogue, *your* customer. Structurally impossible. It's your ground.
 
-**Decision fatigue is the silent conversion killer.** When your traffic lands on a 40-SKU collection page, most visitors leave. Not because they don't want what you sell, but because they couldn't decide. A RevenueHunt quiz solves this in under 60 seconds: three to five diagnostic questions, one confident recommendation. Merchants using quiz funnels consistently see significant lifts in conversion rate because the quiz eliminates the decision barrier that passive browsing never can.
+**Decision fatigue is the silent conversion killer.** When your traffic lands on a 40-SKU collection page, most visitors leave. Not because they don't want what you sell, but because they couldn't decide. A RevenueHunt quiz solves this in under 60 seconds: three to five diagnostic questions, one confident recommendation. Across the RevenueHunt platform, quiz takers convert at a 5.5% median, roughly 2.75x a typical 2% storefront, because the quiz eliminates the decision barrier that passive browsing never can ([2026 benchmark report](/state-of-product-recommendation-quizzes/)).
 
 **The practical upside:** this is buildable without a developer, without an agency, and without a line of code. [RevenueHunt's no-code logic builder and quiz templates](https://revenuehunt.com/templates/) mean a Head of eCommerce can build, test, and launch a diagnostic sales funnel independently, in under 30 minutes.
 
@@ -70,15 +72,15 @@ Worse: every successful Amazon sale teaches Amazon's algorithm what your best cu
 
 ### The D2C advantage
 
-Every visitor to your Shopify store generates first-party behavioural data that you own. But a visitor who takes your quiz generates something more valuable: **zero-party data** — explicit, intentional, self-reported preference data that no browsing behaviour or purchase history can match. For the full picture of how this data category compounds, see our [zero-party data guide](https://revenuehunt.com/zero-party-data/) and [first-party data guide](https://revenuehunt.com/first-party-data/).
+Every visitor to your Shopify store generates first-party behavioural data that you own. But a visitor who takes your quiz generates something more valuable. **Zero-party data** is explicit, intentional, self-reported preference data that no browsing behaviour or purchase history can match. For the full picture of how this data category compounds, see our [zero-party data guide](https://revenuehunt.com/zero-party-data/) and [first-party data guide](https://revenuehunt.com/first-party-data/).
 
 Skin type. Primary concern. Budget range. Age bracket. Product routine preferences. These are the data points that a RevenueHunt quiz surfaces and syncs directly into Klaviyo as custom customer properties via native integration. Your Klaviyo account goes from a list of email addresses to a database of individual profiles with actionable segmentation already built in. For the full mapping chain, see [how Klaviyo segmentation unlocks once zero-party data lands in profiles](https://revenuehunt.com/klaviyo-zero-party-data/).
 
 **A Klaviyo account populated with quiz-derived customer properties (`skin_type: oily`, `primary_concern: acne`, `age_range: 25-34`) is an asset that compounds in value over time. Amazon will never give you this. Your quiz will.**
 
-![Klaviyo profile enriched with quiz-derived zero-party data properties](/img/blog/5-ways-d2c-store-compete-big-marketplaces/blog_d2c_image3.webp)
+<img src="/img/blog/5-ways-d2c-store-compete-big-marketplaces/blog_d2c_image3.webp" alt="Klaviyo profile enriched with quiz-derived zero-party data properties" width="768" height="512" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 
-_This is what a quiz completion looks like inside Klaviyo. Not an email address — a person, with preferences, concerns, and a purchase intent you can act on._
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;What a quiz completion looks like inside Klaviyo: not an email address but a person, with preferences, concerns, and a purchase intent you can act on.</p>
 
 In the post-iOS14 advertising environment, brands with rich first-party and zero-party data have a targeting advantage that ad-dependent competitors simply cannot replicate. You can use that data to build more accurate lookalike audiences for Meta ads, trigger personalised retention flows, and inform product development decisions. The Meta side is covered step-by-step in [how to make your Facebook ads smarter with quiz audiences](https://revenuehunt.com/make-your-facebook-ads-smarter-with-revenuehunts-quiz-integration/).
 
@@ -97,16 +99,16 @@ With zero-party data from your quiz feeding Klaviyo, you can personalise every d
 - **Welcome flows segmented by quiz result:** an acne-solutions sequence for someone who flagged acne as their primary concern; an anti-aging routine series for someone in a different cohort. Each feels tailored because it is.
 - **Product recommendations in emails** based on stated preferences, not purchase-history guesses.
 - **SMS and push notifications** triggered by specific property values in the customer profile.
-- **Meta retargeting audiences** built from quiz-derived Klaviyo segments — your highest-confidence lookalike sources.
+- **Meta retargeting audiences** built from quiz-derived Klaviyo segments, your highest-confidence lookalike sources.
 - **On-site experience adaptation** for returning quiz-takers who identify themselves.
 
-![One quiz answer activating four personalised downstream touchpoints](/img/blog/5-ways-d2c-store-compete-big-marketplaces/blog_d2c_image4.webp)
+<img src="/img/blog/5-ways-d2c-store-compete-big-marketplaces/blog_d2c_image4.webp" alt="One quiz answer activating four personalised downstream touchpoints" width="768" height="512" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 
-_One quiz answer. Four personalised touchpoints activated automatically. This is the difference between a blast campaign and a retention engine._
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;One quiz answer, four personalised touchpoints activated automatically. This is the difference between a blast campaign and a retention engine.</p>
 
 The compounding dynamic matters here: personalised emails generate higher open rates → better sender reputation → improved deliverability → more revenue per send → reduced dependence on paid acquisition. The quiz sets this entire cycle in motion.
 
-**The practical arithmetic.** A generic email to a 50,000-person list might generate a 2% click rate. A segmented email to 8,000 people in a specific skin-concern cohort, triggered by quiz data and referencing their stated preferences, consistently outperforms it. Your goal isn't a bigger list. It's a smarter one.
+**The practical arithmetic.** A generic email to a 50,000-person list might generate a 2% click rate. A segmented email to 8,000 people in a specific skin-concern cohort, triggered by quiz data and referencing their stated preferences, earns far more: segmented Klaviyo campaigns drive over 3x the revenue per recipient of generic sends (Klaviyo segmentation benchmark). Your goal isn't a bigger list. It's a smarter one.
 
 * * *
 
@@ -122,7 +124,7 @@ Your D2C store *is* the trust relationship. In 2026, that trust is built on two 
 
 #### Data transparency
 
-GDPR and CCPA compliance isn't just legal hygiene. It's a visible trust signal that premium customers in the EU and UK actively look for. RevenueHunt's built-in consent flows ensure your quiz collects zero-party data with granular, compliant checkboxes. You're not just avoiding regulatory risk — you're signalling that you handle customer data responsibly. The operational detail is covered in [how to ask for marketing consent inside a quiz](/product-quiz-marketing-consent/).
+GDPR and CCPA compliance isn't just legal hygiene. It's a visible trust signal that premium customers in the EU and UK actively look for. RevenueHunt's built-in consent flows ensure your quiz collects zero-party data with granular, compliant checkboxes. You're not just avoiding regulatory risk; you're signalling that you handle customer data responsibly. The operational detail is covered in [how to ask for marketing consent inside a quiz](/product-quiz-marketing-consent/).
 
 #### Localised experience
 
@@ -156,25 +158,112 @@ The compounding logic: quiz completions enrich profiles → enriched profiles im
 
 ## The D2C intelligence stack
 
-The five strategies above are not independent tactics. They are sequential layers of a single competitive architecture.
+The five strategies above are not independent tactics. They are sequential layers of a single competitive architecture, each one building on the layer below it.
 
-**Layer 5: compounding** | Every interaction enriches the data asset. Every enriched profile makes the next campaign more effective. The flywheel accelerates.
+<div class="not-prose my-10"><svg viewBox="0 0 1200 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="stack-title stack-desc" style="width:100%;height:auto;display:block;background:#16161D;border-radius:16px;padding:28px 20px;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;"><title id="stack-title">The D2C intelligence stack</title><desc id="stack-desc">Five layers from consultation at the base to compounding at the top, each building on the one below.</desc><defs><linearGradient id="rh-grad-stack" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6464ff"/><stop offset="1" stop-color="#4bd5ff"/></linearGradient></defs><text x="600" y="50" text-anchor="middle" fill="#F5F7FA" font-size="28" font-weight="800" letter-spacing="-0.5">The D2C intelligence stack</text>
+<g transform="translate(70 300) rotate(-90)"><text x="0" y="0" text-anchor="middle" fill="#5AB2FF" font-size="13" font-weight="700" letter-spacing="2">COMPOUNDS UPWARD</text></g>
+<g stroke="#5AB2FF" stroke-width="2.5" fill="none" opacity="0.6"><line x1="110" y1="470" x2="110" y2="110"/></g><polygon points="110,96 102,116 118,116" fill="#5AB2FF" opacity="0.7"/>
+<g><rect x="170" y="92" width="990" height="72" rx="12" fill="url(#rh-grad-stack)"/><text x="194" y="124" fill="#16161D" font-size="14" font-weight="800" letter-spacing="1.5">LAYER 5 · COMPOUNDING</text><text x="194" y="148" fill="#16161D" font-size="15" font-weight="600">Every interaction enriches the asset; the flywheel accelerates</text></g>
+<g><rect x="170" y="172" width="990" height="72" rx="12" fill="#1F1F29" stroke="rgba(255,255,255,0.10)"/><text x="194" y="204" fill="#5AB2FF" font-size="14" font-weight="800" letter-spacing="1.5">LAYER 4 · TRUST</text><text x="194" y="228" fill="#A7AFBF" font-size="15">Localisation + compliant consent build credibility</text></g>
+<g><rect x="170" y="252" width="990" height="72" rx="12" fill="#1F1F29" stroke="rgba(255,255,255,0.10)"/><text x="194" y="284" fill="#5AB2FF" font-size="14" font-weight="800" letter-spacing="1.5">LAYER 3 · PERSONALISATION</text><text x="194" y="308" fill="#A7AFBF" font-size="15">Owned data feeds segmented flows and retargeting</text></g>
+<g><rect x="170" y="332" width="990" height="72" rx="12" fill="#1F1F29" stroke="rgba(255,255,255,0.10)"/><text x="194" y="364" fill="#5AB2FF" font-size="14" font-weight="800" letter-spacing="1.5">LAYER 2 · DATA OWNERSHIP</text><text x="194" y="388" fill="#A7AFBF" font-size="15">Quiz completions sync to Klaviyo as owned intelligence</text></g>
+<g><rect x="170" y="412" width="990" height="72" rx="12" fill="#1F1F29" stroke="#5AB2FF" stroke-width="2"/><text x="194" y="444" fill="#5AB2FF" font-size="14" font-weight="800" letter-spacing="1.5">LAYER 1 · CONSULTATION</text><text x="194" y="468" fill="#F5F7FA" font-size="15">The quiz replaces passive browsing. The stack starts here.</text></g></svg></div>
 
-**Layer 4: trust** | Shopify Markets localisation + GDPR/CCPA consent flows build credibility in every market you enter.
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 05</span> &nbsp;The five strategies are not independent tactics but sequential layers. The quiz consultation (Layer 1) is the foundation; each layer above it compounds the value of the data the layer below collects.</p>
 
-**Layer 3: personalisation** | Owned data feeds segmented Klaviyo flows, personalised campaigns, and precision retargeting. Generic blasts become irrelevant.
+**Layer 1, consultation.** The quiz replaces passive catalogue browsing with active guided discovery. Your store becomes a digital salesperson. This is where the stack starts.
 
-**Layer 2: data ownership** | Every quiz completion generates zero-party preference data that syncs to Klaviyo as owned customer intelligence.
+**Layer 2, data ownership.** Every quiz completion generates zero-party preference data that syncs to Klaviyo as owned customer intelligence.
 
-**Layer 1: consultation** | The quiz replaces passive catalogue browsing with active guided discovery. Your store becomes a digital salesperson. *This is where the stack starts.*
+**Layer 3, personalisation.** Owned data feeds segmented Klaviyo flows, personalised campaigns, and precision retargeting. Generic blasts become irrelevant.
+
+**Layer 4, trust.** Shopify Markets localisation plus GDPR/CCPA consent flows build credibility in every market you enter.
+
+**Layer 5, compounding.** Every interaction enriches the data asset. Every enriched profile makes the next campaign more effective. The flywheel accelerates.
 
 This is the stack that makes your D2C store structurally superior to any marketplace listing. Not because you have better prices or faster shipping, but because you *know* your customers and they know that you know them. For 11 funnel examples that do this in practice, see [real funnel examples](https://revenuehunt.com/ecommerce-sales-funnel-examples/).
 
-![Compounding curve showing the quiz-enriched data asset growing over 12 months](/img/blog/5-ways-d2c-store-compete-big-marketplaces/blog_d2c_image5.webp)
+<img src="/img/blog/5-ways-d2c-store-compete-big-marketplaces/blog_d2c_image5.webp" alt="Compounding curve showing the quiz-enriched data asset growing over 12 months" width="768" height="512" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
 
-_The compounding curve starts slowly. By month 12, a brand with 15,000 quiz-enriched profiles has a retention advantage that no marketplace listing can replicate._
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 06</span> &nbsp;The compounding curve starts slowly. By month 12, a brand with 15,000 quiz-enriched profiles has a retention advantage that no marketplace listing can replicate.</p>
 
 * * *
+
+## Frequently asked questions
+
+### Can a D2C brand actually compete with Amazon and TikTok Shop?
+
+Not on the vectors marketplaces win on: price, shipping speed and algorithmic reach. But D2C brands win on something marketplaces structurally cannot offer, a direct relationship with the customer and the owned data that comes with it. Since iOS14, cookie deprecation and GDPR/CCPA, that owned data is the only defensible moat in digital commerce.
+
+### What can a D2C store do that a marketplace can't?
+
+Five things, in sequence: run a guided consultation (a quiz) instead of a catalogue, own the customer's zero-party data instead of renting access, personalise every downstream touchpoint instead of just the search, build a direct trust relationship with compliant data and localisation, and turn each customer into a compounding profile rather than a one-off transaction.
+
+### What is zero-party data, and why does it beat marketplace data?
+
+Zero-party data is preference information the customer intentionally and explicitly tells you (skin type, primary concern, budget, routine), as opposed to behaviour you infer. It is higher-confidence than browsing or purchase history, and crucially you own it. A marketplace keeps that data for itself and uses your sales to train competitive recommendations against you.
+
+### How does a product recommendation quiz help a D2C store compete?
+
+The quiz turns the storefront into a consultation, then syncs the answers to Klaviyo as customer properties that power segmented flows and precision retargeting. Across the RevenueHunt platform, quiz takers convert at a 5.5% median, roughly 2.75x a typical 2% storefront, and the captured profile keeps compounding in value across every future campaign.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can a D2C brand actually compete with Amazon and TikTok Shop?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not on the vectors marketplaces win on (price, shipping speed and algorithmic reach), but D2C brands win on something marketplaces structurally cannot offer: a direct relationship with the customer and the owned data that comes with it. Since iOS14, cookie deprecation and GDPR/CCPA, that owned data is the only defensible moat in digital commerce."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What can a D2C store do that a marketplace can't?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Five things in sequence: run a guided consultation (a quiz) instead of a catalogue, own the customer's zero-party data instead of renting access, personalise every downstream touchpoint instead of just the search, build a direct trust relationship with compliant data and localisation, and turn each customer into a compounding profile rather than a one-off transaction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is zero-party data, and why does it beat marketplace data?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zero-party data is preference information the customer intentionally and explicitly tells you (skin type, primary concern, budget, routine), as opposed to behaviour you infer. It is higher-confidence than browsing or purchase history, and you own it. A marketplace keeps that data for itself and uses your sales to train competitive recommendations against you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does a product recommendation quiz help a D2C store compete?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The quiz turns the storefront into a consultation, then syncs the answers to Klaviyo as customer properties that power segmented flows and precision retargeting. Across the RevenueHunt platform, quiz takers convert at a 5.5% median, roughly 2.75x a typical 2% storefront, and the captured profile keeps compounding in value across every future campaign."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "5 D2C advantages marketplaces cannot copy",
+  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Turn your store into a consultation, not a catalogue", "description": "A product recommendation quiz guides each shopper to one confident recommendation, the in-store consultant experience a marketplace catalogue cannot offer for your products."},
+    {"@type": "ListItem", "position": 2, "name": "Own your customer data", "description": "Every quiz completion generates zero-party preference data that syncs to Klaviyo as owned customer intelligence. Marketplaces keep the customer relationship and never share it."},
+    {"@type": "ListItem", "position": 3, "name": "Personalise every touchpoint", "description": "Zero-party data feeds segmented welcome flows, email and SMS, and Meta retargeting audiences, personalising the whole relationship rather than just an algorithmic search."},
+    {"@type": "ListItem", "position": 4, "name": "Build trust through transparency", "description": "Compliant, granular consent and Shopify Markets localisation turn data handling and a local experience into visible trust signals a marketplace listing cannot provide."},
+    {"@type": "ListItem", "position": 5, "name": "Turn every customer into a compounding data asset", "description": "On a D2C store a customer is a profile, not a transaction: enriched data improves segmentation, which lifts flow revenue and reduces CAC dependency over time."}
+  ]
+}
+</script>
 
 ## The only D2C advantage that actually compounds
 

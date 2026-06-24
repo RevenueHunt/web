@@ -14,7 +14,7 @@ author: "Alex Diaz"
 legacySlug: "product-recommendations-ultimate-ecommerce-marketing-guide"
 legacyId: 2651
 legacyUrl: "https://revenuehunt.com/product-recommendations-ultimate-ecommerce-marketing-guide/"
-featuredImage: "/img/blog/product-recommendations-ultimate-ecommerce-marketing-guide/ecommerce-marketing-guide.webp"
+featuredImage: "/img/blog/product-recommendations-ultimate-ecommerce-marketing-guide/blogtile_ecommerce2026.png"
 draft: false
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Quiz follow-up emails: the lifecycle flows that lift revenue"
-description: "Five post-quiz Klaviyo flows that compound revenue: results delivery, cart abandonment, browse abandonment, replenishment, cross-sell and win-back. With industry timing, integration tiers and a worked revenue example."
+description: "A post-quiz email playbook built on a fictional haircare store: tag quiz answers, sync Klaviyo, and run the lifecycle flows that compound revenue."
 pubDate: 2022-03-18T14:42:30Z
 updatedDate: 2026-06-23T15:00:00Z
 tags:
@@ -37,6 +37,7 @@ For the underlying data category, see our [zero-party data guide](https://revenu
 
 **Table of contents:**
 
+- [Set it up once: a haircare store, end to end](#set-it-up-once-a-haircare-store-end-to-end)
 - [Why post-quiz follow-up emails are revenue infrastructure](#why-post-quiz-follow-up-emails-are-revenue-infrastructure)
 - [How a quiz answer becomes a Klaviyo segment](#how-a-quiz-answer-becomes-a-klaviyo-segment)
 - [The post-quiz lifecycle flows: one universal + five behaviour-triggered](#the-post-quiz-lifecycle-flows-one-universal-five-behaviour-triggered)
@@ -44,6 +45,92 @@ For the underlying data category, see our [zero-party data guide](https://revenu
 - [Where your quiz data should flow](#where-your-quiz-data-should-flow)
 - [What this stack actually moves](#what-this-stack-actually-moves)
 - [Frequently asked questions](#frequently-asked-questions)
+
+## Set it up once: a haircare store, end to end
+
+The rest of this guide breaks every flow down on its own. But the flows only click once you have seen the whole machine assembled, so here is the complete setup for one concrete store with every technique in place. Meet **Lather Lab**, a fictional Shopify haircare brand with around 40 SKUs (shampoos, conditioners, masks, scalp serums and stylers) whose shoppers cannot tell which routine is theirs from a product grid. A quiz answers that question in 60 seconds, and the follow-up flows turn each completion into months of revenue.
+
+<figure style="margin:32px 0;">
+<svg viewBox="0 0 880 132" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;border:1px solid #e2e8f0;border-radius:8px;background:#fff;">
+  <text x="440" y="28" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#64748b" letter-spacing="1.2">THE SEVEN-STEP SETUP</text>
+  <g font-family="system-ui,sans-serif">
+    <rect x="8" y="48" width="108" height="56" rx="6" fill="#0f172a"/><text x="62" y="72" text-anchor="middle" font-size="11" font-weight="700" fill="#94a3b8">1</text><text x="62" y="91" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Install</text>
+    <rect x="132" y="48" width="108" height="56" rx="6" fill="#1e293b"/><text x="186" y="72" text-anchor="middle" font-size="11" font-weight="700" fill="#94a3b8">2</text><text x="186" y="91" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Publish</text>
+    <rect x="256" y="48" width="108" height="56" rx="6" fill="#1e293b"/><text x="310" y="72" text-anchor="middle" font-size="11" font-weight="700" fill="#94a3b8">3</text><text x="310" y="91" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Tag answers</text>
+    <rect x="380" y="48" width="108" height="56" rx="6" fill="#334155"/><text x="434" y="72" text-anchor="middle" font-size="11" font-weight="700" fill="#94a3b8">4</text><text x="434" y="91" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Connect</text>
+    <rect x="504" y="48" width="108" height="56" rx="6" fill="#334155"/><text x="558" y="72" text-anchor="middle" font-size="11" font-weight="700" fill="#94a3b8">5</text><text x="558" y="91" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Sync</text>
+    <rect x="628" y="48" width="108" height="56" rx="6" fill="#475569"/><text x="682" y="72" text-anchor="middle" font-size="11" font-weight="700" fill="#94a3b8">6</text><text x="682" y="91" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">Build flows</text>
+    <rect x="752" y="48" width="120" height="56" rx="6" fill="#16a34a"/><text x="812" y="72" text-anchor="middle" font-size="11" font-weight="700" fill="#dcfce7">7</text><text x="812" y="91" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">~2x revenue</text>
+  </g>
+  <g fill="#cbd5e1"><polygon points="116,76 128,70 128,82"/><polygon points="240,76 252,70 252,82"/><polygon points="364,76 376,70 376,82"/><polygon points="488,76 500,70 500,82"/><polygon points="612,76 624,70 624,82"/><polygon points="736,76 748,70 748,82"/></g>
+</svg>
+<figcaption class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;The full path from a blank store to compounding revenue. Steps 1 to 5 are a one-time setup; Step 6 is where the lifecycle flows in the rest of this guide get built.</figcaption>
+</figure>
+
+### Step 1, install RevenueHunt and build the quiz
+
+Install the [RevenueHunt: Recommender Quiz](/product-recommendation-quiz/) from the Shopify App Store (free plan available), start from the haircare template, and adapt the questions to the catalogue. Lather Lab's quiz:
+
+<table style="width:100%;border-collapse:collapse;font-size:14px;margin:24px 0;">
+  <thead>
+    <tr>
+      <th style="background:#16161D;color:#fff;padding:12px 14px;text-align:left;font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;">Quiz question</th>
+      <th style="background:#16161D;color:#fff;padding:12px 14px;text-align:left;font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;">Answer choices</th>
+      <th style="background:#16161D;color:#fff;padding:12px 14px;text-align:left;font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;">Customer tag</th>
+      <th style="background:#16161D;color:#fff;padding:12px 14px;text-align:left;font-size:11px;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;">Drives</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;">Hair type</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;">Straight / Wavy / Curly / Coily</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;"><code>Curly</code>, <code>Coily</code>, <code>Wavy</code>, <code>Straight</code></td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;">Which range to recommend (curl vs smoothing)</td></tr>
+    <tr><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;">Scalp</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;">Oily / Balanced / Dry / Flaky</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;"><code>Oily Scalp</code>, <code>Dry Scalp</code>, <code>Flaky Scalp</code></td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;">Scalp serum, clarifying or soothing wash</td></tr>
+    <tr><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;">Main concern</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;">Frizz / Dryness / Damage / Thinning / Dandruff</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;"><code>Frizz</code>, <code>Damage</code>, <code>Thinning</code>, <code>Dandruff</code></td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;">The targeted treatment in the routine</td></tr>
+    <tr><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;">Wash frequency</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;">Daily / 2-3x week / Weekly</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;">Sets the replenishment cycle</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;">Reorder timing for the replenishment flow</td></tr>
+    <tr><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;">Goal</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;">Hydration / Definition / Repair / Growth</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;"><code>Goal: Repair</code> (etc.)</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#fff;color:#334155;vertical-align:top;">Which step the routine emphasises</td></tr>
+    <tr><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;">Colour-treated?</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;">Yes / No</td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;"><code>Color-Treated</code></td><td style="padding:12px 14px;border-bottom:1px solid #e2e8f0;background:#f8fafc;color:#334155;vertical-align:top;">Bond-repair, colour-safe formulas</td></tr>
+    <tr><td style="padding:12px 14px;background:#fff;color:#334155;vertical-align:top;">Your email (required)</td><td style="padding:12px 14px;background:#fff;color:#334155;vertical-align:top;">Captured just before results</td><td style="padding:12px 14px;background:#fff;color:#334155;vertical-align:top;">none</td><td style="padding:12px 14px;background:#fff;color:#334155;vertical-align:top;">The Klaviyo profile everything attaches to</td></tr>
+  </tbody>
+</table>
+
+The reasoning behind question count and order is in [how to build a successful product recommendation quiz](/how-to-build-a-successful-ecommerce-quiz/); in short, 6 to 10 questions, picture-choice for the visual ones (hair type, scalp), and email required just before the results page.
+
+### Step 2, publish it as a landing page
+
+Lather Lab does not bury the quiz on a sub-page. It publishes the quiz at its own URL (`latherlab.com/pages/hair-quiz`) and points its Meta and Google traffic straight at it, the same "quiz as the landing page" move behind the [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) that hit 9.8% conversion on cold traffic. It also drops the quiz in as a native homepage block and a nav-menu link. Every paid click lands on question 1, not a product grid.
+
+### Step 3, tag every answer
+
+This is the step that powers everything downstream. In the Quiz Builder, each answer choice is mapped to two things: the products it should recommend, and a customer tag. Lather Lab's tag set:
+
+- **Hair type:** `Curly`, `Coily`, `Wavy`, `Straight`
+- **Scalp:** `Dry Scalp`, `Oily Scalp`, `Flaky Scalp`
+- **Concern:** `Frizz`, `Damage`, `Thinning`, `Dandruff`, `Volume`
+- **Treatment:** `Color-Treated`
+
+A shopper who answers "curly, dry scalp, frizz, colour-treated" finishes with four tags on her record and a four-step routine on the results page (hydrating curl shampoo, bond-repair conditioner, weekly moisture mask, curl-defining cream). The full tagging walkthrough is in [how to use customer tags in product quizzes](/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/).
+
+### Step 4, connect Klaviyo
+
+In RevenueHunt's Integrations tab, connect Klaviyo with one-click OAuth (no Zapier, no middleware). Map each quiz question to a Klaviyo profile property (`hair_type`, `scalp`, `concern`, `wash_frequency`, `goal`, `color_treated`) and switch on customer-tag sync so the tags from Step 3 land on the profile too.
+
+### Step 5, watch responses land in Klaviyo
+
+Now every completion writes to Klaviyo in real time: the email (a required field just before the results page), the six profile properties, the customer tags, and the recommended product IDs. Lather Lab's old "graveyard" of anonymous subscribers becomes a list where every profile states exactly what that customer wants, which is the whole point of [zero-party data in Klaviyo](/klaviyo-zero-party-data/).
+
+### Step 6, build the flows on top
+
+With tagged profiles flowing in, Lather Lab builds the post-quiz flows (detailed in [the lifecycle flows section](#the-post-quiz-lifecycle-flows-one-universal-five-behaviour-triggered) below), in the order haircare rewards:
+
+1. **Results-delivery** (universal, immediate): subject line "Your curly, colour-treated routine," with the four recommended products and a one-click cart link.
+2. **Replenishment** on the 6 to 8 week haircare cycle: "Time to restock before you run out," filtered to the product they bought.
+3. **Cross-sell** at 7 to 14 days: completes the routine by adding the matching mask or styler for the same tags.
+
+Cart abandonment, browse abandonment and win-back layer in as traffic grows. Every one of them filters on the same tags from Step 3, so a `Color-Treated + Thinning` shopper only ever sees messaging for her profile.
+
+### Step 7, what Lather Lab should expect
+
+At the haircare medians (7% quiz-to-purchase, $72 AOV), 1,000 monthly completions produce roughly **$5,000 per month** in immediate results-email revenue. The lifecycle flows compound on top: replenishment on the 6 to 8 week cycle brings a meaningful share of first-time buyers back, cross-sell lifts AOV by completing the routine, and win-back recovers lapsed `Color-Treated` and `Thinning` profiles. Across the platform these flows typically push total quiz-attributed revenue to **roughly 2x the immediate-only figure within 90 days**, and 1 in 5 quiz orders lands more than 30 days out, revenue Lather Lab captures only because the flows exist. Run your own numbers in the [quiz ROI calculator](/quiz-roi-calculator/).
+
+With the machine assembled, the rest of this guide is the reference manual: what each flow does, when it fires, and the timing that works per industry.
 
 ## Why post-quiz follow-up emails are revenue infrastructure
 
@@ -98,7 +185,7 @@ The moment a customer finishes your quiz, every answer fires into Klaviyo as a p
 
   <text x="440" y="172" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-style="italic" fill="#64748b">One quiz completion produces one Klaviyo profile property. Each property unlocks unlimited segmented flows.</text>
 </svg>
-<figcaption class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;The five-step pipeline from quiz answer to revenue. Steps 2-5 are automatic once the Klaviyo integration is wired; the work is at Step 1 (designing a quiz the customer actually wants to answer).</figcaption>
+<figcaption class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;The five-step pipeline from quiz answer to revenue. Steps 2-5 are automatic once the Klaviyo integration is wired; the work is at Step 1 (designing a quiz the customer actually wants to answer).</figcaption>
 </figure>
 
 The same customer-tag mechanic is covered in depth in [customer tags in a product quiz](/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/). The rest of this guide assumes the integration is live and focuses on what to **build on top** of it.
@@ -152,7 +239,7 @@ Every quiz triggers **one universal email** (the results delivery, sent immediat
   <text x="300" y="420" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#94a3b8" letter-spacing="0.6">BEHAVIOUR · INACTIVE 60-120 DAYS</text>
   <text x="300" y="437" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#fff">Win-back, segment-conditional &nbsp;&nbsp;<tspan font-size="11" font-weight="400" fill="#cbd5e1">60-120 days inactive</tspan></text>
 </svg>
-<figcaption class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;The post-quiz email architecture. The results-delivery email is universal (every quiz needs it). The other five flows fire conditionally based on what the customer does after the quiz, each one using the quiz tags as the segmentation filter.</figcaption>
+<figcaption class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;The post-quiz email architecture. The results-delivery email is universal (every quiz needs it). The other five flows fire conditionally based on what the customer does after the quiz, each one using the quiz tags as the segmentation filter.</figcaption>
 </figure>
 
 ### The results-delivery email (universal, immediate)
@@ -191,7 +278,7 @@ Triggered **60-120 days after the last open or purchase** with no engagement in 
 
 ![Sample email draft populated from quiz answers inside the RevenueHunt app](/img/blog/product-quiz-success-why-its-necessary-to-send-follow-up-emails/how_it_works_example15.webp)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;Sample email draft inside the RevenueHunt app with information-recall tokens pulling the customer's quiz answers into the subject line and body. The same token approach drives every flow above.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 05</span> &nbsp;Sample email draft inside the RevenueHunt app with information-recall tokens pulling the customer's quiz answers into the subject line and body. The same token approach drives every flow above.</p>
 
 ## Industry-specific timing patterns
 
@@ -244,7 +331,7 @@ The lifecycle flows above assume Klaviyo. The architecture also works on Mailchi
   <text x="100" y="296" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#fff">Zapier · Webhooks · RevenueHunt in-app email sender</text>
   <text x="100" y="316" font-family="system-ui,sans-serif" font-size="12" fill="#f1f5f9">For any tool without a native integration, or stores that don't have an ESP yet.</text>
 </svg>
-<figcaption class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 05</span> &nbsp;Three integration tiers by how directly they activate quiz data downstream. Tier 1 produces the cleanest segmentation-to-revenue path; Tier 3 covers anything else with an API plus the fallback in-app email sender.</figcaption>
+<figcaption class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 06</span> &nbsp;Three integration tiers by how directly they activate quiz data downstream. Tier 1 produces the cleanest segmentation-to-revenue path; Tier 3 covers anything else with an API plus the fallback in-app email sender.</figcaption>
 </figure>
 
 ### Tier 1: native, real-time sync
@@ -270,13 +357,13 @@ Personalised post-quiz flows outperform generic sequences because the customer t
 
 <svg viewBox="0 0 880 110" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;margin:16px 0 24px;border:1px solid #e2e8f0;border-radius:6px;background:#fff;"><rect x="20" y="25" width="220" height="60" rx="5" fill="#0f172a"/><text x="130" y="48" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#94a3b8" letter-spacing="0.5">TRIGGER</text><text x="130" y="68" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" font-weight="600" fill="#fff">Inactive 60-120 d</text><line x1="240" y1="55" x2="332" y2="55" stroke="#94a3b8" stroke-width="2"/><polygon points="332,48 340,55 332,62" fill="#94a3b8"/><text x="290" y="42" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="#64748b">trigger</text><rect x="350" y="30" width="200" height="50" rx="5" fill="#1e293b"/><text x="450" y="50" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#94a3b8" letter-spacing="0.5">EMAIL 1</text><text x="450" y="68" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#fff">Re-engage by tag</text><line x1="550" y1="55" x2="602" y2="55" stroke="#94a3b8" stroke-width="2"/><polygon points="602,48 610,55 602,62" fill="#94a3b8"/><text x="580" y="42" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="#64748b">14 days</text><rect x="620" y="30" width="180" height="50" rx="5" fill="#1e293b"/><text x="710" y="50" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#94a3b8" letter-spacing="0.5">EMAIL 2</text><text x="710" y="68" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="#fff">Incentive</text><line x1="800" y1="55" x2="817" y2="55" stroke="#94a3b8" stroke-width="2"/><polygon points="817,48 825,55 817,62" fill="#94a3b8"/><text x="812" y="42" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="#64748b"></text><text x="830" y="50" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="#0f172a">Won back</text><text x="830" y="68" font-family="system-ui,sans-serif" font-size="10" fill="#64748b"></text></svg>
 
-### A worked example
+### Back to Lather Lab: the compounding math
 
-A US skincare brand running 1,000 monthly quiz completions at the **8% skincare-median conversion** and **$84 median AOV** generates roughly $6,720/month in immediate quiz-attributed revenue from the results-delivery email alone. The lifecycle flows add three compounding layers: **cart abandonment** typically recovers 10-20% of would-have-bounced carts; **cross-sell at 7-14 days** lifts AOV by adding 1-2 products to the original order across the segment that completes it; **replenishment at 30 days** brings back a meaningful share of the first-time buyers. Combined, the lifecycle flows typically push **total quiz-attributed revenue to ~2x the immediate-only figure** within 90 days.
+Take the haircare store from the top of this guide. At 1,000 monthly quiz completions, the **7% haircare-median conversion** and **$72 median AOV** generate roughly $5,000/month in immediate quiz-attributed revenue from the results-delivery email alone. The lifecycle flows add three compounding layers on top: **cart abandonment** typically recovers 10-20% of would-have-bounced carts; **cross-sell at 7-14 days** lifts AOV by adding the matching mask or styler across the segment that completes the routine; **replenishment on the 6 to 8 week cycle** brings a meaningful share of first-time buyers back. Combined, the lifecycle flows typically push **total quiz-attributed revenue to ~2x the immediate-only figure** within 90 days.
 
 ![Per-segment Klaviyo campaign performance dashboard](/img/blog/product-quiz-success-why-its-necessary-to-send-follow-up-emails/Untitled-design.webp)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 06</span> &nbsp;Per-segment campaign performance dashboard. Tracking open rate, click rate and revenue per recipient per segment is what surfaces the compounding effect; aggregate numbers hide it.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 07</span> &nbsp;Per-segment campaign performance dashboard. Tracking open rate, click rate and revenue per recipient per segment is what surfaces the compounding effect; aggregate numbers hide it.</p>
 
 To run the math on your own store's traffic, AOV and conversion rate, use the [quiz ROI calculator](/quiz-roi-calculator/). For the full platform-baseline data the calculator pulls from, see the [2026 benchmark report](/state-of-product-recommendation-quizzes/).
 
@@ -300,7 +387,7 @@ The results-delivery email starts converting immediately. The cart-abandonment f
 
 ### How do I estimate the revenue lift on my store before implementing?
 
-The [quiz ROI calculator](/quiz-roi-calculator/) takes your monthly traffic, AOV, conversion rate and quiz-completion estimate and returns a projected lift range based on the [2026 benchmark report](/state-of-product-recommendation-quizzes/). For a quick sanity check: a store at the 8% skincare-median conversion and $84 AOV typically sees the lifecycle flows push total quiz-attributed revenue to roughly 2x the immediate-only figure within 90 days.
+The [quiz ROI calculator](/quiz-roi-calculator/) takes your monthly traffic, AOV, conversion rate and quiz-completion estimate and returns a projected lift range based on the [2026 benchmark report](/state-of-product-recommendation-quizzes/). For a quick sanity check: a haircare store at the 7% category-median conversion and $72 AOV typically sees the lifecycle flows push total quiz-attributed revenue to roughly 2x the immediate-only figure within 90 days.
 
 ## Build the flows before you think you need them
 
@@ -400,7 +487,7 @@ For 11 real funnels that follow this pattern, see our [real funnel examples](htt
       "name": "How do I estimate the revenue lift on my store before implementing?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Use the RevenueHunt quiz ROI calculator. It takes your monthly traffic, AOV, conversion rate and quiz-completion estimate and returns a projected lift range based on the 2026 benchmark report. For a quick sanity check: a store at the 8% skincare-median conversion and $84 AOV typically sees the lifecycle flows push total quiz-attributed revenue to roughly 2x the immediate-only figure within 90 days."
+        "text": "Use the RevenueHunt quiz ROI calculator. It takes your monthly traffic, AOV, conversion rate and quiz-completion estimate and returns a projected lift range based on the 2026 benchmark report. For a quick sanity check: a haircare store at the 7% category-median conversion and $72 AOV typically sees the lifecycle flows push total quiz-attributed revenue to roughly 2x the immediate-only figure within 90 days."
       }
     }
   ]

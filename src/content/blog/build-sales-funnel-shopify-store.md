@@ -48,7 +48,9 @@ A sales funnel in ecommerce is not a flowchart with "TOFU/MOFU/BOFU" labels. It 
 
 The reason "funnel" is the right metaphor is that the population shrinks at each stage. A hundred ad impressions might produce thirty clicks, twelve quiz starts, six completions, two purchases. The job of the funnel designer is to identify which step has the biggest leak relative to its cost and fix that one first.
 
-![A simplified ecommerce sales funnel: visitors narrow to subscribers, shoppers, buyers and finally brand ambassadors](/img/blog/build-sales-funnel-shopify-store/shopify-sales-funnel-simplified.webp)
+<img src="/img/blog/build-sales-funnel-shopify-store/shopify-sales-funnel-simplified.webp" alt="A simplified ecommerce sales funnel: visitors narrow to subscribers, shoppers, buyers and finally brand ambassadors" width="1600" height="888" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;" />
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;The funnel narrows at every stage: visitors become subscribers, subscribers become buyers, buyers become repeat customers and advocates. The job is to find the leakiest step relative to its cost and fix that one first.</p>
 
 What separates an ecommerce funnel from a generic marketing funnel:
 
@@ -60,94 +62,9 @@ What separates an ecommerce funnel from a generic marketing funnel:
 
 The classic AIDA model (Attention, Interest, Desire, Action) covers acquisition through conversion. In 2026, every funnel that actually scales adds a fifth retention stage that powers post-purchase emails, replenishment and lifetime-value mechanics with the data collected during stages 2 and 3.
 
-<div style="margin:32px 0;">
-<svg viewBox="0 0 1600 480" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;" role="img" aria-labelledby="fnt fnd" preserveAspectRatio="xMidYMid meet">
-  <title id="fnt">The five stages of an ecommerce sales funnel</title>
-  <desc id="fnd">Horizontal funnel diagram showing five stages: Attention, Interest, Desire, Action, Retention. Each stage shows what the shopper does, the key metric, and the tooling layer.</desc>
-  <defs>
-    <marker id="fn-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/>
-    </marker>
-  </defs>
-  <text x="60" y="50" font-family="system-ui, sans-serif" font-size="26" font-weight="700" fill="#0f172a">The five stages of an ecommerce sales funnel</text>
-  <g font-family="system-ui, sans-serif">
-    <g transform="translate(60 110)">
-      <rect width="280" height="320" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-      <text x="20" y="38" font-size="11" font-weight="700" fill="#64748b" letter-spacing="2">STAGE 01</text>
-      <text x="20" y="74" font-size="22" font-weight="700" fill="#0f172a">Attention</text>
-      <text x="20" y="115" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">SHOPPER DOES</text>
-      <text x="20" y="138" font-size="14" fill="#334155">Clicks an ad, opens a</text>
-      <text x="20" y="156" font-size="14" fill="#334155">link, lands on the site.</text>
-      <text x="20" y="195" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">YOU OPTIMISE</text>
-      <text x="20" y="218" font-size="14" fill="#334155">Cost per session,</text>
-      <text x="20" y="236" font-size="14" fill="#334155">cost per quiz start.</text>
-      <text x="20" y="275" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">TOOLS</text>
-      <text x="20" y="298" font-size="14" fill="#334155">Meta + Google ads,</text>
-      <text x="20" y="316" font-size="14" fill="#334155">organic, content, SEO.</text>
-    </g>
-    <line x1="340" y1="270" x2="370" y2="270" stroke="#cbd5e1" stroke-width="1.5" marker-end="url(#fn-arrow)"/>
-    <g transform="translate(370 110)">
-      <rect width="280" height="320" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-      <text x="20" y="38" font-size="11" font-weight="700" fill="#64748b" letter-spacing="2">STAGE 02</text>
-      <text x="20" y="74" font-size="22" font-weight="700" fill="#0f172a">Interest</text>
-      <text x="20" y="115" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">SHOPPER DOES</text>
-      <text x="20" y="138" font-size="14" fill="#334155">Engages with a quiz,</text>
-      <text x="20" y="156" font-size="14" fill="#334155">shares preferences.</text>
-      <text x="20" y="195" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">YOU OPTIMISE</text>
-      <text x="20" y="218" font-size="14" fill="#334155">Completion rate</text>
-      <text x="20" y="236" font-size="14" fill="#334155">(40-60% is normal).</text>
-      <text x="20" y="275" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">TOOLS</text>
-      <text x="20" y="298" font-size="14" fill="#334155">Recommendation quiz,</text>
-      <text x="20" y="316" font-size="14" fill="#334155">popups, lead magnets.</text>
-    </g>
-    <line x1="650" y1="270" x2="680" y2="270" stroke="#cbd5e1" stroke-width="1.5" marker-end="url(#fn-arrow)"/>
-    <g transform="translate(680 110)">
-      <rect width="280" height="320" rx="12" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
-      <text x="20" y="38" font-size="11" font-weight="700" fill="#1d4ed8" letter-spacing="2">STAGE 03  ·  CRITICAL</text>
-      <text x="20" y="74" font-size="22" font-weight="700" fill="#0f172a">Desire</text>
-      <text x="20" y="115" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">SHOPPER DOES</text>
-      <text x="20" y="138" font-size="14" fill="#334155">Reads the results,</text>
-      <text x="20" y="156" font-size="14" fill="#334155">adds to cart.</text>
-      <text x="20" y="195" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">YOU OPTIMISE</text>
-      <text x="20" y="218" font-size="14" fill="#334155">Add-to-cart rate</text>
-      <text x="20" y="236" font-size="14" fill="#334155">on quiz traffic.</text>
-      <text x="20" y="275" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">TOOLS</text>
-      <text x="20" y="298" font-size="14" fill="#334155">Results page, dynamic</text>
-      <text x="20" y="316" font-size="14" fill="#334155">PDP, social proof.</text>
-    </g>
-    <line x1="960" y1="270" x2="990" y2="270" stroke="#cbd5e1" stroke-width="1.5" marker-end="url(#fn-arrow)"/>
-    <g transform="translate(990 110)">
-      <rect width="280" height="320" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-      <text x="20" y="38" font-size="11" font-weight="700" fill="#64748b" letter-spacing="2">STAGE 04</text>
-      <text x="20" y="74" font-size="22" font-weight="700" fill="#0f172a">Action</text>
-      <text x="20" y="115" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">SHOPPER DOES</text>
-      <text x="20" y="138" font-size="14" fill="#334155">Checks out, completes</text>
-      <text x="20" y="156" font-size="14" fill="#334155">the purchase.</text>
-      <text x="20" y="195" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">YOU OPTIMISE</text>
-      <text x="20" y="218" font-size="14" fill="#334155">Checkout-completion,</text>
-      <text x="20" y="236" font-size="14" fill="#334155">AOV, upsell take.</text>
-      <text x="20" y="275" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">TOOLS</text>
-      <text x="20" y="298" font-size="14" fill="#334155">Shopify checkout,</text>
-      <text x="20" y="316" font-size="14" fill="#334155">post-purchase upsells.</text>
-    </g>
-    <line x1="1270" y1="270" x2="1300" y2="270" stroke="#cbd5e1" stroke-width="1.5" marker-end="url(#fn-arrow)"/>
-    <g transform="translate(1300 110)">
-      <rect width="280" height="320" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-      <text x="20" y="38" font-size="11" font-weight="700" fill="#64748b" letter-spacing="2">STAGE 05</text>
-      <text x="20" y="74" font-size="22" font-weight="700" fill="#0f172a">Retention</text>
-      <text x="20" y="115" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">SHOPPER DOES</text>
-      <text x="20" y="138" font-size="14" fill="#334155">Opens email, reorders,</text>
-      <text x="20" y="156" font-size="14" fill="#334155">refers a friend.</text>
-      <text x="20" y="195" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">YOU OPTIMISE</text>
-      <text x="20" y="218" font-size="14" fill="#334155">Repeat-purchase rate,</text>
-      <text x="20" y="236" font-size="14" fill="#334155">RPR, LTV.</text>
-      <text x="20" y="275" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">TOOLS</text>
-      <text x="20" y="298" font-size="14" fill="#334155">Klaviyo flows, SMS,</text>
-      <text x="20" y="316" font-size="14" fill="#334155">loyalty, reviews.</text>
-    </g>
-  </g>
-</svg>
-</div>
+<div class="not-prose my-10"><svg viewBox="0 0 1000 892" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fnt fnd" style="width:100%;height:auto;display:block;background:#16161D;border-radius:16px;padding:24px 18px;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;"><title id="fnt">The five stages of an ecommerce sales funnel</title><desc id="fnd">The five stages of an ecommerce sales funnel</desc><text x="500" y="56" text-anchor="middle" fill="#F5F7FA" font-size="34" font-weight="800" letter-spacing="-0.5">The five stages of an ecommerce sales funnel</text><g><rect x="36" y="96" width="928" height="144" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="60" y="138" fill="#5AB2FF" font-size="20" font-weight="800" letter-spacing="1.5">STAGE 01 · ATTENTION</text><text x="60" y="176" fill="#F5F7FA" font-size="26" font-weight="700">Clicks an ad and lands on the site</text><text x="60" y="206" fill="#A7AFBF" font-size="18">Optimise: cost per session and quiz start</text><text x="60" y="233" fill="#A7AFBF" font-size="18">Tools: Meta and Google ads, SEO, content</text></g><g><rect x="36" y="254" width="928" height="144" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="60" y="296" fill="#5AB2FF" font-size="20" font-weight="800" letter-spacing="1.5">STAGE 02 · INTEREST</text><text x="60" y="334" fill="#F5F7FA" font-size="26" font-weight="700">Engages with a quiz, shares preferences</text><text x="60" y="364" fill="#A7AFBF" font-size="18">Optimise: completion rate, 40 to 60% is normal</text><text x="60" y="391" fill="#A7AFBF" font-size="18">Tools: recommendation quiz, popups, lead magnets</text></g><g><rect x="36" y="412" width="928" height="144" rx="14" fill="rgba(90,178,255,0.12)" stroke="#5AB2FF" stroke-width="2"/><text x="60" y="454" fill="#5AB2FF" font-size="20" font-weight="800" letter-spacing="1.5">STAGE 03 · DESIRE  (CRITICAL)</text><text x="60" y="492" fill="#F5F7FA" font-size="26" font-weight="700">Reads the results and adds to cart</text><text x="60" y="522" fill="#A7AFBF" font-size="18">Optimise: add-to-cart rate on quiz traffic</text><text x="60" y="549" fill="#A7AFBF" font-size="18">Tools: results page, dynamic PDP, social proof</text></g><g><rect x="36" y="570" width="928" height="144" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="60" y="612" fill="#5AB2FF" font-size="20" font-weight="800" letter-spacing="1.5">STAGE 04 · ACTION</text><text x="60" y="650" fill="#F5F7FA" font-size="26" font-weight="700">Checks out and completes the purchase</text><text x="60" y="680" fill="#A7AFBF" font-size="18">Optimise: checkout completion, AOV, upsell take</text><text x="60" y="707" fill="#A7AFBF" font-size="18">Tools: Shopify checkout, post-purchase upsells</text></g><g><rect x="36" y="728" width="928" height="144" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="60" y="770" fill="#5AB2FF" font-size="20" font-weight="800" letter-spacing="1.5">STAGE 05 · RETENTION</text><text x="60" y="808" fill="#F5F7FA" font-size="26" font-weight="700">Opens email, reorders, refers a friend</text><text x="60" y="838" fill="#A7AFBF" font-size="18">Optimise: repeat-purchase rate, RPR, LTV</text><text x="60" y="865" fill="#A7AFBF" font-size="18">Tools: Klaviyo flows, SMS, loyalty, reviews</text></g></svg></div>
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;The five stages of an ecommerce sales funnel. AIDA covers stages 1-4; the fifth retention stage is where unit economics actually work in 2026. Stage 3 (Desire) is the highlighted leverage point.</p>
 
 Stage 3 is the leverage point most stores miss. Brands invest in acquisition (stage 1) and the quiz (stage 2), then dump the customer on a generic product detail page and let the catalogue do the work. The strongest funnels treat the results page as a bespoke PDP: the customer's stated preferences are referenced, the rationale per recommendation is visible, social proof is anchored to the shopper's segment, and the cart includes intelligent cross-sells based on the quiz answers.
 
@@ -167,74 +84,9 @@ Before any tool selection, four strategic decisions determine whether your funne
 
 The same five-step build sequence works for skincare, supplements, apparel, eyewear, mattresses, coffee, and most other DTC categories. The tools change by category; the sequence does not.
 
-<div style="margin:32px 0;">
-<svg viewBox="0 0 1600 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;" role="img" aria-labelledby="bst bsd" preserveAspectRatio="xMidYMid meet">
-  <title id="bst">The five-step build sequence</title>
-  <desc id="bsd">Horizontal timeline of the five build steps: quiz, results page, data sync, post-purchase, retention. Each step shows what it produces.</desc>
-  <defs>
-    <marker id="bs-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-      <path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/>
-    </marker>
-  </defs>
-  <text x="60" y="50" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#0f172a">The five-step build sequence</text>
-  <g font-family="system-ui, sans-serif">
-    <g transform="translate(60 90)">
-      <rect width="280" height="220" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-      <text x="20" y="34" font-size="11" font-weight="700" fill="#64748b" letter-spacing="2">STEP 01</text>
-      <text x="20" y="68" font-size="18" font-weight="700" fill="#0f172a">Capture intent</text>
-      <text x="20" y="100" font-size="13" fill="#475569">A 3-7 question quiz at</text>
-      <text x="20" y="118" font-size="13" fill="#475569">the top of the funnel.</text>
-      <text x="20" y="155" font-size="11" font-weight="700" fill="#64748b" letter-spacing="1">PRODUCES</text>
-      <text x="20" y="178" font-size="13" fill="#334155">Structured preference</text>
-      <text x="20" y="196" font-size="13" fill="#334155">data + email + consent.</text>
-    </g>
-    <line x1="340" y1="200" x2="370" y2="200" stroke="#cbd5e1" stroke-width="1.5" marker-end="url(#bs-arrow)"/>
-    <g transform="translate(370 90)">
-      <rect width="280" height="220" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-      <text x="20" y="34" font-size="11" font-weight="700" fill="#64748b" letter-spacing="2">STEP 02</text>
-      <text x="20" y="68" font-size="18" font-weight="700" fill="#0f172a">Convert on results</text>
-      <text x="20" y="100" font-size="13" fill="#475569">A bespoke results page</text>
-      <text x="20" y="118" font-size="13" fill="#475569">with rationale per pick.</text>
-      <text x="20" y="155" font-size="11" font-weight="700" fill="#64748b" letter-spacing="1">PRODUCES</text>
-      <text x="20" y="178" font-size="13" fill="#334155">Add-to-cart, AOV lift</text>
-      <text x="20" y="196" font-size="13" fill="#334155">via bundled routine.</text>
-    </g>
-    <line x1="650" y1="200" x2="680" y2="200" stroke="#cbd5e1" stroke-width="1.5" marker-end="url(#bs-arrow)"/>
-    <g transform="translate(680 90)">
-      <rect width="280" height="220" rx="10" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
-      <text x="20" y="34" font-size="11" font-weight="700" fill="#1d4ed8" letter-spacing="2">STEP 03  ·  PIVOT</text>
-      <text x="20" y="68" font-size="18" font-weight="700" fill="#0f172a">Sync the data</text>
-      <text x="20" y="100" font-size="13" fill="#475569">Quiz answers to ESP +</text>
-      <text x="20" y="118" font-size="13" fill="#475569">ad-platform audiences.</text>
-      <text x="20" y="155" font-size="11" font-weight="700" fill="#64748b" letter-spacing="1">PRODUCES</text>
-      <text x="20" y="178" font-size="13" fill="#334155">Segmentable profiles</text>
-      <text x="20" y="196" font-size="13" fill="#334155">in every downstream tool.</text>
-    </g>
-    <line x1="960" y1="200" x2="990" y2="200" stroke="#cbd5e1" stroke-width="1.5" marker-end="url(#bs-arrow)"/>
-    <g transform="translate(990 90)">
-      <rect width="280" height="220" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-      <text x="20" y="34" font-size="11" font-weight="700" fill="#64748b" letter-spacing="2">STEP 04</text>
-      <text x="20" y="68" font-size="18" font-weight="700" fill="#0f172a">Post-purchase</text>
-      <text x="20" y="100" font-size="13" fill="#475569">Upsell + cross-sell in</text>
-      <text x="20" y="118" font-size="13" fill="#475569">the high-goodwill window.</text>
-      <text x="20" y="155" font-size="11" font-weight="700" fill="#64748b" letter-spacing="1">PRODUCES</text>
-      <text x="20" y="178" font-size="13" fill="#334155">+10-20% AOV uplift</text>
-      <text x="20" y="196" font-size="13" fill="#334155">+ attribution data.</text>
-    </g>
-    <line x1="1270" y1="200" x2="1300" y2="200" stroke="#cbd5e1" stroke-width="1.5" marker-end="url(#bs-arrow)"/>
-    <g transform="translate(1300 90)">
-      <rect width="280" height="220" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-      <text x="20" y="34" font-size="11" font-weight="700" fill="#64748b" letter-spacing="2">STEP 05</text>
-      <text x="20" y="68" font-size="18" font-weight="700" fill="#0f172a">Retention loop</text>
-      <text x="20" y="100" font-size="13" fill="#475569">Personalised flows on</text>
-      <text x="20" y="118" font-size="13" fill="#475569">quiz-derived attributes.</text>
-      <text x="20" y="155" font-size="11" font-weight="700" fill="#64748b" letter-spacing="1">PRODUCES</text>
-      <text x="20" y="178" font-size="13" fill="#334155">Repeat-purchase rate</text>
-      <text x="20" y="196" font-size="13" fill="#334155">+ compounding LTV.</text>
-    </g>
-  </g>
-</svg>
-</div>
+<div class="not-prose my-10"><svg viewBox="0 0 1000 762" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="bst bsd" style="width:100%;height:auto;display:block;background:#16161D;border-radius:16px;padding:24px 18px;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;"><title id="bst">The five-step build sequence</title><desc id="bsd">The five-step build sequence</desc><text x="500" y="56" text-anchor="middle" fill="#F5F7FA" font-size="34" font-weight="800" letter-spacing="-0.5">The five-step build sequence</text><g><rect x="36" y="96" width="928" height="118" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="60" y="138" fill="#5AB2FF" font-size="20" font-weight="800" letter-spacing="1.5">STEP 01 · CAPTURE INTENT</text><text x="60" y="176" fill="#F5F7FA" font-size="26" font-weight="700">A 3 to 7 question quiz at the top of the funnel</text><text x="60" y="206" fill="#A7AFBF" font-size="18">Produces: structured preference data, email and consent</text></g><g><rect x="36" y="228" width="928" height="118" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="60" y="270" fill="#5AB2FF" font-size="20" font-weight="800" letter-spacing="1.5">STEP 02 · CONVERT ON RESULTS</text><text x="60" y="308" fill="#F5F7FA" font-size="26" font-weight="700">A bespoke results page with rationale per pick</text><text x="60" y="338" fill="#A7AFBF" font-size="18">Produces: add-to-cart and AOV lift via a bundled routine</text></g><g><rect x="36" y="360" width="928" height="118" rx="14" fill="rgba(90,178,255,0.12)" stroke="#5AB2FF" stroke-width="2"/><text x="60" y="402" fill="#5AB2FF" font-size="20" font-weight="800" letter-spacing="1.5">STEP 03 · SYNC THE DATA  (PIVOT)</text><text x="60" y="440" fill="#F5F7FA" font-size="26" font-weight="700">Quiz answers to your ESP and ad-platform audiences</text><text x="60" y="470" fill="#A7AFBF" font-size="18">Produces: segmentable profiles in every downstream tool</text></g><g><rect x="36" y="492" width="928" height="118" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="60" y="534" fill="#5AB2FF" font-size="20" font-weight="800" letter-spacing="1.5">STEP 04 · POST-PURCHASE</text><text x="60" y="572" fill="#F5F7FA" font-size="26" font-weight="700">Upsell and cross-sell in the high-goodwill window</text><text x="60" y="602" fill="#A7AFBF" font-size="18">Produces: +10 to 20% AOV uplift plus attribution data</text></g><g><rect x="36" y="624" width="928" height="118" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="60" y="666" fill="#5AB2FF" font-size="20" font-weight="800" letter-spacing="1.5">STEP 05 · RETENTION LOOP</text><text x="60" y="704" fill="#F5F7FA" font-size="26" font-weight="700">Personalised flows on quiz-derived attributes</text><text x="60" y="734" fill="#A7AFBF" font-size="18">Produces: higher repeat-purchase rate and compounding LTV</text></g></svg></div>
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;The five-step build sequence. Step 3 (syncing quiz data to your ESP and ad platforms) is the pivot where on-site funnel performance becomes lifetime-customer value.</p>
 
 ### Step 1: Capture intent with a quiz at the top of the funnel
 
@@ -298,6 +150,22 @@ The retention stage is where unit economics actually work, but it can only work 
 
 Loyalty layered on top compounds further. Every points-earning interaction (review a product, share a birthday, refer a friend) generates another structured data point and lifts the third-purchase rate. Reviews collection (Okendo, Junip, Yotpo) closes the social-proof loop back into stage 3.
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to build an ecommerce sales funnel on Shopify",
+  "description": "A five-step sequence for building a Shopify sales funnel that compounds: capture intent with a quiz, convert on the results page, sync the data, optimise the post-purchase window, and build the retention loop.",
+  "step": [
+    {"@type": "HowToStep", "position": 1, "name": "Capture intent with a quiz", "text": "Add a 3 to 7 question product recommendation quiz at the top of the funnel to capture structured preference data, email and consent in one value exchange.", "url": "https://revenuehunt.com/build-sales-funnel-shopify-store/#step-1-capture-intent-with-a-quiz-at-the-top-of-the-funnel"},
+    {"@type": "HowToStep", "position": 2, "name": "Design a results page that converts", "text": "Build a bespoke results page that names the recommendation, uses the customer's own words, anchors social proof to their segment, and pre-loads the cart with the recommended routine."},
+    {"@type": "HowToStep", "position": 3, "name": "Sync the data into your ESP and ad platforms", "text": "Map each quiz answer to a custom property in Klaviyo or Omnisend via native integration, and push the segments to Meta Custom Audiences and Google Customer Match."},
+    {"@type": "HowToStep", "position": 4, "name": "Optimise the post-purchase window", "text": "Add a one-click post-purchase upsell, a thank-you-page cross-sell anchored to the quiz answers, and a two-question post-purchase survey for attribution and intent."},
+    {"@type": "HowToStep", "position": 5, "name": "Build the retention loop", "text": "Trigger personalised welcome, replenishment and win-back flows in Klaviyo that reference the quiz-derived attributes, so retention compounds on the data the earlier stages collected."}
+  ]
+}
+</script>
+
 ## Tools and tactics by funnel stage
 
 The market is loud. Here is the short list of categories that fit each stage, with the integration points that matter.
@@ -345,80 +213,14 @@ The market is loud. Here is the short list of categories that fit each stage, wi
 
 Across the funnel you only need to track five metrics. If any one of them is degrading, that is the stage to invest in.
 
-<div style="margin:32px 0;">
-<svg viewBox="0 0 1600 380" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;" role="img" aria-labelledby="mst msd" preserveAspectRatio="xMidYMid meet">
-  <title id="mst">Five metrics that tell you which funnel stage to fix</title>
-  <desc id="msd">A scorecard of the five core funnel metrics with their formulas, healthy benchmarks, and the funnel stage they measure.</desc>
-  <text x="60" y="50" font-family="system-ui, sans-serif" font-size="24" font-weight="700" fill="#0f172a">Five metrics, five stages</text>
-  <g font-family="system-ui, sans-serif">
-    <g transform="translate(60 90)">
-      <rect width="280" height="260" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-      <text x="20" y="34" font-size="11" font-weight="700" fill="#64748b" letter-spacing="2">STAGE 01  ·  ATTENTION</text>
-      <text x="20" y="68" font-size="17" font-weight="700" fill="#0f172a">Quiz-start rate</text>
-      <text x="20" y="100" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">FORMULA</text>
-      <text x="20" y="120" font-size="13" font-family="ui-monospace, Menlo, monospace" fill="#475569">starts ÷ sessions</text>
-      <text x="20" y="155" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">HEALTHY</text>
-      <text x="20" y="180" font-size="22" font-weight="700" fill="#16a34a">5-10%+</text>
-      <text x="20" y="215" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">IF LOW</text>
-      <text x="20" y="233" font-size="13" fill="#334155">Entry CTA is the</text>
-      <text x="20" y="251" font-size="13" fill="#334155">bottleneck.</text>
-    </g>
-    <g transform="translate(370 90)">
-      <rect width="280" height="260" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-      <text x="20" y="34" font-size="11" font-weight="700" fill="#64748b" letter-spacing="2">STAGE 02  ·  INTEREST</text>
-      <text x="20" y="68" font-size="17" font-weight="700" fill="#0f172a">Completion rate</text>
-      <text x="20" y="100" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">FORMULA</text>
-      <text x="20" y="120" font-size="13" font-family="ui-monospace, Menlo, monospace" fill="#475569">completions ÷ starts</text>
-      <text x="20" y="155" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">HEALTHY</text>
-      <text x="20" y="180" font-size="22" font-weight="700" fill="#16a34a">40-60%</text>
-      <text x="20" y="215" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">IF LOW</text>
-      <text x="20" y="233" font-size="13" fill="#334155">Too many or too</text>
-      <text x="20" y="251" font-size="13" fill="#334155">friction-heavy questions.</text>
-    </g>
-    <g transform="translate(680 90)">
-      <rect width="280" height="260" rx="10" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5"/>
-      <text x="20" y="34" font-size="11" font-weight="700" fill="#1d4ed8" letter-spacing="2">STAGE 03  ·  DESIRE</text>
-      <text x="20" y="68" font-size="17" font-weight="700" fill="#0f172a">AOV uplift</text>
-      <text x="20" y="100" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">FORMULA</text>
-      <text x="20" y="120" font-size="13" font-family="ui-monospace, Menlo, monospace" fill="#475569">quiz AOV ÷ baseline AOV</text>
-      <text x="20" y="155" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">HEALTHY</text>
-      <text x="20" y="180" font-size="22" font-weight="700" fill="#16a34a">+10-30%</text>
-      <text x="20" y="215" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">IF FLAT</text>
-      <text x="20" y="233" font-size="13" fill="#334155">Results page treats</text>
-      <text x="20" y="251" font-size="13" fill="#334155">customer like cold traffic.</text>
-    </g>
-    <g transform="translate(990 90)">
-      <rect width="280" height="260" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-      <text x="20" y="34" font-size="11" font-weight="700" fill="#64748b" letter-spacing="2">STAGE 04  ·  ACTION</text>
-      <text x="20" y="68" font-size="17" font-weight="700" fill="#0f172a">Enriched RPR</text>
-      <text x="20" y="100" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">FORMULA</text>
-      <text x="20" y="120" font-size="13" font-family="ui-monospace, Menlo, monospace" fill="#475569">enriched RPR ÷ baseline</text>
-      <text x="20" y="155" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">HEALTHY</text>
-      <text x="20" y="180" font-size="22" font-weight="700" fill="#16a34a">2-4×</text>
-      <text x="20" y="215" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">IF FLAT</text>
-      <text x="20" y="233" font-size="13" fill="#334155">Segmentation flywheel</text>
-      <text x="20" y="251" font-size="13" fill="#334155">never started.</text>
-    </g>
-    <g transform="translate(1300 90)">
-      <rect width="280" height="260" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-      <text x="20" y="34" font-size="11" font-weight="700" fill="#64748b" letter-spacing="2">STAGE 05  ·  RETENTION</text>
-      <text x="20" y="68" font-size="17" font-weight="700" fill="#0f172a">90-day repeat rate</text>
-      <text x="20" y="100" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">FORMULA</text>
-      <text x="20" y="120" font-size="13" font-family="ui-monospace, Menlo, monospace" fill="#475569">repeats ÷ unique buyers</text>
-      <text x="20" y="155" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">HEALTHY</text>
-      <text x="20" y="180" font-size="22" font-weight="700" fill="#16a34a">25%+</text>
-      <text x="20" y="215" font-size="12" font-weight="700" fill="#64748b" letter-spacing="1">IF LOW</text>
-      <text x="20" y="233" font-size="13" fill="#334155">Retention stage isn't</text>
-      <text x="20" y="251" font-size="13" fill="#334155">using the quiz data.</text>
-    </g>
-  </g>
-</svg>
-</div>
+<div class="not-prose my-10"><svg viewBox="0 0 1000 792" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="mst msd" style="width:100%;height:auto;display:block;background:#16161D;border-radius:16px;padding:24px 18px;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;"><title id="mst">Five metrics, five stages</title><desc id="msd">Five metrics, five stages</desc><text x="500" y="56" text-anchor="middle" fill="#F5F7FA" font-size="34" font-weight="800" letter-spacing="-0.5">Five metrics, five stages</text><g><rect x="36" y="96" width="928" height="124" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="60" y="138" fill="#5AB2FF" font-size="20" font-weight="800" letter-spacing="1.5">STAGE 01 · ATTENTION</text><text x="60" y="176" fill="#F5F7FA" font-size="27" font-weight="700">Quiz-start rate</text><text x="940" y="174" text-anchor="end" fill="#34d399" font-size="34" font-weight="800">5-10%+</text><text x="60" y="206" fill="#A7AFBF" font-size="18">starts / sessions   ·   if low, the entry CTA is the bottleneck</text></g><g><rect x="36" y="234" width="928" height="124" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="60" y="276" fill="#5AB2FF" font-size="20" font-weight="800" letter-spacing="1.5">STAGE 02 · INTEREST</text><text x="60" y="314" fill="#F5F7FA" font-size="27" font-weight="700">Completion rate</text><text x="940" y="312" text-anchor="end" fill="#34d399" font-size="34" font-weight="800">40-60%</text><text x="60" y="344" fill="#A7AFBF" font-size="18">completions / starts   ·   if low, too many or friction-heavy questions</text></g><g><rect x="36" y="372" width="928" height="124" rx="14" fill="rgba(90,178,255,0.12)" stroke="#5AB2FF" stroke-width="2"/><text x="60" y="414" fill="#5AB2FF" font-size="20" font-weight="800" letter-spacing="1.5">STAGE 03 · DESIRE</text><text x="60" y="452" fill="#F5F7FA" font-size="27" font-weight="700">AOV uplift</text><text x="940" y="450" text-anchor="end" fill="#34d399" font-size="34" font-weight="800">+10-30%</text><text x="60" y="482" fill="#A7AFBF" font-size="18">quiz AOV / baseline   ·   if flat, results page treats customer as cold</text></g><g><rect x="36" y="510" width="928" height="124" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="60" y="552" fill="#5AB2FF" font-size="20" font-weight="800" letter-spacing="1.5">STAGE 04 · ACTION</text><text x="60" y="590" fill="#F5F7FA" font-size="27" font-weight="700">Enriched email RPR</text><text x="940" y="588" text-anchor="end" fill="#34d399" font-size="34" font-weight="800">2-4x</text><text x="60" y="620" fill="#A7AFBF" font-size="18">enriched RPR / baseline   ·   if flat, the segmentation flywheel never started</text></g><g><rect x="36" y="648" width="928" height="124" rx="14" fill="#1F1F29" stroke="rgba(255,255,255,0.10)" stroke-width="1"/><text x="60" y="690" fill="#5AB2FF" font-size="20" font-weight="800" letter-spacing="1.5">STAGE 05 · RETENTION</text><text x="60" y="728" fill="#F5F7FA" font-size="27" font-weight="700">90-day repeat rate</text><text x="940" y="726" text-anchor="end" fill="#34d399" font-size="34" font-weight="800">25%+</text><text x="60" y="758" fill="#A7AFBF" font-size="18">repeats / unique buyers   ·   if low, retention is not using the quiz data</text></g></svg></div>
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;The five funnel metrics, each tied to a stage. If one is degrading, that is the stage to invest in next.</p>
 
 - **Quiz-start rate** = (quiz starts) ÷ (sessions on the page that hosts the quiz). Anything below 5-10% means the entry CTA is the bottleneck.
 - **Completion rate** = (quiz completions) ÷ (quiz starts). 40-60% is normal for a well-designed quiz. Below 30% means the questions are too many or too friction-heavy.
 - **AOV on quiz-attributed orders** vs baseline AOV. A healthy funnel produces a 10-30% AOV lift on quiz traffic. No lift means the results page is treating the customer like cold traffic.
-- **Email RPR on quiz-enriched profiles** vs RPR on unenriched profiles. Brands that hit the segmentation flywheel typically see a 2-4× lift on the enriched cohort.
+- **Email RPR on quiz-enriched profiles** vs RPR on unenriched profiles. Brands that hit the segmentation flywheel typically see a 2-4x lift on the enriched cohort.
 - **90-day repeat-purchase rate** on quiz-attributed customers vs baseline. The single best indicator that your retention stage is working.
 
 The first four are easy to set up. The fifth requires patience (90 days) but is the metric that proves whether the funnel is actually compounding. For the boundary between quiz analytics and your other measurement systems, see [how quiz analytics compares to GA4 and the Meta pixel](https://revenuehunt.com/shopify-quiz-analytics-vs-ga4-meta-pixel/).

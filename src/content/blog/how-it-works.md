@@ -19,6 +19,28 @@ draft: false
 
 The RevenueHunt product recommendation quiz asks shoppers three to seven diagnostic questions, then delivers a personalised set of product recommendations on a results page with rationale per pick. Each answer syncs to your ESP and ad platform as a custom property, so the same data powers segmented email, ads and on-site personalisation downstream.
 
+<div class="not-prose my-10 rounded-2xl p-8 sm:p-10 shadow-2xl ring-1 ring-white/10" style="background:#16161D;">
+  <p class="text-[11px] font-semibold uppercase tracking-[0.18em] mb-8" style="color:#5AB2FF;">Benchmarked across 45M+ quiz responses</p>
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-6 sm:divide-x sm:divide-white/10">
+    <div class="sm:pr-6">
+      <p class="text-5xl sm:text-6xl font-bold tracking-tight leading-none" style="color:#5AB2FF;">5.5<span class="text-3xl sm:text-4xl">%</span></p>
+      <p class="text-[11px] font-semibold uppercase tracking-widest mt-3" style="color:#F5F7FA;">quiz-taker conversion</p>
+      <p class="text-sm mt-3 leading-relaxed" style="color:#A7AFBF;">Shoppers who complete a quiz order at 5.5% (1 in 18), roughly 2.75x a typical ~2% store-wide average.</p>
+    </div>
+    <div class="sm:px-6">
+      <p class="text-5xl sm:text-6xl font-bold tracking-tight leading-none" style="color:#5AB2FF;">69<span class="text-3xl sm:text-4xl">%</span></p>
+      <p class="text-[11px] font-semibold uppercase tracking-widest mt-3" style="color:#F5F7FA;">finish the quiz</p>
+      <p class="text-sm mt-3 leading-relaxed" style="color:#A7AFBF;">More than two thirds of shoppers who start a quiz answer every question through to the results page.</p>
+    </div>
+    <div class="sm:pl-6">
+      <p class="text-5xl sm:text-6xl font-bold tracking-tight leading-none" style="color:#5AB2FF;">$370M<span class="text-3xl sm:text-4xl">+</span></p>
+      <p class="text-[11px] font-semibold uppercase tracking-widest mt-3" style="color:#F5F7FA;">merchant revenue</p>
+      <p class="text-sm mt-3 leading-relaxed" style="color:#A7AFBF;">Generated across 20,000+ ecommerce stores running product recommendation quizzes.</p>
+    </div>
+  </div>
+  <p class="text-xs mt-8" style="color:#6B7384;">Source: <a href="https://revenuehunt.com/state-of-product-recommendation-quizzes/" class="underline" style="color:#A7AFBF;">The state of product recommendation quizzes</a>, RevenueHunt's 2026 benchmark report.</p>
+</div>
+
 ## The problem: 98% of eCommerce visitors don't buy
 
 You're the owner or marketing manager of an eCommerce store, so this problem will be familiar to you. You've **invested a great amount of time and money in driving traffic to your website**. You've got a considerable following on social media, you've done content marketing, narrowed your Facebook Ads to target the ideal buyer persona, but still less than 2% of your visitors end up buying.
@@ -51,15 +73,25 @@ The app **engages your customer just like a salesperson would**. First the quiz 
 
 In the meantime, the app provides personalised feedback and tips. Once the quiz is complete, the app gives personalised product recommendations along with a story around why the recommended products are perfect for that shopper.
 
-![Product recommendation quiz first question on a Shopify store](/img/blog/how-it-works/how_it_works_example1.webp)
+<img src="/img/blog/how-it-works/how_it_works_example1.webp" alt="Product recommendation quiz first question on a Shopify store" width="1423" height="919" loading="lazy" decoding="async">
 
-![Product recommendation quiz follow-up questions adapting to the shopper's answer](/img/blog/how-it-works/how_it_works_example2.webp)
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;The quiz opens with broad questions, just like a salesperson would.</p>
 
-_Personalise the questions you ask to guide your customers throughout their shopping experience._
+<img src="/img/blog/how-it-works/how_it_works_example2.webp" alt="Product recommendation quiz follow-up questions adapting to the shopper's answer" width="1429" height="855" loading="lazy" decoding="async">
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 02</span> &nbsp;Personalise the questions you ask to guide your customers throughout their shopping experience.</p>
 
 Check out a demo version to see how it works:
 
 [View live example](https://productrecommendationquiz.com/ "View live example")
+
+### The results page
+
+This is the payoff. When the quiz finishes, the shopper lands on a personalised results page that presents the products matched to their answers, each with a short rationale explaining why it fits their needs. From there they can add a single product or the entire recommended set to cart in one click. You can group picks into slots to present a complete routine or bundle, surface cross-sells and badges, and let shoppers swap variants before checkout, all without leaving the page. Undecided shoppers can have their results emailed to them and pick up where they left off later.
+
+<img src="/img/blog/how-it-works/how_it_works_example12.webp" alt="Personalised results page showing recommended products grouped into a skincare routine" width="1557" height="930" loading="lazy" decoding="async">
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;The results page presents the matched products with a rationale per pick, grouped into a complete routine the shopper can add to cart in one click.</p>
 
 ### Customising the quiz to your specific needs
 
@@ -73,9 +105,9 @@ The app lets you customise multiple aspects of the quiz. With the **easy-to-use 
 - Add a background image to your quiz
 - Add custom CSS code to your design
 
-![Quiz design editor showing font, colour and background options](/img/blog/how-it-works/how_it_works_example4.webp)
+<img src="/img/blog/how-it-works/how_it_works_example4.webp" alt="Quiz design editor showing font, colour and background options" width="1431" height="871" loading="lazy" decoding="async">
 
-_Customise the quiz's design to match your eCommerce's look and feel._
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 04</span> &nbsp;Customise the quiz's design to match your eCommerce's look and feel.</p>
 
 [Get started](https://revenuehunt.com/product-recommendation-quiz/ "Book a demo")
 
@@ -83,65 +115,63 @@ _Customise the quiz's design to match your eCommerce's look and feel._
 
 **Quiz Copilot.** A smart AI assistant that can build and adapt the quiz for you in seconds from a single prompt.
 
-![Quiz Copilot AI assistant building a quiz from a prompt](/img/blog/how-it-works/how_it_works_example13.webp)
+<img src="/img/blog/how-it-works/how_it_works_example13.webp" alt="Quiz Copilot AI assistant building a quiz from a prompt" width="1388" height="821" loading="lazy" decoding="async">
 
-_Quiz Copilot assists you in any step of the quiz-building journey: from drafting to publishing._
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 05</span> &nbsp;Quiz Copilot assists you in any step of the quiz-building journey: from drafting to publishing.</p>
 
-**Plug and play.** Easy to install and configure. No coding required. Sell more effectively within days, not weeks. Choose between multiple display modes (link popup, inline quiz, automatic popup, chat icon).
+**Plug and play.** Easy to install and configure. No coding required. Sell more effectively within days, not weeks. Choose the display mode that fits where shoppers engage: an inline section on landing, collection or blog pages, a popup on exit intent or a time delay, a chat-style launcher on product pages, or a standalone link for email, social and cold ad traffic.
 
-![Quiz embed options inside the Shopify theme editor](/img/blog/how-it-works/how_it_works_example5.webp)
+<img src="/img/blog/how-it-works/how_it_works_example5.webp" alt="Quiz embed options inside the Shopify theme editor" width="1607" height="900" loading="lazy" decoding="async">
 
-_Easy to install: embed it directly from your theme._
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 06</span> &nbsp;Easy to install: embed it directly from your theme.</p>
 
 **Conditional logic.** This feature lets you display different questions based on your customer's previous answers. With conditional logic you can define rules that automatically skip irrelevant questions, leading to higher quiz completion rates, more conversions and more sales.
 
-![Conditional logic rules skipping irrelevant questions based on previous answers](/img/blog/how-it-works/how_it_works_example6.webp)
+<img src="/img/blog/how-it-works/how_it_works_example6.webp" alt="Conditional logic rules skipping irrelevant questions based on previous answers" width="1333" height="800" loading="lazy" decoding="async">
 
-_Set conditional rules to skip irrelevant questions._
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 07</span> &nbsp;Set conditional rules to skip irrelevant questions.</p>
 
-**Product category slots.** There are many product categories you might want to recommend simultaneously. This feature is useful if you want to recommend product bundles. For example, if you're a cosmetics store you might want to recommend a complete skincare routine (cleanser, toner, serum, moisturiser…).
-
-![Product category slots grouping recommendations into a skincare routine](/img/blog/how-it-works/how_it_works_example12.webp)
-
-_Slots allow you to [group product recommendations into different categories](https://revenuehunt.com/faqs/how-to-recommend-a-skincare-routine-with-slots/)._
+**Product category slots.** There are many product categories you might want to recommend simultaneously. This feature is useful if you want to recommend product bundles. For example, if you're a cosmetics store you might want to recommend a complete skincare routine (cleanser, toner, serum, moisturiser…) on the results page, as shown in Fig. 03. Slots let you [group product recommendations into different categories](https://revenuehunt.com/faqs/how-to-recommend-a-skincare-routine-with-slots/).
 
 **Lead capture.** Incentivise customers to leave their contact details (email or phone number) in exchange for a discount on their purchase, so you can follow up or retarget them with ads. For the consent mechanics, see [how to ask for marketing consent inside a quiz](/product-quiz-marketing-consent/).
 
-![Email lead capture step inside the quiz flow](/img/blog/how-it-works/how_it_works_example8.webp)
+<img src="/img/blog/how-it-works/how_it_works_example8.webp" alt="Email lead capture step inside the quiz flow" width="1219" height="757" loading="lazy" decoding="async">
 
-_Optionally, set up your quiz to capture leads and retarget your customers._
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 08</span> &nbsp;Optionally, set up your quiz to capture leads and retarget your customers.</p>
 
 **Email notifications.** Receive an email every time a potential customer leaves their contact details so you can follow up. The customer also [receives a personalised email](https://revenuehunt.com/faqs/sending-results-to-customers-email/) with their results in their inbox. They can come back to the quiz later to finish the purchase if they haven't made up their mind yet.
 
-![Sample personalised email delivered to a shopper after completing the quiz](/img/blog/how-it-works/how_it_works_example15.webp)
+<img src="/img/blog/how-it-works/how_it_works_example15.webp" alt="Sample personalised email delivered to a shopper after completing the quiz" width="1575" height="1000" loading="lazy" decoding="async">
+
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 09</span> &nbsp;Shoppers receive a personalised email with their results so they can return to finish the purchase.</p>
 
 **Integrations for retargeting.** Send captured leads automatically to Klaviyo, Omnisend, HubSpot, Mailchimp, or connect to any other mailing list via Zapier. See the full list of [integrations](https://revenuehunt.com/integrations/). For the activation side, see [how Klaviyo segmentation unlocks once zero-party data lands in profiles](https://revenuehunt.com/klaviyo-zero-party-data/).
 
-![Native integration settings panel for Klaviyo, Omnisend, Mailchimp and HubSpot](/img/blog/how-it-works/how_it_works_example9.webp)
+<img src="/img/blog/how-it-works/how_it_works_example9.webp" alt="Native integration settings panel for Klaviyo, Omnisend, Mailchimp and HubSpot" width="975" height="1029" loading="lazy" decoding="async">
 
-_Automate your workflow by sending quiz results directly to your CRM._
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 10</span> &nbsp;Automate your workflow by sending quiz results directly to your CRM.</p>
 
 **Actionable insights.** Through [quiz metrics](https://revenuehunt.com/faqs/understanding-quiz-metrics/) and [integrations](https://revenuehunt.com/integrations/) like Google Analytics and Meta Pixel, gain insights into consumer behaviour and product preferences to drive conversions and profitability. For the boundary between in-app analytics and your other systems, see [how quiz analytics compares to GA4 and the Meta pixel](https://revenuehunt.com/shopify-quiz-analytics-vs-ga4-meta-pixel/).
 
-![Quiz performance metrics dashboard inside the RevenueHunt app](/img/blog/how-it-works/how_it_works_example11.webp)
+<img src="/img/blog/how-it-works/how_it_works_example11.webp" alt="Quiz performance metrics dashboard inside the RevenueHunt app" width="1027" height="839" loading="lazy" decoding="async">
 
-_Check quiz performance directly in the app._
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 11</span> &nbsp;Check quiz performance directly in the app.</p>
 
 ## Case studies
 
 The RevenueHunt app powers product discovery across many eCommerce stores. Across categories, stores using product recommendation quizzes routinely report:
 
-- **Conversion rate lifts** from ~2% to **5%+**
-- **AOV up** by ~**20%** with routines and bundles
-- **More qualified email growth** (higher open and click rates)
+- **Conversion rate lifts** from a typical ~2% storewide baseline into the **5%+** range for quiz takers
+- **Higher AOV** from routines and bundles (the anti-aging brand below saw a **42.64% AOV lift**)
+- **More qualified email growth** (zero-party data drives higher open and click rates)
 
-Explore our [customer stories](https://revenuehunt.com/blog/) and [testimonials](https://revenuehunt.com/testimonials/) to see how brands like yours use guided selling to grow faster.
+These are directional ranges, not guarantees; outcomes depend on traffic quality, product fit and how the quiz is set up. The case studies below show real, attributed numbers. Explore our [customer stories](https://revenuehunt.com/blog/) and [testimonials](https://revenuehunt.com/testimonials/) to see how brands like yours use guided selling to grow faster.
 
 A few stories worth reading first:
 
 - [How a US anti-aging device brand achieved 42.64% AOV lift and $691K in 90 days](https://revenuehunt.com/anti-aging-beauty-brand-quiz-funnel-case-study/)
 - [Extreme Kids World case study: quiz-driven discovery for high-energy families](/extreme-kids-world-case-study/)
-- [Daughterela case study: quiz-driven personalisation for natural beauty](https://revenuehunt.com/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/)
+- [Skinology case study: AI plus dermatologist personalisation with a repurchase quiz on RevenueHunt](/skinology-case-study/)
 
 For 11 funnel examples across the broader DTC market, see our [11 ecommerce sales funnel examples](https://revenuehunt.com/ecommerce-sales-funnel-examples/) roundup.
 
@@ -151,14 +181,37 @@ For 11 funnel examples across the broader DTC market, see our [11 ecommerce sale
 2. **Connect.** Map answers to products, variants or collections. Configure bundles and slots to recommend full routines or sets.
 3. **Publish.** Embed inline, trigger as a popup, or link from menus and ads. GA4 and Meta Pixel tracking works out of the box.
 
-## Flexible embed options
+Start on the free plan, no credit card required. It runs a fully functional quiz with the core features; upgrade only when you outgrow the monthly response limit, and you keep all your data when you do.
 
-Bring your quiz wherever shoppers engage most:
-
-- Inline section on landing, collection, or blog pages
-- Popup / modal on exit intent, time delay, or button click
-- Chat-style launcher for persistent discovery on PDPs
-- Standalone link for email, social or ads (great for cold traffic)
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to set up a product recommendation quiz",
+  "description": "Build, connect and publish a RevenueHunt product recommendation quiz on Shopify or WooCommerce in three steps.",
+  "totalTime": "PT15M",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Create",
+      "text": "Pick a template (skincare, size, gifting, nutrition) and tailor 5-8 high-intent questions with conditional logic."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Connect",
+      "text": "Map answers to products, variants or collections. Configure bundles and slots to recommend full routines or sets."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Publish",
+      "text": "Embed inline, trigger as a popup, or link from menus and ads. GA4 and Meta Pixel tracking works out of the box."
+    }
+  ]
+}
+</script>
 
 ## Performance and compliance
 
@@ -179,9 +232,13 @@ Modern stores demand both speed and trust. The quiz is engineered for **Core Web
 
 ## Integrations
 
-- **Analytics and ads.** Google Analytics (GA4) and Meta Pixel; events like `quiz_started`, `question_viewed`, `results_viewed`, `recommended_add_to_cart` for attribution and retargeting.
-- **ESP / CRM.** Klaviyo, Omnisend, Mailchimp, HubSpot; sync profiles, quiz answers and recommended products to trigger segmented flows.
-- **Automation.** Zapier and webhooks; push responses to your data warehouse, CDP or internal tools.
+The quiz is only as valuable as what you do with the data afterwards. Every answer is captured as zero-party data and pushed to the tools you already run, so the same responses power email, ads, analytics and automation.
+
+- **ESP / CRM.** Klaviyo, Omnisend, Mailchimp and HubSpot. Sync customer profiles, quiz answers and recommended products to trigger segmented flows like personalised welcome series, abandoned-quiz reminders and replenishment campaigns.
+- **Analytics and ads.** Google Analytics (GA4) and Meta Pixel. Events such as `quiz_started`, `question_viewed`, `results_viewed` and `recommended_add_to_cart` fire automatically for attribution, audience building and campaign optimisation.
+- **Automation.** Zapier and webhooks. Push responses to any data warehouse, CDP or internal tool to keep your stack in sync, with no engineering work required.
+
+See the full list of [integrations](https://revenuehunt.com/integrations/), or read how [Klaviyo segmentation unlocks once zero-party data lands in profiles](https://revenuehunt.com/klaviyo-zero-party-data/).
 
 ## Frequently asked questions
 
@@ -195,7 +252,7 @@ Modern stores demand both speed and trust. The quiz is engineered for **Core Web
       "name": "How do I build a product quiz in Shopify?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Install the app, pick a template, add your questions, and link choices to products or collections. Publish as an inline section, popup, or embed. No code required — most merchants launch in under 15 minutes."
+        "text": "Install the app, pick a template, add your questions, and link choices to products or collections. Publish as an inline section, popup, or embed. No code required, and most merchants launch in under 15 minutes."
       }
     },
     {
@@ -253,7 +310,7 @@ Modern stores demand both speed and trust. The quiz is engineered for **Core Web
 <details>
 <summary><strong>How do I build a product quiz in Shopify?</strong></summary>
 
-Install the app, pick a template, add your questions, and link choices to products or collections. Publish as an inline section, popup, or embed. No code required — most merchants launch in under 15 minutes.
+Install the app, pick a template, add your questions, and link choices to products or collections. Publish as an inline section, popup, or embed. No code required, and most merchants launch in under 15 minutes.
 </details>
 
 <details>

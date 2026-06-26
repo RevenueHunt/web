@@ -110,7 +110,7 @@ A shopper who answers "curly, dry scalp, frizz, colour-treated" finishes with fo
 
 ### Step 4, connect Klaviyo
 
-In RevenueHunt's Integrations tab, connect Klaviyo with one-click OAuth (no Zapier, no middleware). Map each quiz question to a Klaviyo profile property (`hair_type`, `scalp`, `concern`, `wash_frequency`, `goal`, `color_treated`) and switch on customer-tag sync so the tags from Step 3 land on the profile too.
+In RevenueHunt's Integrations tab, connect Klaviyo with one-click OAuth (no Zapier, no middleware) and turn on profile sync. That is the whole setup. From then on, every quiz completion automatically forwards the shopper's contact details, all of their answers, the customer tags from Step 3 and the recommended products to their Klaviyo profile as custom properties. There is no per-question mapping to configure: RevenueHunt creates the properties for you (each answer lands as its own custom property, and the tags arrive on the profile too), ready to use in templates and flow filters.
 
 ### Step 5, watch responses land in Klaviyo
 

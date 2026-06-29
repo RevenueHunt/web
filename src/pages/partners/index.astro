@@ -20,7 +20,6 @@ const groups: { heading: string; emoji: string; intro: string; items: Partner[] 
     intro: "Sell across borders with geolocation, translation, and multi-currency built in.",
     items: [
       { name: "Orbe Shopify Geolocation", url: "https://apps.shopify.com/orbe?utm_source=RevenueHunt&utm_medium=partnership", logo: "/img/pages/partners/orbe-removebg-preview.webp", description: "Maximize global sales with advanced Shopify geolocation. Customize products, prices, currency, and content for every country and guide customers to the right shopping experience with Orbe." },
-      { name: "Langwill: Language Translate", url: "https://apps.shopify.com/localiser?utm_source=RevenueHunt&utm_medium=partnership", logo: "/img/pages/partners/1.webp", description: "Expand your global reach with Langwill - translate your Shopify store into 138 languages and auto-convert currencies for a seamless, localized shopping experience." },
     ],
   },
   {
@@ -29,7 +28,6 @@ const groups: { heading: string; emoji: string; intro: string; items: Partner[] 
     intro: "Customer account tools that make self-service and support effortless.",
     items: [
       { name: "Dondy WhatsApp Marketing & Chat", url: "https://apps.shopify.com/dondy-marketing-ai?utm_source=RevenueHunt&utm_medium=partnership", logo: "/img/pages/partners/dondy-logo.webp", description: "Turn lost traffic into revenue with automated WhatsApp flows for recovery, confirmation, and retention — plus an AI agent that handles customer support, so your team doesn't have to." },
-      { name: "Customer Dashboard Pro", url: "https://apps.shopify.com/customer-dashboard-pro?utm_source=RevenueHunt&utm_medium=partnership", logo: "/img/pages/partners/CustomerDashboard.webp", description: "Customer Dashboard Pro is the only app offering seamless support for both Shopify New Customer Accounts and Classic Customer Accounts." },
     ],
   },
   {
@@ -40,7 +38,6 @@ const groups: { heading: string; emoji: string; intro: string; items: Partner[] 
       { name: "Smart Size Chart & Fit Finder", url: "https://smartsize.io/?utm_source=RevenueHunt&utm_medium=partnership", logo: "/img/pages/partners/smartsize-logo.webp", description: "Create AI-powered size charts, size guides, and 'find my size' fit quizzes in minutes - cut sizing questions and returns while lifting conversion." },
       { name: "WC Wishlist Club", url: "https://apps.shopify.com/wishlist-club?utm_source=RevenueHunt&utm_medium=partnership&utm_campaign=partnership", logo: "/img/pages/partners/wishlist-club-150-150-px-logo.webp", description: "WC Wishlist Club lets your customers save their favorite products, share wishlists, and shop later - boosting engagement and sales. Easy to set up, mobile-friendly, and perfect for turning browsers into loyal buyers." },
       { name: "iCart Cart Drawer Cart Upsell", url: "https://apps.shopify.com/icart/?campaign=promotion&medium=in-app-banner&source=revenuehunt&utm_source=RevenueHunt&utm_medium=partnership", logo: "/img/pages/partners/iCart-Cart-Drawer-Cart-Upsell-logo.webp", description: "All-in-one Shopify app to customize a cart drawer and full cart page with upsell, product recommendations, progress bar, product bundle, and discounts." },
-      { name: "PreOrder Now WOD", url: "https://apps.shopify.com/preorder-now?utm_source=RevenueHunt&utm_medium=partnership&utm_campaign=partner&utm_id=crosspromo", logo: "/img/pages/partners/PreOrder-Now-Logo.webp", description: "Transform out-of-stock scenarios into pre-order opportunities. Perfect for print-on-demand businesses - capture customer interest without initial stock." },
     ],
   },
   {
@@ -57,7 +54,6 @@ const groups: { heading: string; emoji: string; intro: string; items: Partner[] 
     emoji: "📣",
     intro: "Social proof, affiliate programs, and on-site campaigns that drive sales.",
     items: [
-      { name: "ToastiBar – Sales Popup", url: "https://makeprosimp.com/partnership/revenuehunt", logo: "/img/pages/partners/toastibarlogo_fgaiv9.webp", description: "Increase customer trust and boost sales by showcasing real-time social proof: sales, cart, visitors, product reviews, and inventory alerts." },
       { name: "UpPromote: Affiliate & Referral", url: "https://partners.secomapp.com/apps/affiliate/SHOPQUIZ_APP", logo: "/img/pages/partners/NEW_logo-1.webp", description: "UpPromote is the top recommended affiliate/referral app on the Shopify App Store. All-in-one solution to build and manage your marketing campaigns, suitable for any business size." },
     ],
   },
@@ -75,16 +71,7 @@ const groups: { heading: string; emoji: string; intro: string; items: Partner[] 
     emoji: "📊",
     intro: "SEO insights and order data to measure what works and report on it.",
     items: [
-      { name: "PDF Invoice Generator", url: "https://apps.shopify.com/fordeer-invoice-order-printer?utm_source=RevenueHunt&utm_medium=partnership&utm_campaign=partner", logo: "/img/pages/partners/fordeer-data-export-1024x1024.webp", description: "Fordeer's Shopify invoice generator is flexible, globally compliant, and caters to B2C, B2B, and Wholesale. Customizable PDF templates, batch print, 24/7 live chat support." },
       { name: "AI SEO Optimizer", url: "https://share.seoant.com/app/1165b75b7ce1524D5J", logo: "/img/pages/partners/SEOAnt-_-AI-SEO-Optimizer_Channelwill-.webp", description: "Best SEO app for Shopify - optimize keywords, enhance meta tags, and improve site structure. AI-powered SEO performance and speed checks." },
-    ],
-  },
-  {
-    heading: "Store design & themes",
-    emoji: "🎨",
-    intro: "Premium Shopify themes built to convert and make your storefront shine.",
-    items: [
-      { name: "eComX", url: "https://ecomx.co/?utm_source=RevenueHunt&utm_medium=partnership", logo: "/img/pages/partners/ecomx-logo.webp", description: "eComX builds premium Shopify themes engineered to convert. Pick from 16+ niche-specific designs, tuned with real conversion data and built for speed, to turn more browsers into buyers." },
     ],
   },
 ];
@@ -190,7 +177,7 @@ const jsonLd = [
           <p class="max-w-3xl text-slate-600">{g.intro}</p>
           <ul class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {g.items.map((p) => (
-        <PartnerCard {...p} alt={`${p.name} logo`} cta={g.heading === "Store design & themes" ? "Visit site" : "Install app"} />
+        <PartnerCard {...p} alt={`${p.name} logo`} cta="Install app" />
             ))}
           </ul>
         </div>

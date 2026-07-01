@@ -147,21 +147,23 @@ If you're evaluating a quiz on on-site conversion lift alone, you're measuring t
 
 ### The data-capture instrument
 
-A product recommendation quiz built with [RevenueHunt](/product-recommendation-quiz-shopify/) asks 3-7 diagnostic questions. Each question captures a specific data point that maps directly to a Klaviyo custom property. The mapping is defined by you: you control the property names, value structures, and schema alignment.
+A product recommendation quiz built with [RevenueHunt](/product-recommendation-quiz-shopify/) asks 3-7 diagnostic questions. As you build it, the one thing you name is a **customer tag** on each answer choice, the label you'll segment on later. You never touch a field-mapping screen: on completion, RevenueHunt writes every answer, tag and recommended product to the Klaviyo profile as custom properties automatically.
 
-| Quiz question | Klaviyo property | Example value |
+| Quiz question | Answer | Customer tag you define |
 |---|---|---|
-| What's your skin type? | `quiz_skin_type` | `"oily"` |
-| What's your primary concern? | `quiz_primary_concern` | `"acne"` |
-| What's your age range? | `quiz_age_range` | `"25-34"` |
-| Shopping for yourself or a gift? | `quiz_shopping_for` | `"self"` |
-| What's your budget? | `quiz_budget` | `"$50-100"` |
+| What's your skin type? | Oily | `Oily` |
+| What's your primary concern? | Acne | `Acne` |
+| What's your age range? | 25-34 | `25-34` |
+| Shopping for yourself or a gift? | A gift | `Gift` |
+| What's your budget? | $50-100 | `$50-100` |
+
+Under the hood, RevenueHunt creates the Klaviyo properties for you on the first sync: `ANSWER_BY_BLOCK` (the answers), `RECOMMENDATIONS_BY_SLOT` (the products it recommended), `QUIZ_NAME`, and a `TAGS` property carrying the tags above. You segment and filter flows on those; you never name a property by hand.
 
 ### The native sync: the word that changes everything
 
 RevenueHunt syncs these properties directly to Klaviyo profiles via **native integration**. No Zapier or webhooks you maintain. No CSV imports on a schedule and no middleware that introduces lag, breaks silently, or requires a separate subscription.
 
-When a customer completes the quiz, their Klaviyo profile is enriched in real time with every answer they provided. The native Klaviyo integration connects via one-click OAuth during RevenueHunt setup. Data flows immediately after connection. This is the direct answer to every broken-integration story you've accumulated.
+Connecting takes one screen. In the quiz's **Integrations** tab, click **Connect** on the Klaviyo card, authorise through Klaviyo's OAuth login, and the sync is live for that quiz (toggle it on for the others). Point the quiz's email block at a single opt-in Klaviyo list and set the subscription status, so completions land subscribed with consent captured at submission. From then on, every completion enriches the matching profile (matched on email) in real time, and if a customer retakes the quiz the profile updates again. The full walkthrough, including the downloadable email template, is in the [send leads to Klaviyo guide](https://docs.revenuehunt.com/how-to-guides/send-leads-to-klaviyo/). This is the direct answer to every broken-integration story you've accumulated.
 
 ### The segment unlock
 
@@ -181,6 +183,8 @@ With these properties in place, the flows you've wanted to build become buildabl
 - **Win-back flow.** References the customer's original quiz answers. "Still struggling with oily skin? Here's what's new since your last purchase." Personalisation grounded in what the customer told you, not what an algorithm inferred.
 - **Dynamic campaign content.** Content blocks that swap product images and copy based on `quiz_skin_type`. One email template, five personalised versions, the same send volume but exponentially more relevant.
 
+These are exactly the flows the [post-quiz follow-up playbook](/quiz-follow-up-emails/) breaks down end to end: one universal results email plus five behaviour-triggered flows (cart abandonment, browse abandonment, replenishment, cross-sell, win-back), each filtered on the same quiz tags that just landed in these profiles.
+
 ![RPR before and after quiz enrichment - same Klaviyo account, different data](/img/blog/klaviyo-zero-party-data/blog_klaviyo_graveyard_img2.webp)
 
 <p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;13% of the list, 40%+ of email revenue. The only difference was the data inside the profiles.</p>
@@ -191,7 +195,7 @@ Once the quiz is live and the native Klaviyo connection is active, the enrichmen
 
 ### Implementation: no dev ticket required
 
-You build the quiz with RevenueHunt's no-code drag-and-drop logic builder. Define the questions, map each answer to a Klaviyo custom property, connect Klaviyo via OAuth. Total setup time using an industry-specific template (Skin Type Finder, Routine Builder, Wellness Goal Matcher): **under 30 minutes.** No dev agency or ticket queue. Data flows into Klaviyo the same day.
+You build the quiz with RevenueHunt's no-code drag-and-drop logic builder. Define the questions, tag each answer, and connect Klaviyo via one-click OAuth (RevenueHunt maps the properties for you). Total setup time using an industry-specific template (Skin Type Finder, Routine Builder, Wellness Goal Matcher): **under 30 minutes.** No dev agency or ticket queue. Data flows into Klaviyo the same day.
 
 ### Before vs after: same Klaviyo account and flows, different data
 
@@ -255,21 +259,9 @@ If you're honest with yourself, 70%+ of Shopify brands sit at Stage 1 or Stage 2
 
 ## Why it failed before, and what's different this time
 
-### Generic popup tools created this problem
+If you've tried quiz-to-Klaviyo enrichment before and it didn't stick, the tool was almost always the reason. Enterprise quiz platforms bury deep Klaviyo integration behind $200+/month pricing and a development implementation, too slow and too expensive to test before you scale. Mid-tier apps advertise the integration but deliver it poorly: tags sync inconsistently, property mapping is limited, and middleware introduces lag and silent failure points. The strategy didn't fail. The implementation did.
 
-Generic popup tools are excellent at one thing: capturing email addresses at volume. They are structurally incapable of capturing preference context, designed to minimise friction by asking as few questions as possible. The graveyard in your Klaviyo account is largely their creation. They filled it with volume. The job now is to fill it with intelligence.
-
-### Enterprise platforms are gated behind complexity and cost
-
-High-end quiz platforms that offer deep Klaviyo integrations carry enterprise pricing (often $200+ per month for basic functionality) and require development implementation. For the retention marketer who needs to move quickly and test before scaling, the enterprise path is too slow and too expensive.
-
-### Basic quiz tools fail at the integration layer
-
-Mid-tier quiz apps advertise Klaviyo integration but deliver it poorly. Tags sync inconsistently and custom property mapping is limited. Middleware requirements introduce lag and failure points. The Klaviyo enrichment strategy fails not because the idea is wrong, but because the implementation is insufficient.
-
-### The differentiator
-
-The differentiator is not the quiz. It's the **native Klaviyo integration**: one-click OAuth connection, real-time property sync, no middleware, exact property mapping you define, reliable data flow that doesn't require you to check it weekly.
+The differentiator is not the quiz. It's the **native Klaviyo integration**: one-click OAuth, real-time sync, no middleware, the answers and customer tags landing on the profile automatically, and a data flow reliable enough that you don't check it weekly.
 
 ## Case at a glance
 
@@ -305,6 +297,7 @@ Yes. The mechanics are identical: quiz answers map to platform-native custom pro
 
 ## Next steps
 
+- Build the emails on top: the [post-quiz follow-up playbook](/quiz-follow-up-emails/) (one universal results email plus five lifecycle flows that compound the enriched profiles into repeat revenue).
 - See the underlying mechanics in a real Shopify funnel: the [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) (9.8% CVR, $691K in 90 days, every answer synced to Klaviyo).
 - Place this in strategic context: [where Klaviyo activation fits in the retention pillar](/customer-retention-ecommerce-guide/) (the 10 strategies that compound LTV).
 - Read the pillar argument on capture format: [why popups are walls and quizzes are doors](/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/).

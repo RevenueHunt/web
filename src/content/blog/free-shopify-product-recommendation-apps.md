@@ -89,15 +89,14 @@ The 360-degree customer profile pulls behaviours, customer actions and quiz answ
 
 ## UpPromote: Affiliate & Referral
 
-[UpPromote](https://partners.secomapp.com/apps/affiliate/SHOPQUIZ_APP) is one of the most-installed affiliate and referral apps on the Shopify App Store. It lets you build, manage and track affiliate or referral programs from a single dashboard.
+[UpPromote](https://partners.secomapp.com/apps/affiliate/SHOPQUIZ_APP) is one of the most-installed affiliate and referral apps on the Shopify App Store, with a 4.9-star rating from over 3,400 reviews. You run affiliate, influencer and customer referral programs from a single dashboard, and there's a genuine free plan.
 
-UpPromote works for stores of every size, with plans from FREE through to enterprise. Key features:
+**Top features:**
 
-- **Easy setup.** Detailed onboarding flow with auto-generated affiliate links, coupons and approval workflows.
-- **Customisable registration form.** Build different affiliate programs with different commission offers.
-- **Real-time campaign tracking.** Track referral orders and affiliate performance through reliable reporting.
-- **Affiliate recruitment.** Free listing on the [UpPromote Marketplace](https://marketplace.uppromote.com/market-place?utm_source=uppromote_blog&utm_medium=bfcm_article&utm_campaign=bfcm_article) plus multi-level marketing support.
-- **Customer referrals.** Customers can refer products to friends and family and earn a commission.
+- Run several programs at once, each with its own commission rules for influencers, bloggers or repeat buyers
+- Percentage or flat-rate rewards, first-order bonuses, gifts, store credit or performance tiers
+- Recruit affiliates through a free Marketplace listing, customer referrals and multi-level recruiting
+- Pay affiliates via PayPal, Wise or store credit, with approvals and tracking built in
 
 <div class="app-card">
   <img class="app-card__logo" width="72" height="72" decoding="async" src="/img/blog/free-shopify-product-recommendation-apps/NEW_logo-1.webp" alt="UpPromote app logo" loading="lazy" />

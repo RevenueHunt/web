@@ -87,7 +87,7 @@ The 360-degree customer profile pulls behaviours, customer actions and quiz answ
   </div>
 </div>
 
-## UpPromote: Affiliate & Referral
+## UpPromote Affiliate Marketing
 
 [UpPromote](https://partners.secomapp.com/apps/affiliate/SHOPQUIZ_APP) is one of the most-installed affiliate and referral apps on the Shopify App Store, with a 4.9-star rating from over 3,400 reviews. You run affiliate, influencer and customer referral programs from a single dashboard, and there's a genuine free plan.
 
@@ -101,7 +101,7 @@ The 360-degree customer profile pulls behaviours, customer actions and quiz answ
 <div class="app-card">
   <img class="app-card__logo" width="72" height="72" decoding="async" src="/img/blog/free-shopify-product-recommendation-apps/NEW_logo-1.webp" alt="UpPromote app logo" loading="lazy" />
   <div class="app-card__body">
-    <h3 class="app-card__title">UpPromote: Affiliate & Referral</h3>
+    <h3 class="app-card__title">UpPromote Affiliate Marketing</h3>
     <p class="app-card__tag">Affiliate programs, referral programs, loyalty and rewards.</p>
     <dl class="app-card__meta">
       <dt>Category</dt><dd>Affiliate &amp; referral</dd>
@@ -318,7 +318,7 @@ They can if the widgets are heavy or poorly placed, so keep them minimal and the
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "RevenueHunt: Recommender Quiz", "description": "Product recommendation quiz that routes shoppers to the right product and syncs answers to Klaviyo. Free plan covers 100 quiz completions per month. Best for conversion on cold traffic."},
     {"@type": "ListItem", "position": 2, "name": "Klaviyo: Email Marketing", "description": "Email and SMS automation that uses quiz answers as custom properties for segmented retention flows. Free to install, up to 250 emails per month."},
-    {"@type": "ListItem", "position": 3, "name": "UpPromote: Affiliate & Referral", "description": "Build and track affiliate and referral programs from one dashboard. Free plan available. Best for affiliate-driven growth."},
+    {"@type": "ListItem", "position": 3, "name": "UpPromote Affiliate Marketing", "description": "Build and track affiliate and referral programs from one dashboard. Free plan available. Best for affiliate-driven growth."},
     {"@type": "ListItem", "position": 4, "name": "Amplify (PickyStory)", "description": "Curated bundles and product kits with optional bundle discounts to lift AOV. Free 14-day trial only, then paid."},
     {"@type": "ListItem", "position": 5, "name": "Wiser: Personalised Recommendations", "description": "Upsell and cross-sell widgets across product, cart, thank-you and email surfaces. Free until Wiser-generated sales exceed $50 per month."},
     {"@type": "ListItem", "position": 6, "name": "ReConvert Upsell & Cross Sell", "description": "Turns the thank-you page into a post-purchase upsell surface; one-click adds routinely take 10-20%. Free plan up to 50 monthly orders."},

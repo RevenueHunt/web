@@ -286,4 +286,16 @@ const langOptions = LANGS.map((l) => ({
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeLangDropdowns();
   });
+
+  // Persist an explicit language choice so Base.astro's apex (/) auto-redirect
+  // honors it. Picking "English" links to /, where a stale rh_lang cookie would
+  // otherwise bounce the visitor straight back to their previous locale. Writing
+  // the cookie here (matching Base.astro's format) makes the pick stick.
+  document.querySelectorAll<HTMLAnchorElement>("a[data-lang]").forEach((el) => {
+    el.addEventListener("click", () => {
+      let attrs = "rh_lang=" + el.dataset.lang + "; Path=/; Max-Age=31536000; SameSite=Lax";
+      if (location.protocol === "https:") attrs += "; Secure";
+      document.cookie = attrs;
+    });
+  });
 </script>

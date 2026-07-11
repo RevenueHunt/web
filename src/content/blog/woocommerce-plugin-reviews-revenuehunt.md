@@ -1,6 +1,6 @@
 ---
-title: "WooCommerce quiz: 100 verified 5-star reviews"
-description: "100 verified WordPress.org reviews, 5.0 stars, 100% five-star. Real merchant feedback on support, customisation and ROI for the WooCommerce quiz."
+title: "WooCommerce quiz: 101 verified 5-star reviews"
+description: "101 verified WordPress.org reviews, 5.0 stars, 100% five-star. Real merchant feedback on support, customisation and ROI for the WooCommerce quiz."
 pubDate: 2024-08-22T07:18:37Z
 updatedDate: 2026-06-19T11:00:00Z
 tags:
@@ -20,13 +20,13 @@ featuredImage: "/img/blog/woocommerce-plugin-reviews-revenuehunt/blogtile_woo-re
 draft: false
 ---
 
-The RevenueHunt WooCommerce plugin (**[Quiz Builder for WooCommerce – Product Recommendations](https://wordpress.org/plugins/product-recommendation-quiz-for-ecommerce/)** on WordPress.org) is what merchants use to stand up a [quiz funnel](/glossary/quiz-funnel/) on a Woo store. It carries a perfect **5.0 stars across 100 reviews**, with every single one rating it five stars. The plugin is installed on 2,000+ active WooCommerce stores and ships with an actually-usable free plan. This article pulls direct quotes from those reviews so you can hear from the merchants rather than from us. For features, pricing and setup, see the main [WooCommerce product recommendation quiz](/product-recommendation-quiz-woocommerce/) page.
+The RevenueHunt WooCommerce plugin (**[Quiz Builder for WooCommerce – Product Recommendations](https://wordpress.org/plugins/product-recommendation-quiz-for-ecommerce/)** on WordPress.org) is what merchants use to stand up a [quiz funnel](/glossary/quiz-funnel/) on a Woo store. It carries a perfect **5.0 stars across 101 reviews**, with every single one rating it five stars. The plugin is installed on 2,000+ active WooCommerce stores and ships with an actually-usable free plan. This article pulls direct quotes from those reviews so you can hear from the merchants rather than from us. For features, pricing and setup, see the main [WooCommerce product recommendation quiz](/product-recommendation-quiz-woocommerce/) page.
 
 <div style="margin:24px 0;padding:28px 32px;background:#16161D;border-radius:8px;color:#fff;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#94a3b8;">WordPress.org plugin directory, today</p>
   <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:20px;margin-top:14px;">
     <div><p style="margin:0;font-size:32px;font-weight:800;line-height:1;color:#fbbf24;">5.0★</p><p style="margin:6px 0 0;font-size:13px;color:#cbd5e1;line-height:1.4;">average star rating across all reviews</p></div>
-    <div><p style="margin:0;font-size:32px;font-weight:800;line-height:1;color:#16a34a;">100</p><p style="margin:6px 0 0;font-size:13px;color:#cbd5e1;line-height:1.4;">verified WordPress.org merchant reviews</p></div>
+    <div><p style="margin:0;font-size:32px;font-weight:800;line-height:1;color:#16a34a;">101</p><p style="margin:6px 0 0;font-size:13px;color:#cbd5e1;line-height:1.4;">verified WordPress.org merchant reviews</p></div>
     <div><p style="margin:0;font-size:32px;font-weight:800;line-height:1;color:#16a34a;">100%</p><p style="margin:6px 0 0;font-size:13px;color:#cbd5e1;line-height:1.4;">five-star reviews (zero 4/3/2/1-star ratings)</p></div>
     <div><p style="margin:0;font-size:32px;font-weight:800;line-height:1;color:#16a34a;">2,000+</p><p style="margin:6px 0 0;font-size:13px;color:#cbd5e1;line-height:1.4;">active WooCommerce installs across 15 languages</p></div>
   </div>
@@ -55,7 +55,7 @@ You can install the RevenueHunt quiz on WooCommerce two ways: from the **[WordPr
 
 ## Why WooCommerce merchants love the plugin
 
-Six themes recur across the 100 reviews. Each is illustrated below with direct merchant quotes pulled from the WordPress.org review feed.
+Six themes recur across the 101 reviews. Each is illustrated below with direct merchant quotes pulled from the WordPress.org review feed.
 
 ### 1. Support that responds in minutes
 
@@ -181,7 +181,7 @@ You can customise the question flow, the visual design per question, the answer-
 
 ## Who installs the plugin
 
-The 100+ reviewers span the categories where guided selling produces the most lift on WooCommerce:
+The 101+ reviewers span the categories where guided selling produces the most lift on WooCommerce:
 
 - **Stores with wide product catalogues** that produce decision fatigue at the collection-page level. The quiz narrows the selection to a confident recommendation.
 - **Seasonal and promotional campaigns** that need a different recommendation flow each quarter without rebuilding the storefront.
@@ -191,7 +191,7 @@ The 100+ reviewers span the categories where guided selling produces the most li
 
 ## What's behind the 5.0 rating
 
-A perfect 5.0 across 100 reviews isn't a vanity number; it's a structural consequence of three things the plugin does that most WooCommerce quiz tools don't:
+A perfect 5.0 across 101 reviews isn't a vanity number; it's a structural consequence of three things the plugin does that most WooCommerce quiz tools don't:
 
 1. **Generous free tier.** 100 quiz responses per month with full feature access (Klaviyo integration, custom CSS, conditional logic, full Quiz Builder). Wrong-fit merchants self-select out before they leave a poor review; right-fit merchants have enough room to validate the model before paying.
 2. **Same-day support response.** Merchants name Alex, Paulina and Erik specifically in their reviews. Same-day response (often within minutes) is the norm, including across European, North American and APAC time zones.
@@ -201,7 +201,7 @@ A perfect 5.0 across 100 reviews isn't a vanity number; it's a structural conseq
 
 ### What's the current rating on the WordPress.org plugin directory?
 
-5.0 stars across 100 verified reviews, with **100% of reviews rating five stars** (zero 4/3/2/1-star reviews at the time of writing). The plugin is installed on 2,000+ active WooCommerce stores.
+5.0 stars across 101 verified reviews, with **100% of reviews rating five stars** (zero 4/3/2/1-star reviews at the time of writing). The plugin is installed on 2,000+ active WooCommerce stores.
 
 ### Should I install from WordPress.org or WooCommerce.com?
 
@@ -229,7 +229,7 @@ Three things merchants consistently name: response time in minutes (not days), r
       "name": "What's the current rating on the WordPress.org plugin directory?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "5.0 stars across 100 verified reviews, with 100% of reviews rating five stars (zero 4/3/2/1-star reviews at the time of writing). The plugin is installed on 2,000+ active WooCommerce stores."
+        "text": "5.0 stars across 101 verified reviews, with 100% of reviews rating five stars (zero 4/3/2/1-star reviews at the time of writing). The plugin is installed on 2,000+ active WooCommerce stores."
       }
     },
     {
@@ -282,8 +282,8 @@ Three things merchants consistently name: response time in minutes (not days), r
     "ratingValue": "5.0",
     "bestRating": "5",
     "worstRating": "1",
-    "ratingCount": "100",
-    "reviewCount": "100"
+    "ratingCount": "101",
+    "reviewCount": "101"
   },
   "review": [
     {
@@ -356,7 +356,7 @@ Three things merchants consistently name: response time in minutes (not days), r
 
 ## Where this fits
 
-A 5.0-star, 100% five-star rating across 100 reviews is the structural consequence of years of iterating with WooCommerce merchants. The recurring themes across those reviews (named-by-name support, deep customisation, intuitive builder, free plan that's actually usable) are what you'd expect from a plugin built around real merchant feedback rather than every new feature trend.
+A 5.0-star, 100% five-star rating across 101 reviews is the structural consequence of years of iterating with WooCommerce merchants. The recurring themes across those reviews (named-by-name support, deep customisation, intuitive builder, free plan that's actually usable) are what you'd expect from a plugin built around real merchant feedback rather than every new feature trend.
 
 For the foundations of a high-converting quiz, see [how to build a successful product recommendation quiz](https://revenuehunt.com/how-to-build-a-successful-ecommerce-quiz/). For the customer-tag layer that powers downstream segmentation, see [how to use customer tags in product quizzes](https://revenuehunt.com/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/). For the Klaviyo integration that drives the post-quiz email sequences, see [how Klaviyo segmentation unlocks once zero-party data lands in profiles](https://revenuehunt.com/klaviyo-zero-party-data/). For deciding which questions to ask, see [the complete product quiz question types reference](https://revenuehunt.com/product-quiz-question-types/). For measuring quiz performance after launch, see [product quiz metrics: what to track to convert better](https://revenuehunt.com/product-quiz-metrics-what-to-track-to-convert-better/). For Woo stores running headless, see [product recommendation quiz for headless ecommerce](https://revenuehunt.com/headless-ecommerce-product-quiz/).
 

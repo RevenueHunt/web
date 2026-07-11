@@ -1,4 +1,5 @@
 import { SITE } from "./site";
+import { COMBINED_REVIEWS } from "./reviews";
 
 export function organization() {
   return {
@@ -11,9 +12,9 @@ export function organization() {
   };
 }
 
-// aggregateRating is the sum across every store we're listed on (Shopify 426 @4.9,
-// WordPress.org 101 @5.0, WooCommerce.com 25 @4.64, BigCommerce 6 @5.0) → 558
-// ratings, review-weighted average 4.9. Refresh when the listings move.
+// aggregateRating is the sum across every store we're listed on. Both the count and
+// the review-weighted average are derived in reviews.ts — update the per-listing
+// numbers there when the marketplaces move, never these values.
 export function softwareApplication(
   reviews?: { author: string; quote: string }[],
 ) {
@@ -33,8 +34,8 @@ export function softwareApplication(
     },
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "4.9",
-      ratingCount: "558",
+      ratingValue: COMBINED_REVIEWS.ratingValue,
+      ratingCount: COMBINED_REVIEWS.reviewCount,
     },
   };
   if (reviews?.length) {

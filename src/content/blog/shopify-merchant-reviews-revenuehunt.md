@@ -1,6 +1,6 @@
 ---
-title: "Shopify quiz: 4.9 stars across 415 reviews"
-description: "415+ Shopify reviews, 4.9 stars, 97% five-star. Real merchant testimonials on setup ease, customer support, customisation depth and revenue impact."
+title: "Shopify quiz: 4.9 stars across 434 reviews"
+description: "434+ Shopify reviews, 4.9 stars, 97% five-star. Real merchant testimonials on setup ease, customer support, customisation depth and revenue impact."
 pubDate: 2024-07-04T06:26:05Z
 updatedDate: 2026-06-22T16:00:00Z
 tags:
@@ -20,14 +20,14 @@ featuredImage: "/img/blog/shopify-merchant-reviews-revenuehunt/blogtile_reviews.
 draft: false
 ---
 
-The [RevenueHunt: Recommender Quiz for Shopify](https://apps.shopify.com/product-recommendation-quiz-revenuehunt) sits at **4.9 stars across 415+ Shopify app store reviews**, with 97% of those rating it five stars. The merchants behind those reviews are running real stores in [skincare](/solutions/skincare/), [supplements](/solutions/supplements/), [fashion](/solutions/fashion/), home, food and pet supplies, and the pattern in what they say about the [personalised product recommendations](/glossary/personalized-product-recommendations/) it produces is remarkably consistent: easy setup, exceptional support, deep customisation, and measurable revenue lift. This article pulls direct quotes from those reviews so you can hear it from the merchants rather than from us.
+The [RevenueHunt: Recommender Quiz for Shopify](https://apps.shopify.com/product-recommendation-quiz-revenuehunt) sits at **4.9 stars across 434+ Shopify app store reviews**, with 97% of those rating it five stars. The merchants behind those reviews are running real stores in [skincare](/solutions/skincare/), [supplements](/solutions/supplements/), [fashion](/solutions/fashion/), home, food and pet supplies, and the pattern in what they say about the [personalised product recommendations](/glossary/personalized-product-recommendations/) it produces is remarkably consistent: easy setup, exceptional support, deep customisation, and measurable revenue lift. This article pulls direct quotes from those reviews so you can hear it from the merchants rather than from us.
 
 <div style="margin:24px 0;padding:28px 32px;background:#16161D;border-radius:8px;color:#fff;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#94a3b8;">Shopify app store, today</p>
   <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:20px;margin-top:14px;">
     <div><p style="margin:0;font-size:32px;font-weight:800;line-height:1;color:#fbbf24;">4.9★</p><p style="margin:6px 0 0;font-size:13px;color:#cbd5e1;line-height:1.4;">average star rating across all reviews</p></div>
-    <div><p style="margin:0;font-size:32px;font-weight:800;line-height:1;color:#16a34a;">415+</p><p style="margin:6px 0 0;font-size:13px;color:#cbd5e1;line-height:1.4;">verified Shopify merchant reviews</p></div>
-    <div><p style="margin:0;font-size:32px;font-weight:800;line-height:1;color:#16a34a;">97%</p><p style="margin:6px 0 0;font-size:13px;color:#cbd5e1;line-height:1.4;">five-star ratings (402 of 415)</p></div>
+    <div><p style="margin:0;font-size:32px;font-weight:800;line-height:1;color:#16a34a;">434+</p><p style="margin:6px 0 0;font-size:13px;color:#cbd5e1;line-height:1.4;">verified Shopify merchant reviews</p></div>
+    <div><p style="margin:0;font-size:32px;font-weight:800;line-height:1;color:#16a34a;">97%</p><p style="margin:6px 0 0;font-size:13px;color:#cbd5e1;line-height:1.4;">five-star ratings (420 of 434)</p></div>
     <div><p style="margin:0;font-size:18px;font-weight:800;line-height:1.2;color:#fff;"><a href="/revenuehunt-built-for-shopify/" style="color:#fff;text-decoration:underline;">Built for Shopify</a></p><p style="margin:6px 0 0;font-size:13px;color:#cbd5e1;line-height:1.4;">certified to Shopify's highest performance and quality standards</p></div>
   </div>
 </div>
@@ -158,7 +158,7 @@ The pattern matters because most SaaS support teams treat AI and human support a
 
 ## Who's installing the app
 
-The 415+ reviewers span the categories where guided selling produces the most lift:
+The 434+ reviewers span the categories where guided selling produces the most lift:
 
 - **Beauty and skincare**: Urban Veda (UK), Plant Therapy (US), among many others. Skincare quizzes consistently produce the highest conversion lift of any vertical.
 - **Health and wellness**: Dose Mindcare (France), Mighty + Bright (US). Supplement and wellness brands lean on the quiz as a diagnostic consultation.
@@ -169,7 +169,7 @@ The 415+ reviewers span the categories where guided selling produces the most li
 
 ## What's behind the 4.9 star rating
 
-A 4.9 average across 415 reviews isn't a vanity number; it's a structural consequence of three things RevenueHunt does that most quiz apps don't:
+A 4.9 average across 434 reviews isn't a vanity number; it's a structural consequence of three things RevenueHunt does that most quiz apps don't:
 
 1. **Built for Shopify certification.** The native theme block embeds at theme speed with no iframe overhead, inherits brand styles automatically, and stays compliant with Shopify's performance and quality standards through automatic certification renewals.
 2. **Support that responds in hours, not days.** Multiple reviewers across countries and time zones consistently call out the support team's responsiveness by name (Eric is mentioned repeatedly in 2026 reviews). Most quiz apps don't see this in their review pattern.
@@ -179,7 +179,7 @@ A 4.9 average across 415 reviews isn't a vanity number; it's a structural conseq
 
 ### What's the current rating on the Shopify app store?
 
-4.9 stars across 415+ reviews, with 97% of reviews rating five stars. The breakdown is roughly 402 five-star, 5 four-star, 3 two-star and 5 one-star reviews. The app is also Built for Shopify certified, which means it has been independently reviewed by Shopify against their performance and quality standards.
+4.9 stars across 434+ reviews, with 97% of reviews rating five stars. The breakdown is 420 five-star, 5 four-star, 1 three-star, 3 two-star and 5 one-star reviews. The app is also Built for Shopify certified, which means it has been independently reviewed by Shopify against their performance and quality standards.
 
 ### Is there a free plan?
 
@@ -187,7 +187,7 @@ Yes. The free plan covers up to 100 quiz responses per month with every feature 
 
 ### How does it compare to other Shopify quiz apps?
 
-The 4.9-star / 415-review pattern is unusually consistent for the category. Most quiz apps in the Shopify app store either have fewer reviews (smaller install base), a lower average rating, or both. The Built for Shopify certification is also rare in this app category. For the head-to-head comparison framing, the consistent merchant feedback themes are: easier setup, deeper customisation, faster support, and stronger Klaviyo integration than the alternatives reviewers had used previously.
+The 4.9-star / 434-review pattern is unusually consistent for the category. Most quiz apps in the Shopify app store either have fewer reviews (smaller install base), a lower average rating, or both. The Built for Shopify certification is also rare in this app category. For the head-to-head comparison framing, the consistent merchant feedback themes are: easier setup, deeper customisation, faster support, and stronger Klaviyo integration than the alternatives reviewers had used previously.
 
 ### Is it Built for Shopify certified?
 
@@ -195,7 +195,7 @@ Yes. The app holds the Built for Shopify certification, which means Shopify has 
 
 ### Does it work for my niche?
 
-The 415+ reviewers span skincare, beauty, supplements, wellness, fashion, accessories, home, lifestyle, food, beverage and pet supplies. The pattern is that any catalogue with non-trivial customer choice complexity (where text-based filtering doesn't produce a confident recommendation) benefits. Single-SKU brands and brands with very small catalogues see less lift; brands with 20-500 SKUs in a complexity-rich category typically see the biggest lift.
+The 434+ reviewers span skincare, beauty, supplements, wellness, fashion, accessories, home, lifestyle, food, beverage and pet supplies. The pattern is that any catalogue with non-trivial customer choice complexity (where text-based filtering doesn't produce a confident recommendation) benefits. Single-SKU brands and brands with very small catalogues see less lift; brands with 20-500 SKUs in a complexity-rich category typically see the biggest lift.
 
 <script type="application/ld+json">
 {
@@ -207,7 +207,7 @@ The 415+ reviewers span skincare, beauty, supplements, wellness, fashion, access
       "name": "What's the current rating on the Shopify app store?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "4.9 stars across 415+ reviews, with 97% of reviews rating five stars. The breakdown is roughly 402 five-star, 5 four-star, 3 two-star and 5 one-star reviews. The app is also Built for Shopify certified, which means it has been independently reviewed by Shopify against their performance and quality standards."
+        "text": "4.9 stars across 434+ reviews, with 97% of reviews rating five stars. The breakdown is 420 five-star, 5 four-star, 1 three-star, 3 two-star and 5 one-star reviews. The app is also Built for Shopify certified, which means it has been independently reviewed by Shopify against their performance and quality standards."
       }
     },
     {
@@ -223,7 +223,7 @@ The 415+ reviewers span skincare, beauty, supplements, wellness, fashion, access
       "name": "How does it compare to other Shopify quiz apps?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The 4.9-star / 415-review pattern is unusually consistent for the category. Most quiz apps in the Shopify app store either have fewer reviews (smaller install base), a lower average rating, or both. The Built for Shopify certification is also rare in this app category. The consistent merchant feedback themes are easier setup, deeper customisation, faster support, and stronger Klaviyo integration than the alternatives reviewers had used previously."
+        "text": "The 4.9-star / 434-review pattern is unusually consistent for the category. Most quiz apps in the Shopify app store either have fewer reviews (smaller install base), a lower average rating, or both. The Built for Shopify certification is also rare in this app category. The consistent merchant feedback themes are easier setup, deeper customisation, faster support, and stronger Klaviyo integration than the alternatives reviewers had used previously."
       }
     },
     {
@@ -239,7 +239,7 @@ The 415+ reviewers span skincare, beauty, supplements, wellness, fashion, access
       "name": "Does the app work for my niche?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The 415+ reviewers span skincare, beauty, supplements, wellness, fashion, accessories, home, lifestyle, food, beverage and pet supplies. The pattern is that any catalogue with non-trivial customer choice complexity (where text-based filtering doesn't produce a confident recommendation) benefits. Single-SKU brands and brands with very small catalogues see less lift; brands with 20-500 SKUs in a complexity-rich category typically see the biggest lift."
+        "text": "The 434+ reviewers span skincare, beauty, supplements, wellness, fashion, accessories, home, lifestyle, food, beverage and pet supplies. The pattern is that any catalogue with non-trivial customer choice complexity (where text-based filtering doesn't produce a confident recommendation) benefits. Single-SKU brands and brands with very small catalogues see less lift; brands with 20-500 SKUs in a complexity-rich category typically see the biggest lift."
       }
     }
   ]
@@ -260,8 +260,8 @@ The 415+ reviewers span skincare, beauty, supplements, wellness, fashion, access
     "ratingValue": "4.9",
     "bestRating": "5",
     "worstRating": "1",
-    "ratingCount": "415",
-    "reviewCount": "415"
+    "ratingCount": "434",
+    "reviewCount": "434"
   },
   "review": [
     {
@@ -337,7 +337,7 @@ The 415+ reviewers span skincare, beauty, supplements, wellness, fashion, access
 
 ## Final word
 
-The 4.9-star / 415+ review pattern speaks for itself. The recurring themes across those reviews (easy setup, exceptional support, deep customisation, measurable revenue) are what you'd expect from a tool that's spent years iterating on real merchant feedback rather than chasing every new feature trend.
+The 4.9-star / 434+ review pattern speaks for itself. The recurring themes across those reviews (easy setup, exceptional support, deep customisation, measurable revenue) are what you'd expect from a tool that's spent years iterating on real merchant feedback rather than chasing every new feature trend.
 
 ![Radio Warehouse merchant review with a one-line endorsement of the app](/img/blog/shopify-merchant-reviews-revenuehunt/radiowearhouse-review.webp)
 
@@ -347,4 +347,4 @@ The 4.9-star / 415+ review pattern speaks for itself. The recurring themes acros
 
 For the sister WooCommerce reviews story, see [what 100+ WooCommerce merchants say about the RevenueHunt plugin](https://revenuehunt.com/woocommerce-plugin-reviews-revenuehunt/). For the Built for Shopify certification context, see [RevenueHunt is Built for Shopify: what's different vs Legacy](https://revenuehunt.com/revenuehunt-built-for-shopify/). For the skincare-vertical guide referenced by many reviewers, see [the skincare quiz guide for Shopify and WooCommerce](https://revenuehunt.com/skincare-quiz-shopify-woocommerce/). For the broader landscape of free Shopify recommendation apps, see [best free Shopify product recommendation apps](https://revenuehunt.com/free-shopify-product-recommendation-apps/).
 
-[Install the RevenueHunt: Recommender Quiz for Shopify](https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=merchant_reviews) and join the 415+ stores already running it. Free plan available.
+[Install the RevenueHunt: Recommender Quiz for Shopify](https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=merchant_reviews) and join the 434+ stores already running it. Free plan available.

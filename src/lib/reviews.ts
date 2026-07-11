@@ -3,12 +3,14 @@
  *  Keep ratingValue/reviewCount in sync with the live marketplace listings -
  *  the structured data must reflect genuine, on-page reviews (Google policy).
  *
- *  Last verified: 2026-06-19
- *  - Shopify App Store:  4.9 / 426  (apps.shopify.com)
+ *  Each listing below is the single source of truth for its own count; the
+ *  cross-platform aggregate (COMBINED_REVIEWS) is derived, never hand-written.
+ *
+ *  Last verified: 2026-07-11
+ *  - Shopify App Store:  4.9 / 434  (apps.shopify.com)
  *  - WordPress.org:      5.0 / 101  (wordpress.org plugin reviews)
  *  - WooCommerce.com:    4.64 / 25  (woocommerce.com marketplace listing)
  *  - BigCommerce:        5.0 / 6    (bigcommerce.com app listing)
- *  Combined: 558 across all four listings → displayed as "550+".
  */
 
 export interface Review {
@@ -39,7 +41,7 @@ export interface PlatformReviews {
 const SHOPIFY: PlatformReviews = {
   platform: "Shopify",
   ratingValue: "4.9",
-  reviewCount: "426",
+  reviewCount: "434",
   sourceLabel: "Shopify App Store",
   sourceUrl:
     "https://apps.shopify.com/product-recommendation-quiz-revenuehunt/reviews",
@@ -74,7 +76,7 @@ const SHOPIFY: PlatformReviews = {
 const WOOCOMMERCE: PlatformReviews = {
   platform: "WooCommerce",
   ratingValue: "5.0",
-  reviewCount: "100",
+  reviewCount: "101",
   sourceLabel: "WordPress.org",
   sourceUrl:
     "https://wordpress.org/support/plugin/product-recommendation-quiz-for-ecommerce/reviews/",
@@ -117,12 +119,29 @@ export const PLATFORM_REVIEWS: Record<string, PlatformReviews> = {
   "product-recommendation-quiz-bigcommerce": BIGCOMMERCE,
 };
 
-/** Cross-platform aggregate for the pricing page (Shopify + WooCommerce + BigCommerce). */
+/** The woocommerce.com marketplace listing has no platform page of its own —
+ *  it contributes to the cross-platform aggregate only. */
+const WOOCOMMERCE_COM = { ratingValue: "4.64", reviewCount: "25" };
+
+/** Total count + review-weighted average across every listing we're on. */
+function aggregate(listings: { ratingValue: string; reviewCount: string }[]) {
+  const count = listings.reduce((n, l) => n + Number(l.reviewCount), 0);
+  const weighted = listings.reduce(
+    (n, l) => n + Number(l.ratingValue) * Number(l.reviewCount),
+    0,
+  );
+  return {
+    reviewCount: String(count),
+    ratingValue: (weighted / count).toFixed(1),
+    /** Rounded down to the nearest 10 for the visible "X+ reviews" copy. */
+    reviewCountDisplay: `${Math.floor(count / 10) * 10}+`,
+  };
+}
+
+/** Cross-platform aggregate for the pricing page. Derived — do not hand-write. */
 export const COMBINED_REVIEWS: PlatformReviews = {
   platform: "all platforms",
-  ratingValue: "4.9",
-  reviewCount: "558",
-  reviewCountDisplay: "550+",
+  ...aggregate([SHOPIFY, WOOCOMMERCE, WOOCOMMERCE_COM, BIGCOMMERCE]),
   sourceLabel: "Shopify, WooCommerce & BigCommerce",
   sourceUrl: "/testimonials/",
   reviews: [SHOPIFY.reviews[0]!, WOOCOMMERCE.reviews[0]!, SHOPIFY.reviews[2]!],

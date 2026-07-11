@@ -133,15 +133,20 @@ function aggregate(listings: { ratingValue: string; reviewCount: string }[]) {
   return {
     reviewCount: String(count),
     ratingValue: (weighted / count).toFixed(1),
-    /** Rounded down to the nearest 10 for the visible "X+ reviews" copy. */
-    reviewCountDisplay: `${Math.floor(count / 10) * 10}+`,
   };
 }
 
-/** Cross-platform aggregate for the pricing page. Derived — do not hand-write. */
+/** Cross-platform aggregate for the pricing page. The exact count and rating are
+ *  derived — do not hand-write them. reviewCountDisplay is the rounded MARKETING
+ *  claim and stays manual on purpose: the same claim is written out in ~24 other
+ *  places (homepage heroes + meta in every locale, lib/competitors.ts,
+ *  lib/content/longtail.ts, quiz-readiness-assessment), several of them localised.
+ *  Deriving it here alone would silently desync this page from all of them.
+ *  Bump it only together with those. */
 export const COMBINED_REVIEWS: PlatformReviews = {
   platform: "all platforms",
   ...aggregate([SHOPIFY, WOOCOMMERCE, WOOCOMMERCE_COM, BIGCOMMERCE]),
+  reviewCountDisplay: "550+",
   sourceLabel: "Shopify, WooCommerce & BigCommerce",
   sourceUrl: "/testimonials/",
   reviews: [SHOPIFY.reviews[0]!, WOOCOMMERCE.reviews[0]!, SHOPIFY.reviews[2]!],

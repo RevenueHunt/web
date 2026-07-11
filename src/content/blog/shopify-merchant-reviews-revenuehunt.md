@@ -329,6 +329,7 @@ The 415+ reviewers span skincare, beauty, supplements, wellness, fashion, access
     "price": "0",
     "priceCurrency": "USD",
     "description": "Free plan with 100 quiz responses per month and full feature access.",
+    "availability": "https://schema.org/InStock",
     "url": "https://apps.shopify.com/product-recommendation-quiz-revenuehunt"
   }
 }

@@ -348,6 +348,7 @@ Three things merchants consistently name: response time in minutes (not days), r
     "price": "0",
     "priceCurrency": "USD",
     "description": "Free plan with 100 quiz responses per month and full feature access.",
+    "availability": "https://schema.org/InStock",
     "url": "https://wordpress.org/plugins/product-recommendation-quiz-for-ecommerce/"
   }
 }

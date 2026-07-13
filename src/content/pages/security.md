@@ -2,7 +2,7 @@
 title: "Security"
 description: "How RevenueHunt protects merchant and customer data, our security contact, and the vulnerability disclosure process."
 pubDate: 2026-05-19T00:00:00Z
-updatedDate: 2026-05-19T00:00:00Z
+updatedDate: 2026-07-13T00:00:00Z
 legacySlug: "security"
 legacyId: 99001
 legacyUrl: "https://revenuehunt.com/security/"
@@ -10,13 +10,13 @@ featuredImage: null
 draft: false
 ---
 
-Last updated: May 19, 2026.
+Last updated: July 13, 2026.
 
 Download for review: [DOCX](/legal/RevenueHunt-Information-Security-Policy.docx) · [CSV](/legal/RevenueHunt-Information-Security-Policy.csv).
 
 ## Security at RevenueHunt
 
-RevenueHunt is built and operated by **Dairy Capital Limited**, a private limited company incorporated in England and Wales (company number 12503996, registered office: Vision Accounting Fortis House, Cothey Way, Ryde, Isle of Wight, PO33 1QT, United Kingdom). We process data on behalf of ecommerce merchants on Shopify, WooCommerce, BigCommerce, and Magento. Their trust depends on our security posture, so we treat it as a first-class engineering concern, not a paperwork exercise.
+RevenueHunt is built and operated by **Durian Capital Inc.**, a business company incorporated in the British Virgin Islands (company number 2109760, registered office: Intershore Chambers, Road Town, Tortola, British Virgin Islands). We process data on behalf of ecommerce merchants on Shopify, WooCommerce, BigCommerce, and Magento. Their trust depends on our security posture, so we treat it as a first-class engineering concern, not a paperwork exercise.
 
 This page summarises our practices, our public security contact, and how to report a vulnerability.
 

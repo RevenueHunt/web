@@ -1,8 +1,8 @@
 ---
 title: "Terms of Service"
-description: "The terms governing your use of RevenueHunt's website, products, and services. RevenueHunt is a product of Dairy Capital Limited, incorporated in England and Wales."
+description: "The terms governing your use of RevenueHunt's website, products, and services. RevenueHunt is a product of Durian Capital Inc., incorporated in the British Virgin Islands."
 pubDate: 2019-07-21T22:45:31Z
-updatedDate: 2026-05-19T00:00:00Z
+updatedDate: 2026-07-13T00:00:00Z
 legacySlug: "tos"
 legacyId: 3
 legacyUrl: "https://revenuehunt.com/tos/"
@@ -10,13 +10,13 @@ featuredImage: "/img/pages/tos/photo-1433439216031-9571132ce719.webp"
 draft: false
 ---
 
-Last updated: May 19, 2026.
+Last updated: July 13, 2026.
 
 ## Welcome to RevenueHunt
 
 Thank you for using RevenueHunt's products and services.
 
-**RevenueHunt** is a product of **Dairy Capital Limited**, a private limited company incorporated in England and Wales under company number 12503996, with registered office at Vision Accounting Fortis House, Cothey Way, Ryde, Isle of Wight, PO33 1QT, United Kingdom. References to "RevenueHunt", "we", "us" or "our" in these Terms refer to Dairy Capital Limited.
+**RevenueHunt** is a product of **Durian Capital Inc.**, a business company incorporated in the British Virgin Islands under company number 2109760, with registered office at Intershore Chambers, Road Town, Tortola, British Virgin Islands. Durian Capital Inc. is the owner and operator of the revenuehunt.com domain and website. References to "RevenueHunt", "we", "us" or "our" in these Terms refer to Durian Capital Inc.
 
 The use of this website implies the acceptance of each and every one of the Terms of Service on this page.
 

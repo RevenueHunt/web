@@ -29,14 +29,6 @@ We shipped seven new admin languages, more reliable locale handling, support for
 
 -   **Mailchimp integration.** A native Mailchimp connection is on its way, so Mailchimp users will be able to automatically capture quiz leads in their Mailchimp lists. We're putting the finishing touches on it and will let you know as soon as it's ready to connect.
 
--   **Messaging app integrations (Beta).** Your quiz will soon run as a native conversation inside the channels where your customers already talk to you: **WhatsApp, Instagram DMs, Facebook Messenger**, TikTok, SMS, and tools like Gorgias or Shopify Inbox. Customers answer questions, get personalized product recommendations with Add to Cart links, and leads get captured in Klaviyo, all without visiting your store. We're already onboarding early beta merchants and would love to hear which channels matter most to you. **[Contact support to request early access →](https://revenuehunt.com/contact/)**
-
-**🚀 Coming soon: Quiz integrations for WhatsApp, Instagram DMs & more**
-
-Run your quiz as a native conversation inside the channels where your customers already talk to you, no store visit required. Leads captured automatically in Klaviyo.
-
-**Already 25+ merchants signed up for early access.** [Contact support to join the beta →](https://revenuehunt.com/contact/)
-
 ## Conclusion
 
 June widened who can use RevenueHunt and made it steadier underneath: seven new admin languages, locale handling that survives redirects, and richer product data from Shopify list metafields. Pair that with cleaner popup isolation and a round of legacy app and tooling fixes, and your quizzes reach more merchants in more languages while staying dependable. With a native Mailchimp connection up next, capturing quiz leads automatically is about to get easier still.

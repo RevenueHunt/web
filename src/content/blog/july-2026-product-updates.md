@@ -29,15 +29,7 @@ We shipped a Shopify Flow "Quiz Completed" trigger, a native Mailchimp OAuth con
 
 ## What's coming
 
--   **Messaging app integrations (Beta).** Your quiz will soon run as a native conversation inside the channels where your customers already talk to you: **WhatsApp, Instagram DMs, Facebook Messenger**, TikTok, SMS, and tools like Gorgias or Shopify Inbox. Customers answer questions, get personalized product recommendations with Add to Cart links, and leads get captured in Klaviyo, all without visiting your store. We're already onboarding early beta merchants and would love to hear which channels matter most to you. **[Contact support to request early access →](https://revenuehunt.com/contact/)**
-
 -   **Agent-ready commerce.** We're working on making your quiz's personal-shopper logic available beyond your store, so the same tailored guidance can reach customers wherever they start their shopping, including the AI assistants they increasingly turn to. More on this soon.
-
-**🚀 Coming soon: Quiz integrations for WhatsApp, Instagram DMs & more**
-
-Run your quiz as a native conversation inside the channels where your customers already talk to you, no store visit required. Leads captured automatically in Klaviyo.
-
-**Already 25+ merchants signed up for early access.** [Contact support to join the beta →](https://revenuehunt.com/contact/)
 
 ## Conclusion
 

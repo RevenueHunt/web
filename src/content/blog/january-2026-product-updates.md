@@ -31,13 +31,6 @@ January focused on making your quiz funnels easier to scale and trust: smoother 
 ### What's coming
 
 -   **Klaviyo OAuth integration** – Native OAuth connection to Klaviyo, no API Key required.
--   **Messaging app integrations (Beta)** – Your quiz will soon run as a native conversation inside the channels where your customers already talk to you: **WhatsApp, Instagram DMs, Facebook Messenger**, TikTok, SMS, and tools like Gorgias or Shopify Inbox. Customers answer questions, get personalized product recommendations with Add to Cart links, and leads get captured in Klaviyo - all without visiting your store. We're already onboarding early beta merchants and would love to hear which channels matter most to you. **[Contact support to request early access →](https://revenuehunt.com/contact/)**
-
-**🚀 Coming soon: Quiz integrations for WhatsApp, Instagram DMs & more**
-
-Run your quiz as a native conversation inside the channels where your customers already talk to you - no store visit required. Leads captured automatically in Klaviyo.
-
-**Already 25+ merchants signed up for early access.** [Contact support to join the beta →](https://revenuehunt.com/contact/)
 
 ## Conclusion
 

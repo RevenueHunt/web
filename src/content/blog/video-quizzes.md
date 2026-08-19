@@ -101,11 +101,11 @@ Different video types serve different roles in the quiz funnel. Each has a sweet
 
 ### Introduction videos (20-30 seconds)
 
-Plays on the welcome slide. Briefly introduces the brand, explains what the quiz does, and tells the customer what they'll receive at the end. Functions as the elevator pitch for the quiz itself, which is why duration discipline matters: longer than 30 seconds and the customer abandons before answering question one.
+Plays on the welcome screen. Briefly introduces the brand, explains what the quiz does, and tells the customer what they'll receive at the end. Functions as the elevator pitch for the quiz itself, which is why duration discipline matters: longer than 30 seconds and the customer abandons before answering question one.
 
-![Quiz Builder welcome-slide configuration showing the video upload option for the introduction slide](/img/blog/video-quizzes/welcome-slide-video-upload.webp)
+![Quiz Builder welcome-screen configuration showing the video upload option for the introduction slide](/img/blog/video-quizzes/welcome-slide-video-upload.webp)
 
-<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;The Quiz Builder welcome-slide configuration with the video upload option exposed. The 20-30 second introduction video is the first thing the customer experiences; treat it as the elevator pitch for the quiz itself.</p>
+<p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 03</span> &nbsp;The Quiz Builder welcome-screen configuration with the video upload option exposed. The 20-30 second introduction video is the first thing the customer experiences; treat it as the elevator pitch for the quiz itself.</p>
 
 ### How-to and explainer videos (1-2 minutes)
 
@@ -172,7 +172,7 @@ Most video quiz problems are planning problems, not production problems. Two ste
 
 <p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 08</span> &nbsp;A quiz map sketch: question flow, branching paths, recommendation outcomes. Sketch this first so you know which questions are worth a video and which are fine as text-only.</p>
 
-**2. Mark the moments where a video adds the most.** Not every question benefits from video; over-using it dilutes the impact. Highlight the welcome slide, two or three high-leverage decision questions, and the results page. Skip the rest.
+**2. Mark the moments where a video adds the most.** Not every question benefits from video; over-using it dilutes the impact. Highlight the welcome screen, two or three high-leverage decision questions, and the results page. Skip the rest.
 
 ![Annotated quiz map highlighting where to place each video type along the question flow](/img/blog/video-quizzes/videoplan.webp)
 
@@ -211,7 +211,7 @@ The setup is different on Built for Shopify versus the legacy and multi-platform
 On Built for Shopify, video is a content block you add alongside other blocks (heading, text, image, choices) on each question slide.
 
 1. Open the RevenueHunt app and navigate to your quiz in the Quiz Builder.
-2. Select the question (or welcome slide) you want to add video to.
+2. Select the question (or welcome screen) you want to add video to.
 3. Click **+ Add block** below the question content and choose **Video**.
 4. Click **Select video** and upload your video file from your computer.
 5. Configure the block: add **Alt text** (for accessibility), pick a **Video aspect ratio** (horizontal, vertical, 16:9 or 4:3), and set **Video alignment** (Left, Center or Right).
@@ -228,7 +228,7 @@ For the results-page placement, drop a Video block onto the results page the sam
 On the legacy and multi-platform versions, video lives inside question settings and supports overlay modes (background, widget, responsive) plus an opacity slider that Built for Shopify doesn't expose.
 
 1. Open the RevenueHunt app and navigate to your quiz in the Quiz Builder.
-2. Select the question (or welcome slide) you want to add video to.
+2. Select the question (or welcome screen) you want to add video to.
 3. Open question settings (the wrench icon) and find the **Video** section.
 4. Click **Add** to upload a video file, or paste a YouTube URL to embed.
 5. Choose a placement mode: **responsive** (background with play/pause controls), **widget** (small round overlay), or **background** (background with controls deactivated). Adjust **Video Opacity** if you want the video softened behind text.
@@ -385,7 +385,7 @@ Target **720p resolution (1280×720)** in **MP4 (H.264)** format with a **2.5-5 
   "description": "Five video types that serve different roles inside a product recommendation quiz funnel. Each has a sweet-spot duration and a placement where it works best.",
   "numberOfItems": 5,
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Introduction video", "description": "20-30 seconds on the welcome slide. Brand introduction plus what the quiz delivers at the end. Elevator pitch for the quiz itself."},
+    {"@type": "ListItem", "position": 1, "name": "Introduction video", "description": "20-30 seconds on the welcome screen. Brand introduction plus what the quiz delivers at the end. Elevator pitch for the quiz itself."},
     {"@type": "ListItem", "position": 2, "name": "How-to and explainer video", "description": "1-2 minutes wherever an instruction needs more clarity than text. Useful on multi-choice questions and on the results page where the recommendation needs an ingredient explainer."},
     {"@type": "ListItem", "position": 3, "name": "Customer testimonial video", "description": "30-45 seconds in widget mode at decision moments. A real customer in their own setting beats a logo grid of brand testimonials."},
     {"@type": "ListItem", "position": 4, "name": "Product overview video", "description": "Maximum 30 seconds per product. Best on the results page next to recommended products, or on this/that-style choice questions. Animated GIFs work for short product loops on picture-choice questions."},
@@ -407,7 +407,7 @@ Target **720p resolution (1280×720)** in **MP4 (H.264)** format with a **2.5-5 
   ],
   "step": [
     {"@type": "HowToStep", "position": 1, "name": "Open the Quiz Builder", "text": "Open the RevenueHunt app and navigate to your quiz in the Quiz Builder."},
-    {"@type": "HowToStep", "position": 2, "name": "Select the slide", "text": "Select the question (or welcome slide) you want to add video to."},
+    {"@type": "HowToStep", "position": 2, "name": "Select the slide", "text": "Select the question (or welcome screen) you want to add video to."},
     {"@type": "HowToStep", "position": 3, "name": "Add a Video block", "text": "Click + Add block below the question content and choose Video."},
     {"@type": "HowToStep", "position": 4, "name": "Upload the video", "text": "Click Select video and upload your video file from your computer."},
     {"@type": "HowToStep", "position": 5, "name": "Configure and save", "text": "Add Alt text for accessibility, pick a Video aspect ratio (horizontal, vertical, 16:9 or 4:3), set Video alignment (Left, Center or Right). Click Save in the top-right to publish."}
@@ -428,7 +428,7 @@ Target **720p resolution (1280×720)** in **MP4 (H.264)** format with a **2.5-5 
   ],
   "step": [
     {"@type": "HowToStep", "position": 1, "name": "Open the Quiz Builder", "text": "Open the RevenueHunt app and navigate to your quiz in the Quiz Builder."},
-    {"@type": "HowToStep", "position": 2, "name": "Select the slide", "text": "Select the question (or welcome slide) you want to add video to."},
+    {"@type": "HowToStep", "position": 2, "name": "Select the slide", "text": "Select the question (or welcome screen) you want to add video to."},
     {"@type": "HowToStep", "position": 3, "name": "Open question settings", "text": "Open question settings (the wrench icon) and find the Video section."},
     {"@type": "HowToStep", "position": 4, "name": "Upload or embed", "text": "Click Add to upload a video file, or paste a YouTube URL to embed."},
     {"@type": "HowToStep", "position": 5, "name": "Pick placement mode and publish", "text": "Choose responsive (background with controls), widget (small round overlay) or background (background without controls). Adjust Video Opacity if needed. Click Publish in the top-right to apply."}

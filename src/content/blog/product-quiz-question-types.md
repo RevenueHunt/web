@@ -66,7 +66,7 @@ The first slide. Explains the quiz's purpose, sets a positive tone, and encourag
 
 <div style="margin:24px 0;padding:18px 24px;background:#f8fafc;border-left:4px solid #16161D;border-radius:6px;">
   <p style="margin:0 0 8px;font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#64748b;">Tip</p>
-  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;"><a href="https://docs.revenuehunt.com/how-to-guides/customize-quiz-design/#adding-images-and-videos" style="color:#16161D;text-decoration:underline;">Upload an introduction video</a> to the welcome slide to grab attention and reduce drop-off. See <a href="https://revenuehunt.com/video-quizzes/" style="color:#16161D;text-decoration:underline;">video quizzes: a revenue-led alternative to video tools</a> for the per-slide video playbook.</p>
+  <p style="margin:0 0 6px;font-size:15px;line-height:1.55;color:#0f172a;"><a href="https://docs.revenuehunt.com/how-to-guides/customize-quiz-design/#adding-images-and-videos" style="color:#16161D;text-decoration:underline;">Upload an introduction video</a> to the welcome screen to grab attention and reduce drop-off. See <a href="https://revenuehunt.com/video-quizzes/" style="color:#16161D;text-decoration:underline;">video quizzes: a revenue-led alternative to video tools</a> for the per-slide video playbook.</p>
 </div>
 
 ### Statement

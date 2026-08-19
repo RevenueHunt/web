@@ -167,7 +167,7 @@ These aren't placements per se. They're mechanics that multiply the conversion r
 
 A discount displayed on the quiz results page is the most direct way to incentivise both completion and conversion. The cost is a one-time margin hit; the benefit is a quiz-attributed first order, an enriched customer profile, and the start of a personalised retention sequence.
 
-A useful refinement: **tease the discount on the welcome slide as well**, not only on the results page. The tease frames the value exchange before the customer has invested any time, which lifts both quiz start rate and completion rate. For the full discount-placement playbook (4 placements ranked by impact, including the welcome-slide tease and Shopify Legacy's tiered discount mechanic), see [product quiz discounts: the conversion playbook](https://revenuehunt.com/product-quiz-discounts/). For setup instructions, see [how to add a discount inside the quiz](https://revenuehunt.com/faqs/adding-discount-coupon-code/).
+A useful refinement: **tease the discount on the welcome screen as well**, not only on the results page. The tease frames the value exchange before the customer has invested any time, which lifts both quiz start rate and completion rate. For the full discount-placement playbook (4 placements ranked by impact, including the welcome-screen tease and Shopify Legacy's tiered discount mechanic), see [product quiz discounts: the conversion playbook](https://revenuehunt.com/product-quiz-discounts/). For setup instructions, see [how to add a discount inside the quiz](https://revenuehunt.com/faqs/adding-discount-coupon-code/).
 
 For premium or luxury brands, a dollar-amount discount ("$15 off your first order") tends to convert better than a percentage; for lower-AOV products, percentage discounts perform better. Test both.
 
@@ -290,7 +290,7 @@ It depends on the industry. Email gating (required before results) costs roughly
       "@type": "ListItem",
       "position": 11,
       "name": "Offer a discount on the welcome and results pages",
-      "description": "Display a discount on the results page; tease it on the welcome slide to lift both start rate and completion rate. For premium brands, dollar-amount discounts often outperform percentages; for lower-AOV categories, percentages perform better."
+      "description": "Display a discount on the results page; tease it on the welcome screen to lift both start rate and completion rate. For premium brands, dollar-amount discounts often outperform percentages; for lower-AOV categories, percentages perform better."
     },
     {
       "@type": "ListItem",

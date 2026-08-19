@@ -55,7 +55,7 @@ Asking for email or phone consent should feel like a natural part of the quiz fl
 
 Start with a friendly welcome message that explains the benefits of taking the quiz. Mention that by providing consent, users will receive personalised recommendations and exclusive offers.
 
-![Quiz welcome slide asking for marketing consent before the customer starts the quiz](/img/blog/product-quiz-marketing-consent/consent-start-quiz-1024x732.webp)
+![Quiz welcome screen asking for marketing consent before the customer starts the quiz](/img/blog/product-quiz-marketing-consent/consent-start-quiz-1024x732.webp)
 
 <p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 01</span> &nbsp;Consent asked before the quiz begins. Lower completion overall, but filters out shoppers who aren't ready to share their email. Better fit for luxury or unique-product stores where lead quality matters more than volume.</p>
 

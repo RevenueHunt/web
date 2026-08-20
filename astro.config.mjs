@@ -235,11 +235,11 @@ export default defineConfig({
   redirects: {
     // Populate via scripts/scrape-wp.ts output. Any URL in the live
     // sitemap.xml that no Astro route produces must redirect here (or 410).
-    // Unpublished 2026-08-20 at the merchant's request: the case study
-    // disclosed their store's revenue and quiz screenshots without consent.
-    // Redirected rather than 404'd to keep ~20 inbound internal links alive.
-    "/anti-aging-beauty-brand-quiz-funnel-case-study/":
-      "/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/",
+    // NOTE: /anti-aging-beauty-brand-quiz-funnel-case-study/ is deliberately
+    // NOT redirected. It is parked pending the merchant's approval, via
+    // src/pages/anti-aging-beauty-brand-quiz-funnel-case-study/index.astro.
+    // A redirect here would emit a canonical to the pillar page and tell
+    // Google to consolidate the URL away, which is not reversible for free.
     "/video-10-golden-rules-of-a-successful-product-recommendation-quiz/":
       "/how-to-build-a-successful-ecommerce-quiz/",
     "/conversational-marketing-ecommerce/":
@@ -347,7 +347,9 @@ export default defineConfig({
         // confirmation page — listing any of them trips Search Console's
         // "submitted URL marked noindex" error.
         filter: (page) =>
-          !/\/(tag|cat|author)\/[^/]+\//.test(page) && !page.endsWith("/message-sent/"),
+          !/\/(tag|cat|author)\/[^/]+\//.test(page) &&
+          !page.endsWith("/message-sent/") &&
+          !page.endsWith("/anti-aging-beauty-brand-quiz-funnel-case-study/"),
         serialize(item) {
           const url = new URL(item.url);
           const path = url.pathname.replace(/^\//, "").replace(/\/$/, "");

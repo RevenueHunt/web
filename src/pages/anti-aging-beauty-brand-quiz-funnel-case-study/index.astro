@@ -1,0 +1,42 @@
+---
+// Parked, not retired. This case study was unpublished on 2026-08-20 at the
+// merchant's request pending their approval to republish.
+//
+// Why a real page instead of a redirect: Astro's `redirects` config emits an
+// instant meta refresh plus a canonical pointing at the destination, which
+// Google reads as "this URL is permanently gone, fold it into that one".
+// Base.astro emits a SELF-canonical plus `noindex, nofollow` instead, so the
+// URL is held in place without consolidating its equity anywhere.
+//
+// To republish: set draft:false on the post, move the images back from
+// archive/anti-aging-case-study/img/, and delete this file.
+// See archive/anti-aging-case-study/README.md.
+import Base from "../../layouts/Base.astro";
+---
+
+<Base
+  title="Case study unavailable"
+  description="This case study is not currently available."
+  noindex={true}
+>
+  <section class="mx-auto max-w-2xl px-6 py-24 text-center">
+    <h1 class="text-3xl font-bold tracking-tight text-slate-900">
+      This case study isn't available
+    </h1>
+    <p class="mt-4 text-lg text-slate-600">
+      We've taken it offline. The argument behind it is still up, and it's the
+      better read anyway.
+    </p>
+    <p class="mt-8">
+      <a
+        class="font-semibold underline decoration-slate-300 hover:decoration-slate-600"
+        href="/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/"
+      >
+        Quiz funnels vs collection pages: why your paid traffic bounces
+      </a>
+    </p>
+    <p class="mt-4 text-sm text-slate-500">
+      Or browse <a class="underline" href="/blog/">the blog</a>.
+    </p>
+  </section>
+</Base>

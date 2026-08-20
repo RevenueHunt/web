@@ -11,7 +11,7 @@ legacySlug: "anti-aging-beauty-brand-quiz-funnel-case-study"
 legacyId: 12275
 legacyUrl: "https://revenuehunt.com/anti-aging-beauty-brand-quiz-funnel-case-study/"
 featuredImage: "/img/blog/anti-aging-beauty-brand-quiz-funnel-case-study/blog_casestudy_aov42.webp"
-draft: false
+draft: true
 ---
 
 A 12-step qualifying [quiz funnel](/glossary/quiz-funnel/) replaced the [beauty](/solutions/beauty/) brand's product page entirely. 9.8% quiz-to-purchase conversion on cold Meta traffic. $691,128 in 90 days. Full breakdown of the funnel architecture, the persuasion checkpoint strategy, and the [AOV](/glossary/average-order-value/) lift that changed the brand's economics.

@@ -235,6 +235,11 @@ export default defineConfig({
   redirects: {
     // Populate via scripts/scrape-wp.ts output. Any URL in the live
     // sitemap.xml that no Astro route produces must redirect here (or 410).
+    // Unpublished 2026-08-20 at the merchant's request: the case study
+    // disclosed their store's revenue and quiz screenshots without consent.
+    // Redirected rather than 404'd to keep ~20 inbound internal links alive.
+    "/anti-aging-beauty-brand-quiz-funnel-case-study/":
+      "/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/",
     "/video-10-golden-rules-of-a-successful-product-recommendation-quiz/":
       "/how-to-build-a-successful-ecommerce-quiz/",
     "/conversational-marketing-ecommerce/":

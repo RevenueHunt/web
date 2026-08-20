@@ -162,14 +162,13 @@ The app lets you customise multiple aspects of the quiz. With the **easy-to-use 
 The RevenueHunt app powers product discovery across many eCommerce stores. Across categories, stores using product recommendation quizzes routinely report:
 
 - **Conversion rate lifts** from a typical ~2% storewide baseline into the **5%+** range for quiz takers
-- **Higher AOV** from routines and bundles (the anti-aging brand below saw a **42.64% AOV lift**)
+- **Higher AOV** from routines and bundles (the beauty brand below saw a **42.64% AOV lift**)
 - **More qualified email growth** (zero-party data drives higher open and click rates)
 
 These are directional ranges, not guarantees; outcomes depend on traffic quality, product fit and how the quiz is set up. The case studies below show real, attributed numbers. Explore our [customer stories](https://revenuehunt.com/blog/) and [testimonials](https://revenuehunt.com/testimonials/) to see how brands like yours use guided selling to grow faster.
 
 A few stories worth reading first:
 
-- [How a US anti-aging device brand achieved 42.64% AOV lift and $691K in 90 days](https://revenuehunt.com/anti-aging-beauty-brand-quiz-funnel-case-study/)
 - [Extreme Kids World case study: quiz-driven discovery for high-energy families](/extreme-kids-world-case-study/)
 - [Skinology case study: AI plus dermatologist personalisation with a repurchase quiz on RevenueHunt](/skinology-case-study/)
 

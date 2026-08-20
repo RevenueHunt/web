@@ -46,7 +46,7 @@ Quizzes capture interest at its peak: the moment a shopper is actively choosing.
 
 **Templates from the docs library plug in directly.** RevenueHunt publishes three Google-Doc HTML templates (Basic Slots, Advanced Slots, Products List) you can drop into Omnisend as custom HTML blocks once the property names match your quiz.
 
-For the strategy this fits into (why an interrupt-style popup doesn't produce segmentable lists, why a quiz funnel does), see [why popups are walls and quizzes are doors](/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/). For a worked example of the full pipeline running in production, see the [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) (9.8% quiz-to-purchase CVR on cold Meta traffic, +42.64% AOV lift, $691,128 in 90 days, every answer synced to the brand's ESP).
+For the strategy this fits into (why an interrupt-style popup doesn't produce segmentable lists, why a quiz funnel does), see [why popups are walls and quizzes are doors](/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/). For a worked example of the full pipeline running in production, one DTC beauty brand's quiz funnel produced 9.8% quiz-to-purchase CVR on cold Meta traffic, +42.64% AOV lift, $691,128 in 90 days, every answer synced to the brand's ESP.
 
 <div class="not-prose my-10 rounded-3xl bg-[#16161D] p-8 text-white shadow-xl">
   <p class="text-xs font-semibold uppercase tracking-widest text-emerald-400 mb-6">Why personalised follow-up converts</p>

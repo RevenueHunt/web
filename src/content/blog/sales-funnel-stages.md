@@ -72,7 +72,7 @@ This is the stage the original AIDA model leaves out, and the stage that determi
 
 **Treating Desire as "more popups."** Spam and scarcity are anxiety triggers, not desire builders. Structured proof (reviews with structured fields, side-by-side comparisons, AR try-on) is what closes the gap between curiosity and purchase intent.
 
-**Skipping the Interest stage entirely.** Ad to PDP is the default funnel on most Shopify stores, and it's the lowest-converting layout you can build. Adding a single 5-question quiz between ad and PDP routinely lifts cold-traffic CVR by 2-3x. The [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) shows 9.8% quiz-to-purchase on cold Meta traffic; that's the upper bound.
+**Skipping the Interest stage entirely.** Ad to PDP is the default funnel on most Shopify stores, and it's the lowest-converting layout you can build. Adding a single 5-question quiz between ad and PDP routinely lifts cold-traffic CVR by 2-3x. One DTC beauty brand's quiz funnel shows 9.8% quiz-to-purchase on cold Meta traffic; that's the upper bound.
 
 **Treating Post-purchase as "send the receipt."** A receipt is a system email. A post-purchase flow is a multi-touch sequence that captures NPS, asks "what problem are you solving," routes the answer back to your ESP, and triggers segmented replenishment, win-back, or upsell as appropriate. The first one is plumbing; the second one is revenue.
 

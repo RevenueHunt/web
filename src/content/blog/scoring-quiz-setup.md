@@ -91,7 +91,7 @@ Pick the pattern that matches the shape of the outcome you want, then jump to th
 
 All three patterns work natively in the **Built for Shopify** version. There's also a pre-built **Scoring Quiz template** under Quiz Templates on the Dashboard, which is the fastest start.
 
-For a worked example of these mechanics in a real qualifying funnel, see the [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) (the 7-question / 5-persuasion-screen architecture routes shoppers into a single qualified outcome and produces 9.8% CVR on cold Meta traffic). Whichever pattern you choose, the outcome variable can sync as a Klaviyo custom property: see [your Klaviyo list is a graveyard](/klaviyo-zero-party-data/) for how the outcome becomes a segmented welcome flow downstream.
+For a worked example of these mechanics in a real qualifying funnel, one DTC beauty brand used a 7-question / 5-persuasion-screen architecture to route shoppers into a single qualified outcome, and produced 9.8% CVR on cold Meta traffic. Whichever pattern you choose, the outcome variable can sync as a Klaviyo custom property: see [your Klaviyo list is a graveyard](/klaviyo-zero-party-data/) for how the outcome becomes a segmented welcome flow downstream.
 
 ### Step 1: design the questions and map the outcomes
 

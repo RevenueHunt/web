@@ -35,7 +35,7 @@ It's a [quiz funnel](/glossary/quiz-funnel/). And the performance gap between qu
     <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>The signal-loss spiral: how low CVR degrades pixel targeting and compounds CPM inflation week over week.</span></li>
     <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>Why landing-page builders, popup tools, and over-engineered enterprise stacks don't fix the root cause.</span></li>
     <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>The three mechanisms a quiz funnel uses: guidance, zero-party data capture, and signal reinforcement.</span></li>
-    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>A real worked example: how a US anti-ageing device brand hit 9.8% quiz-to-purchase conversion on cold Meta traffic.</span></li>
+    <li style="display:flex;gap:14px;padding:6px 0;font-size:15px;color:#0f172a;line-height:1.55;"><span style="flex-shrink:0;color:#16161D;font-weight:700;">→</span><span>A real worked example: how a DTC beauty brand hit 9.8% quiz-to-purchase conversion on cold Meta traffic.</span></li>
   </ul>
 </div>
 
@@ -161,16 +161,16 @@ This is the modern alternative to the "Ad → Collection Page → Hope" funnel a
 
 ## What this looks like in practice
 
-### A US anti-ageing device brand: 9.8% quiz CVR, $691K in 90 days
+### A DTC beauty brand: 9.8% quiz CVR, $691K in 90 days
 
-This is the cleanest worked example in the cluster: a real US anti-ageing device brand replaced their collection-page ad destination with a 12-step qualifying quiz funnel. Cold Meta traffic now lands directly on the quiz, not on a "shop all" page. The numbers are real and disclosed:
+This is the cleanest worked example in the cluster: a real DTC beauty brand replaced their collection-page ad destination with a 12-step qualifying quiz funnel. Cold Meta traffic now lands directly on the quiz, not on a "shop all" page. The numbers are real and disclosed:
 
 - **9.8% quiz-to-purchase conversion** on cold Meta traffic (against a baseline of ~2% on the previous collection-page funnel)
-- **42.64% AOV lift** vs the brand's non-quiz orders
+- **42.64% AOV lift** vs the brand's own prior quarter (that quarter included Black Friday and the holiday season, so the comparison flatters the lift)
 - **$691,128 in 90 days** of attributable revenue
 - The qualifying questions also screen out tyre-kickers, so the customers who reach the results page are highly self-selected and the bundle-add rate is higher than a typical browser
 
-Full breakdown of the funnel architecture, the persuasion checkpoint strategy and the AOV lift mechanic: [anti-ageing beauty brand case study](/anti-aging-beauty-brand-quiz-funnel-case-study/).
+
 
 ### A supplement brand that turned email into a revenue channel
 
@@ -220,7 +220,6 @@ The mechanism does, but the specific integration depths and revenue tracking var
 
 ## Next steps
 
-- The real worked example with disclosed numbers: [anti-ageing beauty brand case study](/anti-aging-beauty-brand-quiz-funnel-case-study/).
 - The argument on popups specifically: [why popups are walls and quizzes are doors](/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/).
 - The data layer behind the segmented Klaviyo flows: [Klaviyo zero-party data activation](/klaviyo-zero-party-data/) and [customer tags in product quizzes](/how-to-use-customer-tags-in-product-quizzes-to-maximize-sales/).
 - The ad-audiences side of the signal loop: [Meta Pixel quiz integration](/meta-pixel-quiz-integration/).

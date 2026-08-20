@@ -73,7 +73,7 @@ A first-party quiz response isn't subject to any of the above. When a shopper co
 
 The structural change matters for marketing, not just analytics. Zero-party data (what the customer explicitly told you) and first-party data (what they did on your store) are the only categories of customer data that survive the privacy transition intact. For the broader strategy this connects to, see our [zero-party data guide](/zero-party-data/) and [first-party data guide](/first-party-data/); for the activation playbook on the data this dashboard exposes, see [your Klaviyo list is a graveyard](/klaviyo-zero-party-data/); for the lead-capture pillar this whole architecture rests on, see [why popups are walls and quizzes are doors](/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/).
 
-The [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) is the cleanest worked example in the cluster: 9.8% quiz-to-purchase conversion on cold Meta traffic, +42.64% AOV lift, $691,128 in attributed revenue across 90 days, all verified against Shopify Orders through this dashboard rather than Pixel or GA4.
+One DTC beauty brand's quiz funnel is the cleanest worked example in the cluster: 9.8% quiz-to-purchase conversion on cold Meta traffic, +42.64% AOV lift, $691,128 in attributed revenue across 90 days, all verified against Shopify Orders through this dashboard rather than Pixel or GA4.
 
 ## Platform support for quiz revenue tracking
 

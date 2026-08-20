@@ -197,7 +197,7 @@ The ones still listed as "coming soon" (Mailchimp, ActiveCampaign) have workarou
 
 The native embed, automatic Shopify revenue tracking, and Shopify Markets support are the three biggest reasons BFS converts higher than Legacy in practice. Tracking that fires on the iframe Legacy used to lose events; the BFS native block doesn't.
 
-For a worked example of these mechanics on a real BFS-app store, see the [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) (9.8% quiz-to-purchase CVR on cold Meta traffic, +42.64% AOV lift, $691,128 in 90 days, every order verified through the native BFS Analytics dashboard). For ten more funnel patterns running in production, see [ecommerce sales funnel examples](/ecommerce-sales-funnel-examples/).
+For a worked example of these mechanics on a real BFS-app store, one DTC beauty brand's quiz funnel produced 9.8% quiz-to-purchase CVR on cold Meta traffic, +42.64% AOV lift, $691,128 in 90 days, every order verified through the native BFS Analytics dashboard. For ten more funnel patterns running in production, see [ecommerce sales funnel examples](/ecommerce-sales-funnel-examples/).
 
 ## How to switch from Legacy to BFS
 

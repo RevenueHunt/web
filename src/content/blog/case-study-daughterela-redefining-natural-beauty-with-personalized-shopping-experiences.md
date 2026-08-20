@@ -23,7 +23,7 @@ draft: false
 
 [Daughterela](https://www.daughterela.com/), a natural, talc-free cosmetics brand on Shopify, runs two product finders that happen to be textbook opposites. The lipstick finder is **flat**: every shopper answers the same four questions in the same order. The foundation finder is **branching**: the first answer (skin tone) routes each shopper down a different path. This is a teardown of how both are built and a guide to choosing the right architecture for your own [cosmetics store](/solutions/beauty/).
 
-This piece is about the build, not the numbers. For the conversion data behind product quizzes, see the [benchmark report](/state-of-product-recommendation-quizzes/) (45M+ responses across 20,000+ stores), and for disclosed-results case studies see the [anti-ageing device funnel](/anti-aging-beauty-brand-quiz-funnel-case-study/) and [Extreme Kids World](/extreme-kids-world-case-study/). What Daughterela gives us is a clean, copyable look at the two quiz architectures every cosmetics merchant has to choose between.
+This piece is about the build, not the numbers. For the conversion data behind product quizzes, see the [benchmark report](/state-of-product-recommendation-quizzes/) (45M+ responses across 20,000+ stores), and for a disclosed-results case study see [Extreme Kids World](/extreme-kids-world-case-study/). What Daughterela gives us is a clean, copyable look at the two quiz architectures every cosmetics merchant has to choose between.
 
 <div class="not-prose my-12 rounded-3xl bg-gradient-to-br from-[#0f1419] to-[#16161D] p-8 sm:p-10 text-white shadow-2xl ring-1 ring-white/10">
   <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-emerald-400 mb-8">The build at a glance</p>
@@ -286,7 +286,7 @@ Both. Daughterela runs on the Legacy version of RevenueHunt, and everything in t
 
 ## Where this fits
 
-This teardown is the worked example behind the broader guides. For the rules that make any quiz convert, see [how to build a successful product recommendation quiz](/how-to-build-a-successful-ecommerce-quiz/). For the logic models in depth, [the six recommendation systems compared](/product-quiz-recommendation-systems/). For the proof that the pattern pays off, the [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) and [Extreme Kids World](/extreme-kids-world-case-study/), and the [benchmark report](/state-of-product-recommendation-quizzes/). For the category overview, the [beauty solutions page](/solutions/beauty/).
+This teardown is the worked example behind the broader guides. For the rules that make any quiz convert, see [how to build a successful product recommendation quiz](/how-to-build-a-successful-ecommerce-quiz/). For the logic models in depth, [the six recommendation systems compared](/product-quiz-recommendation-systems/). For the proof that the pattern pays off, [Extreme Kids World](/extreme-kids-world-case-study/), and the [benchmark report](/state-of-product-recommendation-quizzes/). For the category overview, the [beauty solutions page](/solutions/beauty/).
 
 [Install RevenueHunt: Recommender Quiz for Shopify](https://apps.shopify.com/product-recommendation-quiz-revenuehunt/install?utm_source=revenuehunt.com&utm_medium=referral&utm_campaign=case_study_daughterela) and build your first finder this week. Free plan available.
 

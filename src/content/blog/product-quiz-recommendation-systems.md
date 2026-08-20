@@ -95,7 +95,7 @@ Each system is suited to a different shape of problem. Read them in order; the c
 
 **Example:** a customer picks **dry skin** and **30+ age group**. The hydrating serum is linked to both choices, so it gets two votes. The age-specific moisturiser is linked to one, so it gets one. The serum is recommended first.
 
-**Worked examples:** the [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) shows a Voting-System variant pushed end-to-end on cold Meta traffic (9.8% quiz-to-purchase CVR, +42.64% AOV lift, $691,128 in 90 days). The [Extreme Kids World case study](/extreme-kids-world-case-study/) demonstrates the same system running across three niche quizzes, with the narrowest hitting 76.9% completion. The [Skinology case study](/skinology-case-study/) shows a Voting + Slots variant used for personalised skincare routines.
+**Worked examples:** one DTC beauty brand's quiz funnel shows a Voting-System variant pushed end-to-end on cold Meta traffic (9.8% quiz-to-purchase CVR, +42.64% AOV lift, $691,128 in 90 days). The [Extreme Kids World case study](/extreme-kids-world-case-study/) demonstrates the same system running across three niche quizzes, with the narrowest hitting 76.9% completion. The [Skinology case study](/skinology-case-study/) shows a Voting + Slots variant used for personalised skincare routines.
 
 ### 3. Voting System (Funnel Quiz with Slots)
 

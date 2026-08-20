@@ -131,7 +131,7 @@ The two systems work hand-in-hand: the quiz (whichever stage) captures the input
 
 "The quiz collects important data points like name, last name, and a national ID, which we need for our custom formulations. But each piece of information has a purpose: it's all about crafting the best solution for that individual," explained Jessica, Skinology's head of marketing.
 
-The quiz also drives marketing. Because each customer's answers, recommendations, and follow-ups live on a unified customer record, Skinology can segment by skin profile, lifestyle, or stage of journey, and run retargeting and email flows that match where the customer actually is. For the broader argument on why interrupt-style popups don't produce segmentable lists (and why quizzes do), see [why popups are walls and quizzes are doors](/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/). For a disclosed-numbers worked example of cold Meta traffic landing on a qualifying quiz, see the [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) (9.8% quiz-to-purchase CVR, +42.64% AOV lift, $691,128 in 90 days).
+The quiz also drives marketing. Because each customer's answers, recommendations, and follow-ups live on a unified customer record, Skinology can segment by skin profile, lifestyle, or stage of journey, and run retargeting and email flows that match where the customer actually is. For the broader argument on why interrupt-style popups don't produce segmentable lists (and why quizzes do), see [why popups are walls and quizzes are doors](/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/). For a disclosed-numbers worked example of cold Meta traffic landing on a qualifying quiz, one DTC beauty brand's quiz funnel produced 9.8% quiz-to-purchase CVR, +42.64% AOV lift, $691,128 in 90 days.
 
 > "We're still learning and fine-tuning our approach, but as soon as we find our footing, we're ready to scale up."
 
@@ -175,7 +175,6 @@ Quiz answers and recommendations attach to the customer record, which lets Skino
 
 ## Next steps
 
-- For the disclosed-numbers companion case study (cold Meta traffic into a qualifying funnel): [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/).
 - For the other long-form brand case study in the cluster (niche quizzes for high-AOV play equipment): [Extreme Kids World case study](/extreme-kids-world-case-study/).
 - For the strategy pillars behind the quiz-vs-catalogue argument: [why popups are walls and quizzes are doors](/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/) and [quiz funnels vs collection pages](/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/).
 - For the data categories the quiz captures: [zero-party data](/zero-party-data/) and [first-party data](/first-party-data/).

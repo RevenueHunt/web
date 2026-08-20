@@ -50,7 +50,7 @@ Where the result is disclosed publicly (case studies, podcast interviews, invest
 | 7 | Birchbox | Beauty samples | Beauty profile to monthly curated box, full-size reorder loop | 2.5M+ subscribers at peak; churn dropped after per-sample feedback step |
 | 8 | Skinology (RevenueHunt) | Luxury skincare | Multi-step diagnostic to 3-5 product routine, native Klaviyo sync | Significantly higher AOV from quiz traffic ([case study](/skinology-case-study/)) |
 | 9 | Daughterela (RevenueHunt) | Multi-category beauty | Branching quiz into 3 sub-catalogues; quiz-tagged Shopify orders | Substantial AOV and email engagement uplift ([case study](/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/)) |
-| 10 | Anti-ageing device brand (RevenueHunt) | Beauty devices | Qualifying funnel: 7 questions + 5 persuasion screens, cold Meta to results | **+42.64% AOV, $691K in 90 days, 9.8% CVR on cold traffic** ([case study](/anti-aging-beauty-brand-quiz-funnel-case-study/)) |
+| 10 | DTC beauty brand (RevenueHunt) | Beauty devices | Qualifying funnel: 7 questions + 5 persuasion screens, cold Meta to results | **+42.64% AOV, $691K in 90 days, 9.8% CVR on cold traffic** |
 | 11 | Extreme Kids World (RevenueHunt) | Outdoor play | Configurator quiz on yard / age / budget to 3-4 matched products | Significantly higher conversion vs catalogue traffic ([case study](/extreme-kids-world-case-study/)) |
 
 ### 1. Function of Beauty: the prototypical quiz funnel
@@ -167,23 +167,23 @@ Where the result is disclosed publicly (case studies, podcast interviews, invest
 
 **Reported result.** Daughterela has reported substantial uplift in average order value and email engagement from the quiz funnel relative to baseline traffic. The full case study is here: [Daughterela redefining natural beauty](/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/).
 
-### 10. Anti-ageing device brand (RevenueHunt customer): the qualifying funnel
+### 10. DTC beauty brand (RevenueHunt customer): the qualifying funnel
 
-![Anti-aging device and serum product photography](/img/blog/anti-aging-beauty-brand-quiz-funnel-case-study/blog_casestudy_aov42_img2.webp)
+![Beauty device and serum product photography](/img/blog/ecommerce-sales-funnel-examples/blog_11examples_beautybrandproduct.webp)
 
 <p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 11</span> &nbsp;The hero product photography from the anti-ageing brand case study: a device + serum kit at $107 AOV. The quiz routes to this kit as the canonical first purchase.</p>
 
-**What makes it work.** This US anti-ageing device brand sells high-ticket items (a microcurrent facial device plus a complementary serum) where unqualified traffic produces a low conversion rate and high refund risk. The team built a *qualifying* funnel: instead of trying to convert every visitor, the quiz screens shoppers by skin concern, age range, treatment history and willingness-to-invest, then surfaces the right product (and the right messaging) only to qualified shoppers.
+**What makes it work.** This DTC beauty brand sells high-ticket items (a device plus a complementary product) where unqualified traffic produces a low conversion rate and high refund risk. The team built a *qualifying* funnel: instead of trying to convert every visitor, the quiz screens shoppers by skin concern, age range, treatment history and willingness-to-invest, then surfaces the right product (and the right messaging) only to qualified shoppers.
 
 **The funnel mechanic.** Qualification quiz with treatment-history branching; results page customised to each qualified segment; native sync to Klaviyo with quiz answers as custom properties powering segment-specific welcome, replenishment and consultation-booking flows. The disqualified traffic gets nurture content instead of the hard sell, preserving brand goodwill.
 
-![Anti-aging brand funnel diagram: cold Meta ad to quiz start to seven questions with five embedded persuasion screens, results page, $107 AOV purchase, then Klaviyo sync of zero-party data driving repeat purchases](/img/blog/anti-aging-beauty-brand-quiz-funnel-case-study/blog_casestudy_aov42_img3v3.webp)
+![Anti-aging brand funnel diagram: cold Meta ad to quiz start to seven questions with five embedded persuasion screens, results page, $107 AOV purchase, then Klaviyo sync of zero-party data driving repeat purchases](/img/blog/ecommerce-sales-funnel-examples/blog_11examples_beautybrandfunnel.webp)
 
 <p class="not-prose mt-2 mb-6 text-xs text-slate-500 leading-snug"><span class="font-semibold uppercase tracking-wider text-slate-600">Fig. 12</span> &nbsp;The anti-ageing brand's seven-question funnel: cold Meta ad → quiz entry → five embedded persuasion screens between questions → results-page purchase at $107 AOV → Klaviyo segmentation driving repeat purchases. The persuasion-screen pattern is what produces the 9.8% CVR.</p>
 
 The diagram above maps the end-to-end mechanic. The cold Meta ad clicks into the quiz, seven questions cover concerns and history, and inside those questions sit five micro-screens that do the persuasion work: *right spot* (46.2% pass through), *validation* (94.8%), *cost reframe* (99.5%), *lifestyle* (97.5%) and *you qualify* (99.3%). The hard filter is the first screen; the four that follow assume the shopper is qualified and shift the work from screening to converting. The shopper hits a results page with a single CTA, lands on the $107 AOV purchase, and the zero-party data from every quiz answer syncs to Klaviyo where segmented flows drive the repeat-purchase loop.
 
-**Reported result.** **+42.64% AOV lift, $691K in attributed revenue, and 9.8% quiz-to-purchase CVR on cold Meta traffic in 90 days.** Full breakdown: [the anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/).
+**Reported result.** **+42.64% AOV lift, $691K in attributed revenue, and 9.8% quiz-to-purchase CVR on cold Meta traffic in 90 days.** 
 
 ### 11. Extreme Kids World (RevenueHunt customer): the configurator funnel
 
@@ -201,7 +201,7 @@ The diagram above maps the end-to-end mechanic. The cold Meta ad clicks into the
 
 Across all 11 examples, the same five-stage structure shows up. It's a deliberate evolution of the classic AIDA model (Attention → Interest → Desire → Action) with a fifth stage that's become the difference between a one-time-purchase business and a brand:
 
-**Stage 1: Attention.** Top-of-funnel acquisition that doesn't waste signal. The strongest funnels above (Function of Beauty, HUM Nutrition, the anti-ageing device brand) use paid ads, content and landing pages that point directly at the quiz, not at the catalogue. The cost-per-quiz-start is the real top-of-funnel metric; cost-per-visit is a vanity number that hides funnel-quality differences.
+**Stage 1: Attention.** Top-of-funnel acquisition that doesn't waste signal. The strongest funnels above (Function of Beauty, HUM Nutrition, the DTC beauty brand at #10) use paid ads, content and landing pages that point directly at the quiz, not at the catalogue. The cost-per-quiz-start is the real top-of-funnel metric; cost-per-visit is a vanity number that hides funnel-quality differences.
 
 **Stage 2: Interest.** This is where the quiz lives. The job here is to convert a passing shopper into an actively engaged participant by offering a clear value exchange: "answer five questions, get a recommendation tailored to you." Completion rates of 40 to 60% on well-designed quizzes are normal in 2026; that's the rate that compounds downstream. Every quiz answer is structured first-party data that powers Stage 4 and Stage 5. For a deeper look at the data category, see our [first-party data guide](/first-party-data/).
 
@@ -268,7 +268,7 @@ Our [case study collection](/cat/case-studies/) covers RevenueHunt customers acr
     {"@type": "ListItem", "position": 7, "name": "Birchbox: the beauty-profile subscription funnel"},
     {"@type": "ListItem", "position": 8, "name": "Skinology: luxury skincare via personalisation", "url": "https://revenuehunt.com/skinology-case-study/"},
     {"@type": "ListItem", "position": 9, "name": "Daughterela: natural-beauty discovery", "url": "https://revenuehunt.com/case-study-daughterela-redefining-natural-beauty-with-personalized-shopping-experiences/"},
-    {"@type": "ListItem", "position": 10, "name": "Anti-ageing device brand: the qualifying funnel (+42.64% AOV, $691K in 90 days)", "url": "https://revenuehunt.com/anti-aging-beauty-brand-quiz-funnel-case-study/"},
+    {"@type": "ListItem", "position": 10, "name": "DTC beauty brand: the qualifying funnel (+42.64% AOV, $691K in 90 days)"},
     {"@type": "ListItem", "position": 11, "name": "Extreme Kids World: the configurator funnel", "url": "https://revenuehunt.com/extreme-kids-world-case-study/"}
   ]
 }

@@ -38,13 +38,10 @@ What separates a quiz that consistently drives 15–25% conversion rates from on
 
 ](https://revenuehunt.com/april-2026-product-updates/ "APRIL 2026 – Safer quizzes, smoother popups, and backend-powered saves")1-5-2026   [Product Updates](https://revenuehunt.com/cat/product-updates/)  
 
-[![eCommerce Blog - image 1](/img/pages/blog/blog_casestudy_aov42-120x120.webp)](https://revenuehunt.com/anti-aging-beauty-brand-quiz-funnel-case-study/ "How US Anti-Aging Device Brand Achieved 42.64% AOV Lift & $691K in 90 Days Using a Qualifying Funnel Quiz")
 
 [
 
-## How US Anti-Aging Device Brand Achieved 42.64% AOV Lift & $691K in 90 Days Using a Qualifying Funnel Quiz
 
-](https://revenuehunt.com/anti-aging-beauty-brand-quiz-funnel-case-study/ "How US Anti-Aging Device Brand Achieved 42.64% AOV Lift & $691K in 90 Days Using a Qualifying Funnel Quiz")16-4-2026   [Case Studies](https://revenuehunt.com/cat/case-studies/)  
 
 [![Product update march](/img/pages/blog/blog_tile_product_update_march_20261-120x120.webp)](https://revenuehunt.com/march-2026-product-updates/ "MARCH 2026 – Legacy quiz import, pre-fill on retake, and the new Copilot engine for everyone")
 

@@ -95,7 +95,7 @@ The reasoning behind question count and order is in [how to build a successful p
 
 ### Step 2, publish it as a landing page
 
-Lather Lab does not bury the quiz on a sub-page. It publishes the quiz at its own URL (`latherlab.com/pages/hair-quiz`) and points its Meta and Google traffic straight at it, the same "quiz as the landing page" move behind the [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) that hit 9.8% conversion on cold traffic. It also drops the quiz in as a native homepage block and a nav-menu link. Every paid click lands on question 1, not a product grid.
+Lather Lab does not bury the quiz on a sub-page. It publishes the quiz at its own URL (`latherlab.com/pages/hair-quiz`) and points its Meta and Google traffic straight at it, the same "quiz as the landing page" move behind one DTC beauty brand's quiz funnel that hit 9.8% conversion on cold traffic. It also drops the quiz in as a native homepage block and a nav-menu link. Every paid click lands on question 1, not a product grid.
 
 ### Step 3, tag every answer
 

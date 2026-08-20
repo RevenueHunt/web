@@ -42,14 +42,14 @@ If you're running paid traffic of any kind, this is the single highest-leverage 
 
 ### Case study: 9.8% cold-traffic conversion and $691K in 90 days
 
-A US-based anti-ageing beauty device brand replaced their product page with a 12-step qualifying quiz funnel as the primary Meta-ads landing page. The results across 90 days:
+A DTC beauty brand replaced their product page with a 12-step qualifying quiz funnel as the primary Meta-ads landing page. The results across 90 days:
 
 - **72,200 quiz completions** at a **75.2% completion rate** (above the platform median for the category)
-- **9.8% quiz-to-purchase conversion** on cold Meta traffic — versus the [RevenueHunt platform baseline of 5.5% pooled, 6.1% in beauty/skincare](https://revenuehunt.com/state-of-product-recommendation-quizzes/)
+- **9.8% quiz-to-purchase conversion** on cold Meta traffic, versus the [RevenueHunt platform baseline of 5.5% pooled, 6.1% in beauty/skincare](https://revenuehunt.com/state-of-product-recommendation-quizzes/)
 - **$691,128** in quiz-attributed revenue
-- **$107.16 AOV** — a **+42.64% lift** over the prior quarter ($75.13)
+- **$107.16 AOV**, a **+42.64% lift** over the prior quarter ($75.13)
 
-The product is a $130 facial sculpting device with a complementary serum bundle. The brand sent 100% of paid social to the quiz funnel, not to a product page or collection page. The full architecture (12 steps split between data-collection questions and persuasion checkpoints, single results page, structured AOV upsells) is broken down in the [anti-ageing beauty brand quiz funnel case study](/anti-aging-beauty-brand-quiz-funnel-case-study/).
+The product is a $130 device with a complementary serum bundle. The brand sent 100% of paid social to the quiz funnel, not to a product page or collection page. The full architecture (12 steps split between data-collection questions and persuasion checkpoints, single results page, structured AOV upsells) is broken down below.
 
 The strategic premise (quiz **as** the landing page, not a popup on top of a product page) is the same argument the polished pillar piece [quiz funnels vs collection pages: why your paid traffic bounces](/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/) makes in the abstract. The case study is the worked example.
 
@@ -202,11 +202,11 @@ For 11 real ecommerce funnels that put these placements into practice, see our [
 
 ### Which quiz promotion placement should I start with?
 
-If you're running paid traffic on Meta, Google or TikTok, start with **paid ads to a dedicated quiz landing page** — RevenueHunt platform data puts the lift at approximately 2.75x the rate of cold traffic landing on a category page, and the anti-ageing beauty device case study delivered 9.8% cold-traffic conversion and $691K in 90 days on the same architecture. If you're not running paid traffic, start with the auto-triggered popup (3-5 second delay) on existing organic traffic — it's the most effective single placement for quiz starts per RevenueHunt customer-success data. Pair either starter with a nav menu link, a homepage banner, and an email broadcast for the top-4 combination that consistently produces a 5-10x lift in quiz starts.
+If you're running paid traffic on Meta, Google or TikTok, start with **paid ads to a dedicated quiz landing page**. RevenueHunt platform data puts the lift at approximately 2.75x the rate of cold traffic landing on a category page, and one beauty brand's quiz funnel delivered 9.8% cold-traffic conversion and $691K in 90 days on the same architecture. If you're not running paid traffic, start with the auto-triggered popup (3-5 second delay) on existing organic traffic. It's the most effective single placement for quiz starts per RevenueHunt customer-success data. Pair either starter with a nav menu link, a homepage banner, and an email broadcast for the top-4 combination that consistently produces a 5-10x lift in quiz starts.
 
 ### Does paid traffic actually convert better on a quiz landing page than on a category page?
 
-Yes, and the gap is structural rather than incremental. RevenueHunt platform data puts the lift at approximately 2.75x the conversion rate of cold traffic landing on a category page. The mechanism: cold paid traffic faces decision fatigue on a 40-SKU catalogue and bounces; the same traffic on a quiz landing page is given a clear next action (answer five questions, get a recommendation), which resolves the decision-fatigue problem before asking for the purchase. The anti-ageing beauty device case study pushed that lift to 9.8% cold-traffic conversion on a $130 device, with a +42.64% AOV improvement quarter over quarter.
+Yes, and the gap is structural rather than incremental. RevenueHunt platform data puts the lift at approximately 2.75x the conversion rate of cold traffic landing on a category page. The mechanism: cold paid traffic faces decision fatigue on a 40-SKU catalogue and bounces; the same traffic on a quiz landing page is given a clear next action (answer five questions, get a recommendation), which resolves the decision-fatigue problem before asking for the purchase. One DTC beauty brand pushed that lift to 9.8% cold-traffic conversion on a $130 device, with a +42.64% AOV improvement quarter over quarter.
 
 ### How long until quiz promotion placements compound into measurable revenue?
 
@@ -230,7 +230,7 @@ It depends on the industry. Email gating (required before results) costs roughly
       "@type": "ListItem",
       "position": 1,
       "name": "Run paid ads to a dedicated quiz landing page",
-      "description": "Cold paid traffic converts at approximately 2.75x the rate on a quiz landing page versus a category page (RevenueHunt platform data). Anti-ageing beauty device case study: 9.8% conversion, $691K in 90 days, +42.64% AOV on cold Meta traffic with a $130 device."
+      "description": "Cold paid traffic converts at approximately 2.75x the rate on a quiz landing page versus a category page (RevenueHunt platform data). One DTC beauty brand: 9.8% conversion, $691K in 90 days, +42.64% AOV on cold Meta traffic with a $130 device."
     },
     {
       "@type": "ListItem",
@@ -312,7 +312,7 @@ It depends on the industry. Email gating (required before results) costs roughly
       "name": "Which quiz promotion placement should I start with?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "If you're running paid traffic on Meta, Google or TikTok, start with paid ads to a dedicated quiz landing page. RevenueHunt platform data puts the lift at approximately 2.75x the rate of cold traffic landing on a category page, and the anti-ageing beauty device case study delivered 9.8% cold-traffic conversion and $691K in 90 days on the same architecture. If you're not running paid traffic, start with the auto-triggered popup (3-5 second delay) on existing organic traffic — it's the most effective single placement for quiz starts per RevenueHunt customer-success data. Pair either starter with a nav menu link, a homepage banner, and an email broadcast for the top-4 combination that consistently produces a 5-10x lift in quiz starts."
+        "text": "If you're running paid traffic on Meta, Google or TikTok, start with paid ads to a dedicated quiz landing page. RevenueHunt platform data puts the lift at approximately 2.75x the rate of cold traffic landing on a category page, and one beauty brand's quiz funnel delivered 9.8% cold-traffic conversion and $691K in 90 days on the same architecture. If you're not running paid traffic, start with the auto-triggered popup (3-5 second delay) on existing organic traffic. It's the most effective single placement for quiz starts per RevenueHunt customer-success data. Pair either starter with a nav menu link, a homepage banner, and an email broadcast for the top-4 combination that consistently produces a 5-10x lift in quiz starts."
       }
     },
     {
@@ -320,7 +320,7 @@ It depends on the industry. Email gating (required before results) costs roughly
       "name": "Does paid traffic actually convert better on a quiz landing page than on a category page?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, and the gap is structural rather than incremental. RevenueHunt platform data puts the lift at approximately 2.75x the conversion rate of cold traffic landing on a category page. The mechanism: cold paid traffic faces decision fatigue on a 40-SKU catalogue and bounces; the same traffic on a quiz landing page is given a clear next action (answer five questions, get a recommendation), which resolves the decision-fatigue problem before asking for the purchase. The anti-ageing beauty device case study pushed that lift to 9.8% cold-traffic conversion on a $130 device, with a +42.64% AOV improvement quarter over quarter."
+        "text": "Yes, and the gap is structural rather than incremental. RevenueHunt platform data puts the lift at approximately 2.75x the conversion rate of cold traffic landing on a category page. The mechanism: cold paid traffic faces decision fatigue on a 40-SKU catalogue and bounces; the same traffic on a quiz landing page is given a clear next action (answer five questions, get a recommendation), which resolves the decision-fatigue problem before asking for the purchase. One DTC beauty brand pushed that lift to 9.8% cold-traffic conversion on a $130 device, with a +42.64% AOV improvement quarter over quarter."
       }
     },
     {

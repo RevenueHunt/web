@@ -94,7 +94,7 @@ You've hit the ceiling of what your current data allows you to build. You know t
 
 - A **sensitive-skin welcome series** with gentle product recommendations and ingredient education.
 - An **acne solutions drip** with targeted content for oily-combination skin.
-- An **anti-ageing routine builder** for subscribers in the 35-44 range. (The [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) shows what a 12-step funnel into this exact segment generates on cold traffic.)
+- An **anti-ageing routine builder** for subscribers in the 35-44 range.
 - A **gift buyers** flow focused entirely on price point and occasion.
 
 You can't build any of them, because the properties that would power those conditional splits (`quiz_skin_type`, `quiz_primary_concern`, `quiz_age_range`, `quiz_shopping_for`) don't exist in your Klaviyo account.
@@ -240,7 +240,7 @@ After enriching 12,000 profiles with quiz data and switching to segment-specific
 
 > **Pattern:** open rate 19% → 31% in 90 days. Same list, better data.
 
-For a worked example of these mechanics in a single Shopify funnel, see the [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) (9.8% quiz-to-purchase CVR on cold Meta traffic, +42.64% AOV lift, $691K in 90 days, every quiz answer synced to Klaviyo for post-purchase segmentation).
+For a worked example of these mechanics in a single Shopify funnel, one DTC beauty brand's quiz funnel produced 9.8% quiz-to-purchase CVR on cold Meta traffic, +42.64% AOV lift, $691K in 90 days, every quiz answer synced to Klaviyo for post-purchase segmentation.
 
 ## Self-assessment: the Klaviyo data maturity model
 
@@ -298,7 +298,6 @@ Yes. The mechanics are identical: quiz answers map to platform-native custom pro
 ## Next steps
 
 - Build the emails on top: the [post-quiz follow-up playbook](/quiz-follow-up-emails/) (one universal results email plus five lifecycle flows that compound the enriched profiles into repeat revenue).
-- See the underlying mechanics in a real Shopify funnel: the [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) (9.8% CVR, $691K in 90 days, every answer synced to Klaviyo).
 - Place this in strategic context: [where Klaviyo activation fits in the retention pillar](/customer-retention-ecommerce-guide/) (the 10 strategies that compound LTV).
 - Read the pillar argument on capture format: [why popups are walls and quizzes are doors](/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/).
 - Check the platform benchmark for what your segment should be doing: [state of product recommendation quizzes](/state-of-product-recommendation-quizzes/).

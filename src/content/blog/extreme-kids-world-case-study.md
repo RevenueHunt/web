@@ -246,14 +246,13 @@ The shape across all three quizzes is consistent: a brief introduction, a handfu
 The quiz response counts, completion rates, drop-off rates and growth figures come from RevenueHunt's first-party Analytics: the [Built for Shopify dashboard](/first-party-shopify-quiz-analytics/) on the Built for Shopify quiz, and the [Legacy Shopify Orders integration](/first-party-shopify-quiz-analytics/) on the two quizzes that still run on Shopify Legacy. Both flows read from the Shopify ledger rather than through the Meta Pixel or GA4. Exact revenue figures are not disclosed in this case study; the percentage growth metrics and completion rates are reported instead.
 
 **Can other DTC brands replicate this pattern below the $3K AOV?**
-The structural lessons (niche quizzes, ~7-step funnel, native Klaviyo sync, multi-year retention framing) transfer directly. The 76.9% completion-rate finding is independent of AOV; it's a function of scope. The lessons compound the most for high-consideration categories where the shopper genuinely can't self-diagnose, but they apply across price points. For a worked example at a different price point and category, see the [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) (9.8% CVR on cold Meta traffic, +42.64% AOV lift, $691,128 in 90 days).
+The structural lessons (niche quizzes, ~7-step funnel, native Klaviyo sync, multi-year retention framing) transfer directly. The 76.9% completion-rate finding is independent of AOV; it's a function of scope. The lessons compound the most for high-consideration categories where the shopper genuinely can't self-diagnose, but they apply across price points. For a worked example at a different price point and category, one DTC beauty brand's quiz funnel produced 9.8% CVR on cold Meta traffic, +42.64% AOV lift, $691,128 in 90 days.
 
 **What about HubSpot specifically?**
 The Wall Bars Quiz syncs to both Klaviyo and HubSpot. The brand uses HubSpot for sales hand-off on the highest-AOV configurations where a personal touch closes the loop. For the integration walkthrough, see [HubSpot quiz integration](/hubspot-quiz-integration/).
 
 ## Next steps
 
-- For the disclosed-numbers companion in a different vertical: [anti-ageing device case study](/anti-aging-beauty-brand-quiz-funnel-case-study/) (9.8% CVR, +42.64% AOV, $691K in 90 days).
 - For the category context (the 5 quiz formats this case study fits inside): [the umbrella guide](/ecommerce-quiz/).
 - Read the strategic pillar behind this case study: [quiz funnels vs collection pages, why your paid traffic bounces](/quiz-funnels-vs-collection-pages-why-your-paid-traffic-bounces/).
 - Read the lead-capture pillar: [why popups are walls and quizzes are doors](/why-popups-are-walls-and-quizzes-are-doors-rethinking-lead-capture-for-dtc/).

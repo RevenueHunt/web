@@ -2,7 +2,7 @@
 title: "Privacy Policy"
 description: "How RevenueHunt collects, uses, and protects personal data, including our positions on GDPR, CCPA, CPRA, VCDPA, and Shopify Protected Customer Data."
 pubDate: 2026-01-18T05:31:34Z
-updatedDate: 2026-07-13T00:00:00Z
+updatedDate: 2026-09-03T00:00:00Z
 legacySlug: "privacy"
 legacyId: 11956
 legacyUrl: "https://revenuehunt.com/privacy/"
@@ -10,7 +10,7 @@ featuredImage: null
 draft: false
 ---
 
-Last updated: July 13, 2026.
+Last updated: September 3, 2026.
 
 Download for review: [DOCX](/legal/RevenueHunt-Privacy-Policy.docx) · [CSV](/legal/RevenueHunt-Privacy-Policy.csv).
 
@@ -99,6 +99,16 @@ We may share aggregated information that does not identify any personal informat
 **First-party:** we're using [AHOY](https://github.com/ankane/ahoy) to offer you analytics about your customers' behavior using your quiz. Only you have access to this data.
 
 **Third-party:** We're using Google Analytics to track anonymous behavior data.
+
+## Live chat
+
+**Third-party:** We use [tawk.to](https://www.tawk.to/) (Tawk.to Inc.) to provide the chat widget on this website, on our documentation site, and inside the app. The widget loads on every page, whether or not you open a conversation.
+
+When you start a conversation, tawk.to processes what you type, including any name, email address or message content you choose to share, so that we can reply to you. It also receives technical information that your browser sends automatically, such as your IP address, approximate location, browser and operating system, and the pages you view on our site. We retain chat transcripts so that we can follow up on your request and answer you consistently if you contact us again.
+
+If you are signed in to the app, we also pass your shop name, shop domain, plan and account email to tawk.to, so that our support team can see who they are speaking with without asking you to repeat it.
+
+tawk.to sets its own cookies and browser storage to keep your conversation open as you move between pages. For details on how tawk.to handles this data, see their [privacy policy](https://www.tawk.to/privacy-policy/).
 
 ## Cookies
 

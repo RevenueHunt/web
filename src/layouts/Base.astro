@@ -271,6 +271,15 @@ const isProd = import.meta.env.PROD && SITE.site_url === "https://revenuehunt.co
             if (SEND_TO) gtag("event", "conversion", { send_to: SEND_TO });
           }, true);
         </script>
+        <!-- tawk.to live chat. Property 673f3f364304e3196ae673ec, widget
+             1jpn75t6m ("V1 - RevenueHunt Quizzes") - the same widget the
+             merchant CRM and docs.revenuehunt.com load, so every conversation
+             lands in one inbox. Widget content (cards, copy, availability) is
+             configured in the tawk dashboard, not here. -->
+        <script is:inline>
+          var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+          (function(){var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];s1.async=true;s1.src="https://embed.tawk.to/673f3f364304e3196ae673ec/1jpn75t6m";s1.charset="UTF-8";s1.setAttribute("crossorigin","*");s0.parentNode.insertBefore(s1,s0);})();
+        </script>
       </>
     )}
   </head>

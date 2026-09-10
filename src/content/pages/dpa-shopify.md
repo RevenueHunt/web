@@ -26,7 +26,7 @@ The entity that has agreed to the Agreement
 
 collectively referred to as the "Parties" and each a "Party".
 
-This DPA forms part of the Agreement and binds both Parties in electronic form, as permitted by Article 28(9) GDPR. A countersigned copy issued in the Customer's name is available to Customers on an Enterprise plan; request it at [info@revenuehunt.com](mailto:info@revenuehunt.com).
+This DPA forms part of the Agreement and binds both Parties in electronic form, as permitted by Article 28(9) GDPR. A countersigned copy issued in the Customer's name is available to Customers on an annual Enterprise plan; request it at [info@revenuehunt.com](mailto:info@revenuehunt.com).
 
 ## 1. Definitions
 

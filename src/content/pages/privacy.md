@@ -188,7 +188,7 @@ When RevenueHunt operates as a Shopify app, the personal information we process 
 - Retaining Protected Customer Data only for as long as is necessary to deliver the service
 - Supporting customer data subject requests originating from the merchant via Shopify's GDPR webhooks (`customers/data_request`, `customers/redact`, `shop/redact`)
 
-Our [**Data Processing Agreement (DPA)**](/dpa/) is published in full and binds both parties in electronic form. A countersigned copy is available to merchants on an Enterprise plan at [info@revenuehunt.com](mailto:info@revenuehunt.com). The DPA covers our role as a processor under GDPR, our role as a service provider under CCPA/CPRA, and our role as a processor under VCDPA, CPA, CTDPA, and UCPA, including the Standard Contractual Clauses for cross-border transfers and our subprocessor list.
+Our [**Data Processing Agreement (DPA)**](/dpa/) is published in full and binds both parties in electronic form. A countersigned copy is available to merchants on an annual Enterprise plan at [info@revenuehunt.com](mailto:info@revenuehunt.com). The DPA covers our role as a processor under GDPR, our role as a service provider under CCPA/CPRA, and our role as a processor under VCDPA, CPA, CTDPA, and UCPA, including the Standard Contractual Clauses for cross-border transfers and our subprocessor list.
 
 ## What information we collect
 

@@ -111,7 +111,7 @@ RevenueHunt meets [Shopify's Level 1 and 2 requirements](https://shopify.dev/doc
 
 ## Privacy and compliance
 
-RevenueHunt's data handling is described in detail in our [Privacy Policy](/privacy/), which includes our positions on GDPR, CCPA, CPRA, VCDPA, and Shopify's Protected Customer Data programme. Our [Data Processing Agreement](/dpa/) is published in full and binds both parties in electronic form. A countersigned copy is available to merchants on an Enterprise plan.
+RevenueHunt's data handling is described in detail in our [Privacy Policy](/privacy/), which includes our positions on GDPR, CCPA, CPRA, VCDPA, and Shopify's Protected Customer Data programme. Our [Data Processing Agreement](/dpa/) is published in full and binds both parties in electronic form. A countersigned copy is available to merchants on an annual Enterprise plan.
 
 ## Questions
 

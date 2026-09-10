@@ -2,7 +2,7 @@
 title: "Privacy Policy"
 description: "How RevenueHunt collects, uses, and protects personal data, including our positions on GDPR, CCPA, CPRA, VCDPA, and Shopify Protected Customer Data."
 pubDate: 2026-01-18T05:31:34Z
-updatedDate: 2026-09-03T00:00:00Z
+updatedDate: 2026-09-10T00:00:00Z
 legacySlug: "privacy"
 legacyId: 11956
 legacyUrl: "https://revenuehunt.com/privacy/"
@@ -10,7 +10,7 @@ featuredImage: null
 draft: false
 ---
 
-Last updated: September 3, 2026.
+Last updated: September 10, 2026.
 
 Download for review: [DOCX](/legal/RevenueHunt-Privacy-Policy.docx) · [CSV](/legal/RevenueHunt-Privacy-Policy.csv).
 
@@ -188,7 +188,7 @@ When RevenueHunt operates as a Shopify app, the personal information we process 
 - Retaining Protected Customer Data only for as long as is necessary to deliver the service
 - Supporting customer data subject requests originating from the merchant via Shopify's GDPR webhooks (`customers/data_request`, `customers/redact`, `shop/redact`)
 
-Our [**Data Processing Agreement (DPA)**](/dpa/) is published in full, and merchants who require a signed copy can request one at [info@revenuehunt.com](mailto:info@revenuehunt.com). The DPA covers our role as a processor under GDPR, our role as a service provider under CCPA/CPRA, and our role as a processor under VCDPA, CPA, CTDPA, and UCPA, including the Standard Contractual Clauses for cross-border transfers and our subprocessor list.
+Our [**Data Processing Agreement (DPA)**](/dpa/) is published in full and binds both parties in electronic form. A countersigned copy is available to merchants on an Enterprise plan at [info@revenuehunt.com](mailto:info@revenuehunt.com). The DPA covers our role as a processor under GDPR, our role as a service provider under CCPA/CPRA, and our role as a processor under VCDPA, CPA, CTDPA, and UCPA, including the Standard Contractual Clauses for cross-border transfers and our subprocessor list.
 
 ## What information we collect
 

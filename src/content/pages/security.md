@@ -2,7 +2,7 @@
 title: "Security"
 description: "How RevenueHunt protects merchant and customer data, our security contact, and the vulnerability disclosure process."
 pubDate: 2026-05-19T00:00:00Z
-updatedDate: 2026-07-13T00:00:00Z
+updatedDate: 2026-09-10T00:00:00Z
 legacySlug: "security"
 legacyId: 99001
 legacyUrl: "https://revenuehunt.com/security/"
@@ -10,7 +10,7 @@ featuredImage: null
 draft: false
 ---
 
-Last updated: July 13, 2026.
+Last updated: September 10, 2026.
 
 Download for review: [DOCX](/legal/RevenueHunt-Information-Security-Policy.docx) · [CSV](/legal/RevenueHunt-Information-Security-Policy.csv).
 
@@ -111,7 +111,7 @@ RevenueHunt meets [Shopify's Level 1 and 2 requirements](https://shopify.dev/doc
 
 ## Privacy and compliance
 
-RevenueHunt's data handling is described in detail in our [Privacy Policy](/privacy/), which includes our positions on GDPR, CCPA, CPRA, VCDPA, and Shopify's Protected Customer Data programme. Our [Data Processing Agreement](/dpa/) is published in full, and a signed copy is available on request to merchants who require one.
+RevenueHunt's data handling is described in detail in our [Privacy Policy](/privacy/), which includes our positions on GDPR, CCPA, CPRA, VCDPA, and Shopify's Protected Customer Data programme. Our [Data Processing Agreement](/dpa/) is published in full and binds both parties in electronic form. A countersigned copy is available to merchants on an Enterprise plan.
 
 ## Questions
 

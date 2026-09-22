@@ -282,6 +282,10 @@ const isProd = import.meta.env.PROD && SITE.site_url === "https://revenuehunt.co
         </script>
       </>
     )}
+    <!-- RevenueHunt embed: turns every href="#quiz-<id>" link (the sign-up
+         CTAs via SITE.signup_url) into a popup quiz. Deferred because it binds
+         the links once, on load. -->
+    <script is:inline defer src="https://admin.revenuehunt.com/embed.js?shop=revenuehunt.com"></script>
   </head>
   <body class="font-sans bg-white text-slate-900 antialiased">
     {isProd && (

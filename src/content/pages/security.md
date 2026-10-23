@@ -24,7 +24,7 @@ This page summarises our practices, our public security contact, and how to repo
 
 If you believe you have found a security vulnerability in any RevenueHunt product, please report it to us privately so we can address it before it puts merchants or their customers at risk.
 
-**Security contact:** [security@revenuehunt.com](mailto:security@revenuehunt.com)
+**Security contact:** [info@revenuehunt.com](mailto:info@revenuehunt.com)
 
 **What to include in your report:**
 
@@ -115,4 +115,4 @@ RevenueHunt's data handling is described in detail in our [Privacy Policy](/priv
 
 ## Questions
 
-For security questions that are not vulnerability reports - for example, requests for our security questionnaire, DPA, or SOC documentation - please email [security@revenuehunt.com](mailto:security@revenuehunt.com) with "Security questionnaire" in the subject line.
+For security questions that are not vulnerability reports - for example, requests for our security questionnaire, DPA, or SOC documentation - please email [info@revenuehunt.com](mailto:info@revenuehunt.com) with "Security questionnaire" in the subject line.

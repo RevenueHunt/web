@@ -2,7 +2,7 @@
 title: "Security"
 description: "How RevenueHunt protects merchant and customer data, our security contact, and the vulnerability disclosure process."
 pubDate: 2026-05-19T00:00:00Z
-updatedDate: 2026-09-10T00:00:00Z
+updatedDate: 2026-10-29T00:00:00Z
 legacySlug: "security"
 legacyId: 99001
 legacyUrl: "https://revenuehunt.com/security/"
@@ -10,7 +10,7 @@ featuredImage: null
 draft: false
 ---
 
-Last updated: September 10, 2026.
+Last updated: October 29, 2026.
 
 Download for review: [DOCX](/legal/RevenueHunt-Information-Security-Policy.docx) · [CSV](/legal/RevenueHunt-Information-Security-Policy.csv).
 
@@ -115,4 +115,4 @@ RevenueHunt's data handling is described in detail in our [Privacy Policy](/priv
 
 ## Questions
 
-For security questions that are not vulnerability reports - for example, requests for our security questionnaire, DPA, or SOC documentation - please email [info@revenuehunt.com](mailto:info@revenuehunt.com) with "Security questionnaire" in the subject line.
+For security questions that are not vulnerability reports - for example, requests for our DPA or a completed security questionnaire - please email [info@revenuehunt.com](mailto:info@revenuehunt.com) with "Security questionnaire" in the subject line.
